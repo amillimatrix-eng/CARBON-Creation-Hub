@@ -96,7 +96,49 @@ def evidence_transition(task, opportunities):
         },
     }
 
-ADAPTERS = {"EVIDENCE_TRANSITION": evidence_transition}
+
+def access_verification(task, opportunities):
+    payload = task["payload"]
+    key = payload["opportunity_key"]
+    record = opportunities["records"][key]
+    evidence = payload.get("evidence", [])
+    if not evidence or any(
+        e.get("kind") != "VIDEO_ACCESS_PERMISSION" or
+        not e.get("source_id") or e.get("role") != "reader"
+        for e in evidence
+    ):
+        raise ValueError("reader permission evidence is required")
+    recipient = payload["recipient"].lower()
+    valid = {record.get("recipient", "").lower()}
+    valid.update(x.lower() for x in record.get("recipients", []))
+    if recipient not in valid:
+        raise ValueError("permission recipient does not match commercial record")
+    record["video_access_verified"] = True
+    record["video_access_verified_at"] = payload["observed_at"]
+    record["proof_access"] = {
+        "file_id": payload["file_id"],
+        "visibility": "CONTROLLED_READER",
+        "public": False,
+        "recipient": payload["recipient"],
+    }
+    record["evidence"].extend(evidence)
+    return {
+        "adapter": "ACCESS_VERIFICATION",
+        "opportunity_key": key,
+        "commercial_state": record["state"],
+        "state_changed": False,
+        "video_access_verified": True,
+        "recipient": payload["recipient"],
+        "file_id": payload["file_id"],
+        "critic": {
+            "rights": "PASS_CONTROLLED_READER",
+            "privacy": "PASS_NOT_PUBLIC",
+            "recipient_match": "PASS",
+            "external_acceptance": "NOT_INFERRED",
+        },
+    }
+
+ADAPTERS = {"EVIDENCE_TRANSITION": evidence_transition, "ACCESS_VERIFICATION": access_verification}
 
 def tick():
     if not claim_lock():
