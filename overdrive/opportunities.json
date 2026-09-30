@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "record_key": "normalized organization/domain + opportunity + title",
+  "records": {
+    "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
+      "organization": "Addictive Dramas",
+      "domain": "addictivedramas.com",
+      "opportunity": "licensing-production",
+      "title": "The Dragon Who Could Not Claim Me",
+      "execution_owner": "PRI",
+      "internal_tracking_id": "Production 001",
+      "state": "SUBMITTED",
+      "recipient": "licensing@addictivedramas.com",
+      "thread_id": "1a0f2ea400877a18",
+      "package_version": "unknown",
+      "last_action_at": "2026-09-30T15:23:55Z",
+      "next_action": "Reconcile delivery",
+      "evidence": []
+    },
+    "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me": {
+      "organization": "Inkwave Studios",
+      "domain": "inkwavestudios.uk",
+      "opportunity": "production-partnership",
+      "title": "The Dragon Who Could Not Claim Me",
+      "execution_owner": "PRI",
+      "internal_tracking_id": "Production 001",
+      "state": "SUBMITTED",
+      "recipient": "info@inkwavestudios.uk",
+      "thread_id": "1a0f2de385883f66",
+      "package_version": "unknown",
+      "last_action_at": "2026-09-30T15:10:46Z",
+      "next_action": "Reconcile delivery",
+      "evidence": []
+    }
+  }
+}

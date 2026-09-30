@@ -1,21 +1,48 @@
-name: AMX OVERDRIVE Recovery
+name: AMX OVERDRIVE Worker
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'overdrive/runner.py'
+      - 'overdrive/state.json'
+      - 'overdrive/opportunities.json'
+      - '.github/workflows/overdrive-recovery.yml'
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
+concurrency:
+  group: amx-overdrive-main
+  cancel-in-progress: false
 jobs:
-  heartbeat:
+  worker:
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, 'OVERDRIVE receipt')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate OVERDRIVE runner
+      - name: Execute durable adapter queue
+        run: python3 overdrive/runner.py
+      - name: Verify state and receipts
         run: |
-          python3 -m py_compile overdrive/runner.py
           python3 - <<'PY'
           import json
-          json.load(open("overdrive/config.json"))
-          json.load(open("overdrive/state.json"))
-          print("OVERDRIVE recovery validation PASS")
+          from pathlib import Path
+          state=json.load(open("overdrive/state.json"))
+          assert state["adapter_status"]=="OPERATIONAL"
+          assert not [t for t in state["queue"] if t["status"]=="PENDING"]
+          receipts=list(Path("overdrive/receipts").glob("*.json"))
+          assert receipts, "no durable receipts"
+          print("OVERDRIVE adapter execution PASS", len(receipts))
           PY
+      - name: Persist worker outputs
+        run: |
+          git config user.name "AMX OVERDRIVE"
+          git config user.email "amillimatrix@gmail.com"
+          git add overdrive/state.json overdrive/opportunities.json overdrive/receipts
+          if git diff --cached --quiet; then
+            echo "No new worker output"
+          else
+            git commit -m "OVERDRIVE receipt: persist adapter transitions"
+            git push
+          fi

@@ -1,7 +1,10 @@
 {
-  "version": 1,
+  "version": 2,
   "last_tick": null,
   "sequence": 0,
+  "adapter_status": "COMMISSIONING",
+  "last_tick_result": null,
+  "last_receipt": null,
   "lanes": {
     "DISCOVERY": {
       "state": "ACTIVE"
@@ -25,6 +28,48 @@
       "state": "ACTIVE"
     }
   },
-  "queue": [],
-  "receipts": []
+  "queue": [
+    {
+      "id": "evt-addictive-bounce-20260930",
+      "adapter": "EVIDENCE_TRANSITION",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
+        "expected_from": "SUBMITTED",
+        "to": "DELIVERY_FAILED",
+        "observed_at": "2026-09-30T15:23:55Z",
+        "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
+        "evidence": [
+          {
+            "kind": "DELIVERY_FAILURE",
+            "source": "GMAIL",
+            "source_id": "1a0f2ea4a4dbf2d1",
+            "thread_id": "1a0f2ea400877a18",
+            "smtp": "550 5.1.1 Address not found"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evt-inkwave-bounce-20260930",
+      "adapter": "EVIDENCE_TRANSITION",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
+        "expected_from": "SUBMITTED",
+        "to": "DELIVERY_FAILED",
+        "observed_at": "2026-09-30T15:10:46Z",
+        "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
+        "evidence": [
+          {
+            "kind": "DELIVERY_FAILURE",
+            "source": "GMAIL",
+            "source_id": "1a0f2de424fa692f",
+            "thread_id": "1a0f2de385883f66",
+            "smtp": "550 5.1.1 Address not found"
+          }
+        ]
+      }
+    }
+  ]
 }
