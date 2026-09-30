@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
 <title id="title">The Dragon Who Could Not Claim Me</title>
-<desc id="desc">CARBON Production 001 vertical microdrama release poster</desc>
+<desc id="desc">CARBON Degree of Business selected vertical-drama sample poster</desc>
 <defs>
   <radialGradient id="g" cx="50%" cy="42%" r="70%">
     <stop offset="0" stop-color="#34363a"/>
@@ -20,7 +20,7 @@
 <path d="M240 1040 C260 710 500 580 760 710 C900 780 900 1040 690 1090 C510 1135 420 970 530 860 C610 780 760 820 760 930"
  fill="none" stroke="#f2f3f5" stroke-width="5" stroke-linecap="round"/>
 <polygon points="742,884 842,930 748,972" fill="#f2f3f5"/>
-<text x="76" y="120" fill="#b9bdc3" font-family="Arial,sans-serif" font-size="28" letter-spacing="7">CARBON° PRODUCTION 001</text>
+<text x="76" y="120" fill="#b9bdc3" font-family="Arial,sans-serif" font-size="25" letter-spacing="4">CARBON° · DEGREE OF BUSINESS</text>
 <text x="540" y="1370" fill="#ffffff" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="64">THE DRAGON WHO</text>
 <text x="540" y="1450" fill="#ffffff" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="64">COULD NOT CLAIM ME</text>
 <line x1="280" x2="800" y1="1515" y2="1515" stroke="#aeb2b8" stroke-width="2"/>
