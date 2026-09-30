@@ -1,0 +1,32 @@
+{
+  "production_id": "CARBON-PRODUCTION-001",
+  "title": "The Dragon Who Could Not Claim Me",
+  "studio": "AMilliMATRiX / CARBON° Production Studio",
+  "release_unit": [
+    {
+      "episode": 6,
+      "title": "The Dragon Chose Me",
+      "runtime_seconds": 60,
+      "frame": "720x1280",
+      "sha256": "f7fc2b532d4a7c391650d0c6f72ee270e6af26966e654e69b618257c16fbeabf"
+    },
+    {
+      "episode": 7,
+      "title": "The Usurper",
+      "runtime_seconds": 60,
+      "frame": "720x1280",
+      "sha256": "e9126cbd931cd73f1cf32b3d94b803ebf0f885a90696e36fdcd4fd7f39637081"
+    }
+  ],
+  "combined_master": {
+    "runtime_seconds": 120.021,
+    "sha256": "2cae676c9f38ff94a8f494b1c24a497f1a880e99d2b839cf1d69470c5cab20a7"
+  },
+  "status": {
+    "produced": true,
+    "published": true,
+    "submitted": false,
+    "accepted": false,
+    "paid": false
+  }
+}
