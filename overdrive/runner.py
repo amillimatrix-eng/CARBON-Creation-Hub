@@ -104,6 +104,10 @@ def tick():
         return 0
     try:
         state = read(STATE)
+        pending = [task for task in state.get("queue", []) if task["status"] == "PENDING"]
+        if not pending:
+            print(json.dumps({"status": "IDLE", "pending": 0}, sort_keys=True))
+            return 0
         opportunities = read(OPPORTUNITIES)
         processed = []
         for task in state.get("queue", []):
