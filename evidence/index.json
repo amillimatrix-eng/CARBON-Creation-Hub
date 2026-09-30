@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "generated_at": "2026-09-30T20:00:00Z",
+  "control": "Demonstrated capability != claimed skill. UNKNOWN/HOLD over inference.",
+  "records": [
+    {
+      "evidence_id": "EVID-CARBON-001",
+      "capability": "CARBON° production / vertical-drama artifact delivery",
+      "artifact": "The Dragon Who Could Not Claim Me — rendered EP06/EP07 combined master",
+      "authoritative_source": "Google Drive file 1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+      "date_version": "2026-09-30",
+      "role_contribution": "CARBON° production asset",
+      "acceptance_test": "Rendered EP06 and EP07 hashes preserved; controlled-reader access verified for multiple commercial recipients in opportunity ledger.",
+      "durable_receipt": "overdrive/opportunities.json",
+      "status_freshness": "CURRENT",
+      "interview_safe_explanation": "CARBON° produced and packaged a vertical-drama proof asset with versioned provenance and controlled buyer access.",
+      "inspect_route": "Controlled Drive access; not public."
+    },
+    {
+      "evidence_id": "EVID-OVERDRIVE-001",
+      "capability": "Durable commercial workflow / evidence-first state machine",
+      "artifact": "OVERDRIVE opportunity ledger + execution receipts",
+      "authoritative_source": "amillimatrix-eng/CARBON-Creation-Hub",
+      "date_version": "2026-09-30",
+      "role_contribution": "Workflow architecture and governed execution",
+      "acceptance_test": "PRI and iSCOPE each completed material state transitions with durable receipts and readback.",
+      "durable_receipt": "overdrive/pri/receipts/PRI-0000000001-LAVDM-RESPONSE-20260930.json; overdrive/iscope/receipts/ISCOPE-0000000001-CHERRYONE-QUALIFIED-20260930.json",
+      "status_freshness": "CURRENT",
+      "interview_safe_explanation": "Implemented a single-writer commercial pipeline separating discovery/qualification from outbound sales execution, with durable state transitions and receipts.",
+      "inspect_route": "GitHub repository evidence."
+    },
+    {
+      "evidence_id": "EVID-IRIS-001",
+      "capability": "IRIS / MiCase professional evidence surface",
+      "artifact": "IRIS — MiCase",
+      "authoritative_source": "Repository BullRulez/IRIS-My-Case; deployed surface unchaind.netlify.app",
+      "date_version": "2026-09-30 evidence reconciliation",
+      "role_contribution": "Evidence/presentation product",
+      "acceptance_test": "Current deployment verification/hash synchronization remains outstanding; no completion inferred.",
+      "durable_receipt": "Google Drive: AMX BOLD DIRECTIVE 001 — EVIDENCE INTEGRATION MANAGER RECEIPTS",
+      "status_freshness": "REMEDIATE / VERIFY CURRENT",
+      "interview_safe_explanation": "IRIS/MiCase is an evidence-bound professional presentation surface; current deployment/hash verification is explicitly tracked rather than overstated.",
+      "inspect_route": "Public deployment pointer + repository; verify freshness before asserting current implementation details."
+    }
+  ]
+}
