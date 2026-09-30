@@ -1,0 +1,22 @@
+{
+  "receipt_id": "PRI-0000000001-LAVDM-RESPONSE-20260930",
+  "office": "PRI",
+  "mandate": "COMMERCIAL_EXECUTION",
+  "authority": "SOLE_COMMERCIAL_WRITER",
+  "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
+  "starting_state": "SUBMITTED",
+  "observed_evidence": {
+    "source": "GMAIL",
+    "source_id": "1a0f37a32e00f882",
+    "thread_id": "1a0f1fba9e5a5efb",
+    "observed_at": "2026-09-30T18:00:55Z"
+  },
+  "material_action": "Recovered and read the existing commercial thread; classified the buyer response; progressed the durable opportunity state without duplicating outreach.",
+  "resulting_state": "RESPONDED",
+  "next_action": "Use the official FilmFreeway route from a different browser/device as requested by LAVDM; if it still fails, reply in the existing thread requesting the offered alternate route. Do not externalize internal tooling details.",
+  "owner_gate": null,
+  "do_not_redo": ["Do not send another initial LAVDM pitch.", "Do not classify as accepted or paid.", "Do not expose internal tooling/security mechanics externally."],
+  "commercial_revenue_realized": 0,
+  "closure": false,
+  "control": "NO RECEIPT -> NO CLOSURE"
+}
