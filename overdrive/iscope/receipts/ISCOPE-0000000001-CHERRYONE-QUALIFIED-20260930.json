@@ -1,0 +1,20 @@
+{
+  "receipt_id": "ISCOPE-0000000001-CHERRYONE-QUALIFIED-20260930",
+  "office": "iSCOPE",
+  "mandate": "COMMERCIAL_DISCOVERY_QUALIFICATION",
+  "authority": "SOLE_DISCOVERY_QUALIFICATION_WRITER",
+  "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
+  "starting_state": "ABSENT_FROM_CURRENT_LEDGER",
+  "material_action": "Discovered an active official content-partner route, verified stated commercial fit and capital direction, checked the current durable opportunity ledger for duplication, created a durable qualified record, and handed commercial progression to PRI.",
+  "resulting_state": "QUALIFIED",
+  "handoff_to": "PRI",
+  "evidence": {
+    "official_route": "https://cherryone.ai/",
+    "observed_claims": ["Now Accepting Content Partners","short-form drama distribution","15+ platforms","zero upfront cost","revenue-share model","localization","revenue tracking"]
+  },
+  "dedupe": "NO_EXISTING_RECORD_FOUND_IN_CURRENT_DURABLE_OPPORTUNITY_LEDGER",
+  "next_action": "PRI to inspect the official Partner With Us intake, verify current CARBON° rights/package compatibility, and make the outbound proposition if compatible.",
+  "owner_gate": null,
+  "closure": false,
+  "control": "NO RECEIPT -> NO CLOSURE"
+}
