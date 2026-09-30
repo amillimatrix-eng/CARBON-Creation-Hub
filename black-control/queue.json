@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "jobs": [
+    {
+      "id": "black-package-manifest-20260930",
+      "worker": "BLACK",
+      "adapter": "package_manifest",
+      "initiative": "CARBON",
+      "objective": "Produce verifiable public production-package manifest with actual source hashes; do not assert video access or payment",
+      "public_output": true
+    }
+  ]
+}
