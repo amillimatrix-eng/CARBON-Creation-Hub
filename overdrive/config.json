@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "heartbeat_seconds": 60,
+  "stale_lock_seconds": 110,
+  "lanes": [
+    "DISCOVERY",
+    "CONVERSION",
+    "PRODUCTION",
+    "DISTRIBUTION",
+    "TECHNICAL",
+    "CRITIC",
+    "EVIDENCE"
+  ],
+  "terminal_state": "PAID",
+  "states": [
+    "DISCOVERED",
+    "QUALIFIED",
+    "OFFERED",
+    "RESPONDED",
+    "NEGOTIATING",
+    "CONTRACTED",
+    "INVOICED",
+    "PAID"
+  ],
+  "capital_rule": "INBOUND_PRIORITY",
+  "pay_to_work": "DEMOTE",
+  "owner_gate": [
+    "OTP",
+    "CAPTCHA",
+    "KYC",
+    "BINDING_TERMS",
+    "PAYMENT_AUTHORIZATION"
+  ]
+}
