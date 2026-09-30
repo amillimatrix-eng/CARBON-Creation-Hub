@@ -1,0 +1,21 @@
+name: AMX OVERDRIVE Recovery
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate OVERDRIVE runner
+        run: |
+          python3 -m py_compile overdrive/runner.py
+          python3 - <<'PY'
+          import json
+          json.load(open("overdrive/config.json"))
+          json.load(open("overdrive/state.json"))
+          print("OVERDRIVE recovery validation PASS")
+          PY
