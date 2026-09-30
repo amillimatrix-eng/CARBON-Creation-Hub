@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-09-30T16:39:38.394837+00:00",
+  "result": {
+    "adapter": "EVIDENCE_TRANSITION",
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_contact": "PASS_NO_SEND_PERFORMED",
+      "factual_claims": "PASS",
+      "rights": "PASS_NO_ASSET_RELEASED"
+    },
+    "evidence": [
+      {
+        "kind": "DELIVERY_FAILURE",
+        "smtp": "550 5.1.1 Address not found",
+        "source": "GMAIL",
+        "source_id": "1a0f2de424fa692f",
+        "thread_id": "1a0f2de385883f66"
+      }
+    ],
+    "from": "SUBMITTED",
+    "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
+    "to": "DELIVERY_FAILED"
+  },
+  "sequence": 2,
+  "sha256": "67fd22e941154f3ae5c966b3cc71d043fd80074b1f89fa05b8eb9cf67abb5b36",
+  "status": "COMPLETED",
+  "task_id": "evt-inkwave-bounce-20260930"
+}

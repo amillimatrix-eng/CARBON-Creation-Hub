@@ -1,75 +1,87 @@
 {
-  "version": 2,
-  "last_tick": null,
-  "sequence": 0,
-  "adapter_status": "COMMISSIONING",
-  "last_tick_result": null,
-  "last_receipt": null,
+  "adapter_status": "OPERATIONAL",
   "lanes": {
-    "DISCOVERY": {
-      "state": "ACTIVE"
-    },
     "CONVERSION": {
-      "state": "ACTIVE"
-    },
-    "PRODUCTION": {
-      "state": "ACTIVE"
-    },
-    "DISTRIBUTION": {
-      "state": "ACTIVE"
-    },
-    "TECHNICAL": {
       "state": "ACTIVE"
     },
     "CRITIC": {
       "state": "ACTIVE"
     },
+    "DISCOVERY": {
+      "state": "ACTIVE"
+    },
+    "DISTRIBUTION": {
+      "state": "ACTIVE"
+    },
     "EVIDENCE": {
+      "state": "ACTIVE"
+    },
+    "PRODUCTION": {
+      "state": "ACTIVE"
+    },
+    "TECHNICAL": {
       "state": "ACTIVE"
     }
   },
+  "last_receipt": "receipts/0000000002-evt-inkwave-bounce-20260930.json",
+  "last_tick": "2026-09-30T16:39:38.394962+00:00",
+  "last_tick_result": {
+    "pending": 0,
+    "processed": [
+      "evt-addictive-bounce-20260930",
+      "evt-inkwave-bounce-20260930"
+    ]
+  },
   "queue": [
     {
-      "id": "evt-addictive-bounce-20260930",
       "adapter": "EVIDENCE_TRANSITION",
-      "status": "PENDING",
+      "completed_at": "2026-09-30T16:39:38.394826+00:00",
+      "id": "evt-addictive-bounce-20260930",
       "payload": {
-        "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
-        "expected_from": "SUBMITTED",
-        "to": "DELIVERY_FAILED",
-        "observed_at": "2026-09-30T15:23:55Z",
-        "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
         "evidence": [
           {
             "kind": "DELIVERY_FAILURE",
+            "smtp": "550 5.1.1 Address not found",
             "source": "GMAIL",
             "source_id": "1a0f2ea4a4dbf2d1",
-            "thread_id": "1a0f2ea400877a18",
-            "smtp": "550 5.1.1 Address not found"
+            "thread_id": "1a0f2ea400877a18"
           }
-        ]
-      }
+        ],
+        "expected_from": "SUBMITTED",
+        "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
+        "observed_at": "2026-09-30T15:23:55Z",
+        "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
+        "to": "DELIVERY_FAILED"
+      },
+      "receipt": "receipts/0000000001-evt-addictive-bounce-20260930.json",
+      "receipt_sha256": "abd35e88d71e9408cdc7036e3395e43c231c69fabe5cd74c44a3d2fe81ab9da6",
+      "status": "COMPLETED"
     },
     {
-      "id": "evt-inkwave-bounce-20260930",
       "adapter": "EVIDENCE_TRANSITION",
-      "status": "PENDING",
+      "completed_at": "2026-09-30T16:39:38.394959+00:00",
+      "id": "evt-inkwave-bounce-20260930",
       "payload": {
-        "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
-        "expected_from": "SUBMITTED",
-        "to": "DELIVERY_FAILED",
-        "observed_at": "2026-09-30T15:10:46Z",
-        "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
         "evidence": [
           {
             "kind": "DELIVERY_FAILURE",
+            "smtp": "550 5.1.1 Address not found",
             "source": "GMAIL",
             "source_id": "1a0f2de424fa692f",
-            "thread_id": "1a0f2de385883f66",
-            "smtp": "550 5.1.1 Address not found"
+            "thread_id": "1a0f2de385883f66"
           }
-        ]
-      }
+        ],
+        "expected_from": "SUBMITTED",
+        "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
+        "observed_at": "2026-09-30T15:10:46Z",
+        "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
+        "to": "DELIVERY_FAILED"
+      },
+      "receipt": "receipts/0000000002-evt-inkwave-bounce-20260930.json",
+      "receipt_sha256": "67fd22e941154f3ae5c966b3cc71d043fd80074b1f89fa05b8eb9cf67abb5b36",
+      "status": "COMPLETED"
     }
-  ]
+  ],
+  "sequence": 2,
+  "version": 2
 }

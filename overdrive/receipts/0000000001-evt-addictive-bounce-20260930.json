@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-09-30T16:39:38.394615+00:00",
+  "result": {
+    "adapter": "EVIDENCE_TRANSITION",
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_contact": "PASS_NO_SEND_PERFORMED",
+      "factual_claims": "PASS",
+      "rights": "PASS_NO_ASSET_RELEASED"
+    },
+    "evidence": [
+      {
+        "kind": "DELIVERY_FAILURE",
+        "smtp": "550 5.1.1 Address not found",
+        "source": "GMAIL",
+        "source_id": "1a0f2ea4a4dbf2d1",
+        "thread_id": "1a0f2ea400877a18"
+      }
+    ],
+    "from": "SUBMITTED",
+    "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
+    "to": "DELIVERY_FAILED"
+  },
+  "sequence": 1,
+  "sha256": "abd35e88d71e9408cdc7036e3395e43c231c69fabe5cd74c44a3d2fe81ab9da6",
+  "status": "COMPLETED",
+  "task_id": "evt-addictive-bounce-20260930"
+}
