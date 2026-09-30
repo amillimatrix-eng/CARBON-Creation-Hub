@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "target": {
+    "site_app_id": "appgprj_6aabe3aac8fc819199f38d7cf4a79faf",
+    "current_published_version": 2,
+    "operation": "PATCH_EXISTING_SITE_NOT_CLONE"
+  },
+  "source": [
+    "house/remediation/index.html",
+    "house/remediation/house.css",
+    "house/remediation/house.js"
+  ],
+  "implemented": [
+    "CARBON° / AMilliMATRiX identity",
+    "The Forge corrected label",
+    "persistent mobile navigation",
+    "Living Gallery",
+    "Records",
+    "Operator Dashboard",
+    "backend connectivity/freshness truth state",
+    "real governed evidence index consumption",
+    "BLACK deferred/not dependency"
+  ],
+  "deployment_acceptance": [
+    "publish existing Site as version >2",
+    "direct visual/function readback",
+    "confirm controlled asset inspect/play route",
+    "exercise real brief→worker→artifact→Critic→gallery→PRI→external receipt path"
+  ],
+  "state": "IMPLEMENTATION_READY_DEPLOYMENT_PENDING_SITE_MUTATION_SURFACE",
+  "control": "Do not call House commissioned until existing Site is patched, published >2, and read back."
+}
