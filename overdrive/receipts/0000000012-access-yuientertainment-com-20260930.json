@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-09-30T17:34:59.564460+00:00",
+  "result": {
+    "adapter": "ACCESS_VERIFICATION",
+    "commercial_state": "SUBMITTED",
+    "critic": {
+      "external_acceptance": "NOT_INFERRED",
+      "privacy": "PASS_NOT_PUBLIC",
+      "recipient_match": "PASS",
+      "rights": "PASS_CONTROLLED_READER"
+    },
+    "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+    "opportunity_key": "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me",
+    "recipient": "yuxin@yuientertainment.com",
+    "state_changed": false,
+    "video_access_verified": true
+  },
+  "sequence": 12,
+  "sha256": "d37b46eff54729c53fabef54bc91e5c54547c48bac35f815ef45ecaee4186f8e",
+  "status": "COMPLETED",
+  "task_id": "access-yuientertainment-com-20260930"
+}

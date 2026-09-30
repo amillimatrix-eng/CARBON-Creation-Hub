@@ -23,13 +23,21 @@
       "state": "ACTIVE"
     }
   },
-  "last_receipt": "receipts/0000000002-evt-inkwave-bounce-20260930.json",
-  "last_tick": "2026-09-30T16:39:38.394962+00:00",
+  "last_receipt": "receipts/0000000012-access-yuientertainment-com-20260930.json",
+  "last_tick": "2026-09-30T17:34:59.564682+00:00",
   "last_tick_result": {
     "pending": 0,
     "processed": [
-      "evt-addictive-bounce-20260930",
-      "evt-inkwave-bounce-20260930"
+      "access-laverticaldramamarket-com-20260930",
+      "access-microdrama-id-20260930",
+      "access-mountainriverfilms-com-20260930",
+      "access-seastarfilm-com-20260930",
+      "access-k29studios-com-20260930",
+      "access-jukboxproductions-com-20260930",
+      "access-faceproduction-net-20260930",
+      "access-alakai-productions-20260930",
+      "access-magicpictures-net-20260930",
+      "access-yuientertainment-com-20260930"
     ]
   },
   "queue": [
@@ -82,216 +90,246 @@
       "status": "COMPLETED"
     },
     {
-      "id": "access-laverticaldramamarket-com-20260930",
       "adapter": "ACCESS_VERIFICATION",
-      "status": "PENDING",
+      "completed_at": "2026-09-30T17:34:59.562501+00:00",
+      "id": "access-laverticaldramamarket-com-20260930",
       "payload": {
-        "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
-        "recipient": "info@laverticaldramamarket.com",
-        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
-        "observed_at": "2026-09-30T16:52:12.432Z",
         "evidence": [
           {
             "kind": "VIDEO_ACCESS_PERMISSION",
-            "source": "GOOGLE_DRIVE",
-            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+            "public": false,
             "recipient": "info@laverticaldramamarket.com",
             "role": "reader",
-            "public": false
+            "source": "GOOGLE_DRIVE",
+            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
           }
-        ]
-      }
-    },
-    {
-      "id": "access-microdrama-id-20260930",
-      "adapter": "ACCESS_VERIFICATION",
-      "status": "PENDING",
-      "payload": {
-        "opportunity_key": "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me",
-        "recipient": "partnership@microdrama.id",
+        ],
         "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
         "observed_at": "2026-09-30T16:52:12.432Z",
+        "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
+        "recipient": "info@laverticaldramamarket.com"
+      },
+      "receipt": "receipts/0000000003-access-laverticaldramamarket-com-20260930.json",
+      "receipt_sha256": "f579e9db179e0b0c01745382d576f0bba0090f08723c2cfc4e483503b0dc4f4b",
+      "status": "COMPLETED"
+    },
+    {
+      "adapter": "ACCESS_VERIFICATION",
+      "completed_at": "2026-09-30T17:34:59.562772+00:00",
+      "id": "access-microdrama-id-20260930",
+      "payload": {
         "evidence": [
           {
             "kind": "VIDEO_ACCESS_PERMISSION",
-            "source": "GOOGLE_DRIVE",
-            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+            "public": false,
             "recipient": "partnership@microdrama.id",
             "role": "reader",
-            "public": false
+            "source": "GOOGLE_DRIVE",
+            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
           }
-        ]
-      }
-    },
-    {
-      "id": "access-mountainriverfilms-com-20260930",
-      "adapter": "ACCESS_VERIFICATION",
-      "status": "PENDING",
-      "payload": {
-        "opportunity_key": "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me",
-        "recipient": "mrf@mountainriverfilms.com",
+        ],
         "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
         "observed_at": "2026-09-30T16:52:12.432Z",
+        "opportunity_key": "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me",
+        "recipient": "partnership@microdrama.id"
+      },
+      "receipt": "receipts/0000000004-access-microdrama-id-20260930.json",
+      "receipt_sha256": "28ab95a261ec9d017c6f15b87138d099e3d80fae9305cd27f199e4e97002a88b",
+      "status": "COMPLETED"
+    },
+    {
+      "adapter": "ACCESS_VERIFICATION",
+      "completed_at": "2026-09-30T17:34:59.563011+00:00",
+      "id": "access-mountainriverfilms-com-20260930",
+      "payload": {
         "evidence": [
           {
             "kind": "VIDEO_ACCESS_PERMISSION",
-            "source": "GOOGLE_DRIVE",
-            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+            "public": false,
             "recipient": "mrf@mountainriverfilms.com",
             "role": "reader",
-            "public": false
+            "source": "GOOGLE_DRIVE",
+            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
           }
-        ]
-      }
-    },
-    {
-      "id": "access-seastarfilm-com-20260930",
-      "adapter": "ACCESS_VERIFICATION",
-      "status": "PENDING",
-      "payload": {
-        "opportunity_key": "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me",
-        "recipient": "info@seastarfilm.com",
+        ],
         "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
         "observed_at": "2026-09-30T16:52:12.432Z",
+        "opportunity_key": "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me",
+        "recipient": "mrf@mountainriverfilms.com"
+      },
+      "receipt": "receipts/0000000005-access-mountainriverfilms-com-20260930.json",
+      "receipt_sha256": "40c29f1a6b9e0d0d7ed4b70c57a2857632be06a5d81a2e861a5814d684265bb7",
+      "status": "COMPLETED"
+    },
+    {
+      "adapter": "ACCESS_VERIFICATION",
+      "completed_at": "2026-09-30T17:34:59.563240+00:00",
+      "id": "access-seastarfilm-com-20260930",
+      "payload": {
         "evidence": [
           {
             "kind": "VIDEO_ACCESS_PERMISSION",
-            "source": "GOOGLE_DRIVE",
-            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+            "public": false,
             "recipient": "info@seastarfilm.com",
             "role": "reader",
-            "public": false
+            "source": "GOOGLE_DRIVE",
+            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
           }
-        ]
-      }
-    },
-    {
-      "id": "access-k29studios-com-20260930",
-      "adapter": "ACCESS_VERIFICATION",
-      "status": "PENDING",
-      "payload": {
-        "opportunity_key": "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me",
-        "recipient": "made@k29studios.com",
+        ],
         "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
         "observed_at": "2026-09-30T16:52:12.432Z",
+        "opportunity_key": "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me",
+        "recipient": "info@seastarfilm.com"
+      },
+      "receipt": "receipts/0000000006-access-seastarfilm-com-20260930.json",
+      "receipt_sha256": "77eb45a12822783e924a7f6ff105d802ea6fbbfc440c32ddf9a56b20d080d990",
+      "status": "COMPLETED"
+    },
+    {
+      "adapter": "ACCESS_VERIFICATION",
+      "completed_at": "2026-09-30T17:34:59.563509+00:00",
+      "id": "access-k29studios-com-20260930",
+      "payload": {
         "evidence": [
           {
             "kind": "VIDEO_ACCESS_PERMISSION",
-            "source": "GOOGLE_DRIVE",
-            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+            "public": false,
             "recipient": "made@k29studios.com",
             "role": "reader",
-            "public": false
+            "source": "GOOGLE_DRIVE",
+            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
           }
-        ]
-      }
-    },
-    {
-      "id": "access-jukboxproductions-com-20260930",
-      "adapter": "ACCESS_VERIFICATION",
-      "status": "PENDING",
-      "payload": {
-        "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
-        "recipient": "hello@jukboxproductions.com",
+        ],
         "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
         "observed_at": "2026-09-30T16:52:12.432Z",
+        "opportunity_key": "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me",
+        "recipient": "made@k29studios.com"
+      },
+      "receipt": "receipts/0000000007-access-k29studios-com-20260930.json",
+      "receipt_sha256": "75b77590f2e564347de6e75ce6a146777181f075b780c3ad90677dffa88aa717",
+      "status": "COMPLETED"
+    },
+    {
+      "adapter": "ACCESS_VERIFICATION",
+      "completed_at": "2026-09-30T17:34:59.563739+00:00",
+      "id": "access-jukboxproductions-com-20260930",
+      "payload": {
         "evidence": [
           {
             "kind": "VIDEO_ACCESS_PERMISSION",
-            "source": "GOOGLE_DRIVE",
-            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+            "public": false,
             "recipient": "hello@jukboxproductions.com",
             "role": "reader",
-            "public": false
+            "source": "GOOGLE_DRIVE",
+            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
           }
-        ]
-      }
-    },
-    {
-      "id": "access-faceproduction-net-20260930",
-      "adapter": "ACCESS_VERIFICATION",
-      "status": "PENDING",
-      "payload": {
-        "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
-        "recipient": "contact@faceproduction.net",
+        ],
         "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
         "observed_at": "2026-09-30T16:52:12.432Z",
+        "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
+        "recipient": "hello@jukboxproductions.com"
+      },
+      "receipt": "receipts/0000000008-access-jukboxproductions-com-20260930.json",
+      "receipt_sha256": "accef6716252693629c131474694161af96e76a51de12c9d47f0352b1b9028ef",
+      "status": "COMPLETED"
+    },
+    {
+      "adapter": "ACCESS_VERIFICATION",
+      "completed_at": "2026-09-30T17:34:59.563969+00:00",
+      "id": "access-faceproduction-net-20260930",
+      "payload": {
         "evidence": [
           {
             "kind": "VIDEO_ACCESS_PERMISSION",
-            "source": "GOOGLE_DRIVE",
-            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+            "public": false,
             "recipient": "contact@faceproduction.net",
             "role": "reader",
-            "public": false
+            "source": "GOOGLE_DRIVE",
+            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
           }
-        ]
-      }
-    },
-    {
-      "id": "access-alakai-productions-20260930",
-      "adapter": "ACCESS_VERIFICATION",
-      "status": "PENDING",
-      "payload": {
-        "opportunity_key": "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me",
-        "recipient": "alakaiproductionsai@gmail.com",
+        ],
         "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
         "observed_at": "2026-09-30T16:52:12.432Z",
+        "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
+        "recipient": "contact@faceproduction.net"
+      },
+      "receipt": "receipts/0000000009-access-faceproduction-net-20260930.json",
+      "receipt_sha256": "0a2ace2f38062ede8d2e89edb1b87a0f2c5f7598dcf82a9be3448237e330a05d",
+      "status": "COMPLETED"
+    },
+    {
+      "adapter": "ACCESS_VERIFICATION",
+      "completed_at": "2026-09-30T17:34:59.564192+00:00",
+      "id": "access-alakai-productions-20260930",
+      "payload": {
         "evidence": [
           {
             "kind": "VIDEO_ACCESS_PERMISSION",
-            "source": "GOOGLE_DRIVE",
-            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+            "public": false,
             "recipient": "alakaiproductionsai@gmail.com",
             "role": "reader",
-            "public": false
+            "source": "GOOGLE_DRIVE",
+            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
           }
-        ]
-      }
-    },
-    {
-      "id": "access-magicpictures-net-20260930",
-      "adapter": "ACCESS_VERIFICATION",
-      "status": "PENDING",
-      "payload": {
-        "opportunity_key": "magicpictures.net|co-production|the-dragon-who-could-not-claim-me",
-        "recipient": "hello@magicpictures.net",
+        ],
         "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
         "observed_at": "2026-09-30T16:52:12.432Z",
+        "opportunity_key": "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me",
+        "recipient": "alakaiproductionsai@gmail.com"
+      },
+      "receipt": "receipts/0000000010-access-alakai-productions-20260930.json",
+      "receipt_sha256": "a523e3f7e685b862017db140a1c3d7b0362fd11e5523d11f0c2d4c23622252a1",
+      "status": "COMPLETED"
+    },
+    {
+      "adapter": "ACCESS_VERIFICATION",
+      "completed_at": "2026-09-30T17:34:59.564447+00:00",
+      "id": "access-magicpictures-net-20260930",
+      "payload": {
         "evidence": [
           {
             "kind": "VIDEO_ACCESS_PERMISSION",
-            "source": "GOOGLE_DRIVE",
-            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+            "public": false,
             "recipient": "hello@magicpictures.net",
             "role": "reader",
-            "public": false
+            "source": "GOOGLE_DRIVE",
+            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
           }
-        ]
-      }
-    },
-    {
-      "id": "access-yuientertainment-com-20260930",
-      "adapter": "ACCESS_VERIFICATION",
-      "status": "PENDING",
-      "payload": {
-        "opportunity_key": "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me",
-        "recipient": "yuxin@yuientertainment.com",
+        ],
         "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
         "observed_at": "2026-09-30T16:52:12.432Z",
+        "opportunity_key": "magicpictures.net|co-production|the-dragon-who-could-not-claim-me",
+        "recipient": "hello@magicpictures.net"
+      },
+      "receipt": "receipts/0000000011-access-magicpictures-net-20260930.json",
+      "receipt_sha256": "678192fe6fc1625996736780b54e42ddcd9b755cc2ed8eb6931e40a67d66c533",
+      "status": "COMPLETED"
+    },
+    {
+      "adapter": "ACCESS_VERIFICATION",
+      "completed_at": "2026-09-30T17:34:59.564676+00:00",
+      "id": "access-yuientertainment-com-20260930",
+      "payload": {
         "evidence": [
           {
             "kind": "VIDEO_ACCESS_PERMISSION",
-            "source": "GOOGLE_DRIVE",
-            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+            "public": false,
             "recipient": "yuxin@yuientertainment.com",
             "role": "reader",
-            "public": false
+            "source": "GOOGLE_DRIVE",
+            "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
           }
-        ]
-      }
+        ],
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "observed_at": "2026-09-30T16:52:12.432Z",
+        "opportunity_key": "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me",
+        "recipient": "yuxin@yuientertainment.com"
+      },
+      "receipt": "receipts/0000000012-access-yuientertainment-com-20260930.json",
+      "receipt_sha256": "d37b46eff54729c53fabef54bc91e5c54547c48bac35f815ef45ecaee4186f8e",
+      "status": "COMPLETED"
     }
   ],
-  "sequence": 2,
+  "sequence": 12,
   "version": 2
 }

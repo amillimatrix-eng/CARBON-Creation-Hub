@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-09-30T17:34:59.563751+00:00",
+  "result": {
+    "adapter": "ACCESS_VERIFICATION",
+    "commercial_state": "SUBMITTED",
+    "critic": {
+      "external_acceptance": "NOT_INFERRED",
+      "privacy": "PASS_NOT_PUBLIC",
+      "recipient_match": "PASS",
+      "rights": "PASS_CONTROLLED_READER"
+    },
+    "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+    "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
+    "recipient": "contact@faceproduction.net",
+    "state_changed": false,
+    "video_access_verified": true
+  },
+  "sequence": 9,
+  "sha256": "0a2ace2f38062ede8d2e89edb1b87a0f2c5f7598dcf82a9be3448237e330a05d",
+  "status": "COMPLETED",
+  "task_id": "access-faceproduction-net-20260930"
+}

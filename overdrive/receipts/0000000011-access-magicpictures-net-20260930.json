@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-09-30T17:34:59.564204+00:00",
+  "result": {
+    "adapter": "ACCESS_VERIFICATION",
+    "commercial_state": "SUBMITTED",
+    "critic": {
+      "external_acceptance": "NOT_INFERRED",
+      "privacy": "PASS_NOT_PUBLIC",
+      "recipient_match": "PASS",
+      "rights": "PASS_CONTROLLED_READER"
+    },
+    "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+    "opportunity_key": "magicpictures.net|co-production|the-dragon-who-could-not-claim-me",
+    "recipient": "hello@magicpictures.net",
+    "state_changed": false,
+    "video_access_verified": true
+  },
+  "sequence": 11,
+  "sha256": "678192fe6fc1625996736780b54e42ddcd9b755cc2ed8eb6931e40a67d66c533",
+  "status": "COMPLETED",
+  "task_id": "access-magicpictures-net-20260930"
+}

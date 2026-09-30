@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-09-30T17:34:59.563253+00:00",
+  "result": {
+    "adapter": "ACCESS_VERIFICATION",
+    "commercial_state": "SUBMITTED",
+    "critic": {
+      "external_acceptance": "NOT_INFERRED",
+      "privacy": "PASS_NOT_PUBLIC",
+      "recipient_match": "PASS",
+      "rights": "PASS_CONTROLLED_READER"
+    },
+    "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+    "opportunity_key": "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me",
+    "recipient": "made@k29studios.com",
+    "state_changed": false,
+    "video_access_verified": true
+  },
+  "sequence": 7,
+  "sha256": "75b77590f2e564347de6e75ce6a146777181f075b780c3ad90677dffa88aa717",
+  "status": "COMPLETED",
+  "task_id": "access-k29studios-com-20260930"
+}

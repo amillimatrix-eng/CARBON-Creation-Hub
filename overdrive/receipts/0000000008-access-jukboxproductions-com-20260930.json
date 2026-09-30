@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-09-30T17:34:59.563523+00:00",
+  "result": {
+    "adapter": "ACCESS_VERIFICATION",
+    "commercial_state": "SUBMITTED",
+    "critic": {
+      "external_acceptance": "NOT_INFERRED",
+      "privacy": "PASS_NOT_PUBLIC",
+      "recipient_match": "PASS",
+      "rights": "PASS_CONTROLLED_READER"
+    },
+    "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+    "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
+    "recipient": "hello@jukboxproductions.com",
+    "state_changed": false,
+    "video_access_verified": true
+  },
+  "sequence": 8,
+  "sha256": "accef6716252693629c131474694161af96e76a51de12c9d47f0352b1b9028ef",
+  "status": "COMPLETED",
+  "task_id": "access-jukboxproductions-com-20260930"
+}

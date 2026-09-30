@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-09-30T17:34:59.563981+00:00",
+  "result": {
+    "adapter": "ACCESS_VERIFICATION",
+    "commercial_state": "SUBMITTED",
+    "critic": {
+      "external_acceptance": "NOT_INFERRED",
+      "privacy": "PASS_NOT_PUBLIC",
+      "recipient_match": "PASS",
+      "rights": "PASS_CONTROLLED_READER"
+    },
+    "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+    "opportunity_key": "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me",
+    "recipient": "alakaiproductionsai@gmail.com",
+    "state_changed": false,
+    "video_access_verified": true
+  },
+  "sequence": 10,
+  "sha256": "a523e3f7e685b862017db140a1c3d7b0362fd11e5523d11f0c2d4c23622252a1",
+  "status": "COMPLETED",
+  "task_id": "access-alakai-productions-20260930"
+}

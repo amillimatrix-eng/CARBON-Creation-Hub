@@ -24,6 +24,88 @@
       "thread_id": "1a0f2ea400877a18",
       "title": "The Dragon Who Could Not Claim Me"
     },
+    "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me": {
+      "domain": "alakai-productions",
+      "due_at": "2026-10-02T15:24:10.000Z",
+      "evidence": [
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0f2ea80749ae37",
+          "thread_id": "1a0f2ea80749ae37"
+        },
+        {
+          "kind": "VIDEO_ACCESS_PERMISSION",
+          "public": false,
+          "recipient": "alakaiproductionsai@gmail.com",
+          "role": "reader",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        }
+      ],
+      "execution_owner": "PRI",
+      "internal_tracking_id": "Production 001",
+      "last_action_at": "2026-09-30T15:24:10Z",
+      "message_id": "1a0f2ea80749ae37",
+      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "opportunity": "production-collaboration",
+      "organization": "Alakai Productions",
+      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
+      "proof_access": {
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "public": false,
+        "recipient": "alakaiproductionsai@gmail.com",
+        "visibility": "CONTROLLED_READER"
+      },
+      "recipient": "alakaiproductionsai@gmail.com",
+      "state": "SUBMITTED",
+      "subject": "AI-native vertical production collaboration \u2014 CARBON\u00b0",
+      "thread_id": "1a0f2ea80749ae37",
+      "title": "The Dragon Who Could Not Claim Me",
+      "video_access_verified": true,
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
+    "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me": {
+      "domain": "faceproduction.net",
+      "due_at": "2026-10-02T15:23:51.000Z",
+      "evidence": [
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0f2ea3874d5fde",
+          "thread_id": "1a0f2ea3874d5fde"
+        },
+        {
+          "kind": "VIDEO_ACCESS_PERMISSION",
+          "public": false,
+          "recipient": "contact@faceproduction.net",
+          "role": "reader",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        }
+      ],
+      "execution_owner": "PRI",
+      "internal_tracking_id": "Production 001",
+      "last_action_at": "2026-09-30T15:23:51Z",
+      "message_id": "1a0f2ea3874d5fde",
+      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "opportunity": "catalogue-partnership",
+      "organization": "Face Production",
+      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
+      "proof_access": {
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "public": false,
+        "recipient": "contact@faceproduction.net",
+        "visibility": "CONTROLLED_READER"
+      },
+      "recipient": "contact@faceproduction.net",
+      "state": "SUBMITTED",
+      "subject": "Producer / catalogue partnership \u2014 CARBON\u00b0",
+      "thread_id": "1a0f2ea3874d5fde",
+      "title": "The Dragon Who Could Not Claim Me",
+      "video_access_verified": true,
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
     "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "inkwavestudios.uk",
       "evidence": [
@@ -47,293 +129,361 @@
       "thread_id": "1a0f2de385883f66",
       "title": "The Dragon Who Could Not Claim Me"
     },
-    "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
-      "organization": "LAVDM / VertIGo",
-      "domain": "laverticaldramamarket.com",
-      "opportunity": "alternate-submission-route",
-      "title": "The Dragon Who Could Not Claim Me",
-      "execution_owner": "PRI",
-      "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
-      "recipient": "info@laverticaldramamarket.com",
-      "thread_id": "1a0f1fba9e5a5efb",
-      "message_id": "1a0f1fba9e5a5efb",
-      "subject": "VertIGo AI Vertical Drama — alternate submission route request",
-      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
-      "last_action_at": "2026-09-30T11:03:16Z",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "due_at": "2026-10-02T11:03:16.000Z",
-      "video_access_verified": false,
-      "evidence": [
-        {
-          "kind": "GMAIL_SENT",
-          "source": "GMAIL",
-          "source_id": "1a0f1fba9e5a5efb",
-          "thread_id": "1a0f1fba9e5a5efb"
-        }
-      ]
-    },
-    "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me": {
-      "organization": "Microdrama AI",
-      "domain": "microdrama.id",
-      "opportunity": "catalogue-co-production",
-      "title": "The Dragon Who Could Not Claim Me",
-      "execution_owner": "PRI",
-      "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
-      "recipient": "partnership@microdrama.id",
-      "thread_id": "1a0f25a83088e914",
-      "message_id": "1a0f25a83088e914",
-      "subject": "Catalogue licensing / co-production enquiry — CARBON° Production 001",
-      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
-      "last_action_at": "2026-09-30T12:46:53Z",
-      "next_action": "Monitor existing threads under one organization record; do not send another initial pitch.",
-      "due_at": "2026-10-02T12:46:53.000Z",
-      "video_access_verified": false,
-      "evidence": [
-        {
-          "kind": "GMAIL_SENT",
-          "source": "GMAIL",
-          "source_id": "1a0f25a83088e914",
-          "thread_id": "1a0f25a83088e914"
-        }
-      ],
-      "contact_history": [
-        {
-          "recipient": "partnership@microdrama.id",
-          "message_id": "1a0f25a83088e914",
-          "sent_at": "2026-09-30T12:46:53Z"
-        },
-        {
-          "recipient": "contact@microdrama.id",
-          "message_id": "1a0f2ead59a283ae",
-          "sent_at": "2026-09-30T15:24:31Z",
-          "duplicate_initial": true
-        }
-      ],
-      "recipients": [
-        "partnership@microdrama.id",
-        "contact@microdrama.id"
-      ]
-    },
-    "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me": {
-      "organization": "Mountain River Films",
-      "domain": "mountainriverfilms.com",
-      "opportunity": "co-production-distribution",
-      "title": "The Dragon Who Could Not Claim Me",
-      "execution_owner": "PRI",
-      "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
-      "recipient": "mrf@mountainriverfilms.com",
-      "thread_id": "1a0f2e2af4f0d5cc",
-      "message_id": "1a0f2e2af4f0d5cc",
-      "subject": "Co-production / distribution — AI-native vertical fantasy series",
-      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
-      "last_action_at": "2026-09-30T15:15:37Z",
-      "next_action": "Monitor both existing threads; do not send another initial pitch.",
-      "due_at": "2026-10-02T15:15:37.000Z",
-      "video_access_verified": false,
-      "evidence": [
-        {
-          "kind": "GMAIL_SENT",
-          "source": "GMAIL",
-          "source_id": "1a0f2e2af4f0d5cc",
-          "thread_id": "1a0f2e2af4f0d5cc"
-        }
-      ],
-      "contact_history": [
-        {
-          "message_id": "1a0f2e2af4f0d5cc",
-          "sent_at": "2026-09-30T15:15:37Z"
-        },
-        {
-          "message_id": "1a0f2ea0921932a1",
-          "sent_at": "2026-09-30T15:23:38Z",
-          "duplicate_initial": true
-        }
-      ]
-    },
-    "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me": {
-      "organization": "Sea Star Productions",
-      "domain": "seastarfilm.com",
-      "opportunity": "production-licensing",
-      "title": "The Dragon Who Could Not Claim Me",
-      "execution_owner": "PRI",
-      "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
-      "recipient": "info@seastarfilm.com",
-      "thread_id": "1a0f2ea1c5a8c36a",
-      "message_id": "1a0f2ea1c5a8c36a",
-      "subject": "Vertical drama production & licensing partnership — CARBON°",
-      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
-      "last_action_at": "2026-09-30T15:23:44Z",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "due_at": "2026-10-02T15:23:44.000Z",
-      "video_access_verified": false,
-      "evidence": [
-        {
-          "kind": "GMAIL_SENT",
-          "source": "GMAIL",
-          "source_id": "1a0f2ea1c5a8c36a",
-          "thread_id": "1a0f2ea1c5a8c36a"
-        }
-      ]
-    },
-    "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me": {
-      "organization": "K29 Studios",
-      "domain": "k29studios.com",
-      "opportunity": "production-collaboration",
-      "title": "The Dragon Who Could Not Claim Me",
-      "execution_owner": "PRI",
-      "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
-      "recipient": "made@k29studios.com",
-      "thread_id": "1a0f2ea2a952c85d",
-      "message_id": "1a0f2ea2a952c85d",
-      "subject": "Vertical production collaboration — CARBON°",
-      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
-      "last_action_at": "2026-09-30T15:23:47Z",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "due_at": "2026-10-02T15:23:47.000Z",
-      "video_access_verified": false,
-      "evidence": [
-        {
-          "kind": "GMAIL_SENT",
-          "source": "GMAIL",
-          "source_id": "1a0f2ea2a952c85d",
-          "thread_id": "1a0f2ea2a952c85d"
-        }
-      ]
-    },
     "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me": {
-      "organization": "Jukbox Productions",
       "domain": "jukboxproductions.com",
-      "opportunity": "production-partnership",
-      "title": "The Dragon Who Could Not Claim Me",
-      "execution_owner": "PRI",
-      "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
-      "recipient": "hello@jukboxproductions.com",
-      "thread_id": "1a0f2ea30b45baa0",
-      "message_id": "1a0f2ea30b45baa0",
-      "subject": "Vertical drama production partnership — CARBON°",
-      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
-      "last_action_at": "2026-09-30T15:23:49Z",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
       "due_at": "2026-10-02T15:23:49.000Z",
-      "video_access_verified": false,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
           "source": "GMAIL",
           "source_id": "1a0f2ea30b45baa0",
           "thread_id": "1a0f2ea30b45baa0"
+        },
+        {
+          "kind": "VIDEO_ACCESS_PERMISSION",
+          "public": false,
+          "recipient": "hello@jukboxproductions.com",
+          "role": "reader",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
         }
-      ]
-    },
-    "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me": {
-      "organization": "Face Production",
-      "domain": "faceproduction.net",
-      "opportunity": "catalogue-partnership",
-      "title": "The Dragon Who Could Not Claim Me",
+      ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
-      "recipient": "contact@faceproduction.net",
-      "thread_id": "1a0f2ea3874d5fde",
-      "message_id": "1a0f2ea3874d5fde",
-      "subject": "Producer / catalogue partnership — CARBON°",
-      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
-      "last_action_at": "2026-09-30T15:23:51Z",
+      "last_action_at": "2026-09-30T15:23:49Z",
+      "message_id": "1a0f2ea30b45baa0",
       "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "due_at": "2026-10-02T15:23:51.000Z",
-      "video_access_verified": false,
+      "opportunity": "production-partnership",
+      "organization": "Jukbox Productions",
+      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
+      "proof_access": {
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "public": false,
+        "recipient": "hello@jukboxproductions.com",
+        "visibility": "CONTROLLED_READER"
+      },
+      "recipient": "hello@jukboxproductions.com",
+      "state": "SUBMITTED",
+      "subject": "Vertical drama production partnership \u2014 CARBON\u00b0",
+      "thread_id": "1a0f2ea30b45baa0",
+      "title": "The Dragon Who Could Not Claim Me",
+      "video_access_verified": true,
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
+    "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me": {
+      "domain": "k29studios.com",
+      "due_at": "2026-10-02T15:23:47.000Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
           "source": "GMAIL",
-          "source_id": "1a0f2ea3874d5fde",
-          "thread_id": "1a0f2ea3874d5fde"
+          "source_id": "1a0f2ea2a952c85d",
+          "thread_id": "1a0f2ea2a952c85d"
+        },
+        {
+          "kind": "VIDEO_ACCESS_PERMISSION",
+          "public": false,
+          "recipient": "made@k29studios.com",
+          "role": "reader",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
         }
-      ]
-    },
-    "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me": {
-      "organization": "Alakai Productions",
-      "domain": "alakai-productions",
+      ],
+      "execution_owner": "PRI",
+      "internal_tracking_id": "Production 001",
+      "last_action_at": "2026-09-30T15:23:47Z",
+      "message_id": "1a0f2ea2a952c85d",
+      "next_action": "Monitor existing thread; reply in-thread on material response.",
       "opportunity": "production-collaboration",
-      "title": "The Dragon Who Could Not Claim Me",
-      "execution_owner": "PRI",
-      "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
-      "recipient": "alakaiproductionsai@gmail.com",
-      "thread_id": "1a0f2ea80749ae37",
-      "message_id": "1a0f2ea80749ae37",
-      "subject": "AI-native vertical production collaboration — CARBON°",
+      "organization": "K29 Studios",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
-      "last_action_at": "2026-09-30T15:24:10Z",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "due_at": "2026-10-02T15:24:10.000Z",
-      "video_access_verified": false,
+      "proof_access": {
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "public": false,
+        "recipient": "made@k29studios.com",
+        "visibility": "CONTROLLED_READER"
+      },
+      "recipient": "made@k29studios.com",
+      "state": "SUBMITTED",
+      "subject": "Vertical production collaboration \u2014 CARBON\u00b0",
+      "thread_id": "1a0f2ea2a952c85d",
+      "title": "The Dragon Who Could Not Claim Me",
+      "video_access_verified": true,
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
+    "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
+      "domain": "laverticaldramamarket.com",
+      "due_at": "2026-10-02T11:03:16.000Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
           "source": "GMAIL",
-          "source_id": "1a0f2ea80749ae37",
-          "thread_id": "1a0f2ea80749ae37"
+          "source_id": "1a0f1fba9e5a5efb",
+          "thread_id": "1a0f1fba9e5a5efb"
+        },
+        {
+          "kind": "VIDEO_ACCESS_PERMISSION",
+          "public": false,
+          "recipient": "info@laverticaldramamarket.com",
+          "role": "reader",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
         }
-      ]
+      ],
+      "execution_owner": "PRI",
+      "internal_tracking_id": "Production 001",
+      "last_action_at": "2026-09-30T11:03:16Z",
+      "message_id": "1a0f1fba9e5a5efb",
+      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "opportunity": "alternate-submission-route",
+      "organization": "LAVDM / VertIGo",
+      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
+      "proof_access": {
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "public": false,
+        "recipient": "info@laverticaldramamarket.com",
+        "visibility": "CONTROLLED_READER"
+      },
+      "recipient": "info@laverticaldramamarket.com",
+      "state": "SUBMITTED",
+      "subject": "VertIGo AI Vertical Drama \u2014 alternate submission route request",
+      "thread_id": "1a0f1fba9e5a5efb",
+      "title": "The Dragon Who Could Not Claim Me",
+      "video_access_verified": true,
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
     },
     "magicpictures.net|co-production|the-dragon-who-could-not-claim-me": {
-      "organization": "MagicPictures",
       "domain": "magicpictures.net",
-      "opportunity": "co-production",
-      "title": "The Dragon Who Could Not Claim Me",
-      "execution_owner": "PRI",
-      "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
-      "recipient": "hello@magicpictures.net",
-      "thread_id": "1a0f2ea89285fcc3",
-      "message_id": "1a0f2ea89285fcc3",
-      "subject": "Vertical drama co-production — CARBON°",
-      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
-      "last_action_at": "2026-09-30T15:24:12Z",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
       "due_at": "2026-10-02T15:24:12.000Z",
-      "video_access_verified": false,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
           "source": "GMAIL",
           "source_id": "1a0f2ea89285fcc3",
           "thread_id": "1a0f2ea89285fcc3"
+        },
+        {
+          "kind": "VIDEO_ACCESS_PERMISSION",
+          "public": false,
+          "recipient": "hello@magicpictures.net",
+          "role": "reader",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
         }
-      ]
-    },
-    "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me": {
-      "organization": "YUI Entertainment",
-      "domain": "yuientertainment.com",
-      "opportunity": "cross-border-production",
-      "title": "The Dragon Who Could Not Claim Me",
+      ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
-      "recipient": "yuxin@yuientertainment.com",
-      "thread_id": "1a0f2eadceb4a96f",
-      "message_id": "1a0f2eadceb4a96f",
-      "subject": "Cross-border vertical production collaboration — CARBON°",
-      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
-      "last_action_at": "2026-09-30T15:24:33Z",
+      "last_action_at": "2026-09-30T15:24:12Z",
+      "message_id": "1a0f2ea89285fcc3",
       "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "opportunity": "co-production",
+      "organization": "MagicPictures",
+      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
+      "proof_access": {
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "public": false,
+        "recipient": "hello@magicpictures.net",
+        "visibility": "CONTROLLED_READER"
+      },
+      "recipient": "hello@magicpictures.net",
+      "state": "SUBMITTED",
+      "subject": "Vertical drama co-production \u2014 CARBON\u00b0",
+      "thread_id": "1a0f2ea89285fcc3",
+      "title": "The Dragon Who Could Not Claim Me",
+      "video_access_verified": true,
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
+    "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me": {
+      "contact_history": [
+        {
+          "message_id": "1a0f25a83088e914",
+          "recipient": "partnership@microdrama.id",
+          "sent_at": "2026-09-30T12:46:53Z"
+        },
+        {
+          "duplicate_initial": true,
+          "message_id": "1a0f2ead59a283ae",
+          "recipient": "contact@microdrama.id",
+          "sent_at": "2026-09-30T15:24:31Z"
+        }
+      ],
+      "domain": "microdrama.id",
+      "due_at": "2026-10-02T12:46:53.000Z",
+      "evidence": [
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0f25a83088e914",
+          "thread_id": "1a0f25a83088e914"
+        },
+        {
+          "kind": "VIDEO_ACCESS_PERMISSION",
+          "public": false,
+          "recipient": "partnership@microdrama.id",
+          "role": "reader",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        }
+      ],
+      "execution_owner": "PRI",
+      "internal_tracking_id": "Production 001",
+      "last_action_at": "2026-09-30T12:46:53Z",
+      "message_id": "1a0f25a83088e914",
+      "next_action": "Monitor existing threads under one organization record; do not send another initial pitch.",
+      "opportunity": "catalogue-co-production",
+      "organization": "Microdrama AI",
+      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
+      "proof_access": {
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "public": false,
+        "recipient": "partnership@microdrama.id",
+        "visibility": "CONTROLLED_READER"
+      },
+      "recipient": "partnership@microdrama.id",
+      "recipients": [
+        "partnership@microdrama.id",
+        "contact@microdrama.id"
+      ],
+      "state": "SUBMITTED",
+      "subject": "Catalogue licensing / co-production enquiry \u2014 CARBON\u00b0 Production 001",
+      "thread_id": "1a0f25a83088e914",
+      "title": "The Dragon Who Could Not Claim Me",
+      "video_access_verified": true,
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
+    "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me": {
+      "contact_history": [
+        {
+          "message_id": "1a0f2e2af4f0d5cc",
+          "sent_at": "2026-09-30T15:15:37Z"
+        },
+        {
+          "duplicate_initial": true,
+          "message_id": "1a0f2ea0921932a1",
+          "sent_at": "2026-09-30T15:23:38Z"
+        }
+      ],
+      "domain": "mountainriverfilms.com",
+      "due_at": "2026-10-02T15:15:37.000Z",
+      "evidence": [
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0f2e2af4f0d5cc",
+          "thread_id": "1a0f2e2af4f0d5cc"
+        },
+        {
+          "kind": "VIDEO_ACCESS_PERMISSION",
+          "public": false,
+          "recipient": "mrf@mountainriverfilms.com",
+          "role": "reader",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        }
+      ],
+      "execution_owner": "PRI",
+      "internal_tracking_id": "Production 001",
+      "last_action_at": "2026-09-30T15:15:37Z",
+      "message_id": "1a0f2e2af4f0d5cc",
+      "next_action": "Monitor both existing threads; do not send another initial pitch.",
+      "opportunity": "co-production-distribution",
+      "organization": "Mountain River Films",
+      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
+      "proof_access": {
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "public": false,
+        "recipient": "mrf@mountainriverfilms.com",
+        "visibility": "CONTROLLED_READER"
+      },
+      "recipient": "mrf@mountainriverfilms.com",
+      "state": "SUBMITTED",
+      "subject": "Co-production / distribution \u2014 AI-native vertical fantasy series",
+      "thread_id": "1a0f2e2af4f0d5cc",
+      "title": "The Dragon Who Could Not Claim Me",
+      "video_access_verified": true,
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
+    "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me": {
+      "domain": "seastarfilm.com",
+      "due_at": "2026-10-02T15:23:44.000Z",
+      "evidence": [
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0f2ea1c5a8c36a",
+          "thread_id": "1a0f2ea1c5a8c36a"
+        },
+        {
+          "kind": "VIDEO_ACCESS_PERMISSION",
+          "public": false,
+          "recipient": "info@seastarfilm.com",
+          "role": "reader",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        }
+      ],
+      "execution_owner": "PRI",
+      "internal_tracking_id": "Production 001",
+      "last_action_at": "2026-09-30T15:23:44Z",
+      "message_id": "1a0f2ea1c5a8c36a",
+      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "opportunity": "production-licensing",
+      "organization": "Sea Star Productions",
+      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
+      "proof_access": {
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "public": false,
+        "recipient": "info@seastarfilm.com",
+        "visibility": "CONTROLLED_READER"
+      },
+      "recipient": "info@seastarfilm.com",
+      "state": "SUBMITTED",
+      "subject": "Vertical drama production & licensing partnership \u2014 CARBON\u00b0",
+      "thread_id": "1a0f2ea1c5a8c36a",
+      "title": "The Dragon Who Could Not Claim Me",
+      "video_access_verified": true,
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
+    "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me": {
+      "domain": "yuientertainment.com",
       "due_at": "2026-10-02T15:24:33.000Z",
-      "video_access_verified": false,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
           "source": "GMAIL",
           "source_id": "1a0f2eadceb4a96f",
           "thread_id": "1a0f2eadceb4a96f"
+        },
+        {
+          "kind": "VIDEO_ACCESS_PERMISSION",
+          "public": false,
+          "recipient": "yuxin@yuientertainment.com",
+          "role": "reader",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
         }
-      ]
+      ],
+      "execution_owner": "PRI",
+      "internal_tracking_id": "Production 001",
+      "last_action_at": "2026-09-30T15:24:33Z",
+      "message_id": "1a0f2eadceb4a96f",
+      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "opportunity": "cross-border-production",
+      "organization": "YUI Entertainment",
+      "package_version": "combined-master@2026-09-30T16:52:12.432Z",
+      "proof_access": {
+        "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+        "public": false,
+        "recipient": "yuxin@yuientertainment.com",
+        "visibility": "CONTROLLED_READER"
+      },
+      "recipient": "yuxin@yuientertainment.com",
+      "state": "SUBMITTED",
+      "subject": "Cross-border vertical production collaboration \u2014 CARBON\u00b0",
+      "thread_id": "1a0f2eadceb4a96f",
+      "title": "The Dragon Who Could Not Claim Me",
+      "video_access_verified": true,
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
     }
   },
   "version": 1

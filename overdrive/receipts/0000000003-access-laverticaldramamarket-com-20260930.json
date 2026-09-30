@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-09-30T17:34:59.562176+00:00",
+  "result": {
+    "adapter": "ACCESS_VERIFICATION",
+    "commercial_state": "SUBMITTED",
+    "critic": {
+      "external_acceptance": "NOT_INFERRED",
+      "privacy": "PASS_NOT_PUBLIC",
+      "recipient_match": "PASS",
+      "rights": "PASS_CONTROLLED_READER"
+    },
+    "file_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ",
+    "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
+    "recipient": "info@laverticaldramamarket.com",
+    "state_changed": false,
+    "video_access_verified": true
+  },
+  "sequence": 3,
+  "sha256": "f579e9db179e0b0c01745382d576f0bba0090f08723c2cfc4e483503b0dc4f4b",
+  "status": "COMPLETED",
+  "task_id": "access-laverticaldramamarket-com-20260930"
+}
