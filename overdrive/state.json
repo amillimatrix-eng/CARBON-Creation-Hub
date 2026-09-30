@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "last_tick": null,
+  "sequence": 0,
+  "lanes": {
+    "DISCOVERY": {
+      "state": "ACTIVE"
+    },
+    "CONVERSION": {
+      "state": "ACTIVE"
+    },
+    "PRODUCTION": {
+      "state": "ACTIVE"
+    },
+    "DISTRIBUTION": {
+      "state": "ACTIVE"
+    },
+    "TECHNICAL": {
+      "state": "ACTIVE"
+    },
+    "CRITIC": {
+      "state": "ACTIVE"
+    },
+    "EVIDENCE": {
+      "state": "ACTIVE"
+    }
+  },
+  "queue": [],
+  "receipts": []
+}
