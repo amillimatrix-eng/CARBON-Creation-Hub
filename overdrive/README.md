@@ -1,19 +1,29 @@
 # AMX OVERDRIVE
 
-Durable commercial execution control for the AMilliMATRiX capability estate.
+Commercial execution control scaffold for AMilliMATRiX.
 
-## Cadence
-- Primary heartbeat: every 60 seconds on an AMX/self-hosted runner: `python3 overdrive/runner.py tick`
-- GitHub recovery heartbeat: every 5 minutes.
-- Each tick resumes the furthest evidenced state. It does not restart completed work.
+## Verified implementation
 
-## State chain
-DISCOVERED -> QUALIFIED -> OFFERED -> RESPONDED -> NEGOTIATING -> CONTRACTED -> INVOICED -> PAID
+The current Python runner writes local readiness receipts. It does **not** invoke discovery, production, distribution, conversion or other external adapters. `READY_FOR_ADAPTER` means an adapter is still required; it is not evidence of completed work.
 
-## Manager lanes
-DISCOVERY, CONVERSION, PRODUCTION, DISTRIBUTION, TECHNICAL, CRITIC, EVIDENCE.
+The GitHub workflow compiles the runner and parses its JSON configuration/state. It is a validation workflow, not a commercial execution heartbeat. The Actions API returned zero workflow runs during inspection on 30 September 2026. This does not establish the state of a separately deployed worker.
 
-Nothing is marked complete because research/build/activity occurred. Commercial terminal state is PAID; irreducible external gates are recorded explicitly.
+The repository state has an empty queue, sequence 0 and no last tick. Lane labels alone do not prove operational workers.
+
+## Operating contract
+
+Resume each opportunity from its furthest evidenced state:
+
+DISCOVERED → QUALIFIED → OFFERED/SUBMITTED → RESPONDED → NEGOTIATING → CONTRACTED → INVOICED/RECEIVABLE → PAID
+
+Use one organization/opportunity record and one action owner. Check prior contact and provider receipts before external actions. Count failed delivery separately from sent mail. Keep internal production identifiers out of buyer-facing packaging.
+
+## Commissioning acceptance
+
+An operational worker must demonstrably claim a real task, invoke an authorized adapter, persist its artifact and return an attributable receipt visible in the existing CARBON° operating dashboard. Verify retry/recovery and prevent duplicate actions. Connect the actual production assets to the Living Exhibition Gallery and a controlled buyer viewing route.
+
+The existing House deployment is the consolidation target; recovering its capabilities does not authorize a replacement system. A scaffold, static label, receipt hash or validation run does not satisfy commissioning.
 
 ## Safety
-No secrets in repository. No bypass of OTP/CAPTCHA/KYC/provider controls. External actions require configured adapters. Dry/no-adapter ticks create auditable work receipts rather than fabricate execution.
+
+No credentials, private contact ledgers or confidential commercial terms in this public repository. Preserve provider controls, rights and existing audience restrictions. Commercial terminal state remains PAID; do not fabricate execution or revenue.
