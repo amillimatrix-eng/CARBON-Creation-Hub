@@ -492,6 +492,34 @@
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
       "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
+    "cherryone.ai|content-partner-distribution|carbon-degree-of-business": {
+      "organization": "Cherry One",
+      "domain": "cherryone.ai",
+      "opportunity": "content-partner-distribution",
+      "title": "CARBON° — Degree of Business",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-09-30T19:50:00Z",
+      "commercial_role": "DISTRIBUTOR / CONTENT PARTNER",
+      "capital_direction": "INBOUND / REVENUE_SHARE",
+      "buyer_fit": "US-based short-form drama distributor explicitly accepting content partners; advertises 15+ platform distribution, localization, revenue tracking, and zero upfront cost/revenue-share model.",
+      "evidence": [
+        {
+          "kind": "PUBLIC_OFFICIAL_COMMERCIAL_ROUTE",
+          "source": "WEB",
+          "url": "https://cherryone.ai/",
+          "observed_at": "2026-09-30T19:50:00Z",
+          "summary": "Official site states Now Accepting Content Partners; short-form drama distribution; zero upfront cost; revenue-share; localization and multi-platform distribution."
+        }
+      ],
+      "dedupe_result": "NO_EXISTING_RECORD_FOUND_IN_CURRENT_DURABLE_OPPORTUNITY_LEDGER",
+      "constraints": [
+        "Exact rights/territory/package requirements require PRI review against current CARBON° rights position before proposition."
+      ],
+      "next_action": "PRI to inspect Cherry One's official Partner With Us intake, match CARBON° evidenced capabilities/available rights to the intake, and make the outbound commercial proposition if terms remain compatible.",
+      "due_at": "2026-09-30T20:50:00Z"
     }
   },
   "version": 1
