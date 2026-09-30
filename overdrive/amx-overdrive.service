@@ -1,0 +1,13 @@
+[Unit]
+Description=AMilliMATRiX OVERDRIVE commercial execution heartbeat
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/amx/CARBON-Creation-Hub
+ExecStart=/bin/sh -lc 'while true; do python3 overdrive/runner.py tick; sleep 60; done'
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
