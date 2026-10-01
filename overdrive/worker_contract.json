@@ -1,0 +1,76 @@
+{
+  "schema": "AMX_ISCOPE_PRI_MINUTE_WORKER_CONTRACT_V1",
+  "status": "COMMISSIONED_CONTROL",
+  "cadence_seconds": 60,
+  "offices": {
+    "iSCOPE": {
+      "mandate": [
+        "discover",
+        "verify",
+        "dedupe",
+        "qualify",
+        "persist OPP-ID/evidence",
+        "handoff to PRI"
+      ],
+      "commercial_writer": "pre-handoff only"
+    },
+    "PRI": {
+      "mandate": [
+        "intake",
+        "prioritize",
+        "prepare",
+        "approach",
+        "follow up",
+        "objection handling",
+        "package/offer",
+        "negotiate",
+        "close",
+        "expand/reactivate",
+        "record next"
+      ],
+      "commercial_writer": "post-handoff only"
+    }
+  },
+  "routing": {
+    "new_opportunity": "iSCOPE",
+    "qualified": "PRI",
+    "existing_pri_thread_response": "PRI"
+  },
+  "execution": {
+    "minute_worker": "overdrive GitHub Actions sustained 55-minute loop",
+    "durable_handoff": "GitHub every 5 minutes plus push triggers",
+    "master_consolidation": "hourly",
+    "external_inputs": [
+      "Gmail/commercial inbox connector",
+      "web/business discovery surfaces",
+      "durable opportunity ledger"
+    ],
+    "external_actions": [
+      "authorized Gmail send/reply",
+      "authorized web/browser submission",
+      "durable ledger/receipt write"
+    ],
+    "decision_engine_requirement": "A reasoning-capable runtime must inspect evidence and choose/execute the next authorized action. State-only adapter processing is not sufficient."
+  },
+  "truth_controls": [
+    "EXECUTING requires a real continuing executor/heartbeat",
+    "NO RECEIPT -> NO CLOSURE",
+    "AVAILABLE != SUBMITTED != ACCEPTED != PAID",
+    "realized revenue is zero until payment evidence exists",
+    "no duplicate outreach",
+    "UNKNOWN/HOLD over inference"
+  ],
+  "acceptance": [
+    "minute cadence evidenced",
+    "real opportunity discovered/qualified by iSCOPE with receipt",
+    "real inbound response progressed by PRI with receipt",
+    "external action adapters evidenced",
+    "persistent decision runtime evidenced",
+    "handoff/master cadence evidenced"
+  ],
+  "current_evidence": {
+    "iscope_receipt": "overdrive/iscope/receipts/ISCOPE-0000000001-CHERRYONE-QUALIFIED-20260930.json",
+    "pri_receipt": "overdrive/pri/receipts/PRI-0000000001-LAVDM-RESPONSE-20260930.json",
+    "minute_workflow": ".github/workflows/overdrive-recovery.yml"
+  }
+}
