@@ -92,3 +92,12 @@ SOURCE -> IDENTITY -> PURPOSE -> CAPABILITIES -> RELATIONSHIPS -> DEPLOYMENT -> 
 
 ## Mandatory bootstrap primitive
 Every Matrix runtime must recover `CONTINUITY/matrix-required-state.json` and satisfy `CONTINUITY/validate-required-state.py` before treating its ecosystem reconstruction as complete. The required set is HOBO, JAM3S, IRIS and CARBON. This static gate is necessary but not sufficient: authoritative source recovery and the ecosystem recovery gate above still apply. A partial conversational reconstruction cannot substitute for the required set.
+
+## Matrix recovery implementation — v1 effected 2026-10-01
+Mandatory recovery implementation:
+- `CONTINUITY/AMX_MATRIX_MANIFEST_V1.json` — authoritative four-ecosystem recovery manifest with source anchors, purpose, state, relationships, deployment evidence and explicit UNKNOWN/HOLD.
+- `CONTINUITY/validate_matrix_recovery.py` — executable structural falsification gate plus optional live GitHub source recovery when a runtime supplies `GITHUB_TOKEN`.
+- `CONTINUITY/AMX_MATRIX_RECONSTRUCTION_RECEIPT_2026-10-01.json` — recovered-state/falsification receipt.
+- Independent provider custody replica: Google Drive document ID `1EuVVhctzupxFr0OpNsVqz4kPR5fkw0-MbwKwG5yEZCw`, independently read back after write.
+
+Authority invariant: a runtime may not substitute partial conversational memory for this recovery path. Explicit UNKNOWN/HOLD is a valid recovered state; invented completion is a falsification failure.
