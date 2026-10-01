@@ -96,7 +96,26 @@
       "enabled": true,
       "evidence_time": "2026-10-01T11:48:03+02:00",
       "post_restore_material_receipt": "PENDING"
-    }
+    },
+    "latest_observed_reasoning_wake": "2026-10-01T18:19:33.770050Z",
+    "scheduler_woke": true,
+    "post_wake_material_receipt": "NOT_RECOVERED",
+    "post_wake_repo_commercial_state_transition": "NOT_RECOVERED",
+    "post_wake_sent_gmail_action": "NOT_RECOVERED",
+    "observed_inventory_at_2026_10_01T17_34_27Z": {
+      "opportunities": 13,
+      "states": {
+        "DELIVERY_FAILED": 2,
+        "SUBMITTED": 9,
+        "RESPONDED": 1,
+        "QUALIFIED": 1
+      },
+      "PRI_signals": 4,
+      "iSCOPE_signals": 0,
+      "claims": 4,
+      "ready_count": 4
+    },
+    "truth": "SCHEDULER_WOKE / POST-CORRECTION MATERIAL EXECUTION NOT PROVEN"
   },
   "control_hardened_at": "2026-10-01",
   "protected_transport": {
@@ -165,6 +184,7 @@
       "payment-rail compatibility evaluated without treating a partial inventory as exhaustive",
       "no duplicate outreach, false state advancement, pay-to-work drift, or invented capability/payment"
     ],
-    "rule": "Historical Cherry One/LAVDM receipts prove prior capability only; they do not satisfy this post-correction autonomy acceptance gate."
+    "rule": "Historical Cherry One/LAVDM receipts prove prior capability only; they do not satisfy this post-correction autonomy acceptance gate.",
+    "latest_observation": "A scheduler wake occurred after the initial capability-floor correction, but no new attributable material receipt/state transition was recovered. Do not promote to EXECUTING/RELIABLY_AUTONOMOUS."
   }
 }
