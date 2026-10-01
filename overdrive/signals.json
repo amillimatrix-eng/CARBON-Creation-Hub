@@ -1,0 +1,34 @@
+{
+  "PRI": [
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
+      "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
+      "state": "DELIVERY_FAILED"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
+      "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
+      "state": "DELIVERY_FAILED"
+    },
+    {
+      "due_at": "2026-09-30T19:32:23Z",
+      "due_now": true,
+      "next_action": "Monitor existing thread for LAVDM alternate-route instructions; on material response, act in-thread immediately and persist evidence.",
+      "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
+      "state": "RESPONDED"
+    },
+    {
+      "due_at": "2026-09-30T20:50:00Z",
+      "due_now": true,
+      "next_action": "PRI to inspect Cherry One's official Partner With Us intake, match CARBON\u00b0 evidenced capabilities/available rights to the intake, and make the outbound commercial proposition if terms remain compatible.",
+      "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
+      "state": "QUALIFIED"
+    }
+  ],
+  "generated_at": "2026-10-01T09:07:10.729904+00:00",
+  "iSCOPE": []
+}
