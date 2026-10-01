@@ -34,6 +34,11 @@ Invariant: CAPABILITY FLOOR != OPPORTUNITY CATEGORY LIST.
 
 Known opportunity categories are a search floor, never ontology, pacing rule, quota or ceiling.
 
+## Capability-floor expansion recovered during deep sweep
+The governed Master Index records **ORACL3 Token Preflight v0.1.1** as BUILD COMPLETE — DEPLOYMENT-READY MATERIALIZED / EXTERNAL BINDING PENDING, with 7/7 tests PASS. The capability floor now includes this paid A2MCP/agent capability while explicitly prohibiting claims of external binding, deployment, listing, payment or current callability until those are independently evidenced.
+
+The capability floor also contains an unenumerated-utility recovery rule: a named governed AMX utility/product absent from the floor is not silently erased. iSCOPE must recover its current lifecycle/implementation/commercial evidence before inclusion or rejection. Historical/canonical naming alone is not current executable capability.
+
 ## Required autonomous discovery
 iSCOPE reasons in all three directions:
 1. CAPABILITY -> NEW APPLICATION -> POSSIBLE PAYER -> EVIDENCED DEMAND -> OPP-ID.
