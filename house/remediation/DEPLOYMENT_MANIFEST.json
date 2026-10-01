@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "target": {
     "site_app_id": "appgprj_6aabe3aac8fc819199f38d7cf4a79faf",
     "current_published_version": 2,
@@ -8,25 +8,57 @@
   "source": [
     "house/remediation/index.html",
     "house/remediation/house.css",
-    "house/remediation/house.js"
+    "house/remediation/house.js",
+    "house/remediation/config.js"
+  ],
+  "backend": {
+    "implementation": "backend/app.py + backend/store.py + backend/state.py",
+    "runtime": "Python 3.11+ / FastAPI / SQLite FTS5",
+    "provider_neutral": true,
+    "model_api_required": false,
+    "evidence_seed": "evidence/index.json",
+    "control_inputs": [
+      "overdrive/worker_contract.json",
+      "overdrive/opportunities.json",
+      "overdrive/signals.json",
+      "overdrive/claims.json",
+      "overdrive/payment_rails.json"
+    ]
+  },
+  "truth_defects_corrected": [
+    "removed hardcoded iSCOPE EXECUTING claim",
+    "removed hardcoded PRI EXECUTING claim",
+    "House operator state now comes from durable-state adapter",
+    "backend failure no longer presents fallback operational claims as live",
+    "FULL LEDGER != ROUTING SUBSET preserved",
+    "payment rail PARTIAL state preserved",
+    "PAID requires payment evidence"
   ],
   "implemented": [
-    "CARBON° / AMilliMATRiX identity",
-    "The Forge corrected label",
-    "persistent mobile navigation",
-    "Living Gallery",
-    "Records",
-    "Operator Dashboard",
-    "backend connectivity/freshness truth state",
-    "real governed evidence index consumption",
-    "BLACK deferred/not dependency"
+    "provider-neutral evidence database",
+    "evidence history/version preservation",
+    "deterministic SQLite FTS5 evidence search",
+    "authenticated fail-closed evidence write endpoints",
+    "House bootstrap/control API",
+    "opportunity state projection",
+    "mobile evidence terminal",
+    "Living Gallery evidence projection",
+    "backend CONNECTED/DEGRADED/DISCONNECTED truth surface",
+    "Docker/local runtime"
   ],
+  "repository_acceptance": {
+    "tests": "12/12 PASS in isolated local verification before commit",
+    "smoke": "PASS: health -> house bootstrap -> evidence search -> House",
+    "evidence_search_real_seed": "PASS: 2 results for workflow evidence query"
+  },
   "deployment_acceptance": [
     "publish existing Site as version >2",
+    "deploy/provider-neutral backend on authorized runtime",
+    "configure House API base or same-origin routing",
     "direct visual/function readback",
     "confirm controlled asset inspect/play route",
-    "exercise real brief→worker→artifact→Critic→gallery→PRI→external receipt path"
+    "exercise real brief→worker→artifact→Critic→gallery→PRI→external receipt path where current infrastructure permits"
   ],
-  "state": "IMPLEMENTATION_READY_DEPLOYMENT_PENDING_SITE_MUTATION_SURFACE",
-  "control": "Do not call House commissioned until existing Site is patched, published >2, and read back."
+  "state": "REPOSITORY_IMPLEMENTATION_VERIFIED / LIVE_SITE_AND_BACKEND_DEPLOYMENT_PENDING_AUTHORIZED_MUTATION_RUNTIME",
+  "control": "Do not call House commissioned until the existing Site is patched/published >2, backend is reachable, and live readback exercises real paths. Do not clone the House to manufacture closure."
 }
