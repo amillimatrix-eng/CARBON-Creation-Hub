@@ -15,6 +15,7 @@ OPPORTUNITIES = ROOT / "opportunities.json"
 LOCK = ROOT / ".tick.lock"
 RECEIPTS = ROOT / "receipts"
 SIGNALS = ROOT / "signals.json"
+CLAIMS = ROOT / "claims.json"
 RECEIPTS.mkdir(exist_ok=True)
 
 ALLOWED = {
@@ -141,6 +142,40 @@ def access_verification(task, opportunities):
 
 ADAPTERS = {"EVIDENCE_TRANSITION": evidence_transition, "ACCESS_VERIFICATION": access_verification}
 
+def claim_work(signals):
+    """Durably claim every actionable signal. Claims cannot silently disappear:
+    OPEN -> COMPLETED only by receipt, otherwise lease expiry returns them to READY.
+    """
+    now = datetime.now(timezone.utc)
+    try:
+        claims = read(CLAIMS)
+    except (FileNotFoundError, json.JSONDecodeError):
+        claims = {"version": 1, "claims": {}}
+    active = claims.setdefault("claims", {})
+    seen = set()
+    for office in ("iSCOPE", "PRI"):
+        for item in signals.get(office, []):
+            key = office + "|" + item["opportunity_key"]
+            seen.add(key)
+            prior = active.get(key, {})
+            if prior.get("status") == "COMPLETED":
+                continue
+            active[key] = {
+                **prior,
+                "office": office,
+                "opportunity_key": item["opportunity_key"],
+                "state": item.get("state"),
+                "next_action": item.get("next_action"),
+                "status": "READY",
+                "last_seen_at": now.isoformat(),
+                "attempts": int(prior.get("attempts", 0)),
+                "receipt_required": True,
+            }
+    claims["generated_at"] = now.isoformat()
+    claims["ready_count"] = sum(v.get("status") == "READY" for v in active.values())
+    write(CLAIMS, claims)
+    return claims
+
 def detect_work(opportunities):
     """Minute-level event detector/router. It does not invent external evidence.
     It makes due/changed work visible immediately to the correct governed office.
@@ -181,14 +216,16 @@ def tick():
         state = read(STATE)
         opportunities = read(OPPORTUNITIES)
         signals = detect_work(opportunities)
+        claims = claim_work(signals)
         state["last_tick"] = utcnow()
         state["last_signal_count"] = {"iSCOPE": len(signals["iSCOPE"]), "PRI": len(signals["PRI"])}
+        state["ready_claims"] = claims["ready_count"]
         pending = [task for task in state.get("queue", []) if task["status"] == "PENDING"]
         if not pending:
             state["adapter_status"] = "OPERATIONAL"
             state["last_tick_result"] = {"processed": [], "pending": 0, "signals": state["last_signal_count"]}
             write(STATE, state)
-            print(json.dumps({"status": "WATCHING", "pending": 0, "signals": state["last_signal_count"]}, sort_keys=True))
+            print(json.dumps({"status": "WATCHING", "pending": 0, "signals": state["last_signal_count"], "ready_claims": state["ready_claims"]}, sort_keys=True))
             return 0
         processed = []
         for task in state.get("queue", []):
