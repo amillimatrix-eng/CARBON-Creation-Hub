@@ -1,0 +1,129 @@
+{
+  "schema": "AMX_COMMERCIAL_AUTONOMY_DEEP_SWEEP_RECEIPT_V1",
+  "date": "2026-10-01",
+  "status": "CONTROL_HARDENED / AUTONOMOUS_EXECUTION_ACCEPTANCE_PENDING",
+  "scope": [
+    "commercial capability knowledge",
+    "iSCOPE discovery autonomy",
+    "ONE PRI conversion ownership",
+    "full-ledger versus routing-subset truth",
+    "payment-rail completeness",
+    "executor truth",
+    "provider/session/Plus continuity",
+    "Root/successor continuity",
+    "commissioning detection coverage",
+    "non-regression of completed OVERDRIVE"
+  ],
+  "evidence_snapshot": {
+    "opportunity_ledger": {
+      "count": 13,
+      "states": {
+        "DELIVERY_FAILED": 2,
+        "SUBMITTED": 9,
+        "RESPONDED": 1,
+        "QUALIFIED": 1
+      }
+    },
+    "routing": {
+      "PRI_signals": 4,
+      "iSCOPE_signals": 0,
+      "claims": 4,
+      "ready_count": 4,
+      "generated_at": "2026-10-01T17:34:27Z"
+    },
+    "routing_interpretation": "VALID CURRENT DUE/ACTIONABLE SUBSET: 9 non-routed records are SUBMITTED with next-action due times on 2026-10-02. Full-ledger recovery remains mandatory; do not force premature follow-up.",
+    "scheduler": {
+      "iSCOPE_PRI_last_observed_wake": "2026-10-01T18:19:33.770050Z",
+      "master_last_observed_wake": "2026-10-01T17:58:48.919426Z",
+      "inspector_last_observed_wake": "2026-10-01T17:44:14.325492Z"
+    },
+    "post_correction_material_commercial_receipt": "NOT_RECOVERED",
+    "post_correction_sent_gmail_action": "NOT_RECOVERED",
+    "realized_revenue": 0
+  },
+  "corrections_effected": [
+    {
+      "control": "commercial capability floor",
+      "path": "overdrive/AMX_COMMERCIAL_CAPABILITY_FLOOR_v1.md",
+      "commit": "3e453916830247021ff2ff12a5e53466ea406841",
+      "readback_sha": "58c3f1e77e16faa3c2b9fa89ca670535dd334995"
+    },
+    {
+      "control": "mandate integrity + autonomy + full-ledger + provider truth",
+      "path": "overdrive/MANDATE_INTEGRITY_CONTROL_v1.json",
+      "commit": "4231db6b9ef1401956affb8c986f8667c5e2e9cc",
+      "readback_sha": "eafce1a73920d96fe7ee1c64415e44b911a21ac4"
+    },
+    {
+      "control": "worker contract v2 + acceptance gate + current evidence",
+      "path": "overdrive/worker_contract.json",
+      "commit": "053940581f8c3c14bc4cd3d4125fde59e9d11a42",
+      "readback_sha": "3a6c4e39b1b23f7dd900342069d15caa86e65b99"
+    },
+    {
+      "control": "payment rail inventory semantics",
+      "path": "overdrive/payment_rails.json",
+      "commit": "d852d94b3797dc59612324d9a721d7ed1e898b24",
+      "readback_sha": "bc35fd1877245cc630bf030e7b10fd6dfb5c5c23",
+      "state": "PARTIAL / RECOVERY_REQUIRED; PayPal recovered; existing OKX/Agentic Wallet identity evidenced but receive address/network UNKNOWN/HOLD"
+    },
+    {
+      "control": "commercial autonomy continuity",
+      "path": "CONTINUITY/AMX_COMMERCIAL_AUTONOMY_CONTINUITY_CONTROL_v1.md",
+      "commit": "fa465ee2f8b4c8e6876c895bb3e0a3c7ad0f6a06",
+      "readback_sha": "50087d79e9f189c603a4f56ab4c08413bec778d0"
+    },
+    {
+      "control": "Root handoff continuity",
+      "path": "/AMilliMATRiX/Root Handoff/AMX_ROOT_COMMERCIAL_AUTONOMY_CONTINUITY_DELTA_2026-10-01.md",
+      "library_file_id": "libfile_5c81b2a98f448191972856fddd118ae6",
+      "exact_export_sha256": "b8b87acebc065428aa77a978f432f50cbb28c20c18ef99bfdcbd583646cc95fa"
+    },
+    {
+      "control": "iSCOPE -> PRI Execution Engine",
+      "automation_id": "6ab800f8ed888191bceee51b154a31eb",
+      "state": "ENABLED / DEFINITIVE JOB CARD HARDENED / ACCEPTANCE PENDING"
+    },
+    {
+      "control": "Master Control",
+      "automation_id": "6ab9464b394c8191914bde39a5500e84",
+      "state": "ENABLED / FULL-LEDGER + CAPABILITY + PROVIDER CONTINUITY CONTROL HARDENED"
+    },
+    {
+      "control": "Matrix Commissioning Inspector",
+      "automation_id": "6abe2c73850081918890b45f74a35bfb",
+      "state": "ENABLED / AUTONOMY + PROVIDER LOSS + INVENTORY OBSERVABILITY INSPECTION HARDENED"
+    }
+  ],
+  "preserved_non_regression": [
+    "OVERDRIVE conveyor remains COMPLETE and unchanged as protected transport",
+    "ONE PRI",
+    "iSCOPE pre-handoff / PRI post-handoff",
+    "CARBON° BUILD COMPLETE",
+    "BLACK not dependency",
+    "UNKNOWN/HOLD over inference",
+    "no one-opportunity-per-tick/minute/wake throttle",
+    "accuracy/evidence/dedupe/fit/authorization outrank speed",
+    "NO RECEIPT -> NO CLOSURE",
+    "AVAILABLE != SUBMITTED != ACCEPTED != PAID"
+  ],
+  "open_items": [
+    {
+      "id": "AUTONOMY_ACCEPTANCE",
+      "state": "OPEN",
+      "requirement": "First new attributable post-correction iSCOPE->PRI run meeting capability-floor, full-ledger, discovery-coverage, derived-discovery, PRI-action, payment-completeness, persistence and readback gates."
+    },
+    {
+      "id": "CRYPTO_RAIL_INVENTORY",
+      "state": "OPEN / RECOVERY_REQUIRED",
+      "requirement": "Recover authoritative safe receiving rail/address/network metadata where AMX already has crypto rails. Never invent addresses or expose custody secrets."
+    },
+    {
+      "id": "OWNER_VISIBLE_ROOT_FAILOVER_ALERT",
+      "state": "OPEN / PREVIOUSLY IDENTIFIED",
+      "requirement": "Owner-visible alert delivery remains unproven because current active control automations report notifications disabled and the available automation mutation surface exposes no notification-channel setting."
+    }
+  ],
+  "acceptance_rule": "Do not report commercial reasoning as EXECUTING/RELIABLY_AUTONOMOUS until a new attributable run satisfies the post-correction acceptance gate.",
+  "next_pointer": "Wait for the next normal reasoning wake; inspect receipts/state, not scheduler timestamp alone. If it again wakes without attributable work, Inspector/Master must classify failure and restore/substitute/reassign reasoning capability without Owner restatement."
+}
