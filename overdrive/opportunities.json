@@ -236,13 +236,20 @@
           "thread_id": "1a0f1fba9e5a5efb",
           "observed_at": "2026-09-30T18:00:55Z",
           "summary": "LAVDM says FilmFreeway is the only standard submission route, recommends another device/browser, and offers to help configure an alternate route if that still fails."
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0f6b6246d73281",
+          "thread_id": "1a0f1fba9e5a5efb",
+          "summary": "PRI acted on buyer response and requested the offered alternate submission route."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T18:00:55Z",
+      "last_action_at": "2026-10-01T09:00:00Z",
       "message_id": "1a0f1fba9e5a5efb",
-      "next_action": "Use the official FilmFreeway route from a different browser/device as requested by LAVDM; if it still fails, reply in the existing thread requesting the offered alternate route. Do not externalize internal tooling details.",
+      "next_action": "Monitor existing thread for LAVDM alternate-route instructions; on material response, act in-thread immediately and persist evidence.",
       "opportunity": "alternate-submission-route",
       "organization": "LAVDM / VertIGo",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
