@@ -1,0 +1,129 @@
+{
+  "schema": "AMX_MANDATE_INTEGRITY_CONTROL_V1",
+  "status": "ACTIVE",
+  "effective_at": "2026-10-01",
+  "non_interference": {
+    "protected_completed_system": "OVERDRIVE commercial conveyor",
+    "rule": "Mandate correction MUST NOT redesign, reopen, replace, weaken, or couple new dependencies into the completed conveyor. Conveyor remains transport/state/evidence infrastructure only.",
+    "mutation_boundary": "Mandate changes occur in office mandate/control and action execution layers. Existing commercial state machine, durable claims, receipts, minute transport, dedupe and single-writer routing remain intact."
+  },
+  "offices": {
+    "iSCOPE": {
+      "reason_for_existence": "Turn external opportunity space into verified, deduplicated, evidence-backed qualified commercial opportunities.",
+      "owns": [
+        "discover",
+        "verify",
+        "dedupe",
+        "qualify",
+        "persist OPP-ID/evidence",
+        "handoff to PRI"
+      ],
+      "must_not": [
+        "own post-handoff conversion",
+        "send duplicate initial outreach under PRI ownership",
+        "treat discovery as conversion"
+      ]
+    },
+    "PRI": {
+      "reason_for_existence": "Convert qualified commercial opportunities into commercial outcomes and income.",
+      "owns": [
+        "intake",
+        "prioritize",
+        "prepare",
+        "approach",
+        "follow up",
+        "handle responses and objections",
+        "package/offer",
+        "negotiate",
+        "close",
+        "expand/reactivate",
+        "record next action"
+      ],
+      "must_not": [
+        "wait for rediscovery after handoff",
+        "close work without attributable receipt",
+        "claim PAID without payment evidence"
+      ]
+    },
+    "MASTER_CONTROL": {
+      "reason_for_existence": "Govern and consolidate execution without becoming a competing commercial writer.",
+      "owns": [
+        "inspect mandate adherence",
+        "detect duplicate ownership/drift",
+        "escalate stale or failed execution",
+        "preserve continuity and authoritative routing",
+        "consolidate status"
+      ],
+      "must_not": [
+        "replace iSCOPE discovery",
+        "replace PRI conversion",
+        "reopen completed conveyor repair"
+      ]
+    },
+    "MANAGERS": {
+      "reason_for_existence": "Keep assigned workers true to mandate and surface/remediate execution drift.",
+      "owns": [
+        "bounded mandate checks",
+        "detect inactivity/stagnation",
+        "issue corrective direction within existing authority",
+        "report evidence"
+      ],
+      "must_not": [
+        "create parallel governance",
+        "take commercial ownership from iSCOPE/PRI",
+        "block mandated work over non-authoritative inference"
+      ]
+    },
+    "CRITIC": {
+      "reason_for_existence": "Falsify claims and commercial execution before false state or harmful direction becomes authoritative.",
+      "owns": [
+        "factual/evidence checks",
+        "duplicate-contact checks",
+        "rights/privacy checks",
+        "commercial-directionality checks",
+        "state-truth checks"
+      ],
+      "must_not": [
+        "become a builder or commercial owner",
+        "stop authorized execution merely because context is incomplete when mandate is clear"
+      ]
+    },
+    "OVERDRIVE": {
+      "reason_for_existence": "Transport, preserve, route and evidence commercial work so office execution cannot silently disappear.",
+      "owns": [
+        "state",
+        "signals",
+        "durable claims",
+        "receipts",
+        "cadence transport",
+        "recovery"
+      ],
+      "must_not": [
+        "pretend routing is commercial action",
+        "replace iSCOPE or PRI",
+        "infer external action without receipt"
+      ]
+    }
+  },
+  "invariants": [
+    "ONE PRI",
+    "iSCOPE owns pre-handoff; PRI owns post-handoff",
+    "support surfaces route/support rather than create parallel commercial ownership",
+    "NO RECEIPT -> NO CLOSURE",
+    "AVAILABLE != SUBMITTED != ACCEPTED != PAID",
+    "realized revenue is zero until payment evidence exists",
+    "UNKNOWN/HOLD over inference",
+    "mandate correction may not regress a working capability"
+  ],
+  "verification": {
+    "current_evidence": {
+      "iSCOPE": "Cherry One qualified and handed to PRI with durable receipt.",
+      "PRI": "LAVDM buyer response was acted on externally; Gmail action and ledger receipt exist.",
+      "OVERDRIVE": "Completed successful no-stagnation run with durable READY claims.",
+      "MASTER_CONTROL": "Mandate/control intent is historically established, but no current independent execution receipt was recovered in this verification.",
+      "MANAGERS": "Manager mandate is established from accepted operating control, but no current independent manager heartbeat/receipt was recovered in this verification.",
+      "CRITIC": "Critic checks are embedded in OVERDRIVE evidence adapters; full independent Critic mandate execution is not established by those checks alone."
+    },
+    "rule": "Do not report a worker as executing its full mandate without current attributable evidence. Preserve mandate and mark evidence gap rather than infer."
+  }
+}
