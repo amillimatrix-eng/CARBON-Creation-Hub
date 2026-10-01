@@ -29,10 +29,20 @@ Evidence-backend ownership/placement remains HOLD until recovered architecture e
 Independent Creation Hub / Degree of Business production ecosystem.
 CARBON° build remains COMPLETE. It is both evidence-producing capability and an independent commercial production business. Current CARBON° work does not supersede HOBO, JAM3S or IRIS.
 
-## JAMES / JAM3S lineage
-Real artifacts currently include BullRulez/James-Bot, BullRulez/JAM3S_BOT, JAM3S-World-main.zip and james_bot.py.
-Historical governance describes JAMES as legacy/runtime/admin naming associated with older bot/database artifacts.
-Do not silently equate, merge, rename or migrate JAMES and JAM3S. Resolve relationships from code-level and governance evidence. Until resolved: HOLD_RELATION.
+## JAM3S / JAMES Telegram runtime evidence
+Durable source evidence resolves more than the earlier HOLD stated.
+
+james_bot.py identifies itself as:
+- **JAM3S · SPECIAL AGENT 003**
+- **AmillimatriX — Referral InfluX Engine v2.0**
+- a Telegram bot runtime using python-telegram-bot, JAMES_BOT_TOKEN, SQLite and referral/task state.
+
+Its evidenced mechanics include referral attribution, task completion/confirmation, requester validation/flagging, trust score, XP/rank progression, credits/stars, dwell/rate-limit controls, milestones/rewards, admin/owner roles, Vantage group pull and persistent participant memory. This is a specific JAM3S Telegram implementation/runtime lineage, not IRIS, CARBON°, HOBO, or a generic Matrix bot.
+
+Do not reduce JAM3S to the Telegram transport: Telegram is an implementation surface of the JAM3S purpose evidenced by its own source. Likewise, do not use BullRulez/James-Bot naming to invent a separate ecosystem without evidence. Resolve remaining artifact/version lineage at code level, but the james_bot.py → JAM3S Special Agent 003 / Referral InfluX relationship is EVIDENCED.
+
+## CARBON° internal differentiation
+CARBON° is an independent ecosystem and may emanate distinct pillars/capability domains. Those pillars are not interchangeable merely because they originate within CARBON°. Preserve each recovered pillar's own purpose, capability boundary, artifacts, operating state and commercial role. Parentage does not erase internal differentiation.
 
 ## Mandatory architecture laws
 NEW CAPABILITY ADDS; IT DOES NOT ERASE.
@@ -43,6 +53,8 @@ REPOSITORY != DEPLOYMENT.
 HISTORICAL CONNECTOR FAILURE != CURRENT NONEXISTENCE.
 PAUSED/HOLD != ABANDONED.
 CURRENT WORKSTREAM != MATRIX.
+PARENT ECOSYSTEM != CHILD/PILLAR IDENTITY.
+TRANSPORT/INTERFACE != PURPOSE.
 
 ## Recovery gate
 Before any consequential claim or change to an ecosystem's identity, purpose, architecture, ownership, market proposition, capabilities or relationship:
