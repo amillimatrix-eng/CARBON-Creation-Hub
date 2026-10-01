@@ -101,3 +101,23 @@ Mandatory recovery implementation:
 - Independent provider custody replica: Google Drive document ID `1EuVVhctzupxFr0OpNsVqz4kPR5fkw0-MbwKwG5yEZCw`, independently read back after write.
 
 Authority invariant: a runtime may not substitute partial conversational memory for this recovery path. Explicit UNKNOWN/HOLD is a valid recovered state; invented completion is a falsification failure.
+
+## External reconstruction disclosure control — sealed 2026-10-01
+Default: DO NOT run external-provider Matrix reconstruction tests.
+
+Security invariants:
+- PROVIDER INDEPENDENCE != PROVIDER DISCLOSURE.
+- REPLACEABLE WORKERS != SHARED SECRETS.
+- RECOVERABILITY != PUBLIC RECONSTRUCTABILITY.
+- A provider receives only the minimum Matrix capability/evidence required for an evidenced operational objective.
+- No provider receives Matrix recovery/security internals merely to prove that provider can reconstruct the Matrix.
+- External-provider testing requires a concrete operational requirement in which the external interaction itself is necessary to the objective.
+- Demonstrator 01 is the evidenced example of that exception: disclosure served the demonstration itself.
+- Absent such a requirement, existing reconstruction receipts are sufficient evidence; additional cross-provider reconstruction testing is prohibited by default.
+
+Incident evidence classification:
+RECOVERY DEMONSTRATION 001 — PASS.
+Scope: recovery from context degradation/incomplete reconstruction under the tested conditions.
+Not claimed: universal provider portability, compromise resistance, catastrophic custody recovery, or arbitrary third-party reconstruction.
+
+This control is additive and does not expose implementation secrets beyond the governance rule itself.
