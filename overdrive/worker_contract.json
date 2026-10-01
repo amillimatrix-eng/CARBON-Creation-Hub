@@ -1,6 +1,6 @@
 {
-  "schema": "AMX_ISCOPE_PRI_MINUTE_WORKER_CONTRACT_V1",
-  "status": "CONTROL_COMMISSIONED / REASONING_EXECUTOR_RESTORED_PENDING_POST_RESTORE_RECEIPT",
+  "schema": "AMX_ISCOPE_PRI_WORKER_CONTRACT_V2",
+  "status": "CONTROL_COMMISSIONED / DEFINITIVE_JOB_CARD_DEPLOYED / PENDING_FIRST_POST_CORRECTION_ATTRIBUTABLE_EXECUTION_RECEIPT",
   "cadence_seconds": 60,
   "offices": {
     "iSCOPE": {
@@ -59,8 +59,8 @@
       "automation_id": "6ab800f8ed888191bceee51b154a31eb",
       "state": "ENABLED",
       "restored_at": "2026-10-01T11:48:03+02:00",
-      "acceptance_state": "PENDING_FIRST_POST_RESTORE_ATTRIBUTABLE_EXECUTION_RECEIPT",
-      "note": "GitHub Actions minute loop is transport/routing/claim persistence only; it is not the reasoning executor."
+      "acceptance_state": "PENDING_FIRST_POST_CORRECTION_ATTRIBUTABLE_EXECUTION_RECEIPT",
+      "note": "Automation is configured as reasoning surface. Configuration/schedule is not execution proof; acceptance requires a new attributable post-correction run receipt meeting the V2 acceptance gate."
     }
   },
   "truth_controls": [
@@ -70,7 +70,12 @@
     "realized revenue is zero until payment evidence exists",
     "no duplicate outreach",
     "UNKNOWN/HOLD over inference",
-    "READY claim != commercial action; state-only minute transport cannot satisfy persistent decision runtime acceptance"
+    "READY claim != commercial action; state-only minute transport cannot satisfy persistent decision runtime acceptance",
+    "CAPABILITY FLOOR != OPPORTUNITY CATEGORY LIST",
+    "FULL LEDGER != ROUTING SUBSET",
+    "provider/session/plan loss changes executor availability, not mandate",
+    "hourly scheduler wake != business throughput ceiling",
+    "accuracy/evidence/dedupe/fit/authorization outrank speed"
   ],
   "acceptance": [
     "minute cadence evidenced",
@@ -92,5 +97,74 @@
       "evidence_time": "2026-10-01T11:48:03+02:00",
       "post_restore_material_receipt": "PENDING"
     }
+  },
+  "control_hardened_at": "2026-10-01",
+  "protected_transport": {
+    "state": "COMPLETED / DO NOT REOPEN",
+    "rule": "Existing OVERDRIVE state/claims/receipts/dedupe/routing/minute freshness transport remains intact. Reasoning-layer fixes occur above it."
+  },
+  "authoritative_inputs": {
+    "capability_floor": "overdrive/AMX_COMMERCIAL_CAPABILITY_FLOOR_v1.md",
+    "mandate_integrity": "overdrive/MANDATE_INTEGRITY_CONTROL_v1.json",
+    "full_opportunity_ledger": "overdrive/opportunities.json",
+    "signals": "overdrive/signals.json",
+    "claims": "overdrive/claims.json",
+    "payment_rails": "overdrive/payment_rails.json",
+    "continuity": "current CONTINUITY controls",
+    "rule": "Read current durable state first. Full opportunity ledger is inventory authority; signals/claims are routing subsets and never an inventory ceiling."
+  },
+  "commercial_reasoning": {
+    "required_paths": [
+      "CAPABILITY -> NEW APPLICATION -> POSSIBLE PAYER -> EVIDENCED DEMAND -> OPP-ID",
+      "MARKET SIGNAL -> REQUIRED OUTCOME -> CAPABILITY MATCH/COMBINATION -> EVIDENCED DELIVERABLE -> OPP-ID",
+      "OBSERVED ORGANIZATION PROBLEM -> AMX SOLUTION/RESULT -> CREDIBLE BUYER -> DIRECT-SALE OPP-ID"
+    ],
+    "known_categories": "SEARCH FLOOR / NOT CEILING",
+    "owner_suggestion_semantics": "Owner input is evidence/input, not required discovery trigger or territory definition."
+  },
+  "throughput": {
+    "scheduler_wake": "hourly reasoning wake where platform scheduler is used",
+    "business_semantics": "wake/resume opportunity only; never one-opportunity-per-wake/tick/minute pacing",
+    "iSCOPE_floor": "inspect >=20 candidates across >=4 materially different categories/surfaces unless evidenced supply is smaller; attempt >=1 capability/problem-derived path; no forced qualification quota",
+    "PRI_floor": "classify full relevant ledger and materially act on >=5 executable qualified opportunities or ALL if fewer; five is floor not cap",
+    "work_conserving": true,
+    "speed_rule": "accuracy/evidence/dedupe/fit/authorization outrank racing"
+  },
+  "inventory_semantics": {
+    "ledger": "overdrive/opportunities.json",
+    "routing_subsets": [
+      "overdrive/signals.json",
+      "overdrive/claims.json"
+    ],
+    "current_observed_gap_at_hardening": "13 ledger records vs 4 routed claims/signals at 2026-10-01T17:34:27Z",
+    "rule": "Do not infer the other ledger records are closed/irrelevant merely because they are absent from current routing subsets. Reconcile due/relevant state before acting."
+  },
+  "payment_semantics": {
+    "inventory": "overdrive/payment_rails.json",
+    "completeness_may_be_partial": true,
+    "rule": "Missing rail detail triggers authoritative recovery/routing; it does not prove AMX has no compatible rail.",
+    "program_bound_wallets": "separate onboarding/payment case",
+    "secret_control": "no private keys/seed/recovery material/credentials in durable commercial state"
+  },
+  "provider_continuity": {
+    "rule": "Loss of ChatGPT session/provider/Plus access changes executor availability only. Preserve mandate, ONE PRI ownership, iSCOPE ownership, opportunities and receipts.",
+    "unavailable_executor_action": "Master Control restores/substitutes/reassigns authorized reasoning capability; do not wait for Owner restatement and do not reopen completed conveyor.",
+    "active_truth": "Enabled/scheduled/heartbeat does not prove execution.",
+    "black_dependency": false
+  },
+  "acceptance_v2": {
+    "state": "PENDING",
+    "required": [
+      "new post-correction attributable iSCOPE/PRI run",
+      "capability floor recovered in-run",
+      "full opportunities ledger classified rather than only signals/claims",
+      "iSCOPE candidate inspection/category coverage evidenced or exact exhaustion evidenced",
+      "at least one capability-derived or problem-derived discovery attempt evidenced",
+      "PRI material actions effected on executable inventory to floor or exact WAITING/HOLD/terminal reasons evidenced",
+      "consequential writes persisted and read back",
+      "payment-rail compatibility evaluated without treating a partial inventory as exhaustive",
+      "no duplicate outreach, false state advancement, pay-to-work drift, or invented capability/payment"
+    ],
+    "rule": "Historical Cherry One/LAVDM receipts prove prior capability only; they do not satisfy this post-correction autonomy acceptance gate."
   }
 }
