@@ -51,6 +51,9 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     app.state.store = store
     app.state.seed_stats = seed_stats
 
+    def house_visible(record: dict[str, Any]) -> bool:
+        return str(record.get("visibility", "HOUSE")).upper() not in {"PRIVATE", "SECRET", "INTERNAL_ONLY"}
+
     origins = [o.strip() for o in os.getenv("AMX_CORS_ORIGINS", "").split(",") if o.strip()]
     app.add_middleware(
         CORSMiddleware,
@@ -79,13 +82,13 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
 
     @app.get("/api/evidence")
     def list_evidence() -> dict[str, Any]:
-        records = store.list()
+        records = [r for r in store.list() if house_visible(r)]
         return {"records": records, "count": len(records), "state_source": "LOCAL_DB"}
 
     @app.get("/api/evidence/{evidence_id}")
     def get_evidence(evidence_id: str) -> dict[str, Any]:
         record = store.get(evidence_id)
-        if record is None:
+        if record is None or not house_visible(record):
             raise HTTPException(status_code=404, detail="evidence record not found")
         return record
 
@@ -146,7 +149,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     @app.get("/api/house/bootstrap")
     def house_bootstrap() -> dict[str, Any]:
         state = aggregate_state(root)
-        evidence = store.list()
+        evidence = [r for r in store.list() if house_visible(r)]
         gallery = [r for r in evidence if "carbon" in str(r.get("capability", "")).lower() or "production" in str(r.get("capability", "")).lower()]
         return {
             "backend": {"status": "DEGRADED" if state.get("adapter_errors") else "CONNECTED", "state_source": state["state_source"], "refreshed_at": state["refreshed_at"], "adapter_errors": state.get("adapter_errors", [])},
