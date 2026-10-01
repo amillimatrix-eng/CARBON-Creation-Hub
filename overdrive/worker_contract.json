@@ -113,7 +113,8 @@
       "PRI_signals": 4,
       "iSCOPE_signals": 0,
       "claims": 4,
-      "ready_count": 4
+      "ready_count": 4,
+      "routing_interpretation": "VALID CURRENT SUBSET: 9 non-routed records were SUBMITTED with next-action due times on 2026-10-02. Reconcile full ledger each reasoning wake without forcing premature follow-up."
     },
     "truth": "SCHEDULER_WOKE / POST-CORRECTION MATERIAL EXECUTION NOT PROVEN"
   },
@@ -155,8 +156,8 @@
       "overdrive/signals.json",
       "overdrive/claims.json"
     ],
-    "current_observed_gap_at_hardening": "13 ledger records vs 4 routed claims/signals at 2026-10-01T17:34:27Z",
-    "rule": "Do not infer the other ledger records are closed/irrelevant merely because they are absent from current routing subsets. Reconcile due/relevant state before acting."
+    "current_observed_gap_at_hardening": "13 ledger records vs 4 routed claims/signals at 2026-10-01T17:34:27Z. Direct inspection showed the remaining 9 were SUBMITTED with next-action due times on 2026-10-02; therefore 4 routed items was a valid current subset, not proven undercoverage.",
+    "rule": "Full ledger remains inventory authority; signals/claims may legitimately contain only current due/actionable items. Never infer non-routed records are closed/irrelevant, and never force not-yet-due duplicate action merely to make routing counts equal."
   },
   "payment_semantics": {
     "inventory": "overdrive/payment_rails.json",
