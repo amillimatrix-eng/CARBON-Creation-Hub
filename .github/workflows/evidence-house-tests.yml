@@ -22,3 +22,24 @@ jobs:
       - run: pip install -r requirements-dev.txt
       - run: pytest -q
       - run: python tests/smoke.py
+      - name: Build provider-neutral container
+        run: docker build -t amx-evidence-house .
+      - name: Exercise container runtime
+        run: |
+          docker run -d --name amx-evidence-house-test -p 8000:8000 amx-evidence-house
+          trap 'docker rm -f amx-evidence-house-test >/dev/null 2>&1 || true' EXIT
+          for n in $(seq 1 20); do
+            if curl -fsS http://127.0.0.1:8000/api/health > /tmp/amx-health.json; then break; fi
+            sleep 1
+          done
+          cat /tmp/amx-health.json
+          curl -fsS http://127.0.0.1:8000/api/house/bootstrap > /tmp/amx-bootstrap.json
+          python - <<'PY'
+          import json
+          h=json.load(open('/tmp/amx-health.json'))
+          b=json.load(open('/tmp/amx-bootstrap.json'))
+          assert h['status']=='CONNECTED'
+          assert b['controls']['no_false_live_state'] is True
+          assert b['controls']['model_not_matrix'] is True
+          print({'container_health':'PASS','container_bootstrap':'PASS','evidence_count':b['evidence']['count']})
+          PY
