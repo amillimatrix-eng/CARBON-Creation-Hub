@@ -14,6 +14,7 @@ STATE = ROOT / "state.json"
 OPPORTUNITIES = ROOT / "opportunities.json"
 LOCK = ROOT / ".tick.lock"
 RECEIPTS = ROOT / "receipts"
+SIGNALS = ROOT / "signals.json"
 RECEIPTS.mkdir(exist_ok=True)
 
 ALLOWED = {
@@ -140,17 +141,55 @@ def access_verification(task, opportunities):
 
 ADAPTERS = {"EVIDENCE_TRANSITION": evidence_transition, "ACCESS_VERIFICATION": access_verification}
 
+def detect_work(opportunities):
+    """Minute-level event detector/router. It does not invent external evidence.
+    It makes due/changed work visible immediately to the correct governed office.
+    """
+    now = datetime.now(timezone.utc)
+    signals = {"generated_at": now.isoformat(), "iSCOPE": [], "PRI": []}
+    for key, record in opportunities.get("records", {}).items():
+        owner = record.get("execution_owner")
+        state = record.get("state")
+        due = record.get("due_at")
+        due_now = False
+        if due:
+            try:
+                due_now = datetime.fromisoformat(due.replace("Z", "+00:00")) <= now
+            except ValueError:
+                pass
+        item = {
+            "opportunity_key": key,
+            "state": state,
+            "next_action": record.get("next_action"),
+            "due_at": due,
+            "due_now": due_now,
+        }
+        if owner == "iSCOPE" or state == "DISCOVERED":
+            signals["iSCOPE"].append(item)
+        elif owner == "PRI" and (
+            due_now or state in {"QUALIFIED", "RESPONDED", "DELIVERY_FAILED", "NEGOTIATING", "CONTRACTED", "INVOICED", "RECEIVABLE"}
+        ):
+            signals["PRI"].append(item)
+    write(SIGNALS, signals)
+    return signals
+
 def tick():
     if not claim_lock():
         print(json.dumps({"status": "HOLD", "reason": "active_tick"}))
         return 0
     try:
         state = read(STATE)
+        opportunities = read(OPPORTUNITIES)
+        signals = detect_work(opportunities)
+        state["last_tick"] = utcnow()
+        state["last_signal_count"] = {"iSCOPE": len(signals["iSCOPE"]), "PRI": len(signals["PRI"])}
         pending = [task for task in state.get("queue", []) if task["status"] == "PENDING"]
         if not pending:
-            print(json.dumps({"status": "IDLE", "pending": 0}, sort_keys=True))
+            state["adapter_status"] = "OPERATIONAL"
+            state["last_tick_result"] = {"processed": [], "pending": 0, "signals": state["last_signal_count"]}
+            write(STATE, state)
+            print(json.dumps({"status": "WATCHING", "pending": 0, "signals": state["last_signal_count"]}, sort_keys=True))
             return 0
-        opportunities = read(OPPORTUNITIES)
         processed = []
         for task in state.get("queue", []):
             if task["status"] != "PENDING":
