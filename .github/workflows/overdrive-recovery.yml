@@ -12,9 +12,6 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-concurrency:
-  group: amx-overdrive-main
-  cancel-in-progress: false
 jobs:
   worker:
     if: github.event_name != 'push' || !contains(github.event.head_commit.message, 'OVERDRIVE receipt')
@@ -31,21 +28,21 @@ jobs:
           git config user.email "amillimatrix@gmail.com"
 
           # GitHub schedule is the transport trigger (5-minute minimum).
-          # Once awake, OVERDRIVE performs five one-minute execution ticks.
+          # Once awake, OVERDRIVE keeps a bounded minute watch until the next transport wake.
           # Each tick re-syncs durable state first so new opportunities/responses
           # do not wait for the next hourly control run.
-          for tick in $(seq 1 55); do
-            echo "AMX minute tick $tick/55"
+          for tick in $(seq 1 4); do
+            echo "AMX minute tick $tick/4"
             git pull --rebase origin main
             python3 overdrive/runner.py
 
-            git add overdrive/state.json overdrive/opportunities.json overdrive/signals.json overdrive/receipts
+            git add overdrive/state.json overdrive/opportunities.json overdrive/signals.json overdrive/claims.json overdrive/receipts
             if ! git diff --cached --quiet; then
               git commit -m "OVERDRIVE receipt: minute tick $tick persist transitions"
               git push origin HEAD:main
             fi
 
-            if [ "$tick" -lt 55 ]; then
+            if [ "$tick" -lt 4 ]; then
               sleep 60
             fi
           done
@@ -58,5 +55,7 @@ jobs:
           assert state["adapter_status"]=="OPERATIONAL"
           receipts=list(Path("overdrive/receipts").glob("*.json"))
           assert receipts, "no durable receipts"
-          print("OVERDRIVE minute execution window PASS", len(receipts))
+          claims=json.load(open("overdrive/claims.json"))
+          assert "claims" in claims
+          print("OVERDRIVE minute execution window PASS", len(receipts), "claims", claims.get("ready_count",0))
           PY
