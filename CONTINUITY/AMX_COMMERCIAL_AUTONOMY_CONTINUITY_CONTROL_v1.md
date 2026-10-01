@@ -39,6 +39,9 @@ The governed Master Index records **ORACL3 Token Preflight v0.1.1** as BUILD COM
 
 The capability floor also contains an unenumerated-utility recovery rule: a named governed AMX utility/product absent from the floor is not silently erased. iSCOPE must recover its current lifecycle/implementation/commercial evidence before inclusion or rejection. Historical/canonical naming alone is not current executable capability.
 
+## Profile-evidenced professional capability input
+Current governed PRI profile evidence records a live verified LinkedIn headline of **Solutions Architect | AI Product Builder | Full-Stack Developer | AI Governance**, and records current AI/full-stack/cloud/evidence work plus 10+ years B2B commercial leadership in the public About section. The capability floor now treats this as current commercial discovery input, not as automatic proof of every specific technical implementation/result. Specific buyer-facing claims still require demonstrable evidence or UNKNOWN/HOLD.
+
 ## Required autonomous discovery
 iSCOPE reasons in all three directions:
 1. CAPABILITY -> NEW APPLICATION -> POSSIBLE PAYER -> EVIDENCED DEMAND -> OPP-ID.
