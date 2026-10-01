@@ -113,7 +113,12 @@
     "AVAILABLE != SUBMITTED != ACCEPTED != PAID",
     "realized revenue is zero until payment evidence exists",
     "UNKNOWN/HOLD over inference",
-    "mandate correction may not regress a working capability"
+    "mandate correction may not regress a working capability",
+    "CAPABILITY FLOOR != OPPORTUNITY CATEGORY LIST",
+    "FULL OPPORTUNITY LEDGER != SIGNAL/CLAIM ROUTING SUBSET",
+    "ACTIVE/ENABLED/SCHEDULER_WOKE != EXECUTING",
+    "provider/session/plan loss changes executor availability, not mandate",
+    "accuracy/evidence/dedupe/fit/authorization outrank speed"
   ],
   "verification": {
     "current_evidence": {
@@ -125,5 +130,60 @@
       "CRITIC": "Critic checks are embedded in OVERDRIVE evidence adapters; full independent Critic mandate execution is not established by those checks alone."
     },
     "rule": "Do not report a worker as executing its full mandate without current attributable evidence. Preserve mandate and mark evidence gap rather than infer."
+  },
+  "last_hardened_at": "2026-10-01",
+  "authoritative_commercial_inputs": {
+    "capability_floor": "overdrive/AMX_COMMERCIAL_CAPABILITY_FLOOR_v1.md",
+    "opportunity_ledger": "overdrive/opportunities.json",
+    "routing_signals": "overdrive/signals.json",
+    "durable_claims": "overdrive/claims.json",
+    "payment_rails": "overdrive/payment_rails.json",
+    "rule": "Recover these before commercial reasoning. Signals/claims are routing subsets; they MUST NOT be treated as the full commercial inventory."
+  },
+  "commercial_autonomy": {
+    "rule": "iSCOPE discovers from capability and demand, not only from predefined category labels or Owner suggestions.",
+    "reasoning_paths": [
+      "CAPABILITY -> NEW APPLICATION -> POSSIBLE PAYER -> EVIDENCED DEMAND -> OPP-ID",
+      "MARKET SIGNAL -> REQUIRED OUTCOME -> CAPABILITY MATCH/COMBINATION -> EVIDENCED DELIVERABLE -> OPP-ID",
+      "OBSERVED ORGANIZATION PROBLEM -> AMX SOLUTION/RESULT -> CREDIBLE BUYER -> DIRECT-SALE OPP-ID"
+    ],
+    "category_semantics": "Known opportunity categories are a search floor, never an ontology, quota, pacing rule, or ceiling.",
+    "derived_capability_gate": "Before external representation, bind the exact capability combination to evidence or an authorized synthetic/demo proof; preserve UNKNOWN/HOLD for unsupported portions."
+  },
+  "inventory_truth": {
+    "source_of_full_inventory": "overdrive/opportunities.json",
+    "routing_subset_surfaces": [
+      "overdrive/signals.json",
+      "overdrive/claims.json"
+    ],
+    "invariant": "FULL_LEDGER != ROUTING_SUBSET. A record absent from current signals/claims is not thereby inactive, closed, or outside PRI review.",
+    "required_action": "PRI classifies the full due/READY/relevant ledger, reconciles routing subsets, and persists any consequential routing correction without duplicating outreach."
+  },
+  "performance_floors": {
+    "iSCOPE": {
+      "candidates_inspected_per_reasoning_wake": 20,
+      "materially_different_categories_or_surfaces": 4,
+      "derived_discovery_attempts_minimum": 1,
+      "semantics": "minimum floor when credible supply exists, never cap; no forced qualification quota"
+    },
+    "PRI": {
+      "full_inventory_classification_each_reasoning_wake": true,
+      "material_actions_minimum": 5,
+      "semantics": "act on top 5 executable qualified opportunities or ALL if fewer; five is floor, never cap; evidenced WAITING does not park other work"
+    },
+    "speed_rule": "Accuracy, evidence, authorization, fit and dedupe outrank speed. Do not optimize for finishing first."
+  },
+  "payment_rail_truth": {
+    "rule": "Payment methods are additive and non-exhaustive. Recover authoritative rail inventory before rejecting an opportunity for payment incompatibility.",
+    "incomplete_inventory_semantics": "PARTIAL rail inventory is a recovery task, not evidence that unlisted rails do not exist.",
+    "program_bound_wallets": "Program-provided/bound wallets or accounts are a separate onboarding case and must not be rejected merely because they differ from Matrix-held rails.",
+    "secrets": "Never persist or expose private keys, seed phrases, recovery material or credentials in commercial state."
+  },
+  "executor_continuity": {
+    "rule": "MODEL/PROVIDER/SESSION/PLUS ACCESS != COMMERCIAL MANDATE. Loss of a reasoning provider changes executor availability, not iSCOPE/PRI ownership, ledger state, or objective.",
+    "active_truth": "ACTIVE/ENABLED/SCHEDULER_WOKE != EXECUTING. EXECUTING requires current attributable continuing execution evidence.",
+    "failure_response": "If the configured reasoning executor is unavailable or fails required attributable work, Master restores/substitutes/reassigns an authorized executor without reopening OVERDRIVE or creating a second PRI.",
+    "transport_truth": "GitHub Actions/OVERDRIVE transport, READY claims and heartbeat commits do not substitute for reasoning or material commercial action.",
+    "black_rule": "BLACK remains capability expansion, not a required dependency."
   }
 }
