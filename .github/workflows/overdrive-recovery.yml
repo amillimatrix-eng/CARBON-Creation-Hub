@@ -34,8 +34,8 @@ jobs:
           # Once awake, OVERDRIVE performs five one-minute execution ticks.
           # Each tick re-syncs durable state first so new opportunities/responses
           # do not wait for the next hourly control run.
-          for tick in 1 2 3 4 5; do
-            echo "AMX minute tick $tick/5"
+          for tick in $(seq 1 55); do
+            echo "AMX minute tick $tick/55"
             git pull --rebase origin main
             python3 overdrive/runner.py
 
@@ -45,7 +45,7 @@ jobs:
               git push origin HEAD:main
             fi
 
-            if [ "$tick" -lt 5 ]; then
+            if [ "$tick" -lt 55 ]; then
               sleep 60
             fi
           done
