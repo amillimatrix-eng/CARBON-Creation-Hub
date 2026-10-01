@@ -47,9 +47,14 @@
     "Docker/local runtime"
   ],
   "repository_acceptance": {
-    "tests": "12/12 PASS in isolated local verification before commit",
+    "tests": "12/12 PASS on GitHub Actions",
     "smoke": "PASS: health -> house bootstrap -> evidence search -> House",
-    "evidence_search_real_seed": "PASS: 2 results for workflow evidence query"
+    "evidence_search_real_seed": "PASS: deterministic search returned 2 results in smoke verification",
+    "docker_build": "PASS",
+    "docker_runtime": "PASS: /api/health and /api/house/bootstrap exercised inside container",
+    "github_actions_run_id": 36917054840,
+    "verified_commit": "f974328b17491d22e1afc6fe86d3261170d668fd",
+    "docker_image_sha256": "bac2fea7fefff2864749c4a3361e8647f6a523bc41a9c000b2161902665f4a4f"
   },
   "deployment_acceptance": [
     "publish existing Site as version >2",
