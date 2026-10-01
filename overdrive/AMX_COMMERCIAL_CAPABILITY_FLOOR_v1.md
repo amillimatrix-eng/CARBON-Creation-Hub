@@ -57,6 +57,12 @@ AMX may discover OKX ecosystem initiatives and comparable authorized crypto-payi
 This is not the historical/internal “bounty repo.” Program scope and authorization control all adversarial activity.
 Payment may use existing compatible Matrix rails or legitimate program-provided/bound wallets.
 
+### 12. ORACL3 Token Preflight / paid A2MCP agent capability
+Current governed Master Index evidence records ORACL3 Token Preflight v0.1.1 as BUILD COMPLETE — DEPLOYMENT-READY MATERIALIZED / EXTERNAL BINDING PENDING, with 7/7 tests PASS and a preserved package hash. AMX may discover and qualify paid agent/API/token-preflight work that matches this evidenced implementation. Do not claim it is externally bound, deployed, listed, paid or currently callable until those external bindings are independently evidenced.
+
+### 13. Unenumerated governed utility/product recovery
+This capability floor is explicit but must not silently erase governed AMX utilities, products or technical artifacts that are absent from this file. If current Matrix/Root evidence identifies another named utility/product/capability (including historical named utilities), iSCOPE must recover its current lifecycle, implementation and commercial evidence before deciding whether it can enter discovery. Absence from this file is not proof of absence of capability; historical/canonical naming is also not proof of current executable capability. Recover -> classify -> add when evidenced.
+
 ## Capability-to-market discovery duty
 iSCOPE MUST reason beyond named opportunity categories using both directions:
 1. CAPABILITY -> NEW APPLICATION -> POSSIBLE PAYER -> EVIDENCED DEMAND -> OPP-ID.
