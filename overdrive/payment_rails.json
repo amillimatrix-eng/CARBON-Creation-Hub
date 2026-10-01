@@ -1,5 +1,5 @@
 {
-  "schema": "AMX_PAYMENT_RAILS_V1",
+  "schema": "AMX_PAYMENT_RAILS_V2",
   "updated_at": "2026-10-01",
   "rails": [
     {
@@ -10,5 +10,20 @@
       "source": "OWNER_SUPPLIED_2026-10-01",
       "notes": "Commercial receiving rail. Verify payer-supported currency/region/terms per opportunity; no payment is PAID without transaction evidence."
     }
-  ]
+  ],
+  "inventory_completeness": "PARTIAL / RECOVERY_REQUIRED",
+  "inventory_rule": "This file records recovered rails; absence from this file is NOT proof that AMX lacks another receiving rail. Recover authoritative wallet/payment evidence before rejecting an opportunity for incompatibility.",
+  "known_unmaterialized_payment_evidence": [
+    {
+      "provider": "OKX / Agentic Wallet",
+      "state": "EXISTING_IDENTITY_EVIDENCED / RECEIVING_DETAILS_NOT_RECOVERED",
+      "evidence_pointer": "AMX_RIGHT_to_U100_Execution_Sheet.pdf",
+      "safe_fact": "An existing OKX.AI / Agentic Wallet identity is documented; do not create a duplicate.",
+      "receiving_address": null,
+      "network": null,
+      "usability_for_settlement": "UNKNOWN_HOLD_PENDING_AUTHORITATIVE_RECOVERY"
+    }
+  ],
+  "program_provided_wallet_rule": "A program-provided/bound wallet/account is a separate onboarding case; do not require it to match Matrix-held wallet inventory.",
+  "secret_control": "Never store private keys, seed phrases, recovery material, passwords or equivalent custody secrets here."
 }
