@@ -37,7 +37,7 @@
     "existing_pri_thread_response": "PRI"
   },
   "execution": {
-    "minute_worker": "overdrive GitHub Actions sustained 55-minute loop",
+    "minute_worker": "GitHub Actions 5-minute transport wake with four one-minute bounded ticks; no hour-long concurrency queue",
     "durable_handoff": "GitHub every 5 minutes plus push triggers",
     "master_consolidation": "hourly",
     "external_inputs": [
@@ -50,7 +50,9 @@
       "authorized web/browser submission",
       "durable ledger/receipt write"
     ],
-    "decision_engine_requirement": "A reasoning-capable runtime must inspect evidence and choose/execute the next authorized action. State-only adapter processing is not sufficient."
+    "decision_engine_requirement": "Invoke reasoning only when claimed work requires judgment; do not require gratuitous model inference on idle minute ticks.",
+    "claim_semantics": "Every actionable signal becomes a durable READY claim. A claim may close only with an attributable action/terminal receipt; otherwise it remains/reappears READY on subsequent minute ticks.",
+    "no_stagnation": "Detection/routing is not completion. READY work must remain visible until action receipt or irreducible governed gate."
   },
   "truth_controls": [
     "EXECUTING requires a real continuing executor/heartbeat",
@@ -63,14 +65,16 @@
   "acceptance": [
     "minute cadence evidenced",
     "real opportunity discovered/qualified by iSCOPE with receipt",
-    "real inbound response progressed by PRI with receipt",
-    "external action adapters evidenced",
-    "persistent decision runtime evidenced",
+    "real inbound response progressed and externally acted on by PRI with receipt",
+    "actionable work persists as a durable claim until receipt",
+    "no hour-long scheduler backlog prevents fresh pickup",
     "handoff/master cadence evidenced"
   ],
   "current_evidence": {
     "iscope_receipt": "overdrive/iscope/receipts/ISCOPE-0000000001-CHERRYONE-QUALIFIED-20260930.json",
     "pri_receipt": "overdrive/pri/receipts/PRI-0000000001-LAVDM-RESPONSE-20260930.json",
-    "minute_workflow": ".github/workflows/overdrive-recovery.yml"
+    "minute_workflow": ".github/workflows/overdrive-recovery.yml",
+    "pri_external_action_message": "1a0f6b6246d73281",
+    "pri_external_action_ledger_commit": "70ea27ae12766c08077dbc04899459526d0ee254"
   }
 }
