@@ -1,0 +1,14 @@
+{
+  "schema": "AMX_PAYMENT_RAILS_V1",
+  "updated_at": "2026-10-01",
+  "rails": [
+    {
+      "provider": "PayPal",
+      "receiving_identifier": "moolamatrix@outlook.com",
+      "status": "AVAILABLE",
+      "direction": "INBOUND_RECEIVING",
+      "source": "OWNER_SUPPLIED_2026-10-01",
+      "notes": "Commercial receiving rail. Verify payer-supported currency/region/terms per opportunity; no payment is PAID without transaction evidence."
+    }
+  ]
+}
