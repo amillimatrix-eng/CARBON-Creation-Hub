@@ -1,0 +1,29 @@
+{
+  "schema":"AMX_MATRIX_RECONSTRUCTION_RECEIPT_V1",
+  "date":"2026-10-01",
+  "basis":"Connector readback plus durable source anchors",
+  "manifest":"CONTINUITY/AMX_MATRIX_MANIFEST_V1.json",
+  "source_recovery":{
+    "HOBO":{"result":"PASS","repo":"BullRulez/AMB-HOBO-AI-","anchor":"3f59971cedf2db4b92f9cfdfe2ad426796675adf"},
+    "JAM3S":{"result":"PASS","repo":"BullRulez/JAM3S_BOT","anchor":"078576d4a86dc4c3f3ae532183b89a6dabf1e084","deployment_receipt":"a8957f5fcdfd4a58f9a226855648e9c6ce91afd7"},
+    "IRIS":{"result":"PASS_WITH_PRESERVED_GAP","repo":"BullRulez/IRIS-My-Case","anchor":"2524b03c3c257e7bc9d87835a40391b54687ee59","source_seed":"IRIS_v0_1_Package.zip","gap":"exact current editable/runtime source UNKNOWN_HOLD"},
+    "CARBON":{"result":"PASS","repo":"amillimatrix-eng/CARBON-Creation-Hub","recovery_control_anchor":"382725533849d20f2da478c002a5679b61f75d90","state":"BUILD_COMPLETE"}
+  },
+  "falsification":{
+    "all_four_ecosystems_accounted_for":"PASS",
+    "distinct_identity_preserved":"PASS",
+    "unknowns_inferred_as_facts":"PASS_NONE",
+    "hold_treated_as_abandonment":"PASS_NONE",
+    "repository_treated_as_deployment":"PASS_NONE",
+    "partial_conversation_memory_accepted_as_authority":"PASS_NONE"
+  },
+  "preserved_unknowns":[
+    "HOBO current runtime/deployment",
+    "JAM3S James-Bot/JAM3S_BOT/JAM3S-World package exact code-level lineage",
+    "IRIS exact current editable/runtime source and Evidence Backend ownership",
+    "CARBON complete authoritative child-pillar inventory"
+  ],
+  "semantic_reconstruction":"PASS_WITH_EXPLICIT_UNKNOWNS",
+  "rule":"UNKNOWN/HOLD is a valid recovered state; invention is a falsification failure.",
+  "closure_scope":"Matrix semantic recovery gate v1"
+}
