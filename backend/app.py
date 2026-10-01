@@ -29,7 +29,7 @@ class EvidencePayload(BaseModel):
     date_version: str | None = None
     role_contribution: str | None = None
     acceptance_test: str | None = None
-    durable_receipts: list[str] = []
+    durable_receipts: list[str] = Field(default_factory=list)
     durable_receipt: str | None = None
     artifact_hash: str | None = None
     source_hash: str | None = None
@@ -37,7 +37,7 @@ class EvidencePayload(BaseModel):
     interview_safe_explanation: str
     inspect_route: str | None = None
     visibility: str = "HOUSE"
-    tags: list[str] = []
+    tags: list[str] = Field(default_factory=list)
 
 
 def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> FastAPI:
@@ -98,7 +98,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
 
     @app.post("/api/evidence/search")
     def search_evidence(req: SearchRequest) -> dict[str, Any]:
-        results = store.search(req.query, req.limit)
+        results = [r for r in store.search(req.query, req.limit * 2) if house_visible(r)][:req.limit]
         return {
             "query": req.query,
             "supported": bool(results),
@@ -149,7 +149,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         evidence = store.list()
         gallery = [r for r in evidence if "carbon" in str(r.get("capability", "")).lower() or "production" in str(r.get("capability", "")).lower()]
         return {
-            "backend": {"status": "CONNECTED", "state_source": state["state_source"], "refreshed_at": state["refreshed_at"]},
+            "backend": {"status": "DEGRADED" if state.get("adapter_errors") else "CONNECTED", "state_source": state["state_source"], "refreshed_at": state["refreshed_at"], "adapter_errors": state.get("adapter_errors", [])},
             "operator": state,
             "evidence": {"count": len(evidence), "records": evidence},
             "gallery": gallery,

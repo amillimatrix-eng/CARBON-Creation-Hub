@@ -1,6 +1,11 @@
 from __future__ import annotations
 
+import base64
 import json
+import os
+import urllib.error
+import urllib.parse
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -10,11 +15,54 @@ def utcnow() -> datetime:
     return datetime.now(timezone.utc)
 
 
-def read_json(path: Path, default: Any = None) -> Any:
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except (FileNotFoundError, json.JSONDecodeError):
-        return default
+class StateReader:
+    """Optional live GitHub adapter with local durable-state fallback."""
+
+    def __init__(self, repo_root: Path):
+        self.repo_root = Path(repo_root)
+        self.github_repo = os.getenv("AMX_GITHUB_REPO", "").strip()
+        self.github_ref = os.getenv("AMX_GITHUB_REF", "main").strip() or "main"
+        self.github_token = os.getenv("AMX_GITHUB_TOKEN", "").strip()
+        self.errors: list[str] = []
+        self.used_live = False
+
+    def _github_json(self, relative: str) -> Any:
+        path = urllib.parse.quote(relative, safe="/")
+        ref = urllib.parse.quote(self.github_ref, safe="")
+        url = f"https://api.github.com/repos/{self.github_repo}/contents/{path}?ref={ref}"
+        headers = {"Accept": "application/vnd.github+json", "User-Agent": "amx-evidence-house/1.0"}
+        if self.github_token:
+            headers["Authorization"] = f"Bearer {self.github_token}"
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=10) as response:
+            body = json.loads(response.read().decode("utf-8"))
+        if body.get("encoding") != "base64" or "content" not in body:
+            raise ValueError("GitHub contents response did not contain base64 file content")
+        raw = base64.b64decode(body["content"])
+        self.used_live = True
+        return json.loads(raw.decode("utf-8"))
+
+    def read_json(self, relative: str, default: Any = None) -> Any:
+        if self.github_repo:
+            try:
+                return self._github_json(relative)
+            except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError, json.JSONDecodeError) as exc:
+                self.errors.append(f"{relative}: {type(exc).__name__}")
+        path = self.repo_root / relative
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except (FileNotFoundError, json.JSONDecodeError):
+            return default
+
+    @property
+    def source_label(self) -> str:
+        if self.github_repo and self.used_live and not self.errors:
+            return "GITHUB_LIVE"
+        if self.github_repo and self.used_live:
+            return "MIXED_GITHUB_LIVE_AND_LOCAL_FALLBACK"
+        if self.github_repo and self.errors:
+            return "LOCAL_SNAPSHOT_AFTER_GITHUB_READ_FAILURE"
+        return "LOCAL_SNAPSHOT"
 
 
 def worker_display_state(contract: dict[str, Any]) -> dict[str, Any]:
@@ -76,11 +124,12 @@ def summarize_opportunities(opps: dict[str, Any]) -> dict[str, Any]:
 
 
 def aggregate_state(repo_root: Path) -> dict[str, Any]:
-    worker = read_json(repo_root / "overdrive/worker_contract.json", {})
-    opps = read_json(repo_root / "overdrive/opportunities.json", {"records": {}})
-    signals = read_json(repo_root / "overdrive/signals.json", {})
-    claims = read_json(repo_root / "overdrive/claims.json", {})
-    rails = read_json(repo_root / "overdrive/payment_rails.json", {})
+    reader = StateReader(repo_root)
+    worker = reader.read_json("overdrive/worker_contract.json", {})
+    opps = reader.read_json("overdrive/opportunities.json", {"records": {}})
+    signals = reader.read_json("overdrive/signals.json", {})
+    claims = reader.read_json("overdrive/claims.json", {})
+    rails = reader.read_json("overdrive/payment_rails.json", {})
     opportunity_summary = summarize_opportunities(opps)
     routing_counts = {
         "PRI_signals": len(signals.get("PRI", [])) if isinstance(signals, dict) else 0,
@@ -89,7 +138,9 @@ def aggregate_state(repo_root: Path) -> dict[str, Any]:
         "ready_count": claims.get("ready_count") if isinstance(claims, dict) else None,
     }
     return {
-        "state_source": "LOCAL_SNAPSHOT",
+        "state_source": reader.source_label,
+        "source_ref": reader.github_ref if reader.github_repo else None,
+        "adapter_errors": reader.errors,
         "refreshed_at": utcnow().isoformat(),
         "worker": worker_display_state(worker),
         "opportunities": opportunity_summary,
