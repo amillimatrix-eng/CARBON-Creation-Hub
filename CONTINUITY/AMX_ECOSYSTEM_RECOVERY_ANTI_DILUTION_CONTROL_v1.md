@@ -89,3 +89,6 @@ If a worker reduces IRIS to interview tooling, treats CARBON° as the whole Matr
 
 ## Operating rule
 SOURCE -> IDENTITY -> PURPOSE -> CAPABILITIES -> RELATIONSHIPS -> DEPLOYMENT -> CURRENT STATE -> ACTION -> RECEIPT.
+
+## Mandatory bootstrap primitive
+Every Matrix runtime must recover `CONTINUITY/matrix-required-state.json` and satisfy `CONTINUITY/validate-required-state.py` before treating its ecosystem reconstruction as complete. The required set is HOBO, JAM3S, IRIS and CARBON. This static gate is necessary but not sufficient: authoritative source recovery and the ecosystem recovery gate above still apply. A partial conversational reconstruction cannot substitute for the required set.
