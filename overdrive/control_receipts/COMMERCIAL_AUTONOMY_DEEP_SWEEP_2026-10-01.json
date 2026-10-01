@@ -45,9 +45,9 @@
     {
       "control": "commercial capability floor",
       "path": "overdrive/AMX_COMMERCIAL_CAPABILITY_FLOOR_v1.md",
-      "commit": "5b9e575e0b103ad1d9b30420dbe20d49d61ff319",
-      "readback_sha": "8acd9d326eb735f5d74d4b87f942898c72d17d3b",
-      "delta": "Added evidenced ORACL3 v0.1.1 paid A2MCP capability and unenumerated governed utility/product recovery rule."
+      "commit": "856e82098a0da97fc7033e08b9ab6891528b119b",
+      "readback_sha": "5020c18ad3319e64b8be12ca1866b9746a885105",
+      "delta": "Added evidenced ORACL3 v0.1.1 paid A2MCP capability, unenumerated governed utility/product recovery rule, and current profile-evidenced Solutions Architect / AI Product Builder / Full-Stack Developer / AI Governance + B2B commercial leadership discovery input."
     },
     {
       "control": "mandate integrity + autonomy + full-ledger + provider truth",
@@ -71,8 +71,8 @@
     {
       "control": "commercial autonomy continuity",
       "path": "CONTINUITY/AMX_COMMERCIAL_AUTONOMY_CONTINUITY_CONTROL_v1.md",
-      "commit": "b508baa3e7d119f6c45c37c4bffe619989c99d7e",
-      "readback_sha": "315ac9a44b728f3132e1c3f23573d2c291a30777"
+      "commit": "791ac3e419faf3b4b4e485ea2349fb8e67b3d4f2",
+      "readback_sha": "e2c194929d9e16e30aa5b89423c7bd6163763149"
     },
     {
       "control": "Root handoff continuity",
@@ -139,6 +139,12 @@
       "state": "IMPLEMENTED",
       "evidence": "Capability floor now requires lifecycle/evidence recovery for named governed utilities/products not yet enumerated.",
       "control": "Absence from capability floor != proof of no capability; historical naming != proof of current executable capability."
+    },
+    {
+      "id": "PROFESSIONAL_CAPABILITY_INPUT",
+      "state": "RECOVERED_AND_PROPAGATED",
+      "evidence": "Governed PRI_PROFILES row: live verified LinkedIn headline Solutions Architect | AI Product Builder | Full-Stack Developer | AI Governance; About records current AI/full-stack/cloud/evidence work and 10+ years B2B commercial leadership.",
+      "control": "Use as commercial discovery input; bind specific technical/results claims to demonstrable evidence before external representation."
     }
   ]
 }
