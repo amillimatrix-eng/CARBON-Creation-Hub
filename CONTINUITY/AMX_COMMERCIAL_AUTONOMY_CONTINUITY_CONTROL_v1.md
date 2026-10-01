@@ -52,7 +52,7 @@ Invariant: FULL LEDGER != ROUTING SUBSET.
 
 Absence from signals/claims does not close, erase or disqualify a ledger record. PRI must classify the full relevant/due ledger and reconcile routing state before commercial action.
 
-At creation of this control the ledger contained 13 records: 2 DELIVERY_FAILED, 9 SUBMITTED, 1 RESPONDED and 1 QUALIFIED. Signals/claims exposed only four PRI items. That coverage mismatch is an input/routing condition to reconcile, not permission to duplicate outreach.
+At creation of this control the ledger contained 13 records: 2 DELIVERY_FAILED, 9 SUBMITTED, 1 RESPONDED and 1 QUALIFIED. Signals/claims exposed four PRI items. Direct ledger inspection established that the other 9 were SUBMITTED with next-action due times on 2026-10-02, so the four-item routing set was a valid current due/actionable subset rather than proven undercoverage. Full-ledger recovery remains mandatory so due filtering can never become an inventory ceiling; do not force premature or duplicate follow-up merely to equalize counts.
 
 ## Throughput and quality
 iSCOPE reasoning-wake floor: inspect at least 20 candidates across at least 4 materially different revenue categories/surfaces unless credible supply is demonstrably smaller; make at least one capability-derived or problem-derived discovery attempt; no forced qualification quota.
