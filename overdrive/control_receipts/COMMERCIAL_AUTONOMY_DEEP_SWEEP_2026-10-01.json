@@ -45,8 +45,9 @@
     {
       "control": "commercial capability floor",
       "path": "overdrive/AMX_COMMERCIAL_CAPABILITY_FLOOR_v1.md",
-      "commit": "3e453916830247021ff2ff12a5e53466ea406841",
-      "readback_sha": "58c3f1e77e16faa3c2b9fa89ca670535dd334995"
+      "commit": "5b9e575e0b103ad1d9b30420dbe20d49d61ff319",
+      "readback_sha": "8acd9d326eb735f5d74d4b87f942898c72d17d3b",
+      "delta": "Added evidenced ORACL3 v0.1.1 paid A2MCP capability and unenumerated governed utility/product recovery rule."
     },
     {
       "control": "mandate integrity + autonomy + full-ledger + provider truth",
@@ -70,8 +71,8 @@
     {
       "control": "commercial autonomy continuity",
       "path": "CONTINUITY/AMX_COMMERCIAL_AUTONOMY_CONTINUITY_CONTROL_v1.md",
-      "commit": "fa465ee2f8b4c8e6876c895bb3e0a3c7ad0f6a06",
-      "readback_sha": "50087d79e9f189c603a4f56ab4c08413bec778d0"
+      "commit": "b508baa3e7d119f6c45c37c4bffe619989c99d7e",
+      "readback_sha": "315ac9a44b728f3132e1c3f23573d2c291a30777"
     },
     {
       "control": "Root handoff continuity",
@@ -125,5 +126,19 @@
     }
   ],
   "acceptance_rule": "Do not report commercial reasoning as EXECUTING/RELIABLY_AUTONOMOUS until a new attributable run satisfies the post-correction acceptance gate.",
-  "next_pointer": "Wait for the next normal reasoning wake; inspect receipts/state, not scheduler timestamp alone. If it again wakes without attributable work, Inspector/Master must classify failure and restore/substitute/reassign reasoning capability without Owner restatement."
+  "next_pointer": "Wait for the next normal reasoning wake; inspect receipts/state, not scheduler timestamp alone. If it again wakes without attributable work, Inspector/Master must classify failure and restore/substitute/reassign reasoning capability without Owner restatement.",
+  "additional_findings": [
+    {
+      "id": "ORACL3_CAPABILITY_RECOVERY",
+      "state": "RECOVERED_AND_PROPAGATED",
+      "evidence": "Governed Master Index row 50: ORACL3 Token Preflight v0.1.1 BUILD COMPLETE — DEPLOYMENT-READY MATERIALIZED / EXTERNAL BINDING PENDING; 7/7 tests PASS.",
+      "control": "Capability floor expanded without promoting deployment/external binding."
+    },
+    {
+      "id": "UNENUMERATED_UTILITY_RULE",
+      "state": "IMPLEMENTED",
+      "evidence": "Capability floor now requires lifecycle/evidence recovery for named governed utilities/products not yet enumerated.",
+      "control": "Absence from capability floor != proof of no capability; historical naming != proof of current executable capability."
+    }
+  ]
 }
