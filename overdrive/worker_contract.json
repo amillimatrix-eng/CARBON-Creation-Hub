@@ -1,6 +1,6 @@
 {
   "schema": "AMX_ISCOPE_PRI_MINUTE_WORKER_CONTRACT_V1",
-  "status": "COMMISSIONED_CONTROL",
+  "status": "CONTROL_COMMISSIONED / REASONING_EXECUTOR_RESTORED_PENDING_POST_RESTORE_RECEIPT",
   "cadence_seconds": 60,
   "offices": {
     "iSCOPE": {
@@ -52,7 +52,16 @@
     ],
     "decision_engine_requirement": "Invoke reasoning only when claimed work requires judgment; do not require gratuitous model inference on idle minute ticks.",
     "claim_semantics": "Every actionable signal becomes a durable READY claim. A claim may close only with an attributable action/terminal receipt; otherwise it remains/reappears READY on subsequent minute ticks.",
-    "no_stagnation": "Detection/routing is not completion. READY work must remain visible until action receipt or irreducible governed gate."
+    "no_stagnation": "Detection/routing is not completion. READY work must remain visible until action receipt or irreducible governed gate.",
+    "decision_runtime": {
+      "surface": "ChatGPT automation",
+      "title": "iSCOPE → PRI Execution Engine",
+      "automation_id": "6ab800f8ed888191bceee51b154a31eb",
+      "state": "ENABLED",
+      "restored_at": "2026-10-01T11:48:03+02:00",
+      "acceptance_state": "PENDING_FIRST_POST_RESTORE_ATTRIBUTABLE_EXECUTION_RECEIPT",
+      "note": "GitHub Actions minute loop is transport/routing/claim persistence only; it is not the reasoning executor."
+    }
   },
   "truth_controls": [
     "EXECUTING requires a real continuing executor/heartbeat",
@@ -60,7 +69,8 @@
     "AVAILABLE != SUBMITTED != ACCEPTED != PAID",
     "realized revenue is zero until payment evidence exists",
     "no duplicate outreach",
-    "UNKNOWN/HOLD over inference"
+    "UNKNOWN/HOLD over inference",
+    "READY claim != commercial action; state-only minute transport cannot satisfy persistent decision runtime acceptance"
   ],
   "acceptance": [
     "minute cadence evidenced",
@@ -75,6 +85,12 @@
     "pri_receipt": "overdrive/pri/receipts/PRI-0000000001-LAVDM-RESPONSE-20260930.json",
     "minute_workflow": ".github/workflows/overdrive-recovery.yml",
     "pri_external_action_message": "1a0f6b6246d73281",
-    "pri_external_action_ledger_commit": "70ea27ae12766c08077dbc04899459526d0ee254"
+    "pri_external_action_ledger_commit": "70ea27ae12766c08077dbc04899459526d0ee254",
+    "reasoning_executor_restore": {
+      "automation_id": "6ab800f8ed888191bceee51b154a31eb",
+      "enabled": true,
+      "evidence_time": "2026-10-01T11:48:03+02:00",
+      "post_restore_material_receipt": "PENDING"
+    }
   }
 }
