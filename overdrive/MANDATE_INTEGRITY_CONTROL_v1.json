@@ -129,7 +129,7 @@
       "MANAGERS": "Manager mandate is established from accepted operating control, but no current independent manager heartbeat/receipt was recovered in this verification.",
       "CRITIC": "Critic checks are embedded in OVERDRIVE evidence adapters; full independent Critic mandate execution is not established by those checks alone.",
       "REASONING_EXECUTOR": "CONFIGURED/ENABLED; scheduler woke 2026-10-01T18:19:33.770050Z. Scheduler wake is not execution. No new commercial GitHub receipt/state transition and no newer sent Gmail action were recovered for that wake.",
-      "INVENTORY_COVERAGE": "At 2026-10-01T17:34:27Z, opportunities ledger held 13 records while signals/claims exposed 4 PRI items and 0 iSCOPE signals. Full-ledger reconciliation is required."
+      "INVENTORY_COVERAGE": "At 2026-10-01T17:34:27Z the ledger held 13 records and routing exposed 4 PRI items. Direct ledger inspection shows the other 9 are SUBMITTED with next-action due times on 2026-10-02, so the 4-item routing subset is not by itself a fault. Full-ledger recovery remains mandatory so due filtering can never become an inventory ceiling."
     },
     "rule": "Do not report a worker as executing its current full mandate without current attributable evidence. Historical receipts remain provenance; current post-correction autonomy requires the V2 acceptance gate."
   },
