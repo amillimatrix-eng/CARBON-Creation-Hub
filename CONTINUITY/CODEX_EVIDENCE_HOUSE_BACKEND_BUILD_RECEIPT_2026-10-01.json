@@ -1,0 +1,176 @@
+{
+  "schema": "AMX_EVIDENCE_HOUSE_BACKEND_BUILD_RECEIPT_V1",
+  "date": "2026-10-01",
+  "requested_executor": "Codex Cloud",
+  "implementation_executor_truth": "COFFEE_DIRECT_IMPLEMENTATION_AFTER_CODEX_USAGE_LIMIT",
+  "trigger_evidence": "Codex UI reported usage limit before implementation could run.",
+  "repository": "amillimatrix-eng/CARBON-Creation-Hub",
+  "branch": "main",
+  "starting_commit": "6a34925933867c989e5638a81f57690139e5a82b",
+  "commits": {
+    "implementation": "64ecbde217b054a159c172084266215bfe8297dd",
+    "live_state_and_visibility_hardening": "30d35927f986070caed46e9221f0347c63301d76",
+    "ci_import_fix": "94417b2030788e5ab4521b21448331e130185738",
+    "visibility_scope_fix": "dbc52bb1a042dd71959adbc4db4ac819f2d16325",
+    "docker_ci_verification": "f974328b17491d22e1afc6fe86d3261170d668fd",
+    "verified_manifest_update": "787cf5b437892bec8a9f7bcf41f01a36390f6207"
+  },
+  "files_created": [
+    ".env.example",
+    ".github/workflows/evidence-house-tests.yml",
+    "Dockerfile",
+    "backend/__init__.py",
+    "backend/app.py",
+    "backend/state.py",
+    "backend/store.py",
+    "backend/README.md",
+    "requirements.txt",
+    "requirements-dev.txt",
+    "house/remediation/config.js",
+    "tests/test_backend.py",
+    "tests/test_frontend_contract.py",
+    "tests/smoke.py"
+  ],
+  "files_modified": [
+    "house/remediation/index.html",
+    "house/remediation/house.css",
+    "house/remediation/house.js",
+    "house/remediation/DEPLOYMENT_MANIFEST.json"
+  ],
+  "backend_architecture": {
+    "runtime": "Python 3.11+ / FastAPI",
+    "evidence_store": "SQLite",
+    "deterministic_search": "SQLite FTS5",
+    "ai_model_runtime_dependency": false,
+    "provider_neutral": true,
+    "state_projection": "authoritative durable JSON adapters; opportunities.json full ledger; signals/claims routing subsets",
+    "optional_live_adapter": "GitHub contents API through AMX_GITHUB_REPO/REF/TOKEN; falls back honestly to LOCAL_SNAPSHOT",
+    "admin_write_control": "AMX_ADMIN_TOKEN; fail closed when absent",
+    "container": "Docker"
+  },
+  "database_schema_version": 1,
+  "evidence_seed": {
+    "source": "evidence/index.json",
+    "imported_records": 3,
+    "import_idempotent": true,
+    "version_history_preserved": true
+  },
+  "endpoints": [
+    "GET /api/health",
+    "GET /api/evidence",
+    "GET /api/evidence/{evidence_id}",
+    "GET /api/evidence/{evidence_id}/versions",
+    "POST /api/evidence/search",
+    "PUT /api/evidence/{evidence_id} [admin]",
+    "POST /api/evidence/export [admin]",
+    "GET /api/operator/state",
+    "GET /api/opportunities",
+    "GET /api/opportunities/{record_key}",
+    "GET /api/house/bootstrap",
+    "GET /house"
+  ],
+  "house_repairs": [
+    "removed hardcoded iSCOPE EXECUTING",
+    "removed hardcoded PRI EXECUTING",
+    "operator status now derived from current durable worker contract",
+    "backend failure no longer masquerades fallback values as live state",
+    "Evidence Terminal added with deterministic retrieval and explicit unsupported-query gap",
+    "Living Gallery consumes evidence metadata rather than inventing current artifact state",
+    "Records consumes evidence backend",
+    "FULL LEDGER != ROUTING SUBSET preserved",
+    "payment rail PARTIAL state preserved",
+    "realized revenue remains unproven unless PAID evidence exists",
+    "mobile-first layout retained",
+    "protected evidence visibility filtering added"
+  ],
+  "verification": {
+    "local_precommit": {
+      "pytest": "12/12 PASS",
+      "smoke": {
+        "health": "PASS",
+        "bootstrap": "PASS",
+        "evidence_search": "PASS",
+        "house": "PASS",
+        "result_count": 2
+      }
+    },
+    "github_actions_final": {
+      "run_id": 36917184178,
+      "commit": "787cf5b437892bec8a9f7bcf41f01a36390f6207",
+      "conclusion": "success",
+      "pytest": "12 passed",
+      "smoke": "PASS",
+      "docker_build": "PASS",
+      "container_health": "PASS",
+      "container_bootstrap": "PASS",
+      "evidence_count": 3
+    },
+    "prior_ci_faults_preserved": [
+      {
+        "run_id": 36916668483,
+        "reason": "CI import path missing; ModuleNotFoundError backend",
+        "disposition": "FIXED"
+      },
+      {
+        "run_id": 36916862752,
+        "reason": "house_visible helper missing after hardening edit",
+        "disposition": "FIXED"
+      }
+    ]
+  },
+  "security_checks": {
+    "committed_secrets": false,
+    "openai_api_key_required": false,
+    "admin_writes_fail_closed_without_token": true,
+    "private_secret_material_rule": "Never persist passwords/tokens/private keys/seed phrases/recovery material.",
+    "controlled_asset_permissions_changed": false
+  },
+  "existing_house": {
+    "site_app_id": "appgprj_6aabe3aac8fc819199f38d7cf4a79faf",
+    "url": "https://amx-creation-house.amillimatrix.chatgpt.site",
+    "version_before": 2,
+    "version_after": 2,
+    "live_site_patch_published": false,
+    "replacement_site_created": false,
+    "rule": "PATCH EXISTING SITE, DO NOT CLONE"
+  },
+  "deployment_state": {
+    "repository_implementation": "VERIFIED",
+    "provider_neutral_container": "VERIFIED",
+    "live_backend_hosting": "NOT_DONE",
+    "existing_chatgpt_site_patch_publish": "NOT_DONE",
+    "live_readback": "NOT_DONE",
+    "state": "REPOSITORY_IMPLEMENTATION_VERIFIED / LIVE_SITE_AND_BACKEND_DEPLOYMENT_PENDING_AUTHORIZED_MUTATION_RUNTIME"
+  },
+  "remaining_gates": [
+    "Deploy provider-neutral backend on an authorized persistent runtime.",
+    "Configure House API base or same-origin route to that backend.",
+    "Patch existing ChatGPT Site appgprj_6aabe3aac8fc819199f38d7cf4a79faf; publish version >2.",
+    "Read live House back and exercise evidence search + operator state + controlled inspect route.",
+    "Exercise broader brief→worker→artifact→Critic/evidence→gallery→PRI→external receipt path where current infrastructure permits."
+  ],
+  "known_limitations": [
+    "SQLite database requires persistent volume/runtime for durable production writes.",
+    "GitHub live adapter is read-only and optional; absence/failure degrades honestly to local snapshot.",
+    "Current evidence seed is only three records; backend is now capable of growing the evidence estate but does not fabricate missing records.",
+    "No authorized ChatGPT Sites mutation tool was available in this execution surface."
+  ],
+  "definition_of_done_result": {
+    "repository_backend": "DONE_VERIFIED",
+    "house_repository_repair": "DONE_VERIFIED",
+    "provider_neutral_runtime_artifact": "DONE_VERIFIED",
+    "live_backend_deployment": "OPEN",
+    "existing_house_live_publish": "OPEN",
+    "overall": "PARTIAL / REPOSITORY IMPLEMENTATION VERIFIED / LIVE DEPLOYMENT NOT DONE"
+  },
+  "controls": [
+    "MODEL != MATRIX",
+    "PROVIDER != MANDATE",
+    "ACTIVE != EXECUTING",
+    "ENABLED != EXECUTING",
+    "SCHEDULER_WOKE != EXECUTING",
+    "FULL LEDGER != ROUTING SUBSET",
+    "UNKNOWN/HOLD over inference",
+    "NO RECEIPT -> NO CLOSURE"
+  ]
+}
