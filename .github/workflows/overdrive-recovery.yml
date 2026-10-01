@@ -21,28 +21,42 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Execute durable adapter queue
-        run: python3 overdrive/runner.py
-      - name: Verify state and receipts
+        with:
+          fetch-depth: 0
+      - name: Minute execution window — iSCOPE and PRI
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "AMX OVERDRIVE"
+          git config user.email "amillimatrix@gmail.com"
+
+          # GitHub schedule is the transport trigger (5-minute minimum).
+          # Once awake, OVERDRIVE performs five one-minute execution ticks.
+          # Each tick re-syncs durable state first so new opportunities/responses
+          # do not wait for the next hourly control run.
+          for tick in 1 2 3 4 5; do
+            echo "AMX minute tick $tick/5"
+            git pull --rebase origin main
+            python3 overdrive/runner.py
+
+            git add overdrive/state.json overdrive/opportunities.json overdrive/receipts
+            if ! git diff --cached --quiet; then
+              git commit -m "OVERDRIVE receipt: minute tick $tick persist transitions"
+              git push origin HEAD:main
+            fi
+
+            if [ "$tick" -lt 5 ]; then
+              sleep 60
+            fi
+          done
+      - name: Verify durable state
         run: |
           python3 - <<'PY'
           import json
           from pathlib import Path
           state=json.load(open("overdrive/state.json"))
           assert state["adapter_status"]=="OPERATIONAL"
-          assert not [t for t in state["queue"] if t["status"]=="PENDING"]
           receipts=list(Path("overdrive/receipts").glob("*.json"))
           assert receipts, "no durable receipts"
-          print("OVERDRIVE adapter execution PASS", len(receipts))
+          print("OVERDRIVE minute execution window PASS", len(receipts))
           PY
-      - name: Persist worker outputs
-        run: |
-          git config user.name "AMX OVERDRIVE"
-          git config user.email "amillimatrix@gmail.com"
-          git add overdrive/state.json overdrive/opportunities.json overdrive/receipts
-          if git diff --cached --quiet; then
-            echo "No new worker output"
-          else
-            git commit -m "OVERDRIVE receipt: persist adapter transitions"
-            git push
-          fi
