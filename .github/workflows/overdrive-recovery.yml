@@ -39,7 +39,7 @@ jobs:
             git pull --rebase origin main
             python3 overdrive/runner.py
 
-            git add overdrive/state.json overdrive/opportunities.json overdrive/receipts
+            git add overdrive/state.json overdrive/opportunities.json overdrive/signals.json overdrive/receipts
             if ! git diff --cached --quiet; then
               git commit -m "OVERDRIVE receipt: minute tick $tick persist transitions"
               git push origin HEAD:main
