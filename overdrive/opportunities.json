@@ -115,19 +115,34 @@
           "source": "GMAIL",
           "source_id": "1a0f2de424fa692f",
           "thread_id": "1a0f2de385883f66"
+        },
+        {
+          "kind": "OFFICIAL_CREATOR_FORM_SUBMISSION",
+          "source": "INKWAVE_OFFICIAL_SITE / TINYFISH",
+          "source_url": "https://inkwavestudios.uk/",
+          "run_id": "1f852281-e5f5-46d8-b17c-02e3d3dbce32",
+          "observed_at": "2026-10-02T15:20:00Z",
+          "confirmation": "Application received",
+          "summary": "PRI used the official Drama Creator Program form after the prior info@inkwavestudios.uk route bounced. One application was submitted at human cadence with accurate project state; no duplicate and no claim that the full series is rendered."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T15:10:46Z",
-      "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
+      "last_action_at": "2026-10-02T15:20:00Z",
+      "next_action": "Monitor the existing Inkwave Drama Creator Program application for response. If they request samples or next steps, provide only controlled evidence and preserve exact terms. Do not submit a duplicate application.",
       "opportunity": "production-partnership",
       "organization": "Inkwave Studios",
       "package_version": "unknown",
       "recipient": "info@inkwavestudios.uk",
-      "state": "DELIVERY_FAILED",
+      "state": "SUBMITTED",
       "thread_id": "1a0f2de385883f66",
-      "title": "The Dragon Who Could Not Claim Me"
+      "title": "The Dragon Who Could Not Claim Me",
+      "due_at": "2026-10-04T15:20:00Z",
+      "constraints": [
+        "Do not duplicate-submit the Drama Creator Program form.",
+        "Do not represent developed/planned episodes as completed rendered series.",
+        "Controlled viewing sample remains available only on request through an authorized access route."
+      ]
     },
     "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "jukboxproductions.com",
