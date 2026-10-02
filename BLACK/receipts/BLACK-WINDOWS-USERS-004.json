@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-WINDOWS-USERS-004",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-02T13:22:45.169920+00:00",
+  "finished": "2026-10-02T13:22:45.476158+00:00",
+  "stdout": "All Users\nDefault\nDefault User\nPublic\ndefaultuser100000\ndesktop.ini\neztra\n",
+  "stderr": ""
+}
