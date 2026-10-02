@@ -1,0 +1,35 @@
+{
+  "schema": "AMX.BLACK.CAPABILITY_TRANSITION.v1",
+  "date": "2026-10-02",
+  "authority": "Owner-confirmed / Matrix-observed",
+  "state": "PRE_REBOOT_ACCEPTED__POST_REBOOT_PENDING",
+  "facts": {
+    "transport": "Matrix -> GitHub durable job queue -> BLACK -> execution -> durable receipt -> Matrix readback",
+    "commission_001": {
+      "state": "RESOLVED",
+      "exit_code": 0,
+      "host": "Black",
+      "proof": "BLACK-COMMISSION-001"
+    },
+    "system_service": {
+      "reported_by_owner": "enabled + active",
+      "unit": "amx-black.service",
+      "runs_as": "amx"
+    },
+    "pre_reboot_service_test": {
+      "state": "RESOLVED",
+      "exit_code": 0,
+      "proof": "BLACK-SERVICE-COMMISSION-001",
+      "service_test": "PRE_REBOOT_EXECUTED"
+    }
+  },
+  "governance": {
+    "classification": "execution capability; not authority layer",
+    "matrix_control": "PROVEN",
+    "reboot_persistence": "PENDING POST-REBOOT RECEIPT",
+    "no_human_relay_goal": "BLACK receives eligible governed jobs directly and returns durable evidence",
+    "commercial_use": "route authorized machine-executable work from Matrix commercial machinery to BLACK",
+    "root_attention": "ROOT must treat BLACK as live Matrix execution capability and include it in commissioning/inventory/observability; do not claim reboot persistence until post-reboot round trip passes",
+    "primary_acceptance_gate": "post-correction attributable iSCOPE -> PRI commercial autonomy remains outstanding; BLACK is enabling execution infrastructure, not a substitute for that gate"
+  }
+}
