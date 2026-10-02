@@ -1,6 +1,6 @@
 {
   "schema": "AMX_ISCOPE_PRI_WORKER_CONTRACT_V2",
-  "status": "CONTROL_COMMISSIONED / DEFINITIVE_JOB_CARD_DEPLOYED / PENDING_FIRST_POST_CORRECTION_ATTRIBUTABLE_EXECUTION_RECEIPT",
+  "status": "CONTROL_COMMISSIONED / POST_CORRECTION_EXECUTION_CYCLE_PROVEN / SCHEDULED_RUNTIME_RELIABILITY_PENDING",
   "cadence_seconds": 60,
   "offices": {
     "iSCOPE": {
@@ -59,7 +59,7 @@
       "automation_id": "6ab800f8ed888191bceee51b154a31eb",
       "state": "ENABLED",
       "restored_at": "2026-10-01T11:48:03+02:00",
-      "acceptance_state": "PENDING_FIRST_POST_CORRECTION_ATTRIBUTABLE_EXECUTION_RECEIPT",
+      "acceptance_state": "POST_CORRECTION_SUBSTITUTE_EXECUTION_PROVEN / SCHEDULED_SELF_EXECUTION_PENDING",
       "note": "Automation is configured as reasoning surface. Configuration/schedule is not execution proof; acceptance requires a new attributable post-correction run receipt meeting the V2 acceptance gate."
     }
   },
@@ -97,11 +97,11 @@
       "evidence_time": "2026-10-01T11:48:03+02:00",
       "post_restore_material_receipt": "PENDING"
     },
-    "latest_observed_reasoning_wake": "2026-10-01T18:19:33.770050Z",
+    "latest_observed_reasoning_wake": "2026-10-02T11:12:30.258828Z",
     "scheduler_woke": true,
-    "post_wake_material_receipt": "NOT_RECOVERED",
-    "post_wake_repo_commercial_state_transition": "NOT_RECOVERED",
-    "post_wake_sent_gmail_action": "NOT_RECOVERED",
+    "post_wake_material_receipt": "SUBSTITUTE_EXECUTION_RECEIPTS_RECOVERED",
+    "post_wake_repo_commercial_state_transition": "PROVEN",
+    "post_wake_sent_gmail_action": "1a0fc58012594488",
     "observed_inventory_at_2026_10_01T17_34_27Z": {
       "opportunities": 13,
       "states": {
@@ -116,7 +116,13 @@
       "ready_count": 4,
       "routing_interpretation": "VALID CURRENT SUBSET: 9 non-routed records were SUBMITTED with next-action due times on 2026-10-02. Reconcile full ledger each reasoning wake without forcing premature follow-up."
     },
-    "truth": "SCHEDULER_WOKE / POST-CORRECTION MATERIAL EXECUTION NOT PROVEN"
+    "truth": "POST_CORRECTION ATTRIBUTABLE COMMERCIAL EXECUTION CYCLE PROVEN / SCHEDULED AUTOMATION SELF-EXECUTION RELIABILITY STILL NOT PROVEN",
+    "post_correction_iscope_receipt": "overdrive/iscope/receipts/ISCOPE-POST-CORRECTION-20261002-112020Z.json",
+    "post_correction_pri_receipt": "overdrive/pri/receipts/PRI-POST-CORRECTION-20261002-112020Z.json",
+    "post_correction_external_action_message": "1a0fc58012594488",
+    "post_correction_external_action_thread": "1a0fc58012594488",
+    "post_correction_cycle_executor": "CURRENT_MATRIX_REASONING_SESSION_AS_AUTHORIZED_SUBSTITUTE",
+    "post_correction_cycle_at": "2026-10-02T11:20:20Z"
   },
   "control_hardened_at": "2026-10-01",
   "protected_transport": {
@@ -173,7 +179,7 @@
     "black_dependency": false
   },
   "acceptance_v2": {
-    "state": "PENDING",
+    "state": "PASS_ATTRIBUTABLE_SUBSTITUTE_EXECUTION / SCHEDULED_RUNTIME_RELIABILITY_PENDING",
     "required": [
       "new post-correction attributable iSCOPE/PRI run",
       "capability floor recovered in-run",
@@ -186,6 +192,6 @@
       "no duplicate outreach, false state advancement, pay-to-work drift, or invented capability/payment"
     ],
     "rule": "Historical Cherry One/LAVDM receipts prove prior capability only; they do not satisfy this post-correction autonomy acceptance gate.",
-    "latest_observation": "A scheduler wake occurred after the initial capability-floor correction, but no new attributable material receipt/state transition was recovered. Do not promote to EXECUTING/RELIABLY_AUTONOMOUS."
+    "latest_observation": "New post-correction attributable cycle recovered capability floor and full ledger, inspected 24 candidates across four materially distinct categories, attempted capability/problem-derived discovery, persisted five new qualified handoffs, classified the full inventory, executed the only currently executable qualified action via Cherry One's official route, recorded exact HOLD/WAIT reasons for the rest, respected partial payment-rail semantics, and produced durable readback. The 11:12 scheduler wake itself did not independently produce this receipt, so scheduled-runtime reliability remains pending."
   }
 }
