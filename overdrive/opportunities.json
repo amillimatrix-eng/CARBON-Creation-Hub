@@ -548,7 +548,7 @@
       "domain": "freelancer.ypai.ai",
       "opportunity": "qa-reviewer-adjudicator",
       "title": "QA Reviewer / Adjudicator — South Africa",
-      "state": "QUALIFIED",
+      "state": "SUBMITTED",
       "execution_owner": "PRI",
       "discovered_by": "iSCOPE",
       "qualified_at": "2026-10-02T11:20:20Z",
@@ -564,13 +564,34 @@
           "url": "https://freelancer.ypai.ai/jobs/openings/qa-reviewer-za",
           "observed_at": "2026-10-02T11:20:20Z",
           "summary": "Applications open; remote South Africa; freelance; no fees; PayPal/Wise/bank."
+        },
+        {
+          "kind": "APPLICATION_FORM_TECHNICAL_FAILURE",
+          "source": "YPAI_PUBLIC_FORM",
+          "source_url": "https://freelancer.ypai.ai/jobs/openings/qa-reviewer-za",
+          "observed_at": "2026-10-02T13:45:00Z",
+          "summary": "Official form was completed with consent but repeatedly returned a server-side processing error; no application reference was generated."
+        },
+        {
+          "kind": "OFFICIAL_CONTACT_ALT_ROUTE_SUBMISSION",
+          "source": "GMAIL",
+          "source_url": "https://ypai.ai/contact-us/",
+          "recipient": "contact@ypai.ai",
+          "gmail_message_id": "1a0fcfea76c7355d",
+          "thread_id": "1a0fcfea76c7355d",
+          "sent_at": "2026-10-02T14:00:00Z",
+          "summary": "PRI sent the candidate details, relevant fit and explicit application/profile consent to YPAI's official contact address, asking YPAI to accept the application or provide the correct alternate route."
         }
       ],
       "constraints": [
         "Application requires personal data-processing consent and creates a YPAI Freelance profile; do not silently consent on Owner's behalf."
       ],
-      "next_action": "PRI application is ready at the official YPAI form; Owner consent is required for the form's data-processing/profile-creation checkbox.",
-      "due_at": null
+      "next_action": "Monitor the official YPAI contact thread. The public application form failed repeatedly server-side; alternate official contact asked YPAI to accept the application or provide the correct submission route. Do not duplicate-submit unless YPAI instructs.",
+      "due_at": null,
+      "last_action_at": "2026-10-02T14:00:00Z",
+      "recipient": "contact@ypai.ai",
+      "thread_id": "1a0fcfea76c7355d",
+      "message_id": "1a0fcfea76c7355d"
     },
     "opentrain.ai|python-backend-ai-agent-developer|2026-10-01": {
       "organization": "OpenTrain AI",
