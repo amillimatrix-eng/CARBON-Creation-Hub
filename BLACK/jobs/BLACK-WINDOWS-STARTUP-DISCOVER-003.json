@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-WINDOWS-STARTUP-DISCOVER-003",
+  "issued_by": "Matrix",
+  "purpose": "Discover writable Windows per-user Startup folders directly through /mnt/c without invoking Windows interop.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -e\necho '===USERS==='\nfind /mnt/c/Users -maxdepth 1 -mindepth 1 -type d -printf '%f\\n' 2>/dev/null | sort\necho '===STARTUP_FOLDERS==='\nfind /mnt/c/Users -type d -path '*/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup' -print 2>/dev/null | head -20\necho '===WRITABLE==='\nwhile IFS= read -r p; do [ -w \"$p\" ] && echo \"WRITABLE:$p\" || echo \"READONLY:$p\"; done < <(find /mnt/c/Users -type d -path '*/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup' -print 2>/dev/null | head -20)"
+  ],
+  "timeout": 120
+}
