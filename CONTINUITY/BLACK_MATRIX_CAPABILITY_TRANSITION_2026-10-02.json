@@ -2,7 +2,7 @@
   "schema": "AMX.BLACK.CAPABILITY_TRANSITION.v1",
   "date": "2026-10-02",
   "authority": "Owner-confirmed / Matrix-observed",
-  "state": "PRE_REBOOT_ACCEPTED__POST_REBOOT_PENDING",
+  "state": "POST_REBOOT_EXECUTION_PROVEN__BLACK_RUNTIME_REPAIRED__WINDOWS_STARTUP_INSTALLED__NEXT_NO_TOUCH_LOGIN_ACCEPTANCE_PENDING",
   "facts": {
     "transport": "Matrix -> GitHub durable job queue -> BLACK -> execution -> durable receipt -> Matrix readback",
     "commission_001": {
@@ -21,15 +21,69 @@
       "exit_code": 0,
       "proof": "BLACK-SERVICE-COMMISSION-001",
       "service_test": "PRE_REBOOT_EXECUTED"
-    }
+    },
+    "post_reboot_execution": {
+      "state": "RESOLVED",
+      "exit_code": 0,
+      "proof": "BLACK/receipts/BLACK-POST-REBOOT-001.json",
+      "result": "BLACK executed and returned durable receipt after reboot. Prior metrics that still showed POST_REBOOT_AUTOWAKE_NOT_PROVEN were stale."
+    },
+    "current_system_service": {
+      "unit": "amx-black.service",
+      "scope": "SYSTEM",
+      "enabled": true,
+      "active": true,
+      "user": "amx",
+      "main_pid": 319,
+      "single_instance_verified": true,
+      "proof": "BLACK/receipts/BLACK-FINAL-VERIFY-008.json"
+    },
+    "user_session_repair": {
+      "prior_fault": "WSL reported failed systemd user session for amx; /run/user/1000 absent and user@1000.service inactive.",
+      "repair": "Enabled lingering for amx; user manager/runtime directory materialized without requiring Owner command entry.",
+      "result": "Linger=yes; RuntimePath=/run/user/1000; user@1000.service active at final verification.",
+      "proof": [
+        "BLACK/receipts/BLACK-USER-SESSION-DIAG-006.json",
+        "BLACK/receipts/BLACK-FINAL-REPAIR-007.json",
+        "BLACK/receipts/BLACK-FINAL-VERIFY-008.json"
+      ]
+    },
+    "duplicate_prevention": {
+      "action": "Retired obsolete user-level amx-black.service file and verified its default.target wants link absent.",
+      "result": "Exactly one /home/amx/amx-black/BLACK/worker.py process at final verification.",
+      "proof": "BLACK/receipts/BLACK-FINAL-VERIFY-008.json"
+    },
+    "windows_startup": {
+      "launcher": "C:\\Users\\eztra\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\AMX-BLACK-WSL.cmd",
+      "contents": "@echo off | start \"\" /min %SystemRoot%\\System32\\wsl.exe --exec /bin/true | exit /b 0",
+      "installed": true,
+      "proof": [
+        "BLACK/receipts/BLACK-WINDOWS-STARTUP-CHECK-005.json",
+        "BLACK/receipts/BLACK-FINAL-REPAIR-007.json",
+        "BLACK/receipts/BLACK-FINAL-VERIFY-008.json"
+      ],
+      "acceptance": "Launcher presence/readback verified. Automatic execution by a future Windows sign-in has not yet been independently observed after installation."
+    },
+    "failed_routes": [
+      {
+        "route": "powershell.exe from BLACK system service PATH",
+        "result": "exit 127 / command not found",
+        "receipt": "BLACK/receipts/BLACK-WINDOWS-AUTOSTART-001.json"
+      },
+      {
+        "route": "absolute Windows PowerShell interop from BLACK system service",
+        "result": "timed out after 120 seconds",
+        "receipt": "BLACK/receipts/BLACK-WINDOWS-INTEROP-002.json"
+      }
+    ]
   },
   "governance": {
     "classification": "execution capability; not authority layer",
     "matrix_control": "PROVEN",
-    "reboot_persistence": "PENDING POST-REBOOT RECEIPT",
+    "reboot_persistence": "POST_REBOOT_BLACK_EXECUTION_PROVEN; WINDOWS_LOGIN_AUTO-LAUNCH MECHANISM INSTALLED; NEXT NO-TOUCH WINDOWS LOGIN/REBOOT IS ACCEPTANCE ONLY",
     "no_human_relay_goal": "BLACK receives eligible governed jobs directly and returns durable evidence",
     "commercial_use": "route authorized machine-executable work from Matrix commercial machinery to BLACK",
-    "root_attention": "ROOT must treat BLACK as live Matrix execution capability and include it in commissioning/inventory/observability; do not claim reboot persistence until post-reboot round trip passes",
+    "root_attention": "Update all truth/metrics surfaces to recognize BLACK-POST-REBOOT-001 and final repair receipts. Do not ask Owner to reinstall or manually start BLACK. On the next natural Windows login/reboot, require a fresh autonomous BLACK receipt to close the remaining startup acceptance observation.",
     "primary_acceptance_gate": "post-correction attributable iSCOPE -> PRI commercial autonomy remains outstanding; BLACK is enabling execution infrastructure, not a substitute for that gate"
   }
 }
