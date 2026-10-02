@@ -1,2 +1,3 @@
-// Override before house.js loads when the API is hosted separately.
-window.AMX_API_BASE = window.AMX_API_BASE || '';
+// Existing CARBON° House live backend configuration.
+// Do not treat any fallback as live state; house.js exposes backend connectivity explicitly.
+window.AMX_API_BASE = "https://amx-evidence-house.onrender.com";
