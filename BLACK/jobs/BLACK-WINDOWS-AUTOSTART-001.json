@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-WINDOWS-AUTOSTART-001",
+  "issued_by": "Matrix",
+  "purpose": "Install per-user Windows Startup launcher so WSL starts automatically at Windows sign-in; preserve amx-black.service as Linux supervisor.",
+  "command": [
+    "bash",
+    "-lc",
+    "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"$(wslpath -w /home/amx/amx-black/BLACK/install-windows-autostart.ps1)\""
+  ],
+  "timeout": 120
+}
