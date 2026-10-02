@@ -1,0 +1,9 @@
+{
+  "purpose": "Bring BLACK to official OKX Onchain OS prerequisite state by installing Node.js >=18 if absent, then install and verify Onchain OS. Do not create/login wallet, move funds, or expose credentials.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail; echo '===OS==='; . /etc/os-release; echo \"$PRETTY_NAME\"; echo '===SUDO==='; if sudo -n true 2>/dev/null; then echo SUDO_NONINTERACTIVE_OK; else echo SUDO_NONINTERACTIVE_FAIL; exit 42; fi; if command -v node >/dev/null 2>&1; then echo 'NODE_PRESENT'; node -v; else echo 'INSTALL_NODE_APT'; sudo -n apt-get update; sudo -n DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs npm; fi; echo '===NODE_FINAL==='; node -v; npm -v; major=$(node -p \"parseInt(process.versions.node.split('.')[0])\"); if [ \"$major\" -lt 18 ]; then echo NODE_TOO_OLD; exit 43; fi; echo '===ONCHAIN_INSTALL==='; npx -y @okxweb3/onchainos-installer install; echo '===POST_INSTALL==='; (command -v onchainos || true); (onchainos --version || true); echo '===DISCOVERY==='; find \"$HOME\" -maxdepth 6 \\( -iname '*onchainos*' -o -iname '*okx*' \\) -print 2>/dev/null | head -120"
+  ],
+  "timeout": 900
+}
