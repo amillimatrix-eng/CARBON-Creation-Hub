@@ -1,0 +1,7 @@
+{
+  "id": "BLACK-PERSIST-001",
+  "issued_by": "Matrix",
+  "purpose": "Install BLACK as a systemd service and verify Matrix control after restart",
+  "command": ["bash","BLACK/install-service.sh"],
+  "timeout": 60
+}
