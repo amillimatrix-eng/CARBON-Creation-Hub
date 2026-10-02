@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-FINAL-VERIFY-008",
+  "issued_by": "Matrix",
+  "purpose": "Verify final BLACK single-instance runtime, repaired amx systemd user session, and Windows Startup launcher after repair.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -e\nsleep 3\necho '===BLACK_SYSTEM_SERVICE==='\nsystemctl is-enabled amx-black.service\nsystemctl is-active amx-black.service\nsystemctl show amx-black.service -p User -p MainPID -p ActiveState -p SubState --no-pager\necho '===AMX_USER_SESSION==='\nloginctl show-user amx -p State -p Linger -p RuntimePath -p Sessions\nsystemctl is-active user@1000.service\necho '===BLACK_PROCESS_COUNT==='\nCOUNT=$(ps -eo args | grep '/home/amx/amx-black/BLACK/worker.py' | grep -v grep | wc -l)\necho \"count=$COUNT\"\n[ \"$COUNT\" -eq 1 ]\necho '===WINDOWS_STARTUP==='\ntest -f '/mnt/c/Users/eztra/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/AMX-BLACK-WSL.cmd'\ncat '/mnt/c/Users/eztra/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/AMX-BLACK-WSL.cmd'\necho '===LEGACY_USER_UNIT==='\ntest ! -e \"$HOME/.config/systemd/user/default.target.wants/amx-black.service\"\ntest ! -f \"$HOME/.config/systemd/user/amx-black.service\"\necho '===PASS==='\necho BLACK_FINAL_VERIFY_PASS"
+  ],
+  "timeout": 60
+}
