@@ -1,0 +1,33 @@
+{
+  "schema": "AMX_PRI_ACTION_RECEIPT_V1",
+  "actor": "PRI",
+  "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
+  "organization": "Inkwave Studios",
+  "action_at": "2026-10-02T15:20:00Z",
+  "action": "OFFICIAL_DRAMA_CREATOR_PROGRAM_SUBMISSION",
+  "prior_state": "DELIVERY_FAILED",
+  "prior_route": "info@inkwavestudios.uk",
+  "prior_route_result": "SMTP 550 / address not found",
+  "new_state": "SUBMITTED",
+  "route": {
+    "type": "OFFICIAL_WEB_FORM",
+    "url": "https://inkwavestudios.uk/",
+    "program": "Drama Creator Program",
+    "automation_run_id": "1f852281-e5f5-46d8-b17c-02e3d3dbce32",
+    "confirmation": "Application received"
+  },
+  "claims_preserved": {
+    "full_series_rendered": false,
+    "rendered_sample_episodes": true,
+    "controlled_sample_available_on_request": true
+  },
+  "duplicate_submission": false,
+  "next_action": "Monitor for a material response and act in-thread/on-platform without duplicate submission.",
+  "money_truth": "NO CONTRACT / NO PAYMENT YET",
+  "controls": [
+    "EXTERNAL_HUMAN_CADENCE",
+    "NO_DUPLICATE_APPLICATION",
+    "SUBMITTED_DOES_NOT_EQUAL_ACCEPTED",
+    "PAID_REQUIRES_PAYMENT_EVIDENCE"
+  ]
+}
