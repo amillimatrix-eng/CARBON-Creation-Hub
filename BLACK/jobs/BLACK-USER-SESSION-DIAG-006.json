@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-USER-SESSION-DIAG-006",
+  "issued_by": "Matrix",
+  "purpose": "Diagnose the WSL systemd user-session warning for amx while preserving the working system-level BLACK service.",
+  "command": [
+    "bash",
+    "-lc",
+    "set +e\necho '===USER_UNIT==='\nsystemctl status user@1000.service --no-pager -n 60 2>&1 || true\necho '===USER_SLICE==='\nsystemctl status user-1000.slice --no-pager -n 30 2>&1 || true\necho '===JOURNAL_USER_UNIT==='\njournalctl -b -u user@1000.service --no-pager -n 120 2>&1 || true\necho '===LOGIND==='\nsystemctl status systemd-logind --no-pager -n 40 2>&1 || true\necho '===PAM_SYSTEMD==='\ngrep -R \"pam_systemd\" /etc/pam.d 2>/dev/null | head -40 || true\necho '===RUNTIME_DIR==='\nls -ld /run/user/1000 2>&1 || true\necho '===DBUS_USER==='\ndpkg -s dbus-user-session 2>/dev/null | grep -E '^(Status|Version):' || true"
+  ],
+  "timeout": 60
+}
