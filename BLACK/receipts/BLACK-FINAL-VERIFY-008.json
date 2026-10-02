@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-FINAL-VERIFY-008",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-02T13:27:33.223843+00:00",
+  "finished": "2026-10-02T13:27:37.667650+00:00",
+  "stdout": "===BLACK_SYSTEM_SERVICE===\nenabled\nactive\nActiveState=active\nSubState=running\nMainPID=319\nUser=amx\n===AMX_USER_SESSION===\nRuntimePath=/run/user/1000\nState=lingering\nSessions=c1\nLinger=yes\nactive\n===BLACK_PROCESS_COUNT===\ncount=1\n===WINDOWS_STARTUP===\n@echo off\nstart \"\" /min %SystemRoot%\\System32\\wsl.exe --exec /bin/true\nexit /b 0\n===LEGACY_USER_UNIT===\n===PASS===\nBLACK_FINAL_VERIFY_PASS\n",
+  "stderr": ""
+}
