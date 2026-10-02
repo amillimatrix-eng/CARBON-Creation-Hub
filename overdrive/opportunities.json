@@ -26,7 +26,7 @@
     },
     "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me": {
       "domain": "alakai-productions",
-      "due_at": "2026-10-02T15:24:10.000Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -41,13 +41,29 @@
           "role": "reader",
           "source": "GOOGLE_DRIVE",
           "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        },
+        {
+          "kind": "BUYER_RESPONSE",
+          "source": "GMAIL",
+          "source_id": "1a0fdbf5afb6d5c6",
+          "thread_id": "1a0f2ea80749ae37",
+          "observed_at": "2026-10-02T17:52:39Z",
+          "summary": "Alakai clarified it is a fee-for-service production vendor for already-funded projects, not a financier, acquirer, distributor or marketing partner."
+        },
+        {
+          "kind": "GMAIL_SENT_CLOSURE",
+          "source": "GMAIL",
+          "source_id": "1a0fea3600d40ffe",
+          "thread_id": "1a0f2ea80749ae37",
+          "observed_at": "2026-10-02T22:01:55Z",
+          "summary": "PRI acknowledged the clarification and closed the unsupported buyer/investor assumption without requesting vendor work."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T15:24:10Z",
+      "last_action_at": "2026-10-02T22:01:55Z",
       "message_id": "1a0f2ea80749ae37",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "next_action": "No action unless a funded production scope exists and vendor procurement becomes relevant.",
       "opportunity": "production-collaboration",
       "organization": "Alakai Productions",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -58,7 +74,7 @@
         "visibility": "CONTROLLED_READER"
       },
       "recipient": "alakaiproductionsai@gmail.com",
-      "state": "SUBMITTED",
+      "state": "CLOSED_NO_FIT",
       "subject": "AI-native vertical production collaboration — CARBON°",
       "thread_id": "1a0f2ea80749ae37",
       "title": "The Dragon Who Could Not Claim Me",
@@ -67,7 +83,7 @@
     },
     "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "faceproduction.net",
-      "due_at": "2026-10-02T15:23:51.000Z",
+      "due_at": "2026-10-06T15:00:00Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -82,13 +98,21 @@
           "role": "reader",
           "source": "GOOGLE_DRIVE",
           "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a0fea364ad6bf46",
+          "thread_id": "1a0f2ea3874d5fde",
+          "observed_at": "2026-10-02T22:01:56Z",
+          "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T15:23:51Z",
+      "last_action_at": "2026-10-02T22:01:56Z",
       "message_id": "1a0f2ea3874d5fde",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity": "catalogue-partnership",
       "organization": "Face Production",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -146,7 +170,7 @@
     },
     "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "jukboxproductions.com",
-      "due_at": "2026-10-02T15:23:49.000Z",
+      "due_at": "2026-10-06T15:00:00Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -161,13 +185,21 @@
           "role": "reader",
           "source": "GOOGLE_DRIVE",
           "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a0fea36b9fcf483",
+          "thread_id": "1a0f2ea30b45baa0",
+          "observed_at": "2026-10-02T22:01:57Z",
+          "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T15:23:49Z",
+      "last_action_at": "2026-10-02T22:01:57Z",
       "message_id": "1a0f2ea30b45baa0",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity": "production-partnership",
       "organization": "Jukbox Productions",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -187,7 +219,7 @@
     },
     "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me": {
       "domain": "k29studios.com",
-      "due_at": "2026-10-02T15:23:47.000Z",
+      "due_at": "2026-10-06T15:00:00Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -202,13 +234,21 @@
           "role": "reader",
           "source": "GOOGLE_DRIVE",
           "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a0fea36edd5ce6f",
+          "thread_id": "1a0f2ea2a952c85d",
+          "observed_at": "2026-10-02T22:01:58Z",
+          "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T15:23:47Z",
+      "last_action_at": "2026-10-02T22:01:58Z",
       "message_id": "1a0f2ea2a952c85d",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity": "production-collaboration",
       "organization": "K29 Studios",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -292,7 +332,7 @@
     },
     "magicpictures.net|co-production|the-dragon-who-could-not-claim-me": {
       "domain": "magicpictures.net",
-      "due_at": "2026-10-02T15:24:12.000Z",
+      "due_at": "2026-10-06T15:00:00Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -307,13 +347,21 @@
           "role": "reader",
           "source": "GOOGLE_DRIVE",
           "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a0fea37522792f2",
+          "thread_id": "1a0f2ea89285fcc3",
+          "observed_at": "2026-10-02T22:02:00Z",
+          "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T15:24:12Z",
+      "last_action_at": "2026-10-02T22:02:00Z",
       "message_id": "1a0f2ea89285fcc3",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity": "co-production",
       "organization": "MagicPictures",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -346,7 +394,7 @@
         }
       ],
       "domain": "microdrama.id",
-      "due_at": "2026-10-02T12:46:53.000Z",
+      "due_at": "2026-10-06T15:00:00Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -361,13 +409,21 @@
           "role": "reader",
           "source": "GOOGLE_DRIVE",
           "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a0fea3794dba15d",
+          "thread_id": "1a0f25a83088e914",
+          "observed_at": "2026-10-02T22:02:01Z",
+          "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T12:46:53Z",
+      "last_action_at": "2026-10-02T22:02:01Z",
       "message_id": "1a0f25a83088e914",
-      "next_action": "Monitor existing threads under one organization record; do not send another initial pitch.",
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity": "catalogue-co-production",
       "organization": "Microdrama AI",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -402,7 +458,7 @@
         }
       ],
       "domain": "mountainriverfilms.com",
-      "due_at": "2026-10-02T15:15:37.000Z",
+      "due_at": "2026-10-06T15:00:00Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -417,13 +473,21 @@
           "role": "reader",
           "source": "GOOGLE_DRIVE",
           "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a0fea37d38ae2e6",
+          "thread_id": "1a0f2e2af4f0d5cc",
+          "observed_at": "2026-10-02T22:02:02Z",
+          "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T15:15:37Z",
+      "last_action_at": "2026-10-02T22:02:02Z",
       "message_id": "1a0f2e2af4f0d5cc",
-      "next_action": "Monitor both existing threads; do not send another initial pitch.",
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity": "co-production-distribution",
       "organization": "Mountain River Films",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -443,7 +507,7 @@
     },
     "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me": {
       "domain": "seastarfilm.com",
-      "due_at": "2026-10-02T15:23:44.000Z",
+      "due_at": "2026-10-06T15:00:00Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -458,13 +522,21 @@
           "role": "reader",
           "source": "GOOGLE_DRIVE",
           "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a0fea38198a58db",
+          "thread_id": "1a0f2ea1c5a8c36a",
+          "observed_at": "2026-10-02T22:02:03Z",
+          "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T15:23:44Z",
+      "last_action_at": "2026-10-02T22:02:03Z",
       "message_id": "1a0f2ea1c5a8c36a",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity": "production-licensing",
       "organization": "Sea Star Productions",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -484,7 +556,7 @@
     },
     "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me": {
       "domain": "yuientertainment.com",
-      "due_at": "2026-10-02T15:24:33.000Z",
+      "due_at": "2026-10-06T15:00:00Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -499,13 +571,21 @@
           "role": "reader",
           "source": "GOOGLE_DRIVE",
           "source_id": "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a0fea3859f6a867",
+          "thread_id": "1a0f2eadceb4a96f",
+          "observed_at": "2026-10-02T22:02:04Z",
+          "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-09-30T15:24:33Z",
+      "last_action_at": "2026-10-02T22:02:04Z",
       "message_id": "1a0f2eadceb4a96f",
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity": "cross-border-production",
       "organization": "YUI Entertainment",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -919,13 +999,32 @@
           "url": "https://app.outlier.ai/opportunities/4501274005",
           "observed_at": "2026-10-02",
           "summary": "Outlier opportunity includes South Africa; profile -> identity -> skills -> start earning; PayPal/AirTM shown."
+        },
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "OUTLIER_OFFICIAL",
+          "source_url": "https://app.outlier.ai/login?id=4476587005&job_post_id=4476587005",
+          "observed_at": "2026-10-02",
+          "summary": "Current official South Africa coding opportunity; onboarding includes account, skills screening and identity verification."
+        },
+        {
+          "kind": "ACCOUNT_ROUTE_VERIFICATION_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0fedc93e232877",
+          "thread_id": "1a0fedc93e232877",
+          "observed_at": "2026-10-02T23:04:23Z",
+          "summary": "PRI asked official support to confirm existing-account status before any application/account action."
         }
       ],
       "constraints": [
         "Requires profile, identity confirmation and skills validation before earning."
       ],
-      "next_action": "PRI to recover any existing Outlier account first; if none, begin official South Africa coding application and stop at irreducible identity/skills gate.",
-      "due_at": "2026-10-03T15:55:00Z"
+      "next_action": "Monitor Outlier support for confirmation of an existing account or secure recovery route; then resume the official South Africa coding application without creating a duplicate account.",
+      "due_at": "2026-10-06T23:04:23Z",
+      "recipient": "support@outlier.ai",
+      "thread_id": "1a0fedc93e232877",
+      "message_id": "1a0fedc93e232877",
+      "last_action_at": "2026-10-02T23:04:23Z"
     },
     "alignerr.com|search-quality-ai-training|south-africa": {
       "organization": "Alignerr",
@@ -1029,13 +1128,32 @@
           "url": "https://www.oneforma.com/projects/?domain=ai-ml-training",
           "observed_at": "2026-10-02",
           "summary": "Official OneForma page shows 7 AI/ML training opportunities and South Africa as a country option; platform currently lists 33+ open projects."
+        },
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "ONEFORMA_OFFICIAL",
+          "source_url": "https://www.oneforma.com/",
+          "observed_at": "2026-10-02",
+          "summary": "Official platform shows AI/ML opportunities and South Africa as a location; joining is free."
+        },
+        {
+          "kind": "QUALIFICATION_REQUEST_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0fedc966c2c687",
+          "thread_id": "1a0fedc966c2c687",
+          "observed_at": "2026-10-02T23:04:24Z",
+          "summary": "iSCOPE requested current paid South Africa projects, rates, requirements and official application routes."
         }
       ],
       "constraints": [
         "Exact South-Africa-compatible project, rate and immediate task availability must be selected before qualification; no prior OneForma account email found."
       ],
-      "next_action": "iSCOPE to resolve the exact South Africa project(s), rate and requirements; qualify only executable matches.",
-      "due_at": "2026-10-03T16:15:00Z"
+      "next_action": "Await official response identifying exact South Africa projects, rates and requirements; qualify only executable paid matches.",
+      "due_at": "2026-10-06T23:04:24Z",
+      "recipient": "contact@oneforma.com",
+      "thread_id": "1a0fedc966c2c687",
+      "message_id": "1a0fedc966c2c687",
+      "last_action_at": "2026-10-02T23:04:24Z"
     },
     "welodata.com|ai-trainers-afrikaans|south-africa": {
       "organization": "Welo Data / Welocalize",
@@ -1211,8 +1329,188 @@
         "Recent broad expert applications declined; support explicitly does not accept manual applications; no reason to spray duplicate applications."
       ],
       "next_action": "Keep profile passive; react only to a direct paid match/task or materially stronger exact-fit opening."
+    },
+    "toloka.ai|individual-task-marketplace|south-africa": {
+      "organization": "Toloka",
+      "domain": "toloka.ai",
+      "opportunity": "individual-task-marketplace-south-africa",
+      "title": "Toloka paid task marketplace — South Africa eligibility",
+      "state": "HOLD",
+      "execution_owner": "iSCOPE",
+      "recipient": "tolokercare@toloka.ai",
+      "thread_id": "1a0fedc94775d4ff",
+      "message_id": "1a0fedc94775d4ff",
+      "last_action_at": "2026-10-02T23:04:23Z",
+      "due_at": "2026-10-06T23:04:23Z",
+      "next_action": "Await authoritative eligibility, live-task and payout confirmation before onboarding.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "TOLOKA_OFFICIAL",
+          "source_url": "https://toloka.ai/get-started",
+          "observed_at": "2026-10-02",
+          "summary": "Official route says individuals can do tasks and get paid; onboarding is free, but South Africa eligibility/task/payout support required confirmation."
+        },
+        {
+          "kind": "ELIGIBILITY_REQUEST_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0fedc94775d4ff",
+          "thread_id": "1a0fedc94775d4ff",
+          "observed_at": "2026-10-02T23:04:23Z",
+          "summary": "iSCOPE asked official Toloker Care to confirm South Africa onboarding, task availability and payout methods."
+        }
+      ]
+    },
+    "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me": {
+      "organization": "DramaBox",
+      "domain": "dramabox.com",
+      "opportunity": "content-partnership",
+      "title": "The Dragon Who Could Not Claim Me",
+      "internal_tracking_id": "Production 001",
+      "state": "SUBMITTED",
+      "execution_owner": "PRI",
+      "recipient": "feedback@dramabox.com",
+      "thread_id": "1a0fedca0c7c2f71",
+      "message_id": "1a0fedca0c7c2f71",
+      "last_action_at": "2026-10-02T23:04:27Z",
+      "due_at": "2026-10-06T23:04:27Z",
+      "next_action": "Monitor for the official content/production review route; provide only the controlled sample and accurate rights/technical summary on request.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_COMMERCIAL_ROUTE",
+          "source": "DRAMABOX_OFFICIAL",
+          "source_url": "https://www.dramabox.com/browse/201",
+          "observed_at": "2026-10-02",
+          "summary": "Official DramaBox site exposes Business Collaborations and feedback@dramabox.com."
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0fedca0c7c2f71",
+          "thread_id": "1a0fedca0c7c2f71",
+          "observed_at": "2026-10-02T23:04:27Z",
+          "summary": "PRI requested the current submission route and minimum package without overstating rendered scope."
+        }
+      ]
+    },
+    "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me": {
+      "organization": "My Drama",
+      "domain": "my-drama.com",
+      "opportunity": "content-partnership",
+      "title": "The Dragon Who Could Not Claim Me",
+      "internal_tracking_id": "Production 001",
+      "state": "SUBMITTED",
+      "execution_owner": "PRI",
+      "recipient": "support@my-drama.com",
+      "thread_id": "1a0fedc9bdd30527",
+      "message_id": "1a0fedc9bdd30527",
+      "last_action_at": "2026-10-02T23:04:25Z",
+      "due_at": "2026-10-06T23:04:25Z",
+      "next_action": "Monitor for routing to acquisition/production; provide controlled sample and exact rights/technical facts only when requested.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_ROUTE",
+          "source": "MYDRAMA_OFFICIAL",
+          "source_url": "https://my-drama.com/contact-us",
+          "observed_at": "2026-10-02",
+          "summary": "Official My Drama contact page lists support@my-drama.com; platform currently distributes exclusive vertical dramas."
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0fedc9bdd30527",
+          "thread_id": "1a0fedc9bdd30527",
+          "observed_at": "2026-10-02T23:04:25Z",
+          "summary": "PRI requested routing to content acquisition/production and current package requirements."
+        }
+      ]
+    },
+    "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
+      "organization": "ReelShort / Crazy Maple Studio",
+      "domain": "reelshort.com",
+      "opportunity": "content-partnership",
+      "title": "The Dragon Who Could Not Claim Me",
+      "internal_tracking_id": "Production 001",
+      "state": "SUBMITTED",
+      "execution_owner": "PRI",
+      "recipient": "reelshort.support@crazymaplestudio.com",
+      "thread_id": "1a0fedd719d7bfdd",
+      "message_id": "1a0fedd719d7bfdd",
+      "last_action_at": "2026-10-02T23:05:20Z",
+      "due_at": "2026-10-06T23:05:20Z",
+      "next_action": "Monitor for routing to independent submissions/production; use the controlled sample only through an authorized route.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_ROUTE",
+          "source": "REELSHORT_OFFICIAL",
+          "source_url": "https://www.reelshort.com/web-terms.html",
+          "observed_at": "2026-10-02",
+          "summary": "Official ReelShort terms list reelshort.support@crazymaplestudio.com; official catalogue evidences independent submission activity."
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0fedd719d7bfdd",
+          "thread_id": "1a0fedd719d7bfdd",
+          "observed_at": "2026-10-02T23:05:20Z",
+          "summary": "PRI requested the correct current content submission/production-partnership route."
+        }
+      ]
+    },
+    "goodshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
+      "organization": "GoodShort",
+      "domain": "goodshort.com",
+      "opportunity": "content-partnership",
+      "title": "The Dragon Who Could Not Claim Me",
+      "internal_tracking_id": "Production 001",
+      "state": "SUBMITTED",
+      "execution_owner": "PRI",
+      "recipient": "contact@goodshort.com",
+      "thread_id": "1a0fedd72ae6fde3",
+      "message_id": "1a0fedd72ae6fde3",
+      "last_action_at": "2026-10-02T23:05:20Z",
+      "due_at": "2026-10-06T23:05:20Z",
+      "next_action": "Monitor for business-team routing and verified package requirements; no duplicate approach.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_ROUTE",
+          "source": "GOODSHORT_OFFICIAL",
+          "source_url": "https://www.goodshort.com/",
+          "observed_at": "2026-10-02",
+          "summary": "Official GoodShort pages expose a Business contact route; official terms publish contact@goodshort.com."
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0fedd72ae6fde3",
+          "thread_id": "1a0fedd72ae6fde3",
+          "observed_at": "2026-10-02T23:05:20Z",
+          "summary": "PRI requested routing to the business content-acquisition/production team and current package requirements."
+        }
+      ]
     }
   },
   "version": 1,
-  "updated_at": "2026-10-02T16:15:00Z"
+  "updated_at": "2026-10-02T16:15:00Z",
+  "last_updated_at": "2026-10-02T23:05:20Z",
+  "last_updated_by": "iSCOPE_PRI_EXECUTION_ENGINE",
+  "last_run": {
+    "execution_origin": "SCHEDULER_AUTOMATION",
+    "candidates_inspected": 32,
+    "material_actions": [
+      "1a0fedc93e232877",
+      "1a0fedc966c2c687",
+      "1a0fedc94775d4ff",
+      "1a0fedca0c7c2f71",
+      "1a0fedc9bdd30527",
+      "1a0fedd719d7bfdd",
+      "1a0fedd72ae6fde3"
+    ],
+    "kpi_delta": {
+      "iSCOPE": 0,
+      "PRI": 0,
+      "converted": 0
+    },
+    "t10": "Seven external actions were sent and prior nine receipts reconciled; no external acceptance, contract, invoice or payment is proven."
+  }
 }
