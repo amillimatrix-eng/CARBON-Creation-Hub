@@ -1,0 +1,33 @@
+{
+  "schema": "AMX_CARBON_PRODUCTION_RECEIPT_V1",
+  "executed_at": "2026-10-02T11:24:30Z",
+  "executor": "CURRENT_MATRIX_REASONING_SESSION_AS_AUTHORIZED_CARBON_PRODUCTION_SUBSTITUTE",
+  "action": "PATCH_EXISTING_HOUSE_OPERATOR_TRUTH_SURFACE",
+  "result": "VERIFIED_SOURCE / NOT YET LIVE",
+  "source_changes": [
+    {
+      "commit": "445ffbe86ce5325ebae08a38d0a12ebbfe48e872",
+      "purpose": "Expose Matrix truth snapshot in backend operator state"
+    },
+    {
+      "commit": "35f74f828327bda6919d4dcea12d66743c07275a",
+      "purpose": "Render worker/tool/alert proof"
+    },
+    {
+      "commit": "5ddaa899953a56f04d440ad6a7515e9e7fef229f",
+      "purpose": "Add visible Worker Proof, Tool Surfaces and Active Truth Alerts panels"
+    }
+  ],
+  "verification": {
+    "github_actions_run": 37000083768,
+    "conclusion": "SUCCESS",
+    "head_sha": "5ddaa899953a56f04d440ad6a7515e9e7fef229f"
+  },
+  "live_boundary": {
+    "house_project": "appgprj_6aabe3aac8fc819199f38d7cf4a79faf",
+    "current_live_source_version": 2,
+    "publish_required": ">2",
+    "backend_live": false
+  },
+  "truth": "Repository implementation and test are proven; existing live House has not yet been patched/published."
+}
