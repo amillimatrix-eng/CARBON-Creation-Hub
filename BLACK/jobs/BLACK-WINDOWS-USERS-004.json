@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-WINDOWS-USERS-004",
+  "issued_by": "Matrix",
+  "purpose": "List Windows user profile directories only, to target BLACK startup launcher without broad filesystem scan.",
+  "command": [
+    "bash",
+    "-lc",
+    "ls -1 /mnt/c/Users 2>/dev/null | sed -n '1,80p'"
+  ],
+  "timeout": 30
+}
