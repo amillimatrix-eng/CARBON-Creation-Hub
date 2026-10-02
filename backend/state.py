@@ -50,18 +50,19 @@ class StateReader:
         cache_bust = int(utcnow().timestamp() * 1_000_000)
         headers = {
             "User-Agent": "amx-evidence-house/2.0",
-            "Accept": "application/vnd.github+json",
+            "Accept": "text/html,application/xhtml+xml",
             "Cache-Control": "no-cache",
             "Pragma": "no-cache",
         }
-        url = f"https://api.github.com/repos/{self.github_repo}/commits/{ref}?amx_t={cache_bust}"
+        url = f"https://github.com/{self.github_repo}/commit/{ref}?amx_t={cache_bust}"
         req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=10) as response:
-            body = json.loads(response.read().decode("utf-8"))
-        sha = str(body.get("sha", "")).strip()
-        if len(sha) != 40 or any(ch not in "0123456789abcdefABCDEF" for ch in sha):
-            raise ValueError("GitHub ref resolution did not return a valid commit SHA")
-        self.resolved_ref = sha.lower()
+            html = response.read().decode("utf-8", errors="replace")
+        import re
+        matches = re.findall(r"/commit/([0-9a-fA-F]{40})", html)
+        if not matches:
+            raise ValueError("GitHub public commit page did not expose a valid immutable commit SHA")
+        self.resolved_ref = matches[0].lower()
         return self.resolved_ref
 
     def _github_json(self, relative: str) -> Any:
