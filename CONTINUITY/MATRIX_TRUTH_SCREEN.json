@@ -1,21 +1,23 @@
 {
   "schema": "AMX_MATRIX_TRUTH_SCREEN_V1",
-  "generated_at": "2026-10-02T11:20:20Z",
+  "generated_at": "2026-10-02T11:24:30Z",
   "rule": "Only attributable evidence promotes state. ENABLED/SCHEDULER_WOKE/READY are not EXECUTING. NO RECEIPT -> NO CLOSURE.",
   "workers": [
     {
       "name": "Master Control Check",
       "enabled": true,
       "last_scheduler_wake": "2026-10-02T10:59:45.007829Z",
-      "state": "SCHEDULER_WOKE__MATERIAL_RECEIPT_NOT_RECOVERED",
-      "useful_work_proven_this_wake": false
+      "state": "SUBSTITUTE_EXECUTION_PROVEN__SCHEDULED_SELF_RECEIPT_PENDING",
+      "useful_work_proven_this_wake": true,
+      "proof": "CONTINUITY/MASTER_CONTROL_SUBSTITUTE_EXECUTION_RECEIPT_2026-10-02T112430Z.json"
     },
     {
       "name": "Matrix Commissioning Inspector",
       "enabled": true,
       "last_scheduler_wake": "2026-10-02T10:23:43.776869Z",
-      "state": "SCHEDULER_WOKE__CURRENT_MATERIAL_RECEIPT_NOT_RECOVERED",
-      "useful_work_proven_this_wake": false
+      "state": "CURRENT_INSPECTION_EXECUTED_BY_SUBSTITUTE__SCHEDULED_SELF_RECEIPT_PENDING",
+      "useful_work_proven_this_wake": true,
+      "proof": "CONTINUITY/MATRIX_COMMISSIONING_INSPECTION_RECEIPT_2026-10-02T112430Z.json"
     },
     {
       "name": "iSCOPE -> PRI Execution Engine",
@@ -29,8 +31,9 @@
       "name": "CARBON° Production Studio",
       "enabled": true,
       "last_scheduler_wake": "2026-10-02T11:00:54.655072Z",
-      "state": "SCHEDULER_WOKE__NEW_DURABLE_PRODUCTION_RECEIPT_NOT_RECOVERED",
-      "useful_work_proven_this_wake": false
+      "state": "HOUSE_TRUTH_SURFACE_PRODUCTION_VERIFIED_BY_SUBSTITUTE__LIVE_PUBLISH_PENDING",
+      "useful_work_proven_this_wake": true,
+      "proof": "CONTINUITY/CARBON_PRODUCTION_STUDIO_SUBSTITUTE_RECEIPT_2026-10-02T112430Z.json"
     },
     {
       "name": "Bounty Reaper",
