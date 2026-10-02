@@ -1,0 +1,9 @@
+{
+  "job": "BLACK-WINDOWS-STARTUP-DISCOVER-003",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": -1,
+  "started": "2026-10-02T13:20:04.752259+00:00",
+  "finished": "2026-10-02T13:22:04.874912+00:00",
+  "error": "TimeoutExpired(['bash', '-lc', 'set -e\\necho \\'===USERS===\\'\\nfind /mnt/c/Users -maxdepth 1 -mindepth 1 -type d -printf \\'%f\\\\n\\' 2>/dev/null | sort\\necho \\'===STARTUP_FOLDERS===\\'\\nfind /mnt/c/Users -type d -path \\'*/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup\\' -print 2>/dev/null | head -20\\necho \\'===WRITABLE===\\'\\nwhile IFS= read -r p; do [ -w \"$p\" ] && echo \"WRITABLE:$p\" || echo \"READONLY:$p\"; done < <(find /mnt/c/Users -type d -path \\'*/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup\\' -print 2>/dev/null | head -20)'], 120)"
+}
