@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-OKX-ONCHAINOS-INSTALL-010",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 127,
+  "started": "2026-10-02T15:49:24.518026+00:00",
+  "finished": "2026-10-02T15:49:24.693309+00:00",
+  "stdout": "===NODE===\n",
+  "stderr": "bash: line 1: node: command not found\n"
+}
