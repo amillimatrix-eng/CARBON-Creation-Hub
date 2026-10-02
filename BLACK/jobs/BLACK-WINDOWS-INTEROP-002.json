@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-WINDOWS-INTEROP-002",
+  "issued_by": "Matrix",
+  "purpose": "Prove Windows interop using absolute PowerShell path and discover exact Windows Startup folder/distro from BLACK.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -e\nPS=/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe\n\"$PS\" -NoProfile -NonInteractive -Command '$ErrorActionPreference=\"Stop\"; $startup=[Environment]::GetFolderPath(\"Startup\"); $distros=@(& wsl.exe -l -q) | ForEach-Object { $_.Trim() } | Where-Object { $_ }; [ordered]@{ state=\"WINDOWS_INTEROP_OK\"; windows_user=$env:USERNAME; startup=$startup; distros=$distros; ps_version=$PSVersionTable.PSVersion.ToString() } | ConvertTo-Json -Compress'"
+  ],
+  "timeout": 120
+}
