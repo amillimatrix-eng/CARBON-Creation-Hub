@@ -122,7 +122,49 @@
     "post_correction_external_action_message": "1a0fc58012594488",
     "post_correction_external_action_thread": "1a0fc58012594488",
     "post_correction_cycle_executor": "CURRENT_MATRIX_REASONING_SESSION_AS_AUTHORIZED_SUBSTITUTE",
-    "post_correction_cycle_at": "2026-10-02T11:20:20Z"
+    "post_correction_cycle_at": "2026-10-02T11:20:20Z",
+    "latest_substitute_execution_cycle": {
+      "at": "2026-10-02T15:20:00Z",
+      "executor": "CURRENT_MATRIX_REASONING_SESSION_AS_AUTHORIZED_SUBSTITUTE",
+      "material_actions": [
+        {
+          "opportunity": "ypai.ai|qa-reviewer-adjudicator|remote-south-africa",
+          "state": "SUBMITTED",
+          "evidence": "Gmail 1a0fcfea76c7355d / PRI-YPAI-QA-ALT-SUBMISSION-20261002-1400Z.json"
+        },
+        {
+          "opportunity": "staff-remotely.com|remote-ai-qa-prompt-python|south-africa",
+          "state": "SUBMITTED",
+          "evidence": "Gmail 1a0fd28f0a697b2f"
+        },
+        {
+          "opportunity": "redrama.ai|adaptation-distribution|the-dragon-who-could-not-claim-me",
+          "state": "SUBMITTED",
+          "evidence": "Gmail 1a0fd2b475e05861"
+        },
+        {
+          "opportunity": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
+          "state": "RESPONDED / FOLLOWUP_SENT",
+          "evidence": "Gmail 1a0fd2c58781f9cc"
+        },
+        {
+          "opportunity": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
+          "state": "SUBMITTED",
+          "evidence": "TinyFish run 1f852281-e5f5-46d8-b17c-02e3d3dbce32 / confirmation Application received"
+        }
+      ],
+      "payment_rails": "overdrive/payment_rails.json AMX_PAYMENT_RAILS_V3 -> private canonical Drive registry 1B_4WWcX6KzI3166Zow_DQGzp7yES1VeQB311IN1Z3Xo",
+      "black_support": "BLACK/receipts/BLACK-COMMERCIAL-SWEEP-009.json",
+      "ledger_after_cycle": {
+        "total": 20,
+        "DELIVERY_FAILED": 1,
+        "SUBMITTED": 14,
+        "RESPONDED": 1,
+        "QUALIFIED": 4
+      },
+      "realized_revenue_evidence": null,
+      "realized_revenue": "0 / NO PAYMENT EVIDENCE"
+    }
   },
   "control_hardened_at": "2026-10-01",
   "protected_transport": {
@@ -168,9 +210,10 @@
   "payment_semantics": {
     "inventory": "overdrive/payment_rails.json",
     "completeness_may_be_partial": true,
-    "rule": "Missing rail detail triggers authoritative recovery/routing; it does not prove AMX has no compatible rail.",
+    "rule": "Recover the canonical private registry for exact bank/payment details when needed. Current known rails are consolidated; platform-specific onboarding may add rails. Missing rail detail must trigger recovery/routing, not false incompatibility.",
     "program_bound_wallets": "separate onboarding/payment case",
-    "secret_control": "no private keys/seed/recovery material/credentials in durable commercial state"
+    "secret_control": "no private keys/seed/recovery material/credentials in durable commercial state",
+    "canonical_private_registry": "Google Drive 1B_4WWcX6KzI3166Zow_DQGzp7yES1VeQB311IN1Z3Xo"
   },
   "provider_continuity": {
     "rule": "Loss of ChatGPT session/provider/Plus access changes executor availability only. Preserve mandate, ONE PRI ownership, iSCOPE ownership, opportunities and receipts.",
@@ -192,6 +235,6 @@
       "no duplicate outreach, false state advancement, pay-to-work drift, or invented capability/payment"
     ],
     "rule": "Historical Cherry One/LAVDM receipts prove prior capability only; they do not satisfy this post-correction autonomy acceptance gate.",
-    "latest_observation": "New post-correction attributable cycle recovered capability floor and full ledger, inspected 24 candidates across four materially distinct categories, attempted capability/problem-derived discovery, persisted five new qualified handoffs, classified the full inventory, executed the only currently executable qualified action via Cherry One's official route, recorded exact HOLD/WAIT reasons for the rest, respected partial payment-rail semantics, and produced durable readback. The 11:12 scheduler wake itself did not independently produce this receipt, so scheduled-runtime reliability remains pending."
+    "latest_observation": "A newer attributable substitute cycle on 2026-10-02 materially progressed YPAI, Staff Remotely, Redrama, LAVDM and Inkwave; consolidated current payment rails; used BLACK for independent current-state/payment verification; and read back the resulting 20-record ledger. This proves current substitute execution. Scheduled automation self-execution reliability remains pending until a scheduler-originated material receipt satisfies the same gate."
   }
 }
