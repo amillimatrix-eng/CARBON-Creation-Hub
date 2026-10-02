@@ -638,12 +638,20 @@
           "url": "https://www.opentrain.ai/jobs/",
           "observed_at": "2026-10-02T11:20:20Z",
           "summary": "OpenTrain lists Python Backend AI Agent Developer worldwide at $300 per approved task."
+        },
+        {
+          "kind": "ACCOUNT_RECOVERY_EMAIL_20261002",
+          "source": "GMAIL",
+          "source_id": "1a0fd08b1cf0865a",
+          "observed_at": "2026-10-02T14:33:19Z",
+          "summary": "OpenTrain sent a password-reset message to the existing amillimatrix@gmail.com account, confirming account ownership/history; reset link is time-limited and no new password was set."
         }
       ],
       "constraints": [
-        "No authenticated OpenTrain browser execution surface is exposed in the current runtime."
+        "No authenticated OpenTrain browser execution surface is exposed in the current runtime.",
+        "Existing OpenTrain account is confirmed, but no authenticated OpenTrain browser session is currently available. Do not create a duplicate account or invent/reset credentials without a secure user-authenticated session."
       ],
-      "next_action": "PRI to use the existing OpenTrain account route when an authenticated browser/session surface is available; do not create a duplicate account.",
+      "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
       "due_at": null
     },
     "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh": {
@@ -667,12 +675,20 @@
           "url": "https://www.opentrain.ai/jobs/ai-response-evaluator-tester--cmtaowgba00020akudq8w9oyh/",
           "observed_at": "2026-10-02T11:20:20Z",
           "summary": "Worldwide remote AI Response Evaluator and Tester; $5/label; flexible contractor work."
+        },
+        {
+          "kind": "ACCOUNT_RECOVERY_EMAIL_20261002",
+          "source": "GMAIL",
+          "source_id": "1a0fd08b1cf0865a",
+          "observed_at": "2026-10-02T14:33:19Z",
+          "summary": "OpenTrain sent a password-reset message to the existing amillimatrix@gmail.com account, confirming account ownership/history; reset link is time-limited and no new password was set."
         }
       ],
       "constraints": [
-        "Existing OpenTrain application/account history exists; current runtime lacks authenticated platform execution."
+        "Existing OpenTrain application/account history exists; current runtime lacks authenticated platform execution.",
+        "Existing OpenTrain account is confirmed, but no authenticated OpenTrain browser session is currently available. Do not create a duplicate account or invent/reset credentials without a secure user-authenticated session."
       ],
-      "next_action": "PRI to resume through the existing OpenTrain account/session when authenticated platform access is available; no duplicate account/application.",
+      "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
       "due_at": null
     },
     "upwork.com|ai-automation-fix|022105205564933219360": {
@@ -939,15 +955,24 @@
           "url": "https://www.alignerr.com/jobs/cb54d2de-b3e9-4824-a1f9-a8d3d17179dd",
           "observed_at": "2026-10-02",
           "summary": "Alignerr primary role page confirms remote Search Quality Evaluator scope and $40–$120/hour."
+        },
+        {
+          "kind": "APPLICATION_ATTEMPT",
+          "source": "BROWSER",
+          "observed_at": "2026-10-02T16:00:00Z",
+          "run_id": "31a84679-c511-4238-9877-5884b776e81e",
+          "summary": "Official Alignerr application route reached LinkedIn authentication gate; no duplicate application submitted."
         }
       ],
       "constraints": [
-        "Requires platform screening/onboarding; current Gmail history shows no established Alignerr account."
+        "Requires platform screening/onboarding; current Gmail history shows no established Alignerr account.",
+        "Official application requires LinkedIn authentication; no authenticated LinkedIn browser/profile is currently connected.",
+        "TinyFish browser wallet is exhausted; under AMX no-pay-to-work rule, no further paid browser automation is authorized by default."
       ],
-      "next_action": "PRI to apply through Alignerr official route; prefer Search Quality/AI Data Quality/Chatbot Tester over unrelated specialist roles; stop only at genuine identity/assessment gate.",
+      "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
       "due_at": "2026-10-03T15:55:00Z"
     }
   },
   "version": 1,
-  "updated_at": "2026-10-02T15:55:00Z"
+  "updated_at": "2026-10-02T16:08:00Z"
 }
