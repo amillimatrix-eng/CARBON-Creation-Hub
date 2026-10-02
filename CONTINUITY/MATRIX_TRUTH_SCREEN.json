@@ -1,141 +1,223 @@
 {
-  "schema": "AMX_MATRIX_TRUTH_SCREEN_V1",
-  "generated_at": "2026-10-02T13:31:00Z",
-  "rule": "Only attributable evidence promotes state. ENABLED/SCHEDULER_WOKE/READY are not EXECUTING. NO RECEIPT -> NO CLOSURE.",
+  "schema": "AMX_MATRIX_TRUTH_SCREEN_V2",
+  "generated_at": "2026-10-02T17:55:00Z",
+  "projection_scope": "CURRENT_BOUNDED_MATRIX_STATE",
+  "rule": "Only attributable evidence promotes state. ROUTED != OWNED != CLAIMED != EXECUTING != RESOLVED. ENABLED/SCHEDULER_WOKE/READY are not EXECUTING. NO RECEIPT -> NO CLOSURE. T10 bounded truth wins over a more successful technical label.",
+  "T10": {
+    "T10_JOB": "Consolidate and synchronize consequential Matrix state across Root/Master shared state, workers, evidence, commercial routing, production, bounty execution, BLACK and live evidence surfaces.",
+    "T10_ACTUAL": "Shared Master Sheet was updated/read back; Library duplicate T10 custody noise was removed after byte verification; central GitHub truth/manifest are being replaced with the current bounded projection; completed CARBON° BUILD and OVERDRIVE were preserved.",
+    "T10_EVIDENCE": "AMX MASTER INDEX rows/readback + current automation state + current overdrive ledgers + current Render deploys + Bounty Reaper Live Tracker + BLACK receipts/jobs + canonical T10 Library SHA-256 9924cae8b746eff530b8250054c3116a3a68283ce8624fab99c01371b3619dcc",
+    "T10_CHANGE": "The Matrix now has one current shared projection instead of the earlier 13-record/old-House/pre-T10 central snapshot. Commercial scheduler acceptance was lowered to FAIL/OPEN where evidence required it.",
+    "T10_REMAINING_GAP": "Scheduled iSCOPE→PRI self-execution still needs a qualifying scheduler-origin material receipt/KPI/row34 readback; BLACK 012/013 need receipts; Render commit-trigger auto-deploy continuity needs retest; realized revenue remains unproven.",
+    "T10_PASS": "PASS"
+  },
+  "commissioning": {
+    "state": "COMMISSIONING",
+    "epoch_reset_at": "2026-10-02T19:55:00+02:00",
+    "reset_reason": "VERIFIED_MATRIX_WIDE_TRUTH_SURFACE_CORRECTION_AND_T10_PROPAGATION",
+    "tier": "LT_24H__FULL_INSPECTION_EACH_HOURLY_WAKE",
+    "graduation_rule": "72 continuous healthy hours after latest material trigger/correction"
+  },
   "workers": [
     {
       "name": "Master Control Check",
       "enabled": true,
-      "last_scheduler_wake": "2026-10-02T10:59:45.007829Z",
-      "state": "SUBSTITUTE_EXECUTION_PROVEN__SCHEDULED_SELF_RECEIPT_PENDING",
-      "useful_work_proven_this_wake": true,
-      "proof": "CONTINUITY/MASTER_CONTROL_SUBSTITUTE_EXECUTION_RECEIPT_2026-10-02T112430Z.json"
+      "last_scheduler_wake": "2026-10-02T17:03:16.718507Z",
+      "state": "ENABLED__SCHEDULER_WOKE__CURRENT_WAKE_MATERIAL_OUTCOME_NOT_RECOVERED_IN_THIS_SYNC",
+      "useful_work_proven_this_wake": false,
+      "proof": "Automation last_run only; no same-wake consequential receipt recovered in this convergence.",
+      "T10": {
+        "T10_JOB": "Run Master Control orchestration from current durable authority.",
+        "T10_ACTUAL": "Scheduler wake is observed; this convergence did not recover a material receipt attributable to that exact wake.",
+        "T10_EVIDENCE": "Automation 6ab9464b394c8191914bde39a5500e84 last_run=2026-10-02T17:03:16.718507Z.",
+        "T10_CHANGE": "No execution outcome promoted from the wake alone.",
+        "T10_REMAINING_GAP": "Next attributable Master material receipt remains required for this wake if consequential work was due.",
+        "T10_PASS": "HOLD"
+      }
     },
     {
       "name": "Matrix Commissioning Inspector",
       "enabled": true,
-      "last_scheduler_wake": "2026-10-02T10:23:43.776869Z",
-      "state": "CURRENT_INSPECTION_EXECUTED_BY_SUBSTITUTE__SCHEDULED_SELF_RECEIPT_PENDING",
-      "useful_work_proven_this_wake": true,
-      "proof": "CONTINUITY/MATRIX_COMMISSIONING_INSPECTION_RECEIPT_2026-10-02T112430Z.json"
+      "last_scheduler_wake": "2026-10-02T17:41:51.099719Z",
+      "state": "ENABLED__SCHEDULER_WOKE__ACTIVE_SESSION_MATRIX_CONVERGENCE_SEPARATE_FROM_SCHEDULER_ORIGIN",
+      "useful_work_proven_this_wake": false,
+      "proof": "Current Matrix-wide convergence has its own receipt; it is not attributed to the scheduler wake.",
+      "T10": {
+        "T10_JOB": "Detect material Matrix change/fault and keep commissioning truth current.",
+        "T10_ACTUAL": "Scheduler wake is observed. Matrix-wide convergence was executed by the active authorized session, not claimed as scheduler-origin work.",
+        "T10_EVIDENCE": "Automation 6abe2c73850081918890b45f74a35bfb last_run + this convergence receipt.",
+        "T10_CHANGE": "Current truth surfaces were corrected without inflating the scheduler wake.",
+        "T10_REMAINING_GAP": "Scheduler-origin material receipt remains distinct from active-session convergence evidence.",
+        "T10_PASS": "HOLD"
+      }
     },
     {
-      "name": "iSCOPE -> PRI Execution Engine",
+      "name": "iSCOPE → PRI Execution Engine",
       "enabled": true,
-      "last_scheduler_wake": "2026-10-02T11:12:30.258828Z",
-      "state": "POST_CORRECTION_CYCLE_PROVEN_BY_AUTHORIZED_SUBSTITUTE__SCHEDULED_SELF_EXECUTION_PENDING",
-      "useful_work_proven_this_wake": true,
-      "proof": "overdrive/iscope/receipts/ISCOPE-POST-CORRECTION-20261002-112020Z.json + overdrive/pri/receipts/PRI-POST-CORRECTION-20261002-112020Z.json + Gmail 1a0fc58012594488"
+      "last_scheduler_wake": "2026-10-02T17:01:50.824403Z",
+      "state": "SCHEDULER_WOKE__19_00_SAST_AUTONOMY_ACCEPTANCE_FAIL_OPEN",
+      "useful_work_proven_this_wake": false,
+      "substitute_execution": "PROVEN",
+      "full_ledger": 32,
+      "claims": 29,
+      "proof": "OUTSTANDING row34 readback + overdrive/worker_contract.json + opportunities/signals/claims/payment_rails.",
+      "T10": {
+        "T10_JOB": "Prove scheduled autonomous commercial reasoning through real iSCOPE discovery, multi-item PRI progression, KPI evidence, consequential writes and row34 readback.",
+        "T10_ACTUAL": "The scheduler woke, but no qualifying scheduler-origin material receipt and no scheduler-origin row34 writeback were recovered. Prior authorized substitute execution remains proven.",
+        "T10_EVIDENCE": "Automation 6ab800f8ed888191bceee51b154a31eb last_run=2026-10-02T17:01:50.824403Z; OUTSTANDING!A34:H34; current durable repo state.",
+        "T10_CHANGE": "Acceptance moved from pending to FAIL/OPEN rather than being inferred from schedule/configuration.",
+        "T10_REMAINING_GAP": "A future scheduler run must perform attributable work, compute KPI, persist state and update/read back row34.",
+        "T10_PASS": "FAIL"
+      }
     },
     {
       "name": "CARBON° Production Studio",
       "enabled": true,
-      "last_scheduler_wake": "2026-10-02T11:00:54.655072Z",
-      "state": "HOUSE_TRUTH_SURFACE_PRODUCTION_VERIFIED_BY_SUBSTITUTE__LIVE_PUBLISH_PENDING",
-      "useful_work_proven_this_wake": true,
-      "proof": "CONTINUITY/CARBON_PRODUCTION_STUDIO_SUBSTITUTE_RECEIPT_2026-10-02T112430Z.json"
+      "last_scheduler_wake": "2026-10-02T16:47:40.065018Z",
+      "state": "ENABLED__CARBON_BUILD_COMPLETE__CURRENT_WAKE_MATERIAL_OUTPUT_NOT_RECOVERED_IN_THIS_SYNC",
+      "useful_work_proven_this_wake": false,
+      "proof": "CARBON° BUILD remains complete; Evidence House v2 is live from current active-session rollout, not attributed to this scheduler wake.",
+      "T10": {
+        "T10_JOB": "Operate CARBON° production from BUILD COMPLETE without reopening historical checkpoints.",
+        "T10_ACTUAL": "Worker remains enabled; this convergence did not recover a new material production receipt attributable to the latest scheduler wake.",
+        "T10_EVIDENCE": "Automation 6abbf8db02188191b5af528daeb0472a last_run + current CARBON/House durable state.",
+        "T10_CHANGE": "No fault manufactured from absence of a production output where a material task may not have been due.",
+        "T10_REMAINING_GAP": "If the wake had a material production obligation, its attributable receipt remains required; otherwise WAITING is legitimate when durably classified.",
+        "T10_PASS": "HOLD"
+      }
     },
     {
       "name": "Bounty Reaper",
       "enabled": true,
-      "last_scheduler_wake": "2026-10-02T11:12:25.452934Z",
-      "state": "EXECUTED__USEFUL_RESEARCH_PROVEN__NO_QUALIFIED_HANDOFF",
-      "useful_work_proven_this_wake": true,
-      "proof": "CONTINUITY/BOUNTY_REAPER_RUN_2026-10-02T1311_SAST.md"
+      "last_scheduler_wake": "2026-10-02T17:19:41.088631Z",
+      "state": "ENABLED__INDEPENDENT_CRYPTO_LANE__LATEST_MATERIAL_RUN_PROVEN__CURRENT_WAKE_OUTCOME_NOT_PROVEN",
+      "useful_work_proven_this_wake": false,
+      "latest_material_run": "RUN-20261002-1837",
+      "proof": "AMX Bounty Reaper — Live Tracker / Runs row 9; immutable stacks-sbtc/sbtc commit 3e16c056fd7bc595522fb904dd4d3fcd4cb7795a.",
+      "T10": {
+        "T10_JOB": "Execute lawful crypto-centric bounty work independently through FIND→VERIFY→EXECUTE→PROVE→SUBMIT→RECEIVE→VERIFY PAYMENT.",
+        "T10_ACTUAL": "Material run 18:37–18:44 SAST proved source-transport fallback and immutable source recovery, but exact Immunefi scope binding remained unresolved; no payout/submission occurred. The later scheduler wake has no separate material receipt recovered here.",
+        "T10_EVIDENCE": "Bounty Live Tracker RUN-20261002-1837 + automation 6abf8e6d6a188191aee2b5d3fe24a9c9 last_run.",
+        "T10_CHANGE": "Reaper execution evidence is current without being subordinated to iSCOPE/PRI; source transport blocker narrowed to exact scope binding.",
+        "T10_REMAINING_GAP": "Exact target/ref binding and compatible payout route remain HOLD; current wake outcome remains unproven.",
+        "T10_PASS": "HOLD"
+      }
     },
     {
       "name": "BLACK",
       "enabled": true,
       "last_scheduler_wake": null,
-      "state": "POST_REBOOT_EXECUTION_PROVEN__SYSTEM_SERVICE_ACTIVE__USER_SESSION_REPAIRED__WINDOWS_STARTUP_INSTALLED",
-      "useful_work_proven_this_wake": true,
-      "proof": "BLACK/receipts/BLACK-POST-REBOOT-001.json + BLACK/receipts/BLACK-FINAL-REPAIR-007.json + BLACK/receipts/BLACK-FINAL-VERIFY-008.json",
-      "acceptance_pending": "Fresh no-touch receipt after a future Windows login/reboot to prove the newly installed Startup launcher fired autonomously."
+      "state": "LAST_RUNTIME_VERIFY_PASS__CURRENT_POST_OKX_JOB_INTAKE_LIVENESS_HOLD",
+      "useful_work_proven_this_wake": false,
+      "proof": "BLACK/receipts/BLACK-FINAL-VERIFY-008.json; jobs BLACK-OKX-USERSPACE-NODE-ONCHAINOS-012.json and BLACK-LIVENESS-AFTER-OKX-013.json exist without corresponding receipts.",
+      "T10": {
+        "T10_JOB": "Maintain BLACK execution capability and complete authorized post-OKX userspace install/liveness work without becoming a default Matrix dependency.",
+        "T10_ACTUAL": "The last verified runtime receipt proved system service active, user session lingering, one BLACK process and Windows Startup launcher present. Current jobs 012 and 013 have no recovered receipts.",
+        "T10_EVIDENCE": "BLACK-FINAL-VERIFY-008 + current BLACK jobs/receipts tree.",
+        "T10_CHANGE": "Earlier runtime/startup proof is preserved while current liveness is lowered to HOLD instead of inherited from the old receipt.",
+        "T10_REMAINING_GAP": "Receipts for jobs 012/013 are required before claiming current BLACK execution/liveness; autonomous next Windows-start firing also remains a separate acceptance edge.",
+        "T10_PASS": "HOLD"
+      }
     }
   ],
   "surfaces": [
     {
       "name": "GitHub / AMX",
-      "state": "READ_WRITE_PROVEN",
-      "evidence": "Current continuity and BLACK job commits/readback."
+      "state": "READ_WRITE_PROVEN_CURRENT",
+      "evidence": "Current CARBON repository read/write and convergence commit path."
     },
     {
-      "name": "Gmail",
-      "state": "READ_WRITE_PROVEN__NEW_COMMERCIAL_OUTBOUND",
-      "evidence": "Cherry One official content-partner requirements inquiry sent 2026-10-02T11:20:20Z; Gmail message 1a0fc58012594488."
+      "name": "Google Drive / Master Sheet",
+      "state": "READ_WRITE_READBACK_PROVEN_CURRENT",
+      "evidence": "MASTER_INDEX A60:J60; DASHBOARD A47:C47; LIBRARIAN_SYNC A76:H76; OUTSTANDING A34:H34; DRIFT_REGISTER A16:N16."
     },
     {
-      "name": "Google Drive",
-      "state": "READ_PROVEN",
-      "evidence": "Bounty Reaper Live Tracker and existing durable Drive assets readable."
+      "name": "T10 Canonical Library Custody",
+      "state": "DEDUPED__EARLIEST_DURABLE_COPY_RETAINED",
+      "evidence": "libfile_5023cf78e01c8191881165be82e1d0a9; SHA-256 9924cae8b746eff530b8250054c3116a3a68283ce8624fab99c01371b3619dcc. Later byte-identical artifact/receipt/guide copies moved to trash."
     },
     {
-      "name": "Vercel",
-      "state": "AUTHENTICATED__ZERO_PROJECTS",
-      "evidence": "Connected team recovered; project list empty; existing backend not deployed there."
+      "name": "Evidence House Primary",
+      "state": "LIVE__V2__FUNCTIONAL_HEAD_799C4F",
+      "evidence": "Render srv-davpec7avr4c73cu6ll0 / deploy dep-davui7qd0e5s739egp90 live."
+    },
+    {
+      "name": "Evidence House Secondary",
+      "state": "LIVE__V2__FUNCTIONAL_HEAD_799C4F",
+      "evidence": "Render srv-davpi5qd0e5s738t86tg / deploy dep-davui8jtqb8s73druekg live."
+    },
+    {
+      "name": "Render commit-trigger continuity",
+      "state": "HOLD",
+      "evidence": "Both services are configured autoDeploy=yes/commit, but the T10 main push did not create deployments; authorized API fallback deployed functional head 799c4f."
+    },
+    {
+      "name": "Gmail commercial execution",
+      "state": "PRIOR_CURRENT_ACTION_EVIDENCE_PRESERVED__NOT_RETESTED_IN_THIS_SYNC",
+      "evidence": "Current worker contract records latest substitute-cycle Gmail actions; no fresh Gmail read was required for convergence."
     },
     {
       "name": "TinyFish",
-      "state": "AVAILABLE__LEGACY_MONITOR_IDENTIFIED__STOP_ATTEMPT_NOT_ACCEPTED_BY_CURRENT_API",
-      "evidence": "Exact legacy monitor id d7b510d6-9549-435f-96cd-2ff2ce5b58b1 recovered from TinyFish hourly email. Current monitor registry does not expose it; direct cancel returned Monitor not found; control page requires TinyFish login."
-    },
-    {
-      "name": "Opera Browser Connector",
-      "state": "UNAVAILABLE",
-      "evidence": "Browser not connected."
-    },
-    {
-      "name": "CARBON° House Site",
-      "state": "ACTIVE_CHATGPT_SITE_V2__SOURCE_VERSION_NOT_REPUBLISHED",
-      "evidence": "Library readback still shows appgprj_6aabe3aac8fc819199f38d7cf4a79faf source_version_number=2. Do not claim >2 publish."
-    },
-    {
-      "name": "CARBON° Business Studio",
-      "state": "ACTIVE_SITE_V4__INTAKE_PROTOTYPE",
-      "evidence": "appgprj_6ab6c1e499a48191ada448afa9209f35"
-    },
-    {
-      "name": "CARBON° Operational House Backend",
-      "state": "LIVE__CONNECTED__GITHUB_LIVE__EVIDENCE_SEARCH_EXERCISED",
-      "evidence": "Render service srv-davpec7avr4c73cu6ll0 at https://amx-evidence-house.onrender.com; deploy dep-davpg0psrm7s73ct2860 live on commit 34ed93fd8fb9219f728437980ce1b4a9b7df8adb. /api/house/bootstrap returned CONNECTED/GITHUB_LIVE and live browser evidence search returned 1 match for commercial workflow."
+      "state": "CONTENT_FETCH_AVAILABLE__BROWSER_AUTOMATION_OWNER_FUNDING_GATE",
+      "evidence": "Browser automation could not start because TinyFish wallet balance was negative; this does not invalidate backend/API acceptance."
     }
   ],
-  "alerts": [
-    {
-      "severity": "P1",
-      "id": "BLACK_AUTOWAKE",
-      "state": "REPAIR_INSTALLED__BLACK_RUNTIME_HEALTHY__NEXT_WINDOWS_LOGIN_ACCEPTANCE_PENDING",
-      "next": "Do not ask Owner to fix or start BLACK. On the next natural Windows login/reboot, require a fresh durable BLACK receipt; failure then reopens the startup edge."
+  "commercial": {
+    "full_ledger": 32,
+    "state_counts": {
+      "DELIVERY_FAILED": 1,
+      "SUBMITTED": 14,
+      "RESPONDED": 1,
+      "QUALIFIED": 9,
+      "DISCOVERED": 1,
+      "DEPRIORITIZED": 4,
+      "HOLD": 2
     },
+    "PRI_signals": 20,
+    "iSCOPE_signals": 6,
+    "claims": 29,
+    "ready_count": 29,
+    "payment_rails_known": 10,
+    "payment_inventory": "CURRENT_KNOWN_RAILS_CONSOLIDATED / PLATFORM_SPECIFIC_ONBOARDING_MAY_ADD",
+    "OKX_receiving_details": "UNKNOWN_HOLD_PENDING_AUTHORITATIVE_RECOVERY",
+    "realized_revenue": {
+      "state": "UNPROVEN",
+      "amount_claimed": 0,
+      "currency": "USD",
+      "rule": "PAID requires attributable payment evidence."
+    }
+  },
+  "alerts": [
     {
       "severity": "P0",
       "id": "COMMERCIAL_AUTONOMY",
-      "state": "POST_CORRECTION_CYCLE_PROVEN__SCHEDULED_RUNTIME_RELIABILITY_PENDING",
-      "next": "Require a future scheduled iSCOPE→PRI wake to produce its own attributable material receipt; preserve the proven substitute-execution cycle and do not reopen OVERDRIVE."
+      "state": "FAIL_OPEN__SCHEDULER_WAKE_WITHOUT_QUALIFYING_SELF_EXECUTION_RECEIPT",
+      "next": "Next scheduler run must execute attributable iSCOPE/PRI work, compute KPI, persist consequential writes, update/read back existing OUTSTANDING row34."
     },
     {
       "severity": "P1",
-      "id": "HOUSE_LIVE",
-      "state": "BACKEND_AND_SAME_SOURCE_HOUSE_LIVE__CHATGPT_SITE_REPUBLISH_PENDING",
-      "next": "Existing operational House source is live and exercised on Render. Remaining exact acceptance edge: publish the existing ChatGPT Site appgprj_6aabe3aac8fc819199f38d7cf4a79faf above source v2 using an authorized Sites mutation surface; do not clone it."
+      "id": "BLACK_LIVENESS",
+      "state": "HOLD__JOBS_012_013_UNRECEIPTED",
+      "next": "Require durable receipt/readback for current BLACK jobs before claiming current execution."
     },
     {
       "severity": "P1",
-      "id": "BOUNTY_REAPER",
-      "state": "EXECUTED__USEFUL_WORK_PROVEN",
-      "next": "Continue as additional specialist lane; promote only material findings, handoffs or payout evidence."
+      "id": "RENDER_AUTODEPLOY",
+      "state": "HOLD__COMMIT_TRIGGER_NOT_PROVEN",
+      "next": "Retest commit-trigger deploy on a future material backend change; API fallback is proven but is not autoDeploy proof."
     },
     {
       "severity": "P1",
-      "id": "TINYFISH_STOP",
-      "state": "LEGACY_MONITOR_IDENTIFIED__STOP_NOT_VERIFIED",
-      "next": "Provider-native monitor id d7b510d6-9549-435f-96cd-2ff2ce5b58b1 is known. Current API says Monitor not found and control page requires TinyFish login; do not create or resume a replacement monitor."
+      "id": "BOUNTY_SCOPE_BINDING",
+      "state": "HOLD__SOURCE_RECOVERED_EXACT_PROGRAM_BINDING_UNPROVEN",
+      "next": "Preserve independent Reaper lane; prove exact program target/ref binding before deeper static finding promotion."
     }
   ],
   "realized_revenue": {
     "state": "UNPROVEN",
     "amount_claimed": 0,
     "currency": "USD",
-    "rule": "PAID requires payment evidence."
-  }
+    "rule": "PAID requires attributable payment evidence."
+  },
+  "convergence_receipt": "CONTINUITY/AMX_MATRIX_WIDE_CONVERGENCE_2026-10-02T1955_SAST.json"
 }

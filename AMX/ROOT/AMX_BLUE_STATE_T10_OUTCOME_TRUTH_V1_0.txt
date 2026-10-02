@@ -1,0 +1,186 @@
+AMilliMATRiX — BLUE STATE T10 OUTCOME TRUTH PROTOCOL v1.0
+Status: MERGED — GOVERNANCE OUTCOME-REPORTING / VERIFICATION INVARIANT
+Source event: ROOT-20261002-1345-001
+Date: 2026-10-02
+
+PURPOSE
+Prevent technical, intermediate or administrative status from being narrated as a real-world outcome that the evidence does not prove.
+
+1. CORE INVARIANT
+A consequential status claim is not accepted as outcome truth until it can be explained plainly in terms of:
+- what it was supposed to do;
+- what it actually did;
+- what proves that;
+- what changed because of it; and
+- what still has NOT happened.
+
+If the plain-language explanation is less successful than the technical summary, the more bounded evidence-supported interpretation wins.
+
+2. THE T10 QUESTIONS
+For consequential execution, build, deployment, automation, recovery, revenue, governance-implementation or incident-closeout claims, answer:
+1) What was it supposed to do?
+2) What did it actually do?
+3) What proves that?
+4) What changed because of it?
+5) What still has NOT happened?
+
+3. STATUS WORDS DO NOT PROVE THEMSELVES
+ACTIVE, READY, CONNECTED, DEPLOYED, RUNNING, OPERATIONAL, COMPLETE, FIXED, SUBMITTED, ACCEPTED, PAID, VERIFIED, AUTONOMOUS and EXECUTING are state labels, not self-proving evidence.
+Examples:
+- ACTIVE or SCHEDULER_WOKE does not prove EXECUTING.
+- DEPLOYED does not prove the deployed result works.
+- FIXED requires evidence that the original fault condition is gone.
+- SUBMITTED does not prove ACCEPTED.
+- INVOICED does not prove PAID.
+- PAID requires attributable payment evidence.
+- COMPLETE requires the applicable terminal acceptance condition.
+
+4. EVIDENCE CEILING
+T10 may never claim more than the underlying evidence supports.
+Where technical state and observable result diverge:
+- preserve the technical state;
+- lower the outcome claim to the highest evidenced truth;
+- state the remaining gap explicitly;
+- create/update Drift evidence when the mismatch is material.
+UNKNOWN / HOLD / NOT YET are valid truth states.
+
+5. RELATION TO 5W/H
+T10 does not replace what/when/where/why/how.
+5W/H establishes completeness and context.
+T10 establishes outcome truth.
+Where both apply:
+5W/H -> evidence/state record -> T10 outcome translation.
+Complete context does not prove successful outcome.
+
+6. RELATION TO BLUE STATE EXECUTION FIDELITY
+Execution Fidelity protects the terminal objective through execution and requires evidenced DONE/BLOCKED.
+T10 protects reporting and interpretation so intermediate progress cannot masquerade as terminal success.
+Execution Fidelity: finish the thing or prove the genuine block.
+T10: tell the truth about what actually happened.
+
+7. DRIFT INTEGRATION
+T10 is an additional Drift observation surface.
+AMBER outcome drift:
+- consequential status claim lacks required T10 translation;
+- evidence is insufficient to determine the represented outcome;
+- remaining gap is hidden or implicit;
+- intermediate and later lifecycle states are materially blurred.
+RED outcome drift:
+- a consequential claim materially exceeds evidence, including unsupported claims of completion, successful fix, execution, acceptance, deployment success, settlement, payment, verified real-world outcome, or removal of an unresolved blocker.
+
+Existing Drift authority, HOLD/release mechanics and severity governance remain in force. T10 does not create a second Drift system.
+
+8. MEASUREMENT
+Use existing state/evidence records. Do not create a competing lifecycle taxonomy.
+
+Minimum T10 fields where required:
+t10_required
+t10_job
+t10_actual
+t10_evidence
+t10_change
+t10_remaining_gap
+t10_claim_supported
+t10_pass
+
+T10_PASS requires:
+- all applicable T10 questions answered;
+- sufficient evidence for the claimed result;
+- no material overstatement;
+- remaining gap explicit.
+
+Aggregate health may record:
+t10_required_count
+t10_pass_count
+t10_fail_count
+t10_missing_count
+t10_claim_evidence_mismatch_count
+t10_unproven_terminal_claim_count
+t10_pass_rate
+
+9. APPLICATION
+T10 is required for consequential claims involving worker/automation execution, builds/releases, fixes/remediation, deployment/runtime commissioning, external submission/acceptance, revenue/payment, security findings/remediation, governance implementation/propagation, recovery/failover, incident closure, and material dashboards/receipts.
+
+T10 is not required for casual conversation, trivial informational responses or raw evidence not represented as an outcome.
+
+10. IMPLEMENTATION
+Do not build a new dashboard, worker, authority, scoring economy or state machine.
+Implement as a translation/verification layer on existing surfaces:
+- consequential execution receipts carry T10 truth;
+- material dashboard/status outputs carry a compact T10 summary;
+- material recurring-worker notifications carry T10 truth;
+- Drift sweeps test claim/evidence mismatch;
+- handoffs preserve the latest T10 truth;
+- technical evidence remains underneath.
+
+11. ACCEPTANCE EXAMPLES
+ACTIVE + scheduler wake + no work receipt ->
+"The worker woke up. There is no proof it did useful work."
+
+BUILD PASSED + DEPLOYED + no runtime acceptance ->
+"The build was created, tested and deployed. We have not yet proved the deployed thing performs its intended job."
+
+INVOICE SENT + no payment ->
+"We asked to be paid. We have not been paid yet."
+
+Evidence unavailable/contradictory ->
+"We do not know yet." / "Not proven yet."
+
+Terminal objective + evidence + applicable readback/acceptance ->
+Plain explanation may state completion only to the extent actually proved.
+
+12. NON-DUPLICATION / AUTHORITY
+T10 does not replace Root intake, 5W/H, Evidence Integrity, lifecycle/state fields, BLUE STATE Execution Fidelity, BUILD/CANON/GOVERNANCE separation, or existing Drift authority.
+It grants no new execution authority.
+
+13. RELIABILITY TEST
+If a non-specialist reading the T10 statement would reasonably believe more happened than the evidence proves, T10 FAILS.
+
+
+14. MATRIX-WIDE GOVERNANCE SCOPE
+T10 is not a conversational formatting preference and is not limited to commercial or worker status.
+
+It applies across the Matrix wherever a consequential claim about state, change, cause, effect, remediation, authorization, safety, integrity, or outcome is made, including:
+- governance and authority decisions;
+- security controls and security findings;
+- detection and monitoring;
+- investigations and incident response;
+- Root/Master/Librarian reconciliation;
+- build, deployment and runtime claims;
+- worker/automation commissioning;
+- commercial and payment truth;
+- recovery, failover and continuity;
+- evidence review and forensic reconstruction;
+- public or internal presentation of system state.
+
+For security/detection/investigation use, the T10 questions remain the same but map naturally to:
+- What condition/event were we trying to detect or understand?
+- What did the system actually observe or establish?
+- What evidence proves it?
+- What materially changed, was contained, or was learned?
+- What is still unproven, unresolved, exposed, or under investigation?
+
+A detection alert is not proof of compromise.
+A security control firing is not proof that risk was removed.
+An investigation hypothesis is not a finding.
+A remediation action is not a verified fix until the original condition is retested.
+A governance decision is not system-wide implementation until affected behavior is evidenced.
+
+15. HISTORICAL REAPER LINEAGE — NO ROLE REVIVAL
+The Owner noted that T10/Inspector-style evidence questioning resembles the historical Reaper concept that sat behind Prime gates and surfaced on material Matrix changes to ask for evidence of what changed, why, when, by whom, and with what authority/effect.
+
+This is recorded as architectural lineage/context only.
+
+T10 does NOT:
+- revive the historical Prime-gate Reaper implementation;
+- rename the Commissioning Inspector as Reaper;
+- merge Bounty Reaper with governance/security Reaper functions;
+- create a second Inspector, second Drift authority, or new enforcement office.
+
+The current Bounty Reaper remains its independent crypto-centric bounty role.
+The current Commissioning Inspector remains the commissioning/detection role.
+T10 is a Matrix-wide governance invariant used by existing roles where applicable.
+
+
+CORE RULE
+If the T10 explanation sounds less successful than the technical summary, the system must not report the more successful interpretation as proven.

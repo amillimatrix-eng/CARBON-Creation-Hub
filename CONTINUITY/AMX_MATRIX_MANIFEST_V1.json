@@ -1,44 +1,238 @@
 {
-  "schema":"AMX_MATRIX_MANIFEST_V1",
-  "generated":"2026-10-01",
-  "authority_rule":"NO_COMPLETE_RECONSTRUCTION_RECEIPT_NO_MATRIX_AUTHORITY",
-  "recovery_order":["SOURCE","IDENTITY","PURPOSE","CAPABILITIES","RELATIONSHIPS","DEPLOYMENT","CURRENT_STATE","FALSIFICATION","RECEIPT"],
-  "ecosystems":{
-    "HOBO":{
-      "identity":"HOBO",
-      "purpose":"Entertainment, roasting, philosophy and narrative-engagement utility/ecosystem",
-      "custody":{"repo":"BullRulez/AMB-HOBO-AI-","branch":"main","head":"3f59971cedf2db4b92f9cfdfe2ad426796675adf","account":"BullRulez"},
-      "deployment":{"state":"UNKNOWN_HOLD","note":"Repository head verified; exact current runtime/deployment receipt still requires recovery."},
-      "state":"HOLD_PRESERVED"
+  "schema": "AMX_MATRIX_MANIFEST_V1",
+  "generated": "2026-10-02T17:55:00Z",
+  "authority_rule": "NO_COMPLETE_RECONSTRUCTION_RECEIPT_NO_MATRIX_AUTHORITY",
+  "recovery_order": [
+    "SOURCE",
+    "IDENTITY",
+    "PURPOSE",
+    "CAPABILITIES",
+    "RELATIONSHIPS",
+    "DEPLOYMENT",
+    "CURRENT_STATE",
+    "FALSIFICATION",
+    "RECEIPT"
+  ],
+  "ecosystems": {
+    "HOBO": {
+      "identity": "HOBO",
+      "purpose": "Entertainment, roasting, philosophy and narrative-engagement utility/ecosystem",
+      "custody": {
+        "repo": "BullRulez/AMB-HOBO-AI-",
+        "branch": "main",
+        "head": "3f59971cedf2db4b92f9cfdfe2ad426796675adf",
+        "account": "BullRulez"
+      },
+      "deployment": {
+        "state": "UNKNOWN_HOLD",
+        "note": "Repository head verified; exact current runtime/deployment receipt still requires recovery."
+      },
+      "state": "HOLD_PRESERVED"
     },
-    "JAM3S":{
-      "identity":"JAM3S",
-      "purpose":"Reputation, trust, referral/task verification and accountable-record network",
-      "custody":{"repo":"BullRulez/JAM3S_BOT","branch":"main","head":"078576d4a86dc4c3f3ae532183b89a6dabf1e084","package":"05_JAM3S/JAM3S-World-main.zip","package_sha256":"6beebd322ce464c008b8283f984fc8a0bce551f502da28cc5eb35b6f1e582438","account":"BullRulez"},
-      "telegram":{"runtime":"james_bot.py","identity":"JAM3S SPECIAL AGENT 003 / Referral InfluX Engine v2.0","relationship":"EVIDENCED","transport_is_not_purpose":true},
-      "deployment":{"state":"EVIDENCED_HISTORICAL","watchtower":"Permanent service deployment recorded by repository commit a8957f5fcdfd4a58f9a226855648e9c6ce91afd7","auto_deploy":"GitHub push auto-deploy recorded by same commit","database":"james.db recorded sacred/backed up"},
-      "artifact_lineage":{"James-Bot_repo":"HOLD_CODE_LEVEL_RECONCILIATION","JAM3S_BOT_to_package":"HOLD_CODE_LEVEL_RECONCILIATION"},
-      "state":"HOLD_PRESERVED"
+    "JAM3S": {
+      "identity": "JAM3S",
+      "purpose": "Reputation, trust, referral/task verification and accountable-record network",
+      "custody": {
+        "repo": "BullRulez/JAM3S_BOT",
+        "branch": "main",
+        "head": "078576d4a86dc4c3f3ae532183b89a6dabf1e084",
+        "package": "05_JAM3S/JAM3S-World-main.zip",
+        "package_sha256": "6beebd322ce464c008b8283f984fc8a0bce551f502da28cc5eb35b6f1e582438",
+        "account": "BullRulez"
+      },
+      "telegram": {
+        "runtime": "james_bot.py",
+        "identity": "JAM3S SPECIAL AGENT 003 / Referral InfluX Engine v2.0",
+        "relationship": "EVIDENCED",
+        "transport_is_not_purpose": true
+      },
+      "deployment": {
+        "state": "EVIDENCED_HISTORICAL",
+        "watchtower": "Permanent service deployment recorded by repository commit a8957f5fcdfd4a58f9a226855648e9c6ce91afd7",
+        "auto_deploy": "GitHub push auto-deploy recorded by same commit",
+        "database": "james.db recorded sacred/backed up"
+      },
+      "artifact_lineage": {
+        "James-Bot_repo": "HOLD_CODE_LEVEL_RECONCILIATION",
+        "JAM3S_BOT_to_package": "HOLD_CODE_LEVEL_RECONCILIATION"
+      },
+      "state": "HOLD_PRESERVED"
     },
-    "IRIS":{
-      "identity":"IRIS",
-      "purpose":"Living evidence layer that helps participants evaluate decisions before committing; decisions remain human",
-      "custody":{"repo":"BullRulez/IRIS-My-Case","branch":"main","head":"2524b03c3c257e7bc9d87835a40391b54687ee59","repo_note":"Repository currently reports size 0 / initial commit only","source_seed":"IRIS_v0_1_Package.zip","source_seed_status":"HISTORICAL_SOURCE_SEED_PRESERVED_CURRENT_SOURCE_GAP","account":"BullRulez"},
-      "constraints":["NOT_RECRUITMENT_PLATFORM","NOT_SOCIAL_NETWORK","NOT_REPUTATION_NETWORK","INTERVIEW_IS_USE_CASE_NOT_IDENTITY","EVIDENCE_BACKEND_OWNERSHIP_HOLD_PENDING_ARCHITECTURE_RECOVERY"],
-      "deployment":{"state":"UNKNOWN_HOLD","known_site":"unchaind.netlify.app","note":"Current exact editable/runtime source not yet verified."},
-      "state":"HOLD_PRESERVED"
+    "IRIS": {
+      "identity": "IRIS",
+      "purpose": "Living evidence layer that helps participants evaluate decisions before committing; decisions remain human",
+      "custody": {
+        "repo": "BullRulez/IRIS-My-Case",
+        "branch": "main",
+        "head": "2524b03c3c257e7bc9d87835a40391b54687ee59",
+        "repo_note": "Repository currently reports size 0 / initial commit only",
+        "source_seed": "IRIS_v0_1_Package.zip",
+        "source_seed_status": "HISTORICAL_SOURCE_SEED_PRESERVED_CURRENT_SOURCE_GAP",
+        "account": "BullRulez"
+      },
+      "constraints": [
+        "NOT_RECRUITMENT_PLATFORM",
+        "NOT_SOCIAL_NETWORK",
+        "NOT_REPUTATION_NETWORK",
+        "INTERVIEW_IS_USE_CASE_NOT_IDENTITY",
+        "EVIDENCE_BACKEND_OWNERSHIP_HOLD_PENDING_ARCHITECTURE_RECOVERY"
+      ],
+      "deployment": {
+        "state": "UNKNOWN_HOLD",
+        "known_site": "unchaind.netlify.app",
+        "note": "Current exact editable/runtime source not yet verified."
+      },
+      "state": "HOLD_PRESERVED"
     },
-    "CARBON":{
-      "identity":"CARBON° — Degree of Business",
-      "purpose":"Creation Hub / production business",
-      "custody":{"repo":"amillimatrix-eng/CARBON-Creation-Hub","branch":"main","head":"382725533849d20f2da478c002a5679b61f75d90","account":"amillimatrix-eng"},
-      "constraints":["BUILD_COMPLETE","HISTORICAL_BUILD_CHECKPOINTS_PROVENANCE_ONLY","PARENT_ECOSYSTEM_NE_CHILD_PILLAR_IDENTITY","PILLARS_REQUIRE_OWN_RECOVERED_PURPOSE_CAPABILITY_ARTIFACT_STATE_COMMERCIAL_ROLE"],
-      "known_pillars":["Media Pillar","Living Exhibition Gallery"],
-      "pillar_completeness":"NON_EXHAUSTIVE_UNTIL_AUTHORITATIVE_PILLAR_ARCHITECTURE_RECOVERED",
-      "state":"BUILD_COMPLETE"
+    "CARBON": {
+      "identity": "CARBON° — Degree of Business",
+      "purpose": "Creation Hub / production business",
+      "custody": {
+        "repo": "amillimatrix-eng/CARBON-Creation-Hub",
+        "branch": "main",
+        "head": "799c4f936363deceaba9183892cdf8c7e4bca0bc",
+        "account": "amillimatrix-eng",
+        "head_semantics": "LAST_FUNCTIONAL_CONTENT_HEAD_BEFORE_CONTINUITY_ONLY_CONVERGENCE_COMMIT",
+        "branch_current_head_must_be_read_live": true
+      },
+      "constraints": [
+        "BUILD_COMPLETE",
+        "HISTORICAL_BUILD_CHECKPOINTS_PROVENANCE_ONLY",
+        "PARENT_ECOSYSTEM_NE_CHILD_PILLAR_IDENTITY",
+        "PILLARS_REQUIRE_OWN_RECOVERED_PURPOSE_CAPABILITY_ARTIFACT_STATE_COMMERCIAL_ROLE"
+      ],
+      "known_pillars": [
+        "Media Pillar",
+        "Living Exhibition Gallery"
+      ],
+      "pillar_completeness": "NON_EXHAUSTIVE_UNTIL_AUTHORITATIVE_PILLAR_ARCHITECTURE_RECOVERED",
+      "state": "BUILD_COMPLETE"
     }
   },
-  "mandatory_laws":["NEW_CAPABILITY_ADDS_NOT_ERASES","INTEGRATION_NE_IDENTITY","CONSUMER_NE_OWNER","USE_CASE_NE_ECOSYSTEM_DEFINITION","REPOSITORY_NE_DEPLOYMENT","HOLD_NE_ABANDONED","CURRENT_WORKSTREAM_NE_MATRIX","PARENT_ECOSYSTEM_NE_CHILD_PILLAR_IDENTITY","TRANSPORT_INTERFACE_NE_PURPOSE","UNKNOWN_HOLD_OVER_INFERENCE"],
-  "custody_identities":{"BullRulez":"admin/push verified on HOBO,JAM3S,James-Bot,IRIS","amillimatrix-eng":"CARBON custody/write route verified through AMX connection"},
-  "falsification":{"required_ecosystems":["HOBO","JAM3S","IRIS","CARBON"],"missing_ecosystem":"FAIL","missing_identity_or_purpose_or_custody_or_state":"FAIL","unknown_evidence":"PRESERVE_AS_UNKNOWN_HOLD_NOT_INFER","partial_conversation_memory":"NOT_AUTHORITY"}
+  "mandatory_laws": [
+    "NEW_CAPABILITY_ADDS_NOT_ERASES",
+    "INTEGRATION_NE_IDENTITY",
+    "CONSUMER_NE_OWNER",
+    "USE_CASE_NE_ECOSYSTEM_DEFINITION",
+    "REPOSITORY_NE_DEPLOYMENT",
+    "HOLD_NE_ABANDONED",
+    "CURRENT_WORKSTREAM_NE_MATRIX",
+    "PARENT_ECOSYSTEM_NE_CHILD_PILLAR_IDENTITY",
+    "TRANSPORT_INTERFACE_NE_PURPOSE",
+    "UNKNOWN_HOLD_OVER_INFERENCE"
+  ],
+  "custody_identities": {
+    "BullRulez": "admin/push verified on HOBO,JAM3S,James-Bot,IRIS",
+    "amillimatrix-eng": "CARBON custody/write route verified through AMX connection"
+  },
+  "falsification": {
+    "required_ecosystems": [
+      "HOBO",
+      "JAM3S",
+      "IRIS",
+      "CARBON"
+    ],
+    "missing_ecosystem": "FAIL",
+    "missing_identity_or_purpose_or_custody_or_state": "FAIL",
+    "unknown_evidence": "PRESERVE_AS_UNKNOWN_HOLD_NOT_INFER",
+    "partial_conversation_memory": "NOT_AUTHORITY"
+  },
+  "current_governance": {
+    "T10": {
+      "status": "MERGED__MATRIX_WIDE",
+      "class": "BLUE_STATE_OPERATIONAL_GOVERNANCE__NOT_CANON_BY_ITSELF",
+      "source_event": "ROOT-20261002-1345-001",
+      "canonical_custody": {
+        "surface": "ChatGPT Library",
+        "library_file_id": "libfile_5023cf78e01c8191881165be82e1d0a9",
+        "sha256": "9924cae8b746eff530b8250054c3116a3a68283ce8624fab99c01371b3619dcc",
+        "duplicate_state": "BYTE_IDENTICAL_LATER_DUPLICATES_REMOVED__EARLIEST_DURABLE_COPY_RETAINED"
+      },
+      "recovery_mirror": {
+        "repo_path": "AMX/ROOT/AMX_BLUE_STATE_T10_OUTCOME_TRUTH_V1_0.txt",
+        "expected_sha256": "9924cae8b746eff530b8250054c3116a3a68283ce8624fab99c01371b3619dcc",
+        "authority_note": "Recovery mirror only; authority derives from merged BLUE STATE disposition/canonical custody, not repository presence."
+      },
+      "rule": "Consequential activity/status is not outcome truth without bounded evidence; remediation is not verified until the original condition is retested."
+    }
+  },
+  "root_continuity": {
+    "current_projection": "SINGLE_ACTIVE_ROOT_RUNTIME",
+    "active_runtime": "ROOT-GPT56SOL-20260930-01",
+    "predecessor": "SUPERSEDED__READ_ONLY_PROVENANCE",
+    "source": "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1 / ROOT RUNTIME SUCCESSION",
+    "dual_active_authority": "PROHIBITED"
+  },
+  "operational_projection": {
+    "observed_at": "2026-10-02T19:55:00+02:00",
+    "active_scheduled_workers": 5,
+    "active_worker_titles": [
+      "Matrix Commissioning Inspector",
+      "Master Control Check",
+      "Bounty Reaper",
+      "CARBON° Production Studio",
+      "iSCOPE → PRI Execution Engine"
+    ],
+    "commercial": {
+      "full_ledger": 32,
+      "claims": 29,
+      "PRI_signals": 20,
+      "iSCOPE_signals": 6,
+      "known_receiving_rails": 10,
+      "realized_revenue": "UNPROVEN / 0 CLAIMED",
+      "scheduler_autonomy_acceptance": "FAIL_OPEN__19_00_SAST_WAKE_WITHOUT_QUALIFYING_SCHEDULER_ORIGIN_RECEIPT_OR_ROW34_READBACK",
+      "substitute_execution": "PROVEN"
+    },
+    "evidence_house": {
+      "schema_version": 2,
+      "primary": {
+        "service": "srv-davpec7avr4c73cu6ll0",
+        "deploy": "dep-davui7qd0e5s739egp90",
+        "functional_head": "799c4f936363deceaba9183892cdf8c7e4bca0bc",
+        "state": "LIVE"
+      },
+      "secondary": {
+        "service": "srv-davpi5qd0e5s738t86tg",
+        "deploy": "dep-davui8jtqb8s73druekg",
+        "functional_head": "799c4f936363deceaba9183892cdf8c7e4bca0bc",
+        "state": "LIVE"
+      },
+      "t10_evidence_coverage": "4/4 COMPLETE",
+      "auto_deploy_continuity": "HOLD__COMMIT_TRIGGER_DID_NOT_CREATE_DEPLOY__API_FALLBACK_USED"
+    },
+    "bounty_reaper": {
+      "mandate": "INDEPENDENT_CRYPTO_CENTRIC_BOUNTY_REWARD_LANE",
+      "latest_material_run": "RUN-20261002-1837",
+      "latest_material_outcome": "SOURCE_TRANSPORT_FALLBACK_WORKED__EXACT_SCOPE_BINDING_HOLD",
+      "normal_path": "REAPER -> FIND -> VERIFY -> EXECUTE -> PROVE -> SUBMIT (when authorized) -> RECEIVE -> VERIFY PAYMENT",
+      "iscope_pri_dependency": false
+    },
+    "BLACK": {
+      "latest_runtime_proof": "BLACK/receipts/BLACK-FINAL-VERIFY-008.json",
+      "latest_runtime_proof_state": "SYSTEM_SERVICE_ACTIVE__USER_SESSION_LINGERING__ONE_PROCESS__WINDOWS_STARTUP_PRESENT",
+      "pending_jobs": [
+        "BLACK-OKX-USERSPACE-NODE-ONCHAINOS-012",
+        "BLACK-LIVENESS-AFTER-OKX-013"
+      ],
+      "current_outcome": "HOLD__NO_RECEIPTS_RECOVERED_FOR_012_OR_013",
+      "default_dependency": false
+    }
+  },
+  "convergence": {
+    "state": "PASS__SHARED_STATE_CONSOLIDATED__OPEN_HOLDS_PRESERVED",
+    "synchronized_at": "2026-10-02T19:55:00+02:00",
+    "parent_repo_head": "799c4f936363deceaba9183892cdf8c7e4bca0bc",
+    "shared_sheet": "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1",
+    "shared_sheet_readback": [
+      "MASTER_INDEX!A60:J60",
+      "DASHBOARD!A47:C47",
+      "LIBRARIAN_SYNC!A76:H76",
+      "OUTSTANDING!A34:H34",
+      "DRIFT_REGISTER!A16:N16"
+    ],
+    "receipt": "CONTINUITY/AMX_MATRIX_WIDE_CONVERGENCE_2026-10-02T1955_SAST.json",
+    "no_build_reopen": true,
+    "no_new_authority": true,
+    "no_role_merge": true
+  }
 }
