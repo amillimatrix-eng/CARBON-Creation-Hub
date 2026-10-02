@@ -1,0 +1,9 @@
+{
+  "purpose": "Post-OKX-install liveness receipt. Prove BLACK is still claiming new jobs after 012. No mutation beyond read-only runtime inspection.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -e; date -u +%FT%TZ; id; printf 'node='; (node -v || true); printf 'npm='; (npm -v || true); printf 'onchainos='; (command -v onchainos || true); echo BLACK_LIVENESS_OK"
+  ],
+  "timeout": 30
+}
