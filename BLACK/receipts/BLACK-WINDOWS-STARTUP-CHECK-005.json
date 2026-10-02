@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-WINDOWS-STARTUP-CHECK-005",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-02T13:23:11.871710+00:00",
+  "finished": "2026-10-02T13:23:12.951260+00:00",
+  "stdout": "EXISTS=yes\nWRITABLE=yes\ntotal 4\ndrwxrwxrwx 1 amx amx 4096 Aug 30 23:01 .\ndrwxrwxrwx 1 amx amx 4096 Oct  2 12:53 ..\n-rwxrwxrwx 1 amx amx 2095 Aug 30 23:01 Ollama.lnk\n-rwxrwxrwx 1 amx amx  174 Jul  5  2025 desktop.ini\nLAUNCHER=absent\n",
+  "stderr": ""
+}
