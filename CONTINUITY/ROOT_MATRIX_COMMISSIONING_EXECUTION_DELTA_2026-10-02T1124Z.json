@@ -1,0 +1,72 @@
+{
+  "schema": "AMX_ROOT_MATRIX_COMMISSIONING_EXECUTION_DELTA_V1",
+  "persisted_at": "2026-10-02T11:24:30Z",
+  "authority": "Owner directive: fix BLACK autowake; require worker proof/useful work; connect proof to existing House; expose one truthful screen.",
+  "state": "PARTIAL_EXECUTION_WITH_MATERIAL_PROGRESS",
+  "proven": {
+    "bounty_reaper": {
+      "state": "SELF_EXECUTED_USEFUL_WORK",
+      "receipt": "CONTINUITY/BOUNTY_REAPER_RUN_2026-10-02T1311_SAST.md",
+      "tracker_readback": "Google Drive AMX Bounty Reaper — Live Tracker / Runs"
+    },
+    "commercial_cycle": {
+      "state": "POST_CORRECTION_ATTRIBUTABLE_CYCLE_PROVEN_BY_AUTHORIZED_SUBSTITUTE",
+      "iscope": "overdrive/iscope/receipts/ISCOPE-POST-CORRECTION-20261002-112020Z.json",
+      "pri": "overdrive/pri/receipts/PRI-POST-CORRECTION-20261002-112020Z.json",
+      "external_action": "Gmail 1a0fc58012594488 -> contact@cherryone.ai",
+      "inventory_count": 18,
+      "new_qualified": 5,
+      "candidates_inspected": 24
+    },
+    "protected_transport": {
+      "state": "REACTED_TO_NEW_LEDGER",
+      "commit": "865ec4ec67ed959f872c7f3ec33eac45bb9d258d",
+      "pri_signals": 8,
+      "ready_claims": 9
+    },
+    "house_source": {
+      "state": "PATCHED_AND_CI_VERIFIED",
+      "commits": [
+        "445ffbe86ce5325ebae08a38d0a12ebbfe48e872",
+        "35f74f828327bda6919d4dcea12d66743c07275a",
+        "5ddaa899953a56f04d440ad6a7515e9e7fef229f"
+      ],
+      "ci_run": 37000083768,
+      "ci_conclusion": "SUCCESS"
+    },
+    "github": "READ_WRITE_PROVEN",
+    "gmail": "READ_WRITE_PROVEN",
+    "drive": "READ_AND_REAPER_TRACKER_WRITE_READBACK_PROVEN"
+  },
+  "pending": {
+    "black": {
+      "state": "POST_REBOOT_AUTOWAKE_NOT_PROVEN",
+      "repair_staged": [
+        "BLACK/install-windows-autostart.ps1",
+        "BLACK/jobs/BLACK-WINDOWS-AUTOSTART-001.json"
+      ],
+      "next": "Start WSL once so existing service can claim staged repair; after receipt, reboot and require fresh no-touch receipt."
+    },
+    "house_live": {
+      "state": "EXISTING_SITE_V2_STILL_LIVE_WITH_OLD_SOURCE",
+      "project_id": "appgprj_6aabe3aac8fc819199f38d7cf4a79faf",
+      "required": "Deploy existing backend persistently, patch EXISTING Site to source >2, authenticated readback/exercise."
+    },
+    "scheduled_reasoning": {
+      "state": "SELF_EXECUTION_RELIABILITY_PENDING",
+      "reason": "Current scheduled iSCOPE/PRI wake observed but the material commercial receipt was produced by authorized substitute execution, not independently recovered from that scheduler wake."
+    },
+    "tinyfish_stop": {
+      "state": "STOP_NOT_VERIFIED",
+      "reason": "legacy hourly AI-agent-market emails continue; monitor registry exposes no cancelable task."
+    }
+  },
+  "truth_screen": "CONTINUITY/MATRIX_TRUTH_SCREEN.json",
+  "invariants": [
+    "DO NOT REBUILD CARBON°",
+    "PATCH EXISTING HOUSE; DO NOT CLONE",
+    "OVERDRIVE COMPLETE / DO NOT REOPEN",
+    "ONE PRI",
+    "NO RECEIPT -> NO CLOSURE"
+  ]
+}
