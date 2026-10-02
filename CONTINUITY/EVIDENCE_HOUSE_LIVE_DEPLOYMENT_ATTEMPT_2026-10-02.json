@@ -94,12 +94,12 @@
     "existing_house_source_version": 2,
     "existing_house_published_version_gt_2": false,
     "live_render_house_readback": "DONE_VERIFIED",
-    "live_chatgpt_site_authenticated_readback": "NOT_DONE",
+    "live_chatgpt_site_authenticated_readback": "BLOCKED_BY_AUTHENTICATED_SITE_MUTATION_SURFACE",
     "end_to_end_render_exercise": "DONE_VERIFIED",
-    "overall": "BACKEND LIVE + EXERCISED / CHATGPT SITE REPUBLISH >2 REMAINS OPEN"
+    "overall": "BLACK FIX SEPARATE; HOUSE BACKEND LIVE/VERIFIED; EXISTING CHATGPT SITE STILL V2 DUE AUTHENTICATED MUTATION GATE"
   },
   "irreducible_gates": [
-    "Obtain an authenticated ChatGPT Sites mutation/publish surface for existing Site appgprj_6aabe3aac8fc819199f38d7cf4a79faf. TinyFish profile setup is exhausted and must not be retried.",
+    "Authenticated ChatGPT Sites mutation/publish surface for existing project appgprj_6aabe3aac8fc819199f38d7cf4a79faf. Latest TinyFish vault-enabled browser attempt had no ChatGPT credentials and made no changes.",
     "Remove or suspend Render duplicate srv-davpi5qd0e5s738t86tg when a supported Render deletion/suspension surface is available; it is already marked non-authoritative and must not receive new responsibilities."
   ],
   "next_action_after_gates": [
@@ -150,5 +150,21 @@
     "key_value_instances": 0,
     "canary_decision": "DO NOT CREATE OR REPURPOSE A RENDER CANARY NOW. GitHub Actions already runs pytest, smoke, Docker build, and container-runtime acceptance for backend/House code paths, so a second identical Render runtime would duplicate existing verification without adding a distinct control boundary.",
     "release_isolation_note": "Render production currently auto-deploys from main. This is acceptable for current read-mostly runtime but is not ideal because main also carries durable Matrix state. Future release isolation should change deployment triggering without creating another Matrix backend or truth ledger."
+  },
+  "latest_publish_attempt": {
+    "attempted_at": "2026-10-02T13:31:00Z",
+    "route": "TinyFish live browser with vault enabled, no profile dependency",
+    "run_id": "96337593-92f8-4373-b530-42dc54e380d6",
+    "target_project": "appgprj_6aabe3aac8fc819199f38d7cf4a79faf",
+    "instruction": "PATCH/PUBLISH EXISTING SITE ONLY; NO CLONE",
+    "result": "AUTHENTICATION_GATE / NO CHANGES MADE",
+    "exact_gate": "TinyFish reported no credentials configured for its account; ChatGPT presented login/signup only; no authenticated project-management/site-publish surface was available.",
+    "no_replacement_created": true,
+    "post_attempt_library_readback": {
+      "source_version_number": 2,
+      "projection_revision": 4,
+      "status": "active",
+      "access_mode": "custom"
+    }
   }
 }
