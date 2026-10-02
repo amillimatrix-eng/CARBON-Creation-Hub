@@ -178,29 +178,42 @@ def test_single_opportunity_read_cannot_bypass_t10(tmp_path):
     assert 'overdrive/opportunities.json::records/b' in body['t10']['T10_EVIDENCE']
 
 
-def test_public_github_state_read_bypasses_stale_raw_cache(tmp_path, monkeypatch):
+def test_public_github_state_resolves_branch_to_immutable_sha_once(tmp_path, monkeypatch):
     monkeypatch.setenv('AMX_GITHUB_REPO','amillimatrix-eng/CARBON-Creation-Hub')
     monkeypatch.setenv('AMX_GITHUB_REF','main')
     monkeypatch.delenv('AMX_GITHUB_TOKEN', raising=False)
-    seen={}
+    calls=[]
+    sha='1234567890abcdef1234567890abcdef12345678'
 
     class FakeResponse:
+        def __init__(self, payload):
+            self.payload=payload
         def __enter__(self):
             return self
         def __exit__(self, exc_type, exc, tb):
             return False
         def read(self):
-            return b'{"schema":"AMX_MATRIX_TRUTH_SCREEN_V2"}'
+            return self.payload
 
     def fake_urlopen(req, timeout=10):
-        seen['url']=req.full_url
-        seen['headers']={k.lower():v for k,v in req.header_items()}
-        return FakeResponse()
+        headers={k.lower():v for k,v in req.header_items()}
+        calls.append((req.full_url,headers))
+        if 'api.github.com/repos/' in req.full_url:
+            return FakeResponse(json.dumps({'sha':sha}).encode())
+        return FakeResponse(b'{"schema":"AMX_MATRIX_TRUTH_SCREEN_V2"}')
 
     monkeypatch.setattr('backend.state.urllib.request.urlopen', fake_urlopen)
     reader=StateReader(tmp_path)
-    body=reader._github_json('CONTINUITY/MATRIX_TRUTH_SCREEN.json')
-    assert body['schema']=='AMX_MATRIX_TRUTH_SCREEN_V2'
-    assert '?amx_t=' in seen['url']
-    assert seen['headers']['cache-control']=='no-cache'
-    assert seen['headers']['pragma']=='no-cache'
+    first=reader._github_json('CONTINUITY/MATRIX_TRUTH_SCREEN.json')
+    second=reader._github_json('overdrive/opportunities.json')
+    assert first['schema']=='AMX_MATRIX_TRUTH_SCREEN_V2'
+    assert second['schema']=='AMX_MATRIX_TRUTH_SCREEN_V2'
+    api_calls=[x for x in calls if 'api.github.com/repos/' in x[0]]
+    raw_calls=[x for x in calls if 'raw.githubusercontent.com' in x[0]]
+    assert len(api_calls)==1
+    assert len(raw_calls)==2
+    assert all('/'+sha+'/' in url for url,_ in raw_calls)
+    assert all('?amx_t=' in url for url,_ in raw_calls)
+    assert all(headers['cache-control']=='no-cache' for _,headers in calls)
+    assert all(headers['pragma']=='no-cache' for _,headers in calls)
+    assert reader.resolved_ref==sha
