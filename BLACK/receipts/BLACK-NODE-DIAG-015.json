@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-NODE-DIAG-015",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-02T22:37:29.953619+00:00",
+  "finished": "2026-10-02T22:37:39.792564+00:00",
+  "stdout": "===PATH===\n/home/amx/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin\n===COMMANDS===\n/home/amx/.local/bin/node\n/home/amx/.local/bin/npm\n/home/amx/.local/bin/npx\n===LOCAL_BIN===\ntotal 16652\ndrwxr-xr-x 2 amx amx     4096 Oct  2 17:55 .\ndrwxr-xr-x 4 amx amx     4096 Oct  2 17:50 ..\nlrwxrwxrwx 1 amx amx       38 Oct  2 17:53 node -> /home/amx/.local/opt/node-v24/bin/node\nlrwxrwxrwx 1 amx amx       37 Oct  2 17:53 npm -> /home/amx/.local/opt/node-v24/bin/npm\nlrwxrwxrwx 1 amx amx       37 Oct  2 17:53 npx -> /home/amx/.local/opt/node-v24/bin/npx\n-rwxr-xr-x 1 amx amx 17043104 Oct  2 17:55 onchainos\n===NODE_OPT===\n/home/amx/.local/opt/node-v24/LICENSE\n/home/amx/.local/opt/node-v24/CHANGELOG.md\n/home/amx/.local/opt/node-v24/bin/okx-a2a\n/home/amx/.local/opt/node-v24/bin/npx\n/home/amx/.local/opt/node-v24/bin/npm\n/home/amx/.local/opt/node-v24/bin/node\n/home/amx/.local/opt/node-v24/bin/corepack\n/home/amx/.local/opt/node-v24/README.md\n===LINK_TARGETS===\n/home/amx/.local/bin/node -> /home/amx/.local/opt/node-v24/bin/node\n/home/amx/.local/bin/npm -> /home/amx/.local/opt/node-v24/lib/node_modules/npm/bin/npm-cli.js\n/home/amx/.local/bin/npx -> /home/amx/.local/opt/node-v24/lib/node_modules/npm/bin/npx-cli.js\n===BOUNDED_EXEC===\n---node---\n/home/amx/.local/bin/node\nv24.21.0\nrc=0\n---npm---\n/home/amx/.local/bin/npm\n11.19.0\nrc=0\n---npx---\n/home/amx/.local/bin/npx\n11.19.0\nrc=0\n===DONE===\n",
+  "stderr": ""
+}
