@@ -29,10 +29,23 @@ class StateReader:
     def _github_json(self, relative: str) -> Any:
         path = urllib.parse.quote(relative, safe="/")
         ref = urllib.parse.quote(self.github_ref, safe="")
+        headers = {"User-Agent": "amx-evidence-house/1.0"}
+
+        # Public repositories do not need the authenticated Contents API.
+        # Prefer raw GitHub when no token is configured so live readback is not
+        # coupled to API auth/rate-limit behavior. Private repos still use the
+        # authenticated Contents API path.
+        if not self.github_token:
+            url = f"https://raw.githubusercontent.com/{self.github_repo}/{ref}/{path}"
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=10) as response:
+                raw = response.read()
+            self.used_live = True
+            return json.loads(raw.decode("utf-8"))
+
         url = f"https://api.github.com/repos/{self.github_repo}/contents/{path}?ref={ref}"
-        headers = {"Accept": "application/vnd.github+json", "User-Agent": "amx-evidence-house/1.0"}
-        if self.github_token:
-            headers["Authorization"] = f"Bearer {self.github_token}"
+        headers["Accept"] = "application/vnd.github+json"
+        headers["Authorization"] = f"Bearer {self.github_token}"
         req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=10) as response:
             body = json.loads(response.read().decode("utf-8"))
