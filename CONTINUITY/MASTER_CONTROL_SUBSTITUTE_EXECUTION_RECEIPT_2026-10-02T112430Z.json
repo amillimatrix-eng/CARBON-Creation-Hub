@@ -1,0 +1,74 @@
+{
+  "schema": "AMX_MASTER_CONTROL_EXECUTION_RECEIPT_V1",
+  "executed_at": "2026-10-02T11:24:30Z",
+  "executor": "CURRENT_MATRIX_REASONING_SESSION_AS_AUTHORIZED_MASTER_CONTROL_SUBSTITUTE",
+  "purpose": "Commission current execution estate without reopening completed machinery.",
+  "actions": [
+    {
+      "action": "BLACK_AUTOWAKE_REPAIR_STAGED",
+      "evidence": [
+        "BLACK/install-windows-autostart.ps1",
+        "BLACK/jobs/BLACK-WINDOWS-AUTOSTART-001.json"
+      ],
+      "state": "PENDING_BLACK_WAKE"
+    },
+    {
+      "action": "BOUNTY_REAPER_EXECUTION_VERIFIED",
+      "evidence": [
+        "CONTINUITY/BOUNTY_REAPER_RUN_2026-10-02T1311_SAST.md",
+        "Google Drive AMX Bounty Reaper — Live Tracker / Runs"
+      ],
+      "state": "PROVEN"
+    },
+    {
+      "action": "ISCOPE_PRI_SUBSTITUTE_EXECUTION_EFFECTED",
+      "evidence": [
+        "overdrive/iscope/receipts/ISCOPE-POST-CORRECTION-20261002-112020Z.json",
+        "overdrive/pri/receipts/PRI-POST-CORRECTION-20261002-112020Z.json",
+        "Gmail 1a0fc58012594488"
+      ],
+      "state": "PROVEN"
+    },
+    {
+      "action": "OVERDRIVE_REACTION_VERIFIED",
+      "evidence": [
+        "minute tick commit 865ec4ec67ed959f872c7f3ec33eac45bb9d258d",
+        "overdrive/signals.json",
+        "overdrive/claims.json"
+      ],
+      "state": "PROVEN",
+      "result": "new qualified ledger items were picked up by protected transport; PRI routing subset rose to 8 and ready_count to 9"
+    },
+    {
+      "action": "HOUSE_TRUTH_DASHBOARD_SOURCE_PATCHED_AND_TESTED",
+      "evidence": [
+        "445ffbe86ce5325ebae08a38d0a12ebbfe48e872",
+        "35f74f828327bda6919d4dcea12d66743c07275a",
+        "5ddaa899953a56f04d440ad6a7515e9e7fef229f",
+        "GitHub Actions 37000083768 SUCCESS"
+      ],
+      "state": "VERIFIED_SOURCE_NOT_LIVE"
+    }
+  ],
+  "invariants": [
+    "OVERDRIVE remains completed and protected",
+    "ONE PRI preserved",
+    "Bounty Reaper additional lane only",
+    "BLACK remains capability not authority",
+    "NO RECEIPT -> NO CLOSURE"
+  ],
+  "unresolved": [
+    {
+      "id": "BLACK_WINDOWS_AUTOWAKE",
+      "state": "ONE_LOCAL_WAKE_REQUIRED_TO_INSTALL_STAGED_REPAIR"
+    },
+    {
+      "id": "HOUSE_LIVE_DEPLOYMENT",
+      "state": "HOSTING_AND_EXISTING_SITE_PUBLISH_ROUTE_REQUIRED"
+    },
+    {
+      "id": "SCHEDULED_REASONING_RELIABILITY",
+      "state": "AUTOMATION_WAKE OBSERVED; SELF-PRODUCED COMMERCIAL RECEIPT NOT YET PROVEN"
+    }
+  ]
+}
