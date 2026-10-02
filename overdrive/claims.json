@@ -2,7 +2,7 @@
   "claims": {
     "PRI|addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T07:29:57.986394+00:00",
+      "last_seen_at": "2026-10-02T07:30:59.174872+00:00",
       "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
       "office": "PRI",
       "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
@@ -12,7 +12,7 @@
     },
     "PRI|cherryone.ai|content-partner-distribution|carbon-degree-of-business": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T07:29:57.986394+00:00",
+      "last_seen_at": "2026-10-02T07:30:59.174872+00:00",
       "next_action": "PRI to inspect Cherry One's official Partner With Us intake, match CARBON\u00b0 evidenced capabilities/available rights to the intake, and make the outbound commercial proposition if terms remain compatible.",
       "office": "PRI",
       "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
@@ -22,7 +22,7 @@
     },
     "PRI|inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T07:29:57.986394+00:00",
+      "last_seen_at": "2026-10-02T07:30:59.174872+00:00",
       "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
       "office": "PRI",
       "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
@@ -32,7 +32,7 @@
     },
     "PRI|laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T07:29:57.986394+00:00",
+      "last_seen_at": "2026-10-02T07:30:59.174872+00:00",
       "next_action": "Monitor existing thread for LAVDM alternate-route instructions; on material response, act in-thread immediately and persist evidence.",
       "office": "PRI",
       "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
@@ -41,7 +41,7 @@
       "status": "READY"
     }
   },
-  "generated_at": "2026-10-02T07:29:57.986394+00:00",
+  "generated_at": "2026-10-02T07:30:59.174872+00:00",
   "ready_count": 4,
   "version": 1
 }
