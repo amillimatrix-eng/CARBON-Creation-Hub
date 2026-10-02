@@ -971,8 +971,248 @@
       ],
       "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
       "due_at": "2026-10-03T15:55:00Z"
+    },
+    "mindrift.ai|all-access-ai-training|global": {
+      "organization": "Mindrift / Toloka",
+      "domain": "mindrift.ai",
+      "opportunity": "all-access-ai-training",
+      "title": "Mindrift all-access AI training tasks",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T16:15:00Z",
+      "commercial_role": "PAID AI TRAINING / MICROTASKS",
+      "capital_direction": "INBOUND / FREE TO JOIN",
+      "reward": "All-access tasks vary; specialized projects advertised $15-$100+/hour",
+      "payment": "Bi-weekly for completed approved tasks per current Mindrift guidance",
+      "buyer_fit": "Current Mindrift route explicitly says all-access tasks are open to everyone with no application/wait; AI evaluation/review/annotation work is directly relevant.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "WEB",
+          "url": "https://mindrift.ai/blog/open-mindrift",
+          "observed_at": "2026-10-02",
+          "summary": "Mindrift says contributors can access all-access tasks in minutes with no application process or waiting."
+        },
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "WEB",
+          "url": "https://mindrift.ai/",
+          "observed_at": "2026-10-02",
+          "summary": "Mindrift advertises AI training work; entry-level $15-$30/h and expert $60-$100+/h on project-based platform."
+        }
+      ],
+      "constraints": [
+        "No existing Mindrift/Toloka account history found in Gmail; registration/authentication is still required before task execution."
+      ],
+      "next_action": "PRI to register through the free official route and inspect live all-access tasks; do not wait for specialized-project interview path.",
+      "due_at": "2026-10-03T16:15:00Z"
+    },
+    "oneforma.com|ai-ml-projects|south-africa": {
+      "organization": "OneForma",
+      "domain": "oneforma.com",
+      "opportunity": "ai-ml-projects-south-africa",
+      "title": "OneForma AI/ML projects — South Africa / Remote",
+      "state": "DISCOVERED",
+      "execution_owner": "iSCOPE",
+      "discovered_by": "iSCOPE",
+      "qualified_at": null,
+      "commercial_role": "AI/ML TRAINING / ANNOTATION / JUDGING",
+      "capital_direction": "INBOUND / NO APPLICATION FEE EVIDENCED",
+      "reward": "Project dependent",
+      "payment": "Project dependent; platform states hourly/per-completion/per-approved-asset models",
+      "buyer_fit": "Current official projects surface shows AI/ML training, annotation, judging and LLM prompt authoring, with South Africa present as an available country filter.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "WEB",
+          "url": "https://www.oneforma.com/projects/?domain=ai-ml-training",
+          "observed_at": "2026-10-02",
+          "summary": "Official OneForma page shows 7 AI/ML training opportunities and South Africa as a country option; platform currently lists 33+ open projects."
+        }
+      ],
+      "constraints": [
+        "Exact South-Africa-compatible project, rate and immediate task availability must be selected before qualification; no prior OneForma account email found."
+      ],
+      "next_action": "iSCOPE to resolve the exact South Africa project(s), rate and requirements; qualify only executable matches.",
+      "due_at": "2026-10-03T16:15:00Z"
+    },
+    "welodata.com|ai-trainers-afrikaans|south-africa": {
+      "organization": "Welo Data / Welocalize",
+      "domain": "jobs.lever.co/weloglobal",
+      "opportunity": "ai-trainers-afrikaans",
+      "title": "AI Trainers Network — Afrikaans",
+      "state": "DEPRIORITIZED",
+      "execution_owner": "iSCOPE",
+      "discovered_by": "iSCOPE",
+      "commercial_role": "AI TRAINING TALENT NETWORK",
+      "capital_direction": "INBOUND / NO FEE",
+      "reward": "Not stated until matched project",
+      "payment": "Project dependent",
+      "buyer_fit": "South Africa remote AI annotation/evaluation/prompt-creation network.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://jobs.lever.co/weloglobal/ea42356e-a02c-4d58-8257-7f1cf606a8fe",
+          "observed_at": "2026-10-02",
+          "summary": "Official listing explicitly says this is not an active job opening; it is a contributor talent network."
+        }
+      ],
+      "constraints": [
+        "Not an active paid opening; native/near-native Afrikaans is required and not assumed from user location/name."
+      ],
+      "next_action": "Do not consume PRI time unless language fit is explicitly established and a paid project is offered."
+    },
+    "welodata.com|hydrus-voice-contributor-english|south-africa": {
+      "organization": "Welo Data / Welocalize",
+      "domain": "jobs.lever.co/weloglobal",
+      "opportunity": "hydrus-voice-contributor-english-sa",
+      "title": "Hydrus Voice Contributor — English (South Africa)",
+      "state": "DEPRIORITIZED",
+      "execution_owner": "iSCOPE",
+      "discovered_by": "iSCOPE",
+      "commercial_role": "PAID AI VOICE DATA COLLECTION",
+      "capital_direction": "INBOUND / NO FEE",
+      "reward": "$20 USD/hour",
+      "payment": "Freelance project",
+      "buyer_fit": "Current paid South Africa remote AI voice-data project.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://jobs.lever.co/weloglobal/a2802c2f-6005-448d-a86d-5b5429c6c770",
+          "observed_at": "2026-10-02",
+          "summary": "Official Welo listing: $20/hour, two supervised ~4-hour sessions, voice data may train synthesized voices."
+        }
+      ],
+      "constraints": [
+        "Requires long live supervised sessions, recording setup/headphones and explicit voice-data consent; conflicts with current preference for asynchronous low-bandwidth work unless payout/value changes priority."
+      ],
+      "next_action": "Keep as fallback, not current PRI priority."
+    },
+    "toloka.ai|individual-task-marketplace|global": {
+      "organization": "Toloka",
+      "domain": "toloka.ai",
+      "opportunity": "individual-task-marketplace",
+      "title": "Toloka individual paid task marketplace",
+      "state": "HOLD",
+      "execution_owner": "iSCOPE",
+      "discovered_by": "iSCOPE",
+      "commercial_role": "PAID MICROTASK / AI DATA WORK",
+      "capital_direction": "INBOUND / FREE TO JOIN",
+      "reward": "Task dependent",
+      "payment": "Task dependent",
+      "buyer_fit": "Official current route says individuals can join free, do tasks and get paid.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "WEB",
+          "url": "https://toloka.ai/get-started?from=pdd",
+          "observed_at": "2026-10-02",
+          "summary": "Official Toloka get-started page: Individuals — Earn money — Do tasks, get paid — Free to join."
+        }
+      ],
+      "constraints": [
+        "Exact South Africa task supply, rates and payout rail are not yet verified; no existing Toloka account history found."
+      ],
+      "next_action": "iSCOPE to verify South Africa task availability/rates/payment before PRI onboarding."
+    },
+    "prolific.com|participant-studies|south-africa": {
+      "organization": "Prolific",
+      "domain": "prolific.com",
+      "opportunity": "participant-studies",
+      "title": "Prolific paid studies — South Africa",
+      "state": "DEPRIORITIZED",
+      "execution_owner": "iSCOPE",
+      "discovered_by": "iSCOPE",
+      "commercial_role": "PAID RESEARCH / STUDIES",
+      "capital_direction": "INBOUND / NO FEE",
+      "reward": "Study dependent",
+      "payment": "Study dependent",
+      "buyer_fit": "South Africa is a supported participant country and Prolific reports a sizeable active South African pool.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "WEB",
+          "url": "https://researcher-help.prolific.com/en/articles/445224-who-are-the-participants-on-prolific",
+          "observed_at": "2026-10-02",
+          "summary": "Official Prolific supported-country list includes South Africa."
+        },
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "WEB",
+          "url": "https://researcher-help.prolific.com/en/articles/494274-how-prolific-protects-your-data-integrity",
+          "observed_at": "2026-10-02",
+          "summary": "Prolific uses a selective participant waitlist and identity verification before studies."
+        }
+      ],
+      "constraints": [
+        "Waitlist/selective onboarding means no immediate work guarantee; identity verification required; no existing Prolific account history found."
+      ],
+      "next_action": "Deprioritize behind immediately executable AI-task platforms; consider only when onboarding capacity exists."
+    },
+    "dataannotation.tech|generalist-ai-training|south-africa-unverified": {
+      "organization": "DataAnnotation",
+      "domain": "dataannotation.tech",
+      "opportunity": "generalist-ai-training",
+      "title": "DataAnnotation AI response evaluation/generalist",
+      "state": "HOLD",
+      "execution_owner": "iSCOPE",
+      "discovered_by": "iSCOPE",
+      "commercial_role": "PAID AI TRAINING / RESPONSE EVALUATION",
+      "capital_direction": "INBOUND / NO FEE EVIDENCED",
+      "reward": "Role dependent",
+      "payment": "Platform dependent",
+      "buyer_fit": "Current generalist work is AI response review/rating/rewrite, a strong capability match.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "WEB",
+          "url": "https://www.dataannotation.tech/jobby-roles/generalist",
+          "observed_at": "2026-10-02",
+          "summary": "Official Generalist role: review/rate AI responses and write better responses; no technical background required."
+        }
+      ],
+      "constraints": [
+        "Current South Africa worker eligibility was not verified from an authoritative source in this sweep; no account history found. Do not waste onboarding effort until geography is confirmed."
+      ],
+      "next_action": "iSCOPE to verify South Africa eligibility from official signup/support before PRI action."
+    },
+    "mercor.com|existing-profile-current-state|2026-10-02": {
+      "organization": "Mercor",
+      "domain": "mercor.com",
+      "opportunity": "existing-profile-current-state",
+      "title": "Mercor existing AI-work profile",
+      "state": "DEPRIORITIZED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "commercial_role": "EXISTING AI WORK PLATFORM",
+      "capital_direction": "INBOUND / EXISTING ACCOUNT",
+      "reward": "Opportunity dependent",
+      "payment": "Platform dependent",
+      "buyer_fit": "Existing verified account and prior applications; continue only on materially new direct task/offer.",
+      "evidence": [
+        {
+          "kind": "GMAIL_ACCOUNT_PROOF",
+          "source": "GMAIL",
+          "source_id": "1a0839a30211da26",
+          "observed_at": "2026-09-09",
+          "summary": "Mercor phone verification confirmed."
+        },
+        {
+          "kind": "CURRENT_APPLICATION_OUTCOMES",
+          "source": "GMAIL",
+          "observed_at": "2026-09-30",
+          "summary": "Software Engineer Expert, Management Consulting Expert and Data Science Expert applications were declined on 2026-09-30."
+        }
+      ],
+      "constraints": [
+        "Recent broad expert applications declined; support explicitly does not accept manual applications; no reason to spray duplicate applications."
+      ],
+      "next_action": "Keep profile passive; react only to a direct paid match/task or materially stronger exact-fit opening."
     }
   },
   "version": 1,
-  "updated_at": "2026-10-02T16:08:00Z"
+  "updated_at": "2026-10-02T16:15:00Z"
 }
