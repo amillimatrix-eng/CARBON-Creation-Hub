@@ -1,20 +1,20 @@
 {
   "schema": "AMX_MATRIX_TRUTH_SCREEN_V2",
-  "generated_at": "2026-10-02T18:12:38.083114Z",
+  "generated_at": "2026-10-02T18:18:41.442717Z",
   "projection_scope": "CURRENT_BOUNDED_MATRIX_STATE",
   "rule": "Only attributable evidence promotes state. ROUTED != OWNED != CLAIMED != EXECUTING != RESOLVED. ENABLED/SCHEDULER_WOKE/READY are not EXECUTING. NO RECEIPT -> NO CLOSURE. T10 bounded truth wins over a more successful technical label.",
   "T10": {
     "T10_JOB": "Consolidate and synchronize consequential Matrix state across Root/Master shared state, workers, evidence, commercial routing, production, bounty execution, BLACK and live evidence surfaces.",
-    "T10_ACTUAL": "Shared Master Sheet and Library custody were converged; central Truth Screen/manifest were replaced; both existing Evidence House services then exposed HTTP 503, were recovered in place by authorized API deploy on convergence commit b3872e98de5ccdbe130ff586e48449b6db82aca7, and passed live /health, /api/t10 and /api/house/bootstrap retest.",
-    "T10_EVIDENCE": "Master Sheet readbacks + canonical T10 SHA-256 9924cae8b746eff530b8250054c3116a3a68283ce8624fab99c01371b3619dcc + convergence commit b3872e98de5ccdbe130ff586e48449b6db82aca7 + Render deploys dep-davv7o9srm7s73dgohp0 / dep-davv7ph42hec73ea467g + live post-recovery endpoint readback.",
-    "T10_CHANGE": "The Matrix now has one current shared T10-native projection; the Evidence House runtime 503 condition is verified corrected. A separate provider-continuity fault is recorded because commit-trigger autoDeploy failed again and API fallback was required.",
+    "T10_ACTUAL": "Matrix-wide shared state converged; both Evidence House services were recovered from HTTP 503; a subsequent observability defect was found where GITHUB_LIVE could serve a cached predecessor Truth Screen. Patch 170dcbb70f1df934718322ef9dea791a02c3abe3 added cache-busting/no-cache state reads, passed pytest/smoke/container/runtime, was deployed to both existing services, and both live APIs then returned the latest finalized Truth Screen.",
+    "T10_EVIDENCE": "Master Sheet readbacks + canonical T10 SHA-256 9924cae8b746eff530b8250054c3116a3a68283ce8624fab99c01371b3619dcc + convergence b3872e98de5ccdbe130ff586e48449b6db82aca7 + finalized truth 4ea0fe3806315cd9768c958530ee99e22487bc28 + freshness patch 170dcbb70f1df934718322ef9dea791a02c3abe3 + Render deploys dep-davvaeqd0e5s739gv7cg / dep-davvafe7bikc73fjcpjg + live latest-truth /api/t10 and /api/house/bootstrap readback.",
+    "T10_CHANGE": "Central Matrix truth, Master state, canonical T10 custody, and live Evidence House now converge on the same bounded projection. HTTP 503 runtime failure and stale raw-GitHub freshness mismatch are verified corrected. DR-0018 is CLOSED/VERIFIED; Render commit-trigger autoDeploy remains separately FAIL/OPEN as DR-0017.",
     "T10_REMAINING_GAP": "Scheduled iSCOPE→PRI self-execution still needs a qualifying scheduler-origin material receipt/KPI/row34 readback; BLACK 012/013 need receipts; Render commit-trigger autoDeploy remains FAIL/OPEN under DR-0017; Bounty exact scope binding remains HOLD; realized revenue remains unproven.",
     "T10_PASS": "PASS"
   },
   "commissioning": {
     "state": "COMMISSIONING",
-    "epoch_reset_at": "2026-10-02T20:12:38+02:00",
-    "reset_reason": "VERIFIED_EVIDENCE_HOUSE_503_RECOVERY_PLUS_MATRIX_WIDE_TRUTH_SURFACE_CORRECTION",
+    "epoch_reset_at": "2026-10-02T20:18:41.442717+02:00",
+    "reset_reason": "VERIFIED_MATRIX_WIDE_CONVERGENCE_PLUS_EVIDENCE_HOUSE_RUNTIME_AND_STATE_FRESHNESS_CORRECTIONS",
     "tier": "LT_24H__FULL_INSPECTION_EACH_HOURLY_WAKE",
     "graduation_rule": "72 continuous healthy hours after latest material trigger/correction"
   },
@@ -138,18 +138,18 @@
     },
     {
       "name": "Evidence House Primary",
-      "state": "LIVE__V2__RUNTIME_RETEST_PASS__DEPLOY_B387",
-      "evidence": "Render srv-davpec7avr4c73cu6ll0 / API recovery deploy dep-davv7o9srm7s73dgohp0 on b3872e98de5ccdbe130ff586e48449b6db82aca7; post-recovery /health + /api/t10 + /api/house/bootstrap PASS."
+      "state": "LIVE__V2__CURRENT_TRUTH_FRESHNESS_VERIFIED__DEPLOY_170DC",
+      "evidence": "Render srv-davpec7avr4c73cu6ll0 / API deploy dep-davvaeqd0e5s739gv7cg on 170dcbb70f1df934718322ef9dea791a02c3abe3; live /api/t10 + /api/house/bootstrap return latest finalized Truth Screen."
     },
     {
       "name": "Evidence House Secondary",
-      "state": "LIVE__V2__RUNTIME_RETEST_PASS__DEPLOY_B387",
-      "evidence": "Render srv-davpi5qd0e5s738t86tg / API recovery deploy dep-davv7ph42hec73ea467g on b3872e98de5ccdbe130ff586e48449b6db82aca7; post-recovery /health PASS."
+      "state": "LIVE__V2__CURRENT_TRUTH_FRESHNESS_VERIFIED__DEPLOY_170DC",
+      "evidence": "Render srv-davpi5qd0e5s738t86tg / API deploy dep-davvafe7bikc73fjcpjg on 170dcbb70f1df934718322ef9dea791a02c3abe3; live /api/t10 returns latest finalized Truth Screen."
     },
     {
       "name": "Render commit-trigger continuity",
-      "state": "FAIL_OPEN__DR_0017",
-      "evidence": "Both services remain configured autoDeploy=yes/commit, but consecutive main pushes did not create deployments. API fallback recovered runtime; manual/API success is not autoDeploy proof."
+      "state": "FAIL_OPEN__DR_0017__THREE_COMMIT_TRIGGER_TESTS_FAILED",
+      "evidence": "Services remain configured autoDeploy=yes/commit, but pushes 799c4f, b3872e and 170dc did not create provider deployments; authorized API fallback was required."
     },
     {
       "name": "Gmail commercial execution",
@@ -219,5 +219,15 @@
     "currency": "USD",
     "rule": "PAID requires attributable payment evidence."
   },
-  "convergence_receipt": "CONTINUITY/AMX_MATRIX_WIDE_CONVERGENCE_2026-10-02T1955_SAST.json"
+  "convergence_receipt": "CONTINUITY/AMX_MATRIX_WIDE_CONVERGENCE_2026-10-02T1955_SAST.json",
+  "resolved_findings": [
+    {
+      "id": "DR-0018",
+      "state": "CLOSED_VERIFIED",
+      "finding": "GITHUB_LIVE raw-content freshness mismatch",
+      "correction": "Cache-busting query + Cache-Control/Pragma no-cache in backend StateReader",
+      "patch": "170dcbb70f1df934718322ef9dea791a02c3abe3",
+      "acceptance": "pytest/smoke/container/runtime PASS + both live services return latest Truth Screen"
+    }
+  ]
 }
