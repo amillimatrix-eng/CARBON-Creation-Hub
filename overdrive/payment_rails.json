@@ -1,29 +1,131 @@
 {
-  "schema": "AMX_PAYMENT_RAILS_V2",
-  "updated_at": "2026-10-01",
+  "schema": "AMX_PAYMENT_RAILS_V3",
+  "updated_at": "2026-10-02",
+  "canonical_private_registry": {
+    "provider": "Google Drive",
+    "title": "AMX Income Rails Registry",
+    "file_id": "1B_4WWcX6KzI3166Zow_DQGzp7yES1VeQB311IN1Z3Xo",
+    "url": "https://docs.google.com/spreadsheets/d/1B_4WWcX6KzI3166Zow_DQGzp7yES1VeQB311IN1Z3Xo/edit?usp=drivesdk",
+    "purpose": "Private exact receiving details for legitimate payout setup. Income workers should recover this registry when an exact rail is required.",
+    "security": "Do not copy private bank account details, passwords, private keys, seed phrases, or recovery material into public repos, public receipts, or outreach."
+  },
   "rails": [
     {
+      "provider": "GoTyme Bank",
+      "type": "BANK",
+      "country": "South Africa",
+      "currency": "ZAR",
+      "receiving_identifier_masked": "********588",
+      "status": "AVAILABLE",
+      "direction": "INBOUND_RECEIVING",
+      "exact_details": "SEE_CANONICAL_PRIVATE_REGISTRY",
+      "source": "OWNER_SUPPLIED_2026-10-02",
+      "notes": "Available for legitimate platform payouts/bank transfer when supported. Do not infer PAID without transaction evidence."
+    },
+    {
       "provider": "PayPal",
+      "type": "PAYMENT_ACCOUNT",
       "receiving_identifier": "moolamatrix@outlook.com",
       "status": "AVAILABLE",
       "direction": "INBOUND_RECEIVING",
       "source": "OWNER_SUPPLIED_2026-10-01",
-      "notes": "Commercial receiving rail. Verify payer-supported currency/region/terms per opportunity; no payment is PAID without transaction evidence."
+      "notes": "Commercial receiving rail. Verify payer-supported currency/region/terms per opportunity."
+    },
+    {
+      "provider": "AMX EVM receive",
+      "type": "CRYPTO",
+      "asset_use": "ETH / compatible EVM assets and stablecoins",
+      "network": "Ethereum / exact compatible EVM network",
+      "receiving_identifier": "0x9b625e01ac2b172434559f365a4272e14fe2b301",
+      "status": "APPROVED_WITH_NETWORK_MATCH",
+      "direction": "INBOUND_RECEIVING",
+      "source": "AMX_BOUNTY_REAPER_LIVE_TRACKER_PAYOUT_RAILS",
+      "notes": "Never send a non-EVM asset/network here."
+    },
+    {
+      "provider": "AMX Bitcoin receive",
+      "type": "CRYPTO",
+      "asset_use": "BTC",
+      "network": "Bitcoin",
+      "receiving_identifier": "bc1q3acv06570pwxr7dsapxfgz5v7hqut2zuhcs3yv",
+      "status": "APPROVED",
+      "direction": "INBOUND_RECEIVING",
+      "source": "AMX_BOUNTY_REAPER_LIVE_TRACKER_PAYOUT_RAILS"
+    },
+    {
+      "provider": "AMX Solana receive",
+      "type": "CRYPTO",
+      "asset_use": "SOL / compatible Solana assets",
+      "network": "Solana",
+      "receiving_identifier": "DQXcmbCd6jrnaBLWH1JkXkboPErxwLM2WeUQBhZRevz9",
+      "status": "APPROVED",
+      "direction": "INBOUND_RECEIVING",
+      "source": "AMX_BOUNTY_REAPER_LIVE_TRACKER_PAYOUT_RAILS"
+    },
+    {
+      "provider": "AMX Tron receive",
+      "type": "CRYPTO",
+      "asset_use": "TRX / TRC-20 stablecoins",
+      "network": "Tron / TRC-20",
+      "receiving_identifier": "TAMx42DnUo2FdN6sx7GZCCAuS5JNnEGuQs",
+      "status": "APPROVED_WITH_NETWORK_MATCH",
+      "direction": "INBOUND_RECEIVING",
+      "source": "AMX_BOUNTY_REAPER_LIVE_TRACKER_PAYOUT_RAILS"
+    },
+    {
+      "provider": "AMX BNB receive",
+      "type": "CRYPTO",
+      "asset_use": "BNB / compatible BEP-20 assets",
+      "network": "BNB Chain",
+      "receiving_identifier": "0x9b625e01ac2b172434559f365a4272e14fe2b301",
+      "status": "APPROVED_WITH_NETWORK_MATCH",
+      "direction": "INBOUND_RECEIVING",
+      "source": "AMX_BOUNTY_REAPER_LIVE_TRACKER_PAYOUT_RAILS"
+    },
+    {
+      "provider": "AMX Polygon receive",
+      "type": "CRYPTO",
+      "asset_use": "POL / MATIC / compatible assets",
+      "network": "Polygon",
+      "receiving_identifier": "0x9b625e01ac2b172434559f365a4272e14fe2b301",
+      "status": "APPROVED_WITH_NETWORK_MATCH",
+      "direction": "INBOUND_RECEIVING",
+      "source": "AMX_BOUNTY_REAPER_LIVE_TRACKER_PAYOUT_RAILS"
+    },
+    {
+      "provider": "AMX Avalanche receive",
+      "type": "CRYPTO",
+      "asset_use": "AVAX / compatible assets",
+      "network": "Avalanche C-Chain",
+      "receiving_identifier": "0x9b625e01ac2b172434559f365a4272e14fe2b301",
+      "status": "APPROVED_WITH_NETWORK_MATCH",
+      "direction": "INBOUND_RECEIVING",
+      "source": "AMX_BOUNTY_REAPER_LIVE_TRACKER_PAYOUT_RAILS"
+    },
+    {
+      "provider": "AMX HyperEVM receive",
+      "type": "CRYPTO",
+      "asset_use": "HYPE / compatible EVM assets",
+      "network": "HyperEVM / Hyperliquid-compatible EVM payout",
+      "receiving_identifier": "0x9b625e01ac2b172434559f365a4272e14fe2b301",
+      "status": "APPROVED_WITH_NETWORK_MATCH",
+      "direction": "INBOUND_RECEIVING",
+      "source": "AMX_BOUNTY_REAPER_LIVE_TRACKER_PAYOUT_RAILS"
     }
   ],
-  "inventory_completeness": "PARTIAL / RECOVERY_REQUIRED",
-  "inventory_rule": "This file records recovered rails; absence from this file is NOT proof that AMX lacks another receiving rail. Recover authoritative wallet/payment evidence before rejecting an opportunity for incompatibility.",
   "known_unmaterialized_payment_evidence": [
     {
       "provider": "OKX / Agentic Wallet",
       "state": "EXISTING_IDENTITY_EVIDENCED / RECEIVING_DETAILS_NOT_RECOVERED",
-      "evidence_pointer": "AMX_RIGHT_to_U100_Execution_Sheet.pdf",
       "safe_fact": "An existing OKX.AI / Agentic Wallet identity is documented; do not create a duplicate.",
       "receiving_address": null,
       "network": null,
       "usability_for_settlement": "UNKNOWN_HOLD_PENDING_AUTHORITATIVE_RECOVERY"
     }
   ],
+  "inventory_completeness": "CURRENT_KNOWN_RAILS_CONSOLIDATED / PLATFORM_SPECIFIC_ONBOARDING_MAY_ADD",
+  "inventory_rule": "Recover the private registry when exact bank details are required. An unlisted rail is not proof AMX lacks it. Program-provided or platform-bound payout accounts are valid separate onboarding cases. Never reject a qualified opportunity merely because its rail is absent before recovery.",
   "program_provided_wallet_rule": "A program-provided/bound wallet/account is a separate onboarding case; do not require it to match Matrix-held wallet inventory.",
-  "secret_control": "Never store private keys, seed phrases, recovery material, passwords or equivalent custody secrets here."
+  "money_truth": "A configured or available receiving rail does not prove contract, invoice, receivable, or payment.",
+  "secret_control": "Never store private keys, seed phrases, recovery material, passwords, or equivalent custody secrets in this repository."
 }
