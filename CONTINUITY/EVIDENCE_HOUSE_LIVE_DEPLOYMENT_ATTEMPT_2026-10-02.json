@@ -1,0 +1,101 @@
+{
+  "schema": "AMX_EVIDENCE_HOUSE_LIVE_DEPLOYMENT_ATTEMPT_V1",
+  "date": "2026-10-02",
+  "objective": "Deploy the already-built provider-neutral evidence backend, patch the existing House, publish >2, read back, and exercise it. Do not rebuild.",
+  "source_build_receipt": "CONTINUITY/CODEX_EVIDENCE_HOUSE_BACKEND_BUILD_RECEIPT_2026-10-01.json",
+  "source_build_commit": "3f4891a7ed588066417507baa51938b010d0efae",
+  "current_predeploy_head": "65a281a4917780b8efb9413a43f393c7278ce5a7",
+  "overnight_nonregression": {
+    "compare_base": "3f4891a7ed588066417507baa51938b010d0efae",
+    "compare_head": "65a281a4917780b8efb9413a43f393c7278ce5a7",
+    "changed_files": [
+      "overdrive/claims.json",
+      "overdrive/signals.json",
+      "overdrive/state.json"
+    ],
+    "evidence_house_backend_files_changed": false
+  },
+  "existing_house": {
+    "library_file_id": "libfile_6b913cc4bd108191bd1a441ef74f84eb",
+    "project_id": "appgprj_6aabe3aac8fc819199f38d7cf4a79faf",
+    "slug": "amx-creation-house",
+    "live_url": "https://amx-creation-house.amillimatrix.chatgpt.site",
+    "status": "active",
+    "access_mode": "custom",
+    "source_version_number": 2,
+    "projection_revision": 4,
+    "public_unauthenticated_readback": "HTTP 401",
+    "materialize_site_projection": "UNAVAILABLE"
+  },
+  "hosting_routes_attempted": [
+    {
+      "provider": "Vercel",
+      "state": "CONNECTED_READ_SURFACE_ONLY",
+      "team_id": "team_K33bfqACbTVPQbJ89enBU4x2",
+      "projects_found": 0,
+      "deploy_action": "UNAVAILABLE_IN_CURRENT_CONNECTOR_RUNTIME",
+      "disposition": "ROUTE_NOT_EXECUTABLE_FROM_CURRENT_TOOL_SURFACE"
+    },
+    {
+      "provider": "Railway",
+      "state": "PLUGIN_AVAILABLE_NOT_CONNECTED",
+      "reason": "Existing backend is already Dockerized and SQLite requires a persistent volume; Railway is a direct fit without rebuilding.",
+      "required_volume_mount": "/app/data"
+    }
+  ],
+  "deployment_hardening_effected": [
+    {
+      "commit": "ad4c738c2eec58377c947c3646e0f6251ba0a0b0",
+      "change": "Docker runtime now honors provider PORT while preserving local 8000 fallback."
+    },
+    {
+      "commit": "cf39839d7ba83d1637c9e72e9ae918e1866c440d",
+      "change": "Added railway.toml using existing Dockerfile and /api/health."
+    }
+  ],
+  "verification": {
+    "github_actions_run_id": 36977301048,
+    "conclusion": "success",
+    "pytest": "PASS",
+    "smoke": "PASS",
+    "docker_build": "PASS",
+    "docker_runtime": "PASS"
+  },
+  "authenticated_house_mutation_route": {
+    "direct_site_mutation_tool_available": false,
+    "browser_profile_created": "prof_778170732bb74968",
+    "browser_profile_name": "AMX House Publish",
+    "browser_profile_saved_or_signed_in": false,
+    "required_site": "chatgpt.com",
+    "state": "OWNER_AUTHENTICATION_GATE"
+  },
+  "current_state": {
+    "backend_repository_implementation": "DONE_VERIFIED",
+    "backend_deployment_config": "DONE_VERIFIED",
+    "live_persistent_backend": "NOT_DEPLOYED",
+    "existing_house_source_version": 2,
+    "existing_house_published_version_gt_2": false,
+    "live_authenticated_house_readback": "NOT_DONE",
+    "end_to_end_exercise": "NOT_DONE",
+    "overall": "PARTIAL / DEPLOYMENT PREP VERIFIED / TWO EXTERNAL CONNECTION GATES REMAIN"
+  },
+  "irreducible_gates": [
+    "Connect the Railway plugin so the existing Docker image can be deployed with a persistent /app/data volume without rebuilding.",
+    "Save an authenticated ChatGPT browser profile for the existing private House so browser automation can patch/publish/read back the existing Site. No password is to be supplied in chat."
+  ],
+  "next_action_after_gates": [
+    "Create Railway service from amillimatrix-eng/CARBON-Creation-Hub using existing Dockerfile.",
+    "Attach persistent volume at /app/data.",
+    "Set AMX_GITHUB_REPO=amillimatrix-eng/CARBON-Creation-Hub and AMX_GITHUB_REF=main; leave admin writes disabled unless a runtime secret is deliberately configured.",
+    "Verify /api/health, /api/house/bootstrap, and /api/evidence/search on live backend.",
+    "Patch existing House appgprj_6aabe3aac8fc819199f38d7cf4a79faf only; do not clone.",
+    "Set House API base to live backend, publish source version >2, authenticated readback, exercise Evidence Terminal and Operator state.",
+    "Persist final live-deployment receipt."
+  ],
+  "controls": [
+    "DO_NOT_REBUILD",
+    "PATCH_EXISTING_HOUSE",
+    "NO_RECEIPT_NO_CLOSURE",
+    "UNKNOWN_HOLD_OVER_INFERENCE"
+  ]
+}
