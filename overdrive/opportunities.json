@@ -505,7 +505,7 @@
       "domain": "cherryone.ai",
       "opportunity": "content-partner-distribution",
       "title": "CARBON° — Degree of Business",
-      "state": "QUALIFIED",
+      "state": "SUBMITTED",
       "execution_owner": "PRI",
       "discovered_by": "iSCOPE",
       "qualified_at": "2026-09-30T19:50:00Z",
@@ -519,14 +519,174 @@
           "url": "https://cherryone.ai/",
           "observed_at": "2026-09-30T19:50:00Z",
           "summary": "Official site states Now Accepting Content Partners; short-form drama distribution; zero upfront cost; revenue-share; localization and multi-platform distribution."
+        },
+        {
+          "kind": "OFFICIAL_CONTACT_ROUTE_AND_GMAIL_SENT",
+          "source": "CHERRYONE_OFFICIAL_SITE + GMAIL",
+          "source_url": "https://cherryone.ai/",
+          "recipient": "contact@cherryone.ai",
+          "gmail_message_id": "1a0fc58012594488",
+          "thread_id": "1a0fc58012594488",
+          "sent_at": "2026-10-02T11:20:20Z",
+          "statement": "Official site states it is accepting content partners under a zero-upfront-cost revenue-share model; contact route was decoded from the site's Cloudflare-protected official email link. PRI asked for exact submission requirements without representing unfinished work as complete."
         }
       ],
       "dedupe_result": "NO_EXISTING_RECORD_FOUND_IN_CURRENT_DURABLE_OPPORTUNITY_LEDGER",
       "constraints": [
         "Exact rights/territory/package requirements require PRI review against current CARBON° rights position before proposition."
       ],
-      "next_action": "PRI to inspect Cherry One's official Partner With Us intake, match CARBON° evidenced capabilities/available rights to the intake, and make the outbound commercial proposition if terms remain compatible.",
-      "due_at": "2026-09-30T20:50:00Z"
+      "next_action": "Monitor the existing Cherry One thread for submission requirements; on material response, act in-thread and preserve exact completion/rights/package requirements.",
+      "due_at": "2026-10-03T11:20:20Z",
+      "recipient": "contact@cherryone.ai",
+      "thread_id": "1a0fc58012594488",
+      "message_id": "1a0fc58012594488",
+      "last_action_at": "2026-10-02T11:20:20Z",
+      "subject": "CARBON° content partnership — submission requirements"
+    },
+    "ypai.ai|qa-reviewer-adjudicator|remote-south-africa": {
+      "organization": "YPAI",
+      "domain": "freelancer.ypai.ai",
+      "opportunity": "qa-reviewer-adjudicator",
+      "title": "QA Reviewer / Adjudicator — South Africa",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T11:20:20Z",
+      "commercial_role": "PAID FREELANCE QA / AI DATA REVIEW",
+      "capital_direction": "INBOUND / NO FEES",
+      "reward": "Typical project rates ZAR 220–340/hour",
+      "payment": "PayPal, Wise, or bank transfer; no minimum payout",
+      "buyer_fit": "Remote South Africa; structured QA review/adjudication, rubric scoring, disagreement resolution and written feedback align with evidenced QA/evaluation capability.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PUBLIC_LISTING",
+          "source": "WEB",
+          "url": "https://freelancer.ypai.ai/jobs/openings/qa-reviewer-za",
+          "observed_at": "2026-10-02T11:20:20Z",
+          "summary": "Applications open; remote South Africa; freelance; no fees; PayPal/Wise/bank."
+        }
+      ],
+      "constraints": [
+        "Application requires personal data-processing consent and creates a YPAI Freelance profile; do not silently consent on Owner's behalf."
+      ],
+      "next_action": "PRI application is ready at the official YPAI form; Owner consent is required for the form's data-processing/profile-creation checkbox.",
+      "due_at": null
+    },
+    "opentrain.ai|python-backend-ai-agent-developer|2026-10-01": {
+      "organization": "OpenTrain AI",
+      "domain": "opentrain.ai",
+      "opportunity": "python-backend-ai-agent-developer",
+      "title": "Python Backend AI Agent Developer",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T11:20:20Z",
+      "commercial_role": "PAID AI/AGENT TECHNICAL WORK",
+      "capital_direction": "INBOUND / FREE ACCOUNT",
+      "reward": "$300 per approved task",
+      "payment": "Platform payout terms; exact settlement rail to recover before PAID claim",
+      "buyer_fit": "Worldwide; Python connectors, agent evaluation tasks and rubrics align directly with evidenced Python/API/agent/evaluation capability.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PUBLIC_LISTING",
+          "source": "WEB",
+          "url": "https://www.opentrain.ai/jobs/",
+          "observed_at": "2026-10-02T11:20:20Z",
+          "summary": "OpenTrain lists Python Backend AI Agent Developer worldwide at $300 per approved task."
+        }
+      ],
+      "constraints": [
+        "No authenticated OpenTrain browser execution surface is exposed in the current runtime."
+      ],
+      "next_action": "PRI to use the existing OpenTrain account route when an authenticated browser/session surface is available; do not create a duplicate account.",
+      "due_at": null
+    },
+    "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh": {
+      "organization": "OpenTrain AI",
+      "domain": "opentrain.ai",
+      "opportunity": "ai-response-evaluator-tester",
+      "title": "AI Response Evaluator and Tester",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T11:20:20Z",
+      "commercial_role": "PAID AI EVALUATION",
+      "capital_direction": "INBOUND / FREE ACCOUNT",
+      "reward": "$5 per label",
+      "payment": "Platform payout terms; exact settlement rail to recover before PAID claim",
+      "buyer_fit": "Worldwide, flexible, per-task AI-response evaluation; low-friction task economics match near-cash policy better than interview-heavy roles.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PUBLIC_LISTING",
+          "source": "WEB",
+          "url": "https://www.opentrain.ai/jobs/ai-response-evaluator-tester--cmtaowgba00020akudq8w9oyh/",
+          "observed_at": "2026-10-02T11:20:20Z",
+          "summary": "Worldwide remote AI Response Evaluator and Tester; $5/label; flexible contractor work."
+        }
+      ],
+      "constraints": [
+        "Existing OpenTrain application/account history exists; current runtime lacks authenticated platform execution."
+      ],
+      "next_action": "PRI to resume through the existing OpenTrain account/session when authenticated platform access is available; no duplicate account/application.",
+      "due_at": null
+    },
+    "upwork.com|ai-automation-fix|022105205564933219360": {
+      "organization": "Upwork client",
+      "domain": "upwork.com",
+      "opportunity": "ai-automation-fix",
+      "title": "AI Automation Fix — Debug & Optimize Existing AI Agent Workflow",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T11:20:20Z",
+      "commercial_role": "FIXED-PRICE TECHNICAL WORK",
+      "capital_direction": "INBOUND",
+      "reward": "$100 fixed price",
+      "payment": "Upwork platform",
+      "buyer_fit": "Existing failing AI workflow needs API timeout/error-handling/retry/deduplication repair; closely matches current Matrix reliability and Python/agent debugging capability.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PUBLIC_LISTING",
+          "source": "WEB",
+          "url": "https://www.upwork.com/freelance-jobs/apply/Automation-Fix-Debug-Optimize-Existing-Agent-Workflow_~022105205564933219360/",
+          "observed_at": "2026-10-02T11:20:20Z",
+          "summary": "Worldwide one-time $100 AI automation repair; client has prior spend and active hires."
+        }
+      ],
+      "constraints": [
+        "No authenticated Upwork submission surface is connected to the current runtime."
+      ],
+      "next_action": "PRI to submit through the existing Upwork identity/session when an authenticated execution route is available; keep proposal evidence-specific and concise.",
+      "due_at": null
+    },
+    "upwork.com|python-django-api-backend-fixes|022102430880684043532": {
+      "organization": "Upwork client",
+      "domain": "upwork.com",
+      "opportunity": "python-django-api-backend-fixes",
+      "title": "Python / Django Developer — API, Automation & Backend Fixes",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T11:20:20Z",
+      "commercial_role": "FIXED-PRICE TECHNICAL WORK",
+      "capital_direction": "INBOUND",
+      "reward": "$50 fixed price",
+      "payment": "Upwork platform",
+      "buyer_fit": "Debugging FastAPI/Django/API/data-processing and regression testing maps directly to current evidenced backend work.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PUBLIC_LISTING",
+          "source": "WEB",
+          "url": "https://www.upwork.com/freelance-jobs/apply/Python-Django-Developer-Needed-for-API-Automation-Backend-Fixes_~022102430880684043532/",
+          "observed_at": "2026-10-02T11:20:20Z",
+          "summary": "Worldwide $50 fixed-price backend/API repair; existing application, not greenfield rebuild."
+        }
+      ],
+      "constraints": [
+        "No authenticated Upwork submission surface is connected to the current runtime."
+      ],
+      "next_action": "PRI to submit through the existing Upwork identity/session when authenticated access is available.",
+      "due_at": null
     }
   },
   "version": 1
