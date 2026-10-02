@@ -816,7 +816,138 @@
       "constraints": [
         "Do not represent developed/planned episodes as completed rendered series; verify exact rights, acceptance and payment terms before commitment."
       ]
+    },
+    "telusdigital.com|online-data-analyst|south-africa": {
+      "organization": "TELUS Digital AI Community",
+      "domain": "jobs.telusdigital.com",
+      "opportunity": "online-data-analyst-south-africa",
+      "title": "Online Data Analyst — South Africa",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T15:55:00Z",
+      "commercial_role": "PAID AI DATA / SEARCH EVALUATION",
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "Freelance part-time; rate not stated on public listing",
+      "payment": "Provider-specific; verify before acceptance/PAID",
+      "buyer_fit": "Official TELUS listing is explicitly remote South Africa. Work is research/evaluation, relevance and accuracy review; strong fit with AMX evaluation/QA/research capability.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://jobs.telusdigital.com/jobs/18301194-online-data-analyst-south-africa",
+          "observed_at": "2026-10-02",
+          "summary": "Official TELUS Digital listing: remote Online Data Analyst — South Africa; part-time; evaluation/research tasks; South Africa residence required."
+        }
+      ],
+      "constraints": [
+        "Requires provider assessment and later ID/compliance checks before work; these are onboarding gates, not proof of paid assignment."
+      ],
+      "next_action": "PRI to apply through the official TELUS route to the furthest non-human executable point; preserve assessment/ID as explicit gate if encountered.",
+      "due_at": "2026-10-03T15:55:00Z"
+    },
+    "crowdgen.com|project-coffee-data-labeling-specialist|south-africa": {
+      "organization": "CrowdGen by Appen",
+      "domain": "crowdgen.com",
+      "opportunity": "project-coffee-data-labeling-specialist",
+      "title": "Project Coffee — Data Labeling Specialist — South Africa",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T15:55:00Z",
+      "commercial_role": "PAID AI TRAINING / DATA LABELING",
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "$8.50 USD/hour",
+      "payment": "CrowdGen/Appen provider payout; exact rail to verify before PAID",
+      "buyer_fit": "Official South Africa-specific project. Evaluates AI-generated text, categorizes data and other AI-training tasks; up to 20 hours/week.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://crowdgen.com/coffee-en-za/",
+          "observed_at": "2026-10-02",
+          "summary": "Official CrowdGen South Africa Project Coffee listing: $8.50/hour, remote, AI text evaluation/data labeling, up to 20h/week."
+        }
+      ],
+      "constraints": [
+        "Application requires CV; some tasks may require microphone/video reactions."
+      ],
+      "next_action": "PRI to submit through the official CrowdGen route if no existing account conflict; stop only at genuine identity/assessment gate.",
+      "due_at": "2026-10-03T15:55:00Z"
+    },
+    "outlier.ai|coding-expertise-ai-training|south-africa": {
+      "organization": "Outlier AI",
+      "domain": "outlier.ai",
+      "opportunity": "coding-expertise-ai-training",
+      "title": "Coding Expertise for AI Training — South Africa",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T15:55:00Z",
+      "commercial_role": "PAID AI CODING / MODEL TRAINING",
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "Competitive project-dependent pay; weekly payout stated",
+      "payment": "PayPal or AirTM shown on current opportunity page",
+      "buyer_fit": "Current Outlier application route explicitly includes South Africa and coding expertise; directly matches Python/JS/AI evaluation capability.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://app.outlier.ai/login?id=4476587005&job_post_id=4476587005",
+          "observed_at": "2026-10-02",
+          "summary": "Current Outlier application route for Coding Expertise for AI Training (English — South Africa)."
+        },
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://app.outlier.ai/opportunities/4501274005",
+          "observed_at": "2026-10-02",
+          "summary": "Outlier opportunity includes South Africa; profile -> identity -> skills -> start earning; PayPal/AirTM shown."
+        }
+      ],
+      "constraints": [
+        "Requires profile, identity confirmation and skills validation before earning."
+      ],
+      "next_action": "PRI to recover any existing Outlier account first; if none, begin official South Africa coding application and stop at irreducible identity/skills gate.",
+      "due_at": "2026-10-03T15:55:00Z"
+    },
+    "alignerr.com|search-quality-ai-training|south-africa": {
+      "organization": "Alignerr",
+      "domain": "alignerr.com",
+      "opportunity": "search-quality-ai-training",
+      "title": "Search Quality Evaluator / AI Training — South Africa",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T15:55:00Z",
+      "commercial_role": "PAID AI SEARCH / RESPONSE EVALUATION",
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "$40–$120/hour advertised",
+      "payment": "Weekly payouts stated; exact settlement rail to verify",
+      "buyer_fit": "Current South Africa listing; evaluates search results and AI answers for relevance/accuracy, with asynchronous remote work. Strong fit with AMX QA/evaluation/search-quality capability.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PUBLIC_LISTING",
+          "source": "LINKEDIN",
+          "url": "https://za.linkedin.com/jobs/view/search-quality-evaluator-at-alignerr-4467433062",
+          "observed_at": "2026-10-02",
+          "summary": "Alignerr Search Quality Evaluator listed for South Africa; $40–$120/hour; remote flexible contract."
+        },
+        {
+          "kind": "PRIMARY_ROLE_PAGE",
+          "source": "WEB",
+          "url": "https://www.alignerr.com/jobs/cb54d2de-b3e9-4824-a1f9-a8d3d17179dd",
+          "observed_at": "2026-10-02",
+          "summary": "Alignerr primary role page confirms remote Search Quality Evaluator scope and $40–$120/hour."
+        }
+      ],
+      "constraints": [
+        "Requires platform screening/onboarding; current Gmail history shows no established Alignerr account."
+      ],
+      "next_action": "PRI to apply through Alignerr official route; prefer Search Quality/AI Data Quality/Chatbot Tester over unrelated specialist roles; stop only at genuine identity/assessment gate.",
+      "due_at": "2026-10-03T15:55:00Z"
     }
   },
-  "version": 1
+  "version": 1,
+  "updated_at": "2026-10-02T15:55:00Z"
 }
