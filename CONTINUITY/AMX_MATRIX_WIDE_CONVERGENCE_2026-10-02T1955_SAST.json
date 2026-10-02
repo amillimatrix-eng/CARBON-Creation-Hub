@@ -2,7 +2,7 @@
   "schema": "AMX_MATRIX_WIDE_CONVERGENCE_RECEIPT_V1",
   "event": "MATRIX_WIDE_CONSOLIDATE_AND_SYNC",
   "executed_at": "2026-10-02T19:55:00+02:00",
-  "source_parent_repo_head": "799c4f936363deceaba9183892cdf8c7e4bca0bc",
+  "source_parent_repo_head": "b3872e98de5ccdbe130ff586e48449b6db82aca7",
   "scope": [
     "ROOT",
     "MASTER",
@@ -24,7 +24,11 @@
     "Removed later byte-identical duplicate T10 artifact, disposition receipt and interpretation guide from Library; earliest durable canonical copies retained.",
     "Updated CARBON functional custody head from stale historical projection to 799c4f936363deceaba9183892cdf8c7e4bca0bc with non-self-referential head semantics.",
     "Replaced pre-T10 MATRIX_TRUTH_SCREEN_V1 with bounded T10-native V2 projection.",
-    "Added exact-byte T10 recovery mirror to central repository without changing authority class."
+    "Added exact-byte T10 recovery mirror to central repository without changing authority class.",
+    "Detected both live Evidence House services returning HTTP 503 during convergence propagation readback; classified runtime availability separately from commit-trigger autoDeploy failure.",
+    "Recovered both existing Render services in place via authorized API deploy on b3872e98de5ccdbe130ff586e48449b6db82aca7; no clone/new service.",
+    "Retested original 503 condition: primary /health, /api/t10 and /api/house/bootstrap returned CONNECTED/GITHUB_LIVE; secondary /health returned CONNECTED.",
+    "Recorded DR-0017 because consecutive main pushes still did not create Render deployments despite autoDeploy=yes/commit; API fallback is not autoDeploy proof."
   ],
   "synchronized_state": {
     "active_scheduled_workers": 5,
@@ -37,10 +41,17 @@
       "realized_revenue": "UNPROVEN"
     },
     "evidence_house": {
-      "primary": "LIVE",
-      "secondary": "LIVE",
-      "schema_version": 2,
-      "functional_head": "799c4f936363deceaba9183892cdf8c7e4bca0bc"
+      "primary": {
+        "state": "LIVE__RUNTIME_RETEST_PASS",
+        "deploy": "dep-davv7o9srm7s73dgohp0"
+      },
+      "secondary": {
+        "state": "LIVE__RUNTIME_RETEST_PASS",
+        "deploy": "dep-davv7ph42hec73ea467g"
+      },
+      "deployed_commit": "b3872e98de5ccdbe130ff586e48449b6db82aca7",
+      "t10_truth_screen": "AMX_MATRIX_TRUTH_SCREEN_V2__GITHUB_LIVE",
+      "auto_deploy": "FAIL_OPEN__DR_0017"
     },
     "bounty_reaper": "INDEPENDENT_CRYPTO_LANE__LATEST_MATERIAL_RUN_RUN-20261002-1837__EXACT_SCOPE_BINDING_HOLD",
     "BLACK": "LAST_RUNTIME_VERIFY_PASS__012_013_RECEIPTS_MISSING__HOLD"
@@ -56,15 +67,17 @@
   "owner_gate": "NONE_ESTABLISHED_BY_THIS_CONVERGENCE",
   "commissioning": {
     "state": "COMMISSIONING",
-    "epoch_reset_at": "2026-10-02T19:55:00+02:00",
-    "tier": "LT_24H__FULL_INSPECTION_EACH_HOURLY_WAKE"
+    "epoch_reset_at": "2026-10-02T20:12:38+02:00",
+    "tier": "LT_24H__FULL_INSPECTION_EACH_HOURLY_WAKE",
+    "reason": "VERIFIED_EVIDENCE_HOUSE_RUNTIME_RECOVERY"
   },
   "T10": {
     "T10_JOB": "Make Matrix-wide shared state converge on current durable evidence without rebuilding healthy machinery or inflating unresolved outcomes.",
-    "T10_ACTUAL": "Master Sheet, Library custody, central manifest and truth projection were reconciled. Current open gaps are preserved as FAIL/HOLD rather than hidden.",
-    "T10_EVIDENCE": "Master Sheet readbacks; T10 libfile_5023cf78e01c8191881165be82e1d0a9/9924cae8b746eff530b8250054c3116a3a68283ce8624fab99c01371b3619dcc; repo parent 799c4f936363deceaba9183892cdf8c7e4bca0bc; Render deploys; automation peek; overdrive durable state; Bounty tracker; BLACK receipts/jobs.",
-    "T10_CHANGE": "Stale central state was superseded by a current bounded projection and one durable convergence receipt; duplicate T10 custody noise was removed.",
-    "T10_REMAINING_GAP": "Commercial scheduled autonomy, BLACK current liveness, Render autoDeploy continuity, Bounty exact scope binding and realized revenue remain unresolved as explicitly recorded.",
+    "T10_ACTUAL": "Matrix-wide shared state converged and the Evidence House runtime failure discovered during readback was recovered in place and retested successfully.",
+    "T10_EVIDENCE": "Master Sheet readbacks; canonical T10 custody/hash; GitHub convergence commit b3872e98de5ccdbe130ff586e48449b6db82aca7; Render API recovery deploys dep-davv7o9srm7s73dgohp0 / dep-davv7ph42hec73ea467g; live post-recovery endpoint readback; DR-0017.",
+    "T10_CHANGE": "Stale/pre-T10 central projections and duplicate custody noise were reconciled; Evidence House 503 was verified corrected; Render commit-trigger continuity is now explicitly FAIL/OPEN rather than implied healthy.",
+    "T10_REMAINING_GAP": "Commercial scheduled autonomy, BLACK 012/013 liveness, Render autoDeploy DR-0017, Bounty exact scope binding, and realized revenue remain unresolved as explicitly recorded.",
     "T10_PASS": "PASS"
-  }
+  },
+  "finalized_at": "2026-10-02T20:12:38+02:00"
 }

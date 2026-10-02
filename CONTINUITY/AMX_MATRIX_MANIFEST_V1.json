@@ -1,6 +1,6 @@
 {
   "schema": "AMX_MATRIX_MANIFEST_V1",
-  "generated": "2026-10-02T17:55:00Z",
+  "generated": "2026-10-02T18:12:38.083114Z",
   "authority_rule": "NO_COMPLETE_RECONSTRUCTION_RECEIPT_NO_MATRIX_AUTHORITY",
   "recovery_order": [
     "SOURCE",
@@ -164,7 +164,7 @@
     "dual_active_authority": "PROHIBITED"
   },
   "operational_projection": {
-    "observed_at": "2026-10-02T19:55:00+02:00",
+    "observed_at": "2026-10-02T20:12:38+02:00",
     "active_scheduled_workers": 5,
     "active_worker_titles": [
       "Matrix Commissioning Inspector",
@@ -187,18 +187,18 @@
       "schema_version": 2,
       "primary": {
         "service": "srv-davpec7avr4c73cu6ll0",
-        "deploy": "dep-davui7qd0e5s739egp90",
-        "functional_head": "799c4f936363deceaba9183892cdf8c7e4bca0bc",
-        "state": "LIVE"
+        "deploy": "dep-davv7o9srm7s73dgohp0",
+        "deployed_commit": "b3872e98de5ccdbe130ff586e48449b6db82aca7",
+        "state": "LIVE__RUNTIME_RETEST_PASS"
       },
       "secondary": {
         "service": "srv-davpi5qd0e5s738t86tg",
-        "deploy": "dep-davui8jtqb8s73druekg",
-        "functional_head": "799c4f936363deceaba9183892cdf8c7e4bca0bc",
-        "state": "LIVE"
+        "deploy": "dep-davv7ph42hec73ea467g",
+        "deployed_commit": "b3872e98de5ccdbe130ff586e48449b6db82aca7",
+        "state": "LIVE__RUNTIME_RETEST_PASS"
       },
       "t10_evidence_coverage": "4/4 COMPLETE",
-      "auto_deploy_continuity": "HOLD__COMMIT_TRIGGER_DID_NOT_CREATE_DEPLOY__API_FALLBACK_USED"
+      "auto_deploy_continuity": "FAIL_OPEN__DR_0017__CONSECUTIVE_COMMIT_TRIGGER_FAILURE__API_FALLBACK_PROVEN"
     },
     "bounty_reaper": {
       "mandate": "INDEPENDENT_CRYPTO_CENTRIC_BOUNTY_REWARD_LANE",
@@ -219,8 +219,8 @@
     }
   },
   "convergence": {
-    "state": "PASS__SHARED_STATE_CONSOLIDATED__OPEN_HOLDS_PRESERVED",
-    "synchronized_at": "2026-10-02T19:55:00+02:00",
+    "state": "PASS__SHARED_STATE_AND_LIVE_RUNTIME_CONSOLIDATED__OPEN_HOLDS_PRESERVED",
+    "synchronized_at": "2026-10-02T20:12:38+02:00",
     "parent_repo_head": "799c4f936363deceaba9183892cdf8c7e4bca0bc",
     "shared_sheet": "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1",
     "shared_sheet_readback": [
@@ -233,6 +233,15 @@
     "receipt": "CONTINUITY/AMX_MATRIX_WIDE_CONVERGENCE_2026-10-02T1955_SAST.json",
     "no_build_reopen": true,
     "no_new_authority": true,
-    "no_role_merge": true
+    "no_role_merge": true,
+    "runtime_retest": {
+      "original_condition": "Both Evidence House services returned HTTP 503 after convergence push.",
+      "remediation": "Authorized API deploy on both existing services; no clone/new service.",
+      "primary_deploy": "dep-davv7o9srm7s73dgohp0",
+      "secondary_deploy": "dep-davv7ph42hec73ea467g",
+      "deployed_commit": "b3872e98de5ccdbe130ff586e48449b6db82aca7",
+      "retest": "PASS__PRIMARY_HEALTH_T10_BOOTSTRAP_CONNECTED__SECONDARY_HEALTH_CONNECTED",
+      "auto_deploy": "FAIL_OPEN__DR_0017"
+    }
   }
 }
