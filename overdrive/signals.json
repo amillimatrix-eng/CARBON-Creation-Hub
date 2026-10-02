@@ -31,13 +31,6 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "PRI application is ready at the official YPAI form; Owner consent is required for the form's data-processing/profile-creation checkbox.",
-      "opportunity_key": "ypai.ai|qa-reviewer-adjudicator|remote-south-africa",
-      "state": "QUALIFIED"
-    },
-    {
-      "due_at": null,
-      "due_now": false,
       "next_action": "PRI to use the existing OpenTrain account route when an authenticated browser/session surface is available; do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
       "state": "QUALIFIED"
@@ -64,6 +57,6 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-02T14:08:19.114019+00:00",
+  "generated_at": "2026-10-02T14:23:08.504689+00:00",
   "iSCOPE": []
 }
