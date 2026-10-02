@@ -59,8 +59,8 @@
       "automation_id": "6ab800f8ed888191bceee51b154a31eb",
       "state": "ENABLED",
       "restored_at": "2026-10-01T11:48:03+02:00",
-      "acceptance_state": "POST_CORRECTION_SUBSTITUTE_EXECUTION_PROVEN / SCHEDULED_SELF_EXECUTION_PENDING",
-      "note": "Automation is configured as reasoning surface. Configuration/schedule is not execution proof; acceptance requires a new attributable post-correction run receipt meeting the V2 acceptance gate."
+      "acceptance_state": "KPI_ENFORCED / SCHEDULED_SELF_EXECUTION_EVIDENCE_PENDING",
+      "note": "Automation is configured as reasoning surface and now explicitly enforces the existing IDEAL KPI. Configuration/schedule is not execution proof; acceptance requires attributable commercial work plus scheduler-origin row-34 readback with KPI evidence."
     }
   },
   "truth_controls": [
@@ -236,5 +236,41 @@
     ],
     "rule": "Historical Cherry One/LAVDM receipts prove prior capability only; they do not satisfy this post-correction autonomy acceptance gate.",
     "latest_observation": "A newer attributable substitute cycle on 2026-10-02 materially progressed YPAI, Staff Remotely, Redrama, LAVDM and Inkwave; consolidated current payment rails; used BLACK for independent current-state/payment verification; and read back the resulting 20-record ledger. This proves current substitute execution. Scheduled automation self-execution reliability remains pending until a scheduler-originated material receipt satisfies the same gate."
-  }
+  },
+  "ideal_kpi": {
+    "status": "ACTIVE / ENFORCED IN DECISION RUNTIME",
+    "objective": "Evidence-backed commercial conversion; income/net profit remains terminal commercial outcome.",
+    "attribution": {
+      "iSCOPE": "1 point per evidence-backed converted opportunity attributable to iSCOPE qualified handoff",
+      "PRI": "2 points per evidence-backed converted opportunity attributable to PRI conversion"
+    },
+    "streak_bonus": {
+      "trigger": "3 immediate successive evidence-backed converted opportunities",
+      "iSCOPE_total_points_for_streak": 6,
+      "PRI_total_points_for_streak": 10
+    },
+    "zero_credit_states": [
+      "FOUND",
+      "QUALIFIED",
+      "READY",
+      "ACTIVE",
+      "ENABLED",
+      "SCHEDULED",
+      "WOKE",
+      "SUBMITTED_WITHOUT_CONVERSION_EVIDENCE"
+    ],
+    "guardrail": "Legitimate non-conversion is not punished. Never fabricate negative score or conversion.",
+    "revenue_truth": "KPI score is not payment evidence. PAID requires attributable payment evidence.",
+    "run_requirement": "Every reasoning cycle computes KPI delta from current durable state, preserves recoverable cumulative/streak state, cites evidence earning points, and writes KPI result into the existing scheduler-origin acceptance receipt.",
+    "execution_advantage": [
+      "durable full opportunity ledger",
+      "connected Gmail/Drive/GitHub surfaces",
+      "buyer-ready CARBON°/technical evidence",
+      "existing commercial threads",
+      "canonical bank/PayPal/crypto receiving rails",
+      "reasoning executor"
+    ],
+    "rule": "Operational advantages reduce friction; they do not prove outcomes. Use them rather than idling behind already-solved infrastructure."
+  },
+  "kpi_enforced_at": "2026-10-02T18:54:36+02:00"
 }
