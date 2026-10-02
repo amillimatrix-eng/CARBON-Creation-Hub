@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-SERVICE-COMMISSION-001",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-02T10:20:05.390662+00:00",
+  "finished": "2026-10-02T10:20:05.698589+00:00",
+  "stdout": "{\"worker\": \"BLACK\", \"host\": \"Black\", \"service_test\": \"PRE_REBOOT_EXECUTED\", \"utc\": \"2026-10-02T10:20:05.642288+00:00\"}\n",
+  "stderr": ""
+}
