@@ -1,6 +1,6 @@
 {
   "schema": "AMX_MATRIX_MANIFEST_V1",
-  "generated": "2026-10-02T18:18:41.442717Z",
+  "generated": "2026-10-02T18:32:20Z",
   "authority_rule": "NO_COMPLETE_RECONSTRUCTION_RECEIPT_NO_MATRIX_AUTHORITY",
   "recovery_order": [
     "SOURCE",
@@ -90,9 +90,9 @@
       "custody": {
         "repo": "amillimatrix-eng/CARBON-Creation-Hub",
         "branch": "main",
-        "head": "170dcbb70f1df934718322ef9dea791a02c3abe3",
+        "head": "e79cdb358c95a57903416d9c4420d28d7a5ed50a",
         "account": "amillimatrix-eng",
-        "head_semantics": "LAST_FUNCTIONAL_BACKEND_HEAD_BEFORE_CONTINUITY_ONLY_CONVERGENCE_SEAL",
+        "head_semantics": "LAST_FUNCTIONAL_BACKEND_HEAD_BEFORE_CONTINUITY_ONLY_MATRIX_SEAL",
         "branch_current_head_must_be_read_live": true
       },
       "constraints": [
@@ -164,7 +164,7 @@
     "dual_active_authority": "PROHIBITED"
   },
   "operational_projection": {
-    "observed_at": "2026-10-02T20:18:41.442717+02:00",
+    "observed_at": "2026-10-02T20:32:20+02:00",
     "active_scheduled_workers": 5,
     "active_worker_titles": [
       "Matrix Commissioning Inspector",
@@ -187,19 +187,20 @@
       "schema_version": 2,
       "primary": {
         "service": "srv-davpec7avr4c73cu6ll0",
-        "deploy": "dep-davvaeqd0e5s739gv7cg",
-        "deployed_commit": "170dcbb70f1df934718322ef9dea791a02c3abe3",
-        "state": "LIVE__CURRENT_TRUTH_FRESHNESS_VERIFIED"
+        "deploy": "dep-davvgf9srm7s73dhhv6g",
+        "deployed_commit": "e79cdb358c95a57903416d9c4420d28d7a5ed50a",
+        "state": "LIVE__IMMUTABLE_SHA_FRESHNESS_VERIFIED"
       },
       "secondary": {
         "service": "srv-davpi5qd0e5s738t86tg",
-        "deploy": "dep-davvafe7bikc73fjcpjg",
-        "deployed_commit": "170dcbb70f1df934718322ef9dea791a02c3abe3",
-        "state": "LIVE__CURRENT_TRUTH_FRESHNESS_VERIFIED"
+        "deploy": "dep-davvgfugekts73fk1ni0",
+        "deployed_commit": "e79cdb358c95a57903416d9c4420d28d7a5ed50a",
+        "state": "LIVE__IMMUTABLE_SHA_FRESHNESS_VERIFIED"
       },
       "t10_evidence_coverage": "4/4 COMPLETE",
-      "auto_deploy_continuity": "FAIL_OPEN__DR_0017__THREE_COMMIT_TRIGGER_TESTS_FAILED__API_FALLBACK_PROVEN",
-      "state_freshness": "PASS__DR_0018_CLOSED_VERIFIED"
+      "state_freshness": "PASS__DR_0018_CLOSED_VERIFIED__LATER_COMMIT_576bcf914b9b6fdb85303387dec89519f4446574_READ_WITHOUT_REDEPLOY",
+      "source_projection": "PUBLIC_GITHUB_COMMIT_PAGE_BRANCH_RESOLUTION_TO_ONE_IMMUTABLE_SHA_PER_PROJECTION",
+      "auto_deploy_continuity": "FAIL_OPEN__DR_0017__API_FALLBACK_PROVEN"
     },
     "bounty_reaper": {
       "mandate": "INDEPENDENT_CRYPTO_CENTRIC_BOUNTY_REWARD_LANE",
@@ -220,8 +221,8 @@
     }
   },
   "convergence": {
-    "state": "PASS__MATRIX_WIDE_SHARED_STATE_LIVE_RUNTIME_AND_STATE_FRESHNESS_CONVERGED__OPEN_HOLDS_PRESERVED",
-    "synchronized_at": "2026-10-02T20:18:41.442717+02:00",
+    "state": "PASS__MATRIX_WIDE_SHARED_STATE_LIVE_RUNTIME_AND_IMMUTABLE_SHA_STATE_FRESHNESS_CONVERGED__OPEN_HOLDS_PRESERVED",
+    "synchronized_at": "2026-10-02T20:32:20+02:00",
     "parent_repo_head": "799c4f936363deceaba9183892cdf8c7e4bca0bc",
     "shared_sheet": "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1",
     "shared_sheet_readback": [
@@ -243,6 +244,9 @@
       "secondary_deploy": "dep-davvafe7bikc73fjcpjg",
       "live_truth_readback": "PASS__LATEST_FINALIZED_TRUTH_SCREEN",
       "auto_deploy": "FAIL_OPEN__DR_0017"
-    }
+    },
+    "functional_backend_head": "e79cdb358c95a57903416d9c4420d28d7a5ed50a",
+    "freshness_acceptance_probe": "576bcf914b9b6fdb85303387dec89519f4446574",
+    "freshness_acceptance": "PASS__LIVE_LATER_COMMIT_WITHOUT_REDEPLOY"
   }
 }
