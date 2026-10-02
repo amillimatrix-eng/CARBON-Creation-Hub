@@ -2,7 +2,7 @@
   "claims": {
     "PRI|addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T14:25:47.063953+00:00",
+      "last_seen_at": "2026-10-02T14:26:13.615567+00:00",
       "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
       "office": "PRI",
       "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
@@ -22,7 +22,7 @@
     },
     "PRI|inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T14:25:47.063953+00:00",
+      "last_seen_at": "2026-10-02T14:26:13.615567+00:00",
       "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
       "office": "PRI",
       "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
@@ -32,7 +32,7 @@
     },
     "PRI|laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T14:25:47.063953+00:00",
+      "last_seen_at": "2026-10-02T14:26:13.615567+00:00",
       "next_action": "Monitor existing thread for LAVDM alternate-route instructions; on material response, act in-thread immediately and persist evidence.",
       "office": "PRI",
       "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
@@ -42,7 +42,7 @@
     },
     "PRI|microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T14:25:47.063953+00:00",
+      "last_seen_at": "2026-10-02T14:26:13.615567+00:00",
       "next_action": "Monitor existing threads under one organization record; do not send another initial pitch.",
       "office": "PRI",
       "opportunity_key": "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me",
@@ -52,7 +52,7 @@
     },
     "PRI|opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T14:25:47.063953+00:00",
+      "last_seen_at": "2026-10-02T14:26:13.615567+00:00",
       "next_action": "PRI to resume through the existing OpenTrain account/session when authenticated platform access is available; no duplicate account/application.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh",
@@ -62,7 +62,7 @@
     },
     "PRI|opentrain.ai|python-backend-ai-agent-developer|2026-10-01": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T14:25:47.063953+00:00",
+      "last_seen_at": "2026-10-02T14:26:13.615567+00:00",
       "next_action": "PRI to use the existing OpenTrain account route when an authenticated browser/session surface is available; do not create a duplicate account.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
@@ -72,7 +72,7 @@
     },
     "PRI|upwork.com|ai-automation-fix|022105205564933219360": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T14:25:47.063953+00:00",
+      "last_seen_at": "2026-10-02T14:26:13.615567+00:00",
       "next_action": "PRI to submit through the existing Upwork identity/session when an authenticated execution route is available; keep proposal evidence-specific and concise.",
       "office": "PRI",
       "opportunity_key": "upwork.com|ai-automation-fix|022105205564933219360",
@@ -82,7 +82,7 @@
     },
     "PRI|upwork.com|python-django-api-backend-fixes|022102430880684043532": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T14:25:47.063953+00:00",
+      "last_seen_at": "2026-10-02T14:26:13.615567+00:00",
       "next_action": "PRI to submit through the existing Upwork identity/session when authenticated access is available.",
       "office": "PRI",
       "opportunity_key": "upwork.com|python-django-api-backend-fixes|022102430880684043532",
@@ -101,7 +101,7 @@
       "status": "READY"
     }
   },
-  "generated_at": "2026-10-02T14:25:47.063953+00:00",
+  "generated_at": "2026-10-02T14:26:13.615567+00:00",
   "ready_count": 10,
   "version": 1
 }
