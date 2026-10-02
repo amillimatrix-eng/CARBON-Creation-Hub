@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-COMMISSION-001",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-02T09:48:45.165871+00:00",
+  "finished": "2026-10-02T09:48:45.480879+00:00",
+  "stdout": "{\"worker\": \"BLACK\", \"host\": \"Black\", \"status\": \"EXECUTED\", \"utc\": \"2026-10-02T09:48:45.435959+00:00\"}\n",
+  "stderr": ""
+}
