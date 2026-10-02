@@ -709,6 +709,48 @@
       ],
       "next_action": "PRI to submit through the existing Upwork identity/session when authenticated access is available.",
       "due_at": null
+    },
+    "staff-remotely.com|remote-ai-qa-prompt-python|south-africa": {
+      "organization": "Staff Remotely",
+      "domain": "staff-remotely.com",
+      "opportunity": "remote-ai-qa-prompt-python",
+      "title": "AI QA / Prompt Engineer / RLHF / Python-JS remote talent",
+      "state": "SUBMITTED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T15:00:00Z",
+      "commercial_role": "REMOTE CONTRACT / STAFFING",
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "Project/rate not specified on careers page; request scope/rate/start date before acceptance",
+      "payment": "Employer/client-specific; current AMX bank/PayPal/crypto rails consolidated",
+      "buyer_fit": "Official careers page invites South Africa/Zimbabwe candidates with experience including AI Data Labeller / Annotator, Prompt Engineer / AI QA Evaluator, RLHF Trainer / AI Evaluator, Software Developer (Python/JS), and technical support.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PUBLIC_CAREERS_ROUTE",
+          "source": "WEB",
+          "url": "https://staff-remotely.com/",
+          "observed_at": "2026-10-02",
+          "summary": "Official site says South Africa/Zimbabwe candidates can email CV and cover letter to info@staff-remotely.com for AI QA/evaluation, RLHF, Python/JS and related roles."
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0fd28f0a697b2f",
+          "thread_id": "1a0fd28f0a697b2f",
+          "recipient": "info@staff-remotely.com",
+          "summary": "PRI sent concise targeted application with CV attached and requested active project scope, rate and start date."
+        }
+      ],
+      "recipient": "info@staff-remotely.com",
+      "thread_id": "1a0fd28f0a697b2f",
+      "message_id": "1a0fd28f0a697b2f",
+      "subject": "South Africa — AI QA / Prompt Evaluation / Python",
+      "last_action_at": "2026-10-02T15:00:00Z",
+      "next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
+      "due_at": "2026-10-04T15:00:00Z",
+      "constraints": [
+        "No payment is assumed until a specific paid assignment/contract is evidenced."
+      ]
     }
   },
   "version": 1
