@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-SERVICE-COMMISSION-001",
+  "issued_by": "Matrix",
+  "purpose": "Verify BLACK responds under enabled system service before reboot",
+  "command": [
+    "python3",
+    "-c",
+    "import json,platform,datetime; print(json.dumps({'worker':'BLACK','host':platform.node(),'service_test':'PRE_REBOOT_EXECUTED','utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}))"
+  ],
+  "timeout": 30
+}
