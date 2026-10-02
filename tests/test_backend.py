@@ -5,6 +5,7 @@ from fastapi.testclient import TestClient
 
 from backend.app import create_app
 from backend.store import EvidenceStore
+from backend.state import StateReader
 
 
 def evidence_record(**overrides):
@@ -175,3 +176,31 @@ def test_single_opportunity_read_cannot_bypass_t10(tmp_path):
     assert body['t10']['T10_PASS']=='HOLD'
     assert 'does not yet carry native T10' in body['t10']['T10_REMAINING_GAP']
     assert 'overdrive/opportunities.json::records/b' in body['t10']['T10_EVIDENCE']
+
+
+def test_public_github_state_read_bypasses_stale_raw_cache(tmp_path, monkeypatch):
+    monkeypatch.setenv('AMX_GITHUB_REPO','amillimatrix-eng/CARBON-Creation-Hub')
+    monkeypatch.setenv('AMX_GITHUB_REF','main')
+    monkeypatch.delenv('AMX_GITHUB_TOKEN', raising=False)
+    seen={}
+
+    class FakeResponse:
+        def __enter__(self):
+            return self
+        def __exit__(self, exc_type, exc, tb):
+            return False
+        def read(self):
+            return b'{"schema":"AMX_MATRIX_TRUTH_SCREEN_V2"}'
+
+    def fake_urlopen(req, timeout=10):
+        seen['url']=req.full_url
+        seen['headers']={k.lower():v for k,v in req.header_items()}
+        return FakeResponse()
+
+    monkeypatch.setattr('backend.state.urllib.request.urlopen', fake_urlopen)
+    reader=StateReader(tmp_path)
+    body=reader._github_json('CONTINUITY/MATRIX_TRUTH_SCREEN.json')
+    assert body['schema']=='AMX_MATRIX_TRUTH_SCREEN_V2'
+    assert '?amx_t=' in seen['url']
+    assert seen['headers']['cache-control']=='no-cache'
+    assert seen['headers']['pragma']=='no-cache'

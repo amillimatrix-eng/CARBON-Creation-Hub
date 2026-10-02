@@ -45,10 +45,15 @@ class StateReader:
     def _github_json(self, relative: str) -> Any:
         path = urllib.parse.quote(relative, safe="/")
         ref = urllib.parse.quote(self.github_ref, safe="")
-        headers = {"User-Agent": "amx-evidence-house/2.0"}
+        headers = {
+            "User-Agent": "amx-evidence-house/2.0",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+        }
 
         if not self.github_token:
-            url = f"https://raw.githubusercontent.com/{self.github_repo}/{ref}/{path}"
+            cache_bust = int(utcnow().timestamp() * 1_000_000)
+            url = f"https://raw.githubusercontent.com/{self.github_repo}/{ref}/{path}?amx_t={cache_bust}"
             req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req, timeout=10) as response:
                 raw = response.read()
