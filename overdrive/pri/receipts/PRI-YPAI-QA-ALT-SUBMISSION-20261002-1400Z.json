@@ -1,0 +1,31 @@
+{
+  "schema": "AMX_PRI_ACTION_RECEIPT_V1",
+  "actor": "PRI",
+  "opportunity_key": "ypai.ai|qa-reviewer-adjudicator|remote-south-africa",
+  "organization": "YPAI",
+  "role": "QA Reviewer / Adjudicator — South Africa",
+  "action_at": "2026-10-02T14:00:00Z",
+  "action": "OFFICIAL_ALTERNATE_ROUTE_APPLICATION_SUBMISSION",
+  "prior_state": "QUALIFIED",
+  "new_state": "SUBMITTED",
+  "form_attempt": {
+    "result": "FAILED_SERVER_SIDE",
+    "error": "Your submission could not be processed. Please refresh the page and try again.",
+    "repeated_attempts": true,
+    "confirmation_reference": null
+  },
+  "alternate_route": {
+    "official_contact_source": "https://ypai.ai/contact-us/",
+    "recipient": "contact@ypai.ai",
+    "gmail_message_id": "1a0fcfea76c7355d",
+    "thread_id": "1a0fcfea76c7355d",
+    "contents": "Candidate identity, South Africa location, contact details, role-specific capability fit, explicit processing/profile consent, request to accept application or provide correct alternate submission route."
+  },
+  "next_action": "Monitor official YPAI thread; act on material response. Do not duplicate-submit absent instruction.",
+  "money_truth": "NO PAYMENT / NO CONTRACT YET",
+  "controls": [
+    "NO_DUPLICATE_APPLICATION",
+    "SUBMITTED_DOES_NOT_EQUAL_ACCEPTED",
+    "PAID_REQUIRES_PAYMENT_EVIDENCE"
+  ]
+}
