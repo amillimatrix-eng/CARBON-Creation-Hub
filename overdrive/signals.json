@@ -8,13 +8,6 @@
       "state": "DELIVERY_FAILED"
     },
     {
-      "due_at": null,
-      "due_now": false,
-      "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
-      "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
-      "state": "DELIVERY_FAILED"
-    },
-    {
       "due_at": "2026-10-04T15:15:00Z",
       "due_now": false,
       "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
@@ -64,6 +57,6 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-02T15:15:44.791069+00:00",
+  "generated_at": "2026-10-02T15:19:35.146476+00:00",
   "iSCOPE": []
 }
