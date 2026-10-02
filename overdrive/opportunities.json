@@ -751,6 +751,48 @@
       "constraints": [
         "No payment is assumed until a specific paid assignment/contract is evidenced."
       ]
+    },
+    "redrama.ai|adaptation-distribution|the-dragon-who-could-not-claim-me": {
+      "organization": "Redrama",
+      "domain": "redrama.ai",
+      "opportunity": "adaptation-distribution",
+      "title": "The Dragon Who Could Not Claim Me",
+      "state": "SUBMITTED",
+      "execution_owner": "PRI",
+      "discovered_by": "iSCOPE",
+      "qualified_at": "2026-10-02T15:12:00Z",
+      "commercial_role": "ADAPTATION / DISTRIBUTION / LICENSING",
+      "capital_direction": "INBOUND / NON-EXCLUSIVE REVENUE_SHARE_OPTION",
+      "reward": "Official page states non-exclusive distribution route with 70% to rights holder; adaptation/licensing terms require direct confirmation.",
+      "payment": "Commercial terms to confirm before acceptance; AMX receiving rails consolidated.",
+      "buyer_fit": "Official licensing page accepts rights-controlled stories for adaptation and existing series for distribution; current CARBON° property has developed series material and rendered samples but is not represented as a completed 50-episode series.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PUBLIC_COMMERCIAL_ROUTE",
+          "source": "WEB",
+          "url": "https://redrama.ai/short-drama-licensing",
+          "observed_at": "2026-10-02",
+          "summary": "Official page states three routes: licensing, adapting owned IP, and non-exclusive distribution at 70% to rights holder; directs licensing conversations to support@redrama.ai."
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a0fd2b475e05861",
+          "thread_id": "1a0fd2b475e05861",
+          "recipient": "support@redrama.ai",
+          "summary": "PRI asked for exact requirements, commercial terms and delivery standard for the current rights-controlled project without overstating completion."
+        }
+      ],
+      "recipient": "support@redrama.ai",
+      "thread_id": "1a0fd2b475e05861",
+      "message_id": "1a0fd2b475e05861",
+      "subject": "CARBON° vertical drama — adaptation / distribution route",
+      "last_action_at": "2026-10-02T15:12:00Z",
+      "next_action": "Monitor existing Redrama thread; on material response, verify terms/rights/payment and provide controlled sample/package only through an authorized access route.",
+      "due_at": "2026-10-04T15:12:00Z",
+      "constraints": [
+        "Do not represent developed/planned episodes as completed rendered series; verify exact rights, acceptance and payment terms before commitment."
+      ]
     }
   },
   "version": 1
