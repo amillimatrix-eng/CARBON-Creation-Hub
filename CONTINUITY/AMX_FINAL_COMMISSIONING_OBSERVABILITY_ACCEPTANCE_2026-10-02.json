@@ -1,0 +1,148 @@
+{
+  "schema": "AMX_FINAL_COMMISSIONING_OBSERVABILITY_ACCEPTANCE_V1",
+  "date": "2026-10-02",
+  "executed_by": "Coffee / current Matrix reasoning runtime",
+  "terminal_objective": "Commission existing Matrix estate and expose attributable truth through the existing House implementation without duplication or regression.",
+  "disposition": "PARTIAL_ACCEPTANCE__MATERIAL_END_TO_END_EXECUTION_PROVEN",
+  "proven": [
+    {
+      "area": "RENDER_BACKEND",
+      "state": "LIVE",
+      "evidence": {
+        "workspace": "tea-davpb1gu01pc73fl088g",
+        "service": "srv-davpec7avr4c73cu6ll0",
+        "url": "https://amx-evidence-house.onrender.com",
+        "deploy": "dep-davpg0psrm7s73ct2860",
+        "commit": "34ed93fd8fb9219f728437980ce1b4a9b7df8adb",
+        "deploy_status": "live"
+      }
+    },
+    {
+      "area": "LIVE_STATE_ADAPTER",
+      "state": "CONNECTED_GITHUB_LIVE",
+      "evidence": "/api/house/bootstrap returned backend.status CONNECTED, state_source GITHUB_LIVE, adapter_errors [] after repair commit 27f730c7bb9245fcb1ac9359faae45c15d186295."
+    },
+    {
+      "area": "HOUSE_OPERATOR_DASHBOARD",
+      "state": "LIVE_AND_EXERCISED_ON_RENDER",
+      "evidence": "Live browser rendered worker proof and tool surfaces; Evidence Terminal query 'commercial workflow' returned 1 deterministic FTS5 match EVID-OVERDRIVE-001 with no page-level failures.",
+      "url": "https://amx-evidence-house.onrender.com/house"
+    },
+    {
+      "area": "COMMERCIAL_POST_CORRECTION_CYCLE",
+      "state": "PROVEN_BY_AUTHORIZED_SUBSTITUTE_EXECUTION",
+      "evidence": [
+        "overdrive/iscope/receipts/ISCOPE-POST-CORRECTION-20261002-112020Z.json",
+        "overdrive/pri/receipts/PRI-POST-CORRECTION-20261002-112020Z.json",
+        "Gmail message 1a0fc58012594488 to contact@cherryone.ai"
+      ],
+      "result": {
+        "ledger_records": 18,
+        "new_qualified": 5,
+        "candidates_inspected": 24,
+        "material_external_actions": 1
+      }
+    },
+    {
+      "area": "OVERDRIVE",
+      "state": "PRESERVED_AND_REACTED",
+      "evidence": "Protected transport automatically reacted to new commercial ledger state; later minute receipts regenerated routing to PRI signals=8 and ready claims=9. No redesign/rebuild."
+    },
+    {
+      "area": "BOUNTY_REAPER",
+      "state": "SELF_EXECUTION_PROVEN",
+      "evidence": [
+        "CONTINUITY/BOUNTY_REAPER_RUN_2026-10-02T1311_SAST.md",
+        "AMX Bounty Reaper — Live Tracker / Runs"
+      ]
+    },
+    {
+      "area": "GITHUB_GMAIL_DRIVE",
+      "state": "CONSEQUENTIAL_READ_WRITE_PROVEN",
+      "evidence": "GitHub durable commits/readback; Gmail outbound/readback; Drive Bounty Reaper tracker readback."
+    }
+  ],
+  "repaired": [
+    {
+      "area": "RENDER_LIVE_GITHUB_ADAPTER",
+      "repair": "When no GitHub token is configured, public live reads now use raw.githubusercontent.com instead of failing through Contents API auth/rate behavior.",
+      "commit": "27f730c7bb9245fcb1ac9359faae45c15d186295"
+    },
+    {
+      "area": "EXISTING_HOUSE_SOURCE",
+      "repair": "Existing House source config now points to live Render backend; Worker Proof, Tool Surfaces and Active Truth Alerts panels retained.",
+      "commits": [
+        "445ffbe86ce5325ebae08a38d0a12ebbfe48e872",
+        "35f74f828327bda6919d4dcea12d66743c07275a",
+        "5ddaa899953a56f04d440ad6a7515e9e7fef229f",
+        "34ed93fd8fb9219f728437980ce1b4a9b7df8adb"
+      ]
+    },
+    {
+      "area": "BLACK_WINDOWS_AUTOWAKE",
+      "repair": "Repair staged, not executed: Windows startup launcher installer plus BLACK job BLACK-WINDOWS-AUTOSTART-001.",
+      "state": "PENDING_BLACK_WAKE"
+    }
+  ],
+  "executed": [
+    "Render workspace recovered after Owner login; existing backend deployed instead of rebuilt.",
+    "Backend health/bootstrap read back publicly.",
+    "Live GitHub projection repair applied and redeployed.",
+    "House UI exercised end-to-end in a live browser including deterministic evidence search.",
+    "Post-correction commercial cycle executed with durable iSCOPE/PRI receipts and real Gmail action.",
+    "Bounty Reaper first reactivation run verified.",
+    "TinyFish legacy monitor exact id recovered from provider email and direct cancellation attempted."
+  ],
+  "pending": [
+    {
+      "area": "BLACK_POST_REBOOT_AUTOWAKE",
+      "state": "PENDING",
+      "evidence": "Neither BLACK-POST-REBOOT-001 nor BLACK-WINDOWS-AUTOSTART-001 receipt exists.",
+      "smallest_next_action": "Start Ubuntu/WSL once without typing commands so the already-proven BLACK service can claim the staged Windows-autostart repair; after receipt, perform one no-touch reboot acceptance."
+    },
+    {
+      "area": "EXISTING_CHATGPT_SITE_PUBLISH",
+      "state": "PENDING",
+      "evidence": "Library readback still shows appgprj_6aabe3aac8fc819199f38d7cf4a79faf at source_version_number 2.",
+      "smallest_next_action": "Use an authorized ChatGPT Sites mutation surface to publish the already-patched existing source above v2 and read it back. No clone/replacement."
+    },
+    {
+      "area": "SCHEDULED_ISCOPE_PRI_SELF_EXECUTION",
+      "state": "PENDING_RELIABILITY",
+      "evidence": "Post-correction material cycle is proven, but it was produced by authorized substitute execution rather than independently attributed to the scheduled automation wake.",
+      "smallest_next_action": "Require a future scheduled wake to produce its own qualifying material receipt; preserve current proven commercial state."
+    },
+    {
+      "area": "TINYFISH_LEGACY_MONITOR_STOP",
+      "state": "PENDING_PROVIDER_CONTROL",
+      "evidence": "Exact monitor d7b510d6-9549-435f-96cd-2ff2ce5b58b1 recovered from hourly email. Current TinyFish cancel API returned Monitor not found; direct monitor page is login_required.",
+      "smallest_next_action": "Cancel/pause this exact legacy monitor when an authenticated TinyFish control surface exposing it is available. Do not create a replacement."
+    },
+    {
+      "area": "SQLITE_DURABILITY_ON_RENDER_FREE",
+      "state": "PENDING_IF_ADMIN_WRITES_ARE_ENABLED",
+      "evidence": "Current production backend uses free Render service without a persistent disk; read-only governed projection is live, while mutable SQLite durability is not accepted as persistent production storage.",
+      "smallest_next_action": "Do not enable admin evidence writes until a persistent volume/runtime is authorized; current House read path remains live from GitHub plus seeded evidence."
+    }
+  ],
+  "blocked": [],
+  "controls": [
+    "DO NOT REBUILD CARBON°",
+    "PATCH EXISTING HOUSE; DO NOT CLONE",
+    "OVERDRIVE COMPLETE / DO NOT REOPEN",
+    "ONE PRI",
+    "BOUNTY REAPER ADDITIONAL LANE ONLY",
+    "BLACK IS EXECUTION CAPABILITY, NOT AUTHORITY",
+    "NO RECEIPT -> NO CLOSURE",
+    "UNKNOWN/HOLD OVER INFERENCE"
+  ],
+  "realized_revenue": {
+    "state": "UNPROVEN",
+    "amount": 0,
+    "currency": "USD"
+  },
+  "owner_window": {
+    "currently_working_url": "https://amx-evidence-house.onrender.com/house",
+    "exact_truth": "This is the live backend-served existing House source and operator dashboard. The original ChatGPT Site URL remains source v2 until republished."
+  }
+}
