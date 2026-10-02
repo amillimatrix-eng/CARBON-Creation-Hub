@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-COMMISSION-001",
+  "issued_by": "Matrix",
+  "purpose": "BLACK transport commissioning round trip",
+  "command": [
+    "python3",
+    "-c",
+    "import json,platform,datetime; print(json.dumps({'worker':'BLACK','host':platform.node(),'status':'EXECUTED','utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}))"
+  ],
+  "timeout": 30
+}
