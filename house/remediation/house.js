@@ -51,7 +51,51 @@
     });
   }
 
+  function renderTruth(op) {
+    const truth = op.system_truth || {};
+    const workers = $('workerProofList'); workers.innerHTML = '';
+    const workerItems = truth.workers || [];
+    if (!workerItems.length) {
+      workers.innerHTML='<div class="empty">No current worker-proof snapshot recovered.</div>';
+    } else {
+      workerItems.forEach(w => {
+        const e=document.createElement('article');e.className='record';
+        const h=document.createElement('h3');h.textContent=esc(w.name) + ' · ' + esc(w.state || 'UNKNOWN');
+        const p=document.createElement('p');
+        p.textContent=w.useful_work_proven_this_wake ? 'Useful consequential work is evidenced for the current proof window.' : 'Current useful work is NOT proven by a consequential receipt.';
+        const s=document.createElement('small');s.textContent=w.last_scheduler_wake ? 'Last scheduler wake: ' + fmt(w.last_scheduler_wake) : 'No scheduler wake proven.';
+        e.append(h,p,s);workers.append(e);
+      });
+    }
+    const tools = $('toolProofList'); tools.innerHTML = '';
+    const surfaces = truth.surfaces || [];
+    if (!surfaces.length) {
+      tools.innerHTML='<div class="empty">No current tool-surface snapshot recovered.</div>';
+    } else {
+      surfaces.forEach(t => {
+        const e=document.createElement('article');e.className='record';
+        const h=document.createElement('h3');h.textContent=esc(t.name) + ' · ' + esc(t.state || 'UNKNOWN');
+        const p=document.createElement('p');p.textContent=esc(t.evidence || 'No evidence note recorded.');
+        e.append(h,p);tools.append(e);
+      });
+    }
+    const alerts = $('truthAlerts'); alerts.innerHTML = '';
+    const alertItems = truth.alerts || [];
+    if (!alertItems.length) {
+      alerts.innerHTML='<div class="empty">No active truth-screen alerts.</div>';
+    } else {
+      alertItems.forEach(a => {
+        const e=document.createElement('article');e.className='record';
+        const h=document.createElement('h3');h.textContent=esc(a.severity) + ' · ' + esc(a.id) + ' · ' + esc(a.state);
+        const p=document.createElement('p');p.textContent=esc(a.next || 'No next action recorded.');
+        e.append(h,p);alerts.append(e);
+      });
+    }
+    $('truthGeneratedAt').textContent = truth.generated_at ? 'Truth snapshot: ' + fmt(truth.generated_at) : 'Truth snapshot timestamp unavailable.';
+  }
+
   function renderOperator(op) {
+    renderTruth(op);
     const worker = op.worker || {};
     $('engineState').textContent = esc(worker.display_state || 'UNKNOWN');
     $('engineAcceptance').textContent = esc(worker.acceptance_state || worker.execution_truth || 'UNKNOWN');
@@ -90,6 +134,10 @@
       $('engineState').textContent='UNKNOWN'; $('engineAcceptance').textContent='Backend unavailable';
       $('ledgerCount').textContent='—'; $('claimCount').textContent='—'; $('railState').textContent='UNKNOWN'; $('revenueState').textContent='UNPROVEN';
       $('dueList').innerHTML='<div class="empty error">Operator state unavailable.</div>';
+      $('workerProofList').innerHTML='<div class="empty error">Worker proof unavailable.</div>';
+      $('toolProofList').innerHTML='<div class="empty error">Tool proof unavailable.</div>';
+      $('truthAlerts').innerHTML='<div class="empty error">Truth alerts unavailable.</div>';
+      $('truthGeneratedAt').textContent='Truth snapshot unavailable.';
     }
   }
 
