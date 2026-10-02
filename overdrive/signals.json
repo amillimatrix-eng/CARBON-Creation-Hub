@@ -80,14 +80,14 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "PRI to use the existing OpenTrain account route when an authenticated browser/session surface is available; do not create a duplicate account.",
+      "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
       "state": "QUALIFIED"
     },
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "PRI to resume through the existing OpenTrain account/session when authenticated platform access is available; no duplicate account/application.",
+      "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh",
       "state": "QUALIFIED"
     },
@@ -129,11 +129,11 @@
     {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": false,
-      "next_action": "PRI to apply through Alignerr official route; prefer Search Quality/AI Data Quality/Chatbot Tester over unrelated specialist roles; stop only at genuine identity/assessment gate.",
+      "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
       "opportunity_key": "alignerr.com|search-quality-ai-training|south-africa",
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-02T16:02:06.149467+00:00",
+  "generated_at": "2026-10-02T16:09:04.571722+00:00",
   "iSCOPE": []
 }
