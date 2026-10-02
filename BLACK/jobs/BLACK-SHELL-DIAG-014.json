@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-SHELL-DIAG-014",
+  "issued_by": "Matrix",
+  "purpose": "Diagnose post-OKX login-shell hang without invoking login-shell startup. Read-only inspection only.",
+  "command": [
+    "python3",
+    "-c",
+    "import os,subprocess,pathlib,json\nhome=pathlib.Path.home()\nout={\"home\":str(home),\"path\":os.environ.get(\"PATH\",\"\"),\"files\":{},\"commands\":{},\"processes\":\"\"}\nfor n in [\".bashrc\",\".profile\",\".bash_profile\",\".bash_login\",\".zshrc\"]:\n p=home/n\n if p.exists():\n  try: out[\"files\"][n]=p.read_text(errors=\"replace\")[-12000:]\n  except Exception as e: out[\"files\"][n]=\"ERR:\"+repr(e)\nfor cmd in [[\"bash\",\"--noprofile\",\"--norc\",\"-c\",\"echo CLEAN_SHELL_OK; command -v node || true; command -v npm || true; command -v npx || true\"],\n            [\"timeout\",\"4\",\"bash\",\"-lc\",\"echo LOGIN_SHELL_OK\"],\n            [\"timeout\",\"4\",\"node\",\"-v\"],\n            [\"timeout\",\"4\",\"npm\",\"-v\"],\n            [\"timeout\",\"4\",\"npx\",\"--version\"]]:\n try:\n  q=subprocess.run(cmd,text=True,capture_output=True,timeout=8)\n  out[\"commands\"][\" \".join(cmd)]={\"rc\":q.returncode,\"stdout\":q.stdout[-4000:],\"stderr\":q.stderr[-4000:]}\n except Exception as e: out[\"commands\"][\" \".join(cmd)]={\"error\":repr(e)}\ntry:\n q=subprocess.run([\"ps\",\"-eo\",\"pid,ppid,user,stat,etime,args\"],text=True,capture_output=True,timeout=5)\n out[\"processes\"]=\"\\n\".join([ln for ln in q.stdout.splitlines() if any(k in ln.lower() for k in [\"node\",\"npm\",\"npx\",\"onchain\",\"black\",\"bash\"])])[-12000:]\nexcept Exception as e: out[\"processes\"]=\"ERR:\"+repr(e)\nprint(json.dumps(out,indent=2))"
+  ],
+  "timeout": 60
+}
