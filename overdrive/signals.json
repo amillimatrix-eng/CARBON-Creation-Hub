@@ -29,6 +29,13 @@
       "state": "SUBMITTED"
     },
     {
+      "due_at": "2026-10-02T15:15:37.000Z",
+      "due_now": true,
+      "next_action": "Monitor both existing threads; do not send another initial pitch.",
+      "opportunity_key": "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me",
+      "state": "SUBMITTED"
+    },
+    {
       "due_at": null,
       "due_now": false,
       "next_action": "PRI to use the existing OpenTrain account route when an authenticated browser/session surface is available; do not create a duplicate account.",
@@ -57,6 +64,6 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-02T15:14:48.296960+00:00",
+  "generated_at": "2026-10-02T15:15:44.791069+00:00",
   "iSCOPE": []
 }
