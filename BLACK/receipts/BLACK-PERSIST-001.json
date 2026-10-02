@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-PERSIST-001",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 1,
+  "started": "2026-10-02T09:57:37.633651+00:00",
+  "finished": "2026-10-02T09:57:37.931480+00:00",
+  "stdout": "",
+  "stderr": "Failed to connect to user scope bus via local transport: No such file or directory\n"
+}
