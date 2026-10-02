@@ -22,13 +22,41 @@
       "state": "RESPONDED"
     },
     {
-      "due_at": "2026-09-30T20:50:00Z",
-      "due_now": true,
-      "next_action": "PRI to inspect Cherry One's official Partner With Us intake, match CARBON\u00b0 evidenced capabilities/available rights to the intake, and make the outbound commercial proposition if terms remain compatible.",
-      "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "PRI application is ready at the official YPAI form; Owner consent is required for the form's data-processing/profile-creation checkbox.",
+      "opportunity_key": "ypai.ai|qa-reviewer-adjudicator|remote-south-africa",
+      "state": "QUALIFIED"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "PRI to use the existing OpenTrain account route when an authenticated browser/session surface is available; do not create a duplicate account.",
+      "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
+      "state": "QUALIFIED"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "PRI to resume through the existing OpenTrain account/session when authenticated platform access is available; no duplicate account/application.",
+      "opportunity_key": "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh",
+      "state": "QUALIFIED"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "PRI to submit through the existing Upwork identity/session when an authenticated execution route is available; keep proposal evidence-specific and concise.",
+      "opportunity_key": "upwork.com|ai-automation-fix|022105205564933219360",
+      "state": "QUALIFIED"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "PRI to submit through the existing Upwork identity/session when authenticated access is available.",
+      "opportunity_key": "upwork.com|python-django-api-backend-fixes|022102430880684043532",
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-02T07:33:01.485263+00:00",
+  "generated_at": "2026-10-02T11:23:54.457371+00:00",
   "iSCOPE": []
 }
