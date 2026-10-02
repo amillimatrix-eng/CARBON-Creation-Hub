@@ -584,14 +584,15 @@
         }
       ],
       "constraints": [
-        "Application requires personal data-processing consent and creates a YPAI Freelance profile; do not silently consent on Owner's behalf."
+        "Official application form returned a persistent server-side processing error; alternate submission via YPAI's official contact address is pending YPAI acknowledgement."
       ],
       "next_action": "Monitor the official YPAI contact thread. The public application form failed repeatedly server-side; alternate official contact asked YPAI to accept the application or provide the correct submission route. Do not duplicate-submit unless YPAI instructs.",
       "due_at": null,
       "last_action_at": "2026-10-02T14:00:00Z",
       "recipient": "contact@ypai.ai",
       "thread_id": "1a0fcfea76c7355d",
-      "message_id": "1a0fcfea76c7355d"
+      "message_id": "1a0fcfea76c7355d",
+      "consent_authorized_at": "2026-10-02T14:00:00Z"
     },
     "opentrain.ai|python-backend-ai-agent-developer|2026-10-01": {
       "organization": "OpenTrain AI",
