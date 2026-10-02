@@ -1,6 +1,6 @@
 {
   "schema": "AMX_MATRIX_TRUTH_SCREEN_V1",
-  "generated_at": "2026-10-02T11:24:30Z",
+  "generated_at": "2026-10-02T11:43:00Z",
   "rule": "Only attributable evidence promotes state. ENABLED/SCHEDULER_WOKE/READY are not EXECUTING. NO RECEIPT -> NO CLOSURE.",
   "workers": [
     {
@@ -77,8 +77,8 @@
     },
     {
       "name": "TinyFish",
-      "state": "AVAILABLE__UNWANTED_EXTERNAL_TASK_STILL_EMITTING_EMAIL",
-      "evidence": "Hourly AI-agent-market emails continue; saved browser profiles currently show no signed-in domains."
+      "state": "AVAILABLE__LEGACY_MONITOR_IDENTIFIED__STOP_ATTEMPT_NOT_ACCEPTED_BY_CURRENT_API",
+      "evidence": "Exact legacy monitor id d7b510d6-9549-435f-96cd-2ff2ce5b58b1 recovered from TinyFish hourly email. Current monitor registry does not expose it; direct cancel returned Monitor not found; control page requires TinyFish login."
     },
     {
       "name": "Opera Browser Connector",
@@ -87,13 +87,18 @@
     },
     {
       "name": "CARBON° House Site",
-      "state": "ACTIVE_SITE_V2__TRUTH_DASHBOARD_SOURCE_PATCH_VERIFIED__LIVE_PUBLISH_PENDING",
-      "evidence": "Existing Site remains v2. Truth dashboard patch passed GitHub Actions run 37000083768 at head 5ddaa899953a56f04d440ad6a7515e9e7fef229f; backend hosting and Site publish remain open."
+      "state": "ACTIVE_CHATGPT_SITE_V2__SOURCE_VERSION_NOT_REPUBLISHED",
+      "evidence": "Library readback still shows appgprj_6aabe3aac8fc819199f38d7cf4a79faf source_version_number=2. Do not claim >2 publish."
     },
     {
       "name": "CARBON° Business Studio",
       "state": "ACTIVE_SITE_V4__INTAKE_PROTOTYPE",
       "evidence": "appgprj_6ab6c1e499a48191ada448afa9209f35"
+    },
+    {
+      "name": "CARBON° Operational House Backend",
+      "state": "LIVE__CONNECTED__GITHUB_LIVE__EVIDENCE_SEARCH_EXERCISED",
+      "evidence": "Render service srv-davpec7avr4c73cu6ll0 at https://amx-evidence-house.onrender.com; deploy dep-davpg0psrm7s73ct2860 live on commit 34ed93fd8fb9219f728437980ce1b4a9b7df8adb. /api/house/bootstrap returned CONNECTED/GITHUB_LIVE and live browser evidence search returned 1 match for commercial workflow."
     }
   ],
   "alerts": [
@@ -112,8 +117,8 @@
     {
       "severity": "P1",
       "id": "HOUSE_LIVE",
-      "state": "BACKEND_BUILD_VERIFIED__LIVE_DEPLOYMENT_OPEN",
-      "next": "Deploy existing provider-neutral backend, then patch existing House and publish source version >2."
+      "state": "BACKEND_AND_SAME_SOURCE_HOUSE_LIVE__CHATGPT_SITE_REPUBLISH_PENDING",
+      "next": "Existing operational House source is live and exercised on Render. Remaining exact acceptance edge: publish the existing ChatGPT Site appgprj_6aabe3aac8fc819199f38d7cf4a79faf above source v2 using an authorized Sites mutation surface; do not clone it."
     },
     {
       "severity": "P1",
@@ -124,8 +129,8 @@
     {
       "severity": "P1",
       "id": "TINYFISH_STOP",
-      "state": "STOP_NOT_VERIFIED",
-      "next": "Locate and stop the provider-native hourly AI market monitor without further spend."
+      "state": "LEGACY_MONITOR_IDENTIFIED__STOP_NOT_VERIFIED",
+      "next": "Provider-native monitor id d7b510d6-9549-435f-96cd-2ff2ce5b58b1 is known. Current API says Monitor not found and control page requires TinyFish login; do not create or resume a replacement monitor."
     }
   ],
   "realized_revenue": {
