@@ -1,0 +1,91 @@
+{
+  "schema": "AMX_BLACK_AND_HOUSE_EXECUTION_RECEIPT_V1",
+  "date": "2026-10-02",
+  "owner_objective": "Fix BLACK without Owner command entry, then finish the non-duplicative House continuation: publish existing House >2, read back, verify, receipt.",
+  "overall": "PARTIAL / BLACK REPAIRED AND VERIFIED / HOUSE PUBLISH AUTH GATE",
+  "black": {
+    "status": "REPAIRED_AND_VERIFIED_CURRENT_RUNTIME",
+    "original_observed_faults": [
+      "Metrics/truth screen missed durable BLACK-POST-REBOOT-001 success.",
+      "WSL displayed failed systemd user-session warning for amx.",
+      "Windows autostart repair job failed because powershell.exe was unavailable on BLACK system-service PATH."
+    ],
+    "evidence": {
+      "post_reboot_receipt": "BLACK/receipts/BLACK-POST-REBOOT-001.json",
+      "diagnostic": "BLACK/receipts/BLACK-DIAG-FINAL-001.json",
+      "user_session_diagnostic": "BLACK/receipts/BLACK-USER-SESSION-DIAG-006.json",
+      "final_repair": "BLACK/receipts/BLACK-FINAL-REPAIR-007.json",
+      "final_verification": "BLACK/receipts/BLACK-FINAL-VERIFY-008.json"
+    },
+    "repaired": [
+      "Recognized post-reboot BLACK execution as proven instead of leaving stale metrics.",
+      "Retired obsolete user-level BLACK unit so enabling the amx user manager cannot create a second BLACK process.",
+      "Enabled lingering for amx; /run/user/1000 now exists and user@1000.service verified active.",
+      "Preserved canonical system-level amx-black.service: enabled, active, runs as amx.",
+      "Verified exactly one canonical BLACK worker process.",
+      "Installed Windows Startup launcher directly through /mnt/c without depending on PowerShell interop."
+    ],
+    "windows_startup_launcher": "C:\\Users\\eztra\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\AMX-BLACK-WSL.cmd",
+    "startup_command": "start \"\" /min %SystemRoot%\\System32\\wsl.exe --exec /bin/true",
+    "current_acceptance": {
+      "matrix_to_black_to_receipt": "PASS",
+      "post_reboot_execution_receipt": "PASS",
+      "system_service_enabled_active": "PASS",
+      "amx_user_session": "PASS",
+      "single_instance": "PASS",
+      "windows_startup_file_install_readback": "PASS",
+      "next_no_touch_windows_login_execution": "PENDING FUTURE OBSERVATION ONLY"
+    }
+  },
+  "house": {
+    "status": "BACKEND LIVE AND VERIFIED / EXISTING CHATGPT SITE PUBLICATION STILL OPEN",
+    "canonical_render": {
+      "service_id": "srv-davpec7avr4c73cu6ll0",
+      "url": "https://amx-evidence-house.onrender.com",
+      "health": "PASS after free-service wake",
+      "bootstrap": "PASS / CONNECTED / GITHUB_LIVE",
+      "black_truth_readback": "PASS / repaired BLACK state visible through live bootstrap"
+    },
+    "existing_chatgpt_site": {
+      "project_id": "appgprj_6aabe3aac8fc819199f38d7cf4a79faf",
+      "source_version_number": 2,
+      "projection_revision": 4,
+      "target": ">2",
+      "clone_created": false
+    },
+    "publish_attempt": {
+      "run_id": "96337593-92f8-4373-b530-42dc54e380d6",
+      "route": "TinyFish live browser with vault enabled",
+      "result": "AUTHENTICATION_GATE",
+      "exact_gate": "No ChatGPT credentials configured in TinyFish vault/session; only public login/signup surface reachable. No Site change made."
+    },
+    "remaining_exact_action": "Use an authenticated ChatGPT Sites mutation surface to patch/publish the same existing project >2, then authenticated readback/exercise against canonical Render backend.",
+    "prohibited": [
+      "DO NOT CLONE SITE",
+      "DO NOT CREATE NEW BACKEND",
+      "DO NOT CREATE RAILWAY/VERCEL SUBSTITUTE",
+      "DO NOT RETRY BROKEN TINYFISH PROFILE-SETUP LINKS"
+    ]
+  },
+  "truth_updates": [
+    {
+      "file": "CONTINUITY/BLACK_MATRIX_CAPABILITY_TRANSITION_2026-10-02.json",
+      "commit": "aa5bbb588c51da2b968baee04362eff40e3d3045"
+    },
+    {
+      "file": "CONTINUITY/MATRIX_TRUTH_SCREEN.json",
+      "commit": "1b63381dcebeef586afb8a478ae170c829744981"
+    },
+    {
+      "file": "CONTINUITY/EVIDENCE_HOUSE_LIVE_DEPLOYMENT_ATTEMPT_2026-10-02.json",
+      "commit": "f6f51625d56fbc3429469be7734188854bb25662"
+    }
+  ],
+  "controls": [
+    "NO_RECEIPT_NO_CLOSURE",
+    "PATCH_EXISTING_HOUSE_DO_NOT_CLONE",
+    "ONE_AUTHORITATIVE_RENDER_BACKEND",
+    "BLACK_SINGLE_INSTANCE",
+    "UNKNOWN_HOLD_OVER_INFERENCE"
+  ]
+}
