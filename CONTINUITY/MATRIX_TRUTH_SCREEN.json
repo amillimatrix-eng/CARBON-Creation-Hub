@@ -1,6 +1,6 @@
 {
   "schema": "AMX_MATRIX_TRUTH_SCREEN_V2",
-  "generated_at": "2026-10-02T18:18:41.442717Z",
+  "generated_at": "2026-10-02T18:26:10Z",
   "projection_scope": "CURRENT_BOUNDED_MATRIX_STATE",
   "rule": "Only attributable evidence promotes state. ROUTED != OWNED != CLAIMED != EXECUTING != RESOLVED. ENABLED/SCHEDULER_WOKE/READY are not EXECUTING. NO RECEIPT -> NO CLOSURE. T10 bounded truth wins over a more successful technical label.",
   "T10": {
@@ -229,5 +229,11 @@
       "patch": "170dcbb70f1df934718322ef9dea791a02c3abe3",
       "acceptance": "pytest/smoke/container/runtime PASS + both live services return latest Truth Screen"
     }
-  ]
+  ],
+  "freshness_acceptance_probe": {
+    "state": "PENDING_LIVE_READBACK",
+    "marker": "AMX-DR0018-PROBE-20261002T182610Z",
+    "backend_patch": "9e8736dbbcf06da0cc33c52eca63eb4f7a796bfb",
+    "requirement": "Already-running Evidence House must resolve this later main commit to its immutable SHA without redeploy."
+  }
 }
