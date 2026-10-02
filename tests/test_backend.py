@@ -7,16 +7,31 @@ from backend.app import create_app
 from backend.store import EvidenceStore
 
 
+def evidence_record(**overrides):
+    record = {
+        'evidence_id':'EVID-TEST-001',
+        'capability':'Governed AI workflow',
+        'artifact':'receipt engine',
+        'authoritative_source':'repo',
+        'status_freshness':'CURRENT',
+        'interview_safe_explanation':'Built durable evidence workflows.',
+        'T10_JOB':'Prove the governed workflow outcome.',
+        'T10_ACTUAL':'A durable evidence record was written.',
+        'T10_EVIDENCE':'repo::receipt',
+        'T10_CHANGE':'The outcome became inspectable.',
+        'T10_REMAINING_GAP':'No additional gap asserted for this fixture.',
+        'T10_PASS':'PASS',
+    }
+    record.update(overrides)
+    return record
+
+
 def write_repo(root: Path):
     (root/'evidence').mkdir(parents=True)
     (root/'overdrive').mkdir(parents=True)
     (root/'house/remediation').mkdir(parents=True)
-    (root/'evidence/index.json').write_text(json.dumps({
-        'records':[{
-            'evidence_id':'EVID-TEST-001','capability':'Governed AI workflow','artifact':'receipt engine',
-            'authoritative_source':'repo','status_freshness':'CURRENT','interview_safe_explanation':'Built durable evidence workflows.'
-        }]
-    }))
+    (root/'CONTINUITY').mkdir(parents=True)
+    (root/'evidence/index.json').write_text(json.dumps({'records':[evidence_record()]}))
     (root/'overdrive/worker_contract.json').write_text(json.dumps({
         'status':'CONTROL_COMMISSIONED / PENDING_FIRST_POST_CORRECTION_ATTRIBUTABLE_EXECUTION_RECEIPT',
         'execution':{'decision_runtime':{'state':'ENABLED','acceptance_state':'PENDING_FIRST_POST_CORRECTION_ATTRIBUTABLE_EXECUTION_RECEIPT'}},
@@ -30,6 +45,7 @@ def write_repo(root: Path):
     (root/'overdrive/signals.json').write_text(json.dumps({'PRI':[{'x':1}],'iSCOPE':[]}))
     (root/'overdrive/claims.json').write_text(json.dumps({'claims':{'b':{}},'ready_count':1}))
     (root/'overdrive/payment_rails.json').write_text(json.dumps({'inventory_completeness':'PARTIAL / RECOVERY_REQUIRED','rails':[{'provider':'PayPal'}]}))
+    (root/'CONTINUITY/MATRIX_TRUTH_SCREEN.json').write_text(json.dumps({'schema':'AMX_MATRIX_TRUTH_SCREEN_V1','workers':[],'surfaces':[],'alerts':[]}))
     (root/'house/remediation/index.html').write_text('<html>house</html>')
 
 
@@ -40,8 +56,15 @@ def client(tmp_path):
 
 def test_health_and_seed_import(tmp_path):
     c=client(tmp_path)
-    r=c.get('/api/health'); assert r.status_code==200; assert r.json()['status']=='CONNECTED'
-    e=c.get('/api/evidence/EVID-TEST-001'); assert e.status_code==200; assert e.json()['capability']=='Governed AI workflow'
+    r=c.get('/api/health')
+    assert r.status_code==200
+    assert r.json()['status']=='CONNECTED'
+    assert r.json()['schema_version']==2
+    assert r.json()['t10']['coverage']['coverage_complete'] is True
+    e=c.get('/api/evidence/EVID-TEST-001')
+    assert e.status_code==200
+    assert e.json()['capability']=='Governed AI workflow'
+    assert e.json()['T10_PASS']=='PASS'
 
 
 def test_seed_import_is_idempotent(tmp_path):
@@ -56,18 +79,27 @@ def test_seed_import_is_idempotent(tmp_path):
 
 def test_search_and_unsupported_gap(tmp_path):
     c=client(tmp_path)
-    r=c.post('/api/evidence/search',json={'query':'governed workflow'}); assert r.status_code==200; assert r.json()['supported'] is True
-    r=c.post('/api/evidence/search',json={'query':'quantum banana submarine'}); assert r.json()['supported'] is False; assert 'UNKNOWN/HOLD' in r.json()['gap']
+    r=c.post('/api/evidence/search',json={'query':'governed workflow'})
+    assert r.status_code==200
+    assert r.json()['supported'] is True
+    r=c.post('/api/evidence/search',json={'query':'quantum banana submarine'})
+    assert r.json()['supported'] is False
+    assert 'UNKNOWN/HOLD' in r.json()['gap']
 
 
 def test_update_preserves_version_and_admin_fails_closed(tmp_path, monkeypatch):
     c=client(tmp_path)
-    payload=c.get('/api/evidence/EVID-TEST-001').json(); payload['artifact']='changed artifact'
-    r=c.put('/api/evidence/EVID-TEST-001',json=payload); assert r.status_code==503
+    payload=c.get('/api/evidence/EVID-TEST-001').json()
+    payload['artifact']='changed artifact'
+    r=c.put('/api/evidence/EVID-TEST-001',json=payload)
+    assert r.status_code==503
     monkeypatch.setenv('AMX_ADMIN_TOKEN','secret')
     c=TestClient(create_app(tmp_path,tmp_path/'data/test.db'))
-    r=c.put('/api/evidence/EVID-TEST-001',headers={'X-AMX-Admin':'secret'},json=payload); assert r.status_code==200; assert r.json()['changed'] is True
-    versions=c.get('/api/evidence/EVID-TEST-001/versions').json(); assert versions['count']==1
+    r=c.put('/api/evidence/EVID-TEST-001',headers={'X-AMX-Admin':'secret'},json=payload)
+    assert r.status_code==200
+    assert r.json()['changed'] is True
+    versions=c.get('/api/evidence/EVID-TEST-001/versions').json()
+    assert versions['count']==1
 
 
 def test_operator_truth_does_not_promote_enabled_to_executing(tmp_path):
@@ -75,6 +107,7 @@ def test_operator_truth_does_not_promote_enabled_to_executing(tmp_path):
     op=c.get('/api/operator/state').json()
     assert op['worker']['display_state']=='ENABLED / EXECUTION_NOT_PROVEN'
     assert op['worker']['runtime_enabled'] is True
+    assert op['worker']['t10']['T10_PASS']=='HOLD'
 
 
 def test_full_ledger_is_not_routing_subset(tmp_path):
@@ -83,12 +116,14 @@ def test_full_ledger_is_not_routing_subset(tmp_path):
     assert op['routing']['full_ledger_count']==2
     assert op['routing']['claim_count']==1
     assert op['routing']['invariant']=='FULL_LEDGER != ROUTING_SUBSET'
+    assert op['routing']['t10']['T10_PASS']=='PASS'
 
 
-def test_payment_partial_is_preserved(tmp_path):
+def test_payment_partial_is_preserved_and_t10_hold(tmp_path):
     c=client(tmp_path)
     op=c.get('/api/operator/state').json()
     assert op['payment_rails']['inventory_completeness']=='PARTIAL / RECOVERY_REQUIRED'
+    assert op['payment_rails']['t10']['T10_PASS']=='HOLD'
 
 
 def test_no_paid_record_means_revenue_not_evidenced(tmp_path):
@@ -98,14 +133,34 @@ def test_no_paid_record_means_revenue_not_evidenced(tmp_path):
     assert op['opportunities']['paid_record_count']==0
 
 
-def test_invalid_evidence_rejected(tmp_path, monkeypatch):
-    c=client(tmp_path); monkeypatch.setenv('AMX_ADMIN_TOKEN','secret')
-    bad={'evidence_id':'BAD','capability':'','artifact':'x','authoritative_source':'repo','status_freshness':'CURRENT','interview_safe_explanation':'x'}
+def test_t10_fields_are_required_for_new_evidence(tmp_path, monkeypatch):
+    c=client(tmp_path)
+    monkeypatch.setenv('AMX_ADMIN_TOKEN','secret')
+    c=TestClient(create_app(tmp_path,tmp_path/'data/test.db'))
+    bad=evidence_record(evidence_id='BAD')
+    del bad['T10_CHANGE']
     r=c.put('/api/evidence/BAD',headers={'X-AMX-Admin':'secret'},json=bad)
     assert r.status_code==422
 
 
-def test_house_bootstrap_and_static_house(tmp_path):
+def test_truth_screen_without_native_t10_is_explicit_hold(tmp_path):
     c=client(tmp_path)
-    b=c.get('/api/house/bootstrap'); assert b.status_code==200; assert b.json()['controls']['no_false_live_state'] is True
-    h=c.get('/house'); assert h.status_code==200; assert 'house' in h.text
+    op=c.get('/api/operator/state').json()
+    assert op['system_truth_t10']['T10_PASS']=='HOLD'
+    assert 'without native T10' in op['system_truth_t10']['T10_ACTUAL']
+
+
+def test_t10_endpoint_and_house_bootstrap(tmp_path):
+    c=client(tmp_path)
+    t=c.get('/api/t10')
+    assert t.status_code==200
+    assert t.json()['coverage']['coverage_complete'] is True
+    b=c.get('/api/house/bootstrap')
+    assert b.status_code==200
+    assert b.json()['controls']['no_false_live_state'] is True
+    assert b.json()['controls']['t10_outcome_truth'] is True
+    assert b.json()['controls']['remediation_requires_original_condition_retest'] is True
+    assert b.json()['t10']['coverage']['complete_records']==1
+    h=c.get('/house')
+    assert h.status_code==200
+    assert 'house' in h.text

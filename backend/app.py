@@ -12,7 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from .state import aggregate_state
-from .store import EvidenceStore, SCHEMA_VERSION
+from .store import EvidenceStore, SCHEMA_VERSION, T10_FIELDS, T10_SCHEMA
 
 
 class SearchRequest(BaseModel):
@@ -35,6 +35,12 @@ class EvidencePayload(BaseModel):
     source_hash: str | None = None
     status_freshness: str
     interview_safe_explanation: str
+    T10_JOB: str
+    T10_ACTUAL: str
+    T10_EVIDENCE: str
+    T10_CHANGE: str
+    T10_REMAINING_GAP: str
+    T10_PASS: str = Field(pattern="^(PASS|HOLD|FAIL|UNKNOWN)$")
     inspect_route: str | None = None
     visibility: str = "HOUSE"
     tags: list[str] = Field(default_factory=list)
@@ -46,13 +52,24 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     store = EvidenceStore(db)
     seed_stats = store.import_seed(root / "evidence/index.json")
 
-    app = FastAPI(title="AMilliMATRiX Evidence + House Control Backend", version="1.0.0")
+    app = FastAPI(title="AMilliMATRiX Evidence + House Control Backend", version="2.0.0")
     app.state.repo_root = root
     app.state.store = store
     app.state.seed_stats = seed_stats
 
     def house_visible(record: dict[str, Any]) -> bool:
         return str(record.get("visibility", "HOUSE")).upper() not in {"PRIVATE", "SECRET", "INTERNAL_ONLY"}
+
+    def visible_evidence() -> list[dict[str, Any]]:
+        return [r for r in store.list() if house_visible(r)]
+
+    def t10_contract(records: list[dict[str, Any]]) -> dict[str, Any]:
+        return {
+            "schema": T10_SCHEMA,
+            "fields": list(T10_FIELDS),
+            "rule": "Activity is not outcome. A hypothesis is not a finding. A remediation action is not a verified fix until the original condition is retested.",
+            "coverage": store.t10_coverage(records),
+        }
 
     origins = [o.strip() for o in os.getenv("AMX_CORS_ORIGINS", "").split(",") if o.strip()]
     app.add_middleware(
@@ -72,18 +89,35 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
 
     @app.get("/api/health")
     def health() -> dict[str, Any]:
+        records = visible_evidence()
         return {
             "status": "CONNECTED",
             "backend": "provider-neutral/local",
             "schema_version": SCHEMA_VERSION,
             "state_source": "LOCAL_SNAPSHOT",
             "seed_import": app.state.seed_stats,
+            "t10": t10_contract(records),
+        }
+
+    @app.get("/api/t10")
+    def t10_status() -> dict[str, Any]:
+        state = aggregate_state(root)
+        records = visible_evidence()
+        return {
+            **t10_contract(records),
+            "operator": state.get("t10"),
+            "truth_screen": state.get("system_truth_t10"),
         }
 
     @app.get("/api/evidence")
     def list_evidence() -> dict[str, Any]:
-        records = [r for r in store.list() if house_visible(r)]
-        return {"records": records, "count": len(records), "state_source": "LOCAL_DB"}
+        records = visible_evidence()
+        return {
+            "records": records,
+            "count": len(records),
+            "state_source": "LOCAL_DB",
+            "t10": t10_contract(records),
+        }
 
     @app.get("/api/evidence/{evidence_id}")
     def get_evidence(evidence_id: str) -> dict[str, Any]:
@@ -126,7 +160,12 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     def export_evidence() -> dict[str, Any]:
         target = root / "evidence/export.json"
         payload = store.export_projection(target)
-        return {"path": str(target.relative_to(root)), "count": len(payload["records"]), "generated_at": payload["generated_at"]}
+        return {
+            "path": str(target.relative_to(root)),
+            "count": len(payload["records"]),
+            "generated_at": payload["generated_at"],
+            "t10": payload["t10"],
+        }
 
     @app.get("/api/operator/state")
     def operator_state() -> dict[str, Any]:
@@ -149,18 +188,31 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     @app.get("/api/house/bootstrap")
     def house_bootstrap() -> dict[str, Any]:
         state = aggregate_state(root)
-        evidence = [r for r in store.list() if house_visible(r)]
-        gallery = [r for r in evidence if "carbon" in str(r.get("capability", "")).lower() or "production" in str(r.get("capability", "")).lower()]
+        evidence = visible_evidence()
+        gallery = [
+            r for r in evidence
+            if "carbon" in str(r.get("capability", "")).lower()
+            or "production" in str(r.get("capability", "")).lower()
+        ]
         return {
-            "backend": {"status": "DEGRADED" if state.get("adapter_errors") else "CONNECTED", "state_source": state["state_source"], "refreshed_at": state["refreshed_at"], "adapter_errors": state.get("adapter_errors", [])},
+            "backend": {
+                "status": "DEGRADED" if state.get("adapter_errors") else "CONNECTED",
+                "state_source": state["state_source"],
+                "refreshed_at": state["refreshed_at"],
+                "adapter_errors": state.get("adapter_errors", []),
+            },
             "operator": state,
             "evidence": {"count": len(evidence), "records": evidence},
             "gallery": gallery,
+            "t10": t10_contract(evidence),
             "controls": {
                 "no_false_live_state": True,
                 "unknown_hold_over_inference": True,
                 "full_ledger_not_routing_subset": True,
                 "model_not_matrix": True,
+                "t10_outcome_truth": True,
+                "activity_not_outcome": True,
+                "remediation_requires_original_condition_retest": True,
             },
         }
 

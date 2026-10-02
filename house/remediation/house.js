@@ -4,6 +4,7 @@
   const $ = (id) => document.getElementById(id);
   const esc = (v) => String(v ?? '');
   const fmt = (v) => v ? new Date(v).toLocaleString() : 'UNKNOWN';
+  const T10_FIELDS = ['T10_JOB','T10_ACTUAL','T10_EVIDENCE','T10_CHANGE','T10_REMAINING_GAP','T10_PASS'];
 
   function setBackend(state, meta) {
     const pill = $('backendPill');
@@ -12,21 +13,44 @@
     $('backendMeta').textContent = meta || 'backend';
   }
 
+  function appendRows(dl, rows) {
+    rows.forEach(([k,v]) => {
+      if (!v) return;
+      const dt=document.createElement('dt'); dt.textContent=k;
+      const dd=document.createElement('dd'); dd.textContent=esc(v);
+      dl.append(dt,dd);
+    });
+  }
+
+  function t10Rows(r) {
+    return T10_FIELDS.map(k => [k.replaceAll('_',' '), r?.[k] || 'MISSING / UNKNOWN-HOLD']);
+  }
+
+  function t10Node(title, packet) {
+    const e=document.createElement('article'); e.className='record';
+    const top=document.createElement('div'); top.className='record-top';
+    const h=document.createElement('h3'); h.textContent=esc(title);
+    const status=document.createElement('small'); status.textContent=esc(packet?.T10_PASS || 'UNKNOWN');
+    top.append(h,status); e.append(top);
+    const dl=document.createElement('dl'); appendRows(dl,t10Rows(packet || {})); e.append(dl);
+    return e;
+  }
+
   function recordNode(r) {
     const el = document.createElement('article');
     el.className = 'record';
     const top = document.createElement('div'); top.className = 'record-top';
     const h = document.createElement('h3'); h.textContent = esc(r.evidence_id) + ' — ' + esc(r.capability);
-    const status = document.createElement('small'); status.textContent = esc(r.status_freshness || 'UNKNOWN');
+    const status = document.createElement('small'); status.textContent = esc(r.status_freshness || 'UNKNOWN') + ' · T10 ' + esc(r.T10_PASS || 'UNKNOWN');
     top.append(h, status); el.append(top);
     const p = document.createElement('p'); p.textContent = esc(r.interview_safe_explanation || 'No explanation recorded.'); el.append(p);
     const dl = document.createElement('dl');
-    const rows = [
+    appendRows(dl, [
       ['Artifact', r.artifact], ['Role', r.role_contribution], ['Acceptance', r.acceptance_test],
       ['Source', r.authoritative_source], ['Receipts', (r.durable_receipts || []).join(' · ') || r.durable_receipt],
-      ['Inspect', r.inspect_route], ['Version', r.date_version]
-    ];
-    rows.forEach(([k,v]) => { if (!v) return; const dt=document.createElement('dt');dt.textContent=k;const dd=document.createElement('dd');dd.textContent=esc(v);dl.append(dt,dd); });
+      ['Inspect', r.inspect_route], ['Version', r.date_version],
+      ...t10Rows(r)
+    ]);
     el.append(dl); return el;
   }
 
@@ -46,9 +70,27 @@
       const h=document.createElement('h3');h.textContent=esc(r.artifact || r.capability);
       const p=document.createElement('p');p.textContent=esc(r.interview_safe_explanation);
       const meta=document.createElement('div');meta.className='meta';
-      [r.status_freshness,r.date_version,r.visibility].filter(Boolean).forEach(x=>{const s=document.createElement('span');s.textContent=esc(x);meta.append(s)});
+      [r.status_freshness,r.date_version,r.visibility,'T10 ' + (r.T10_PASS || 'UNKNOWN')].filter(Boolean).forEach(x=>{const s=document.createElement('span');s.textContent=esc(x);meta.append(s)});
       a.append(label,h,p,meta); box.append(a);
     });
+  }
+
+  function renderT10(meta, op) {
+    const coverage=meta?.coverage || {};
+    const total=coverage.total_records ?? 0;
+    const complete=coverage.complete_records ?? 0;
+    const ok=Boolean(coverage.coverage_complete);
+    $('t10Coverage').textContent = ok ? 'COMPLETE' : 'HOLD';
+    $('t10CoverageMeta').textContent = complete + '/' + total + ' evidence record(s) carry all six T10 fields.';
+    const box=$('t10System'); box.innerHTML='';
+    box.append(t10Node('Evidence House operator projection', op?.t10 || {}));
+    box.append(t10Node('Matrix truth-screen propagation', op?.system_truth_t10 || {}));
+    if (!ok) {
+      const e=document.createElement('article'); e.className='record';
+      const h=document.createElement('h3'); h.textContent='T10 evidence coverage · HOLD';
+      const p=document.createElement('p'); p.textContent='Missing native T10 fields: ' + esc(JSON.stringify(coverage.missing_records || {}));
+      e.append(h,p); box.append(e);
+    }
   }
 
   function renderTruth(op) {
@@ -62,7 +104,7 @@
         const e=document.createElement('article');e.className='record';
         const h=document.createElement('h3');h.textContent=esc(w.name) + ' · ' + esc(w.state || 'UNKNOWN');
         const p=document.createElement('p');
-        p.textContent=w.useful_work_proven_this_wake ? 'Useful consequential work is evidenced for the current proof window.' : 'Current useful work is NOT proven by a consequential receipt.';
+        p.textContent=w.useful_work_proven_this_wake ? 'Useful consequential work is evidenced for the source proof window.' : 'Current useful work is NOT proven by a consequential receipt.';
         const s=document.createElement('small');s.textContent=w.last_scheduler_wake ? 'Last scheduler wake: ' + fmt(w.last_scheduler_wake) : 'No scheduler wake proven.';
         e.append(h,p,s);workers.append(e);
       });
@@ -119,12 +161,13 @@
       const r = await fetch(API + '/api/house/bootstrap', {cache:'no-store'});
       if (!r.ok) throw new Error('HTTP ' + String(r.status));
       const d = await r.json();
-      setBackend('CONNECTED', d.backend?.state_source || 'backend');
+      setBackend(d.backend?.status || 'CONNECTED', d.backend?.state_source || 'backend');
       $('stateSource').textContent = esc(d.backend?.state_source || 'UNKNOWN');
       $('freshness').textContent = 'Last successful read: ' + fmt(d.backend?.refreshed_at);
       renderEvidence(d.evidence?.records || []);
       renderGallery(d.gallery || []);
       renderOperator(d.operator || {});
+      renderT10(d.t10 || {}, d.operator || {});
     } catch (err) {
       setBackend('DISCONNECTED','no false fallback');
       $('stateSource').textContent='UNAVAILABLE';
@@ -133,6 +176,8 @@
       $('galleryCards').innerHTML='<div class="empty error">Gallery evidence unavailable; protected assets and claims were not guessed.</div>';
       $('engineState').textContent='UNKNOWN'; $('engineAcceptance').textContent='Backend unavailable';
       $('ledgerCount').textContent='—'; $('claimCount').textContent='—'; $('railState').textContent='UNKNOWN'; $('revenueState').textContent='UNPROVEN';
+      $('t10Coverage').textContent='UNKNOWN'; $('t10CoverageMeta').textContent='Backend unavailable; T10 coverage not inferred.';
+      $('t10System').innerHTML='<div class="empty error">T10 projection unavailable. UNKNOWN/HOLD.</div>';
       $('dueList').innerHTML='<div class="empty error">Operator state unavailable.</div>';
       $('workerProofList').innerHTML='<div class="empty error">Worker proof unavailable.</div>';
       $('toolProofList').innerHTML='<div class="empty error">Tool proof unavailable.</div>';

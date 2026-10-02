@@ -13,3 +13,13 @@ def test_frontend_uses_control_backend():
     assert '/api/house/bootstrap' in js
     assert '/api/evidence/search' in js
     assert 'No cached operational claims are being presented as live.' in js
+
+
+def test_frontend_renders_t10_outcome_contract():
+    html=Path('house/remediation/index.html').read_text()
+    js=Path('house/remediation/house.js').read_text()
+    assert 'T10 COVERAGE' in html
+    assert 'JOB → ACTUAL → EVIDENCE → CHANGE → REMAINING GAP → PASS' in html
+    assert 'T10_JOB' in js
+    assert 'T10_REMAINING_GAP' in js
+    assert 'MISSING / UNKNOWN-HOLD' in js

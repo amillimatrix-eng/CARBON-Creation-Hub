@@ -10,9 +10,25 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+T10_SCHEMA = "AMX_BLUE_STATE_T10_OUTCOME_TRUTH_V1_0"
+
 
 def utcnow() -> datetime:
     return datetime.now(timezone.utc)
+
+
+def t10_packet(job: str, actual: str, evidence: str, change: str, gap: str, passed: str) -> dict[str, str]:
+    state = str(passed).strip().upper()
+    if state not in {"PASS", "HOLD", "FAIL", "UNKNOWN"}:
+        state = "UNKNOWN"
+    return {
+        "T10_JOB": job,
+        "T10_ACTUAL": actual,
+        "T10_EVIDENCE": evidence,
+        "T10_CHANGE": change,
+        "T10_REMAINING_GAP": gap,
+        "T10_PASS": state,
+    }
 
 
 class StateReader:
@@ -29,12 +45,8 @@ class StateReader:
     def _github_json(self, relative: str) -> Any:
         path = urllib.parse.quote(relative, safe="/")
         ref = urllib.parse.quote(self.github_ref, safe="")
-        headers = {"User-Agent": "amx-evidence-house/1.0"}
+        headers = {"User-Agent": "amx-evidence-house/2.0"}
 
-        # Public repositories do not need the authenticated Contents API.
-        # Prefer raw GitHub when no token is configured so live readback is not
-        # coupled to API auth/rate-limit behavior. Private repos still use the
-        # authenticated Contents API path.
         if not self.github_token:
             url = f"https://raw.githubusercontent.com/{self.github_repo}/{ref}/{path}"
             req = urllib.request.Request(url, headers=headers)
@@ -91,12 +103,25 @@ def worker_display_state(contract: dict[str, Any]) -> dict[str, Any]:
         and "PENDING" not in acceptance.upper()
     )
     display = "EXECUTING" if execution_proven else ("ENABLED / EXECUTION_NOT_PROVEN" if enabled else "UNAVAILABLE_OR_UNKNOWN")
+    gap = (
+        "No execution-acceptance gap is asserted by this projection; narrower durable receipt gaps may still exist."
+        if execution_proven
+        else f"Execution acceptance remains unresolved: {acceptance}."
+    )
     return {
         "configured_status": status,
         "runtime_enabled": enabled,
         "acceptance_state": acceptance,
         "execution_truth": truth,
         "display_state": display,
+        "t10": t10_packet(
+            "Run the commercial reasoning executor within mandate and prove consequential work with attributable durable evidence.",
+            truth,
+            "overdrive/worker_contract.json::execution/current_evidence/acceptance_v2",
+            "This operator projection is read-only and does not promote scheduler/configuration activity into an execution outcome.",
+            gap,
+            "PASS" if execution_proven else "HOLD",
+        ),
     }
 
 
@@ -126,13 +151,25 @@ def summarize_opportunities(opps: dict[str, Any]) -> dict[str, Any]:
                 "execution_owner": record.get("execution_owner"),
             })
     paid = [k for k, r in records.items() if str(r.get("state", "")).upper() == "PAID"]
+    total = len(records)
     return {
-        "total_records": len(records),
+        "total_records": total,
         "state_counts": counts,
         "due_or_actionable": due,
         "paid_record_count": len(paid),
         "paid_record_keys": paid,
-        "realized_revenue_evidence": {"present": bool(paid), "rule": "PAID requires payment evidence; no PAID record means realized revenue remains unproven."},
+        "realized_revenue_evidence": {
+            "present": bool(paid),
+            "rule": "PAID requires payment evidence; no PAID record means realized revenue remains unproven.",
+        },
+        "t10": t10_packet(
+            "Represent the full commercial ledger and current actionable outcomes without silently collapsing it into a routing subset.",
+            f"{total} full-ledger record(s); {len(due)} due/actionable projection(s); {len(paid)} PAID state record(s).",
+            "overdrive/opportunities.json",
+            "The aggregator exposes current ledger state only; counts do not prove conversion, acceptance, or payment.",
+            "Per-record material outcome and payment evidence remain authoritative; projection counts cannot close those gaps.",
+            "PASS" if isinstance(records, dict) else "HOLD",
+        ),
     }
 
 
@@ -145,29 +182,80 @@ def aggregate_state(repo_root: Path) -> dict[str, Any]:
     rails = reader.read_json("overdrive/payment_rails.json", {})
     truth_screen = reader.read_json("CONTINUITY/MATRIX_TRUTH_SCREEN.json", {})
     opportunity_summary = summarize_opportunities(opps)
+
     routing_counts = {
         "PRI_signals": len(signals.get("PRI", [])) if isinstance(signals, dict) else 0,
         "iSCOPE_signals": len(signals.get("iSCOPE", [])) if isinstance(signals, dict) else 0,
         "claim_count": len(claims.get("claims", {})) if isinstance(claims, dict) else 0,
         "ready_count": claims.get("ready_count") if isinstance(claims, dict) else None,
     }
+
+    source_label = reader.source_label
+    adapter_gap = (
+        "No adapter read failure was recorded for this projection."
+        if source_label == "GITHUB_LIVE"
+        else f"Live authoritative read is not fully proven for this projection: {source_label}; adapter errors={reader.errors or 'none recorded'}."
+    )
+
+    inventory = str(rails.get("inventory_completeness", "UNKNOWN"))
+    rails_list = rails.get("rails", []) if isinstance(rails, dict) else []
+    rails_pass = "PASS" if inventory.upper().startswith("COMPLETE") else "HOLD"
+
+    native_truth_t10 = truth_screen.get("t10") or truth_screen.get("T10") if isinstance(truth_screen, dict) else None
+    if native_truth_t10:
+        truth_t10 = native_truth_t10
+    else:
+        truth_t10 = t10_packet(
+            "Expose Matrix truth with native outcome fields rather than treating technical status labels as closure.",
+            f"{truth_screen.get('schema', 'UNKNOWN')} loaded without native T10 outcome fields." if isinstance(truth_screen, dict) else "Truth screen unavailable.",
+            "CONTINUITY/MATRIX_TRUTH_SCREEN.json",
+            "The Evidence House preserves the legacy snapshot but marks the missing T10 translation instead of silently upgrading it.",
+            "The truth-screen producer must emit native T10_JOB/T10_ACTUAL/T10_EVIDENCE/T10_CHANGE/T10_REMAINING_GAP/T10_PASS fields on its next consequential rewrite.",
+            "HOLD",
+        )
+
     return {
-        "state_source": reader.source_label,
+        "state_source": source_label,
         "source_ref": reader.github_ref if reader.github_repo else None,
         "adapter_errors": reader.errors,
         "refreshed_at": utcnow().isoformat(),
+        "t10": t10_packet(
+            "Read consequential Matrix state from durable sources without confusing transport, scheduler activity, or configuration with outcome.",
+            f"State source={source_label}; full ledger={opportunity_summary['total_records']}; routing claims={routing_counts['claim_count']}.",
+            "overdrive/worker_contract.json + overdrive/opportunities.json + overdrive/signals.json + overdrive/claims.json + overdrive/payment_rails.json + CONTINUITY/MATRIX_TRUTH_SCREEN.json",
+            "A read-only bounded projection was produced; no worker outcome was invented by the backend.",
+            adapter_gap,
+            "PASS" if source_label == "GITHUB_LIVE" else "HOLD",
+        ),
         "worker": worker_display_state(worker),
         "opportunities": opportunity_summary,
         "routing": {
             **routing_counts,
             "invariant": "FULL_LEDGER != ROUTING_SUBSET",
             "full_ledger_count": opportunity_summary["total_records"],
+            "t10": t10_packet(
+                "Expose routing signals/claims as a subset while preserving the full opportunity ledger as the authoritative inventory.",
+                f"Full ledger={opportunity_summary['total_records']}; claims={routing_counts['claim_count']}; PRI signals={routing_counts['PRI_signals']}; iSCOPE signals={routing_counts['iSCOPE_signals']}.",
+                "overdrive/opportunities.json + overdrive/signals.json + overdrive/claims.json",
+                "Routing counts are reported beside, not instead of, full-ledger count.",
+                "Routing or claim presence does not prove ownership, execution, resolution, conversion, or payment.",
+                "PASS",
+            ),
         },
         "system_truth": truth_screen,
+        "system_truth_t10": truth_t10,
         "payment_rails": {
-            "inventory_completeness": rails.get("inventory_completeness", "UNKNOWN"),
-            "rails": rails.get("rails", []),
-            "known_unmaterialized_payment_evidence": rails.get("known_unmaterialized_payment_evidence", []),
-            "rule": rails.get("inventory_rule", "Unlisted rail is not proof of absence."),
+            "inventory_completeness": inventory,
+            "rails": rails_list,
+            "known_unmaterialized_payment_evidence": rails.get("known_unmaterialized_payment_evidence", []) if isinstance(rails, dict) else [],
+            "rule": rails.get("inventory_rule", "Unlisted rail is not proof of absence.") if isinstance(rails, dict) else "Unlisted rail is not proof of absence.",
+            "t10": t10_packet(
+                "Represent receiving-rail inventory without turning PARTIAL inventory into false payment incompatibility.",
+                f"Inventory completeness={inventory}; recovered rail records={len(rails_list)}.",
+                "overdrive/payment_rails.json",
+                "Recovered rails are exposed as inventory evidence only; unlisted rails are not treated as absent.",
+                "Inventory remains incomplete or uncertain until the durable payment-rail source explicitly proves COMPLETE." if rails_pass != "PASS" else "No inventory-completeness gap is asserted by the current payment-rail source.",
+                rails_pass,
+            ),
         },
     }

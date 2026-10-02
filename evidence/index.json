@@ -1,7 +1,7 @@
 {
-  "version": 1,
-  "generated_at": "2026-09-30T20:00:00Z",
-  "control": "Demonstrated capability != claimed skill. UNKNOWN/HOLD over inference.",
+  "version": 2,
+  "generated_at": "2026-10-02T17:00:00Z",
+  "control": "T10: activity is not outcome; a remediation action is not a verified fix until the original condition is retested. UNKNOWN/HOLD over inference.",
   "records": [
     {
       "evidence_id": "EVID-CARBON-001",
@@ -14,7 +14,14 @@
       "durable_receipt": "overdrive/opportunities.json",
       "status_freshness": "CURRENT",
       "interview_safe_explanation": "CARBON° produced and packaged a vertical-drama proof asset with versioned provenance and controlled buyer access.",
-      "inspect_route": "Controlled Drive access; not public."
+      "T10_JOB": "Produce and package a buyer-facing vertical-drama proof asset with governed provenance and controlled access.",
+      "T10_ACTUAL": "A rendered EP06/EP07 combined master and governed access path are recorded.",
+      "T10_EVIDENCE": "Google Drive file 1gMPekAabLXN0RYc50XI2Glmw91d66yMZ + overdrive/opportunities.json",
+      "T10_CHANGE": "A controlled production proof asset became available for commercial evaluation without making the protected source public.",
+      "T10_REMAINING_GAP": "Asset production and access do not prove buyer acceptance, conversion, or payment.",
+      "T10_PASS": "PASS",
+      "inspect_route": "Controlled Drive access; not public.",
+      "tags": ["carbon", "production", "provenance", "commercial-evidence"]
     },
     {
       "evidence_id": "EVID-OVERDRIVE-001",
@@ -25,22 +32,59 @@
       "role_contribution": "Workflow architecture and governed execution",
       "acceptance_test": "PRI and iSCOPE each completed material state transitions with durable receipts and readback.",
       "durable_receipt": "overdrive/pri/receipts/PRI-0000000001-LAVDM-RESPONSE-20260930.json; overdrive/iscope/receipts/ISCOPE-0000000001-CHERRYONE-QUALIFIED-20260930.json",
-      "status_freshness": "CURRENT",
+      "status_freshness": "CURRENT / HISTORICAL EXECUTION PROVENANCE",
       "interview_safe_explanation": "Implemented a single-writer commercial pipeline separating discovery/qualification from outbound sales execution, with durable state transitions and receipts.",
-      "inspect_route": "GitHub repository evidence."
+      "T10_JOB": "Demonstrate durable commercial state transitions with separated discovery and conversion responsibilities.",
+      "T10_ACTUAL": "Historical iSCOPE and PRI receipts show material state transitions and durable readback in the governed pipeline.",
+      "T10_EVIDENCE": "overdrive/pri/receipts/PRI-0000000001-LAVDM-RESPONSE-20260930.json + overdrive/iscope/receipts/ISCOPE-0000000001-CHERRYONE-QUALIFIED-20260930.json",
+      "T10_CHANGE": "The workflow gained inspectable proof that qualification and conversion stages could make durable state changes rather than merely emit activity signals.",
+      "T10_REMAINING_GAP": "These historical receipts are provenance for capability; they do not by themselves prove current scheduled autonomous reliability.",
+      "T10_PASS": "PASS",
+      "inspect_route": "GitHub repository evidence.",
+      "tags": ["overdrive", "state-machine", "commercial", "receipts", "observability"]
     },
     {
       "evidence_id": "EVID-IRIS-001",
       "capability": "IRIS / MiCase professional evidence surface",
       "artifact": "IRIS — MiCase",
-      "authoritative_source": "Repository BullRulez/IRIS-My-Case; deployed surface unchaind.netlify.app",
+      "authoritative_source": "Repository BullRulez/IRIS-My-Case; historical deployment pointer unchaind.netlify.app",
       "date_version": "2026-09-30 evidence reconciliation",
       "role_contribution": "Evidence/presentation product",
       "acceptance_test": "Current deployment verification/hash synchronization remains outstanding; no completion inferred.",
       "durable_receipt": "Google Drive: AMX BOLD DIRECTIVE 001 — EVIDENCE INTEGRATION MANAGER RECEIPTS",
       "status_freshness": "REMEDIATE / VERIFY CURRENT",
       "interview_safe_explanation": "IRIS/MiCase is an evidence-bound professional presentation surface; current deployment/hash verification is explicitly tracked rather than overstated.",
-      "inspect_route": "Public deployment pointer + repository; verify freshness before asserting current implementation details."
+      "T10_JOB": "Present professional evidence through IRIS/MiCase while keeping deployed implementation claims synchronized to verifiable source evidence.",
+      "T10_ACTUAL": "Repository and historical deployment references exist, but current deployment/hash synchronization is not verified.",
+      "T10_EVIDENCE": "BullRulez/IRIS-My-Case + historical deployment pointer + AMX BOLD DIRECTIVE 001 evidence receipts",
+      "T10_CHANGE": "The evidence product is represented as a bounded capability instead of being promoted to current deployment success.",
+      "T10_REMAINING_GAP": "Retest the current deployment and source/hash synchronization before asserting current implementation details.",
+      "T10_PASS": "HOLD",
+      "inspect_route": "Repository and deployment reference; verify freshness before asserting current implementation details.",
+      "tags": ["iris", "micase", "interview", "evidence-surface", "freshness"]
+    },
+    {
+      "evidence_id": "EVID-T10-001",
+      "capability": "Outcome-truth governance / autonomous-system observability",
+      "artifact": "AMX BLUE STATE T10 OUTCOME TRUTH V1.0",
+      "authoritative_source": "/AMX/ROOT/AMX_BLUE_STATE_T10_OUTCOME_TRUTH_V1_0.txt",
+      "source_pointer": "/AMX/ROOT/AMX_BLUE_STATE_T10_OUTCOME_TRUTH_V1_0.txt",
+      "date_version": "2026-10-02",
+      "role_contribution": "Matrix-wide governance, reliability and outcome-verification control design",
+      "acceptance_test": "Artifact identity is SHA-256 9924cae8b746eff530b8250054c3116a3a68283ce8624fab99c01371b3619dcc; consequential claims must separate intended job, actual result, evidence, material change, remaining gap and pass state; remediation requires retest of the original condition.",
+      "durable_receipts": [],
+      "source_hash": "9924cae8b746eff530b8250054c3116a3a68283ce8624fab99c01371b3619dcc",
+      "status_freshness": "CURRENT / MATRIX-WIDE",
+      "interview_safe_explanation": "Designed a system-wide outcome-truth control that prevents successful activity, alerts, routing or remediation steps from being misreported as successful outcomes without evidence and retest.",
+      "T10_JOB": "Prevent operational activity from being misrepresented as successful outcome across autonomous, monitored and governed systems.",
+      "T10_ACTUAL": "A Matrix-wide governance invariant now requires job, actual outcome, evidence, material change, remaining gap and pass state for consequential truth claims.",
+      "T10_EVIDENCE": "/AMX/ROOT/AMX_BLUE_STATE_T10_OUTCOME_TRUTH_V1_0.txt SHA-256 9924cae8b746eff530b8250054c3116a3a68283ce8624fab99c01371b3619dcc",
+      "T10_CHANGE": "Consequential status is bounded by outcome evidence; mechanism success can no longer silently become outcome success, and a fix is not verified until the original failure condition is retested.",
+      "T10_REMAINING_GAP": "Propagation must be demonstrated on every consequential producer and consumer surface; this Evidence House implementation is one propagation point, not proof of universal completion.",
+      "T10_PASS": "PASS",
+      "inspect_route": "AMX Root governance artifact; verify the SHA-256 before relying on the text.",
+      "visibility": "HOUSE",
+      "tags": ["t10", "outcome-truth", "observability", "governance", "reliability", "incident-response", "interview"]
     }
   ]
 }

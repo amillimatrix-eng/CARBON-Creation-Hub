@@ -8,7 +8,17 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
+T10_SCHEMA = "AMX_BLUE_STATE_T10_OUTCOME_TRUTH_V1_0"
+T10_FIELDS = (
+    "T10_JOB",
+    "T10_ACTUAL",
+    "T10_EVIDENCE",
+    "T10_CHANGE",
+    "T10_REMAINING_GAP",
+    "T10_PASS",
+)
+T10_PASS_VALUES = {"PASS", "HOLD", "FAIL", "UNKNOWN"}
 
 
 def utcnow() -> str:
@@ -85,10 +95,23 @@ class EvidenceStore:
         record = dict(record)
         if not record.get("evidence_id"):
             raise ValueError("evidence_id is required")
-        required = ["capability", "artifact", "authoritative_source", "status_freshness", "interview_safe_explanation"]
+        required = [
+            "capability",
+            "artifact",
+            "authoritative_source",
+            "status_freshness",
+            "interview_safe_explanation",
+            *T10_FIELDS,
+        ]
         missing = [k for k in required if not str(record.get(k, "")).strip()]
         if missing:
             raise ValueError(f"missing required evidence fields: {', '.join(missing)}")
+
+        t10_pass = str(record.get("T10_PASS", "")).strip().upper()
+        if t10_pass not in T10_PASS_VALUES:
+            raise ValueError("T10_PASS must be PASS, HOLD, FAIL, or UNKNOWN")
+        record["T10_PASS"] = t10_pass
+
         record.setdefault("source_pointer", record.get("authoritative_source"))
         record.setdefault("durable_receipts", [])
         if isinstance(record.get("durable_receipt"), str) and record["durable_receipt"].strip():
@@ -106,17 +129,40 @@ class EvidenceStore:
         record["updated_at"] = now
         return record
 
+    @staticmethod
+    def t10_coverage(records: list[dict[str, Any]]) -> dict[str, Any]:
+        missing: dict[str, list[str]] = {}
+        pass_counts = {key: 0 for key in sorted(T10_PASS_VALUES)}
+        for record in records:
+            eid = str(record.get("evidence_id", "UNKNOWN"))
+            absent = [field for field in T10_FIELDS if not str(record.get(field, "")).strip()]
+            if absent:
+                missing[eid] = absent
+            state = str(record.get("T10_PASS", "UNKNOWN")).strip().upper()
+            pass_counts[state if state in T10_PASS_VALUES else "UNKNOWN"] += 1
+        total = len(records)
+        complete = total - len(missing)
+        return {
+            "schema": T10_SCHEMA,
+            "total_records": total,
+            "complete_records": complete,
+            "missing_records": missing,
+            "coverage_complete": complete == total,
+            "pass_counts": pass_counts,
+        }
+
     def _refresh_fts(self, con: sqlite3.Connection, record: dict[str, Any]) -> None:
         con.execute("DELETE FROM evidence_fts WHERE evidence_id=?", (record["evidence_id"],))
+        t10_text = " ".join(str(record.get(field, "")) for field in T10_FIELDS)
         con.execute(
             "INSERT INTO evidence_fts(evidence_id,capability,artifact,explanation,tags,source) VALUES(?,?,?,?,?,?)",
             (
                 record["evidence_id"],
                 record.get("capability", ""),
                 record.get("artifact", ""),
-                record.get("interview_safe_explanation", ""),
+                " ".join(filter(None, [str(record.get("interview_safe_explanation", "")), t10_text])),
                 " ".join(map(str, record.get("tags", []))),
-                " ".join(filter(None, [str(record.get("authoritative_source", "")), str(record.get("source_pointer", ""))])),
+                " ".join(filter(None, [str(record.get("authoritative_source", "")), str(record.get("source_pointer", "")), str(record.get("T10_EVIDENCE", ""))])),
             ),
         )
 
@@ -212,11 +258,17 @@ class EvidenceStore:
 
     def export_projection(self, output_path: Path) -> dict[str, Any]:
         output_path.parent.mkdir(parents=True, exist_ok=True)
+        records = self.list()
         payload = {
             "version": SCHEMA_VERSION,
             "generated_at": utcnow(),
-            "control": "Demonstrated capability != claimed skill. UNKNOWN/HOLD over inference.",
-            "records": self.list(),
+            "control": "T10: activity is not outcome; remediation is not a verified fix until the original condition is retested. UNKNOWN/HOLD over inference.",
+            "t10": {
+                "schema": T10_SCHEMA,
+                "fields": list(T10_FIELDS),
+                "coverage": self.t10_coverage(records),
+            },
+            "records": records,
         }
         output_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         return payload
