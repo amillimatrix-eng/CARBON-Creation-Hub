@@ -1,0 +1,134 @@
+{
+  "schema": "AMX_MATRIX_TRUTH_SCREEN_V1",
+  "generated_at": "2026-10-02T11:02:00Z",
+  "rule": "Only attributable evidence promotes state. ENABLED/SCHEDULER_WOKE/READY are not EXECUTING. NO RECEIPT -> NO CLOSURE.",
+  "workers": [
+    {
+      "name": "Master Control Check",
+      "enabled": true,
+      "last_scheduler_wake": "2026-10-02T10:59:45.007829Z",
+      "state": "SCHEDULER_WOKE__MATERIAL_RECEIPT_NOT_RECOVERED",
+      "useful_work_proven_this_wake": false
+    },
+    {
+      "name": "Matrix Commissioning Inspector",
+      "enabled": true,
+      "last_scheduler_wake": "2026-10-02T10:23:43.776869Z",
+      "state": "SCHEDULER_WOKE__CURRENT_MATERIAL_RECEIPT_NOT_RECOVERED",
+      "useful_work_proven_this_wake": false
+    },
+    {
+      "name": "iSCOPE -> PRI Execution Engine",
+      "enabled": true,
+      "last_scheduler_wake": "2026-10-02T10:16:03.924295Z",
+      "state": "PENDING_POST_CORRECTION_AUTONOMY_RECEIPT",
+      "useful_work_proven_this_wake": false,
+      "proof": "overdrive/worker_contract.json"
+    },
+    {
+      "name": "CARBON° Production Studio",
+      "enabled": true,
+      "last_scheduler_wake": "2026-10-02T11:00:54.655072Z",
+      "state": "SCHEDULER_WOKE__NEW_DURABLE_PRODUCTION_RECEIPT_NOT_RECOVERED",
+      "useful_work_proven_this_wake": false
+    },
+    {
+      "name": "Bounty Reaper",
+      "enabled": true,
+      "last_scheduler_wake": null,
+      "state": "ENABLED__FIRST_RUN_NOT_YET_PROVEN",
+      "useful_work_proven_this_wake": false,
+      "proof": "CONTINUITY/BOUNTY_REAPER_REACTIVATION_2026-10-02.md"
+    },
+    {
+      "name": "BLACK",
+      "enabled": true,
+      "last_scheduler_wake": null,
+      "state": "PRE_REBOOT_EXECUTION_PROVEN__POST_REBOOT_AUTOWAKE_NOT_PROVEN",
+      "useful_work_proven_this_wake": false,
+      "proof": "CONTINUITY/BLACK_MATRIX_CAPABILITY_TRANSITION_2026-10-02.json",
+      "pending_job": "BLACK-POST-REBOOT-001",
+      "repair_job": "BLACK-WINDOWS-AUTOSTART-001"
+    }
+  ],
+  "surfaces": [
+    {
+      "name": "GitHub / AMX",
+      "state": "READ_WRITE_PROVEN",
+      "evidence": "Current continuity and BLACK job commits/readback."
+    },
+    {
+      "name": "Gmail",
+      "state": "READ_PROVEN__COMMERCIAL_OUTBOUND_STALE",
+      "evidence": "Latest recovered commercial outbound: LAVDM in-thread action on 2026-10-01; no newer commercial send recovered in current inspection."
+    },
+    {
+      "name": "Google Drive",
+      "state": "READ_PROVEN",
+      "evidence": "Bounty Reaper Live Tracker and existing durable Drive assets readable."
+    },
+    {
+      "name": "Vercel",
+      "state": "AUTHENTICATED__ZERO_PROJECTS",
+      "evidence": "Connected team recovered; project list empty; existing backend not deployed there."
+    },
+    {
+      "name": "TinyFish",
+      "state": "AVAILABLE__UNWANTED_EXTERNAL_TASK_STILL_EMITTING_EMAIL",
+      "evidence": "Hourly AI-agent-market emails continue; saved browser profiles currently show no signed-in domains."
+    },
+    {
+      "name": "Opera Browser Connector",
+      "state": "UNAVAILABLE",
+      "evidence": "Browser not connected."
+    },
+    {
+      "name": "CARBON° House Site",
+      "state": "ACTIVE_SITE_V2__OPERATING_BACKEND_NOT_LIVE",
+      "evidence": "appgprj_6aabe3aac8fc819199f38d7cf4a79faf"
+    },
+    {
+      "name": "CARBON° Business Studio",
+      "state": "ACTIVE_SITE_V4__INTAKE_PROTOTYPE",
+      "evidence": "appgprj_6ab6c1e499a48191ada448afa9209f35"
+    }
+  ],
+  "alerts": [
+    {
+      "severity": "P0",
+      "id": "BLACK_AUTOWAKE",
+      "state": "REPAIR_STAGED__NOT_EXECUTED",
+      "next": "Wake WSL once so BLACK can claim BLACK-WINDOWS-AUTOSTART-001; then reboot again without manually opening WSL and require a fresh receipt."
+    },
+    {
+      "severity": "P0",
+      "id": "COMMERCIAL_AUTONOMY",
+      "state": "PENDING",
+      "next": "Produce a new attributable post-correction iSCOPE->PRI execution receipt with full-ledger classification and material actions/exact waits."
+    },
+    {
+      "severity": "P1",
+      "id": "HOUSE_LIVE",
+      "state": "BACKEND_BUILD_VERIFIED__LIVE_DEPLOYMENT_OPEN",
+      "next": "Deploy existing provider-neutral backend, then patch existing House and publish source version >2."
+    },
+    {
+      "severity": "P1",
+      "id": "BOUNTY_REAPER",
+      "state": "FIRST_RUN_NOT_PROVEN",
+      "next": "Require first attributable Bounty Reaper run/receipt; enabled is not execution."
+    },
+    {
+      "severity": "P1",
+      "id": "TINYFISH_STOP",
+      "state": "STOP_NOT_VERIFIED",
+      "next": "Locate and stop the provider-native hourly AI market monitor without further spend."
+    }
+  ],
+  "realized_revenue": {
+    "state": "UNPROVEN",
+    "amount_claimed": 0,
+    "currency": "USD",
+    "rule": "PAID requires payment evidence."
+  }
+}
