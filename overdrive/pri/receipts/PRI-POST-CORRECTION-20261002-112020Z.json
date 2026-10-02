@@ -1,0 +1,64 @@
+{
+  "schema": "AMX_PRI_POST_CORRECTION_RECEIPT_V1",
+  "id": "PRI-POST-CORRECTION-20261002-112020Z",
+  "executed_at": "2026-10-02T11:20:20Z",
+  "executor": "CURRENT_MATRIX_REASONING_SESSION_AS_AUTHORIZED_SUBSTITUTE_FOR_PRI",
+  "full_inventory_classified": true,
+  "full_inventory_after_iscope_write": 18,
+  "material_actions": [
+    {
+      "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
+      "action": "SENT_OFFICIAL_CONTENT_PARTNER_REQUIREMENTS_INQUIRY",
+      "recipient": "contact@cherryone.ai",
+      "gmail_message_id": "1a0fc58012594488",
+      "thread_id": "1a0fc58012594488",
+      "result_state": "SUBMITTED",
+      "truth_boundary": "Asked for exact completion/rights/package requirements; did not represent unfinished proof material as a completed series."
+    }
+  ],
+  "executable_qualified_now": 1,
+  "executed_qualified_now": 1,
+  "held_qualified": [
+    {
+      "key": "ypai.ai|qa-reviewer-adjudicator|remote-south-africa",
+      "reason": "Official application requires personal data-processing/profile-creation consent."
+    },
+    {
+      "key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
+      "reason": "No authenticated OpenTrain browser/session execution surface in current runtime; existing account must be reused."
+    },
+    {
+      "key": "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh",
+      "reason": "No authenticated OpenTrain browser/session execution surface in current runtime; existing account/application history must be reused."
+    },
+    {
+      "key": "upwork.com|ai-automation-fix|022105205564933219360",
+      "reason": "No authenticated Upwork submission surface connected."
+    },
+    {
+      "key": "upwork.com|python-django-api-backend-fixes|022102430880684043532",
+      "reason": "No authenticated Upwork submission surface connected."
+    }
+  ],
+  "other_inventory_classification": {
+    "delivery_failed": [
+      "Addictive Dramas — official site still exposes the same bounced licensing mailbox; no alternate official endpoint recovered.",
+      "Inkwave Studios — official site still exposes the same bounced info mailbox; no alternate official endpoint recovered."
+    ],
+    "waiting_response": [
+      "LAVDM / VertIGo — PRI already requested the offered alternate route in-thread; no newer response recovered."
+    ],
+    "submitted_not_due": "Existing submitted Production 001 threads retained without duplicate follow-up before their recorded due times."
+  },
+  "payment_handling": "PARTIAL rail inventory respected; no opportunity rejected solely because an unmaterialized rail is absent.",
+  "consequential_writes": [
+    "overdrive/opportunities.json",
+    "overdrive/iscope/receipts/ISCOPE-POST-CORRECTION-20261002-112020Z.json"
+  ],
+  "external_receipt": {
+    "gmail_message_id": "1a0fc58012594488",
+    "thread_id": "1a0fc58012594488"
+  },
+  "readback_required": true,
+  "realized_revenue": 0
+}
