@@ -1,0 +1,9 @@
+{
+  "purpose": "Install and verify official OKX Onchain OS tooling on BLACK for ORACL3 A2MCP registration readiness. Owner has already authorized OKX participation. Do not create a new wallet, do not move funds, and do not expose credentials.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail; echo '===NODE==='; node -v; echo '===NPM==='; npm -v; echo '===ONCHAIN_INSTALL==='; npx -y @okxweb3/onchainos-installer install; echo '===POST_INSTALL==='; (command -v onchainos || true); (onchainos --version || true); echo '===NPM_GLOBAL==='; npm root -g; echo '===OKX_SKILL_FILES==='; find \"$HOME\" -maxdepth 5 \\( -iname '*onchainos*' -o -iname '*okx*' \\) -print 2>/dev/null | head -100"
+  ],
+  "timeout": 600
+}
