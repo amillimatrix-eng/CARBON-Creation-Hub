@@ -1,0 +1,200 @@
+{
+  "schema": "AMX_ISCOPE_POST_CORRECTION_RECEIPT_V1",
+  "id": "ISCOPE-POST-CORRECTION-20261002-112020Z",
+  "executed_at": "2026-10-02T11:20:20Z",
+  "executor": "CURRENT_MATRIX_REASONING_SESSION_AS_AUTHORIZED_SUBSTITUTE_FOR_ISCOPE",
+  "controls_recovered": true,
+  "capability_floor_recovered": true,
+  "full_ledger_recovered": true,
+  "routing_subsets_reconciled": true,
+  "payment_rails": {
+    "completeness": "PARTIAL / RECOVERY_REQUIRED",
+    "paypal": "AVAILABLE",
+    "okx_agentic": "UNKNOWN_HOLD_RECEIVING_DETAILS"
+  },
+  "territory": {
+    "candidates_inspected": 24,
+    "materially_distinct_categories": [
+      "AI_EVALUATION_AND_DATA",
+      "QA_TESTING",
+      "PYTHON_AND_AI_AUTOMATION",
+      "VERTICAL_DRAMA_AND_DIRECT_B2B"
+    ],
+    "inspected": [
+      {
+        "name": "Cherry One content partners",
+        "category": "VERTICAL_DRAMA_DISTRIBUTION",
+        "decision": "QUALIFIED_EXISTING",
+        "url": "https://cherryone.ai/"
+      },
+      {
+        "name": "YPAI QA Reviewer / Adjudicator",
+        "category": "QA_AI_REVIEW",
+        "decision": "QUALIFIED_NEW",
+        "url": "https://freelancer.ypai.ai/jobs/openings/qa-reviewer-za"
+      },
+      {
+        "name": "Pype QA Tester contract",
+        "category": "QA_TESTING",
+        "decision": "HELD_LONGER_TERM",
+        "url": "https://pype.careers-page.com/jobs/9bdbb0da-0438-4f61-8f2c-5f0a6afe9cb2"
+      },
+      {
+        "name": "Crossing Hurdles Generative AI Evaluator",
+        "category": "AI_EVALUATION",
+        "decision": "HELD_SOURCE_ROUTE",
+        "url": "https://za.jobrapido.com/jobpreview/5252919256273649664"
+      },
+      {
+        "name": "Hired AI Content Evaluator",
+        "category": "AI_EVALUATION",
+        "decision": "HELD_SOURCE_ROUTE",
+        "url": "https://za.linkedin.com/jobs/view/ai-content-evaluator-remote-at-hired-4466028450"
+      },
+      {
+        "name": "OpenTrain AI Response Evaluator and Tester",
+        "category": "AI_EVALUATION",
+        "decision": "QUALIFIED_NEW",
+        "url": "https://www.opentrain.ai/jobs/ai-response-evaluator-tester--cmtaowgba00020akudq8w9oyh/"
+      },
+      {
+        "name": "OpenTrain Python Backend AI Agent Developer",
+        "category": "AI_AGENT_TECHNICAL",
+        "decision": "QUALIFIED_NEW",
+        "url": "https://www.opentrain.ai/jobs/"
+      },
+      {
+        "name": "OpenTrain Content Writer and Editor for AI Training",
+        "category": "AI_EVALUATION_WRITING",
+        "decision": "INSPECTED",
+        "url": "https://www.opentrain.ai/jobs/"
+      },
+      {
+        "name": "OpenTrain Computer Workflow Data Annotator",
+        "category": "DATA_ANNOTATION",
+        "decision": "INSPECTED",
+        "url": "https://www.opentrain.ai/jobs/work-from-home/"
+      },
+      {
+        "name": "OpenTrain AI Safety Red Team and Policy Evaluator",
+        "category": "AI_SAFETY_EVALUATION",
+        "decision": "INSPECTED",
+        "url": "https://www.opentrain.ai/jobs/work-from-home/"
+      },
+      {
+        "name": "Upwork South Africa QA Tester",
+        "category": "QA_TESTING",
+        "decision": "HELD_PRIVACY_RECORDING",
+        "url": "https://www.upwork.com/freelance-jobs/apply/Looking-for-South-Africa-Tester_~022096888075005670123/"
+      },
+      {
+        "name": "Upwork Python/Django API Backend Fixes",
+        "category": "PYTHON_API",
+        "decision": "QUALIFIED_NEW",
+        "url": "https://www.upwork.com/freelance-jobs/apply/Python-Django-Developer-Needed-for-API-Automation-Backend-Fixes_~022102430880684043532/"
+      },
+      {
+        "name": "Upwork Python API Integration",
+        "category": "PYTHON_API",
+        "decision": "HELD_CLIENT_CONFIDENCE",
+        "url": "https://www.upwork.com/freelance-jobs/apply/Python-Developer-for-API-Integration_~022105189873338672110/"
+      },
+      {
+        "name": "Upwork AI/LLM Python Automation",
+        "category": "AI_AUTOMATION",
+        "decision": "INSPECTED",
+        "url": "https://www.upwork.com/freelance-jobs/apply/LLM-and-Python-Developer-for-Automation_~022101717539894886681/"
+      },
+      {
+        "name": "Upwork AI Automation Fix",
+        "category": "AI_AUTOMATION",
+        "decision": "QUALIFIED_NEW",
+        "url": "https://www.upwork.com/freelance-jobs/apply/Automation-Fix-Debug-Optimize-Existing-Agent-Workflow_~022105205564933219360/"
+      },
+      {
+        "name": "Upwork live AI Agent accuracy/evaluation",
+        "category": "AI_AGENT_EVALUATION",
+        "decision": "INSPECTED",
+        "url": "https://www.upwork.com/freelance-jobs/apply/Developer-Agent-builder-needed-for-model-accuracy-and-evaluation-live-agent_~022100181463459349405/"
+      },
+      {
+        "name": "Upwork AI Automation Quick Task",
+        "category": "AI_AUTOMATION",
+        "decision": "INSPECTED",
+        "url": "https://www.upwork.com/freelance-jobs/apply/Automation-Engineer-for-Quick-Task-Agents-n8n-Claude-Python_~022102637588943872292/"
+      },
+      {
+        "name": "Upwork AI Automation for Work",
+        "category": "AI_AUTOMATION",
+        "decision": "INSPECTED",
+        "url": "https://www.upwork.com/freelance-jobs/apply/Automation-for-Work_~022104129675439606196/"
+      },
+      {
+        "name": "Urban Operas vertical drama submissions",
+        "category": "VERTICAL_DRAMA",
+        "decision": "HELD_RIGHTS_RELEASE",
+        "url": "https://urbanoperas.com/submit/"
+      },
+      {
+        "name": "Buka microdrama studio partner route",
+        "category": "DIRECT_B2B_VERTICAL_DRAMA",
+        "decision": "INSPECTED",
+        "url": "https://watchbuka.com/"
+      },
+      {
+        "name": "Addictive Dramas licensing",
+        "category": "VERTICAL_DRAMA_LICENSING",
+        "decision": "HELD_FAILED_OFFICIAL_EMAIL",
+        "url": "https://addictivedramas.com/"
+      },
+      {
+        "name": "Inkwave Studios creator/partner route",
+        "category": "VERTICAL_DRAMA_PARTNERSHIP",
+        "decision": "HELD_FAILED_OFFICIAL_EMAIL",
+        "url": "https://inkwavestudios.uk/"
+      },
+      {
+        "name": "SaidGig QA Engineer AI evaluation",
+        "category": "QA_AI_EVALUATION",
+        "decision": "REJECT_REQUIREMENT_MISMATCH",
+        "url": "https://www.saidgig.com/jobs/qa-engineer-7b9d7155"
+      },
+      {
+        "name": "Alignerr ML Evaluation Specialist",
+        "category": "AI_EVALUATION",
+        "decision": "REJECT_RESEARCH_DEPTH_MISMATCH",
+        "url": "https://www.alignerr.com/jobs/a8733e82-b1f4-4e9d-8d48-4a61739a1f4e"
+      }
+    ]
+  },
+  "derived_discovery": [
+    {
+      "path": "CAPABILITY -> APPLICATION -> PAYER",
+      "capability": "agent reliability / evidence-first QA / Python automation",
+      "result": "Qualified current paid AI automation repair and backend-fix work."
+    },
+    {
+      "path": "OBSERVED_PROBLEM -> SOLUTION -> BUYER",
+      "problem": "companies report unreliable AI-agent workflows and missing regression/observability controls",
+      "result": "Current paid listings explicitly demand retry/fallback/deduplication/evaluation work matching Matrix-demonstrated capability."
+    }
+  ],
+  "new_qualified": [
+    "ypai.ai|qa-reviewer-adjudicator|remote-south-africa",
+    "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
+    "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh",
+    "upwork.com|ai-automation-fix|022105205564933219360",
+    "upwork.com|python-django-api-backend-fixes|022102430880684043532"
+  ],
+  "handoff_to_PRI": [
+    "ypai.ai|qa-reviewer-adjudicator|remote-south-africa",
+    "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
+    "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh",
+    "upwork.com|ai-automation-fix|022105205564933219360",
+    "upwork.com|python-django-api-backend-fixes|022102430880684043532"
+  ],
+  "pay_to_work_filter": "PASS — no qualified route requires AMX to pay to work/apply.",
+  "consequential_write": "overdrive/opportunities.json",
+  "readback_required": true,
+  "realized_revenue": 0
+}
