@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-DIAG-FINAL-001",
+  "issued_by": "Matrix",
+  "purpose": "Diagnose BLACK service, WSL systemd user-session warning, process ownership, and Windows interop after reboot. Read-only diagnostic.",
+  "command": [
+    "bash",
+    "-lc",
+    "set +e\necho '===IDENTITY==='\nid\nprintf 'HOME=%s USER=%s\\n' \"$HOME\" \"$USER\"\necho '===WSL==='\nuname -a\nprintf 'WSL_DISTRO_NAME=%s WSL_INTEROP=%s\\n' \"$WSL_DISTRO_NAME\" \"$WSL_INTEROP\"\ncat /etc/wsl.conf 2>/dev/null || true\necho '===SYSTEM_SERVICE==='\nsystemctl is-enabled amx-black.service 2>&1 || true\nsystemctl is-active amx-black.service 2>&1 || true\nsystemctl status amx-black.service --no-pager -n 25 2>&1 || true\necho '===USER_MANAGER==='\nsystemctl --user is-system-running 2>&1 || true\nsystemctl --user is-enabled amx-black.service 2>&1 || true\nsystemctl --user is-active amx-black.service 2>&1 || true\nsystemctl --user status amx-black.service --no-pager -n 25 2>&1 || true\nloginctl show-user amx -p State -p Linger -p RuntimePath -p Sessions 2>&1 || true\necho '===PROCESSES==='\nps -eo pid,ppid,user,lstart,args | grep -E 'BLACK/worker.py|amx-black|python3' | grep -v grep || true\necho '===WINDOWS_INTEROP==='\ncommand -v powershell.exe || true\ntest -x /mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe && echo POWERSHELL_PATH_PRESENT || echo POWERSHELL_PATH_MISSING\ncat /proc/sys/fs/binfmt_misc/WSLInterop 2>/dev/null || true\necho '===MOUNTS==='\nmount | grep -E ' /mnt/c |drvfs' || true\necho '===DONE==='"
+  ],
+  "timeout": 120
+}
