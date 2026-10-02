@@ -1,0 +1,9 @@
+{
+  "job": "BLACK-OKX-USERSPACE-NODE-ONCHAINOS-012",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": -1,
+  "started": "2026-10-02T15:50:40.873915+00:00",
+  "finished": "2026-10-02T16:05:48.100496+00:00",
+  "error": "TimeoutExpired(['bash', '-lc', 'set -euo pipefail\\nexport PATH=\"$HOME/.local/bin:$PATH\"\\necho \\'===ARCH===\\'\\narch=$(uname -m)\\ncase \"$arch\" in\\n  x86_64) nodearch=x64 ;;\\n  aarch64|arm64) nodearch=arm64 ;;\\n  *) echo \"UNSUPPORTED_ARCH=$arch\"; exit 44 ;;\\nesac\\nmkdir -p \"$HOME/.local/bin\" \"$HOME/.local/opt\"\\nif ! command -v node >/dev/null 2>&1; then\\n  echo \\'===USERSPACE_NODE24_INSTALL===\\'\\n  base=https://nodejs.org/dist/latest-v24.x\\n  tmp=$(mktemp -d)\\n  trap \\'rm -rf \"$tmp\"\\' EXIT\\n  cd \"$tmp\"\\n  curl -fsSLO \"$base/SHASUMS256.txt\"\\n  tarball=$(awk -v a=\"linux-$nodearch.tar.xz\" \\'$2 ~ a\"$\" {print $2; exit}\\' SHASUMS256.txt)\\n  [ -n \"$tarball\" ]\\n  curl -fsSLO \"$base/$tarball\"\\n  grep \"  $tarball$\" SHASUMS256.txt | sha256sum -c -\\n  rm -rf \"$HOME/.local/opt/node-v24\"\\n  mkdir -p \"$HOME/.local/opt/node-v24\"\\n  tar -xJf \"$tarball\" -C \"$HOME/.local/opt/node-v24\" --strip-components=1\\n  ln -sf \"$HOME/.local/opt/node-v24/bin/node\" \"$HOME/.local/bin/node\"\\n  ln -sf \"$HOME/.local/opt/node-v24/bin/npm\" \"$HOME/.local/bin/npm\"\\n  ln -sf \"$HOME/.local/opt/node-v24/bin/npx\" \"$HOME/.local/bin/npx\"\\nfi\\necho \\'===NODE_FINAL===\\'\\nnode -v\\nnpm -v\\nmajor=$(node -p \"parseInt(process.versions.node.split(\\'.\\')[0])\")\\n[ \"$major\" -ge 18 ]\\necho \\'===ONCHAIN_INSTALL===\\'\\nnpx -y @okxweb3/onchainos-installer install\\necho \\'===POST_INSTALL===\\'\\n(command -v onchainos || true)\\n(onchainos --version || true)\\necho \\'===OKX_FILES===\\'\\nfind \"$HOME\" -maxdepth 7 \\\\( -iname \\'*onchainos*\\' -o -iname \\'*okx*\\' \\\\) -print 2>/dev/null | head -160\\n'], 900)"
+}
