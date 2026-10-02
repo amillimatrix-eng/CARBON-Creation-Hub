@@ -63,11 +63,19 @@
   },
   "authenticated_house_mutation_route": {
     "direct_site_mutation_tool_available": false,
-    "browser_profile_created": "prof_778170732bb74968",
-    "browser_profile_name": "AMX House Publish",
-    "browser_profile_saved_or_signed_in": false,
-    "required_site": "chatgpt.com",
-    "state": "OWNER_AUTHENTICATION_GATE"
+    "tinyfish_profile_route": "UNAVAILABLE / BROKEN",
+    "evidence": [
+      "Initial profile setup URL returned 404 to Owner.",
+      "Fresh replacement profile setup URL also returned 404.",
+      "TinyFish console loaded, but no ChatGPT signed-in domain/session was saved to the browser profile.",
+      "No further Owner retries are authorized for this route."
+    ],
+    "prior_profiles": [
+      "prof_778170732bb74968",
+      "prof_a47c5655dff94e82"
+    ],
+    "state": "ROUTE_EXHAUSTED / DO_NOT_RETRY",
+    "required_next_route": "Use a different authenticated Site-mutation surface; do not send Owner back through TinyFish profile setup."
   },
   "current_state": {
     "backend_repository_implementation": "DONE_VERIFIED",
@@ -77,11 +85,11 @@
     "existing_house_published_version_gt_2": false,
     "live_authenticated_house_readback": "NOT_DONE",
     "end_to_end_exercise": "NOT_DONE",
-    "overall": "PARTIAL / DEPLOYMENT PREP VERIFIED / TWO EXTERNAL CONNECTION GATES REMAIN"
+    "overall": "PARTIAL / BACKEND DEPLOYMENT GATE + HOUSE MUTATION SURFACE GATE"
   },
   "irreducible_gates": [
-    "Connect the Railway plugin so the existing Docker image can be deployed with a persistent /app/data volume without rebuilding.",
-    "Save an authenticated ChatGPT browser profile for the existing private House so browser automation can patch/publish/read back the existing Site. No password is to be supplied in chat."
+    "Connect an executable persistent backend hosting route (Railway is prepared; existing Vercel connector currently cannot deploy).",
+    "Obtain a different authenticated ChatGPT Sites mutation/publish surface. TinyFish profile setup is exhausted after repeated 404s and must not be retried."
   ],
   "next_action_after_gates": [
     "Create Railway service from amillimatrix-eng/CARBON-Creation-Hub using existing Dockerfile.",
@@ -96,6 +104,7 @@
     "DO_NOT_REBUILD",
     "PATCH_EXISTING_HOUSE",
     "NO_RECEIPT_NO_CLOSURE",
-    "UNKNOWN_HOLD_OVER_INFERENCE"
+    "UNKNOWN_HOLD_OVER_INFERENCE",
+    "TINYFISH_PROFILE_ROUTE_EXHAUSTED_DO_NOT_RETRY"
   ]
 }
