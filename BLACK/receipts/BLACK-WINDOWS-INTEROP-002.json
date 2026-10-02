@@ -1,0 +1,9 @@
+{
+  "job": "BLACK-WINDOWS-INTEROP-002",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": -1,
+  "started": "2026-10-02T13:17:18.151118+00:00",
+  "finished": "2026-10-02T13:19:18.525053+00:00",
+  "error": "TimeoutExpired(['bash', '-lc', 'set -e\\nPS=/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe\\n\"$PS\" -NoProfile -NonInteractive -Command \\'$ErrorActionPreference=\"Stop\"; $startup=[Environment]::GetFolderPath(\"Startup\"); $distros=@(& wsl.exe -l -q) | ForEach-Object { $_.Trim() } | Where-Object { $_ }; [ordered]@{ state=\"WINDOWS_INTEROP_OK\"; windows_user=$env:USERNAME; startup=$startup; distros=$distros; ps_version=$PSVersionTable.PSVersion.ToString() } | ConvertTo-Json -Compress\\''], 120)"
+}
