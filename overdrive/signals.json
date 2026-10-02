@@ -15,9 +15,9 @@
       "state": "DELIVERY_FAILED"
     },
     {
-      "due_at": "2026-09-30T19:32:23Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread for LAVDM alternate-route instructions; on material response, act in-thread immediately and persist evidence.",
+      "due_at": "2026-10-04T15:15:00Z",
+      "due_now": false,
+      "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
       "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
       "state": "RESPONDED"
     },
@@ -57,6 +57,6 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-02T15:12:18.762621+00:00",
+  "generated_at": "2026-10-02T15:12:40.146970+00:00",
   "iSCOPE": []
 }
