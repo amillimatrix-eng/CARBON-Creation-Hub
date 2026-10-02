@@ -1,0 +1,9 @@
+{
+  "job": "BLACK-LIVENESS-AFTER-OKX-013",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": -1,
+  "started": "2026-10-02T22:34:28.941791+00:00",
+  "finished": "2026-10-02T22:34:59.143245+00:00",
+  "error": "TimeoutExpired(['bash', '-lc', \"set -e; date -u +%FT%TZ; id; printf 'node='; (node -v || true); printf 'npm='; (npm -v || true); printf 'onchainos='; (command -v onchainos || true); echo BLACK_LIVENESS_OK\"], 30)"
+}
