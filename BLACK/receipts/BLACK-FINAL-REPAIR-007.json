@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-FINAL-REPAIR-007",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-02T13:25:15.803453+00:00",
+  "finished": "2026-10-02T13:25:34.908513+00:00",
+  "stdout": "===RETIRE_LEGACY_USER_BLACK===\nUSER_BLACK_WANTS_ABSENT\nUSER_BLACK_UNIT_RETIRED\n===WINDOWS_STARTUP_LAUNCHER===\nLAUNCHER=/mnt/c/Users/eztra/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/AMX-BLACK-WSL.cmd\n@echo off\nstart \"\" /min %SystemRoot%\\System32\\wsl.exe --exec /bin/true\nexit /b 0\n===USER_SESSION_REPAIR===\nSUDO_NONINTERACTIVE=no\nRuntimePath=/run/user/1000\nState=lingering\nSessions=c1\nLinger=yes\n\u25cf user@1000.service - User Manager for UID 1000\n     Loaded: loaded (/usr/lib/systemd/system/user@.service; static)\n    Drop-In: /usr/lib/systemd/system/user@.service.d\n             \u2514\u250010-login-barrier.conf, timeout.conf\n     Active: activating (start) since Fri 2026-10-02 15:25:32 SAST; 1s ago\n        Job: 471\n Invocation: e503009f9d604d119cac67d8eaa5fb5a\n       Docs: man:user@.service(5)\n   Main PID: 2929 (systemd)\n      Tasks: 4\n     Memory: 5.5M (peak: 5.5M)\n        CPU: 964ms\n     CGroup: /user.slice/user-1000.slice/user@1000.service\n             \u2514\u2500init.scope\n               \u251c\u25002929 /usr/lib/systemd/systemd --user\n               \u251c\u25002931 \"(sd-pam)\"\n               \u251c\u25002933 \"(environment-generators)\"\n               \u2514\u25002934 /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator\n\nOct 02 15:25:32 Black systemd[1]: Starting user@1000.service - User Manager for UID 1000...\nOct 02 15:25:33 Black (systemd)[2929]: pam_unix(systemd-user:session): session opened for user amx(uid=1000) by amx(uid=0)\n===CANONICAL_BLACK_SYSTEM_SERVICE===\nenabled\nactive\nActiveState=active\nSubState=running\nMainPID=319\nUser=amx\n    319       1 amx      /usr/bin/python3 /home/amx/amx-black/BLACK/worker.py\n===FINAL===\nWINDOWS_STARTUP_LAUNCHER_PRESENT=yes\nBLACK_SYSTEM_SERVICE_ACTIVE=yes\n",
+  "stderr": ""
+}
