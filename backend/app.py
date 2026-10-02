@@ -183,7 +183,29 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         record = payload.get("records", {}).get(record_key)
         if record is None:
             raise HTTPException(status_code=404, detail="opportunity not found")
-        return {"record_key": record_key, "record": record}
+
+        native_t10 = record.get("t10") or record.get("T10")
+        if isinstance(native_t10, dict) and all(str(native_t10.get(field, "")).strip() for field in T10_FIELDS):
+            outcome = {field: native_t10[field] for field in T10_FIELDS}
+        else:
+            evidence_items = record.get("evidence", [])
+            evidence_count = len(evidence_items) if isinstance(evidence_items, list) else 0
+            outcome = {
+                "T10_JOB": str(record.get("next_action") or "Preserve and verify the current commercial outcome without inferring closure."),
+                "T10_ACTUAL": (
+                    f"Current durable state={record.get('state', 'UNKNOWN')}; "
+                    f"execution_owner={record.get('execution_owner', 'UNKNOWN')}; "
+                    f"last_action_at={record.get('last_action_at', 'UNKNOWN')}."
+                ),
+                "T10_EVIDENCE": f"overdrive/opportunities.json::records/{record_key}; embedded evidence items={evidence_count}",
+                "T10_CHANGE": "This read exposes the latest durable ledger state only; it does not infer a newer conversion, acceptance, payment, or closure outcome.",
+                "T10_REMAINING_GAP": (
+                    "This opportunity record does not yet carry native T10 outcome fields. "
+                    f"Current next action: {record.get('next_action') or 'not explicitly recorded; closure remains unproven.'}"
+                ),
+                "T10_PASS": "HOLD",
+            }
+        return {"record_key": record_key, "record": record, "t10": outcome}
 
     @app.get("/api/house/bootstrap")
     def house_bootstrap() -> dict[str, Any]:

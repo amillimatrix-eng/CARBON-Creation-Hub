@@ -164,3 +164,14 @@ def test_t10_endpoint_and_house_bootstrap(tmp_path):
     h=c.get('/house')
     assert h.status_code==200
     assert 'house' in h.text
+
+
+def test_single_opportunity_read_cannot_bypass_t10(tmp_path):
+    c=client(tmp_path)
+    r=c.get('/api/opportunities/b')
+    assert r.status_code==200
+    body=r.json()
+    assert body['record']['state']=='QUALIFIED'
+    assert body['t10']['T10_PASS']=='HOLD'
+    assert 'does not yet carry native T10' in body['t10']['T10_REMAINING_GAP']
+    assert 'overdrive/opportunities.json::records/b' in body['t10']['T10_EVIDENCE']
