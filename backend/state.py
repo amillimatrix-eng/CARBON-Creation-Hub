@@ -130,6 +130,7 @@ def aggregate_state(repo_root: Path) -> dict[str, Any]:
     signals = reader.read_json("overdrive/signals.json", {})
     claims = reader.read_json("overdrive/claims.json", {})
     rails = reader.read_json("overdrive/payment_rails.json", {})
+    truth_screen = reader.read_json("CONTINUITY/MATRIX_TRUTH_SCREEN.json", {})
     opportunity_summary = summarize_opportunities(opps)
     routing_counts = {
         "PRI_signals": len(signals.get("PRI", [])) if isinstance(signals, dict) else 0,
@@ -149,6 +150,7 @@ def aggregate_state(repo_root: Path) -> dict[str, Any]:
             "invariant": "FULL_LEDGER != ROUTING_SUBSET",
             "full_ledger_count": opportunity_summary["total_records"],
         },
+        "system_truth": truth_screen,
         "payment_rails": {
             "inventory_completeness": rails.get("inventory_completeness", "UNKNOWN"),
             "rails": rails.get("rails", []),
