@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-POST-REBOOT-001",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-02T12:40:25.547117+00:00",
+  "finished": "2026-10-02T12:40:25.929017+00:00",
+  "stdout": "{\"worker\": \"BLACK\", \"host\": \"Black\", \"persistence_test\": \"POST_REBOOT_EXECUTED\", \"utc\": \"2026-10-02T12:40:25.895163+00:00\"}\n",
+  "stderr": ""
+}
