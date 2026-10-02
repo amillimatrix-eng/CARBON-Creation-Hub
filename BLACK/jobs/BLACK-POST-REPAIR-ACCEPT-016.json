@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-POST-REPAIR-ACCEPT-016",
+  "issued_by": "Matrix",
+  "purpose": "Post-repair acceptance: prove BLACK consumes a new job and Node/npm/npx/OnchainOS are reachable without hanging.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -u\ndate -u +%FT%TZ\nid\nprintf 'node='; timeout 5s node -v\nprintf 'npm='; timeout 5s npm -v\nprintf 'npx='; timeout 5s npx --version\nprintf 'onchainos_path='; command -v onchainos || true\nprintf 'onchainos_version='; timeout 8s onchainos --version 2>&1 || true\necho BLACK_POST_REPAIR_ACCEPT_OK"
+  ],
+  "timeout": 40
+}
