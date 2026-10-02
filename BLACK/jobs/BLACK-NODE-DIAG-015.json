@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-NODE-DIAG-015",
+  "issued_by": "Matrix",
+  "purpose": "Inspect BLACK user-space Node/npm/npx installation and isolate which executable or path is unhealthy. Read-only.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -u\necho '===PATH==='\nprintf '%s\\n' \"$PATH\"\necho '===COMMANDS==='\ncommand -v node || true\ncommand -v npm || true\ncommand -v npx || true\necho '===LOCAL_BIN==='\nls -la \"$HOME/.local/bin\" 2>&1 || true\necho '===NODE_OPT==='\nfind \"$HOME/.local/opt\" -maxdepth 3 -type f -o -type l 2>/dev/null | head -120\necho '===LINK_TARGETS==='\nfor x in node npm npx; do\n  p=\"$HOME/.local/bin/$x\"\n  printf '%s -> ' \"$p\"\n  readlink -f \"$p\" 2>/dev/null || echo MISSING\ndone\necho '===BOUNDED_EXEC==='\nfor x in node npm npx; do\n  echo \"---$x---\"\n  command -v \"$x\" || true\n  timeout 5s \"$x\" --version 2>&1; echo \"rc=$?\"\ndone\necho '===DONE==='"
+  ],
+  "timeout": 45
+}
