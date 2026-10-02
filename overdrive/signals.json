@@ -8,74 +8,11 @@
       "state": "DELIVERY_FAILED"
     },
     {
-      "due_at": "2026-10-02T15:24:10.000Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "opportunity_key": "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me",
-      "state": "SUBMITTED"
-    },
-    {
-      "due_at": "2026-10-02T15:23:51.000Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
-      "state": "SUBMITTED"
-    },
-    {
-      "due_at": "2026-10-02T15:23:49.000Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
-      "state": "SUBMITTED"
-    },
-    {
-      "due_at": "2026-10-02T15:23:47.000Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "opportunity_key": "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me",
-      "state": "SUBMITTED"
-    },
-    {
       "due_at": "2026-10-04T15:15:00Z",
       "due_now": false,
       "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
       "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
       "state": "RESPONDED"
-    },
-    {
-      "due_at": "2026-10-02T15:24:12.000Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "opportunity_key": "magicpictures.net|co-production|the-dragon-who-could-not-claim-me",
-      "state": "SUBMITTED"
-    },
-    {
-      "due_at": "2026-10-02T12:46:53.000Z",
-      "due_now": true,
-      "next_action": "Monitor existing threads under one organization record; do not send another initial pitch.",
-      "opportunity_key": "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me",
-      "state": "SUBMITTED"
-    },
-    {
-      "due_at": "2026-10-02T15:15:37.000Z",
-      "due_now": true,
-      "next_action": "Monitor both existing threads; do not send another initial pitch.",
-      "opportunity_key": "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me",
-      "state": "SUBMITTED"
-    },
-    {
-      "due_at": "2026-10-02T15:23:44.000Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "opportunity_key": "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me",
-      "state": "SUBMITTED"
-    },
-    {
-      "due_at": "2026-10-02T15:24:33.000Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread; reply in-thread on material response.",
-      "opportunity_key": "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me",
-      "state": "SUBMITTED"
     },
     {
       "due_at": null,
@@ -120,9 +57,9 @@
       "state": "QUALIFIED"
     },
     {
-      "due_at": "2026-10-03T15:55:00Z",
+      "due_at": "2026-10-06T23:04:23Z",
       "due_now": false,
-      "next_action": "PRI to recover any existing Outlier account first; if none, begin official South Africa coding application and stop at irreducible identity/skills gate.",
+      "next_action": "Monitor Outlier support for confirmation of an existing account or secure recovery route; then resume the official South Africa coding application without creating a duplicate account.",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
       "state": "QUALIFIED"
     },
@@ -141,12 +78,12 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-02T23:06:30.178999+00:00",
+  "generated_at": "2026-10-02T23:07:24.504901+00:00",
   "iSCOPE": [
     {
-      "due_at": "2026-10-03T16:15:00Z",
+      "due_at": "2026-10-06T23:04:24Z",
       "due_now": false,
-      "next_action": "iSCOPE to resolve the exact South Africa project(s), rate and requirements; qualify only executable matches.",
+      "next_action": "Await official response identifying exact South Africa projects, rates and requirements; qualify only executable paid matches.",
       "opportunity_key": "oneforma.com|ai-ml-projects|south-africa",
       "state": "DISCOVERED"
     },
@@ -183,6 +120,13 @@
       "due_now": false,
       "next_action": "iSCOPE to verify South Africa eligibility from official signup/support before PRI action.",
       "opportunity_key": "dataannotation.tech|generalist-ai-training|south-africa-unverified",
+      "state": "HOLD"
+    },
+    {
+      "due_at": "2026-10-06T23:04:23Z",
+      "due_now": false,
+      "next_action": "Await authoritative eligibility, live-task and payout confirmation before onboarding.",
+      "opportunity_key": "toloka.ai|individual-task-marketplace|south-africa",
       "state": "HOLD"
     }
   ]
