@@ -37,10 +37,12 @@
       "disposition": "ROUTE_NOT_EXECUTABLE_FROM_CURRENT_TOOL_SURFACE"
     },
     {
-      "provider": "Railway",
-      "state": "PLUGIN_AVAILABLE_NOT_CONNECTED",
-      "reason": "Existing backend is already Dockerized and SQLite requires a persistent volume; Railway is a direct fit without rebuilding.",
-      "required_volume_mount": "/app/data"
+      "provider": "Render",
+      "state": "CONNECTED / LIVE / VERIFIED",
+      "workspace_id": "tea-davpb1gu01pc73fl088g",
+      "canonical_service_id": "srv-davpec7avr4c73cu6ll0",
+      "canonical_url": "https://amx-evidence-house.onrender.com",
+      "disposition": "PRIMARY BACKEND RUNTIME"
     }
   ],
   "deployment_hardening_effected": [
@@ -59,7 +61,14 @@
     "pytest": "PASS",
     "smoke": "PASS",
     "docker_build": "PASS",
-    "docker_runtime": "PASS"
+    "docker_runtime": "PASS",
+    "live_render": {
+      "health": "PASS",
+      "bootstrap": "PASS / CONNECTED / GITHUB_LIVE",
+      "evidence_terminal": "PASS / query 'commercial workflow' returned EVID-OVERDRIVE-001",
+      "operator_truth": "PASS / ENABLED / EXECUTION_NOT_PROVEN; full ledger 18",
+      "browser_run_id": "67f2fc8b-1296-40e5-b4c1-32450962f03d"
+    }
   },
   "authenticated_house_mutation_route": {
     "direct_site_mutation_tool_available": false,
@@ -80,31 +89,66 @@
   "current_state": {
     "backend_repository_implementation": "DONE_VERIFIED",
     "backend_deployment_config": "DONE_VERIFIED",
-    "live_persistent_backend": "NOT_DEPLOYED",
+    "live_persistent_backend": "LIVE_ON_RENDER / srv-davpec7avr4c73cu6ll0",
+    "render_duplicate": "srv-davpi5qd0e5s738t86tg / NON_AUTHORITATIVE / RETIRE_WHEN_SUPPORTED",
     "existing_house_source_version": 2,
     "existing_house_published_version_gt_2": false,
-    "live_authenticated_house_readback": "NOT_DONE",
-    "end_to_end_exercise": "NOT_DONE",
-    "overall": "PARTIAL / BACKEND DEPLOYMENT GATE + HOUSE MUTATION SURFACE GATE"
+    "live_render_house_readback": "DONE_VERIFIED",
+    "live_chatgpt_site_authenticated_readback": "NOT_DONE",
+    "end_to_end_render_exercise": "DONE_VERIFIED",
+    "overall": "BACKEND LIVE + EXERCISED / CHATGPT SITE REPUBLISH >2 REMAINS OPEN"
   },
   "irreducible_gates": [
-    "Connect an executable persistent backend hosting route (Railway is prepared; existing Vercel connector currently cannot deploy).",
-    "Obtain a different authenticated ChatGPT Sites mutation/publish surface. TinyFish profile setup is exhausted after repeated 404s and must not be retried."
+    "Obtain an authenticated ChatGPT Sites mutation/publish surface for existing Site appgprj_6aabe3aac8fc819199f38d7cf4a79faf. TinyFish profile setup is exhausted and must not be retried.",
+    "Remove or suspend Render duplicate srv-davpi5qd0e5s738t86tg when a supported Render deletion/suspension surface is available; it is already marked non-authoritative and must not receive new responsibilities."
   ],
   "next_action_after_gates": [
-    "Create Railway service from amillimatrix-eng/CARBON-Creation-Hub using existing Dockerfile.",
-    "Attach persistent volume at /app/data.",
-    "Set AMX_GITHUB_REPO=amillimatrix-eng/CARBON-Creation-Hub and AMX_GITHUB_REF=main; leave admin writes disabled unless a runtime secret is deliberately configured.",
-    "Verify /api/health, /api/house/bootstrap, and /api/evidence/search on live backend.",
-    "Patch existing House appgprj_6aabe3aac8fc819199f38d7cf4a79faf only; do not clone.",
-    "Set House API base to live backend, publish source version >2, authenticated readback, exercise Evidence Terminal and Operator state.",
-    "Persist final live-deployment receipt."
+    "Do not create another backend service. Keep srv-davpec7avr4c73cu6ll0 as the sole authoritative Render runtime.",
+    "PATCH EXISTING ChatGPT Site appgprj_6aabe3aac8fc819199f38d7cf4a79faf only; do not clone/rebuild.",
+    "Publish source version >2 using the already-repaired House source, whose AMX_API_BASE points to https://amx-evidence-house.onrender.com.",
+    "Authenticated readback of Evidence Terminal, Operator state, backend freshness and controlled inspect route.",
+    "Persist final live ChatGPT Site publication receipt.",
+    "Before enabling backend-originated evidence writes, add durable storage; no Postgres/Key Value exists on Render today and ephemeral SQLite must not become sole custody."
   ],
   "controls": [
     "DO_NOT_REBUILD",
     "PATCH_EXISTING_HOUSE",
     "NO_RECEIPT_NO_CLOSURE",
     "UNKNOWN_HOLD_OVER_INFERENCE",
-    "TINYFISH_PROFILE_ROUTE_EXHAUSTED_DO_NOT_RETRY"
-  ]
+    "TINYFISH_PROFILE_ROUTE_EXHAUSTED_DO_NOT_RETRY",
+    "RENDER_CANONICAL_SERVICE=srv-davpec7avr4c73cu6ll0",
+    "RENDER_DUPLICATE=srv-davpi5qd0e5s738t86tg_NON_AUTHORITATIVE",
+    "NO_RENDER_CANARY_WHILE_GITHUB_ACTIONS_ACCEPTANCE_EXISTS",
+    "NO_NEW_RENDER_RESOURCE_WITHOUT_DISTINCT_CAPABILITY_GAP"
+  ],
+  "render_runtime_topology": {
+    "inspected_at": "2026-10-02",
+    "workspace_id": "tea-davpb1gu01pc73fl088g",
+    "canonical_production": {
+      "service_id": "srv-davpec7avr4c73cu6ll0",
+      "name": "amx-evidence-house",
+      "url": "https://amx-evidence-house.onrender.com",
+      "repo": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub",
+      "branch": "main",
+      "runtime": "python",
+      "region": "frankfurt",
+      "plan": "free",
+      "latest_verified_deploy": "dep-davpg0psrm7s73ct2860",
+      "latest_verified_commit": "34ed93fd8fb9219f728437980ce1b4a9b7df8adb",
+      "state": "LIVE / AUTHORITATIVE RENDER RUNTIME"
+    },
+    "duplicate_non_authoritative": {
+      "service_id": "srv-davpi5qd0e5s738t86tg",
+      "name": "amx-evidence-house-backend",
+      "url": "https://amx-evidence-house-backend.onrender.com",
+      "repo": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub",
+      "branch": "main",
+      "state": "LIVE DUPLICATE / NON-AUTHORITATIVE / DO NOT TARGET",
+      "disposition": "Remove or suspend when a supported Render deletion/suspension surface is available. Do not build functionality around it."
+    },
+    "postgres_instances": 0,
+    "key_value_instances": 0,
+    "canary_decision": "DO NOT CREATE OR REPURPOSE A RENDER CANARY NOW. GitHub Actions already runs pytest, smoke, Docker build, and container-runtime acceptance for backend/House code paths, so a second identical Render runtime would duplicate existing verification without adding a distinct control boundary.",
+    "release_isolation_note": "Render production currently auto-deploys from main. This is acceptable for current read-mostly runtime but is not ideal because main also carries durable Matrix state. Future release isolation should change deployment triggering without creating another Matrix backend or truth ledger."
+  }
 }
