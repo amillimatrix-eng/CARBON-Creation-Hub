@@ -1,0 +1,9 @@
+{
+  "purpose": "Independent BLACK current-state commercial inventory and payout-rail verification for Matrix sweep.",
+  "command": [
+    "python3",
+    "-c",
+    "import json,datetime,pathlib; root=pathlib.Path('.'); opp=json.load(open('overdrive/opportunities.json')); rails=json.load(open('overdrive/payment_rails.json')); recs=opp.get('records',{}); from collections import Counter; states=Counter(v.get('state','UNKNOWN') for v in recs.values()); actionable=[{'key':k,'state':v.get('state'),'owner':v.get('execution_owner'),'next_action':v.get('next_action'),'due_at':v.get('due_at')} for k,v in recs.items() if v.get('state') in ('QUALIFIED','RESPONDED','NEGOTIATING','CONTRACTED','INVOICED/RECEIVABLE','SUBMITTED','DELIVERY_FAILED')]; print(json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'opportunity_count':len(recs),'state_counts':dict(states),'actionable_count':len(actionable),'actionable':actionable,'payment_schema':rails.get('schema'),'payment_registry':rails.get('canonical_private_registry',{}).get('file_id'),'known_rails':[r.get('provider') for r in rails.get('rails',[])],'inventory_completeness':rails.get('inventory_completeness')},indent=2))"
+  ],
+  "timeout": 120
+}
