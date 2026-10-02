@@ -1,6 +1,6 @@
 {
   "schema": "AMX_MATRIX_TRUTH_SCREEN_V1",
-  "generated_at": "2026-10-02T11:43:00Z",
+  "generated_at": "2026-10-02T13:31:00Z",
   "rule": "Only attributable evidence promotes state. ENABLED/SCHEDULER_WOKE/READY are not EXECUTING. NO RECEIPT -> NO CLOSURE.",
   "workers": [
     {
@@ -47,11 +47,10 @@
       "name": "BLACK",
       "enabled": true,
       "last_scheduler_wake": null,
-      "state": "PRE_REBOOT_EXECUTION_PROVEN__POST_REBOOT_AUTOWAKE_NOT_PROVEN",
-      "useful_work_proven_this_wake": false,
-      "proof": "CONTINUITY/BLACK_MATRIX_CAPABILITY_TRANSITION_2026-10-02.json",
-      "pending_job": "BLACK-POST-REBOOT-001",
-      "repair_job": "BLACK-WINDOWS-AUTOSTART-001"
+      "state": "POST_REBOOT_EXECUTION_PROVEN__SYSTEM_SERVICE_ACTIVE__USER_SESSION_REPAIRED__WINDOWS_STARTUP_INSTALLED",
+      "useful_work_proven_this_wake": true,
+      "proof": "BLACK/receipts/BLACK-POST-REBOOT-001.json + BLACK/receipts/BLACK-FINAL-REPAIR-007.json + BLACK/receipts/BLACK-FINAL-VERIFY-008.json",
+      "acceptance_pending": "Fresh no-touch receipt after a future Windows login/reboot to prove the newly installed Startup launcher fired autonomously."
     }
   ],
   "surfaces": [
@@ -103,10 +102,10 @@
   ],
   "alerts": [
     {
-      "severity": "P0",
+      "severity": "P1",
       "id": "BLACK_AUTOWAKE",
-      "state": "REPAIR_STAGED__NOT_EXECUTED",
-      "next": "Wake WSL once so BLACK can claim BLACK-WINDOWS-AUTOSTART-001; then reboot again without manually opening WSL and require a fresh receipt."
+      "state": "REPAIR_INSTALLED__BLACK_RUNTIME_HEALTHY__NEXT_WINDOWS_LOGIN_ACCEPTANCE_PENDING",
+      "next": "Do not ask Owner to fix or start BLACK. On the next natural Windows login/reboot, require a fresh durable BLACK receipt; failure then reopens the startup edge."
     },
     {
       "severity": "P0",
