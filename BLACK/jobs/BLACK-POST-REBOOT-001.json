@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-POST-REBOOT-001",
+  "issued_by": "Matrix",
+  "purpose": "Final reboot-persistence acceptance: prove BLACK recovered without manual Ubuntu/WSL launch and remains Matrix-controlled",
+  "command": [
+    "python3",
+    "-c",
+    "import json,platform,datetime; print(json.dumps({'worker':'BLACK','host':platform.node(),'persistence_test':'POST_REBOOT_EXECUTED','utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}))"
+  ],
+  "timeout": 30
+}
