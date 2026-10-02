@@ -1,6 +1,6 @@
 {
   "schema": "AMX_MATRIX_TRUTH_SCREEN_V1",
-  "generated_at": "2026-10-02T11:02:00Z",
+  "generated_at": "2026-10-02T11:20:20Z",
   "rule": "Only attributable evidence promotes state. ENABLED/SCHEDULER_WOKE/READY are not EXECUTING. NO RECEIPT -> NO CLOSURE.",
   "workers": [
     {
@@ -20,10 +20,10 @@
     {
       "name": "iSCOPE -> PRI Execution Engine",
       "enabled": true,
-      "last_scheduler_wake": "2026-10-02T10:16:03.924295Z",
-      "state": "PENDING_POST_CORRECTION_AUTONOMY_RECEIPT",
-      "useful_work_proven_this_wake": false,
-      "proof": "overdrive/worker_contract.json"
+      "last_scheduler_wake": "2026-10-02T11:12:30.258828Z",
+      "state": "POST_CORRECTION_CYCLE_PROVEN_BY_AUTHORIZED_SUBSTITUTE__SCHEDULED_SELF_EXECUTION_PENDING",
+      "useful_work_proven_this_wake": true,
+      "proof": "overdrive/iscope/receipts/ISCOPE-POST-CORRECTION-20261002-112020Z.json + overdrive/pri/receipts/PRI-POST-CORRECTION-20261002-112020Z.json + Gmail 1a0fc58012594488"
     },
     {
       "name": "CARBON° Production Studio",
@@ -35,10 +35,10 @@
     {
       "name": "Bounty Reaper",
       "enabled": true,
-      "last_scheduler_wake": null,
-      "state": "ENABLED__FIRST_RUN_NOT_YET_PROVEN",
-      "useful_work_proven_this_wake": false,
-      "proof": "CONTINUITY/BOUNTY_REAPER_REACTIVATION_2026-10-02.md"
+      "last_scheduler_wake": "2026-10-02T11:12:25.452934Z",
+      "state": "EXECUTED__USEFUL_RESEARCH_PROVEN__NO_QUALIFIED_HANDOFF",
+      "useful_work_proven_this_wake": true,
+      "proof": "CONTINUITY/BOUNTY_REAPER_RUN_2026-10-02T1311_SAST.md"
     },
     {
       "name": "BLACK",
@@ -59,8 +59,8 @@
     },
     {
       "name": "Gmail",
-      "state": "READ_PROVEN__COMMERCIAL_OUTBOUND_STALE",
-      "evidence": "Latest recovered commercial outbound: LAVDM in-thread action on 2026-10-01; no newer commercial send recovered in current inspection."
+      "state": "READ_WRITE_PROVEN__NEW_COMMERCIAL_OUTBOUND",
+      "evidence": "Cherry One official content-partner requirements inquiry sent 2026-10-02T11:20:20Z; Gmail message 1a0fc58012594488."
     },
     {
       "name": "Google Drive",
@@ -84,8 +84,8 @@
     },
     {
       "name": "CARBON° House Site",
-      "state": "ACTIVE_SITE_V2__OPERATING_BACKEND_NOT_LIVE",
-      "evidence": "appgprj_6aabe3aac8fc819199f38d7cf4a79faf"
+      "state": "ACTIVE_SITE_V2__TRUTH_DASHBOARD_SOURCE_PATCH_VERIFIED__LIVE_PUBLISH_PENDING",
+      "evidence": "Existing Site remains v2. Truth dashboard patch passed GitHub Actions run 37000083768 at head 5ddaa899953a56f04d440ad6a7515e9e7fef229f; backend hosting and Site publish remain open."
     },
     {
       "name": "CARBON° Business Studio",
@@ -103,8 +103,8 @@
     {
       "severity": "P0",
       "id": "COMMERCIAL_AUTONOMY",
-      "state": "PENDING",
-      "next": "Produce a new attributable post-correction iSCOPE->PRI execution receipt with full-ledger classification and material actions/exact waits."
+      "state": "POST_CORRECTION_CYCLE_PROVEN__SCHEDULED_RUNTIME_RELIABILITY_PENDING",
+      "next": "Require a future scheduled iSCOPE→PRI wake to produce its own attributable material receipt; preserve the proven substitute-execution cycle and do not reopen OVERDRIVE."
     },
     {
       "severity": "P1",
@@ -115,8 +115,8 @@
     {
       "severity": "P1",
       "id": "BOUNTY_REAPER",
-      "state": "FIRST_RUN_NOT_PROVEN",
-      "next": "Require first attributable Bounty Reaper run/receipt; enabled is not execution."
+      "state": "EXECUTED__USEFUL_WORK_PROVEN",
+      "next": "Continue as additional specialist lane; promote only material findings, handoffs or payout evidence."
     },
     {
       "severity": "P1",
