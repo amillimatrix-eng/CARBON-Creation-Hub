@@ -213,7 +213,7 @@
     },
     "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
       "domain": "laverticaldramamarket.com",
-      "due_at": "2026-09-30T19:32:23Z",
+      "due_at": "2026-10-04T15:15:00Z",
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -243,13 +243,21 @@
           "source_id": "1a0f6b6246d73281",
           "thread_id": "1a0f1fba9e5a5efb",
           "summary": "PRI acted on buyer response and requested the offered alternate submission route."
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a0fd2c58781f9cc",
+          "thread_id": "1a0f1fba9e5a5efb",
+          "observed_at": "2026-10-02",
+          "summary": "PRI followed up once at human cadence on the alternate submission route previously offered by LAVDM; standard FilmFreeway verification remained blocked."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-10-01T09:00:00Z",
+      "last_action_at": "2026-10-02T15:15:00Z",
       "message_id": "1a0f1fba9e5a5efb",
-      "next_action": "Monitor existing thread for LAVDM alternate-route instructions; on material response, act in-thread immediately and persist evidence.",
+      "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
       "opportunity": "alternate-submission-route",
       "organization": "LAVDM / VertIGo",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
