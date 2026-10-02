@@ -22,6 +22,13 @@
       "state": "RESPONDED"
     },
     {
+      "due_at": "2026-10-02T12:46:53.000Z",
+      "due_now": true,
+      "next_action": "Monitor existing threads under one organization record; do not send another initial pitch.",
+      "opportunity_key": "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me",
+      "state": "SUBMITTED"
+    },
+    {
       "due_at": null,
       "due_now": false,
       "next_action": "PRI application is ready at the official YPAI form; Owner consent is required for the form's data-processing/profile-creation checkbox.",
@@ -57,6 +64,6 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-02T11:27:00.074780+00:00",
+  "generated_at": "2026-10-02T14:05:13.559850+00:00",
   "iSCOPE": []
 }
