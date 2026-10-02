@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-OKX-PREREQ-INSTALL-011",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 1,
+  "started": "2026-10-02T15:49:51.889823+00:00",
+  "finished": "2026-10-02T15:49:52.602083+00:00",
+  "stdout": "===OS===\nUbuntu 26.04.1 LTS\n===SUDO===\nSUDO_NONINTERACTIVE_FAIL\n",
+  "stderr": ""
+}
