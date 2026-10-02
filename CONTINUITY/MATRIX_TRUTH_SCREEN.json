@@ -1,6 +1,6 @@
 {
   "schema": "AMX_MATRIX_TRUTH_SCREEN_V2",
-  "generated_at": "2026-10-02T18:26:10Z",
+  "generated_at": "2026-10-02T18:31:40Z",
   "projection_scope": "CURRENT_BOUNDED_MATRIX_STATE",
   "rule": "Only attributable evidence promotes state. ROUTED != OWNED != CLAIMED != EXECUTING != RESOLVED. ENABLED/SCHEDULER_WOKE/READY are not EXECUTING. NO RECEIPT -> NO CLOSURE. T10 bounded truth wins over a more successful technical label.",
   "T10": {
@@ -232,8 +232,10 @@
   ],
   "freshness_acceptance_probe": {
     "state": "PENDING_LIVE_READBACK",
-    "marker": "AMX-DR0018-PROBE-20261002T182610Z",
-    "backend_patch": "9e8736dbbcf06da0cc33c52eca63eb4f7a796bfb",
-    "requirement": "Already-running Evidence House must resolve this later main commit to its immutable SHA without redeploy."
+    "marker": "AMX-DR0018-WEBREF-PROBE-20261002T183140Z",
+    "backend_patch": "e79cdb358c95a57903416d9c4420d28d7a5ed50a",
+    "deployed_primary": "dep-davvgf9srm7s73dhhv6g",
+    "deployed_secondary": "dep-davvgfugekts73fk1ni0",
+    "requirement": "Already-running services must resolve this later continuity-only main commit via public GitHub commit metadata to its immutable SHA without redeploy."
   }
 }
