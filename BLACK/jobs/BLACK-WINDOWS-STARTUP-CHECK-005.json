@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-WINDOWS-STARTUP-CHECK-005",
+  "issued_by": "Matrix",
+  "purpose": "Verify exact Windows Startup folder for the active profile and inspect whether a BLACK launcher already exists.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -e\nP='/mnt/c/Users/eztra/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup'\nprintf 'EXISTS='; [ -d \"$P\" ] && echo yes || echo no\nprintf 'WRITABLE='; [ -w \"$P\" ] && echo yes || echo no\nls -la \"$P\" 2>/dev/null || true\nprintf 'LAUNCHER='; [ -f \"$P/AMX-BLACK-WSL.cmd\" ] && echo present || echo absent\nif [ -f \"$P/AMX-BLACK-WSL.cmd\" ]; then cat \"$P/AMX-BLACK-WSL.cmd\"; fi"
+  ],
+  "timeout": 30
+}
