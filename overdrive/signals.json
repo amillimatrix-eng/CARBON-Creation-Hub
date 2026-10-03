@@ -80,47 +80,33 @@
     {
       "due_at": "2026-10-04T09:00:00Z",
       "due_now": false,
-      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not duplicate initial outreach.",
+      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
       "opportunity_key": "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me",
       "state": "DELIVERY_FAILED"
     },
     {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": false,
-      "next_action": "Resume the existing OpenTrain account through secure user authentication and submit the current backend coding/evaluator role.",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with the existing resume/profile; do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
       "state": "QUALIFIED"
     },
     {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": false,
-      "next_action": "Resume the existing OpenTrain account through secure user authentication and submit the current content evaluation/editing role.",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with evidence of evaluation/editing and QA capability; do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
       "state": "QUALIFIED"
     },
     {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": false,
-      "next_action": "Resume the existing OpenTrain account through secure user authentication and submit the current video annotation role.",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON\u00b0 production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
       "state": "QUALIFIED"
-    },
-    {
-      "opportunity_key": "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "state": "SUBMITTED",
-      "due_at": "2026-10-07T09:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the same thread after corrected official-route delivery; do not send another initial approach."
-    },
-    {
-      "opportunity_key": "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh",
-      "state": "CLOSED_NO_LONGER_AVAILABLE",
-      "due_at": null,
-      "due_now": false,
-      "next_action": "No action; official role URL returns HTTP 410. Use current OpenTrain roles under the same account."
     }
   ],
-  "generated_at": "2026-10-03T09:00:05Z",
+  "generated_at": "2026-10-03T09:06:22.984245+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -174,7 +160,7 @@
     {
       "due_at": "2026-10-04T09:00:00Z",
       "due_now": false,
-      "next_action": "Verify South Africa eligibility and exact payout terms before PRI handoff.",
+      "next_action": "Verify South Africa eligibility and exact payout terms from the current official application before handoff; keep FOUND/DISCOVERED distinct from QUALIFIED.",
       "opportunity_key": "mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392",
       "state": "DISCOVERED"
     }
