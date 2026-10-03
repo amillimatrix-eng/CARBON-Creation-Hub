@@ -1056,7 +1056,7 @@
       "constraints": [
         "Requires profile, identity confirmation and skills validation before earning."
       ],
-      "next_action": "Create the official application/profile with the current email when personal account-creation and identity-verification confirmation is available; no duplicate account exists under this email.",
+      "next_action": "Use the official South Africa application route to create the profile with this email when personal identity/profile/verification attestations can be completed; no duplicate account exists under this email.",
       "due_at": null,
       "recipient": "support@outlier.ai",
       "thread_id": "1a0fedc93e232877",
@@ -1240,7 +1240,7 @@
       "domain": "jobs.lever.co/weloglobal",
       "opportunity": "hydrus-voice-contributor-english-sa",
       "title": "Hydrus Voice Contributor — English (South Africa)",
-      "state": "DEPRIORITIZED",
+      "state": "HOLD",
       "execution_owner": "iSCOPE",
       "discovered_by": "iSCOPE",
       "commercial_role": "PAID AI VOICE DATA COLLECTION",
@@ -1255,12 +1255,19 @@
           "url": "https://jobs.lever.co/weloglobal/a2802c2f-6005-448d-a86d-5b5429c6c770",
           "observed_at": "2026-10-02",
           "summary": "Official Welo listing: $20/hour, two supervised ~4-hour sessions, voice data may train synthesized voices."
+        },
+        {
+          "kind": "CURRENT_OFFICIAL_ROLE_REFRESH",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://jobs.lever.co/weloglobal/a2802c2f-6005-448d-a86d-5b5429c6c770",
+          "observed_at": "2026-10-03T10:02:00Z",
+          "summary": "Current South Africa remote role pays $20/hour for supervised voice sessions; requires performance background, professional recording equipment and consent governing synthesized-voice training."
         }
       ],
       "constraints": [
         "Requires long live supervised sessions, recording setup/headphones and explicit voice-data consent; conflicts with current preference for asynchronous low-bandwidth work unless payout/value changes priority."
       ],
-      "next_action": "Keep as fallback, not current PRI priority."
+      "next_action": "Verify qualifying performance background, professional microphone/headphones and consent to synthesized-voice use before PRI handoff; current official rate is $20/hour."
     },
     "toloka.ai|individual-task-marketplace|global": {
       "organization": "Toloka",
@@ -1935,33 +1942,262 @@
           "observed_at": "2026-10-03T09:00:05Z"
         }
       ]
+    },
+    "scalearmy.com|ai-implementation-specialist|remote-south-africa": {
+      "domain": "scalearmy.com",
+      "organization": "Scale Army",
+      "opportunity": "ai-implementation-specialist",
+      "title": "AI Implementation Specialist — Remote South Africa",
+      "state": "QUALIFIED",
+      "execution_owner": "PRI",
+      "due_at": null,
+      "next_action": "Submit through the current official Ashby application when personal profile/CV, employment-history confirmation and applicant attestations are available.",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_ROLE",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://jobs.ashbyhq.com/scale%20army%20careers/3e49f332-28b9-400c-a146-f1682ce962da",
+          "observed_at": "2026-10-03T10:02:00Z",
+          "summary": "Current remote role explicitly includes South Africa and focuses on connecting existing systems and practical automation workflows; credible fit to AMX automation/API/operations capability."
+        }
+      ],
+      "capability_match": [
+        "AI/automation implementation",
+        "systems integration",
+        "operations/process improvement",
+        "client-facing project delivery"
+      ],
+      "capital_direction": "PAYER_TO_WORK",
+      "upfront_cost": "NONE_EVIDENCED",
+      "payer_path": "Scale Army employer/contractor hiring route"
+    },
+    "dataforcecommunity.transperfect.com|thyme-afrikaans-short-story-writer|south-africa": {
+      "domain": "dataforcecommunity.transperfect.com",
+      "organization": "DataForce by TransPerfect",
+      "opportunity": "thyme-afrikaans-short-story-writer",
+      "title": "Thyme Freelance Writer — Afrikaans (South Africa)",
+      "state": "HOLD",
+      "execution_owner": "iSCOPE",
+      "due_at": null,
+      "next_action": "Confirm native-level Afrikaans and supporting writing sample fit before PRI handoff; official project pays $300 per accepted story and requires personal account/application.",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_PROJECT",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://dataforcecommunity.transperfect.com/project/thyme-freelance-writer-afrikaans",
+          "observed_at": "2026-10-03T10:02:00Z",
+          "summary": "South Africa remote 6,000-word short story project; $300 per accepted story; PayPal/wire/gift-card payout; native-level Afrikaans is an unresolved eligibility condition."
+        }
+      ],
+      "capability_match": [
+        "creative writing",
+        "story adaptation"
+      ],
+      "capital_direction": "PAYER_TO_WORK",
+      "upfront_cost": "NONE_EVIDENCED",
+      "payer_path": "TransPerfect/DataForce accepted-asset compensation"
+    },
+    "dataforcecommunity.transperfect.com|ronia-raw-photo-collection|south-africa": {
+      "domain": "dataforcecommunity.transperfect.com",
+      "organization": "DataForce by TransPerfect",
+      "opportunity": "ronia-raw-photo-collection",
+      "title": "Ronia RAW Photo Collection — South Africa",
+      "state": "HOLD",
+      "execution_owner": "iSCOPE",
+      "due_at": null,
+      "next_action": "Verify access to an eligible iPhone Pro model or supported digital camera and original RAW inventory before PRI handoff.",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_PROJECT",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://dataforcecommunity.transperfect.com/project/ronia-remote-photo-collection-south-africa",
+          "observed_at": "2026-10-03T10:02:00Z",
+          "summary": "Current South Africa remote project; $1.50 per accepted original RAW photo; PayPal/wire/gift-card payout; strict eligible-device and original-rights requirements."
+        }
+      ],
+      "capability_match": [
+        "image production",
+        "rights/provenance handling"
+      ],
+      "capital_direction": "PAYER_TO_WORK",
+      "upfront_cost": "NONE_EVIDENCED",
+      "payer_path": "TransPerfect/DataForce accepted-asset compensation"
+    },
+    "dataforcecommunity.transperfect.com|asteroid-photo-collection|south-africa": {
+      "domain": "dataforcecommunity.transperfect.com",
+      "organization": "DataForce by TransPerfect",
+      "opportunity": "asteroid-photo-collection",
+      "title": "Project Asteroid — South Africa",
+      "state": "CLOSED_NO_LONGER_AVAILABLE",
+      "execution_owner": "iSCOPE",
+      "due_at": null,
+      "next_action": "No action; official page says the project is completed and not accepting participants.",
+      "evidence": [
+        {
+          "kind": "OFFICIAL_PROJECT_CLOSED",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://dataforcecommunity.transperfect.com/project/asteroid-photo-collection-south-africa",
+          "observed_at": "2026-10-03T10:02:00Z",
+          "summary": "The official page advertises $3.50 per accepted asset but explicitly states the project has completed and is no longer recruiting."
+        }
+      ],
+      "capital_direction": "PAYER_TO_WORK",
+      "upfront_cost": "NONE_EVIDENCED"
+    },
+    "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg": {
+      "domain": "dataforcecommunity.transperfect.com",
+      "organization": "DataForce by TransPerfect",
+      "opportunity": "viola-voice-collection",
+      "title": "Viola Voice Collection — Johannesburg",
+      "state": "CLOSED_NO_LONGER_AVAILABLE",
+      "execution_owner": "iSCOPE",
+      "due_at": null,
+      "next_action": "No action; official page says the July–August study is completed and no longer accepting participants.",
+      "evidence": [
+        {
+          "kind": "OFFICIAL_PROJECT_CLOSED",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://dataforcecommunity.transperfect.com/study/viola-voice-collection-za",
+          "observed_at": "2026-10-03T10:02:00Z",
+          "summary": "Official page lists $90 compensation but explicitly states the study is completed and not accepting participants."
+        }
+      ],
+      "capital_direction": "PAYER_TO_WORK",
+      "upfront_cost": "NONE_EVIDENCED"
+    },
+    "dataforcecommunity.transperfect.com|mirabelle-transcription-qa|remote": {
+      "domain": "dataforcecommunity.transperfect.com",
+      "organization": "DataForce by TransPerfect",
+      "opportunity": "mirabelle-transcription-qa",
+      "title": "Mirabelle Transcription / QA",
+      "state": "CLOSED_NO_LONGER_AVAILABLE",
+      "execution_owner": "iSCOPE",
+      "due_at": null,
+      "next_action": "No action; official page states applications are closed.",
+      "evidence": [
+        {
+          "kind": "OFFICIAL_PROJECT_CLOSED",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://dataforcecommunity.transperfect.com/project/mirabelle-project",
+          "observed_at": "2026-10-03T10:02:00Z",
+          "summary": "Official transcription/QA page explicitly says the position is no longer accepting applications."
+        }
+      ],
+      "capital_direction": "PAYER_TO_WORK",
+      "upfront_cost": "NONE_EVIDENCED"
+    },
+    "rws.com|trainai-global-talent-pool|remote": {
+      "domain": "rws.com",
+      "organization": "RWS TrainAI",
+      "opportunity": "trainai-global-talent-pool",
+      "title": "TrainAI Global Talent Pool",
+      "state": "DEPRIORITIZED",
+      "execution_owner": "iSCOPE",
+      "due_at": null,
+      "next_action": "Keep as passive fallback; this is a future-opportunity pool, not a current specific paid assignment.",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_TALENT_POOL",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://jobs.lever.co/rws/f4e3ba40-dc02-4f86-a88a-9cc7e7891ede",
+          "observed_at": "2026-10-03T10:02:00Z",
+          "summary": "Official remote pool promises paid future AI annotation/evaluation opportunities but no current project, rate or South Africa-specific assignment."
+        }
+      ],
+      "capital_direction": "PAYER_TO_WORK",
+      "upfront_cost": "NONE_EVIDENCED"
+    },
+    "welodata.com|ai-trainers-zulu|south-africa": {
+      "domain": "welodata.com",
+      "organization": "Welo Data",
+      "opportunity": "ai-trainers-zulu",
+      "title": "AI Trainers Network — Zulu",
+      "state": "HOLD",
+      "execution_owner": "iSCOPE",
+      "due_at": null,
+      "next_action": "Confirm native-level Zulu and current paid-project availability before PRI handoff; do not treat talent-network entry as paid work.",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_TALENT_NETWORK",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://jobs.lever.co/weloglobal/?location=South+Africa",
+          "observed_at": "2026-10-03T10:02:00Z",
+          "summary": "Official South Africa jobs page currently lists AI Trainers Network — Zulu; exact current project/rate and language fit remain unproven."
+        }
+      ],
+      "capital_direction": "PAYER_TO_WORK",
+      "upfront_cost": "NONE_EVIDENCED"
+    },
+    "welodata.com|ai-service-general-application|south-africa": {
+      "domain": "welodata.com",
+      "organization": "Welo Data",
+      "opportunity": "ai-service-general-application",
+      "title": "AI Service General Application — South Africa",
+      "state": "DISCOVERED",
+      "execution_owner": "iSCOPE",
+      "due_at": null,
+      "next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_GENERAL_APPLICATION",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://jobs.lever.co/weloglobal/?location=South+Africa",
+          "observed_at": "2026-10-03T10:02:00Z",
+          "summary": "Official South Africa page lists an AI Service General Application, but no specific project, rate or immediate task is evidenced."
+        }
+      ],
+      "capital_direction": "PAYER_TO_WORK",
+      "upfront_cost": "NONE_EVIDENCED"
     }
   },
   "version": 1,
-  "updated_at": "2026-10-02T16:15:00Z",
-  "last_updated_at": "2026-10-03T09:00:05Z",
+  "updated_at": "2026-10-03T10:02:00Z",
+  "last_updated_at": "2026-10-03T10:02:00Z",
   "last_updated_by": "iSCOPE_PRI_EXECUTION_ENGINE",
   "last_run": {
     "execution_origin": "SCHEDULER_AUTOMATION",
-    "run_at": "2026-10-03T09:00:05Z",
-    "candidates_inspected": 46,
+    "run_at": "2026-10-03T10:02:00Z",
+    "candidates_inspected": 31,
     "surfaces_categories": [
-      "AI evaluation/work platforms",
-      "software/API/automation roles",
-      "creative/vertical-drama buyers",
-      "direct current application/contact routes"
+      "AI evaluation/training official job boards",
+      "South Africa data collection and creative task projects",
+      "software/API/automation implementation roles",
+      "existing buyer/platform response and delivery threads"
     ],
-    "full_ledger_count": 46,
+    "discovery_paths": {
+      "capability_to_application_to_payer": [
+        "Scale Army AI implementation",
+        "DataForce Thyme creative writing",
+        "DataForce Ronia rights-controlled image production"
+      ],
+      "signal_to_outcome_to_capability": [
+        "Welo/RWS current AI-training listings matched against evaluation, QA and production capability"
+      ],
+      "observed_problem_to_solution_direct_sale": [
+        "Existing buyer/platform threads monitored; no new verified direct-sale pain with a non-duplicate executable route was promoted in this run"
+      ]
+    },
+    "inspected_breakdown": {
+      "RWS_TrainAI": 19,
+      "Welo_Data": 4,
+      "DataForce": 6,
+      "technical_implementation": 2
+    },
+    "full_ledger_count": 55,
     "material_actions": [
-      "GMAIL:1a10023248ed0d30 MoboReels delivery failure",
-      "GMAIL:1a1002322cecb29d FreeReels failed address",
-      "GMAIL:1a1010173460500e FreeReels corrected official route",
-      "WEB:OpenTrain stale evaluator HTTP 410",
-      "QUALIFIED:OpenTrain backend coding evaluator cmurzv8ev000d04l2dhhowh7y",
-      "QUALIFIED:OpenTrain AI content evaluation cmurzv9vd001704l22ss6tt57",
-      "QUALIFIED:OpenTrain video annotation cmurmn8kk001y06jqpmga27b3",
-      "DISCOVERED:Mindrift scraping 9D9FF7E392"
+      "GMAIL 1a0ff7f136a2fd05: Outlier confirmed no account under current email; duplicate-account risk cleared.",
+      "QUALIFIED: Scale Army remote South Africa AI Implementation Specialist.",
+      "HOLD: DataForce Thyme pending native-level Afrikaans proof.",
+      "HOLD: DataForce Ronia pending eligible camera/RAW inventory proof.",
+      "CLOSED: DataForce Asteroid, Viola and Mirabelle from explicit official closure text.",
+      "REFRESHED: Welo Hydrus current $20/hour role moved to HOLD for equipment/performance/consent gates.",
+      "DISCOVERED/HOLD: Welo general and Zulu routes; RWS future pool deprioritized."
     ],
+    "pri_classification": {
+      "qualified_total": 12,
+      "externally_executable_without_personal_auth_or_attestation": 0,
+      "reason": "All current qualified account/form roles require personal profile, authentication, identity/CV, consent or applicant attestation; existing buyer threads are not yet due and have no new material reply."
+    },
     "kpi_delta": {
       "iSCOPE": 0,
       "PRI": 0,
@@ -1973,6 +2209,6 @@
       "converted": 0,
       "streak": 0
     },
-    "t10": "Two prior submissions were disproved by Gmail delivery failures. FreeReels was recovered through the corrected current Google Play support address in the existing thread; MoboReels remains DELIVERY_FAILED because the sole official mailbox is full. Three current OpenTrain roles were newly qualified and one stale OpenTrain role was closed on HTTP 410. No response, external acceptance, contract, invoice, attributable payment or realized revenue is proven."
+    "t10": "Current discovery and qualification advanced; Outlier account history was resolved and one current technical role was qualified. No application was submitted because every current qualified application route requires personal profile/authentication/identity or applicant attestation. No response beyond Outlier support, external acceptance, contract, invoice or payment is proven."
   }
 }
