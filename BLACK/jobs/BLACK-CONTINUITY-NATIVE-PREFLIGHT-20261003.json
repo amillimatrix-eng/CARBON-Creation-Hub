@@ -1,0 +1,11 @@
+{
+  "worker": "BLACK",
+  "command": [
+    "/bin/sh",
+    "-c",
+    "printf \"AMX_BOUNDED_NATIVE_CHECK\\n\"\n/usr/bin/timeout --signal=TERM --kill-after=2s 8s /usr/bin/sudo -n /usr/bin/true\nprintf \"sudo_exit=%s\\n\" \"$?\"\n/usr/bin/timeout --signal=TERM --kill-after=2s 8s /bin/systemctl show amx-black.service --property=Restart,MemoryMax,CPUQuotaPerSecUSec,NoNewPrivileges\nprintf \"unit_exit=%s\\n\" \"$?\""
+  ],
+  "timeout": 30,
+  "scope": "READ_ONLY_NATIVE_INSTALL_AND_UNIT_CHECK",
+  "authority": "Owner continuity/security commission"
+}
