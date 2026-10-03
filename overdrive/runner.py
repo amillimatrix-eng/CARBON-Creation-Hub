@@ -162,7 +162,8 @@ def bounty_evidence_filter(task, opportunities):
     seen = set()
     results = [filter_opportunity(item, cap["config"], seen, datetime.now(timezone.utc)) for item in payload["opportunities"]]
     source = ROOT.parent / "CONTINUITY/BOUNTY_REAPER_RUN_2026-10-02T1421_SAST.md"
-    receipt = learning.outcome(task["id"], "Bounded crypto opportunity evidence filter", {"results": results}, source)
+    from backend.security import fingerprint
+    receipt = learning.outcome(task["id"], "Bounded crypto opportunity evidence filter", {"results": results, "input_sha256": fingerprint(payload), "capability_version": cap["version"], "source_reference_role": "adapter lineage; current input is independently hashed"}, source)
     return {"adapter": "BOUNTY_EVIDENCE_FILTER", "execution_owner": WORKER,
             "capability_version": cap["version"], "outcome_receipt": receipt["receipt_sha256"],
             "results": results, "commercial_ledger_mutated": False, "external_actions": "NONE"}

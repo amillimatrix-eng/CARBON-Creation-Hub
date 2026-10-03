@@ -10,16 +10,23 @@ if [[ -z "$STAGE" ]]; then
   id amx >/dev/null
   [[ "$(ps -p 1 -o comm=)" == systemd ]] || { echo 'HOLD: Linux systemd is not PID 1'; exit 78; }
   # Protect the deployed source: this installer never fetches/merges remote code.
-  git -C "$REPO" diff --quiet
+  [[ -z "$(git -C "$REPO" status --porcelain)" ]] || { echo 'HOLD: deployed source must be clean'; exit 78; }
   python3 -c 'import cryptography,jsonschema'
 fi
 UNIT_DIR="${STAGE}/etc/systemd/system"
 CONFIG_DIR="${STAGE}/etc/amx-black-continuity"
 STATE_DIR="${STAGE}/var/lib/amx-black-continuity"
 WORKER_STATE="${STAGE}/var/lib/amx-black"
-mkdir -p "$UNIT_DIR" "$CONFIG_DIR" "$STATE_DIR" "$WORKER_STATE"
-chmod 700 "$CONFIG_DIR" "$STATE_DIR" "$WORKER_STATE"
-install -m 600 "$REPO/CONTINUITY/capability-grants.json" "$CONFIG_DIR/grants.json"
+CREDENTIAL_DIR="${STAGE}/var/lib/amx-black-credentials"
+mkdir -p "$UNIT_DIR" "$CONFIG_DIR" "$STATE_DIR" "$WORKER_STATE" "$CREDENTIAL_DIR"
+chmod 700 "$CONFIG_DIR" "$STATE_DIR" "$WORKER_STATE" "$CREDENTIAL_DIR"
+# Preserve accepted local command grants; policy updates require governed repinning.
+if [[ ! -f "$CONFIG_DIR/grants.json" ]]; then
+  install -m 600 "$REPO/CONTINUITY/capability-grants.json" "$CONFIG_DIR/grants.json"
+fi
+if [[ -f "$CONFIG_DIR/rclone.conf" && ! -f "$CREDENTIAL_DIR/rclone.conf" ]]; then
+  install -m 600 "$CONFIG_DIR/rclone.conf" "$CREDENTIAL_DIR/rclone.conf"
+fi
 # Preserve an already enrolled private registry and key on reinstallation.
 if [[ ! -f "$CONFIG_DIR/source-registry.json" ]]; then
   install -m 600 "$REPO/CONTINUITY/source-registry.json" "$CONFIG_DIR/source-registry.json"
@@ -27,18 +34,32 @@ fi
 POLICY_HASH="$(sha256sum "$CONFIG_DIR/grants.json" | cut -d ' ' -f 1)"
 REGISTRY_HASH="$(sha256sum "$CONFIG_DIR/source-registry.json" | cut -d ' ' -f 1)"
 SOURCE_COMMIT="$(git -C "$REPO" rev-parse HEAD)"
-cat > "$CONFIG_DIR/environment" <<EOF
+python3 - "$CONFIG_DIR/environment" "$POLICY_HASH" "$REGISTRY_HASH" "$SOURCE_COMMIT" <<'PY'
+import os, sys, tempfile
+from pathlib import Path
+path = Path(sys.argv[1])
+managed = '''
 AMX_CONTINUITY_ROOT=/var/lib/amx-black-continuity
 AMX_CONTINUITY_KEY_FILE=/etc/amx-black-continuity/recovery.key
 AMX_SOURCE_REGISTRY=/etc/amx-black-continuity/source-registry.json
-AMX_SOURCE_REGISTRY_SHA256=$REGISTRY_HASH
-AMX_RCLONE_CONFIG_FILE=/etc/amx-black-continuity/rclone.conf
+AMX_RCLONE_CONFIG_FILE=/var/lib/amx-black-credentials/rclone.conf
 BLACK_GRANTS_FILE=/etc/amx-black-continuity/grants.json
-BLACK_GRANTS_SHA256=$POLICY_HASH
 AMX_BLACK_STATE_ROOT=/var/lib/amx-black
-AMX_INSTALLED_SOURCE_COMMIT=$SOURCE_COMMIT
-EOF
-chmod 600 "$CONFIG_DIR/environment"
+'''.strip().splitlines()
+managed += ["BLACK_GRANTS_SHA256="+sys.argv[2], "AMX_SOURCE_REGISTRY_SHA256="+sys.argv[3],
+            "AMX_INSTALLED_SOURCE_COMMIT="+sys.argv[4]]
+names = {line.split('=', 1)[0] for line in managed}
+prior = path.read_text().splitlines() if path.exists() else []
+preserved = [line for line in prior if line.split('=', 1)[0].strip() not in names]
+fd, temporary = tempfile.mkstemp(dir=path.parent, prefix='.environment-')
+try:
+    os.fchmod(fd, 0o600)
+    with os.fdopen(fd, 'w') as stream:
+        stream.write('\n'.join(preserved+managed)+'\n'); stream.flush(); os.fsync(stream.fileno())
+    os.replace(temporary, path)
+finally:
+    Path(temporary).unlink(missing_ok=True)
+PY
 cat > "$UNIT_DIR/amx-black-continuity.service" <<EOF
 [Unit]
 Description=AMilliMATRiX BLACK encrypted continuity operation
@@ -58,7 +79,7 @@ NoNewPrivileges=yes
 PrivateTmp=yes
 ProtectSystem=strict
 ProtectHome=read-only
-ReadWritePaths=/var/lib/amx-black-continuity
+ReadWritePaths=/var/lib/amx-black-continuity /var/lib/amx-black-credentials
 RestrictSUIDSGID=yes
 LockPersonality=yes
 RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
@@ -99,7 +120,7 @@ NoNewPrivileges=yes
 PrivateTmp=yes
 ProtectSystem=strict
 ProtectHome=read-only
-ReadWritePaths=/var/lib/amx-black /var/lib/amx-black-continuity $REPO/.git
+ReadWritePaths=/var/lib/amx-black /var/lib/amx-black-continuity /var/lib/amx-black-credentials $REPO/.git
 RestrictSUIDSGID=yes
 LockPersonality=yes
 RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
@@ -112,7 +133,7 @@ if [[ -n "$STAGE" ]]; then
   echo "STAGED: Linux worker/service/timer; live installation and Windows boot remain HOLD"
   exit 0
 fi
-chown -R amx:amx "$CONFIG_DIR" "$STATE_DIR" "$WORKER_STATE"
+chown -R amx:amx "$CONFIG_DIR" "$STATE_DIR" "$WORKER_STATE" "$CREDENTIAL_DIR"
 if [[ ! -f "$CONFIG_DIR/recovery.key" ]]; then
   runuser -u amx -- /usr/bin/python3 "$REPO/BLACK/continuity.py" init-key --target "$CONFIG_DIR/recovery.key"
 fi

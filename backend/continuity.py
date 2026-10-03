@@ -118,7 +118,7 @@ class RecoveryStore:
     def __init__(self, root: Path, key_file: Path, repo: Path):
         self.root = Path(root).absolute()
         self.repo = Path(repo).resolve()
-        if self.root.is_symlink() or self.root == self.repo or self.repo in self.root.parents:
+        if any(p.is_symlink() for p in [self.root, *self.root.parents]) or self.root == self.repo or self.repo in self.root.parents:
             raise ValueError("RECOVERY_STORE_MUST_BE_OUTSIDE_GIT")
         self.root.mkdir(parents=True, exist_ok=True, mode=0o700)
         if self.root.stat().st_mode & 0o077:

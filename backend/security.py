@@ -58,8 +58,10 @@ def authorized_job(job: dict[str, Any], grants: dict[str, Any]) -> dict[str, str
     if adapter in {"continuity_sync", "continuity_verify", "continuity_restore_test", "continuity_health"}:
         grant = authorize(grants, "BLACK", "read_governance", adapter)
         authorize(grants, "BLACK", "write_receipts", "continuity")
+        authorize(grants, "BLACK", "access_credentials", "continuity-key-and-drive-read-only")
+        authorize(grants, "BLACK", "read_private_assets", "continuity-mirror-and-isolated-restore")
         if adapter == "continuity_sync":
-            authorize(grants, "BLACK", "access_credentials", "continuity-key-and-drive-read-only")
+            authorize(grants, "BLACK", "access_network", "drive-read-only-scoped-remote")
         return {"adapter": adapter, "grant_id": grant}
     command = job.get("command")
     if not isinstance(command, list) or not command or any(not isinstance(a, str) or "\0" in a for a in command):

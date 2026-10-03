@@ -30,7 +30,8 @@
         "continuity_sync",
         "continuity_verify",
         "continuity_restore_test",
-        "continuity_health"
+        "continuity_health",
+        "github-public-jobqueue"
       ],
       "state": "ACTIVE",
       "authority_receipt": "Owner commissioning directive 2026-10-03; CONTINUITY/CONTROL_PLANE_PLAN.md",
@@ -101,6 +102,29 @@
       ],
       "state": "ACTIVE",
       "authority_receipt": "Owner commissioning directive 2026-10-03",
+      "version": 1
+    },
+    {
+      "grant_id": "black-access_network-v1",
+      "worker_id": "BLACK",
+      "capability": "access_network",
+      "scopes": [
+        "github-queue-and-receipts",
+        "drive-read-only-scoped-remote"
+      ],
+      "state": "ACTIVE",
+      "authority_receipt": "Owner commissioning directive 2026-10-03; installed sealed policy only",
+      "version": 1
+    },
+    {
+      "grant_id": "black-read_private_assets-v1",
+      "worker_id": "BLACK",
+      "capability": "read_private_assets",
+      "scopes": [
+        "continuity-mirror-and-isolated-restore"
+      ],
+      "state": "ACTIVE",
+      "authority_receipt": "Owner commissioning directive 2026-10-03; installed sealed policy only",
       "version": 1
     }
   ]

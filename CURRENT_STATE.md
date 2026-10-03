@@ -53,7 +53,10 @@ clean at 4a58796b367468dc5b113e763a586748a526e189; WSL is detected.
 cryptography/jsonschema and gh/systemctl are present. rclone/restic, new continuity
 timer, enrolled environment and recovery key are absent. FastAPI is absent on
 BLACK, but the continuity operation does not need the House HTTP runtime.
-The first noninteractive administrative check timed out (exit 124), which is an
-unresolved observation, not proof that administrative capability is permanently
-absent. A bounded retry/user-manager readback is queued. Existing BLACK is not
-re-enrolled or redefined; install/test work proceeds through the working job lane.
+Subsequent installation, user-manager and native command preflights all timed out
+(exit 124) with no useful command readback. The latest native receipt finished at
+2026-10-03 16:44 UTC. Receipt transport remains available; command execution is
+DEGRADED/UNKNOWN. These observations do not prove administrative capability is
+permanently absent. New service promotion, timer installation and live encrypted
+restore remain HOLD until the existing execution path is repaired and read back.
+No reboot, duplicate executor or unrestricted remote shell was used to bypass it.

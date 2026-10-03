@@ -38,6 +38,15 @@ jobs:
           python CONTINUITY/security_scan.py --output /tmp/amx-security.json
           bash -n BLACK/install-continuity.sh
           bash BLACK/install-continuity.sh --stage /tmp/amx-service-stage
+          systemd-analyze verify /tmp/amx-service-stage/etc/systemd/system/amx-black.service /tmp/amx-service-stage/etc/systemd/system/amx-black-continuity.service /tmp/amx-service-stage/etc/systemd/system/amx-black-continuity.timer
+      - name: Preserve commissioning evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: amx-control-plane-${{ github.sha }}
+          path: |
+            /tmp/amx-commissioning/
+            /tmp/amx-security.json
+          retention-days: 30
       - name: Build provider-neutral container
         run: docker build -t amx-evidence-house .
       - name: Exercise container runtime

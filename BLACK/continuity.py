@@ -27,9 +27,11 @@ def operation(action: str, target: Path | None = None, snapshot: str | None = No
               "restore-test": "continuity_restore_test", "health": "continuity_health"}
     authorize(grants, "BLACK", "read_governance", scopes.get(action, "continuity_restore_test"))
     authorize(grants, "BLACK", "write_receipts", "continuity")
+    authorize(grants, "BLACK", "access_credentials", "continuity-key-and-drive-read-only")
+    authorize(grants, "BLACK", "read_private_assets", "continuity-mirror-and-isolated-restore")
     store = configured_store()
     if action == "sync":
-        authorize(grants, "BLACK", "access_credentials", "continuity-key-and-drive-read-only")
+        authorize(grants, "BLACK", "access_network", "drive-read-only-scoped-remote")
         path = Path(os.environ.get("AMX_SOURCE_REGISTRY", ROOT / "CONTINUITY/source-registry.json"))
         registry = load_registry(path, ROOT, os.environ.get("AMX_SOURCE_REGISTRY_SHA256"))
         if os.environ.get("AMX_DRIVE_DISCOVERY_REMOTE"):

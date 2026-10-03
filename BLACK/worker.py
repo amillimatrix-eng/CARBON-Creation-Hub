@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from backend.continuity import atomic, canonical, digest, git_version, now
-from backend.security import authorized_job, fingerprint, local_grants
+from backend.security import authorized_job, authorize, fingerprint, local_grants
 
 REPO = "amillimatrix-eng/CARBON-Creation-Hub"
 JOB_ID = re.compile(r"^[A-Za-z0-9_-]{1,100}$")
@@ -102,6 +102,8 @@ class Worker:
         if old and old["state"] == "RUNNING" and old["adapter"] == "scoped_command":
             receipt = {**old,"state":"HOLD","reason":"INTERRUPTED_CONSEQUENTIAL_COMMAND_REQUIRES_RECONCILIATION","finished":now()}
             atomic(journal,canonical(receipt))
+            name = jid+"--attempt-"+str(receipt["attempt"]).zfill(4)+".json"
+            atomic(self.state/"outbox"/name,canonical(receipt),immutable=True)
             return receipt
         if old and old.get("reason") == "INTERRUPTED_CONSEQUENTIAL_COMMAND_REQUIRES_RECONCILIATION":
             return old
@@ -131,6 +133,8 @@ class Worker:
         return receipt
 
     def flush_outbox(self):
+        authorize(self.grants,"BLACK","write_receipts","black-jobs")
+        authorize(self.grants,"BLACK","access_network","github-queue-and-receipts")
         sent=0
         for path in sorted((self.state/"outbox").glob("*.json")):
             receipt=json.loads(path.read_text())
@@ -140,6 +144,8 @@ class Worker:
 
 
 def cycle(worker):
+    authorize(worker.grants,"BLACK","read_governance","github-public-jobqueue")
+    authorize(worker.grants,"BLACK","access_network","github-queue-and-receipts")
     worker.flush_outbox()  # retry publication even when queue transport is unavailable
     if not sync_control_plane():
         return {"state":"HOLD","reason":"QUEUE_PROVIDER_UNAVAILABLE","existing_capability_preserved":True}

@@ -37,7 +37,7 @@ def commission(output: Path) -> dict:
            'CONTINUITY/source-registry.json','CONTINUITY/capability-grants.json','tests/test_control_plane.py']
     checks={
       'A_REPOSITORY':{'state':tests['state'],'scope':'local reconstruction/tests; full dependency HTTP/container CI is separately attributable'},
-      'B_BLACK':{'state':'HOLD','reason':'Fresh live preflight proves existing service; new installation/timer/WSL full boot require new receipts'},
+      'B_BLACK':{'state':'HOLD','reason':'Existing service preflight was proven; subsequent command execution timed out. New installation/timer/WSL full boot require fresh receipts'},
       'C_DRIVE_LOSS':{'state':'HOLD','tested_scope':'Offline restore of captured registered source fixtures and actual repository; actual private Drive enrollment incomplete'},
       'D_INTEGRITY':{'state':tests['state'],'scope':'deliberate corruption, wrong key, tampered manifest/receipt, no silent promotion'},
       'E_RESTORE':{'state':restore['state'],'scope':recovery['scope']},
@@ -50,7 +50,7 @@ def commission(output: Path) -> dict:
           'code_sha256':{name:digest((ROOT/name).read_bytes()) for name in paths},
           'tests':tests,'recovery':recovery,'learning':learning,'acceptance':checks,
           'gates':[
-            {'id':'BLACK_SERVICE_PROMOTION','class':'G1','dependency':'Existing node admin/deployment authority','action':'Install reviewed source with BLACK/install-continuity.sh; collect fresh service/config/restore receipts','automatic_resume':'timer executes verified sync and isolated restore tests'},
+            {'id':'BLACK_SERVICE_PROMOTION','class':'G1','dependency':'Responsive existing BLACK execution path and node administration','action':'Resolve bounded exit-124 execution preflight; install reviewed source with BLACK/install-continuity.sh; collect fresh service/config/restore receipts','automatic_resume':'timer executes verified sync and isolated restore tests'},
             {'id':'DRIVE_READ_ENROLLMENT','class':'G3','dependency':'Legitimate scoped Drive OAuth on BLACK','action':'Configure one read-only rclone remote locally; set AMX_DRIVE_DISCOVERY_REMOTE','automatic_resume':'periodic stable-ID inventory/export/mirror; missing sources retained'},
             {'id':'INDEPENDENT_CUSTODY','class':'G1','dependency':'Existing approved independent ciphertext destination and separate key escrow','action':'Enroll replica and escrow once; prove restore from them','automatic_resume':'bounded ciphertext retention/verification; no new approval per sync'},
             {'id':'WINDOWS_NO_TOUCH_BOOT','class':'G0','dependency':'Next natural Windows startup observation','action':'Existing launcher wakes WSL; obtain fresh autonomous BLACK receipt after that boot','automatic_resume':'Linux system service/timer runs without Owner relay'},

@@ -310,6 +310,12 @@ class CapabilityTests(unittest.TestCase):
         with self.assertRaises(PermissionError): authorized_job({"command":["/bin/sh","-c","true"]},grants)
         with self.assertRaises(PermissionError): authorize(grants,"BLACK","sign_transactions","all")
 
+    def test_credential_and_network_grants_are_required(self):
+        for capability in ["access_credentials", "access_network", "read_private_assets"]:
+            grants=copy.deepcopy(GRANTS)
+            grants['grants']=[g for g in grants['grants'] if g['capability']!=capability]
+            with self.assertRaises(PermissionError):authorized_job({'adapter':'continuity_sync'},grants)
+
     def test_worker_no_secret_output_duplicate_or_job_reuse(self):
         with tempfile.TemporaryDirectory() as t:
             calls=[]
@@ -332,6 +338,29 @@ class CapabilityTests(unittest.TestCase):
             journal.write_text(json.dumps({"state":"RUNNING","adapter":"scoped_command","attempt":1,"job_sha256":fingerprint(job)}))
             r=worker.process("sensitive",job)
             self.assertEqual(r["reason"],"INTERRUPTED_CONSEQUENTIAL_COMMAND_REQUIRES_RECONCILIATION")
+            self.assertEqual(worker.flush_outbox(), 1)
+
+    def test_installer_preserves_enrollment_and_scopes_refresh_writes(self):
+        import subprocess
+        with tempfile.TemporaryDirectory() as t:
+            stage=Path(t)/"staged"
+            command=["bash",str(ROOT/"BLACK/install-continuity.sh"),"--stage",str(stage)]
+            subprocess.run(command,check=True,capture_output=True,timeout=20)
+            config=stage/"etc/amx-black-continuity"
+            env=config/"environment"
+            env.write_text(env.read_text()+"AMX_DRIVE_DISCOVERY_REMOTE=approved_scope:matrix\n")
+            grants=config/"grants.json"
+            policy=json.loads(grants.read_text());policy["preserved_test_scope"]=True
+            grants.write_text(json.dumps(policy));grants.chmod(0o600)
+            subprocess.run(command,check=True,capture_output=True,timeout=20)
+            self.assertIn("AMX_DRIVE_DISCOVERY_REMOTE=approved_scope:matrix",env.read_text())
+            self.assertTrue(json.loads(grants.read_text())["preserved_test_scope"])
+            self.assertIn("BLACK_GRANTS_SHA256="+digest(grants.read_bytes()),env.read_text())
+            self.assertEqual(env.stat().st_mode & 0o077,0)
+            unit=(stage/"etc/systemd/system/amx-black-continuity.service").read_text()
+            writes=next(line for line in unit.splitlines() if line.startswith("ReadWritePaths="))
+            self.assertIn("/var/lib/amx-black-credentials",writes)
+            self.assertNotIn("/etc/amx-black-continuity",writes)
 
     def test_existing_house_reports_unenrolled_hold(self):
         from backend.state import aggregate_state

@@ -27,14 +27,17 @@ systemctl is-enabled amx-black-continuity.timer
 The installer preserves an enrolled key/private registry, installs one system
 BLACK service and one operation timer, retires only the obsolete duplicate user
 unit, pins grants/registry/source and creates a 0600 local key without displaying
-it. Credentials remain under /etc/amx-black-continuity, ciphertext under
+it. Reinstallation preserves enrolled policy, registry and extra environment settings.
+Keys and sealed config remain under /etc/amx-black-continuity; refreshable Drive
+credentials use /var/lib/amx-black-credentials with private service-only access.
+Ciphertext remains under
 /var/lib/amx-black-continuity, worker journal/outbox under /var/lib/amx-black.
 If administrative access is unavailable, all source/tests/staged units remain
 reviewable and the precise live-install gate remains HOLD.
 
 Drive refresh dependency: install rclone through the node's trusted signed package
 channel. Configure **one scoped read-only Drive remote**, on BLACK locally, in
-/etc/amx-black-continuity/rclone.conf. Use drive.readonly and only the authorized
+/var/lib/amx-black-credentials/rclone.conf. Use drive.readonly and only the authorized
 Matrix folder/source estate. Do not transfer ChatGPT connector tokens or paste
 OAuth material into chat. Legitimate account consent is a provider gate; subsequent
 refreshes do not require human attention. Set AMX_DRIVE_DISCOVERY_REMOTE=amx_drive:
@@ -44,6 +47,11 @@ normal evidence intake. Missing provider entries are never treated as deletion.
 
 Manual registry edits must be governed and repinned by the installer; a public
 queue cannot expand sources, command grants, credentials or production permissions.
+The installer also preserves a previously sealed grants file. Add only reviewed
+new scopes to that existing file and rerun the installer to repin it; never replace
+accepted command grants with a default policy. The refreshable Drive credential
+directory is writable only for the scoped BLACK services; key/policy directories
+remain read-only in the service sandbox.
 Legacy shell access requires an exact argv digest in a sealed local grant. Typed
 sync/verify/restore-test jobs accept no arbitrary target, source URL or shell text.
 
@@ -82,3 +90,11 @@ Windows/WSL: preserve the installed Windows launcher. Linux is-enabled/is-active
 and timer enablement do not prove Windows boot. On the next natural Windows login
 or reboot, require a fresh autonomous source/config/boot-correlated BLACK receipt.
 No manual login/reinstallation is required merely to repeat historical acceptance.
+
+Current live gate (2026-10-03): three bounded preflights produced exit 124 without
+command readback. Restore the existing BLACK command-execution path before live
+installation. A receipt labeled RESOLVED with nonzero exit status is not acceptance.
+Do not infer missing privileges from those timeouts or reset the node blindly.
+Once that path responds, the installer, OAuth enrollment, independent custody and
+durability checks above are the resumable steps; routine sync/restore testing uses
+the existing service timer and needs no repeated confirmation.
