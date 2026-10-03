@@ -1,7 +1,7 @@
 {
   "schema": "AMX_WORKER_BENCHMARK_REGISTRY_V1",
   "status": "ACTIVE_CONTROL / ROLE-SPECIFIC / T10_GOVERNED",
-  "as_at": "2026-10-03T05:00:00Z",
+  "as_at": "2026-10-03T09:55:48Z",
   "rule": "Role-specific excellence only. This registry creates no new worker, manager, dashboard, pipeline or authority. States require attributable evidence and may regress or reopen.",
   "state_vocabulary": [
     "GAP_IDENTIFIED",
@@ -36,10 +36,10 @@
         "T10 remaining gap",
         "no false terminal promotion"
       ],
-      "benchmark_gap": "Matrix-wide worker profiles beyond currently inspected commercial/CARBON surfaces are not yet supported by fresh attributable benchmark runs.",
-      "upgrade_action": "Have Commissioning Inspector recover each active worker's latest attributable run and update this registry without creating new workers or duplicating role files.",
+      "benchmark_gap": "Commercial benchmark evidence is now current, but CARBON° external-package sanitation, House deployment/readback, Inspector/Bounty Reaper/BLACK fresh runs, and realized revenue remain unproven.",
+      "upgrade_action": "Keep the CARBON° sanitized external-package correction with CARBON° Production; verify its new hash/QA/handoff receipt, while PRI continues only existing authorized threads and authenticated account routes.",
       "state": "BENCHMARK_PROVEN_FOR_SCOPE",
-      "scope_time_evidence": "Scope: commercial continuity reconciliation and House deployment-gap detection, 2026-10-03. Evidence: commits 0597c7e3735d3de60138c02063616d873e7be6ec and 154ff082955ece803b75c50fd289acf72e745775; Sheet OUTSTANDING!A34:H34 readback; issue comments 5965796339 and 5965796426."
+      "scope_time_evidence": "Scope: current commercial-receipt reconciliation, worker benchmark classification and CARBON° package-regression routing, 2026-10-03T09:55:48Z. Evidence: commercial commits f47c636807f6df853f44c5503df7611dba274238, d07f1533c23e94f0659554fc13a42360075f9676 and c2b65ff3069d2b4f84865480dcbb0a8368c33637; Sheet OUTSTANDING!A34:H34 readback; CARBON restriction commit 0e16e361be94f7add36cec980d445568161df8d9."
     },
     "iSCOPE": {
       "purpose": "Discover, verify, deduplicate, qualify and persist payer-backed opportunities before PRI handoff.",
@@ -66,10 +66,10 @@
         "next action",
         "ledger readback"
       ],
-      "benchmark_gap": "Current run proved five fresh vertical-drama buyer qualifications but not >=20 newly refreshed candidates across >=4 live market surfaces.",
-      "upgrade_action": "Next iSCOPE run must refresh >=20 current candidates across four materially different categories and persist only qualified outcomes.",
-      "state": "UPGRADE_IN_PROGRESS",
-      "scope_time_evidence": "See overdrive/worker_contract.json commit 154ff082955ece803b75c50fd289acf72e745775."
+      "benchmark_gap": "This run proves a 46-candidate scan across four categories and three current paid South Africa-eligible role qualifications. Explicit per-path receipts for all three reasoning paths and downstream conversion remain unproven.",
+      "upgrade_action": "On the next cycle, preserve the broad scan and record which of the three discovery paths produced each new qualified OPP-ID; do not duplicate existing records.",
+      "state": "BENCHMARK_PROVEN_FOR_SCOPE",
+      "scope_time_evidence": "Scope: current broad discovery, dedupe, delivery-truth correction and qualification, 2026-10-03T09:00Z. Evidence: 46-record ledger commit f47c636807f6df853f44c5503df7611dba274238; routing/claim commits d07f1533c23e94f0659554fc13a42360075f9676 and c2b65ff3069d2b4f84865480dcbb0a8368c33637; Sheet OUTSTANDING!A34:H34."
     },
     "PRI": {
       "purpose": "Convert qualified opportunities into responses, negotiation, contracts, receivables and attributable payment.",
@@ -96,10 +96,10 @@
         "ledger readback",
         "payment evidence for PAID"
       ],
-      "benchmark_gap": "Official-route outreach is proven; response handling through negotiation, contract, invoice and settlement is not.",
-      "upgrade_action": "Monitor the five existing threads and progress the first response without duplicate outreach.",
+      "benchmark_gap": "Thread-safe delivery recovery is now additionally proven for FreeReels, while MoboReels remains externally delivery-failed and authenticated application/account progression, response, negotiation, contract, invoice and settlement are not proven.",
+      "upgrade_action": "Monitor the existing FreeReels thread; retry MoboReels only after mailbox-capacity interval or a newly verified official route; resume the existing OpenTrain account through personal authentication for the three qualified roles.",
       "state": "BENCHMARK_PROVEN_FOR_SCOPE",
-      "scope_time_evidence": "Scope: deduplicated official-route outreach, 2026-10-03. Gmail IDs and ledger/Sheet evidence are in overdrive/worker_contract.json commit 154ff082955ece803b75c50fd289acf72e745775."
+      "scope_time_evidence": "Scope: deduplicated official-route outreach plus in-thread delivery recovery, 2026-10-03. Evidence: Gmail recovered send 1a1010173460500e, failures 1a10023248ed0d30 and 1a1002322cecb29d; commits f47c636807f6df853f44c5503df7611dba274238, d07f1533c23e94f0659554fc13a42360075f9676 and c2b65ff3069d2b4f84865480dcbb0a8368c33637. No conversion/payment inferred."
     },
     "CARBON° Production": {
       "purpose": "Produce and adapt buyer-specific creative/technical assets with Critic, provenance, rights and access truth, then hand to PRI.",
@@ -127,10 +127,10 @@
         "rights/access state",
         "handoff receipt"
       ],
-      "benchmark_gap": "Production assets are evidenced, but buyer-specific external use and outcome remain under PRI; latest v3 trailer/key-art evidence is not yet reflected in a single central production profile.",
-      "upgrade_action": "Persist the latest accepted trailer/key-art receipts into the production evidence index and keep external conversion with PRI.",
-      "state": "BENCHMARK_PROVEN_FOR_SCOPE",
-      "scope_time_evidence": "Scope: buyer-ready poster and narrated vertical explainer with Critic/provenance boundaries; issue #1 production handoff receipts. External acceptance/payment not proven."
+      "benchmark_gap": "Latest buyer one-sheet v1 exposed internal PRI/Matrix execution mechanics, so external-package readiness regressed. Earlier accepted creative assets remain valid within their evidenced scopes.",
+      "upgrade_action": "Produce a sanitized external PDF derivative with buyer-only language, new hash, Critic QA, rights/access state and PRI handoff receipt; keep v1 INTERNAL_ONLY and forbidden for external send.",
+      "state": "REGRESSED",
+      "scope_time_evidence": "Regression scope: external buyer one-sheet packaging, detected 2026-10-03. Restriction/handoff correction commit 0e16e361be94f7add36cec980d445568161df8d9; GitHub issue #1 comment 5967413534. Earlier poster/explainer acceptance is not revoked."
     },
     "CARBON° House": {
       "purpose": "Provide the existing navigable production/exhibition/records/operator surface with truthful backend freshness and controlled media routes.",
@@ -274,16 +274,16 @@
     }
   },
   "t10": {
-    "supposed": "Establish a living, role-specific benchmark profile and current evidence state without new architecture.",
-    "actual": "Created one durable registry; updated commercial role profiles from attributable work; recorded House live-version gap; left unsupported roles as evidenced gaps.",
+    "supposed": "Recover current durable control, detect material benchmark regression, preserve ownership and route the smallest corrective action.",
+    "actual": "Reconciled the 46-record commercial run and Sheet readback; promoted iSCOPE only for current broad discovery/qualification scope; extended PRI proof only to delivery recovery; classified CARBON° external-package readiness REGRESSED while preserving earlier accepted asset scopes.",
     "evidence": [
-      "overdrive/worker_contract.json commit 154ff082955ece803b75c50fd289acf72e745775",
+      "commercial commits f47c636807f6df853f44c5503df7611dba274238, d07f1533c23e94f0659554fc13a42360075f9676 and c2b65ff3069d2b4f84865480dcbb0a8368c33637",
       "OUTSTANDING!A34:H34 readback",
-      "issue comments 5965796339 and 5965796426",
-      "Sites project live metadata"
+      "Gmail 1a1010173460500e, 1a10023248ed0d30 and 1a1002322cecb29d",
+      "CARBON restriction commit 0e16e361be94f7add36cec980d445568161df8d9"
     ],
-    "change": "Benchmark claims now have named scope, time, evidence and smallest next action.",
-    "remaining_gap": "Inspector, Bounty Reaper and BLACK require fresh attributable runs; House requires deployment/readback; no payment evidence exists.",
+    "change": "Current benchmark states now reflect the newest attributable run and the buyer-package regression without role drift or duplicate control architecture.",
+    "remaining_gap": "CARBON sanitized external PDF and QA receipt; authenticated application progression; external response/acceptance; House deployment; Inspector/Bounty Reaper/BLACK fresh proof; contract, invoice and payment.",
     "claim_supported": true,
     "pass": true
   }
