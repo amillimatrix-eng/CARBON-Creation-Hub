@@ -45,21 +45,21 @@
     {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": false,
-      "next_action": "PRI to apply through the official TELUS route to the furthest non-human executable point; preserve assessment/ID as explicit gate if encountered.",
+      "next_action": "Complete the official TELUS application when personal application submission/assessment confirmation is available; current direct role route is verified.",
       "opportunity_key": "telusdigital.com|online-data-analyst|south-africa",
       "state": "QUALIFIED"
     },
     {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": false,
-      "next_action": "PRI to submit through the official CrowdGen route if no existing account conflict; stop only at genuine identity/assessment gate.",
+      "next_action": "Complete the official CrowdGen application when personal account/CV submission confirmation is available; do not create a duplicate account.",
       "opportunity_key": "crowdgen.com|project-coffee-data-labeling-specialist|south-africa",
       "state": "QUALIFIED"
     },
     {
-      "due_at": "2026-10-06T23:04:23Z",
+      "due_at": null,
       "due_now": false,
-      "next_action": "Monitor Outlier support for confirmation of an existing account or secure recovery route; then resume the official South Africa coding application without creating a duplicate account.",
+      "next_action": "Create the official application/profile with the current email when personal account-creation and identity-verification confirmation is available; no duplicate account exists under this email.",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
       "state": "QUALIFIED"
     },
@@ -73,17 +73,24 @@
     {
       "due_at": "2026-10-03T16:15:00Z",
       "due_now": false,
-      "next_action": "PRI to register through the free official route and inspect live all-access tasks; do not wait for specialized-project interview path.",
+      "next_action": "Register through the official free route and inspect live task eligibility when personal account creation/verification confirmation is available.",
       "opportunity_key": "mindrift.ai|all-access-ai-training|global",
       "state": "QUALIFIED"
+    },
+    {
+      "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "state": "RESPONDED",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply."
     }
   ],
-  "generated_at": "2026-10-03T01:56:25.109755+00:00",
+  "generated_at": "2026-10-03T04:01:21Z",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
       "due_now": false,
-      "next_action": "Await official response identifying exact South Africa projects, rates and requirements; qualify only executable paid matches.",
+      "next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
       "opportunity_key": "oneforma.com|ai-ml-projects|south-africa",
       "state": "DISCOVERED"
     },
@@ -123,9 +130,9 @@
       "state": "HOLD"
     },
     {
-      "due_at": "2026-10-06T23:04:23Z",
+      "due_at": null,
       "due_now": false,
-      "next_action": "Await authoritative eligibility, live-task and payout confirmation before onboarding.",
+      "next_action": "Use the official Help Center or authenticated platform chat to verify South Africa eligibility, live tasks and payout; email route is closed.",
       "opportunity_key": "toloka.ai|individual-task-marketplace|south-africa",
       "state": "HOLD"
     }
