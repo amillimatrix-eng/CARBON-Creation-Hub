@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-CONTINUITY-NATIVE-PREFLIGHT-20261003",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 124,
+  "started": "2026-10-03T16:44:33.961492+00:00",
+  "finished": "2026-10-03T16:45:18.960558+00:00",
+  "stdout": "",
+  "stderr": "\nAMX_OUTER_TIMEOUT after 38s"
+}
