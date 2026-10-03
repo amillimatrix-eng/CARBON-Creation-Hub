@@ -1,0 +1,14 @@
+{
+  "schema": "AMX.BLACK.JOB.v1",
+  "worker": "BLACK",
+  "job_id": "BLACK-CODEX-CLI-INSTALL-20261003-001",
+  "scope": "INSTALL_OR_UPDATE_OPENAI_CODEX_CLI_USER_LOCAL_AND_VERIFY",
+  "authority": "Owner direct instruction: deploy Codex to BLACK",
+  "command": [
+    "/bin/sh",
+    "-lc",
+    "set -eu\nexport PATH=\"$HOME/.local/bin:$PATH\"\nprintf 'AMX_CODEX_INSTALL_START\\n'\nprintf 'user=%s\\n' \"$(id -un)\"\nprintf 'home=%s\\n' \"$HOME\"\nprintf 'node='; node --version\nprintf 'npm='; npm --version\nmkdir -p \"$HOME/.local\"\nnpm install -g --prefix \"$HOME/.local\" @openai/codex@latest\nCODEX_BIN=\"$HOME/.local/bin/codex\"\ntest -x \"$CODEX_BIN\"\nprintf 'codex_bin=%s\\n' \"$CODEX_BIN\"\n\"$CODEX_BIN\" --version\nPROFILE=\"$HOME/.profile\"\nLINE='export PATH=\"$HOME/.local/bin:$PATH\"'\ntouch \"$PROFILE\"\ngrep -Fqx \"$LINE\" \"$PROFILE\" || printf '\\n%s\\n' \"$LINE\" >> \"$PROFILE\"\nprintf 'profile_path_persisted=true\\n'\nprintf 'AMX_CODEX_INSTALL_COMPLETE\\n'"
+  ],
+  "timeout": 300,
+  "secret_values_may_be_read": false
+}
