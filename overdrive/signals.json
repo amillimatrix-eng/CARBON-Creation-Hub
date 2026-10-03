@@ -24,13 +24,6 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
-      "opportunity_key": "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh",
-      "state": "QUALIFIED"
-    },
-    {
-      "due_at": null,
-      "due_now": false,
       "next_action": "PRI to submit through the existing Upwork identity/session when an authenticated execution route is available; keep proposal evidence-specific and concise.",
       "opportunity_key": "upwork.com|ai-automation-fix|022105205564933219360",
       "state": "QUALIFIED"
@@ -83,9 +76,37 @@
       "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
       "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
       "state": "RESPONDED"
+    },
+    {
+      "due_at": "2026-10-04T09:00:00Z",
+      "due_now": false,
+      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
+      "opportunity_key": "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "state": "DELIVERY_FAILED"
+    },
+    {
+      "due_at": "2026-10-03T16:00:00Z",
+      "due_now": false,
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with the existing resume/profile; do not create a duplicate account.",
+      "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
+      "state": "QUALIFIED"
+    },
+    {
+      "due_at": "2026-10-03T16:00:00Z",
+      "due_now": false,
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with evidence of evaluation/editing and QA capability; do not create a duplicate account.",
+      "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
+      "state": "QUALIFIED"
+    },
+    {
+      "due_at": "2026-10-03T16:00:00Z",
+      "due_now": false,
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON\u00b0 production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
+      "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
+      "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-03T07:37:40.910280+00:00",
+  "generated_at": "2026-10-03T09:05:21.450744+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -135,6 +156,13 @@
       "next_action": "Use the official Help Center or authenticated platform chat to verify South Africa eligibility, live tasks and payout; email route is closed.",
       "opportunity_key": "toloka.ai|individual-task-marketplace|south-africa",
       "state": "HOLD"
+    },
+    {
+      "due_at": "2026-10-04T09:00:00Z",
+      "due_now": false,
+      "next_action": "Verify South Africa eligibility and exact payout terms from the current official application before handoff; keep FOUND/DISCOVERED distinct from QUALIFIED.",
+      "opportunity_key": "mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392",
+      "state": "DISCOVERED"
     }
   ]
 }
