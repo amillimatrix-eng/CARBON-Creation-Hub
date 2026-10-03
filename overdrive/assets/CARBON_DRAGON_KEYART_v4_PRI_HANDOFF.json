@@ -1,0 +1,64 @@
+{
+  "schema": "amx.carbon.pri_asset_handoff.v1",
+  "asset_id": "CARBON-DRAGON-KEYART-V4",
+  "title": "The Dragon Who Could Not Claim Me",
+  "producer": "CARBON°",
+  "commercial_owner": "PRI",
+  "version": "v4A-v4B",
+  "purpose": "Two additional Owner-requested key-art options for controlled House/PRI package support; not evidence of publication, submission, buyer access or acceptance.",
+  "source": {
+    "name": "The Dragon Who Could Not Claim Me(6).png",
+    "library_file_id": "libfile_3f7ae039158c81919faaae78dcb19d4c",
+    "sha256": "55308af7d1ce18bafa37a3d2857fc0fb2ffa86ac9a27bbc59001da63b80b3c8b"
+  },
+  "artifacts": {
+    "obsidian_inferno": {
+      "name": "CARBON_Dragon_KeyArt_v4A_Obsidian_Inferno.png",
+      "frame": "941x1672",
+      "sha256": "e6a38d625f730e78e16f41a3e31c8dd2c1f74e2424fbabe0ab688a68b36485bc",
+      "library_resolution": "Current-turn image_gen artifact; Library identity is assigned after turn commit. Resolve by exact filename/hash before external use."
+    },
+    "ivory_eclipse": {
+      "name": "CARBON_Dragon_KeyArt_v4B_Ivory_Eclipse.png",
+      "frame": "941x1672",
+      "sha256": "45f9f627a73862c8bc0e4c9c3860639ad4e4c47e00b22ad8ce566faab1d76ece",
+      "library_resolution": "Current-turn image_gen artifact; Library identity is assigned after turn commit. Resolve by exact filename/hash before external use."
+    },
+    "receipt": {
+      "name": "CARBON_Dragon_KeyArt_v4_RECEIPT.md",
+      "library_file_id": "libfile_3eaeab89e31881919d705f47bf59502f",
+      "file_id": "file_00000000f25081f79b485863689c9a67"
+    }
+  },
+  "critic": {
+    "verified_at": "2026-10-03T04:17:01Z",
+    "title_exact": true,
+    "hierarchy_pass": true,
+    "gaze_anatomy_pass": true,
+    "mobile_legibility_pass": true,
+    "false_claims_absent": true,
+    "hold": "Generated key-art derivatives, not full character-performance animation."
+  },
+  "provenance_rights": {
+    "method": "image_gen edit/derivative using the accepted AMX/CARBON° source key art",
+    "intended_use": [
+      "Owner selection",
+      "House exhibition",
+      "PRI-controlled buyer package support where relevant"
+    ],
+    "rights_status": "AMX/CARBON° internal production chain; external exploitation subject to controlled-rights review",
+    "watermark": "None"
+  },
+  "state": {
+    "AVAILABLE": true,
+    "RENDER_ACCEPTED": "Internal CARBON° critic pass",
+    "RECORD_PUBLISHED": false,
+    "VIDEO_ACCESS_VERIFIED": false,
+    "SUBMITTED": false,
+    "EXTERNALLY_ACCEPTED": false,
+    "INVOICED": false,
+    "PAID": false
+  },
+  "pri_next_action": "After Owner selection, resolve the selected derivative's exact Library identity by hash, then use only for an existing qualified opportunity with recipient-specific controlled delivery. Do not send duplicate outreach.",
+  "carbon_boundary": "CARBON° produced and verified the alternatives. Prospect discovery and all external conversion actions remain iSCOPE/PRI-owned."
+}
