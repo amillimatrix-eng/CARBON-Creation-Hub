@@ -1,0 +1,87 @@
+{
+  "schema": "AMX_ISCOPE_FIELD_FORCE_RECEIPT_V1",
+  "id": "ISCOPE-FIELD-FORCE-20261003-221320Z",
+  "executed_at": "2026-10-03T22:13:20Z",
+  "executor": "CURRENT_MATRIX_REASONING_SESSION",
+  "requested_execution_origin": "SCHEDULER_AUTOMATION",
+  "observed_execution_origin": "INTERACTIVE_USER_INVOKED",
+  "scheduler_origin_proof": "FAIL",
+  "controls_recovered": true,
+  "capability_floor_recovered": true,
+  "full_ledger_recovered": true,
+  "full_ledger_before": 62,
+  "full_ledger_after": 65,
+  "routing_subsets_recovered": true,
+  "payment_rails_recovered": true,
+  "territory": {
+    "candidates_inspected": 36,
+    "categories": [
+      "AI_EVALUATION_AND_DATA",
+      "QA_RELIABILITY",
+      "AI_AUTOMATION_SOFTWARE_API",
+      "COMMERCIAL_OPERATIONS_MARKETING",
+      "CREATIVE_LICENSING"
+    ],
+    "freshness": "Current primary/official company, ATS, program and Gmail/account evidence refreshed during this run.",
+    "representative_current_candidates": [
+      "CrowdGen Project Coffee — South Africa",
+      "Outlier Coding Expertise for AI Training — South Africa",
+      "TELUS Digital Online Data Analyst — South Africa",
+      "OpenTrain Health Coaching AI Evaluator",
+      "OpenTrain AI Safety Red Team Evaluator",
+      "Welo AI Trainers Network — Afrikaans",
+      "Welo AI Trainers Network — Zulu",
+      "Welo Hydrus Voice Contributor — English South Africa",
+      "Syrup Senior AI delivery engineer",
+      "Syrup AI engineer graduate intake",
+      "AlgoDev AI & Automation Specialist",
+      "Inference Group Automation Developer",
+      "Verder Agent Factory AI Engineer",
+      "UiPath Senior Solution Engineer — Agentic Automation",
+      "Tillo Senior Python Engineer",
+      "Jobgether Data and Automation Systems Builder",
+      "Jobgether Middle to Senior Python Developer",
+      "Yassir Staff Full-Stack Engineer",
+      "Yassir AI Product Manager",
+      "Mama Money Senior QA Automation Engineer",
+      "Jobgether Middle+ General QA Engineer",
+      "Jobgether Lead QA Engineer (AI native)",
+      "Yassir Senior QA Engineer",
+      "Yassir Senior QA Engineer — Manual & Automated Testing",
+      "Wing Technical Account Manager — AI Agents",
+      "Wing Account Executive — AI Agents",
+      "Wing Business Development Manager — AI Agents",
+      "Wing Customer Success & Account Manager — AI Agents",
+      "Wing Sales Executive — AI Agents",
+      "MOO Existing Account Specialist",
+      "MOO New Account Specialist",
+      "CallForce Marketing Lead",
+      "Beeline Head of Marketing",
+      "Beeline Sales Development Representative",
+      "TSMG Team Coordinator — AI/ML Data Collection",
+      "Binance Strategy & Operations Lead — Africa"
+    ]
+  },
+  "discovery_paths": [
+    {
+      "path": "CAPABILITY -> NEW APPLICATION -> PAYER/DEMAND",
+      "result": "Qualified and handed off Syrup Senior AI delivery engineer and CallForce Marketing Lead; Outlier current verified-account progression retained under existing OPP-ID."
+    },
+    {
+      "path": "MARKET SIGNAL -> REQUIRED OUTCOME -> CAPABILITY MATCH",
+      "result": "Qualified and handed off Verder Agent Factory AI Engineer from current operational-automation demand."
+    },
+    {
+      "path": "OBSERVED ORGANIZATION PROBLEM -> AMX SOLUTION -> DIRECT-SALE OPP",
+      "result": "Attempted against current AI/automation and marketing pain signals; no separate direct-sale OPP promoted where the only evidenced payer route was an active hiring route or where a vendor buyer was not independently evidenced. UNKNOWN/HOLD preserved rather than duplicating outreach."
+    }
+  ],
+  "new_qualified": [
+    "poursyrup.ai|senior-ai-delivery-engineer|cape-town",
+    "agentfactory.verder.com|ai-engineer|cape-town",
+    "callforceoutsourcing.com|marketing-lead|south-africa"
+  ],
+  "dedupe": "PASS — Gmail history and full durable ledger checked before new outreach; no duplicate account or duplicate commercial worker created.",
+  "pay_to_work_filter": "PASS — no promoted route required AMX to pay to apply/work.",
+  "realized_revenue": 0
+}
