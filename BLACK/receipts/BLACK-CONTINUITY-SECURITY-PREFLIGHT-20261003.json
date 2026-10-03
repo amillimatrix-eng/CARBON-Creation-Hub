@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-CONTINUITY-SECURITY-PREFLIGHT-20261003",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-03T16:01:07.733328+00:00",
+  "finished": "2026-10-03T16:01:16.943728+00:00",
+  "stdout": "{\"continuity_key_present\": false, \"continuity_timer\": {\"exit_code\": 4, \"value\": \"not-found\"}, \"credential_values_read\": false, \"linux_service\": {\"exit_code\": 0, \"value\": \"ActiveState=active\\nSubState=running\\nUnitFileState=enabled\\nUser=amx\"}, \"python_modules\": {\"cryptography\": true, \"fastapi\": false, \"jsonschema\": true}, \"raw_environment_dumped\": false, \"read_only\": true, \"recovery_enrollment_present\": false, \"schema\": \"AMX.BLACK.CONTINUITY_PREFLIGHT.v1\", \"source_clean\": {\"exit_code\": 0, \"value\": \"\"}, \"source_commit\": {\"exit_code\": 0, \"value\": \"4a58796b367468dc5b113e763a586748a526e189\"}, \"tools\": {\"gh\": true, \"rclone\": false, \"restic\": false, \"systemctl\": true}, \"windows_no_touch_boot\": \"REQUIRES_FRESH_BOOT_CORRELATED_RECEIPT\", \"wsl_kernel\": true}\n",
+  "stderr": ""
+}
