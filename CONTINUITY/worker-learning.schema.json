@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Existing worker evidence learning",
+  "type": "object",
+  "required": [
+    "worker_id",
+    "outcome_id",
+    "action",
+    "result",
+    "source_sha256",
+    "classification"
+  ],
+  "properties": {
+    "worker_id": {
+      "type": "string"
+    },
+    "outcome_id": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "result": {
+      "type": "object"
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "classification": {
+      "enum": [
+        "FACT",
+        "HYPOTHESIS",
+        "HEURISTIC",
+        "FAILURE_MODE",
+        "PROVEN_IMPROVEMENT"
+      ]
+    },
+    "receipt_sha256": {
+      "type": "string"
+    }
+  }
+}

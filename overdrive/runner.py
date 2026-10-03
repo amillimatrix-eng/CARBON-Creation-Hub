@@ -5,7 +5,7 @@ Consumes durable queue items, validates evidence-backed commercial transitions,
 updates the shared record, and writes one immutable receipt per invocation.
 No connector or external commercial action is inferred by this adapter.
 """
-import hashlib, json, os, time
+import hashlib, json, os, time, re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -50,6 +50,8 @@ def claim_lock():
 
 def durable_receipt(sequence, payload):
     body = dict(payload)
+    if not re.fullmatch(r"[A-Za-z0-9_-]{1,100}", str(body.get("task_id", ""))):
+        raise ValueError("INVALID_RECEIPT_TASK_ID")
     body["sequence"] = sequence
     body["recorded_at"] = utcnow()
     digest = hashlib.sha256(
@@ -141,6 +143,32 @@ def access_verification(task, opportunities):
     }
 
 ADAPTERS = {"EVIDENCE_TRANSITION": evidence_transition, "ACCESS_VERIFICATION": access_verification}
+
+def bounty_evidence_filter(task, opportunities):
+    """Transport invokes the existing Reaper's scoped evidence adapter, not PRI."""
+    from backend.store import EvidenceStore
+    from backend.security import authorize, local_grants
+    from overdrive.evidence_learning import EvidenceLearning, filter_opportunity, WORKER
+    db = os.environ.get("AMX_WORKER_LEARNING_DB")
+    if not db:
+        raise ValueError("HOLD_DURABLE_WORKER_LEARNING_DB_NOT_ENROLLED")
+    grants = local_grants(ROOT.parent)
+    authorize(grants, WORKER, "read_governance", "crypto-opportunity-filter")
+    learning = EvidenceLearning(EvidenceStore(Path(db)), grants)
+    cap = learning.capability()
+    payload = task["payload"]
+    if payload.get("worker_id") != WORKER:
+        raise ValueError("WRONG_MANDATE_OWNER")
+    seen = set()
+    results = [filter_opportunity(item, cap["config"], seen, datetime.now(timezone.utc)) for item in payload["opportunities"]]
+    source = ROOT.parent / "CONTINUITY/BOUNTY_REAPER_RUN_2026-10-02T1421_SAST.md"
+    from backend.security import fingerprint
+    receipt = learning.outcome(task["id"], "Bounded crypto opportunity evidence filter", {"results": results, "input_sha256": fingerprint(payload), "capability_version": cap["version"], "source_reference_role": "adapter lineage; current input is independently hashed"}, source)
+    return {"adapter": "BOUNTY_EVIDENCE_FILTER", "execution_owner": WORKER,
+            "capability_version": cap["version"], "outcome_receipt": receipt["receipt_sha256"],
+            "results": results, "commercial_ledger_mutated": False, "external_actions": "NONE"}
+
+ADAPTERS["BOUNTY_EVIDENCE_FILTER"] = bounty_evidence_filter
 
 def claim_work(signals):
     """Durably claim every actionable signal. Claims cannot silently disappear:

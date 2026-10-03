@@ -3,12 +3,22 @@ on:
   push:
     paths:
       - 'backend/**'
+      - 'BLACK/**'
+      - 'CONTINUITY/**'
+      - 'overdrive/evidence_learning.py'
+      - 'overdrive/runner.py'
       - 'house/remediation/**'
       - 'tests/**'
       - 'requirements*.txt'
       - 'Dockerfile'
       - '.github/workflows/evidence-house-tests.yml'
   workflow_dispatch:
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: evidence-house-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -22,6 +32,21 @@ jobs:
       - run: pip install -r requirements-dev.txt
       - run: pytest -q
       - run: python tests/smoke.py
+      - name: Commissioning verification and redacted security scan
+        run: |
+          python CONTINUITY/commission.py --output /tmp/amx-commissioning
+          python CONTINUITY/security_scan.py --output /tmp/amx-security.json
+          bash -n BLACK/install-continuity.sh
+          bash BLACK/install-continuity.sh --stage /tmp/amx-service-stage
+          systemd-analyze verify /tmp/amx-service-stage/etc/systemd/system/amx-black.service /tmp/amx-service-stage/etc/systemd/system/amx-black-continuity.service /tmp/amx-service-stage/etc/systemd/system/amx-black-continuity.timer
+      - name: Preserve commissioning evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: amx-control-plane-${{ github.sha }}
+          path: |
+            /tmp/amx-commissioning/
+            /tmp/amx-security.json
+          retention-days: 30
       - name: Build provider-neutral container
         run: docker build -t amx-evidence-house .
       - name: Exercise container runtime

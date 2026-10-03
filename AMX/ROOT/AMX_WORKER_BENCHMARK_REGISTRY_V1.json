@@ -242,7 +242,14 @@
       "benchmark_gap": "No fresh attributable post-upgrade bounty run or accepted report was recovered in the inspected CARBON repository/control surfaces.",
       "upgrade_action": "Bounty Reaper must recover its own current durable target ledger and demonstrate one scoped current intelligence/dedupe/test cycle before benchmark promotion.",
       "state": "GAP_IDENTIFIED",
-      "scope_time_evidence": "Inspected-source gap only; no global absence inferred and no role merger with iSCOPE/PRI."
+      "scope_time_evidence": "Inspected-source gap only; no global absence inferred and no role merger with iSCOPE/PRI.",
+      "evidence_learning": {
+        "implementation": "overdrive/evidence_learning.py",
+        "scope": "Existing independent crypto worker; bounded filter and versioned tested promotion",
+        "capability_schema": "CONTINUITY/worker-capability.schema.json",
+        "receipt": "CONTINUITY/receipts/AMX_CODEX_LEARNING_CYCLE_2026-10-03.json",
+        "runtime_acceptance": "HOLD_PENDING_DURABLE_STORE_ROLE_BINDINGS_AND_CURRENT_LIVE_RUN"
+      }
     },
     "BLACK": {
       "purpose": "Provide reusable compute/execution capacity for assigned Matrix tasks without becoming a default dependency.",

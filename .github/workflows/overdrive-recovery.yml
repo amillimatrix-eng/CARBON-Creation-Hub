@@ -11,9 +11,14 @@ on:
     - cron: '*/5 * * * *'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
+concurrency:
+  group: amx-overdrive-main
+  cancel-in-progress: false
 jobs:
   worker:
+    permissions:
+      contents: write
     if: github.event_name != 'push' || !contains(github.event.head_commit.message, 'OVERDRIVE receipt')
     runs-on: ubuntu-latest
     steps:

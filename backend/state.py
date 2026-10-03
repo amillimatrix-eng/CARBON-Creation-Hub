@@ -203,6 +203,7 @@ def summarize_opportunities(opps: dict[str, Any]) -> dict[str, Any]:
 
 
 def aggregate_state(repo_root: Path) -> dict[str, Any]:
+    from .continuity import safe_health
     reader = StateReader(repo_root)
     worker = reader.read_json("overdrive/worker_contract.json", {})
     opps = reader.read_json("overdrive/opportunities.json", {"records": {}})
@@ -244,6 +245,7 @@ def aggregate_state(repo_root: Path) -> dict[str, Any]:
         )
 
     return {
+        "continuity": safe_health(Path(os.environ["AMX_CONTINUITY_HEALTH_FILE"]) if os.environ.get("AMX_CONTINUITY_HEALTH_FILE") else None),
         "state_source": source_label,
         "source_ref": (reader.resolved_ref or reader.github_ref) if reader.github_repo else None,
         "source_branch": reader.github_ref if reader.github_repo else None,

@@ -1,0 +1,211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AMX governed source registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "retention",
+    "sources"
+  ],
+  "properties": {
+    "schema": {
+      "const": "AMX.SOURCE.REGISTRY.v1"
+    },
+    "retention": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "keep_last",
+        "days"
+      ],
+      "properties": {
+        "keep_last": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "days": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "source_system",
+          "path",
+          "project",
+          "classification",
+          "authority_level",
+          "adapter",
+          "required",
+          "encryption_required",
+          "recovery_priority",
+          "retention_policy",
+          "supersession_state",
+          "authority_receipt"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{1,80}$"
+          },
+          "source_system": {
+            "enum": [
+              "git",
+              "google_drive",
+              "local",
+              "sqlite"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "project": {
+            "type": "string",
+            "minLength": 1
+          },
+          "classification": {
+            "enum": [
+              "GOVERNANCE_AUTHORITY",
+              "SOURCE_ASSET",
+              "PRODUCTION",
+              "COMMERCIAL",
+              "SECRET_CREDENTIAL",
+              "RECOVERABLE_CACHE",
+              "HISTORICAL_PROVENANCE"
+            ]
+          },
+          "authority_level": {
+            "enum": [
+              "GOVERNED_AUTHORITY",
+              "ACCEPTED_RECEIPT",
+              "SOURCE_CUSTODY",
+              "REFERENCE",
+              "CACHE",
+              "PROVENANCE"
+            ]
+          },
+          "adapter": {
+            "enum": [
+              "local",
+              "git_tree",
+              "sqlite_backup",
+              "rclone_drive"
+            ]
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "encryption_required": {
+            "const": true
+          },
+          "recovery_priority": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "retention_policy": {
+            "type": "string",
+            "minLength": 1
+          },
+          "supersession_state": {
+            "enum": [
+              "CURRENT",
+              "SUPERSEDED",
+              "HISTORICAL",
+              "UNKNOWN"
+            ]
+          },
+          "expected_sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "current_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "current_hash": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "last_observed_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "last_successful_mirror_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "mirror_location": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "integrity_result": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "HOLD",
+              "UNKNOWN"
+            ]
+          },
+          "restoration_test_state": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "HOLD",
+              "UNKNOWN",
+              "NOT_YET_TESTED"
+            ]
+          },
+          "last_readback_result": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "allowed_root": {
+            "type": "string"
+          },
+          "export_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_identifier": {
+            "type": "string"
+          },
+          "authority_receipt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "classification_state": {
+            "enum": [
+              "ACCEPTED",
+              "UNKNOWN"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

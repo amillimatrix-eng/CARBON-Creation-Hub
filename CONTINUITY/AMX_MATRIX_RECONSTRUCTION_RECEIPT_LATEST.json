@@ -1,0 +1,25 @@
+{
+  "schema": "AMX_MATRIX_RECONSTRUCTION_RECEIPT_V1",
+  "manifest_sha256": "e95a602792fb2ce341238045d731ff50860d4c333e1631e9e6c8cd95c1c723df",
+  "required_ecosystems": [
+    "CARBON",
+    "HOBO",
+    "IRIS",
+    "JAM3S"
+  ],
+  "structural_falsification": "PASS",
+  "live_source_recovery": {
+    "CARBON": "NOT_RUN_NO_GITHUB_TOKEN",
+    "JAM3S": "NOT_RUN_NO_GITHUB_TOKEN",
+    "IRIS": "NOT_RUN_NO_GITHUB_TOKEN",
+    "HOBO": "NOT_RUN_NO_GITHUB_TOKEN"
+  },
+  "unresolved_preserved": {
+    "HOBO": "current runtime/deployment UNKNOWN_HOLD",
+    "JAM3S": "James-Bot/JAM3S_BOT/package code-level lineage HOLD",
+    "IRIS": "current editable/runtime source gap UNKNOWN_HOLD",
+    "CARBON": "complete authoritative child-pillar inventory UNKNOWN_HOLD"
+  },
+  "authority": "CANDIDATE_NO_NEW_AUTHORITY",
+  "errors": []
+}

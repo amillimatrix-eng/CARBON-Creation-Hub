@@ -1,0 +1,197 @@
+{
+  "state": "PASS",
+  "action_outcome": {
+    "outcome_id": "BR-LOCAL-MANDATE-AUDIT-20261003",
+    "worker_id": "Bounty Reaper",
+    "action": "Audit existing specialist outcome against current independent crypto mandate",
+    "result": {
+      "opportunity_id": "BR-20261002-019",
+      "worker_id": "Bounty Reaper",
+      "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+      "payout_state": "UNPROVEN",
+      "external_action": "NONE",
+      "state": "HOLD",
+      "reason": "MANDATE_FIT_NOT_PROVEN_PRESERVE_SOURCE"
+    },
+    "source_reference": "BOUNTY_REAPER_RUN_2026-10-02T1421_SAST.md",
+    "source_sha256": "627c338d7656eb12eaf18ca48100d65a76ede6115f2f8cc4bf7d1f1d9319186f",
+    "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+    "classification": "FACT",
+    "receipt_sha256": "f2260a553ae2c1b0918e7c43d371e184290d9ee9a836a9dd06930a033624ad41"
+  },
+  "test": {
+    "state": "PASS",
+    "checks": {
+      "lawful_fresh_fit_preserved": true,
+      "noncrypto_cannot_route_or_qualify": true,
+      "scope_required": true,
+      "stale_held": true,
+      "no_payout_inference": true,
+      "source_alias_duplicate_detected": true,
+      "case_sensitive_paths_preserved": true,
+      "mandate_unchanged": true
+    },
+    "receipt_sha256": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6"
+  },
+  "capability": {
+    "competency_evidence": [
+      "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6"
+    ],
+    "config": {
+      "max_source_age_hours": 168,
+      "normalize_source_url": true
+    },
+    "current_capabilities": [
+      "bounded evidence filtering",
+      "governed learning"
+    ],
+    "failed_actions": [],
+    "failure_classes": [],
+    "known_constraints": [
+      "no live target execution",
+      "no payout inference",
+      "no submission/spend/signing grant",
+      "original v0.2.0 package custody unresolved"
+    ],
+    "last_material_receipt": "ed2d5760a5dfaf3d8c4529794446fbac76c65f93f0b0778d0f5e6856948e65a6",
+    "last_verified_version": 2,
+    "mandate": "Independent crypto-centric bounty/reward evidence and authorized execution; no iSCOPE/PRI subordination; no payout without evidence.",
+    "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+    "next_justified_experiment": "Normalize public source identity without weakening scope checks.",
+    "owned_scope": [
+      "crypto bounty/reward"
+    ],
+    "rejected_improvements": [],
+    "schema": "AMX.WORKER.CAPABILITY.v1",
+    "successful_actions": [],
+    "tested_improvements": [
+      {
+        "candidate_id": "BR-SOURCE-IDENTITY-v1",
+        "test_receipt": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6",
+        "promotion_receipt": "ed2d5760a5dfaf3d8c4529794446fbac76c65f93f0b0778d0f5e6856948e65a6"
+      }
+    ],
+    "version": 2,
+    "worker_id": "Bounty Reaper"
+  },
+  "receipts": [
+    {
+      "action": "CAPABILITY_REGISTER",
+      "at": "2026-10-03T16:20:25.720418+00:00",
+      "evidence": {
+        "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+        "worker": "Bounty Reaper"
+      },
+      "previous_sha256": null,
+      "schema": "AMX.LEARNING.RECEIPT.v1",
+      "sequence": 1,
+      "state": "PASS",
+      "sha256": "8112797f8ce2c62c8c81e72764826c60d7bb2c809a01dbf1c3b5e88c9392a44c"
+    },
+    {
+      "action": "ACTION_OUTCOME",
+      "at": "2026-10-03T16:20:25.721148+00:00",
+      "evidence": {
+        "action": "Audit existing specialist outcome against current independent crypto mandate",
+        "classification": "FACT",
+        "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+        "outcome_id": "BR-LOCAL-MANDATE-AUDIT-20261003",
+        "result": {
+          "external_action": "NONE",
+          "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+          "opportunity_id": "BR-20261002-019",
+          "payout_state": "UNPROVEN",
+          "reason": "MANDATE_FIT_NOT_PROVEN_PRESERVE_SOURCE",
+          "state": "HOLD",
+          "worker_id": "Bounty Reaper"
+        },
+        "source_reference": "BOUNTY_REAPER_RUN_2026-10-02T1421_SAST.md",
+        "source_sha256": "627c338d7656eb12eaf18ca48100d65a76ede6115f2f8cc4bf7d1f1d9319186f",
+        "worker_id": "Bounty Reaper"
+      },
+      "previous_sha256": "8112797f8ce2c62c8c81e72764826c60d7bb2c809a01dbf1c3b5e88c9392a44c",
+      "schema": "AMX.LEARNING.RECEIPT.v1",
+      "sequence": 2,
+      "state": "PASS",
+      "sha256": "f2260a553ae2c1b0918e7c43d371e184290d9ee9a836a9dd06930a033624ad41"
+    },
+    {
+      "action": "LESSON",
+      "at": "2026-10-03T16:20:25.721529+00:00",
+      "evidence": {
+        "kind": "HYPOTHESIS",
+        "lesson_id": "BR-SOURCE-IDENTITY-LESSON-v1",
+        "outcome_id": "BR-LOCAL-MANDATE-AUDIT-20261003",
+        "outcome_receipt": "f2260a553ae2c1b0918e7c43d371e184290d9ee9a836a9dd06930a033624ad41",
+        "statement": "Normalize public source references to improve duplicate detection, while keeping non-crypto evidence on explicit scope HOLD.",
+        "worker_id": "Bounty Reaper"
+      },
+      "previous_sha256": "f2260a553ae2c1b0918e7c43d371e184290d9ee9a836a9dd06930a033624ad41",
+      "schema": "AMX.LEARNING.RECEIPT.v1",
+      "sequence": 3,
+      "state": "PASS",
+      "sha256": "ec1ed52e7e6d2dc4dbc525402dd5a564ae97043f5107acc4bccfb142db55eb99"
+    },
+    {
+      "action": "CANDIDATE",
+      "at": "2026-10-03T16:20:25.721915+00:00",
+      "evidence": {
+        "base_version": 1,
+        "candidate_id": "BR-SOURCE-IDENTITY-v1",
+        "changes": {
+          "normalize_source_url": true
+        }
+      },
+      "previous_sha256": "ec1ed52e7e6d2dc4dbc525402dd5a564ae97043f5107acc4bccfb142db55eb99",
+      "schema": "AMX.LEARNING.RECEIPT.v1",
+      "sequence": 4,
+      "state": "HOLD",
+      "sha256": "8e15adc9ccab74ca4c21e27f31a5ede739310201005b3ec9011998c1f0611e2c"
+    },
+    {
+      "action": "CRITIC_TEST",
+      "at": "2026-10-03T16:20:25.722415+00:00",
+      "evidence": {
+        "actor": "Critic",
+        "candidate_id": "BR-SOURCE-IDENTITY-v1",
+        "checks": {
+          "case_sensitive_paths_preserved": true,
+          "lawful_fresh_fit_preserved": true,
+          "mandate_unchanged": true,
+          "no_payout_inference": true,
+          "noncrypto_cannot_route_or_qualify": true,
+          "scope_required": true,
+          "source_alias_duplicate_detected": true,
+          "stale_held": true
+        },
+        "config_sha256": "ba018418618ea70c0241050df7be5c5687341d78cbafe3371cf7cf3192335f9e",
+        "test_suite": "bounty-filter-invariants-v1"
+      },
+      "previous_sha256": "8e15adc9ccab74ca4c21e27f31a5ede739310201005b3ec9011998c1f0611e2c",
+      "schema": "AMX.LEARNING.RECEIPT.v1",
+      "sequence": 5,
+      "state": "PASS",
+      "sha256": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6"
+    },
+    {
+      "action": "VERSIONED_PROMOTION",
+      "at": "2026-10-03T16:20:25.722942+00:00",
+      "evidence": {
+        "actor": "Root",
+        "candidate_id": "BR-SOURCE-IDENTITY-v1",
+        "classification": "PROVEN_IMPROVEMENT",
+        "from": 1,
+        "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+        "test_receipt": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6",
+        "to": 2,
+        "worker": "Bounty Reaper"
+      },
+      "previous_sha256": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6",
+      "schema": "AMX.LEARNING.RECEIPT.v1",
+      "sequence": 6,
+      "state": "PASS",
+      "sha256": "ed2d5760a5dfaf3d8c4529794446fbac76c65f93f0b0778d0f5e6856948e65a6"
+    }
+  ],
+  "execution_scope": "LOCAL_EVIDENCE_AUDIT_AND_FILTER_TEST; LIVE_RUNTIME_NOT_CLAIMED"
+}

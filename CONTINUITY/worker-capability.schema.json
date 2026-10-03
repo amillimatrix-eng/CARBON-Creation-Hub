@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Versioned worker capabilities",
+  "type": "object",
+  "required": [
+    "worker_id",
+    "mandate",
+    "mandate_sha256",
+    "owned_scope",
+    "version",
+    "current_capabilities",
+    "successful_actions",
+    "failed_actions",
+    "failure_classes",
+    "known_constraints",
+    "tested_improvements",
+    "rejected_improvements",
+    "competency_evidence",
+    "last_verified_version",
+    "last_material_receipt",
+    "next_justified_experiment"
+  ],
+  "properties": {
+    "worker_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mandate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mandate_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "owned_scope": {
+      "type": "array"
+    },
+    "version": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "current_capabilities": {
+      "type": "array"
+    },
+    "successful_actions": {
+      "type": "array"
+    },
+    "failed_actions": {
+      "type": "array"
+    },
+    "failure_classes": {
+      "type": "array"
+    },
+    "known_constraints": {
+      "type": "array"
+    },
+    "tested_improvements": {
+      "type": "array"
+    },
+    "rejected_improvements": {
+      "type": "array"
+    },
+    "competency_evidence": {
+      "type": "array"
+    },
+    "last_verified_version": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "last_material_receipt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "next_justified_experiment": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
