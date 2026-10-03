@@ -2464,8 +2464,8 @@
   },
   "version": 1,
   "updated_at": "2026-10-03T17:42:00Z",
-  "last_updated_at": "2026-10-03T17:42:00Z",
-  "last_updated_by": "iSCOPE->PRI scheduler reasoning executor",
+  "last_updated_at": "2026-10-03T18:02:00Z",
+  "last_updated_by": "MASTER_CONTROL_T10_RECONCILIATION",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
@@ -2525,6 +2525,25 @@
       "PRI": 0,
       "streak": 0
     },
-    "outcome_truth": "Five qualified OPP-IDs received attributable external progression by official email. No application submission, acceptance, contract, invoice, receivable, payment or realized revenue is proven."
-  }
+    "outcome_truth": "Five qualified OPP-IDs received attributable external progression by official email. No application submission, acceptance, contract, invoice, receivable, payment or realized revenue is proven.",
+    "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
+  },
+  "control_observations": [
+    {
+      "observed_at": "2026-10-03T18:02:00Z",
+      "owner": "MATRIX_COMMISSIONING_INSPECTOR",
+      "classification": "REGRESSED",
+      "scope": "PRI/OVERDRIVE attributable execution observability",
+      "expected": "Consequential PRI actions are persisted through or reconciled into the durable runtime/receipt chain so execution and outcome are attributable.",
+      "actual": "OVERDRIVE last_tick=2026-10-03T16:48:58.898161+00:00, sequence=12, processed=[]; Gmail independently shows fresh PRI outbound actions at approximately 2026-10-03T17:40Z to OpenTrain Support and HumanSignal Support.",
+      "proof": [
+        "overdrive/state.json@6a0364d0ff5d441bdf0ff0dcc91a738e41c125cf",
+        "GMAIL:1a102dac4d8ea5c1",
+        "GMAIL:1a102dad930442cd"
+      ],
+      "changed": "Prior runtime-inactive claim is superseded: runtime is ticking. New gap is receipt reconciliation for actions performed outside its adapter path.",
+      "remains_unproven": "No evidence yet that these fresh outbound actions were ingested into OVERDRIVE receipts or materially progressed to application acceptance/contract/invoice/payment.",
+      "upgrade_action": "REUSE existing EVIDENCE_TRANSITION/receipt machinery: ingest/reconcile externally executed consequential PRI actions into the canonical ledger/receipt chain; do not build a new pipeline or dashboard."
+    }
+  ]
 }
