@@ -2,7 +2,7 @@
   "claims": {
     "PRI|addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
       "office": "PRI",
       "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
@@ -22,7 +22,7 @@
     },
     "PRI|alignerr.com|search-quality-ai-training|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
       "office": "PRI",
       "opportunity_key": "alignerr.com|search-quality-ai-training|south-africa",
@@ -32,17 +32,17 @@
     },
     "PRI|cherryone.ai|content-partner-distribution|carbon-degree-of-business": {
       "attempts": 0,
-      "last_seen_at": "2026-10-02T07:33:01.485645+00:00",
-      "next_action": "PRI to inspect Cherry One's official Partner With Us intake, match CARBON\u00b0 evidenced capabilities/available rights to the intake, and make the outbound commercial proposition if terms remain compatible.",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
+      "next_action": "Monitor the existing Cherry One thread for submission requirements; on material response, act in-thread and preserve exact completion/rights/package requirements.",
       "office": "PRI",
       "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
       "receipt_required": true,
-      "state": "QUALIFIED",
+      "state": "SUBMITTED",
       "status": "READY"
     },
     "PRI|crowdgen.com|project-coffee-data-labeling-specialist|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Complete the official CrowdGen application when personal account/CV submission confirmation is available; do not create a duplicate account.",
       "office": "PRI",
       "opportunity_key": "crowdgen.com|project-coffee-data-labeling-specialist|south-africa",
@@ -102,7 +102,7 @@
     },
     "PRI|laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
       "office": "PRI",
       "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
@@ -132,7 +132,7 @@
     },
     "PRI|mindrift.ai|all-access-ai-training|global": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Register through the official free route and inspect live task eligibility when personal account creation/verification confirmation is available.",
       "office": "PRI",
       "opportunity_key": "mindrift.ai|all-access-ai-training|global",
@@ -142,7 +142,7 @@
     },
     "PRI|moboreels.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
       "office": "PRI",
       "opportunity_key": "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me",
@@ -162,7 +162,7 @@
     },
     "PRI|my-drama.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
       "office": "PRI",
       "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
@@ -172,7 +172,7 @@
     },
     "PRI|opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with evidence of evaluation/editing and QA capability; do not create a duplicate account.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
@@ -192,7 +192,7 @@
     },
     "PRI|opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with the existing resume/profile; do not create a duplicate account.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
@@ -202,7 +202,7 @@
     },
     "PRI|opentrain.ai|python-backend-ai-agent-developer|2026-10-01": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
@@ -212,7 +212,7 @@
     },
     "PRI|opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON\u00b0 production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
@@ -222,7 +222,7 @@
     },
     "PRI|outlier.ai|coding-expertise-ai-training|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Use the official South Africa application route to create the profile with this email when personal identity/profile/verification attestations can be completed; no duplicate account exists under this email.",
       "office": "PRI",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
@@ -232,7 +232,7 @@
     },
     "PRI|scalearmy.com|ai-implementation-specialist|remote-south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Submit through the current official Ashby application when personal profile/CV, employment-history confirmation and applicant attestations are available.",
       "office": "PRI",
       "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
@@ -252,7 +252,7 @@
     },
     "PRI|telusdigital.com|online-data-analyst|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Complete the official TELUS application when personal application submission/assessment confirmation is available; current direct role route is verified.",
       "office": "PRI",
       "opportunity_key": "telusdigital.com|online-data-analyst|south-africa",
@@ -262,7 +262,7 @@
     },
     "PRI|upwork.com|ai-automation-fix|022105205564933219360": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "PRI to submit through the existing Upwork identity/session when an authenticated execution route is available; keep proposal evidence-specific and concise.",
       "office": "PRI",
       "opportunity_key": "upwork.com|ai-automation-fix|022105205564933219360",
@@ -272,7 +272,7 @@
     },
     "PRI|upwork.com|python-django-api-backend-fixes|022102430880684043532": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "PRI to submit through the existing Upwork identity/session when authenticated access is available.",
       "office": "PRI",
       "opportunity_key": "upwork.com|python-django-api-backend-fixes|022102430880684043532",
@@ -302,7 +302,7 @@
     },
     "iSCOPE|dataannotation.tech|generalist-ai-training|south-africa-unverified": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "iSCOPE to verify South Africa eligibility from official signup/support before PRI action.",
       "office": "iSCOPE",
       "opportunity_key": "dataannotation.tech|generalist-ai-training|south-africa-unverified",
@@ -312,7 +312,7 @@
     },
     "iSCOPE|dataforcecommunity.transperfect.com|asteroid-photo-collection|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "No action; official page says the project is completed and not accepting participants.",
       "office": "iSCOPE",
       "opportunity_key": "dataforcecommunity.transperfect.com|asteroid-photo-collection|south-africa",
@@ -322,7 +322,7 @@
     },
     "iSCOPE|dataforcecommunity.transperfect.com|mirabelle-transcription-qa|remote": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "No action; official page states applications are closed.",
       "office": "iSCOPE",
       "opportunity_key": "dataforcecommunity.transperfect.com|mirabelle-transcription-qa|remote",
@@ -332,7 +332,7 @@
     },
     "iSCOPE|dataforcecommunity.transperfect.com|ronia-raw-photo-collection|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Verify access to an eligible iPhone Pro model or supported digital camera and original RAW inventory before PRI handoff.",
       "office": "iSCOPE",
       "opportunity_key": "dataforcecommunity.transperfect.com|ronia-raw-photo-collection|south-africa",
@@ -342,7 +342,7 @@
     },
     "iSCOPE|dataforcecommunity.transperfect.com|thyme-afrikaans-short-story-writer|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Confirm native-level Afrikaans and supporting writing sample fit before PRI handoff; official project pays $300 per accepted story and requires personal account/application.",
       "office": "iSCOPE",
       "opportunity_key": "dataforcecommunity.transperfect.com|thyme-afrikaans-short-story-writer|south-africa",
@@ -352,7 +352,7 @@
     },
     "iSCOPE|dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
       "office": "iSCOPE",
       "opportunity_key": "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg",
@@ -362,7 +362,7 @@
     },
     "iSCOPE|mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Verify South Africa eligibility and exact payout terms from the current official application before handoff; keep FOUND/DISCOVERED distinct from QUALIFIED.",
       "office": "iSCOPE",
       "opportunity_key": "mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392",
@@ -372,7 +372,7 @@
     },
     "iSCOPE|oneforma.com|ai-ml-projects|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
       "office": "iSCOPE",
       "opportunity_key": "oneforma.com|ai-ml-projects|south-africa",
@@ -382,7 +382,7 @@
     },
     "iSCOPE|prolific.com|participant-studies|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Deprioritize behind immediately executable AI-task platforms; consider only when onboarding capacity exists.",
       "office": "iSCOPE",
       "opportunity_key": "prolific.com|participant-studies|south-africa",
@@ -392,7 +392,7 @@
     },
     "iSCOPE|rws.com|trainai-global-talent-pool|remote": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Keep as passive fallback; this is a future-opportunity pool, not a current specific paid assignment.",
       "office": "iSCOPE",
       "opportunity_key": "rws.com|trainai-global-talent-pool|remote",
@@ -402,7 +402,7 @@
     },
     "iSCOPE|toloka.ai|individual-task-marketplace|global": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "iSCOPE to verify South Africa task availability/rates/payment before PRI onboarding.",
       "office": "iSCOPE",
       "opportunity_key": "toloka.ai|individual-task-marketplace|global",
@@ -412,7 +412,7 @@
     },
     "iSCOPE|toloka.ai|individual-task-marketplace|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Use the official Help Center or authenticated platform chat to verify South Africa eligibility, live tasks and payout; email route is closed.",
       "office": "iSCOPE",
       "opportunity_key": "toloka.ai|individual-task-marketplace|south-africa",
@@ -422,7 +422,7 @@
     },
     "iSCOPE|welodata.com|ai-service-general-application|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
       "office": "iSCOPE",
       "opportunity_key": "welodata.com|ai-service-general-application|south-africa",
@@ -432,7 +432,7 @@
     },
     "iSCOPE|welodata.com|ai-trainers-afrikaans|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Do not consume PRI time unless language fit is explicitly established and a paid project is offered.",
       "office": "iSCOPE",
       "opportunity_key": "welodata.com|ai-trainers-afrikaans|south-africa",
@@ -442,7 +442,7 @@
     },
     "iSCOPE|welodata.com|ai-trainers-zulu|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Confirm native-level Zulu and current paid-project availability before PRI handoff; do not treat talent-network entry as paid work.",
       "office": "iSCOPE",
       "opportunity_key": "welodata.com|ai-trainers-zulu|south-africa",
@@ -452,7 +452,7 @@
     },
     "iSCOPE|welodata.com|hydrus-voice-contributor-english|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T10:09:56.797390+00:00",
+      "last_seen_at": "2026-10-03T12:42:47.499499+00:00",
       "next_action": "Verify qualifying performance background, professional microphone/headphones and consent to synthesized-voice use before PRI handoff; current official rate is $20/hour.",
       "office": "iSCOPE",
       "opportunity_key": "welodata.com|hydrus-voice-contributor-english|south-africa",
@@ -461,7 +461,7 @@
       "status": "READY"
     }
   },
-  "generated_at": "2026-10-03T10:09:56.797390+00:00",
+  "generated_at": "2026-10-03T12:42:47.499499+00:00",
   "ready_count": 45,
   "version": 1
 }

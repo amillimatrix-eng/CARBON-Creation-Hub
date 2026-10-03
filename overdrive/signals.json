@@ -15,6 +15,13 @@
       "state": "RESPONDED"
     },
     {
+      "due_at": "2026-10-03T11:20:20Z",
+      "due_now": true,
+      "next_action": "Monitor the existing Cherry One thread for submission requirements; on material response, act in-thread and preserve exact completion/rights/package requirements.",
+      "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
+      "state": "SUBMITTED"
+    },
+    {
       "due_at": null,
       "due_now": false,
       "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
@@ -113,7 +120,7 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-03T10:09:56.796876+00:00",
+  "generated_at": "2026-10-03T12:42:47.499024+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
