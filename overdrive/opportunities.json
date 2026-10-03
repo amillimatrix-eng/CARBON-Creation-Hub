@@ -934,12 +934,19 @@
           "url": "https://jobs.telusdigital.com/jobs/18301194-online-data-analyst-south-africa",
           "observed_at": "2026-10-02",
           "summary": "Official TELUS Digital listing: remote Online Data Analyst — South Africa; part-time; evaluation/research tasks; South Africa residence required."
+        },
+        {
+          "kind": "CURRENT_ROUTE_VERIFIED",
+          "source": "TELUS_DIGITAL_OFFICIAL",
+          "source_url": "https://jobs.telusdigital.com/jobs/18301194-online-data-analyst-south-africa",
+          "observed_at": "2026-10-03",
+          "summary": "Official Req EG-948 remains directly accessible: remote freelance part-time South Africa Online Data Analyst; South Africa residence for five consecutive years required."
         }
       ],
       "constraints": [
         "Requires provider assessment and later ID/compliance checks before work; these are onboarding gates, not proof of paid assignment."
       ],
-      "next_action": "PRI to apply through the official TELUS route to the furthest non-human executable point; preserve assessment/ID as explicit gate if encountered.",
+      "next_action": "Complete the official TELUS application when personal application submission/assessment confirmation is available; current direct role route is verified.",
       "due_at": "2026-10-03T15:55:00Z"
     },
     "crowdgen.com|project-coffee-data-labeling-specialist|south-africa": {
@@ -963,12 +970,19 @@
           "url": "https://crowdgen.com/coffee-en-za/",
           "observed_at": "2026-10-02",
           "summary": "Official CrowdGen South Africa Project Coffee listing: $8.50/hour, remote, AI text evaluation/data labeling, up to 20h/week."
+        },
+        {
+          "kind": "CURRENT_ROUTE_VERIFIED",
+          "source": "CROWDGEN_OFFICIAL",
+          "source_url": "https://crowdgen.com/coffee-en-za/",
+          "observed_at": "2026-10-03",
+          "summary": "Official South Africa Project Coffee route remains current; application requires account/CV and provider screening."
         }
       ],
       "constraints": [
         "Application requires CV; some tasks may require microphone/video reactions."
       ],
-      "next_action": "PRI to submit through the official CrowdGen route if no existing account conflict; stop only at genuine identity/assessment gate.",
+      "next_action": "Complete the official CrowdGen application when personal account/CV submission confirmation is available; do not create a duplicate account.",
       "due_at": "2026-10-03T15:55:00Z"
     },
     "outlier.ai|coding-expertise-ai-training|south-africa": {
@@ -1014,17 +1028,32 @@
           "thread_id": "1a0fedc93e232877",
           "observed_at": "2026-10-02T23:04:23Z",
           "summary": "PRI asked official support to confirm existing-account status before any application/account action."
+        },
+        {
+          "kind": "ACCOUNT_LOOKUP_RESPONSE",
+          "source": "GMAIL",
+          "source_id": "1a0ff7f136a2fd05",
+          "thread_id": "1a0fedc93e232877",
+          "observed_at": "2026-10-03T04:01:21Z",
+          "summary": "Outlier support found no account under the current email and directed application through the official signup route; duplicate-account risk for this email is cleared."
+        },
+        {
+          "kind": "CURRENT_ROUTE_VERIFIED",
+          "source": "OUTLIER_OFFICIAL",
+          "source_url": "https://outlier.ai/",
+          "observed_at": "2026-10-03",
+          "summary": "Official current flow requires profile creation, skills/background entry, identity verification and skills validation before work; South Africa appears among current country examples."
         }
       ],
       "constraints": [
         "Requires profile, identity confirmation and skills validation before earning."
       ],
-      "next_action": "Monitor Outlier support for confirmation of an existing account or secure recovery route; then resume the official South Africa coding application without creating a duplicate account.",
-      "due_at": "2026-10-06T23:04:23Z",
+      "next_action": "Create the official application/profile with the current email when personal account-creation and identity-verification confirmation is available; no duplicate account exists under this email.",
+      "due_at": null,
       "recipient": "support@outlier.ai",
       "thread_id": "1a0fedc93e232877",
       "message_id": "1a0fedc93e232877",
-      "last_action_at": "2026-10-02T23:04:23Z"
+      "last_action_at": "2026-10-03T04:01:21Z"
     },
     "alignerr.com|search-quality-ai-training|south-africa": {
       "organization": "Alignerr",
@@ -1099,12 +1128,19 @@
           "url": "https://mindrift.ai/",
           "observed_at": "2026-10-02",
           "summary": "Mindrift advertises AI training work; entry-level $15-$30/h and expert $60-$100+/h on project-based platform."
+        },
+        {
+          "kind": "CURRENT_ROUTE_VERIFIED",
+          "source": "MINDRIFT_OFFICIAL",
+          "source_url": "https://mindrift.ai/apply",
+          "observed_at": "2026-10-03",
+          "summary": "Official live apply surface currently lists design and Python/data-scraping roles up to $45-$50/hour, plus all-access task route; registration and profile verification remain required."
         }
       ],
       "constraints": [
         "No existing Mindrift/Toloka account history found in Gmail; registration/authentication is still required before task execution."
       ],
-      "next_action": "PRI to register through the free official route and inspect live all-access tasks; do not wait for specialized-project interview path.",
+      "next_action": "Register through the official free route and inspect live task eligibility when personal account creation/verification confirmation is available.",
       "due_at": "2026-10-03T16:15:00Z"
     },
     "oneforma.com|ai-ml-projects|south-africa": {
@@ -1143,17 +1179,26 @@
           "thread_id": "1a0fedc966c2c687",
           "observed_at": "2026-10-02T23:04:24Z",
           "summary": "iSCOPE requested current paid South Africa projects, rates, requirements and official application routes."
+        },
+        {
+          "kind": "SUPPORT_CASE_ACKNOWLEDGED",
+          "source": "GMAIL",
+          "source_id": "1a0fede3d6e16c33",
+          "thread_id": "1a0fedc966c2c687",
+          "observed_at": "2026-10-03T04:01:21Z",
+          "case_id": "CAS-76245-N9W2F5",
+          "summary": "OneForma acknowledged the qualification request and opened support case CAS-76245-N9W2F5; no project/rate/eligibility answer yet."
         }
       ],
       "constraints": [
         "Exact South-Africa-compatible project, rate and immediate task availability must be selected before qualification; no prior OneForma account email found."
       ],
-      "next_action": "Await official response identifying exact South Africa projects, rates and requirements; qualify only executable paid matches.",
+      "next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
       "due_at": "2026-10-06T23:04:24Z",
       "recipient": "contact@oneforma.com",
       "thread_id": "1a0fedc966c2c687",
       "message_id": "1a0fedc966c2c687",
-      "last_action_at": "2026-10-02T23:04:24Z"
+      "last_action_at": "2026-10-03T04:01:21Z"
     },
     "welodata.com|ai-trainers-afrikaans|south-africa": {
       "organization": "Welo Data / Welocalize",
@@ -1340,9 +1385,9 @@
       "recipient": "tolokercare@toloka.ai",
       "thread_id": "1a0fedc94775d4ff",
       "message_id": "1a0fedc94775d4ff",
-      "last_action_at": "2026-10-02T23:04:23Z",
-      "due_at": "2026-10-06T23:04:23Z",
-      "next_action": "Await authoritative eligibility, live-task and payout confirmation before onboarding.",
+      "last_action_at": "2026-10-03T04:01:21Z",
+      "due_at": null,
+      "next_action": "Use the official Help Center or authenticated platform chat to verify South Africa eligibility, live tasks and payout; email route is closed.",
       "evidence": [
         {
           "kind": "CURRENT_PRIMARY_SOURCE",
@@ -1358,6 +1403,14 @@
           "thread_id": "1a0fedc94775d4ff",
           "observed_at": "2026-10-02T23:04:23Z",
           "summary": "iSCOPE asked official Toloker Care to confirm South Africa onboarding, task availability and payout methods."
+        },
+        {
+          "kind": "UNMONITORED_MAILBOX_RESPONSE",
+          "source": "GMAIL",
+          "source_id": "1a0fedca931a8120",
+          "thread_id": "1a0fedc94775d4ff",
+          "observed_at": "2026-10-03T04:01:21Z",
+          "summary": "Toloka stated the contacted mailbox is unmonitored and directed support requests to the Help Center or in-platform chat."
         }
       ]
     },
@@ -1390,6 +1443,14 @@
           "thread_id": "1a0fedca0c7c2f71",
           "observed_at": "2026-10-02T23:04:27Z",
           "summary": "PRI requested the current submission route and minimum package without overstating rendered scope."
+        },
+        {
+          "kind": "AUTOMATED_ACKNOWLEDGEMENT",
+          "source": "GMAIL",
+          "source_id": "1a0fedcb0998221c",
+          "thread_id": "1a0fedca0c7c2f71",
+          "observed_at": "2026-10-03T04:01:21Z",
+          "summary": "DramaBox acknowledged receipt and said the team will respond; this is not external acceptance or commercial review."
         }
       ]
     },
@@ -1399,14 +1460,14 @@
       "opportunity": "content-partnership",
       "title": "The Dragon Who Could Not Claim Me",
       "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
+      "state": "RESPONDED",
       "execution_owner": "PRI",
       "recipient": "support@my-drama.com",
       "thread_id": "1a0fedc9bdd30527",
       "message_id": "1a0fedc9bdd30527",
-      "last_action_at": "2026-10-02T23:04:25Z",
+      "last_action_at": "2026-10-03T04:01:21Z",
       "due_at": "2026-10-06T23:04:25Z",
-      "next_action": "Monitor for routing to acquisition/production; provide controlled sample and exact rights/technical facts only when requested.",
+      "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
       "evidence": [
         {
           "kind": "CURRENT_PRIMARY_ROUTE",
@@ -1422,6 +1483,14 @@
           "thread_id": "1a0fedc9bdd30527",
           "observed_at": "2026-10-02T23:04:25Z",
           "summary": "PRI requested routing to content acquisition/production and current package requirements."
+        },
+        {
+          "kind": "BUYER_ROUTING_RESPONSE",
+          "source": "GMAIL",
+          "source_id": "1a0fedf7e0d1e8c8",
+          "thread_id": "1a0fedc9bdd30527",
+          "observed_at": "2026-10-03T04:01:21Z",
+          "summary": "My Drama confirmed the proposal was passed to the appropriate team for review and follow-up on submission route and minimum review package."
         }
       ]
     },
@@ -1468,9 +1537,9 @@
       "recipient": "contact@goodshort.com",
       "thread_id": "1a0fedd72ae6fde3",
       "message_id": "1a0fedd72ae6fde3",
-      "last_action_at": "2026-10-02T23:05:20Z",
-      "due_at": "2026-10-06T23:05:20Z",
-      "next_action": "Monitor for business-team routing and verified package requirements; no duplicate approach.",
+      "last_action_at": "2026-10-03T04:01:21Z",
+      "due_at": "2026-10-07T04:01:21Z",
+      "next_action": "Monitor the existing clarified thread for business-team routing and verified package requirements; no duplicate approach.",
       "evidence": [
         {
           "kind": "CURRENT_PRIMARY_ROUTE",
@@ -1486,31 +1555,59 @@
           "thread_id": "1a0fedd72ae6fde3",
           "observed_at": "2026-10-02T23:05:20Z",
           "summary": "PRI requested routing to the business content-acquisition/production team and current package requirements."
+        },
+        {
+          "kind": "AUTOMATED_RESPONSE_MISROUTED",
+          "source": "GMAIL",
+          "source_id": "1a0fedda19ef40df",
+          "thread_id": "1a0fedda19ef40df",
+          "observed_at": "2026-10-03T04:01:21Z",
+          "summary": "GoodShort's automated response treated the business enquiry as a subscription cancellation; this did not constitute commercial routing or rejection."
+        },
+        {
+          "kind": "GMAIL_SENT_CLARIFICATION",
+          "source": "GMAIL",
+          "source_id": "1a0fff0a3230624f",
+          "thread_id": "1a0fedda19ef40df",
+          "observed_at": "2026-10-03T04:01:21Z",
+          "summary": "PRI replied in-thread, clarified this is a content licensing/production-partnership enquiry, and requested routing to the content acquisition/licensing/production team."
         }
       ]
     }
   },
   "version": 1,
   "updated_at": "2026-10-02T16:15:00Z",
-  "last_updated_at": "2026-10-02T23:05:20Z",
+  "last_updated_at": "2026-10-03T04:01:21Z",
   "last_updated_by": "iSCOPE_PRI_EXECUTION_ENGINE",
   "last_run": {
     "execution_origin": "SCHEDULER_AUTOMATION",
-    "candidates_inspected": 32,
+    "candidates_inspected": 24,
+    "surfaces_categories": [
+      "AI evaluation/work platforms",
+      "creative/vertical-drama buyers",
+      "direct current job listings",
+      "support/account routes"
+    ],
+    "full_ledger_count": 37,
     "material_actions": [
-      "1a0fedc93e232877",
-      "1a0fedc966c2c687",
-      "1a0fedc94775d4ff",
-      "1a0fedca0c7c2f71",
-      "1a0fedc9bdd30527",
-      "1a0fedd719d7bfdd",
-      "1a0fedd72ae6fde3"
+      "1a0fff0a3230624f",
+      "1a0fedf7e0d1e8c8",
+      "1a0ff7f136a2fd05",
+      "https://jobs.telusdigital.com/jobs/18301194-online-data-analyst-south-africa",
+      "https://crowdgen.com/coffee-en-za/",
+      "https://mindrift.ai/apply"
     ],
     "kpi_delta": {
       "iSCOPE": 0,
       "PRI": 0,
       "converted": 0
     },
-    "t10": "Seven external actions were sent and prior nine receipts reconciled; no external acceptance, contract, invoice or payment is proven."
+    "kpi_cumulative": {
+      "iSCOPE": 0,
+      "PRI": 0,
+      "converted": 0,
+      "streak": 0
+    },
+    "t10": "One in-thread commercial clarification was sent; one buyer routed the proposal for review; four current execution routes were verified and inbound support evidence was reconciled. No external acceptance, contract, invoice, attributable payment or realized revenue is proven."
   }
 }
