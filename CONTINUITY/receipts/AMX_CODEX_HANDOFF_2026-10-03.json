@@ -1,0 +1,447 @@
+{
+  "schema": "AMX.CODEX.HANDOFF.v1",
+  "at": "2026-10-03T17:22:22.477884+00:00",
+  "state": "HOLD",
+  "directive_closed": false,
+  "repository": "amillimatrix-eng/CARBON-Creation-Hub",
+  "branch": "codex/amx-continuity-security-20261003",
+  "pull_request": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/7",
+  "tested_implementation_commit": "567c8c0737294da15c1dc16a7974eef9f02c217d",
+  "initial_remote_baseline": "9701ac157affc5b123928fb1fb1027396406dfff",
+  "recovery_inventory": {
+    "prior_implementation_recovered": false,
+    "evidence": "Accessible workspace/.git/.codex/.agents contained no prior source, patches, generated implementation, tests or commissioning receipts. Original session discovery did not constitute implementation.",
+    "baseline_import": {
+      "files": 147,
+      "bytes": 608414,
+      "git_blobs_and_root_tree_verified": true
+    },
+    "newer_remote_changes_preserved": true,
+    "publication_transport": "Connected GitHub Git Data API; shell proxy clone unavailable"
+  },
+  "implementation_readback": {
+    "files": 40,
+    "mismatches": []
+  },
+  "tested_implementation_file_hashes": {
+    ".github/workflows/evidence-house-tests.yml": {
+      "git_blob_sha": "aecec2a441f72f4b5642e35edc066345aef854f3",
+      "sha256": "6c2197eaa789bd11f53b0bd71d3b156298e353b5ea65e77d2f2c551d6911dda3"
+    },
+    ".github/workflows/overdrive-recovery.yml": {
+      "git_blob_sha": "8d414d0bdfb640ab38386d54f49f85f2f4e9d3b8",
+      "sha256": "83aff3dc1b12c1514020c9cffb1461cd9ba04f4d3aea4208b2d91a2fba50c891"
+    },
+    ".gitignore": {
+      "git_blob_sha": "0d98e1ad9959816915074fe53b6515d725549486",
+      "sha256": "bcdfe6b4cb27509eec6cf701d3086384ae695a94c1cf4d50e54da6ed7dc5c921"
+    },
+    "AGENTS.md": {
+      "git_blob_sha": "40696afe57144e60dc2dbcda5ed3a340d6f974de",
+      "sha256": "496e1385f41a4afe10d5a367cb69276f913d8bbbf8d0ea1f1869d00fe242abac"
+    },
+    "AMX/ROOT/AMX_WORKER_BENCHMARK_REGISTRY_V1.json": {
+      "git_blob_sha": "759e34e6de4dceb488ca0ae6f097984be7e0232e",
+      "sha256": "7556d077668e7b7a3a0492a944a4b9a271bc212e822ac8cd5ba992c18fb6211b"
+    },
+    "BLACK/continuity.py": {
+      "git_blob_sha": "ae9cfc2e74afa3daf90520c6b30162c1dfda4b7d",
+      "sha256": "31d095658e84c028ea96e4da8ad18cbb0f97027f2036d12d43e1f7afe567cb69"
+    },
+    "BLACK/install-continuity.sh": {
+      "git_blob_sha": "3f419f19b97f7337deca8dbe656912d1e543f832",
+      "sha256": "b4e5020666f1e7f30dd558d63b7636796d4ef2dd4358f10abc2d7d92dbc2df63"
+    },
+    "BLACK/worker.py": {
+      "git_blob_sha": "8f02150657c616b844e0a068d6ba79de0b5581f2",
+      "sha256": "9c9991c53a7a9cf58fb5081103436f593e6c30e1f6c273195bd8c836d7c87c74"
+    },
+    "CONTINUITY/AMX_MATRIX_RECONSTRUCTION_RECEIPT_LATEST.json": {
+      "git_blob_sha": "bc1fdeb58d13e4d4236d5a76e04f7efb0180e0ef",
+      "sha256": "dc00b81f80596cf12467300a89d6dd6dbbe8ec55d7080728b7d31269f3111872"
+    },
+    "CONTINUITY/ARCHITECTURE.md": {
+      "git_blob_sha": "8d1f53b62c5c713fc0e6ce957ed5548b3f68ed81",
+      "sha256": "1327ae9158ca47ab7b377679b596706bd359b4ab843e8f297be515c61be0afae"
+    },
+    "CONTINUITY/CONTROL_PLANE_COURSE_CORRECTION.md": {
+      "git_blob_sha": "e3ad7dea31419af8185e334c691354499ea87340",
+      "sha256": "fcd5feb4c5c823507d29452032aca1eaf41363f09a3ef5002843cdbab2518a34"
+    },
+    "CONTINUITY/CONTROL_PLANE_PLAN.md": {
+      "git_blob_sha": "8e0c2ced37452327e1b6bce4324ecc8743527603",
+      "sha256": "735b0fb69f55e68cc679cddaa8af6da81b9250b4900d59e974095d883ca7b8fc"
+    },
+    "CONTINUITY/PROVIDER_DEPENDENCIES.md": {
+      "git_blob_sha": "ba31b3e56f409ffe5070173ffab39b5b8d7d21a9",
+      "sha256": "142e4ccba717fc1c57b9afc23041c5c287826b27b0a4d8c0390b59695f606511"
+    },
+    "CONTINUITY/RUNBOOK.md": {
+      "git_blob_sha": "2985e078da6ad213e39114113c1ce52483ca4b89",
+      "sha256": "b09142838dfaf15449b0c37078b847d450201c68f29e5e9dcd1e07678ad14601"
+    },
+    "CONTINUITY/SECURITY_REVIEW.md": {
+      "git_blob_sha": "d4f67df5d0936b1493f3d1cf26f1bbd25c8747c9",
+      "sha256": "5fff4e2490a2a768f3a9f0cb7626e74a0cc9179bf1c99bed21b58257cc7cc881"
+    },
+    "CONTINUITY/THREAT_MODEL.md": {
+      "git_blob_sha": "3b60194c77971bc4745bd790edc200e7db489f69",
+      "sha256": "d63b86fa4e58d1eaa1c0cd11186837c8789874c6779dffe054974f06d6472c81"
+    },
+    "CONTINUITY/capability-grants.json": {
+      "git_blob_sha": "70ad3ff300185a35c24c0ae31c6eada05512d5fa",
+      "sha256": "5485eba7754546216b9d8bb39f5105dbea05291649897aa9de12a09d7b1c257f"
+    },
+    "CONTINUITY/commission.py": {
+      "git_blob_sha": "f17402ffc419a84557a18be6d71b85e268471050",
+      "sha256": "e9a7c9e007d002341eff4f211dccd6721eeb3e5beec2b8b7cfb497ec41b03c12"
+    },
+    "CONTINUITY/receipts/AMX_BOUNTY_CAPABILITY_2026-10-03.json": {
+      "git_blob_sha": "0302388e1fabb10ab6aa7139e2c6e21d78e3eba7",
+      "sha256": "e6f03f550e9ea7331f36f3f0633ca928196a403522a55d41b14596991a39ba08"
+    },
+    "CONTINUITY/receipts/AMX_CODEX_COMMISSIONING_2026-10-03.json": {
+      "git_blob_sha": "3c0ca221d8a0c1791888fb221efb4a78ef6b3aca",
+      "sha256": "98e44b4d5f6522829d3a4632609edb786fee729f7bf2711c499a69e406794f32"
+    },
+    "CONTINUITY/receipts/AMX_CODEX_COMMISSIONING_2026-10-03.md": {
+      "git_blob_sha": "a9f00aaaeaf0816d8c0499309ef6ceb665df8db3",
+      "sha256": "2cc2c47fa1051e0a1ebfe3b250efe83afa963821f05138fa2ece5c4c2d6fc104"
+    },
+    "CONTINUITY/receipts/AMX_CODEX_LEARNING_CYCLE_2026-10-03.json": {
+      "git_blob_sha": "dc6c0baa7bb47211010760124a5e7ce944bbbfe7",
+      "sha256": "33ff5347409c765a7c48703683af3b201db58bcae26f1b42a15e0c603e19b0ff"
+    },
+    "CONTINUITY/receipts/AMX_CODEX_SECURITY_REVIEW_2026-10-03.json": {
+      "git_blob_sha": "6e837f292163d1d16a792a91ce25b8ba95ba594a",
+      "sha256": "181f75fb619de6859550ae5b5a745dd5ea197d1afe1cf681284b68bf8f9de14d"
+    },
+    "CONTINUITY/security_scan.py": {
+      "git_blob_sha": "6f3c93b4ed9641d7f7e9517e3a463254c69dda52",
+      "sha256": "c1c4ae04f3ce0a646dfd1372df9412d4e6e0c45f94aec0d675cf104ce8f70b2d"
+    },
+    "CONTINUITY/source-registry.json": {
+      "git_blob_sha": "21e1d1787908857857c9d3d92c662f6f7a81c10e",
+      "sha256": "9c43234ef0102e6c3ea1b2f24fa2b91fc5557e70641663f8b1c2afda6b17cd25"
+    },
+    "CONTINUITY/source-registry.schema.json": {
+      "git_blob_sha": "43f31483cc105abf4338b263cf780f348e0d764c",
+      "sha256": "c3e2c5b122b3d4ba2597ca1316bd5d1e4c27852c18a8946251ee7620fa25d08c"
+    },
+    "CONTINUITY/worker-capability.schema.json": {
+      "git_blob_sha": "5f6b433b199712c5cec51bb720181cbb09c5c38e",
+      "sha256": "f42eebfaba6dd60d7c3ab6da52740d3c1024797929b6677454c1416c65cfcfd9"
+    },
+    "CONTINUITY/worker-learning.schema.json": {
+      "git_blob_sha": "a91865dc5c752a54b8a68276da87da94261e6e95",
+      "sha256": "c67c6c4ab9dbc77c4e84e026568d49f7c6d9ca39c45fc95e2eb33092e99ac9ce"
+    },
+    "CURRENT_STATE.md": {
+      "git_blob_sha": "eee14b783704fffb9ec839e96c27582a45e23f19",
+      "sha256": "5100e10e402ef44e45a407a22c2727c6383e650cdc41f90ef17246dd178b1229"
+    },
+    "backend/app.py": {
+      "git_blob_sha": "1e4d49eae3cb24139762c1125dec3064aa1aea10",
+      "sha256": "7a603364cdc07c912350c7e6ca961beb02fc07c021dc5b27181c4298f862f240"
+    },
+    "backend/assets.py": {
+      "git_blob_sha": "68ebf83915e77b770e5e8c5ed5d6984abbcaa5a6",
+      "sha256": "bd813bc858738be0f5d14caa00028245077951e23b3855104a0f84369a813d1a"
+    },
+    "backend/continuity.py": {
+      "git_blob_sha": "33a2d42284b60d8faab8fdfc158845202942aa61",
+      "sha256": "691f2042e9bfb60dfb0983533c5f394504a27d9ca2101625d2ec08e730734a51"
+    },
+    "backend/security.py": {
+      "git_blob_sha": "e4b5206aaac5c9c1f5635340a24ef087895f80f4",
+      "sha256": "0a913451ca4bd9c03d6a60dcc4aff3b14742c768e913ec056b449cef978b1461"
+    },
+    "backend/sources.py": {
+      "git_blob_sha": "3bde4e070509b716709d2ee850209aab8d738151",
+      "sha256": "1047affb1a8f827fdee4368e6867f9a4bf70b37009c8c35a3c51f36d86267b10"
+    },
+    "backend/state.py": {
+      "git_blob_sha": "7409b4e2015f8c309b83f0a895787d6c9d0fe55f",
+      "sha256": "9250cba76af02b77109eec11f9ec4d39222c6545515707fd1e71044d4dc08809"
+    },
+    "evidence/index.json": {
+      "git_blob_sha": "1eb00646f368764edf48c5d6bacbeb8034d05e8f",
+      "sha256": "051d4b53ff64a042644e0d7636cc770a0f0fec35dfcbe3ba141f61d1e3cc06e2"
+    },
+    "overdrive/evidence_learning.py": {
+      "git_blob_sha": "e66f35d1838e9c14571d592fe1cba90047167252",
+      "sha256": "b2232a4398c8fedf72c6a2083cdc559aa6eb2d23f1fc70c91419b4f2d855b9ce"
+    },
+    "overdrive/runner.py": {
+      "git_blob_sha": "5e0c008f2eabbdda2ec7b554e24c7b5c60eeb3c7",
+      "sha256": "dfa605ece637294b471b79f9a4c24a4cd36e295684cbe10464f4c4f5e0709f9f"
+    },
+    "requirements.txt": {
+      "git_blob_sha": "6c469ab6c91bb9bc6e254201961b4a1f5bc45582",
+      "sha256": "b690caf9b790420324ed8c7500b1c0a708cb69402f54b049ef3d800c81c271b6"
+    },
+    "tests/test_control_plane.py": {
+      "git_blob_sha": "256e013f251b95b3d732fb13e85c6431a11e0162",
+      "sha256": "c57498ea66d43402237f014e51fab4cae6038188fe26f44ded07eaae4000ab25"
+    }
+  },
+  "changed_files": [
+    ".github/workflows/evidence-house-tests.yml",
+    ".github/workflows/overdrive-recovery.yml",
+    ".gitignore",
+    "AGENTS.md",
+    "AMX/ROOT/AMX_WORKER_BENCHMARK_REGISTRY_V1.json",
+    "BLACK/continuity.py",
+    "BLACK/install-continuity.sh",
+    "BLACK/worker.py",
+    "CONTINUITY/AMX_MATRIX_RECONSTRUCTION_RECEIPT_LATEST.json",
+    "CONTINUITY/ARCHITECTURE.md",
+    "CONTINUITY/CONTROL_PLANE_COURSE_CORRECTION.md",
+    "CONTINUITY/CONTROL_PLANE_PLAN.md",
+    "CONTINUITY/PROVIDER_DEPENDENCIES.md",
+    "CONTINUITY/RUNBOOK.md",
+    "CONTINUITY/SECURITY_REVIEW.md",
+    "CONTINUITY/THREAT_MODEL.md",
+    "CONTINUITY/capability-grants.json",
+    "CONTINUITY/commission.py",
+    "CONTINUITY/receipts/AMX_BOUNTY_CAPABILITY_2026-10-03.json",
+    "CONTINUITY/receipts/AMX_CODEX_COMMISSIONING_2026-10-03.json",
+    "CONTINUITY/receipts/AMX_CODEX_COMMISSIONING_2026-10-03.md",
+    "CONTINUITY/receipts/AMX_CODEX_HANDOFF_2026-10-03.json",
+    "CONTINUITY/receipts/AMX_CODEX_HANDOFF_2026-10-03.md",
+    "CONTINUITY/receipts/AMX_CODEX_LEARNING_CYCLE_2026-10-03.json",
+    "CONTINUITY/receipts/AMX_CODEX_SECURITY_REVIEW_2026-10-03.json",
+    "CONTINUITY/security_scan.py",
+    "CONTINUITY/source-registry.json",
+    "CONTINUITY/source-registry.schema.json",
+    "CONTINUITY/worker-capability.schema.json",
+    "CONTINUITY/worker-learning.schema.json",
+    "CURRENT_STATE.md",
+    "backend/app.py",
+    "backend/assets.py",
+    "backend/continuity.py",
+    "backend/security.py",
+    "backend/sources.py",
+    "backend/state.py",
+    "evidence/index.json",
+    "overdrive/evidence_learning.py",
+    "overdrive/runner.py",
+    "requirements.txt",
+    "tests/test_control_plane.py"
+  ],
+  "tests": {
+    "state": "PASS",
+    "pytest_passed": 54,
+    "pytest_warnings": 1,
+    "control_plane_tests": 37,
+    "http_smoke": "PASS",
+    "systemd_units_validation": "PASS",
+    "installer_stage_and_reinstallation_preservation": "PASS",
+    "container_build": "PASS",
+    "container_runtime": "PASS",
+    "corruption_and_offline_restore": "PASS",
+    "worker_learning_and_role_separation": "PASS"
+  },
+  "ci": {
+    "run_id": 37140021542,
+    "url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/37140021542",
+    "head_sha": "567c8c0737294da15c1dc16a7974eef9f02c217d",
+    "status": "completed",
+    "conclusion": "success",
+    "commission_summary": {
+      "state": "HOLD",
+      "tests": {
+        "state": "PASS",
+        "tests_run": 37,
+        "failures": 0,
+        "errors": 0,
+        "output_sha256": "498e25aeeb4fd640b8547899e7d30d840fe4878389378d9429db299eb56e9a7b"
+      },
+      "restore": {
+        "snapshot": "ba286ecb120ab5b9087443f1ce2b6181af7fb5abffb0a090249986ec9ebaf697",
+        "files_verified": 207,
+        "manifest_sha256": "ba286ecb120ab5b9087443f1ce2b6181af7fb5abffb0a090249986ec9ebaf697",
+        "authority_rule": "MIRROR_RECOVERY_IS_NOT_GOVERNANCE",
+        "state": "PASS",
+        "receipt_sha256": "c298381c0ae7081986435dcbaacc5c96da41fe317cbe250015a344b1b4007334",
+        "compared": true
+      },
+      "receipt_sha256": "d7ce95a92efdfad08d91a7ede64e20dfafa277b3010ac51ddf5595a98c7c23cb"
+    },
+    "artifact": {
+      "id": 11280013751,
+      "name": "amx-control-plane-567c8c0737294da15c1dc16a7974eef9f02c217d",
+      "size_in_bytes": 9186,
+      "url": "https://api.github.com/repos/amillimatrix-eng/CARBON-Creation-Hub/actions/artifacts/11280013751",
+      "archive_download_url": "https://api.github.com/repos/amillimatrix-eng/CARBON-Creation-Hub/actions/artifacts/11280013751/zip",
+      "expired": false,
+      "created_at": "2026-10-03T17:18:41Z",
+      "expires_at": "2026-11-02T17:18:40Z",
+      "updated_at": "2026-10-03T17:18:41Z",
+      "digest": "sha256:8131873743680f5ec9cbf8ceb40990c395a4783b0562c1f4a58840387810dfed",
+      "workflow_run": {
+        "id": 37140021542,
+        "repository_id": 1396131938,
+        "head_repository_id": 1396131938,
+        "head_branch": "codex/amx-continuity-security-20261003",
+        "head_sha": "567c8c0737294da15c1dc16a7974eef9f02c217d"
+      }
+    }
+  },
+  "learning_receipt": "CONTINUITY/receipts/AMX_CODEX_LEARNING_CYCLE_2026-10-03.json",
+  "learning_attribution": {
+    "implementation_sha256": "b2232a4398c8fedf72c6a2083cdc559aa6eb2d23f1fc70c91419b4f2d855b9ce",
+    "code_unchanged_from_retained_local_cycle_receipt": true,
+    "executed_again_in_pinned_CI": true,
+    "external_bounty_execution": "NONE",
+    "payout": "UNPROVEN"
+  },
+  "acceptance": {
+    "A_REPOSITORY": {
+      "state": "PASS",
+      "evidence": "Clean GitHub checkout, declared dependencies, 54 tests, HTTP smoke, service-unit validation, container build/runtime. All 40 implementation blobs read back with matching Git hashes."
+    },
+    "B_BLACK": {
+      "state": "HOLD",
+      "evidence": [
+        {
+          "path": "BLACK/receipts/BLACK-CONTINUITY-SECURITY-PREFLIGHT-20261003.json",
+          "git_blob_sha": "3ef4850755022f1189fa5738d3e8e0bc5fbc5afe",
+          "exit_code": 0,
+          "state_label": "RESOLVED",
+          "started": "2026-10-03T16:01:07.733328+00:00",
+          "finished": "2026-10-03T16:01:16.943728+00:00"
+        },
+        {
+          "path": "BLACK/receipts/BLACK-CONTINUITY-INSTALL-PREFLIGHT-20261003.json",
+          "git_blob_sha": "60641c1fd0e367fc9f1cc2f740f14de85c1b5f8d",
+          "exit_code": 124,
+          "state_label": "RESOLVED",
+          "started": "2026-10-03T16:07:29.017114+00:00",
+          "finished": "2026-10-03T16:08:09.555112+00:00"
+        },
+        {
+          "path": "BLACK/receipts/BLACK-CONTINUITY-USER-PREFLIGHT-20261003.json",
+          "git_blob_sha": "97d53b77e625129d27568d4d6a4b1875885b0d52",
+          "exit_code": 124,
+          "state_label": "RESOLVED",
+          "started": "2026-10-03T16:28:35.908829+00:00",
+          "finished": "2026-10-03T16:29:33.532550+00:00"
+        },
+        {
+          "path": "BLACK/receipts/BLACK-CONTINUITY-NATIVE-PREFLIGHT-20261003.json",
+          "git_blob_sha": "762304d4baf6045930f1793e5f43f3e30ba852d8",
+          "exit_code": 124,
+          "state_label": "RESOLVED",
+          "started": "2026-10-03T16:44:33.961492+00:00",
+          "finished": "2026-10-03T16:45:18.960558+00:00"
+        }
+      ],
+      "reason": "Existing service was read back once; three later command preflights timed out. New hardened installation/timer/encrypted live restore and complete boot path are not proved."
+    },
+    "C_DRIVE_LOSS": {
+      "state": "HOLD",
+      "passed_scope": "Offline restore after fixture source removal; encrypted registered repository reconstruction and authority distinction.",
+      "remaining_scope": "Private governed Drive estate has no enrolled BLACK read-only OAuth/inventory/mirror receipt."
+    },
+    "D_INTEGRITY": {
+      "state": "PASS",
+      "scope": "Deliberate chunk/manifest corruption, wrong key, tampered receipt/truncation, and failed required source cannot silently replace accepted recovery state."
+    },
+    "E_RESTORE": {
+      "state": "PASS",
+      "scope": "207 registered repository files reconstructed and compared in clean CI; new temporary targets; no live authority overwritten. Private estate remains outside tested scope.",
+      "receipt": {
+        "snapshot": "ba286ecb120ab5b9087443f1ce2b6181af7fb5abffb0a090249986ec9ebaf697",
+        "files_verified": 207,
+        "manifest_sha256": "ba286ecb120ab5b9087443f1ce2b6181af7fb5abffb0a090249986ec9ebaf697",
+        "authority_rule": "MIRROR_RECOVERY_IS_NOT_GOVERNANCE",
+        "state": "PASS",
+        "receipt_sha256": "c298381c0ae7081986435dcbaacc5c96da41fe317cbe250015a344b1b4007334",
+        "compared": true
+      }
+    },
+    "F_SECRETS": {
+      "state": "PASS",
+      "scope": {
+        "schema": "AMX.SECURITY.REVIEW.v1",
+        "state": "PASS",
+        "files_scanned": 178,
+        "local_commits_scanned": 4,
+        "remote_file_patches_scanned": 1035,
+        "history_scope": "All reachable commit messages and text-file patches at the pinned tested implementation commit; no missing patch records",
+        "findings": [],
+        "raw_secrets_disclosed": false,
+        "rotation_action": "If an actual production credential is identified, revoke/rotate at its issuer, replace the scoped local binding, remove exposed current material and re-scan; a commit deletion does not revoke a credential.",
+        "history_reference": "567c8c0737294da15c1dc16a7974eef9f02c217d",
+        "remote_commits_scanned": 350,
+        "history_reached_initial_commit": true,
+        "oldest_commit_at": "2026-09-30T09:55:22Z",
+        "missing_commit_records": 0,
+        "missing_changed_file_patches": 0,
+        "limitations": [
+          "Pattern scan cannot recognize every possible arbitrary credential string.",
+          "External provider accounts, private local credentials and other repositories are outside this repository scan."
+        ],
+        "receipt_sha256": "2a7a067d2ec9db9fb9885ac5136fe4c8a3c110d2737b538342260b59e0a1b39e"
+      },
+      "evidence": "No credential signatures found; .env/runtime ignores, private-version access, least grants, secret permissions and distinct role bindings verified."
+    },
+    "G_WORKER_LEARNING": {
+      "state": "PASS",
+      "scope": "Existing Reaper source evidence audit -> outcome -> receipt -> hypothesis -> bounded candidate -> Critic tests -> Root version-CAS promotion. Worker token, shared role bindings and untested/mandate changes rejected.",
+      "live_runtime_state": "HOLD until persistent storage and separated service bindings are read back."
+    },
+    "H_BOUNTY_REAPER": {
+      "state": "PASS",
+      "scope": "Existing independent crypto bounty/reward mandate preserved; source normalization improves duplicate filtering; original package custody limitation retained. No submission, accepted bounty or payout inferred."
+    },
+    "I_NO_DUPLICATION": {
+      "state": "PASS",
+      "scope": "Existing BLACK, EvidenceStore, OVERDRIVE routing adapter, worker registry and House/API extended. No second Matrix/Root/PRI/iSCOPE/Reaper/CARBON/House/dashboard."
+    }
+  },
+  "remaining_gates": [
+    {
+      "id": "BLACK_SERVICE_PROMOTION",
+      "class": "G1",
+      "dependency": "Existing BLACK command execution responds; node administration is not yet verified",
+      "action": "On BLACK, inspect existing amx-black.service and its private journal, test bounded native command execution, then install the read-back reviewed source with sudo bash BLACK/install-continuity.sh. Do not infer privilege loss from timeout receipts or reset the node blindly.",
+      "automatic_resume": "Existing worker and 30-minute continuity timer run bounded sync, verification and isolated restoration without repeated Owner relay."
+    },
+    {
+      "id": "DRIVE_READ_ENROLLMENT",
+      "class": "G3",
+      "dependency": "Legitimate scoped Drive OAuth on BLACK",
+      "action": "Install rclone from the trusted node package channel. Configure one scoped drive.readonly remote in /var/lib/amx-black-credentials/rclone.conf (0600); set AMX_DRIVE_DISCOVERY_REMOTE in the preserved private environment. Root accepts classification/authority through existing governance, never by provider identity.",
+      "automatic_resume": "periodic stable-ID inventory/export/mirror; missing sources retained"
+    },
+    {
+      "id": "INDEPENDENT_CUSTODY",
+      "class": "G1",
+      "dependency": "Existing approved independent ciphertext destination and separate key escrow",
+      "action": "Enroll replica and escrow once; prove restore from them",
+      "automatic_resume": "bounded ciphertext retention/verification; no new approval per sync"
+    },
+    {
+      "id": "WINDOWS_NO_TOUCH_BOOT",
+      "class": "G0",
+      "dependency": "Next natural Windows startup observation",
+      "action": "Existing launcher wakes WSL; obtain fresh autonomous BLACK receipt after that boot",
+      "automatic_resume": "Linux system service/timer runs without Owner relay"
+    },
+    {
+      "id": "LEARNING_RUNTIME_DURABILITY",
+      "class": "G1",
+      "dependency": "Accepted persistent backend store and separated role bindings",
+      "action": "Bind the existing EvidenceStore to accepted persistent storage; prove reopen/backup/restore. Set distinct AMX_REAPER_TOKEN, AMX_CRITIC_TOKEN and AMX_ROOT_TOKEN only on their authorized services. Enable AMX_LEARNING_DURABLE_STORAGE only after that proof. Do not enable mutation on ephemeral free Render.",
+      "automatic_resume": "Reaper outcomes and Critic/Root tested version promotion"
+    }
+  ],
+  "routine_human_interaction": "No repeated approval for enrolled periodic sync, verification, restore tests, queued receipts or bounded retry. One-time unavailable enrollment/authority/custody dependencies remain explicit.",
+  "historical_receipts_preserved": "Earlier commissioning and learning receipts retain their original scope and hashes; this handoff aggregates later verified CI/security evidence.",
+  "final_handoff_commit_rule": "This receipt is stored in a child of the tested implementation commit. Its containing commit is read back and reported separately, avoiding a self-referential commit hash.",
+  "no_receipt_no_closure": true,
+  "secret_values_disclosed": false,
+  "receipt_sha256": "f63bc890166e63c674a9bc1585c10210e7e36ae9472c354297a6a1b6047f56dd"
+}

@@ -55,8 +55,21 @@ timer, enrolled environment and recovery key are absent. FastAPI is absent on
 BLACK, but the continuity operation does not need the House HTTP runtime.
 Subsequent installation, user-manager and native command preflights all timed out
 (exit 124) with no useful command readback. The latest native receipt finished at
-2026-10-03 16:44 UTC. Receipt transport remains available; command execution is
+2026-10-03 16:45 UTC. Receipt transport remains available; command execution is
 DEGRADED/UNKNOWN. These observations do not prove administrative capability is
 permanently absent. New service promotion, timer installation and live encrypted
 restore remain HOLD until the existing execution path is repaired and read back.
 No reboot, duplicate executor or unrestricted remote shell was used to bypass it.
+
+## Durable implementation handoff
+
+Reviewed implementation branch: codex/amx-continuity-security-20261003; tested code
+commit: 567c8c0737294da15c1dc16a7974eef9f02c217d; draft PR #7. All 40 changed
+implementation blobs were compared with local Git hashes after publication,
+with no mismatch. GitHub CI run 37140021542 passed 54 tests, HTTP smoke checks,
+systemd unit validation, container build/runtime and a 207-file encrypted
+reconstruction/compare. The complete reachable history scan found no credential
+signatures across 350 commits and 1,035 message/file patches. Exact scope and
+acceptance states are in CONTINUITY/receipts/AMX_CODEX_HANDOFF_2026-10-03.json.
+The directive remains HOLD until live execution, private Drive enrollment,
+independent ciphertext/key custody, durable role binding and full boot are proven.

@@ -116,19 +116,20 @@
       "capability": "Existing Matrix encrypted continuity and governed worker learning",
       "artifact": "Continuity/security/capability commissioning implementation",
       "authoritative_source": "amillimatrix-eng/CARBON-Creation-Hub",
-      "source_pointer": "CONTINUITY/receipts/AMX_CODEX_COMMISSIONING_2026-10-03.json",
+      "source_pointer": "CONTINUITY/receipts/AMX_CODEX_HANDOFF_2026-10-03.json",
       "date_version": "2026-10-03",
       "durable_receipts": [
         "CONTINUITY/receipts/AMX_CODEX_COMMISSIONING_2026-10-03.json",
-        "CONTINUITY/receipts/AMX_CODEX_SECURITY_REVIEW_2026-10-03.json"
+        "CONTINUITY/receipts/AMX_CODEX_SECURITY_REVIEW_2026-10-03.json",
+        "CONTINUITY/receipts/AMX_CODEX_HANDOFF_2026-10-03.json"
       ],
-      "status_freshness": "LOCAL_IMPLEMENTATION_TESTED / LIVE_ENROLLMENT_HOLD",
+      "status_freshness": "PUSHED_AND_CI_VERIFIED / LIVE_ENROLLMENT_HOLD",
       "interview_safe_explanation": "Extended the existing BLACK, evidence backend and Reaper with authenticated encrypted recovery, clean-target restore comparison, scoped capability grants and tested versioned learning. Full live commissioning retains explicit dependency gates.",
       "T10_JOB": "Commission secure recoverability and governed capability without duplicate Matrix infrastructure.",
-      "T10_ACTUAL": "Working source and adversarial local tests are present; fresh existing BLACK service preflight returned a durable readback; live recovery installation is separately gated.",
-      "T10_EVIDENCE": "CONTINUITY/receipts/AMX_CODEX_COMMISSIONING_2026-10-03.json; BLACK/receipts/BLACK-CONTINUITY-SECURITY-PREFLIGHT-20261003.json",
+      "T10_ACTUAL": "Published implementation at 567c8c0737294da15c1dc16a7974eef9f02c217d: 54 CI tests, 207-file encrypted restoration/compare, service-unit and container checks passed. Complete reachable repository history scanned. Later BLACK preflights timed out; live commissioning remains HOLD.",
+      "T10_EVIDENCE": "CONTINUITY/receipts/AMX_CODEX_HANDOFF_2026-10-03.json; https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/37140021542",
       "T10_CHANGE": "Recovery, restore, corruption handling, grants and learning now have executable implementations and durable acceptance records.",
-      "T10_REMAINING_GAP": "Reviewed source/service promotion; scoped Drive authentication; independent ciphertext/key custody; accepted persistent learning runtime; next natural Windows boot.",
+      "T10_REMAINING_GAP": "Responsive existing BLACK execution and reviewed installation; scoped Drive OAuth/inventory; independent ciphertext/key custody; accepted durable learning runtime and separated role bindings; next natural Windows-to-WSL boot evidence.",
       "T10_PASS": "HOLD",
       "visibility": "HOUSE",
       "tags": [

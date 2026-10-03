@@ -1,11 +1,22 @@
 {
   "schema": "AMX.SECURITY.REVIEW.v1",
   "state": "PASS",
-  "files_scanned": 168,
-  "local_commits_scanned": 1,
-  "remote_file_patches_scanned": 316,
-  "history_scope": "Available local commits and supplied remote patches; older uninspected history remains explicit HOLD",
+  "files_scanned": 178,
+  "local_commits_scanned": 4,
+  "remote_file_patches_scanned": 1035,
+  "history_scope": "All reachable commit messages and text-file patches at the pinned tested implementation commit; no missing patch records",
   "findings": [],
   "raw_secrets_disclosed": false,
-  "rotation_action": "If an actual production credential is identified, revoke/rotate at its issuer, replace the scoped local binding, remove exposed current material and re-scan; a commit deletion does not revoke a credential."
+  "rotation_action": "If an actual production credential is identified, revoke/rotate at its issuer, replace the scoped local binding, remove exposed current material and re-scan; a commit deletion does not revoke a credential.",
+  "history_reference": "567c8c0737294da15c1dc16a7974eef9f02c217d",
+  "remote_commits_scanned": 350,
+  "history_reached_initial_commit": true,
+  "oldest_commit_at": "2026-09-30T09:55:22Z",
+  "missing_commit_records": 0,
+  "missing_changed_file_patches": 0,
+  "limitations": [
+    "Pattern scan cannot recognize every possible arbitrary credential string.",
+    "External provider accounts, private local credentials and other repositories are outside this repository scan."
+  ],
+  "receipt_sha256": "2a7a067d2ec9db9fb9885ac5136fe4c8a3c110d2737b538342260b59e0a1b39e"
 }

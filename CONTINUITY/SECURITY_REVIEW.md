@@ -1,10 +1,12 @@
 # Security and secret-handling review
 
-Current files and 100 accessible remote commits (316 message/file patch records)
-were scanned without printing matches. No token/private-key signature was found
-in that inspected scope. Local scan includes modified/untracked source. This is a
-pattern-based review, not proof that older history or unsupported binary history
-contains no credential. The machine-readable security receipt reports exact scope.
+178 current files and all 350 commits reachable from tested branch commit
+567c8c0737294da15c1dc16a7974eef9f02c217d were scanned without printing matches.
+The 1,035 commit-message/text-file patch records extend to the initial commit on
+2026-09-30; no requested commit or changed-file patch was missing. No credential
+signature was found in that scope. This pattern-based review cannot prove the
+absence of arbitrary unrecognized credential strings. The machine-readable
+security receipt identifies the exact pinned history and scanner limitations.
 
 Fixed: public BLACK command arrays lacked grants; remote queue synchronization
 deployed code; public raw stdout/stderr could reveal secrets; private evidence
@@ -12,6 +14,11 @@ versions could leak via a public read endpoint; runtime/.env/database files lack
 ignore rules; validation workflow permissions were implicit; receipt IDs could
 escape their directory. Root/Critic/Reaper learning API credentials are distinct,
 promotion rejects the worker's credential and absent durable-storage acceptance.
+Shared token values across Reaper, Critic or Root roles are also rejected, even
+when environment variable names differ. Reinstallation preserves accepted grants,
+registry and extra environment settings. Drive OAuth refresh is restricted to a
+separate private credential directory; sealed key/policy directories stay
+read-only in the service sandbox.
 
 New secret boundaries: local recovery key, scoped read-only rclone configuration,
 sealed grants and role tokens live outside Git with mode 0600. Ciphertext,
