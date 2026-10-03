@@ -43,16 +43,16 @@
       "state": "QUALIFIED"
     },
     {
-      "due_at": null,
+      "due_at": "2026-10-03T15:55:00Z",
       "due_now": false,
-      "next_action": "Resume the official TELUS application in a secure browser, consume the current verification code without persisting it, and continue through assessment/onboarding until a genuine provider-enforced human-only gate.",
+      "next_action": "Resume the existing official TELUS application through secure authentication. Current irreducible gate is provider OTP/identity verification; do not expose or persist OTP values.",
       "opportunity_key": "telusdigital.com|online-data-analyst|south-africa",
       "state": "QUALIFIED"
     },
     {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": false,
-      "next_action": "Complete the official CrowdGen application when personal account/CV submission confirmation is available; do not create a duplicate account.",
+      "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
       "opportunity_key": "crowdgen.com|project-coffee-data-labeling-specialist|south-africa",
       "state": "QUALIFIED"
     },
@@ -73,7 +73,7 @@
     {
       "due_at": "2026-10-03T16:15:00Z",
       "due_now": false,
-      "next_action": "Register through the official free route and inspect live task eligibility when personal account creation/verification confirmation is available.",
+      "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
       "opportunity_key": "mindrift.ai|all-access-ai-training|global",
       "state": "QUALIFIED"
     },
@@ -92,21 +92,21 @@
       "state": "DELIVERY_FAILED"
     },
     {
-      "due_at": null,
+      "due_at": "2026-10-03T16:00:00Z",
       "due_now": false,
-      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
+      "next_action": "Resume the existing OpenTrain account via secure authentication/password recovery, then submit current qualified roles. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
       "state": "QUALIFIED"
     },
     {
-      "due_at": null,
+      "due_at": "2026-10-03T16:00:00Z",
       "due_now": false,
       "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
       "state": "QUALIFIED"
     },
     {
-      "due_at": null,
+      "due_at": "2026-10-03T16:00:00Z",
       "due_now": false,
       "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
@@ -115,19 +115,19 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Submit through the current official Ashby application when personal profile/CV, employment-history confirmation and applicant attestations are available.",
+      "next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
       "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
       "state": "QUALIFIED"
     },
     {
-      "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
-      "state": "QUALIFIED",
-      "next_action": "Submit the official HumanSignal Greenhouse application using recovered truthful applicant/CV data when interactive browser transport is available; verify device requirement in-form.",
       "due_at": null,
-      "due_now": false
+      "due_now": false,
+      "next_action": "Submit the official HumanSignal Greenhouse application using recovered truthful applicant/CV data when interactive browser transport is available; verify device requirement in-form.",
+      "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
+      "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-03T14:19:00Z",
+  "generated_at": "2026-10-03T14:40:06.655344+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -209,7 +209,7 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "No action; official page says the July–August study is completed and no longer accepting participants.",
+      "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
       "opportunity_key": "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg",
       "state": "CLOSED_NO_LONGER_AVAILABLE"
     },
@@ -242,18 +242,18 @@
       "state": "DISCOVERED"
     },
     {
-      "opportunity_key": "automationarchitects.ai|talent-tracker|cape-town-ai-automation",
-      "state": "DISCOVERED",
-      "next_action": "Monitor current roles and qualify only when a specific paid opening or direct buyer need produces a credible payer path.",
       "due_at": null,
-      "due_now": false
+      "due_now": false,
+      "next_action": "Monitor current roles and qualify only when a specific paid opening or direct buyer need produces a credible payer path.",
+      "opportunity_key": "automationarchitects.ai|talent-tracker|cape-town-ai-automation",
+      "state": "DISCOVERED"
     },
     {
-      "opportunity_key": "dramaloft.com|creator-onboarding|vertical-drama-distribution",
-      "state": "HOLD_CAPABILITY_GAP",
-      "next_action": "Do not hand off to PRI until a complete upload-ready series exists or Dramaloft confirms an earlier-stage submission path.",
       "due_at": null,
-      "due_now": false
+      "due_now": false,
+      "next_action": "Do not hand off to PRI until a complete upload-ready series exists or Dramaloft confirms an earlier-stage submission path.",
+      "opportunity_key": "dramaloft.com|creator-onboarding|vertical-drama-distribution",
+      "state": "HOLD_CAPABILITY_GAP"
     }
   ]
 }
