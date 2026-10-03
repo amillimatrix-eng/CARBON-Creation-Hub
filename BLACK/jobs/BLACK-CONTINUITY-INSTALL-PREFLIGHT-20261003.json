@@ -1,0 +1,12 @@
+{
+  "schema": "AMX.BLACK.JOB.v1",
+  "worker": "BLACK",
+  "command": [
+    "python3",
+    "-c",
+    "import json,subprocess,importlib.metadata,os,pathlib\nr=subprocess.run([\"sudo\",\"-n\",\"true\"],capture_output=True,timeout=15)\nprint(json.dumps({\"schema\":\"AMX.BLACK.INSTALL_PREFLIGHT.v1\",\"sudo_noninteractive_available\":r.returncode==0,\n\"module_versions\":{m:importlib.metadata.version(m) for m in [\"cryptography\",\"jsonschema\"]},\n\"python\":os.path.realpath(\"/usr/bin/python3\"),\n\"source_path\":str(pathlib.Path.cwd()),\"credential_values_read\":False,\"permission_test\":\"NO_CONFIGURATION_CHANGED\"},sort_keys=True))"
+  ],
+  "timeout": 40,
+  "scope": "READ_ONLY_INSTALL_PRIVILEGE_AND_DEPENDENCY_CHECK",
+  "authority": "Owner continuity/security commission"
+}
