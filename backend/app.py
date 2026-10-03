@@ -115,6 +115,9 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         if os.getenv("AMX_LEARNING_DURABLE_STORAGE") != "accepted":
             raise HTTPException(status_code=503, detail="durable learning storage not accepted")
         secret = os.getenv("AMX_"+role.upper()+"_TOKEN")
+        others = [os.getenv("AMX_"+name+"_TOKEN") for name in ("REAPER", "CRITIC", "ROOT") if name.lower() != role]
+        if secret and any(other and hmac.compare_digest(secret, other) for other in others):
+            raise HTTPException(status_code=503, detail="learning role credentials must be distinct")
         if not secret or not supplied or not hmac.compare_digest(secret, supplied):
             raise HTTPException(status_code=401, detail="worker role credential required")
 

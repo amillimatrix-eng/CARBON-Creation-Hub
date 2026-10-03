@@ -383,6 +383,9 @@ class CapabilityTests(unittest.TestCase):
             with patch.dict(os.environ,{"AMX_LEARNING_DURABLE_STORAGE":"accepted","AMX_ROOT_TOKEN":"root-test","AMX_REAPER_TOKEN":"reaper-test"}):
                 with self.assertRaises(HTTPException): auth("reaper-test")
                 auth("root-test")
+            with patch.dict(os.environ,{"AMX_LEARNING_DURABLE_STORAGE":"accepted","AMX_ROOT_TOKEN":"shared-test","AMX_REAPER_TOKEN":"shared-test"}):
+                with self.assertRaises(HTTPException) as denied: auth("shared-test")
+                self.assertEqual(denied.exception.status_code,503)
 
 
 if __name__ == "__main__":
