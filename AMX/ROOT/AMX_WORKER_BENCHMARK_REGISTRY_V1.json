@@ -1,0 +1,290 @@
+{
+  "schema": "AMX_WORKER_BENCHMARK_REGISTRY_V1",
+  "status": "ACTIVE_CONTROL / ROLE-SPECIFIC / T10_GOVERNED",
+  "as_at": "2026-10-03T05:00:00Z",
+  "rule": "Role-specific excellence only. This registry creates no new worker, manager, dashboard, pipeline or authority. States require attributable evidence and may regress or reopen.",
+  "state_vocabulary": [
+    "GAP_IDENTIFIED",
+    "UPGRADE_IN_PROGRESS",
+    "UPGRADE_INSTALLED_NOT_PROVEN",
+    "BENCHMARK_PROVEN_FOR_SCOPE",
+    "REGRESSED"
+  ],
+  "profiles": {
+    "Master Control": {
+      "purpose": "Orchestrate continuity, preserve ownership, reconcile evidence/state, restore or reassign capability and verify outcomes without becoming a competing worker.",
+      "frontier_knowledge": "Current Matrix authority, active obligations, provider/executor availability, role boundaries, benchmark evidence and T10 outcome truth.",
+      "execution_reach": [
+        "authoritative repo and issues",
+        "Matrix Sheet read/write/readback",
+        "Gmail/Drive evidence",
+        "Sites metadata",
+        "automation/control surfaces"
+      ],
+      "method": [
+        "recover durable authority",
+        "inspect receipts and contradictions",
+        "apply T10",
+        "preserve healthy systems",
+        "assign minimum bounded action to existing owner",
+        "verify readback"
+      ],
+      "evidence_standard": [
+        "durable state mutation or bounded directive",
+        "source/readback",
+        "owner attribution",
+        "T10 remaining gap",
+        "no false terminal promotion"
+      ],
+      "benchmark_gap": "Matrix-wide worker profiles beyond currently inspected commercial/CARBON surfaces are not yet supported by fresh attributable benchmark runs.",
+      "upgrade_action": "Have Commissioning Inspector recover each active worker's latest attributable run and update this registry without creating new workers or duplicating role files.",
+      "state": "BENCHMARK_PROVEN_FOR_SCOPE",
+      "scope_time_evidence": "Scope: commercial continuity reconciliation and House deployment-gap detection, 2026-10-03. Evidence: commits 0597c7e3735d3de60138c02063616d873e7be6ec and 154ff082955ece803b75c50fd289acf72e745775; Sheet OUTSTANDING!A34:H34 readback; issue comments 5965796339 and 5965796426."
+    },
+    "iSCOPE": {
+      "purpose": "Discover, verify, deduplicate, qualify and persist payer-backed opportunities before PRI handoff.",
+      "frontier_knowledge": "Current demand, eligibility, payout/capital direction, buyer reality and AMX capability applications from primary sources.",
+      "execution_reach": [
+        "official web sources",
+        "Gmail history",
+        "opportunity ledger",
+        "routing subsets",
+        "GitHub and Sheet readback"
+      ],
+      "method": [
+        "run three discovery paths",
+        "inspect broadly",
+        "dedupe organization/domain + opportunity + title",
+        "verify executable payer path",
+        "persist only qualified handoffs"
+      ],
+      "evidence_standard": [
+        "OPP-ID",
+        "primary source",
+        "history/dedupe proof",
+        "qualification rationale",
+        "next action",
+        "ledger readback"
+      ],
+      "benchmark_gap": "Current run proved five fresh vertical-drama buyer qualifications but not >=20 newly refreshed candidates across >=4 live market surfaces.",
+      "upgrade_action": "Next iSCOPE run must refresh >=20 current candidates across four materially different categories and persist only qualified outcomes.",
+      "state": "UPGRADE_IN_PROGRESS",
+      "scope_time_evidence": "See overdrive/worker_contract.json commit 154ff082955ece803b75c50fd289acf72e745775."
+    },
+    "PRI": {
+      "purpose": "Convert qualified opportunities into responses, negotiation, contracts, receivables and attributable payment.",
+      "frontier_knowledge": "Current buyer/application flows, concise communication, pricing, negotiation, onboarding, payout and invoice progression.",
+      "execution_reach": [
+        "Gmail",
+        "authorized forms/accounts",
+        "buyer-ready CARBON assets",
+        "payment rails",
+        "ledger and Sheet readback"
+      ],
+      "method": [
+        "classify full ledger",
+        "act on due executable items",
+        "reuse threads/assets",
+        "preserve lifecycle truth",
+        "persist receipts and next action"
+      ],
+      "evidence_standard": [
+        "external message/form receipt",
+        "thread ID",
+        "dedupe proof",
+        "package/access state",
+        "ledger readback",
+        "payment evidence for PAID"
+      ],
+      "benchmark_gap": "Official-route outreach is proven; response handling through negotiation, contract, invoice and settlement is not.",
+      "upgrade_action": "Monitor the five existing threads and progress the first response without duplicate outreach.",
+      "state": "BENCHMARK_PROVEN_FOR_SCOPE",
+      "scope_time_evidence": "Scope: deduplicated official-route outreach, 2026-10-03. Gmail IDs and ledger/Sheet evidence are in overdrive/worker_contract.json commit 154ff082955ece803b75c50fd289acf72e745775."
+    },
+    "CARBON° Production": {
+      "purpose": "Produce and adapt buyer-specific creative/technical assets with Critic, provenance, rights and access truth, then hand to PRI.",
+      "frontier_knowledge": "Current target formats, platform requirements, rights, controlled delivery and contemporary production techniques.",
+      "execution_reach": [
+        "image/video/document production",
+        "Drive controlled assets",
+        "Critic loop",
+        "GitHub handoff records"
+      ],
+      "method": [
+        "recover brief",
+        "reuse/configure/extend",
+        "produce",
+        "inspect/correct",
+        "verify output/access",
+        "persist provenance",
+        "handoff to PRI"
+      ],
+      "evidence_standard": [
+        "source/master and derivative version",
+        "technical probe",
+        "Critic result",
+        "hash/provenance",
+        "rights/access state",
+        "handoff receipt"
+      ],
+      "benchmark_gap": "Production assets are evidenced, but buyer-specific external use and outcome remain under PRI; latest v3 trailer/key-art evidence is not yet reflected in a single central production profile.",
+      "upgrade_action": "Persist the latest accepted trailer/key-art receipts into the production evidence index and keep external conversion with PRI.",
+      "state": "BENCHMARK_PROVEN_FOR_SCOPE",
+      "scope_time_evidence": "Scope: buyer-ready poster and narrated vertical explainer with Critic/provenance boundaries; issue #1 production handoff receipts. External acceptance/payment not proven."
+    },
+    "CARBON° House": {
+      "purpose": "Provide the existing navigable production/exhibition/records/operator surface with truthful backend freshness and controlled media routes.",
+      "frontier_knowledge": "Current Sites deployment, mobile navigation, accessibility, controlled media delivery and backend freshness semantics.",
+      "execution_reach": [
+        "existing Sites project",
+        "ready house/remediation source",
+        "evidence/index.json",
+        "private deployment route"
+      ],
+      "method": [
+        "preserve accepted visual language",
+        "apply ready remediation to existing Site",
+        "publish same private project",
+        "read back functions",
+        "exercise end-to-end path"
+      ],
+      "evidence_standard": [
+        "changed source",
+        "published version >2",
+        "direct visual/function readback",
+        "backend status/freshness",
+        "real path receipts"
+      ],
+      "benchmark_gap": "Implementation exists but live Site is still version 2 with predecessor description and no declared MCP server.",
+      "upgrade_action": "Existing House owner deploys house/remediation to the same project and verifies version 3+; do not clone or change audience.",
+      "state": "UPGRADE_INSTALLED_NOT_PROVEN",
+      "scope_time_evidence": "Fresh Sites readback 2026-10-03; issue #2 comment 5965796426."
+    },
+    "Critic": {
+      "purpose": "Falsify factual, visual, technical, rights, access, duplicate-contact and scope defects without assuming commercial ownership.",
+      "frontier_knowledge": "Current target specifications, factual state, provenance/rights, accessibility and buyer relevance.",
+      "execution_reach": [
+        "production artifacts",
+        "technical probes",
+        "contact sheets",
+        "ledger/history and rights/access evidence"
+      ],
+      "method": [
+        "test claims and defects",
+        "reject or repair",
+        "retest",
+        "record bounded acceptance"
+      ],
+      "evidence_standard": [
+        "defect list",
+        "correction receipt",
+        "retest result",
+        "explicit acceptance scope and remaining gap"
+      ],
+      "benchmark_gap": "Current proof is limited to CARBON poster/explainer production; broader role-wide post-upgrade runs are not recovered.",
+      "upgrade_action": "Apply the same falsification standard to the next buyer-specific derivative and record defect-to-retest evidence.",
+      "state": "BENCHMARK_PROVEN_FOR_SCOPE",
+      "scope_time_evidence": "Scope: CARBON poster/explainer internal acceptance documented in issue #1; no external acceptance inferred."
+    },
+    "Matrix Commissioning Inspector": {
+      "purpose": "Proactively detect stale capability, missing evidence, orphaned obligations and benchmark regression.",
+      "frontier_knowledge": "Current worker mandates, tool/provider reach, benchmark standards, T10 semantics and live evidence surfaces.",
+      "execution_reach": [
+        "durable repo/issues",
+        "Matrix Sheet",
+        "worker receipts",
+        "automation/site/provider state"
+      ],
+      "method": [
+        "sweep active obligations",
+        "compare claims to receipts",
+        "classify regression",
+        "route minimum remediation",
+        "verify closure"
+      ],
+      "evidence_standard": [
+        "named detected condition",
+        "source/readback",
+        "owner",
+        "state transition",
+        "closure retest"
+      ],
+      "benchmark_gap": "No current attributable Inspector run demonstrating the new matrix-wide benchmark-profile requirement was recovered in inspected durable sources.",
+      "upgrade_action": "Recover all active workers, validate their seven-field profiles and attributable post-upgrade runs, then update this registry with evidence or GAP_IDENTIFIED.",
+      "state": "GAP_IDENTIFIED",
+      "scope_time_evidence": "No benchmark-profile artifact was found in the inspected repository before this registry; absence is local to inspected sources, not a global absence claim."
+    },
+    "Bounty Reaper": {
+      "purpose": "Execute authorized crypto bounty/reward work through target intelligence, invariant reasoning, safe-scope validation, report quality and payout readiness.",
+      "frontier_knowledge": "Current authorized program scopes, rules, source, disclosures, duplicates and payout requirements from primary sources.",
+      "execution_reach": [
+        "authorized public programs",
+        "source/local/sandbox testing",
+        "issue/audit search",
+        "report and payout routes"
+      ],
+      "method": [
+        "verify scope/safe harbor",
+        "dedupe",
+        "reason about architecture/invariants",
+        "test safely",
+        "build evidence ladder",
+        "submit only valid findings"
+      ],
+      "evidence_standard": [
+        "current program scope",
+        "reproducible finding",
+        "impact",
+        "non-duplicate proof",
+        "submission receipt",
+        "acceptance/payment separated"
+      ],
+      "benchmark_gap": "No fresh attributable post-upgrade bounty run or accepted report was recovered in the inspected CARBON repository/control surfaces.",
+      "upgrade_action": "Bounty Reaper must recover its own current durable target ledger and demonstrate one scoped current intelligence/dedupe/test cycle before benchmark promotion.",
+      "state": "GAP_IDENTIFIED",
+      "scope_time_evidence": "Inspected-source gap only; no global absence inferred and no role merger with iSCOPE/PRI."
+    },
+    "BLACK": {
+      "purpose": "Provide reusable compute/execution capacity for assigned Matrix tasks without becoming a default dependency.",
+      "frontier_knowledge": "Current node transport, queue protocol, runtime constraints, restart recovery and task-specific tooling.",
+      "execution_reach": [
+        "existing BLACK runtime when connected",
+        "outbound queue/receipt route",
+        "durable repository outputs"
+      ],
+      "method": [
+        "claim bounded task",
+        "execute",
+        "return durable artifact and receipt",
+        "report failure",
+        "verify restart/reconnection"
+      ],
+      "evidence_standard": [
+        "actual task record",
+        "executor identity",
+        "transport",
+        "output",
+        "return receipt",
+        "restart recovery"
+      ],
+      "benchmark_gap": "No fresh BLACK attributable run was recovered in this inspection; historical setup/runtime evidence is not permanent benchmark proof.",
+      "upgrade_action": "On the next task that actually requires BLACK, verify one useful queue round trip and restart recovery; do not block independent work.",
+      "state": "GAP_IDENTIFIED",
+      "scope_time_evidence": "Current inspection found no fresh accessible BLACK receipt; this is not a claim that the node is globally offline."
+    }
+  },
+  "t10": {
+    "supposed": "Establish a living, role-specific benchmark profile and current evidence state without new architecture.",
+    "actual": "Created one durable registry; updated commercial role profiles from attributable work; recorded House live-version gap; left unsupported roles as evidenced gaps.",
+    "evidence": [
+      "overdrive/worker_contract.json commit 154ff082955ece803b75c50fd289acf72e745775",
+      "OUTSTANDING!A34:H34 readback",
+      "issue comments 5965796339 and 5965796426",
+      "Sites project live metadata"
+    ],
+    "change": "Benchmark claims now have named scope, time, evidence and smallest next action.",
+    "remaining_gap": "Inspector, Bounty Reaper and BLACK require fresh attributable runs; House requires deployment/readback; no payment evidence exists.",
+    "claim_supported": true,
+    "pass": true
+  }
+}
