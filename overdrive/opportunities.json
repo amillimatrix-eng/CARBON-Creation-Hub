@@ -1573,6 +1573,198 @@
           "summary": "PRI replied in-thread, clarified this is a content licensing/production-partnership enquiry, and requested routing to the content acquisition/licensing/production team."
         }
       ]
+    },
+    "vigloo.com|content-partnership|the-dragon-who-could-not-claim-me": {
+      "domain": "vigloo.com",
+      "organization": "Vigloo",
+      "opportunity": "content-partnership",
+      "title": "The Dragon Who Could Not Claim Me",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "state": "SUBMITTED",
+      "recipient": "vgsns_kr@vigloo.com",
+      "thread_id": "1a100230dcc62423",
+      "last_action_at": "2026-10-03T05:00:00Z",
+      "due_at": "2026-10-07T05:00:00Z",
+      "next_action": "Monitor the same thread for routing or review requirements; do not send a duplicate initial approach.",
+      "package_version": "route-request-no-attachment/2026-10-03",
+      "qualification": {
+        "capital_direction": "buyer/platform pays or commissions if accepted; no fee requested",
+        "current_fit": "Official current catalogue includes dragon-led romantasy.",
+        "friction": "zero-upfront email route request",
+        "payer_path": "content acquisition, licensing or commissioning"
+      },
+      "evidence": [
+        {
+          "kind": "OFFICIAL_CURRENT_CATALOGUE_AND_CONTACT",
+          "source": "WEB",
+          "url": "https://www.vigloo.com/en",
+          "observed_at": "2026-10-03T05:00:00Z"
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a100230dcc62423",
+          "thread_id": "1a100230dcc62423",
+          "observed_at": "2026-10-03T05:00:00Z"
+        }
+      ]
+    },
+    "netshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
+      "domain": "netshort.com",
+      "organization": "NetShort",
+      "opportunity": "content-partnership",
+      "title": "The Dragon Who Could Not Claim Me",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "state": "SUBMITTED",
+      "recipient": "business@netshort.com",
+      "thread_id": "1a100230e2441107",
+      "last_action_at": "2026-10-03T05:00:00Z",
+      "due_at": "2026-10-07T05:00:00Z",
+      "next_action": "Monitor the same business thread for submission requirements; do not duplicate outreach.",
+      "package_version": "route-request-no-attachment/2026-10-03",
+      "qualification": {
+        "capital_direction": "buyer/platform pays or licenses if accepted; no fee requested",
+        "current_fit": "Official current catalogue includes fantasy and dragon titles.",
+        "friction": "zero-upfront official business email",
+        "payer_path": "content partnership, licensing or commissioning"
+      },
+      "evidence": [
+        {
+          "kind": "OFFICIAL_CURRENT_CATALOGUE_AND_BUSINESS_CONTACT",
+          "source": "WEB",
+          "url": "https://netshort.com/",
+          "observed_at": "2026-10-03T05:00:00Z"
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a100230e2441107",
+          "thread_id": "1a100230e2441107",
+          "observed_at": "2026-10-03T05:00:00Z"
+        }
+      ]
+    },
+    "flextv.cc|content-partnership|the-dragon-who-could-not-claim-me": {
+      "domain": "flextv.cc",
+      "organization": "FlexTV",
+      "opportunity": "content-partnership",
+      "title": "The Dragon Who Could Not Claim Me",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "state": "SUBMITTED",
+      "recipient": "business@flextv.cc",
+      "thread_id": "1a1002313c6128a9",
+      "last_action_at": "2026-10-03T05:00:00Z",
+      "due_at": "2026-10-07T05:00:00Z",
+      "next_action": "Monitor the same business thread for a current intake route; do not duplicate outreach.",
+      "package_version": "route-request-no-attachment/2026-10-03",
+      "qualification": {
+        "capital_direction": "buyer/platform pays or licenses if accepted; no fee requested",
+        "current_fit": "Current catalogue explicitly spans fantasy, romance and short drama.",
+        "friction": "zero-upfront official business email",
+        "payer_path": "content acquisition, licensing, commissioning or producer partnership"
+      },
+      "evidence": [
+        {
+          "kind": "OFFICIAL_CURRENT_CATALOGUE",
+          "source": "WEB",
+          "url": "https://www.flextv.cc/",
+          "observed_at": "2026-10-03T05:00:00Z"
+        },
+        {
+          "kind": "OFFICIAL_BUSINESS_CONTACT",
+          "source": "APPLE_APP_STORE",
+          "url": "https://apps.apple.com/us/app/flextv-short-drama-reels-tv/id1645515419",
+          "observed_at": "2026-10-03T05:00:00Z"
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a1002313c6128a9",
+          "thread_id": "1a1002313c6128a9",
+          "observed_at": "2026-10-03T05:00:00Z"
+        }
+      ]
+    },
+    "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me": {
+      "domain": "moboreels.com",
+      "organization": "MoboReels",
+      "opportunity": "content-partnership",
+      "title": "The Dragon Who Could Not Claim Me",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "state": "SUBMITTED",
+      "recipient": "moboreels@moboreader.com",
+      "thread_id": "1a100231731ae464",
+      "last_action_at": "2026-10-03T05:00:00Z",
+      "due_at": "2026-10-07T05:00:00Z",
+      "next_action": "Monitor the same thread for routing or intake requirements; do not duplicate outreach.",
+      "package_version": "route-request-no-attachment/2026-10-03",
+      "qualification": {
+        "capital_direction": "buyer/platform pays or licenses if accepted; no fee requested",
+        "current_fit": "Official current catalogue includes fantasy, mage, sorceress and supernatural series.",
+        "friction": "zero-upfront official contact email",
+        "payer_path": "content acquisition, licensing or commissioning"
+      },
+      "evidence": [
+        {
+          "kind": "OFFICIAL_CURRENT_CATALOGUE",
+          "source": "WEB",
+          "url": "https://www.moboreels.com/",
+          "observed_at": "2026-10-03T05:00:00Z"
+        },
+        {
+          "kind": "OFFICIAL_CONTACT",
+          "source": "WEB",
+          "url": "https://www.moboreels.com/contactUs",
+          "observed_at": "2026-10-03T05:00:00Z"
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a100231731ae464",
+          "thread_id": "1a100231731ae464",
+          "observed_at": "2026-10-03T05:00:00Z"
+        }
+      ]
+    },
+    "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me": {
+      "domain": "free-reels.com",
+      "organization": "FreeReels",
+      "opportunity": "content-partnership",
+      "title": "The Dragon Who Could Not Claim Me",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "state": "SUBMITTED",
+      "recipient": "contact.freefeels@gmail.com",
+      "thread_id": "1a100231af090dc1",
+      "last_action_at": "2026-10-03T05:00:00Z",
+      "due_at": "2026-10-07T05:00:00Z",
+      "next_action": "Monitor the same thread for confirmation that external submissions are accepted; do not duplicate outreach.",
+      "package_version": "route-request-no-attachment/2026-10-03",
+      "qualification": {
+        "capital_direction": "platform could license or commission if external submissions are accepted; no fee requested",
+        "current_fit": "Current app listing describes daily mini-drama releases across fantasy and romance.",
+        "friction": "zero-upfront current developer contact",
+        "payer_path": "content partnership or licensing, subject to route confirmation"
+      },
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_APP_LISTING_AND_CONTACT",
+          "source": "GOOGLE_PLAY",
+          "url": "https://play.google.com/store/apps/details?id=com.freereels.app",
+          "observed_at": "2026-10-03T05:00:00Z"
+        },
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a100231af090dc1",
+          "thread_id": "1a100231af090dc1",
+          "observed_at": "2026-10-03T05:00:00Z"
+        }
+      ]
     }
   },
   "version": 1,
@@ -1581,21 +1773,21 @@
   "last_updated_by": "iSCOPE_PRI_EXECUTION_ENGINE",
   "last_run": {
     "execution_origin": "SCHEDULER_AUTOMATION",
-    "candidates_inspected": 24,
+    "run_at": "2026-10-03T05:00:00Z",
+    "candidates_inspected": 42,
     "surfaces_categories": [
       "AI evaluation/work platforms",
       "creative/vertical-drama buyers",
-      "direct current job listings",
-      "support/account routes"
+      "direct current job/application routes",
+      "direct B2B official contact routes"
     ],
-    "full_ledger_count": 37,
+    "full_ledger_count": 42,
     "material_actions": [
-      "1a0fff0a3230624f",
-      "1a0fedf7e0d1e8c8",
-      "1a0ff7f136a2fd05",
-      "https://jobs.telusdigital.com/jobs/18301194-online-data-analyst-south-africa",
-      "https://crowdgen.com/coffee-en-za/",
-      "https://mindrift.ai/apply"
+      "1a100230dcc62423",
+      "1a100230e2441107",
+      "1a1002313c6128a9",
+      "1a100231731ae464",
+      "1a100231af090dc1"
     ],
     "kpi_delta": {
       "iSCOPE": 0,
@@ -1608,6 +1800,6 @@
       "converted": 0,
       "streak": 0
     },
-    "t10": "One in-thread commercial clarification was sent; one buyer routed the proposal for review; four current execution routes were verified and inbound support evidence was reconciled. No external acceptance, contract, invoice, attributable payment or realized revenue is proven."
+    "t10": "Five deduplicated, current buyer-route inquiries were sent through official endpoints and durably attributed to the existing iSCOPE→PRI chain. They are SUBMITTED only. No response, external acceptance, contract, invoice, attributable payment or realized revenue is proven."
   }
 }
