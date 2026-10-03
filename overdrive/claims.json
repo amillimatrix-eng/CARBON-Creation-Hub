@@ -172,8 +172,8 @@
     },
     "PRI|opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T12:45:51.134712+00:00",
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with evidence of evaluation/editing and QA capability; do not create a duplicate account.",
+      "last_seen_at": "2026-10-03T14:19:00Z",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
       "receipt_required": true,
@@ -192,8 +192,8 @@
     },
     "PRI|opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T12:45:51.134712+00:00",
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with the existing resume/profile; do not create a duplicate account.",
+      "last_seen_at": "2026-10-03T14:19:00Z",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
       "receipt_required": true,
@@ -202,8 +202,8 @@
     },
     "PRI|opentrain.ai|python-backend-ai-agent-developer|2026-10-01": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T12:45:51.134712+00:00",
-      "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
+      "last_seen_at": "2026-10-03T14:19:00Z",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
       "receipt_required": true,
@@ -212,8 +212,8 @@
     },
     "PRI|opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T12:45:51.134712+00:00",
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON\u00b0 production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
+      "last_seen_at": "2026-10-03T14:19:00Z",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
       "receipt_required": true,
@@ -222,8 +222,8 @@
     },
     "PRI|outlier.ai|coding-expertise-ai-training|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T12:45:51.134712+00:00",
-      "next_action": "Use the official South Africa application route to create the profile with this email when personal identity/profile/verification attestations can be completed; no duplicate account exists under this email.",
+      "last_seen_at": "2026-10-03T14:19:00Z",
+      "next_action": "Use the issued Outlier sign-in link through a secure browser and continue truthful profile/skills/identity onboarding. Ordinary applicant data is not a blocker; stop only at a provider-enforced human-only step.",
       "office": "PRI",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
       "receipt_required": true,
@@ -252,8 +252,8 @@
     },
     "PRI|telusdigital.com|online-data-analyst|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T12:45:51.134712+00:00",
-      "next_action": "Complete the official TELUS application when personal application submission/assessment confirmation is available; current direct role route is verified.",
+      "last_seen_at": "2026-10-03T14:19:00Z",
+      "next_action": "Resume the official TELUS application in a secure browser, consume the current verification code without persisting it, and continue through assessment/onboarding until a genuine provider-enforced human-only gate.",
       "office": "PRI",
       "opportunity_key": "telusdigital.com|online-data-analyst|south-africa",
       "receipt_required": true,
@@ -353,7 +353,7 @@
     "iSCOPE|dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg": {
       "attempts": 0,
       "last_seen_at": "2026-10-03T12:45:51.134712+00:00",
-      "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
+      "next_action": "No action; official page says the July–August study is completed and no longer accepting participants.",
       "office": "iSCOPE",
       "opportunity_key": "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg",
       "receipt_required": true,
@@ -458,6 +458,36 @@
       "opportunity_key": "welodata.com|hydrus-voice-contributor-english|south-africa",
       "receipt_required": true,
       "state": "HOLD",
+      "status": "READY"
+    },
+    "PRI|humansignal.com|data-collection-contributor|south-africa": {
+      "office": "PRI",
+      "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
+      "attempts": 0,
+      "receipt_required": true,
+      "last_seen_at": "2026-10-03T14:19:00Z",
+      "state": "QUALIFIED",
+      "next_action": "Submit the official HumanSignal Greenhouse application using recovered truthful applicant/CV data when interactive browser transport is available; verify device requirement in-form.",
+      "status": "READY"
+    },
+    "iSCOPE|automationarchitects.ai|talent-tracker|cape-town-ai-automation": {
+      "office": "iSCOPE",
+      "opportunity_key": "automationarchitects.ai|talent-tracker|cape-town-ai-automation",
+      "attempts": 0,
+      "receipt_required": true,
+      "last_seen_at": "2026-10-03T14:19:00Z",
+      "state": "DISCOVERED",
+      "next_action": "Monitor current roles and qualify only when a specific paid opening or direct buyer need produces a credible payer path.",
+      "status": "READY"
+    },
+    "iSCOPE|dramaloft.com|creator-onboarding|vertical-drama-distribution": {
+      "office": "iSCOPE",
+      "opportunity_key": "dramaloft.com|creator-onboarding|vertical-drama-distribution",
+      "attempts": 0,
+      "receipt_required": true,
+      "last_seen_at": "2026-10-03T14:19:00Z",
+      "state": "HOLD_CAPABILITY_GAP",
+      "next_action": "Do not hand off to PRI until a complete upload-ready series exists or Dramaloft confirms an earlier-stage submission path.",
       "status": "READY"
     }
   },
