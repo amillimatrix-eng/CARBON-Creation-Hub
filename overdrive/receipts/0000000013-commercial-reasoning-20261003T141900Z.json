@@ -1,0 +1,94 @@
+{
+  "schema": "AMX_COMMERCIAL_EXECUTION_RECEIPT_V1",
+  "run_at": "2026-10-03T14:19:00Z",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "chain": "ONE iSCOPE -> ONE PRI",
+  "recovered_controls": [
+    "opportunities.json",
+    "signals.json",
+    "claims.json",
+    "AMX_COMMERCIAL_CAPABILITY_FLOOR_v1.md",
+    "MANDATE_INTEGRITY_CONTROL_v1.json",
+    "worker_contract.json",
+    "payment_rails.json",
+    "current receipts inventory",
+    "Matrix OUTSTANDING row 34"
+  ],
+  "discovery": {
+    "candidates_inspected": 24,
+    "surface_count": 4,
+    "new_qualified": [
+      "humansignal.com|data-collection-contributor|south-africa"
+    ],
+    "new_discovered": [
+      "automationarchitects.ai|talent-tracker|cape-town-ai-automation"
+    ],
+    "holds": [
+      "dramaloft.com|creator-onboarding|vertical-drama-distribution"
+    ],
+    "path_receipts": {
+      "capability_to_application": "HumanSignal qualified",
+      "market_signal_to_capability": "Automation Architects talent signal inspected; no specific paid role, retained DISCOVERED",
+      "organization_problem_to_solution": "Takealot batch-to-real-time operational-data problem inspected from current role evidence; no credible direct procurement/buyer route recovered, therefore no PRI handoff"
+    }
+  },
+  "pri": {
+    "opportunities_materially_progressed": [
+      "outlier.ai|coding-expertise-ai-training|south-africa",
+      "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
+      "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
+      "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
+      "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
+      "telusdigital.com|online-data-analyst|south-africa"
+    ],
+    "evidence": [
+      {
+        "type": "GMAIL",
+        "id": "1a10210a4e9f985b",
+        "meaning": "Outlier secure sign-in link issued"
+      },
+      {
+        "type": "GMAIL",
+        "id": "1a102112d87ee13a",
+        "meaning": "OpenTrain existing-account reset issued; progresses all four active qualified OpenTrain opportunities"
+      },
+      {
+        "type": "GMAIL",
+        "id": "1a1021220e23c018",
+        "meaning": "TELUS verification flow issued; authentication secret intentionally not persisted"
+      },
+      {
+        "type": "DRIVE",
+        "id": "1wVRoiJ8bduz8mFhAesf8HPujNAgTsdyLAwWaksJblzA",
+        "meaning": "current applicant CV/contact evidence recovered"
+      }
+    ],
+    "exact_remaining_gate": "Interactive browser transport is unavailable in connected execution surfaces; authentication/onboarding links are issued and recoverable. This is a transport gate, not a blanket personal-data blocker."
+  },
+  "kpi": {
+    "delta": {
+      "iSCOPE": 0,
+      "PRI": 0
+    },
+    "cumulative": {
+      "iSCOPE": 0,
+      "PRI": 0
+    },
+    "streak": 0,
+    "reason": "No evidence-backed conversion."
+  },
+  "t10": {
+    "supposed": "Discover broadly and materially progress >=5 executable qualified opportunities.",
+    "actual": "24 candidates inspected across 4 surfaces; one new qualified handoff; auth/onboarding materially progressed for six qualified opportunities.",
+    "proof": [
+      "Gmail 1a10210a4e9f985b",
+      "Gmail 1a102112d87ee13a",
+      "Gmail 1a1021220e23c018",
+      "GitHub 7b918118b69d7bab86fbc537cd9b1cd4bd3b5b5c",
+      "GitHub 37ab8c6da20a68ecff85bc48e747a0532a578287",
+      "GitHub f0e2d290fe6c466cabc0beaec494dcedfd8a3be0"
+    ],
+    "changed": "Blanket personal-profile blocker removed from affected next actions; ledger expanded and routing reconciled.",
+    "not_happened": "No application submission, acceptance, contract, invoice, payment or realized revenue proven."
+  }
+}
