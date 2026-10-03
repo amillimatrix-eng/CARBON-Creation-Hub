@@ -725,14 +725,22 @@
           "source_id": "1a0fd08b1cf0865a",
           "observed_at": "2026-10-02T14:33:19Z",
           "summary": "OpenTrain sent a password-reset message to the existing amillimatrix@gmail.com account, confirming account ownership/history; reset link is time-limited and no new password was set."
+        },
+        {
+          "kind": "ACCOUNT_RECOVERY_PROGRESS",
+          "source": "GMAIL",
+          "source_id": "1a102112d87ee13a",
+          "observed_at": "2026-10-03T14:00:41Z",
+          "summary": "OpenTrain issued a fresh password-reset link to the existing AMX account; account recovery was actively progressed. No duplicate account created."
         }
       ],
       "constraints": [
-        "No authenticated OpenTrain browser execution surface is exposed in the current runtime.",
-        "Existing OpenTrain account is confirmed, but no authenticated OpenTrain browser session is currently available. Do not create a duplicate account or invent/reset credentials without a secure user-authenticated session."
+        "Existing OpenTrain account is confirmed, but no authenticated OpenTrain browser session is currently available. Do not create a duplicate account or invent/reset credentials without a secure user-authenticated session.",
+        "Interactive browser transport is presently unavailable in the connected execution surfaces; account-recovery email is proven and must be resumed rather than restarted."
       ],
-      "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
-      "due_at": null
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
+      "due_at": null,
+      "last_action_at": "2026-10-03T14:00:41Z"
     },
     "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh": {
       "organization": "OpenTrain AI",
@@ -949,13 +957,21 @@
           "source_url": "https://jobs.telusdigital.com/jobs/18301194-online-data-analyst-south-africa",
           "observed_at": "2026-10-03",
           "summary": "Official Req EG-948 remains directly accessible: remote freelance part-time South Africa Online Data Analyst; South Africa residence for five consecutive years required."
+        },
+        {
+          "kind": "AUTHENTICATION_PROGRESS",
+          "source": "GMAIL",
+          "source_id": "1a1021220e23c018",
+          "observed_at": "2026-10-03T14:01:44Z",
+          "summary": "TELUS issued a current verification code to the applicant inbox, proving the account/application authentication flow was materially progressed. The code itself is intentionally not persisted."
         }
       ],
       "constraints": [
-        "Requires provider assessment and later ID/compliance checks before work; these are onboarding gates, not proof of paid assignment."
+        "Interactive browser transport is presently unavailable in the connected execution surfaces. Do not store OTP/authentication secrets in durable state."
       ],
-      "next_action": "Complete the official TELUS application when personal application submission/assessment confirmation is available; current direct role route is verified.",
-      "due_at": "2026-10-03T15:55:00Z"
+      "next_action": "Resume the official TELUS application in a secure browser, consume the current verification code without persisting it, and continue through assessment/onboarding until a genuine provider-enforced human-only gate.",
+      "due_at": "2026-10-03T15:55:00Z",
+      "last_action_at": "2026-10-03T14:01:44Z"
     },
     "crowdgen.com|project-coffee-data-labeling-specialist|south-africa": {
       "organization": "CrowdGen by Appen",
@@ -990,7 +1006,7 @@
       "constraints": [
         "Application requires CV; some tasks may require microphone/video reactions."
       ],
-      "next_action": "Complete the official CrowdGen application when personal account/CV submission confirmation is available; do not create a duplicate account.",
+      "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
       "due_at": "2026-10-03T15:55:00Z"
     },
     "outlier.ai|coding-expertise-ai-training|south-africa": {
@@ -1051,17 +1067,24 @@
           "source_url": "https://outlier.ai/",
           "observed_at": "2026-10-03",
           "summary": "Official current flow requires profile creation, skills/background entry, identity verification and skills validation before work; South Africa appears among current country examples."
+        },
+        {
+          "kind": "SIGN_IN_FLOW_PROGRESS",
+          "source": "GMAIL",
+          "source_id": "1a10210a4e9f985b",
+          "observed_at": "2026-10-03T14:00:06Z",
+          "summary": "Outlier issued a secure sign-in link to the AMX applicant email after duplicate-account risk had been cleared; onboarding progressed to sign-in."
         }
       ],
       "constraints": [
-        "Requires profile, identity confirmation and skills validation before earning."
+        "Interactive browser transport is presently unavailable in the connected execution surfaces; the sign-in flow is issued and must be resumed, not recreated."
       ],
-      "next_action": "Use the official South Africa application route to create the profile with this email when personal identity/profile/verification attestations can be completed; no duplicate account exists under this email.",
+      "next_action": "Use the issued Outlier sign-in link through a secure browser and continue truthful profile/skills/identity onboarding. Ordinary applicant data is not a blocker; stop only at a provider-enforced human-only step.",
       "due_at": null,
       "recipient": "support@outlier.ai",
       "thread_id": "1a0fedc93e232877",
       "message_id": "1a0fedc93e232877",
-      "last_action_at": "2026-10-03T04:01:21Z"
+      "last_action_at": "2026-10-03T14:00:06Z"
     },
     "alignerr.com|search-quality-ai-training|south-africa": {
       "organization": "Alignerr",
@@ -1148,7 +1171,7 @@
       "constraints": [
         "No existing Mindrift/Toloka account history found in Gmail; registration/authentication is still required before task execution."
       ],
-      "next_action": "Register through the official free route and inspect live task eligibility when personal account creation/verification confirmation is available.",
+      "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
       "due_at": "2026-10-03T16:15:00Z"
     },
     "oneforma.com|ai-ml-projects|south-africa": {
@@ -1827,9 +1850,9 @@
       "discovered_by": "iSCOPE",
       "execution_owner": "PRI",
       "state": "QUALIFIED",
-      "last_action_at": "2026-10-03T09:00:05Z",
+      "last_action_at": "2026-10-03T14:00:41Z",
       "due_at": "2026-10-03T16:00:00Z",
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with the existing resume/profile; do not create a duplicate account.",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "qualification": {
         "capital_direction": "OpenTrain/client pays contractor USD $30–$100/hour; no applicant fee",
         "geography": "South Africa explicitly listed among 230 eligible countries",
@@ -1846,7 +1869,17 @@
           "posted_at": "2026-10-03",
           "pay": "USD 30–100/hour",
           "south_africa_eligible": true
+        },
+        {
+          "kind": "ACCOUNT_RECOVERY_PROGRESS",
+          "source": "GMAIL",
+          "source_id": "1a102112d87ee13a",
+          "observed_at": "2026-10-03T14:00:41Z",
+          "summary": "OpenTrain issued a fresh password-reset link to the existing AMX account; account recovery was actively progressed. No duplicate account created."
         }
+      ],
+      "constraints": [
+        "Interactive browser transport is presently unavailable in the connected execution surfaces; account-recovery email is proven and must be resumed rather than restarted."
       ]
     },
     "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57": {
@@ -1857,9 +1890,9 @@
       "discovered_by": "iSCOPE",
       "execution_owner": "PRI",
       "state": "QUALIFIED",
-      "last_action_at": "2026-10-03T09:00:05Z",
+      "last_action_at": "2026-10-03T14:00:41Z",
       "due_at": "2026-10-03T16:00:00Z",
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with evidence of evaluation/editing and QA capability; do not create a duplicate account.",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "qualification": {
         "capital_direction": "OpenTrain/client pays contractor USD $20–$70/hour; no applicant fee",
         "geography": "South Africa explicitly listed among 230 eligible countries",
@@ -1876,7 +1909,17 @@
           "posted_at": "2026-10-03",
           "pay": "USD 20–70/hour",
           "south_africa_eligible": true
+        },
+        {
+          "kind": "ACCOUNT_RECOVERY_PROGRESS",
+          "source": "GMAIL",
+          "source_id": "1a102112d87ee13a",
+          "observed_at": "2026-10-03T14:00:41Z",
+          "summary": "OpenTrain issued a fresh password-reset link to the existing AMX account; account recovery was actively progressed. No duplicate account created."
         }
+      ],
+      "constraints": [
+        "Interactive browser transport is presently unavailable in the connected execution surfaces; account-recovery email is proven and must be resumed rather than restarted."
       ]
     },
     "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3": {
@@ -1887,9 +1930,9 @@
       "discovered_by": "iSCOPE",
       "execution_owner": "PRI",
       "state": "QUALIFIED",
-      "last_action_at": "2026-10-03T09:00:05Z",
+      "last_action_at": "2026-10-03T14:00:41Z",
       "due_at": "2026-10-03T16:00:00Z",
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON° production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "qualification": {
         "capital_direction": "OpenTrain/client pays contractor USD $50–$90/hour; no applicant fee",
         "geography": "South Africa is listed among 230 eligible countries",
@@ -1906,7 +1949,17 @@
           "posted_at": "2026-10-03",
           "pay": "USD 50–90/hour",
           "south_africa_eligible": true
+        },
+        {
+          "kind": "ACCOUNT_RECOVERY_PROGRESS",
+          "source": "GMAIL",
+          "source_id": "1a102112d87ee13a",
+          "observed_at": "2026-10-03T14:00:41Z",
+          "summary": "OpenTrain issued a fresh password-reset link to the existing AMX account; account recovery was actively progressed. No duplicate account created."
         }
+      ],
+      "constraints": [
+        "Interactive browser transport is presently unavailable in the connected execution surfaces; account-recovery email is proven and must be resumed rather than restarted."
       ]
     },
     "mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392": {
@@ -1951,7 +2004,7 @@
       "state": "QUALIFIED",
       "execution_owner": "PRI",
       "due_at": null,
-      "next_action": "Submit through the current official Ashby application when personal profile/CV, employment-history confirmation and applicant attestations are available.",
+      "next_action": "Use the recovered truthful CV/contact evidence to complete the official Ashby application through a secure browser; stop only on an exact unavailable fact or provider-enforced human-only step.",
       "evidence": [
         {
           "kind": "CURRENT_OFFICIAL_ROLE",
@@ -1959,6 +2012,13 @@
           "url": "https://jobs.ashbyhq.com/scale%20army%20careers/3e49f332-28b9-400c-a146-f1682ce962da",
           "observed_at": "2026-10-03T10:02:00Z",
           "summary": "Current remote role explicitly includes South Africa and focuses on connecting existing systems and practical automation workflows; credible fit to AMX automation/API/operations capability."
+        },
+        {
+          "kind": "APPLICANT_EVIDENCE_RECOVERED",
+          "source": "GOOGLE_DRIVE",
+          "source_id": "1wVRoiJ8bduz8mFhAesf8HPujNAgTsdyLAwWaksJblzA",
+          "observed_at": "2026-10-03T14:19:00Z",
+          "summary": "Current applicant CV/contact evidence was recovered; the prior blanket personal-profile/CV blocker is superseded."
         }
       ],
       "capability_match": [
@@ -2148,67 +2208,153 @@
       ],
       "capital_direction": "PAYER_TO_WORK",
       "upfront_cost": "NONE_EVIDENCED"
+    },
+    "humansignal.com|data-collection-contributor|south-africa": {
+      "domain": "humansignal.com",
+      "organization": "HumanSignal",
+      "opportunity": "data-collection-contributor",
+      "title": "Data Collection Contributor — South Africa",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CAPABILITY -> NEW APPLICATION -> PAYER/DEMAND",
+      "execution_owner": "PRI",
+      "state": "QUALIFIED",
+      "qualified_at": "2026-10-03T14:19:00Z",
+      "due_at": null,
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "Up to USD $6.00/hour",
+      "payment": "Contractor compensation; exact settlement rail to verify during onboarding before any PAID claim",
+      "buyer_fit": "Official South Africa contractor role; no prior experience required; detail-oriented lawful image capture/data collection fits AMX evidence/QA discipline and smartphone-enabled execution.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://job-boards.greenhouse.io/humansignal/jobs/5823658004?gh_src=d66tug014us",
+          "observed_at": "2026-10-03T14:19:00Z",
+          "summary": "Official HumanSignal South Africa Data Collection Contributor application is open; 1099 contractor, up to $6/hour, smartphone/camera required, no prior experience required."
+        }
+      ],
+      "constraints": [
+        "Confirm the device used for assignments meets the specific project image-quality requirement during application/onboarding."
+      ],
+      "next_action": "Submit the official HumanSignal Greenhouse application using recovered truthful applicant/CV data when interactive browser transport is available; verify device requirement in-form."
+    },
+    "automationarchitects.ai|talent-tracker|cape-town-ai-automation": {
+      "domain": "automationarchitects.ai",
+      "organization": "Automation Architects",
+      "opportunity": "talent-tracker-ai-automation",
+      "title": "AI Automation / Data Engineering Talent Tracker — Cape Town",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "MARKET SIGNAL -> REQUIRED OUTCOME -> CAPABILITY MATCH",
+      "execution_owner": "iSCOPE",
+      "state": "DISCOVERED",
+      "last_action_at": "2026-10-03T14:19:00Z",
+      "due_at": null,
+      "capital_direction": "INBOUND IF MATCHED / NO FEE",
+      "buyer_fit": "Cape Town AI automation/data consultancy explicitly invites profiles into its talent tracker; strong capability overlap, but no specific paid role was exposed in the recovered page.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "WEB",
+          "url": "https://www.automationarchitects.ai/careers",
+          "observed_at": "2026-10-03T14:19:00Z",
+          "summary": "Current careers page invites AI/data candidates to submit profile, LinkedIn, GitHub and CV link into its talent tracker."
+        }
+      ],
+      "next_action": "Monitor current roles and qualify only when a specific paid opening or direct buyer need produces a credible payer path."
+    },
+    "dramaloft.com|creator-onboarding|vertical-drama-distribution": {
+      "domain": "creators.dramaloft.com",
+      "organization": "Dramaloft",
+      "opportunity": "creator-onboarding-vertical-drama-distribution",
+      "title": "Dramaloft vertical-drama creator onboarding",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "MARKET SIGNAL -> REQUIRED OUTCOME -> CAPABILITY MATCH",
+      "execution_owner": "iSCOPE",
+      "state": "HOLD_CAPABILITY_GAP",
+      "last_action_at": "2026-10-03T14:19:00Z",
+      "due_at": null,
+      "capital_direction": "INBOUND PERFORMANCE REVENUE / NO SIGNUP FEE",
+      "buyer_fit": "Current global creator onboarding accepts fantasy/supernatural vertical drama and pays recurring performance earnings while creator retains IP; CARBON° has relevant production evidence.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_SOURCE",
+          "source": "WEB",
+          "url": "https://creators.dramaloft.com/",
+          "observed_at": "2026-10-03T14:19:00Z",
+          "summary": "Dramaloft is onboarding creators globally with no signup fee, non-exclusive rights and recurring unlock/subscription earnings; it requires the complete series at upload."
+        }
+      ],
+      "constraints": [
+        "Current CARBON° evidence establishes rendered Episodes 06–07 and developed series material, not a complete upload-ready series; do not inflate completion."
+      ],
+      "next_action": "Do not hand off to PRI until a complete upload-ready series exists or Dramaloft confirms an earlier-stage submission path."
     }
   },
   "version": 1,
-  "updated_at": "2026-10-03T10:02:00Z",
-  "last_updated_at": "2026-10-03T10:02:00Z",
-  "last_updated_by": "iSCOPE_PRI_EXECUTION_ENGINE",
+  "updated_at": "2026-10-03T14:19:00Z",
+  "last_updated_at": "2026-10-03T14:19:00Z",
+  "last_updated_by": "iSCOPE->PRI scheduler reasoning executor",
   "last_run": {
+    "run_at": "2026-10-03T14:19:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
-    "run_at": "2026-10-03T10:02:00Z",
-    "candidates_inspected": 31,
-    "surfaces_categories": [
-      "AI evaluation/training official job boards",
-      "South Africa data collection and creative task projects",
-      "software/API/automation implementation roles",
-      "existing buyer/platform response and delivery threads"
+    "candidates_inspected": 24,
+    "surfaces": [
+      "AI/data evaluation & contributor platforms",
+      "software/QA/automation roles",
+      "creative/vertical-drama distribution",
+      "problem-derived/direct-sale signals"
     ],
+    "full_ledger_count": 58,
     "discovery_paths": {
-      "capability_to_application_to_payer": [
-        "Scale Army AI implementation",
-        "DataForce Thyme creative writing",
-        "DataForce Ronia rights-controlled image production"
-      ],
-      "signal_to_outcome_to_capability": [
-        "Welo/RWS current AI-training listings matched against evaluation, QA and production capability"
-      ],
-      "observed_problem_to_solution_direct_sale": [
-        "Existing buyer/platform threads monitored; no new verified direct-sale pain with a non-duplicate executable route was promoted in this run"
-      ]
+      "capability_to_application": "HumanSignal qualified",
+      "market_signal_to_capability": "Automation Architects talent signal inspected; no specific paid role, retained DISCOVERED",
+      "organization_problem_to_solution": "Takealot batch-to-real-time operational-data problem inspected from current role evidence; no credible direct procurement/buyer route recovered, therefore no PRI handoff"
     },
-    "inspected_breakdown": {
-      "RWS_TrainAI": 19,
-      "Welo_Data": 4,
-      "DataForce": 6,
-      "technical_implementation": 2
-    },
-    "full_ledger_count": 55,
-    "material_actions": [
-      "GMAIL 1a0ff7f136a2fd05: Outlier confirmed no account under current email; duplicate-account risk cleared.",
-      "QUALIFIED: Scale Army remote South Africa AI Implementation Specialist.",
-      "HOLD: DataForce Thyme pending native-level Afrikaans proof.",
-      "HOLD: DataForce Ronia pending eligible camera/RAW inventory proof.",
-      "CLOSED: DataForce Asteroid, Viola and Mirabelle from explicit official closure text.",
-      "REFRESHED: Welo Hydrus current $20/hour role moved to HOLD for equipment/performance/consent gates.",
-      "DISCOVERED/HOLD: Welo general and Zulu routes; RWS future pool deprioritized."
+    "pri_material_progress": [
+      {
+        "opportunity": "outlier.ai|coding-expertise-ai-training|south-africa",
+        "receipt": "Gmail 1a10210a4e9f985b",
+        "result": "secure sign-in link issued"
+      },
+      {
+        "opportunity": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
+        "receipt": "Gmail 1a102112d87ee13a",
+        "result": "existing-account password reset issued"
+      },
+      {
+        "opportunity": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
+        "receipt": "Gmail 1a102112d87ee13a",
+        "result": "existing-account password reset issued"
+      },
+      {
+        "opportunity": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
+        "receipt": "Gmail 1a102112d87ee13a",
+        "result": "existing-account password reset issued"
+      },
+      {
+        "opportunity": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
+        "receipt": "Gmail 1a102112d87ee13a",
+        "result": "existing-account password reset issued"
+      },
+      {
+        "opportunity": "telusdigital.com|online-data-analyst|south-africa",
+        "receipt": "Gmail 1a1021220e23c018",
+        "result": "verification-code flow issued; code not persisted"
+      }
     ],
-    "pri_classification": {
-      "qualified_total": 12,
-      "externally_executable_without_personal_auth_or_attestation": 0,
-      "reason": "All current qualified account/form roles require personal profile, authentication, identity/CV, consent or applicant attestation; existing buyer threads are not yet due and have no new material reply."
-    },
+    "new_qualified": [
+      "humansignal.com|data-collection-contributor|south-africa"
+    ],
     "kpi_delta": {
       "iSCOPE": 0,
       "PRI": 0,
       "converted": 0
     },
-    "kpi_cumulative": {
+    "cumulative_kpi": {
       "iSCOPE": 0,
       "PRI": 0,
-      "converted": 0,
       "streak": 0
     },
-    "t10": "Current discovery and qualification advanced; Outlier account history was resolved and one current technical role was qualified. No application was submitted because every current qualified application route requires personal profile/authentication/identity or applicant attestation. No response beyond Outlier support, external acceptance, contract, invoice or payment is proven."
+    "outcome_truth": "Authentication/onboarding materially progressed across six qualified opportunities; no application submission, acceptance, contract, invoice, payment or realized revenue is proven."
   }
 }
