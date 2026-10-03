@@ -24,7 +24,7 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
       "state": "QUALIFIED"
     },
@@ -43,9 +43,9 @@
       "state": "QUALIFIED"
     },
     {
-      "due_at": "2026-10-03T15:55:00Z",
+      "due_at": null,
       "due_now": false,
-      "next_action": "Complete the official TELUS application when personal application submission/assessment confirmation is available; current direct role route is verified.",
+      "next_action": "Resume the official TELUS application in a secure browser, consume the current verification code without persisting it, and continue through assessment/onboarding until a genuine provider-enforced human-only gate.",
       "opportunity_key": "telusdigital.com|online-data-analyst|south-africa",
       "state": "QUALIFIED"
     },
@@ -59,7 +59,7 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Use the official South Africa application route to create the profile with this email when personal identity/profile/verification attestations can be completed; no duplicate account exists under this email.",
+      "next_action": "Use the issued Outlier sign-in link through a secure browser and continue truthful profile/skills/identity onboarding. Ordinary applicant data is not a blocker; stop only at a provider-enforced human-only step.",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
       "state": "QUALIFIED"
     },
@@ -92,23 +92,23 @@
       "state": "DELIVERY_FAILED"
     },
     {
-      "due_at": "2026-10-03T16:00:00Z",
+      "due_at": null,
       "due_now": false,
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with the existing resume/profile; do not create a duplicate account.",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
       "state": "QUALIFIED"
     },
     {
-      "due_at": "2026-10-03T16:00:00Z",
+      "due_at": null,
       "due_now": false,
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with evidence of evaluation/editing and QA capability; do not create a duplicate account.",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
       "state": "QUALIFIED"
     },
     {
-      "due_at": "2026-10-03T16:00:00Z",
+      "due_at": null,
       "due_now": false,
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON\u00b0 production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
+      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
       "state": "QUALIFIED"
     },
@@ -118,9 +118,16 @@
       "next_action": "Submit through the current official Ashby application when personal profile/CV, employment-history confirmation and applicant attestations are available.",
       "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
       "state": "QUALIFIED"
+    },
+    {
+      "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
+      "state": "QUALIFIED",
+      "next_action": "Submit the official HumanSignal Greenhouse application using recovered truthful applicant/CV data when interactive browser transport is available; verify device requirement in-form.",
+      "due_at": null,
+      "due_now": false
     }
   ],
-  "generated_at": "2026-10-03T12:45:51.134116+00:00",
+  "generated_at": "2026-10-03T14:19:00Z",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -202,7 +209,7 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
+      "next_action": "No action; official page says the July–August study is completed and no longer accepting participants.",
       "opportunity_key": "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg",
       "state": "CLOSED_NO_LONGER_AVAILABLE"
     },
@@ -233,6 +240,20 @@
       "next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
       "opportunity_key": "welodata.com|ai-service-general-application|south-africa",
       "state": "DISCOVERED"
+    },
+    {
+      "opportunity_key": "automationarchitects.ai|talent-tracker|cape-town-ai-automation",
+      "state": "DISCOVERED",
+      "next_action": "Monitor current roles and qualify only when a specific paid opening or direct buyer need produces a credible payer path.",
+      "due_at": null,
+      "due_now": false
+    },
+    {
+      "opportunity_key": "dramaloft.com|creator-onboarding|vertical-drama-distribution",
+      "state": "HOLD_CAPABILITY_GAP",
+      "next_action": "Do not hand off to PRI until a complete upload-ready series exists or Dramaloft confirms an earlier-stage submission path.",
+      "due_at": null,
+      "due_now": false
     }
   ]
 }
