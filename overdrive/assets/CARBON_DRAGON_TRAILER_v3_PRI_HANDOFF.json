@@ -1,0 +1,77 @@
+{
+  "schema": "amx.carbon.pri_asset_handoff.v1",
+  "asset_id": "CARBON-DRAGON-TRAILER-V3",
+  "title": "The Dragon Who Could Not Claim Me",
+  "producer": "CARBON°",
+  "commercial_owner": "PRI",
+  "version": "v3",
+  "purpose": "Buyer-support trailer and private review asset. It does not replace the two-episode competition master and is not evidence of publication, submission or buyer acceptance.",
+  "intended_use": [
+    "PRI-controlled buyer review when relevant to an existing qualified opportunity",
+    "private House/Owner review",
+    "controlled capability proof"
+  ],
+  "artifacts": {
+    "master": {
+      "name": "CARBON_Dragon_Cinematic_Trailer_v3.mp4",
+      "library_file_id": "libfile_bf1a53de847c8191a429ea669fcf4201",
+      "file_id": "file_000000007c34820e82db49928a4cedc7",
+      "sha256": "ba0ab45ff00a0acc1ce31bdadee84e8e45bfad495566711a2d20412e9210e034",
+      "duration_seconds": 39.0,
+      "frame": "1080x1920",
+      "fps": 24,
+      "video": "H.264 yuvj420p",
+      "audio": "AAC stereo 48 kHz",
+      "size_bytes": 6250351
+    },
+    "mobile": {
+      "name": "CARBON_Dragon_Cinematic_Trailer_v3_720p.mp4",
+      "library_file_id": "libfile_605d6645ef6481919a5c121c3cf079d9",
+      "file_id": "file_00000000c844820ebd62ca2be097238e",
+      "sha256": "ff13d6449fe8441ffa898c35f09ef5d2068e68364fb298957ded9817693857ef",
+      "duration_seconds": 39.0,
+      "frame": "720x1280",
+      "fps": 24,
+      "video": "H.264",
+      "audio": "AAC stereo 48 kHz",
+      "size_bytes": 3658648
+    },
+    "receipt": {
+      "name": "CARBON_Dragon_Cinematic_Trailer_v3_RECEIPT.md",
+      "library_file_id": "libfile_eed4b1f5cd90819183983426cc7a77a9",
+      "file_id": "file_000000002fac820e97ee3fdbaab88cc5",
+      "sha256": "0beecdeed7ef1ca6c14e5b2be7e923cb76edd3d3ae730277e494d9cfec8d1f12"
+    }
+  },
+  "independent_verification": {
+    "verified_at": "2026-10-03T03:17:00Z",
+    "hashes_match_receipt": true,
+    "ffprobe_match": true,
+    "audio": {
+      "integrated_lufs": -14.19,
+      "true_peak_dbtp": -1.22,
+      "loudness_range_lu": 5.4
+    },
+    "visual_contact_sheet": "PASS — property/title hierarchy and mobile legibility sampled; CARBON° is closing credit only."
+  },
+  "provenance_rights": {
+    "source_master": "Owner-selected Dragon/Mara key art",
+    "source_sha256": "55308af7d1ce18bafa37a3d2857fc0fb2ffa86ac9a27bbc59001da63b80b3c8b",
+    "narrative_source": "Accepted Episodes 06–07 CARBON° production chain",
+    "voices": "No provisional character voices used",
+    "claims": "No platform marks, client marks, review quotes, awards, publication or acceptance claims",
+    "rights_status": "AMX/CARBON° internal production chain; external exploitation remains subject to current controlled-rights review"
+  },
+  "state": {
+    "AVAILABLE": true,
+    "RENDER_ACCEPTED": "Internal CARBON° technical/critic pass",
+    "RECORD_PUBLISHED": false,
+    "VIDEO_ACCESS_VERIFIED": false,
+    "SUBMITTED": false,
+    "EXTERNALLY_ACCEPTED": false,
+    "INVOICED": false,
+    "PAID": false
+  },
+  "pri_next_action": "Use only when relevant to an existing qualified opportunity. Establish recipient-specific controlled access, verify the exact access route, then record the package version and access receipt in the canonical opportunity ledger. Do not infer external access from Library availability and do not send duplicate outreach.",
+  "carbon_boundary": "CARBON° has completed and verified the asset handoff. External pitch, submission, follow-up, negotiation and settlement remain PRI-owned."
+}
