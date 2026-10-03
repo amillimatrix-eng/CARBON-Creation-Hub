@@ -24,7 +24,7 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
+      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
       "state": "QUALIFIED"
     },
@@ -92,23 +92,23 @@
       "state": "DELIVERY_FAILED"
     },
     {
-      "due_at": "2026-10-03T16:00:00Z",
-      "due_now": true,
-      "next_action": "Resume the existing OpenTrain account via secure authentication/password recovery, then submit current qualified roles. Do not create a duplicate account.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
       "state": "QUALIFIED"
     },
     {
-      "due_at": "2026-10-03T16:00:00Z",
-      "due_now": true,
-      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
       "state": "QUALIFIED"
     },
     {
-      "due_at": "2026-10-03T16:00:00Z",
-      "due_now": true,
-      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
       "state": "QUALIFIED"
     },
@@ -122,12 +122,12 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Submit the official HumanSignal Greenhouse application using recovered truthful applicant/CV data when interactive browser transport is available; verify device requirement in-form.",
+      "next_action": "Monitor official HumanSignal support thread 1a102dad930442cd for an approved alternate route; otherwise submit the current Greenhouse application when interactive form execution is available. Do not claim SUBMITTED until a provider receipt exists.",
       "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-03T16:48:58.896854+00:00",
+  "generated_at": "2026-10-03T17:42:00Z",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -209,7 +209,7 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
+      "next_action": "No action; official page says the July–August study is completed and no longer accepting participants.",
       "opportunity_key": "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg",
       "state": "CLOSED_NO_LONGER_AVAILABLE"
     },
@@ -254,6 +254,34 @@
       "next_action": "Do not hand off to PRI until a complete upload-ready series exists or Dramaloft confirms an earlier-stage submission path.",
       "opportunity_key": "dramaloft.com|creator-onboarding|vertical-drama-distribution",
       "state": "HOLD_CAPABILITY_GAP"
+    },
+    {
+      "opportunity_key": "opentrain.ai|ai-safety-red-team-evaluator|cmusdt5na000406mu1ji2nhbh",
+      "state": "HOLD",
+      "next_action": "Confirm 20+ hours/week availability from recoverable applicant state or human attestation; then hand off to PRI through the existing OpenTrain account if satisfied.",
+      "due_at": null,
+      "due_now": false
+    },
+    {
+      "opportunity_key": "opentrain.ai|ai-text-evaluation-writer-editor|cmurzvcme004j04l29e4irdu5",
+      "state": "HOLD",
+      "next_action": "Confirm 20+ hours/week availability; if satisfied, qualify and route through the existing OpenTrain account without duplicate registration.",
+      "due_at": null,
+      "due_now": false
+    },
+    {
+      "opportunity_key": "humansignal.com|data-annotation-contributor|international",
+      "state": "CLOSED_NOT_ELIGIBLE",
+      "next_action": "No action; South Africa is not in the current eligible-country list.",
+      "due_at": null,
+      "due_now": false
+    },
+    {
+      "opportunity_key": "humansignal.com|content-creator-flexible-gig|remote",
+      "state": "HOLD",
+      "next_action": "Verify South Africa eligibility and compensation before PRI handoff.",
+      "due_at": null,
+      "due_now": false
     }
   ]
 }
