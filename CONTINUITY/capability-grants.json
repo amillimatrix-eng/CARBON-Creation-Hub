@@ -1,0 +1,107 @@
+{
+  "schema": "AMX.CAPABILITY.GRANTS.v1",
+  "deny_by_default": true,
+  "capability_inventory": [
+    "read_governance",
+    "write_governance",
+    "read_commercial_data",
+    "send_external_communication",
+    "execute_shell",
+    "access_network",
+    "access_credentials",
+    "modify_production_code",
+    "deploy",
+    "access_financial_rails",
+    "spend_funds",
+    "sign_transactions",
+    "read_private_assets",
+    "write_receipts",
+    "alter_worker_mandate"
+  ],
+  "unavailable_capabilities": {
+    "BLACK.execute_shell": "HOLD until locally sealed exact-argv grant; legacy capability retained, not deleted"
+  },
+  "grants": [
+    {
+      "grant_id": "black-read_governance-v1",
+      "worker_id": "BLACK",
+      "capability": "read_governance",
+      "scopes": [
+        "continuity_sync",
+        "continuity_verify",
+        "continuity_restore_test",
+        "continuity_health"
+      ],
+      "state": "ACTIVE",
+      "authority_receipt": "Owner commissioning directive 2026-10-03; CONTINUITY/CONTROL_PLANE_PLAN.md",
+      "version": 1
+    },
+    {
+      "grant_id": "black-write_receipts-v1",
+      "worker_id": "BLACK",
+      "capability": "write_receipts",
+      "scopes": [
+        "continuity",
+        "black-jobs"
+      ],
+      "state": "ACTIVE",
+      "authority_receipt": "Owner commissioning directive 2026-10-03; CONTINUITY/CONTROL_PLANE_PLAN.md",
+      "version": 1
+    },
+    {
+      "grant_id": "black-access_credentials-v1",
+      "worker_id": "BLACK",
+      "capability": "access_credentials",
+      "scopes": [
+        "continuity-key-and-drive-read-only"
+      ],
+      "state": "ACTIVE",
+      "authority_receipt": "Owner commissioning directive 2026-10-03; CONTINUITY/CONTROL_PLANE_PLAN.md",
+      "version": 1
+    },
+    {
+      "grant_id": "bounty-reaper-read_governance-v1",
+      "worker_id": "Bounty Reaper",
+      "capability": "read_governance",
+      "scopes": [
+        "crypto-opportunity-filter"
+      ],
+      "state": "ACTIVE",
+      "authority_receipt": "Owner commissioning directive 2026-10-03",
+      "version": 1
+    },
+    {
+      "grant_id": "bounty-reaper-write_receipts-v1",
+      "worker_id": "Bounty Reaper",
+      "capability": "write_receipts",
+      "scopes": [
+        "bounty-learning"
+      ],
+      "state": "ACTIVE",
+      "authority_receipt": "Owner commissioning directive 2026-10-03",
+      "version": 1
+    },
+    {
+      "grant_id": "critic-read_governance-v1",
+      "worker_id": "Critic",
+      "capability": "read_governance",
+      "scopes": [
+        "bounty-learning-test"
+      ],
+      "state": "ACTIVE",
+      "authority_receipt": "Owner commissioning directive 2026-10-03",
+      "version": 1
+    },
+    {
+      "grant_id": "root-write_governance-v1",
+      "worker_id": "Root",
+      "capability": "write_governance",
+      "scopes": [
+        "bounty-learning-promotion"
+      ],
+      "state": "ACTIVE",
+      "authority_receipt": "Owner commissioning directive 2026-10-03",
+      "version": 1
+    }
+  ]
+}

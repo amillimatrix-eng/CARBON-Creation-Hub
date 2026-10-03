@@ -46,6 +46,30 @@ class EvidencePayload(BaseModel):
     tags: list[str] = Field(default_factory=list)
 
 
+class LearningOutcomePayload(BaseModel):
+    outcome_id: str = Field(pattern="^[A-Za-z0-9_-]{1,100}$")
+    action: str = Field(min_length=1, max_length=500)
+    result: dict[str, Any]
+    source: str = Field(min_length=1, max_length=300)
+
+
+class LessonPayload(BaseModel):
+    lesson_id: str
+    outcome_id: str
+    kind: str
+    statement: str = Field(min_length=1, max_length=1000)
+
+
+class CandidatePayload(BaseModel):
+    candidate_id: str
+    lesson_id: str
+    changes: dict[str, Any]
+
+
+class PromotionPayload(BaseModel):
+    expected_version: int = Field(ge=1)
+
+
 def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> FastAPI:
     root = Path(repo_root or os.getenv("AMX_REPO_ROOT") or Path(__file__).resolve().parents[1]).resolve()
     db = Path(db_path or os.getenv("AMX_DB_PATH") or root / "data/amx_evidence.db").resolve()
@@ -86,6 +110,76 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             raise HTTPException(status_code=503, detail="admin writes disabled: AMX_ADMIN_TOKEN is not configured")
         if not x_amx_admin or not hmac.compare_digest(x_amx_admin, secret):
             raise HTTPException(status_code=401, detail="invalid admin credential")
+
+    def learning_role(role: str, supplied: str | None) -> None:
+        if os.getenv("AMX_LEARNING_DURABLE_STORAGE") != "accepted":
+            raise HTTPException(status_code=503, detail="durable learning storage not accepted")
+        secret = os.getenv("AMX_"+role.upper()+"_TOKEN")
+        if not secret or not supplied or not hmac.compare_digest(secret, supplied):
+            raise HTTPException(status_code=401, detail="worker role credential required")
+
+    def reaper_role(x_amx_reaper: str | None = Header(default=None)) -> None:
+        learning_role("reaper", x_amx_reaper)
+
+    def critic_role(x_amx_critic: str | None = Header(default=None)) -> None:
+        learning_role("critic", x_amx_critic)
+
+    def root_role(x_amx_root: str | None = Header(default=None)) -> None:
+        learning_role("root", x_amx_root)
+
+    def learning():
+        from backend.security import local_grants
+        from overdrive.evidence_learning import EvidenceLearning
+        return EvidenceLearning(store, local_grants(root))
+
+    def learning_action(fn):
+        try:
+            return fn()
+        except (ValueError, PermissionError, KeyError) as exc:
+            raise HTTPException(status_code=409, detail=type(exc).__name__+": governed learning action rejected") from None
+
+    @app.get("/api/continuity/state")
+    def continuity_state() -> dict[str, Any]:
+        return aggregate_state(root)["continuity"]
+
+    @app.post("/api/assets/eligibility", dependencies=[Depends(require_admin)])
+    def assets_eligibility(payload: dict[str, Any]) -> dict[str, Any]:
+        from .assets import asset_eligibility
+        try:
+            return asset_eligibility(payload)
+        except ValueError:
+            raise HTTPException(status_code=422, detail="asset classification required") from None
+
+    @app.get("/api/workers/bounty-reaper/capability", dependencies=[Depends(require_admin)])
+    def reaper_capability() -> dict[str, Any]:
+        return learning().capability()
+
+    @app.post("/api/workers/bounty-reaper/outcomes", dependencies=[Depends(reaper_role)])
+    def reaper_outcome(payload: LearningOutcomePayload) -> dict[str, Any]:
+        from .continuity import relative
+        try:
+            source = root / relative(payload.source)
+        except ValueError:
+            raise HTTPException(status_code=400, detail="invalid source reference") from None
+        if not source.is_file() or source.is_symlink() or source.resolve().parent != (root / "CONTINUITY").resolve():
+            raise HTTPException(status_code=400, detail="only enrolled continuity evidence sources are accepted")
+        return learning_action(lambda: learning().outcome(payload.outcome_id, payload.action, payload.result, source))
+
+    @app.post("/api/workers/bounty-reaper/lessons", dependencies=[Depends(reaper_role)])
+    def reaper_lesson(payload: LessonPayload) -> dict[str, Any]:
+        return learning_action(lambda: learning().lesson(payload.lesson_id, payload.outcome_id, payload.kind, payload.statement))
+
+    @app.post("/api/workers/bounty-reaper/candidates", dependencies=[Depends(reaper_role)])
+    def reaper_candidate(payload: CandidatePayload) -> dict[str, Any]:
+        return learning_action(lambda: learning().candidate(payload.candidate_id, payload.lesson_id, payload.changes))
+
+    @app.post("/api/workers/bounty-reaper/candidates/{candidate_id}/test", dependencies=[Depends(critic_role)])
+    def critic_test(candidate_id: str) -> dict[str, Any]:
+        return learning_action(lambda: learning().test_candidate(candidate_id, "Critic"))
+
+    @app.post("/api/workers/bounty-reaper/candidates/{candidate_id}/promote", dependencies=[Depends(root_role)])
+    def root_promote(candidate_id: str, payload: PromotionPayload) -> dict[str, Any]:
+        return learning_action(lambda: learning().promote(candidate_id, payload.expected_version, "Root"))
 
     @app.get("/api/health")
     def health() -> dict[str, Any]:
@@ -128,9 +222,10 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
 
     @app.get("/api/evidence/{evidence_id}/versions")
     def get_evidence_versions(evidence_id: str) -> dict[str, Any]:
-        if store.get(evidence_id) is None:
+        current = store.get(evidence_id)
+        if current is None or not house_visible(current):
             raise HTTPException(status_code=404, detail="evidence record not found")
-        versions = store.versions(evidence_id)
+        versions = [v for v in store.versions(evidence_id) if house_visible(v["payload"])]
         return {"evidence_id": evidence_id, "versions": versions, "count": len(versions)}
 
     @app.post("/api/evidence/search")

@@ -1,0 +1,11 @@
+{
+  "schema": "AMX.SECURITY.REVIEW.v1",
+  "state": "PASS",
+  "files_scanned": 168,
+  "local_commits_scanned": 1,
+  "remote_file_patches_scanned": 316,
+  "history_scope": "Available local commits and supplied remote patches; older uninspected history remains explicit HOLD",
+  "findings": [],
+  "raw_secrets_disclosed": false,
+  "rotation_action": "If an actual production credential is identified, revoke/rotate at its issuer, replace the scoped local binding, remove exposed current material and re-scan; a commit deletion does not revoke a credential."
+}

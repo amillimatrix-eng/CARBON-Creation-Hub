@@ -21,7 +21,12 @@
       "T10_REMAINING_GAP": "Asset production and access do not prove buyer acceptance, conversion, or payment.",
       "T10_PASS": "PASS",
       "inspect_route": "Controlled Drive access; not public.",
-      "tags": ["carbon", "production", "provenance", "commercial-evidence"]
+      "tags": [
+        "carbon",
+        "production",
+        "provenance",
+        "commercial-evidence"
+      ]
     },
     {
       "evidence_id": "EVID-OVERDRIVE-001",
@@ -41,7 +46,13 @@
       "T10_REMAINING_GAP": "These historical receipts are provenance for capability; they do not by themselves prove current scheduled autonomous reliability.",
       "T10_PASS": "PASS",
       "inspect_route": "GitHub repository evidence.",
-      "tags": ["overdrive", "state-machine", "commercial", "receipts", "observability"]
+      "tags": [
+        "overdrive",
+        "state-machine",
+        "commercial",
+        "receipts",
+        "observability"
+      ]
     },
     {
       "evidence_id": "EVID-IRIS-001",
@@ -61,7 +72,13 @@
       "T10_REMAINING_GAP": "Retest the current deployment and source/hash synchronization before asserting current implementation details.",
       "T10_PASS": "HOLD",
       "inspect_route": "Repository and deployment reference; verify freshness before asserting current implementation details.",
-      "tags": ["iris", "micase", "interview", "evidence-surface", "freshness"]
+      "tags": [
+        "iris",
+        "micase",
+        "interview",
+        "evidence-surface",
+        "freshness"
+      ]
     },
     {
       "evidence_id": "EVID-T10-001",
@@ -84,7 +101,42 @@
       "T10_PASS": "PASS",
       "inspect_route": "AMX Root governance artifact; verify the SHA-256 before relying on the text.",
       "visibility": "HOUSE",
-      "tags": ["t10", "outcome-truth", "observability", "governance", "reliability", "incident-response", "interview"]
+      "tags": [
+        "t10",
+        "outcome-truth",
+        "observability",
+        "governance",
+        "reliability",
+        "incident-response",
+        "interview"
+      ]
+    },
+    {
+      "evidence_id": "EVID-AMX-CONTINUITY-COMMISSION-20261003",
+      "capability": "Existing Matrix encrypted continuity and governed worker learning",
+      "artifact": "Continuity/security/capability commissioning implementation",
+      "authoritative_source": "amillimatrix-eng/CARBON-Creation-Hub",
+      "source_pointer": "CONTINUITY/receipts/AMX_CODEX_COMMISSIONING_2026-10-03.json",
+      "date_version": "2026-10-03",
+      "durable_receipts": [
+        "CONTINUITY/receipts/AMX_CODEX_COMMISSIONING_2026-10-03.json",
+        "CONTINUITY/receipts/AMX_CODEX_SECURITY_REVIEW_2026-10-03.json"
+      ],
+      "status_freshness": "LOCAL_IMPLEMENTATION_TESTED / LIVE_ENROLLMENT_HOLD",
+      "interview_safe_explanation": "Extended the existing BLACK, evidence backend and Reaper with authenticated encrypted recovery, clean-target restore comparison, scoped capability grants and tested versioned learning. Full live commissioning retains explicit dependency gates.",
+      "T10_JOB": "Commission secure recoverability and governed capability without duplicate Matrix infrastructure.",
+      "T10_ACTUAL": "Working source and adversarial local tests are present; fresh existing BLACK service preflight returned a durable readback; live recovery installation is separately gated.",
+      "T10_EVIDENCE": "CONTINUITY/receipts/AMX_CODEX_COMMISSIONING_2026-10-03.json; BLACK/receipts/BLACK-CONTINUITY-SECURITY-PREFLIGHT-20261003.json",
+      "T10_CHANGE": "Recovery, restore, corruption handling, grants and learning now have executable implementations and durable acceptance records.",
+      "T10_REMAINING_GAP": "Reviewed source/service promotion; scoped Drive authentication; independent ciphertext/key custody; accepted persistent learning runtime; next natural Windows boot.",
+      "T10_PASS": "HOLD",
+      "visibility": "HOUSE",
+      "tags": [
+        "continuity",
+        "security",
+        "recovery",
+        "worker-learning"
+      ]
     }
   ]
 }

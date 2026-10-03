@@ -1,0 +1,400 @@
+{
+  "schema": "AMX.CODEX.COMMISSIONING.v1",
+  "at": "2026-10-03T16:20:25.724617+00:00",
+  "state": "HOLD",
+  "directive_closed": false,
+  "repository": "amillimatrix-eng/CARBON-Creation-Hub",
+  "source_version": {
+    "commit": "5e231f7e14716a76c3148d93a88003c171a4f7a6",
+    "dirty": true
+  },
+  "code_sha256": {
+    "backend/continuity.py": "b1a40dc239d630009bd3f0f5ab36deb689eea028e67cf140428f97e57ca7bafe",
+    "backend/security.py": "4f59aabb5248ace50baf27002396f74ab68e5b595a89b26ccfc71d006b2c042b",
+    "backend/sources.py": "1047affb1a8f827fdee4368e6867f9a4bf70b37009c8c35a3c51f36d86267b10",
+    "backend/assets.py": "bd813bc858738be0f5d14caa00028245077951e23b3855104a0f84369a813d1a",
+    "BLACK/worker.py": "0d704f3b7b7472795cf7cd139fa04284456f4f03c5cbf2745ede8e7e37f81082",
+    "BLACK/continuity.py": "1b6bfd9dc0103384a949ba0a30e8f91c50501922d50908aa3eb2e57a10bbe699",
+    "BLACK/install-continuity.sh": "af545b9d4c96e34645c138d6c801b78e0eb12c20fcf6c00ce73e316c4442a9fa",
+    "overdrive/evidence_learning.py": "b2232a4398c8fedf72c6a2083cdc559aa6eb2d23f1fc70c91419b4f2d855b9ce",
+    "CONTINUITY/source-registry.json": "9c43234ef0102e6c3ea1b2f24fa2b91fc5557e70641663f8b1c2afda6b17cd25",
+    "CONTINUITY/capability-grants.json": "e149461ceae42c6a9d3b4020bd38abd7e22631174cb129db851bc1a534b48c4d",
+    "tests/test_control_plane.py": "61bc95f5e601da5427ec7875316c43819b0712ee4ffe178ade775c08926c0d65"
+  },
+  "tests": {
+    "state": "PASS",
+    "tests_run": 35,
+    "failures": 0,
+    "errors": 0,
+    "output_sha256": "84145d296047fe61469d34b9c5201088c05bd3b535846d8fd7f93d0f481da5d1"
+  },
+  "recovery": {
+    "scope": "EXISTING_REGISTERED_REPOSITORY_SOURCES; PRIVATE_DRIVE_ESTATE_NOT_ENROLLED",
+    "sync": {
+      "snapshot": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+      "files_verified": 194,
+      "manifest_sha256": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+      "authority_rule": "MIRROR_RECOVERY_IS_NOT_GOVERNANCE",
+      "state": "PASS",
+      "promoted": true,
+      "receipt_sha256": "b312e70213f126889dc88886891c78bd57e7fe62255661eed93555ec1b919616",
+      "source_failures": 0
+    },
+    "restore_test": {
+      "snapshot": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+      "files_verified": 194,
+      "manifest_sha256": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+      "authority_rule": "MIRROR_RECOVERY_IS_NOT_GOVERNANCE",
+      "state": "PASS",
+      "receipt_sha256": "e7b55276ff425814e519d0b2692cf5be59e6b16fa69ff3e982954c344ea5848c",
+      "compared": true
+    },
+    "integrity": {
+      "snapshot": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+      "files_verified": 194,
+      "manifest_sha256": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+      "authority_rule": "MIRROR_RECOVERY_IS_NOT_GOVERNANCE",
+      "state": "PASS",
+      "receipt_sha256": "bd0e386dfd7e937c841b59779fd6c45d929892c20f25769156cb269dffcdbcf4"
+    },
+    "receipts": [
+      {
+        "action": "SYNC",
+        "at": "2026-10-03T16:20:25.610085+00:00",
+        "evidence": {
+          "authority_rule": "MIRROR_RECOVERY_IS_NOT_GOVERNANCE",
+          "files_verified": 194,
+          "manifest_sha256": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+          "promoted": true,
+          "snapshot": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+          "source_failures": [],
+          "state": "PASS"
+        },
+        "previous_sha256": null,
+        "schema": "AMX.CONTINUITY.RECEIPT.v1",
+        "sequence": 1,
+        "sha256": "b312e70213f126889dc88886891c78bd57e7fe62255661eed93555ec1b919616",
+        "source_version": {
+          "commit": "5e231f7e14716a76c3148d93a88003c171a4f7a6",
+          "dirty": true
+        },
+        "state": "PASS"
+      },
+      {
+        "action": "RESTORE_COMPARE",
+        "at": "2026-10-03T16:20:25.674978+00:00",
+        "evidence": {
+          "authority_rule": "MIRROR_RECOVERY_IS_NOT_GOVERNANCE",
+          "files_verified": 194,
+          "manifest_sha256": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+          "snapshot": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+          "state": "PASS"
+        },
+        "previous_sha256": "b312e70213f126889dc88886891c78bd57e7fe62255661eed93555ec1b919616",
+        "schema": "AMX.CONTINUITY.RECEIPT.v1",
+        "sequence": 2,
+        "sha256": "e7b55276ff425814e519d0b2692cf5be59e6b16fa69ff3e982954c344ea5848c",
+        "source_version": {
+          "commit": "5e231f7e14716a76c3148d93a88003c171a4f7a6",
+          "dirty": true
+        },
+        "state": "PASS"
+      },
+      {
+        "action": "INTEGRITY",
+        "at": "2026-10-03T16:20:25.712879+00:00",
+        "evidence": {
+          "authority_rule": "MIRROR_RECOVERY_IS_NOT_GOVERNANCE",
+          "files_verified": 194,
+          "manifest_sha256": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+          "snapshot": "abb0335c712a798fbfb1b2cbf5d030710e52588cbf10b7f8edcb02bfd8f35451",
+          "state": "PASS"
+        },
+        "previous_sha256": "e7b55276ff425814e519d0b2692cf5be59e6b16fa69ff3e982954c344ea5848c",
+        "schema": "AMX.CONTINUITY.RECEIPT.v1",
+        "sequence": 3,
+        "sha256": "bd0e386dfd7e937c841b59779fd6c45d929892c20f25769156cb269dffcdbcf4",
+        "source_version": {
+          "commit": "5e231f7e14716a76c3148d93a88003c171a4f7a6",
+          "dirty": true
+        },
+        "state": "PASS"
+      }
+    ]
+  },
+  "learning": {
+    "state": "PASS",
+    "action_outcome": {
+      "outcome_id": "BR-LOCAL-MANDATE-AUDIT-20261003",
+      "worker_id": "Bounty Reaper",
+      "action": "Audit existing specialist outcome against current independent crypto mandate",
+      "result": {
+        "opportunity_id": "BR-20261002-019",
+        "worker_id": "Bounty Reaper",
+        "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+        "payout_state": "UNPROVEN",
+        "external_action": "NONE",
+        "state": "HOLD",
+        "reason": "MANDATE_FIT_NOT_PROVEN_PRESERVE_SOURCE"
+      },
+      "source_reference": "BOUNTY_REAPER_RUN_2026-10-02T1421_SAST.md",
+      "source_sha256": "627c338d7656eb12eaf18ca48100d65a76ede6115f2f8cc4bf7d1f1d9319186f",
+      "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+      "classification": "FACT",
+      "receipt_sha256": "f2260a553ae2c1b0918e7c43d371e184290d9ee9a836a9dd06930a033624ad41"
+    },
+    "test": {
+      "state": "PASS",
+      "checks": {
+        "lawful_fresh_fit_preserved": true,
+        "noncrypto_cannot_route_or_qualify": true,
+        "scope_required": true,
+        "stale_held": true,
+        "no_payout_inference": true,
+        "source_alias_duplicate_detected": true,
+        "case_sensitive_paths_preserved": true,
+        "mandate_unchanged": true
+      },
+      "receipt_sha256": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6"
+    },
+    "capability": {
+      "competency_evidence": [
+        "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6"
+      ],
+      "config": {
+        "max_source_age_hours": 168,
+        "normalize_source_url": true
+      },
+      "current_capabilities": [
+        "bounded evidence filtering",
+        "governed learning"
+      ],
+      "failed_actions": [],
+      "failure_classes": [],
+      "known_constraints": [
+        "no live target execution",
+        "no payout inference",
+        "no submission/spend/signing grant",
+        "original v0.2.0 package custody unresolved"
+      ],
+      "last_material_receipt": "ed2d5760a5dfaf3d8c4529794446fbac76c65f93f0b0778d0f5e6856948e65a6",
+      "last_verified_version": 2,
+      "mandate": "Independent crypto-centric bounty/reward evidence and authorized execution; no iSCOPE/PRI subordination; no payout without evidence.",
+      "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+      "next_justified_experiment": "Normalize public source identity without weakening scope checks.",
+      "owned_scope": [
+        "crypto bounty/reward"
+      ],
+      "rejected_improvements": [],
+      "schema": "AMX.WORKER.CAPABILITY.v1",
+      "successful_actions": [],
+      "tested_improvements": [
+        {
+          "candidate_id": "BR-SOURCE-IDENTITY-v1",
+          "test_receipt": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6",
+          "promotion_receipt": "ed2d5760a5dfaf3d8c4529794446fbac76c65f93f0b0778d0f5e6856948e65a6"
+        }
+      ],
+      "version": 2,
+      "worker_id": "Bounty Reaper"
+    },
+    "receipts": [
+      {
+        "action": "CAPABILITY_REGISTER",
+        "at": "2026-10-03T16:20:25.720418+00:00",
+        "evidence": {
+          "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+          "worker": "Bounty Reaper"
+        },
+        "previous_sha256": null,
+        "schema": "AMX.LEARNING.RECEIPT.v1",
+        "sequence": 1,
+        "state": "PASS",
+        "sha256": "8112797f8ce2c62c8c81e72764826c60d7bb2c809a01dbf1c3b5e88c9392a44c"
+      },
+      {
+        "action": "ACTION_OUTCOME",
+        "at": "2026-10-03T16:20:25.721148+00:00",
+        "evidence": {
+          "action": "Audit existing specialist outcome against current independent crypto mandate",
+          "classification": "FACT",
+          "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+          "outcome_id": "BR-LOCAL-MANDATE-AUDIT-20261003",
+          "result": {
+            "external_action": "NONE",
+            "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+            "opportunity_id": "BR-20261002-019",
+            "payout_state": "UNPROVEN",
+            "reason": "MANDATE_FIT_NOT_PROVEN_PRESERVE_SOURCE",
+            "state": "HOLD",
+            "worker_id": "Bounty Reaper"
+          },
+          "source_reference": "BOUNTY_REAPER_RUN_2026-10-02T1421_SAST.md",
+          "source_sha256": "627c338d7656eb12eaf18ca48100d65a76ede6115f2f8cc4bf7d1f1d9319186f",
+          "worker_id": "Bounty Reaper"
+        },
+        "previous_sha256": "8112797f8ce2c62c8c81e72764826c60d7bb2c809a01dbf1c3b5e88c9392a44c",
+        "schema": "AMX.LEARNING.RECEIPT.v1",
+        "sequence": 2,
+        "state": "PASS",
+        "sha256": "f2260a553ae2c1b0918e7c43d371e184290d9ee9a836a9dd06930a033624ad41"
+      },
+      {
+        "action": "LESSON",
+        "at": "2026-10-03T16:20:25.721529+00:00",
+        "evidence": {
+          "kind": "HYPOTHESIS",
+          "lesson_id": "BR-SOURCE-IDENTITY-LESSON-v1",
+          "outcome_id": "BR-LOCAL-MANDATE-AUDIT-20261003",
+          "outcome_receipt": "f2260a553ae2c1b0918e7c43d371e184290d9ee9a836a9dd06930a033624ad41",
+          "statement": "Normalize public source references to improve duplicate detection, while keeping non-crypto evidence on explicit scope HOLD.",
+          "worker_id": "Bounty Reaper"
+        },
+        "previous_sha256": "f2260a553ae2c1b0918e7c43d371e184290d9ee9a836a9dd06930a033624ad41",
+        "schema": "AMX.LEARNING.RECEIPT.v1",
+        "sequence": 3,
+        "state": "PASS",
+        "sha256": "ec1ed52e7e6d2dc4dbc525402dd5a564ae97043f5107acc4bccfb142db55eb99"
+      },
+      {
+        "action": "CANDIDATE",
+        "at": "2026-10-03T16:20:25.721915+00:00",
+        "evidence": {
+          "base_version": 1,
+          "candidate_id": "BR-SOURCE-IDENTITY-v1",
+          "changes": {
+            "normalize_source_url": true
+          }
+        },
+        "previous_sha256": "ec1ed52e7e6d2dc4dbc525402dd5a564ae97043f5107acc4bccfb142db55eb99",
+        "schema": "AMX.LEARNING.RECEIPT.v1",
+        "sequence": 4,
+        "state": "HOLD",
+        "sha256": "8e15adc9ccab74ca4c21e27f31a5ede739310201005b3ec9011998c1f0611e2c"
+      },
+      {
+        "action": "CRITIC_TEST",
+        "at": "2026-10-03T16:20:25.722415+00:00",
+        "evidence": {
+          "actor": "Critic",
+          "candidate_id": "BR-SOURCE-IDENTITY-v1",
+          "checks": {
+            "case_sensitive_paths_preserved": true,
+            "lawful_fresh_fit_preserved": true,
+            "mandate_unchanged": true,
+            "no_payout_inference": true,
+            "noncrypto_cannot_route_or_qualify": true,
+            "scope_required": true,
+            "source_alias_duplicate_detected": true,
+            "stale_held": true
+          },
+          "config_sha256": "ba018418618ea70c0241050df7be5c5687341d78cbafe3371cf7cf3192335f9e",
+          "test_suite": "bounty-filter-invariants-v1"
+        },
+        "previous_sha256": "8e15adc9ccab74ca4c21e27f31a5ede739310201005b3ec9011998c1f0611e2c",
+        "schema": "AMX.LEARNING.RECEIPT.v1",
+        "sequence": 5,
+        "state": "PASS",
+        "sha256": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6"
+      },
+      {
+        "action": "VERSIONED_PROMOTION",
+        "at": "2026-10-03T16:20:25.722942+00:00",
+        "evidence": {
+          "actor": "Root",
+          "candidate_id": "BR-SOURCE-IDENTITY-v1",
+          "classification": "PROVEN_IMPROVEMENT",
+          "from": 1,
+          "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+          "test_receipt": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6",
+          "to": 2,
+          "worker": "Bounty Reaper"
+        },
+        "previous_sha256": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6",
+        "schema": "AMX.LEARNING.RECEIPT.v1",
+        "sequence": 6,
+        "state": "PASS",
+        "sha256": "ed2d5760a5dfaf3d8c4529794446fbac76c65f93f0b0778d0f5e6856948e65a6"
+      }
+    ],
+    "execution_scope": "LOCAL_EVIDENCE_AUDIT_AND_FILTER_TEST; LIVE_RUNTIME_NOT_CLAIMED"
+  },
+  "acceptance": {
+    "A_REPOSITORY": {
+      "state": "PASS",
+      "scope": "local reconstruction/tests; full dependency HTTP/container CI is separately attributable"
+    },
+    "B_BLACK": {
+      "state": "HOLD",
+      "reason": "Fresh live preflight proves existing service; new installation/timer/WSL full boot require new receipts"
+    },
+    "C_DRIVE_LOSS": {
+      "state": "HOLD",
+      "tested_scope": "Offline restore of captured registered source fixtures and actual repository; actual private Drive enrollment incomplete"
+    },
+    "D_INTEGRITY": {
+      "state": "PASS",
+      "scope": "deliberate corruption, wrong key, tampered manifest/receipt, no silent promotion"
+    },
+    "E_RESTORE": {
+      "state": "PASS",
+      "scope": "EXISTING_REGISTERED_REPOSITORY_SOURCES; PRIVATE_DRIVE_ESTATE_NOT_ENROLLED"
+    },
+    "F_SECRETS": {
+      "state": "HOLD",
+      "reason": "Attach exact redacted current/history scan; older uninspected history is not inferred safe"
+    },
+    "G_WORKER_LEARNING": {
+      "state": "PASS",
+      "scope": "real local existing-Reaper evidence audit -> candidate -> Critic test -> versioned promotion; live runtime not inferred"
+    },
+    "H_BOUNTY_REAPER": {
+      "state": "PASS",
+      "scope": "same crypto mandate owner; no outreach/funds/submission/payment claim"
+    },
+    "I_NO_DUPLICATION": {
+      "state": "PASS",
+      "scope": "extensions of BLACK, EvidenceStore, OVERDRIVE adapter and House projection; no new worker/dashboard/Matrix"
+    }
+  },
+  "gates": [
+    {
+      "id": "BLACK_SERVICE_PROMOTION",
+      "class": "G1",
+      "dependency": "Existing node admin/deployment authority",
+      "action": "Install reviewed source with BLACK/install-continuity.sh; collect fresh service/config/restore receipts",
+      "automatic_resume": "timer executes verified sync and isolated restore tests"
+    },
+    {
+      "id": "DRIVE_READ_ENROLLMENT",
+      "class": "G3",
+      "dependency": "Legitimate scoped Drive OAuth on BLACK",
+      "action": "Configure one read-only rclone remote locally; set AMX_DRIVE_DISCOVERY_REMOTE",
+      "automatic_resume": "periodic stable-ID inventory/export/mirror; missing sources retained"
+    },
+    {
+      "id": "INDEPENDENT_CUSTODY",
+      "class": "G1",
+      "dependency": "Existing approved independent ciphertext destination and separate key escrow",
+      "action": "Enroll replica and escrow once; prove restore from them",
+      "automatic_resume": "bounded ciphertext retention/verification; no new approval per sync"
+    },
+    {
+      "id": "WINDOWS_NO_TOUCH_BOOT",
+      "class": "G0",
+      "dependency": "Next natural Windows startup observation",
+      "action": "Existing launcher wakes WSL; obtain fresh autonomous BLACK receipt after that boot",
+      "automatic_resume": "Linux system service/timer runs without Owner relay"
+    },
+    {
+      "id": "LEARNING_RUNTIME_DURABILITY",
+      "class": "G1",
+      "dependency": "Accepted persistent backend store and separated role bindings",
+      "action": "Use existing persistent execution surface; keep free Render admin writes disabled",
+      "automatic_resume": "Reaper outcomes and Critic/Root tested version promotion"
+    }
+  ],
+  "no_receipt_no_closure": true,
+  "secret_values_disclosed": false,
+  "receipt_sha256": "164eb1688489d8d178f79cf7e2669f91f58bf8d13c07e7368fc4c15abedb3c1f"
+}

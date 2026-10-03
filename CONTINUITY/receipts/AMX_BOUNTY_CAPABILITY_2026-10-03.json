@@ -1,0 +1,41 @@
+{
+  "competency_evidence": [
+    "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6"
+  ],
+  "config": {
+    "max_source_age_hours": 168,
+    "normalize_source_url": true
+  },
+  "current_capabilities": [
+    "bounded evidence filtering",
+    "governed learning"
+  ],
+  "failed_actions": [],
+  "failure_classes": [],
+  "known_constraints": [
+    "no live target execution",
+    "no payout inference",
+    "no submission/spend/signing grant",
+    "original v0.2.0 package custody unresolved"
+  ],
+  "last_material_receipt": "ed2d5760a5dfaf3d8c4529794446fbac76c65f93f0b0778d0f5e6856948e65a6",
+  "last_verified_version": 2,
+  "mandate": "Independent crypto-centric bounty/reward evidence and authorized execution; no iSCOPE/PRI subordination; no payout without evidence.",
+  "mandate_sha256": "b1f0d7f34490c26c25db3790c75af5bf49203dd2274b59077fbabdfd84f910c0",
+  "next_justified_experiment": "Normalize public source identity without weakening scope checks.",
+  "owned_scope": [
+    "crypto bounty/reward"
+  ],
+  "rejected_improvements": [],
+  "schema": "AMX.WORKER.CAPABILITY.v1",
+  "successful_actions": [],
+  "tested_improvements": [
+    {
+      "candidate_id": "BR-SOURCE-IDENTITY-v1",
+      "test_receipt": "74287b26b1d7cfbca3f28109c26663c74ed7fd8e97cb406ab730160213db88f6",
+      "promotion_receipt": "ed2d5760a5dfaf3d8c4529794446fbac76c65f93f0b0778d0f5e6856948e65a6"
+    }
+  ],
+  "version": 2,
+  "worker_id": "Bounty Reaper"
+}
