@@ -1,0 +1,79 @@
+{
+  "asset": "DRAGON° Canonical Cast Pack v1",
+  "version": "1.0",
+  "date": "2026-10-03",
+  "status": "RENDER_ACCEPTED / REUSABLE REFERENCE LAYER",
+  "source_library_file_id": "libfile_51be607614ec81919d4a69237b020224",
+  "source_sha256": "2f9c036b1c8d5a3b729a460ff8dc24eea1db69ce0059594a7c79b505248b4215",
+  "production_route": "REUSE → EXTEND",
+  "identity": {
+    "Mara": {
+      "visual": "long black hair; gold ornaments; dark intense eyes; black/gold imperial fantasy; slender athletic regal silhouette",
+      "performance": "controlled, defiant, intelligent, emotionally precise",
+      "voice": "low-mid; controlled; emotive; velvet with steel",
+      "avoid": [
+        "passive/default innocent",
+        "generic heroine",
+        "modern casual"
+      ]
+    },
+    "Kael": {
+      "visual": "dark tousled hair; strong jaw; tall athletic frame; black/charcoal imperial armour or robes with gold",
+      "performance": "commanding, restrained, strategic, deeply emotional beneath control",
+      "voice": "low; deep; resonant; commanding",
+      "avoid": [
+        "playboy coding",
+        "comedic softness",
+        "weak posture",
+        "modern casual"
+      ]
+    },
+    "Seraphine": {
+      "visual": "platinum/silver hair; pale celestial palette; white/silver crystalline court styling; graceful silhouette",
+      "performance": "graceful, strategic, intelligent, conflicted; tension beneath elegance",
+      "voice": "mid-high; clear; melodic; layered; precise",
+      "avoid": [
+        "generic angelic",
+        "weak/passive",
+        "modern casual",
+        "Mara-like black/gold silhouette"
+      ]
+    }
+  },
+  "world": {
+    "palette": [
+      "black",
+      "gold",
+      "white",
+      "grey"
+    ],
+    "accent": [
+      "ember",
+      "eclipse light"
+    ],
+    "mood": [
+      "dark fantasy",
+      "imperial",
+      "celestial"
+    ],
+    "avoid": [
+      "neon",
+      "modern urban",
+      "bright pastel",
+      "out-of-world elements"
+    ]
+  },
+  "approved_uses": [
+    "posters",
+    "thumbnails",
+    "trailers",
+    "episode concept renders",
+    "promotional assets"
+  ],
+  "remaining_acceptance": [
+    "independent future-generation stress test",
+    "advanced character-performance animation",
+    "final voice casting",
+    "scene/shot bible"
+  ]
+}
