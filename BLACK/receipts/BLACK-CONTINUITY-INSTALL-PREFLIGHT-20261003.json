@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-CONTINUITY-INSTALL-PREFLIGHT-20261003",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 124,
+  "started": "2026-10-03T16:07:29.017114+00:00",
+  "finished": "2026-10-03T16:08:09.555112+00:00",
+  "stdout": "",
+  "stderr": ""
+}
