@@ -1,0 +1,13 @@
+{
+  "schema": "AMX.BLACK.JOB.v1",
+  "worker": "BLACK",
+  "command": [
+    "python3",
+    "-u",
+    "-c",
+    "import json,subprocess,importlib.metadata,os,pathlib\nprint(json.dumps({\"schema\":\"AMX.BLACK.USER_CONTINUITY_PREFLIGHT.v1\",\"python_modules\":{m:importlib.metadata.version(m) for m in [\"cryptography\",\"jsonschema\"]},\"python\":os.path.realpath(\"/usr/bin/python3\"),\"source_path\":str(pathlib.Path.cwd()),\"credential_values_read\":False}),flush=True)\nenv=os.environ.copy();env[\"XDG_RUNTIME_DIR\"]=\"/run/user/\"+str(os.getuid());env[\"DBUS_SESSION_BUS_ADDRESS\"]=\"unix:path=\"+env[\"XDG_RUNTIME_DIR\"]+\"/bus\"\nfor name,args in [(\"user_manager\",[\"systemctl\",\"--user\",\"is-active\",\"default.target\"]),(\"sudo_bounded\",[\"timeout\",\"--signal=TERM\",\"--kill-after=2s\",\"5s\",\"sudo\",\"-n\",\"/usr/bin/true\"]),(\"worker_restart\",[\"systemctl\",\"show\",\"amx-black.service\",\"--property=Restart,FragmentPath,NoNewPrivileges\"])]:\n r=subprocess.run(args,capture_output=True,text=True,timeout=12,env=env)\n print(json.dumps({\"check\":name,\"exit_code\":r.returncode,\"value\":r.stdout.strip()[:600],\"credential_values_read\":False}),flush=True)"
+  ],
+  "timeout": 45,
+  "scope": "READ_ONLY_BOUNDED_PRIVILEGE_AND_USER_MANAGER_OBSERVATION",
+  "authority": "Owner continuity/security commission"
+}
