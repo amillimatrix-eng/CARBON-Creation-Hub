@@ -1,6 +1,6 @@
 {
   "schema": "AMX_ISCOPE_PRI_WORKER_CONTRACT_V2",
-  "status": "CONTROL_COMMISSIONED / POST_CORRECTION_EXECUTION_CYCLE_PROVEN / SCHEDULED_RUNTIME_RELIABILITY_PENDING",
+  "status": "CONTROL_COMMISSIONED / SCHEDULER-ORIGIN ATTRIBUTABLE EXECUTION PROVEN / BENCHMARK PARTIAL",
   "cadence_seconds": 60,
   "offices": {
     "iSCOPE": {
@@ -59,8 +59,8 @@
       "automation_id": "6ab800f8ed888191bceee51b154a31eb",
       "state": "ENABLED",
       "restored_at": "2026-10-01T11:48:03+02:00",
-      "acceptance_state": "KPI_ENFORCED / SCHEDULED_SELF_EXECUTION_EVIDENCE_PENDING",
-      "note": "Automation is configured as reasoning surface and now explicitly enforces the existing IDEAL KPI. Configuration/schedule is not execution proof; acceptance requires attributable commercial work plus scheduler-origin row-34 readback with KPI evidence."
+      "acceptance_state": "SCHEDULER_ORIGIN_EXECUTION_PROVEN_FOR_OFFICIAL_ROUTE_OUTREACH_SCOPE",
+      "note": "Scheduler-origin execution on 2026-10-03 classified the full ledger, performed five deduplicated official-route PRI submissions, persisted/read back the 42-record ledger and read back OUTSTANDING row 34. This proves execution for the named scope only; it does not prove response, conversion, contract, invoice, payment or broad cross-category benchmark coverage."
     }
   },
   "truth_controls": [
@@ -116,7 +116,7 @@
       "ready_count": 4,
       "routing_interpretation": "VALID CURRENT SUBSET: 9 non-routed records were SUBMITTED with next-action due times on 2026-10-02. Reconcile full ledger each reasoning wake without forcing premature follow-up."
     },
-    "truth": "POST_CORRECTION ATTRIBUTABLE COMMERCIAL EXECUTION CYCLE PROVEN / SCHEDULED AUTOMATION SELF-EXECUTION RELIABILITY STILL NOT PROVEN",
+    "truth": "SCHEDULER-ORIGIN ATTRIBUTABLE COMMERCIAL EXECUTION PROVEN FOR DEDUPED OFFICIAL-ROUTE OUTREACH / END-TO-END CONVERSION AND REVENUE NOT PROVEN",
     "post_correction_iscope_receipt": "overdrive/iscope/receipts/ISCOPE-POST-CORRECTION-20261002-112020Z.json",
     "post_correction_pri_receipt": "overdrive/pri/receipts/PRI-POST-CORRECTION-20261002-112020Z.json",
     "post_correction_external_action_message": "1a0fc58012594488",
@@ -164,9 +164,29 @@
       },
       "realized_revenue_evidence": null,
       "realized_revenue": "0 / NO PAYMENT EVIDENCE"
+    },
+    "latest_scheduler_origin_run": {
+      "at": "2026-10-03T05:00:00Z",
+      "execution_origin": "SCHEDULER_AUTOMATION",
+      "ledger_commit": "0597c7e3735d3de60138c02063616d873e7be6ec",
+      "ledger_records": 42,
+      "official_route_submissions": [
+        "1a100230dcc62423",
+        "1a100230e2441107",
+        "1a1002313c6128a9",
+        "1a100231731ae464",
+        "1a100231af090dc1"
+      ],
+      "sheet_readback": "OUTSTANDING!A34:H34 PASS",
+      "kpi_delta": {
+        "iSCOPE": 0,
+        "PRI": 0,
+        "converted": 0
+      },
+      "outcome_truth": "Five messages are SENT/SUBMITTED. No external response, acceptance, contract, invoice, payment or realized revenue is proven."
     }
   },
-  "control_hardened_at": "2026-10-01",
+  "control_hardened_at": "2026-10-03",
   "protected_transport": {
     "state": "COMPLETED / DO NOT REOPEN",
     "rule": "Existing OVERDRIVE state/claims/receipts/dedupe/routing/minute freshness transport remains intact. Reasoning-layer fixes occur above it."
@@ -222,7 +242,7 @@
     "black_dependency": false
   },
   "acceptance_v2": {
-    "state": "PASS_ATTRIBUTABLE_SUBSTITUTE_EXECUTION / SCHEDULED_RUNTIME_RELIABILITY_PENDING",
+    "state": "PASS_SCHEDULER_ORIGIN_EXECUTION / BENCHMARK_PARTIAL",
     "required": [
       "new post-correction attributable iSCOPE/PRI run",
       "capability floor recovered in-run",
@@ -235,7 +255,7 @@
       "no duplicate outreach, false state advancement, pay-to-work drift, or invented capability/payment"
     ],
     "rule": "Historical Cherry One/LAVDM receipts prove prior capability only; they do not satisfy this post-correction autonomy acceptance gate.",
-    "latest_observation": "A newer attributable substitute cycle on 2026-10-02 materially progressed YPAI, Staff Remotely, Redrama, LAVDM and Inkwave; consolidated current payment rails; used BLACK for independent current-state/payment verification; and read back the resulting 20-record ledger. This proves current substitute execution. Scheduled automation self-execution reliability remains pending until a scheduler-originated material receipt satisfies the same gate."
+    "latest_observation": "On 2026-10-03 the scheduled reasoning run recovered current controls and the full ledger, deduped organization history, refreshed current official buyer evidence, sent five buyer-route inquiries, persisted/read back a 42-record ledger and updated/read back OUTSTANDING row 34. This proves scheduled execution for deduped official-route outreach. Broad fresh discovery across four materially different current market surfaces, buyer responses, negotiation, conversion and payment remain unproven."
   },
   "ideal_kpi": {
     "status": "ACTIVE / ENFORCED IN DECISION RUNTIME",
@@ -272,5 +292,75 @@
     ],
     "rule": "Operational advantages reduce friction; they do not prove outcomes. Use them rather than idling behind already-solved infrastructure."
   },
-  "kpi_enforced_at": "2026-10-02T18:54:36+02:00"
+  "kpi_enforced_at": "2026-10-02T18:54:36+02:00",
+  "benchmark_profiles": {
+    "iSCOPE": {
+      "purpose": "Convert external opportunity space into verified, deduplicated, evidence-backed qualified opportunities for PRI.",
+      "frontier_knowledge": "Current buyer/platform/job/program rules, eligibility, geography, payout/capital direction, demand patterns and AMX capability applications refreshed from primary sources.",
+      "execution_reach": [
+        "current web/official sources",
+        "Gmail history and threads",
+        "full opportunities ledger",
+        "signals/claims routing subsets",
+        "GitHub durable writes",
+        "Matrix Sheet readback"
+      ],
+      "method": [
+        "recover controls and full ledger",
+        "use capability→application→payer, signal→outcome→capability and problem→solution→direct-sale paths",
+        "inspect broadly",
+        "dedupe by normalized organization/domain + opportunity + title",
+        "verify buyer reality, eligibility, capital direction, friction and executable next step",
+        "persist qualified handoff"
+      ],
+      "evidence_standard": [
+        "OPP-ID",
+        "current primary-source evidence",
+        "dedupe/history check",
+        "qualification rationale",
+        "payer path",
+        "next action",
+        "durable ledger commit/readback"
+      ],
+      "benchmark_gap": "The 2026-10-03 run proved current direct-buyer perception in vertical drama and full-ledger classification, but did not prove a newly refreshed >=20-candidate scan across >=4 materially different live market surfaces in the same run.",
+      "upgrade_action": "At the next discovery cycle, refresh at least 20 current candidates across technical/AI evaluation, software/API/automation, creative/licensing and direct observed-problem routes, then persist only qualified handoffs.",
+      "state": "UPGRADE_IN_PROGRESS",
+      "state_scope_time_evidence": "2026-10-03: five fresh official-platform candidates qualified and handed to PRI; ledger commit 0597c7e3735d3de60138c02063616d873e7be6ec. Broad cross-category benchmark remains open."
+    },
+    "PRI": {
+      "purpose": "Convert qualified handoffs into responses, negotiation, contracts, receivables and attributable payment.",
+      "frontier_knowledge": "Current buyer/platform submission flows, concise buyer communication, pricing/offer framing, follow-up, objection handling, onboarding, payout and contract/invoice progression.",
+      "execution_reach": [
+        "Gmail send/reply and thread history",
+        "authorized web/application routes",
+        "CARBON° buyer-ready assets",
+        "payment-rail registry",
+        "full commercial ledger",
+        "GitHub durable writes",
+        "Matrix Sheet readback"
+      ],
+      "method": [
+        "classify full relevant ledger",
+        "act on all due executable items to floor",
+        "reuse existing threads/assets",
+        "send concise need-specific communication",
+        "stop only at genuine security/personal-auth/money-out gates",
+        "preserve lifecycle truth",
+        "persist receipts and next action"
+      ],
+      "evidence_standard": [
+        "Gmail/form/application receipt",
+        "thread/message ID",
+        "organization-level dedupe",
+        "package/version and access state",
+        "ledger commit/readback",
+        "separate SUBMITTED/RESPONDED/NEGOTIATING/CONTRACTED/INVOICED/PAID states",
+        "attributable payment evidence for PAID"
+      ],
+      "benchmark_gap": "Official-route outreach is proven; response handling, offer/pricing, negotiation, contracting, invoicing, settlement and payment are not yet demonstrated in this scope.",
+      "upgrade_action": "Monitor the five existing threads, ingest any reply or bounce without duplicate outreach, and progress the first response through the minimum next commercial step with exact receipt.",
+      "state": "BENCHMARK_PROVEN_FOR_SCOPE",
+      "state_scope_time_evidence": "Scope: deduplicated official-route buyer outreach with truthful package framing. Time: 2026-10-03T05:00Z. Evidence: Gmail IDs 1a100230dcc62423, 1a100230e2441107, 1a1002313c6128a9, 1a100231731ae464, 1a100231af090dc1; ledger commit 0597c7e3735d3de60138c02063616d873e7be6ec; OUTSTANDING!A34:H34 PASS readback."
+    }
+  }
 }
