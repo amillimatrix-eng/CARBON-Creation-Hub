@@ -964,12 +964,19 @@
           "source_id": "1a1021220e23c018",
           "observed_at": "2026-10-03T14:01:44Z",
           "summary": "TELUS issued a current verification code to the applicant inbox, proving the account/application authentication flow was materially progressed. The code itself is intentionally not persisted."
+        },
+        {
+          "kind": "ACCOUNT_VERIFICATION_CHALLENGE_ISSUED",
+          "source": "GMAIL",
+          "source_id": "1a1021220e23c018",
+          "observed_at": "2026-10-03T14:01:44Z",
+          "summary": "TELUS issued a one-time account verification challenge to the AMX email. Secret code intentionally not persisted or exposed."
         }
       ],
       "constraints": [
         "Interactive browser transport is presently unavailable in the connected execution surfaces. Do not store OTP/authentication secrets in durable state."
       ],
-      "next_action": "Resume the official TELUS application in a secure browser, consume the current verification code without persisting it, and continue through assessment/onboarding until a genuine provider-enforced human-only gate.",
+      "next_action": "Resume the existing official TELUS application through secure authentication. Current irreducible gate is provider OTP/identity verification; do not expose or persist OTP values.",
       "due_at": "2026-10-03T15:55:00Z",
       "last_action_at": "2026-10-03T14:01:44Z"
     },
@@ -1852,7 +1859,7 @@
       "state": "QUALIFIED",
       "last_action_at": "2026-10-03T14:00:41Z",
       "due_at": "2026-10-03T16:00:00Z",
-      "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
+      "next_action": "Resume the existing OpenTrain account via secure authentication/password recovery, then submit current qualified roles. Do not create a duplicate account.",
       "qualification": {
         "capital_direction": "OpenTrain/client pays contractor USD $30–$100/hour; no applicant fee",
         "geography": "South Africa explicitly listed among 230 eligible countries",
@@ -1876,6 +1883,13 @@
           "source_id": "1a102112d87ee13a",
           "observed_at": "2026-10-03T14:00:41Z",
           "summary": "OpenTrain issued a fresh password-reset link to the existing AMX account; account recovery was actively progressed. No duplicate account created."
+        },
+        {
+          "kind": "ACCOUNT_RECOVERY_REFRESH",
+          "source": "GMAIL",
+          "source_id": "1a102112d87ee13a",
+          "observed_at": "2026-10-03T14:00:41Z",
+          "summary": "Fresh OpenTrain password-reset email confirms the existing account recovery route remains live; secret reset material is not persisted."
         }
       ],
       "constraints": [
@@ -2004,7 +2018,7 @@
       "state": "QUALIFIED",
       "execution_owner": "PRI",
       "due_at": null,
-      "next_action": "Use the recovered truthful CV/contact evidence to complete the official Ashby application through a secure browser; stop only on an exact unavailable fact or provider-enforced human-only step.",
+      "next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
       "evidence": [
         {
           "kind": "CURRENT_OFFICIAL_ROLE",
@@ -2019,6 +2033,12 @@
           "source_id": "1wVRoiJ8bduz8mFhAesf8HPujNAgTsdyLAwWaksJblzA",
           "observed_at": "2026-10-03T14:19:00Z",
           "summary": "Current applicant CV/contact evidence was recovered; the prior blanket personal-profile/CV blocker is superseded."
+        },
+        {
+          "kind": "APPLICATION_FORM_PREFLIGHT",
+          "source": "AUTHORIZED_BROWSER",
+          "observed_at": "2026-10-03T14:00:00Z",
+          "summary": "Current official application was inspected with lawful profile data recoverable from the existing CV. Remaining required fields include applicant video plus factual availability/referral attestations; generic 'personal profile data unavailable' is not a valid blocker."
         }
       ],
       "capability_match": [
@@ -2029,7 +2049,8 @@
       ],
       "capital_direction": "PAYER_TO_WORK",
       "upfront_cost": "NONE_EVIDENCED",
-      "payer_path": "Scale Army employer/contractor hiring route"
+      "payer_path": "Scale Army employer/contractor hiring route",
+      "last_action_at": "2026-10-03T14:00:00Z"
     },
     "dataforcecommunity.transperfect.com|thyme-afrikaans-short-story-writer|south-africa": {
       "domain": "dataforcecommunity.transperfect.com",
@@ -2292,8 +2313,8 @@
   },
   "version": 1,
   "updated_at": "2026-10-03T14:19:00Z",
-  "last_updated_at": "2026-10-03T14:19:00Z",
-  "last_updated_by": "iSCOPE->PRI scheduler reasoning executor",
+  "last_updated_at": "2026-10-03T14:01:44Z",
+  "last_updated_by": "MASTER_CONTROL_BOUNDARY_RECONCILIATION",
   "last_run": {
     "run_at": "2026-10-03T14:19:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
@@ -2355,6 +2376,7 @@
       "PRI": 0,
       "streak": 0
     },
-    "outcome_truth": "Authentication/onboarding materially progressed across six qualified opportunities; no application submission, acceptance, contract, invoice, payment or realized revenue is proven."
+    "outcome_truth": "Authentication/onboarding materially progressed across six qualified opportunities; no application submission, acceptance, contract, invoice, payment or realized revenue is proven.",
+    "t10": "Master reconciliation narrowed prior generic personal-profile/auth blockers: lawful CV/contact data is recoverable; Scale Army remains gated specifically by applicant video plus truthful availability/referral attestations; TELUS issued a provider OTP challenge; OpenTrain recovery route is live. No application acceptance, contract, invoice or payment is proven."
   }
 }
