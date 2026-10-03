@@ -166,16 +166,22 @@
       "realized_revenue": "0 / NO PAYMENT EVIDENCE"
     },
     "latest_scheduler_origin_run": {
-      "at": "2026-10-03T05:00:00Z",
+      "at": "2026-10-03T09:00:00Z",
       "execution_origin": "SCHEDULER_AUTOMATION",
-      "ledger_commit": "0597c7e3735d3de60138c02063616d873e7be6ec",
-      "ledger_records": 42,
-      "official_route_submissions": [
-        "1a100230dcc62423",
-        "1a100230e2441107",
-        "1a1002313c6128a9",
-        "1a100231731ae464",
-        "1a100231af090dc1"
+      "ledger_commit": "f47c636807f6df853f44c5503df7611dba274238",
+      "ledger_records": 46,
+      "candidates_inspected": 46,
+      "categories_inspected": 4,
+      "material_actions": [
+        "FreeReels failed address corrected in existing thread; sent to current official support address with Gmail receipt 1a1010173460500e.",
+        "MoboReels classified DELIVERY_FAILED from mailbox-full receipt 1a10023248ed0d30.",
+        "Closed stale OpenTrain route returning HTTP 410.",
+        "Qualified three current paid OpenTrain roles for South Africa.",
+        "Added Mindrift data-scraping lead as DISCOVERED only pending South Africa eligibility proof."
+      ],
+      "routing_commits": [
+        "d07f1533c23e94f0659554fc13a42360075f9676",
+        "c2b65ff3069d2b4f84865480dcbb0a8368c33637"
       ],
       "sheet_readback": "OUTSTANDING!A34:H34 PASS",
       "kpi_delta": {
@@ -183,7 +189,12 @@
         "PRI": 0,
         "converted": 0
       },
-      "outcome_truth": "Five messages are SENT/SUBMITTED. No external response, acceptance, contract, invoice, payment or realized revenue is proven."
+      "cumulative_kpi": {
+        "iSCOPE": 0,
+        "PRI": 0,
+        "streak": 0
+      },
+      "outcome_truth": "SUBMITTED/QUALIFIED only. No external acceptance, contract, invoice, payment or realized revenue is proven."
     }
   },
   "control_hardened_at": "2026-10-03",
@@ -255,7 +266,7 @@
       "no duplicate outreach, false state advancement, pay-to-work drift, or invented capability/payment"
     ],
     "rule": "Historical Cherry One/LAVDM receipts prove prior capability only; they do not satisfy this post-correction autonomy acceptance gate.",
-    "latest_observation": "On 2026-10-03 the scheduled reasoning run recovered current controls and the full ledger, deduped organization history, refreshed current official buyer evidence, sent five buyer-route inquiries, persisted/read back a 42-record ledger and updated/read back OUTSTANDING row 34. This proves scheduled execution for deduped official-route outreach. Broad fresh discovery across four materially different current market surfaces, buyer responses, negotiation, conversion and payment remain unproven."
+    "latest_observation": "On 2026-10-03T09:00Z the scheduled reasoning run recovered current controls and full ledger, inspected/classified 46 candidates across four categories, corrected delivery truth, recovered FreeReels in-thread to the current official address, closed one stale HTTP 410 route, qualified three current paid South Africa-eligible OpenTrain roles, persisted/read back ledger/routing/claims and read back OUTSTANDING row 34. This proves broad discovery/qualification and delivery-recovery scopes. Explicit receipts for all three discovery reasoning paths, authenticated application progression, buyer response, negotiation, conversion and payment remain unproven."
   },
   "ideal_kpi": {
     "status": "ACTIVE / ENFORCED IN DECISION RUNTIME",
@@ -322,10 +333,10 @@
         "next action",
         "durable ledger commit/readback"
       ],
-      "benchmark_gap": "The 2026-10-03 run proved current direct-buyer perception in vertical drama and full-ledger classification, but did not prove a newly refreshed >=20-candidate scan across >=4 materially different live market surfaces in the same run.",
-      "upgrade_action": "At the next discovery cycle, refresh at least 20 current candidates across technical/AI evaluation, software/API/automation, creative/licensing and direct observed-problem routes, then persist only qualified handoffs.",
-      "state": "UPGRADE_IN_PROGRESS",
-      "state_scope_time_evidence": "2026-10-03: five fresh official-platform candidates qualified and handed to PRI; ledger commit 0597c7e3735d3de60138c02063616d873e7be6ec. Broad cross-category benchmark remains open."
+      "benchmark_gap": "The 2026-10-03T09:00Z run proved a 46-candidate scan across four categories and three current South Africa-eligible paid role qualifications. Explicit per-path receipts for all three discovery methods and downstream conversion remain open.",
+      "upgrade_action": "Next cycle records the producing discovery path on each new qualified OPP-ID while preserving current breadth and dedupe.",
+      "state": "BENCHMARK_PROVEN_FOR_SCOPE",
+      "state_scope_time_evidence": "Scope: broad current discovery, dedupe and qualification, 2026-10-03T09:00Z; commits f47c636807f6df853f44c5503df7611dba274238, d07f1533c23e94f0659554fc13a42360075f9676 and c2b65ff3069d2b4f84865480dcbb0a8368c33637; Sheet OUTSTANDING!A34:H34."
     },
     "PRI": {
       "purpose": "Convert qualified handoffs into responses, negotiation, contracts, receivables and attributable payment.",
@@ -357,10 +368,10 @@
         "separate SUBMITTED/RESPONDED/NEGOTIATING/CONTRACTED/INVOICED/PAID states",
         "attributable payment evidence for PAID"
       ],
-      "benchmark_gap": "Official-route outreach is proven; response handling, offer/pricing, negotiation, contracting, invoicing, settlement and payment are not yet demonstrated in this scope.",
-      "upgrade_action": "Monitor the five existing threads, ingest any reply or bounce without duplicate outreach, and progress the first response through the minimum next commercial step with exact receipt.",
+      "benchmark_gap": "Official-route outreach and in-thread delivery recovery are proven; authenticated account progression, response handling through negotiation, contract, invoice and settlement are not.",
+      "upgrade_action": "Monitor FreeReels; retry MoboReels only after capacity interval or a newly verified official route; resume existing OpenTrain account through personal authentication.",
       "state": "BENCHMARK_PROVEN_FOR_SCOPE",
-      "state_scope_time_evidence": "Scope: deduplicated official-route buyer outreach with truthful package framing. Time: 2026-10-03T05:00Z. Evidence: Gmail IDs 1a100230dcc62423, 1a100230e2441107, 1a1002313c6128a9, 1a100231731ae464, 1a100231af090dc1; ledger commit 0597c7e3735d3de60138c02063616d873e7be6ec; OUTSTANDING!A34:H34 PASS readback."
+      "state_scope_time_evidence": "Scope: deduplicated official-route outreach and delivery recovery, 2026-10-03; Gmail 1a1010173460500e, 1a10023248ed0d30, 1a1002322cecb29d; commits f47c636807f6df853f44c5503df7611dba274238, d07f1533c23e94f0659554fc13a42360075f9676 and c2b65ff3069d2b4f84865480dcbb0a8368c33637."
     }
   }
 }
