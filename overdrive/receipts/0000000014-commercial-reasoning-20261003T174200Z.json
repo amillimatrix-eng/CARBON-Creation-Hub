@@ -1,0 +1,89 @@
+{
+  "schema": "AMX_COMMERCIAL_EXECUTION_RECEIPT_V1",
+  "run_at": "2026-10-03T17:42:00Z",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "chain": "ONE iSCOPE -> ONE PRI",
+  "recovered_controls": [
+    "opportunities.json",
+    "signals.json",
+    "claims.json",
+    "AMX_COMMERCIAL_CAPABILITY_FLOOR_v1.md",
+    "MANDATE_INTEGRITY_CONTROL_v1.json",
+    "worker_contract.json",
+    "payment_rails.json",
+    "current receipts inventory",
+    "Matrix OUTSTANDING row 34"
+  ],
+  "discovery": {
+    "candidates_inspected": 24,
+    "surface_count": 4,
+    "new_records": [
+      "opentrain.ai|ai-safety-red-team-evaluator|cmusdt5na000406mu1ji2nhbh",
+      "opentrain.ai|ai-text-evaluation-writer-editor|cmurzvcme004j04l29e4irdu5",
+      "humansignal.com|data-annotation-contributor|international",
+      "humansignal.com|content-creator-flexible-gig|remote"
+    ],
+    "paths": {
+      "capability_to_application": "Inspected HumanSignal contributor/content work and OpenTrain AI Safety; AI Safety held only on unrecovered 20h availability.",
+      "market_signal_to_capability": "Inspected current OpenTrain text-evaluation demand, HumanSignal, Welo and CrowdGen signals; new text-evaluation role held pending availability.",
+      "organization_problem_to_solution": "Inspected Automation Architects' current AI/data consultancy talent signal and current HumanSignal high-volume workforce scaling signal for direct B2B workflow/evidence-fit; no sufficiently specific buyer problem/procurement route was proven, so no direct-sale handoff was fabricated."
+    }
+  },
+  "pri": {
+    "materially_acted_opp_ids": [
+      "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
+      "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
+      "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
+      "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
+      "humansignal.com|data-collection-contributor|south-africa"
+    ],
+    "evidence": [
+      {
+        "type": "GMAIL",
+        "id": "1a102dac4d8ea5c1",
+        "meaning": "official OpenTrain support recovery/direct-application request covering four qualified roles"
+      },
+      {
+        "type": "GMAIL",
+        "id": "1a102dad930442cd",
+        "meaning": "official HumanSignal alternate application-route request"
+      }
+    ],
+    "attempted_but_not_counted": {
+      "outlier": "Reply send failed; no receipt, therefore not counted."
+    }
+  },
+  "payment": {
+    "rails_recovered": true,
+    "exact_private_registry_not_needed": true
+  },
+  "browser_transport": {
+    "tinyfish_balance": "-0.088 USD",
+    "action": "No capital spent; browser automation not treated as required commercial compatibility."
+  },
+  "kpi": {
+    "delta": {
+      "iSCOPE": 0,
+      "PRI": 0
+    },
+    "cumulative": {
+      "iSCOPE": 0,
+      "PRI": 0
+    },
+    "streak": 0,
+    "reason": "No evidence-backed conversion."
+  },
+  "t10": {
+    "supposed": "Inspect >=20 candidates across >=4 surfaces and materially act on >=5 executable qualified opportunities.",
+    "actual": "24 inspected across 4 surfaces; five qualified OPP-IDs progressed through two official provider emails; four fresh iSCOPE records classified without false qualification.",
+    "proof": [
+      "Gmail 1a102dac4d8ea5c1",
+      "Gmail 1a102dad930442cd",
+      "GitHub 38d6e42942940ca5ad4779c7f75c3b9602495f1c",
+      "GitHub 7e3a4642e1fcc4be5e7d9d53c6be2a686aa2a705",
+      "GitHub 73b96b60f272f2afeb4dbc26d9f1e602621929fc"
+    ],
+    "changed": "OpenTrain four-role recovery is now with official support; HumanSignal alternate route is now with official support; ledger expanded with current AI-safety/text-evaluation and HumanSignal eligibility evidence.",
+    "not_happened": "No provider application receipt, acceptance, contract, invoice, receivable, payment or realized revenue."
+  }
+}
