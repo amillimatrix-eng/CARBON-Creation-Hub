@@ -44,14 +44,14 @@
     },
     {
       "due_at": "2026-10-03T15:55:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Resume the existing official TELUS application through secure authentication. Current irreducible gate is provider OTP/identity verification; do not expose or persist OTP values.",
       "opportunity_key": "telusdigital.com|online-data-analyst|south-africa",
       "state": "QUALIFIED"
     },
     {
       "due_at": "2026-10-03T15:55:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
       "opportunity_key": "crowdgen.com|project-coffee-data-labeling-specialist|south-africa",
       "state": "QUALIFIED"
@@ -65,14 +65,14 @@
     },
     {
       "due_at": "2026-10-03T15:55:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
       "opportunity_key": "alignerr.com|search-quality-ai-training|south-africa",
       "state": "QUALIFIED"
     },
     {
       "due_at": "2026-10-03T16:15:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
       "opportunity_key": "mindrift.ai|all-access-ai-training|global",
       "state": "QUALIFIED"
@@ -93,21 +93,21 @@
     },
     {
       "due_at": "2026-10-03T16:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Resume the existing OpenTrain account via secure authentication/password recovery, then submit current qualified roles. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
       "state": "QUALIFIED"
     },
     {
       "due_at": "2026-10-03T16:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
       "state": "QUALIFIED"
     },
     {
       "due_at": "2026-10-03T16:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Use the issued reset flow through a secure authenticated browser, restore the existing OpenTrain session, then submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
       "state": "QUALIFIED"
@@ -127,7 +127,7 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-03T14:43:11.217264+00:00",
+  "generated_at": "2026-10-03T16:45:55.033236+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
