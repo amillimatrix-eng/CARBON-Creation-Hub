@@ -1,7 +1,8 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "handoff_id": "CARBON-DRAGON-BUYER-ONESHEET-20261003",
   "created_at": "2026-10-03T08:27:00+02:00",
+  "reconciled_at": "2026-10-03T10:55:00+02:00",
   "producer": "CARBON° Studios",
   "commercial_owner": "PRI",
   "property": "The Dragon Who Could Not Claim Me",
@@ -13,7 +14,9 @@
     "library_file_id": "libfile_d0727a5bcf508191b9a53d328c590a1b",
     "pages": 2,
     "access_state": "WORKSPACE_LIBRARY_PRIVATE",
-    "qa": "PASS_VISUAL_AND_TEXT"
+    "qa": "PASS_VISUAL_AND_TEXT",
+    "external_release_state": "HOLD_INTERNAL_COPY_ONLY",
+    "external_send_allowed": false
   },
   "source_master": {
     "package": "CARBON_Studios_DRAGON_Development_Package_v1",
@@ -21,30 +24,58 @@
     "package_library_file_id": "libfile_99f31a7963e08191a86b072c11116699",
     "final_poster_sha256": "45f9f627a73862c8bc0e4c9c3860639ad4e4c47e00b22ad8ce566faab1d76ece"
   },
+  "owner_correction": {
+    "classification": "EXTERNAL_PRESENTATION_BOUNDARY",
+    "finding": "The accepted creative work is strong, but the buyer PDF exposes internal operating mechanics including PRI ownership, PRI next-action instructions, internal lifecycle labels, legacy-reference notes, and Matrix delivery process.",
+    "rule": "External material explains the property, value, offer and buyer action. Internal worker names, routing, governance, lifecycle mechanics and production-control commentary remain internal.",
+    "preservation": "Preserve Ivory Eclipse, story copy, cast art, current format facts and the controlled-review call to action. Do not reopen canon, poster or cast pack."
+  },
+  "required_derivative": {
+    "version": "v1.1_external",
+    "owner": "CARBON° Studios",
+    "requirements": [
+      "Remove PRI and Matrix worker/operating references from all buyer-visible pages.",
+      "Replace internal lifecycle labels with buyer-appropriate development-status language.",
+      "Remove internal next-action, legacy/provenance and workflow-control copy.",
+      "Use a direct buyer call to action such as Request the private preview or Discuss commissioning/licensing.",
+      "Keep the internal control manifest as a separate non-forwardable record.",
+      "Perform visual/text QA and read back the sanitized PDF before PRI may send it."
+    ],
+    "acceptance": [
+      "No internal worker, governance, queue, ledger, lifecycle or workflow terminology in the external PDF.",
+      "Accepted poster/cast/story visual quality preserved.",
+      "One clear external contact/action route.",
+      "New hash, persistent file ID and readback receipt.",
+      "PRI handoff updated to the sanitized version only."
+    ]
+  },
   "truth_state": {
     "CANON_LOCK": "ACCEPTED_INTERNAL",
     "SCRIPT_ACCEPTED": "EPISODES_01_02_V1",
     "CAST_PACK_RENDER_ACCEPTED": "STILL_IMAGE_V1",
-    "BUYER_ONESHEET": "RENDER_ACCEPTED_V1",
+    "BUYER_ONESHEET_V1": "RENDER_ACCEPTED_INTERNAL_ONLY",
+    "BUYER_ONESHEET_EXTERNAL": "CORRECTION_REQUIRED",
     "FINAL_CANONICAL_VIDEO": "NO",
     "VIDEO_ACCESS_VERIFIED": "NO_FINAL_CANONICAL_VIDEO",
-    "SUBMITTED": "NO",
+    "SUBMITTED_WITH_THIS_ASSET": "NO",
     "EXTERNALLY_ACCEPTED": "NO",
     "INVOICED": "NO",
     "PAID": "NO"
   },
-  "permitted_use": "PRI may match this package to a verified deduplicated opportunity and existing thread, then deliver through a controlled recipient-specific route.",
-  "next_action": "PRI: select one qualified buyer/route, verify target and thread history, offer controlled review access, and record recipient/access receipt. Do not present legacy EP06-07 or trailer v3 as the final canonical moving-picture master.",
+  "permitted_use": "Internal reference only until CARBON° Studios produces and verifies the sanitized external derivative. PRI must not forward v1.",
+  "next_action": "CARBON° Studios: produce v1.1 external derivative by preserving accepted creative content and removing all internal Matrix/PRI mechanics. Then hand only that verified derivative to PRI.",
   "t10": {
     "supposed": "Provide PRI a concise buyer-ready development package grounded in the locked canon.",
-    "actual": "A two-page buyer one-sheet and production/rights summary was produced, visually inspected, text-extracted, hashed, saved, and handed off.",
+    "actual": "The artifact is visually strong and canon-current, but is not externally buyer-ready because internal operating mechanics are visible.",
     "evidence": [
       "library_file_id:libfile_d0727a5bcf508191b9a53d328c590a1b",
-      "sha256:b2dc0a80ebad679d11dab7138a7abb0555abc7f9f5abdb93f7d03fff6604c344"
+      "sha256:b2dc0a80ebad679d11dab7138a7abb0555abc7f9f5abdb93f7d03fff6604c344",
+      "page 1 contains: Controlled source materials are released recipient-by-recipient through PRI; Commercial owner: PRI",
+      "page 2 contains internal lifecycle states and PRI NEXT ACTION"
     ],
-    "changed": "PRI now has a shareable, canon-current development one-sheet instead of relying on legacy trailer copy or raw internal documents.",
+    "changed": "The handoff is now explicitly restricted to internal use and cannot be mistaken for an externally releasable buyer artifact.",
     "unproven": [
-      "final canonical video",
+      "sanitized external derivative",
       "recipient access",
       "submission",
       "external acceptance",
