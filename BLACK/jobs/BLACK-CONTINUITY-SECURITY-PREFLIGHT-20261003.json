@@ -1,0 +1,14 @@
+{
+  "schema": "AMX.BLACK.JOB.v1",
+  "worker": "BLACK",
+  "job_id": "BLACK-CONTINUITY-SECURITY-PREFLIGHT-20261003",
+  "scope": "READ_ONLY_COMMISSIONING_DEPENDENCY_AND_SERVICE_METADATA",
+  "authority": "Owner continuity/security commissioning directive 2026-10-03",
+  "command": [
+    "python3",
+    "-c",
+    "import json,os,pathlib,shutil,subprocess,platform,hashlib\ndef check(args):\n try:\n  r=subprocess.run(args,capture_output=True,text=True,timeout=12)\n  return {\"exit_code\":r.returncode,\"value\":r.stdout.strip()[:1500]}\n except Exception as e:return {\"state\":\"UNKNOWN\",\"error_type\":type(e).__name__}\ndef presence(path):\n try:return pathlib.Path(path).exists()\n except Exception:return \"UNKNOWN\"\nprint(json.dumps({\"schema\":\"AMX.BLACK.CONTINUITY_PREFLIGHT.v1\",\"read_only\":True,\"credential_values_read\":False,\n \"linux_service\":check([\"systemctl\",\"show\",\"amx-black.service\",\"--property=ActiveState,SubState,User,UnitFileState\"]),\n \"continuity_timer\":check([\"systemctl\",\"is-enabled\",\"amx-black-continuity.timer\"]),\n \"source_commit\":check([\"git\",\"rev-parse\",\"HEAD\"]),\n \"source_clean\":check([\"git\",\"status\",\"--porcelain\"]),\n \"wsl_kernel\": \"microsoft\" in platform.release().lower(),\n \"python_modules\":{m:__import__(\"importlib.util\",fromlist=[\"find_spec\"]).find_spec(m) is not None for m in [\"cryptography\",\"jsonschema\",\"fastapi\"]},\n \"tools\":{t:shutil.which(t) is not None for t in [\"rclone\",\"restic\",\"gh\",\"systemctl\"]},\n \"recovery_enrollment_present\":presence(\"/etc/amx-black-continuity/environment\"),\n \"continuity_key_present\":presence(\"/etc/amx-black-continuity/recovery.key\"),\n \"raw_environment_dumped\":False,\"windows_no_touch_boot\":\"REQUIRES_FRESH_BOOT_CORRELATED_RECEIPT\"},sort_keys=True))\n"
+  ],
+  "timeout": 90,
+  "secret_values_may_be_read": false
+}
