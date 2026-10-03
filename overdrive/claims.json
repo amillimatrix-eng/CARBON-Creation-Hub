@@ -33,7 +33,7 @@
     "PRI|cherryone.ai|content-partner-distribution|carbon-degree-of-business": {
       "attempts": 0,
       "last_seen_at": "2026-10-02T07:33:01.485645+00:00",
-      "next_action": "PRI to inspect Cherry One's official Partner With Us intake, match CARBON\u00b0 evidenced capabilities/available rights to the intake, and make the outbound commercial proposition if terms remain compatible.",
+      "next_action": "PRI to inspect Cherry One's official Partner With Us intake, match CARBON° evidenced capabilities/available rights to the intake, and make the outbound commercial proposition if terms remain compatible.",
       "office": "PRI",
       "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
       "receipt_required": true,
@@ -132,8 +132,8 @@
     },
     "PRI|moboreels.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T09:05:21.451011+00:00",
-      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
+      "last_seen_at": "2026-10-03T09:00:05Z",
+      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official endpoint.",
       "office": "PRI",
       "opportunity_key": "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me",
       "receipt_required": true,
@@ -162,8 +162,8 @@
     },
     "PRI|opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T09:05:21.451011+00:00",
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with evidence of evaluation/editing and QA capability; do not create a duplicate account.",
+      "last_seen_at": "2026-10-03T09:00:05Z",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication and submit the current role.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
       "receipt_required": true,
@@ -172,18 +172,18 @@
     },
     "PRI|opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T07:37:40.910787+00:00",
-      "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
+      "last_seen_at": "2026-10-03T09:00:05Z",
+      "next_action": "No action; official role URL returns HTTP 410.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh",
       "receipt_required": true,
-      "state": "QUALIFIED",
-      "status": "READY"
+      "state": "CLOSED_NO_LONGER_AVAILABLE",
+      "status": "CLOSED"
     },
     "PRI|opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T09:05:21.451011+00:00",
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with the existing resume/profile; do not create a duplicate account.",
+      "last_seen_at": "2026-10-03T09:00:05Z",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication and submit the current role.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
       "receipt_required": true,
@@ -202,8 +202,8 @@
     },
     "PRI|opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T09:05:21.451011+00:00",
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON\u00b0 production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
+      "last_seen_at": "2026-10-03T09:00:05Z",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication and submit the current role.",
       "office": "PRI",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
       "receipt_required": true,
@@ -292,8 +292,8 @@
     },
     "iSCOPE|mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T09:05:21.451011+00:00",
-      "next_action": "Verify South Africa eligibility and exact payout terms from the current official application before handoff; keep FOUND/DISCOVERED distinct from QUALIFIED.",
+      "last_seen_at": "2026-10-03T09:00:05Z",
+      "next_action": "Verify South Africa eligibility and exact payout terms before PRI handoff.",
       "office": "iSCOPE",
       "opportunity_key": "mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392",
       "receipt_required": true,
@@ -359,9 +359,19 @@
       "receipt_required": true,
       "state": "DEPRIORITIZED",
       "status": "READY"
+    },
+    "PRI|free-reels.com|content-partnership|the-dragon-who-could-not-claim-me": {
+      "attempts": 0,
+      "last_seen_at": "2026-10-03T09:00:05Z",
+      "next_action": "Monitor the existing thread after corrected official-route delivery; do not duplicate.",
+      "office": "PRI",
+      "opportunity_key": "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "receipt_required": true,
+      "state": "SUBMITTED",
+      "status": "READY"
     }
   },
-  "generated_at": "2026-10-03T09:05:21.451011+00:00",
+  "generated_at": "2026-10-03T09:00:05Z",
   "ready_count": 36,
   "version": 1
 }
