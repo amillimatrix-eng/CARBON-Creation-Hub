@@ -632,18 +632,26 @@
           "thread_id": "1a0fc58012594488",
           "sent_at": "2026-10-02T11:20:20Z",
           "statement": "Official site states it is accepting content partners under a zero-upfront-cost revenue-share model; contact route was decoded from the site's Cloudflare-protected official email link. PRI asked for exact submission requirements without representing unfinished work as complete."
+        },
+        {
+          "kind": "FOLLOWUP_SENT",
+          "source": "GMAIL",
+          "source_id": "1a103d41e896b6d6",
+          "thread_id": "1a103d41e896b6d6",
+          "observed_at": "2026-10-03T22:13:15Z",
+          "summary": "PRI followed up once on the official content-partner route asking only for the minimum current review-package requirements; no licensing acceptance or commercial agreement is claimed."
         }
       ],
       "dedupe_result": "NO_EXISTING_RECORD_FOUND_IN_CURRENT_DURABLE_OPPORTUNITY_LEDGER",
       "constraints": [
         "Exact rights/territory/package requirements require PRI review against current CARBON° rights position before proposition."
       ],
-      "next_action": "Monitor the existing Cherry One thread for submission requirements; on material response, act in-thread and preserve exact completion/rights/package requirements.",
-      "due_at": "2026-10-03T11:20:20Z",
+      "next_action": "Wait for Cherry One response until the next due interval. On material response, answer in the current thread and provide only the minimum rights/technical/sample package requested; no duplicate follow-up before due.",
+      "due_at": "2026-10-06T22:13:15Z",
       "recipient": "contact@cherryone.ai",
       "thread_id": "1a0fc58012594488",
       "message_id": "1a0fc58012594488",
-      "last_action_at": "2026-10-02T11:20:20Z",
+      "last_action_at": "2026-10-03T22:13:15Z",
       "subject": "CARBON° content partnership — submission requirements"
     },
     "ypai.ai|qa-reviewer-adjudicator|remote-south-africa": {
@@ -1095,15 +1103,23 @@
           "source": "OWNER_CURRENT_SESSION",
           "observed_at": "2026-10-03T21:31:00Z",
           "summary": "Owner confirmed Outlier verification/onboarding steps were completed after reaching the live Verify skills screen. This clears the prior account/profile/identity verification transport blocker. No project assignment or payment is inferred."
+        },
+        {
+          "kind": "VERIFIED_ACCOUNT_PROGRESSION_REQUEST_SENT",
+          "source": "GMAIL",
+          "source_id": "1a103d4120423bc1",
+          "thread_id": "1a103d4120423bc1",
+          "observed_at": "2026-10-03T22:13:12Z",
+          "summary": "After official Outlier identity verification approval and current South Africa coding-role verification, PRI sent support the exact verified-account progression question. No role attachment, assessment completion, acceptance, assignment or payment is inferred."
         }
       ],
       "constraints": [],
-      "next_action": "Inspect the current Outlier dashboard for project/assessment availability tied to the South Africa coding opportunity; complete any remaining skills assessment or project-specific screening, then start eligible paid work when assigned. Do not infer assignment, acceptance or PAID without provider evidence.",
-      "due_at": null,
+      "next_action": "Monitor Gmail for Outlier support response and the authenticated dashboard for a role-specific skills assessment/project step. Complete only the current provider step when available; do not infer application attachment, acceptance, assignment or PAID without provider evidence.",
+      "due_at": "2026-10-04T22:13:12Z",
       "recipient": "support@outlier.ai",
       "thread_id": "1a0fedc93e232877",
       "message_id": "1a0fedc93e232877",
-      "last_action_at": "2026-10-03T21:31:00Z",
+      "last_action_at": "2026-10-03T22:13:12Z",
       "onboarding_status": "VERIFICATION_COMPLETE_OWNER_CONFIRMED"
     },
     "alignerr.com|search-quality-ai-training|south-africa": {
@@ -2465,6 +2481,132 @@
         "South Africa eligibility and rate are not explicit in the recovered primary listing."
       ],
       "next_action": "Verify South Africa eligibility and compensation before PRI handoff."
+    },
+    "poursyrup.ai|senior-ai-delivery-engineer|cape-town": {
+      "domain": "poursyrup.ai",
+      "organization": "Syrup AI",
+      "opportunity": "senior-ai-delivery-engineer",
+      "title": "Senior AI delivery engineer",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CAPABILITY -> NEW APPLICATION -> PAYER/DEMAND",
+      "execution_owner": "PRI",
+      "state": "SUBMITTED",
+      "qualified_at": "2026-10-03T22:05:00Z",
+      "due_at": "2026-10-09T17:00:00Z",
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "Paid full-time role; compensation not published on current official careers page",
+      "payment": "Employment compensation; exact payroll/settlement terms to verify if progressed",
+      "buyer_fit": "Current Cape Town hybrid senior AI delivery role explicitly values shipped production work, client-facing delivery, AI agents, GPT/Claude-class models, integrations and end-to-end ownership; strong match to current AMX software/AI systems plus B2B commercial delivery evidence.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://poursyrup.ai/careers",
+          "observed_at": "2026-10-03T22:05:00Z",
+          "summary": "Official Syrup careers page shows two open roles and instructs Senior AI delivery engineer applicants to email hello@poursyrup.ai with three shipped things; links over CVs, no cover letter."
+        },
+        {
+          "kind": "APPLICATION_SENT",
+          "source": "GMAIL",
+          "source_id": "1a103d3e49774780",
+          "thread_id": "1a103d3e49774780",
+          "observed_at": "2026-10-03T22:13:00Z",
+          "summary": "PRI sent the requested links-first application to the official careers email with three bounded shipped-work links and no inflated credentials."
+        }
+      ],
+      "constraints": [
+        "Hybrid Cape Town availability and any employment-specific terms must be confirmed if the buyer progresses the application."
+      ],
+      "next_action": "Monitor the existing Syrup thread for a response. If invited, answer the buyer's exact question and progress to interview/technical validation; do not send duplicate outreach before due.",
+      "last_action_at": "2026-10-03T22:13:00Z",
+      "recipient": "hello@poursyrup.ai",
+      "thread_id": "1a103d3e49774780",
+      "message_id": "1a103d3e49774780",
+      "subject": "Senior AI delivery engineer — shipped work"
+    },
+    "agentfactory.verder.com|ai-engineer|cape-town": {
+      "domain": "agentfactory.verder.com",
+      "organization": "Verder Group — Agent Factory",
+      "opportunity": "ai-engineer",
+      "title": "AI Engineer",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "MARKET SIGNAL -> REQUIRED OUTCOME -> CAPABILITY MATCH",
+      "execution_owner": "PRI",
+      "state": "SUBMITTED",
+      "qualified_at": "2026-10-03T22:06:00Z",
+      "due_at": "2026-10-09T17:00:00Z",
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "Paid full-time role; compensation not published on current official role page",
+      "payment": "Employment compensation; exact payroll/settlement terms to verify if progressed",
+      "buyer_fit": "Official current role requires mapping operational workflows, Python/JavaScript, LLM APIs, integrations, monitoring and business-impact measurement; directly matches evidenced AMX automation/agent/system design and commercial process experience.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://agentfactory.verder.com/",
+          "observed_at": "2026-10-03T22:06:00Z",
+          "summary": "Official Agent Factory page lists AI Engineer as open in Cape Town and says to send something built, skip the cover letter; direct email agentfactory@verder.com is provided."
+        },
+        {
+          "kind": "APPLICATION_SENT",
+          "source": "GMAIL",
+          "source_id": "1a103d3f1631dffd",
+          "thread_id": "1a103d3f1631dffd",
+          "observed_at": "2026-10-03T22:13:03Z",
+          "summary": "PRI sent a concise official-route application with deployed evidence-system and public agent/API work links."
+        }
+      ],
+      "constraints": [
+        "Full-time Cape Town employment fit and start-date expectations must be confirmed if progressed."
+      ],
+      "next_action": "Monitor the existing Agent Factory thread. Official page states a five-working-day response expectation; follow up only after that interval if no response.",
+      "last_action_at": "2026-10-03T22:13:03Z",
+      "recipient": "agentfactory@verder.com",
+      "thread_id": "1a103d3f1631dffd",
+      "message_id": "1a103d3f1631dffd",
+      "subject": "AI Engineer — shipped work"
+    },
+    "callforceoutsourcing.com|marketing-lead|south-africa": {
+      "domain": "callforceoutsourcing.com",
+      "organization": "CallForce",
+      "opportunity": "marketing-lead",
+      "title": "Marketing Lead",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CAPABILITY -> NEW APPLICATION -> PAYER/DEMAND",
+      "execution_owner": "PRI",
+      "state": "SUBMITTED",
+      "qualified_at": "2026-10-03T22:08:00Z",
+      "due_at": "2026-10-10T17:00:00Z",
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "Market-related employment compensation; current careers page describes salary/performance incentives",
+      "payment": "Employment compensation; exact payroll/settlement terms to verify if progressed",
+      "buyer_fit": "Current CallForce careers surface describes a hands-on B2B Marketing Lead connecting digital-transformation positioning to demand generation, CRM hygiene, sales enablement and global US/UK/SA growth. This matches the recovered CV's 10+ years B2B commercial leadership plus current AI/product-building evidence.",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_CAREERS_SURFACE",
+          "source": "WEB",
+          "url": "https://callforceoutsourcing.com/careers/",
+          "observed_at": "2026-10-03T22:08:00Z",
+          "summary": "Official current careers page still surfaces Marketing Lead with B2B/digital/content responsibilities and directs applicants to send CV plus a short note."
+        },
+        {
+          "kind": "APPLICATION_SENT_WITH_CURRENT_RECOVERED_CV",
+          "source": "GMAIL",
+          "source_id": "1a103d43041d248b",
+          "thread_id": "1a103d43041d248b",
+          "observed_at": "2026-10-03T22:13:20Z",
+          "summary": "PRI sent the application to the official listed recipient with the recovered current Drive CV attached and a role-specific three-part first-action note."
+        }
+      ],
+      "constraints": [
+        "Listing age is older than the other fresh targets; current careers-page presence is evidence of availability, but employer response is required before inferring active shortlisting."
+      ],
+      "next_action": "Monitor the CallForce application thread for a response. If progressed, answer role-specific marketing/pipeline questions from current evidence; do not infer acceptance or compensation.",
+      "last_action_at": "2026-10-03T22:13:20Z",
+      "recipient": "charissa@callforce.co.za",
+      "thread_id": "1a103d43041d248b",
+      "message_id": "1a103d43041d248b",
+      "subject": "Marketing Lead application — Ulrich du Plessis"
     }
   },
   "version": 1,
@@ -2550,5 +2692,7 @@
       "remains_unproven": "No evidence yet that these fresh outbound actions were ingested into OVERDRIVE receipts or materially progressed to application acceptance/contract/invoice/payment.",
       "upgrade_action": "REUSE existing EVIDENCE_TRANSITION/receipt machinery: ingest/reconcile externally executed consequential PRI actions into the canonical ledger/receipt chain; do not build a new pipeline or dashboard."
     }
-  ]
+  ],
+  "generated_at": "2026-10-03T22:13:20Z",
+  "record_count": 65
 }
