@@ -78,14 +78,14 @@
       "state": "QUALIFIED"
     },
     {
-      "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "state": "RESPONDED",
-      "due_at": null,
+      "due_at": "2026-10-06T23:04:25Z",
       "due_now": false,
-      "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply."
+      "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
+      "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "state": "RESPONDED"
     }
   ],
-  "generated_at": "2026-10-03T04:01:21Z",
+  "generated_at": "2026-10-03T04:07:49.530366+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
