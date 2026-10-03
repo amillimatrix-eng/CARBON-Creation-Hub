@@ -52,7 +52,7 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Create the official application/profile with the current email when personal account-creation and identity-verification confirmation is available; no duplicate account exists under this email.",
+      "next_action": "Use the official South Africa application route to create the profile with this email when personal identity/profile/verification attestations can be completed; no duplicate account exists under this email.",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
       "state": "QUALIFIED"
     },
@@ -101,12 +101,19 @@
     {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": false,
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON\u00b0 production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON° production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
+      "state": "QUALIFIED"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Submit through the current official Ashby application when personal profile/CV, employment-history confirmation and applicant attestations are available.",
+      "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-03T09:08:25.847346+00:00",
+  "generated_at": "2026-10-03T10:02:00Z",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -125,9 +132,9 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Keep as fallback, not current PRI priority.",
+      "next_action": "Verify qualifying performance background, professional microphone/headphones and consent to synthesized-voice use before PRI handoff; current official rate is $20/hour.",
       "opportunity_key": "welodata.com|hydrus-voice-contributor-english|south-africa",
-      "state": "DEPRIORITIZED"
+      "state": "HOLD"
     },
     {
       "due_at": null,
@@ -162,6 +169,41 @@
       "due_now": false,
       "next_action": "Verify South Africa eligibility and exact payout terms from the current official application before handoff; keep FOUND/DISCOVERED distinct from QUALIFIED.",
       "opportunity_key": "mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392",
+      "state": "DISCOVERED"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Confirm native-level Afrikaans and supporting writing sample fit before PRI handoff; official project pays $300 per accepted story and requires personal account/application.",
+      "opportunity_key": "dataforcecommunity.transperfect.com|thyme-afrikaans-short-story-writer|south-africa",
+      "state": "HOLD"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Verify access to an eligible iPhone Pro model or supported digital camera and original RAW inventory before PRI handoff.",
+      "opportunity_key": "dataforcecommunity.transperfect.com|ronia-raw-photo-collection|south-africa",
+      "state": "HOLD"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Keep as passive fallback; this is a future-opportunity pool, not a current specific paid assignment.",
+      "opportunity_key": "rws.com|trainai-global-talent-pool|remote",
+      "state": "DEPRIORITIZED"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Confirm native-level Zulu and current paid-project availability before PRI handoff; do not treat talent-network entry as paid work.",
+      "opportunity_key": "welodata.com|ai-trainers-zulu|south-africa",
+      "state": "HOLD"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
+      "opportunity_key": "welodata.com|ai-service-general-application|south-africa",
       "state": "DISCOVERED"
     }
   ]
