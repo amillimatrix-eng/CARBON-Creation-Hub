@@ -232,8 +232,8 @@
     },
     "PRI|outlier.ai|coding-expertise-ai-training|south-africa": {
       "attempts": 0,
-      "last_seen_at": "2026-10-03T19:34:31.211093+00:00",
-      "next_action": "Use the issued Outlier sign-in link through a secure browser and continue truthful profile/skills/identity onboarding. Ordinary applicant data is not a blocker; stop only at a provider-enforced human-only step.",
+      "last_seen_at": "2026-10-03T21:31:00Z",
+      "next_action": "Inspect the current Outlier dashboard for project/assessment availability tied to the South Africa coding opportunity; complete any remaining skills assessment or project-specific screening, then start eligible paid work when assigned. Do not infer assignment, acceptance or PAID without provider evidence.",
       "office": "PRI",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
       "receipt_required": true,
@@ -373,7 +373,7 @@
     "iSCOPE|dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg": {
       "attempts": 0,
       "last_seen_at": "2026-10-03T19:34:31.211093+00:00",
-      "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
+      "next_action": "No action; official page says the July–August study is completed and no longer accepting participants.",
       "office": "iSCOPE",
       "opportunity_key": "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg",
       "receipt_required": true,
@@ -531,7 +531,7 @@
       "status": "READY"
     }
   },
-  "generated_at": "2026-10-03T19:34:31.211093+00:00",
+  "generated_at": "2026-10-03T21:31:00Z",
   "ready_count": 52,
   "version": 1
 }
