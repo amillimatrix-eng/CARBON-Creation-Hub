@@ -1,0 +1,73 @@
+{
+  "schema": "AMX_PRI_FIELD_FORCE_RECEIPT_V1",
+  "id": "PRI-FIELD-FORCE-20261003-221320Z",
+  "executed_at": "2026-10-03T22:13:20Z",
+  "executor": "CURRENT_MATRIX_REASONING_SESSION",
+  "requested_execution_origin": "SCHEDULER_AUTOMATION",
+  "observed_execution_origin": "INTERACTIVE_USER_INVOKED",
+  "scheduler_origin_proof": "FAIL",
+  "full_inventory_classified": true,
+  "full_inventory_before": 62,
+  "full_inventory_after": 65,
+  "material_actions": [
+    {
+      "opportunity_key": "poursyrup.ai|senior-ai-delivery-engineer|cape-town",
+      "action": "APPLICATION_SENT",
+      "gmail_message_id": "1a103d3e49774780",
+      "thread_id": "1a103d3e49774780",
+      "result_state": "SUBMITTED"
+    },
+    {
+      "opportunity_key": "agentfactory.verder.com|ai-engineer|cape-town",
+      "action": "APPLICATION_SENT",
+      "gmail_message_id": "1a103d3f1631dffd",
+      "thread_id": "1a103d3f1631dffd",
+      "result_state": "SUBMITTED"
+    },
+    {
+      "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
+      "action": "VERIFIED_ACCOUNT_PROGRESSION_REQUEST_SENT",
+      "gmail_message_id": "1a103d4120423bc1",
+      "thread_id": "1a103d4120423bc1",
+      "result_state": "QUALIFIED",
+      "truth_boundary": "Identity verification is approved; role attachment/application acceptance/assignment is not proven."
+    },
+    {
+      "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
+      "action": "FOLLOWUP_SENT",
+      "gmail_message_id": "1a103d41e896b6d6",
+      "thread_id": "1a103d41e896b6d6",
+      "result_state": "SUBMITTED",
+      "truth_boundary": "Follow-up asks only for current submission requirements; no licensing acceptance or deal is claimed."
+    },
+    {
+      "opportunity_key": "callforceoutsourcing.com|marketing-lead|south-africa",
+      "action": "APPLICATION_SENT_WITH_RECOVERED_CV",
+      "gmail_message_id": "1a103d43041d248b",
+      "thread_id": "1a103d43041d248b",
+      "result_state": "SUBMITTED"
+    }
+  ],
+  "external_actions_count": 5,
+  "other_relevant_gates": [
+    "TinyFish browser execution unavailable because current wallet balance is negative; no money-out action taken.",
+    "Browser-only application routes requiring salary, monitoring consent, OTP, KYC, signature or personal attestations were not guessed.",
+    "Existing submitted threads not yet due were not duplicated."
+  ],
+  "kpi": {
+    "delta": {
+      "iSCOPE": 0,
+      "PRI": 0,
+      "converted": 0
+    },
+    "cumulative_recovered": {
+      "iSCOPE": 0,
+      "PRI": 0,
+      "streak": 0
+    },
+    "evidence": "No evidence-backed conversion occurred. SUBMITTED/QUALIFIED/progression actions earn zero KPI points."
+  },
+  "payment_truth": "No payment evidence recovered. PAID count remains zero.",
+  "ledger_commit": "93f9fa9c187db0dfdb48a1214bfeb451db8198c0",
+  "readback_required": true
+}
