@@ -739,7 +739,7 @@
       "domain": "opentrain.ai",
       "opportunity": "ai-response-evaluator-tester",
       "title": "AI Response Evaluator and Tester",
-      "state": "QUALIFIED",
+      "state": "CLOSED_NO_LONGER_AVAILABLE",
       "execution_owner": "PRI",
       "discovered_by": "iSCOPE",
       "qualified_at": "2026-10-02T11:20:20Z",
@@ -762,14 +762,22 @@
           "source_id": "1a0fd08b1cf0865a",
           "observed_at": "2026-10-02T14:33:19Z",
           "summary": "OpenTrain sent a password-reset message to the existing amillimatrix@gmail.com account, confirming account ownership/history; reset link is time-limited and no new password was set."
+        },
+        {
+          "kind": "OFFICIAL_ROUTE_GONE",
+          "source": "WEB",
+          "url": "https://www.opentrain.ai/jobs/ai-response-evaluator-tester--cmtaowgba00020akudq8w9oyh/",
+          "http_status": 410,
+          "observed_at": "2026-10-03T09:00:05Z"
         }
       ],
       "constraints": [
         "Existing OpenTrain application/account history exists; current runtime lacks authenticated platform execution.",
         "Existing OpenTrain account is confirmed, but no authenticated OpenTrain browser session is currently available. Do not create a duplicate account or invent/reset credentials without a secure user-authenticated session."
       ],
-      "next_action": "Restore the existing OpenTrain session through secure user authentication, then resume the qualified job/application inside that account. Do not create a duplicate account.",
-      "due_at": null
+      "next_action": "No action on this listing; the official role URL now returns HTTP 410. Use current OpenTrain roles under the same existing account.",
+      "due_at": null,
+      "last_action_at": "2026-10-03T09:00:05Z"
     },
     "upwork.com|ai-automation-fix|022105205564933219360": {
       "organization": "Upwork client",
@@ -1695,12 +1703,12 @@
       "title": "The Dragon Who Could Not Claim Me",
       "discovered_by": "iSCOPE",
       "execution_owner": "PRI",
-      "state": "SUBMITTED",
+      "state": "DELIVERY_FAILED",
       "recipient": "moboreels@moboreader.com",
       "thread_id": "1a100231731ae464",
-      "last_action_at": "2026-10-03T05:00:00Z",
-      "due_at": "2026-10-07T05:00:00Z",
-      "next_action": "Monitor the same thread for routing or intake requirements; do not duplicate outreach.",
+      "last_action_at": "2026-10-03T05:01:05Z",
+      "due_at": "2026-10-04T09:00:00Z",
+      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
       "package_version": "route-request-no-attachment/2026-10-03",
       "qualification": {
         "capital_direction": "buyer/platform pays or licenses if accepted; no fee requested",
@@ -1727,6 +1735,15 @@
           "source_id": "1a100231731ae464",
           "thread_id": "1a100231731ae464",
           "observed_at": "2026-10-03T05:00:00Z"
+        },
+        {
+          "kind": "DELIVERY_FAILURE",
+          "source": "GMAIL",
+          "source_id": "1a10023248ed0d30",
+          "thread_id": "1a100231731ae464",
+          "observed_at": "2026-10-03T05:01:05Z",
+          "smtp": "Recipient inbox full",
+          "summary": "The official MoboReels contact mailbox rejected the message because the recipient inbox was full; this is not a successful submission."
         }
       ]
     },
@@ -1738,11 +1755,11 @@
       "discovered_by": "iSCOPE",
       "execution_owner": "PRI",
       "state": "SUBMITTED",
-      "recipient": "contact.freefeels@gmail.com",
+      "recipient": "contact.freereels@gmail.com",
       "thread_id": "1a100231af090dc1",
-      "last_action_at": "2026-10-03T05:00:00Z",
-      "due_at": "2026-10-07T05:00:00Z",
-      "next_action": "Monitor the same thread for confirmation that external submissions are accepted; do not duplicate outreach.",
+      "last_action_at": "2026-10-03T09:00:05Z",
+      "due_at": "2026-10-07T09:00:00Z",
+      "next_action": "Monitor the same thread for delivery failure or a material response. Do not send another initial approach.",
       "package_version": "route-request-no-attachment/2026-10-03",
       "qualification": {
         "capital_direction": "platform could license or commission if external submissions are accepted; no fee requested",
@@ -1763,31 +1780,187 @@
           "source_id": "1a100231af090dc1",
           "thread_id": "1a100231af090dc1",
           "observed_at": "2026-10-03T05:00:00Z"
+        },
+        {
+          "kind": "DELIVERY_FAILURE",
+          "source": "GMAIL",
+          "source_id": "1a1002322cecb29d",
+          "thread_id": "1a100231af090dc1",
+          "observed_at": "2026-10-03T05:01:04Z",
+          "smtp": "550 5.1.1 Address not found",
+          "summary": "The developer-description address contact.freefeels@gmail.com rejected delivery; it is not a successful submission."
+        },
+        {
+          "kind": "OFFICIAL_CURRENT_APP_SUPPORT_CONTACT",
+          "source": "GOOGLE_PLAY",
+          "url": "https://play.google.com/store/apps/details?id=com.freereels.app",
+          "recipient": "contact.freereels@gmail.com",
+          "observed_at": "2026-10-03T09:00:05Z",
+          "summary": "Current App support metadata lists contact.freereels@gmail.com; this corrects the typo in the developer description."
+        },
+        {
+          "kind": "GMAIL_SENT_CORRECTED_ROUTE",
+          "source": "GMAIL",
+          "source_id": "1a1010173460500e",
+          "thread_id": "1a100231af090dc1",
+          "observed_at": "2026-10-03T09:00:05Z",
+          "summary": "PRI reused the existing thread and sent the concise route request to the current official app-support address after the original address failed."
+        }
+      ],
+      "recipients": [
+        "contact.freefeels@gmail.com",
+        "contact.freereels@gmail.com"
+      ]
+    },
+    "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y": {
+      "domain": "opentrain.ai",
+      "organization": "OpenTrain AI",
+      "opportunity": "backend-coding-task-creator-ai-evaluator",
+      "title": "Backend Coding Task Creator and AI Evaluator",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "state": "QUALIFIED",
+      "last_action_at": "2026-10-03T09:00:05Z",
+      "due_at": "2026-10-03T16:00:00Z",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with the existing resume/profile; do not create a duplicate account.",
+      "qualification": {
+        "capital_direction": "OpenTrain/client pays contractor USD $30–$100/hour; no applicant fee",
+        "geography": "South Africa explicitly listed among 230 eligible countries",
+        "friction": "free account; resume and downstream hiring-site application required",
+        "payout_path": "paid contractor work through OpenTrain/client flow",
+        "current_fit": "AMX evidences backend/API implementation, deterministic verification, debugging, automated testing and code evaluation."
+      },
+      "evidence": [
+        {
+          "kind": "OFFICIAL_CURRENT_ROLE",
+          "source": "WEB",
+          "url": "https://www.opentrain.ai/jobs/backend-coding-task-creator-and-ai-evaluator--cmurzv8ev000d04l2dhhowh7y/",
+          "observed_at": "2026-10-03T09:00:05Z",
+          "posted_at": "2026-10-03",
+          "pay": "USD 30–100/hour",
+          "south_africa_eligible": true
+        }
+      ]
+    },
+    "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57": {
+      "domain": "opentrain.ai",
+      "organization": "OpenTrain AI",
+      "opportunity": "ai-content-evaluation-editing",
+      "title": "AI Content Evaluation and Editing Specialist",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "state": "QUALIFIED",
+      "last_action_at": "2026-10-03T09:00:05Z",
+      "due_at": "2026-10-03T16:00:00Z",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role with evidence of evaluation/editing and QA capability; do not create a duplicate account.",
+      "qualification": {
+        "capital_direction": "OpenTrain/client pays contractor USD $20–$70/hour; no applicant fee",
+        "geography": "South Africa explicitly listed among 230 eligible countries",
+        "friction": "free account; resume and downstream hiring-site application required",
+        "payout_path": "paid contractor work through OpenTrain/client flow",
+        "current_fit": "AMX evidences structured evaluation, editorial QA, rubric use, factual review and written feedback."
+      },
+      "evidence": [
+        {
+          "kind": "OFFICIAL_CURRENT_ROLE",
+          "source": "WEB",
+          "url": "https://www.opentrain.ai/jobs/ai-content-evaluation-and-editing-specialist--cmurzv9vd001704l22ss6tt57/",
+          "observed_at": "2026-10-03T09:00:05Z",
+          "posted_at": "2026-10-03",
+          "pay": "USD 20–70/hour",
+          "south_africa_eligible": true
+        }
+      ]
+    },
+    "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3": {
+      "domain": "opentrain.ai",
+      "organization": "OpenTrain AI",
+      "opportunity": "video-annotation-editor",
+      "title": "Video Annotation Editor",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "state": "QUALIFIED",
+      "last_action_at": "2026-10-03T09:00:05Z",
+      "due_at": "2026-10-03T16:00:00Z",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON° production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
+      "qualification": {
+        "capital_direction": "OpenTrain/client pays contractor USD $50–$90/hour; no applicant fee",
+        "geography": "South Africa is listed among 230 eligible countries",
+        "friction": "free account; resume and downstream hiring-site application required",
+        "payout_path": "paid contractor work through OpenTrain/client flow",
+        "current_fit": "CARBON°/AMX evidences video timing, pacing, scene/continuity inspection and production-quality review."
+      },
+      "evidence": [
+        {
+          "kind": "OFFICIAL_CURRENT_ROLE",
+          "source": "WEB",
+          "url": "https://www.opentrain.ai/jobs/video-annotation-editor--cmurmn8kk001y06jqpmga27b3/",
+          "observed_at": "2026-10-03T09:00:05Z",
+          "posted_at": "2026-10-03",
+          "pay": "USD 50–90/hour",
+          "south_africa_eligible": true
+        }
+      ]
+    },
+    "mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392": {
+      "domain": "mindrift.ai",
+      "organization": "Mindrift / Toloka",
+      "opportunity": "senior-data-scraping-engineer-python",
+      "title": "Senior Data Scraping Engineer (Python)",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "iSCOPE",
+      "state": "DISCOVERED",
+      "last_action_at": "2026-10-03T09:00:05Z",
+      "due_at": "2026-10-04T09:00:00Z",
+      "next_action": "Verify South Africa eligibility and exact payout terms from the current official application before handoff; keep FOUND/DISCOVERED distinct from QUALIFIED.",
+      "qualification": {
+        "capital_direction": "official listing advertises up to USD $45/hour; no applicant fee shown",
+        "geography": "remote, South Africa eligibility not yet explicit in recovered page",
+        "friction": "CV plus practical scraping assessment",
+        "payout_path": "project work through Mindrift/Toloka, exact route to verify",
+        "current_fit": "AMX evidences Python automation, structured extraction and QA."
+      },
+      "evidence": [
+        {
+          "kind": "OFFICIAL_CURRENT_ROLE",
+          "source": "WEB",
+          "url": "https://apply.workable.com/toloka-ai/j/9D9FF7E392",
+          "observed_at": "2026-10-03T09:00:05Z",
+          "pay": "up to USD 45/hour"
+        },
+        {
+          "kind": "OFFICIAL_CURRENT_PROJECT_PAGE",
+          "source": "WEB",
+          "url": "https://mindrift.ai/project/scraping",
+          "observed_at": "2026-10-03T09:00:05Z"
         }
       ]
     }
   },
   "version": 1,
   "updated_at": "2026-10-02T16:15:00Z",
-  "last_updated_at": "2026-10-03T04:01:21Z",
+  "last_updated_at": "2026-10-03T09:00:05Z",
   "last_updated_by": "iSCOPE_PRI_EXECUTION_ENGINE",
   "last_run": {
     "execution_origin": "SCHEDULER_AUTOMATION",
-    "run_at": "2026-10-03T05:00:00Z",
-    "candidates_inspected": 42,
+    "run_at": "2026-10-03T09:00:05Z",
+    "candidates_inspected": 46,
     "surfaces_categories": [
       "AI evaluation/work platforms",
+      "software/API/automation roles",
       "creative/vertical-drama buyers",
-      "direct current job/application routes",
-      "direct B2B official contact routes"
+      "direct current application/contact routes"
     ],
-    "full_ledger_count": 42,
+    "full_ledger_count": 46,
     "material_actions": [
-      "1a100230dcc62423",
-      "1a100230e2441107",
-      "1a1002313c6128a9",
-      "1a100231731ae464",
-      "1a100231af090dc1"
+      "GMAIL:1a10023248ed0d30 MoboReels delivery failure",
+      "GMAIL:1a1002322cecb29d FreeReels failed address",
+      "GMAIL:1a1010173460500e FreeReels corrected official route",
+      "WEB:OpenTrain stale evaluator HTTP 410",
+      "QUALIFIED:OpenTrain backend coding evaluator cmurzv8ev000d04l2dhhowh7y",
+      "QUALIFIED:OpenTrain AI content evaluation cmurzv9vd001704l22ss6tt57",
+      "QUALIFIED:OpenTrain video annotation cmurmn8kk001y06jqpmga27b3",
+      "DISCOVERED:Mindrift scraping 9D9FF7E392"
     ],
     "kpi_delta": {
       "iSCOPE": 0,
@@ -1800,6 +1973,6 @@
       "converted": 0,
       "streak": 0
     },
-    "t10": "Five deduplicated, current buyer-route inquiries were sent through official endpoints and durably attributed to the existing iSCOPE→PRI chain. They are SUBMITTED only. No response, external acceptance, contract, invoice, attributable payment or realized revenue is proven."
+    "t10": "Two prior submissions were disproved by Gmail delivery failures. FreeReels was recovered through the corrected current Google Play support address in the existing thread; MoboReels remains DELIVERY_FAILED because the sole official mailbox is full. Three current OpenTrain roles were newly qualified and one stale OpenTrain role was closed on HTTP 410. No response, external acceptance, contract, invoice, attributable payment or realized revenue is proven."
   }
 }
