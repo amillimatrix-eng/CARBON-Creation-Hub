@@ -1089,17 +1089,22 @@
           "source_id": "1a10210a4e9f985b",
           "observed_at": "2026-10-03T14:00:06Z",
           "summary": "Outlier issued a secure sign-in link to the AMX applicant email after duplicate-account risk had been cleared; onboarding progressed to sign-in."
+        },
+        {
+          "kind": "OWNER_CONFIRMED_ONBOARDING_VERIFICATION_COMPLETE",
+          "source": "OWNER_CURRENT_SESSION",
+          "observed_at": "2026-10-03T21:31:00Z",
+          "summary": "Owner confirmed Outlier verification/onboarding steps were completed after reaching the live Verify skills screen. This clears the prior account/profile/identity verification transport blocker. No project assignment or payment is inferred."
         }
       ],
-      "constraints": [
-        "Interactive browser transport is presently unavailable in the connected execution surfaces; the sign-in flow is issued and must be resumed, not recreated."
-      ],
-      "next_action": "Use the issued Outlier sign-in link through a secure browser and continue truthful profile/skills/identity onboarding. Ordinary applicant data is not a blocker; stop only at a provider-enforced human-only step.",
+      "constraints": [],
+      "next_action": "Inspect the current Outlier dashboard for project/assessment availability tied to the South Africa coding opportunity; complete any remaining skills assessment or project-specific screening, then start eligible paid work when assigned. Do not infer assignment, acceptance or PAID without provider evidence.",
       "due_at": null,
       "recipient": "support@outlier.ai",
       "thread_id": "1a0fedc93e232877",
       "message_id": "1a0fedc93e232877",
-      "last_action_at": "2026-10-03T14:00:06Z"
+      "last_action_at": "2026-10-03T21:31:00Z",
+      "onboarding_status": "VERIFICATION_COMPLETE_OWNER_CONFIRMED"
     },
     "alignerr.com|search-quality-ai-training|south-africa": {
       "organization": "Alignerr",
@@ -2463,9 +2468,9 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-03T17:42:00Z",
-  "last_updated_at": "2026-10-03T18:02:00Z",
-  "last_updated_by": "MASTER_CONTROL_T10_RECONCILIATION",
+  "updated_at": "2026-10-03T21:31:00Z",
+  "last_updated_at": "2026-10-03T21:31:00Z",
+  "last_updated_by": "PRI evidence reconciliation",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
