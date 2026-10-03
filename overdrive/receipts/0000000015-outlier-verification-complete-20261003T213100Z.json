@@ -1,0 +1,27 @@
+{
+  "schema": "AMX_COMMERCIAL_EVIDENCE_RECEIPT_V1",
+  "observed_at": "2026-10-03T21:31:00Z",
+  "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
+  "source": "OWNER_CURRENT_SESSION",
+  "evidence_class": "OWNER_CONFIRMED_CURRENT_EXECUTION",
+  "claim": "Outlier onboarding/verification completed.",
+  "clears": [
+    "account creation blocker",
+    "generic profile/identity verification blocker",
+    "prior browser transport blocker for completed onboarding"
+  ],
+  "does_not_prove": [
+    "project assignment",
+    "skills-screen pass unless separately shown by provider",
+    "application acceptance",
+    "contract",
+    "payment",
+    "PAID"
+  ],
+  "current_next_action": "Inspect the current Outlier dashboard for project/assessment availability tied to the South Africa coding opportunity; complete any remaining skills assessment or project-specific screening, then start eligible paid work when assigned. Do not infer assignment, acceptance or PAID without provider evidence.",
+  "durable_state": {
+    "opportunities_sha": "30d2242fd1ab2e55dd8cf0ee4a5e24118b0361e4",
+    "signals_sha": "debe3c54406efbc254a7e92b9324a2b3135d1b44",
+    "claims_sha": "ab9ba3601810e38dc637b7709aae7f8c5c9f0197"
+  }
+}
