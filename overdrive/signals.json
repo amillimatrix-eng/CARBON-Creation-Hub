@@ -101,7 +101,7 @@
     {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": false,
-      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON° production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
+      "next_action": "Resume the existing OpenTrain account through secure user authentication, then submit this current role using CARBON\u00b0 production/evaluation evidence that does not expose internal-only material; do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
       "state": "QUALIFIED"
     },
@@ -113,7 +113,7 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-03T10:02:00Z",
+  "generated_at": "2026-10-03T10:06:52.310762+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -184,6 +184,27 @@
       "next_action": "Verify access to an eligible iPhone Pro model or supported digital camera and original RAW inventory before PRI handoff.",
       "opportunity_key": "dataforcecommunity.transperfect.com|ronia-raw-photo-collection|south-africa",
       "state": "HOLD"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "No action; official page says the project is completed and not accepting participants.",
+      "opportunity_key": "dataforcecommunity.transperfect.com|asteroid-photo-collection|south-africa",
+      "state": "CLOSED_NO_LONGER_AVAILABLE"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
+      "opportunity_key": "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg",
+      "state": "CLOSED_NO_LONGER_AVAILABLE"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "No action; official page states applications are closed.",
+      "opportunity_key": "dataforcecommunity.transperfect.com|mirabelle-transcription-qa|remote",
+      "state": "CLOSED_NO_LONGER_AVAILABLE"
     },
     {
       "due_at": null,
