@@ -1,3 +1,15 @@
+# CURRENT SCOPE SUPERSESSION — 2026-10-03
+
+The 2026-10-02 text below is retained as historical reactivation provenance. Its commercial-handoff wording is **superseded for crypto work**.
+
+Current operating rule:
+- Bounty Reaper is the independent crypto-centric bounty/reward lane and owns crypto scope end-to-end.
+- Normal path: `REAPER -> FIND -> VERIFY -> EXECUTE -> PROVE -> SUBMIT (when authorized) -> RECEIVE -> VERIFY PAYMENT`.
+- Bounty Reaper does **not** depend on iSCOPE or PRI for crypto discovery, qualification, execution, proof, submission, collection, or payment verification.
+- iSCOPE/PRI remain the general non-crypto commercial chain. A non-crypto opportunity discovered incidentally by Reaper may be handed off without changing Reaper's crypto ownership.
+- Reaper remains subject to explicit lawful program scope, no unauthorized live exploitation, no unapproved spend, no secret exposure, and evidence-backed payment truth.
+- The active Bounty Reaper scheduled worker is the current execution control. Any later model or recovery process must treat the 2026-10-02 handoff language below as historical where it conflicts with this supersession.
+
 # AMX BOUNTY REAPER — REACTIVATION DELTA — 2026-10-02
 
 STATUS: REACTIVATED AS ADDITIONAL WORKER / MUST NOT DISPLACE ACTIVE MATRIX COMMISSIONING
