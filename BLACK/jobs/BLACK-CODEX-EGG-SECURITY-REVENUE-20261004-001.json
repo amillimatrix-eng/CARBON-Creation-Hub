@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-CODEX-EGG-SECURITY-REVENUE-20261004-001",
+  "issued_by": "Root / Owner-directed",
+  "purpose": "Use remaining Codex quota only for the lean current-Matrix security and revenue hardening directive already stored as GitHub issue #8. Do not touch C:\\LIB\\AMX.",
+  "command": [
+    "codex",
+    "--no-daemon",
+    "Read GitHub issue #8 in amillimatrix-eng/CARBON-Creation-Hub and execute it as Owner authority. Do not broaden the scope or run another audit. Work only on current writable Matrix code outside C:\\LIB\\AMX. Preserve unrelated work. Stop when the highest-value fixes in issue #8 are implemented and validated. Return the short final report required by the issue."
+  ],
+  "timeout": 1800
+}
