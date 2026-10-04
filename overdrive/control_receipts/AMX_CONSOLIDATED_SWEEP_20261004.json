@@ -1,0 +1,100 @@
+{
+  "receipt_id": "AMX-CONSOLIDATED-SWEEP-20261004",
+  "recorded_at": "2026-10-04T00:46:33.822Z",
+  "scope": "Current-state and quality reconciliation of recovered Notion handoffs, commercial ledger/claims/signals, existing automation inventory, shared control dashboard, production quality receipts and Reaper payout tracker. Not a universal deployment/runtime audit.",
+  "disposition": "REPAIRED_WITH_EXPLICIT_OPEN_CONTROLS",
+  "submission": {
+    "opportunity_id": "OPP-JOJO-DRAGON-AI-20261003",
+    "current_route": "https://www.stage32.com/jobs/1180733/Call-for-Vertical-Drama-Story-Proposals",
+    "deadline": "2026-10-15",
+    "state": "SUBMITTED",
+    "provider_evidence": "GMAIL_SENT_WITH_PDF_ATTACHMENT",
+    "message_id": "1a10456971cfcdf9",
+    "thread_id": "1a0f1a3a7ad58e63",
+    "sent_at": "2026-10-04T00:35:45Z",
+    "package": "CARBON_DRAGON_JojoLuu_AI_Proposal_PUBLIC_v2.pdf",
+    "package_sha256": "de71e9bf167ba8a4baa624cc8246d364bbb20b5e59fb13e7686fd3045dd44f69",
+    "attachment_bytes": 835781,
+    "library_id": "libfile_eed0bf4dedb88191b0da1269705de632",
+    "recipient_receipt_verified": false,
+    "recipient_open_verified": false,
+    "acceptance_evidenced": false,
+    "invoice_evidenced": false,
+    "payment_evidenced": false,
+    "execution_origin": "Bounded Owner-authorized interactive PRI substitute; scheduled Field Force paused for reservation/send then resumed unchanged.",
+    "next_action": "Monitor existing thread; at most one follow-up if no response by 2026-10-08T08:00:00Z; do not duplicate initial submission."
+  },
+  "quality": {
+    "original_v1_hash_verified": true,
+    "v1_findings": [
+      "Buyer-ready receipt contradicted internal PRI/lifecycle language in actual PDF",
+      "Labelled 207-word outline measured 208 whitespace tokens"
+    ],
+    "v2_remediation": [
+      "Buyer-facing development/review support page",
+      "Exactly 200-word outline",
+      "Preserved accepted visual presentation and inspected rendered pages 6 and 7",
+      "No invented successful vertical-drama credit"
+    ],
+    "current_assets": [
+      "Key art v4 and trailer v3 quality improvements recovered from durable receipts",
+      "Trailer is key-art motion; character-performance animation/final voice casting are not established"
+    ]
+  },
+  "routing": {
+    "defect": "Retained claims absent from current signal list kept obsolete state/next action and READY status; closed iSCOPE records still emitted signals.",
+    "repair_commit": "5c3ad8aeaf7245afb7ca58ecf0a0547b31948f97",
+    "test_commit": "23eac8421a49f56b8582f1b231500bfd8a6b16fa",
+    "tests": "4 regression checks PASS: future-due submitted waiting, evidenced closed exclusion, missing/unevidenced record preservation, active/completed claim preservation",
+    "post_repair": {
+      "generated_at": "2026-10-04T00:44:51.762644+00:00",
+      "claims": 54,
+      "records": 66,
+      "ready": 35,
+      "mismatches": [],
+      "counts": {
+        "READY": 35,
+        "CLOSED": 6,
+        "WAITING": 13
+      },
+      "jojo": {
+        "state": "SUBMITTED",
+        "status": "WAITING",
+        "due_at": "2026-10-08T08:00:00Z"
+      }
+    },
+    "transport_readback": "2026-10-04T00:44:51Z OPERATIONAL; 18 iSCOPE signals, 17 PRI signals; pending adapter queue 0. This is transport proof, not scheduled commercial-worker commissioning."
+  },
+  "current_controls": {
+    "scheduled_writer": "Existing AMX Field Force",
+    "legacy_writer": "DISABLED",
+    "master": "ENABLED",
+    "inspector": "ENABLED",
+    "hash_manager": "ENABLED",
+    "reaper": "ENABLED; independent specialist mandate",
+    "new_automation_created": false,
+    "adaptive_scaling": "ACCEPTED/MERGED; role-specific benchmark and load-based capacity; no blanket commissioning claim",
+    "external_disclosure_remediation": "CLOSED per current durable control; specific v1 buyer package sanitized separately"
+  },
+  "surfaces_updated": [
+    "Notion Jojo PRI handoff and production conveyor",
+    "overdrive/opportunities.json",
+    "overdrive/runner.py and regression tests",
+    "Derived scheduled claims/signals",
+    "overdrive/README.md",
+    "Shared Sheet OUTSTANDING row13 and row35, DRIFT_REGISTER row20, DASHBOARD C19 and C33"
+  ],
+  "open_controls": [
+    "Fresh attributable post-merge Field Force reasoning/external-action receipt remains pending; last observed scheduler no-action/KPI0 row retained rather than overwritten by interactive send",
+    "4 HASH exact-capture files remain OPEN; manager capacity-hold wording superseded, exact bytes/authorized receipt still required",
+    "DR0015 Root alert and DR0017 Render auto-deploy lack fresh closure evidence",
+    "Reaper Payouts contained no payout records at readback; no specialist test or payment fabricated",
+    "Private House deployment/end-to-end route, BLACK/Render runtime and external payout-provider state were not freshly exercised"
+  ],
+  "sources": {
+    "handoff": "https://app.notion.com/p/3ee8f8b56cd7814d98ebd51baa06fd2f?pvs=204",
+    "conveyor": "https://app.notion.com/p/3ea8f8b56cd78191bb5efb9aedc74ef1?pvs=204",
+    "shared_control": "https://docs.google.com/spreadsheets/d/1ZjyW5EC72W1OMmk6AsyhpJ-Qcz-ZTmw1Ru-gdWe6S70",
+    "ledger_commit": "4072c69fb35732966f53a0cc4054de87eba08a13"
+  }
+}
