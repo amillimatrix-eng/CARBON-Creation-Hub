@@ -118,9 +118,16 @@
       "next_action": "Monitor official HumanSignal support thread 1a102dad930442cd for an approved alternate route; otherwise submit the current Greenhouse application when interactive form execution is available. Do not claim SUBMITTED until a provider receipt exists.",
       "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
       "state": "QUALIFIED"
+    },
+    {
+      "due_at": "2026-10-04T00:35:26.819Z",
+      "due_now": true,
+      "next_action": "Current Owner-authorized session is submitting the corrected PUBLIC v2 proposal. Do not duplicate contact; recover Gmail and this record before any action.",
+      "opportunity_key": "stage32.com|jojo-luu-ai-proposal|the-dragon-who-could-not-claim-me",
+      "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-03T22:27:20.672622+00:00",
+  "generated_at": "2026-10-04T00:35:36.284310+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",

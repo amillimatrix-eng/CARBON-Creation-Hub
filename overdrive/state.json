@@ -25,15 +25,15 @@
   },
   "last_receipt": "receipts/0000000012-access-yuientertainment-com-20260930.json",
   "last_signal_count": {
-    "PRI": 17,
+    "PRI": 18,
     "iSCOPE": 22
   },
-  "last_tick": "2026-10-03T22:27:20.674271+00:00",
+  "last_tick": "2026-10-04T00:35:36.285786+00:00",
   "last_tick_result": {
     "pending": 0,
     "processed": [],
     "signals": {
-      "PRI": 17,
+      "PRI": 18,
       "iSCOPE": 22
     }
   },
@@ -327,7 +327,7 @@
       "status": "COMPLETED"
     }
   ],
-  "ready_claims": 52,
+  "ready_claims": 53,
   "sequence": 12,
   "version": 2
 }
