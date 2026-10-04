@@ -138,8 +138,10 @@
     },
     {
       "name": "Evidence House Primary",
-      "state": "LIVE__V2__IMMUTABLE_SHA_FRESHNESS_VERIFIED",
-      "evidence": "Render dep-davvgf9srm7s73dhhv6g runs e79cdb358c95a57903416d9c4420d28d7a5ed50a; later-commit/no-redeploy probe returned source_ref=576bcf914b9b6fdb85303387dec89519f4446574 and current marker with no adapter errors."
+      "state": "LIVE__EMAILED_ROOT_AND_API_VERIFIED_FOR_SCOPE",
+      "evidence": "2026-10-04T01:07:16Z: exact emailed root redirects to /house with HTTP200; required assets, api health, GITHUB_LIVE bootstrap without adapter errors, and evidence search verified. Code8b20082; deploy dep-db0qcpegekts73arpvc0 at b39397d. overdrive/control_receipts/OUTBOUND_PROOF_LINK_REPAIR_20261004.json.",
+      "verified_at": "2026-10-04T01:07:16Z",
+      "verification_scope": "ANONYMOUS_HTTP_HTML_ASSETS_API; BROWSER_VISUAL_NOT_VERIFIED; FULL_COMMISSIONING_NOT_INFERRED"
     },
     {
       "name": "Evidence House Secondary",
@@ -211,6 +213,12 @@
       "id": "BOUNTY_SCOPE_BINDING",
       "state": "HOLD__SOURCE_RECOVERED_EXACT_PROGRAM_BINDING_UNPROVEN",
       "next": "Preserve independent Reaper lane; prove exact program target/ref binding before deeper static finding promotion."
+    },
+    {
+      "severity": "P1",
+      "id": "OUTBOUND_PROOF_LINK_COVERAGE",
+      "state": "ROOT_ROUTE_REPAIRED_VERIFIED__PRI_GUARD_INSTALLED_NEXT_RUN_PROOF_PENDING",
+      "next": "Owner exposed a404 in an already-sent proof link that PRI and the prior consolidated sweep should have detected. Same URL repaired on existing runtime and both application ledgers reconciled. On next existing PRI action, prove exact public recipient-link/function readback before a shipped/deployed claim. Preserve no duplicate application and separate Render auto-deploy FAIL_OPEN."
     }
   ],
   "realized_revenue": {
