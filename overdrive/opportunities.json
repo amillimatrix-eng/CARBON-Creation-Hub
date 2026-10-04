@@ -1123,7 +1123,7 @@
         }
       ],
       "constraints": [],
-      "next_action": "Outlier support has answered; do not wait for or repeat that request. Resume the existing verified account through secure authentication, inspect the current coding opportunity/project, and progress the actual provider onboarding step where authorized. Follow the provider's assessment rules. Do not redo completed identity verification, create a duplicate account, or infer a project assignment or payment.",
+      "next_action": "The support reply is processed. Current exact gate is provider sign-in/account recovery requiring Owner control; after secure access, resume the existing verified Outlier account and inspect its current coding project/onboarding step. Follow provider assessment rules; no project assignment or payment is yet evidenced. Continue unrelated executable opportunities while this access dependency remains active.",
       "due_at": "2026-10-04T02:49:14.724Z",
       "recipient": "support@outlier.ai",
       "thread_id": "1a0fedc93e232877",
@@ -1135,9 +1135,10 @@
         "outlier_authenticated_session": {
           "state": "ACTIVE",
           "kind": "PROVIDER_AUTHENTICATION",
-          "observed_at": "2026-10-04T02:49:14.724Z",
-          "evidence": "Existing-account official coding route opens the Outlier sign-in screen in the current cloud browser. Verified account status is retained; authenticated execution session is not established.",
-          "next": "Use secure sign-in for the existing account, then inspect the actual project/onboarding state."
+          "observed_at": "2026-10-04T03:12:57.173Z",
+          "evidence": "User selected the Google sign-in method through secure browser authentication. The current browser page subsequently shows account recovery. No authenticated Outlier dashboard, project attachment, assessment completion or paid task is verified.",
+          "next": "Owner completes the account-access/recovery step in the secure browser; resume the existing verified Outlier account and inspect the actual project/onboarding state. Do not create a duplicate account or redo completed Outlier identity verification.",
+          "credential_reset_by_agent": false
         }
       }
     },
@@ -2760,8 +2761,8 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-04T02:49:14.724Z",
-  "last_updated_at": "2026-10-04T02:49:14.724Z",
+  "updated_at": "2026-10-04T03:12:57.173Z",
+  "last_updated_at": "2026-10-04T03:12:57.173Z",
   "last_updated_by": "CURRENT_OWNER_AUTHORIZED_COMMERCIAL_PROGRESSION",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
