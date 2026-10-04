@@ -10,7 +10,7 @@ from typing import Any
 
 from fastapi import Depends, FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
@@ -96,6 +96,12 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             raise HTTPException(status_code=503, detail="admin writes disabled: AMX_ADMIN_TOKEN is not configured")
         if not x_amx_admin or not hmac.compare_digest(x_amx_admin, secret):
             raise HTTPException(status_code=401, detail="invalid admin credential")
+
+    @app.get("/", include_in_schema=False)
+    def public_entry():
+        if not (root / "house/remediation/index.html").is_file():
+            raise HTTPException(status_code=503, detail="House interface unavailable")
+        return RedirectResponse(url="/house", status_code=307)
 
     @app.get("/api/health")
     def health() -> dict[str, Any]:
