@@ -6,6 +6,18 @@
   const fmt = (v) => v ? new Date(v).toLocaleString() : 'UNKNOWN';
   const T10_FIELDS = ['T10_JOB','T10_ACTUAL','T10_EVIDENCE','T10_CHANGE','T10_REMAINING_GAP','T10_PASS'];
 
+  async function request(path, options = {}, timeout = 35000) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeout);
+    try {
+      const response = await fetch(API + path, {...options, signal: controller.signal});
+      if (!response.ok) throw new Error('HTTP ' + String(response.status));
+      return await response.json();
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+
   function setBackend(state, meta) {
     const pill = $('backendPill');
     pill.dataset.state = state;
@@ -158,9 +170,7 @@
   async function loadBootstrap() {
     setBackend('VERIFYING','backend');
     try {
-      const r = await fetch(API + '/api/house/bootstrap', {cache:'no-store'});
-      if (!r.ok) throw new Error('HTTP ' + String(r.status));
-      const d = await r.json();
+      const d = await request('/api/house/bootstrap', {cache:'no-store'}, 70000);
       setBackend(d.backend?.status || 'CONNECTED', d.backend?.state_source || 'backend');
       $('stateSource').textContent = esc(d.backend?.state_source || 'UNKNOWN');
       $('freshness').textContent = 'Last successful read: ' + fmt(d.backend?.refreshed_at);
@@ -189,14 +199,18 @@
   $('evidenceSearch').addEventListener('submit', async (event) => {
     event.preventDefault();
     const query = $('evidenceQuery').value.trim(); if (!query) return;
+    const button = event.currentTarget.querySelector('button');
+    if (button.disabled) return;
+    button.disabled = true;
+    $('evidenceSearch').setAttribute('aria-busy', 'true');
     const state=$('searchState'), box=$('searchResults'); state.textContent='SEARCHING LOCAL GOVERNED EVIDENCE…'; box.innerHTML='';
     try {
-      const r=await fetch(API + '/api/evidence/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,limit:8})});
-      if(!r.ok) throw new Error('HTTP ' + String(r.status)); const d=await r.json();
+      const d=await request('/api/evidence/search',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query,limit:8})});
       state.textContent=d.supported?String(d.count) + ' evidence match(es) · ' + esc(d.retrieval):esc(d.gap||'No governed evidence matched.');
       if(!d.results?.length){box.innerHTML='<div class="empty">No evidence supports this query. The House will not fabricate an answer.</div>';return;}
       d.results.forEach(x=>box.append(recordNode(x)));
     } catch(err) { state.textContent='SEARCH DEGRADED'; box.innerHTML='<div class="empty error">Evidence search backend unavailable. No answer inferred.</div>'; }
+    finally { button.disabled = false; $('evidenceSearch').removeAttribute('aria-busy'); }
   });
 
   loadBootstrap();

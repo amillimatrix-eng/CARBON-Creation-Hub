@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#070707">
-<title>CARBON° — House</title>
+<title>CARBON° — Work you can inspect</title>
 <link rel="stylesheet" href="/house/assets/house.css">
 <script src="/house/assets/config.js"></script>
 </head>
@@ -15,15 +15,51 @@
   <div class="backend-pill" id="backendPill" data-state="VERIFYING"><span></span><b>VERIFYING</b><small id="backendMeta">backend</small></div>
 </header>
 <nav class="nav" aria-label="House navigation">
-  <a href="#gallery">Living Gallery</a><a href="#forge">The Forge</a><a href="#records">Records</a><a href="#evidence-terminal">Evidence Terminal</a><a href="#operator">Operator</a>
+  <a href="#selected-work">Selected work</a><a href="#gallery">Living Gallery</a><a href="#forge">The Forge</a><a href="#records">Records</a><a href="#evidence-terminal">Evidence Terminal</a><a href="#operator">Operator</a>
 </nav>
 <main id="house">
   <section class="hero">
     <p class="eyebrow">AMilliMATRiX / CREATION HOUSE</p>
-    <h1>MAKE <em>CONSEQUENCE</em> VISIBLE.</h1>
-    <p class="lede">Production, evidence, provenance and commercial movement on one governed operating surface. T10 separates mechanism activity from actual outcome: unavailable, unproven and unresolved state stays visible as such.</p>
+    <h1>WORK <em>YOU CAN</em> INSPECT.</h1>
+    <p class="lede">Software, product interfaces and production work by Ulrich du Plessis / AMilliMATRiX. Open the implementation, try a working flow, and inspect the evidence behind each claim.</p>
+    <div class="work-actions"><a class="work-link primary" href="#selected-work">Inspect selected work</a><a class="work-link" href="#evidence-terminal">Try evidence search</a></div>
     <div class="hero-state"><span>STATE SOURCE</span><strong id="stateSource">VERIFYING</strong><small id="freshness">No live state asserted yet.</small></div>
     <div class="rule">T10 · JOB → ACTUAL → EVIDENCE → CHANGE → REMAINING GAP → PASS</div>
+  </section>
+
+  <section id="selected-work" class="section">
+    <div class="section-head"><div><p class="eyebrow">SELECTED WORK / OPEN TO INSPECTION</p><h2>From implementation<br>to a working flow.</h2></div><p>Three ways to inspect the work: source, executable checks and the public interface. Each sample has a clear limit.</p></div>
+    <div class="cards proof-grid">
+      <article class="card proof-card">
+        <p class="eyebrow">01 / BACKEND &amp; WORKFLOW</p><h3>AMX Evidence House</h3>
+        <p>A FastAPI and SQLite backend for source-backed evidence retrieval and commercial workflow state. This page is its working interface.</p>
+        <p><strong>Inspect:</strong> deterministic search, input validation, outcome boundaries and tests. A scheduler wake is kept separate from a business result.</p>
+        <div class="work-actions"><a class="work-link" href="#evidence-terminal">Try a search</a><a class="work-link" href="https://github.com/amillimatrix-eng/CARBON-Creation-Hub/tree/main/backend" target="_blank" rel="noopener noreferrer">Backend source ↗</a><a class="work-link" href="https://github.com/amillimatrix-eng/CARBON-Creation-Hub/tree/main/tests" target="_blank" rel="noopener noreferrer">Tests ↗</a></div>
+        <p class="proof-limit">Limit: demo storage is local to the runtime. Commercial payment is not established by this interface.</p>
+      </article>
+      <article class="card proof-card">
+        <p class="eyebrow">02 / EXTERNAL API INTEGRATION</p><h3>ORACL3 Token Preflight</h3>
+        <p>A read-only API that converts provider evidence into structured flags, with controlled timeout and malformed-response handling.</p>
+        <p><strong>Inspect:</strong> request validation, evidence coverage and failure tests. Missing evidence remains unknown.</p>
+        <div class="work-actions"><a class="work-link" href="https://github.com/BullRulez/oracl3-okx-a2mcp" target="_blank" rel="noopener noreferrer">Source &amp; checks ↗</a><a class="work-link" href="https://amx-oracl3-token-preflight.onrender.com/docs" target="_blank" rel="noopener noreferrer">API docs ↗</a></div>
+        <p class="proof-limit">Limit: payment middleware has a separate verification gate. Listing and settlement require their own receipts.</p>
+      </article>
+      <article class="card proof-card">
+        <p class="eyebrow">03 / INTERACTIVE PRODUCT</p><h3>H0B° Unchained</h3>
+        <p>A published product interface with daily check-in, visible state changes and a vault activity flow.</p>
+        <p><strong>Inspect:</strong> the public interface and browser-local state that persists after reload. The control prevents a repeated daily check-in.</p>
+        <div class="work-actions"><a class="work-link" href="https://hobo-unchained.amillimatrix.chatgpt.site/" target="_blank" rel="noopener noreferrer">Open product ↗</a></div>
+        <p class="proof-limit">Limit: interface behavior demonstrates the product flow; it does not establish external token settlement.</p>
+      </article>
+    </div>
+    <p class="availability-note">The API demos run on free hosting and can take about a minute to start after idle time. The public source and tests remain available for immediate inspection.</p>
+  </section>
+
+  <section id="evidence-terminal" class="section terminal-section">
+    <div class="section-head"><div><p class="eyebrow">EVIDENCE SEARCH</p><h2>Ask the evidence.</h2></div><p>Search source-backed records by capability, contribution or artifact. Results state what was tested and what remains unverified.</p></div>
+    <form id="evidenceSearch" class="search"><input id="evidenceQuery" autocomplete="off" placeholder="e.g. What evidence shows I can design governed AI workflows?" aria-label="Evidence query"><button type="submit">Search evidence</button></form>
+    <div class="search-state" id="searchState" role="status" aria-live="polite">INTERVIEW QUESTION → EVIDENCE → T10 OUTCOME → INSPECT → EXPLAIN → HUMAN DECIDES</div>
+    <div class="records" id="searchResults"></div>
   </section>
 
   <section id="gallery" class="section">
@@ -39,13 +75,6 @@
   <section id="records" class="section">
     <div class="section-head"><div><p class="eyebrow">RECORDS</p><h2>Provenance before narrative.</h2></div><p id="evidenceCount">Evidence backend not read yet.</p></div>
     <div class="records" id="recordsList"><div class="empty">No evidence rendered until the backend answers.</div></div>
-  </section>
-
-  <section id="evidence-terminal" class="section terminal-section">
-    <div class="section-head"><div><p class="eyebrow">OWNER EVIDENCE TERMINAL</p><h2>Ask the evidence.</h2></div><p>Deterministic retrieval. Every returned record carries its T10 outcome boundary; no model fills a gap.</p></div>
-    <form id="evidenceSearch" class="search"><input id="evidenceQuery" autocomplete="off" placeholder="e.g. What evidence shows I can design governed AI workflows?" aria-label="Evidence query"><button type="submit">Search evidence</button></form>
-    <div class="search-state" id="searchState">INTERVIEW QUESTION → EVIDENCE → T10 OUTCOME → INSPECT → EXPLAIN → HUMAN DECIDES</div>
-    <div class="records" id="searchResults"></div>
   </section>
 
   <section id="operator" class="section">
