@@ -2056,10 +2056,10 @@
       "title": "Senior Data Scraping Engineer (Python)",
       "discovered_by": "iSCOPE",
       "execution_owner": "iSCOPE",
-      "state": "DISCOVERED",
-      "last_action_at": "2026-10-03T09:00:05Z",
+      "state": "HOLD_CAPABILITY_GAP",
+      "last_action_at": "2026-10-04T04:42:04Z",
       "due_at": "2026-10-04T09:00:00Z",
-      "next_action": "Verify South Africa eligibility and exact payout terms from the current official application before handoff; keep FOUND/DISCOVERED distinct from QUALIFIED.",
+      "next_action": "Do not hand off as QUALIFIED or spend time on an application asserting 5+ technical years. Required experience is currently unevidenced; retain the exact role/source and seek practical-proof opportunities accepting the evidenced experience level. South Africa/project availability and settlement remain unverified.",
       "qualification": {
         "capital_direction": "official listing advertises up to USD $45/hour; no applicant fee shown",
         "geography": "remote, South Africa eligibility not yet explicit in recovered page",
@@ -2080,8 +2080,24 @@
           "source": "WEB",
           "url": "https://mindrift.ai/project/scraping",
           "observed_at": "2026-10-03T09:00:05Z"
+        },
+        {
+          "kind": "CURRENT_PRIMARY_REQUIREMENTS_READ",
+          "source": "BROWSER",
+          "url": "https://apply.workable.com/toloka-ai/j/9D9FF7E392",
+          "observed_at": "2026-10-04T04:42:04Z",
+          "summary": "Official open role requires at least 5+ years relevant data engineering/web scraping/automation/software-development experience, B2+ English, and hands-on extraction/validation/cloud/LLM tooling. Up to $45/hour equivalent varies with contribution; 10-20 hours/week is estimated only while active."
         }
-      ]
+      ],
+      "active_dependencies": {
+        "relevant_experience_duration": {
+          "state": "ACTIVE",
+          "kind": "REQUIRED_QUALIFICATION_UNEVIDENCED",
+          "observed_at": "2026-10-04T04:42:04Z",
+          "evidence": "Recovered CV dates hands-on AMX software work from January 2026. Earlier 10+ years commercial experience does not establish the required 5+ years technical/automation experience.",
+          "next": "Reconsider only if authoritative earlier relevant experience is recovered or the buyer explicitly accepts a shorter demonstrated-work history."
+        }
+      }
     },
     "scalearmy.com|ai-implementation-specialist|remote-south-africa": {
       "domain": "scalearmy.com",
@@ -2333,13 +2349,40 @@
           "thread_id": "1a102dad930442cd",
           "observed_at": "2026-10-03T17:42:00Z",
           "summary": "PRI asked official HumanSignal support for an approved alternate route for the current South Africa Greenhouse application because the interactive form is unavailable in the current execution surface."
+        },
+        {
+          "kind": "APPLICATION_FORM_LIVE_ACCESS_VERIFIED",
+          "source": "BROWSER",
+          "url": "https://job-boards.greenhouse.io/humansignal/jobs/5823658004?gh_src=d66tug014us",
+          "observed_at": "2026-10-04T04:42:04Z",
+          "summary": "Existing official application form loaded interactively. Country, School, Degree, Discipline, residence country and cellphone type are marked aria-required=true. No application was entered or submitted."
         }
       ],
       "constraints": [
         "Confirm the device used for assignments meets the specific project image-quality requirement during application/onboarding."
       ],
-      "next_action": "Monitor official HumanSignal support thread 1a102dad930442cd for an approved alternate route; otherwise submit the current Greenhouse application when interactive form execution is available. Do not claim SUBMITTED until a provider receipt exists.",
-      "last_action_at": "2026-10-03T17:42:00Z"
+      "next_action": "The official Greenhouse form is accessible; waiting for support is no longer the only route. Recover the IT diploma awarding institution and confirm device family, then complete the existing application with the recovered CV/contact/profile facts. No submission or assignment is proven.",
+      "last_action_at": "2026-10-04T04:42:04Z",
+      "active_dependencies": {
+        "interactive_form_access": {
+          "state": "SATISFIED",
+          "observed_at": "2026-10-04T04:42:04Z",
+          "evidence": "Current cloud browser loaded the official application form; prior generic interactive-surface limitation is superseded."
+        },
+        "education_institution": {
+          "state": "ACTIVE",
+          "kind": "EXACT_APPLICANT_FACT",
+          "observed_at": "2026-10-04T04:42:04Z",
+          "evidence": "Recovered professional CV establishes an Information Technology Diploma but does not name its awarding institution. School is required in the provider form.",
+          "next": "Recover the awarding institution from authoritative existing applicant state, or obtain the exact institution from Owner; never invent a school or substitute a degree."
+        },
+        "cellphone_type": {
+          "state": "ACTIVE",
+          "kind": "EXACT_APPLICANT_FACT",
+          "observed_at": "2026-10-04T04:42:04Z",
+          "next": "Confirm the actual device family for image collection; provider options include Samsung Galaxy and other families. Screenshot UI alone is not a hardware-quality attestation."
+        }
+      }
     },
     "automationarchitects.ai|talent-tracker|cape-town-ai-automation": {
       "domain": "automationarchitects.ai",
@@ -2761,9 +2804,9 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-04T03:12:57.173Z",
-  "last_updated_at": "2026-10-04T03:12:57.173Z",
-  "last_updated_by": "CURRENT_OWNER_AUTHORIZED_COMMERCIAL_PROGRESSION",
+  "updated_at": "2026-10-04T04:42:04Z",
+  "last_updated_at": "2026-10-04T04:42:04Z",
+  "last_updated_by": "Codex root; bounded commercial gate reconciliation; not scheduled execution",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
