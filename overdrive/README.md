@@ -2,13 +2,15 @@
 
 Commercial execution control scaffold for AMilliMATRiX.
 
-## Verified implementation
+## Verified implementation — current readback 4 October 2026
 
-The current Python runner writes local readiness receipts. It does **not** invoke discovery, production, distribution, conversion or other external adapters. `READY_FOR_ADAPTER` means an adapter is still required; it is not evidence of completed work.
+The Python runner consumes evidence-transition/access-verification queue items, persists receipts, and derives office signals and durable work claims from the opportunity ledger. It does **not** execute external commercial actions; a transport tick or READY claim is not a buyer submission, acceptance or payment.
 
-The GitHub workflow compiles the runner and parses its JSON configuration/state. It is a validation workflow, not a commercial execution heartbeat. The Actions API returned zero workflow runs during inspection on 30 September 2026. This does not establish the state of a separately deployed worker.
+Repository readback records an OPERATIONAL transport tick at 2026-10-04T00:44:51Z: 18 iSCOPE and 17 PRI signals, no pending adapter queue items. After the retained-claim repair, 54 claims reconcile with 66 opportunity records: 35 READY, 13 WAITING and 6 CLOSED; zero state/next-action mismatches. Closed claims retain their existing ledger evidence; waiting claims are preserved rather than marked completed.
 
-The repository state has an empty queue, sequence 0 and no last tick. Lane labels alone do not prove operational workers.
+The sole scheduled reasoning writer is the existing Field Force automation, with separate iSCOPE and PRI mandates. The legacy execution engine is disabled. Post-merge attributable reasoning-worker execution proof remains a separate acceptance condition; transport health does not satisfy it.
+
+Jojo proposal PUBLIC v2 has a Gmail SENT receipt with its PDF attachment, persisted in the ledger and Notion handoff. This interactive authorized substitute receipt does not prove scheduled-worker execution, recipient receipt, acceptance or revenue. The September 30 zero-run/sequence-zero observations are historical.
 
 ## Operating contract
 
