@@ -1,0 +1,185 @@
+{
+  "schema": "AMX_PROOF_ASSET_ENHANCEMENT_RECEIPT_V1",
+  "observed_at": "2026-10-04T02:17:30.554Z",
+  "execution_origin": "INTERACTIVE_OWNER_AUTHORIZED_QUALITY_IMPROVEMENT",
+  "instruction": "Materially enhance income assets and existing workers while preserving their operation.",
+  "status": "VERIFIED_FOR_SOURCE_TESTS_DEPLOYED_FUNCTION_AND_HOUSE_VISUAL_SCOPE",
+  "oracl3": {
+    "repository": "BullRulez/oracl3-okx-a2mcp",
+    "commit": "cdb939ec80f66e0c8cf3e1599e0586d4e48eed72",
+    "deploy_id": "dep-db0r8hlg1s2s73fbagr0",
+    "service_id": "srv-davt3mh42hec73e2usvg",
+    "deploy_status": "live",
+    "changes": [
+      "Controlled upstream HTTP 502/504 failures",
+      "15-second total upstream budget with cancellation",
+      "Malformed provider payload rejection",
+      "Blank or metadata-only risk evidence remains unknown",
+      "Evidence coverage for partial records",
+      "Root redirects to existing API docs",
+      "Health exposes actual x402_enabled",
+      "Reproducible tests, self-check and refreshed package hashes"
+    ],
+    "verification": {
+      "tests_passed": 28,
+      "root": {
+        "status": 307,
+        "location": "/docs"
+      },
+      "docs_status": 200,
+      "health": {
+        "status": 200,
+        "version": "0.1.1",
+        "x402_enabled": false
+      },
+      "invalid_address_status": 400,
+      "absent_record": {
+        "status": 200,
+        "risk": "unknown",
+        "status_body": "insufficient_evidence"
+      },
+      "selfcheck_contract": "PASS on local test server with HTTPX mock upstream; a remote curl attempt failed at the execution proxy CONNECT boundary, while independent live HTTPX health/docs/functional readbacks passed"
+    },
+    "payment": "Middleware disabled on live readback. Paid replay, settlement and marketplace listing are not evidenced."
+  },
+  "house": {
+    "repository": "amillimatrix-eng/CARBON-Creation-Hub",
+    "frontend_commit": "699c0ac3c160656480659b88994c45f7933f94b4",
+    "deployed_commit": "84d077bee61e151b7eefd20ac1b16699f6c44e33",
+    "deploy_id": "dep-db0ragc9v7es73cmqoo0",
+    "service_id": "srv-davpec7avr4c73cu6ll0",
+    "deploy_status": "live",
+    "changes": [
+      "Buyer-facing work introduction and direct source/test/product routes",
+      "Technical entry point in root README while preserving creative property and rights",
+      "Selected Evidence House, ORACL3 and H0B product proof with bounded claims",
+      "Readable secondary text and keyboard focus states",
+      "Evidence search moved before long operational records",
+      "Bounded fetches, busy-state and duplicate-submit guard"
+    ],
+    "verification": {
+      "tests_passed": 26,
+      "javascript_syntax": "PASS node --check",
+      "exact_emailed_root": {
+        "url": "https://amx-evidence-house.onrender.com",
+        "status": 307,
+        "location": "/house",
+        "destination_status": 200
+      },
+      "css_status": 200,
+      "javascript_status": 200,
+      "bootstrap": {
+        "status": 200,
+        "state_source": "GITHUB_LIVE",
+        "adapter_errors": [],
+        "evidence_count": 4
+      },
+      "search": {
+        "status": 200,
+        "supported": true,
+        "count": 3,
+        "retrieval": "SQLite FTS5 / deterministic local search"
+      },
+      "browser": {
+        "new_intro_and_work_cards": "VISUALLY_INSPECTED",
+        "connected_state": "GITHUB_LIVE",
+        "query": "governed AI workflows",
+        "result_count": 3,
+        "submit_button_reenabled": true,
+        "interaction_note": "Keyboard submission verified. An initial browser pointer click did not trigger submission; no app JavaScript error was observed."
+      },
+      "visual_proof": {
+        "library_file_id": "libfile_ec46eda247208191a1b9a6a95b5d5b9f",
+        "file_id": "file_000000008594820e9cae0c391945bfb0",
+        "path": "/workspace/scratch/AMX_Inspected_Work_20261004.jpg"
+      }
+    },
+    "retained": [
+      "Existing API and operator surface",
+      "All DOM IDs required by operator projection",
+      "Creative property and rights",
+      "Controlled-source access boundaries"
+    ]
+  },
+  "controls": {
+    "commit": "84d077bee61e151b7eefd20ac1b16699f6c44e33",
+    "field_force_quality_rule": "INSTALLED_AND_READ_BACK",
+    "sole_commercial_writer": "6ac17e8999648191ba125236de46f012",
+    "priority_metadata": "HIGH_PROOF_FIT on Syrup, Agent Factory and Jojo existing records",
+    "ledger_count": 66,
+    "lifecycle_thread_owner_due_changes": 0,
+    "worker_readback": [
+      {
+        "id": "6ac17e8999648191ba125236de46f012",
+        "title": "iSCOPE PRI Field Force",
+        "enabled": true,
+        "schedule_preserved": true,
+        "prompt_preserved_except_field_force": null
+      },
+      {
+        "id": "6abf8e6d6a188191aee2b5d3fe24a9c9",
+        "title": "Bounty Reaper",
+        "enabled": true,
+        "schedule_preserved": true,
+        "prompt_preserved_except_field_force": true
+      },
+      {
+        "id": "6abe2c73850081918890b45f74a35bfb",
+        "title": "CAPACITY-MERGED — Matrix Commissioning Inspector",
+        "enabled": true,
+        "schedule_preserved": true,
+        "prompt_preserved_except_field_force": true
+      },
+      {
+        "id": "6ab9464b394c8191914bde39a5500e84",
+        "title": "Master Control Check",
+        "enabled": true,
+        "schedule_preserved": true,
+        "prompt_preserved_except_field_force": true
+      },
+      {
+        "id": "6ab800f8ed888191bceee51b154a31eb",
+        "title": "iSCOPE → PRI Execution Engine",
+        "enabled": false,
+        "schedule_preserved": true,
+        "prompt_preserved_except_field_force": true
+      }
+    ],
+    "master_restoration": {
+      "observed_disabled_at": "2026-10-04T02:02:59.583646+00:00",
+      "action": "Re-enabled existing Master Control task under active continuity mandate; same prompt and schedule",
+      "post_update_enabled": true
+    },
+    "runtime_truth": "Quality controls are installed. A later attributable scheduled commercial run is required before claiming upgraded autonomous execution or improved conversion."
+  },
+  "commercial_truth": {
+    "new_outreach_sent_this_change": false,
+    "duplicate_submission": false,
+    "recipient_access": "No new recipient-access receipt recovered",
+    "acceptance": "NOT_EVIDENCED",
+    "invoice": "NOT_EVIDENCED",
+    "payment": "NOT_EVIDENCED"
+  },
+  "black": {
+    "owner_update": "Rebooting BLACK",
+    "cli_version": "0.160.0 reported by Owner; not independently reverified after reboot",
+    "readiness_job": "BLACK/jobs/BLACK-CODEX-READINESS-20261004.json",
+    "receipt": "BLACK/receipts/BLACK-CODEX-READINESS-20261004.json returned404 on post-update read",
+    "desktop_and_codex_control": "UNVERIFIED; cloud execution is not BLACK",
+    "mutation": "No BLACK worker restart, process termination or daemon mutation issued"
+  },
+  "remaining_gaps": [
+    "Render DR-0017 commit-trigger auto-deploy remains open; existing service API fallback deployed this release",
+    "Render free-service cold starts remain; no always-on availability claim",
+    "House runtime-local storage is not durable customer intake; no persistence claim or payment gate closed",
+    "ORACL3 seller bindings/payment replay/settlement/listing unproven",
+    "Post-upgrade scheduled worker commercial performance and realized revenue unproven",
+    "BLACK post-reboot readiness and desktop control unverified"
+  ],
+  "T10_JOB": "Improve the current proof assets and priority method without disrupting income workers.",
+  "T10_ACTUAL": "Both existing services updated and live functions verified; 54 tests passed; House work view inspected; field-force quality rule and three priorities installed; disabled Master restored.",
+  "T10_EVIDENCE": "Source commits, provider deploy IDs, test outputs, live HTTP/browser readbacks, automation and ledger readback, and saved visual proof.",
+  "T10_CHANGE": "Technical proof is directly inspectable and integration failures are controlled. Existing worker identity, schedule and opportunity lifecycle remain preserved.",
+  "T10_REMAINING_GAP": "The listed availability, persistence, payment, autonomous execution and BLACK gates remain unresolved.",
+  "T10_PASS": "PASS_FOR_BOUNDED_ENHANCEMENT_SCOPE"
+}
