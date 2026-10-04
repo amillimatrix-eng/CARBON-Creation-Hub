@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <title>CARBON° Proposal Portal</title>
+  <link rel="stylesheet" href="/house/assets/proposal.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="/house" aria-label="CARBON House">
+        <span class="brand-car">CAR</span><span class="brand-bon">BON°</span>
+      </a>
+      <div class="quote-state">
+        <span id="statusPill" class="pill">LOADING</span>
+        <span id="countdown" class="countdown"></span>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <p class="eyebrow">PRIVATE CUSTOMER PROPOSAL</p>
+      <h1 id="businessName">Loading proposal…</h1>
+      <p id="headline" class="headline"></p>
+      <p id="subhead" class="subhead"></p>
+      <div class="hero-actions">
+        <a id="fullProposalLink" class="btn primary hidden" target="_blank" rel="noopener">Open full proposal</a>
+        <button id="jumpOffer" class="btn ghost" type="button">Review your options</button>
+      </div>
+    </section>
+
+    <section class="panel visual-panel">
+      <div>
+        <p class="kicker">THE IDEA</p>
+        <h2>Keep what already works. Upgrade what customers see and experience.</h2>
+        <p id="visualNote"></p>
+      </div>
+      <div id="visualStrip" class="visual-strip"></div>
+    </section>
+
+    <section class="panel">
+      <p class="kicker">WHY NOW</p>
+      <div id="marketCards" class="market-grid"></div>
+      <p class="fineprint">Benchmarks below are public-source context, not promises of results. Open any source to inspect it yourself.</p>
+    </section>
+
+    <section id="offer" class="panel">
+      <p class="kicker">YOUR CARBON° PROPOSAL</p>
+      <div class="offer-head">
+        <div>
+          <h2 id="offerTitle"></h2>
+          <p id="offerSummary"></p>
+        </div>
+        <div class="pricebox">
+          <span class="label">CURRENT QUOTE</span>
+          <strong id="price">To confirm</strong>
+          <small id="priceNote"></small>
+        </div>
+      </div>
+      <div id="included" class="included"></div>
+      <div class="promise">
+        <strong>72-HOUR VISIBLE-WORK PRINCIPLE</strong>
+        <span>After approval and required access, you should see attributable CARBON° work begin within 72 hours. This is not a promise that the entire transformation is complete in 72 hours.</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="kicker">MAKE IT YOURS</p>
+      <h2>Add, remove or ask us to change anything.</h2>
+      <p>Your proposal is not a printed dead-end. Select what interests you, tell us what you want changed, and send the request back into CARBON°.</p>
+      <form id="changeForm">
+        <div id="modules" class="module-grid"></div>
+        <label class="field">
+          <span>Anything else?</span>
+          <textarea id="changeMessage" maxlength="1200" placeholder="Example: Keep social, add loyalty later, change the promo cadence, or call me before changing the signage."></textarea>
+        </label>
+        <label class="field">
+          <span>Best contact (optional)</span>
+          <input id="contact" maxlength="120" placeholder="WhatsApp / email / phone" />
+        </label>
+        <button id="submitChange" class="btn primary wide" type="submit">Send change request</button>
+        <p id="formState" class="form-state"></p>
+      </form>
+    </section>
+
+    <section class="panel source-panel">
+      <p class="kicker">SOURCES WE USED</p>
+      <h2>No mystery numbers.</h2>
+      <p>CARBON° shows the public sources behind the market context in your proposal.</p>
+      <div id="sources" class="source-list"></div>
+    </section>
+
+    <section class="panel closing">
+      <p class="reborn">IT'S TIME FOR YOUR BUSINESS TO BE REBORN.</p>
+      <div class="carborn"><span>CAR</span><span>BORN°</span></div>
+      <div class="becomes">CARBON°</div>
+      <p>One business. One partner. One system. More ways to earn.</p>
+    </section>
+
+    <footer>
+      <span>CARBON° · AMilliMATRiX</span>
+      <span id="proposalRef"></span>
+    </footer>
+  </main>
+  <script src="/house/assets/proposal.js" defer></script>
+</body>
+</html>
