@@ -1,7 +1,10 @@
 from __future__ import annotations
 
 import hmac
+import json
 import os
+import uuid
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -18,6 +21,13 @@ from .store import EvidenceStore, SCHEMA_VERSION, T10_FIELDS, T10_SCHEMA
 class SearchRequest(BaseModel):
     query: str = Field(min_length=1, max_length=500)
     limit: int = Field(default=8, ge=1, le=50)
+
+
+class ProposalChangeRequest(BaseModel):
+    selected_modules: list[str] = Field(default_factory=list, max_length=20)
+    message: str = Field(default="", max_length=1200)
+    contact: str = Field(default="", max_length=120)
+    action: str = Field(default="REQUEST_CHANGE", pattern="^(REQUEST_CHANGE|REQUEST_CALLBACK)$")
 
 
 class EvidencePayload(BaseModel):
@@ -207,6 +217,79 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             }
         return {"record_key": record_key, "record": record, "t10": outcome}
 
+    def proposal_registry() -> dict[str, Any]:
+        path = root / "house/remediation/proposals.json"
+        if not path.exists():
+            return {"schema": "AMX_CARBON_CUSTOMER_PORTAL_V1", "proposals": {}}
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise HTTPException(status_code=503, detail="proposal registry unavailable") from exc
+        if not isinstance(payload, dict) or not isinstance(payload.get("proposals"), dict):
+            raise HTTPException(status_code=503, detail="proposal registry invalid")
+        return payload
+
+    def proposal_projection(portal_token: str) -> dict[str, Any]:
+        record = proposal_registry()["proposals"].get(portal_token)
+        if not isinstance(record, dict):
+            raise HTTPException(status_code=404, detail="proposal not found")
+
+        projected = dict(record)
+        issued_at = projected.get("issued_at")
+        validity_hours = int(projected.get("validity_hours") or 24)
+        status = str(projected.get("status") or "DRAFT").upper()
+        valid_until = None
+
+        if status in {"REVOKED", "CANCELLED"}:
+            quote_status = status
+        elif not issued_at:
+            quote_status = "DRAFT_NOT_ISSUED"
+        else:
+            try:
+                issued = datetime.fromisoformat(str(issued_at).replace("Z", "+00:00"))
+                if issued.tzinfo is None:
+                    issued = issued.replace(tzinfo=timezone.utc)
+                valid_until_dt = issued.astimezone(timezone.utc) + timedelta(hours=validity_hours)
+                valid_until = valid_until_dt.isoformat().replace("+00:00", "Z")
+                quote_status = "ACTIVE" if datetime.now(timezone.utc) < valid_until_dt else "EXPIRED"
+            except ValueError:
+                quote_status = "UNKNOWN"
+
+        projected["portal_token"] = portal_token
+        projected["quote_status"] = quote_status
+        projected["valid_until"] = valid_until
+        projected["validity_hours"] = validity_hours
+        return projected
+
+    @app.get("/api/proposals/{portal_token}")
+    def customer_proposal(portal_token: str) -> dict[str, Any]:
+        return proposal_projection(portal_token)
+
+    @app.post("/api/proposals/{portal_token}/request-change")
+    def customer_proposal_change(portal_token: str, payload: ProposalChangeRequest) -> dict[str, Any]:
+        proposal = proposal_projection(portal_token)
+        allowed = {str(item.get("id")) for item in proposal.get("modules", []) if isinstance(item, dict)}
+        selected = [module for module in payload.selected_modules if module in allowed]
+        request_id = "CPR-" + uuid.uuid4().hex[:12].upper()
+        receipt = {
+            "request_id": request_id,
+            "received_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            "proposal_ref": proposal.get("proposal_ref"),
+            "portal_token": portal_token,
+            "quote_status_at_request": proposal.get("quote_status"),
+            "action": payload.action,
+            "selected_modules": selected,
+            "message": payload.message.strip(),
+            "contact": payload.contact.strip(),
+            "binding": False,
+            "note": "Customer portal request only. It does not automatically modify, accept, invoice, or pay the quote.",
+        }
+        target = root / "data/proposal_requests.jsonl"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        with target.open("a", encoding="utf-8") as handle:
+            handle.write(json.dumps(receipt, ensure_ascii=False) + "\n")
+        return {"request_id": request_id, "received": True, "binding": False}
+
     @app.get("/api/house/bootstrap")
     def house_bootstrap() -> dict[str, Any]:
         state = aggregate_state(root)
@@ -241,6 +324,12 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     house_dir = root / "house/remediation"
     if house_dir.exists():
         app.mount("/house/assets", StaticFiles(directory=house_dir), name="house-assets")
+
+        @app.get("/proposal/{portal_token}")
+        @app.get("/proposal/{portal_token}/")
+        def customer_proposal_page(portal_token: str):
+            proposal_projection(portal_token)
+            return FileResponse(house_dir / "proposal.html")
 
         @app.get("/house")
         @app.get("/house/")
