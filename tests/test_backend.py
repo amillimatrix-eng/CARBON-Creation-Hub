@@ -240,3 +240,22 @@ def test_public_github_ref_resolution_fails_closed_without_sha(tmp_path, monkeyp
         assert False, 'expected ValueError'
     except ValueError as exc:
         assert 'did not expose' in str(exc)
+
+
+def test_emailed_root_redirects_to_existing_house(tmp_path):
+    c = client(tmp_path)
+    entry = c.get("/", follow_redirects=False)
+    assert entry.status_code == 307
+    assert entry.headers["location"] == "/house"
+    page = c.get("/")
+    assert page.status_code == 200
+    assert page.headers["content-type"].startswith("text/html")
+    assert "house" in page.text
+
+
+def test_root_reports_unavailable_house_without_false_success(tmp_path):
+    c = client(tmp_path)
+    (tmp_path / "house/remediation/index.html").unlink()
+    entry = c.get("/", follow_redirects=False)
+    assert entry.status_code == 503
+    assert entry.json()["detail"] == "House interface unavailable"
