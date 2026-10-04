@@ -142,9 +142,10 @@ def access_verification(task, opportunities):
 
 ADAPTERS = {"EVIDENCE_TRANSITION": evidence_transition, "ACCESS_VERIFICATION": access_verification}
 
-def claim_work(signals):
+def claim_work(signals, opportunities):
     """Durably claim every actionable signal. Claims cannot silently disappear:
-    OPEN -> COMPLETED only by receipt, otherwise lease expiry returns them to READY.
+    COMPLETED still requires a receipt. Off-route claims remain durable but cannot
+    remain READY merely because they were actionable in an earlier ledger snapshot.
     """
     now = datetime.now(timezone.utc)
     try:
@@ -153,6 +154,7 @@ def claim_work(signals):
         claims = {"version": 1, "claims": {}}
     active = claims.setdefault("claims", {})
     seen = set()
+    records = opportunities.get("records", {})
     for office in ("iSCOPE", "PRI"):
         for item in signals.get(office, []):
             key = office + "|" + item["opportunity_key"]
@@ -171,6 +173,26 @@ def claim_work(signals):
                 "attempts": int(prior.get("attempts", 0)),
                 "receipt_required": True,
             }
+    for key, claim in active.items():
+        record = records.get(claim.get("opportunity_key"))
+        if record is not None:
+            claim.update({
+                "state": record.get("state"),
+                "next_action": record.get("next_action"),
+                "due_at": record.get("due_at"),
+            })
+        if claim.get("status") == "COMPLETED":
+            continue
+        if key not in seen:
+            # Preserve work and receipts. A missing signal is not task completion.
+            claim["status"] = "WAITING"
+            claim["routing_reason"] = "NOT_CURRENTLY_ROUTED" if record else "LEDGER_RECORD_MISSING"
+            if record and str(record.get("state", "")).startswith("CLOSED") and record.get("evidence"):
+                claim["status"] = "CLOSED"
+                claim["closure_source"] = "opportunities.json"
+                claim["closure_evidence"] = record["evidence"]
+        else:
+            claim.pop("routing_reason", None)
     claims["generated_at"] = now.isoformat()
     claims["ready_count"] = sum(v.get("status") == "READY" for v in active.values())
     write(CLAIMS, claims)
@@ -185,6 +207,8 @@ def detect_work(opportunities):
     for key, record in opportunities.get("records", {}).items():
         owner = record.get("execution_owner")
         state = record.get("state")
+        if str(state).startswith("CLOSED") or state == "PAID":
+            continue
         due = record.get("due_at")
         due_now = False
         if due:
@@ -216,7 +240,7 @@ def tick():
         state = read(STATE)
         opportunities = read(OPPORTUNITIES)
         signals = detect_work(opportunities)
-        claims = claim_work(signals)
+        claims = claim_work(signals, opportunities)
         state["last_tick"] = utcnow()
         state["last_signal_count"] = {"iSCOPE": len(signals["iSCOPE"]), "PRI": len(signals["PRI"])}
         state["ready_claims"] = claims["ready_count"]
