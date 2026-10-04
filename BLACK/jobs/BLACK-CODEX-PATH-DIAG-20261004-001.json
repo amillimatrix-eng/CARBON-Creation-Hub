@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-CODEX-PATH-DIAG-20261004-001",
+  "purpose": "Read-only diagnostic to confirm Codex and GitHub execution path before dispatching the Boundary Reaper harness work order.",
+  "authority": "Owner-directed; no live Reaper mutation authorized.",
+  "timeout": 75,
+  "command": [
+    "bash",
+    "-lc",
+    "set -u; echo '=== CODEX PATH ==='; command -v codex || true; codex --version 2>&1 || true; echo '=== GITHUB AUTH ==='; gh auth status 2>&1 || true; echo '=== GIT REMOTE ==='; git remote -v 2>&1 || true; echo '=== CODEX EXEC HELP ==='; codex exec --help 2>&1 | sed -n '1,180p'; echo '=== CODEX APP-SERVER HELP ==='; codex app-server --help 2>&1 | sed -n '1,180p'; echo '=== END ==='"
+  ]
+}
