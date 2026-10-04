@@ -9,7 +9,19 @@
     "cause": "UNKNOWN",
     "action": "Re-enabled same sole writer; saved prompt and schedule unchanged; legacy writer remains disabled.",
     "post_update_state": "ENABLED_READ_BACK",
-    "scheduled_execution": "NOT_PROVEN_BY_THIS_UPDATE"
+    "scheduled_execution": "NOT_PROVEN_BY_THIS_UPDATE",
+    "final_readback": [
+      {
+        "id": "6ac17e8999648191ba125236de46f012",
+        "enabled": true,
+        "last_run": null
+      },
+      {
+        "id": "6abf8e6d6a188191aee2b5d3fe24a9c9",
+        "enabled": true,
+        "last_run": "2026-10-04T02:48:42.054949+00:00"
+      }
+    ]
   },
   "opportunity": {
     "key": "outlier.ai|coding-expertise-ai-training|south-africa",
@@ -18,7 +30,15 @@
     "state": "QUALIFIED",
     "change": "Removed obsolete wait-for-support; set actual verified-account onboarding next step and exact authentication dependency.",
     "assessment_completed": false,
-    "project_assigned": false
+    "project_assigned": false,
+    "auth_progress": {
+      "selected_method": "Google through secure browser authentication",
+      "observed_stage": "ACCOUNT_RECOVERY",
+      "outlier_signed_in": false,
+      "credential_reset_issued_by_agent": false,
+      "next": "Owner-controlled secure account access; then inspect actual Outlier project/onboarding state"
+    },
+    "latest_ledger_commit": "b179196d45fd13b684bdf4dea8e6793fa5c6642e"
   },
   "review": {
     "threads_read": 8,
@@ -38,6 +58,7 @@
     "payment": "NOT_RECOVERED"
   },
   "T10_JOB": "Progress current commercial work instead of counting maintenance as income.",
-  "T10_ACTUAL": "Recovered an unprocessed support reply, corrected its stale next action, and restored the disabled sole writer. Actual provider onboarding remains behind secure account access.",
-  "T10_PASS": "PARTIAL; NO INCOME_CLAIM"
+  "T10_ACTUAL": "Processed the received Outlier support reply, replaced its obsolete reply-wait with the actual next provider step, restored and read back the existing sole commercial writer, and attempted secure existing-account sign-in. The browser reached provider account recovery. Project assignment and paid work remain unverified.",
+  "T10_PASS": "PARTIAL; NO INCOME_CLAIM",
+  "final_observed_at": "2026-10-04T03:14:03.856Z"
 }
