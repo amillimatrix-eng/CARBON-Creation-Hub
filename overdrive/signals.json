@@ -52,7 +52,7 @@
     {
       "due_at": "2026-10-04T02:49:14.724Z",
       "due_now": true,
-      "next_action": "Outlier support has answered; do not wait for or repeat that request. Resume the existing verified account through secure authentication, inspect the current coding opportunity/project, and progress the actual provider onboarding step where authorized. Follow the provider's assessment rules. Do not redo completed identity verification, create a duplicate account, or infer a project assignment or payment.",
+      "next_action": "The support reply is processed. Current exact gate is provider sign-in/account recovery requiring Owner control; after secure access, resume the existing verified Outlier account and inspect its current coding project/onboarding step. Follow provider assessment rules; no project assignment or payment is yet evidenced. Continue unrelated executable opportunities while this access dependency remains active.",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
       "state": "QUALIFIED"
     },
@@ -120,7 +120,7 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-04T02:52:26.750084+00:00",
+  "generated_at": "2026-10-04T03:13:06.255594+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
