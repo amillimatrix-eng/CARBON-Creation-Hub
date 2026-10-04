@@ -4,38 +4,40 @@ RUN_ID: BLACK-CODEX-AUTH-GATE-20261004-001
 DATE: 2026-10-04
 ORIGIN: Owner / BLACK local terminal
 TARGET: BLACK Codex CLI
-STATE: HUMAN_AUTH_GATE
+STATE: HUMAN_AUTH_GATE_RESOLVED
 INTAKE_STATUS: PENDING_GOVERNANCE_RECONCILIATION
 
 ## Objective
 Complete first successful Codex execution on BLACK and establish the durable remote orchestration path.
 
-## Actual outcome
-After invoking Codex recovery/no-daemon flow, Codex returned to its interactive terminal and presented an authentication requirement with options including ChatGPT sign-in and device-code sign-in.
+## Outcome history
+1. Codex CLI 0.160.0 was installed and started.
+2. Default daemon startup failed on the app-server control socket.
+3. The no-daemon recovery route reached Codex authentication.
+4. Owner completed the supported device-code authentication flow.
+5. Screenshot evidence showed: "Signed in to Codex — You may now close this page."
 
-## Interpretation
-This is an irreducible human authentication gate, not a worker/configuration failure.
+## What is now proven
+- Codex CLI installation exists on BLACK.
+- Version 0.160.0 is evidenced.
+- Human device authentication completed successfully.
 
-## What worked
-- Codex CLI is installed and starts.
-- The prior daemon/socket failure was bypassed far enough to reach authentication.
-- The remaining blocker is account authentication rather than installation or BLACK service recovery.
+## What is NOT yet proven
+- one successful authenticated Codex repository task on BLACK;
+- Matrix -> BLACK -> Codex noninteractive remote invocation;
+- a Codex task receipt pushed back through BLACK.
 
-## Required Owner action
-Complete one supported Codex sign-in flow locally. Device-code sign-in is suitable when using a constrained/slow BLACK terminal.
-Do not disclose device codes, credentials, tokens, or recovery secrets into transcripts.
-
-## Claims NOT proven
-- Authentication has not yet been completed.
-- Successful Codex repository inspection is not yet proven.
-- Remote Codex orchestration is not yet proven.
+## Remote bridge status
+The existing remote preflight job:
+`BLACK-CODEX-REMOTE-BRIDGE-PREFLIGHT-20261004-001`
+remains durably queued without a matching receipt at the latest readback. Do not infer remote execution from authentication alone.
 
 ## Next action
-After successful authentication, allow Codex to return to the terminal and complete one bounded read-only repository inspection. Then commission the remote Matrix -> BLACK -> Codex -> receipt path.
+Preserve the current installation/authentication. Do not reinstall or reauthenticate. Commission one bounded authenticated Codex execution and require a durable BLACK receipt before declaring remote orchestration operational.
 
 ## T10
-Supposed outcome: Codex executes a read-only repo visibility test.
-Actual outcome: execution reached a provider authentication gate.
-Proof: Owner-reported Codex sign-in/device-code screen.
-Changed: failure class narrowed from startup/daemon to human authentication.
-Still unproven: authenticated Codex execution and remote job/receipt bridge.
+Supposed outcome: remove the human authentication blocker and make Codex eligible for authenticated execution.
+Actual outcome: device sign-in completed successfully.
+Proof: Owner screenshot showing successful Codex sign-in.
+Changed: HUMAN_AUTH_GATE is resolved.
+Still unproven: successful task execution and remote orchestration receipt.
