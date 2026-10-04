@@ -8,9 +8,9 @@
       "issued_at": null,
       "validity_hours": 24,
       "full_proposal_url": null,
-      "headline": "Your business already has personality. CARBON° helps the whole customer experience look and work like it.",
-      "subhead": "A low-cost, high-return revitalization concept designed for the Q4 / festive trading window — with visible work beginning quickly once scope and access are approved.",
-      "visual_note": "The original Majager's visual concept remains part of the proposal. CARBON° should preserve recognizable real-business context and improve it, not replace it with generic AI-looking imagery.",
+      "headline": "Your business already has personality. Q4 is the window to make every customer-facing touchpoint work harder.",
+      "subhead": "A low-cost, high-return revitalization concept for the festive trading window — preserve the place, sharpen the signal, and show visible CARBON° work quickly once scope and access are approved.",
+      "visual_note": "CARBON° preserves the earlier Majager's business-specific concept because recognizable real-business context makes the transformation easier to judge. AI-looking artefacts are refinement work, not a reason to throw away the concept. PLACE° direction is now locked: compact gazebo at the driveway edge, parallel with the street, operator faces right toward the existing social/covered area, normal driveway kept clear, no decorative trees.",
       "visuals": [
         {
           "title": "Existing business → recognizable transformation",
@@ -28,13 +28,18 @@
       "market_context": [
         {
           "metric": "-13",
-          "context": "FNB/BER South African Consumer Confidence Index, Q3 2026: improved from Q2, but still negative.",
+          "context": "FNB/BER South African Consumer Confidence Index, Q3 2026: improved from Q2 but remains negative.",
           "url": "https://www.ber.ac.za/Documents/Info/fnbber-consumer-confidence-index-2026q3?doc=44a3e1df-e015-4ba9-b6f7-bddfdb00f3bf"
         },
         {
-          "metric": "29.1M",
-          "context": "Active social-media user identities reported for South Africa in the Digital 2026 report.",
-          "url": "https://datareportal.com/reports/digital-2026-south-africa"
+          "metric": "48",
+          "context": "BER Other Services confidence in Q3 2026. BER says the next quarter looks brighter partly because of festive- and tourism-season boosts.",
+          "url": "https://www.ber.ac.za/Documents/Info/other-services-survey-2026q3-press-release?doc=def7bf34-45cc-4b8c-9f68-6618f50660f5"
+        },
+        {
+          "metric": "11%",
+          "context": "Stats SA's retail-seasonality example shows December accounted for 11% of 2019 annual retail sales across the sector — useful evidence of strong year-end seasonality, not a 2026 forecast.",
+          "url": "https://www.statssa.gov.za/?p=16090"
         },
         {
           "metric": "R3,500/mo",
@@ -43,15 +48,15 @@
         },
         {
           "metric": "73% / 47%",
-          "context": "Sage reports 73% of surveyed South African SMBs invested in AI, while 47% use AI to drive revenue growth.",
+          "context": "Sage reports 73% of surveyed South African SMBs invested in AI, while 47% use AI to drive revenue growth. Access alone is not the commercial result.",
           "url": "https://www.sage.com/en-ae/news/press-releases/2026/03/sage-ai-arrive-in-africa-and-the-middle-east-helping-smbs-reduce-admin-and-unlock-growth/"
         }
       ],
       "offer": {
         "title": "14-Day CARBON° Proof",
         "summary": "A paid, tightly scoped proof period designed to show useful visible work before Majager's commits to a larger managed relationship.",
-        "price_display": "TO CONFIRM AT ISSUE",
-        "price_note": "Current portal is a draft. The 24-hour quote clock starts only when CARBON° issues a final priced version.",
+        "price_display": "DRAFT R999.99",
+        "price_note": "Proposed 14-day founding-partner activation. Not issued yet. The 24-hour quote clock starts only when CARBON° issues the final priced version.",
         "included": [
           {
             "name": "SOCIAL°",
@@ -140,19 +145,24 @@
           "url": "https://www.ber.ac.za/Documents/Info/fnbber-consumer-confidence-index-2026q3?doc=44a3e1df-e015-4ba9-b6f7-bddfdb00f3bf"
         },
         {
-          "label": "BER current data / services outlook",
-          "used_for": "Business conditions and seasonal/festive-period context.",
-          "url": "https://www.ber.ac.za/Documents/Index/BER-press-release"
+          "label": "BER Other Services Survey — Q3 2026",
+          "used_for": "Current weak-demand context and the brighter Q4 outlook linked partly to festive/tourism seasonality.",
+          "url": "https://www.ber.ac.za/Documents/Info/other-services-survey-2026q3-press-release?doc=def7bf34-45cc-4b8c-9f68-6618f50660f5"
         },
         {
-          "label": "DataReportal — Digital 2026: South Africa",
-          "used_for": "South African social-media and platform reach context.",
-          "url": "https://datareportal.com/reports/digital-2026-south-africa"
+          "label": "Statistics South Africa — retail seasonality",
+          "used_for": "Historical evidence that November/December retail trade has strong seasonal effects; December was 11% of 2019 annual sales in Stats SA's example.",
+          "url": "https://www.statssa.gov.za/?p=16090"
         },
         {
           "label": "Social Media SA — public pricing",
           "used_for": "A current public comparison point for eight-post / one-platform social management.",
           "url": "https://socialmediasa.co.za/social-media-management-cape-town-pricing"
+        },
+        {
+          "label": "New Perspective Design — 2026 pricing",
+          "used_for": "Current public branding and small-business website comparison points.",
+          "url": "https://www.newperspectivestudio.co.za/how-much-does-website-design-cost-in-south-africa/"
         },
         {
           "label": "Sage — South African SMB AI activation gap",
