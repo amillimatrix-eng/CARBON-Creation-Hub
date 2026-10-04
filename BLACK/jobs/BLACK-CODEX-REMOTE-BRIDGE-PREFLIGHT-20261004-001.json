@@ -1,0 +1,11 @@
+{
+  "id": "BLACK-CODEX-REMOTE-BRIDGE-PREFLIGHT-20261004-001",
+  "issued_by": "Root Librarian remote orchestration",
+  "purpose": "Read-only preflight for the remote Codex execution bridge. Capture Codex CLI help so Root can commission the exact noninteractive invocation path without further Owner terminal commands. No install, repo mutation, process termination, credential access, or service changes.",
+  "command": [
+    "bash",
+    "-lc",
+    "command -v codex && codex --version && codex --help"
+  ],
+  "timeout": 30
+}
