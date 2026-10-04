@@ -355,3 +355,61 @@ Root / governance to decide:
 ---
 
 **Disposition:** HOLD AS DUAL CANDIDATE — MERGE + BLUE STATE — pending Root/governance decision.
+
+
+---
+
+## 16. CUSTOMER PROPOSAL PORTAL / QUOTE LIFECYCLE
+
+CARBON° proposals should resolve to a direct customer-facing portal rather than depend on printed decks, forwarded PDFs, or the customer searching through presentation files.
+
+Required direction:
+
+- each issued proposal receives a direct, customer-specific URL;
+- proposal displays the current scope, current quote state, applicable validity window, source links, and CARBON° contact/change path;
+- public-source market claims used in the proposal should be directly inspectable by hyperlink;
+- customer can revisit the proposal, request additions/removals/changes, and return the request to CARBON° without recreating the proposal manually;
+- a requested change does **not** automatically alter, accept, invoice, or pay the quote; CARBON°/PRI retains commercial control;
+- quote validity may use a short window such as **24 hours** where commercially justified, especially for fast-moving, time-sensitive or tailored offers;
+- the validity clock starts only when an actual priced proposal is issued, never while the proposal remains DRAFT;
+- expiry must be explicit; an expired quote may still be revisited but requires refresh/reissue before acceptance;
+- proposal links should be mobile-first because the customer should not need to print anything;
+- the portal becomes the bridge between CARBON° production and PRI conversion, not a second sales pipeline.
+
+### Visual continuity rule
+
+CARBON° must not remove or replace already-developed, useful real-business visual context merely to make a proposal cleaner.
+
+Where an existing concept was built from the customer's real frontage/profile/business environment:
+
+- preserve that concept where it strengthens comprehension;
+- label concept visualizations honestly;
+- improve obvious AI artefacts rather than discarding the underlying real-business transformation;
+- prefer recognizable before/context → proposed transformation → commercially useful outcome;
+- do not substitute generic stock/AI imagery when the existing business-specific visual better communicates the intervention.
+
+### Seasonal urgency
+
+For businesses with meaningful Q4/festive-season exposure, CARBON° should treat the remaining trading window as a commercial variable. Current evidence can support urgency, but claims must remain sourced and specific.
+
+The proposal should explain the opportunity without manufacturing fear:
+- consumers may be financially constrained;
+- demand is contested;
+- Q4/festive and tourism periods can create seasonal upside for relevant businesses;
+- therefore visible, timely work before peak trading can be more valuable than a slower redesign delivered after the season.
+
+Seasonality should influence prioritization and execution speed, not justify unsupported guarantees.
+
+### Current implementation receipt
+
+A first customer-portal capability has been implemented in the CARBON° House codebase with:
+- customer-specific proposal route;
+- public-source hyperlinks;
+- explicit DRAFT / ACTIVE / EXPIRED quote truth;
+- 24-hour validity support beginning at issue time;
+- mobile-first proposal presentation;
+- selectable service modules;
+- customer change-request capture;
+- non-binding request semantics;
+- Majager's seeded as a DRAFT proposal so no unapproved quote/acceptance is inferred.
+
