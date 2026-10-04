@@ -120,7 +120,7 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-04T00:39:53.593741+00:00",
+  "generated_at": "2026-10-04T00:43:50.219562+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -195,27 +195,6 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "No action; official page says the project is completed and not accepting participants.",
-      "opportunity_key": "dataforcecommunity.transperfect.com|asteroid-photo-collection|south-africa",
-      "state": "CLOSED_NO_LONGER_AVAILABLE"
-    },
-    {
-      "due_at": null,
-      "due_now": false,
-      "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
-      "opportunity_key": "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg",
-      "state": "CLOSED_NO_LONGER_AVAILABLE"
-    },
-    {
-      "due_at": null,
-      "due_now": false,
-      "next_action": "No action; official page states applications are closed.",
-      "opportunity_key": "dataforcecommunity.transperfect.com|mirabelle-transcription-qa|remote",
-      "state": "CLOSED_NO_LONGER_AVAILABLE"
-    },
-    {
-      "due_at": null,
-      "due_now": false,
       "next_action": "Keep as passive fallback; this is a future-opportunity pool, not a current specific paid assignment.",
       "opportunity_key": "rws.com|trainai-global-talent-pool|remote",
       "state": "DEPRIORITIZED"
@@ -261,13 +240,6 @@
       "next_action": "Confirm 20+ hours/week availability; if satisfied, qualify and route through the existing OpenTrain account without duplicate registration.",
       "opportunity_key": "opentrain.ai|ai-text-evaluation-writer-editor|cmurzvcme004j04l29e4irdu5",
       "state": "HOLD"
-    },
-    {
-      "due_at": null,
-      "due_now": false,
-      "next_action": "No action; South Africa is not in the current eligible-country list.",
-      "opportunity_key": "humansignal.com|data-annotation-contributor|international",
-      "state": "CLOSED_NOT_ELIGIBLE"
     },
     {
       "due_at": null,
