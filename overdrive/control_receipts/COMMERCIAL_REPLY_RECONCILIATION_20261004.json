@@ -1,0 +1,43 @@
+{
+  "schema": "AMX_COMMERCIAL_EXECUTION_RECONCILIATION_V1",
+  "observed_at": "2026-10-04T02:49:14.724Z",
+  "execution_origin": "CURRENT_OWNER_AUTHORIZED_SESSION",
+  "worker": {
+    "id": "6ac17e8999648191ba125236de46f012",
+    "observed_state": "DISABLED",
+    "changed_at": "2026-10-04T02:24:20.617148+00:00",
+    "cause": "UNKNOWN",
+    "action": "Re-enabled same sole writer; saved prompt and schedule unchanged; legacy writer remains disabled.",
+    "post_update_state": "ENABLED_READ_BACK",
+    "scheduled_execution": "NOT_PROVEN_BY_THIS_UPDATE"
+  },
+  "opportunity": {
+    "key": "outlier.ai|coding-expertise-ai-training|south-africa",
+    "support_reply_id": "1a103d5c802e82a0",
+    "ledger_commit": "eb8c0e6b75ef2a067ccc1f74a8e66e21135999f9",
+    "state": "QUALIFIED",
+    "change": "Removed obsolete wait-for-support; set actual verified-account onboarding next step and exact authentication dependency.",
+    "assessment_completed": false,
+    "project_assigned": false
+  },
+  "review": {
+    "threads_read": 8,
+    "recipient_threads_without_new_response": [
+      "Jojo",
+      "Syrup",
+      "Agent Factory",
+      "My Drama",
+      "LAVDM"
+    ],
+    "new_outreach_sent": false,
+    "no_duplicate_submission": true
+  },
+  "income": {
+    "contract": "NOT_RECOVERED",
+    "invoice": "NOT_RECOVERED",
+    "payment": "NOT_RECOVERED"
+  },
+  "T10_JOB": "Progress current commercial work instead of counting maintenance as income.",
+  "T10_ACTUAL": "Recovered an unprocessed support reply, corrected its stale next action, and restored the disabled sole writer. Actual provider onboarding remains behind secure account access.",
+  "T10_PASS": "PARTIAL; NO INCOME_CLAIM"
+}
