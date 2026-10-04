@@ -2512,6 +2512,13 @@
           "thread_id": "1a103d3e49774780",
           "observed_at": "2026-10-03T22:13:00Z",
           "summary": "PRI sent the requested links-first application to the official careers email with three bounded shipped-work links and no inflated credentials."
+        },
+        {
+          "kind": "RECIPIENT_PROOF_LINK_REPAIR_VERIFIED",
+          "source": "LIVE_HTTP_API_AND_RENDER_DEPLOY_READBACK",
+          "observed_at": "2026-10-04T01:07:16.379675+00:00",
+          "source_id": "overdrive/control_receipts/OUTBOUND_PROOF_LINK_REPAIR_20261004.json",
+          "summary": "Exact URL in existing application returned404 at root while backend and /house were running. Existing root repaired; same emailed URL now redirects to /house and returns200. CSS, JavaScript, config, bootstrap and evidence search verified. Other supplied public repositories returned200. Existing application/thread retained; no duplicate send or buyer receipt/acceptance inferred."
         }
       ],
       "constraints": [
@@ -2522,7 +2529,18 @@
       "recipient": "hello@poursyrup.ai",
       "thread_id": "1a103d3e49774780",
       "message_id": "1a103d3e49774780",
-      "subject": "Senior AI delivery engineer — shipped work"
+      "subject": "Senior AI delivery engineer — shipped work",
+      "proof_link_quality": {
+        "status": "EXACT_EMAILED_ROOT_REPAIR_VERIFIED",
+        "verified_at": "2026-10-04T01:07:16.379675+00:00",
+        "original_failure": "ROOT_HTTP404",
+        "current_url": "https://amx-evidence-house.onrender.com",
+        "resolved_url": "https://amx-evidence-house.onrender.com/house",
+        "source_commit": "8b20082bd6fe0098a26d75fd26e5fd7a44b5c209",
+        "deploy_id": "dep-db0qcpegekts73arpvc0",
+        "verification_scope": "ANONYMOUS_HTTP_HTML_ASSETS_AND_API; VISUAL_BROWSER_NOT_VERIFIED",
+        "receipt": "overdrive/control_receipts/OUTBOUND_PROOF_LINK_REPAIR_20261004.json"
+      }
     },
     "agentfactory.verder.com|ai-engineer|cape-town": {
       "domain": "agentfactory.verder.com",
@@ -2554,6 +2572,13 @@
           "thread_id": "1a103d3f1631dffd",
           "observed_at": "2026-10-03T22:13:03Z",
           "summary": "PRI sent a concise official-route application with deployed evidence-system and public agent/API work links."
+        },
+        {
+          "kind": "RECIPIENT_PROOF_LINK_REPAIR_VERIFIED",
+          "source": "LIVE_HTTP_API_AND_RENDER_DEPLOY_READBACK",
+          "observed_at": "2026-10-04T01:07:16.379675+00:00",
+          "source_id": "overdrive/control_receipts/OUTBOUND_PROOF_LINK_REPAIR_20261004.json",
+          "summary": "Exact URL in existing application returned404 at root while backend and /house were running. Existing root repaired; same emailed URL now redirects to /house and returns200. CSS, JavaScript, config, bootstrap and evidence search verified. Other supplied public repositories returned200. Existing application/thread retained; no duplicate send or buyer receipt/acceptance inferred."
         }
       ],
       "constraints": [
@@ -2564,7 +2589,18 @@
       "recipient": "agentfactory@verder.com",
       "thread_id": "1a103d3f1631dffd",
       "message_id": "1a103d3f1631dffd",
-      "subject": "AI Engineer — shipped work"
+      "subject": "AI Engineer — shipped work",
+      "proof_link_quality": {
+        "status": "EXACT_EMAILED_ROOT_REPAIR_VERIFIED",
+        "verified_at": "2026-10-04T01:07:16.379675+00:00",
+        "original_failure": "ROOT_HTTP404",
+        "current_url": "https://amx-evidence-house.onrender.com",
+        "resolved_url": "https://amx-evidence-house.onrender.com/house",
+        "source_commit": "8b20082bd6fe0098a26d75fd26e5fd7a44b5c209",
+        "deploy_id": "dep-db0qcpegekts73arpvc0",
+        "verification_scope": "ANONYMOUS_HTTP_HTML_ASSETS_AND_API; VISUAL_BROWSER_NOT_VERIFIED",
+        "receipt": "overdrive/control_receipts/OUTBOUND_PROOF_LINK_REPAIR_20261004.json"
+      }
     },
     "callforceoutsourcing.com|marketing-lead|south-africa": {
       "domain": "callforceoutsourcing.com",
