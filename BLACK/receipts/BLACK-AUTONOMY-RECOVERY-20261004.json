@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-AUTONOMY-RECOVERY-20261004",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-04T08:53:25.972697+00:00",
+  "finished": "2026-10-04T08:53:39.280720+00:00",
+  "stdout": "BLACK_WINDOWS_STARTUP_BRIDGE_INSTALLED\nlauncher=/mnt/c/Users/eztra/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/AMX-BLACK-WSL.cmd\ndistro=Ubuntu\nservice=amx-black.service\nlauncher_sha256=81108becd5b57cdcde1097412e44aed9698623796232838509c5dd6657947fd3\nlinux_service_enabled=enabled\nlinux_service_active=active\n",
+  "stderr": ""
+}
