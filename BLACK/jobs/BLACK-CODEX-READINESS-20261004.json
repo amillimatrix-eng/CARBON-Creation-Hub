@@ -1,0 +1,12 @@
+{
+  "id": "BLACK-CODEX-READINESS-20261004",
+  "issued_by": "Owner-authorized Codex session",
+  "purpose": "Bounded read-only Codex version/path and existing BLACK service diagnosis after Owner reports a silent running command. No install, process termination, credential reading or desktop mutation.",
+  "command": [
+    "python3",
+    "-u",
+    "-c",
+    "import datetime,json,os,pathlib,shutil,subprocess\ndef emit(stage,**values):\n print(json.dumps({\"stage\":stage,**values}),flush=True)\ndef run(command,seconds=8):\n try:\n  p=subprocess.run(command,text=True,capture_output=True,timeout=seconds)\n  return {\"exit_code\":p.returncode,\"stdout\":p.stdout[-1500:],\"stderr\":p.stderr[-500:]}\n except subprocess.TimeoutExpired:\n  return {\"state\":\"TIMED_OUT\",\"seconds\":seconds}\n except Exception as e:\n  return {\"state\":\"UNAVAILABLE\",\"reason\":type(e).__name__}\nemit(\"node\",observed_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),user=os.getenv(\"USER\"),worker_service=run([\"systemctl\",\"is-active\",\"amx-black.service\"],3))\nbinary=shutil.which(\"codex\")\nemit(\"linux_codex\",path=binary,auth_file_present=(pathlib.Path.home()/\".codex/auth.json\").exists(),version=run([binary,\"--version\"],8) if binary else {\"state\":\"NOT_ON_PATH\"})\np=run([\"ps\",\"-eo\",\"pid,comm,etime,stat,%cpu,%mem\"],3)\nemit(\"installation_processes\",processes=[line for line in p.get(\"stdout\",\"\").splitlines() if any(word in line.lower() for word in (\"codex\",\"node\",\"npm\",\"wsl\",\"python\"))])\npowershell=shutil.which(\"powershell.exe\")\nif powershell:\n cmd=\"$c=Get-Command codex -ErrorAction SilentlyContinue; if($c){$c.Source; & codex --version}else{Write-Output 'CODEX_NOT_ON_WINDOWS_PATH'}\"\n emit(\"windows_codex\",result=run([powershell,\"-NoProfile\",\"-NonInteractive\",\"-Command\",cmd],10))\nelse:\n emit(\"windows_codex\",state=\"WINDOWS_INTEROP_NOT_ON_PATH\")\nemit(\"done\")\n"
+  ],
+  "timeout": 40
+}
