@@ -50,9 +50,9 @@
       "state": "QUALIFIED"
     },
     {
-      "due_at": "2026-10-04T22:13:12Z",
-      "due_now": false,
-      "next_action": "Monitor Gmail for Outlier support response and the authenticated dashboard for a role-specific skills assessment/project step. Complete only the current provider step when available; do not infer application attachment, acceptance, assignment or PAID without provider evidence.",
+      "due_at": "2026-10-04T02:49:14.724Z",
+      "due_now": true,
+      "next_action": "Outlier support has answered; do not wait for or repeat that request. Resume the existing verified account through secure authentication, inspect the current coding opportunity/project, and progress the actual provider onboarding step where authorized. Follow the provider's assessment rules. Do not redo completed identity verification, create a duplicate account, or infer a project assignment or payment.",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
       "state": "QUALIFIED"
     },
@@ -120,7 +120,7 @@
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-04T02:12:15.616799+00:00",
+  "generated_at": "2026-10-04T02:49:22.440673+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
