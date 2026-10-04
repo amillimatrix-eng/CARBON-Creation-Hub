@@ -431,5 +431,34 @@
       "Capacity may expand only from evidence and contracts on regression; capacity does not expand authority."
     ],
     "revenue_guardrail": "No governance merge, scheduler state, submission, contract or invoice is payment evidence. PAID requires attributable payment evidence."
+  },
+  "proof_led_opportunity_priority": {
+    "updated_at": "2026-10-04T02:09:02.356Z",
+    "instruction_source": "Owner clarification 2026-10-04: materially improve existing income assets and workers without breaking their operation",
+    "priority": "HIGH_PROOF_FIT for current eligible paid opportunities evaluating inspectable built work; rank against effort, deadline, payer credibility and time to income",
+    "limits": [
+      "Proof-led application does not imply no interview",
+      "Priority is not acceptance, invoice or payment",
+      "Do not resend before an existing due follow-up"
+    ],
+    "proof_packet": [
+      "Buyer need",
+      "AMX contribution",
+      "Implementation/source",
+      "Reproducible checks",
+      "Actual result",
+      "Material limits"
+    ],
+    "asset_selection": "Recover the full capability floor; select the strongest buyer-relevant proof rather than defaulting to familiar links",
+    "improvement_rule": "Fix material evidenced gaps in existing assets/services/controls, verify in isolation, deploy existing routes, retest exact recipient access and persist receipt; preserving operation does not prohibit authorized improvements",
+    "preserve": [
+      "Single commercial writer",
+      "Independent Reaper ownership",
+      "Active worker schedule and work-in-progress",
+      "Existing threads, state and due actions",
+      "Controlled-source permissions"
+    ],
+    "installed_state": "CONTROL_INSTALLED; upgraded scheduled commercial execution not yet proven",
+    "receipt": "overdrive/control_receipts/PROOF_ASSET_ENHANCEMENTS_20261004.json"
   }
 }

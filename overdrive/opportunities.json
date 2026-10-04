@@ -2540,6 +2540,17 @@
         "deploy_id": "dep-db0qcpegekts73arpvc0",
         "verification_scope": "ANONYMOUS_HTTP_HTML_ASSETS_AND_API; VISUAL_BROWSER_NOT_VERIFIED",
         "receipt": "overdrive/control_receipts/OUTBOUND_PROOF_LINK_REPAIR_20261004.json"
+      },
+      "proof_led_priority": {
+        "tier": "HIGH_PROOF_FIT",
+        "reviewed_at": "2026-10-04T02:09:02.356Z",
+        "basis": "Current official buyer route explicitly evaluates built/shipped work",
+        "interview_free": "UNVERIFIED",
+        "time_to_income": "UNVERIFIED; buyer progression required",
+        "preserve_current_state": "SUBMITTED",
+        "preserve_due_at": "2026-10-09T17:00:00Z",
+        "quality_receipt": "overdrive/control_receipts/PROOF_ASSET_ENHANCEMENTS_20261004.json",
+        "next_material_action": "Monitor current thread; use improved buyer-relevant proof if requested or at the existing due follow-up. Do not duplicate the application."
       }
     },
     "agentfactory.verder.com|ai-engineer|cape-town": {
@@ -2600,6 +2611,17 @@
         "deploy_id": "dep-db0qcpegekts73arpvc0",
         "verification_scope": "ANONYMOUS_HTTP_HTML_ASSETS_AND_API; VISUAL_BROWSER_NOT_VERIFIED",
         "receipt": "overdrive/control_receipts/OUTBOUND_PROOF_LINK_REPAIR_20261004.json"
+      },
+      "proof_led_priority": {
+        "tier": "HIGH_PROOF_FIT",
+        "reviewed_at": "2026-10-04T02:09:02.356Z",
+        "basis": "Current official buyer route explicitly evaluates built/shipped work",
+        "interview_free": "UNVERIFIED",
+        "time_to_income": "UNVERIFIED; buyer progression required",
+        "preserve_current_state": "SUBMITTED",
+        "preserve_due_at": "2026-10-09T17:00:00Z",
+        "quality_receipt": "overdrive/control_receipts/PROOF_ASSET_ENHANCEMENTS_20261004.json",
+        "next_material_action": "Monitor current thread; use improved buyer-relevant proof if requested or at the existing due follow-up. Do not duplicate the application."
       }
     },
     "callforceoutsourcing.com|marketing-lead|south-africa": {
@@ -2704,13 +2726,24 @@
       "last_action_at": "2026-10-04T00:35:45Z",
       "subject": "Vertical Drama Proposal – Ulrich du Plessis – AI",
       "submission_channel": "GMAIL_ATTACHMENT",
-      "attachment_bytes": 835781
+      "attachment_bytes": 835781,
+      "proof_led_priority": {
+        "tier": "HIGH_PROOF_FIT",
+        "reviewed_at": "2026-10-04T02:09:02.356Z",
+        "basis": "Current buyer requested a specific creative proposal; PUBLIC_v2 is in existing sent thread",
+        "interview_free": "UNVERIFIED",
+        "time_to_income": "UNVERIFIED; buyer progression required",
+        "preserve_current_state": "SUBMITTED",
+        "preserve_due_at": "2026-10-08T08:00:00Z",
+        "quality_receipt": "overdrive/control_receipts/PROOF_ASSET_ENHANCEMENTS_20261004.json",
+        "next_material_action": "Monitor current thread; use improved buyer-relevant proof if requested or at the existing due follow-up. Do not duplicate the application."
+      }
     }
   },
   "version": 1,
-  "updated_at": "2026-10-04T00:36:41.096Z",
-  "last_updated_at": "2026-10-03T21:31:00Z",
-  "last_updated_by": "CURRENT_OWNER_AUTHORIZED_SESSION_AS_PRI_SUBSTITUTE",
+  "updated_at": "2026-10-04T02:09:02.356Z",
+  "last_updated_at": "2026-10-04T02:09:02.356Z",
+  "last_updated_by": "CURRENT_OWNER_AUTHORIZED_QUALITY_IMPROVEMENT",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
