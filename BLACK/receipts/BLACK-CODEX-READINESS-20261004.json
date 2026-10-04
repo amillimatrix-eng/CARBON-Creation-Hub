@@ -1,0 +1,10 @@
+{
+  "job": "BLACK-CODEX-READINESS-20261004",
+  "worker": "BLACK",
+  "state": "RESOLVED",
+  "exit_code": 0,
+  "started": "2026-10-04T08:53:53.589016+00:00",
+  "finished": "2026-10-04T08:54:09.648162+00:00",
+  "stdout": "{\"stage\": \"node\", \"observed_at\": \"2026-10-04T08:53:58.159146+00:00\", \"user\": \"amx\", \"worker_service\": {\"exit_code\": 0, \"stdout\": \"active\\n\", \"stderr\": \"\"}}\n{\"stage\": \"linux_codex\", \"path\": \"/home/amx/.local/bin/codex\", \"auth_file_present\": false, \"version\": {\"state\": \"TIMED_OUT\", \"seconds\": 8}}\n{\"stage\": \"installation_processes\", \"processes\": [\"  10596 wsl-pro-service       10:33 Ssl   3.4  2.0\", \"  11056 python3               01:31 Ss    1.5  2.5\", \"  11122 python3               00:13 S    16.8  2.0\"]}\n{\"stage\": \"windows_codex\", \"state\": \"WINDOWS_INTEROP_NOT_ON_PATH\"}\n{\"stage\": \"done\"}\n",
+  "stderr": ""
+}
