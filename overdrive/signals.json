@@ -115,12 +115,12 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Monitor official HumanSignal support thread 1a102dad930442cd for an approved alternate route; otherwise submit the current Greenhouse application when interactive form execution is available. Do not claim SUBMITTED until a provider receipt exists.",
+      "next_action": "The official Greenhouse form is accessible; waiting for support is no longer the only route. Recover the IT diploma awarding institution and confirm device family, then complete the existing application with the recovered CV/contact/profile facts. No submission or assignment is proven.",
       "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
       "state": "QUALIFIED"
     }
   ],
-  "generated_at": "2026-10-04T03:16:10.559135+00:00",
+  "generated_at": "2026-10-04T04:42:51.563934+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -174,9 +174,9 @@
     {
       "due_at": "2026-10-04T09:00:00Z",
       "due_now": false,
-      "next_action": "Verify South Africa eligibility and exact payout terms from the current official application before handoff; keep FOUND/DISCOVERED distinct from QUALIFIED.",
+      "next_action": "Do not hand off as QUALIFIED or spend time on an application asserting 5+ technical years. Required experience is currently unevidenced; retain the exact role/source and seek practical-proof opportunities accepting the evidenced experience level. South Africa/project availability and settlement remain unverified.",
       "opportunity_key": "mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392",
-      "state": "DISCOVERED"
+      "state": "HOLD_CAPABILITY_GAP"
     },
     {
       "due_at": null,
