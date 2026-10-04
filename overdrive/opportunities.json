@@ -1111,16 +1111,35 @@
           "thread_id": "1a103d4120423bc1",
           "observed_at": "2026-10-03T22:13:12Z",
           "summary": "After official Outlier identity verification approval and current South Africa coding-role verification, PRI sent support the exact verified-account progression question. No role attachment, assessment completion, acceptance, assignment or payment is inferred."
+        },
+        {
+          "kind": "SUPPORT_ONBOARDING_INSTRUCTIONS_RECEIVED",
+          "source": "GMAIL",
+          "source_id": "1a103d5c802e82a0",
+          "thread_id": "1a103d4120423bc1",
+          "observed_at": "2026-10-04T02:49:14.724Z",
+          "response_at": "2026-10-03T22:15:04Z",
+          "summary": "Outlier support answered the verified-account progression request: select the visible coding opportunity in the existing verified account, complete its onboarding, then the provider screening/assessment. If no project is visible, availability/capacity/qualification may prevent matching. This is guidance, not assignment or paid-work acceptance."
         }
       ],
       "constraints": [],
-      "next_action": "Monitor Gmail for Outlier support response and the authenticated dashboard for a role-specific skills assessment/project step. Complete only the current provider step when available; do not infer application attachment, acceptance, assignment or PAID without provider evidence.",
-      "due_at": "2026-10-04T22:13:12Z",
+      "next_action": "Outlier support has answered; do not wait for or repeat that request. Resume the existing verified account through secure authentication, inspect the current coding opportunity/project, and progress the actual provider onboarding step where authorized. Follow the provider's assessment rules. Do not redo completed identity verification, create a duplicate account, or infer a project assignment or payment.",
+      "due_at": "2026-10-04T02:49:14.724Z",
       "recipient": "support@outlier.ai",
       "thread_id": "1a0fedc93e232877",
       "message_id": "1a0fedc93e232877",
       "last_action_at": "2026-10-03T22:13:12Z",
-      "onboarding_status": "VERIFICATION_COMPLETE_OWNER_CONFIRMED"
+      "onboarding_status": "VERIFICATION_COMPLETE_OWNER_CONFIRMED",
+      "provider_support_thread_id": "1a103d4120423bc1",
+      "active_dependencies": {
+        "outlier_authenticated_session": {
+          "state": "ACTIVE",
+          "kind": "PROVIDER_AUTHENTICATION",
+          "observed_at": "2026-10-04T02:49:14.724Z",
+          "evidence": "Existing-account official coding route opens the Outlier sign-in screen in the current cloud browser. Verified account status is retained; authenticated execution session is not established.",
+          "next": "Use secure sign-in for the existing account, then inspect the actual project/onboarding state."
+        }
+      }
     },
     "alignerr.com|search-quality-ai-training|south-africa": {
       "organization": "Alignerr",
@@ -2741,9 +2760,9 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-04T02:09:02.356Z",
-  "last_updated_at": "2026-10-04T02:09:02.356Z",
-  "last_updated_by": "CURRENT_OWNER_AUTHORIZED_QUALITY_IMPROVEMENT",
+  "updated_at": "2026-10-04T02:49:14.724Z",
+  "last_updated_at": "2026-10-04T02:49:14.724Z",
+  "last_updated_by": "CURRENT_OWNER_AUTHORIZED_COMMERCIAL_PROGRESSION",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
