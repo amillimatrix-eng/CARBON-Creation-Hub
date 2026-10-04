@@ -1,6 +1,6 @@
 {
   "schema": "AMX_ISCOPE_PRI_WORKER_CONTRACT_V2",
-  "status": "CONTROL_COMMISSIONED / SCHEDULER-ORIGIN ATTRIBUTABLE EXECUTION PROVEN / BENCHMARK PARTIAL",
+  "status": "CONTROL_COMMISSIONED / CURRENT SOLE COMMERCIAL WRITER RECONCILED / POST-MERGE EXECUTION PROOF PENDING",
   "cadence_seconds": 60,
   "offices": {
     "iSCOPE": {
@@ -55,12 +55,27 @@
     "no_stagnation": "Detection/routing is not completion. READY work must remain visible until action receipt or irreducible governed gate.",
     "decision_runtime": {
       "surface": "ChatGPT automation",
-      "title": "iSCOPE → PRI Execution Engine",
-      "automation_id": "6ab800f8ed888191bceee51b154a31eb",
+      "title": "iSCOPE PRI Field Force",
+      "automation_id": "6ac17e8999648191ba125236de46f012",
       "state": "ENABLED",
-      "restored_at": "2026-10-01T11:48:03+02:00",
-      "acceptance_state": "SCHEDULER_ORIGIN_EXECUTION_PROVEN_FOR_OFFICIAL_ROUTE_OUTREACH_SCOPE",
-      "note": "Scheduler-origin execution on 2026-10-03 classified the full ledger, performed five deduplicated official-route PRI submissions, persisted/read back the 42-record ledger and read back OUTSTANDING row 34. This proves execution for the named scope only; it does not prove response, conversion, contract, invoice, payment or broad cross-category benchmark coverage."
+      "reconciled_at": "2026-10-04T00:05:59.958146Z",
+      "acceptance_state": "SOLE_WRITER_LIVE / POST-MERGE ATTRIBUTABLE EXECUTION PROOF PENDING",
+      "note": "Current sole commercial execution writer. Legacy iSCOPE → PRI Execution Engine (6ab800f8ed888191bceee51b154a31eb) is DISABLED by design to preserve single-writer control. Prior scheduler-origin execution remains evidence for its historical scope; this post-merge control update requires a fresh attributable Field Force run before claiming the merged liveness/final-mile behavior proven."
+    },
+    "single_writer_liveness": {
+      "current_commercial_writer_title": "iSCOPE PRI Field Force",
+      "current_commercial_writer_automation_id": "6ac17e8999648191ba125236de46f012",
+      "current_state": "ENABLED",
+      "legacy_writer_title": "iSCOPE → PRI Execution Engine",
+      "legacy_writer_automation_id": "6ab800f8ed888191bceee51b154a31eb",
+      "legacy_writer_state": "DISABLED / SUPERSEDED AS LIVE WRITER",
+      "master_control_automation_id": "6ab9464b394c8191914bde39a5500e84",
+      "master_control_state": "ENABLED",
+      "inspector_automation_id": "6abe2c73850081918890b45f74a35bfb",
+      "inspector_state": "ENABLED",
+      "reconciled_at": "2026-10-04T00:05:59.958146Z",
+      "invariant": "ACTIVE MANDATE + NONTERMINAL EXECUTABLE OBLIGATIONS + NO LIVE EXECUTION OWNER = INVALID / REMEDIATE",
+      "rule": "Never enable both commercial writers. If the current writer becomes unavailable while executable obligations remain, Master restores it or evidences exactly one successor transfer before the prior writer is released."
     }
   },
   "truth_controls": [
@@ -75,7 +90,13 @@
     "FULL LEDGER != ROUTING SUBSET",
     "provider/session/plan loss changes executor availability, not mandate",
     "hourly scheduler wake != business throughput ceiling",
-    "accuracy/evidence/dedupe/fit/authorization outrank speed"
+    "accuracy/evidence/dedupe/fit/authorization outrank speed",
+    "ACTIVE MANDATE + NONTERMINAL EXECUTABLE OBLIGATIONS + NO LIVE EXECUTION OWNER = INVALID / REMEDIATE",
+    "exactly one live commercial writer; never both writers and never zero writers while executable commercial work remains",
+    "DETECTED != REPAIRED",
+    "LOCAL BLOCKER != GLOBAL IDLE",
+    "SUBMITTED is nonterminal when realized payment is the objective",
+    "authorized nonterminal work persists across correction, topic shift, provider loss and handoff until terminal outcome, valid scoped HOLD/BLOCKED, or governed closure"
   ],
   "acceptance": [
     "minute cadence evidenced",
@@ -92,10 +113,12 @@
     "pri_external_action_message": "1a0f6b6246d73281",
     "pri_external_action_ledger_commit": "70ea27ae12766c08077dbc04899459526d0ee254",
     "reasoning_executor_restore": {
-      "automation_id": "6ab800f8ed888191bceee51b154a31eb",
+      "automation_id": "6ac17e8999648191ba125236de46f012",
+      "title": "iSCOPE PRI Field Force",
       "enabled": true,
-      "evidence_time": "2026-10-01T11:48:03+02:00",
-      "post_restore_material_receipt": "PENDING"
+      "evidence_time": "2026-10-04T00:05:59.958146Z",
+      "post_restore_material_receipt": "PENDING_POST_MERGE_ATTRIBUTABLE_SCHEDULER_RUN",
+      "schema_note": "Field name retained for compatibility; this entry now identifies the current sole writer rather than the legacy executor."
     },
     "latest_observed_reasoning_wake": "2026-10-02T11:12:30.258828Z",
     "scheduler_woke": true,
@@ -195,6 +218,24 @@
         "streak": 0
       },
       "outcome_truth": "SUBMITTED/QUALIFIED only. No external acceptance, contract, invoice, payment or realized revenue is proven."
+    },
+    "legacy_reasoning_executor": {
+      "automation_id": "6ab800f8ed888191bceee51b154a31eb",
+      "title": "iSCOPE → PRI Execution Engine",
+      "enabled": false,
+      "state": "DISABLED / SUPERSEDED AS LIVE WRITER",
+      "rule": "Do not re-enable unless an evidenced single-writer succession transfers ownership back."
+    },
+    "live_control_readback_2026_10_04": {
+      "observed_at": "2026-10-04T00:05:59.958146Z",
+      "field_force_enabled": true,
+      "legacy_execution_engine_enabled": false,
+      "master_control_enabled": true,
+      "inspector_enabled": true,
+      "bounty_reaper_enabled": true,
+      "hash_calibration_enabled": true,
+      "field_force_last_run_time": "2026-10-03T23:20:43.259921Z",
+      "truth_boundary": "Live enablement and wake timestamps prove liveness only; they do not prove conversion or payment. Fresh post-merge attributable execution remains to be evidenced."
     }
   },
   "control_hardened_at": "2026-10-03",
@@ -373,5 +414,22 @@
       "state": "BENCHMARK_PROVEN_FOR_SCOPE",
       "state_scope_time_evidence": "Scope: deduplicated official-route outreach and delivery recovery, 2026-10-03; Gmail 1a1010173460500e, 1a10023248ed0d30, 1a1002322cecb29d; commits f47c636807f6df853f44c5503df7611dba274238, d07f1533c23e94f0659554fc13a42360075f9676 and c2b65ff3069d2b4f84865480dcbb0a8368c33637."
     }
+  },
+  "merged_blue_state_controls": {
+    "disposition": "ACCEPTED / MERGED",
+    "controls": [
+      "Mandate Liveness & Objective Enforcement",
+      "Authorized Work Persistence",
+      "Adaptive Capability & Capacity Scaling"
+    ],
+    "commercial_application": [
+      "Preserve exactly one current PRI/iSCOPE commercial execution writer.",
+      "Persist nonterminal obligations with NEXT_ACTION, DUE/wait condition, evidence/thread pointer and active dependency state.",
+      "Active dependencies remain ACTIVE until SATISFIED, SUPERSEDED or NO-LONGER-REQUIRED and resurface only when materially relevant.",
+      "Do not stop at analysis/qualification when an authorized final-mile action exists; continue package/finalize → authorized submission/handoff → external receipt → response/negotiation/contract → invoice/receivable → verified payment.",
+      "A local blocker scopes only the affected work; unrelated executable work continues.",
+      "Capacity may expand only from evidence and contracts on regression; capacity does not expand authority."
+    ],
+    "revenue_guardrail": "No governance merge, scheduler state, submission, contract or invoice is payment evidence. PAID requires attributable payment evidence."
   }
 }
