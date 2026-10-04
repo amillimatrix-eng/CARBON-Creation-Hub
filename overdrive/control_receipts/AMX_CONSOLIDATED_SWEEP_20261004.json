@@ -96,5 +96,13 @@
     "conveyor": "https://app.notion.com/p/3ea8f8b56cd78191bb5efb9aedc74ef1?pvs=204",
     "shared_control": "https://docs.google.com/spreadsheets/d/1ZjyW5EC72W1OMmk6AsyhpJ-Qcz-ZTmw1Ru-gdWe6S70",
     "ledger_commit": "4072c69fb35732966f53a0cc4054de87eba08a13"
+  },
+  "subsequent_falsification": {
+    "observed_at": "2026-10-04T01:07:16Z",
+    "source": "Owner screenshots and current live recipient-link test",
+    "defect": "Prior sweep missed the404 at the exact Evidence House root already supplied in two applications. It must not be read as recipient-link or deployment acceptance.",
+    "repair_receipt": "overdrive/control_receipts/OUTBOUND_PROOF_LINK_REPAIR_20261004.json",
+    "repair_state": "VERIFIED_FOR_EXACT_ROOT_HTTP_ASSET_API_SCOPE",
+    "remaining": "PRI pre-send guard installed but next scheduled use unproven; Render auto-deploy FAIL_OPEN; browser visual unverified."
   }
 }
