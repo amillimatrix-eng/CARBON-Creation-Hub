@@ -1,0 +1,124 @@
+{
+  "receipt_id": "AMX-OUTBOUND-PROOF-LINK-REPAIR-20261004",
+  "recorded_at": "2026-10-04T01:08:30.681Z",
+  "classification": [
+    "OWNER_EXPOSED_RECIPIENT_LINK_DEFECT",
+    "OUTBOUND_QUALITY_CHECK_FAILURE",
+    "CONSOLIDATED_SWEEP_DETECTION_COVERAGE_FAILURE"
+  ],
+  "governance": "Implementation/remediation evidence under existing T10, external-disclosure, benchmark and completion rules. No new Canon/Blue State authority or worker created.",
+  "T10_JOB": "The exact shipped-work URL placed in recipient emails must open the claimed system and support inspection by a recipient.",
+  "T10_ACTUAL": "Syrup and Agent Factory applications included the service root. That exact root returned HTTP404 although /house and /api/health returned200. Prior sweep did not exercise the already-used outbound proof links.",
+  "T10_EVIDENCE": {
+    "outbound_message_ids": [
+      "1a103d3e49774780",
+      "1a103d3f1631dffd"
+    ],
+    "owner_screenshots": [
+      "1000027915.jpg",
+      "1000027916.jpg"
+    ],
+    "before": {
+      "root": 404,
+      "house": 200,
+      "api_health": 200,
+      "other_two_public_repository_links": 200
+    },
+    "code_commit": "8b20082bd6fe0098a26d75fd26e5fd7a44b5c209",
+    "root_smoke_commit": "b39397dac4b6276ff4c62d072557d8101ebae6b6",
+    "render_service": "srv-davpec7avr4c73cu6ll0",
+    "deployment": "dep-db0qcpegekts73arpvc0",
+    "deployment_status": "live",
+    "live_readback": {
+      "observed_at": "2026-10-04T01:07:16.379675+00:00",
+      "checks": [
+        {
+          "requested_url": "https://amx-evidence-house.onrender.com/",
+          "status": 200,
+          "final_url": "https://amx-evidence-house.onrender.com/house",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 5907,
+          "title": "CARBON° — House",
+          "expected_house": true
+        },
+        {
+          "requested_url": "https://amx-evidence-house.onrender.com/api/health",
+          "status": 200,
+          "final_url": "https://amx-evidence-house.onrender.com/api/health",
+          "content_type": "application/json",
+          "bytes": 659,
+          "health": "CONNECTED",
+          "schema_version": 2
+        },
+        {
+          "requested_url": "https://amx-evidence-house.onrender.com/house/assets/house.css",
+          "status": 200,
+          "final_url": "https://amx-evidence-house.onrender.com/house/assets/house.css",
+          "content_type": "text/css; charset=utf-8",
+          "bytes": 6091
+        },
+        {
+          "requested_url": "https://amx-evidence-house.onrender.com/house/assets/house.js",
+          "status": 200,
+          "final_url": "https://amx-evidence-house.onrender.com/house/assets/house.js",
+          "content_type": "text/javascript; charset=utf-8",
+          "bytes": 12057
+        },
+        {
+          "requested_url": "https://amx-evidence-house.onrender.com/house/assets/config.js",
+          "status": 200,
+          "final_url": "https://amx-evidence-house.onrender.com/house/assets/config.js",
+          "content_type": "text/javascript; charset=utf-8",
+          "bytes": 214
+        },
+        {
+          "requested_url": "https://amx-evidence-house.onrender.com/api/house/bootstrap",
+          "status": 200,
+          "final_url": "https://amx-evidence-house.onrender.com/api/house/bootstrap",
+          "content_type": "application/json",
+          "bytes": 42759,
+          "backend": {
+            "status": "CONNECTED",
+            "state_source": "GITHUB_LIVE",
+            "refreshed_at": "2026-10-04T01:07:16.314605+00:00",
+            "adapter_errors": []
+          },
+          "evidence_count": 4,
+          "no_false_live_state": true
+        },
+        {
+          "requested_url": "https://amx-evidence-house.onrender.com/api/evidence/search",
+          "status": 200,
+          "final_url": "https://amx-evidence-house.onrender.com/api/evidence/search",
+          "content_type": "application/json",
+          "bytes": 8280,
+          "supported": true,
+          "result_count": 4,
+          "evidence_ids": [
+            "EVID-OVERDRIVE-001",
+            "EVID-IRIS-001",
+            "EVID-T10-001",
+            "EVID-CARBON-001"
+          ]
+        }
+      ],
+      "browser_visual": "NOT_VERIFIED_CLOUD_BROWSER_BLOCKED_BY_CLIENT"
+    }
+  },
+  "T10_CHANGE": "Existing backend root now redirects to existing /house, fixing the URLs already present in both sent messages. Missing House is an explicit503. Root regression/smoke tests added. Existing PRI automation updated in place to test exact recipient-facing links and relevant demo/inspect paths before external shipped/deployed claims.",
+  "T10_PASS": "PASS_FOR_EXACT_ROOT_REPAIR_AND_LIVE_HTTP_API_SCOPE",
+  "T10_REMAINING_GAP": "Browser visual re-render not verified because cloud browser returned net::ERR_BLOCKED_BY_CLIENT; HTTP, assets and API readback passed. Render auto-deploy remains FAIL_OPEN/DR0017: configured commit trigger produced no deployment after pushes and established API fallback was used. New PRI pre-send guard is installed; scheduled use on a subsequent real outbound action is not yet evidenced. Full House commissioning and private ChatGPT Site publication are not inferred.",
+  "local_validation": {
+    "pytest": "22/22 PASS",
+    "smoke": "PASS including exact emailed root",
+    "ci_push_run": "NOT_INDEPENDENTLY_VERIFIED; available commit-workflow wrapper only exposes PR-triggered runs"
+  },
+  "commercial_state": {
+    "applications_remain": "SUBMITTED",
+    "no_new_application_sent": true,
+    "recipient_open_verified": false,
+    "acceptance_inferred": false,
+    "payment_inferred": false
+  },
+  "next": "Preserve original threads and ordinary due intervals. No duplicate application solely for the repaired URL. Use existing Master/Inspector/PRI to verify future proof-link checks and restore commit-trigger continuity."
+}
