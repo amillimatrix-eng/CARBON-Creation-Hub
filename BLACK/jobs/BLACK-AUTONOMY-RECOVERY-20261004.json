@@ -1,0 +1,10 @@
+{
+  "id": "BLACK-AUTONOMY-RECOVERY-20261004",
+  "issued_by": "Owner direct instruction",
+  "purpose": "Install the missing Windows-to-WSL startup bridge using the existing supervised BLACK service, verify the bridge and service state, and make future Windows logins wake BLACK without manual terminal intervention.",
+  "command": [
+    "bash",
+    "BLACK/install-windows-autostart-from-wsl.sh"
+  ],
+  "timeout": 60
+}
