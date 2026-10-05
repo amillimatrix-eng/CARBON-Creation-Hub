@@ -1,7 +1,7 @@
 # RGR RECTIFICATION — GOVERNANCE INTAKE
 
-Status: PENDING GOVERNANCE REVIEW
-Authority effect: NONE
+Status: OWNER-ACCEPTED FOR INTAKE — REQUESTED BLUE STATE + GOVERNANCE DISPOSITION
+Authority effect: NONE UNTIL GOVERNANCE DISPOSITION
 
 This record corrects a scope/authority ambiguity created after the RGR evidence note.
 
@@ -22,3 +22,37 @@ Current truth:
 - No broader governance conclusion follows from the connector dependency.
 
 This file is an intake artifact, not an execution instruction.
+
+
+## Accepted governing formulation
+
+> **RGR is a non-authoritative event classification applied to the recurrence of an already-governed failure. It inherits no authority, creates no persistent institution, and routes exclusively to the existing control responsible for the underlying failure. Tool or connector dependencies may block only the affected action and may never confer persistence, authority, scope expansion, or closure upon RGR.**
+
+## NO DRIFT ZONE
+
+**NO DRIFT ZONE**
+
+Tokyo Drift is a movie.
+
+The Matrix — AMX — is not Fast and the Furious.
+
+AMX is not the Olympics.
+
+Bolt is not a runner.
+
+This is not a race.
+
+This is a **NO DRIFT ZONE**.
+
+AMX is not merely drift-repellent. It is intended to be **DRIFT RESISTANT**.
+
+These lines are retained as mnemonic governance language, not as a separate authority, worker, protocol, score, race condition, or execution system. Their function is to make the operating expectation memorable: known state is preserved, governed corrections bind behavior, recurrence is detected, and the Matrix does not normalize drift as an ordinary operating condition.
+
+## Requested disposition
+
+Submit this rectification and accepted formulation for:
+- BLUE STATE reconciliation / merge decision;
+- GOVERNANCE disposition;
+- mapping into existing Drift / Execution Fidelity / T10 / continuity controls without creating parallel machinery.
+
+No self-promotion is implied. Until governance disposition, this remains intake material with no execution authority.
