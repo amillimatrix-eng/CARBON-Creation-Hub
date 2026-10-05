@@ -1,9 +1,10 @@
 from __future__ import annotations
 
+import fcntl
+import hashlib
 import hmac
 import json
 import os
-import uuid
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -11,10 +12,10 @@ from typing import Any
 from fastapi import Depends, FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, RedirectResponse
-from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from .state import aggregate_state
+from overdrive.payment_truth import payment_state
 from .store import EvidenceStore, SCHEMA_VERSION, T10_FIELDS, T10_SCHEMA
 
 
@@ -52,7 +53,7 @@ class EvidencePayload(BaseModel):
     T10_REMAINING_GAP: str
     T10_PASS: str = Field(pattern="^(PASS|HOLD|FAIL|UNKNOWN)$")
     inspect_route: str | None = None
-    visibility: str = "HOUSE"
+    visibility: str = "PRIVATE"
     tags: list[str] = Field(default_factory=list)
 
 
@@ -68,7 +69,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     app.state.seed_stats = seed_stats
 
     def house_visible(record: dict[str, Any]) -> bool:
-        return str(record.get("visibility", "HOUSE")).upper() not in {"PRIVATE", "SECRET", "INTERNAL_ONLY"}
+        return str(record.get("visibility", "PRIVATE")).upper() in {"HOUSE", "PUBLIC"}
 
     def visible_evidence() -> list[dict[str, Any]]:
         return [r for r in store.list() if house_visible(r)]
@@ -115,7 +116,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             "t10": t10_contract(records),
         }
 
-    @app.get("/api/t10")
+    @app.get("/api/t10", dependencies=[Depends(require_admin)])
     def t10_status() -> dict[str, Any]:
         state = aggregate_state(root)
         records = visible_evidence()
@@ -142,7 +143,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             raise HTTPException(status_code=404, detail="evidence record not found")
         return record
 
-    @app.get("/api/evidence/{evidence_id}/versions")
+    @app.get("/api/evidence/{evidence_id}/versions", dependencies=[Depends(require_admin)])
     def get_evidence_versions(evidence_id: str) -> dict[str, Any]:
         if store.get(evidence_id) is None:
             raise HTTPException(status_code=404, detail="evidence record not found")
@@ -183,15 +184,15 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             "t10": payload["t10"],
         }
 
-    @app.get("/api/operator/state")
+    @app.get("/api/operator/state", dependencies=[Depends(require_admin)])
     def operator_state() -> dict[str, Any]:
         return aggregate_state(root)
 
-    @app.get("/api/opportunities")
+    @app.get("/api/opportunities", dependencies=[Depends(require_admin)])
     def opportunities() -> dict[str, Any]:
         return aggregate_state(root)["opportunities"]
 
-    @app.get("/api/opportunities/{record_key:path}")
+    @app.get("/api/opportunities/{record_key:path}", dependencies=[Depends(require_admin)])
     def opportunity(record_key: str) -> dict[str, Any]:
         import json
         path = root / "overdrive/opportunities.json"
@@ -200,6 +201,11 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         if record is None:
             raise HTTPException(status_code=404, detail="opportunity not found")
 
+        record = dict(record)
+        record["state"] = payment_state(record, record_key)
+        if record["state"] == "PAYMENT_UNVERIFIED":
+            record.pop("t10", None)
+            record.pop("T10", None)
         native_t10 = record.get("t10") or record.get("T10")
         if isinstance(native_t10, dict) and all(str(native_t10.get(field, "")).strip() for field in T10_FIELDS):
             outcome = {field: native_t10[field] for field in T10_FIELDS}
@@ -224,7 +230,12 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         return {"record_key": record_key, "record": record, "t10": outcome}
 
     def proposal_registry() -> dict[str, Any]:
-        path = root / "house/remediation/proposals.json"
+        configured = os.getenv("AMX_PROPOSAL_REGISTRY_PATH", "")
+        if not configured:
+            raise HTTPException(status_code=404, detail="customer portal disabled")
+        path = Path(configured).resolve()
+        if path.is_relative_to(root):
+            raise HTTPException(status_code=503, detail="proposal registry must be private runtime storage outside the repository")
         if not path.exists():
             return {"schema": "AMX_CARBON_CUSTOMER_PORTAL_V1", "proposals": {}}
         try:
@@ -240,7 +251,11 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         if not isinstance(record, dict):
             raise HTTPException(status_code=404, detail="proposal not found")
 
-        projected = dict(record)
+        if str(record.get("status", "")).upper() in {"REVOKED", "CANCELLED"}:
+            raise HTTPException(status_code=404, detail="proposal not found")
+        public_fields = {"proposal_ref", "business_name", "status", "issued_at", "validity_hours", "full_proposal_url",
+                         "headline", "subhead", "visual_note", "visuals", "market_context", "offer", "modules", "sources"}
+        projected = {k: v for k, v in record.items() if k in public_fields}
         issued_at = projected.get("issued_at")
         validity_hours = int(projected.get("validity_hours") or 24)
         status = str(projected.get("status") or "DRAFT").upper()
@@ -275,13 +290,25 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     def customer_proposal_change(portal_token: str, payload: ProposalChangeRequest) -> dict[str, Any]:
         proposal = proposal_projection(portal_token)
         allowed = {str(item.get("id")) for item in proposal.get("modules", []) if isinstance(item, dict)}
-        selected = [module for module in payload.selected_modules if module in allowed]
-        request_id = "CPR-" + uuid.uuid4().hex[:12].upper()
+        selected = sorted({module for module in payload.selected_modules if module in allowed})
+        association = proposal_registry()["proposals"][portal_token]
+        opportunity_key = association.get("opportunity_key")
+        ledger_path = root / "overdrive/opportunities.json"
+        ledger = json.loads(ledger_path.read_text()) if ledger_path.exists() else {}
+        record = ledger.get("records", {}).get(opportunity_key, {})
+        if (record.get("execution_owner") != "PRI" or not record.get("thread_id")
+                or association.get("thread_id") != record["thread_id"] or not association.get("customer_id")):
+            raise HTTPException(status_code=503, detail="verified PRI customer/thread association required")
+        identity = {"opportunity_key": opportunity_key, "thread_id": record["thread_id"],
+                    "customer_id": association["customer_id"], "proposal_ref": proposal["proposal_ref"],
+                    "action": payload.action, "selected_modules": selected,
+                    "message": payload.message.strip(), "contact": payload.contact.strip()}
+        request_id = "CPR-" + hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()[:24].upper()
         receipt = {
             "request_id": request_id,
             "received_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
             "proposal_ref": proposal.get("proposal_ref"),
-            "portal_token": portal_token,
+            **identity,
             "quote_status_at_request": proposal.get("quote_status"),
             "action": payload.action,
             "selected_modules": selected,
@@ -290,11 +317,30 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             "binding": False,
             "note": "Customer portal request only. It does not automatically modify, accept, invoice, or pay the quote.",
         }
-        target = root / "data/proposal_requests.jsonl"
+        target = Path(os.getenv("AMX_CUSTOMER_REQUEST_PATH", str(root / "data/proposal_requests.jsonl")))
         target.parent.mkdir(parents=True, exist_ok=True)
-        with target.open("a", encoding="utf-8") as handle:
-            handle.write(json.dumps(receipt, ensure_ascii=False) + "\n")
+        with target.open("a+", encoding="utf-8") as handle:
+            fcntl.flock(handle, fcntl.LOCK_EX)
+            handle.seek(0)
+            existing = [json.loads(line) for line in handle if line.strip()]
+            if not any(r.get("request_id") == request_id for r in existing):
+                handle.seek(0, 2)
+                handle.write(json.dumps(receipt, ensure_ascii=False) + "\n")
+                handle.flush()
+                os.fsync(handle.fileno())
         return {"request_id": request_id, "received": True, "binding": False}
+
+    @app.get("/api/customer-requests/{request_id}", dependencies=[Depends(require_admin)])
+    def private_customer_request(request_id: str) -> dict[str, Any]:
+        target = Path(os.getenv("AMX_CUSTOMER_REQUEST_PATH", str(root / "data/proposal_requests.jsonl")))
+        if target.exists():
+            with target.open() as handle:
+                fcntl.flock(handle, fcntl.LOCK_SH)
+                for line in handle:
+                    request = json.loads(line)
+                    if request.get("request_id") == request_id:
+                        return request
+        raise HTTPException(status_code=404, detail="customer request not found")
 
     @app.get("/api/house/bootstrap")
     def house_bootstrap() -> dict[str, Any]:
@@ -312,7 +358,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
                 "refreshed_at": state["refreshed_at"],
                 "adapter_errors": state.get("adapter_errors", []),
             },
-            "operator": state,
+            "operator": {"state_source": state["state_source"], "refreshed_at": state["refreshed_at"]},
             "evidence": {"count": len(evidence), "records": evidence},
             "gallery": gallery,
             "t10": t10_contract(evidence),
@@ -329,7 +375,17 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
 
     house_dir = root / "house/remediation"
     if house_dir.exists():
-        app.mount("/house/assets", StaticFiles(directory=house_dir), name="house-assets")
+        @app.get("/house/assets/{asset}")
+        def public_asset(asset: str):
+            if asset == "config.js":
+                from fastapi.responses import Response
+                return Response('window.AMX_API_BASE = "";', media_type="application/javascript")
+            if asset not in {"house.css", "house.js", "proposal.css", "proposal.js"}:
+                raise HTTPException(status_code=404, detail="asset not found")
+            path = house_dir / asset
+            if path.is_symlink() or not path.is_file():
+                raise HTTPException(status_code=404, detail="asset not found")
+            return FileResponse(path)
 
         @app.get("/proposal/{portal_token}")
         @app.get("/proposal/{portal_token}/")

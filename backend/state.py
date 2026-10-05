@@ -10,6 +10,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from overdrive.payment_truth import payment_state, verified_payment
+
 T10_SCHEMA = "AMX_BLUE_STATE_T10_OUTCOME_TRUTH_V1_0"
 
 
@@ -160,7 +162,7 @@ def summarize_opportunities(opps: dict[str, Any]) -> dict[str, Any]:
     due: list[dict[str, Any]] = []
     now = utcnow()
     for key, record in records.items():
-        state = str(record.get("state", "UNKNOWN"))
+        state = payment_state(record, key)
         counts[state] = counts.get(state, 0) + 1
         due_at = record.get("due_at")
         is_due = False
@@ -168,9 +170,9 @@ def summarize_opportunities(opps: dict[str, Any]) -> dict[str, Any]:
             try:
                 dt = datetime.fromisoformat(due_at.replace("Z", "+00:00"))
                 is_due = dt <= now
-            except ValueError:
+            except (ValueError, TypeError):
                 pass
-        if is_due or state in {"QUALIFIED", "RESPONDED", "DELIVERY_FAILED"}:
+        if is_due or state in {"QUALIFIED", "RESPONDED", "DELIVERY_FAILED", "PAYMENT_UNVERIFIED"}:
             due.append({
                 "record_key": key,
                 "organization": record.get("organization"),
@@ -179,7 +181,7 @@ def summarize_opportunities(opps: dict[str, Any]) -> dict[str, Any]:
                 "next_action": record.get("next_action"),
                 "execution_owner": record.get("execution_owner"),
             })
-    paid = [k for k, r in records.items() if str(r.get("state", "")).upper() == "PAID"]
+    paid = [k for k, r in records.items() if payment_state(r, k) == "PAID" and verified_payment(r, k)]
     total = len(records)
     return {
         "total_records": total,
@@ -189,7 +191,7 @@ def summarize_opportunities(opps: dict[str, Any]) -> dict[str, Any]:
         "paid_record_keys": paid,
         "realized_revenue_evidence": {
             "present": bool(paid),
-            "rule": "PAID requires payment evidence; no PAID record means realized revenue remains unproven.",
+            "rule": "PAID requires independently verified attributable settlement; internal PAID labels are not payment evidence.",
         },
         "t10": t10_packet(
             "Represent the full commercial ledger and current actionable outcomes without silently collapsing it into a routing subset.",

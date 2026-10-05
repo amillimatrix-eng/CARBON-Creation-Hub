@@ -120,7 +120,7 @@ class EvidenceStore:
             raise ValueError("durable_receipts must be a list")
         record.setdefault("artifact_hash", None)
         record.setdefault("source_hash", None)
-        record.setdefault("visibility", "HOUSE")
+        record.setdefault("visibility", "PRIVATE")
         record.setdefault("tags", [])
         if not isinstance(record.get("tags"), list):
             raise ValueError("tags must be a list")

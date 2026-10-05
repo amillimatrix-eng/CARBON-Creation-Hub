@@ -1,0 +1,41 @@
+{
+  "changed_python_parse": {
+    "count": 9,
+    "result": "PASS"
+  },
+  "deployment": "NOT_VERIFIED",
+  "diff_check": "PASS",
+  "directive": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/8",
+  "egg_truth": "EGG NOT BROKEN \u2014 NO VERIFIED PAYMENT EVIDENCE",
+  "external_commercial_actions_performed": [],
+  "implementation_commit_worktree_status": "CLEAN",
+  "local_implementation_commit": "5f8d918fce9db73a422ea9984c9606a5939c9a8c",
+  "remote_implementation_commit": "407f1c13ae72991e116472aff8b1eb2b2ad177f1",
+  "smoke": {
+    "checks": [
+      "emailed_root",
+      "health",
+      "bootstrap",
+      "evidence_search",
+      "house"
+    ],
+    "result": "PASS"
+  },
+  "targeted_tests": {
+    "count": 41,
+    "method": "Actual unittest cases and existing test functions with temporary tmp_path/monkeypatch fixture harness; FastAPI/HTTPX endpoint requests were exercised.",
+    "result": "PASS"
+  },
+  "tested_sha256": {
+    "BLACK/worker.py": "a7d20238086447f8a18b1aebdbbdca95c47618074ef241ccc74629f6573458d9",
+    "backend/app.py": "3e658587f92d02e384ec6364effc01e24253c98ff7aef2bda2b587ceef4acbeb",
+    "backend/state.py": "db6a10a2df2e15ee79d00ac0eef69e1e1758781f5370a58778258788d08e6cbf",
+    "backend/store.py": "4fdc7819f866511c5ecfad355f74162c09d8e9eabb63ec0c1c9bb8f1b4f026dd",
+    "overdrive/payment_truth.py": "f7309a481d057128b19c467fd1fbc1b5bf5f65e23e8ed13711b48c9b02f0a51e",
+    "overdrive/runner.py": "db31937059178557bbdd8d750dab541bdbd91361a15de16a1c3448294d72490c",
+    "tests/test_backend.py": "bac160dddf95361613b4b31409aad731e1c5b80ccb4f34ff3c53551bc3811a77",
+    "tests/test_customer_portal.py": "5202f765a69b68ab9d7a63e7d7f831847aa2c1a8db8d3533663e8762cad6e2aa",
+    "tests/test_lean_egg.py": "87333f56a34eef912a609ffe9d317e0b247d6a504f859428c69a07c62d99fb30"
+  },
+  "verified_payment_evidence": []
+}
