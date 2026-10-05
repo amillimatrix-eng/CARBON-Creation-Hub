@@ -2,7 +2,7 @@
 
 Date: 2026-10-05
 Classification: cross-control failure-class evidence / commissioning test vector
-Primary control: BLUE STATE — EXPLICIT-DIRECTIVE EXECUTION FIDELITY v1.0
+Primary triggering control family: BLUE STATE — EXPLICIT-DIRECTIVE EXECUTION FIDELITY v1.0
 Disposition: EVIDENCE / ORGANIZATIONAL CLASSIFICATION — NO NEW BLUE STATE RULE
 
 ## Definition
@@ -16,6 +16,16 @@ Escalation:
 - CONTROL ENFORCEMENT FAILURE (CEF) = RGR persists after an enforcement or acceptance mechanism already exists; policy exists but does not reliably bind execution.
 
 This class describes behavior, not intent.
+
+## Scope
+
+**RGR is Matrix-wide wherever an existing governing control applies.**
+
+It is not owned by, limited to, or redefined as an Execution Fidelity / Drift-only class. The triggering incident routes first through Execution Fidelity because that is the control family directly implicated by that incident.
+
+RGR may be observed in execution, continuity, commercial, security, privacy, evidence, deployment, worker roles, authority, observability, recovery, governance implementation, or any other governed domain where the same previously-governed failure materially recurs.
+
+If multiple control families are implicated, link them without collapsing their scopes or changing their authority.
 
 ## Triggering instance
 
@@ -59,12 +69,13 @@ Failure class:
    - blob `9c87d2dcc7be94d25b67792a3bc12f3e24276f8f`
    - Candidate exists to expose recurring repair loops, repeated assumptions and transcript desynchronization rather than creating more status reporting.
 
-## Organizational placement
+## Organizational routing
 
 Do not create a parallel RGR system.
 
-Place RGR under the existing Drift / Execution Fidelity observation layer:
-**RGR detection -> existing continuity controls -> T10 behavioral proof -> existing commissioning/intake evidence.**
+Route each RGR event through the control family that governs the recurring failure:
+
+**RGR event -> applicable governing control(s) -> existing enforcement / continuity machinery -> T10 behavioral proof -> existing commissioning / intake evidence where material.**
 
 The name RGR may later receive a governance naming disposition, but no new worker, dashboard, manager, authority or state machine is required.
 
