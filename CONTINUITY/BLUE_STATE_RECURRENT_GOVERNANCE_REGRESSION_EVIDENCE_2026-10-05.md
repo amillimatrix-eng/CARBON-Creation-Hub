@@ -1,3 +1,6 @@
+> **RECTIFICATION NOTICE — 2026-10-05**
+> This record is evidence/provenance only. It does not activate RGR as governance and does not grant execution authority. Current disposition is PENDING GOVERNANCE REVIEW under `AMX/ROOT/INTAKE/RGR_RECTIFICATION_2026-10-05.md` and the authoritative intake index. Any broader scope language below is proposal material for governance review, not active authority.
+
 # BLUE STATE EXECUTION-FIDELITY EVIDENCE — RECURRENT GOVERNANCE REGRESSION (RGR)
 
 Date: 2026-10-05
