@@ -22,6 +22,7 @@ def evidence_record(**overrides):
         'T10_CHANGE':'The outcome became inspectable.',
         'T10_REMAINING_GAP':'No additional gap asserted for this fixture.',
         'T10_PASS':'PASS',
+        'visibility':'HOUSE',
     }
     record.update(overrides)
     return record
@@ -99,20 +100,24 @@ def test_update_preserves_version_and_admin_fails_closed(tmp_path, monkeypatch):
     r=c.put('/api/evidence/EVID-TEST-001',headers={'X-AMX-Admin':'secret'},json=payload)
     assert r.status_code==200
     assert r.json()['changed'] is True
-    versions=c.get('/api/evidence/EVID-TEST-001/versions').json()
+    versions=c.get('/api/evidence/EVID-TEST-001/versions',headers={'X-AMX-Admin':'secret'}).json()
     assert versions['count']==1
 
 
-def test_operator_truth_does_not_promote_enabled_to_executing(tmp_path):
+def test_operator_truth_does_not_promote_enabled_to_executing(tmp_path, monkeypatch):
+    monkeypatch.setenv("AMX_ADMIN_TOKEN", "operator-test")
     c=client(tmp_path)
+    c.headers["X-AMX-Admin"]="operator-test"
     op=c.get('/api/operator/state').json()
     assert op['worker']['display_state']=='ENABLED / EXECUTION_NOT_PROVEN'
     assert op['worker']['runtime_enabled'] is True
     assert op['worker']['t10']['T10_PASS']=='HOLD'
 
 
-def test_full_ledger_is_not_routing_subset(tmp_path):
+def test_full_ledger_is_not_routing_subset(tmp_path, monkeypatch):
+    monkeypatch.setenv("AMX_ADMIN_TOKEN", "operator-test")
     c=client(tmp_path)
+    c.headers["X-AMX-Admin"]="operator-test"
     op=c.get('/api/operator/state').json()
     assert op['routing']['full_ledger_count']==2
     assert op['routing']['claim_count']==1
@@ -120,15 +125,19 @@ def test_full_ledger_is_not_routing_subset(tmp_path):
     assert op['routing']['t10']['T10_PASS']=='PASS'
 
 
-def test_payment_partial_is_preserved_and_t10_hold(tmp_path):
+def test_payment_partial_is_preserved_and_t10_hold(tmp_path, monkeypatch):
+    monkeypatch.setenv("AMX_ADMIN_TOKEN", "operator-test")
     c=client(tmp_path)
+    c.headers["X-AMX-Admin"]="operator-test"
     op=c.get('/api/operator/state').json()
     assert op['payment_rails']['inventory_completeness']=='PARTIAL / RECOVERY_REQUIRED'
     assert op['payment_rails']['t10']['T10_PASS']=='HOLD'
 
 
-def test_no_paid_record_means_revenue_not_evidenced(tmp_path):
+def test_no_paid_record_means_revenue_not_evidenced(tmp_path, monkeypatch):
+    monkeypatch.setenv("AMX_ADMIN_TOKEN", "operator-test")
     c=client(tmp_path)
+    c.headers["X-AMX-Admin"]="operator-test"
     op=c.get('/api/operator/state').json()
     assert op['opportunities']['realized_revenue_evidence']['present'] is False
     assert op['opportunities']['paid_record_count']==0
@@ -144,15 +153,19 @@ def test_t10_fields_are_required_for_new_evidence(tmp_path, monkeypatch):
     assert r.status_code==422
 
 
-def test_truth_screen_without_native_t10_is_explicit_hold(tmp_path):
+def test_truth_screen_without_native_t10_is_explicit_hold(tmp_path, monkeypatch):
+    monkeypatch.setenv("AMX_ADMIN_TOKEN", "operator-test")
     c=client(tmp_path)
+    c.headers["X-AMX-Admin"]="operator-test"
     op=c.get('/api/operator/state').json()
     assert op['system_truth_t10']['T10_PASS']=='HOLD'
     assert 'without native T10' in op['system_truth_t10']['T10_ACTUAL']
 
 
-def test_t10_endpoint_and_house_bootstrap(tmp_path):
+def test_t10_endpoint_and_house_bootstrap(tmp_path, monkeypatch):
+    monkeypatch.setenv("AMX_ADMIN_TOKEN", "operator-test")
     c=client(tmp_path)
+    c.headers["X-AMX-Admin"]="operator-test"
     t=c.get('/api/t10')
     assert t.status_code==200
     assert t.json()['coverage']['coverage_complete'] is True
@@ -167,8 +180,10 @@ def test_t10_endpoint_and_house_bootstrap(tmp_path):
     assert 'house' in h.text
 
 
-def test_single_opportunity_read_cannot_bypass_t10(tmp_path):
+def test_single_opportunity_read_cannot_bypass_t10(tmp_path, monkeypatch):
+    monkeypatch.setenv("AMX_ADMIN_TOKEN", "operator-test")
     c=client(tmp_path)
+    c.headers["X-AMX-Admin"]="operator-test"
     r=c.get('/api/opportunities/b')
     assert r.status_code==200
     body=r.json()

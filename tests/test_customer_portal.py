@@ -6,16 +6,21 @@ from fastapi.testclient import TestClient
 from backend.app import create_app
 
 
-def portal_client(tmp_path: Path) -> TestClient:
+def portal_client(tmp_path: Path, monkeypatch) -> TestClient:
     (tmp_path / "evidence").mkdir(parents=True)
     (tmp_path / "house/remediation").mkdir(parents=True)
     (tmp_path / "evidence/index.json").write_text(json.dumps({"records": []}), encoding="utf-8")
     (tmp_path / "house/remediation/proposal.html").write_text("<html>proposal</html>", encoding="utf-8")
-    (tmp_path / "house/remediation/proposals.json").write_text(json.dumps({
+    private_registry = tmp_path.parent / (tmp_path.name + "-private-proposals.json")
+    monkeypatch.setenv("AMX_PROPOSAL_REGISTRY_PATH", str(private_registry))
+    private_registry.write_text(json.dumps({
         "schema": "AMX_CARBON_CUSTOMER_PORTAL_V1",
         "proposals": {
             "test-token": {
                 "proposal_ref": "TEST-001",
+                "opportunity_key": "test-opportunity",
+                "thread_id": "original-thread",
+                "customer_id": "verified-customer",
                 "business_name": "Test Business",
                 "status": "DRAFT",
                 "issued_at": None,
@@ -27,11 +32,13 @@ def portal_client(tmp_path: Path) -> TestClient:
             }
         },
     }), encoding="utf-8")
+    (tmp_path / "overdrive").mkdir()
+    (tmp_path / "overdrive/opportunities.json").write_text(json.dumps({"records": {"test-opportunity": {"execution_owner": "PRI", "state": "SUBMITTED", "thread_id": "original-thread"}}}))
     return TestClient(create_app(tmp_path, tmp_path / "data/test.db"))
 
 
-def test_draft_quote_does_not_start_validity_clock(tmp_path):
-    c = portal_client(tmp_path)
+def test_draft_quote_does_not_start_validity_clock(tmp_path, monkeypatch):
+    c = portal_client(tmp_path, monkeypatch)
     r = c.get("/api/proposals/test-token")
     assert r.status_code == 200
     body = r.json()
@@ -40,16 +47,16 @@ def test_draft_quote_does_not_start_validity_clock(tmp_path):
     assert body["validity_hours"] == 24
 
 
-def test_customer_portal_route_and_unknown_token(tmp_path):
-    c = portal_client(tmp_path)
+def test_customer_portal_route_and_unknown_token(tmp_path, monkeypatch):
+    c = portal_client(tmp_path, monkeypatch)
     r = c.get("/proposal/test-token")
     assert r.status_code == 200
     assert "proposal" in r.text
     assert c.get("/proposal/nope").status_code == 404
 
 
-def test_change_request_is_non_binding_and_filters_unknown_modules(tmp_path):
-    c = portal_client(tmp_path)
+def test_change_request_is_non_binding_and_filters_unknown_modules(tmp_path, monkeypatch):
+    c = portal_client(tmp_path, monkeypatch)
     r = c.post("/api/proposals/test-token/request-change", json={
         "selected_modules": ["SOCIAL", "UNKNOWN"],
         "message": "Add PLACE later.",
