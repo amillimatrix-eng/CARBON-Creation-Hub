@@ -298,11 +298,11 @@ This index is a routing/readback surface, not a governance decision.
 
 ## RGR-01 — Recurrence Classification / Authority Rectification
 
-**Current status:** PENDING GOVERNANCE REVIEW.  
-**Authority effect:** NONE until disposition.  
+**Current status:** OWNER-ACCEPTED FOR INTAKE — BLUE STATE + GOVERNANCE DISPOSITION REQUESTED.  
+**Authority effect:** NONE until governance disposition.  
 **Source:** `AMX/ROOT/INTAKE/RGR_RECTIFICATION_2026-10-05.md`
 
-**Decision required:** determine whether RGR is retained only as a recurrence classification mapped to existing governing controls, or rejected/renamed. It must not be inferred to be a new office, worker, institution, execution owner, or independent governance layer.
+**Decision required:** reconcile and disposition the Owner-accepted formulation: retain RGR only as a non-authoritative recurrence classification mapped to existing governing controls; it must not become a new office, worker, institution, execution owner, or independent governance layer. The submitted mnemonic is **NO DRIFT ZONE**; AMX is intended to be **DRIFT RESISTANT**, not merely drift-repellent.
 
 **Dependency boundary:** the current Render workspace-confirmation requirement blocks only the Render action that requires that confirmation. It does not promote, validate, widen, or close RGR.
 
