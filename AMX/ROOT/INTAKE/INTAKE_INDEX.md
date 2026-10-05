@@ -290,3 +290,20 @@ The queue is considered **cleanly indexed** when:
 - UNKNOWN/HOLD remains visible where lineage is incomplete.
 
 This index is a routing/readback surface, not a governance decision.
+
+
+---
+
+# IX. RGR AUTHORITY / DEPENDENCY RECTIFICATION
+
+## RGR-01 — Recurrence Classification / Authority Rectification
+
+**Current status:** PENDING GOVERNANCE REVIEW.  
+**Authority effect:** NONE until disposition.  
+**Source:** `AMX/ROOT/INTAKE/RGR_RECTIFICATION_2026-10-05.md`
+
+**Decision required:** determine whether RGR is retained only as a recurrence classification mapped to existing governing controls, or rejected/renamed. It must not be inferred to be a new office, worker, institution, execution owner, or independent governance layer.
+
+**Dependency boundary:** the current Render workspace-confirmation requirement blocks only the Render action that requires that confirmation. It does not promote, validate, widen, or close RGR.
+
+**Routing:** this is governance-intake material. It is not an operational work item and grants no execution authority.
