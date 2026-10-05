@@ -1,0 +1,12 @@
+{
+  "id": "BLACK-ISSUE8-RUNTIME-VERIFY-20261005-001",
+  "issued_by": "Root Librarian",
+  "purpose": "Read-only runtime verification that BLACK has incorporated the merged Issue #8 remediation. No install, restart, merge, rebase, credential access, or repository mutation.",
+  "command": [
+    "bash",
+    "-lc",
+    "cd /home/amx/amx-black; echo HEAD=$(git rev-parse HEAD); git merge-base --is-ancestor 7708b782eb7cd96f0b05ae58e7c2091d7a2e735f HEAD; arc=$?; echo ISSUE8_MERGE_ANCESTOR_RC=$arc; echo SERVICE=$(systemctl is-active amx-black.service 2>/dev/null || true); echo WORKTREE_BEGIN; git status --porcelain=v1; echo WORKTREE_END; sha256sum BLACK/worker.py overdrive/payment_truth.py overdrive/runner.py backend/app.py backend/state.py backend/store.py; exit $arc"
+  ],
+  "timeout": 30,
+  "max_attempts": 1
+}
