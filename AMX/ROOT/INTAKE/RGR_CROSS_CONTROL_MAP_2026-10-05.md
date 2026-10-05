@@ -1,3 +1,6 @@
+> **RECTIFICATION NOTICE — 2026-10-05**
+> This file is provenance only. It does not activate RGR or define its authority. Current routing/disposition is controlled by `AMX/ROOT/INTAKE/RGR_RECTIFICATION_2026-10-05.md` and the authoritative `INTAKE_INDEX.md`. RGR remains PENDING GOVERNANCE REVIEW with no execution authority.
+
 # ROOT INTAKE CROSS-LINK — RGR
 
 Date: 2026-10-05
