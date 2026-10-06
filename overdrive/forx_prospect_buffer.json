@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "owner": "FORX run-ahead prospect intelligence",
+  "consumer": "iSCOPE",
+  "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
+  "last_updated": null,
+  "candidates": []
+}
