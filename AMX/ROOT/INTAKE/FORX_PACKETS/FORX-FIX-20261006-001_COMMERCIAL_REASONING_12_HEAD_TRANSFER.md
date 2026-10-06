@@ -3,7 +3,8 @@
 
 **Packet type:** FORX FIX PACKET  
 **Priority:** P0  
-**State:** READY FOR ROUTING  
+**State:** SUPERSEDED / PROVENANCE ONLY  
+**Superseded by:** FORX-FIX-20261006-002
 **Source:** MATRIX-02 Addendum H  
 **Primary destination:** T-COD  
 **Governance cross-reference:** T-GOV where authority/mandate semantics are affected  
@@ -65,3 +66,10 @@ PASS requires a live attributable commercial reasoning cycle showing:
 ### Verification owner
 
 FORX-V.
+
+
+---
+
+## SUPERSESSION READBACK
+
+This packet is preserved for provenance but no longer controls current FORX execution. Current protocol state is governed by the 13-head re-entrant Instigator upgrade and FORX-FIX-20261006-002.
