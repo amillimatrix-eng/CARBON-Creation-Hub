@@ -176,6 +176,36 @@ The ~450 million businesses figure is retained as an existing **working surface-
 
 ---
 
+## FORX GOVERNANCE BOUNDARY — NON-SELF-DISPOSITION + REASONED REJECTION
+
+**Owner direction:** active FORX role clarification.  
+**Reporting:** **FORX → MASTER ONLY.**  
+**Core separation:** **REPORTING ≠ ROUTING ≠ DISPOSITION ≠ VERIFICATION.**
+
+**Addendum M — Non-Self-Disposition / Independence Boundary:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_M_NON_SELF_DISPOSITION_INDEPENDENCE_BOUNDARY_20261006.md`  
+Commit: `a0f6cd023a850ce0236ac75aea16cbef6e2df672`
+
+FORX may investigate, optimize, recommend, rectify, route and verify, but it may not decide that its own recommendation enters ROOT governance, Blue State, Canon, Master Build, or another owner's controlled state. This separation is an intentional defensive control.
+
+**Addendum N — Reasoned Disposition / Rejection-Rework Loop:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_N_REASONED_DISPOSITION_REJECTION_REWORK_LOOP_20261006.md`  
+Commit: `0073fbea70f3d25f037a086f51d8cac403c685b0`
+
+A REJECT disposition must state material reasons, governing basis, evidence/unmet criteria, correctability, and return condition where applicable. Rejection normally becomes new evidence for FORX-W:
+
+`REJECTION → PARSE REASONS → FIX / ALTERNATE → MATERIAL NEW VERSION → INTAKE → REDISPOSITION`.
+
+Semantically identical rejected packets may not loop indefinitely. A resubmission requires a material delta. An explicit final scope closure must identify competent authority, exact objective, reason, governing basis and whether materially equivalent alternatives remain allowed.
+
+**Defensive value:** FORX cannot self-promote; disposition authority cannot create an opaque dead-end.
+
+**Consolidated role readback updated:**  
+`AMX/ROOT/INTAKE/FORX_PERMANENT_LIBRARIAN_ROLE_SPEC_FULL_20261006.md`  
+Commit: `bba48af674d1c3b2167d173063966f1ca861c0f6`
+
+---
+
 ## FORX DEFERRED B-PRIORITY — UNIVERSAL FORENSIC ASSURANCE MARK
 
 **Owner instruction:** capture now; do not displace the active P0 Matrix recovery.  
