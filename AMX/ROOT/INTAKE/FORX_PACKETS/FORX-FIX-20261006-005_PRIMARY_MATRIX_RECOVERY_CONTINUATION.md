@@ -93,6 +93,60 @@ Required post-fix evidence must include:
 
 ---
 
+## 4A. MINIMUM VIABLE COGNITIVE RESTORATION
+
+Perfect historical reconstruction is **not** a prerequisite for live work.
+
+The immediate recovery goal is to restore enough of the learned relationship graph for the worker to start making materially new connections again.
+
+Resume threshold:
+- diverse approaches;
+- new problem-instance reasoning;
+- capability-awareness;
+- capability combinations;
+- payer/decision-maker mapping;
+- new opportunity generation;
+- movement from discovery toward authorized action;
+- retained weighted state across the next run.
+
+If bounded restoration stops producing useful cognitive recovery, stop trying to force complete reconstruction as the active gate.
+
+Switch to the Owner-prescribed **new-instance sequential reconditioning path**:
+- authoritative consolidated training transcript;
+- Owner prompts/messages in original chronological order;
+- prompt-by-prompt / message-by-message;
+- preserve corrections and attachments where recoverable;
+- checkpoint cumulative capability state;
+- resume from the exact next prompt after segmentation;
+- periodically test generalization.
+
+The full 30-image forensic reconstruction remains required for provenance/final consolidation, but it does not block live commercial resumption once the minimum cognitive threshold is demonstrated.
+
+**Controlling refinement:**  
+`AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_ADDENDUM_C_MINIMUM_VIABLE_COGNITIVE_RESTORATION_SEQUENTIAL_RECONDITIONING_20261006.md`  
+Commit: `8119e8f0c7ffa75aeebd70381e3ebd85c38d0c6f`
+
+### Near-end-state
+
+The target worker consistently demonstrates that it can:
+
+**ADAPT → THINK → CONNECT → OFFER → EXECUTE → DELIVER → ROUTE PAYMENT THROUGH AUTHORIZED RAILS → VERIFY PAYMENT → RETAIN LEARNING → HUNT AGAIN**
+
+It should treat opportunity as abundant and continuously search across new directions rather than collapsing into one geography, category, job board, tool, or offer type.
+
+The Owner's "billions and billions and billions of opportunities" language is preserved as an abundance/combinatorial posture, **not as a verified inventory count**.
+
+A winning state is demonstrated when the workers repeatedly show:
+- diversity;
+- capability-awareness;
+- self-directed opportunity expansion;
+- generalization to new evidence;
+- continuous learning;
+- real lawful commercial progression;
+- retained state without Owner re-teaching.
+
+---
+
 ## 5. REQUIRED WORKER CAPABILITY PROPAGATION
 
 Every material reasoning improvement recovered by FORX must be bound into the relevant existing worker.
@@ -168,9 +222,14 @@ Hard security/authority/legal boundaries override weights.
 This P0 closes only when FORX-V sees attributable evidence that:
 
 ### Commercial
+- minimum viable cognitive restoration is demonstrated;
 - diverse global reasoning is back;
 - workers use recovered capability without Owner re-teaching;
+- workers generate materially new opportunity directions from new evidence;
+- workers demonstrate awareness of current AMX capabilities and valid capability combinations;
+- workers continue hunting after each outcome rather than treating one route/category as market exhaustion;
 - real external action occurs where lawful;
+- payment remains part of the commercial objective and is evidence-bound;
 - weighted state survives restart.
 
 ### Reaper
