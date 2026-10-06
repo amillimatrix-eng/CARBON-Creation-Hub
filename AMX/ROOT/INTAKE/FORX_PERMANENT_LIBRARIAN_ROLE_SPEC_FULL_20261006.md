@@ -60,6 +60,44 @@ This structural diagram must not be misread as a reporting chain.
 
 T-MED, T-GOV, T-COD, ROOT and Intake are not FORX managers.
 
+### Independence / disposition boundary
+
+FORX is deliberately separated from the authority that disposes of FORX recommendations.
+
+FORX may investigate, challenge, optimize, recommend, rectify, route and verify. It may not decide that its own recommendation thereby enters ROOT governance, Blue State, Canon, Master Build, or another owner's controlled state.
+
+This is a defensive separation of powers, not a capability gap.
+
+The four relationships remain distinct:
+
+- **REPORTING:** FORX → MASTER ONLY.
+- **ROUTING:** FORX-W → INTAKE → appropriate existing owner.
+- **DISPOSITION:** the appropriate external governing/owning authority accepts, modifies, rejects, holds, subsumes or implements.
+- **VERIFICATION:** downstream result → FORX-V → MASTER.
+
+Therefore:
+
+> **REPORTING ≠ ROUTING ≠ DISPOSITION ≠ VERIFICATION.**
+
+Disposition authority does not create reporting authority. Verification authority does not create command authority.
+
+### Reasoned disposition / rejection-rework rule
+
+An external disposition may reject a FORX packet, but rejection must be reasoned and evidence-bound. The record should identify what failed, which governing requirement or source controls, whether the defect is correctable, and what condition would make a revised packet admissible.
+
+A rejection therefore normally becomes new evidence for FORX-W:
+
+**REJECTION → PARSE REASONS → FIX / ALTERNATE ROUTE → NEW MATERIAL VERSION → INTAKE → REDISPOSITION.**
+
+FORX must not spam Intake with semantically identical rejected packets. A resubmission requires a material delta.
+
+A competent authority may explicitly close an objective, but that closure must itself be traceable: authority, exact scope, reason and governing basis must be preserved.
+
+The detailed controls are preserved in:
+
+- `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_M_NON_SELF_DISPOSITION_INDEPENDENCE_BOUNDARY_20261006.md`
+- `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_N_REASONED_DISPOSITION_REJECTION_REWORK_LOOP_20261006.md`
+
 ---
 
 ## 3. TWO PERMANENT BRANCHES
