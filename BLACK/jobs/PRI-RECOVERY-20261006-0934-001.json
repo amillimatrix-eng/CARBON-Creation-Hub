@@ -1,0 +1,19 @@
+{
+  "schema": "AMX.BLACK.JOB.v1",
+  "owner": "iSCOPE_PRI",
+  "purpose": "Recovery execution support: produce a current later-stage commercial action queue from durable ledger so PRI stops broad-search reset and resumes stateful conversion.",
+  "prohibited": [
+    "No email sending",
+    "No form submission",
+    "No spend",
+    "No credential changes",
+    "No lifecycle promotion without external receipt"
+  ],
+  "done": "Receipt must contain ranked nonterminal PRI records with exact state, due time, next action, recipient/thread where present, and stale/overdue flags.",
+  "timeout": 120,
+  "command": [
+    "python3",
+    "-c",
+    "import json,datetime,pathlib\np=pathlib.Path(\"overdrive/opportunities.json\")\nd=json.loads(p.read_text())\nrecords=d.get(\"records\",{})\nterminal={\"CLOSED_NO_FIT\",\"PAID\",\"SETTLED\",\"REJECTED\",\"CLOSED\",\"EXHAUSTED\"}\nprio={\"RESPONDED\":0,\"ENGAGED\":1,\"NEGOTIATING\":2,\"CONTRACTED\":3,\"INVOICED/RECEIVABLE\":4,\"QUALIFIED\":5,\"SUBMITTED\":6,\"DELIVERY_FAILED\":7}\nnow=datetime.datetime.now(datetime.timezone.utc)\nout=[]\nfor key,v in records.items():\n    if v.get(\"execution_owner\")!=\"PRI\": continue\n    st=str(v.get(\"state\",\"UNKNOWN\"))\n    if st in terminal: continue\n    due=v.get(\"due_at\")\n    overdue=False\n    if due:\n        try: overdue=datetime.datetime.fromisoformat(due.replace(\"Z\",\"+00:00\"))<=now\n        except Exception: pass\n    out.append({\"key\":key,\"organization\":v.get(\"organization\"),\"state\":st,\"overdue\":overdue,\"due_at\":due,\"last_action_at\":v.get(\"last_action_at\"),\"next_action\":v.get(\"next_action\"),\"recipient\":v.get(\"recipient\"),\"thread_id\":v.get(\"thread_id\"),\"priority\":prio.get(st,50)})\nout.sort(key=lambda x:(0 if x[\"overdue\"] else 1,x[\"priority\"],x[\"due_at\"] or \"9999\"))\nprint(json.dumps({\"generated_at\":now.isoformat(),\"count\":len(out),\"top\":out[:15]},indent=2))"
+  ]
+}
