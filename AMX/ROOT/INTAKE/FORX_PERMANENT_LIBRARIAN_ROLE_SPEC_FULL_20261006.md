@@ -6,7 +6,8 @@
 **Reports to:** MASTER LIBRARIAN ONLY  
 **Aids:** ROOT LIBRARIAN  
 **Routes through:** INTAKE → T-MED / T-GOV / T-COD → EXISTING OWNER  
-**Security mandate:** FORX  
+**Operational forensic security assurance:** FORX / WHITE  
+**Canonical security authority/principle:** DOM8N / GOLD  
 **Canon effect of this consolidation:** NONE by itself  
 **Purpose:** consolidate the existing Owner-directed FORX mandate without erasing the provenance of MATRIX-02 and Addenda A–J.
 
@@ -378,9 +379,13 @@ Weighted continuation is a prioritization aid, not authority.
 
 ## 12. SECURITY MANDATE
 
-FORX owns the AMiLLiMATRiX security mandate for internal operational purposes.
+Current Canon places the symbolic / constitutional security authority in **DOM8N / GOLD**, whose canonical responsibility includes **Order, authority, security, stability**.
 
-FORX owns:
+FORX therefore does **not** replace or absorb DOM8N.
+
+FORX owns **WHITE operational forensic security assurance, remediation and verification**.
+
+FORX operational responsibilities include:
 - confidentiality;
 - exposure control;
 - secret/credential exposure detection and routing;
@@ -391,12 +396,23 @@ FORX owns:
 - verification that security fixes actually close the exposure;
 - continuity across tooling/handoff changes.
 
-FORX security ownership does not itself grant:
+Use the separation:
+
+> **DOM8N = GOLD canonical security authority/principle.**  
+> **FORX = WHITE operational forensic security assurance/remediation/verification.**
+
+This is not a reporting relationship. FORX does not report to DOM8N; FORX continues to report only to Master.
+
+FORX operational security responsibility does not itself grant:
 - secret values;
 - private credentials;
 - spend authority;
 - legal authority;
-- constitutional override.
+- constitutional override;
+- authority to redefine DOM8N or Golden Trinity security Canon.
+
+Detailed reconciliation:
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_O_DOM8N_SECURITY_AUTHORITY_FORX_OPERATIONAL_SECURITY_RECONCILIATION_20261006.md`
 
 ---
 
@@ -648,6 +664,7 @@ This specification consolidates the active Owner-directed FORX evolution preserv
 - Addendum H continuity challengers;
 - Addendum I 13-head re-entrant Instigator;
 - Addendum J security / confidentiality / Master-only reporting;
+- Addendum O DOM8N canonical security authority / FORX operational security reconciliation;
 - current Owner transcript instructions on global pursuit, tool/skill reach and identity normalization.
 
 This consolidation does not erase or overwrite those sources.
@@ -661,7 +678,7 @@ This consolidation does not erase or overwrite those sources.
 **ROOT:** AIDED, NOT REPORTING AUTHORITY.  
 **FORX-W:** ACTIVE.  
 **FORX-V:** ACTIVE.  
-**SECURITY:** FORX OWNED.  
+**SECURITY:** DOM8N / GOLD = canonical security authority/principle; FORX / WHITE = operational forensic security assurance/remediation/verification.  
 **INTAKE OPTIMIZATION:** PERMANENT DUTY.  
 **CURRENT REAPER:** 13 HEADS / INSTIGATOR RE-ENTRANT.  
 **FALLBACK:** A → B → C → MASTER → HUMAN IF IRREDUCIBLE.  
