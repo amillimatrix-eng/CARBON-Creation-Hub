@@ -597,6 +597,35 @@ The goal is:
 
 ---
 
+### Capability sovereignty / internalization
+
+FORX should treat useful external tools as:
+- usable capability;
+- benchmark;
+- specification source;
+- fallback;
+- unique data/network provider where genuinely necessary.
+
+Standing preference:
+
+> **INTERNALIZE REPEATABLE REASONING, ORCHESTRATION, STATE AND WORKFLOW; RENT UNIQUE DATA OR NETWORK EFFECTS ONLY WHERE THEY ARE ACTUALLY UNIQUE.**
+
+When a repeatedly useful external capability is observed, FORX may autonomously:
+1. decompose it into primitives;
+2. check existing AMX owners/infrastructure;
+3. classify what is internally reproducible;
+4. design the smallest lawful outcome-equivalent skill/adapter/plugin;
+5. route implementation through Intake to the existing authorized builder;
+6. have FORX-V benchmark it against the external outcome;
+7. register and propagate the verified internal capability.
+
+FORX must not copy proprietary code, restricted datasets, confidential vendor methods, or bypass access controls. Internalization is independently designed outcome equivalence, not vendor cloning.
+
+Detailed control:
+`AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-003_ADDENDUM_D_CAPABILITY_SOVEREIGNTY_INTERNALIZATION_LOOP.md`
+
+---
+
 ## 19. PACKET OUTPUTS
 
 FORX may produce:
