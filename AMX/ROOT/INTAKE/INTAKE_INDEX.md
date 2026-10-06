@@ -40,6 +40,8 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 **Evidence provenance correction:** the first screenshot supplied in the current evidence batch is a current-regression exhibit and is NOT part of the governed 30-image state. The remaining supplied screenshots are Owner-identified members of that governed evidence/state set. The current chat does not contain the full 30; exact set membership must be reconciled from governed records without invention.
 
+**30-image later refinement:** full 30-image reconstruction remains a governed provenance/recovery obligation, but Owner-accepted MATRIX-03 Addendum C removes it as a prerequisite for live-work resumption once Minimum Viable Cognitive Restoration is demonstrated.
+
 **Required disposition:** MERGE / MODIFY / REJECT / ALREADY-SUBSUMED / HOLD.  
 **No authority promotion:** this index entry does not itself commission workers, authorize BUILD changes, or alter Canon.
 
@@ -55,17 +57,29 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 **Primary recovery packet:**  
 `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-FIX-20261006-005_PRIMARY_MATRIX_RECOVERY_CONTINUATION.md`  
-Commit: `4c49a6f62f6ef6adc91b203b943ad22235c7030a`
+Commit: `CURRENT — see latest packet revision after Addendum D integration`
 
 **Weighted capability propagation addendum:**  
 `AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_ADDENDUM_B_WEIGHTED_CAPABILITY_PROPAGATION_20261006.md`  
 Commit: `bfbed92f4e8c63b6a723c27a5d6eb5fc2d7b3548`
 
+**Minimum viable cognitive restoration addendum:**  
+`AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_ADDENDUM_C_MINIMUM_VIABLE_COGNITIVE_RESTORATION_SEQUENTIAL_RECONDITIONING_20261006.md`  
+Commit: `8119e8f0c7ffa75aeebd70381e3ebd85c38d0c6f`
+
+**Outcome-space diversity / BPO addendum:**  
+`AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_ADDENDUM_D_OUTCOME_SPACE_DIVERSITY_AND_BPO_EXPANSION_20261006.md`  
+Commit: `ac560e7328c6c5a103ee07079ced6876ae0ea671`
+
+**Resume rule:** do not block live work on perfect historical reconstruction once the worker can again make materially new connections, demonstrate diverse capability-aware reasoning, generate materially different opportunity classes, act lawfully, retain state, and resume without Owner re-teaching. If bounded restoration stalls, switch to the authoritative new-instance sequential conditioning path, prompt-by-prompt in original chronology.
+
+**Diversity rule:** ten similar offers do not prove recovery merely because the targets differ. Prefer evidence of materially different problem/outcome/capability combinations. BPO/process outsourcing is a major opportunity surface where actual AMX delivery capability can be evidenced.
+
 **Core correction:** FORX recovery is incomplete until material learned capability is propagated into the relevant worker's durable state and demonstrated on attributable work without Owner re-teaching.
 
 **Current plugin estate update:** Semrush = installed. Apollo.io / Hunter / Firecrawl / HubSpot = not installed at this check. Installed does not itself prove task execution.
 
-**Acceptance remains behavioral:** diverse global reasoning, problem-instance decomposition, capability combinations, payer/offer mapping, external action where authorized, durable weighted continuation, next-run recovery, and Bounty Reaper material progression beyond queued work.
+**Acceptance remains behavioral:** minimum viable cognitive restoration, outcome-space diversity, problem-instance decomposition, capability combinations, payer/offer mapping, BPO/process-outsource recognition where capability evidence supports it, new opportunity generation, external action where authorized, payment-aware progression, durable weighted continuation, next-run recovery, and Bounty Reaper material progression beyond queued work.
 
 ---
 
@@ -295,7 +309,7 @@ Commit: `bba48af674d1c3b2167d173063966f1ca861c0f6`
    - current evidence: one inspected commercial sent email for 2026-10-06 is not sufficient acceptance; queued Reaper work is not sufficient acceptance.
    - capability rule: material FORX learning must propagate into the relevant worker's durable state.
    - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-FIX-20261006-005_PRIMARY_MATRIX_RECOVERY_CONTINUATION.md`
-   - commit: `4c49a6f62f6ef6adc91b203b943ad22235c7030a`
+   - commit: `CURRENT — latest FORX-FIX-20261006-005 revision includes Addenda C/D recovery refinements`
 
 2. **FORX-FIX-20261006-003 — Global Pursuit / Commercial Capability-State Recovery**
    - state: **READY FOR T-COD ROUTING**
