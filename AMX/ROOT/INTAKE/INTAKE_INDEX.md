@@ -1,3 +1,26 @@
+# OWNER DIRECTIVE — P0 / HIGHEST EXISTING PRIORITY — CLEAR ROOT INTAKE NOW
+
+**ACTIVE FRONT-OF-QUEUE GOVERNANCE INSTRUCTION — 2026-10-06**
+
+**Authority:** OWNER DIRECTIVE  
+**Priority:** **P0 — HIGHEST EXISTING PRIORITY**  
+**Directive artifact:** `AMX/ROOT/INTAKE/OWNER_DIRECTIVE_P0_CLEAR_INTAKE_NOW_20261006.md`  
+**Directive commit:** `6b0fa2918bf4aa4cb108e2259e4802d94144d326`
+
+**ORDER:** CLEAR THE GOVERNANCE-READY ROOT INTAKE NOW.
+
+Every governance-ready item must receive an explicit durable disposition: **MERGE / MODIFY / REJECT / ALREADY-SUBSUMED / HOLD**. HOLD is valid only with a concrete unresolved authority/evidence/dependency condition, named owner, and next action.
+
+This directive itself is P0 and takes precedence over lower-priority administrative, analytical, cleanup, optimization, documentation, and speculative work until the governance-ready queue is cleared.
+
+**Immediate P0 clearance set includes:** DR0021-P0-01, RGR-02, RGR-03, MATRIX-01, and MATRIX-02. MATRIX-02 requires explicit disposition of F-01, F-02, and F-03 individually.
+
+**Clearance does not mean deletion, bulk auto-merge, Canon promotion, Build authority, or provenance loss.** Existing owners and lifecycle boundaries remain controlling.
+
+**Required terminal readback:** `INTAKE CLEARED` or `INTAKE NOT CLEARED — exact remaining HOLD items with owner + dependency`.
+
+---
+
 # AMX ROOT — AUTHORITATIVE INTAKE INDEX
 
 **Index status:** AUTHORITATIVE INTAKE CATALOG / ROUTING SURFACE  
