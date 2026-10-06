@@ -3,6 +3,120 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": null,
-  "candidates": []
+  "last_updated": "2026-10-07T00:15:00+02:00",
+  "candidates": [
+    {
+      "id": "FORX-PROSPECT-20261007-001",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HumAInise.ai",
+      "surface": "BPO partnership / customer operations",
+      "observed_need": "Urgent requirement for ~100-seat BPO partner in Noida for Consumer Goods/FMCG/Consumer Durables customer service, after-sales and complaint management; AI layer supplied by buyer.",
+      "outcome_space": [
+        "BPO",
+        "customer service",
+        "AI voice",
+        "chat/email operations"
+      ],
+      "source": "https://www.linkedin.com/posts/dheeraj-khatter-b67ba96_bpo-noida-consumergoods-activity-7497568986289684480-rzB7",
+      "published": "2026-08-24",
+      "payer_hypothesis": "HumAInise.ai / operating partner decision-maker",
+      "fit_note": "High-value BPO signal. AMX fit/seat-capacity/partnership route must be verified; do not imply 100-seat delivery capability.",
+      "consumer_action": "iSCOPE verify buyer reality, current openness, possible partnership/subcontracting route, and whether AMX has a credible bounded contribution."
+    },
+    {
+      "id": "FORX-PROSPECT-20261007-002",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SeekClaw buyer",
+      "surface": "Customer-support knowledge base / FAQ system",
+      "observed_need": "500+ support tickets/month; wants top-ticket analysis, 100 help articles, troubleshooting guides, chatbot FAQ responses and escalation documentation; deadline 2026-10-27; page states AI agents can apply via API.",
+      "outcome_space": [
+        "support operations",
+        "knowledge base",
+        "content ops",
+        "chatbot",
+        "BPO"
+      ],
+      "source": "https://www.seekclaw.com/jobs/45862971-17f6-44d8-b60f-e17c0285540e",
+      "published": "2026-10-05",
+      "payer_hypothesis": "SeekClaw job buyer",
+      "fit_note": "Potentially strong bounded deliverable combining analysis, writing, support operations and chatbot design. Platform authenticity/payment/eligibility/API route must be verified.",
+      "consumer_action": "iSCOPE verify platform, payout, buyer legitimacy, eligibility and zero-upfront-cost execution."
+    },
+    {
+      "id": "FORX-PROSPECT-20261007-003",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Telemedicine brand (job listing)",
+      "surface": "AI automation for email/chat/phone support",
+      "observed_need": "Automate Zendesk/email, messaging portal and inbound phone support with browser/computer-use lookup because core telemedicine platform has no API; wants intent classification, patient lookup, accurate responses and human escalation.",
+      "outcome_space": [
+        "AI automation",
+        "customer support",
+        "browser automation",
+        "voice AI",
+        "workflow"
+      ],
+      "source": "https://jobgrow.pragatishilclasses.org/job/ai-automation-developer-for-email-chat-phone-support-ai-agents",
+      "published": "2026-10-03",
+      "payer_hypothesis": "Telemedicine brand operations/customer-support owner",
+      "fit_note": "Problem-instance fit is strong conceptually, but healthcare/privacy, source legitimacy, buyer identity, scope and current availability require verification.",
+      "consumer_action": "iSCOPE verify direct buyer identity, current posting, geography, privacy/compliance constraints and commercial route."
+    },
+    {
+      "id": "FORX-PROSPECT-20261007-004",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MultiplyMii client / Chromcraft",
+      "surface": "AI workflow automation + Zendesk + ecommerce operations",
+      "observed_need": "Long-term workflow automation across Make/Power Automate/n8n/Zapier, Zendesk AI, knowledge-base, Microsoft 365 reporting/approvals and ecommerce operations.",
+      "outcome_space": [
+        "workflow automation",
+        "Zendesk",
+        "ecommerce",
+        "AI agents",
+        "reporting"
+      ],
+      "source": "https://jobs.ashbyhq.com/multiplymii/8beeb09e-b620-4b09-940a-e1b3b23aa7f6",
+      "published": "2026-09-17",
+      "payer_hypothesis": "MultiplyMii client / hiring owner",
+      "fit_note": "Signal demonstrates a broad reusable problem cluster; listing is Remote Philippines, so direct eligibility for AMX must be checked before any action.",
+      "consumer_action": "iSCOPE verify eligibility; if ineligible, retain as market/problem evidence rather than an executable lead."
+    },
+    {
+      "id": "FORX-PROSPECT-20261007-005",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Invisible Technologies / OpenTalent listing",
+      "surface": "AI QA / LLM evaluation",
+      "observed_need": "LLM evaluation, safety, prompt robustness, grounding verification, tool-use correctness, regression suites, Python/SQL and high-signal bug reporting.",
+      "outcome_space": [
+        "AI QA",
+        "LLM evaluation",
+        "red teaming",
+        "Python",
+        "research QA"
+      ],
+      "source": "https://www.opentalent.in/jobs/ai-qa-trainer-llm-evaluation-invisible-technologies",
+      "published": "2026-10-02",
+      "payer_hypothesis": "Invisible Technologies / hiring program",
+      "fit_note": "Strong capability fit signal; listed location/eligibility and source authenticity must be verified before treating as executable.",
+      "consumer_action": "iSCOPE verify official source, geography, active status, pay/payout route and duplicate history."
+    },
+    {
+      "id": "FORX-PROSPECT-20261007-006",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "OpenTrain AI",
+      "surface": "Python software-engineering LLM evaluator",
+      "observed_need": "Evaluate AI coding agents on real Python repos/issues; triage bugs, configure Docker environments, run tests and judge solutions. Listed at $100/task.",
+      "outcome_space": [
+        "AI evaluation",
+        "Python",
+        "GitHub",
+        "QA",
+        "Docker"
+      ],
+      "source": "https://www.opentrain.ai/jobs/python-software-engineering-llm-evaluator--cmub37q18000d0agmbhe9iifm/",
+      "published": "2026-09-21",
+      "payer_hypothesis": "OpenTrain AI",
+      "fit_note": "Current listing explicitly limits applicant countries and excludes South Africa; likely non-executable for Owner unless alternate official route exists. Keep as negative/market evidence.",
+      "consumer_action": "iSCOPE mark CLOSED_NOT_ELIGIBLE unless a current official South Africa-compatible route is independently found."
+    }
+  ]
 }
