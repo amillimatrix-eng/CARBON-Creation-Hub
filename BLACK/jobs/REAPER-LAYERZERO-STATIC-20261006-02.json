@@ -1,0 +1,10 @@
+{
+  "purpose": "Corrected executable LayerZero bounded static validation parcel. This replaces the malformed metadata-only parcel REAPER-LAYERZERO-STATIC-20261006-0958-001 without deleting it. Local/public-source analysis only; no live target probing, transactions, disclosure, spend, credentials, or submission.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\ntmp=$(mktemp -d)\ntrap 'rm -rf \"$tmp\"' EXIT\ncd \"$tmp\"\necho \"===SOURCE_FREEZE===\"\ngit clone -q --filter=blob:none https://github.com/LayerZero-Labs/LayerZero-v2.git lz\ncd lz\ngit checkout -q 9c741e7f9790639537b1710a203bcdfd73b0b9ac\necho \"COMMIT=$(git rev-parse HEAD)\"\np='packages/layerzero-v2/evm/messagelib/contracts/Executor.sol'\ntest -f \"$p\"\nsha256sum \"$p\"\necho \"===NATIVE_DROP_PATHS===\"\ngit grep -n -E 'nativeDropAndExecute302|function _nativeDrop|NativeDropApplied|spent \\+=' -- \"$p\" || true\necho \"===EXECUTOR_RELEVANT_SOURCE===\"\nawk 'BEGIN{show=0;c=0} /function nativeDropAndExecute302\\(/ {show=1;c=0} /function _nativeDrop\\(/ {show=1;c=0} show{print NR \":\" $0;c++} c>85{show=0}' \"$p\" | head -240\necho \"===HISTORY_DEDUPE===\"\ngit log --oneline --all -S'nativeDropAndExecute302' -- \"$p\" | head -60 || true\ngit log --oneline --all -S'NativeDropApplied' -- \"$p\" | head -60 || true\ngit log --oneline --all --grep='native drop' -i | head -80 || true\necho \"===PUBLIC_AUDIT_REPO_KEYWORD_CHECK===\"\ncd \"$tmp\"\ngit clone -q --depth 1 https://github.com/LayerZero-Labs/Audits.git audits || true\nif [ -d audits ]; then\n  cd audits\n  grep -RniE 'native.?drop|nativeDropAndExecute302|Executor\\.sol' . --exclude-dir=.git | head -160 || true\nelse\n  echo \"AUDITS_REPO_UNAVAILABLE\"\nfi\necho \"LAYERZERO_STATIC_VALIDATION_DONE\""
+  ],
+  "timeout": 180,
+  "max_attempts": 1
+}
