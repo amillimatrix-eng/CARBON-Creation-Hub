@@ -461,23 +461,32 @@ The existence of 30 stored image references alone is not sufficient proof of res
 
 ## MATRIX-02 — P0 Forensic Worker Profile Creation Candidates
 
-**Current status:** INDEXED — CREATION CANDIDATES / NOT AUTHORIZED / NOT CREATED / NOT COMMISSIONED.  
-**Authority effect:** NONE.  
-**Artifact:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_CREATION_CANDIDATES_20261006.md`  
-**Artifact commit:** `4d214133995900eb4eb7c24fd5503479c6fb2a76`
+**Current status:** PARTIALLY DISPOSITIONED — F-02 OWNER-AUTHORIZED TEMPORARY ACTIVE; F-01 / F-03 PENDING.  
+**Parent artifact:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_CREATION_CANDIDATES_20261006.md`  
+**Parent commit:** `4d214133995900eb4eb7c24fd5503479c6fb2a76`  
+**Addendum A:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_A_TEMP_FORENSIC_EXAMINER_20261006.md`  
+**Addendum A commit:** `6d992221453843a005e519fc29d6684fa699609d`
 
 **Infrastructure conclusion:** no new permanent execution layer is justified. Existing owners remain authoritative: Commissioning Inspector for detection, Master for restore/succession, iSCOPE/PRI for commercial execution, T10/Execution Fidelity for outcome truth, and Root Librarian for provenance/integration.
 
-**Creation candidates:**
-1. **F-01 Matrix Durability & State Forensic Examiner** — temporary Commissioning Inspector forensic mode; diagnostic only.
-2. **F-02 Context & Capability Provenance Forensic Examiner** — temporary Root Librarian provenance mode; immediate scope includes DR-0021 learned commercial-intelligence state and RGR-03 exact 30-image state.
-3. **F-03 Behavioral Re-Acceptance Forensic Examiner** — temporary Commissioning/T10 acceptance mode; observes live acceptance while existing mandate workers retain execution ownership.
+**Profile states:**
+1. **F-01 Matrix Durability & State Forensic Examiner** — PENDING ROOT/GOVERNANCE disposition.
+2. **F-02 Context & Capability Provenance Forensic Examiner** — **OWNER-AUTHORIZED TEMPORARY ACTIVE** for the current Root Librarian instance under Addendum A.
+3. **F-03 Behavioral Re-Acceptance Forensic Examiner** — PENDING ROOT/GOVERNANCE disposition.
 
-**Requested ROOT disposition per profile:** AUTHORIZE / MODIFY / REJECT / ALREADY-SUBSUMED.
+**F-02 temporary role label:** Owner-appointed Temporary Forensic Examiner / Provenance Pathologist.
 
-**Candidate current-session appointment:** if F-02 is explicitly authorized, the current AMX Root Librarian instance may assume that temporary forensic profile and immediately produce the Capability State Reconstruction Manifest Candidate. No production implementation, external commercial action, or worker creation is authorized by this intake entry.
+**F-02 authority boundary:** forensic/provenance analysis only. No Owner authority, Governance merge authority, BUILD authority, commercial execution authority, or Canon authority is transferred.
 
-**Urgency:** P0. The underlying Matrix report remains BROKEN at the commercial-objective continuity layer and RGR-03 remains unimplemented.
+**Initial forensic findings from Addendum A:**
+- Root intake remains uncleared;
+- current `overdrive/runner.py` still contains the false-READY / executable-order defect;
+- RGR-03 full 30-image state remains only partially reconstructed;
+- 10-year-old / 3-year-old source definitions remain UNKNOWN;
+- RGR-01, RGR-02, MATRIX-01, and MATRIX-03 are disposition-ready from a forensic evidence perspective;
+- DR-0021 behavioral closure remains OPEN.
+
+**Urgency:** P0. The temporary F-02 appointment exists to help ROOT move the current queue to explicit disposition without inventing missing provenance.
 
 
 ---
