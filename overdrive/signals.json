@@ -16,42 +16,6 @@
       "due_at": "2026-10-06T15:00:00Z",
       "due_now": true,
       "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0f2ea30b45baa0 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a0f2ea30b45baa0"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0f2ea2a952c85d for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a0f2ea2a952c85d"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "magicpictures.net|co-production|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0f2ea89285fcc3 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a0f2ea89285fcc3"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity_key": "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me",
       "priority": 2,
       "routing_reason": null,
@@ -435,6 +399,42 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
+      "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a0f2ea30b45baa0"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
+      "opportunity_key": "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a0f2ea2a952c85d"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
+      "opportunity_key": "magicpictures.net|co-production|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a0f2ea89285fcc3"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "Keep profile passive; react only to a direct paid match/task or materially stronger exact-fit opening.",
       "opportunity_key": "mercor.com|existing-profile-current-state|2026-10-02",
       "priority": 8,
@@ -529,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-06T16:24:20.814723+00:00",
+  "generated_at": "2026-10-06T17:07:36.467341+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1038,27 +1038,27 @@
       "thread_id": "1a0f2de385883f66"
     },
     "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
       "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0f2ea30b45baa0 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0f2ea30b45baa0"
     },
     "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
       "opportunity_key": "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0f2ea2a952c85d for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0f2ea2a952c85d"
     },
     "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
@@ -1074,15 +1074,15 @@
       "thread_id": "1a0f1fba9e5a5efb"
     },
     "magicpictures.net|co-production|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
       "opportunity_key": "magicpictures.net|co-production|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0f2ea89285fcc3 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0f2ea89285fcc3"
     },
     "mercor.com|existing-profile-current-state|2026-10-02": {
