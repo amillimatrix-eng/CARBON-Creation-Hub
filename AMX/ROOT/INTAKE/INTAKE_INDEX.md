@@ -46,6 +46,102 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 ---
 
 
+# FORX ACTIVE MANDATE — INTAKE OPTIMIZATION
+
+**Office:** FORX — Permanent Forensic Librarian  
+**Mandate state:** **ACTIVE**  
+**Owner activation:** 2026-10-06  
+**Activation artifact:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_E_FORX_MANDATE_ACTIVATION_AND_INTAKE_OPTIMIZATION_20261006.md`  
+**Activation commit:** `4f21e60e2aa68d1f64678cc730faccec489b3f87`
+
+**Standing duty:** **KEEP INTAKE OPTIMAL.**
+
+FORX owns continuous intake hygiene: current status, deduplication, priority, routing, stale-state removal, exact HOLD dependencies, orphan prevention, provenance preservation, and verified closure.
+
+## FORX CURRENT ACTIVE QUEUE
+
+### P0 — DIRECT CORRECTION / EXECUTION
+
+1. **DR0021-P0-01 — false-READY / regeneration defect**
+   - destination: **T-COD**
+   - owner: existing BUILD/runtime owner under Master
+   - current evidence: `overdrive/runner.py` still derives `ready_count` and `executable_order` from every `status == "READY"`
+   - closure: source remediation → runtime verification → behavioral acceptance → next-run state retention.
+
+### P0 — GOVERNANCE DISPOSITION READY
+
+1. **RGR-01 — Recurrence Classification / Authority Rectification**
+   - destination: **T-GOV**
+   - recommendation: MODIFY / MERGE or ALREADY-SUBSUMED with exact mapping.
+
+2. **RGR-02 — DR-0021 Commercial Intelligence State Loss**
+   - destination: **T-GOV**
+   - recommendation: MODIFY / MERGE into existing continuity / Execution Fidelity / RGR controls.
+
+3. **MATRIX-01 — Matrix Durability / Broken Workflow Classification**
+   - destination: **T-GOV**
+   - recommendation: MODIFY / MERGE into existing Governance + Blue State controls.
+
+4. **MATRIX-03 + Addendum A — Durable Cognition / Capability Persistence**
+   - destination: **T-GOV**
+   - recommendation: MODIFY / MERGE into Governance + Blue State.
+
+5. **MATRIX-02 / FORX permanent-office integration**
+   - destination: **T-GOV**
+   - Owner appointment and activation are ACTIVE.
+   - remaining governance task: registry / credential / supersession reconciliation and routing of technical implementation consequences to T-COD.
+
+### P0 — SCOPED HOLD / PROVENANCE RECOVERY
+
+1. **RGR-03 — full 30-image capability-state reconstruction**
+   - dependency: authoritative full 30-image membership, provenance, chronology and semantics.
+   - owner: **FORX-W** for recovery; T-GOV/T-COD receive resulting bounded packets.
+   - return condition: full reconstructed manifest exists.
+
+2. **10-year-old resolution**
+   - state: **UNKNOWN**
+   - dependency: authoritative definition + acceptance criteria.
+   - owner: **FORX-W**
+   - return condition: source recovered and testable.
+
+3. **3-year-old resolution**
+   - state: **UNKNOWN**
+   - dependency: authoritative definition + acceptance criteria.
+   - owner: **FORX-W**
+   - return condition: source recovered and testable.
+
+4. **DR-0021 behavioral closure**
+   - dependency: source/runtime correction + capability-state reconstruction + repeated behavioral proof.
+   - owner: existing execution owners for correction; **FORX-V** for verification.
+   - return condition: repeated accepted behavior and retained state.
+
+### GOVERNANCE-READY LEGACY QUEUE
+
+1. **OCC-01 — Active Dependency Resurfacing**
+2. **OCC-04 — Reaper Final-Mile Completion Semantics**
+3. **CEBRC-A — truthful commercial identity/profile/KYC execution**
+4. **CEBRC-B — TinyFish continuity/resource conservation**
+5. **CARBON° Business Revitalization Commercial Directive — Dual Candidate**
+
+These remain pending their existing governance decisions and are not allowed to disappear behind the P0 forensic chain.
+
+### DISPOSITIONED / PROVENANCE ONLY — NOT PENDING
+
+- **OCC-02 — Mandate Liveness & Objective Enforcement** — ACCEPTED / MERGED.
+- **OCC-03 — Authorized Work Persistence & Intake Handoff** — ACCEPTED / MERGED.
+- **Adaptive Capability & Capacity Scaling** — ACCEPTED / MERGED.
+
+## FORX QUEUE RULE
+
+The section above is the **current operational queue view**. Older queue summaries below remain historical provenance and do not override this current FORX readback.
+
+A queue item leaves the active view only when:
+- explicitly dispositioned;
+- validly moved to scoped HOLD with owner + dependency + return condition; or
+- verified closed by FORX-V.
+
+---
+
 # AMX ROOT — AUTHORITATIVE INTAKE INDEX
 
 **Index status:** AUTHORITATIVE INTAKE CATALOG / ROUTING SURFACE  
@@ -276,7 +372,7 @@ No issue or PR is closed, deleted, superseded, or relabeled by this index.
 
 ---
 
-# VI. CURRENT GOVERNANCE-DECISION QUEUE
+# VI. HISTORICAL GOVERNANCE-DECISION QUEUE SNAPSHOT — SUPERSEDED AS CURRENT VIEW BY FORX ACTIVE QUEUE
 
 ## READY FOR GOVERNANCE DECISION
 
@@ -461,7 +557,7 @@ The existence of 30 stored image references alone is not sufficient proof of res
 
 ## MATRIX-02 — P0 FORX Permanent Forensic Librarian Office
 
-**Current status:** OWNER-DIRECTED PERMANENT OFFICE — GOVERNANCE INTEGRATION PENDING / P0.  
+**Current status:** OWNER-ACCEPTED / IMPLEMENTED / ACTIVE PERMANENT OFFICE — GOVERNANCE REGISTRY INTEGRATION PENDING / P0.  
 **Parent artifact:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_CREATION_CANDIDATES_20261006.md`  
 **Parent commit:** `4d214133995900eb4eb7c24fd5503479c6fb2a76`
 
@@ -482,6 +578,11 @@ Commit: `bc39b90b996a2e6c778cfe7a95629e3025c28624`
 `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_D_PERMANENT_FORX_OFFICE_TWO_BRANCH_SUPERSESSION_20261006.md`  
 Commit: `7245c885d0e60e129ccdc823c32560ccf9143b7b`
 
+**Addendum E — active mandate / intake optimization:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_E_FORX_MANDATE_ACTIVATION_AND_INTAKE_OPTIMIZATION_20261006.md`  
+Commit: `4f21e60e2aa68d1f64678cc730faccec489b3f87`  
+State: **OWNER ACCEPTED / IMPLEMENTED / ACTIVE.**
+
 **Exact structural topology:**  
 `MASTER / WHITE → FORX-V VERIFY+CONSOLIDATE → ROOT / RED → T-MED | T-GOV | T-COD → INTAKE → FORX-W WORK`
 
@@ -501,7 +602,7 @@ Commit: `7245c885d0e60e129ccdc823c32560ccf9143b7b`
 **Primary Governance destination:** T-GOV.  
 **Technical implementation consequence:** T-COD where runtime/scheduler/code changes are required.
 
-**No automatic Canon/Build promotion:** permanent appointment is Owner-directed, but governance registry/credential reconciliation and any technical implementation still require their respective governed integration paths.
+**Activation clarification:** the permanent FORX office and mandate are active by explicit Owner instruction. Remaining T-GOV work is registry/credential/supersession reconciliation; it does not suspend the active mandate. Technical changes remain routed to T-COD under existing authority.
 
 **Current P0 forensic work:** false-READY defect, full 30-image reconstruction, 10-/3-year source recovery, DR-0021 capability-state reconstruction, MATRIX-03 rectification, and cross-surface dependency packets.
 
