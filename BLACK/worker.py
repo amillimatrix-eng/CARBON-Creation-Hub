@@ -27,28 +27,31 @@ def self_hash():
  except Exception: return ""
 
 def sync_control_plane():
+ # Queue intake is a read path. A degraded write credential must never stop
+ # BLACK from fetching governed work, executing it, and preserving a local receipt.
  before=self_hash()
  q=sh(["git","fetch","origin","main"],60)
- if q.returncode: return False
+ if q.returncode:
+  log("CONTROL_READ_FETCH_FAILED")
+  return False
  q=sh(["git","rebase","origin/main"],90)
  if q.returncode:
   sh(["git","rebase","--abort"],20)
-  log("CONTROL_SYNC_REBASE_FAILED")
+  log("CONTROL_READ_REBASE_FAILED")
   return False
- q=sh(["git","push","origin","HEAD:main"],60)
- if q.returncode:
-  q=sh(["git","fetch","origin","main"],60)
-  if q.returncode: return False
-  q=sh(["git","rebase","origin/main"],90)
-  if q.returncode:
-   sh(["git","rebase","--abort"],20)
-   return False
-  q=sh(["git","push","origin","HEAD:main"],60)
-  if q.returncode: return False
  after=self_hash()
  if before and after and before!=after:
   log("WORKER_CODE_UPDATED_REEXEC")
   os.execv(sys.executable,[sys.executable,str(SELF)])
+ return True
+
+def flush_control_plane():
+ # Receipt publication is independent of queue intake. Preserve local commits and
+ # keep processing while write transport is degraded; retry publication each loop.
+ q=sh(["git","push","origin","HEAD:main"],60)
+ if q.returncode:
+  log("CONTROL_WRITE_DEGRADED_RECEIPTS_PENDING")
+  return False
  return True
 
 def process_job(p):
@@ -91,8 +94,8 @@ def process_job(p):
  with out.open("x") as handle: handle.write(json.dumps(rec,indent=2)+"\n")
  if sh(["git","add",str(out.relative_to(ROOT))],30).returncode: return rec
  if sh(["git","commit","-m",f"BLACK receipt {rid} attempt {attempt}: {state}"],30).returncode: return rec
- push=sh(["git","push","origin","HEAD:main"],60)
- log(f"RECEIPT_PUSH_PENDING {rid}" if push.returncode else f"JOB_RECEIPT_PUSHED {rid}")
+ if flush_control_plane(): log(f"JOB_RECEIPT_PUSHED {rid}")
+ else: log(f"RECEIPT_PUSH_PENDING {rid}")
  return rec
 
 def main():
@@ -106,6 +109,7 @@ def main():
    for p in sorted(JOBS.glob("*.json")):
     try: process_job(p)
     except Exception as e: log(f"JOB_LOOP_ERROR {p.stem} {e!r}")
+   flush_control_plane()
   except Exception as e: log(f"WORKER_LOOP_ERROR {e!r}")
   time.sleep(10)
 
