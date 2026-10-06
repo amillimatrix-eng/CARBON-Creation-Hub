@@ -18,7 +18,10 @@ import urllib.request
 from datetime import datetime, timezone
 from decimal import Decimal
 
-from overdrive.payment_truth import verified_payment
+try:
+    from overdrive.payment_truth import verified_payment
+except ImportError:  # Existing direct-script entry point used by OVERDRIVE.
+    from payment_truth import verified_payment
 
 STRIPE_API = "https://api.stripe.com/v1"
 ZERO_DECIMAL = {
