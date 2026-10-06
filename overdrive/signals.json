@@ -447,11 +447,35 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
+      "opportunity_key": "opentrain.ai|python-ai-agent-infrastructure-developer|cmui8x2wr00050bgmasl5oj95",
+      "priority": 8,
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "Restore the existing OpenTrain account through a fresh secure login/reset route; do not create a duplicate account.",
+      "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
       "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
       "priority": 8,
       "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
       "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
+      "opportunity_key": "opentrain.ai|python-backend-developer-ai-agent-data|cmutoopjw000306mwfvbs4c88",
+      "priority": 8,
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "Restore the existing OpenTrain account through a fresh secure login/reset route; do not create a duplicate account.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -505,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-06T16:18:24.267864+00:00",
+  "generated_at": "2026-10-06T16:20:27.510335+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1229,6 +1253,18 @@
       "status": "WAITING",
       "thread_id": null
     },
+    "opentrain.ai|python-ai-agent-infrastructure-developer|cmui8x2wr00050bgmasl5oj95": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
+      "opportunity_key": "opentrain.ai|python-ai-agent-infrastructure-developer|cmui8x2wr00050bgmasl5oj95",
+      "priority": 8,
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "Restore the existing OpenTrain account through a fresh secure login/reset route; do not create a duplicate account.",
+      "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
+    },
     "opentrain.ai|python-backend-ai-agent-developer|2026-10-01": {
       "due_at": null,
       "due_now": false,
@@ -1237,6 +1273,18 @@
       "priority": 8,
       "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
       "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    "opentrain.ai|python-backend-developer-ai-agent-data|cmutoopjw000306mwfvbs4c88": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
+      "opportunity_key": "opentrain.ai|python-backend-developer-ai-agent-data|cmutoopjw000306mwfvbs4c88",
+      "priority": 8,
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "Restore the existing OpenTrain account through a fresh secure login/reset route; do not create a duplicate account.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
