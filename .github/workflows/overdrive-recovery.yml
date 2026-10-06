@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - 'overdrive/runner.py'
+      - 'overdrive/payment_truth.py'
+      - 'overdrive/payment_verifier.py'
       - 'overdrive/state.json'
       - 'overdrive/opportunities.json'
       - '.github/workflows/overdrive-recovery.yml'
