@@ -459,34 +459,51 @@ The existence of 30 stored image references alone is not sufficient proof of res
 
 ---
 
-## MATRIX-02 — P0 Forensic Worker Profile Creation Candidates
+## MATRIX-02 — P0 FORX Permanent Forensic Librarian Office
 
-**Current status:** PARTIALLY DISPOSITIONED — F-02 OWNER-AUTHORIZED TEMPORARY ACTIVE; F-01 / F-03 PENDING.  
+**Current status:** OWNER-DIRECTED PERMANENT OFFICE — GOVERNANCE INTEGRATION PENDING / P0.  
 **Parent artifact:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_CREATION_CANDIDATES_20261006.md`  
-**Parent commit:** `4d214133995900eb4eb7c24fd5503479c6fb2a76`  
-**Addendum A:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_A_TEMP_FORENSIC_EXAMINER_20261006.md`  
-**Addendum A commit:** `6d992221453843a005e519fc29d6684fa699609d`
+**Parent commit:** `4d214133995900eb4eb7c24fd5503479c6fb2a76`
 
-**Infrastructure conclusion:** no new permanent execution layer is justified. Existing owners remain authoritative: Commissioning Inspector for detection, Master for restore/succession, iSCOPE/PRI for commercial execution, T10/Execution Fidelity for outcome truth, and Root Librarian for provenance/integration.
+**Addendum A — historical temporary appointment:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_A_TEMP_FORENSIC_EXAMINER_20261006.md`  
+Commit: `6d992221453843a005e519fc29d6684fa699609d`  
+State: SUPERSEDED AS TEMPORARY APPOINTMENT / PROVENANCE RETAINED.
 
-**Profile states:**
-1. **F-01 Matrix Durability & State Forensic Examiner** — PENDING ROOT/GOVERNANCE disposition.
-2. **F-02 Context & Capability Provenance Forensic Examiner** — **OWNER-AUTHORIZED TEMPORARY ACTIVE** for the current Root Librarian instance under Addendum A.
-3. **F-03 Behavioral Re-Acceptance Forensic Examiner** — PENDING ROOT/GOVERNANCE disposition.
+**Addendum B — reporting/routing architecture:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_B_LIBRARIAN_TOPOLOGY_AND_ROUTING_20261006.md`  
+Commit: `c932c51cbd312f470feafacecaa2230fa63dfe42`
 
-**F-02 temporary role label:** Owner-appointed Temporary Forensic Examiner / Provenance Pathologist.
+**Addendum C — exact T topology:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_C_EXACT_T_TOPOLOGY_INTAKE_FORX_20261006.md`  
+Commit: `bc39b90b996a2e6c778cfe7a95629e3025c28624`
 
-**F-02 authority boundary:** forensic/provenance analysis only. No Owner authority, Governance merge authority, BUILD authority, commercial execution authority, or Canon authority is transferred.
+**Addendum D — permanent office / two branches / mechanism consolidation:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_D_PERMANENT_FORX_OFFICE_TWO_BRANCH_SUPERSESSION_20261006.md`  
+Commit: `7245c885d0e60e129ccdc823c32560ccf9143b7b`
 
-**Initial forensic findings from Addendum A:**
-- Root intake remains uncleared;
-- current `overdrive/runner.py` still contains the false-READY / executable-order defect;
-- RGR-03 full 30-image state remains only partially reconstructed;
-- 10-year-old / 3-year-old source definitions remain UNKNOWN;
-- RGR-01, RGR-02, MATRIX-01, and MATRIX-03 are disposition-ready from a forensic evidence perspective;
-- DR-0021 behavioral closure remains OPEN.
+**Exact structural topology:**  
+`MASTER / WHITE → FORX-V VERIFY+CONSOLIDATE → ROOT / RED → T-MED | T-GOV | T-COD → INTAKE → FORX-W WORK`
 
-**Urgency:** P0. The temporary F-02 appointment exists to help ROOT move the current queue to explicit disposition without inventing missing provenance.
+**FORX reporting:** FORX → MASTER.  
+**FORX aid relationship:** FORX ↔ ROOT.  
+**FORX corrective routing:** FORX-W → INTAKE → appropriate T Librarian → existing owner.  
+**FORX verification loop:** downstream result → FORX-V → MASTER; incomplete/false closure → FORX-V → FORX-W.
+
+**Permanent branch responsibilities:**
+- **FORX-W:** forensic investigation, provenance recovery, failure-node isolation, corrective solution packet construction, P0 routing.
+- **FORX-V:** completion assurance, consolidation, verification of whether routed work was actually done, false-closure detection, final readback to Master.
+
+**Mechanism consolidation:** inspector / commissioning-check / forensic-worker / verification-manager / calibration-manager / similar diagnostic and correction-helper appointments are now FORX-owned tools/mechanics/mechanisms rather than peer librarian offices, subject to the exclusions in Addendum D.
+
+**Historical F-01 / F-02 / F-03 profile model:** superseded as permanent-office architecture; functions absorbed under FORX.
+
+**Primary Governance destination:** T-GOV.  
+**Technical implementation consequence:** T-COD where runtime/scheduler/code changes are required.
+
+**No automatic Canon/Build promotion:** permanent appointment is Owner-directed, but governance registry/credential reconciliation and any technical implementation still require their respective governed integration paths.
+
+**Current P0 forensic work:** false-READY defect, full 30-image reconstruction, 10-/3-year source recovery, DR-0021 capability-state reconstruction, MATRIX-03 rectification, and cross-surface dependency packets.
 
 
 ---
