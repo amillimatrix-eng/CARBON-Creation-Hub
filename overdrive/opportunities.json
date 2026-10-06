@@ -2926,6 +2926,128 @@
         "quality_receipt": "overdrive/control_receipts/PROOF_ASSET_ENHANCEMENTS_20261004.json",
         "next_material_action": "Monitor current thread; use improved buyer-relevant proof if requested or at the existing due follow-up. Do not duplicate the application."
       }
+    },
+    "opentrain.ai|python-backend-developer-ai-agent-data|cmutoopjw000306mwfvbs4c88": {
+      "domain": "opentrain.ai",
+      "organization": "OpenTrain AI",
+      "opportunity": "python-backend-developer-ai-agent-data",
+      "title": "Python Backend Developer for AI Agent Data",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "state": "QUALIFIED",
+      "qualified_at": "2026-10-06T16:22:00Z",
+      "last_action_at": "2026-10-06T16:22:00Z",
+      "due_at": null,
+      "capital_direction": "INBOUND / FREE APPLICATION",
+      "reward": "USD 300 per approved task",
+      "payment": "Provider/client payout after approved task; exact settlement rail remains to be recovered before any PAID claim.",
+      "buyer_fit": "Strong fit with evidenced Python backend/API/connector/testing/AI-agent evaluation capability.",
+      "submission_ready": false,
+      "route_verified_live": false,
+      "execution_readiness": "HOLD_ACCOUNT_RECOVERY",
+      "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
+      "active_dependencies": {
+        "opentrain_existing_account_access": {
+          "state": "ACTIVE",
+          "kind": "HUMAN_AUTHENTICATION",
+          "observed_at": "2026-10-06T16:22:00Z",
+          "evidence": "Existing account ownership is evidenced by OpenTrain password-reset mail and support thread; current authenticated session is not evidenced.",
+          "next": "Restore the existing OpenTrain account through a fresh secure login/reset route; do not create a duplicate account."
+        }
+      },
+      "evidence": [
+        {
+          "kind": "CURRENT_MATCH_ALERT",
+          "source": "GMAIL",
+          "source_id": "1a1111bcb3c8793a",
+          "observed_at": "2026-10-06T12:06:36Z",
+          "summary": "OpenTrain sent a current job-match alert for Python Backend Developer for AI Agent Data at USD 300 per approved task."
+        },
+        {
+          "kind": "OFFICIAL_CURRENT_ROLE",
+          "source": "WEB",
+          "url": "https://www.opentrain.ai/jobs/python-backend-developer-for-ai-agent-data--cmutoopjw000306mwfvbs4c88/",
+          "observed_at": "2026-10-06T16:22:00Z",
+          "posted_at": "2026-10-04",
+          "summary": "Official OpenTrain listing is live, remote/open worldwide, four-week contractor engagement, USD 300 per approved task, 20+ hours/week, at least one approved task/day; Python backend/API/connector/AI-agent evaluation work."
+        },
+        {
+          "kind": "EXISTING_ACCOUNT_RECOVERY_PROVEN",
+          "source": "GMAIL",
+          "source_id": "1a102112d87ee13a",
+          "observed_at": "2026-10-03T14:00:41Z",
+          "summary": "OpenTrain sent a password-reset message to the existing AMX account; no duplicate account should be created."
+        },
+        {
+          "kind": "SUPPORT_RECOVERY_REQUEST_SENT",
+          "source": "GMAIL",
+          "source_id": "1a102dac4d8ea5c1",
+          "thread_id": "1a102dac4d8ea5c1",
+          "observed_at": "2026-10-03T17:42:00Z",
+          "summary": "PRI asked OpenTrain support for a fresh secure recovery/direct application route under the existing account."
+        }
+      ]
+    },
+    "opentrain.ai|python-ai-agent-infrastructure-developer|cmui8x2wr00050bgmasl5oj95": {
+      "domain": "opentrain.ai",
+      "organization": "OpenTrain AI",
+      "opportunity": "python-ai-agent-infrastructure-developer",
+      "title": "Python AI Agent Infrastructure Developer",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "state": "QUALIFIED",
+      "qualified_at": "2026-10-06T16:22:00Z",
+      "last_action_at": "2026-10-06T16:22:00Z",
+      "due_at": null,
+      "capital_direction": "INBOUND / FREE APPLICATION",
+      "reward": "USD 300 per approved task",
+      "payment": "Provider/client payout after approved task; exact settlement rail remains to be recovered before any PAID claim.",
+      "buyer_fit": "Strong fit with evidenced Python backend/API/connector/testing/AI-agent evaluation capability.",
+      "submission_ready": false,
+      "route_verified_live": false,
+      "execution_readiness": "HOLD_ACCOUNT_RECOVERY",
+      "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
+      "active_dependencies": {
+        "opentrain_existing_account_access": {
+          "state": "ACTIVE",
+          "kind": "HUMAN_AUTHENTICATION",
+          "observed_at": "2026-10-06T16:22:00Z",
+          "evidence": "Existing account ownership is evidenced by OpenTrain password-reset mail and support thread; current authenticated session is not evidenced.",
+          "next": "Restore the existing OpenTrain account through a fresh secure login/reset route; do not create a duplicate account."
+        }
+      },
+      "evidence": [
+        {
+          "kind": "CURRENT_MATCH_ALERT",
+          "source": "GMAIL",
+          "source_id": "1a11152c1411f31c",
+          "observed_at": "2026-10-06T13:06:37Z",
+          "summary": "OpenTrain sent a current job-match alert for Python AI Agent Infrastructure Developer at USD 300 per approved task."
+        },
+        {
+          "kind": "OFFICIAL_CURRENT_ROLE",
+          "source": "WEB",
+          "url": "https://www.opentrain.ai/jobs/python-ai-agent-infrastructure-developer--cmui8x2wr00050bgmasl5oj95/",
+          "observed_at": "2026-10-06T16:22:00Z",
+          "posted_at": "2026-09-26",
+          "summary": "Official OpenTrain listing is live, remote/open worldwide, four-week contractor engagement, USD 300 per approved task; Python connectors for Slack/Linear/Jira/Notion/Gmail/wikis plus agent-task evaluation and QA."
+        },
+        {
+          "kind": "EXISTING_ACCOUNT_RECOVERY_PROVEN",
+          "source": "GMAIL",
+          "source_id": "1a102112d87ee13a",
+          "observed_at": "2026-10-03T14:00:41Z",
+          "summary": "OpenTrain sent a password-reset message to the existing AMX account; no duplicate account should be created."
+        },
+        {
+          "kind": "SUPPORT_RECOVERY_REQUEST_SENT",
+          "source": "GMAIL",
+          "source_id": "1a102dac4d8ea5c1",
+          "thread_id": "1a102dac4d8ea5c1",
+          "observed_at": "2026-10-03T17:42:00Z",
+          "summary": "PRI asked OpenTrain support for a fresh secure recovery/direct application route under the existing account."
+        }
+      ]
     }
   },
   "version": 1,
@@ -3014,6 +3136,6 @@
   ],
   "generated_at": "2026-10-03T22:13:20Z",
   "record_count": 66,
-  "last_reconciled_at": "2026-10-06T16:10:00Z",
-  "last_reconciled_reason": "Deep Sweep payment/conversion sync: ingest current Face Production buyer/package/offer progression and HumanSignal/Outlier onboarding evidence; remove stale gates without promoting unproven contract/receivable/payment states."
+  "last_reconciled_at": "2026-10-06T16:22:00Z",
+  "last_reconciled_reason": "Deep Sweep money-home sync: persist two current USD 300/task OpenTrain roles verified by current alerts and official live listings; preserve existing-account recovery as the exact submission gate."
 }
