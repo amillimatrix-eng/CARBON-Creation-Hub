@@ -1,0 +1,20 @@
+{
+  "schema": "AMX.BLACK.JOB.v1",
+  "owner": "ROOT_RECOVERY_VERIFY",
+  "purpose": "Post-fix acceptance test for BLACK receipt emission only. Confirm that a harmless executed job now produces the normal durable BLACK receipt.",
+  "prohibited": [
+    "No network probing",
+    "No email",
+    "No spend",
+    "No credential changes",
+    "No external submission",
+    "No state mutation outside the normal BLACK receipt"
+  ],
+  "done": "Command exits 0 and normal BLACK receipt is emitted for this job ID.",
+  "timeout": 30,
+  "command": [
+    "python3",
+    "-c",
+    "import json,datetime,platform; print(json.dumps({'black_receipt_acceptance':'PASS','host':platform.node(),'utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}))"
+  ]
+}
