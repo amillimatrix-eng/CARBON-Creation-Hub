@@ -509,3 +509,20 @@ The existence of 30 stored image references alone is not sufficient proof of res
 **Recommended disposition:** MERGE / MODIFY → BOTH GOVERNANCE + BLUE STATE.
 
 **No authority promotion:** no Canon or Build change is authorized by this index entry.
+
+
+### MATRIX-03 — [CYAN] ADDENDUM A — Capability Persistence / Developmental Reconstruction
+
+**Current status:** INDEXED ADDENDUM — NOT MERGED / NOT CANON / NOT FROZEN.  
+**Parent:** `AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_GOVERNANCE_BLUE_STATE_CANDIDATE_20261006.md`  
+**Addendum:** `AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_ADDENDUM_A_CAPABILITY_PERSISTENCE_20261006.md`  
+**Addendum commit:** `642d06576c611d7db0f418f079cf173d11c48f28`
+
+**Core refinement:** state persistence is not capability persistence. MATRIX-03 now explicitly separates DATA STATE, EXECUTION STATE, and CAPABILITY STATE.
+
+**Added rectification matters:** developmental provenance, Owner-correction retention, preservation of weighted relationship edges, narration-vs-execution separation, transcript reconstruction vs blind replay, Image-31 generalization testing, and post-generalization restart continuity.
+
+**Resolution constraint:** inherits MATRIX-03 requirement to resolve into Governance, Blue State, or both; may be ALREADY-SUBSUMED only with exact clause mapping preserving DC-R11 through DC-R17; HOLD requires exact blocker/owner/recovery action/return condition.
+
+**Recommended disposition:** MODIFY / MERGE → BOTH GOVERNANCE + BLUE STATE.
+
