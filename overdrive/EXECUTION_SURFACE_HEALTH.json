@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "observed_at": "2026-10-06T12:36:00+02:00",
+  "incident": "DR-0021",
+  "gmail": {
+    "account": "amillimatrix@gmail.com",
+    "read_path": "AVAILABLE",
+    "profile_read": "AVAILABLE",
+    "draft_create": "DEGRADED",
+    "send": "DEGRADED",
+    "evidence": [
+      "Read/search/profile operations succeeded on 2026-10-06.",
+      "Threaded reply send to an inbound HumanSignal support message failed with GmailConnectorError: Failed to send email.",
+      "Draft creation for the same grounded HumanSignal reply also failed with GmailConnectorError: Failed to create draft.",
+      "Cold/follow-up sends attempted during remediation were additionally blocked by the current action safety layer."
+    ]
+  },
+  "fallback_rule": "A degraded mail-write path is a route failure, not permission to idle. Preserve thread/dedupe state and continue via another already-authorized lawful route. Do not silently switch sender identity or invent an authenticated browser session.",
+  "current_external_candidate": {
+    "opportunity_key": "crowdgen.com|project-coffee-data-labeling-specialist|south-africa",
+    "source": "https://crowdgen.com/coffee-en-za/",
+    "current_public_terms": "South Africa; $8.50 USD/hour; CV/application, account setup, assessments and identity verification required.",
+    "runtime_gate": "Authenticated application/session availability must be verified at execution time."
+  },
+  "acceptance": "Worker health requires attributable external consequence or exact exhausted route gates with fallback evidence. READY/wake/routing state alone is not acceptance."
+}
