@@ -18,6 +18,7 @@ from backend.store import EvidenceStore
 from fastapi.testclient import TestClient
 from overdrive import runner
 from overdrive.payment_truth import payment_state, verified_payment
+from overdrive.payment_verifier import attest_stripe_settlement, SettlementVerificationError
 
 spec = importlib.util.spec_from_file_location("black_worker", Path(__file__).resolve().parents[1] / "BLACK/worker.py")
 black = importlib.util.module_from_spec(spec)
@@ -86,6 +87,77 @@ class PaymentTruth(unittest.TestCase):
         states = ["SUBMITTED", "RESPONDED", "CONTRACTED", "INVOICED", "RECEIVABLE"]
         summary = summarize_opportunities({"records": {x: {"state": x} for x in states}})
         self.assertEqual(set(summary["state_counts"]), set(states))
+
+
+class StripeSettlementVerifier(unittest.TestCase):
+    def setUp(self):
+        self.env = patch.dict(os.environ, {
+            "AMX_PAYMENT_VERIFICATION_KEY": KEY,
+            "STRIPE_SECRET_KEY": "sk_live_test_only",
+        })
+        self.env.start(); self.addCleanup(self.env.stop)
+        self.record = {
+            "state": "RECEIVABLE",
+            "amount_due": "100.00",
+            "currency": "USD",
+            "payer_id": "buyer-1",
+            "payee_account": "amx-stripe",
+            "evidence": [],
+        }
+        self.intent = {
+            "id": "pi_verified_001",
+            "status": "succeeded",
+            "currency": "usd",
+            "amount_received": 10000,
+            "metadata": {
+                "opportunity_key": "buyer",
+                "payer_id": "buyer-1",
+                "payee_account": "amx-stripe",
+            },
+            "latest_charge": {"paid": True, "created": 1790000000},
+        }
+
+    @patch("overdrive.payment_verifier.fetch_stripe_payment_intent")
+    def test_processor_read_creates_valid_settlement_and_paid_transition(self, fetch):
+        fetch.return_value = copy.deepcopy(self.intent)
+        evidence = attest_stripe_settlement(self.record, "buyer", "pi_verified_001")
+        self.assertTrue(verified_payment(self.record, "buyer", [evidence]))
+        ledger = {"records": {"buyer": copy.deepcopy(self.record)}}
+        result = runner.stripe_payment_settlement(
+            {"payload": {
+                "opportunity_key": "buyer",
+                "expected_from": "RECEIVABLE",
+                "payment_intent_id": "pi_verified_001",
+            }},
+            ledger,
+        )
+        self.assertEqual(result["to"], "PAID")
+        self.assertEqual(result["adapter"], "STRIPE_PAYMENT_SETTLEMENT")
+        self.assertEqual(ledger["records"]["buyer"]["state"], "PAID")
+        self.assertTrue(verified_payment(ledger["records"]["buyer"], "buyer"))
+
+    @patch("overdrive.payment_verifier.fetch_stripe_payment_intent")
+    def test_processor_mismatch_or_unsettled_payment_fails_closed(self, fetch):
+        for change in (
+            {"status": "processing"},
+            {"amount_received": 9999},
+            {"currency": "zar"},
+            {"metadata": {"opportunity_key": "other", "payer_id": "buyer-1", "payee_account": "amx-stripe"}},
+            {"latest_charge": {"paid": False, "created": 1790000000}},
+        ):
+            with self.subTest(change=change):
+                payload = copy.deepcopy(self.intent)
+                payload.update(change)
+                fetch.return_value = payload
+                with self.assertRaises(SettlementVerificationError):
+                    attest_stripe_settlement(self.record, "buyer", "pi_verified_001")
+
+    @patch("overdrive.payment_verifier.fetch_stripe_payment_intent")
+    def test_settlement_cannot_be_signed_without_independent_verifier_key(self, fetch):
+        fetch.return_value = copy.deepcopy(self.intent)
+        with patch.dict(os.environ, {"AMX_PAYMENT_VERIFICATION_KEY": ""}):
+            with self.assertRaises(SettlementVerificationError):
+                attest_stripe_settlement(self.record, "buyer", "pi_verified_001")
 
 
 class BlackTruth(unittest.TestCase):
