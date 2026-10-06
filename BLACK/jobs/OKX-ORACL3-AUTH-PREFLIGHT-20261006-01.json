@@ -1,0 +1,10 @@
+{
+  "purpose": "Recover existing OKX/Onchain OS/Agentic Wallet readiness on BLACK without creating a wallet, logging in, moving funds, spending, or exposing secrets. Report only executable presence/state and whether required seller bindings exist.",
+  "command": [
+    "bash",
+    "-lc",
+    "set -uo pipefail\nexport PATH=\"$HOME/.local/bin:$PATH\"\necho \"UTC=$(date -u +%FT%TZ)\"\necho \"===TOOLS===\"\nfor c in node npm npx codex onchainos; do\n  if command -v \"$c\" >/dev/null 2>&1; then\n    printf '%s=PRESENT path=' \"$c\"; command -v \"$c\"\n  else\n    echo \"$c=ABSENT\"\n  fi\ndone\n(node -v 2>/dev/null || true)\n(npm -v 2>/dev/null || true)\n(codex --version 2>/dev/null || true)\necho \"===SELLER_BINDINGS_PRESENCE_ONLY===\"\nfor k in OKX_API_KEY OKX_SECRET_KEY OKX_PASSPHRASE PAY_TO_ADDRESS; do\n  if [ -n \"${!k:-}\" ]; then echo \"$k=PRESENT\"; else echo \"$k=ABSENT\"; fi\ndone\necho \"===OKX_ONCHAIN_FILES===\"\nfor d in \"$HOME/.codex\" \"$HOME/.config\" \"$HOME/.local\" \"$HOME\"; do\n  [ -d \"$d\" ] || continue\n  find \"$d\" -maxdepth 5 \\( -iname '*onchainos*' -o -iname '*okx*' -o -iname '*agentic*' \\) -print 2>/dev/null | head -120\ndone\necho \"===NPM_GLOBAL_MATCHES===\"\n(npm root -g 2>/dev/null | xargs -r -I{} find \"{}\" -maxdepth 3 \\( -iname '*onchainos*' -o -iname '*okx*' \\) -print 2>/dev/null | head -80) || true\necho \"OKX_PREFLIGHT_DONE\""
+  ],
+  "timeout": 60,
+  "max_attempts": 1
+}
