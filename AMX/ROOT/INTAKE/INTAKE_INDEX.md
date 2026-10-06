@@ -407,3 +407,26 @@ The existence of 30 stored image references alone is not sufficient proof of res
 **Urgent Owner request:** Ruth/ROOT is explicitly advised to clear the related intake as a matter of urgency through an explicit MERGE / MODIFY / REJECT disposition with exact owner, exact destination, exact implementation consequence, and exact behavioral closure test.
 
 **No authority promotion:** this index entry does not merge the candidate, change Canon, or authorize Master Build changes.
+
+
+---
+
+## MATRIX-02 — P0 Forensic Worker Profile Creation Candidates
+
+**Current status:** INDEXED — CREATION CANDIDATES / NOT AUTHORIZED / NOT CREATED / NOT COMMISSIONED.  
+**Authority effect:** NONE.  
+**Artifact:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_CREATION_CANDIDATES_20261006.md`  
+**Artifact commit:** `4d214133995900eb4eb7c24fd5503479c6fb2a76`
+
+**Infrastructure conclusion:** no new permanent execution layer is justified. Existing owners remain authoritative: Commissioning Inspector for detection, Master for restore/succession, iSCOPE/PRI for commercial execution, T10/Execution Fidelity for outcome truth, and Root Librarian for provenance/integration.
+
+**Creation candidates:**
+1. **F-01 Matrix Durability & State Forensic Examiner** — temporary Commissioning Inspector forensic mode; diagnostic only.
+2. **F-02 Context & Capability Provenance Forensic Examiner** — temporary Root Librarian provenance mode; immediate scope includes DR-0021 learned commercial-intelligence state and RGR-03 exact 30-image state.
+3. **F-03 Behavioral Re-Acceptance Forensic Examiner** — temporary Commissioning/T10 acceptance mode; observes live acceptance while existing mandate workers retain execution ownership.
+
+**Requested ROOT disposition per profile:** AUTHORIZE / MODIFY / REJECT / ALREADY-SUBSUMED.
+
+**Candidate current-session appointment:** if F-02 is explicitly authorized, the current AMX Root Librarian instance may assume that temporary forensic profile and immediately produce the Capability State Reconstruction Manifest Candidate. No production implementation, external commercial action, or worker creation is authorized by this intake entry.
+
+**Urgency:** P0. The underlying Matrix report remains BROKEN at the commercial-objective continuity layer and RGR-03 remains unimplemented.
