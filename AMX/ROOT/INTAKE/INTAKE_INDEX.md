@@ -47,6 +47,30 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 ---
 
+## FORX SAME-RUN TRANSCRIPT CONSOLIDATION — 2026-10-07
+
+**Artifact:** `AMX/ROOT/INTAKE/FORX_SAME_RUN_TRANSCRIPT_SYNC_CONSOLIDATION_20261007.md`  
+**Commit:** `6a4976c23318d926920078764f5c8e93060dc904`  
+**Lifecycle:** INDEXED EVIDENCE + OWNER-DIRECTED OPERATING INPUT — NOT MERGED / NOT CANON / NOT BUILD AUTHORITY.
+
+**Continuity rule:** chat/UI/model-latency interruptions do not create a new FORX run, Reaper wake, or execution attempt unless durable state actually forks.
+
+**Current same-run additions captured:**
+- FORX pronunciation = **forks**;
+- 13-head re-entrant live method remains current on `main`;
+- strict-waterfall A/B experiment isolated on `forx-waterfall-13head-experiment-20261006`;
+- capability sovereignty / tool-to-skill internalization remains preferred development strategy;
+- provider identity gates are scoped, with Clay/Tavily/Close substitutes active;
+- opportunity-network expansion applies across **all income lanes**, including Reaper, not only PRI;
+- Matrix Critic is recovered as separate, non-authoritative, post-completion review profile and should not be silently retired or converted into a live execution owner;
+- Owner-facing reporting should be compact while detailed evidence remains durable internally;
+- Daybreak/security-key procurement is a side dependency pending exact requirement verification and must not displace P0;
+- XOXNO BLACK parcel A failed contract compatibility; executable parcel B and a BLACK liveness canary are queued; no durable receipt yet;
+- FORX is using route-equivalent GitHub static review rather than idling on BLACK;
+- side-task interruption test shows continuity PASS but execution-budget compression still needs improvement.
+
+---
+
 ## OWNER-REASSERTED P0 — PRIMARY MATRIX RECOVERY CONTINUATION
 
 **Primary active failure:** 24-hour global commercial / Bounty Reaper execution regression.  
