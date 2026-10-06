@@ -40,6 +40,21 @@ At the latest readback available to Root, its receipt had not appeared.
 
 Therefore the repaired receipt path is not independently verified.
 
+## Active cause hypotheses — DO NOT PREMATURELY EXCLUDE
+
+The following remain active suspects until direct evidence excludes them:
+
+1. BLACK worker-side Git transport / credential / local repository state.
+2. Windows host behavior affecting WSL availability, Startup execution, process continuity, service wake or interop.
+3. WSL/systemd/service activation state, including failure to start or restart the expected BLACK worker after Windows/WSL transitions.
+4. Local Git lock, dirty worktree, divergence or stale process state preventing BLACK from updating to the merged repair.
+5. Copilot or another locally active coding/agent surface modifying, locking, rebasing, checking out, running, restarting or otherwise interfering with the same BLACK clone/process state.
+6. Interaction between Windows, WSL, Copilot/local agents and Git that produces an observability failure without proving underlying task failure.
+
+None of these hypotheses is currently established as the cause solely by missing receipt evidence.
+
+Do not narrow DR-0021 to Git transport alone until Windows/WSL and Copilot/local-agent interaction have been tested or otherwise excluded.
+
 ## Current disposition
 
 Historical defective period:
@@ -61,6 +76,9 @@ Related source-repair merge:
 
 Related Root evidence commit:
 9aba060e5c1ccf71c740b0a06c52aa0c1866691c
+
+Evidence correction intake commit:
+d8edbd857db3e5dd551f68c640835a78d5ed388c
 
 ## Standing evidence rule
 
