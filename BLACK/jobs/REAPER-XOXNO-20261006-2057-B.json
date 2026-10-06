@@ -1,0 +1,34 @@
+{
+  "job_id": "REAPER-XOXNO-20261006-2057-B",
+  "opportunity_id": "REAPER-XOXNO",
+  "supersedes_execution_attempt": "REAPER-XOXNO-20261006-2057-A",
+  "target": "XOXNO/rs-lending-xlm",
+  "objective": "Executable bounded local/static review of immutable commit a2486b255b974ef8432ce44de014931f51552f4b focused on INV-ACCT-10 controller-to-pool position synchronization and liquidation/accounting paths. Return reproducible evidence, an evidence-backed kill/known-design result, or an exact narrowed local-test/runtime blocker.",
+  "immutable_source_ref": "a2486b255b974ef8432ce44de014931f51552f4b",
+  "allowed_methods": [
+    "clone/freeze public repository",
+    "grep/index/static source review",
+    "local controller test execution",
+    "git history/diff and public issue/PR dedupe",
+    "evidence hashing"
+  ],
+  "prohibited_actions": [
+    "live target probing",
+    "production/testnet transactions",
+    "broadcast transactions",
+    "fund movement",
+    "credential expansion",
+    "external vulnerability submission",
+    "public disclosure",
+    "spend"
+  ],
+  "done_definition": "Receipt must identify immutable source, exact files/functions inspected, static findings relevant to INV-ACCT-10, targeted local-test result when runnable, and classify outcome as reproducible deviation / evidence-backed kill or known design / exact narrowed blocker.",
+  "expected_reaper_state_transition": "Q3 hypothesis created/refined/killed, or Q2 promotion only if local evidence plus novelty/impact prerequisites survive.",
+  "timeout": 600,
+  "max_attempts": 1,
+  "command": [
+    "bash",
+    "-lc",
+    "set -u\nREF='a2486b255b974ef8432ce44de014931f51552f4b'\nURL='https://github.com/XOXNO/rs-lending-xlm.git'\nW='/tmp/REAPER-XOXNO-20261006-2057-B'\nrm -rf \"$W\"\nmkdir -p \"$W\"\necho '=== SOURCE FREEZE ==='\nif ! git clone -q --filter=blob:none --no-checkout \"$URL\" \"$W/repo\"; then\n  echo 'RESULT=BLOCKED_CLONE_FAILED'\n  exit 0\nfi\ncd \"$W/repo\"\nif ! git checkout -q \"$REF\"; then\n  echo 'RESULT=BLOCKED_CHECKOUT_FAILED'\n  exit 0\nfi\nACTUAL=\"$(git rev-parse HEAD 2>/dev/null || true)\"\necho \"EXPECTED_REF=$REF\"\necho \"ACTUAL_REF=$ACTUAL\"\nif [ \"$ACTUAL\" != \"$REF\" ]; then\n  echo 'RESULT=BLOCKED_SOURCE_IDENTITY_MISMATCH'\n  exit 0\nfi\n\necho '=== INV-ACCT-10 DEFINITION ==='\npython3 - <<'PY'\nfrom pathlib import Path\np=Path('docs/reference/invariants.md')\nlines=p.read_text(errors='replace').splitlines()\nfor i,line in enumerate(lines):\n    if 'INV-ACCT-10' in line:\n        for j in range(i, min(i+18,len(lines))):\n            print(f'{j+1}:{lines[j]}')\n        break\nPY\n\necho '=== RELEVANT CONTROLLER / POOL SITES ==='\ngrep -RIn --include='*.rs' -E 'PoolSeizeEntry|PoolPositionMutation|ScaledPositionRaw|seize_positions|net_settle|position_mutation|update_or_remove_(supply|borrow)_position|record_.*position_update' contracts/controller/src contracts/pool/src | head -n 120 || true\n\necho '=== LIQUIDATION APPLY EXCERPTS ==='\ngrep -nE 'PoolSeizeEntry|scaled_amount|credit_supply_shares|record_share_credit_updates|update_or_remove_supply_position' contracts/controller/src/positions/liquidation/apply.rs | head -n 120 || true\n\necho '=== POOL TRUST MODEL ==='\ngrep -nE 'Positions come in as arguments|scaled_amount.*real position|controller position ledger' contracts/pool/README.md | head -n 40 || true\n\necho '=== TARGETED LOCAL TEST ==='\nTEST_RC=127\nif command -v cargo >/dev/null 2>&1; then\n  timeout 360s cargo test --manifest-path contracts/controller/Cargo.toml liquidation --lib --quiet >/tmp/xoxno-test.out 2>/tmp/xoxno-test.err\n  TEST_RC=$?\n  echo \"TEST_RC=$TEST_RC\"\n  echo '--- TEST STDOUT TAIL ---'\n  tail -n 40 /tmp/xoxno-test.out || true\n  echo '--- TEST STDERR TAIL ---'\n  tail -n 40 /tmp/xoxno-test.err || true\nelse\n  echo 'TEST_RC=127'\n  echo 'CARGO_UNAVAILABLE'\nfi\n\necho '=== STATIC CLASSIFICATION ==='\nif [ \"$TEST_RC\" = \"0\" ]; then\n  echo 'RESULT=STATIC_REVIEW_COMPLETE_TARGETED_TEST_PASS'\nelif [ \"$TEST_RC\" = \"124\" ]; then\n  echo 'RESULT=STATIC_REVIEW_COMPLETE_TEST_BLOCKED_TIMEOUT'\nelif [ \"$TEST_RC\" = \"127\" ]; then\n  echo 'RESULT=STATIC_REVIEW_COMPLETE_TEST_BLOCKED_TOOLCHAIN_UNAVAILABLE'\nelse\n  echo \"RESULT=STATIC_REVIEW_COMPLETE_TEST_NONZERO_$TEST_RC\"\nfi\necho 'NOTE=Receipt is investigation evidence only. It does not itself establish vulnerability, novelty, impact, submission readiness, award, or payment.'\nexit 0"
+  ]
+}
