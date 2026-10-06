@@ -188,6 +188,11 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     def operator_state() -> dict[str, Any]:
         return aggregate_state(root)
 
+    @app.get("/api/neural/proof", dependencies=[Depends(require_admin)])
+    def neural_proof() -> dict[str, Any]:
+        from neural.router import exercise
+        return exercise(root)
+
     @app.get("/api/opportunities", dependencies=[Depends(require_admin)])
     def opportunities() -> dict[str, Any]:
         return aggregate_state(root)["opportunities"]
