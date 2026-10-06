@@ -45,6 +45,35 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 ---
 
+## OWNER-ACCEPTED P0 — ABACUS SEMANTIC REASONING PROTOCOL — BLACK-BOX-TOP ROUTE
+
+**Owner acceptance:** 2026-10-06  
+**Priority:** **P0 / RIGHT ON TOP**  
+**Security owner:** **FORX**  
+**Primary destinations:** **T-GOV + BLUE STATE**  
+**Technical destination if authorized:** **T-COD / existing BUILD owner**  
+**Lifecycle:** **ACCEPTED → INDEXED MERGE CANDIDATE — NOT MERGED / NOT CANON / NOT BUILD-AUTHORIZED**
+
+**Primary artifact:**  
+`AMX/ROOT/INTAKE/ABACUS_SEMANTIC_REASONING_PROTOCOL_GOVERNANCE_BLUE_STATE_CANDIDATE_20261006.md`  
+Commit: `625fbc885e34435cf276bde184c96d00ad056a68`
+
+**FORX routing packet:**  
+`AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-004_ABACUS_SEMANTIC_REASONING_PROTOCOL.md`  
+Commit: `0ded5beb90d5aacb9311239da779a6b330ec4810`
+
+**Core implementation rule:** Abacus semantic coordinates/tokenization provide classification, indirection, compartmentalization, versioning and continuity. They are **not encryption**. Production confidentiality must use established authenticated encryption with key material outside repository/transcript.
+
+**Required placement:** Governance owns classification/visibility/declassification/rotation/key-policy; Blue State owns protected semantic continuity and relationship persistence; FORX owns security enforcement/verification; T-COD implements only after authorization.
+
+**Canonicalization boundary preserved:** canonical evidence is hashed before Abacus protection; Abacus may protect/transport the semantic object but may not silently reinterpret canonical evidence.
+
+**Rolling Consensus:** exact governed source not recovered in this pass. Integration remains **UNKNOWN / RECOVER SOURCE**; do not invent consensus mechanics.
+
+**"Black box" handling:** no standalone governed Black Box subsystem was recovered. Owner routing language is therefore implemented as **top-of-intake P0 routing**, not as a new BLACK architectural layer. Reconcile if an existing Black Box artifact is later recovered.
+
+---
+
 
 # FORX ACTIVE MANDATE — INTAKE OPTIMIZATION
 
@@ -177,7 +206,20 @@ The ~450 million businesses figure is retained as an existing **working surface-
 
 ### P0 — GOVERNANCE DISPOSITION READY
 
-1. **FORX-RP-20261006-003 — Commercial Capability / Tool / Skill Estate**
+1. **FORX-RP-20261006-004 — Abacus Semantic Reasoning Protocol**
+   - state: **OWNER ACCEPTED / READY FOR T-GOV + BLUE STATE DISPOSITION**
+   - priority: **BLACK-BOX-TOP / P0**
+   - security owner: **FORX**
+   - technical consequence if authorized: **T-COD**
+   - recommendation: **MODIFY / MERGE → GOVERNANCE + BLUE STATE**
+   - core rule: semantic tokenization/coordinates + authenticated encryption + compartmentalized visibility + durable semantic continuity.
+   - rolling-consensus integration: **UNKNOWN — recover exact governing source before integration; do not invent.**
+   - artifact: `AMX/ROOT/INTAKE/ABACUS_SEMANTIC_REASONING_PROTOCOL_GOVERNANCE_BLUE_STATE_CANDIDATE_20261006.md`
+   - packet: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-004_ABACUS_SEMANTIC_REASONING_PROTOCOL.md`
+   - source commit: `625fbc885e34435cf276bde184c96d00ad056a68`
+   - packet commit: `0ded5beb90d5aacb9311239da779a6b330ec4810`
+
+2. **FORX-RP-20261006-003 — Commercial Capability / Tool / Skill Estate**
    - state: **READY FOR T-GOV DISPOSITION**
    - destination: **T-GOV**
    - technical cross-reference: **T-COD**
