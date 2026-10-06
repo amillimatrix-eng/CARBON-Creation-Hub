@@ -11,8 +11,10 @@ from pathlib import Path
 
 try:
     from overdrive.payment_truth import payment_state, verified_payment
+    from overdrive.payment_verifier import attest_stripe_settlement
 except ImportError:  # Existing direct script/service entry point.
     from payment_truth import payment_state, verified_payment
+    from payment_verifier import attest_stripe_settlement
 
 ROOT = Path(__file__).resolve().parent
 STATE = ROOT / "state.json"
@@ -148,7 +150,41 @@ def access_verification(task, opportunities):
         },
     }
 
-ADAPTERS = {"EVIDENCE_TRANSITION": evidence_transition, "ACCESS_VERIFICATION": access_verification}
+def stripe_payment_settlement(task, opportunities):
+    """Independently read Stripe settlement, attest it, then use the existing PAID gate."""
+    payload = task["payload"]
+    key = payload["opportunity_key"]
+    record = opportunities["records"][key]
+    expected = payload.get("expected_from") or record.get("state")
+    if expected not in {"INVOICED", "RECEIVABLE"}:
+        raise ValueError("Stripe settlement verification requires INVOICED or RECEIVABLE state")
+    if record.get("state") != expected:
+        raise ValueError(f"state mismatch: {record.get('state')} != {expected}")
+    payment_intent_id = payload.get("payment_intent_id") or record.get("stripe_payment_intent_id")
+    if not payment_intent_id:
+        raise ValueError("Stripe payment_intent_id is required")
+    attestation = attest_stripe_settlement(record, key, payment_intent_id)
+    result = evidence_transition(
+        {"payload": {
+            "opportunity_key": key,
+            "expected_from": expected,
+            "to": "PAID",
+            "evidence": [attestation],
+            "observed_at": attestation["settled_at"],
+            "next_action": payload.get("next_action") or "Reconcile verified Stripe settlement and issue receipt/closeout.",
+        }},
+        opportunities,
+    )
+    result["adapter"] = "STRIPE_PAYMENT_SETTLEMENT"
+    result["payment_intent_id"] = payment_intent_id
+    return result
+
+
+ADAPTERS = {
+    "EVIDENCE_TRANSITION": evidence_transition,
+    "ACCESS_VERIFICATION": access_verification,
+    "STRIPE_PAYMENT_SETTLEMENT": stripe_payment_settlement,
+}
 
 def claim_work(signals, opportunities):
     """Durably claim every actionable signal. Claims cannot silently disappear:
