@@ -13,6 +13,90 @@
       "thread_id": null
     },
     {
+      "due_at": "2026-10-06T15:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2ea30b45baa0 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a0f2ea30b45baa0"
+    },
+    {
+      "due_at": "2026-10-06T15:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "opportunity_key": "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2ea2a952c85d for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a0f2ea2a952c85d"
+    },
+    {
+      "due_at": "2026-10-06T15:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "opportunity_key": "magicpictures.net|co-production|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2ea89285fcc3 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a0f2ea89285fcc3"
+    },
+    {
+      "due_at": "2026-10-06T15:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "opportunity_key": "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f25a83088e914 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a0f25a83088e914"
+    },
+    {
+      "due_at": "2026-10-06T15:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "opportunity_key": "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2e2af4f0d5cc for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a0f2e2af4f0d5cc"
+    },
+    {
+      "due_at": "2026-10-06T15:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "opportunity_key": "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2ea1c5a8c36a for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a0f2ea1c5a8c36a"
+    },
+    {
+      "due_at": "2026-10-06T15:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "opportunity_key": "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2eadceb4a96f for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a0f2eadceb4a96f"
+    },
+    {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
       "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
@@ -87,11 +171,11 @@
     {
       "due_at": "2026-10-04T02:49:14.724Z",
       "due_now": true,
-      "next_action": "The support reply is processed. Current exact gate is provider sign-in/account recovery requiring Owner control; after secure access, resume the existing verified Outlier account and inspect its current coding project/onboarding step. Follow provider assessment rules; no project assignment or payment is yet evidenced. Continue unrelated executable opportunities while this access dependency remains active.",
+      "next_action": "Use the existing Outlier account/dashboard and complete the provider skills screening personally under Outlier rules. Reopen support ticket 5220137 only if account/project access remains blocked after the screening route is attempted. No project assignment, receivable or payment is evidenced.",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
       "priority": 2,
       "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Owner completes the account-access/recovery step in the secure browser; resume the existing verified Outlier account and inspect the actual project/onboarding state. Do not create a duplicate account or redo completed Outlier identity verification.",
+      "smallest_next_action": "Owner completes provider screening; Matrix continues unrelated executable work.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": "1a0fedc93e232877"
@@ -157,6 +241,18 @@
       "thread_id": "1a0f2de385883f66"
     },
     {
+      "due_at": "2026-10-06T15:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing Antoine Picot thread for review feedback or acceptance of the bounded USD 1,000 commissioned development sprint. If scope/price is explicitly accepted, move immediately to CONTRACTED/ORDERED and issue the payment/invoice step through an approved rail. Do not duplicate-follow-up before a reasonable review interval.",
+      "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Monitor the existing Antoine Picot thread for review feedback or acceptance of the bounded USD 1,000 commissioned development sprint. If scope/price is explicitly accepted, move immediately to CONTRACTED/ORDERED and issue the payment/invoice step through an approved rail. Do not duplicate-follow-up before a reasonable review interval.",
+      "state": "RESPONDED",
+      "status": "WAITING",
+      "thread_id": "1a0f2ea3874d5fde"
+    },
+    {
       "due_at": "2026-10-06T23:04:25Z",
       "due_now": false,
       "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
@@ -167,102 +263,6 @@
       "state": "RESPONDED",
       "status": "WAITING",
       "thread_id": "1a0fedc9bdd30527"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0f2ea3874d5fde"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0f2ea30b45baa0"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0f2ea2a952c85d"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "magicpictures.net|co-production|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0f2ea89285fcc3"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0f25a83088e914"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0f2e2af4f0d5cc"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0f2ea1c5a8c36a"
-    },
-    {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "opportunity_key": "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0f2eadceb4a96f"
     },
     {
       "due_at": "2026-10-06T22:13:15Z",
@@ -423,11 +423,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "The official Greenhouse form is accessible; waiting for support is no longer the only route. Recover the IT diploma awarding institution and confirm device family, then complete the existing application with the recovered CV/contact/profile facts. No submission or assignment is proven.",
+      "next_action": "Resume the existing HumanSignal onboarding at the current dashboard. Complete the provider training and assessment personally where required, then await/accept an eligible project. Provider terms prohibit automated/AI completion of Tasks unless the applicable Task instructions explicitly permit it. No project assignment, completed paid task, receivable or payment is yet evidenced.",
       "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
       "priority": 8,
       "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Recover the awarding institution from authoritative existing applicant state, or obtain the exact institution from Owner; never invent a school or substitute a degree.",
+      "smallest_next_action": "Owner completes required training/assessment under provider rules; Matrix continues unrelated routes.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -505,7 +505,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-06T13:40:30.949458+00:00",
+  "generated_at": "2026-10-06T16:10:37.917031+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -919,13 +919,13 @@
     },
     "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "due_now": true,
+      "next_action": "Monitor the existing Antoine Picot thread for review feedback or acceptance of the bounded USD 1,000 commissioned development sprint. If scope/price is explicitly accepted, move immediately to CONTRACTED/ORDERED and issue the payment/invoice step through an approved rail. Do not duplicate-follow-up before a reasonable review interval.",
       "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
-      "state": "SUBMITTED",
+      "priority": 2,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Monitor the existing Antoine Picot thread for review feedback or acceptance of the bounded USD 1,000 commissioned development sprint. If scope/price is explicitly accepted, move immediately to CONTRACTED/ORDERED and issue the payment/invoice step through an approved rail. Do not duplicate-follow-up before a reasonable review interval.",
+      "state": "RESPONDED",
       "status": "WAITING",
       "thread_id": "1a0f2ea3874d5fde"
     },
@@ -992,11 +992,11 @@
     "humansignal.com|data-collection-contributor|south-africa": {
       "due_at": null,
       "due_now": false,
-      "next_action": "The official Greenhouse form is accessible; waiting for support is no longer the only route. Recover the IT diploma awarding institution and confirm device family, then complete the existing application with the recovered CV/contact/profile facts. No submission or assignment is proven.",
+      "next_action": "Resume the existing HumanSignal onboarding at the current dashboard. Complete the provider training and assessment personally where required, then await/accept an eligible project. Provider terms prohibit automated/AI completion of Tasks unless the applicable Task instructions explicitly permit it. No project assignment, completed paid task, receivable or payment is yet evidenced.",
       "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
       "priority": 8,
       "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Recover the awarding institution from authoritative existing applicant state, or obtain the exact institution from Owner; never invent a school or substitute a degree.",
+      "smallest_next_action": "Owner completes required training/assessment under provider rules; Matrix continues unrelated routes.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -1015,26 +1015,26 @@
     },
     "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2ea30b45baa0 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0f2ea30b45baa0"
     },
     "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity_key": "k29studios.com|production-collaboration|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2ea2a952c85d for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0f2ea2a952c85d"
     },
     "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
@@ -1051,14 +1051,14 @@
     },
     "magicpictures.net|co-production|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity_key": "magicpictures.net|co-production|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2ea89285fcc3 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0f2ea89285fcc3"
     },
     "mercor.com|existing-profile-current-state|2026-10-02": {
@@ -1075,14 +1075,14 @@
     },
     "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity_key": "microdrama.id|catalogue-co-production|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f25a83088e914 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0f25a83088e914"
     },
     "mindrift.ai|all-access-ai-training|global": {
@@ -1123,14 +1123,14 @@
     },
     "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity_key": "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2e2af4f0d5cc for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0f2e2af4f0d5cc"
     },
     "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me": {
@@ -1256,11 +1256,11 @@
     "outlier.ai|coding-expertise-ai-training|south-africa": {
       "due_at": "2026-10-04T02:49:14.724Z",
       "due_now": true,
-      "next_action": "The support reply is processed. Current exact gate is provider sign-in/account recovery requiring Owner control; after secure access, resume the existing verified Outlier account and inspect its current coding project/onboarding step. Follow provider assessment rules; no project assignment or payment is yet evidenced. Continue unrelated executable opportunities while this access dependency remains active.",
+      "next_action": "Use the existing Outlier account/dashboard and complete the provider skills screening personally under Outlier rules. Reopen support ticket 5220137 only if account/project access remains blocked after the screening route is attempted. No project assignment, receivable or payment is evidenced.",
       "opportunity_key": "outlier.ai|coding-expertise-ai-training|south-africa",
       "priority": 2,
       "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Owner completes the account-access/recovery step in the secure browser; resume the existing verified Outlier account and inspect the actual project/onboarding state. Do not create a duplicate account or redo completed Outlier identity verification.",
+      "smallest_next_action": "Owner completes provider screening; Matrix continues unrelated executable work.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": "1a0fedc93e232877"
@@ -1339,14 +1339,14 @@
     },
     "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity_key": "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2ea1c5a8c36a for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0f2ea1c5a8c36a"
     },
     "staff-remotely.com|remote-ai-qa-prompt-python|south-africa": {
@@ -1507,14 +1507,14 @@
     },
     "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T15:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
       "opportunity_key": "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0f2eadceb4a96f for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0f2eadceb4a96f"
     }
   }
