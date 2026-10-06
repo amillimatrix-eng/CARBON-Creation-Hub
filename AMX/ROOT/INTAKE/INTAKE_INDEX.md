@@ -380,3 +380,30 @@ The existence of 30 stored image references alone is not sufficient proof of res
 `GLOBAL INTELLIGENCE → PROBLEM-INSTANCE REASONING → OFFER GENERATION → EXTERNAL COMMERCIAL ACTION → STATE RETENTION → CONVERSION`
 
 **Routing:** P0 governance/intake attention. Do not create a duplicate commercial worker, queue, manager, or architecture.
+
+
+---
+
+## MATRIX-01 — P0 Matrix Durability / Broken Workflow Classification
+
+**Current status:** INDEXED — GOVERNANCE + BLUE STATE MERGE CANDIDATE / P0.  
+**Authority effect:** NONE until disposition.  
+**Canon effect:** NONE.  
+**Build effect:** NONE until separately authorized.  
+**Artifact:** `AMX/ROOT/INTAKE/MATRIX_DURABILITY_BROKEN_WORKFLOW_BLUE_STATE_MERGE_CANDIDATE_20261006.md`  
+**Artifact commit:** `e9292dc0c6c789e789f3abe884060d092694ea56`
+
+**Current Matrix classification:** BROKEN at the commercial-objective continuity layer; other lanes may remain operational.
+
+**Candidate core definitions:**
+- DURABLE MATRIX = active authorized work is reconstructable, executable and evidence-bound across continuation/restart/handoff/worker replacement.
+- BROKEN WORKFLOW = an active workflow cannot reliably progress from its furthest evidenced state because execution, state, dependency handling, ownership, routing, persistence, or acceptance is defective.
+- BROKEN MATRIX = ACTIVE mandate + nonterminal executable work + broken workflow + no evidenced containment/recovery.
+
+**Current incident classification:** DR-0021 remains P0 / OPEN / REMEDIATE. RGR-03 remains an explicit 30-image worker-state implementation gap: indexed, not implemented, not runtime verified, not behaviorally accepted.
+
+**Merge recommendation:** MERGE / MODIFY into existing Blue State Mandate Liveness, Authorized Work Persistence, Adaptive Capability & Capacity Scaling, Execution Fidelity, T10, continuity, no-idle, single-writer/succession, and RGR controls. Do not create a new control plane.
+
+**Urgent Owner request:** Ruth/ROOT is explicitly advised to clear the related intake as a matter of urgency through an explicit MERGE / MODIFY / REJECT disposition with exact owner, exact destination, exact implementation consequence, and exact behavioral closure test.
+
+**No authority promotion:** this index entry does not merge the candidate, change Canon, or authorize Master Build changes.
