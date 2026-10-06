@@ -10,19 +10,28 @@
           "source": "GMAIL",
           "source_id": "1a0f2ea4a4dbf2d1",
           "thread_id": "1a0f2ea400877a18"
+        },
+        {
+          "kind": "CURRENT_PRIMARY_TERMS",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://addictivedramas.com/",
+          "observed_at": "2026-10-06",
+          "summary": "Current public licensing terms require completed vertical series, ready to stream, with every episode delivered. Current AMX evidence does not establish a completed 50-episode rendered series."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
       "last_action_at": "2026-09-30T15:23:55Z",
-      "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
+      "next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
       "opportunity": "licensing-production",
       "organization": "Addictive Dramas",
       "package_version": "unknown",
       "recipient": "licensing@addictivedramas.com",
-      "state": "DELIVERY_FAILED",
+      "state": "HOLD_CAPABILITY_GAP",
       "thread_id": "1a0f2ea400877a18",
-      "title": "The Dragon Who Could Not Claim Me"
+      "title": "The Dragon Who Could Not Claim Me",
+      "execution_readiness": "HOLD_CAPABILITY_GAP",
+      "routing_reason": "CURRENT_BUYER_REQUIREMENT_NOT_MET"
     },
     "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me": {
       "domain": "alakai-productions",
@@ -166,7 +175,9 @@
         "Do not duplicate-submit the Drama Creator Program form.",
         "Do not represent developed/planned episodes as completed rendered series.",
         "Controlled viewing sample remains available only on request through an authorized access route."
-      ]
+      ],
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW"
     },
     "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "jukboxproductions.com",
@@ -328,7 +339,9 @@
       "thread_id": "1a0f1fba9e5a5efb",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
-      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z",
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW"
     },
     "magicpictures.net|co-production|the-dragon-who-could-not-claim-me": {
       "domain": "magicpictures.net",
@@ -901,7 +914,9 @@
       "due_at": "2026-10-04T15:00:00Z",
       "constraints": [
         "No payment is assumed until a specific paid assignment/contract is evidenced."
-      ]
+      ],
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW"
     },
     "redrama.ai|adaptation-distribution|the-dragon-who-could-not-claim-me": {
       "organization": "Redrama",
@@ -943,7 +958,9 @@
       "due_at": "2026-10-04T15:12:00Z",
       "constraints": [
         "Do not represent developed/planned episodes as completed rendered series; verify exact rights, acceptance and payment terms before commitment."
-      ]
+      ],
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW"
     },
     "telusdigital.com|online-data-analyst|south-africa": {
       "organization": "TELUS Digital AI Community",
@@ -1831,7 +1848,9 @@
           "smtp": "Recipient inbox full",
           "summary": "The official MoboReels contact mailbox rejected the message because the recipient inbox was full; this is not a successful submission."
         }
-      ]
+      ],
+      "execution_readiness": "WAITING",
+      "routing_reason": "DELIVERY_ROUTE_DEGRADED"
     },
     "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "free-reels.com",
@@ -2139,7 +2158,9 @@
       "capital_direction": "PAYER_TO_WORK",
       "upfront_cost": "NONE_EVIDENCED",
       "payer_path": "Scale Army employer/contractor hiring route",
-      "last_action_at": "2026-10-03T14:00:00Z"
+      "last_action_at": "2026-10-03T14:00:00Z",
+      "execution_readiness": "WAITING",
+      "routing_reason": "PROVIDER_OR_HUMAN_GATE_REMAINS"
     },
     "dataforcecommunity.transperfect.com|thyme-afrikaans-short-story-writer|south-africa": {
       "domain": "dataforcecommunity.transperfect.com",
@@ -2317,7 +2338,9 @@
         }
       ],
       "capital_direction": "PAYER_TO_WORK",
-      "upfront_cost": "NONE_EVIDENCED"
+      "upfront_cost": "NONE_EVIDENCED",
+      "execution_readiness": "WAITING",
+      "routing_reason": "QUALIFICATION_REQUIRED"
     },
     "humansignal.com|data-collection-contributor|south-africa": {
       "domain": "humansignal.com",
@@ -2888,5 +2911,7 @@
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "record_count": 66
+  "record_count": 66,
+  "last_reconciled_at": "2026-10-06T12:35:00+02:00",
+  "last_reconciled_reason": "DR-0021 external-action regression: remove false READY classifications from monitor/review/failed-route/capability-gap items; preserve CrowdGen as current executable candidate pending runtime route check."
 }
