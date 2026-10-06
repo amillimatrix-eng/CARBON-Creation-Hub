@@ -164,11 +164,16 @@ The ~450 million businesses figure is retained as an existing **working surface-
    - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-VFY-20261006-003_GLOBAL_PURSUIT_CAPABILITY_STATE_ACCEPTANCE.md`
    - commit: `5911133e0a0cc3897b1de4737b1c16b799541700`
 
-3. **DR0021-P0-01 — false-READY / regeneration defect**
-   - destination: **T-COD**
-   - owner: existing BUILD/runtime owner under Master
-   - current evidence: `overdrive/runner.py` still derives `ready_count` and `executable_order` from every `status == "READY"`
-   - closure: source remediation → runtime verification → behavioral acceptance → next-run state retention.
+3. **DR0021-P0-01 — READY / regeneration semantics**
+   - destination: **T-COD + FORX-V**
+   - owner: existing BUILD/runtime owner under Master; verification by **FORX-V**
+   - current state: **PARTIALLY REMEDIATED / NOT CLOSED**
+   - evidence: commit `0e680537ac0afd7b054ea6f0d1e706c95c4b5490` parked Jukbox / K29 / MagicPictures after initial outreach + one follow-up + no response.
+   - current runner SHA `8dfac610cda53fd348e6f85c6597649df94b72e3` contains WAITING guards for active dependencies, unavailable routes, missing next action, monitor/wait before due, and SUBMITTED/OFFERED before due.
+   - remaining question: whether every downstream decision runtime distinguishes check-only/evidence READY from true external-action READY and therefore avoids duplicate send.
+   - verification packet: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-VFY-20261006-004_READY_ACTION_CLASS_RECONCILIATION.md`
+   - commit: `e19c01db75b88d72a8fc730c2686755b7a28cde0`
+   - closure: attributable post-repair cycle proves action-class semantics, no duplicate outreach, genuine executable work still progresses, then CLOSED_VERIFIED.
 
 ### P0 — GOVERNANCE DISPOSITION READY
 
