@@ -45,6 +45,30 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 ---
 
+## OWNER-REASSERTED P0 — PRIMARY MATRIX RECOVERY CONTINUATION
+
+**Primary active failure:** 24-hour global commercial / Bounty Reaper execution regression.  
+**Continuity rule:** later side work does not supersede this P0 unless the Owner explicitly says so.  
+**FORX-W:** recovery / packet construction.  
+**FORX-V:** behavioral verification.  
+**Existing execution owners preserved:** iSCOPE / PRI + Bounty Reaper.
+
+**Primary recovery packet:**  
+`AMX/ROOT/INTAKE/FORX_PACKETS/FORX-FIX-20261006-005_PRIMARY_MATRIX_RECOVERY_CONTINUATION.md`  
+Commit: `4c49a6f62f6ef6adc91b203b943ad22235c7030a`
+
+**Weighted capability propagation addendum:**  
+`AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_ADDENDUM_B_WEIGHTED_CAPABILITY_PROPAGATION_20261006.md`  
+Commit: `bfbed92f4e8c63b6a723c27a5d6eb5fc2d7b3548`
+
+**Core correction:** FORX recovery is incomplete until material learned capability is propagated into the relevant worker's durable state and demonstrated on attributable work without Owner re-teaching.
+
+**Current plugin estate update:** Semrush = installed. Apollo.io / Hunter / Firecrawl / HubSpot = not installed at this check. Installed does not itself prove task execution.
+
+**Acceptance remains behavioral:** diverse global reasoning, problem-instance decomposition, capability combinations, payer/offer mapping, external action where authorized, durable weighted continuation, next-run recovery, and Bounty Reaper material progression beyond queued work.
+
+---
+
 ## OWNER-ACCEPTED P0 — ABACUS SEMANTIC REASONING PROTOCOL — BLACK-BOX-TOP ROUTE
 
 **Owner acceptance:** 2026-10-06  
@@ -174,7 +198,16 @@ The ~450 million businesses figure is retained as an existing **working surface-
 
 ### P0 — DIRECT CORRECTION / EXECUTION
 
-1. **FORX-FIX-20261006-003 — Global Pursuit / Commercial Capability-State Recovery**
+1. **FORX-FIX-20261006-005 — Primary Matrix Recovery Continuation**
+   - state: **OWNER-REASSERTED / READY FOR IMMEDIATE ROUTING**
+   - destinations: **T-COD → iSCOPE / PRI + Bounty Reaper**
+   - purpose: keep the original 24-hour execution failure active despite later interruptions; restore global pursuit, Reaper consequence, and weighted worker capability continuity.
+   - current evidence: one inspected commercial sent email for 2026-10-06 is not sufficient acceptance; queued Reaper work is not sufficient acceptance.
+   - capability rule: material FORX learning must propagate into the relevant worker's durable state.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-FIX-20261006-005_PRIMARY_MATRIX_RECOVERY_CONTINUATION.md`
+   - commit: `4c49a6f62f6ef6adc91b203b943ad22235c7030a`
+
+2. **FORX-FIX-20261006-003 — Global Pursuit / Commercial Capability-State Recovery**
    - state: **READY FOR T-COD ROUTING**
    - destination: **T-COD**
    - existing execution owners: **iSCOPE / PRI**
