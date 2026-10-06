@@ -115,13 +115,37 @@
           "thread_id": "1a0f2ea3874d5fde",
           "observed_at": "2026-10-02T22:01:56Z",
           "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
+        },
+        {
+          "kind": "BUYER_RESPONSE",
+          "source": "GMAIL",
+          "source_id": "1a10ce6134d20118",
+          "thread_id": "1a0f2ea3874d5fde",
+          "observed_at": "2026-10-05T16:28:23Z",
+          "summary": "Face Production director Antoine Picot said they are open to reviewing the vertical catalogue and continuing discussion if there is fit, and requested catalogue, samples and documentation."
+        },
+        {
+          "kind": "REVIEW_PACKAGE_SENT",
+          "source": "GMAIL",
+          "source_id": "1a10da53d6a035a0",
+          "thread_id": "1a0f2ea3874d5fde",
+          "observed_at": "2026-10-05T19:58:14Z",
+          "summary": "PRI replied in-thread with current key art, Pitch Episodes 01–02 script master and Canonical Cast/visual continuity pack; explicitly preserved current-video truth and offered a bounded USD 1,000 commissioned development sprint subject to buyer acceptance."
+        },
+        {
+          "kind": "CATALOGUE_ONESHEET_SENT",
+          "source": "GMAIL",
+          "source_id": "1a10dcc0c88e604b",
+          "thread_id": "1a0f2ea3874d5fde",
+          "observed_at": "2026-10-05T20:40:38Z",
+          "summary": "PRI sent the current buyer development one-sheet and asked Face Production to identify the relevant commercial route."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-10-02T22:01:56Z",
+      "last_action_at": "2026-10-05T20:40:38Z",
       "message_id": "1a0f2ea3874d5fde",
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "next_action": "Monitor the existing Antoine Picot thread for review feedback or acceptance of the bounded USD 1,000 commissioned development sprint. If scope/price is explicitly accepted, move immediately to CONTRACTED/ORDERED and issue the payment/invoice step through an approved rail. Do not duplicate-follow-up before a reasonable review interval.",
       "opportunity": "catalogue-partnership",
       "organization": "Face Production",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -132,12 +156,21 @@
         "visibility": "CONTROLLED_READER"
       },
       "recipient": "contact@faceproduction.net",
-      "state": "SUBMITTED",
+      "state": "RESPONDED",
       "subject": "Producer / catalogue partnership — CARBON°",
       "thread_id": "1a0f2ea3874d5fde",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
-      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z",
+      "execution_readiness": "WAITING",
+      "routing_reason": "BUYER_REVIEWING_PACKAGE_AND_COMMERCIAL_OFFER",
+      "commercial_offer": {
+        "amount": 1000,
+        "currency": "USD",
+        "scope": "Bounded commissioned development sprint: two production-ready 60–90 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after brief.",
+        "status": "OFFER_PRESENTED_NOT_ACCEPTED",
+        "source_id": "1a10da53d6a035a0"
+      }
     },
     "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "inkwavestudios.uk",
@@ -1137,27 +1170,57 @@
           "observed_at": "2026-10-04T02:49:14.724Z",
           "response_at": "2026-10-03T22:15:04Z",
           "summary": "Outlier support answered the verified-account progression request: select the visible coding opportunity in the existing verified account, complete its onboarding, then the provider screening/assessment. If no project is visible, availability/capacity/qualification may prevent matching. This is guidance, not assignment or paid-work acceptance."
+        },
+        {
+          "kind": "DASHBOARD_READY_SKILLS_SCREENING_NEXT",
+          "source": "GMAIL",
+          "source_id": "1a10c45d47412a60",
+          "observed_at": "2026-10-05T13:34:24Z",
+          "summary": "Outlier stated the dashboard is ready and the skills screening is the final key to unlocking the first project."
+        },
+        {
+          "kind": "WELCOME_SESSION_INVITE",
+          "source": "GMAIL",
+          "source_id": "1a10efa5da1d08f7",
+          "observed_at": "2026-10-06T02:10:50Z",
+          "summary": "Outlier invited the account to an optional Welcome Session; this is onboarding support, not project assignment."
+        },
+        {
+          "kind": "SUPPORT_TICKET_AUTO_CLOSE_NOTICE",
+          "source": "GMAIL",
+          "source_id": "1a110e237783287a",
+          "observed_at": "2026-10-06T11:03:42Z",
+          "summary": "Outlier support said ticket 5220137 would be set to solved for lack of reply; it may be reopened by replying if assistance is still needed."
         }
       ],
       "constraints": [],
-      "next_action": "The support reply is processed. Current exact gate is provider sign-in/account recovery requiring Owner control; after secure access, resume the existing verified Outlier account and inspect its current coding project/onboarding step. Follow provider assessment rules; no project assignment or payment is yet evidenced. Continue unrelated executable opportunities while this access dependency remains active.",
+      "next_action": "Use the existing Outlier account/dashboard and complete the provider skills screening personally under Outlier rules. Reopen support ticket 5220137 only if account/project access remains blocked after the screening route is attempted. No project assignment, receivable or payment is evidenced.",
       "due_at": "2026-10-04T02:49:14.724Z",
       "recipient": "support@outlier.ai",
       "thread_id": "1a0fedc93e232877",
       "message_id": "1a0fedc93e232877",
-      "last_action_at": "2026-10-03T22:13:12Z",
-      "onboarding_status": "VERIFICATION_COMPLETE_OWNER_CONFIRMED",
+      "last_action_at": "2026-10-06T11:03:42Z",
+      "onboarding_status": "DASHBOARD_READY_SKILLS_SCREENING_PENDING",
       "provider_support_thread_id": "1a103d4120423bc1",
       "active_dependencies": {
         "outlier_authenticated_session": {
-          "state": "ACTIVE",
-          "kind": "PROVIDER_AUTHENTICATION",
-          "observed_at": "2026-10-04T03:12:57.173Z",
-          "evidence": "User selected the Google sign-in method through secure browser authentication. The current browser page subsequently shows account recovery. No authenticated Outlier dashboard, project attachment, assessment completion or paid task is verified.",
-          "next": "Owner completes the account-access/recovery step in the secure browser; resume the existing verified Outlier account and inspect the actual project/onboarding state. Do not create a duplicate account or redo completed Outlier identity verification.",
+          "state": "SUPERSEDED_BY_PROVIDER_ACCOUNT_PROGRESS_EVIDENCE",
+          "kind": "PROVIDER_ACCOUNT_STATE",
+          "observed_at": "2026-10-06T16:10:00Z",
+          "evidence": "Provider email states dashboard is ready; current live session availability remains unproven.",
+          "next": "Complete skills screening through the existing account; if login itself blocks, restore only that access without duplicate account creation.",
           "credential_reset_by_agent": false
+        },
+        "skills_screening": {
+          "state": "ACTIVE",
+          "kind": "PROVIDER_REQUIRED_HUMAN_EVALUATION",
+          "observed_at": "2026-10-06T16:10:00Z",
+          "evidence": "Outlier email states skills screening is the remaining step before project access.",
+          "next": "Owner completes provider screening; Matrix continues unrelated executable work."
         }
-      }
+      },
+      "execution_readiness": "HUMAN_PROVIDER_GATE",
+      "routing_reason": "ACCOUNT_AND_DASHBOARD_EVIDENCED_SKILLS_SCREENING_REQUIRED"
     },
     "alignerr.com|search-quality-ai-training|south-africa": {
       "organization": "Alignerr",
@@ -2379,13 +2442,42 @@
           "url": "https://job-boards.greenhouse.io/humansignal/jobs/5823658004?gh_src=d66tug014us",
           "observed_at": "2026-10-04T04:42:04Z",
           "summary": "Existing official application form loaded interactively. Country, School, Degree, Discipline, residence country and cellphone type are marked aria-required=true. No application was entered or submitted."
+        },
+        {
+          "kind": "AUTHORIZED_ONBOARDING_ROUTE_RECEIVED",
+          "source": "GMAIL",
+          "source_id": "1a10cdacdbf9f595",
+          "thread_id": "1a102da9d4359786",
+          "observed_at": "2026-10-05T16:17:07Z",
+          "summary": "HumanSignal support directed the applicant to onboard.humansignal.com under HumanSignal Services."
+        },
+        {
+          "kind": "NDA_ACCEPTANCE_RECEIPT",
+          "source": "GMAIL",
+          "source_id": "1a10d1da913c316c",
+          "observed_at": "2026-10-05T17:30:07Z",
+          "summary": "HumanSignal/Label Studio Enterprise issued a receipt confirming NDA/terms acceptance for HumanSignal Services."
+        },
+        {
+          "kind": "ID_VERIFICATION_APPROVED",
+          "source": "GMAIL",
+          "source_id": "1a10d20278fcf5a6",
+          "observed_at": "2026-10-05T17:32:52Z",
+          "summary": "HumanSignal confirmed identity verification successfully approved."
+        },
+        {
+          "kind": "PAYOUT_DETAILS_UPDATED",
+          "source": "GMAIL",
+          "source_id": "1a10d29ac58f634c",
+          "observed_at": "2026-10-05T17:43:16Z",
+          "summary": "HumanSignal confirmed payout details were updated. This proves payout setup progression, not payment."
         }
       ],
       "constraints": [
         "Confirm the device used for assignments meets the specific project image-quality requirement during application/onboarding."
       ],
-      "next_action": "The official Greenhouse form is accessible; waiting for support is no longer the only route. Recover the IT diploma awarding institution and confirm device family, then complete the existing application with the recovered CV/contact/profile facts. No submission or assignment is proven.",
-      "last_action_at": "2026-10-04T04:42:04Z",
+      "next_action": "Resume the existing HumanSignal onboarding at the current dashboard. Complete the provider training and assessment personally where required, then await/accept an eligible project. Provider terms prohibit automated/AI completion of Tasks unless the applicable Task instructions explicitly permit it. No project assignment, completed paid task, receivable or payment is yet evidenced.",
+      "last_action_at": "2026-10-05T17:43:16Z",
       "active_dependencies": {
         "interactive_form_access": {
           "state": "SATISFIED",
@@ -2393,19 +2485,29 @@
           "evidence": "Current cloud browser loaded the official application form; prior generic interactive-surface limitation is superseded."
         },
         "education_institution": {
-          "state": "ACTIVE",
+          "state": "SUPERSEDED_BY_ALTERNATE_ONBOARDING_ROUTE",
           "kind": "EXACT_APPLICANT_FACT",
           "observed_at": "2026-10-04T04:42:04Z",
           "evidence": "Recovered professional CV establishes an Information Technology Diploma but does not name its awarding institution. School is required in the provider form.",
           "next": "Recover the awarding institution from authoritative existing applicant state, or obtain the exact institution from Owner; never invent a school or substitute a degree."
         },
         "cellphone_type": {
-          "state": "ACTIVE",
+          "state": "NO_LONGER_CURRENT_GATE",
           "kind": "EXACT_APPLICANT_FACT",
           "observed_at": "2026-10-04T04:42:04Z",
           "next": "Confirm the actual device family for image collection; provider options include Samsung Galaxy and other families. Screenshot UI alone is not a hardware-quality attestation."
+        },
+        "provider_training_assessment": {
+          "state": "ACTIVE",
+          "kind": "PROVIDER_REQUIRED_HUMAN_EVALUATION",
+          "observed_at": "2026-10-06T16:10:00Z",
+          "evidence": "HumanSignal welcome flow states complete training and pass assessment before starting projects; no authorization exists to automate protected provider tasks.",
+          "next": "Owner completes required training/assessment under provider rules; Matrix continues unrelated routes."
         }
-      }
+      },
+      "execution_readiness": "HUMAN_PROVIDER_GATE",
+      "routing_reason": "ID_AND_PAYOUT_SETUP_COMPLETE_TRAINING_ASSESSMENT_NEXT",
+      "onboarding_status": "ID_VERIFIED_PAYOUT_CONFIGURED_TRAINING_ASSESSMENT_PENDING"
     },
     "automationarchitects.ai|talent-tracker|cape-town-ai-automation": {
       "domain": "automationarchitects.ai",
@@ -2912,6 +3014,6 @@
   ],
   "generated_at": "2026-10-03T22:13:20Z",
   "record_count": 66,
-  "last_reconciled_at": "2026-10-06T12:35:00+02:00",
-  "last_reconciled_reason": "DR-0021 external-action regression: remove false READY classifications from monitor/review/failed-route/capability-gap items; preserve CrowdGen as current executable candidate pending runtime route check."
+  "last_reconciled_at": "2026-10-06T16:10:00Z",
+  "last_reconciled_reason": "Deep Sweep payment/conversion sync: ingest current Face Production buyer/package/offer progression and HumanSignal/Outlier onboarding evidence; remove stale gates without promoting unproven contract/receivable/payment states."
 }
