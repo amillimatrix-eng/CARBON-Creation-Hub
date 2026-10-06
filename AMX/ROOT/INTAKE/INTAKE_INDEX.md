@@ -307,3 +307,22 @@ This index is a routing/readback surface, not a governance decision.
 **Dependency boundary:** the current Render workspace-confirmation requirement blocks only the Render action that requires that confirmation. It does not promote, validate, widen, or close RGR.
 
 **Routing:** this is governance-intake material. It is not an operational work item and grants no execution authority.
+
+
+---
+
+## RGR-02 — [CYAN] ADDENDUM A — DR-0021 Commercial Intelligence State Loss
+
+**Current status:** INDEXED — GOVERNANCE INTAKE ONLY.  
+**Authority effect:** NONE.  
+**Parent:** `AMX/ROOT/INTAKE/RGR_RECTIFICATION_2026-10-05.md`  
+**Addendum:** `AMX/ROOT/INTAKE/RGR_RECTIFICATION_ADDENDUM_A_DR0021_COMMERCIAL_INTELLIGENCE_STATE_LOSS_2026-10-06.md`
+
+**Operative correction:** DR-0021 is the loss of the learned commercial-intelligence state, not a BLACK/receipt/lead-volume/email-volume diagnosis.
+
+**Recovery surface:**  
+`GLOBAL INTELLIGENCE → PROBLEM-INSTANCE REASONING → OFFER GENERATION → EXTERNAL COMMERCIAL ACTION → STATE RETENTION → CONVERSION`
+
+**Scope exclusion:** BLACK is excluded from the causal diagnosis unless later independent evidence proves an actual dependency.
+
+**Decision required:** map the recurrence to the existing owning control, determine whether it satisfies the RGR classification test, identify why prior correction/state failed to bind continuation, define the behavioral retest, and define closure without creating parallel architecture.
