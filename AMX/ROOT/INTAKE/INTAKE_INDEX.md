@@ -348,3 +348,35 @@ This index is a routing/readback surface, not a governance decision.
 `GLOBAL INTELLIGENCE → PROBLEM-INSTANCE REASONING → OFFER GENERATION → EXTERNAL COMMERCIAL ACTION → STATE RETENTION → CONVERSION`
 
 The existence of 30 stored image references alone is not sufficient proof of restored capability.
+
+
+---
+
+# X. P0 DR-0021 FAILURE REMEDIATION
+
+## DR0021-P0-01 — Commercial Intelligence / Execution-State Regression
+
+**Priority:** P0 — IMMEDIATE REMEDIATION.  
+**Current status:** INDEXED — INTAKE EVIDENCE / REMEDIATION SPECIFICATION.  
+**Authority effect:** NONE.  
+**Canon effect:** NONE.  
+**Architecture effect:** NONE — repair existing iSCOPE → PRI worker/state logic only.  
+**Artifact:** `AMX/ROOT/INTAKE/RUN_OUTCOMES/DR0021-FAILURE-REPORT-CORRECTION-MEASURES-20261006-001.md`  
+**Artifact commit:** `90e9bfade9135b5b2a79557cff5bf60a726d745b`
+
+**Failure classes indexed:**
+- learned commercial-intelligence state retention failure;
+- live runner regeneration of false/broad READY semantics after manual reconciliation;
+- materially reduced externally consequential commercial action versus the previously demonstrated learned behavior;
+- newest Field Force configuration not yet behaviorally accepted by scheduler-origin attributable run;
+- Gmail write-path degradation as a separate execution-surface dependency;
+- BLACK kept separate from DR-0021 causal diagnosis absent independent dependency evidence.
+
+**Required repair order:** existing runner READY/executable semantics → regeneration stability → furthest-state recovery → scheduler-origin behavioral run → external consequence/exact route exhaustion → next-run state retention.
+
+**Closure boundary:** configuration, prompt expansion, READY counts, scheduler wake, ROI/KPI output, or a single email do not close DR-0021. Closure requires repeated attributable behavioral continuity across the governed recovery surface.
+
+**Recovery surface:**  
+`GLOBAL INTELLIGENCE → PROBLEM-INSTANCE REASONING → OFFER GENERATION → EXTERNAL COMMERCIAL ACTION → STATE RETENTION → CONVERSION`
+
+**Routing:** P0 governance/intake attention. Do not create a duplicate commercial worker, queue, manager, or architecture.
