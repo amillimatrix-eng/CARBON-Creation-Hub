@@ -1,0 +1,38 @@
+{
+  "job_id": "REAPER-LAYERZERO-STATIC-20261006-0958-001",
+  "opportunity_id": "BOUNTY-REAPER-LAYERZERO-V2",
+  "objective": "Freeze and locally inspect the previously ranked LayerZero-v2 public source at exact commit 9c741e7f9790639537b1710a203bcdfd73b0b9ac. Produce bounded static/local evidence that materially narrows or kills hypotheses around authorization, state/accounting, message/order, external/trust boundaries, and dedupe. Do not touch live systems.",
+  "immutable_source": {
+    "repo": "LayerZero-Labs/LayerZero-v2",
+    "commit": "9c741e7f9790639537b1710a203bcdfd73b0b9ac"
+  },
+  "allowed_methods": [
+    "public repository clone/fetch",
+    "checkout exact commit",
+    "hash/source inventory",
+    "grep/index/static review",
+    "public issues/PR/history dedupe",
+    "run existing local test suite if dependencies are already available and no spend/credentials are required",
+    "bounded local unit/property tests only against checked-out source",
+    "write receipt"
+  ],
+  "prohibited_actions": [
+    "live target probing",
+    "mainnet or public testnet testing",
+    "transaction broadcast",
+    "fund movement",
+    "credential expansion",
+    "external submission",
+    "public disclosure",
+    "spend",
+    "destructive testing"
+  ],
+  "done_definition": [
+    "receipt records exact checked-out commit and source identity",
+    "architecture/trust-boundary map identifies concrete code paths inspected",
+    "at least one bounded hypothesis is advanced/refined/killed with file/function evidence OR exact blocker is recorded",
+    "dedupe/history evidence is recorded for any surviving signal",
+    "no finding promoted beyond evidence"
+  ],
+  "expected_reaper_transition": "Q3 LayerZero -> materially narrowed Q3, Q2 candidate validation, evidence-backed kill/park, or exact QX blocker"
+}
