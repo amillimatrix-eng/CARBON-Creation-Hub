@@ -21,6 +21,31 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 ---
 
+## OWNER DIRECTIVE ADDENDUM A — Full 30-Image Matrix-State Recovery
+
+**Priority:** P0 — HIGHEST EXISTING PRIORITY / FRONT OF QUEUE.  
+**Parent directive:** `AMX/ROOT/INTAKE/OWNER_DIRECTIVE_P0_CLEAR_INTAKE_NOW_20261006.md`  
+**Addendum:** `AMX/ROOT/INTAKE/OWNER_DIRECTIVE_P0_CLEAR_INTAKE_NOW_ADDENDUM_A_MATRIX_STATE_RECOVERY_20261006.md`  
+**Addendum commit:** `4991729a4582c73539cd42d0ffe2d46a173f7a05`
+
+**Owner requirements now attached to intake clearance:**
+- recover and test the exact **10-year-old** and **3-year-old** resolutions as **MET / NOT MET / UNKNOWN**;
+- where NOT MET, identify the precise failure node and route the smallest corrective autonomous measure;
+- where existing owners cannot satisfy the specification, ROOT may create a governed corrective measure/worker after duplication and authority review;
+- recover the full **30-image request state**, not merely the partial screenshot batch present in the current chat;
+- perform the same explicit forensic extraction across **all 30 governed images**, preserving visible times, autonomy lines, completed actions, Owner corrections, state transitions, named targets, external outcomes, and UNKNOWNs;
+- preserve the Owner-designated **weighted neural-network methodology** by recovering evidenced weighting relationships rather than inventing a flat category model;
+- if bounded remediation cannot reproduce the target capability state, ROOT must create a replacement worker and condition it from the authoritative consolidated transcript .md by feeding Owner messages in chronological order, one by one, with durable continuation across technical segmentation;
+- behavioral acceptance remains: `GLOBAL INTELLIGENCE → PROBLEM-INSTANCE REASONING → OFFER GENERATION → EXTERNAL COMMERCIAL ACTION → STATE RETENTION → CONVERSION`.
+
+**Evidence provenance correction:** the first screenshot supplied in the current evidence batch is a current-regression exhibit and is NOT part of the governed 30-image state. The remaining supplied screenshots are Owner-identified members of that governed evidence/state set. The current chat does not contain the full 30; exact set membership must be reconciled from governed records without invention.
+
+**Required disposition:** MERGE / MODIFY / REJECT / ALREADY-SUBSUMED / HOLD.  
+**No authority promotion:** this index entry does not itself commission workers, authorize BUILD changes, or alter Canon.
+
+---
+
+
 # AMX ROOT — AUTHORITATIVE INTAKE INDEX
 
 **Index status:** AUTHORITATIVE INTAKE CATALOG / ROUTING SURFACE  
