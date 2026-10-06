@@ -147,6 +147,49 @@ A winning state is demonstrated when the workers repeatedly show:
 
 ---
 
+## 4B. OUTCOME-SPACE DIVERSITY / BPO
+
+Raw offer count is not a diversity metric.
+
+Ten materially similar "I can build an app for you" offers may show repetition rather than recovered commercial intelligence.
+
+A stronger signal is independent movement across materially different problem/outcome classes, for example:
+
+- rebranding;
+- website/UI/UX correction;
+- brand repositioning;
+- marketing planning;
+- scriptwriting;
+- sales funnels;
+- automation;
+- research/analytics;
+- operational workflow;
+- BPO/business-process outsourcing;
+- debtor/creditor workflow;
+- invoicing/payment-flow support;
+- development;
+- AI/integration;
+- other evidence-supported outcomes.
+
+BPO is an explicitly important discovery surface, but it is not an automatic capability claim. The worker must decompose the outsourced process, required capabilities, measurable outcome, payer, route, service boundary, tool/privacy/security requirements, and delivery evidence.
+
+Diversity should be judged by materially different:
+- customer problems;
+- outcomes;
+- capability combinations;
+- deliverables;
+- payer roles;
+- routes;
+- transaction shapes.
+
+Do not impose a forced category quota. Concentration is acceptable where the evidence supports it. Category lock-in without reasoning is not.
+
+**Controlling refinement:**  
+`AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_ADDENDUM_D_OUTCOME_SPACE_DIVERSITY_AND_BPO_EXPANSION_20261006.md`  
+Commit: `ac560e7328c6c5a103ee07079ced6876ae0ea671`
+
+---
+
 ## 5. REQUIRED WORKER CAPABILITY PROPAGATION
 
 Every material reasoning improvement recovered by FORX must be bound into the relevant existing worker.
@@ -226,6 +269,8 @@ This P0 closes only when FORX-V sees attributable evidence that:
 - diverse global reasoning is back;
 - workers use recovered capability without Owner re-teaching;
 - workers generate materially new opportunity directions from new evidence;
+- workers demonstrate outcome-space diversity rather than repeating one offer template;
+- workers can identify BPO/process-outsourcing opportunities where capability evidence supports delivery;
 - workers demonstrate awareness of current AMX capabilities and valid capability combinations;
 - workers continue hunting after each outcome rather than treating one route/category as market exhaustion;
 - real external action occurs where lawful;
