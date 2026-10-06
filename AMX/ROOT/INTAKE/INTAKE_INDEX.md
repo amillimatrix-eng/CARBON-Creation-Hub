@@ -478,3 +478,34 @@ The existence of 30 stored image references alone is not sufficient proof of res
 **Candidate current-session appointment:** if F-02 is explicitly authorized, the current AMX Root Librarian instance may assume that temporary forensic profile and immediately produce the Capability State Reconstruction Manifest Candidate. No production implementation, external commercial action, or worker creation is authorized by this intake entry.
 
 **Urgency:** P0. The underlying Matrix report remains BROKEN at the commercial-objective continuity layer and RGR-03 remains unimplemented.
+
+
+---
+
+## MATRIX-03 — Durable Cognition / Relationship-Graph Continuity
+
+**Priority:** P0.  
+**Current status:** INDEXED — GOVERNANCE + BLUE STATE RESOLUTION CANDIDATE.  
+**Authority effect:** NONE until disposition.  
+**Artifact:** `AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_GOVERNANCE_BLUE_STATE_CANDIDATE_20261006.md`  
+**Artifact commit:** `408ba972cb99a3d4b17b015693246f805e0e77c4`
+
+**Core finding:** preserving files, ledgers, prompts, scheduler ticks, claims, and receipts does not by itself preserve the learned relationships that produced accepted commercial reasoning. The missing state is the recovered relationship graph behind the behavior, not merely historical prompts or examples.
+
+**Required resolution destination:** GOVERNANCE, BLUE STATE, or BOTH.
+
+**Owner resolution constraint:** this candidate may not be silently discarded or removed from intake while its rectification obligations remain unresolved. Valid outcomes are MERGE, MODIFY THEN MERGE, ALREADY-SUBSUMED with exact control mapping, or HOLD with exact dependency/owner/return condition.
+
+**Primary rectification obligations:**
+- capability-state durability;
+- relationship-graph continuity;
+- Owner-correction retention;
+- weighted attention to later-stage buyer/problem evidence;
+- full 30-image forensic reconstruction;
+- transcript-based sequential reconstruction fallback where bounded remediation fails;
+- generalization acceptance on new evidence rather than memorization;
+- external consequence + state retention + payment truth.
+
+**Recommended disposition:** MERGE / MODIFY → BOTH GOVERNANCE + BLUE STATE.
+
+**No authority promotion:** no Canon or Build change is authorized by this index entry.
