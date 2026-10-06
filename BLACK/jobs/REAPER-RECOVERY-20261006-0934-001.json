@@ -1,0 +1,22 @@
+{
+  "schema": "AMX.BLACK.JOB.v1",
+  "owner": "BOUNTY_REAPER",
+  "opportunity_id": "BR-20261003-024",
+  "purpose": "Recovery execution support: use BLACK for bounded local history/dedupe analysis of the surviving LayerZero failed-native-drop signal instead of repeating narrative revalidation.",
+  "immutable_source": "LayerZero-Labs/LayerZero-v2@9c741e7f9790639537b1710a203bcdfd73b0b9ac",
+  "prohibited": [
+    "No live target probing",
+    "No transaction broadcast",
+    "No exploit execution",
+    "No fund movement",
+    "No external submission",
+    "No credential expansion"
+  ],
+  "done": "Receipt must show source/history evidence for _nativeDrop/nativeDropAndExecute302 semantics, including commits touching the relevant code and current/frozen code context, so Reaper can promote, kill, or narrow the signal.",
+  "timeout": 240,
+  "command": [
+    "bash",
+    "-lc",
+    "set -euo pipefail\ntmp=\"$(mktemp -d)\"\ngit clone -q https://github.com/LayerZero-Labs/LayerZero-v2.git \"$tmp/repo\"\ncd \"$tmp/repo\"\ngit checkout -q 9c741e7f9790639537b1710a203bcdfd73b0b9ac\necho '=== FROZEN COMMIT ==='\ngit rev-parse HEAD\necho '=== SYMBOL LOCATIONS ==='\ngrep -R -n -E '(_nativeDrop|nativeDropAndExecute302)' . --exclude-dir=.git | head -80 || true\necho '=== HISTORY TOUCHING _nativeDrop ==='\ngit log --all --date=iso --pretty=format:'%H %ad %s' -S'_nativeDrop' -- . | head -40 || true\necho\necho '=== HISTORY TOUCHING nativeDropAndExecute302 ==='\ngit log --all --date=iso --pretty=format:'%H %ad %s' -S'nativeDropAndExecute302' -- . | head -40 || true\necho\necho '=== RELEVANT FILE CONTEXT ==='\nfor f in $(grep -R -l -E '(_nativeDrop|nativeDropAndExecute302)' . --exclude-dir=.git | head -12); do\n  echo \"--- $f ---\"\n  grep -n -C 14 -E '(_nativeDrop|nativeDropAndExecute302)' \"$f\" | head -220 || true\ndone"
+  ]
+}
