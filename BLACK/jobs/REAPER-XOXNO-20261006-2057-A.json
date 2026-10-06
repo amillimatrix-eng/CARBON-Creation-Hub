@@ -1,0 +1,27 @@
+{
+  "job_id": "REAPER-XOXNO-20261006-2057-A",
+  "opportunity_id": "REAPER-XOXNO",
+  "target": "XOXNO/rs-lending-xlm",
+  "objective": "Perform bounded local/static review of immutable commit a2486b255b974ef8432ce44de014931f51552f4b. Focus on controller-to-pool account-position synchronization and liquidation/accounting paths. Test whether any controller path can pass a stale or non-returned scaled position into pool mutation, violating documented INV-ACCT-10. Cross-check repository docs/tests/history for known or intentional behavior. Return evidence only; do not claim a vulnerability unless reproducible locally.",
+  "immutable_source_ref": "a2486b255b974ef8432ce44de014931f51552f4b",
+  "allowed_methods": [
+    "clone/freeze public repository",
+    "grep/index/static source review",
+    "local test-suite execution",
+    "bounded local unit/property tests",
+    "git history/diff and public issue/PR dedupe",
+    "evidence hashing"
+  ],
+  "prohibited_actions": [
+    "live target probing",
+    "production/testnet transactions",
+    "broadcast transactions",
+    "fund movement",
+    "credential expansion",
+    "external vulnerability submission",
+    "public disclosure",
+    "spend"
+  ],
+  "done_definition": "Receipt identifies exact source files/functions inspected; either (a) reproducible local invariant deviation with preconditions and test evidence, (b) evidence-backed kill/known-design result, or (c) exact narrowed blocker. Include commands/tests and immutable evidence refs.",
+  "expected_reaper_state_transition": "Q3 hypothesis created/refined/killed, or Q2 promotion only if local evidence plus novelty/impact prerequisites survive."
+}
