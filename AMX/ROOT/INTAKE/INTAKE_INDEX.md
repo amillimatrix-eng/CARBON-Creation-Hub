@@ -326,3 +326,25 @@ This index is a routing/readback surface, not a governance decision.
 **Scope exclusion:** BLACK is excluded from the causal diagnosis unless later independent evidence proves an actual dependency.
 
 **Decision required:** map the recurrence to the existing owning control, determine whether it satisfies the RGR classification test, identify why prior correction/state failed to bind continuation, define the behavioral retest, and define closure without creating parallel architecture.
+
+
+---
+
+## RGR-03 — [CYAN] ADDENDUM B — 30-Image Worker State Explicit Implementation Request
+
+**Current status:** INDEXED — GOVERNANCE / IMPLEMENTATION INTAKE ONLY.  
+**Authority effect:** NONE.  
+**Root parent:** `AMX/ROOT/INTAKE/RGR_RECTIFICATION_2026-10-05.md`  
+**Preceding addendum:** `AMX/ROOT/INTAKE/RGR_RECTIFICATION_ADDENDUM_A_DR0021_COMMERCIAL_INTELLIGENCE_STATE_LOSS_2026-10-06.md`  
+**Addendum:** `AMX/ROOT/INTAKE/RGR_RECTIFICATION_ADDENDUM_B_30_IMAGE_WORKER_STATE_EXPLICIT_IMPLEMENTATION_REQUEST_2026-10-06.md`
+
+**Owner request:** the 30-image state of the workers is to be explicitly represented in the governed implementation path for DR-0021 recovery, rather than remaining implicit or transcript-dependent.
+
+**Exactness boundary:** current intake evidence establishes “30 images” as a material anchor of the prior demonstrated worker state, but does not yet independently establish the authoritative image list, ordering, representation, simultaneity requirement, or whether identical state applies to every worker. Those semantics must be recovered before implementation; they must not be invented.
+
+**Implementation decision required:** recover exact semantics and provenance; identify the existing owner/state mechanism; determine worker applicability and persistence behavior; authorize or reject the implementation; update the Master Build File only if V1 implementation becomes authorized; and require behavioral acceptance against the DR-0021 chain.
+
+**Behavioral acceptance remains:**  
+`GLOBAL INTELLIGENCE → PROBLEM-INSTANCE REASONING → OFFER GENERATION → EXTERNAL COMMERCIAL ACTION → STATE RETENTION → CONVERSION`
+
+The existence of 30 stored image references alone is not sufficient proof of restored capability.
