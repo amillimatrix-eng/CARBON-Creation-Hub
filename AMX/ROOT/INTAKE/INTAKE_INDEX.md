@@ -91,6 +91,22 @@ Commit: `bf3ef7d385edf7567f73e9d9f97924897b280f39`
 
 Internal Matrix information is confidential by default. ROOT is aided, not reported to. T-MED / T-GOV / T-COD are specialist routing destinations, not FORX reporting authorities. Public/presentation systems receive only explicitly cleared or sanitized information. Internal commercial reasoning, income mechanisms, ROI/weighting logic, security mechanics, FORX reasoning mechanics, failure maps and similar operational intelligence are not public-surface material. Accuracy does not create disclosure authority.
 
+**Full consolidated FORX role specification:**  
+`AMX/ROOT/INTAKE/FORX_PERMANENT_LIBRARIAN_ROLE_SPEC_FULL_20261006.md`  
+Commit: `ebb3c8a48b555b981b2a831cd46f14789e2932f7`
+
+This consolidation preserves the Addenda A–J provenance while recording the current permanent role in one operational readback. It also normalizes speech/transcription variants **Fox / Forks → FORX** unless the Owner explicitly creates another entity.
+
+**Addendum K — Global Pursuit / Capability-Tool-Skill Estate:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_K_FORX_GLOBAL_PURSUIT_TOOL_SKILL_ESTATE_20261006.md`  
+Commit: `e2579d43d16a441c61a60fd61aaf963b5daa65b6`  
+State: **OWNER-DIRECTED INTAKE UPGRADE / T-GOV + T-COD DISPOSITION REQUIRED FOR NEW IMPLEMENTATION CONSEQUENCES.**
+
+The commercial-scale rule is preserved internally as:
+`BUSINESSES × PROBLEMS × CAPABILITIES × APPLICATIONS × DECISION-MAKERS × TRANSACTION SIZES`.
+
+The ~450 million businesses figure is retained as an existing **working surface-scale heuristic**, not a verified census. Very large / combinatorial opportunity scale must not be converted into a fabricated verified “billions” count.
+
 ## FORX CURRENT ACTIVE QUEUE
 
 ### P0 — FORX PROTOCOL / COMMERCIAL TRANSFER
@@ -129,7 +145,26 @@ Internal Matrix information is confidential by default. ROOT is aided, not repor
 
 ### P0 — DIRECT CORRECTION / EXECUTION
 
-1. **DR0021-P0-01 — false-READY / regeneration defect**
+1. **FORX-FIX-20261006-003 — Global Pursuit / Commercial Capability-State Recovery**
+   - state: **READY FOR T-COD ROUTING**
+   - destination: **T-COD**
+   - existing execution owners: **iSCOPE / PRI**
+   - BLOCKED_BY: none
+   - UNLOCKS: `FORX-VFY-20261006-003`
+   - purpose: restore the already-governed global commercial reasoning shape rather than merely classifying the current ledger.
+   - preserve: current single-writer control, parked no-response threads, dedupe, payment truth, later-stage buyer state, and scoped auth/security gates.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-FIX-20261006-003_GLOBAL_PURSUIT_CAPABILITY_STATE_RECOVERY.md`
+   - commit: `2dcb0adc11d5a09d3e06ece1cd31339dee0d473b`
+
+2. **FORX-VFY-20261006-003 — Global Pursuit / Capability-State Acceptance**
+   - state: **WAITING FOR IMPLEMENTATION EVIDENCE**
+   - owner: **FORX-V**
+   - BLOCKED_BY: `FORX-FIX-20261006-003`
+   - closure: attributable real-work proof of broad problem-instance reasoning, global discovery continuity, later-stage conversion preservation, restart persistence, no false exhaustion, no duplicate outreach, and unchanged payment truth.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-VFY-20261006-003_GLOBAL_PURSUIT_CAPABILITY_STATE_ACCEPTANCE.md`
+   - commit: `5911133e0a0cc3897b1de4737b1c16b799541700`
+
+3. **DR0021-P0-01 — false-READY / regeneration defect**
    - destination: **T-COD**
    - owner: existing BUILD/runtime owner under Master
    - current evidence: `overdrive/runner.py` still derives `ready_count` and `executable_order` from every `status == "READY"`
@@ -137,7 +172,19 @@ Internal Matrix information is confidential by default. ROOT is aided, not repor
 
 ### P0 — GOVERNANCE DISPOSITION READY
 
-1. **RGR-01 — Recurrence Classification / Authority Rectification**
+1. **FORX-RP-20261006-003 — Commercial Capability / Tool / Skill Estate**
+   - state: **READY FOR T-GOV DISPOSITION**
+   - destination: **T-GOV**
+   - technical cross-reference: **T-COD**
+   - existing commercial owners: **iSCOPE / PRI**
+   - purpose: maintain one governed capability estate so workers know which tool classes are available, substitutable, approved candidates, sensitive-gated, or unavailable.
+   - current exposed tool classes include repository/code, email/calendar/docs, task/project management, browser/web, design/UX/media, data/analytics, deployment/cloud, database/backend, payments, blockchain, AI/model tooling, ads/marketing, scheduling and storage.
+   - discovered candidate basket includes Apollo.io, Clay, Hunter, Lusha, ZoomInfo, HubSpot, Attio, Close, Zoho CRM, Semrush, Ahrefs, Exa, Tavily, Parallel Search, Firecrawl, Scite, Consensus and Granola.
+   - plugin install/connect and non-delegable consent remain platform/user gates; missing one provider must not become global idle when an equivalent lawful route exists.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-003_COMMERCIAL_CAPABILITY_TOOL_SKILL_ESTATE.md`
+   - commit: `1dd1f0995202ecf582dccecbd99da1a3852f4a94`
+
+2. **RGR-01 — Recurrence Classification / Authority Rectification**
    - destination: **T-GOV**
    - recommendation: MODIFY / MERGE or ALREADY-SUBSUMED with exact mapping.
 
