@@ -3,7 +3,8 @@
 
 **Packet type:** FORX RESOLUTION PACKET  
 **Priority:** P0  
-**State:** WAITING  
+**State:** SUPERSEDED / PROVENANCE ONLY  
+**Superseded by:** FORX-RP-20261006-002
 **Source:** MATRIX-02 Addendum H  
 **Primary destination after release:** T-COD  
 **Existing execution owner:** Bounty Reaper  
@@ -44,3 +45,10 @@ FORX-V PASS on FORX-VFY-20261006-001.
 ### Post-transfer acceptance
 
 FORX-V must verify that the upgrade improves contradiction/continuity handling without degrading Reaper's ability to FIND → VERIFY → EXECUTE → PROVE → SUBMIT (when authorized) → RECEIVE → VERIFY PAYMENT.
+
+
+---
+
+## SUPERSESSION READBACK
+
+This packet is preserved for provenance but no longer controls current FORX execution. Current protocol state is governed by the 13-head re-entrant Instigator upgrade and FORX-RP-20261006-002.
