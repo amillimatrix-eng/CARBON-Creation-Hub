@@ -160,6 +160,22 @@ The commercial-scale rule is preserved internally as:
 
 The ~450 million businesses figure is retained as an existing **working surface-scale heuristic**, not a verified census. Very large / combinatorial opportunity scale must not be converted into a fabricated verified “billions” count.
 
+## FORX STANDING MANDATE — CONTINUOUS DEVELOPMENT / AUTONOMOUS INTAKE UPGRADE LOOP
+
+**Owner direction:** accepted as a FORX mandate refinement.  
+**Standing priority:** continuous / non-blocking below active P0 unless an upgrade materially unlocks P0.  
+**Artifact:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_L_CONTINUOUS_DEVELOPMENT_INTAKE_UPGRADE_LOOP_20261006.md`  
+**Commit:** `c6ff313efb0e84e0fd1ef8be6c3d7e98d8f5386a`  
+**Lifecycle:** INDEXED / ACTIVE MANDATE REFINEMENT — NOT CANON / NOT BUILD AUTHORITY.
+
+**Loop:** `OBSERVE → DETECT DELTA → RECOVER PROVENANCE → VERIFY → FIND EXISTING OWNER → DESIGN SMALLEST IMPROVEMENT → DUPLICATION/AUTHORITY CHECK → PACKETIZE → INTAKE → OWNER IMPLEMENTS IF AUTHORIZED → FORX-V VERIFY → PROPAGATE CAPABILITY → CONTINUE`.
+
+**Core boundary:** FORX may autonomously discover, test, package, route, verify and propagate improvements. It may not silently Merge, Canonize, Freeze, seize another owner’s mandate, or bypass required human/security/legal gates.
+
+**Purpose:** reduce repeated Owner intervention by making verified learnings, repairs, optimizations, tool capability, fallback routes and worker improvements durable and recursively available through Intake.
+
+---
+
 ## FORX DEFERRED B-PRIORITY — UNIVERSAL FORENSIC ASSURANCE MARK
 
 **Owner instruction:** capture now; do not displace the active P0 Matrix recovery.  
