@@ -160,6 +160,28 @@ The commercial-scale rule is preserved internally as:
 
 The ~450 million businesses figure is retained as an existing **working surface-scale heuristic**, not a verified census. Very large / combinatorial opportunity scale must not be converted into a fabricated verified “billions” count.
 
+## FORX DEFERRED B-PRIORITY — UNIVERSAL FORENSIC ASSURANCE MARK
+
+**Owner instruction:** capture now; do not displace the active P0 Matrix recovery.  
+**Priority:** **B — DEFERRED / NON-BLOCKING UNLESS IT BECOMES A DEPENDENCY OF HIGHER-PRIORITY WORK**  
+**Artifact:** `AMX/ROOT/INTAKE/FORX_FORENSIC_ASSURANCE_MARK_UNIVERSAL_ARTIFACT_LOOP_20261006.md`  
+**Artifact commit:** `0f37fc89581f04ab6826dcb21845076b7075298d`  
+**Lifecycle:** INDEXED IMPLEMENTATION CANDIDATE — NOT MERGED / NOT CANON / NOT BUILD-AUTHORIZED.  
+**Primary destinations:** T-GOV + BLUE STATE.  
+**Technical enforcement destination if authorized:** T-COD / existing BUILD owner.
+
+**Rule candidate:** every governed Matrix artifact/rule/protocol carries its existing authority/owner identification plus a **FORX forensic assurance mark**. The FORX mark is a version-bound forensic/optimization hook only; it does not grant authority, lifecycle promotion, Canon, Merge, or Build approval.
+
+**Implementation shape:** extend existing Master Index/artifact metadata rather than create a new registry. Historical artifacts gain coverage through metadata overlay without source-history rewrite. New artifacts receive the FORX mark at creation. Raw evidence is not modified; the mark attaches to its provenance/index record.
+
+**Re-entry rule:** any material version change triggers `FORX_CYCLE_STATE = REVERIFY`. `VERIFIED_CURRENT_VERSION` is never transferable automatically to a later version.
+
+**Internal-only boundary:** FORX forensic/security metadata is stripped or sanitized from public/presentation exports unless explicitly cleared.
+
+**Black Box note:** apply this to any valid governed Black Box artifact once its exact existing source/owner is recovered; do not conflate it with the BLACK participant layer and do not invent a new Black Box architecture.
+
+---
+
 ## FORX CURRENT ACTIVE QUEUE
 
 ### P0 — FORX PROTOCOL / COMMERCIAL TRANSFER
