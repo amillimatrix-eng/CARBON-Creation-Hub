@@ -14,7 +14,9 @@
       "smallest_next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
       "state": "HOLD_CAPABILITY_GAP",
       "status": "WAITING",
-      "thread_id": "1a0f2ea400877a18"
+      "thread_id": "1a0f2ea400877a18",
+      "external_action_ready": false,
+      "action_class": "BLOCKED_OR_REPAIR"
     },
     "PRI|agentfactory.verder.com|ai-engineer|cape-town": {
       "attempts": 0,
@@ -138,7 +140,9 @@
       "smallest_next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
       "state": "QUALIFIED",
       "status": "READY",
-      "thread_id": null
+      "thread_id": null,
+      "external_action_ready": true,
+      "action_class": "EXTERNAL_APPLICATION"
     },
     "PRI|dramabox.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
@@ -246,11 +250,13 @@
       "priority": 2,
       "receipt_required": true,
       "required_executor": "iSCOPE PRI Field Force",
-      "routing_reason": "ACTIVE_DEPENDENCY",
+      "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW",
       "smallest_next_action": "Monitor the existing Inkwave Drama Creator Program application for response. If they request samples or next steps, provide only controlled evidence and preserve exact terms. Do not submit a duplicate application.",
       "state": "SUBMITTED",
       "status": "WAITING",
-      "thread_id": "1a0f2de385883f66"
+      "thread_id": "1a0f2de385883f66",
+      "external_action_ready": false,
+      "action_class": "REVIEW"
     },
     "PRI|jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
@@ -294,11 +300,13 @@
       "priority": 2,
       "receipt_required": true,
       "required_executor": "iSCOPE PRI Field Force",
-      "routing_reason": "ACTIVE_DEPENDENCY",
+      "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW",
       "smallest_next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
       "state": "RESPONDED",
       "status": "WAITING",
-      "thread_id": "1a0f1fba9e5a5efb"
+      "thread_id": "1a0f1fba9e5a5efb",
+      "external_action_ready": false,
+      "action_class": "REVIEW"
     },
     "PRI|magicpictures.net|co-production|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
@@ -374,11 +382,13 @@
       "priority": 2,
       "receipt_required": true,
       "required_executor": "iSCOPE PRI Field Force",
-      "routing_reason": "ACTIVE_DEPENDENCY",
+      "routing_reason": "DELIVERY_ROUTE_DEGRADED",
       "smallest_next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
       "state": "DELIVERY_FAILED",
       "status": "WAITING",
-      "thread_id": "1a100231731ae464"
+      "thread_id": "1a100231731ae464",
+      "external_action_ready": false,
+      "action_class": "BLOCKED_OR_REPAIR"
     },
     "PRI|mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
@@ -570,11 +580,13 @@
       "priority": 2,
       "receipt_required": true,
       "required_executor": "iSCOPE PRI Field Force",
-      "routing_reason": "ACTIVE_DEPENDENCY",
+      "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW",
       "smallest_next_action": "Monitor existing Redrama thread; on material response, verify terms/rights/payment and provide controlled sample/package only through an authorized access route.",
       "state": "SUBMITTED",
       "status": "WAITING",
-      "thread_id": "1a0fd2b475e05861"
+      "thread_id": "1a0fd2b475e05861",
+      "external_action_ready": false,
+      "action_class": "REVIEW"
     },
     "PRI|reelshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
@@ -602,11 +614,13 @@
       "priority": 8,
       "receipt_required": true,
       "required_executor": "iSCOPE PRI Field Force",
-      "routing_reason": "ACTIVE_DEPENDENCY",
+      "routing_reason": "PROVIDER_OR_HUMAN_GATE_REMAINS",
       "smallest_next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
       "state": "QUALIFIED",
       "status": "WAITING",
-      "thread_id": null
+      "thread_id": null,
+      "external_action_ready": false,
+      "action_class": "BLOCKED_OR_REPAIR"
     },
     "PRI|seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
@@ -634,11 +648,13 @@
       "priority": 2,
       "receipt_required": true,
       "required_executor": "iSCOPE PRI Field Force",
-      "routing_reason": "ACTIVE_DEPENDENCY",
+      "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW",
       "smallest_next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
       "state": "SUBMITTED",
       "status": "WAITING",
-      "thread_id": "1a0fd28f0a697b2f"
+      "thread_id": "1a0fd28f0a697b2f",
+      "external_action_ready": false,
+      "action_class": "REVIEW"
     },
     "PRI|stage32.com|jojo-luu-ai-proposal|the-dragon-who-could-not-claim-me": {
       "attempts": 0,
@@ -874,7 +890,7 @@
       "closure_source": "opportunities.json",
       "due_at": null,
       "last_seen_at": "2026-10-04T00:39:53.594560+00:00",
-      "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
+      "next_action": "No action; official page says the July–August study is completed and no longer accepting participants.",
       "office": "iSCOPE",
       "opportunity_key": "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg",
       "receipt_required": true,
@@ -1074,11 +1090,13 @@
       "priority": 8,
       "receipt_required": true,
       "required_executor": "iSCOPE PRI Field Force",
-      "routing_reason": "ACTIVE_DEPENDENCY",
+      "routing_reason": "QUALIFICATION_REQUIRED",
       "smallest_next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
       "state": "DISCOVERED",
       "status": "WAITING",
-      "thread_id": null
+      "thread_id": null,
+      "external_action_ready": false,
+      "action_class": "BLOCKED_OR_REPAIR"
     },
     "iSCOPE|welodata.com|ai-trainers-afrikaans|south-africa": {
       "attempts": 0,
@@ -1132,7 +1150,8 @@
   "executable_order": [
     "PRI|crowdgen.com|project-coffee-data-labeling-specialist|south-africa"
   ],
-  "generated_at": "2026-10-06T10:41:16.161953+00:00",
+  "generated_at": "2026-10-06T12:36:00+02:00",
   "ready_count": 1,
-  "version": 1
+  "version": 1,
+  "external_ready_count": 1
 }
