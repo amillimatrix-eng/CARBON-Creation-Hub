@@ -99,6 +99,28 @@ Commit: `0ded5beb90d5aacb9311239da779a6b330ec4810`
 ---
 
 
+## CANON INTEGRITY CORRECTION — DOM8N / FORX SECURITY LAYER SPLIT
+
+**Current Canon controls this conflict.**  
+**DOM8N / GOLD:** Order, authority, security, stability — canonical security authority/principle.  
+**FORX / WHITE:** operational forensic security assurance, confidentiality, remediation, verification and incident continuity.  
+**Reporting:** FORX → MASTER ONLY.  
+**No rename:** FORX remains FORX; DOM8N remains DOM8N.  
+**No lore rewrite:** Golden Trinity responsibilities remain unchanged.  
+**No duplication:** DOM8N owns canonical security meaning/authority; FORX owns operational security assurance outcome.
+
+**Correction artifact:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_O_DOM8N_SECURITY_AUTHORITY_FORX_OPERATIONAL_SECURITY_RECONCILIATION_20261006.md`  
+Commit: `649e78742cfbd086fe421dd3eea4ab235c35150b`
+
+**Consolidated FORX role corrected:**  
+`AMX/ROOT/INTAKE/FORX_PERMANENT_LIBRARIAN_ROLE_SPEC_FULL_20261006.md`  
+Commit: `c8e92a9b79156e7acb7006dc2ccf4154c7533b4a`
+
+This correction preserves provenance: Addendum J remains historical/current operational provenance, while Addendum O supersedes only the overbroad security-ownership interpretation.
+
+---
+
 # FORX ACTIVE MANDATE — INTAKE OPTIMIZATION
 
 **Office:** FORX — Permanent Forensic Librarian  
@@ -138,7 +160,7 @@ The prior three continuity challengers remain intact, shifted later in the seque
 
 **Commercial transfer:** FORX may route the latest 13-head reasoning upgrade to existing income branches where it materially improves commercial reasoning/problem-solving. FORX does not take over commercial execution ownership. Bounty Reaper transfer remains conditional on FORX-V acceptance of the latest 13-head mechanism.
 
-**Security / confidentiality mandate:** **FORX owns the AMiLLiMATRiX security mandate and reports only to MASTER.**  
+**Security / confidentiality mandate:** **DOM8N / GOLD remains the canonical security authority/principle; FORX / WHITE owns operational forensic security assurance, remediation and verification, and reports only to MASTER.**  
 Artifact: `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_J_FORX_SECURITY_CONFIDENTIALITY_AND_MASTER_REPORTING_20261006.md`  
 Commit: `bf3ef7d385edf7567f73e9d9f97924897b280f39`
 
@@ -889,15 +911,20 @@ State: **OWNER ACCEPTED / ACTIVE. Head 1 Instigator may re-enter at material piv
 
 **Addendum J — FORX security / confidentiality / Master-only reporting:**  
 `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_J_FORX_SECURITY_CONFIDENTIALITY_AND_MASTER_REPORTING_20261006.md`  
-Commit: `bf3ef7d385edf7567f73e9d9f97924897b280f39`  
-State: **OWNER DIRECTED / ACTIVE. FORX owns the AMiLLiMATRiX security mandate, reports only to MASTER, aids ROOT, and enforces confidential-by-default internal information handling.**
+Commit: `bf3ef7d385edf7567f73e9d9f97924897b280f39`
+
+**Addendum O — DOM8N canonical security authority / FORX operational security reconciliation:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_O_DOM8N_SECURITY_AUTHORITY_FORX_OPERATIONAL_SECURITY_RECONCILIATION_20261006.md`  
+Commit: `649e78742cfbd086fe421dd3eea4ab235c35150b`  
+State: **OWNER CORRECTION / CURRENT CANON CONTROLS. DOM8N remains GOLD canonical security authority/principle; FORX remains WHITE operational forensic security assurance/remediation/verification. No rename, no reporting change, no DOM8N lore rewrite.**  
+State: **OWNER DIRECTED / ACTIVE AS OPERATIONAL SECURITY CONTROL. Addendum O supersedes any reading that FORX owns canonical security authority. FORX reports only to MASTER, aids ROOT, and enforces confidential-by-default internal information handling within WHITE.**
 
 **Exact structural topology:**  
 `MASTER / WHITE → FORX-V VERIFY+CONSOLIDATE → ROOT / RED → T-MED | T-GOV | T-COD → INTAKE → FORX-W WORK`
 
 **FORX reporting:** **FORX → MASTER ONLY.**  
 **FORX aid relationship:** FORX ↔ ROOT; aid does not create reporting authority.  
-**FORX security ownership:** FORX owns the AMiLLiMATRiX security mandate.  
+**Security layer split:** DOM8N / GOLD = canonical security authority/principle; FORX / WHITE = operational forensic security assurance/remediation/verification.  
 **Confidentiality default:** internal Matrix information is non-public unless explicitly cleared/sanitized.  
 **FORX corrective routing:** FORX-W → INTAKE → appropriate T Librarian → existing owner.  
 **FORX verification loop:** downstream result → FORX-V → MASTER; incomplete/false closure → FORX-V → FORX-W.
