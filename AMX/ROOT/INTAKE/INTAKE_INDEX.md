@@ -58,6 +58,12 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 FORX owns continuous intake hygiene: current status, deduplication, priority, routing, stale-state removal, exact HOLD dependencies, orphan prevention, provenance preservation, and verified closure.
 
+**Active mechanism:** **FORX 9-Headed Reaper Protocol**  
+Artifact: `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_F_FORX_9_HEADED_REAPER_PROTOCOL_20261006.md`  
+Commit: `0f43635bb12f44f26528656682a246ac24a3c8b3`
+
+The protocol drives FORX toward **efficiency, ROI/value, specification, verification, optimization and weighted continuation**. Packets are stable-ID and dependency-tracked. A prerequisite fix inherits the effective priority of any dependent fix it unlocks until the prerequisite is verified complete.
+
 ## FORX CURRENT ACTIVE QUEUE
 
 ### P0 — DIRECT CORRECTION / EXECUTION
@@ -139,6 +145,16 @@ A queue item leaves the active view only when:
 - explicitly dispositioned;
 - validly moved to scoped HOLD with owner + dependency + return condition; or
 - verified closed by FORX-V.
+
+### Dependency-aware ordering
+
+FORX-W assigns stable packet IDs and records `BLOCKED_BY` / `UNLOCKS` relationships for material fixes.
+
+If Fix B depends on Fix A, **Fix A inherits at least Fix B's effective priority** until A is verified complete. Dependent fixes remain WAITING rather than being allowed to deploy out of order.
+
+Independent fixes may proceed in parallel.
+
+Weighted continuation is a prioritization aid only; authority, safety, legal/rights, single-writer constraints, explicit Owner priority and other governing hard gates override numeric weighting.
 
 ---
 
