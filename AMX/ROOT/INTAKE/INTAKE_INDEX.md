@@ -77,6 +77,12 @@ Commit: `ac560e7328c6c5a103ee07079ced6876ae0ea671`
 
 **Core correction:** FORX recovery is incomplete until material learned capability is propagated into the relevant worker's durable state and demonstrated on attributable work without Owner re-teaching.
 
+**Provider-gate route-around update:** Attio currently presents a company-email gate; Lusha presents a work-email gate; ZoomInfo presents a Google Workspace gate. These are scoped provider dependencies, not global commercial blockers. Current verified substitutes: **Clay** for public prospect/company/contact intelligence, **Tavily** for live search/extract/crawl/research, and **Close** for CRM/pipeline/task continuity. Do not fabricate company identity or keep retrying unchanged auth loops; route around and continue.
+
+**Evidence / capability-estate addendum:**  
+`AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-003_ADDENDUM_C_COMPANY_EMAIL_PROVIDER_GATES_AND_ACTIVE_ROUTE_AROUND.md`  
+Commit: `4923f4b49d2ddb16f40a278350d9fed12d195b29`
+
 **Current plugin estate update:** Semrush = installed. Apollo.io / Hunter / Firecrawl / HubSpot = not installed at this check. Installed does not itself prove task execution.
 
 **Acceptance remains behavioral:** minimum viable cognitive restoration, outcome-space diversity, problem-instance decomposition, capability combinations, payer/offer mapping, BPO/process-outsource recognition where capability evidence supports it, new opportunity generation, external action where authorized, payment-aware progression, durable weighted continuation, next-run recovery, and Bounty Reaper material progression beyond queued work.
