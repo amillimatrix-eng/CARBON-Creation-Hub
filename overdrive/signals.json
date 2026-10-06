@@ -13,90 +13,6 @@
       "thread_id": null
     },
     {
-      "due_at": "2026-10-04T09:00:00Z",
-      "due_now": true,
-      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
-      "opportunity_key": "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a100231731ae464 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "DELIVERY_FAILED",
-      "status": "READY",
-      "thread_id": "1a100231731ae464"
-    },
-    {
-      "due_at": "2026-10-04T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
-      "opportunity_key": "staff-remotely.com|remote-ai-qa-prompt-python|south-africa",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fd28f0a697b2f for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a0fd28f0a697b2f"
-    },
-    {
-      "due_at": "2026-10-04T15:12:00Z",
-      "due_now": true,
-      "next_action": "Monitor existing Redrama thread; on material response, verify terms/rights/payment and provide controlled sample/package only through an authorized access route.",
-      "opportunity_key": "redrama.ai|adaptation-distribution|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fd2b475e05861 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a0fd2b475e05861"
-    },
-    {
-      "due_at": "2026-10-04T15:15:00Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
-      "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0f1fba9e5a5efb for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "RESPONDED",
-      "status": "READY",
-      "thread_id": "1a0f1fba9e5a5efb"
-    },
-    {
-      "due_at": "2026-10-04T15:20:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing Inkwave Drama Creator Program application for response. If they request samples or next steps, provide only controlled evidence and preserve exact terms. Do not submit a duplicate application.",
-      "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0f2de385883f66 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a0f2de385883f66"
-    },
-    {
-      "due_at": null,
-      "due_now": false,
-      "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
-      "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": null,
-      "smallest_next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
-      "state": "DELIVERY_FAILED",
-      "status": "READY",
-      "thread_id": "1a0f2ea400877a18"
-    },
-    {
-      "due_at": null,
-      "due_now": false,
-      "next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
-      "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
-      "priority": 8,
-      "routing_reason": null,
-      "smallest_next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
-      "state": "QUALIFIED",
-      "status": "READY",
-      "thread_id": null
-    },
-    {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
       "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
@@ -179,6 +95,66 @@
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": "1a0fedc93e232877"
+    },
+    {
+      "due_at": "2026-10-04T09:00:00Z",
+      "due_now": true,
+      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
+      "opportunity_key": "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
+      "state": "DELIVERY_FAILED",
+      "status": "WAITING",
+      "thread_id": "1a100231731ae464"
+    },
+    {
+      "due_at": "2026-10-04T15:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
+      "opportunity_key": "staff-remotely.com|remote-ai-qa-prompt-python|south-africa",
+      "priority": 2,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a0fd28f0a697b2f"
+    },
+    {
+      "due_at": "2026-10-04T15:12:00Z",
+      "due_now": true,
+      "next_action": "Monitor existing Redrama thread; on material response, verify terms/rights/payment and provide controlled sample/package only through an authorized access route.",
+      "opportunity_key": "redrama.ai|adaptation-distribution|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Monitor existing Redrama thread; on material response, verify terms/rights/payment and provide controlled sample/package only through an authorized access route.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a0fd2b475e05861"
+    },
+    {
+      "due_at": "2026-10-04T15:15:00Z",
+      "due_now": true,
+      "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
+      "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
+      "state": "RESPONDED",
+      "status": "WAITING",
+      "thread_id": "1a0f1fba9e5a5efb"
+    },
+    {
+      "due_at": "2026-10-04T15:20:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing Inkwave Drama Creator Program application for response. If they request samples or next steps, provide only controlled evidence and preserve exact terms. Do not submit a duplicate application.",
+      "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Monitor the existing Inkwave Drama Creator Program application for response. If they request samples or next steps, provide only controlled evidence and preserve exact terms. Do not submit a duplicate application.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a0f2de385883f66"
     },
     {
       "due_at": "2026-10-06T23:04:25Z",
@@ -435,6 +411,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
+      "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "HOLD_CAPABILITY_GAP",
+      "smallest_next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
+      "state": "HOLD_CAPABILITY_GAP",
+      "status": "WAITING",
+      "thread_id": "1a0f2ea400877a18"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "The official Greenhouse form is accessible; waiting for support is no longer the only route. Recover the IT diploma awarding institution and confirm device family, then complete the existing application with the recovered CV/contact/profile facts. No submission or assignment is proven.",
       "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
       "priority": 8,
@@ -464,6 +452,18 @@
       "priority": 8,
       "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
       "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
+      "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
+      "priority": 8,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -505,20 +505,8 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-06T06:39:46.407798+00:00",
+  "generated_at": "2026-10-06T10:41:16.160437+00:00",
   "iSCOPE": [
-    {
-      "due_at": null,
-      "due_now": false,
-      "next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
-      "opportunity_key": "welodata.com|ai-service-general-application|south-africa",
-      "priority": 8,
-      "routing_reason": null,
-      "smallest_next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
-      "state": "DISCOVERED",
-      "status": "READY",
-      "thread_id": null
-    },
     {
       "due_at": "2026-10-04T09:00:00Z",
       "due_now": true,
@@ -690,6 +678,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
+      "opportunity_key": "welodata.com|ai-service-general-application|south-africa",
+      "priority": 8,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
+      "state": "DISCOVERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "Do not consume PRI time unless language fit is explicitly established and a paid project is offered.",
       "opportunity_key": "welodata.com|ai-trainers-afrikaans|south-africa",
       "priority": 8,
@@ -728,13 +728,13 @@
     "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
       "due_at": null,
       "due_now": false,
-      "next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
+      "next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
       "opportunity_key": "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me",
       "priority": 8,
-      "routing_reason": null,
-      "smallest_next_action": "Locate and verify an official alternate commercial endpoint; do not guess or resend to the failed address.",
-      "state": "DELIVERY_FAILED",
-      "status": "READY",
+      "routing_reason": "HOLD_CAPABILITY_GAP",
+      "smallest_next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
+      "state": "HOLD_CAPABILITY_GAP",
+      "status": "WAITING",
       "thread_id": "1a0f2ea400877a18"
     },
     "agentfactory.verder.com|ai-engineer|cape-town": {
@@ -1007,10 +1007,10 @@
       "next_action": "Monitor the existing Inkwave Drama Creator Program application for response. If they request samples or next steps, provide only controlled evidence and preserve exact terms. Do not submit a duplicate application.",
       "opportunity_key": "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me",
       "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0f2de385883f66 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Monitor the existing Inkwave Drama Creator Program application for response. If they request samples or next steps, provide only controlled evidence and preserve exact terms. Do not submit a duplicate application.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0f2de385883f66"
     },
     "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me": {
@@ -1043,10 +1043,10 @@
       "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
       "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
       "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0f1fba9e5a5efb for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
       "state": "RESPONDED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0f1fba9e5a5efb"
     },
     "magicpictures.net|co-production|the-dragon-who-could-not-claim-me": {
@@ -1115,10 +1115,10 @@
       "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
       "opportunity_key": "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me",
       "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a100231731ae464 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
       "state": "DELIVERY_FAILED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a100231731ae464"
     },
     "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me": {
@@ -1295,10 +1295,10 @@
       "next_action": "Monitor existing Redrama thread; on material response, verify terms/rights/payment and provide controlled sample/package only through an authorized access route.",
       "opportunity_key": "redrama.ai|adaptation-distribution|the-dragon-who-could-not-claim-me",
       "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fd2b475e05861 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Monitor existing Redrama thread; on material response, verify terms/rights/payment and provide controlled sample/package only through an authorized access route.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0fd2b475e05861"
     },
     "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
@@ -1331,10 +1331,10 @@
       "next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
       "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
       "priority": 8,
-      "routing_reason": null,
+      "routing_reason": "ACTIVE_DEPENDENCY",
       "smallest_next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
       "state": "QUALIFIED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": null
     },
     "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me": {
@@ -1355,10 +1355,10 @@
       "next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
       "opportunity_key": "staff-remotely.com|remote-ai-qa-prompt-python|south-africa",
       "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fd28f0a697b2f for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0fd28f0a697b2f"
     },
     "stage32.com|jojo-luu-ai-proposal|the-dragon-who-could-not-claim-me": {
@@ -1451,10 +1451,10 @@
       "next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
       "opportunity_key": "welodata.com|ai-service-general-application|south-africa",
       "priority": 8,
-      "routing_reason": null,
+      "routing_reason": "ACTIVE_DEPENDENCY",
       "smallest_next_action": "Inspect the application for a current paid South Africa project/rate before qualification; generic pool presence is not handoff-ready.",
       "state": "DISCOVERED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": null
     },
     "welodata.com|ai-trainers-afrikaans|south-africa": {
