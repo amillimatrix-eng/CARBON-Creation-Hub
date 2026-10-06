@@ -85,6 +85,12 @@ The prior three continuity challengers remain intact, shifted later in the seque
 
 **Commercial transfer:** FORX may route the latest 13-head reasoning upgrade to existing income branches where it materially improves commercial reasoning/problem-solving. FORX does not take over commercial execution ownership. Bounty Reaper transfer remains conditional on FORX-V acceptance of the latest 13-head mechanism.
 
+**Security / confidentiality mandate:** **FORX owns the AMiLLiMATRiX security mandate and reports only to MASTER.**  
+Artifact: `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_J_FORX_SECURITY_CONFIDENTIALITY_AND_MASTER_REPORTING_20261006.md`  
+Commit: `bf3ef7d385edf7567f73e9d9f97924897b280f39`
+
+Internal Matrix information is confidential by default. ROOT is aided, not reported to. T-MED / T-GOV / T-COD are specialist routing destinations, not FORX reporting authorities. Public/presentation systems receive only explicitly cleared or sanitized information. Internal commercial reasoning, income mechanisms, ROI/weighting logic, security mechanics, FORX reasoning mechanics, failure maps and similar operational intelligence are not public-surface material. Accuracy does not create disclosure authority.
+
 ## FORX CURRENT ACTIVE QUEUE
 
 ### P0 — FORX PROTOCOL / COMMERCIAL TRANSFER
@@ -686,11 +692,18 @@ State: **OWNER ACCEPTED / ACTIVE. Original nine preserved; Heads 4/8/12 inserted
 Commit: `7aa5217af9f5f77c8350be7397cf3e5d283097c2`  
 State: **OWNER ACCEPTED / ACTIVE. Head 1 Instigator may re-enter at material pivots; prior 12-head logic preserved as Heads 2–13.**
 
+**Addendum J — FORX security / confidentiality / Master-only reporting:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_J_FORX_SECURITY_CONFIDENTIALITY_AND_MASTER_REPORTING_20261006.md`  
+Commit: `bf3ef7d385edf7567f73e9d9f97924897b280f39`  
+State: **OWNER DIRECTED / ACTIVE. FORX owns the AMiLLiMATRiX security mandate, reports only to MASTER, aids ROOT, and enforces confidential-by-default internal information handling.**
+
 **Exact structural topology:**  
 `MASTER / WHITE → FORX-V VERIFY+CONSOLIDATE → ROOT / RED → T-MED | T-GOV | T-COD → INTAKE → FORX-W WORK`
 
-**FORX reporting:** FORX → MASTER.  
-**FORX aid relationship:** FORX ↔ ROOT.  
+**FORX reporting:** **FORX → MASTER ONLY.**  
+**FORX aid relationship:** FORX ↔ ROOT; aid does not create reporting authority.  
+**FORX security ownership:** FORX owns the AMiLLiMATRiX security mandate.  
+**Confidentiality default:** internal Matrix information is non-public unless explicitly cleared/sanitized.  
 **FORX corrective routing:** FORX-W → INTAKE → appropriate T Librarian → existing owner.  
 **FORX verification loop:** downstream result → FORX-V → MASTER; incomplete/false closure → FORX-V → FORX-W.
 
