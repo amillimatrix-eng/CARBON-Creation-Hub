@@ -64,6 +64,12 @@ Commit: `0f43635bb12f44f26528656682a246ac24a3c8b3`
 
 The protocol drives FORX toward **efficiency, ROI/value, specification, verification, optimization and weighted continuation**. Packets are stable-ID and dependency-tracked. A prerequisite fix inherits the effective priority of any dependent fix it unlocks until the prerequisite is verified complete.
 
+**Fallback refinement:** **FORX Outcome-Equivalent Fallback / Master Escalation Rule**  
+Artifact: `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_G_FORX_OUTCOME_EQUIVALENT_FALLBACK_AND_MASTER_ESCALATION_20261006.md`  
+Commit: `5366d412b9f1f53db592231df665625f2b8043d4`
+
+FORX now uses the autonomous ladder **Option A → Option B → Option C → MASTER → human only if irreducible**. Route fidelity is flexible; outcome fidelity is not. A slower or longer workaround may close the failure only when FORX-V verifies materially equivalent outcome. A materially degraded substitute must escalate to MASTER rather than be misrepresented as closure.
+
 ## FORX CURRENT ACTIVE QUEUE
 
 ### P0 — DIRECT CORRECTION / EXECUTION
@@ -155,6 +161,18 @@ If Fix B depends on Fix A, **Fix A inherits at least Fix B's effective priority*
 Independent fixes may proceed in parallel.
 
 Weighted continuation is a prioritization aid only; authority, safety, legal/rights, single-writer constraints, explicit Owner priority and other governing hard gates override numeric weighting.
+
+### Dependency failure fallback
+
+If the preferred fix cannot deploy because a dependency cannot be met, FORX must attempt an outcome-equivalent alternate before human gating:
+
+1. **Option A** — primary fix;
+2. **Option B** — materially equivalent alternate route;
+3. **Option C** — materially equivalent longer / less efficient workaround;
+4. **MASTER escalation** — if only a materially degraded result remains;
+5. **Human gate** — only for an irreducible human-only dependency or after lawful autonomous routes are exhausted.
+
+A dependency failure is treated as a routing/solution problem first. Existing AMX metrics govern materiality and visibility; FORX does not create a replacement KPI layer.
 
 ---
 
