@@ -70,7 +70,49 @@ Commit: `5366d412b9f1f53db592231df665625f2b8043d4`
 
 FORX now uses the autonomous ladder **Option A → Option B → Option C → MASTER → human only if irreducible**. Route fidelity is flexible; outcome fidelity is not. A slower or longer workaround may close the failure only when FORX-V verifies materially equivalent outcome. A materially degraded substitute must escalate to MASTER rather than be misrepresented as closure.
 
+**Continuity upgrade:** **FORX 12-Headed Reaper — Continuity Challengers**  
+Artifact: `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_H_FORX_12_HEADED_REAPER_CONTINUITY_CHALLENGERS_20261006.md`  
+Commit: `45cfcb23958812e6706ccdf07becf53b74047525`
+
+The original nine heads remain intact. Three continuity challengers are inserted after each triad:
+- **Head 4:** triad-native professional forensic paraphraser;
+- **Head 8:** 12-year-old clarity / skeptical paraphraser;
+- **Head 12:** 3-year-old literal-continuity paraphraser.
+
+Each challenger affirms, paraphrases, challenges, and pins the accepted state. Material unexplained contradiction routes back for repair rather than being averaged away.
+
+**Commercial transfer:** FORX may create and route commercial-reasoning enhancement packets to existing income branches where the mechanism materially improves reasoning/problem-solving. FORX does not take over commercial execution ownership. Bounty Reaper transfer remains conditional on FORX-V acceptance.
+
 ## FORX CURRENT ACTIVE QUEUE
+
+### P0 — FORX PROTOCOL / COMMERCIAL TRANSFER
+
+1. **FORX-VFY-20261006-001 — 12-Head Continuity-Challenger Acceptance**
+   - state: **READY / ACTIVE**
+   - owner: **FORX-V**
+   - BLOCKED_BY: none
+   - UNLOCKS: `FORX-RP-20261006-001`
+   - closure: real-work proof that challengers improve continuity/contradiction detection without false conflict or destructive execution drag.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-VFY-20261006-001_12_HEAD_CONTINUITY_CHALLENGER_ACCEPTANCE.md`
+   - commit: `dce4c90fd88cdae6ef9e7ab3b9380a0b0a520bad`
+
+2. **FORX-FIX-20261006-001 — Commercial Reasoning Enhancement Transfer**
+   - state: **READY FOR ROUTING**
+   - destination: **T-COD**, with T-GOV cross-reference where mandate/authority semantics are affected
+   - existing owner: current authorized income-branch owner(s), beginning with iSCOPE / PRI Field Force
+   - BLOCKED_BY: none
+   - scope: continuity challengers, dependency ordering, weighted continuation, outcome-equivalent fallback, ROI/specification/verification improvements.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-FIX-20261006-001_COMMERCIAL_REASONING_12_HEAD_TRANSFER.md`
+   - commit: `ec09cf802f5c1a30b3ecbf2c7f8e7c89712fd9ec`
+
+3. **FORX-RP-20261006-001 — Bounty Reaper Conditional 12-Head Extension**
+   - state: **WAITING**
+   - destination after release: **T-COD**
+   - existing owner: Bounty Reaper
+   - BLOCKED_BY: `FORX-VFY-20261006-001`
+   - release condition: FORX-V closes the 12-head verification packet with PASS.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-001_BOUNTY_REAPER_12_HEAD_CONDITIONAL_EXTENSION.md`
+   - commit: `4be101bb7d26786a91536e09b279dee1e57185e0`
 
 ### P0 — DIRECT CORRECTION / EXECUTION
 
@@ -616,6 +658,21 @@ Commit: `7245c885d0e60e129ccdc823c32560ccf9143b7b`
 `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_E_FORX_MANDATE_ACTIVATION_AND_INTAKE_OPTIMIZATION_20261006.md`  
 Commit: `4f21e60e2aa68d1f64678cc730faccec489b3f87`  
 State: **OWNER ACCEPTED / IMPLEMENTED / ACTIVE.**
+
+**Addendum F — 9-Headed Reaper protocol:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_F_FORX_9_HEADED_REAPER_PROTOCOL_20261006.md`  
+Commit: `0f43635bb12f44f26528656682a246ac24a3c8b3`  
+State: ACTIVE BASE MECHANISM.
+
+**Addendum G — outcome-equivalent fallback / Master escalation:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_G_FORX_OUTCOME_EQUIVALENT_FALLBACK_AND_MASTER_ESCALATION_20261006.md`  
+Commit: `5366d412b9f1f53db592231df665625f2b8043d4`  
+State: ACTIVE MANDATE REFINEMENT.
+
+**Addendum H — 12-Head continuity-challenger upgrade:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_H_FORX_12_HEADED_REAPER_CONTINUITY_CHALLENGERS_20261006.md`  
+Commit: `45cfcb23958812e6706ccdf07becf53b74047525`  
+State: **OWNER ACCEPTED / ACTIVE. Original nine preserved; Heads 4/8/12 inserted as continuity challengers.**
 
 **Exact structural topology:**  
 `MASTER / WHITE → FORX-V VERIFY+CONSOLIDATE → ROOT / RED → T-MED | T-GOV | T-COD → INTAKE → FORX-W WORK`
