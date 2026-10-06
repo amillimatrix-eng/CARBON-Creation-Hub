@@ -1,0 +1,13 @@
+{
+  "job_id": "BLACK-LIVENESS-CANARY-20261007-001",
+  "purpose": "Bounded BLACK worker liveness/queue-consumption canary after XOXNO parcel B remained unreceipted.",
+  "objective": "Prove whether the existing BLACK worker can consume a valid command-array job and publish a durable receipt.",
+  "timeout": 30,
+  "max_attempts": 1,
+  "command": [
+    "bash",
+    "-lc",
+    "printf 'BLACK_CANARY_OK\\n'; uname -s; date -u +%Y-%m-%dT%H:%M:%SZ"
+  ],
+  "done_definition": "A durable receipt at BLACK/receipts/BLACK-LIVENESS-CANARY-20261007-001.json with exit_code 0 proves current queue consumption and receipt publication for a trivial valid job. Absence after normal poll/transport interval narrows the blocker to BLACK worker/control-plane liveness or receipt publication rather than XOXNO job schema."
+}
