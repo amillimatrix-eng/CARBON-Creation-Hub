@@ -83,6 +83,14 @@ Commit: `ac560e7328c6c5a103ee07079ced6876ae0ea671`
 `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-003_ADDENDUM_C_COMPANY_EMAIL_PROVIDER_GATES_AND_ACTIVE_ROUTE_AROUND.md`  
 Commit: `4923f4b49d2ddb16f40a278350d9fed12d195b29`
 
+**Capability sovereignty / internalization mandate:** useful external tools are now also benchmark/specification sources for lawful AMX-owned capability development. FORX should autonomously decompose repeated high-value tool capabilities, classify what can be internalized, route the smallest outcome-equivalent implementation through Intake to the existing builder, and have FORX-V benchmark/verify it before worker propagation. Prefer owning repeatable reasoning/orchestration/state/workflow while retaining external providers for genuinely unique licensed data/network effects.
+
+**Internalization artifact:**  
+`AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-003_ADDENDUM_D_CAPABILITY_SOVEREIGNTY_INTERNALIZATION_LOOP.md`  
+Commit: `7d293dd82b1b7eed4173efb052b87d5b36384825`
+
+**Initial candidates:** Close-like CRM continuity → extend existing AMX opportunity state; Tavily-like search/extract/crawl/map orchestration → AMX web-intelligence skill; Clay-like public company/contact/decision-maker graph → AMX prospect-intelligence skill; normalize internal/external provider adapters so workers can switch routes without semantic reset.
+
 **Current plugin estate update:** Semrush = installed. Apollo.io / Hunter / Firecrawl / HubSpot = not installed at this check. Installed does not itself prove task execution.
 
 **Acceptance remains behavioral:** minimum viable cognitive restoration, outcome-space diversity, problem-instance decomposition, capability combinations, payer/offer mapping, BPO/process-outsource recognition where capability evidence supports it, new opportunity generation, external action where authorized, payment-aware progression, durable weighted continuation, next-run recovery, and Bounty Reaper material progression beyond queued work.
