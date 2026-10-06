@@ -61,6 +61,18 @@
       "thread_id": "1a0f2eadceb4a96f"
     },
     {
+      "due_at": "2026-10-06T22:13:15Z",
+      "due_now": true,
+      "next_action": "Wait for Cherry One response until the next due interval. On material response, answer in the current thread and provide only the minimum rights/technical/sample package requested; no duplicate follow-up before due.",
+      "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0fc58012594488 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a0fc58012594488"
+    },
+    {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
       "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
@@ -227,18 +239,6 @@
       "state": "RESPONDED",
       "status": "WAITING",
       "thread_id": "1a0fedc9bdd30527"
-    },
-    {
-      "due_at": "2026-10-06T22:13:15Z",
-      "due_now": false,
-      "next_action": "Wait for Cherry One response until the next due interval. On material response, answer in the current thread and provide only the minimum rights/technical/sample package requested; no duplicate follow-up before due.",
-      "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Wait for Cherry One response until the next due interval. On material response, answer in the current thread and provide only the minimum rights/technical/sample package requested; no duplicate follow-up before due.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0fc58012594488"
     },
     {
       "due_at": "2026-10-06T23:04:27Z",
@@ -529,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-06T19:07:48.538043+00:00",
+  "generated_at": "2026-10-06T23:00:12.244544+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -823,14 +823,14 @@
     },
     "cherryone.ai|content-partner-distribution|carbon-degree-of-business": {
       "due_at": "2026-10-06T22:13:15Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Wait for Cherry One response until the next due interval. On material response, answer in the current thread and provide only the minimum rights/technical/sample package requested; no duplicate follow-up before due.",
       "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Wait for Cherry One response until the next due interval. On material response, answer in the current thread and provide only the minimum rights/technical/sample package requested; no duplicate follow-up before due.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0fc58012594488 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0fc58012594488"
     },
     "crowdgen.com|project-coffee-data-labeling-specialist|south-africa": {
