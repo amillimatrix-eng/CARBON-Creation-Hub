@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "ISCOPE-STAGE2-PROBLEM-FREQUENCY-20261007T065128Z",
+  "created_at": "2026-10-07T06:51:28Z",
+  "proof_pack_stage": "STAGE_2_ISCOPE_CLUSTERING",
+  "execution_owner": "iSCOPE",
+  "source_tranche": {
+    "forx_receipt_id": "FORX-STAGE1-PASS-20261007T063902Z",
+    "receipt_path": "overdrive/forx_stage1_proof/2026-10-07T063902Z/STAGE-1-RECEIPT.json",
+    "receipt_commit": "70d4b004c87390210391457487554e4023f312a5",
+    "receipt_blob_sha": "f6a82db59930cbfa9226209c2cfbf0761bbd8177",
+    "handoff_path": "overdrive/iscope/receipts/ISCOPE-FORX-GATE1-PASS-20261007T064637Z.json",
+    "handoff_commit": "89019edbcf17e0afb74f0e751e918c91ce73985f",
+    "verified_nodes": 1200,
+    "countries": 48,
+    "categories": 50,
+    "partitions": 12
+  },
+  "inspection_method": {
+    "sample_basis": "Full verified Stage-1 tranche; field-level inspection of all 1,200 persisted/read-back nodes.",
+    "exact_sample_size": 1200,
+    "limitation": "The tranche contains places/entities, not 1,200 independently verified operating businesses. Website/domain/locality fields were inspected exactly; no industry-label inference was used.",
+    "fields_inspected": [
+      "source_record_id",
+      "name",
+      "country",
+      "category",
+      "latitude",
+      "longitude",
+      "locality",
+      "website",
+      "domain",
+      "source_page",
+      "source provenance"
+    ],
+    "unsupported_cases_rule": "Lifecycle status, ownership, buyer identity and current commercial intent remain UNKNOWN unless separately verified from a current authoritative source."
+  },
+  "representative_nodes": [
+    {
+      "id": "wikidata:Q134392411",
+      "name": "Disneyland Abu Dhabi",
+      "country": "AE",
+      "category": "amusement-park",
+      "partition": 1
+    },
+    {
+      "id": "wikidata:Q7809116",
+      "name": "Tirana Mosaic",
+      "country": "AL",
+      "category": "archaeological-site",
+      "partition": 1
+    },
+    {
+      "id": "wikidata:Q15226095",
+      "name": "Hovik Hayrapetyan Equestrian Centre",
+      "country": "AM",
+      "category": "attraction",
+      "partition": 1
+    },
+    {
+      "id": "wikidata:Q4681684",
+      "name": "Skycity Adelaide",
+      "country": "AU",
+      "category": "building",
+      "partition": 2
+    },
+    {
+      "id": "wikidata:Q4403409",
+      "name": "Sabayil Castle",
+      "country": "AZ",
+      "category": "castle",
+      "partition": 2
+    },
+    {
+      "id": "wikidata:Q3350264",
+      "name": "Patenga",
+      "country": "BD",
+      "category": "beach",
+      "partition": 2
+    },
+    {
+      "id": "wikidata:Q2111729",
+      "name": "Damme Canal",
+      "country": "BE",
+      "category": "canal",
+      "partition": 3
+    },
+    {
+      "id": "wikidata:Q2877666",
+      "name": "Bab Al Bahrain",
+      "country": "BH",
+      "category": "fortification",
+      "partition": 3
+    },
+    {
+      "id": "wikidata:Q18483070",
+      "name": "Cemitério da Saudade",
+      "country": "BR",
+      "category": "cemetery",
+      "partition": 3
+    },
+    {
+      "id": "wikidata:Q2943289",
+      "name": "Saint-Leonard Cavern",
+      "country": "CA",
+      "category": "cave",
+      "partition": 4
+    },
+    {
+      "id": "wikidata:Q5728066",
+      "name": "National Library José Martí",
+      "country": "CU",
+      "category": "library",
+      "partition": 5
+    },
+    {
+      "id": "wikidata:Q12027942",
+      "name": "Kandie",
+      "country": "CZ",
+      "category": "locality",
+      "partition": 6
+    }
+  ],
+  "clusters": [
+    {
+      "cluster_id": "ISCOPE-CLUSTER-POI-REACHABILITY-001",
+      "sampled_businesses_inspected": 1200,
+      "exact_sample_size": 1200,
+      "repeated_observable_problem": "Every inspected node lacks a first-party website and normalized domain, so the tranche cannot directly resolve an official digital presence or buyer/contact route.",
+      "number_matching_businesses_or_entities": 1200,
+      "match_rate": 1,
+      "confidence_evidence_strength": "HIGH — exact null-field count across all 12 persisted partitions; Stage-1 receipt independently reports website_domain_bearing_count=0.",
+      "representative_node_ids": [
+        "wikidata:Q134392411",
+        "wikidata:Q4681684",
+        "wikidata:Q2877666",
+        "wikidata:Q2943289",
+        "wikidata:Q5728066"
+      ],
+      "geographic_category_spread": "48 countries / 50 categories in the full tranche.",
+      "amx_solution_capability_match": "AMX research, entity resolution, structured comparison, validation/provenance and evidence hashing can produce a verified official-domain/contact enrichment layer.",
+      "smallest_bounded_deliverable": "Verified enrichment pilot for 100 tranche nodes: official website/domain, entity status, official contact route where public, source URL, observed_at, confidence and exception reason.",
+      "dependency_tool_check": {
+        "github_partition_readback": "PASS",
+        "github_persistence": "PASS",
+        "current_authoritative_web_research": "AVAILABLE",
+        "gmail_external_conversion_route": "AVAILABLE",
+        "exact_buyer_contact_for_dataset_operator": "NOT_YET_VERIFIED",
+        "payment_rail": "RECOVERABLE_IF_OFFER_ACCEPTED"
+      },
+      "dependency_state": "EXECUTABLE_FOR_PILOT_BUILD; EXTERNAL TEST REQUIRES VERIFIED RECIPIENT/ROUTE",
+      "effort_time_to_deliver": "Estimated 4–8 focused worker-hours for a 100-node pilot; estimate not yet benchmarked.",
+      "likely_buyer_reachability_route": "Dataset/travel-content operator or venue-data maintainer; verify Audiala repository owner/issue/contact route and dedupe prior AMX contact history. Secondary route: official venue operators after enrichment resolves first-party contacts.",
+      "proposed_bounded_offer": {
+        "offer": "100-record verified official-presence and contact-route enrichment pilot",
+        "price": "NOT_QUOTED — no buyer-specific pricing evidence yet"
+      },
+      "falsifier_kill_condition": "Kill or reframe if a current first-party field exists elsewhere in the source schema for >=80% of inspected nodes, or reachable buyers state the field has no operational value.",
+      "exact_next_commercial_action": "Select for Stage 3; enrich a risk-balanced 20-node test subset, verify 5–10 lawful public recipient routes, then PRI tests one concise offer structure with factual node-specific evidence."
+    },
+    {
+      "cluster_id": "ISCOPE-CLUSTER-POI-LOCALITY-002",
+      "sampled_businesses_inspected": 1200,
+      "exact_sample_size": 1200,
+      "repeated_observable_problem": "Every inspected node has locality=null even though many source_page paths encode a locality-like segment; this blocks clean geographic grouping, routing and localized offer generation.",
+      "number_matching_businesses_or_entities": 1200,
+      "match_rate": 1,
+      "confidence_evidence_strength": "HIGH for missing locality; MEDIUM for recoverability because URL segments require validation.",
+      "representative_node_ids": [
+        "wikidata:Q7809116",
+        "wikidata:Q3350264",
+        "wikidata:Q2111729",
+        "wikidata:Q5728066",
+        "wikidata:Q12027942"
+      ],
+      "geographic_category_spread": "48 countries / 50 categories.",
+      "amx_solution_capability_match": "AMX data cleanup, transformation, validation and provenance tooling can backfill normalized locality plus confidence/exception metadata.",
+      "smallest_bounded_deliverable": "100-record locality normalization and validation pilot with before/after values, evidence, confidence and exceptions.",
+      "dependency_tool_check": {
+        "github_partition_readback": "PASS",
+        "source_page_paths": "AVAILABLE",
+        "authoritative_geocoding_or_source_validation": "AVAILABLE_BUT_NOT_YET_RUN_AT_SCALE",
+        "external_buyer_route": "NOT_YET_VERIFIED"
+      },
+      "dependency_state": "EXECUTABLE_FOR_DATA_PILOT; COMMERCIAL TEST DEPENDS ON VERIFIED BUYER ROUTE",
+      "effort_time_to_deliver": "Estimated 2–4 focused worker-hours for 100 records; estimate not yet benchmarked.",
+      "likely_buyer_reachability_route": "Same operator/data-maintainer lane as Cluster 001; bundle only if buyer confirms locality completeness matters.",
+      "proposed_bounded_offer": {
+        "offer": "100-record locality normalization and provenance pilot",
+        "price": "NOT_QUOTED — no buyer-specific pricing evidence yet"
+      },
+      "falsifier_kill_condition": "Kill if locality is intentionally omitted by schema design or operator confirms URL geography satisfies downstream needs.",
+      "exact_next_commercial_action": "Retain as add-on to Cluster 001; validate operator need before presenting."
+    }
+  ],
+  "unsupported_uncertain_cases": {
+    "lifecycle_status_cluster": "NOT_PROMOTED",
+    "reason": "The tranche includes apparent future/historic/possibly closed entities, but a recurring lifecycle-error rate has not yet been measured against current authoritative sources.",
+    "candidate_examples": [
+      "wikidata:Q134392411",
+      "wikidata:Q165636",
+      "wikidata:Q36308834",
+      "wikidata:Q11592230"
+    ],
+    "next_verification": "Validate a risk-stratified subset against current primary sources before assigning a frequency or commercial offer."
+  },
+  "stage_2_acceptance": {
+    "decision": "PASS",
+    "rationale": "A durable frequency table from the exact verified 1,200-node FORX tranche contains an executable recurring cluster: 1,200/1,200 nodes lack first-party website/domain resolution, with tools and a smallest bounded pilot defined.",
+    "strongest_cluster_id": "ISCOPE-CLUSTER-POI-REACHABILITY-001",
+    "stage_3_authorized": true,
+    "stage_3_state": "NOT_STARTED"
+  },
+  "truth_boundary": {
+    "stage_1": "PASS",
+    "stage_2": "PASS after durable write and readback of this artifact",
+    "stage_3": "NOT_STARTED",
+    "external_response": "NOT_PROVEN_FOR_THIS_CLUSTER",
+    "pri_conversion": "UNPROVEN",
+    "payment": "UNPROVEN"
+  }
+}
