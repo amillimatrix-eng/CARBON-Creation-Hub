@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="CARBON° by AMilliMATRiX — a universal creation, production and business capability house.">
+<title>CARBON° — The ° of Business</title>
+<link rel="stylesheet" href="./styles.css">
+<script src="./app.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="CARBON home">CARBON°</a>
+    <nav aria-label="Primary">
+      <a href="#degrees">Degrees</a>
+      <a href="#studio">Studio</a>
+      <a href="#proof">Proof</a>
+      <a href="#contact">Engage</a>
+    </nav>
+    <a class="contact-chip" href="mailto:amillimatrix@gmail.com?subject=CARBON%C2%B0%20commercial%20enquiry">Talk to CARBON°</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-scrim"></div>
+      <div class="hero-content">
+        <p class="eyebrow">AMilliMATRiX / UNIVERSAL CREATION + PRODUCTION HOUSE</p>
+        <h1>CARBON°</h1>
+        <p class="hero-title">THE ° OF BUSINESS</p>
+        <p class="lede">One house for the work that needs to exist: strategy, design, software, AI, systems, utility, production and the combinations in between.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#degrees">Explore what we can do</a>
+          <button class="button secondary" data-open="mindset">Why CARBON°</button>
+        </div>
+        <p class="hero-note">We do not chase job titles. We solve problems worth doing. That does not mean we will not work. It means the work starts with the problem.</p>
+      </div>
+    </section>
+
+    <section id="degrees" class="rail-section">
+      <div class="section-heading">
+        <div><span class="kicker">THE ° OF BUSINESS</span><h2>Six degrees. One production house.</h2></div>
+        <p>Choose the outcome, not the department.</p>
+      </div>
+      <div class="rail" id="degreeRail" aria-label="CARBON capability degrees"></div>
+    </section>
+
+    <section class="rail-section">
+      <div class="section-heading">
+        <div><span class="kicker">START SMALL. PROVE VALUE.</span><h2>Fast, bounded work.</h2></div>
+        <p>Useful first deliverables that can expand only when the evidence says they should.</p>
+      </div>
+      <div class="rail" id="sprintRail" aria-label="Bounded commercial work"></div>
+    </section>
+
+    <section id="studio" class="rail-section">
+      <div class="section-heading">
+        <div><span class="kicker">CARBON° STUDIOS</span><h2>Stories, worlds and production.</h2></div>
+        <p>Current public catalogue shows only what is safe to represent. New properties appear when they clear the production gate.</p>
+      </div>
+      <div class="rail studio-rail" id="studioRail" aria-label="CARBON Studios catalogue"></div>
+    </section>
+
+    <section class="rail-section">
+      <div class="section-heading">
+        <div><span class="kicker">PROBLEMS WE CAN TAKE APART</span><h2>Capability follows the problem.</h2></div>
+        <p>No capability dump. Pick the friction and open the detail.</p>
+      </div>
+      <div class="rail" id="problemRail" aria-label="Problems CARBON can solve"></div>
+    </section>
+
+    <section id="proof" class="rail-section">
+      <div class="section-heading">
+        <div><span class="kicker">PUBLIC PROOF</span><h2>Inspect what is actually live.</h2></div>
+        <p>Private, stale or unverified customer links do not belong here.</p>
+      </div>
+      <div class="rail" id="proofRail" aria-label="Public proof surfaces"></div>
+    </section>
+
+    <section id="contact" class="closing">
+      <span class="kicker">BRING THE PROBLEM</span>
+      <h2>CARBON° will decide the smallest useful thing to make first.</h2>
+      <p>Commissioned production, business work, design, software, AI utility, automation, commercial assets, catalogue discussion, prototypes and special requests.</p>
+      <a class="button primary" href="mailto:amillimatrix@gmail.com?subject=CARBON%C2%B0%20commercial%20enquiry">Start a commercial conversation</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>CARBON° / AMilliMATRiX</span>
+    <span>PROVENANCE BEFORE NARRATIVE · NO RECEIPT → NO CLOSURE</span>
+  </footer>
+</div>
+
+<div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="CARBON detail">
+  <button class="drawer-close" id="drawerClose" aria-label="Close detail">×</button>
+  <div id="drawerBody"></div>
+</aside>
+
+<div class="modal-backdrop" id="mindsetModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mindsetTitle">
+    <button class="drawer-close" data-close-modal aria-label="Close">×</button>
+    <span class="kicker">MINDSET IS EVERYTHING</span>
+    <h2 id="mindsetTitle">We are not asking for a job.</h2>
+    <p>CARBON° exists to make useful outcomes real. Sometimes that is a one-hour fix. Sometimes it is a campaign, a system, a product, a production slate or a complete business transformation. The form follows the problem.</p>
+    <p class="modal-strong">We will work. We simply refuse to confuse employment-seeking with value creation.</p>
+  </div>
+</div>
+</body>
+</html>
