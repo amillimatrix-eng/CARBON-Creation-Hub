@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "component": "FORX durable staging",
+  "checked_at": "2026-10-07T02:04:00+02:00",
+  "repository": "amillimatrix-eng/CARBON-Creation-Hub",
+  "buffer_path": "overdrive/forx_prospect_buffer.json",
+  "buffer_sha": "214b6091a895e0dfe0977dde47083cb1eb963d48",
+  "status": "WRITE_PATH_CANARY",
+  "rule": "DISCOVERED does not count until persisted and read back",
+  "next": "FORX may continue durable staging through this GitHub route while bulk raw graph storage is expanded."
+}
