@@ -1,58 +1,98 @@
 (() => {
 const degreeData=[
- {id:'business',index:'01 / BUSINESS',title:'Degree of Business',copy:'Strategy, commercial structure and market movement built around the outcome that matters.',tone:'#161616',glow:'#6b6b66',tags:['Go-to-market','Business plans','Marketing plans'],detail:['Route-to-market and proposition design','Commercial planning and sales enablement','Customer journeys and buyer-facing collateral','Business / marketing plans where legitimately required','Special commercial problem-solving']},
- {id:'design',index:'02 / DESIGN',title:'Degree of Design',copy:'Identity and presentation that make the value legible before anyone has to explain it.',tone:'#111111',glow:'#7b7b77',tags:['Brand','UI/UX','Campaigns'],detail:['Brand and identity systems','Campaign and advertising assets','Pitch decks, PDFs and presentation systems','Interface and customer experience design','Packaging, retail and point-of-sale work']},
- {id:'intelligence',index:'03 / INTELLIGENCE',title:'Degree of Intelligence',copy:'Evidence, AI and structured reasoning turned into useful decisions and working assistance.',tone:'#101010',glow:'#525252',tags:['AI','Research','Evaluation'],detail:['AI-assisted workflow design','Research and evidence synthesis','LLM / prompt / tool-use evaluation','Decision surfaces and dashboards','Knowledge-base and support intelligence']},
- {id:'systems',index:'04 / SYSTEMS',title:'Degree of Systems',copy:'Connected digital machinery: software, APIs, integrations and automation that removes friction.',tone:'#131313',glow:'#686863',tags:['Web','API','Automation'],detail:['Websites and customer-facing interfaces','APIs and integrations','Workflow and process automation','Internal tools and operational systems','Data cleanup, validation and dashboards']},
- {id:'utility',index:'05 / UTILITY',title:'Degree of Utility',copy:'Small, useful, bounded interventions that prove value before complexity is allowed in.',tone:'#101010',glow:'#797970',tags:['Audit','Fix','Prototype'],detail:['Micro-audits and targeted fixes','QA and software/API testing','Listing and catalogue refresh','Operational prototypes and proofs of concept','One-problem / one-result delivery sprints']},
- {id:'studios',index:'06 / STUDIOS',title:'CARBON° Studios',copy:'Narrative, film, vertical series, campaign media and dimensional presentation produced for review or commission.',tone:'#110b0a',glow:'#733324',tags:['Film','Vertical','3D / interactive'],detail:['Vertical drama and episodic development','Short-form film and trailer production','Scripts, adaptation and story systems','Visual continuity and production packages','Interactive / dimensional product presentation']}
+ {index:'01 / BUSINESS',title:'Business°',subtitle:'Strategy & Commercial',copy:'Positioning, go-to-market, commercial structure and buyer-facing systems shaped around the decision that matters.',glow:'#777770',tags:['Strategy','Go-to-market','Commercial'],detail:['Route-to-market and proposition design','Commercial planning and sales enablement','Business and marketing plans where genuinely required','Buyer journeys, offers and conversion assets','Special commercial problem-solving']},
+ {index:'02 / DESIGN',title:'Design°',subtitle:'Brand & Experience',copy:'Identity, presentation and interaction designed to make value legible before anyone has to explain it.',glow:'#676762',tags:['Brand','UX','Campaigns'],detail:['Brand and identity systems','Campaign and advertising assets','Pitch decks and presentation systems','Interface and customer experience design','Packaging, retail and point-of-sale work']},
+ {index:'03 / INTELLIGENCE',title:'Intelligence°',subtitle:'AI & Evidence',copy:'AI, research and structured reasoning turned into useful decisions, assistance and evidence-aware workflows.',glow:'#5e5e59',tags:['AI','Research','Evaluation'],detail:['AI-assisted workflow design','Research and evidence synthesis','Model, prompt and tool-use evaluation','Decision surfaces and intelligent dashboards','Knowledge and support intelligence']},
+ {index:'04 / SYSTEMS',title:'Systems°',subtitle:'Software & Automation',copy:'Web, software, APIs, integrations and automation built to remove friction and connect the work.',glow:'#70706a',tags:['Software','APIs','Automation'],detail:['Websites and customer-facing interfaces','APIs and integrations','Workflow and process automation','Internal tools and operational systems','Data validation and decision dashboards']},
+ {index:'05 / UTILITY',title:'Utility°',subtitle:'Rapid Problem-Solving',copy:'Focused interventions that prove value quickly: fix, test, automate, prototype, improve.',glow:'#81817a',tags:['Fix','Test','Prototype'],detail:['Micro-audits and targeted fixes','QA and software/API testing','Listing and catalogue refresh','Operational prototypes and proofs of concept','One-problem / one-result delivery sprints']},
+ {index:'06 / STUDIOS',title:'Studios°',subtitle:'Film, Media & Worlds',copy:'Narrative, film, vertical series, campaign media and dimensional presentation developed for review or commission.',glow:'#6b443a',tags:['Film','Vertical','Interactive'],detail:['Vertical drama and episodic development','Short-form film and trailer production','Scripts, adaptation and story systems','Visual continuity and production packages','Interactive and dimensional presentation']}
 ];
 
 const sprints=[
- {index:'FAST / 01',title:'Fix One Thing',copy:'One visible defect. One bounded correction. One clear acceptance condition.',glow:'#50504c',tags:['Fast truth','Low friction'],detail:['Best for obvious website, workflow, document, UI or process defects.','Scope stays small enough to verify quickly.']},
- {index:'FAST / 02',title:'Audit + Top Fixes',copy:'Inspect one surface, rank the important problems and resolve the strongest first move.',glow:'#686863',tags:['Audit','Prioritized'],detail:['Website, conversion, presentation, workflow, data or customer journey.','Evidence first; no giant transformation pitch.']},
- {index:'FAST / 03',title:'One Conversion Asset',copy:'A buyer-facing page, deck, proposal, flyer, offer sheet or campaign asset built to move one decision.',glow:'#77776f',tags:['Commercial','Design'],detail:['Useful when the problem is weak presentation or unclear value.','Designed around a single commercial action.']},
- {index:'FAST / 04',title:'Automate One Task',copy:'Remove one repetitive manual step without turning the buyer into an IT project.',glow:'#5b5b57',tags:['Automation','Workflow'],detail:['Start with the repetitive step that wastes the most effort.','Extend only after the first automation works.']},
- {index:'FAST / 05',title:'Test One Flow',copy:'QA one workflow, API, product path or AI interaction and return concise evidence.',glow:'#63635e',tags:['QA','Evidence'],detail:['Useful for regression, API, UX or AI-evaluation work.','Defects are documented, not dramatized.']},
- {index:'FAST / 06',title:'Prototype One Outcome',copy:'Make one working proof instead of arguing about what could theoretically be built.',glow:'#6f6f68',tags:['Prototype','Proof'],detail:['Interactive concept, automation proof, utility surface or production sample.','The next step is earned by the evidence.']}
+ {index:'FIRST MOVE / 01',title:'Fix One Thing',copy:'One visible defect. One focused correction. One clear definition of done.',glow:'#555550',tags:['Fast','Focused'],detail:['Best for a visible website, workflow, document, interface or process defect.','Keep the first move small enough to verify quickly.']},
+ {index:'FIRST MOVE / 02',title:'Audit + Priorities',copy:'Inspect one surface, rank what matters, and turn the strongest finding into action.',glow:'#676761',tags:['Audit','Prioritized'],detail:['Website, conversion path, presentation, workflow, data or customer journey.','Evidence first; recommendations second.']},
+ {index:'FIRST MOVE / 03',title:'One Conversion Asset',copy:'A page, deck, proposal, offer sheet or campaign asset built to move one decision.',glow:'#76766f',tags:['Commercial','Design'],detail:['Useful when presentation or positioning is the bottleneck.','Built around one audience and one next action.']},
+ {index:'FIRST MOVE / 04',title:'Automate One Task',copy:'Remove one repetitive manual step without turning the buyer into an IT project.',glow:'#60605b',tags:['Automation','Workflow'],detail:['Start with the repeated action that wastes the most effort.','Extend only after the first automation works.']},
+ {index:'FIRST MOVE / 05',title:'Test One Flow',copy:'QA one workflow, API, product path or AI interaction and return concise evidence.',glow:'#686862',tags:['QA','Evidence'],detail:['Useful for regression, API, UX or AI-evaluation work.','Defects are documented with evidence and acceptance criteria.']},
+ {index:'FIRST MOVE / 06',title:'Prototype One Outcome',copy:'Make one working proof so the next decision is based on something real.',glow:'#74746d',tags:['Prototype','Proof'],detail:['Interactive concept, automation proof, utility surface or production sample.','The next step is earned by the result.']}
 ];
 
 const studio=[
- {index:'FLAGSHIP / REVIEW PACK',title:'The Dragon Who Could Not Claim Me',copy:'Fantasy-romance vertical property with a controlled buyer-review package and commissioned-development route.',glow:'#7b2f21',tags:['Vertical drama','9:16','Controlled review'],detail:['Flagship CARBON° Studios property.','Pitch/sample material and visual continuity documentation exist in controlled review form.','Public directory does not represent the entire series as rendered or delivered.'],cta:'Request the review package'},
- {index:'SLATE / PRODUCTION',title:'New properties clear the gate before they appear here',copy:'CARBON° is expanding the slate across genres and formats. The public catalogue will not fake production breadth before the work is ready.',glow:'#4d4d48',tags:['Production gate','No fake count'],detail:['Development work may exist before it is customer-ready.','Only production-ready / market-ready entries belong in the customer catalogue.','This card is a state notice, not a counted catalogue title.']}
+ {index:'SELECTED PROPERTY',title:'The Dragon Who Could Not Claim Me',subtitle:'Vertical fantasy-romance',copy:'A CARBON° Studios property with a controlled buyer-review package, 9:16 vertical format and commissioned-development route.',glow:'#7a3325',tags:['Vertical','Fantasy romance','Private review'],detail:['Buyer-review material and visual-continuity documentation are available in controlled form.','The public site does not represent unrendered material as finished output.'],url:'./work/dragon.html',cta:'View property overview'},
+ {index:'STUDIOS CAPABILITY',title:'Vertical Series Development',subtitle:'Story engine to production package',copy:'Series concepts, episode engines, scripts, visual continuity and production direction built for vertical-native review and commissioning.',glow:'#57423c',tags:['Series','9:16','Development'],detail:['Concept and series-engine development','Pilot/sample scripting','Character and visual continuity','Shot, audio and edit direction','Buyer-specific adaptation']},
+ {index:'STUDIOS CAPABILITY',title:'Short Film + Trailer',subtitle:'Narrative and campaign production',copy:'Focused story, trailer and short-form packages developed around a clear audience, platform and commercial purpose.',glow:'#4f4f4a',tags:['Film','Trailer','Campaign'],detail:['Creative concept and script','Shot and visual direction','Poster / key-art systems','Audio / edit briefing','Review and delivery packaging']},
+ {index:'PRIVATE SLATE',title:'More titles are moving through CARBON° Studios',subtitle:'Buyer review by request',copy:'The public slate will expand as buyer-ready packages are completed. Private review can be arranged for relevant material before public release.',glow:'#484844',tags:['Private review','Commissioning'],detail:['Additional story development is active across multiple formats and genres.','Public breadth will reflect finished buyer packages, not idea counts.']}
 ];
 
-const problems=[
- {index:'PROBLEM / DIGITAL',title:'Your digital surface is costing trust',copy:'Broken links, weak mobile UX, confusing navigation, stale content or conversion friction.',glow:'#5d5d58',tags:['Web','UX','Conversion'],detail:['Inspect the actual customer path.','Fix the strongest visible trust or conversion defect first.','Keep every customer route tested and alive.']},
- {index:'PROBLEM / ADMIN',title:'Manual work is eating the day',copy:'Spreadsheet churn, repetitive admin, reporting drag, disconnected tools or avoidable handoffs.',glow:'#666660',tags:['Automation','Admin'],detail:['Find the repeated action.','Automate or restructure the smallest useful unit.','Measure whether work actually disappeared.']},
- {index:'PROBLEM / SALES',title:'The offer is harder to understand than it should be',copy:'Weak positioning, cluttered collateral, missing proof or a buyer who cannot see the value quickly.',glow:'#74746d',tags:['Positioning','Collateral'],detail:['Clarify the buyer problem.','Build the smallest asset that moves the decision.','Remove capability theatre.']},
- {index:'PROBLEM / DATA',title:'The data exists but cannot be trusted',copy:'Messy inputs, inconsistent sources, poor validation, invisible provenance or dashboards nobody believes.',glow:'#545450',tags:['Data','Provenance'],detail:['Clean and validate the important slice.','Expose provenance and uncertainty.','Build a decision surface only after the data earns it.']},
- {index:'PROBLEM / CONTENT',title:'The content machine has no engine',copy:'Random posting, weak story, inconsistent identity, shallow campaigns or expensive production without a repeatable system.',glow:'#6a4a40',tags:['Story','Campaign','Production'],detail:['Define the repeatable engine first.','Produce a bounded high-quality sample.','Scale only when the format deserves repetition.']},
- {index:'PROBLEM / PRODUCT',title:'The product needs a better way to be seen',copy:'Flat presentation, unclear demonstration, weak proof, poor catalogue experience or no interactive preview.',glow:'#62625d',tags:['3D','Interactive','Demo'],detail:['Choose the key decision the customer must make.','Present the product or evidence in the strongest useful form.','Use dimensional / interactive work only when it adds decision value.']}
-];
-
-const proof=[
- {index:'CONTROLLED / INTERACTIVE',title:'H0B° unchAIned',copy:'Interactive product surface with explicit state and truth labels.',glow:'#474743',tags:['Interactive','Controlled review'],detail:['Interactive proof exists, but the current legacy host is intentionally not exposed from this customer directory.','A CARBON°-grade public route will replace the legacy host before it is linked here.']},
- {index:'PUBLIC / SOURCE',title:'AMX Evidence House',copy:'Provider-neutral evidence retrieval and workflow implementation with tests and a public runtime that may cold-start.',glow:'#565651',tags:['Source','Backend'],detail:['Stable inspection route is the source and tests.','Free runtime may need a wake before customer use.'],url:'https://github.com/amillimatrix-eng/CARBON-Creation-Hub/tree/main/backend'},
- {index:'PUBLIC / SOURCE',title:'ORACL3 Token Preflight',copy:'Read-only token-preflight integration with bounded failure handling and reproducible checks.',glow:'#61615b',tags:['API','Source'],detail:['Stable inspection route is the source repository.','Runtime API is secondary to the durable source route.'],url:'https://github.com/BullRulez/oracl3-okx-a2mcp'}
+const work=[
+ {index:'SYSTEMS + INTELLIGENCE',title:'AMX Evidence House',subtitle:'Evidence-aware retrieval',copy:'A provider-neutral evidence and workflow system designed to keep claims tied to inspectable sources.',glow:'#595954',tags:['Evidence','Workflow','Systems'],url:'./work/evidence-house.html',cta:'View build overview'},
+ {index:'UTILITY + SYSTEMS',title:'ORACL3 Token Preflight',subtitle:'Read-only preflight checks',copy:'A bounded preflight utility designed to check token and network conditions before downstream action.',glow:'#65655f',tags:['API','Preflight','Utility'],url:'./work/oracl3.html',cta:'View build overview'},
+ {index:'INTERACTIVE + PRODUCT',title:'H0B° unchAIned',subtitle:'Interactive product surface',copy:'An interactive AMX surface built around state, presentation and explicit truth labels.',glow:'#4e4e49',tags:['Interactive','Product','Experience'],url:'./work/hob.html',cta:'View build overview'}
 ];
 
 const $=id=>document.getElementById(id);
+
 function tile(item){
- const el=document.createElement('article'); el.className='tile'; el.tabIndex=0; el.setAttribute('role','button');
- el.innerHTML='<div class="tile-bg" style="--glow:'+item.glow+';--tone:'+(item.tone||'#151515')+'"></div><div class="tile-copy"><div class="tile-index">'+item.index+'</div><h3>'+item.title+'</h3><p>'+item.copy+'</p><div class="mini">'+(item.tags||[]).map(x=>'<span>'+x+'</span>').join('')+'</div></div>';
- const open=()=>openDrawer(item); el.addEventListener('click',open); el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+ const el=document.createElement('article');
+ el.className='tile';
+ el.tabIndex=0;
+ el.setAttribute('role','button');
+ el.innerHTML=
+   '<div class="tile-bg" style="--glow:'+item.glow+'"></div>'+
+   '<div class="tile-copy">'+
+   '<div class="tile-index">'+item.index+'</div>'+
+   '<h3>'+item.title+'</h3>'+
+   (item.subtitle?'<div class="tile-subtitle">'+item.subtitle+'</div>':'')+
+   '<p>'+item.copy+'</p>'+
+   '<div class="mini">'+(item.tags||[]).map(x=>'<span>'+x+'</span>').join('')+'</div>'+
+   '</div>';
+ const open=()=>openDrawer(item);
+ el.addEventListener('click',open);
+ el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
  return el;
 }
-function fill(id,data){const box=$(id); data.forEach(x=>box.append(tile(x)))}
+function fill(id,data){const box=$(id);data.forEach(x=>box.append(tile(x)))}
+
 function openDrawer(item){
- $('drawerBody').innerHTML='<span class="kicker">'+item.index+'</span><h2>'+item.title+'</h2><p>'+item.copy+'</p>'+(item.detail?'<div class="drawer-list">'+item.detail.map(x=>'<div>'+x+'</div>').join('')+'</div>':'')+(item.url?'<div class="drawer-cta"><a class="button primary" href="'+item.url+'" target="_blank" rel="noopener noreferrer">Open verified public route ↗</a></div>':item.cta?'<div class="drawer-cta"><a class="button primary" href="mailto:amillimatrix@gmail.com?subject=CARBON%C2%B0%20catalogue%20review%20request">'+item.cta+'</a></div>':'<div class="drawer-cta"><a class="button primary" href="mailto:amillimatrix@gmail.com?subject=CARBON%C2%B0%20commercial%20enquiry">Discuss this with CARBON°</a></div>');
- $('drawerBackdrop').hidden=false; $('drawer').classList.add('open'); $('drawer').setAttribute('aria-hidden','false');
+ const action=item.url
+   ? '<div class="drawer-cta"><a class="button primary" href="'+item.url+'">'+(item.cta||'View overview')+' →</a></div>'
+   : '<div class="drawer-cta"><a class="button primary" href="#contact" data-close-drawer>Discuss this capability</a></div>';
+
+ $('drawerBody').innerHTML=
+   '<span class="kicker">'+item.index+'</span>'+
+   '<h2>'+item.title+'</h2>'+
+   (item.subtitle?'<p class="drawer-subtitle">'+item.subtitle+'</p>':'')+
+   '<p>'+item.copy+'</p>'+
+   (item.detail?'<div class="drawer-list">'+item.detail.map(x=>'<div>'+x+'</div>').join('')+'</div>':'')+
+   action;
+
+ $('drawerBackdrop').hidden=false;
+ $('drawer').classList.add('open');
+ $('drawer').setAttribute('aria-hidden','false');
+ const closeLink=$('drawerBody').querySelector('[data-close-drawer]');
+ if(closeLink) closeLink.addEventListener('click',closeDrawer);
 }
-function closeDrawer(){ $('drawer').classList.remove('open'); $('drawer').setAttribute('aria-hidden','true'); setTimeout(()=>{$('drawerBackdrop').hidden=true},220)}
-$('drawerClose').addEventListener('click',closeDrawer); $('drawerBackdrop').addEventListener('click',closeDrawer); document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeDrawer();$('mindsetModal').hidden=true}});
-document.querySelector('[data-open="mindset"]').addEventListener('click',()=>{$('mindsetModal').hidden=false});
-document.querySelector('[data-close-modal]').addEventListener('click',()=>{$('mindsetModal').hidden=true});
-$('mindsetModal').addEventListener('click',e=>{if(e.target===$('mindsetModal')) $('mindsetModal').hidden=true});
-fill('degreeRail',degreeData);fill('sprintRail',sprints);fill('studioRail',studio);fill('problemRail',problems);fill('proofRail',proof);
+
+function closeDrawer(){
+ $('drawer').classList.remove('open');
+ $('drawer').setAttribute('aria-hidden','true');
+ setTimeout(()=>{$('drawerBackdrop').hidden=true},220);
+}
+
+$('drawerClose').addEventListener('click',closeDrawer);
+$('drawerBackdrop').addEventListener('click',closeDrawer);
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'){
+  closeDrawer();
+  $('degreeModal').hidden=true;
+ }
+});
+document.querySelector('[data-open="degree"]').addEventListener('click',()=>{$('degreeModal').hidden=false});
+document.querySelector('[data-close-modal]').addEventListener('click',()=>{$('degreeModal').hidden=true});
+$('degreeModal').addEventListener('click',e=>{if(e.target===$('degreeModal')) $('degreeModal').hidden=true});
+
+fill('degreeRail',degreeData);
+fill('sprintRail',sprints);
+fill('studioRail',studio);
+fill('workRail',work);
 })();
