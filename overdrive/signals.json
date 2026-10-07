@@ -73,6 +73,42 @@
       "thread_id": "1a0fc58012594488"
     },
     {
+      "due_at": "2026-10-06T23:04:25Z",
+      "due_now": true,
+      "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
+      "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0fedc9bdd30527 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "RESPONDED",
+      "status": "READY",
+      "thread_id": "1a0fedc9bdd30527"
+    },
+    {
+      "due_at": "2026-10-06T23:04:27Z",
+      "due_now": true,
+      "next_action": "Monitor for the official content/production review route; provide only the controlled sample and accurate rights/technical summary on request.",
+      "opportunity_key": "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0fedca0c7c2f71 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a0fedca0c7c2f71"
+    },
+    {
+      "due_at": "2026-10-06T23:05:20Z",
+      "due_now": true,
+      "next_action": "Monitor for routing to independent submissions/production; use the controlled sample only through an authorized route.",
+      "opportunity_key": "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0fedd719d7bfdd for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a0fedd719d7bfdd"
+    },
+    {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
       "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
@@ -227,42 +263,6 @@
       "state": "RESPONDED",
       "status": "WAITING",
       "thread_id": "1a0f2ea3874d5fde"
-    },
-    {
-      "due_at": "2026-10-06T23:04:25Z",
-      "due_now": false,
-      "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
-      "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
-      "state": "RESPONDED",
-      "status": "WAITING",
-      "thread_id": "1a0fedc9bdd30527"
-    },
-    {
-      "due_at": "2026-10-06T23:04:27Z",
-      "due_now": false,
-      "next_action": "Monitor for the official content/production review route; provide only the controlled sample and accurate rights/technical summary on request.",
-      "opportunity_key": "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor for the official content/production review route; provide only the controlled sample and accurate rights/technical summary on request.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0fedca0c7c2f71"
-    },
-    {
-      "due_at": "2026-10-06T23:05:20Z",
-      "due_now": false,
-      "next_action": "Monitor for routing to independent submissions/production; use the controlled sample only through an authorized route.",
-      "opportunity_key": "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor for routing to independent submissions/production; use the controlled sample only through an authorized route.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0fedd719d7bfdd"
     },
     {
       "due_at": "2026-10-07T04:01:21Z",
@@ -529,8 +529,20 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-06T23:03:17.395100+00:00",
+  "generated_at": "2026-10-07T02:16:07.460690+00:00",
   "iSCOPE": [
+    {
+      "due_at": "2026-10-06T23:04:24Z",
+      "due_now": true,
+      "next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
+      "opportunity_key": "oneforma.com|ai-ml-projects|south-africa",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0fedc966c2c687 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "DISCOVERED",
+      "status": "READY",
+      "thread_id": "1a0fedc966c2c687"
+    },
     {
       "due_at": "2026-10-04T09:00:00Z",
       "due_now": true,
@@ -542,18 +554,6 @@
       "state": "HOLD_CAPABILITY_GAP",
       "status": "WAITING",
       "thread_id": null
-    },
-    {
-      "due_at": "2026-10-06T23:04:24Z",
-      "due_now": false,
-      "next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
-      "opportunity_key": "oneforma.com|ai-ml-projects|south-africa",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
-      "state": "DISCOVERED",
-      "status": "WAITING",
-      "thread_id": "1a0fedc966c2c687"
     },
     {
       "due_at": null,
@@ -919,14 +919,14 @@
     },
     "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T23:04:27Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor for the official content/production review route; provide only the controlled sample and accurate rights/technical summary on request.",
       "opportunity_key": "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor for the official content/production review route; provide only the controlled sample and accurate rights/technical summary on request.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0fedca0c7c2f71 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0fedca0c7c2f71"
     },
     "dramaloft.com|creator-onboarding|vertical-drama-distribution": {
@@ -1159,14 +1159,14 @@
     },
     "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T23:04:25Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
       "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
       "priority": 2,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0fedc9bdd30527 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "RESPONDED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0fedc9bdd30527"
     },
     "netshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
@@ -1183,14 +1183,14 @@
     },
     "oneforma.com|ai-ml-projects|south-africa": {
       "due_at": "2026-10-06T23:04:24Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
       "opportunity_key": "oneforma.com|ai-ml-projects|south-africa",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0fedc966c2c687 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "DISCOVERED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0fedc966c2c687"
     },
     "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57": {
@@ -1351,14 +1351,14 @@
     },
     "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-06T23:05:20Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor for routing to independent submissions/production; use the controlled sample only through an authorized route.",
       "opportunity_key": "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor for routing to independent submissions/production; use the controlled sample only through an authorized route.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a0fedd719d7bfdd for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a0fedd719d7bfdd"
     },
     "rws.com|trainai-global-talent-pool|remote": {
