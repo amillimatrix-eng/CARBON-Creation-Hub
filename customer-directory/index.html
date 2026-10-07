@@ -9,7 +9,6 @@
 <meta property="og:title" content="CARBON° — The ° of Business">
 <meta property="og:description" content="Creation, production, systems and intelligence — assembled around the outcome.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://carbon-amillimatrix-1399.vercel.app/">
 <meta name="twitter:card" content="summary">
 <title>CARBON° — The ° of Business</title>
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
@@ -18,111 +17,169 @@
 <script src="./app.js" defer></script>
 </head>
 <body>
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot-mark">
+    <img src="./assets/carbon-degree-mark.svg" alt="">
+  </div>
+  <div class="boot-word">CARBON°</div>
+  <div class="boot-line"><span id="bootStatus">INITIALIZING DEGREE SYSTEM</span><i></i></div>
+</div>
+
+<canvas id="matrixRain" class="matrix-rain" aria-hidden="true"></canvas>
+<div class="ambient-grain" aria-hidden="true"></div>
+
 <div class="app-shell">
-  <header class="topbar">
-    <a class="brand-wrap" href="#top" aria-label="CARBON home">
-      <span class="brand">CARBON°</span>
-      <span class="brand-sub">by AMilliMATRiX</span>
-    </a>
-    <nav aria-label="Primary">
-      <a href="#degrees">Capabilities</a>
-      <a href="#studio">Studios</a>
-      <a href="#work">Selected work</a>
-      <a href="#contact">Engage</a>
-    </nav>
-    <a class="contact-chip" href="#contact">Start a conversation</a>
-  </header>
+<header class="topbar" id="topbar">
+  <a class="brand-wrap" href="#top" aria-label="CARBON home">
+    <span class="brand-lockup">
+      <span class="brand-c"><img src="./assets/carbon-degree-mark.svg" alt=""></span>
+      <span class="brand-rest">ARBON<sup>°</sup></span>
+    </span>
+    <span class="brand-sub">by AMilliMATRiX</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="#degrees">Capabilities</a>
+    <a href="#studio">Studios</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Engage</a>
+  </nav>
+  <a class="contact-chip" href="#contact">Start a conversation</a>
+</header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-orb" aria-hidden="true"></div>
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-content">
-        <p class="eyebrow">THE ° OF BUSINESS</p>
-        <h1>CARBON°</h1>
-        <p class="hero-title">UNIVERSAL CREATION + PRODUCTION HOUSE</p>
-        <p class="lede">Creation, production, systems and intelligence — assembled around the outcome. CARBON° moves from idea to execution across business, design, software, AI, utility and media.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#degrees">Explore CARBON°</a>
-          <button class="button secondary" data-open="degree">The ° explained</button>
-        </div>
-        <div class="hero-tags" aria-label="Core capability areas">
-          <span>Strategy</span><span>Design</span><span>AI</span><span>Systems</span><span>Utility</span><span>Studios</span>
-        </div>
-      </div>
-    </section>
+<main id="top">
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-panes" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i>
+  </div>
 
-    <section id="degrees" class="rail-section">
-      <div class="section-heading">
-        <div>
-          <span class="kicker">CAPABILITY</span>
-          <h2>One house. Six degrees of execution.</h2>
-        </div>
-        <p>Each degree is a clear entry point. The disciplines combine only where the outcome benefits from it.</p>
-      </div>
-      <div class="rail" id="degreeRail" aria-label="CARBON capability degrees"></div>
-    </section>
+  <div class="hero-copy">
+    <p class="eyebrow">THE ° OF BUSINESS</p>
+    <h1>
+      <span class="hero-word">CARBON<sup>°</sup></span>
+      <span class="hero-subhead">UNIVERSAL CREATION + PRODUCTION HOUSE</span>
+    </h1>
+    <p class="lede">Creation, production, systems and intelligence — assembled around the outcome. CARBON° moves from idea to execution across business, design, software, AI, utility and media.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="#degrees">Explore CARBON°</a>
+      <button class="button secondary" data-open="degree">The ° explained</button>
+    </div>
+    <div class="hero-signals" aria-label="CARBON operating signals">
+      <span><b>01</b> CREATE</span>
+      <span><b>02</b> VISUALIZE</span>
+      <span><b>03</b> BUILD</span>
+      <span><b>04</b> PRESERVE</span>
+      <span><b>05</b> MONETIZE</span>
+    </div>
+  </div>
 
-    <section class="rail-section alt">
-      <div class="section-heading">
-        <div>
-          <span class="kicker">FIRST MOVE</span>
-          <h2>Start where the value becomes visible.</h2>
-        </div>
-        <p>Focused first engagements designed to produce something useful, inspectable and worth extending.</p>
-      </div>
-      <div class="rail" id="sprintRail" aria-label="Focused first engagements"></div>
-    </section>
+  <div class="carbon-stage-wrap" aria-label="Interactive CARBON Degree mark">
+    <div class="carbon-stage" id="carbonStage">
+      <div class="mark-depth depth-4"><img src="./assets/carbon-degree-mark.svg" alt=""></div>
+      <div class="mark-depth depth-3"><img src="./assets/carbon-degree-mark.svg" alt=""></div>
+      <div class="mark-depth depth-2"><img src="./assets/carbon-degree-mark.svg" alt=""></div>
+      <div class="mark-depth depth-1"><img src="./assets/carbon-degree-mark.svg" alt=""></div>
+      <div class="mark-depth depth-front"><img src="./assets/carbon-degree-mark.svg" alt="CARBON Degree 3D mark"></div>
+      <div class="degree-halo" aria-hidden="true"></div>
+      <div class="stage-orbit orbit-a" aria-hidden="true"></div>
+      <div class="stage-orbit orbit-b" aria-hidden="true"></div>
+      <div class="stage-label label-a">CARBON FIBRE / MATTE</div>
+      <div class="stage-label label-b">DEGREE NODE / ACTIVE</div>
+      <div class="stage-label label-c">GEOMETRY / MODULAR</div>
+    </div>
+  </div>
 
-    <section id="studio" class="rail-section">
-      <div class="section-heading">
-        <div>
-          <span class="kicker">CARBON° STUDIOS</span>
-          <h2>Stories, worlds and production.</h2>
-        </div>
-        <p>Vertical-native storytelling, adaptation, campaign media and commissioned development from the same house.</p>
-      </div>
-      <div class="rail studio-rail" id="studioRail" aria-label="CARBON Studios"></div>
-    </section>
+  <div class="hero-bottom">
+    <span>CARBON° DEGREE SYSTEM</span>
+    <span>MATTE CARBON / GLASS / LIGHT</span>
+    <span>INTERACTIVE STATE: ACTIVE</span>
+  </div>
+</section>
 
-    <section id="work" class="rail-section alt">
-      <div class="section-heading">
-        <div>
-          <span class="kicker">SELECTED AMX BUILDS</span>
-          <h2>Different problems. Same execution standard.</h2>
-        </div>
-        <p>A small public selection showing how CARBON° can operate beyond one format or one industry.</p>
-      </div>
-      <div class="rail" id="workRail" aria-label="Selected AMX builds"></div>
-    </section>
+<section id="degrees" class="rail-section">
+  <div class="section-heading">
+    <div>
+      <span class="kicker">CAPABILITY</span>
+      <h2>One house. Six degrees of execution.</h2>
+    </div>
+    <p>Each degree is a clear entry point. The disciplines combine only where the outcome benefits from it.</p>
+  </div>
+  <div class="rail" id="degreeRail" aria-label="CARBON capability degrees"></div>
+</section>
 
-    <section class="principle">
-      <div>
-        <span class="kicker">WHAT CARBON° IS</span>
-        <h2>The universal creation + production house of AMilliMATRiX.</h2>
-      </div>
-      <div class="principle-copy">
-        <p>CARBON° exists to turn ideas, problems and opportunities into concrete outputs. It can operate as a studio, design team, systems builder, AI partner, production unit — or a deliberate combination of them.</p>
-        <p>Scope follows the outcome. Complexity has to earn its place.</p>
-      </div>
-    </section>
+<section class="degree-interstitial">
+  <div class="degree-copy">
+    <span class="kicker">CARBON° DEGREE</span>
+    <h2>A mark that behaves like the house.</h2>
+    <p>Modular. Material. Precise. Able to stay still, load, respond, fracture, reform and move with the interface without becoming decoration for decoration's sake.</p>
+  </div>
+  <div class="degree-demo" id="degreeDemo" aria-hidden="true">
+    <div class="demo-ring"></div>
+    <img src="./assets/carbon-degree-mark.svg" alt="">
+    <div class="demo-grid"></div>
+  </div>
+</section>
 
-    <section id="contact" class="closing">
-      <span class="kicker">BRING THE PROBLEM</span>
-      <h2>Show us what needs to exist.</h2>
-      <p>We will identify the smallest credible first move, make it tangible, and expand only where the value is real.</p>
-      <div class="closing-actions">
-        <a class="button primary" href="./contact.html">Start a commercial conversation</a>
-        <a class="button secondary" href="./contact.html#review">Request a private review</a>
-      </div>
-    </section>
-  </main>
+<section class="rail-section alt">
+  <div class="section-heading">
+    <div>
+      <span class="kicker">FIRST MOVE</span>
+      <h2>Start where the value becomes visible.</h2>
+    </div>
+    <p>Focused first engagements designed to produce something useful, inspectable and worth extending.</p>
+  </div>
+  <div class="rail" id="sprintRail" aria-label="Focused first engagements"></div>
+</section>
 
-  <footer>
-    <span>© 2026 CARBON° / AMilliMATRiX</span>
-    <span>CODED REALITY. INFINITE POTENTIAL.</span>
-    <span class="footer-links"><a href="./privacy.html">Privacy</a><a href="./contact.html">Contact</a></span>
-  </footer>
+<section id="studio" class="rail-section studio-section">
+  <div class="section-heading">
+    <div>
+      <span class="kicker">CARBON° STUDIOS</span>
+      <h2>Stories, worlds and production.</h2>
+    </div>
+    <p>Vertical-native storytelling, adaptation, campaign media and commissioned development from the same house.</p>
+  </div>
+  <div class="rail studio-rail" id="studioRail" aria-label="CARBON Studios"></div>
+</section>
+
+<section id="work" class="rail-section alt work-section">
+  <div class="section-heading">
+    <div>
+      <span class="kicker">SELECTED AMX BUILDS</span>
+      <h2>Different problems. Same execution standard.</h2>
+    </div>
+    <p>Systems, interfaces, evidence layers, product surfaces and narrative work — shown as distinct expressions, not flattened into one aesthetic.</p>
+  </div>
+  <div class="rail work-rail" id="workRail" aria-label="Selected AMX builds"></div>
+</section>
+
+<section class="principle">
+  <div>
+    <span class="kicker">WHAT CARBON° IS</span>
+    <h2>The universal creation + production house of AMilliMATRiX.</h2>
+  </div>
+  <div class="principle-copy">
+    <p>CARBON° exists to turn ideas, problems and opportunities into concrete outputs. It can operate as a studio, design team, systems builder, AI partner, production unit — or a deliberate combination of them.</p>
+    <p>Scope follows the outcome. Complexity has to earn its place.</p>
+  </div>
+</section>
+
+<section id="contact" class="closing">
+  <span class="kicker">BRING THE PROBLEM</span>
+  <h2>Show us what needs to exist.</h2>
+  <p>We will identify the smallest credible first move, make it tangible, and expand only where the value is real.</p>
+  <div class="closing-actions">
+    <a class="button primary" href="./contact.html">Start a commercial conversation</a>
+    <a class="button secondary" href="./contact.html#review">Request a private review</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>© 2026 CARBON° / AMilliMATRiX</span>
+  <span>THE ° OF BUSINESS</span>
+  <span class="footer-links"><a href="./privacy.html">Privacy</a><a href="./contact.html">Contact</a></span>
+</footer>
 </div>
 
 <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
