@@ -1,0 +1,151 @@
+{
+  "receipt_id": "CARBON-DRAGON-EP01-REVIEW-V1-2026-10-07",
+  "property": "The Dragon Who Could Not Claim Me",
+  "episode": {
+    "number": "01",
+    "title": "IT CHOSE HER",
+    "canon_state": "THE UNCLAIMED SOVEREIGN",
+    "core_law": "The Dragon can choose Mara. It cannot claim her."
+  },
+  "artifact": {
+    "file": "DRAGON_EP01_IT_CHOSE_HER_review_v1.mp4",
+    "sha256": "82a072ae05a3aa1c2ca98a10eda55e7305c8ecfea7c8297dd8ee245dda9c500c",
+    "bytes": 17512966,
+    "duration_seconds": 70,
+    "video": "H.264, 720x1280, 30 fps, yuv420p",
+    "audio": "AAC, 96 kHz, mono (independent ffprobe readback; corrects earlier 48 kHz receipt claim)",
+    "captions": "English, burned-in from captions.srt",
+    "access_state": "CONTROLLED_REVIEW_FILE",
+    "library_file_id": "libfile_c14713cc68088191a5b89c91c57d2ad1",
+    "library_readback": "MATCHED filename, MIME type and 17,512,966-byte size"
+  },
+  "canonical_sources": [
+    {
+      "role": "script",
+      "drive_id": "1SaKBvQM35FC6WpXfvY5BN7kLpbA5kIffPcvzPn3B3oc",
+      "title": "CARBON° Studios — The Dragon Who Could Not Claim Me — Pitch Episodes 01–02 v1"
+    },
+    {
+      "role": "canon_lock",
+      "drive_id": "1ZTLWA238yn2owWw1NEOIfwrd6SHw-tGmoxR9Xpya_B0",
+      "title": "CARBON° Studios — The Dragon Who Could Not Claim Me — Canon Lock v1.0"
+    },
+    {
+      "role": "cast_pack",
+      "drive_id": "1AxFgwUJvEGiAGeXtOQdCjdBDUYN8dBh6wcQm7M1LDVM",
+      "title": "CARBON° Studios — DRAGON° Canonical Cast Pack v1"
+    }
+  ],
+  "image_sources": [
+    {
+      "role": "Mara",
+      "drive_id": "1oC-8g1HRH_kqM0cOYKmEUfW4rky1NHdc",
+      "sha256": "44c675ce4b9bfc306b87f25ccdd2220632e9e0276e2c88f5d5f6f70e776c0c5c"
+    },
+    {
+      "role": "Kael",
+      "drive_id": "18xZkyo55Y2vcymAtt8SsjecQNWB6-00t",
+      "sha256": "0e4ff3fd34eee96f2c0a69e8bcda6198d41b6bed5ea45d69729b804c369394d5"
+    },
+    {
+      "role": "Dragon",
+      "drive_id": "1Qk6bMUWVhBpVRYmQtqqbathqKPKa7pGr",
+      "sha256": "8e05219848fb049ad3e559e492998f48292182db173d7a7d9651ee64c62d2339"
+    },
+    {
+      "role": "Group",
+      "drive_id": "1CSpZOkD22ebVGwX2t1iUqfNmUubqWa50",
+      "sha256": "edccac89e432d17ae368367a5e84dd21b66d5bc86e397457bf88a53073c795b8"
+    }
+  ],
+  "voice_provenance": {
+    "provider": "HeyGen",
+    "capability": "speech_synthesis",
+    "capability_state": "VERIFIED",
+    "request_id": "b58c854f2e64472c8fce71dafbcdbd35",
+    "voice_id": "M2WosQ2Ju3f2b7jdddsj",
+    "voice_name": "Amy - Voice 1",
+    "engine_returned": "orca",
+    "duration_seconds": 68.85877551020408,
+    "source_sha256": "8e10f3a6122f44507f3ba39b34c8f1aa0022105214d9046a967329c0d17241d5",
+    "commercial_use_state": "UNKNOWN_PENDING_TERMS_VERIFICATION"
+  },
+  "production_method": {
+    "type": "editorial_motion_comic",
+    "shot_count": 10,
+    "motion": "camera pushes, reframing and pans over canonical accepted still panels",
+    "stitch": "FFmpeg concat and H.264 encode",
+    "mix": "HeyGen narration plus locally generated low drone and filtered brown-noise ambience",
+    "reproducible_recipe": "build.sh"
+  },
+  "critic": {
+    "cycle_1": {
+      "defects": [
+        "hook text exceeded horizontal safe area",
+        "integrated loudness was -26.2 LUFS"
+      ],
+      "status": "REJECTED_AND_CORRECTED"
+    },
+    "cycle_2": {
+      "hook_safe_area": "PASS",
+      "mobile_framing": "PASS",
+      "cast_identity": "PASS_WITHIN_ACCEPTED_STILL_PACK",
+      "captions": "PASS_BURNED_IN",
+      "integrated_loudness": "-15.3 LUFS",
+      "true_peak": "-0.9 dBFS",
+      "file_probe": "PASS",
+      "contact_sheet": "critic_contact_sheet.jpg"
+    }
+  },
+  "truth_states": {
+    "SCRIPT_ACCEPTED": true,
+    "CAST_REFERENCE_ACCEPTED": true,
+    "IMAGE_CONTINUITY_VERIFIED": true,
+    "VIDEO_CLIP_VERIFIED": "PASS_FOR_EDITORIAL_CAMERA_MOTION_ONLY",
+    "PROVIDER_GENERATED_SUBJECT_MOTION_VERIFIED": false,
+    "STITCH_MIX_VERIFIED": true,
+    "EPISODE_RENDERED": true,
+    "REVIEW_ACCESS_VERIFIED": true,
+    "PUBLISHED": false,
+    "EXTERNALLY_ACCEPTED": false,
+    "INVOICED": false,
+    "PAID": false
+  },
+  "factory_acceptance": {
+    "state": "CONTROLLED_REVIEW_MASTER_RENDERED__FULL_FACTORY_PASS_HELD",
+    "reason": "A coherent 70-second playable episode exists, but provider-generated character/subject motion and commercial-use clearance for the selected public voice remain unproven. The master is therefore review-only and must not be publicly catalogued."
+  },
+  "t10": {
+    "supposed": "Render a coherent 60–90 second vertical Dragon EP01 with hook, canon continuity, dialogue/audio, captions, critic pass, provenance and controlled review access.",
+    "actual": "Rendered and locally read back a 70-second 720x1280 H.264/AAC controlled review master from accepted cast panels with verified HeyGen narration, procedural ambience and burned-in English captions.",
+    "proof": [
+      "artifact SHA-256",
+      "ffprobe.json",
+      "SHA256SUMS.txt",
+      "critic_contact_sheet.jpg",
+      "critic_hook.jpg",
+      "HeyGen request b58c854f2e64472c8fce71dafbcdbd35",
+      "Independent full-file decode and ffprobe readback on the Library-controlled MP4"
+    ],
+    "changed": "Dragon EP01 is independently verified as EPISODE_RENDERED, STITCH_MIX_VERIFIED and REVIEW_ACCESS_VERIFIED for a controlled editorial-motion master. HeyGen speech synthesis remains VERIFIED for this request.",
+    "not_proven": [
+      "provider-generated subject motion",
+      "public/commercial voice rights",
+      "external acceptance",
+      "publication",
+      "payment"
+    ]
+  },
+  "schema": "CARBON_EPISODE_REVIEW_RECEIPT_v1",
+  "verified_at_utc": "2026-10-07T15:49:31.418Z",
+  "independent_readback": {
+    "sha256": "82a072ae05a3aa1c2ca98a10eda55e7305c8ecfea7c8297dd8ee245dda9c500c",
+    "bytes": 17512966,
+    "duration_seconds": 70,
+    "video_stream": "H.264 720x1280 yuv420p 30 fps",
+    "audio_stream": "AAC 96000 Hz mono",
+    "full_decode": "PASS_NO_DECODER_ERRORS",
+    "visual_samples": "PASS_HOOK_SAFE_AREA_AND_10_FRAME_CONTACT_SHEET",
+    "library_identity": "libfile_c14713cc68088191a5b89c91c57d2ad1"
+  }
+}
