@@ -1,7 +1,7 @@
 # INTAKE — GLOBAL COMMERCIAL DISCOVERY + SOCIAL DISTRIBUTION EXPANSION — 2026-10-07
 
 ## Classification
-INTAKE EVIDENCE / OWNER DIRECTIVE. Governance/Master decides final disposition. This does not self-canonize, merge, or replace existing owners.
+OWNER ACCEPTED on 2026-10-07. Governance/Master should now treat the contained operating direction as accepted for propagation through the existing AMX hierarchy, without widening worker authority beyond existing mandates.
 
 ## Owner directive captured
 Expand globally beyond narrow catalogue-led prospecting. Hunt the open market for:
@@ -42,7 +42,7 @@ Two relevant integration candidates were surfaced for the owner:
 
 These are proposed integration routes only until the owner connects them.
 
-## Social architecture proposed for governance
+## Social architecture accepted
 ONE CANONICAL BRAND STATE
 -> ONE CONTENT/CREATIVE OBJECT
 -> channel adapters
@@ -78,10 +78,10 @@ Public search currently surfaces Ulrich du Plessis on LinkedIn with AMiLLiMATRiX
 ## Email identity finding
 Current connected Outlook sender is usduplessis@outlook.com. It is usable, but not yet a canonical AMX-branded address. The present connector does not expose creation of a new Outlook.com alias/account. Do not claim @AMiLLiMATRiX Outlook identity exists until verified.
 
-## Required synchronization behavior
+## Required synchronization behavior — ACCEPTED
 All discovered businesses, problems, offer hypotheses, outbound attempts, delivery/bounce state, replies, conversion state, countries, industries and revenue consequences must feed one durable Matrix commercial state readable by FORX/iSCOPE/PRI/governance. Branch-local batches are not acceptable as isolated truth.
 
-## Required continuously tracked counters
+## Required continuously tracked counters — ACCEPTED
 At minimum:
 - total unique businesses discovered
 - total countries
@@ -106,10 +106,10 @@ At minimum:
 - duplicate rate
 - stale/unresolved count
 
-## Owner scale target
+## Owner scale target — ACCEPTED
 Target: 100,000 businesses. This is a throughput target, not a claim that current state has reached it. Continue scaling discovery and deduplication without artificially collapsing the opportunity surface into tiny queues.
 
-## Acceptance
-Not another packet.
-Acceptance is:
+## Acceptance condition
 DISCOVER AT SCALE -> DEDUPE -> IDENTIFY PROBLEM -> MATCH/CREATE BOUNDED SOLUTION -> ROUTE TO PRI -> SEND/ACT -> READ RESPONSE -> RECORD CONSEQUENCE -> PROPAGATE LEARNING -> NEXT WAKE RETAINS IT.
+
+Owner explicit disposition: ACCEPTED.
