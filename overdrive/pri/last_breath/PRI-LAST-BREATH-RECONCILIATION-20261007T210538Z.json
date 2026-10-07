@@ -1,0 +1,99 @@
+{
+  "schema": "AMX_PRI_LAST_BREATH_RECONCILIATION_V1",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "observed_at_utc": "2026-10-07T21:05:38Z",
+  "deadline_sast": "2026-10-08T00:00:00+02:00",
+  "window_start_utc": "2026-10-07T18:02:00Z",
+  "objective": {
+    "smalls": 1000,
+    "medium": 600,
+    "upper_medium": 300,
+    "upper": 100,
+    "total": 2000
+  },
+  "gmail_reconciliation": {
+    "gross_sent": 171,
+    "hard_bounces_excluded": 10,
+    "counted_non_bounced_sent": 161,
+    "counts": {
+      "smalls": 24,
+      "medium": 12,
+      "upper_medium": 81,
+      "upper": 44,
+      "total": 161
+    },
+    "verified_paid_usd": 0,
+    "truth": "SENT is provider submission only; no delivery, response, conversion, invoice, receivable, or payment is inferred."
+  },
+  "actions_this_run": [
+    {
+      "recipient": "Indonesia@techinasia.com",
+      "organization": "Tech in Asia Indonesia",
+      "tier": "SMALLS",
+      "price_usd": 9,
+      "problem_evidence": "External text-render check exposed only a tag-manager iframe rather than readable homepage content.",
+      "offer": "One-page render/indexability check covering crawl-visible content, redirects, mobile first load, and subscription CTA.",
+      "gmail_message_id": "1a1182efe119ba98",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    },
+    {
+      "recipient": "cdc-ui@ui.ac.id",
+      "organization": "Career Development Center Universitas Indonesia",
+      "tier": "SMALLS",
+      "price_usd": 9,
+      "problem_evidence": "External text-render check returned virtually no readable homepage content.",
+      "offer": "One-page accessibility/indexability check covering readable structure, mobile first load, search metadata, and employer/student CTA.",
+      "gmail_message_id": "1a1182efd96fe114",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    },
+    {
+      "recipient": "clickinajamanagement@gmail.com",
+      "organization": "Gotokerja",
+      "tier": "SMALLS",
+      "price_usd": 9,
+      "problem_evidence": "The public website link exposed in the business profile could not be opened in the external check.",
+      "offer": "Domain/link-chain, redirects, mobile reachability, and promotion/contact CTA correction sheet.",
+      "gmail_message_id": "1a1182f008e701a1",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    },
+    {
+      "recipient": "revista@revistalogistec.com",
+      "organization": "Revista Logistec",
+      "tier": "SMALLS",
+      "price_usd": 9,
+      "problem_evidence": "Site carried October 2026 content while the visible footer still showed © 2025.",
+      "offer": "One-page date, contact, and CTA consistency review with exact corrections.",
+      "gmail_message_id": "1a1182f06769eb1c",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    },
+    {
+      "recipient": "companii@targuldecariere.ro",
+      "organization": "Targul de Cariere",
+      "tier": "SMALLS",
+      "price_usd": 9,
+      "problem_evidence": "Public Recruteaza copy repeated its introduction and contained the phrase 'a facilitata tinerilor'.",
+      "offer": "Short page copy check with corrected phrasing, deduplication, and clearer employer CTA.",
+      "gmail_message_id": "1a1182f5ff9fa712",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    }
+  ],
+  "dedupe": {
+    "pre_send_gmail_sent_search": "PASS",
+    "duplicate_initial_outreach_counted": 0
+  },
+  "t10": {
+    "intended_outcome": "1,000 SMALLS plus 600 MEDIUM plus 300 UPPER-MEDIUM plus 100 UPPER offers with Gmail SENT receipts before deadline.",
+    "actual_outcome_at_observation": "161 counted non-bounced SENT offers: 24 SMALLS, 12 MEDIUM, 81 UPPER-MEDIUM, 44 UPPER.",
+    "evidence": "Gmail SENT message IDs, bounce inbox reconciliation, and this durable receipt.",
+    "changed_this_run": "Five new evidence-backed $9 SMALLS offers sent; no matching immediate delivery-failure notices.",
+    "remains_unproven": "Delivery for non-bounced messages, responses, acceptance, conversion, receivable, payment, and completion of the 2,000-offer target."
+  },
+  "remaining_gap": {
+    "smalls": 976,
+    "medium": 588,
+    "upper_medium": 219,
+    "upper": 56,
+    "total": 1839
+  },
+  "state": "IN_PROGRESS_BELOW_TARGET"
+}
