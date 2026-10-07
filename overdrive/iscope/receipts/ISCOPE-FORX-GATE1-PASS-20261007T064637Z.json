@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "handoff_id": "ISCOPE-FORX-GATE1-PASS-20261007T064637Z",
+  "created_from": "FORX Stage-1 durable readback",
+  "status": "READY_FOR_ISCOPE_STAGE_2",
+  "forx_stage_1": {
+    "decision": "PASS",
+    "receipt_id": "FORX-STAGE1-PASS-20261007T063902Z",
+    "receipt_path": "overdrive/forx_stage1_proof/2026-10-07T063902Z/STAGE-1-RECEIPT.json",
+    "receipt_commit": "70d4b004c87390210391457487554e4023f312a5",
+    "receipt_blob_sha": "f6a82db59930cbfa9226209c2cfbf0761bbd8177",
+    "verified_nodes": 1200,
+    "country_count": 48,
+    "category_count": 50,
+    "partition_base": "overdrive/forx_stage1_proof/2026-10-07T063902Z/",
+    "partition_count": 12,
+    "readback_invalid_rows": 0,
+    "all_partitions_exact_render_to_git_readback_match": true
+  },
+  "iscope_instruction": "Consume the exact persisted Stage-1 tranche and build the first real problem-frequency/clustering proof. Do not substitute provider row counts or rediscovery for the handed-off durable nodes.",
+  "truth_boundary": {
+    "stage_2": "not yet proven; this handoff authorizes/starts Stage 2 evidence work only",
+    "stage_3": "not proven",
+    "pri_conversion": "not proven",
+    "payment": "not proven"
+  }
+}
