@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "stage": "FORX_PROOF_PACK_STAGE_2",
+  "cluster_id": "ISCOPE-CLUSTER-GROUP-BOOKING-FRICTION-001",
+  "status": "CANDIDATE_CLUSTER_READY_FOR_STAGE2_DECISION",
+  "source_handoff": {
+    "receipt": "overdrive/iscope/receipts/ISCOPE-FORX-GATE1-PASS-20261007T064637Z.json",
+    "commit": "89019edbcf17e0afb74f0e751e918c91ce73985f",
+    "stage1_receipt": "overdrive/forx_stage1_proof/2026-10-07T063902Z/STAGE-1-RECEIPT.json",
+    "stage1_commit": "70d4b004c87390210391457487554e4023f312a5"
+  },
+  "threshold_rule": {
+    "owner_rule": "Five independently observed, evidence-backed instances of the same commercially relevant problem are sufficient to form a candidate cluster.",
+    "minimum_matches": 5,
+    "matches": 5,
+    "threshold_met": true
+  },
+  "problem": {
+    "title": "Manual group/private/special booking friction",
+    "definition": "The venue offers online or public visitor information, but higher-value group, private, school, guided, or special booking journeys require phone/email/manual enquiry instead of a clear self-service digital booking or qualification flow.",
+    "commercial_relevance": "Manual high-value booking flows create avoidable lead friction, staff handling, response-delay risk and incomplete enquiry data. The problem is bounded and can be improved without replacing the venue's core ticketing system."
+  },
+  "evidence_instances": [
+    {
+      "node_id": "wikidata:Q220027",
+      "name": "Dublin Zoo",
+      "country": "IE",
+      "category": "zoo",
+      "source_partition": "overdrive/forx_stage1_proof/2026-10-07T063902Z/partition-010.json",
+      "public_evidence_url": "https://www.dublinzoo.ie/plan-your-visit/ticket-prices/",
+      "observation": "The official ticket page supports online individual/family ticketing, but group tickets are explicitly not available online and users are directed to phone/contact for pre-booking.",
+      "confidence": "HIGH"
+    },
+    {
+      "node_id": "wikidata:Q17984458",
+      "name": "Cork City Gaol",
+      "country": "IE",
+      "category": "museum",
+      "source_partition": "overdrive/forx_stage1_proof/2026-10-07T063902Z/partition-010.json",
+      "public_evidence_url": "https://corkcitygaol.com/group-bookings/",
+      "observation": "The official group-booking page requires advance group booking through phone/email/contact rather than a complete self-service group booking checkout.",
+      "confidence": "HIGH"
+    },
+    {
+      "node_id": "wikidata:Q841037",
+      "name": "National Botanic Gardens of Ireland",
+      "country": "IE",
+      "category": "botanical-garden",
+      "source_partition": "overdrive/forx_stage1_proof/2026-10-07T063902Z/partition-010.json",
+      "public_evidence_url": "https://www.botanicgardens.ie/contact-us/",
+      "supporting_url": "https://www.eventbrite.ie/e/spring-daily-guided-tour-tickets-1982108282229",
+      "observation": "Public tours can be handled through Eventbrite, but group bookings are directed to the Visitor Centre by email/phone.",
+      "confidence": "HIGH"
+    },
+    {
+      "node_id": "wikidata:Q2116901",
+      "name": "Dubai Dolphinarium",
+      "country": "AE",
+      "category": "zoo",
+      "source_partition": "overdrive/forx_stage1_proof/2026-10-07T063902Z/partition-001.json",
+      "public_evidence_url": "https://www.dubaidolphinarium.ae/dolphin-encounter-in-dubai",
+      "observation": "Standard experiences can be booked online, but private sessions require advance phone contact and the page exposes a manual enquiry form for session details.",
+      "confidence": "HIGH"
+    },
+    {
+      "node_id": "wikidata:Q3061523",
+      "name": "The Everyman",
+      "country": "IE",
+      "category": "theatre",
+      "source_partition": "overdrive/forx_stage1_proof/2026-10-07T063902Z/partition-010.json",
+      "public_evidence_url": "https://everymancork.com/your-visit/",
+      "observation": "Standard show tickets are bookable online, while group bookings are directed to a dedicated phone number/email and handled as enquiries/reservations.",
+      "confidence": "HIGH"
+    }
+  ],
+  "sample": {
+    "inspected_for_this_cluster": 5,
+    "matching": 5,
+    "match_rate": 1,
+    "geographic_spread": [
+      "IE",
+      "AE"
+    ],
+    "category_spread": [
+      "zoo",
+      "museum",
+      "botanical-garden",
+      "theatre"
+    ],
+    "note": "This is a targeted cluster proof, not an estimate of prevalence across the full 1,200-node tranche."
+  },
+  "amx_solution": {
+    "offer_name": "Group Booking Conversion Microflow",
+    "bounded_deliverable": [
+      "mobile-first group/private booking or enquiry microflow",
+      "party size/date/experience/accessibility/contact capture",
+      "structured qualification and routing rules",
+      "automatic acknowledgement/next-step email",
+      "Google Sheet/CSV/CRM-ready lead handoff",
+      "optional deposit/payment-link or existing ticketing handoff",
+      "basic analytics/event logging"
+    ],
+    "non_goal": "Do not replace the customer's existing core ticketing platform unless separately scoped.",
+    "reusable_core": true,
+    "likely_buyer_roles": [
+      "venue manager",
+      "visitor services",
+      "box office",
+      "commercial/marketing manager",
+      "operations manager"
+    ]
+  },
+  "dependencies": {
+    "current_amx_capability": "AVAILABLE",
+    "build_surface": "AVAILABLE",
+    "forms_and_data_capture": "AVAILABLE",
+    "email_notification_path": "AVAILABLE_OR_PROVIDER_DEPENDENT",
+    "customer_system_integration": "CUSTOMER_PERMISSION_OR_API_REQUIRED",
+    "payment_integration": "OPTIONAL; CUSTOMER PAYMENT RAIL/API REQUIRED IF INCLUDED",
+    "owner_action_required": false
+  },
+  "effort": {
+    "pilot_scope": "single branded microflow + structured lead routing + handoff",
+    "build_complexity": "LOW_TO_MEDIUM",
+    "time_to_first_demo": "BOUNDED / REUSE-CONFIGURE-EXTEND",
+    "pricing_state": "NOT_YET_EVIDENCE_PRICED; PRI MAY TEST A SMALL FIXED-PRICE PILOT"
+  },
+  "falsifier_or_kill_condition": "Kill or weaken the cluster if outreach shows venues intentionally prefer manual high-touch group sales and do not value a structured digital qualification/booking layer, or if their existing systems already provide an equivalent hidden workflow.",
+  "next_action": "Persist/read back this cluster as Stage-2 evidence, then hand the bounded offer and these five evidenced prospects to PRI for a limited market test if Stage-2 acceptance passes.",
+  "truth_boundary": {
+    "problem_instances_verified": 5,
+    "stage2_pass": "PENDING_DURABLE_READBACK_AT_WRITE_TIME",
+    "stage3": "UNPROVEN",
+    "pri_conversion": "UNPROVEN",
+    "payment": "UNPROVEN"
+  }
+}
