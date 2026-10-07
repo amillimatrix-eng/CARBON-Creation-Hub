@@ -113,3 +113,27 @@ Target: 100,000 businesses. This is a throughput target, not a claim that curren
 DISCOVER AT SCALE -> DEDUPE -> IDENTIFY PROBLEM -> MATCH/CREATE BOUNDED SOLUTION -> ROUTE TO PRI -> SEND/ACT -> READ RESPONSE -> RECORD CONSEQUENCE -> PROPAGATE LEARNING -> NEXT WAKE RETAINS IT.
 
 Owner explicit disposition: ACCEPTED.
+
+
+## Ads Manager + Social route probe — 2026-10-07
+Owner directed concentration on every continuity area below 8/10 before pushing 8->9->95%+.
+
+Fresh Ads Manager probe:
+- accessible ad accounts: 0
+- self-serve onboarding: new tenant creation is available in principle
+- preview against https://amx-evidence-house.onrender.com: website unavailable to Ads Manager crawler
+- preview against https://unchaind.netlify.app: website unavailable to Ads Manager crawler
+- preview against https://hobo-unchained.amillimatrix.chatgpt.site: website available; business label surfaced as H0B° unchAIned and a logo candidate was found
+- South Africa policy lookup returned no supported country options in the current self-serve setup preview
+- campaign-draft generation against the Evidence House URL failed because the site could not be accessed
+- therefore: DO NOT classify ChatGPT Ads Manager as an active paid-distribution executor yet; current blocker is account/setup eligibility + usable advertiser surface, not lack of campaign logic
+
+Fresh Metricool probe:
+- Metricool connection exists
+- Metricool brand id 7292391 currently has no social network connected
+- therefore organic cross-channel distribution is not yet operational through Metricool
+- required route: connect the canonical Instagram/Facebook/TikTok/LinkedIn surfaces to the Metricool brand before counting social distribution as live
+
+Continuity consequence:
+- Ads/social execution remains below 8/10 and stays in the priority remediation set
+- discovery/commercial work must continue through existing lawful routes while these connectors are repaired; neither Ads Manager nor Metricool may become a P0 blocker
