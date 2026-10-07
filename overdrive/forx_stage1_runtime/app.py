@@ -7,9 +7,9 @@ from fastapi.responses import JSONResponse
 
 app = FastAPI(title="AMX FORX Stage-1 Proof Runtime")
 
-OVERPASS = "https://overpass-api.de/api/interpreter"
+OVERPASS_ENDPOINTS = ["https://overpass-api.de/api/interpreter","https://overpass.kumi.systems/api/interpreter"]
 TARGET = 1200
-PARTITION_SIZE = 300
+PARTITION_SIZE = 100
 PER_REGION = 180
 
 REGIONS = [
