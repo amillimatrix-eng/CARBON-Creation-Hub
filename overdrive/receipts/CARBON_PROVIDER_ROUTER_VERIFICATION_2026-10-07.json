@@ -1,0 +1,210 @@
+{
+  "schema": "CARBON_PROVIDER_ROUTER_VERIFICATION_v1",
+  "receipt_id": "CARBON-PROVIDER-ROUTER-VERIFICATION-2026-10-07-001",
+  "created_at_utc": "2026-10-07T13:26:03Z",
+  "worker": "CARBON° Production Studio",
+  "governance": {
+    "normalization_contract": {
+      "path": "/AMilliMATRiX/Root Handoff/CARBON_Provider_Integration_Intake_v2.md",
+      "sha256_expected": "50959132fca29f775c1f59839f822b3a7121f487dfb0d1952e604065fd138e7a",
+      "library_file_id": "libfile_5cccb808f0d88191b0b4c1b605430fe1",
+      "return_path": "RECEIVE -> PRESERVE RAW RESPONSE -> NORMALIZE -> VERIFY -> CLASSIFY -> REGISTER -> TEST -> PERSIST -> ROUTE INTO CARBON°"
+    },
+    "classification_states": [
+      "VERIFIED",
+      "MANUAL_BRIDGE",
+      "CONNECT",
+      "UNKNOWN",
+      "UNAVAILABLE"
+    ],
+    "spend_policy": "No cash spend was made. Two OpenArt free-plan validation jobs consumed 30 included credits in total.",
+    "truth_policy": "Capability-specific evidence only; authenticated account access, documentation, configuration, and API existence do not by themselves prove production output."
+  },
+  "intended_outcome": "Verify a governed multi-provider route that can support canonical reference locking and continuity-preserving components for a future 60–90 second vertical episode, while preserving exact rights, spend, access, and provenance state.",
+  "actual_outcome": {
+    "status": "PARTIAL_PASS_PROVIDER_ROUTE_VERIFIED",
+    "summary": "OpenArt text-to-image and reference-conditioned image-to-image were invoked successfully through the connected account at 9:16, producing a reference sheet and a continuity derivative. The two images are coherent enough to validate the reference-lock workflow. Free-plan visible watermarks restrict these outputs to internal validation. No video clip or complete episode was rendered in this run.",
+    "episode_acceptance": "NOT_PASS",
+    "render_truth": {
+      "reference_sheet": "RENDERED_INTERNAL_VALIDATION_ONLY",
+      "continuity_frame": "RENDERED_INTERNAL_VALIDATION_ONLY",
+      "video_clip": "NOT_RENDERED",
+      "final_episode": "NOT_RENDERED",
+      "published_record": "NOT_PUBLISHED",
+      "buyer_access": "NOT_VERIFIED"
+    }
+  },
+  "durable_preservation": {
+    "reference_sheet": {
+      "path": "/AMilliMATRiX/CARBON/openart_rhea_reference_lock.webp",
+      "library_file_id": "libfile_9a78476da3ac8191ac9d11242dfafaa7"
+    },
+    "continuity_frame": {
+      "path": "/AMilliMATRiX/CARBON/openart_rhea_continuity_frame.webp",
+      "library_file_id": "libfile_89f56fb64a1c8191ad6fcfc93976f7c2"
+    },
+    "normalized_receipt": {
+      "path": "/AMilliMATRiX/CARBON/CARBON_PROVIDER_ROUTER_VERIFICATION_2026-10-07.json",
+      "library_file_id": "libfile_7d0a18b5977c8191b5bfbba19bf85e02"
+    }
+  },
+  "test_assets": [
+    {
+      "asset_id": "CARBON-RHEA-REFERENCE-LOCK-INTERNAL-TEST-v1",
+      "purpose": "Non-canon provider-route verification; internal only",
+      "provider": "OpenArt",
+      "model": "Nano Banana 2 Lite",
+      "capability": "text2image",
+      "history_id": "RE9Sk61pnmqou8Dxif9J",
+      "resource_id": "x80UCbOKzbEkxFKYkAwt",
+      "provider_url": "https://cdn.openart.ai/watermarked_images/5feq47dQWywqTQYwWRQX/thumbnail_908d236e_1791379144679.webp",
+      "local_file": "openart_rhea_reference_lock.webp",
+      "sha256": "fbbd15773c63185344a4be62a8ee0f683d1b388d0192e899c1ef8f122d520f7d",
+      "bytes": 79038,
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "credits_charged": 15,
+      "input_provenance": "Original fictional validation character created from a CARBON-authored prompt; not accepted canon and not derived from a client asset.",
+      "rights_state": "INTERNAL_VALIDATION_ONLY_FREE_PLAN_WATERMARK_PRESENT",
+      "access_state": "ACCOUNT_SCOPED_PROVIDER_URL_AND_LIBRARY_COPY; NO_BUYER_ACCESS_CLAIM"
+    },
+    {
+      "asset_id": "CARBON-RHEA-CONTINUITY-FRAME-INTERNAL-TEST-v1",
+      "purpose": "Reference-conditioned continuity verification derivative; internal only",
+      "provider": "OpenArt",
+      "model": "Nano Banana 2 Lite",
+      "capability": "image2image",
+      "history_id": "veKa1HZBOiXQfSgxQuli",
+      "resource_id": "9gGaPxy20PSKyDLr6T3b",
+      "reference_upload_id": "SESuYM1zTeiJL96nGOsV",
+      "provider_url": "https://cdn.openart.ai/watermarked_images/5feq47dQWywqTQYwWRQX/thumbnail_bbbd2400_1791379509208.webp",
+      "local_file": "openart_rhea_continuity_frame.webp",
+      "sha256": "650e359cc9644f6a45b0271c48d7bb734e50f988749bf94e0f77205b085c2a66",
+      "bytes": 151890,
+      "width": 768,
+      "height": 1376,
+      "aspect_ratio": "9:16",
+      "credits_charged": 15,
+      "input_provenance": "Reference-conditioned derivative of CARBON-RHEA-REFERENCE-LOCK-INTERNAL-TEST-v1 using the exact OpenArt upload ID above.",
+      "rights_state": "INTERNAL_VALIDATION_ONLY_FREE_PLAN_WATERMARK_PRESENT",
+      "access_state": "ACCOUNT_SCOPED_PROVIDER_URL_AND_LIBRARY_COPY; NO_BUYER_ACCESS_CLAIM"
+    }
+  ],
+  "critic": {
+    "reference_sheet": {
+      "passed": [
+        "Same adult facial identity, body proportions, braided bob, cobalt jacket, charcoal trousers, boots, and brass cuff remain consistent across front, three-quarter, and profile views.",
+        "Clean 9:16 framing, readable view labels, acceptable anatomy, and neutral reference presentation."
+      ],
+      "defects": [
+        "Large OpenArt watermark crosses the character and prevents final catalogue use.",
+        "Requested crescent scar is not reliably visible across all views."
+      ]
+    },
+    "continuity_frame": {
+      "passed": [
+        "Face, age, skin tone, braided bob, jacket color and piping, trousers, boots, and wrist cuff remain recognizably aligned with the reference sheet.",
+        "Intentional mobile vertical composition, safe headroom, coherent wet reflections, and usable storyboard readability.",
+        "No obvious hand, limb, or environmental generation defect breaks the frame."
+      ],
+      "defects": [
+        "Large OpenArt watermark prevents final catalogue use.",
+        "Crescent scar remains indistinct, so this pair is not an accepted character master."
+      ]
+    },
+    "correction_and_route_decision": "Classify the connected OpenArt route as VERIFIED for internal 9:16 reference-lock and reference-conditioned continuity testing only. Do not promote either output to canon or final catalogue production; repeat on a commercial-rights, watermark-free route before final use."
+  },
+  "provider_capability_register": [
+    {
+      "provider": "OpenArt",
+      "transport": "CONNECTED_APP",
+      "capability": "text-to-image 9:16 reference-lock generation",
+      "state": "VERIFIED",
+      "scope": "Internal validation only on current Free plan; one completed job with stored artifact and hash.",
+      "evidence": ["history:RE9Sk61pnmqou8Dxif9J", "resource:x80UCbOKzbEkxFKYkAwt"]
+    },
+    {
+      "provider": "OpenArt",
+      "transport": "CONNECTED_APP",
+      "capability": "reference-conditioned image-to-image continuity generation",
+      "state": "VERIFIED",
+      "scope": "Internal validation only on current Free plan; one completed derivative with exact reference upload, artifact, and hash.",
+      "evidence": ["history:veKa1HZBOiXQfSgxQuli", "resource:9gGaPxy20PSKyDLr6T3b", "upload:SESuYM1zTeiJL96nGOsV"]
+    },
+    {
+      "provider": "OpenArt",
+      "transport": "CONNECTED_APP",
+      "capability": "video generation including PixVerse V6 text-to-video and image-to-video",
+      "state": "CONNECT",
+      "scope": "Catalog and cost endpoints are reachable, but no video job was invoked. Current connected balance after the two image tests is 10 credits; cheapest observed PixVerse V6 video mode was 50 credits.",
+      "evidence": ["authenticated model catalog read", "post-test account balance read"]
+    },
+    {
+      "provider": "PixVerse",
+      "transport": "OWNER_MANUAL_APP_ROUTE",
+      "capability": "short composable video clips using daily free/ad-credit allowance",
+      "state": "MANUAL_BRIDGE",
+      "scope": "Owner may manually choose the evidenced allowance route. No automated ad watching, quota evasion, duplicate account creation, or entitlement claim is permitted.",
+      "evidence": ["Owner-reported operating history", "official PixVerse capability documentation"]
+    },
+    {
+      "provider": "PixVerse",
+      "transport": "DIRECT_API",
+      "capability": "text-to-video, image-to-video, transition, extension, reference video, lip-sync, SFX, and TTS routes",
+      "state": "CONNECT",
+      "scope": "Official API capability and pricing are documented; no direct authenticated invocation was performed.",
+      "evidence": ["https://docs.platform.pixverse.ai/how-to-use-our-api-1378829m0"]
+    },
+    {
+      "provider": "HeyGen",
+      "transport": "CONNECTED_APP",
+      "capability": "avatar/video, image-video, voice, lip-sync, and translation surfaces",
+      "state": "CONNECT",
+      "scope": "Authenticated Free account and empty video history verified. No media generation was invoked because current official API guidance states pay-as-you-go credits are required and free API credits ended in February 2026.",
+      "evidence": ["authenticated account read", "video-list read:0", "https://help.heygen.com/en/articles/12947626-pay-as-you-go-api-plan-updates"]
+    },
+    {
+      "provider": "Descript",
+      "transport": "CONNECTED_APP",
+      "capability": "authenticated drive/project/timeline read",
+      "state": "VERIFIED",
+      "scope": "Existing private CARBON Dragon trailer project was read back with two 39.018-second compositions and a private share URL. This proves read access, not a new edit/export or buyer access.",
+      "evidence": ["drive:3cd958e0-430d-4f61-8038-031069c39ca3", "project:959a78e9-e615-4b3a-afbb-63a5ec1fb04f", "private_share:https://share.descript.com/view/IrO1Gpw9hgr"]
+    },
+    {
+      "provider": "Descript",
+      "transport": "CONNECTED_APP",
+      "capability": "import, Underlord editing, subtitles, mix, publish, and export",
+      "state": "CONNECT",
+      "scope": "Connected tools and official docs expose the route; no new this-run edit/export was executed and AI-credit cost can be nondeterministic.",
+      "evidence": ["https://help.descript.com/hc/en-us/articles/38141343407629-Descript-API", "https://help.descript.com/hc/en-us/articles/38141581716109-Descript-MCP-server"]
+    }
+  ],
+  "rights_and_commercial_use": {
+    "openart_current_test": "Free-plan outputs contain a visible watermark. OpenArt terms prohibit removing, cropping, or obscuring a free-user watermark without a qualifying paid plan or prior written permission. These outputs are internal verification artifacts only.",
+    "openart_final_route_requirement": "Before catalogue or buyer delivery, use a plan/route whose current terms explicitly grant the required commercial use and watermark-free output, and record the exact plan/model terms at render time.",
+    "other_providers": "Commercial rights remain capability-, plan-, model-, and asset-specific. No right is inferred from account connectivity or documentation alone."
+  },
+  "current_sources": [
+    "https://openart.ai/terms",
+    "https://openart.ai/pricing",
+    "https://help.heygen.com/en/articles/12947626-pay-as-you-go-api-plan-updates",
+    "https://docs.platform.pixverse.ai/how-to-use-our-api-1378829m0",
+    "https://help.descript.com/hc/en-us/articles/38141343407629-Descript-API",
+    "https://help.descript.com/hc/en-us/articles/38141581716109-Descript-MCP-server"
+  ],
+  "t10": {
+    "supposed_outcome": "A verified, rights-aware multi-provider component route toward complete 60–90 second vertical episodes.",
+    "actual_outcome": "OpenArt 9:16 reference-lock and reference-conditioned continuity image capabilities were executed and verified. Descript project read access was verified. Video generation, full episode assembly, final mix, Critic correction of a complete episode, final export, publication, and buyer access did not occur.",
+    "evidence": [
+      "Two completed OpenArt history records and resource IDs",
+      "Two downloaded artifacts with SHA-256 hashes",
+      "Authenticated post-test account read",
+      "Authenticated HeyGen and Descript readbacks",
+      "This normalized receipt and preserved Library copies"
+    ],
+    "change": "CARBON° now has a live, capability-specific, zero-cash-spend verification of a connected reference-lock/continuity path and a current provider fanout register instead of documentation-only claims.",
+    "remaining_gap": "No current zero-spend connected video mode was affordable after the image tests; PixVerse remains an Owner-chosen MANUAL_BRIDGE, HeyGen generation requires API credits, and OpenArt's observed PixVerse V6 video modes require more credits than remain. A 60–90 second episode is therefore NOT accepted. The next lawful route is either Owner-manual PixVerse clip generation using the existing allowance or an authorized commercial-rights video credit/plan, followed by Descript stitch/mix/export and a full Critic pass."
+  }
+}
