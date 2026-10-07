@@ -32,7 +32,7 @@ const problems=[
 ];
 
 const proof=[
- {index:'PUBLIC / LIVE',title:'H0B° unchAIned',copy:'Published interactive product surface with explicit state and truth labels.',glow:'#474743',tags:['Live public','Interactive'],detail:['Public URL is included because it passed a current external reachability check.'],url:'https://hobo-unchained.amillimatrix.chatgpt.site/'},
+ {index:'CONTROLLED / INTERACTIVE',title:'H0B° unchAIned',copy:'Interactive product surface with explicit state and truth labels.',glow:'#474743',tags:['Interactive','Controlled review'],detail:['Interactive proof exists, but the current legacy host is intentionally not exposed from this customer directory.','A CARBON°-grade public route will replace the legacy host before it is linked here.']},
  {index:'PUBLIC / SOURCE',title:'AMX Evidence House',copy:'Provider-neutral evidence retrieval and workflow implementation with tests and a public runtime that may cold-start.',glow:'#565651',tags:['Source','Backend'],detail:['Stable inspection route is the source and tests.','Free runtime may need a wake before customer use.'],url:'https://github.com/amillimatrix-eng/CARBON-Creation-Hub/tree/main/backend'},
  {index:'PUBLIC / SOURCE',title:'ORACL3 Token Preflight',copy:'Read-only token-preflight integration with bounded failure handling and reproducible checks.',glow:'#61615b',tags:['API','Source'],detail:['Stable inspection route is the source repository.','Runtime API is secondary to the durable source route.'],url:'https://github.com/BullRulez/oracl3-okx-a2mcp'}
 ];
