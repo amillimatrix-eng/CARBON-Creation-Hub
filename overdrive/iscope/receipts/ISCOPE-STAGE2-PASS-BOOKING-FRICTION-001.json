@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "ISCOPE-STAGE2-PASS-BOOKING-FRICTION-001",
+  "stage": "STAGE_2_ISCOPE_CLUSTERING",
+  "decision": "PASS",
+  "cluster_id": "ISCOPE-CLUSTER-GROUP-BOOKING-FRICTION-001",
+  "durable_cluster_path": "overdrive/iscope/stage2/ISCOPE-CLUSTER-GROUP-BOOKING-FRICTION-001.json",
+  "cluster_blob_sha": "0b71edf5c37b4d5505fa65426cddc4f919393597",
+  "cluster_commit": "9a7c193ff395e0bf4196d64d966cf19a4d4444b3",
+  "matches": 5,
+  "minimum_required": 5,
+  "threshold_met": true,
+  "evidence_instance_count": 5,
+  "categories": [
+    "zoo",
+    "museum",
+    "botanical-garden",
+    "theatre"
+  ],
+  "countries": [
+    "IE",
+    "AE"
+  ],
+  "offer": "Group Booking Conversion Microflow",
+  "dependency_state": {
+    "current_amx_capability": "AVAILABLE",
+    "build_surface": "AVAILABLE",
+    "forms_and_data_capture": "AVAILABLE",
+    "email_notification_path": "AVAILABLE_OR_PROVIDER_DEPENDENT",
+    "customer_system_integration": "CUSTOMER_PERMISSION_OR_API_REQUIRED",
+    "payment_integration": "OPTIONAL; CUSTOMER PAYMENT RAIL/API REQUIRED IF INCLUDED",
+    "owner_action_required": false
+  },
+  "falsifier": "Kill or weaken the cluster if outreach shows venues intentionally prefer manual high-touch group sales and do not value a structured digital qualification/booking layer, or if their existing systems already provide an equivalent hidden workflow.",
+  "stage3_instruction": "PRI may now test this bounded offer against a small relevant/reachable set drawn from the evidenced cluster. Preserve lifecycle truth; outreach/replies are not conversion.",
+  "truth_boundary": {
+    "stage3": "UNPROVEN",
+    "pri_conversion": "UNPROVEN",
+    "payment": "UNPROVEN"
+  }
+}
