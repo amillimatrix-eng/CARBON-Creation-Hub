@@ -9,12 +9,12 @@ const degreeData=[
 ];
 
 const sprints=[
- {index:'FIRST MOVE / 01',title:'Fix One Thing',copy:'One visible defect. One focused correction. One clear definition of done.',glow:'#555550',tags:['Fast','Focused'],detail:['Best for a visible website, workflow, document, interface or process defect.','Keep the first move small enough to verify quickly.']},
- {index:'FIRST MOVE / 02',title:'Audit + Priorities',copy:'Inspect one surface, rank what matters, and turn the strongest finding into action.',glow:'#676761',tags:['Audit','Prioritized'],detail:['Website, conversion path, presentation, workflow, data or customer journey.','Evidence first; recommendations second.']},
+ {index:'FIRST MOVE / 01',title:'Focused Fix',copy:'Resolve one visible defect with a focused correction and a clear acceptance condition.',glow:'#555550',tags:['Fast','Focused'],detail:['Best for a visible website, workflow, document, interface or process defect.','Keep the first move small enough to verify quickly.']},
+ {index:'FIRST MOVE / 02',title:'Diagnostic Sprint',copy:'Inspect one surface, rank the highest-value issues, and turn the strongest finding into action.',glow:'#676761',tags:['Audit','Prioritized'],detail:['Website, conversion path, presentation, workflow, data or customer journey.','Evidence first; recommendations second.']},
  {index:'FIRST MOVE / 03',title:'One Conversion Asset',copy:'A page, deck, proposal, offer sheet or campaign asset built to move one decision.',glow:'#76766f',tags:['Commercial','Design'],detail:['Useful when presentation or positioning is the bottleneck.','Built around one audience and one next action.']},
- {index:'FIRST MOVE / 04',title:'Automate One Task',copy:'Remove one repetitive manual step without turning the buyer into an IT project.',glow:'#60605b',tags:['Automation','Workflow'],detail:['Start with the repeated action that wastes the most effort.','Extend only after the first automation works.']},
- {index:'FIRST MOVE / 05',title:'Test One Flow',copy:'QA one workflow, API, product path or AI interaction and return concise evidence.',glow:'#686862',tags:['QA','Evidence'],detail:['Useful for regression, API, UX or AI-evaluation work.','Defects are documented with evidence and acceptance criteria.']},
- {index:'FIRST MOVE / 06',title:'Prototype One Outcome',copy:'Make one working proof so the next decision is based on something real.',glow:'#74746d',tags:['Prototype','Proof'],detail:['Interactive concept, automation proof, utility surface or production sample.','The next step is earned by the result.']}
+ {index:'FIRST MOVE / 04',title:'Workflow Automation',copy:'Remove one repetitive manual step with a working automation that reduces friction immediately.',glow:'#60605b',tags:['Automation','Workflow'],detail:['Start with the repeated action that wastes the most effort.','Extend only after the first automation works.']},
+ {index:'FIRST MOVE / 05',title:'Flow Validation',copy:'Test one workflow, API, product path or AI interaction and return concise, actionable evidence.',glow:'#686862',tags:['QA','Evidence'],detail:['Useful for regression, API, UX or AI-evaluation work.','Defects are documented with evidence and acceptance criteria.']},
+ {index:'FIRST MOVE / 06',title:'Outcome Prototype',copy:'Build one working proof so the next decision is based on something tangible.',glow:'#74746d',tags:['Prototype','Proof'],detail:['Interactive concept, automation proof, utility surface or production sample.','The next step is earned by the result.']}
 ];
 
 const studio=[
@@ -27,7 +27,7 @@ const studio=[
 const work=[
  {index:'SYSTEMS + INTELLIGENCE',title:'AMX Evidence House',subtitle:'Evidence-aware retrieval',copy:'A provider-neutral evidence and workflow system designed to keep claims tied to inspectable sources.',glow:'#595954',tags:['Evidence','Workflow','Systems'],url:'./work/evidence-house.html',cta:'View build overview'},
  {index:'UTILITY + SYSTEMS',title:'ORACL3 Token Preflight',subtitle:'Read-only preflight checks',copy:'A read-only preflight utility designed to check token and network conditions before downstream action.',glow:'#65655f',tags:['API','Preflight','Utility'],url:'./work/oracl3.html',cta:'View build overview'},
- {index:'INTERACTIVE + PRODUCT',title:'H0B° unchAIned',subtitle:'Interactive product surface',copy:'An interactive AMX surface built around state, presentation and explicit truth labels.',glow:'#4e4e49',tags:['Interactive','Product','Experience'],url:'./work/hob.html',cta:'View build overview'}
+ {index:'INTERACTIVE + PRODUCT',title:'H0B° unchAIned',subtitle:'Interactive product surface',copy:'An interactive AMX surface built around state, presentation and explicit truth labels.',glow:'#4e4e49',tags:['Interactive','Product','Experience'],url:'./work/h0b.html',cta:'View build overview'}
 ];
 
 const $=id=>document.getElementById(id);
