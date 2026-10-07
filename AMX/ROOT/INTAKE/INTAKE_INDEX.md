@@ -173,6 +173,24 @@ This correction preserves provenance: Addendum J remains historical/current oper
 
 ---
 
+## FORX 13-HEAD METHOD — OWNER-ACCEPTED HYBRID DISPOSITION
+
+**Owner acceptance:** 2026-10-07  
+**Lifecycle:** ACCEPTED / INDEXED — NOT MERGED / NOT CANON / NOT BUILD-AUTHORIZED.  
+**Artifact:** `AMX/ROOT/INTAKE/FORX_13_HEAD_METHOD_OWNER_ACCEPTED_HYBRID_DISPOSITION_20261007.md`
+
+**Disposition:** **HYBRIDIZE**
+
+- **LIVE FORX:** re-entrant 13-head method for active production work and material-pivot response.
+- **SHADOW / BENCHMARK:** strict 13-head waterfall for calibration, forensic audit, reconstruction/training, and difficult closed-case comparison.
+- Waterfall findings may feed learning into live FORX through existing governance.
+- Exhaustive fixed-case scoring remains incomplete; acceptance applies to the operating split, not a claim that the experiment is fully exhausted.
+
+**Experiment branch result:** `forx-waterfall-13head-experiment-20261006 / EXPERIMENTS/FORX_13_HEAD_WATERFALL/RESULTS.md`  
+**Experiment result commit:** `87252fbe28d95162c79f46204a00f81045647ba4`
+
+---
+
 # FORX ACTIVE MANDATE — INTAKE OPTIMIZATION
 
 **Office:** FORX — Permanent Forensic Librarian  
