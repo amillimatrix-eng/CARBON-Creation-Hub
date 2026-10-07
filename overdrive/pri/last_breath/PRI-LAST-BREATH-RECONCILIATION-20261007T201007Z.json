@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "PRI-LAST-BREATH-RECONCILIATION-20261007T201007Z",
+  "observed_at_utc": "2026-10-07T20:10:07Z",
+  "deadline_local": "2026-10-08T00:00:00+02:00",
+  "counting_basis": {
+    "gmail_query": "in:sent after:2026/10/07 before:2026/10/08",
+    "execution_window_start_utc": "2026-10-07T18:02:00Z",
+    "qualification_rule": "Gmail SENT receipt with explicit price tier; hard-bounced recipients excluded from valid count.",
+    "gross_sent_receipts": 154,
+    "hard_bounce_recipients": 8,
+    "valid_nonbounced_receipts": 146,
+    "distinct_sent_recipient_coordinates": 154,
+    "lifecycle_boundary": "SENT receipt proves provider submission only. Non-bounced does not prove delivery/read/response/conversion/payment."
+  },
+  "tier_counts": {
+    "SMALLS": {
+      "valid_nonbounced": 12,
+      "target": 1000,
+      "gap": 988
+    },
+    "MEDIUM": {
+      "valid_nonbounced": 9,
+      "target": 600,
+      "gap": 591
+    },
+    "UPPER-MEDIUM": {
+      "valid_nonbounced": 81,
+      "target": 300,
+      "gap": 219
+    },
+    "UPPER": {
+      "valid_nonbounced": 44,
+      "target": 100,
+      "gap": 56
+    },
+    "TOTAL": {
+      "valid_nonbounced": 146,
+      "target": 2000,
+      "gap": 1854
+    }
+  },
+  "run_actions": [
+    {
+      "organization": "InternPulse",
+      "recipient": "partnerships@internpulse.com",
+      "tier": "SMALLS",
+      "price": 9,
+      "currency": "USD",
+      "problem": "Public website returned a server error during external check.",
+      "offer": "10-point availability and first-click diagnostic",
+      "gmail_sent_id": "1a117fbc111b9b5d",
+      "outcome": "HARD_BOUNCE_INVALID_CONTACT"
+    },
+    {
+      "organization": "Startup Lagos",
+      "recipient": "startuplagos@gmail.com",
+      "tier": "SMALLS",
+      "price": 9,
+      "currency": "USD",
+      "problem": "Public homepage returned no readable content in external text-render check.",
+      "offer": "Homepage reachability and indexability diagnostic",
+      "gmail_sent_id": "1a117fbc702ea3aa",
+      "outcome": "SENT_NO_BOUNCE_OBSERVED"
+    },
+    {
+      "organization": "Colab4Food",
+      "recipient": "geral@colab4food.com",
+      "tier": "SMALLS",
+      "price": 9,
+      "currency": "EUR",
+      "problem": "Public homepage timed out during external check.",
+      "offer": "Availability, mobile-load and contact-access diagnostic",
+      "gmail_sent_id": "1a117fbc8f147f25",
+      "outcome": "SENT_NO_BOUNCE_OBSERVED"
+    },
+    {
+      "organization": "Constructora Mardel",
+      "recipient": "contacto@mardel.com.co",
+      "tier": "SMALLS",
+      "price": 9,
+      "currency": "USD",
+      "problem": "Public business profiles and current official site expose inconsistent contact domains.",
+      "offer": "Contact-coordinate consistency check",
+      "gmail_sent_id": "1a117fbcd8c40e5b",
+      "outcome": "SENT_NO_BOUNCE_OBSERVED"
+    },
+    {
+      "organization": "Soy Startup Latam",
+      "recipient": "hola@soy-startup.com",
+      "tier": "SMALLS",
+      "price": 9,
+      "currency": "USD",
+      "problem": "Public brand domain was inaccessible and visible funnel uses a Google Form with a different email domain.",
+      "offer": "Funnel-handoff and trust-continuity check",
+      "gmail_sent_id": "1a117fbc30917412",
+      "outcome": "SENT_NO_BOUNCE_OBSERVED"
+    }
+  ],
+  "hard_bounce_recipients": [
+    "partnerships@internpulse.com",
+    "admin@willtonpb.com",
+    "booking@bareskinspa.com",
+    "bookings@ohemaassalon.com",
+    "info@physiokenya.com",
+    "info@pgffinancialservices.co.za",
+    "pichelarialiberdade@gmail.com",
+    "james.ndambiri@mncconsulting.co.ke"
+  ],
+  "responses": {
+    "substantive_new": 0,
+    "positive": 0,
+    "commitments": 0,
+    "contracts": 0,
+    "receivables": 0,
+    "verified_payments": 0
+  },
+  "provider_state": "GMAIL_SEND_AVAILABLE; NO_PROVIDER_WIDE_BLOCK; INDIVIDUAL_INVALID_ADDRESSES_EXCLUDED",
+  "t10": {
+    "supposed": "Produce qualified unique externally sent offers toward the 2000-send ladder before deadline.",
+    "actual": "Reconciled 154 SENT receipts; excluded 8 hard bounces; 146 remain non-bounced. This run added five evidence-backed $9 offers, four without immediate bounce and one hard bounce.",
+    "evidence": [
+      "Gmail SENT IDs in run_actions",
+      "Gmail Delivery Status Notification for partnerships@internpulse.com",
+      "live Gmail sent/bounce queries at observed_at_utc"
+    ],
+    "changed": "SMALLS valid count increased by four in this run; invalid InternPulse coordinate removed from usable supply.",
+    "unproven": "Delivery for non-bounced mail, reading, buyer acceptance, conversion and payment remain unproven. Deadline target remains materially incomplete."
+  }
+}
