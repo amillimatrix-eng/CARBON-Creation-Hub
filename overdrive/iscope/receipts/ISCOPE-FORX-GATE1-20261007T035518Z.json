@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "ISCOPE-FORX-GATE1-20261007T035518Z",
+  "created_at": "2026-10-07T03:55:18Z",
+  "execution_owner": "iSCOPE→PRI",
+  "proof_pack_stage": "GATE_1_FORX_THROUGHPUT",
+  "status": "NOT_PASS",
+  "required": {
+    "persisted_read_back_coordinate_backed_nodes_minimum": 1000,
+    "multi_country_diversity": true,
+    "multi_category_diversity": true
+  },
+  "observed": {
+    "primary_inventory": {
+      "title": "AMX GLOBAL BUSINESS WEB INVENTORY",
+      "drive_id": "1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc",
+      "tab": "Sheet1",
+      "range_read": "A1:Z1000",
+      "persisted_read_back_business_rows": 40,
+      "distinct_countries": 18,
+      "distinct_industries_or_categories": 34,
+      "last_file_update": "2026-10-07T00:05:41.127Z"
+    },
+    "coverage_ledger": {
+      "tab": "Coverage Ledger",
+      "range_read": "A1:L500",
+      "durable_staging_state": "AVAILABLE",
+      "stage_1_pass_evidence_found": false
+    },
+    "github_staging": {
+      "path": "overdrive/forx_prospect_buffer.json",
+      "blob_sha": "214b6091a895e0dfe0977dde47083cb1eb963d48",
+      "persisted_read_back_raw_candidates": 6,
+      "authority_boundary": "RAW_UNQUALIFIED staging; not coordinate-backed Stage-1 tranche proof"
+    },
+    "github_canary": {
+      "path": "overdrive/forx_staging_health_2026-10-07.json",
+      "blob_sha": "2bdb771f6c11168eb4a3138c00f69cdaf93dfc80",
+      "status": "WRITE_PATH_CANARY",
+      "authority_boundary": "write/read route evidence only; not throughput acceptance"
+    }
+  },
+  "decision": {
+    "gate_1": "NOT_PASS",
+    "stage_2": "NOT_STARTED",
+    "stage_3": "NOT_STARTED",
+    "pack_complete": false,
+    "reason": "Only 40 persisted/read-back inventory rows and 6 raw staging candidates were evidenced; no >=1000 coordinate-backed persisted/read-back tranche receipt exists."
+  },
+  "t10": {
+    "supposed": "Recover a durable FORX Stage-1 receipt proving at least 1000 persisted and read-back coordinate-backed nodes with country and category diversity.",
+    "actual": "The authoritative live inventory read back 40 business rows. GitHub staging read back 6 raw unqualified candidates and one write-path canary.",
+    "proof": [
+      "Google Sheet 1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc Sheet1 A1:Z1000",
+      "Google Sheet 1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc Coverage Ledger A1:L500",
+      "GitHub blob 214b6091a895e0dfe0977dde47083cb1eb963d48",
+      "GitHub blob 2bdb771f6c11168eb4a3138c00f69cdaf93dfc80"
+    ],
+    "changed": "A durable iSCOPE gate decision was recorded; Stages 2 and 3 remain closed.",
+    "unproven": [
+      "1000-node throughput",
+      "coordinate-backed status for a 1000-node tranche",
+      "Stage-2 recurring problem cluster",
+      "Stage-3 external market response",
+      "PRI conversion",
+      "payment"
+    ]
+  },
+  "continuation": {
+    "owner": "FORX",
+    "exact_next_action": "Persist and independently read back the first >=1000 coordinate-backed node tranche with row-level node IDs, coordinates, country, category, source provenance and a count/diversity receipt. Then hand the exact tranche reference to iSCOPE.",
+    "iscope_pri_rule": "Continue lawful ordinary commercial work, but do not use the under-threshold inventory to claim proof-pack progression."
+  },
+  "ordinary_commercial_continuity": {
+    "inspected_opportunity": "outlier.ai|coding-expertise-ai-training|south-africa",
+    "durable_state": "QUALIFIED / DASHBOARD_READY_SKILLS_SCREENING_PENDING",
+    "current_route_check": "Cloud browser reached Outlier login, not an authenticated dashboard.",
+    "external_evidence": "Outlier support ticket 5220137 states the verified account must complete provider skills screening before project access.",
+    "action_result": "No application or screening submission was made; provider-required human skills assessment remains the exact gate.",
+    "conversion_proven": false,
+    "payment_proven": false
+  }
+}
