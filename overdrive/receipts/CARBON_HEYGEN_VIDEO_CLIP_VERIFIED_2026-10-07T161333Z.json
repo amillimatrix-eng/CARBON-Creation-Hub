@@ -1,0 +1,66 @@
+{
+  "schema": "CARBON_PROVIDER_CAPABILITY_RECEIPT_v1",
+  "receipt_id": "CARBON-HEYGEN-VIDEO-CLIP-VERIFIED-2026-10-07T161333Z",
+  "recorded_at": "2026-10-07T17:12:00Z",
+  "provider": "HeyGen",
+  "capability": "reference-conditioned image-to-video short clip generation",
+  "source": {
+    "asset_batch_id": "0e23c05f66fb41cf9698259eba3ae1d9",
+    "asset_id": "1a475fe32a7b4b32bfa980c0d0861f90",
+    "video_job_id": "8ac4863acd85f92292e39c2a15dd8001",
+    "title": "CARBON Dragon EP01 canonical motion proof 01",
+    "video_page_url": "https://app.heygen.com/videos/8ac4863acd85f92292e39c2a15dd8001",
+    "created_at": "2026-10-07T16:12:57Z",
+    "completed_at": "2026-10-07T16:13:33Z",
+    "duration_seconds": 3.55265
+  },
+  "intended_outcome": "Execute and read back a real programmable image-to-video render for Dragon EP01 using the existing CARBON provider route.",
+  "actual_outcome": "HeyGen returned COMPLETED. The provider player opened successfully without account sign-in, and sampled start/mid frames visibly showed vertical generated motion while preserving the reference subject, wardrobe and fantasy-dragon composition.",
+  "evidence": [
+    "HeyGen bulk status readback: completed",
+    "HeyGen get_video readback: status completed; duration 3.55265 seconds; signed playback URL present",
+    "HeyGen public player page loaded and played; two distinct sampled frames were visually inspected"
+  ],
+  "critic": {
+    "status": "ACCEPTED_FOR_INTERNAL_MOTION_PROOF_ONLY",
+    "strengths": [
+      "real rendered video artifact exists",
+      "vertical framing is preserved",
+      "reference subject and wardrobe remain recognizable across sampled frames",
+      "no sampled-frame defect makes the clip unviewable"
+    ],
+    "defects_and_limits": [
+      "heavy HeyGen watermarking is visible across the image",
+      "clip is only 3.55 seconds and is not a complete shot sequence",
+      "audio, dialogue, captions and lip sync were not established for this clip",
+      "commercial-use and watermark-free rights are not proven",
+      "clip is not yet stitched into the 70-second Dragon EP01 review master"
+    ]
+  },
+  "capability_state_change": {
+    "previous": "CONNECT_NOT_VERIFIED",
+    "current": "VERIFIED_FOR_INTERNAL_IMAGE_TO_VIDEO_MOTION_PROOF",
+    "excluded_claims": [
+      "commercial-rights output",
+      "watermark-free output",
+      "full episode render",
+      "stitch/mix acceptance",
+      "publication"
+    ]
+  },
+  "production_truth": {
+    "script_accepted": true,
+    "cast_reference_accepted": true,
+    "image_continuity_verified": true,
+    "video_clip_verified": true,
+    "stitch_mix_verified": false,
+    "episode_rendered_existing_editorial_motion_prototype": true,
+    "episode_factory_final_acceptance": false,
+    "review_access_verified_for_clip": true,
+    "published": false,
+    "externally_accepted": false,
+    "invoiced": false,
+    "paid": false
+  },
+  "next_action": "Use this clip as an internal motion benchmark; obtain a lawful watermark-free/commercially usable motion route or authorized allowance, generate the remaining 5-15 second shots, then stitch, mix, caption and Critic-test a new Dragon EP01 master."
+}
