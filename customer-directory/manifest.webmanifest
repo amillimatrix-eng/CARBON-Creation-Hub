@@ -1,0 +1,9 @@
+{
+  "name": "CARBON° — The ° of Business",
+  "short_name": "CARBON°",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": []
+}
