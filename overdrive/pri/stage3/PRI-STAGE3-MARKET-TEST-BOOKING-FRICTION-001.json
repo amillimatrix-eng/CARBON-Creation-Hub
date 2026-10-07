@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "receipt_id": "PRI-STAGE3-MARKET-TEST-BOOKING-FRICTION-001",
   "stage": "STAGE_3_PRI_MARKET_PROOF",
-  "status": "MARKET_TEST_LAUNCHED_EXTERNAL_OUTCOME_PENDING",
+  "status": "MARKET_TEST_ACTIVE_ONE_EXPLICIT_REJECTION_FOUR_RESPONSE_PENDING",
   "source_stage2": {
     "cluster_id": "ISCOPE-CLUSTER-GROUP-BOOKING-FRICTION-001",
     "cluster_path": "overdrive/iscope/stage2/ISCOPE-CLUSTER-GROUP-BOOKING-FRICTION-001.json",
@@ -22,7 +22,7 @@
       "to": "education@dublinzoo.ie",
       "gmail_message_id": "1a115302613177c1",
       "gmail_thread_id": "1a115302613177c1",
-      "state": "SENT",
+      "state": "SENT_RESPONSE_PENDING",
       "problem_basis": "Group/education bookings are not available in the standard online flow and require separate contact."
     },
     {
@@ -30,15 +30,20 @@
       "to": "info@corkcitygaol.com",
       "gmail_message_id": "1a115302e8719783",
       "gmail_thread_id": "1a115302e8719783",
-      "state": "SENT",
-      "problem_basis": "Group bookings are handled by phone/email/contact."
+      "state": "RESPONDED_NEGATIVE_PROBLEM_NOT_CONFIRMED",
+      "problem_basis": "Group bookings are handled by phone/email/contact.",
+      "response_message_id": "1a115478ee90c3a9",
+      "response_at_utc": "2026-10-07T07:32:51Z",
+      "response_from": "Sarah O'Shea, General Manager",
+      "response_summary": "They are happy with the way they currently process bookings.",
+      "learning": "Disqualify the proposed booking-friction problem for Cork City Gaol; do not pursue or send a follow-up. This target-level result does not falsify the broader cluster."
     },
     {
       "organization": "National Botanic Gardens of Ireland",
       "to": "botanicgardens@opw.ie",
       "gmail_message_id": "1a115303655463bc",
       "gmail_thread_id": "1a115303655463bc",
-      "state": "SENT",
+      "state": "SENT_RESPONSE_PENDING",
       "problem_basis": "Group tours are routed to Visitor Centre phone/email rather than standard public tour booking."
     },
     {
@@ -46,7 +51,7 @@
       "to": "info@dubaidolphinarium.ae",
       "gmail_message_id": "1a115303e2e628cc",
       "gmail_thread_id": "1a115303e2e628cc",
-      "state": "SENT",
+      "state": "SENT_RESPONSE_PENDING",
       "problem_basis": "Private/group-style enquiries use separate phone/inquiry handling despite online standard bookings."
     },
     {
@@ -54,7 +59,7 @@
       "to": "groups@everymancork.com",
       "gmail_message_id": "1a11530466bd733f",
       "gmail_thread_id": "1a11530466bd733f",
-      "state": "SENT",
+      "state": "SENT_RESPONSE_PENDING",
       "problem_basis": "Group bookings are handled through phone/email while standard tickets are online."
     }
   ],
@@ -64,20 +69,47 @@
     "messages_sent": 5,
     "delivery_successes": "UNPROVEN_PENDING_PROVIDER/BOUNCE_READBACK",
     "delivery_failures": 0,
-    "responses": 0,
+    "responses": 1,
     "positive_responses": 0,
     "problem_confirmations": 0,
     "offers_presented": 5,
     "commitments_orders": 0,
     "contracts": 0,
     "receivables": 0,
-    "verified_payments": 0
+    "verified_payments": 0,
+    "delivery_successes_confirmed_by_reply": 1,
+    "delivery_successes_other": "UNPROVEN",
+    "negative_responses": 1,
+    "response_rate_of_contacted": 0.2
   },
   "truth_boundary": {
     "gmail_SENT": "proves AMX submitted the messages to Gmail's sent path; it does not prove recipient delivery or reading.",
     "conversion": "UNPROVEN",
     "payment": "UNPROVEN",
-    "stage3_pass": "PENDING_EXTERNAL_OUTCOME_EVIDENCE"
+    "stage3_pass": "ACTIVE_EXTERNAL_OUTCOME_CAPTURED; CONVERSION_NOT_PROVEN",
+    "cork_reply": "proves Cork received the proposition and explicitly rejected the problem hypothesis for its own process.",
+    "delivery": "Cork confirmed by reply; four other recipients remain unproven; no matching bounce notices were found."
   },
-  "next_action": "Monitor the five threads for bounce/delivery/reply evidence. On positive interest, produce the smallest tailored mockup/pilot and progress pricing/scope through PRI. If all five reject or ignore across the accepted follow-up window, weaken/retune the cluster rather than treating silence as conversion failure."
+  "next_action": "Do not contact Cork again. Monitor Dublin Zoo, National Botanic Gardens, Dubai Dolphinarium and The Everyman for bounce or substantive reply. Preserve silence as pending until the bounded follow-up window; then use one non-generic, value-adding follow-up or close the target. Continue weighted discovery for stronger clusters in parallel.",
+  "last_checked_at_utc": "2026-10-07T13:55:32Z",
+  "latest_evidence": {
+    "gmail_thread_readback_at_utc": "2026-10-07T13:55:32Z",
+    "matching_bounce_search": "NO_MATCHES",
+    "matching_external_replies": [
+      "1a115478ee90c3a9"
+    ],
+    "pending_response_threads": [
+      "1a115302613177c1",
+      "1a115303655463bc",
+      "1a115303e2e628cc",
+      "1a11530466bd733f"
+    ]
+  },
+  "learning_update": {
+    "cluster": "REMAINS_ACTIVE",
+    "cork_target_weight": "ZERO_FOR_THIS_PROBLEM",
+    "broader_cluster_weight": "WEAKEN_SLIGHTLY_PENDING_FOUR_OTHER_RESULTS",
+    "rationale": "One explicit target-level rejection is real evidence but is insufficient to universalize across five independently observed problem instances.",
+    "falsifier": "Broad cluster should be weakened or killed only after repeated target-level rejection/absence evidence across a sufficient bounded sample."
+  }
 }
