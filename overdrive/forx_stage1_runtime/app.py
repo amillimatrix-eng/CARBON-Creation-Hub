@@ -351,8 +351,7 @@ def build():
             if n.get("domain"):
                 domains += 1
 
-        id_raw = "
-".join(n["source_record_id"] for n in nodes)
+        id_raw = "\n".join(n["source_record_id"] for n in nodes)
         selection_sha256 = hashlib.sha256(id_raw.encode()).hexdigest()
         completed = datetime.now(timezone.utc).isoformat()
 
