@@ -1,0 +1,71 @@
+{
+  "receipt_id": "PRI-STAGE3-EXTERNAL-RESPONSE-CORK-CITY-GAOL-20261007T075636Z",
+  "created_at": "2026-10-07T07:56:36.299Z",
+  "cluster_id": "ISCOPE-CLUSTER-GROUP-BOOKING-FRICTION-001",
+  "stage3_state": "ACTIVE_EXTERNAL_OUTCOME_CAPTURED",
+  "organization": "Cork City Gaol",
+  "source_node_id": "wikidata:Q17984458",
+  "thread": {
+    "gmail_thread_id": "1a115302e8719783",
+    "outbound_message_id": "1a115302e8719783",
+    "inbound_message_id": "1a115478ee90c3a9",
+    "inbound_at": "2026-10-07T07:32:51Z",
+    "sender": "info@corkcitygaol.com",
+    "respondent": "Sarah O'Shea, General Manager",
+    "subject": "Re: Group booking flow idea for Cork City Gaol"
+  },
+  "external_outcome": {
+    "classification": "EXPLICIT_REJECTION_CURRENT_PROCESS_SATISFACTORY",
+    "exact_claim": "We are happy with the way we currently process booking.",
+    "substantive_reply": true,
+    "positive_interest": false,
+    "problem_confirmation": false,
+    "offer_presented": true,
+    "commitment_order": false,
+    "contract": false,
+    "receivable": false,
+    "payment_verified": false,
+    "pri_conversion": "UNPROVEN"
+  },
+  "market_test_rollup": {
+    "organizations_contacted": 5,
+    "replies": 1,
+    "positive_replies": 0,
+    "explicit_rejections": 1,
+    "pending_threads": 4,
+    "observed_bounces": 0,
+    "problem_confirmations": 0,
+    "commitments_orders": 0,
+    "contracts": 0,
+    "receivables": 0,
+    "verified_payments": 0
+  },
+  "learning": {
+    "action": "Do not follow up or re-contact Cork City Gaol on this offer.",
+    "cluster_weight_change": "WEAKEN_SLIGHTLY",
+    "rationale": "One of five targets explicitly reports satisfaction with the current manual process. This is buyer-specific counter-evidence, not enough to kill the cluster while four tests remain unresolved.",
+    "falsifier_state": "NOT_MET",
+    "next_action": "Monitor the four remaining existing threads without duplicate outreach. Capture any bounce, reply, confirmation, interest, commitment, conversion or payment."
+  },
+  "evidence": [
+    "Gmail inbound message 1a115478ee90c3a9",
+    "Gmail thread 1a115302e8719783",
+    "overdrive/pri/stage3/PRI-STAGE3-MARKET-TEST-BOOKING-FRICTION-001.json"
+  ],
+  "t10": {
+    "supposed": "Test whether a verified booking-friction cluster produces buyer engagement or willingness to pay.",
+    "actual": "One target replied and explicitly declined because its current booking process is satisfactory.",
+    "proves": "Authenticated Gmail reply from the organization's published domain, SPF and DMARC pass.",
+    "changed": "Stage 3 now has one external outcome; the cluster is slightly weakened and this organization is closed for this offer.",
+    "remains_unproven": [
+      "Problem confirmation",
+      "Positive interest",
+      "Commitment/order",
+      "Contract",
+      "Receivable",
+      "Payment",
+      "PRI conversion",
+      "Proof-pack completion"
+    ]
+  }
+}
