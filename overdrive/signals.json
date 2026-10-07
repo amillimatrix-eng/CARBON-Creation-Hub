@@ -157,6 +157,18 @@
       "thread_id": "1a100230dcc62423"
     },
     {
+      "due_at": "2026-10-07T09:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the same thread for delivery failure or a material response. Do not send another initial approach.",
+      "opportunity_key": "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a100231af090dc1 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a100231af090dc1"
+    },
+    {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
       "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
@@ -311,18 +323,6 @@
       "state": "RESPONDED",
       "status": "WAITING",
       "thread_id": "1a0f2ea3874d5fde"
-    },
-    {
-      "due_at": "2026-10-07T09:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the same thread for delivery failure or a material response. Do not send another initial approach.",
-      "opportunity_key": "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the same thread for delivery failure or a material response. Do not send another initial approach.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a100231af090dc1"
     },
     {
       "due_at": "2026-10-08T08:00:00Z",
@@ -529,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-07T08:54:41.748205+00:00",
+  "generated_at": "2026-10-07T15:57:34.444153+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -967,14 +967,14 @@
     },
     "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": "2026-10-07T09:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the same thread for delivery failure or a material response. Do not send another initial approach.",
       "opportunity_key": "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the same thread for delivery failure or a material response. Do not send another initial approach.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a100231af090dc1 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a100231af090dc1"
     },
     "goodshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
