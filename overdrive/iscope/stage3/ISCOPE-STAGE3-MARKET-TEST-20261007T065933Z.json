@@ -1,0 +1,92 @@
+{
+  "receipt_id": "ISCOPE-STAGE3-MARKET-TEST-20261007T065933Z",
+  "created_at": "2026-10-07T06:59:33.711Z",
+  "worker_chain": "ONE_EXISTING_ISCOPE_TO_PRI",
+  "proof_pack": {
+    "stage1": {
+      "state": "PASS",
+      "receipt_path": "overdrive/forx_stage1_proof/2026-10-07T063902Z/STAGE-1-RECEIPT.json",
+      "receipt_id": "FORX-STAGE1-PASS-20261007T063902Z",
+      "verified_persisted_readback_nodes": 1200,
+      "countries": 48,
+      "categories": 50
+    },
+    "stage2": {
+      "state": "PASS",
+      "cluster_id": "ISCOPE-CLUSTER-POI-REACHABILITY-001",
+      "table_path": "overdrive/iscope/stage2/ISCOPE-STAGE2-PROBLEM-FREQUENCY-20261007T065128Z.json",
+      "table_commit": "f8328b7120b20a3f6b5adc4ef85d69d2431789df",
+      "table_blob_sha": "acf3c08c8abd09530a9804fc2974897dc1f14a69",
+      "sample_size": 1200,
+      "matches": 1200,
+      "match_rate": 1
+    },
+    "stage3": {
+      "state": "TEST_STARTED_WAITING_EXTERNAL_OUTCOME",
+      "selected_cluster": "ISCOPE-CLUSTER-POI-REACHABILITY-001",
+      "offer": {
+        "buyer": "Audiala Solutions SA",
+        "bounded_deliverable": "Paid 100-record verified official-presence/contact/locality enrichment pilot",
+        "format": "JSON/CSV derivative with provenance",
+        "amount": "NOT_QUOTED_PENDING_BUYER_FIT_CONFIRMATION"
+      },
+      "market_test": {
+        "businesses_eligible_reachable": 1,
+        "contacts_actions_attempted": 1,
+        "gmail_transport_accepted": 1,
+        "delivery_successes": "UNVERIFIED_PENDING_NO_BOUNCE_OR_EXTERNAL_REPLY",
+        "delivery_failures_observed": 0,
+        "responses": 0,
+        "positive_responses": 0,
+        "problem_confirmations": 0,
+        "offers_presented": 1,
+        "commitments_orders": 0,
+        "contracts": 0,
+        "receivables": 0,
+        "verified_payments": 0,
+        "external_conversion": "UNPROVEN",
+        "dependency_failures": 0
+      },
+      "recipient": {
+        "address": "info@audiala.com",
+        "resolution_basis": [
+          "Official Google Play listing for Audiala",
+          "No prior Gmail thread found for audiala.com",
+          "Single organization contact used; no mass outreach"
+        ]
+      },
+      "action_evidence": {
+        "gmail_message_id": "1a115289cd24faae",
+        "gmail_thread_id": "1a115289cd24faae",
+        "gmail_label": "SENT",
+        "subject": "Audiala place-data enrichment pilot — 1,200-record proof"
+      },
+      "source_freshness": [
+        "https://audiala.com/data-sources",
+        "https://audiala.com/partners",
+        "https://play.google.com/store/apps/details?id=com.audiala.app"
+      ],
+      "next_action": "Monitor the existing Gmail thread for delivery failure or reply; if buyer confirms fit, send fixed scope and price in-thread. Do not create a duplicate contact."
+    }
+  },
+  "t10": {
+    "supposed": "Launch a bounded Stage-3 market test only after durable Stage-1 and Stage-2 PASS.",
+    "actual": "One buyer-specific paid pilot offer was sent to Audiala's official published contact after dedupe.",
+    "proves": [
+      "Gmail message/thread 1a115289cd24faae",
+      "Stage-1 receipt and Stage-2 table references above"
+    ],
+    "changed": "Stage 3 moved from NOT_STARTED to TEST_STARTED_WAITING_EXTERNAL_OUTCOME.",
+    "remains_unproven": [
+      "Delivery beyond Gmail acceptance",
+      "Buyer response",
+      "Problem confirmation",
+      "Commitment/order",
+      "Contract",
+      "Receivable",
+      "Payment",
+      "PRI conversion",
+      "Proof-pack completion"
+    ]
+  }
+}
