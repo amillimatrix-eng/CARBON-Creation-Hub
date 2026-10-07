@@ -1,0 +1,72 @@
+{
+  "schema": "AMX_PRI_LAST_BREATH_EXTENSION_RECONCILIATION_V1",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "observed_at_utc": "2026-10-07T23:55:11Z",
+  "extension_deadline_sast": "2026-10-09T00:53:00+02:00",
+  "lineage": "Continuation of the original Last Breath ledger; no counter reset.",
+  "gmail_reconciliation": {
+    "window_start_utc": "2026-10-07T18:02:00Z",
+    "gross_unique_sent_recipients_before_this_segment": 211,
+    "hard_bounce_recipients_before_this_segment": 17,
+    "counted_non_bounced_before_this_segment": 194,
+    "new_sent_this_segment": 3,
+    "matching_immediate_bounces_this_segment": 0,
+    "counted_non_bounced_after_this_segment": 197,
+    "counts": {
+      "smalls": 57,
+      "medium": 14,
+      "upper_medium": 81,
+      "upper": 45,
+      "total": 197
+    },
+    "verified_paid_usd": 0
+  },
+  "substantive_reply_check": {
+    "checked_at_utc": "2026-10-07T23:55:11Z",
+    "new_substantive_replies": 0
+  },
+  "actions": [
+    {
+      "organization": "iTRecruiter",
+      "recipient": "contacts@itrecruiter.tech",
+      "tier": "MEDIUM",
+      "price_usd": 29,
+      "evidence": "Current /pt/vagas route works, while legacy /jobs.html surfaced Error loading jobs, an example phone number, and chat marked Coming soon.",
+      "deliverable": "PT/EN/ES jobs-route QA with exact redirect and copy corrections.",
+      "gmail_message_id": "1a118caa59463cff",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    },
+    {
+      "organization": "DISNAKERJA",
+      "recipient": "disnakerja@gmail.com",
+      "tier": "MEDIUM",
+      "price_usd": 19,
+      "evidence": "General support, privacy, and removal pages expose different contact routes without a single clear routing map.",
+      "deliverable": "Three-journey contact-routing and copy correction sheet.",
+      "gmail_message_id": "1a118caa791356cc",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    },
+    {
+      "organization": "Green Farm Forum",
+      "recipient": "greenfarmforum@gmail.com",
+      "tier": "SMALLS",
+      "price_usd": 9,
+      "evidence": "Public profile spans multiple event topics but exposes only a generic inbox, without distinct speaker, sponsor, or event enquiry routes.",
+      "deliverable": "One concise enquiry brief and single-link contact structure.",
+      "gmail_message_id": "1a118caa9640ac94",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    }
+  ],
+  "dedupe": {
+    "gmail_sent_history_checked": true,
+    "duplicate_initial_outreach_counted": 0
+  },
+  "t10": {
+    "intended": "Continue unique, qualified, evidence-backed outbound during the owner-authorized extension.",
+    "actual": "Three additional unique priced offers were sent; cumulative bounce-excluded count reached 197.",
+    "proof": "Gmail SENT IDs plus bounce and inbox reconciliation; this file is the durable readback target.",
+    "change": "SMALLS +1, MEDIUM +2 in this segment.",
+    "unproven": "Delivery beyond absence of an immediate failure notice, response, acceptance, conversion, invoice, receivable, payment, and extension target completion."
+  },
+  "state": "IN_PROGRESS"
+}
