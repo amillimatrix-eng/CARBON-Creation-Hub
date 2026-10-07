@@ -1,0 +1,67 @@
+{
+  "schema": "CARBON_PROVIDER_VIDEO_ATTEMPT_v1",
+  "receipt_id": "CARBON-HEYGEN-IMAGE-VIDEO-ATTEMPT-2026-10-07-001",
+  "created_at_utc": "2026-10-07T16:13:15Z",
+  "worker": "CARBON° Production Studio",
+  "property": "The Dragon Who Could Not Claim Me",
+  "episode": "01 — IT CHOSE HER",
+  "purpose": "Close the missing provider-generated subject-motion gap with one canonical Dragon EP01 shot using already-connected, non-cash HeyGen capacity.",
+  "spend": {
+    "cash_authorized": false,
+    "cash_spent": 0,
+    "account_plan": "free",
+    "preflight_credit_readback": "premium_credits.remaining=null; add_on_credits.remaining=null",
+    "truth": "No cash charge or payment instruction was made. Provider-side included-credit consumption is not yet returned and remains UNKNOWN."
+  },
+  "source": {
+    "derived_from": "DRAGON_EP01_IT_CHOSE_HER_review_v1.mp4",
+    "source_master_sha256": "82a072ae05a3aa1c2ca98a10eda55e7305c8ecfea7c8297dd8ee245dda9c500c",
+    "frame_file": "dragon_ep01_motion_source_clean.png",
+    "frame_sha256": "e76b18275543616acf6ef8a284d3cad6bd379a0688495020fca464f2dee0c931",
+    "frame_bytes": 1559363,
+    "frame_dimensions": "720x1280",
+    "input_provenance": "Cropped caption-free 9:16 frame from the independently verified controlled Dragon EP01 review master; preserves accepted Mara/Dragon visual identity."
+  },
+  "provider_asset": {
+    "provider": "HeyGen",
+    "batch_id": "0e23c05f66fb41cf9698259eba3ae1d9",
+    "asset_id": "1a475fe32a7b4b32bfa980c0d0861f90",
+    "upload_http_status": 200,
+    "batch_status_readback": "completed"
+  },
+  "generation": {
+    "provider": "HeyGen",
+    "capability": "image_to_video_with_generated_speech",
+    "video_id": "8ac4863acd85f92292e39c2a15dd8001",
+    "voice_id": "M2WosQ2Ju3f2b7jdddsj",
+    "voice_engine": "starfish",
+    "script": "Do not move. The dragon has chosen you.",
+    "target": "9:16, 720p, MP4",
+    "submit_status": "waiting",
+    "inline_player_status": "processing"
+  },
+  "provider_state": {
+    "image_asset_upload": "VERIFIED",
+    "video_generation": "UPGRADE_IN_PROGRESS",
+    "video_clip_verified": false,
+    "commercial_use_state": "UNKNOWN_PENDING_PLAN_TERMS_AND_OUTPUT_READBACK"
+  },
+  "t10": {
+    "supposed": "Render and read back a genuine subject-motion clip for canonical Dragon EP01.",
+    "actual": "Canonical source frame uploaded successfully and a HeyGen image-to-video job was accepted; the provider reported waiting/processing.",
+    "proof": [
+      "asset batch 0e23c05f66fb41cf9698259eba3ae1d9 completed",
+      "asset 1a475fe32a7b4b32bfa980c0d0861f90",
+      "video job 8ac4863acd85f92292e39c2a15dd8001 accepted"
+    ],
+    "changed": "HeyGen video generation advanced from documentation/account CONNECT to a real attributable in-flight invocation for Dragon EP01.",
+    "not_proven": [
+      "completed video artifact",
+      "artifact download/readback",
+      "subject-motion quality",
+      "continuity acceptance",
+      "commercial-use rights",
+      "full episode replacement or revised review master"
+    ]
+  }
+}
