@@ -12071,6 +12071,57 @@
       "payer_hypothesis": "SovenTech / Hotel Management System hospitality/product operations owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; geography remains unresolved where explicitly noted; no unmet commercial pain is presumed.",
       "consumer_action": "iSCOPE verify organization identity, operating market, buyer route and current commercial need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-648",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Smart Round / Smart Round Clinic Doctor",
+      "surface": "Kenya healthcare-practice platform; package ke.co.smartroundclinic.doctor",
+      "observed_need": "Verified healthcare professionals manage availability, appointments, teleconsultations, prescriptions/summaries and platform earnings.",
+      "outcome_space": [
+        "healthcare practice",
+        "appointments",
+        "telehealth",
+        "provider payouts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ke.co.smartroundclinic.doctor",
+      "payer_hypothesis": "Smart Round / Smart Round Clinic Doctor product/provider-network owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and provider/practice operating surface evidenced; no unresolved commercial problem inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer/provider-acquisition relevance, contact route and active need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-649",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "3J Media / Africa Care Pro",
+      "surface": "South Africa clinical-practice operations; package com.africacare.app",
+      "observed_need": "Patient, prescription and clinical-workflow management for healthcare teams; current 2026 release.",
+      "outcome_space": [
+        "clinic operations",
+        "patients",
+        "prescriptions",
+        "workflow"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.africacare.app",
+      "payer_hypothesis": "3J Media / Africa Care Pro product/provider-network owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and provider/practice operating surface evidenced; no unresolved commercial problem inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer/provider-acquisition relevance, contact route and active need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-650",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Find Your Doctor",
+      "surface": "South Africa verified-doctor marketplace; package com.findyourlocum.doctor",
+      "observed_need": "HPCSA-verified doctors, speciality/availability discovery, bookings, secure video consults and professional document delivery.",
+      "outcome_space": [
+        "healthcare marketplace",
+        "provider verification",
+        "bookings",
+        "telehealth"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.findyourlocum.doctor",
+      "payer_hypothesis": "Find Your Doctor product/provider-network owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and provider/practice operating surface evidenced; no unresolved commercial problem inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer/provider-acquisition relevance, contact route and active need before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
