@@ -4,6 +4,7 @@ on:
     paths:
       - 'backend/**'
       - 'house/remediation/**'
+      - 'marketplace/**'
       - 'tests/**'
       - 'requirements*.txt'
       - 'Dockerfile'
@@ -34,12 +35,27 @@ jobs:
           done
           cat /tmp/amx-health.json
           curl -fsS http://127.0.0.1:8000/api/house/bootstrap > /tmp/amx-bootstrap.json
+          curl -fsS http://127.0.0.1:8000/api/carbon/bootstrap > /tmp/carbon-bootstrap.json
+          curl -fsS http://127.0.0.1:8000/market > /tmp/carbon-market.html
           python - <<'PY'
           import json
           h=json.load(open('/tmp/amx-health.json'))
           b=json.load(open('/tmp/amx-bootstrap.json'))
+          c=json.load(open('/tmp/carbon-bootstrap.json'))
+          market=open('/tmp/carbon-market.html', encoding='utf-8').read()
           assert h['status']=='CONNECTED'
           assert b['controls']['no_false_live_state'] is True
           assert b['controls']['model_not_matrix'] is True
-          print({'container_health':'PASS','container_bootstrap':'PASS','evidence_count':b['evidence']['count']})
+          assert c['product']=='CARBON°'
+          assert c['money_moved'] is False
+          assert c['demo_mode'] is False
+          assert c['laws']['freedom_until_commitment'] is True
+          assert "What's your intent?" in market
+          print({
+              'container_health':'PASS',
+              'container_bootstrap':'PASS',
+              'carbon_bootstrap':'PASS',
+              'carbon_market_surface':'PASS',
+              'evidence_count':b['evidence']['count'],
+          })
           PY
