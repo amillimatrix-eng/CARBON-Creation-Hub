@@ -12289,6 +12289,142 @@
       "payer_hypothesis": "Sibesonke Ltd / mFarming Sales & Agronomy commercial/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public business-operating surface evidenced; no unresolved commercial pain is presumed.",
       "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-661",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DomLift Limited / DomLift",
+      "surface": "Rwanda/East Africa property-management platform; package co.median.android.nmjpdrd",
+      "observed_need": "Landlord/property-manager dashboard for rent, repairs, expenses, inspections, reports and tenant communication.",
+      "outcome_space": [
+        "property",
+        "rent",
+        "maintenance",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=co.median.android.nmjpdrd",
+      "payer_hypothesis": "DomLift Limited / DomLift business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-662",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "My Markets Holdings Ltd / Wanyumba",
+      "surface": "East Africa real-estate operations; package com.mymarketsholdings.wanyumba",
+      "observed_need": "Kenya/Tanzania/Uganda/Rwanda listings plus agent CRM, tenant/lease management, maintenance, lead pipeline and deal-room workflows.",
+      "outcome_space": [
+        "property",
+        "real estate",
+        "CRM",
+        "tenant management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mymarketsholdings.wanyumba",
+      "payer_hypothesis": "My Markets Holdings Ltd / Wanyumba business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-663",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Newline Technologies Limited / School Dynamics Uganda",
+      "surface": "Uganda education-management software; package schooldynamics.ug",
+      "observed_need": "School fees, academics, inventory and administrative-process management.",
+      "outcome_space": [
+        "education",
+        "school finance",
+        "inventory",
+        "administration"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=schooldynamics.ug",
+      "payer_hypothesis": "Newline Technologies Limited / School Dynamics Uganda business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-664",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Believe Tech / SmartSchool Manager GH",
+      "surface": "Ghana education-management software; package com.believetech.smartschool",
+      "observed_need": "Attendance, fees/payments, academic reporting and school-administration workflow.",
+      "outcome_space": [
+        "education",
+        "school finance",
+        "attendance",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.believetech.smartschool",
+      "payer_hypothesis": "Believe Tech / SmartSchool Manager GH business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-665",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Ontech Solutions Ltd / ZamSkools",
+      "surface": "Zambia education-management software; package zm.co.ontech.zamskools",
+      "observed_need": "School administration, fees/mobile-money collection, attendance, exams and parent communications.",
+      "outcome_space": [
+        "education",
+        "school finance",
+        "payments",
+        "administration"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=zm.co.ontech.zamskools",
+      "payer_hypothesis": "Ontech Solutions Ltd / ZamSkools business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-666",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Alpha Medical Company Ltd / AfyaGo Pro",
+      "surface": "Tanzania healthcare-provider operations; package com.afyago.provider",
+      "observed_need": "Clinics, pharmacies, hospitals and ambulance providers manage requests, appointments, orders, emergency services, availability and earnings.",
+      "outcome_space": [
+        "healthcare",
+        "provider operations",
+        "appointments",
+        "pharmacy"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.afyago.provider",
+      "payer_hypothesis": "Alpha Medical Company Ltd / AfyaGo Pro business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-667",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "JAVI RSS / Afya Njema",
+      "surface": "Kenya healthcare-provider network; package com.afyanjema.app",
+      "observed_need": "Licence-verified clinicians, pharmacies, facilities and EMS operators with bookings, payments and service-dispatch surface.",
+      "outcome_space": [
+        "healthcare",
+        "provider network",
+        "pharmacy",
+        "dispatch"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.afyanjema.app",
+      "payer_hypothesis": "JAVI RSS / Afya Njema business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-668",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Maisha Meds Inc. / Maisha Meds Pharmacy POS",
+      "surface": "Kenya/Tanzania/Uganda pharmacy operations; package org.maishameds.maishamedsapp",
+      "observed_need": "Pharmacy/clinic/drug-store inventory and stock-management operating surface. Nigeria service presence is excluded from FORX penetration targeting under current owner rule.",
+      "outcome_space": [
+        "healthcare",
+        "pharmacy",
+        "inventory",
+        "clinic operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=org.maishameds.maishamedsapp",
+      "payer_hypothesis": "Maisha Meds Inc. / Maisha Meds Pharmacy POS business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
