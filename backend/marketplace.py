@@ -63,6 +63,8 @@ class CreateListingRequest(BaseModel):
             raise ValueError("max_considered_bond_minor must be >= min_bond_minor")
         if self.max_at_risk_bps < self.min_at_risk_bps:
             raise ValueError("max_at_risk_bps must be >= min_at_risk_bps")
+        if self.max_considered_bond_minor > self.price_minor:
+            raise ValueError("maximum bond cannot exceed the item price")
         return self
 
 
@@ -322,6 +324,15 @@ class MarketplaceStore:
                 raise KeyError("listing not found")
             if listing["seller_ref"] == buyer_ref:
                 raise ValueError("seller cannot bond their own listing")
+            existing_interest = conn.execute(
+                """SELECT id,state FROM interests
+                   WHERE listing_id=? AND buyer_ref=?
+                   AND state NOT IN ('RELEASED','CLOSED')
+                   LIMIT 1""",
+                (listing_id, buyer_ref),
+            ).fetchone()
+            if existing_interest:
+                raise ValueError("buyer already has an unresolved interest in this listing")
             if payload.bond_minor < listing["min_bond_minor"]:
                 raise ValueError("bond does not meet seller minimum")
             if payload.bond_minor > listing["max_considered_bond_minor"]:
