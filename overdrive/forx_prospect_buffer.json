@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:57:00+02:00",
+  "last_updated": "2026-10-08T18:04:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -10704,6 +10704,186 @@
       "payer_hypothesis": "HEFA Vendor product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-566",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "WORKZUITE / Kose Merchant",
+      "surface": "Zimbabwe merchant marketplace; package africa.kose.merchant",
+      "observed_need": "Restaurant/retail storefront orders, catalogue, promotions, earnings and seller onboarding.",
+      "outcome_space": [
+        "merchant marketplace",
+        "orders",
+        "catalogue",
+        "earnings"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=africa.kose.merchant",
+      "payer_hypothesis": "WORKZUITE / Kose Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-567",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DigitalGeeks Private Limited / Swipee",
+      "surface": "Zimbabwe mobile POS; package com.swipeeup.mobile",
+      "observed_need": "Phone-based till, product/SKU/barcode stock and back-office operations for cash, USD and ZiG merchants.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "multi-currency",
+        "barcode"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.swipeeup.mobile",
+      "payer_hypothesis": "DigitalGeeks Private Limited / Swipee product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-568",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LojaRápida / operator unresolved",
+      "surface": "Mozambique marketplace; package com.app.github",
+      "observed_need": "Local seller storefronts, orders and cash-on-delivery marketplace operations.",
+      "outcome_space": [
+        "marketplace",
+        "seller operations",
+        "cash on delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.app.github",
+      "payer_hypothesis": "LojaRápida / operator unresolved product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-569",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Kambudzi Pty Ltd / Kambudzi",
+      "surface": "Zimbabwe diaspora-commerce/logistics rail; package com.kambudzi",
+      "observed_need": "Goods/grocery fulfilment into Zimbabwe through urban delivery and collection-point logistics.",
+      "outcome_space": [
+        "commerce",
+        "logistics",
+        "distribution rail"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kambudzi",
+      "payer_hypothesis": "Kambudzi Pty Ltd / Kambudzi product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-570",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Super App ZW",
+      "surface": "Zimbabwe marketplace; package com.superappzw",
+      "observed_need": "Local buying/selling marketplace with seller participation and support workflows.",
+      "outcome_space": [
+        "marketplace",
+        "seller distribution",
+        "local commerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.superappzw",
+      "payer_hypothesis": "Super App ZW product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-571",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Leon Applications Pvt Ltd / POSKAZ",
+      "surface": "Zimbabwe retail management; package leon.apps.poskaz2026",
+      "observed_need": "Multi-branch sales, stock, cashiers/devices, logistics, ZIMRA fiscalization and multi-currency operations.",
+      "outcome_space": [
+        "POS",
+        "multi-branch",
+        "fiscalization",
+        "logistics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=leon.apps.poskaz2026",
+      "payer_hypothesis": "Leon Applications Pvt Ltd / POSKAZ product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-572",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Shopped Malawi",
+      "surface": "Malawi local marketplace; package com.sygen.shopped",
+      "observed_need": "Buyer/seller marketplace designed to expand local seller visibility and commerce.",
+      "outcome_space": [
+        "marketplace",
+        "seller acquisition",
+        "local commerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.sygen.shopped",
+      "payer_hypothesis": "Shopped Malawi product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-573",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ShopApp",
+      "surface": "Zimbabwe POS/stock; package biz.shopapp.app",
+      "observed_need": "Offline inventory, sales/profit tracking and role-limited shop-assistant access.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "offline operations",
+        "staff controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=biz.shopapp.app",
+      "payer_hypothesis": "ShopApp product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-574",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MELIOS TECHNOLOGIES / QuickMart Business",
+      "surface": "Zimbabwe ecommerce vendor operations; package com.quickmart.business",
+      "observed_need": "Vendor order and delivery management.",
+      "outcome_space": [
+        "vendor operations",
+        "orders",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.quickmart.business",
+      "payer_hypothesis": "MELIOS TECHNOLOGIES / QuickMart Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-575",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TUMA TECHNOLOGIES / Tuma",
+      "surface": "Zimbabwe freight/logistics; package com.tumalogistics",
+      "observed_need": "Delivery, moves and freight booking with real-time tracking.",
+      "outcome_space": [
+        "logistics",
+        "freight",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tumalogistics",
+      "payer_hypothesis": "TUMA TECHNOLOGIES / Tuma product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-576",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "JABU LOGISTICS / JabuPay",
+      "surface": "Namibia/Zambia merchant-supplier payments; package com.gojabu.jwallet",
+      "observed_need": "Traceable merchant/supplier payments for small shops, distributors, suppliers and fuel retailers.",
+      "outcome_space": [
+        "B2B payments",
+        "supplier payments",
+        "distribution"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.gojabu.jwallet",
+      "payer_hypothesis": "JABU LOGISTICS / JabuPay product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
