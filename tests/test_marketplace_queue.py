@@ -39,6 +39,9 @@ def test_one_active_buyer_and_clean_no_deal_handoff(tmp_path):
     c.post("/api/carbon/commitments/"+com1["id"]+"/perform",headers={"X-CARBON-Actor":b1})
     c.post("/api/carbon/commitments/"+com1["id"]+"/perform",headers={"X-CARBON-Actor":seller})
     deal=c.post("/api/carbon/commitments/"+com1["id"]+"/deal",headers={"X-CARBON-Actor":b1}).json()["record"]
+    assert deal["state"]=="FUNDING_REQUIRED"
+    deal=c.post("/api/carbon/deals/"+deal["id"]+"/fund",headers={"X-CARBON-Actor":b1}).json()["record"]
+    assert deal["state"]=="INSPECTION"
     no_deal=c.post("/api/carbon/deals/"+deal["id"]+"/decline",headers={"X-CARBON-Actor":b1},json={"reason":"item not right for me"})
     assert no_deal.status_code==200
     assert no_deal.json()["record"]["state"]=="NO_DEAL"
