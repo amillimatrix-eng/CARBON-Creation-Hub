@@ -28,7 +28,7 @@
     "PRI": 44,
     "iSCOPE": 18
   },
-  "last_tick": "2026-10-08T07:19:52.264463+00:00",
+  "last_tick": "2026-10-08T14:41:03.066245+00:00",
   "last_tick_result": {
     "pending": 0,
     "processed": [],
@@ -327,7 +327,7 @@
       "status": "COMPLETED"
     }
   ],
-  "ready_claims": 15,
+  "ready_claims": 16,
   "sequence": 12,
   "version": 2
 }
