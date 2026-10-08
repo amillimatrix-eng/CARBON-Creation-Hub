@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T19:02:00+02:00",
+  "last_updated": "2026-10-08T20:08:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -13198,9 +13198,313 @@
       "payer_hypothesis": "BRED Bank Fiji / BRED Business Connect Fiji business/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
       "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-689",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.mibank.micash.sme",
+      "organization": "Nationwide Microbank Limited / MiBank MSME",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Melanesia / Pacific Islands",
+      "sector": "MSME operations and supplier management",
+      "business_model": "B2B business-management platform",
+      "surface": "PNG MSME sales, inventory, expenses, suppliers and reporting; package com.mibank.micash.sme",
+      "observed_need": "Business owners manage transactions, revenue, stock movements, expenses, supplier databases, supply-chain activity, sub-SME reporting and monthly profit/loss.",
+      "outcome_space": [
+        "MSME operations",
+        "supplier management",
+        "economic infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mibank.micash.sme",
+      "source_observed_at": "2026-10-08T20:08:00+02:00",
+      "source_updated": "2025-05-20",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://www.mibank.com.pg",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "projects@mibank.com.pg",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+6753213820",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Play listing provides PNG-specific first-party operating evidence for supplier organization, inventory and MSME reporting. No current defect or procurement intent is inferred.",
+      "payer_hypothesis": "Nationwide Microbank Limited / MiBank MSME business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no verified graph promotion or commercial outcome claimed.",
+      "consumer_action": "iSCOPE verify current identity, active specific problem, buyer relevance, suppression and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-690",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:vu.yellowpages.www.twa",
+      "organization": "Yellow Pages Ltd / Yellow Pages Vanuatu",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Vanuatu",
+      "region": "Melanesia / Pacific Islands",
+      "sector": "business directory and market access",
+      "business_model": "B2B2C directory/advertising platform",
+      "surface": "Official Vanuatu company directory; package vu.yellowpages.www.twa",
+      "observed_need": "Businesses expose telephone, address, email, website and descriptions through Vanuatu's official online phone book; directory also supports tourism and business discovery.",
+      "outcome_space": [
+        "business directory",
+        "market access",
+        "economic infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=vu.yellowpages.www.twa",
+      "source_observed_at": "2026-10-08T20:08:00+02:00",
+      "source_updated": "2026-04-05",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://www.yellowpages.vu",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "sales@yellowpages.vu",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "webdev@yellowpages.vu",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+67824222",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play listing directly identifies an official company-directory rail. Directory companies and any claimed totals remain separate and are not promoted as AMX nodes.",
+      "payer_hypothesis": "Yellow Pages Ltd / Yellow Pages Vanuatu business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no verified graph promotion or commercial outcome claimed.",
+      "consumer_action": "iSCOPE verify current identity, active specific problem, buyer relevance, suppression and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-691",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.maua_mobile.vendor",
+      "organization": "SkyEye Ltd / Maua Seller",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Samoa",
+      "region": "Polynesia / Pacific Islands",
+      "sector": "supplier/farmer/fisher retail operations",
+      "business_model": "B2B2C seller ecommerce and business-management platform",
+      "surface": "Samoa supplier and producer operations; package com.maua_mobile.vendor",
+      "observed_need": "Farmers, fishers, carvers, entrepreneurs and SMEs manage sales, inventory, mobile-money payments, loyalty, analytics and customer engagement.",
+      "outcome_space": [
+        "supplier/farmer/fisher retail operations",
+        "economic infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.maua_mobile.vendor",
+      "source_observed_at": "2026-10-08T20:08:00+02:00",
+      "source_updated": "2022-11-10",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://vendor.maua.app",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "info@maua.app",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "nome@skyeye.ws",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+6858408999",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Distinct seller-side package preserves supplier/producer workflow provenance separately from the previously staged buyer app. Freshness is weak and must be validated before qualification.",
+      "payer_hypothesis": "SkyEye Ltd / Maua Seller business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no verified graph promotion or commercial outcome claimed.",
+      "consumer_action": "iSCOPE verify current identity, active specific problem, buyer relevance, suppression and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-692",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.yellowpagespng.yellowpagespngapp",
+      "organization": "Yellow Pages PNG / Yellow Online",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Melanesia / Pacific Islands",
+      "sector": "business and trades directory",
+      "business_model": "B2B2C directory/visibility platform",
+      "surface": "PNG business, tradesperson and service directory; package com.yellowpagespng.yellowpagespngapp",
+      "observed_need": "Verified local listings expose contact details, directions, hours and category/location discovery; businesses can maintain searchable visibility and users can contact them directly.",
+      "outcome_space": [
+        "business",
+        "trades directory",
+        "economic infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.yellowpagespng.yellowpagespngapp",
+      "source_observed_at": "2026-10-08T20:08:00+02:00",
+      "source_updated": "2026-02-18",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://yellowpages.com.pg",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "sales@yellowpages.com.pg",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "yellowpagespng@gmail.com",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+6753258344",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play listing provides a public business-discovery and contactability rail. Listing populations are not counted as candidates or nodes without record-level capture.",
+      "payer_hypothesis": "Yellow Pages PNG / Yellow Online business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no verified graph promotion or commercial outcome claimed.",
+      "consumer_action": "iSCOPE verify current identity, active specific problem, buyer relevance, suppression and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-693",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.everisamting.businessandevents",
+      "organization": "Everisamting.com / Vanuatu Maps & Events",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Vanuatu",
+      "region": "Melanesia / Pacific Islands",
+      "sector": "local business and events discovery",
+      "business_model": "B2B2C local directory/promotion platform",
+      "surface": "Vanuatu offline business and events map; package com.everisamting.businessandevents",
+      "observed_need": "Businesses can be discovered, claimed, contacted and promoted alongside events and offline mapping for remote access.",
+      "outcome_space": [
+        "local business",
+        "events discovery",
+        "economic infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.everisamting.businessandevents",
+      "source_observed_at": "2026-10-08T20:08:00+02:00",
+      "source_updated": "2025-07-27",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "support_email",
+          "value": "info@everisamting.com",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+6785523694",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Play listing evidences a Vanuatu-specific business-promotion and offline-discovery surface. Child business listings remain separate network edges until individually resolved.",
+      "payer_hypothesis": "Everisamting.com / Vanuatu Maps & Events business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no verified graph promotion or commercial outcome claimed.",
+      "consumer_action": "iSCOPE verify current identity, active specific problem, buyer relevance, suppression and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-694",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:vu.cloudpay.cloudpay_staff",
+      "organization": "DOMINO LIMITED / ReefStack Technologies / CloudPAY.vu Staff",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Vanuatu",
+      "region": "Melanesia / Pacific Islands",
+      "sector": "workforce management and payroll",
+      "business_model": "B2B workforce SaaS",
+      "surface": "Vanuatu workforce/payroll operations; package vu.cloudpay.cloudpay_staff",
+      "observed_need": "Employers enable staff and team leaders to manage clockings, timesheets, hours, leave, departments, tolerances, review state and payroll-ready records.",
+      "outcome_space": [
+        "workforce management",
+        "payroll",
+        "economic infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=vu.cloudpay.cloudpay_staff",
+      "source_observed_at": "2026-10-08T20:08:00+02:00",
+      "source_updated": "2026-08-26",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://cloudpay.vu",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "contact@cloudpay.vu",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "pascal@iec.vu",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+6787569690",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play listing explicitly requires an active CloudPay.vu business account and exposes employer/team-leader workflow. One-plus installs indicate early public adoption, not failure.",
+      "payer_hypothesis": "DOMINO LIMITED / ReefStack Technologies / CloudPAY.vu Staff business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no verified graph promotion or commercial outcome claimed.",
+      "consumer_action": "iSCOPE verify current identity, active specific problem, buyer relevance, suppression and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-695",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.usorentals.android",
+      "organization": "USO Rentals Samoa / USO Rentals Management",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Samoa",
+      "region": "Polynesia / Pacific Islands",
+      "sector": "vehicle rental operations",
+      "business_model": "internal fleet/reservation management",
+      "surface": "Samoa vehicle-rental management; package com.usorentals.android",
+      "observed_need": "Managers and field assistants operate reservations, customers and vehicles for a Samoa rental business.",
+      "outcome_space": [
+        "vehicle rental operations",
+        "economic infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.usorentals.android",
+      "source_observed_at": "2026-10-08T20:08:00+02:00",
+      "source_updated": "2026-04-25",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "support_email",
+          "value": "usorentals@gmail.com",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play listing directly identifies the named Samoa operator and internal day-to-day workflow. Developer identity differs from payer/operator identity and is preserved separately.",
+      "payer_hypothesis": "USO Rentals Samoa / USO Rentals Management business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no verified graph promotion or commercial outcome claimed.",
+      "consumer_action": "iSCOPE verify current identity, active specific problem, buyer relevance, suppression and route fitness before PRI action."
     }
   ],
-  "current_run_note": "FORX weighted public discovery active; current production truth is 50,000 durable nodes per Root Intake workflow 37810563734, while this file remains candidate/evidence staging only.",
+  "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
   "integrity_note": {
     "duplicate_candidate_id_repair": {
       "repaired_at": "2026-10-08T16:58:00+02:00",
@@ -13253,126 +13557,255 @@
     "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
   },
   "last_continuity": {
-    "observed_at": "2026-10-08T19:02:00+02:00",
+    "observed_at": "2026-10-08T20:08:00+02:00",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261008-1855-SAST",
+    "run_identity": "FORX-CONTINUOUS-20261008-2000-SAST",
     "prior_receipt": {
       "observed_at": "2026-10-08T19:02:00+02:00",
-      "producer": "MASTER support for FORX→iSCOPE",
-      "candidate_ids": [
-        "FORX-PROSPECT-20261008-646"
+      "producer": "FORX Continuous Play Sweep",
+      "run_identity": "FORX-CONTINUOUS-20261008-1855-SAST",
+      "prior_receipt": {
+        "observed_at": "2026-10-08T19:02:00+02:00",
+        "producer": "MASTER support for FORX→iSCOPE",
+        "candidate_ids": [
+          "FORX-PROSPECT-20261008-646"
+        ],
+        "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
+      },
+      "consumed_sources": [
+        {
+          "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
+          "revision": "AHj4eMQgdQE4GpGOp5bAzEtQmSVCaicQtxVhcFX_WFbgP2oeAwxBLq6wEL0AwTQiQdgUUq_UJtxH0Q3H6As7dAspms0xaMlJtPxR9to46g",
+          "observed_at": "2026-10-08T16:55:00Z"
+        },
+        {
+          "id": "3f28f8b56cd781bd945dcd8630253ef8",
+          "revision": "page_last_edited_at:2026-10-08T16:49:13.800Z",
+          "observed_at": "2026-10-08T16:49:13.800Z"
+        },
+        {
+          "id": "1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc",
+          "revision": "Learning Weights LEARNING-001..020 + Coverage Ledger snapshot",
+          "observed_at": "2026-10-08T19:02:00+02:00"
+        },
+        {
+          "id": "overdrive/forx_prospect_buffer.json",
+          "revision": "de557b54d251fe9fbe2176259a09ff90cdf0b83b",
+          "observed_at": "2026-10-08T19:02:00+02:00"
+        },
+        {
+          "id": "overdrive/forx_staging_health_2026-10-07.json",
+          "revision": "2bdb771f6c11168eb4a3138c00f69cdaf93dfc80",
+          "observed_at": "2026-10-08T19:02:00+02:00"
+        }
       ],
-      "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
+      "apply_example": {
+        "prior_learning": [
+          "LEARNING-009",
+          "LEARNING-013",
+          "LEARNING-015",
+          "Root Intake 50K durable PASS"
+        ],
+        "changed_action": "Selected Pacific/Southern-Africa economic infrastructure and asset-heavy workflows (digital addressing, livestock compliance, field sales, supplier/contractor networks, insurance distribution) instead of repeating saturated generic-wallet discovery.",
+        "source_pointers": [
+          "Learning Weights!A1:J200",
+          "Root Intake section FORX 50K DURABLE PASS"
+        ]
+      },
+      "exact_coordinate": {
+        "geography": [
+          "Samoa",
+          "Fiji",
+          "Namibia",
+          "Botswana"
+        ],
+        "language": "English",
+        "sector": [
+          "digital addressing",
+          "livestock/farm operations",
+          "field sales/distribution",
+          "supplier and skilled-service marketplaces",
+          "insurance distribution",
+          "SME banking"
+        ],
+        "source": "Google Play public listings",
+        "surface": "business-operating apps and network rails",
+        "problem": "candidate-specific first-party operating surface only",
+        "size": "local and regional operators",
+        "offer": null,
+        "price": null
+      },
+      "component_evidence": {
+        "discovered": 11,
+        "exact_key_new": 11,
+        "staged_pending_ingestion": 11,
+        "verified_graph_delta_claimed": 0,
+        "explored": 11,
+        "exploited": 0
+      },
+      "result_ids": [
+        "FORX-PROSPECT-20261008-678",
+        "FORX-PROSPECT-20261008-679",
+        "FORX-PROSPECT-20261008-680",
+        "FORX-PROSPECT-20261008-681",
+        "FORX-PROSPECT-20261008-682",
+        "FORX-PROSPECT-20261008-683",
+        "FORX-PROSPECT-20261008-684",
+        "FORX-PROSPECT-20261008-685",
+        "FORX-PROSPECT-20261008-686",
+        "FORX-PROSPECT-20261008-687",
+        "FORX-PROSPECT-20261008-688"
+      ],
+      "uncertainty": [
+        "Canonical organization/payer identity remains unresolved where marked.",
+        "Kopo Provider and Maua freshness is weaker than 2026-updated observations.",
+        "No current buyer problem, acceptance, invoice or payment is inferred."
+      ],
+      "cooldown": {
+        "scope": "Exact package IDs in this tranche",
+        "state": "SEARCHED_WITH_QUALIFIED_OBSERVATION",
+        "until": "Revisit only for genuinely new provenance/contact/problem evidence."
+      },
+      "next_alternatives": [
+        {
+          "coordinate": "Pacific islands / construction-supplier or fisheries cold-chain operating apps",
+          "why": "Same weak-geography lane, different asset-heavy sector."
+        },
+        {
+          "coordinate": "Southern Africa / manufacturer-distributor field operations outside payments",
+          "why": "Same high-information workflow family, different geography and source-key set."
+        }
+      ],
+      "chosen_next_action": "Stage this exact-key tranche and independently read it back, then expose only current problem-qualified records to iSCOPE.",
+      "unresolved_gaps": [
+        "Authoritative graph ingestion of these candidate records remains pending.",
+        "Commercial receipt search returned no attributable outcome record for these coordinates."
+      ],
+      "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH; 50K durable production proof is separate and already evidenced in Root Intake."
     },
     "consumed_sources": [
       {
         "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
-        "revision": "AHj4eMQgdQE4GpGOp5bAzEtQmSVCaicQtxVhcFX_WFbgP2oeAwxBLq6wEL0AwTQiQdgUUq_UJtxH0Q3H6As7dAspms0xaMlJtPxR9to46g",
-        "observed_at": "2026-10-08T16:55:00Z"
+        "revision": "ANLCKQkpgyB60Us9MOyetujsMwxlE-dw8L75kUelA92Pd0KcCmqDy_lMRBOYADAwqZgDrfWg4ZDbjE1YKwLjG8eozW4h1Pa9FD6nwmSGAw",
+        "observed_at": "2026-10-08T20:08:00+02:00"
       },
       {
         "id": "3f28f8b56cd781bd945dcd8630253ef8",
-        "revision": "page_last_edited_at:2026-10-08T16:49:13.800Z",
-        "observed_at": "2026-10-08T16:49:13.800Z"
+        "revision": "fetched_at_run_entry",
+        "observed_at": "2026-10-08T20:08:00+02:00"
       },
       {
         "id": "1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc",
         "revision": "Learning Weights LEARNING-001..020 + Coverage Ledger snapshot",
-        "observed_at": "2026-10-08T19:02:00+02:00"
+        "observed_at": "2026-10-08T20:08:00+02:00"
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "de557b54d251fe9fbe2176259a09ff90cdf0b83b",
-        "observed_at": "2026-10-08T19:02:00+02:00"
+        "revision": "0d1f17110fcd16ac0dc35283c26fac727e700ecf",
+        "observed_at": "2026-10-08T20:08:00+02:00"
       },
       {
-        "id": "overdrive/forx_staging_health_2026-10-07.json",
-        "revision": "2bdb771f6c11168eb4a3138c00f69cdaf93dfc80",
-        "observed_at": "2026-10-08T19:02:00+02:00"
+        "id": "overdrive/pri/last_breath/",
+        "revision": "search:no_matching_receipts",
+        "observed_at": "2026-10-08T20:08:00+02:00"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "LEARNING-009",
-        "LEARNING-013",
+        "prior_receipt.next_alternatives[0]",
         "LEARNING-015",
-        "Root Intake 50K durable PASS"
+        "LEARNING-016",
+        "LEARNING-018",
+        "LEARNING-020"
       ],
-      "changed_action": "Selected Pacific/Southern-Africa economic infrastructure and asset-heavy workflows (digital addressing, livestock compliance, field sales, supplier/contractor networks, insurance distribution) instead of repeating saturated generic-wallet discovery.",
+      "changed_action": "Executed the saved Pacific fisheries/cold-chain and asset-heavy lateral instead of repeating the prior Samoa/Fiji payments cluster; preserved Maua Seller as a distinct source observation while retaining its link to the already staged buyer-side operator.",
       "source_pointers": [
-        "Learning Weights!A1:J200",
-        "Root Intake section FORX 50K DURABLE PASS"
+        "overdrive/forx_prospect_buffer.json:last_continuity.next_alternatives",
+        "Learning Weights!A16:J21"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Samoa",
         "Fiji",
-        "Namibia",
-        "Botswana"
+        "Samoa",
+        "Vanuatu",
+        "Papua New Guinea"
       ],
       "language": "English",
       "sector": [
-        "digital addressing",
-        "livestock/farm operations",
-        "field sales/distribution",
-        "supplier and skilled-service marketplaces",
-        "insurance distribution",
-        "SME banking"
+        "fisheries compliance",
+        "supplier/MSME operations",
+        "business directories",
+        "workforce/payroll",
+        "vehicle rental operations"
       ],
-      "source": "Google Play public listings",
-      "surface": "business-operating apps and network rails",
-      "problem": "candidate-specific first-party operating surface only",
+      "category": "economic infrastructure",
+      "model": [
+        "B2B",
+        "B2B2C",
+        "internal operations"
+      ],
+      "problem": "first-party operating evidence only",
       "size": "local and regional operators",
+      "source": [
+        "Google Play",
+        "official chamber/registry/directory sources"
+      ],
+      "surface": "apps plus public business-network rails",
       "offer": null,
       "price": null
     },
     "component_evidence": {
-      "discovered": 11,
-      "exact_key_new": 11,
-      "staged_pending_ingestion": 11,
+      "candidate_exact_keys_discovered": 7,
+      "candidates_staged_pending_ingestion": 7,
+      "network_rails_discovered": 6,
       "verified_graph_delta_claimed": 0,
-      "explored": 11,
+      "explored": 13,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261008-678",
-      "FORX-PROSPECT-20261008-679",
-      "FORX-PROSPECT-20261008-680",
-      "FORX-PROSPECT-20261008-681",
-      "FORX-PROSPECT-20261008-682",
-      "FORX-PROSPECT-20261008-683",
-      "FORX-PROSPECT-20261008-684",
-      "FORX-PROSPECT-20261008-685",
-      "FORX-PROSPECT-20261008-686",
-      "FORX-PROSPECT-20261008-687",
-      "FORX-PROSPECT-20261008-688"
+      "FORX-PROSPECT-20261008-689",
+      "FORX-PROSPECT-20261008-690",
+      "FORX-PROSPECT-20261008-691",
+      "FORX-PROSPECT-20261008-692",
+      "FORX-PROSPECT-20261008-693",
+      "FORX-PROSPECT-20261008-694",
+      "FORX-PROSPECT-20261008-695"
+    ],
+    "network_result_keys": [
+      "google_play:com.fishidentifiers.fish_identifiers",
+      "url:https://ffia.com.fj/member-directory/",
+      "url:https://vcci.vu/about/",
+      "url:https://fijichamber.com/home/connect_with_members",
+      "url:https://samoachamber.ws/about/",
+      "url:https://www.businessregistries.gov.ws/guest/",
+      "url:https://fijitradeportal.gov.fj/en-gb/search-form/view/27"
     ],
     "uncertainty": [
-      "Canonical organization/payer identity remains unresolved where marked.",
-      "Kopo Provider and Maua freshness is weaker than 2026-updated observations.",
-      "No current buyer problem, acceptance, invoice or payment is inferred."
+      "4FJ and the formal directories/registries are network evidence, not private-commercial candidate counts.",
+      "Maua Seller freshness is old despite distinct seller-side provenance.",
+      "No directory member, chamber member, registry entity or published population is promoted automatically."
     ],
     "cooldown": {
-      "scope": "Exact package IDs in this tranche",
+      "scope": "Exact package and network URLs in this tranche",
       "state": "SEARCHED_WITH_QUALIFIED_OBSERVATION",
-      "until": "Revisit only for genuinely new provenance/contact/problem evidence."
+      "until": "Revisit only for new record-level evidence or freshness changes."
     },
     "next_alternatives": [
       {
-        "coordinate": "Pacific islands / construction-supplier or fisheries cold-chain operating apps",
-        "why": "Same weak-geography lane, different asset-heavy sector."
+        "coordinate": "Pacific islands / fisheries cold-chain operators and exporters by individual official identity",
+        "why": "Convert the network rail into bounded record-level evidence without using member counts."
       },
       {
-        "coordinate": "Southern Africa / manufacturer-distributor field operations outside payments",
-        "why": "Same high-information workflow family, different geography and source-key set."
+        "coordinate": "PNG/Vanuatu / construction and industrial suppliers through current official directories",
+        "why": "Same geography, different high-value asset-heavy sector with public identity rails."
       }
     ],
-    "chosen_next_action": "Stage this exact-key tranche and independently read it back, then expose only current problem-qualified records to iSCOPE.",
+    "chosen_next_action": "Persist and independently read back this candidate tranche; route separate network rails through existing Root Intake, then continue only with record-level exact keys.",
     "unresolved_gaps": [
-      "Authoritative graph ingestion of these candidate records remains pending.",
-      "Commercial receipt search returned no attributable outcome record for these coordinates."
+      "Authoritative graph ingestion remains separate.",
+      "No attributable commercial response for these coordinates was found in repository receipt search."
     ],
-    "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH; 50K durable production proof is separate and already evidenced in Root Intake."
+    "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH; NETWORK MEMBER COUNTS != AMX NODES."
   }
 }
