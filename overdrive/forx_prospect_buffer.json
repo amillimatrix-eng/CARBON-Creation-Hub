@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T19:15:00+02:00",
+  "last_updated": "2026-10-08T19:28:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -6060,6 +6060,134 @@
       "payer_hypothesis": "Innovative Diagnostic Centre Limited",
       "fit_note": "Direct Zambia specialist-business source. Healthcare services require normal privacy/compliance boundaries; no patient-level data is involved in FORX discovery.",
       "consumer_action": "iSCOPE validate business enquiry, corporate-client intake, equipment quotation/follow-up or appointment/admin workflow at organization level only."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-327",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Addmath",
+      "surface": "Boutique accounting/business advisory firm; Botswana",
+      "observed_need": "Gaborone BICA-registered firm focuses on SMEs with accounting, tax, corporate finance, governance, fundraising, working-capital management and business advisory.",
+      "outcome_space": [
+        "accounting",
+        "tax",
+        "SME advisory",
+        "corporate finance",
+        "governance"
+      ],
+      "source": "https://www.addmath.net/about-us/",
+      "published": "2026",
+      "payer_hypothesis": "Addmath",
+      "fit_note": "Direct Botswana boutique professional-services source with explicit SME focus.",
+      "consumer_action": "iSCOPE validate consultation intake, recurring document collection, compliance reminders, client follow-up or advisory workflow before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-328",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Nlebgwa Law Group",
+      "surface": "Boutique law firm; Botswana",
+      "observed_need": "Gaborone boutique law firm provides tailored legal solutions with personalized service across Botswana judicial centres and direct partner contact.",
+      "outcome_space": [
+        "legal services",
+        "client intake",
+        "professional practice",
+        "commercial advisory"
+      ],
+      "source": "https://www.nlebgwalaw.co.bw/about",
+      "published": "2026",
+      "payer_hypothesis": "Nlebgwa Law Group",
+      "fit_note": "Direct Botswana boutique-practice identity. No admin or conversion weakness inferred.",
+      "consumer_action": "iSCOPE validate consultation booking, document intake, matter updates, lead follow-up or repetitive client communications before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-329",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Nabasa & Co. Advocates",
+      "surface": "Boutique commercial law firm; Uganda",
+      "observed_need": "Kampala boutique law firm advises infrastructure/construction, banking, M&A, litigation, insurance, employment, immigration and ADR with direct phone/email route.",
+      "outcome_space": [
+        "legal services",
+        "commercial advisory",
+        "client intake",
+        "professional practice"
+      ],
+      "source": "https://www.nabasalaw.com/",
+      "published": "2026",
+      "payer_hypothesis": "Nabasa & Co. Advocates",
+      "fit_note": "Direct Uganda boutique legal practice with broad business-law surface.",
+      "consumer_action": "iSCOPE validate consultation intake, matter-document collection, client update or business-development workflow for a current bounded need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-330",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Adalci Advocates",
+      "surface": "Boutique law firm; Uganda",
+      "observed_need": "Kampala boutique practice offers tailored corporate/commercial, international-trade, sports/entertainment and public-policy advisory and emphasizes personal client engagement.",
+      "outcome_space": [
+        "legal services",
+        "commercial advisory",
+        "international trade",
+        "client intake"
+      ],
+      "source": "https://adalci.co.ug/about-us/",
+      "published": "2026",
+      "payer_hypothesis": "Adalci Advocates",
+      "fit_note": "Direct Uganda boutique-practice source; no operational defect inferred.",
+      "consumer_action": "iSCOPE inspect consultation, onboarding, document exchange, follow-up and client-communication workflow for an evidenced gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-331",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Helena Ndinelago Nepembe Legal Practitioners",
+      "surface": "Boutique legal practice; Namibia",
+      "observed_need": "Namibian founder-led boutique law firm provides conveyancing, commercial law, trusts and estate administration to financial institutions, developers, professionals and individuals.",
+      "outcome_space": [
+        "legal services",
+        "conveyancing",
+        "commercial law",
+        "estate administration"
+      ],
+      "source": "https://nepembe-law.com/",
+      "published": "2026",
+      "payer_hypothesis": "Helena Ndinelago Nepembe Legal Practitioners",
+      "fit_note": "Direct Namibia boutique legal-practice evidence and founder-led profile.",
+      "consumer_action": "iSCOPE validate consultation/quote intake, property-document workflow, matter updates or repetitive client communications before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-332",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PAFC",
+      "surface": "Boutique chartered accounting/tax/advisory firm; Mauritius",
+      "observed_need": "Mauritius partner-led boutique firm serves startups, SMEs, self-employed clients and associations with accounting, tax, internal audit, structuring and strategic advisory, with free-consultation route.",
+      "outcome_space": [
+        "accounting",
+        "tax",
+        "SME advisory",
+        "audit",
+        "business structuring"
+      ],
+      "source": "https://pafaccountants.com/",
+      "published": "2026",
+      "payer_hypothesis": "PAFC",
+      "fit_note": "Direct Mauritius boutique-practice evidence with explicit SME/startup target market.",
+      "consumer_action": "iSCOPE validate consultation conversion, recurring document collection, compliance reminders, client reporting or lead follow-up for a bounded current problem."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-333",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LUMEN Ltd",
+      "surface": "Geotechnical engineering and technical consultancy; Rwanda",
+      "observed_need": "Kigali specialist engineering firm provides ground investigation, laboratory testing, technical analysis, reporting and consultancy for commercial/industrial projects with direct project-enquiry route.",
+      "outcome_space": [
+        "engineering consultancy",
+        "geotechnical testing",
+        "technical reporting",
+        "project intake"
+      ],
+      "source": "https://www.lumenltd.rw/",
+      "published": "2026",
+      "payer_hypothesis": "LUMEN Ltd",
+      "fit_note": "Direct Rwanda specialist technical-practice source. Company publishes substantial project experience; no weakness inferred.",
+      "consumer_action": "iSCOPE validate project-enquiry intake, quote/proposal workflow, field/lab scheduling, technical-report delivery or follow-up for a current bounded opportunity."
     }
   ],
   "current_run_note": "FORX public-web problem-signal tranche appended; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
