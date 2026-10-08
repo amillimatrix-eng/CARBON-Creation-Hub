@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:05:00+02:00",
+  "last_updated": "2026-10-08T17:09:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -8625,6 +8625,73 @@
       ],
       "source": "https://play.google.com/store/apps/details?id=com.ag.lomegnoseller",
       "payer_hypothesis": "TOGOTULAWO / Lomegno Seller product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-440",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ORANGE BURKINA FASO SA / Orange Money Pay",
+      "surface": "Burkina Faso merchant operations; package com.orange.bf.om_merchant",
+      "observed_need": "Merchant sales, cash-register and transaction management, collections/performance reporting and in-app merchant account creation.",
+      "outcome_space": [
+        "merchant payments",
+        "cash register",
+        "collections",
+        "merchant onboarding"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.orange.bf.om_merchant",
+      "payer_hypothesis": "ORANGE BURKINA FASO SA / Orange Money Pay product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-441",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Orange République Centrafricaine / Orange Money Pro",
+      "surface": "Central African Republic merchant/agent payments; package com.orange.money.cf.pro",
+      "observed_need": "Merchant QR payments plus digital deposit/withdrawal workflows for Orange Money points of sale.",
+      "outcome_space": [
+        "merchant payments",
+        "QR",
+        "agent network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.orange.money.cf.pro",
+      "payer_hypothesis": "Orange République Centrafricaine / Orange Money Pro product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-442",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Orange Mali / Yaali",
+      "surface": "Mali merchant management; package com.orange.ml.wanamobile",
+      "observed_need": "Merchant QR collections, supplier payments, customer payment initiation, change transfers, balance/history and business dashboard.",
+      "outcome_space": [
+        "merchant payments",
+        "supplier payments",
+        "dashboard",
+        "QR"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.orange.ml.wanamobile",
+      "payer_hypothesis": "Orange Mali / Yaali product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-443",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "FASORA / sagel",
+      "surface": "Burkina Faso local commerce/events platform; package bf.fasora.app",
+      "observed_need": "Local vendor marketplace, event registration and mobile-payment commerce for Burkinabè businesses.",
+      "outcome_space": [
+        "marketplace",
+        "local vendors",
+        "mobile payments",
+        "events"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=bf.fasora.app",
+      "payer_hypothesis": "FASORA / sagel product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
     }
