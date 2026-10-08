@@ -63,7 +63,13 @@ def test_bilateral_marketplace_loop(tmp_path):
 
     r=c.post("/api/carbon/commitments/"+commitment["id"]+"/deal",headers={"X-CARBON-Actor":buyer})
     deal=r.json()["record"]
+    assert deal["state"]=="FUNDING_REQUIRED"
+    funded=c.post("/api/carbon/deals/"+deal["id"]+"/fund",headers={"X-CARBON-Actor":buyer})
+    assert funded.status_code==200
+    deal=funded.json()["record"]
     assert deal["state"]=="INSPECTION"
+    assert deal["funding_state"]=="SANDBOX_PURCHASE_FUNDS_SECURED"
+    assert funded.json()["bond_and_purchase_funds_are_separate"] is True
     r=c.post("/api/carbon/deals/"+deal["id"]+"/accept",headers={"X-CARBON-Actor":buyer})
     assert r.json()["record"]["state"]=="INSPECTION"
     r=c.post("/api/carbon/deals/"+deal["id"]+"/accept",headers={"X-CARBON-Actor":seller})
