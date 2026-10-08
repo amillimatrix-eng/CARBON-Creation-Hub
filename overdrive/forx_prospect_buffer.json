@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:34:00+02:00",
+  "last_updated": "2026-10-08T17:48:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -4926,6 +4926,117 @@
       "payer_hypothesis": "FACTURANDO",
       "fit_note": "Uruguay merchant-management surface; source-reported company-count scale must not be converted to AMX nodes.",
       "consumer_action": "iSCOPE normalize exact update date and validate onboarding, payment/stock workflow and current merchant-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-274",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Plate POS",
+      "surface": "Google Play restaurant POS + booking; package is.platepos.app; Iceland",
+      "observed_need": "Current Aug 26 2026 app provides table ordering to kitchen, reservations, integrated card payments, VAT/ID-compliant invoicing and cloud sync; developed in Iceland for Icelandic restaurants.",
+      "outcome_space": [
+        "restaurant POS",
+        "booking",
+        "payments",
+        "VAT invoicing",
+        "kitchen workflow"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=is.platepos.app",
+      "published": "2026-08-26",
+      "payer_hypothesis": "Plate POS product owner",
+      "fit_note": "Fresh Iceland-specific restaurant workflow.",
+      "consumer_action": "iSCOPE resolve legal operator/contact and validate restaurant onboarding, reservations/payment integration and current support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-275",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Noona Labs ehf. / SalesCloud POS",
+      "surface": "Google Play omni-channel POS; package is.salescloud.pos; Iceland",
+      "observed_need": "Current Aug 26 2026 app sells products, subscriptions and tickets, syncs live sales analytics and integrates with card readers, printers and cash registers.",
+      "outcome_space": [
+        "POS",
+        "omnichannel",
+        "subscriptions",
+        "tickets",
+        "sales analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=is.salescloud.pos",
+      "published": "2026-08-26",
+      "payer_hypothesis": "Noona Labs ehf. / SalesCloud",
+      "fit_note": "Fresh Iceland legal/operator evidence with hardware integrations.",
+      "consumer_action": "iSCOPE validate merchant onboarding, hardware/integration support and current sales-operations needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-276",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Spatula / Restaurant Merchant",
+      "surface": "Google Play restaurant merchant operations; package is.spatula.merchant; Iceland operating market, Australia developer",
+      "observed_need": "Current Aug 21 2026 app handles delivery/pickup/dine-in orders, live delivery tracking, end-of-day revenue/tip/discount/payment reports and multi-staff PIN access. Latest notes fixed a call-button crash and improved delivery-address display.",
+      "outcome_space": [
+        "restaurant operations",
+        "delivery",
+        "end-of-day reporting",
+        "multi-staff",
+        "support"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=is.spatula.merchant",
+      "published": "2026-08-21",
+      "payer_hypothesis": "Spatula product owner",
+      "fit_note": "Iceland operating surface with foreign legal developer kept separate; concrete maintenance signals are attributable.",
+      "consumer_action": "iSCOPE validate current restaurant-network activity, delivery/support load and whether reported defects remain resolved."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-277",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "JCC Payment Systems Ltd / JCC SoftPOS",
+      "surface": "Google Play merchant softPOS; package cy.com.jcc.softpos; Cyprus",
+      "observed_need": "Current service lets Cyprus merchants accept contactless card/wallet payments directly on NFC Android devices after merchant registration with JCC.",
+      "outcome_space": [
+        "softPOS",
+        "merchant payments",
+        "merchant onboarding"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=cy.com.jcc.softpos",
+      "published": "2026",
+      "payer_hypothesis": "JCC Payment Systems Ltd",
+      "fit_note": "Direct Cyprus payment operator and merchant-onboarding surface; exact update date to normalize later.",
+      "consumer_action": "iSCOPE validate merchant activation/support burden and current acquiring-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-278",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Heksia POS / Kirill Osadchii",
+      "surface": "Google Play cloud POS; package io.heksia; Cyprus developer",
+      "observed_need": "Current Jun 29 2026 app supports multi-VAT, receipt hardware, restaurant dine-in/takeaway/delivery/counter modes and kitchen workflow.",
+      "outcome_space": [
+        "POS",
+        "VAT",
+        "restaurant workflow",
+        "receipt hardware",
+        "cloud operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=io.heksia",
+      "published": "2026-06-29",
+      "payer_hypothesis": "Heksia POS product owner",
+      "fit_note": "Current Cyprus developer identity and broad merchant workflow.",
+      "consumer_action": "iSCOPE validate local market, merchant onboarding, restaurant workflow/support and current growth need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-279",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "C2D Payment Solutions Ltd / Zastrpay POS",
+      "surface": "Google Play payment-agent POS; package com.zastrpay.pos; Malta legal operator",
+      "observed_need": "Current Jul 22 2026 app lets distributors scan customer QR codes and process deposit/withdrawal transactions at Zastrpay POS locations.",
+      "outcome_space": [
+        "agent network",
+        "cash in/out",
+        "QR payments",
+        "merchant operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.zastrpay.pos",
+      "published": "2026-07-22",
+      "payer_hypothesis": "C2D Payment Solutions Ltd / Zastrpay",
+      "fit_note": "Direct Malta legal identity and agent/payment workflow; geographic service footprint needs validation.",
+      "consumer_action": "iSCOPE validate Malta/local operating footprint, distributor onboarding/reconciliation and current support needs."
     }
   ]
 }
