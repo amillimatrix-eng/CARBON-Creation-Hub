@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:52:00+02:00",
+  "last_updated": "2026-10-08T16:56:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -8229,6 +8229,222 @@
       "payer_hypothesis": "Code Structure Software & Solutions For Business S.A. / Zero POS product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-416",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SADMINSOFT HONDURAS / sadminpos",
+      "surface": "Honduras fiscal POS; package com.sadminsoft.sadminpos",
+      "observed_need": "Offline POS with SAR fiscal invoicing, CAI range validation, inventory and direct thermal printing.",
+      "outcome_space": [
+        "POS",
+        "fiscal invoicing",
+        "offline operations",
+        "inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.sadminsoft.sadminpos",
+      "payer_hypothesis": "SADMINSOFT HONDURAS / sadminpos product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-417",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Jose Luis Pineda Gonzalez / Inventario Nica",
+      "surface": "Nicaragua inventory/sales; package com.rayosdenicaragua",
+      "observed_need": "Inventory, role-based users, stock alerts, billing, sales reports, damaged/expired stock handling and barcode scanning.",
+      "outcome_space": [
+        "inventory",
+        "sales",
+        "role controls",
+        "barcode"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.rayosdenicaragua",
+      "payer_hypothesis": "Jose Luis Pineda Gonzalez / Inventario Nica product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-418",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "IDEATI S A / efactura POS",
+      "surface": "Panama POS/e-invoicing; package com.ideati.efacturapty.pos",
+      "observed_need": "Point of sale plus Panama electronic invoicing for retail/service SMEs.",
+      "outcome_space": [
+        "POS",
+        "e-invoicing",
+        "SME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ideati.efacturapty.pos",
+      "payer_hypothesis": "IDEATI S A / efactura POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-419",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TecnoDev Costa Rica / Factoa",
+      "surface": "Multi-country Latin America e-invoicing; package com.factoacr.app",
+      "observed_need": "Tax-authority-connected invoicing, customers/suppliers, inventory, quotes/orders and multi-company controls across multiple LatAm markets.",
+      "outcome_space": [
+        "e-invoicing",
+        "inventory",
+        "suppliers",
+        "multi-company"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.factoacr.app",
+      "payer_hypothesis": "TecnoDev Costa Rica / Factoa product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-420",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Design Soft S.A. / POS Restaurante",
+      "surface": "Costa Rica restaurant POS; package com.designsoftcr.posmovirestaurante",
+      "observed_need": "Electronic invoicing, tables/orders/kitchen, inventory, purchases, expenses and CRM.",
+      "outcome_space": [
+        "restaurant POS",
+        "e-invoicing",
+        "inventory",
+        "CRM"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.designsoftcr.posmovirestaurante",
+      "payer_hypothesis": "Design Soft S.A. / POS Restaurante product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-421",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Banco Lafise Bancentro S.A. / Poket",
+      "surface": "Central America mobile merchant acquiring; package com.lafise.poketposapp",
+      "observed_need": "Android card acceptance, business income monitoring, top-ups, money movement and billing management.",
+      "outcome_space": [
+        "merchant acquiring",
+        "cards",
+        "business finance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.lafise.poketposapp",
+      "payer_hypothesis": "Banco Lafise Bancentro S.A. / Poket product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-422",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Jarbas",
+      "surface": "LatAm POS/inventory; package com.jarbas.jarbas",
+      "observed_need": "Orders, inventory and store operations in a mobile POS.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "orders"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.jarbas.jarbas",
+      "payer_hypothesis": "Jarbas product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-423",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Facture.cr",
+      "surface": "Costa Rica e-invoicing/POS; package facture.cr.cr",
+      "observed_need": "Multi-device invoicing, unlimited users with hierarchical roles/permissions and broad business-administration modules.",
+      "outcome_space": [
+        "e-invoicing",
+        "POS",
+        "role controls",
+        "business admin"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=facture.cr.cr",
+      "payer_hypothesis": "Facture.cr product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-424",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CROEM Panama Inc. / CedulaD",
+      "surface": "Panama authorized merchant POS; package com.croem.cedulad",
+      "observed_need": "Retailers process program transactions after merchant registration/authorization tied to valid business-operation notice.",
+      "outcome_space": [
+        "merchant onboarding",
+        "POS",
+        "program payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.croem.cedulad",
+      "payer_hypothesis": "CROEM Panama Inc. / CedulaD product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-425",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Pablo Jose Pineda Amador / OPERANI",
+      "surface": "Nicaragua POS/ERP; package com.operani.pos.app",
+      "observed_need": "Credit/receivables, multi-branch inventory, offline/cloud sync, cash closing and B2B web catalog.",
+      "outcome_space": [
+        "POS",
+        "receivables",
+        "multi-branch inventory",
+        "B2B"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.operani.pos.app",
+      "payer_hypothesis": "Pablo Jose Pineda Amador / OPERANI product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-426",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Manager Software S.A. / Manager Factura Electrónica",
+      "surface": "Costa Rica e-invoicing; package com.managercr.ManagerApp",
+      "observed_need": "Electronic invoicing, expense/purchase acceptance, VAT prep, products and frequent-customer management.",
+      "outcome_space": [
+        "e-invoicing",
+        "expenses",
+        "VAT",
+        "customers"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.managercr.ManagerApp",
+      "payer_hypothesis": "Manager Software S.A. / Manager Factura Electrónica product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-427",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Teco / VentaGo",
+      "surface": "Panama POS; package com.teco.ventago",
+      "observed_need": "Mobile POS and electronic invoicing with current Panama operating/contact evidence.",
+      "outcome_space": [
+        "POS",
+        "e-invoicing",
+        "sales"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.teco.ventago",
+      "payer_hypothesis": "Teco / VentaGo product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-428",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "New Technology Honduras / Zafra Cloud",
+      "surface": "Honduras cloud ERP; package com.zafracloud.app",
+      "observed_need": "SAR e-invoicing, POS, multi-warehouse inventory with batch/serial traceability, accounting and CRM.",
+      "outcome_space": [
+        "ERP",
+        "e-invoicing",
+        "multi-warehouse",
+        "accounting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.zafracloud.app",
+      "payer_hypothesis": "New Technology Honduras / Zafra Cloud product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
