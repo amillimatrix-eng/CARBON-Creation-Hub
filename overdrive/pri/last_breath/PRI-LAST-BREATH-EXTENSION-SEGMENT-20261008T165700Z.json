@@ -1,0 +1,211 @@
+{
+  "receipt_id": "PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T165700Z",
+  "generated_at": "2026-10-08T16:57:00Z",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "producer_run_identity": "ONE existing iSCOPE->PRI / Last Breath writer",
+  "prior_receipt": {
+    "path": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T135600Z.json",
+    "commit": "0679c86398ba276585fea7d4b1c8ed74f6d68967",
+    "counts": {
+      "smalls": 76,
+      "medium": 34,
+      "upper_medium": 91,
+      "upper": 66,
+      "total": 267,
+      "paid_usd": 0
+    }
+  },
+  "continuity": {
+    "consumed_sources": [
+      {
+        "type": "Google Doc",
+        "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
+        "title": "ASTRA° LAST BREATH — EXPANSION LEARNING EVIDENCE — WEIGHTED CONTINUITY",
+        "revision": "AHj4eMQgdQE4GpGOp5bAzEtQmSVCaicQtxVhcFX_WFbgP2oeAwxBLq6wEL0AwTQiQdgUUq_UJtxH0Q3H6As7dAspms0xaMlJtPxR9to46g"
+      },
+      {
+        "type": "Notion Root Intake",
+        "id": "3f28f8b56cd781bd945dcd8630253ef8",
+        "title": "ROOT INTAKE — P0 FORX MAP-CRAWL LIVENESS FAILURE — 2026-10-08",
+        "page_last_edited_at": "2026-10-08T16:49:13.800Z",
+        "disposition": "FORX NOT WORKING until fresh persisted/read-back map growth disproves the liveness failure"
+      },
+      {
+        "type": "GitHub staging",
+        "path": "overdrive/forx_prospect_buffer.json",
+        "blob_sha": "0300e969f29d10332bab8cf7b08eb56d0f4d21ba",
+        "last_updated": "2026-10-08T18:55:00+02:00",
+        "authority": "Evidence/staging only; not commercial truth ledger"
+      },
+      {
+        "type": "Google Sheet",
+        "id": "1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc",
+        "ranges": [
+          "Learning Weights!A1:J25",
+          "Coverage Ledger!A1:L25"
+        ],
+        "observed_snapshot": {
+          "persisted_businesses": 131,
+          "unique_domains": 88,
+          "persisted_jurisdiction_labels": 37,
+          "global_denominator": "UNRESOLVED",
+          "note": "Scoped inventory snapshot; not FORX graph-liveness proof"
+        }
+      }
+    ],
+    "apply_example": {
+      "prior_learning": [
+        "LEARNING-007",
+        "LEARNING-008",
+        "LEARNING-013",
+        "weighted-parent lateral exploration"
+      ],
+      "observed_tranche": "24 new post-receipt sends were dominated by tourism, local-service and public-site cleanup offers.",
+      "changed_action": "Selected an education parent-enquiry workflow with official contact and operational intake friction instead of another lodging/tourism draft."
+    }
+  },
+  "exact_coordinate": {
+    "country": "South Africa",
+    "region": "Pretoria / Sinoville",
+    "language": "English",
+    "sector": "Education / home-education support",
+    "category": "Parent enquiry and enrolment intake",
+    "business_model": "Owner-operated learning support centre",
+    "problem": "Repeated discovery across grade, curriculum, support type, schedule and consultation request",
+    "size": "Small centre; official evidence says up to 20 learners",
+    "source": "https://dynamiclearn.co.za/",
+    "surface": "Official website",
+    "offer": "Working parent-enquiry journey with intake, acknowledgement, follow-up and onboarding/referral workflow concept",
+    "price": {
+      "amount": 499,
+      "currency": "USD",
+      "tier": "UPPER"
+    }
+  },
+  "component_evidence": {
+    "contact": {
+      "recipient": "admin@dynamiclearn.co.za",
+      "official_site_verified": true,
+      "verified_at": "2026-10-08T16:54:00Z"
+    },
+    "problem": {
+      "official_site_confirms": [
+        "Grade R-12",
+        "multiple curricula",
+        "remedial and inclusive support",
+        "afterschool care"
+      ],
+      "confidence": "HIGH for service complexity; manual workload is a bounded inference"
+    },
+    "offer": {
+      "deliverable": "Protected working intake-interface prototype, workflow logic and objective acceptance criteria",
+      "exclusions": [
+        "No automated educational decisions",
+        "No production deployment without acceptance",
+        "No buyer-account access implied"
+      ],
+      "minimum_buyer_input": "Reply YES, then confirm intake fields and routing owner",
+      "delivery_clock_start": "After buyer accepts exact pilot scope and supplies minimum inputs",
+      "completion_check": "Working journey captures agreed fields, sends acknowledgement and produces agreed internal brief"
+    }
+  },
+  "outcomes": [
+    {
+      "type": "EXPLICIT_REJECTION",
+      "account": "Colonia Estudio",
+      "gmail_id": "1a11c640dcda5d8f",
+      "response": "No",
+      "action": "Suppressed; no follow-up sent"
+    },
+    {
+      "type": "HARD_FAILURE",
+      "account": "EFRAC",
+      "recipient": "info@efrac.org",
+      "tier": "UPPER-MEDIUM",
+      "exact_price_usd": 199,
+      "original_sent_id": "1a117cbebb6d86d3",
+      "bounce_id": "1a11bd08feb8f3e3",
+      "smtp": "550 5.4.1 Recipient address rejected: Access denied",
+      "action": "Suppressed; prior count removed"
+    },
+    {
+      "type": "SENT",
+      "account": "Dynamic Learning Junction",
+      "gmail_id": "1a11c70f5ddb5688",
+      "thread_id": "1a1180af006868a7",
+      "recipient": "admin@dynamiclearn.co.za",
+      "tier": "UPPER",
+      "exact_price_usd": 499,
+      "immediate_hard_bounce": false,
+      "lifecycle": "OFFERED / SENT_TO_PROVIDER"
+    }
+  ],
+  "concurrent_tranche": {
+    "added": {
+      "smalls": 11,
+      "medium": 12,
+      "upper_medium": 0,
+      "upper": 1,
+      "total": 24
+    },
+    "note": "Rebecca M Properties was already counted in the prior receipt and was not double-counted."
+  },
+  "count_reconciliation": {
+    "removed": {
+      "upper_medium": 1,
+      "reason": "EFRAC hard failure"
+    },
+    "added_concurrent": 24,
+    "added_this_action": 1,
+    "cumulative_corrected": {
+      "smalls": 87,
+      "medium": 46,
+      "upper_medium": 90,
+      "upper": 68,
+      "total": 291,
+      "paid_usd": 0
+    }
+  },
+  "exploration": {
+    "exploited": "Tourism/local-service and public-site cleanup",
+    "explored": "Education/home-learning intake",
+    "reserve_preserved": true,
+    "cooldown": "Do not immediately repeat lodging/direct-booking before another undercovered sector is evaluated",
+    "next_two_lateral_alternatives": [
+      {
+        "country": "Namibia",
+        "sector": "Veterinary healthcare",
+        "candidate": "Farmhouse Veterinary Clinic",
+        "draft_message_id": "1a1180ae734b804f",
+        "gate": "Re-verify official contact and current booking/follow-up friction"
+      },
+      {
+        "country": "South Africa",
+        "sector": "Fitness / membership",
+        "candidate": "C4 Fitness Bloemfontein",
+        "draft_message_id": "1a11806816b584a4",
+        "gate": "Re-verify official coordinate and current trial-to-membership friction"
+      }
+    ],
+    "chosen_next_action": "Monitor current threads and bounces; if no warm response, evaluate Farmhouse Vet"
+  },
+  "unresolved_gaps": [
+    "FORX Root Intake still records map-crawl liveness failure.",
+    "Dynamic delivery, response, acceptance, invoice and payment are unproven.",
+    "Global coverage denominator remains unresolved."
+  ],
+  "response_evidence": {
+    "new_positive_response": false,
+    "new_acceptance": false,
+    "new_conversion": false,
+    "new_invoice": false,
+    "new_payment": false
+  },
+  "t10": {
+    "supposed": "Recover continuity, apply learning, process negative outcomes, progress one strongest executable opportunity and persist/read back.",
+    "actual": "Continuity recovered; Colonia and EFRAC suppressed; 24 valid sends reconciled; Dynamic selected as lateral education action and sent once.",
+    "proves": "Source revisions, blob SHA, bounded Sheet ranges, Gmail IDs, official Dynamic site and receipt readback.",
+    "changed": "Corrected cumulative total moved from 267 to 291; exploration shifted away from saturated tourism/cleanup.",
+    "remains_unproven": "Delivery, positive intent, acceptance, contract/order, invoice, conversion and payment. PAID remains USD 0."
+  }
+}
