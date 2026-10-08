@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T15:33:00+02:00",
+  "last_updated": "2026-10-08T15:57:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -2114,6 +2114,175 @@
       "payer_hypothesis": "Nepal Can Move product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Nepal operating market and developer location kept separate; high-value vendor/logistics workflow.",
       "consumer_action": "iSCOPE validate vendor support-ticket volume, transaction reconciliation and current courier-network expansion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-114",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tuvalu Telecommunications Corporation / TTC 4G Reseller",
+      "surface": "Google Play authorized reseller operations; package com.tuvalu.reseller; Tuvalu",
+      "observed_need": "Current August 2026 official TTC app lets authorized resellers sell/top-up 4G bundles, view transaction history, check reseller balances/commissions, manage subscriptions/renewals and receive TTC support.",
+      "outcome_space": [
+        "telecom reseller network",
+        "merchant transactions",
+        "commissions",
+        "subscription management",
+        "support"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tuvalu.reseller",
+      "published": "2026-08-18",
+      "payer_hypothesis": "Tuvalu Telecommunications Corporation",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct state-telecom/local reseller operating surface; no defect inferred.",
+      "consumer_action": "iSCOPE validate reseller support/reconciliation burden, subscription workflow and current channel-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-115",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Lomalo Labs / MIBOND GLOBAL, LLC / Lomalo Enterprise",
+      "surface": "Google Play enterprise wallet; package com.m1global.rmimerchants; Marshall Islands operating market, US legal developer",
+      "observed_need": "Current August 2026 enterprise wallet is built for Republic of the Marshall Islands shops, wholesalers and multi-checkout businesses with business verification, QR/direct-link/invoice collection, multi-location controls, reporting and fund transfer.",
+      "outcome_space": [
+        "merchant payments",
+        "business verification",
+        "multi-location",
+        "invoicing",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.m1global.rmimerchants",
+      "published": "2026-08-19",
+      "payer_hypothesis": "Lomalo ecosystem product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. RMI operating market and US developer legal entity kept separate. Play currently declares collected data is not encrypted; verify before any defect claim.",
+      "consumer_action": "iSCOPE verify pilot/current commercial availability, local payer/operator identity, merchant onboarding and current data-safety declaration."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-116",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TASI PAYMENT SOLUTION PTY LIMITED / Tasi Biz",
+      "surface": "Google Play merchant engagement app; package com.tasipay.tasibiz; Solomon Islands",
+      "observed_need": "Current August 2026 app lets Solomon Islands merchants manage Tasi ID customer check-ins, view activity, connect with verified customers and use in-app chat/customer updates.",
+      "outcome_space": [
+        "merchant engagement",
+        "customer identity",
+        "check-ins",
+        "local business network",
+        "communications"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tasipay.tasibiz",
+      "published": "2026-08-27",
+      "payer_hypothesis": "TASI PAYMENT SOLUTION PTY LIMITED",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Honiara company/contact evidence is public; current business problem requires validation.",
+      "consumer_action": "iSCOPE validate merchant adoption, customer-engagement workflows, support and current network-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-117",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Mr Johnson Korai / Grid Seller",
+      "surface": "Google Play seller operations; package com.allinislesseller.sellerapp; Solomon Islands",
+      "observed_need": "Current March 2026 seller app supports business/product/order management for Solomon Islands sellers. Play currently declares collected data is not encrypted.",
+      "outcome_space": [
+        "seller operations",
+        "order management",
+        "product management",
+        "data safety"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.allinislesseller.sellerapp",
+      "published": "2026-03-29",
+      "payer_hypothesis": "Grid Seller operator / Mr Johnson Korai",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Solomon Islands developer evidence; low-volume but useful seller-side provenance. Data declaration requires verification.",
+      "consumer_action": "iSCOPE verify active service status, operator route, seller adoption and encryption/declaration state."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-118",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "VuKart",
+      "surface": "Google Play partner operations; package com.vanuatu.partners; Vanuatu",
+      "observed_need": "Partner app is designed for Vanuatu restaurants, merchants and couriers to manage incoming orders, earnings, platform fees and payouts while accessing training/support.",
+      "outcome_space": [
+        "merchant operations",
+        "restaurant network",
+        "courier network",
+        "payouts",
+        "order management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.vanuatu.partners",
+      "published": "2026",
+      "payer_hypothesis": "VuKart operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Separate package/provenance from existing VuKart customer observation; canonical organization should reconcile without deleting package edge.",
+      "consumer_action": "iSCOPE link to VuKart canonical entity if verified and validate partner acquisition, payout/support and order-flow burden once."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-119",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DOMINO LIMITED / MarketPlace.vu",
+      "surface": "Google Play local-shop catalog; package vu.iec.catalog; Vanuatu",
+      "observed_need": "Current September 2026 app focuses on discovering products from local Vanuatu shops, using Vatu pricing and bilingual business support; Port Vila company phone/email/address are public.",
+      "outcome_space": [
+        "local shop discovery",
+        "SME visibility",
+        "catalog",
+        "localization",
+        "merchant acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=vu.iec.catalog",
+      "published": "2026-09-12",
+      "payer_hypothesis": "DOMINO LIMITED",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh local legal/contact evidence; specific merchant pain requires validation.",
+      "consumer_action": "iSCOPE validate business onboarding, catalogue freshness, merchant acquisition and bilingual support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-120",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "FAST FIND PUBLISHING PTE LIMITED / Fast Find Fiji",
+      "surface": "Google Play business/service discovery directory; package com.wnapp.id1781218895382; Fiji",
+      "observed_need": "Current June 2026 Fiji app helps users discover local shops, service providers, products, contact details, locations and opening hours while improving business visibility; Suva company/contact are public.",
+      "outcome_space": [
+        "business directory",
+        "SME visibility",
+        "service discovery",
+        "local search",
+        "distribution rail"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.wnapp.id1781218895382",
+      "published": "2026-06-18",
+      "payer_hypothesis": "FAST FIND PUBLISHING PTE LIMITED",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Also a lawful public network/source rail; directory entry counts must not be promoted to AMX nodes.",
+      "consumer_action": "iSCOPE validate directory monetization/business onboarding; FORX may use exact public business records as separate source observations when lawfully accessible."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-121",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UVERA INVESTMENT LIMITED / Bula Trade",
+      "surface": "Google Play Fiji classifieds/local selling; package com.bula.trade; Fiji operating market, New Zealand legal developer",
+      "observed_need": "Current August 2026 classifieds platform explicitly supports small-business selling, premium advertising and direct local buyer/seller connection across Fiji.",
+      "outcome_space": [
+        "classifieds",
+        "small business",
+        "seller visibility",
+        "premium ads",
+        "local commerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bula.trade",
+      "published": "2026-08-10",
+      "payer_hypothesis": "UVERA INVESTMENT LIMITED / Bula Trade product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fiji operating market and New Zealand legal developer remain separate facts; no problem inferred solely from marketplace positioning.",
+      "consumer_action": "iSCOPE validate local seller acquisition, paid-promotion conversion and current trust/moderation/support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-122",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Vodafone Fiji Pte Ltd / VitiKart",
+      "surface": "Google Play Fiji online marketplace; package com.fijiapp; Fiji",
+      "observed_need": "Current July 2026 listing identifies VitiKart as an online marketplace owned by Vodafone Fiji Pte Ltd, providing a current local digital-commerce ecosystem edge.",
+      "outcome_space": [
+        "marketplace",
+        "local ecommerce",
+        "merchant network",
+        "distribution"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.fijiapp",
+      "published": "2026-07-21",
+      "payer_hypothesis": "Vodafone Fiji Pte Ltd / VitiKart product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Mature corporate target; lower owner-led priority unless iSCOPE finds a bounded current defect or distribution opportunity.",
+      "consumer_action": "iSCOPE qualify only with current specific problem/buyer fit; otherwise retain as Fiji ecosystem/network evidence."
     }
   ]
 }
