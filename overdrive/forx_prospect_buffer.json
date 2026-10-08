@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T18:46:00+02:00",
+  "last_updated": "2026-10-08T19:02:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -5911,6 +5911,81 @@
       "payer_hypothesis": "GRUP İMAJ commercial/marketing owner",
       "fit_note": "Contactable Turkish manufacturer with first-party under-construction commercial surface.",
       "consumer_action": "iSCOPE verify duplicate/contact history and current site state; qualify only a bounded launch/lead-flow fix if still active."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-319",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Namib Laboratories",
+      "surface": "Private analytical laboratory; Namibia",
+      "observed_need": "Privately owned Windhoek analytical laboratory under the Namib Mills Industries group offering veterinary diagnostics, environmental monitoring, animal-feed and food testing, with ISO 17025-accredited microbiology/serology scope and direct laboratory contact.",
+      "outcome_space": [
+        "analytical laboratory",
+        "veterinary diagnostics",
+        "food testing",
+        "environmental monitoring"
+      ],
+      "source": "https://namiblab.com/",
+      "published": "2026",
+      "payer_hypothesis": "Namib Laboratories",
+      "fit_note": "Direct private-lab identity, current Namibia contact and technical scope are public. No workflow weakness inferred.",
+      "consumer_action": "iSCOPE inspect enquiry/sample intake, result delivery, client communications, booking/follow-up or business-development workload for a current bounded problem."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-320",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "St. Micheal Food Laboratory and Consultancy",
+      "surface": "Private food analytical laboratory; Uganda",
+      "observed_need": "Kampala private food/beverage laboratory, incorporated in 2014, providing microbiology, analytical testing, product development, training and quality-management consultancy under ISO 17025/UNBS recognition.",
+      "outcome_space": [
+        "food laboratory",
+        "microbiology",
+        "product development",
+        "training",
+        "quality consulting"
+      ],
+      "source": "https://www.smflc.org/",
+      "published": "2026",
+      "payer_hypothesis": "St. Micheal Food Laboratory and Consultancy",
+      "fit_note": "Direct private Uganda operator and service evidence. No candidate defect inferred.",
+      "consumer_action": "iSCOPE validate sample/enquiry intake, reporting, customer follow-up, training booking or business-development workload before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-321",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "QuantiLAB Ltd",
+      "surface": "Private analytical testing/inspection company; Mauritius",
+      "observed_need": "Mauritius private laboratory provides food/feed, environmental, pharmaceutical, forensic-toxicology, petroleum testing plus inspection, audit and certification; ISO/IEC 17025 accredited with direct commercial contact.",
+      "outcome_space": [
+        "analytical laboratory",
+        "inspection",
+        "pharma testing",
+        "environmental testing",
+        "certification"
+      ],
+      "source": "https://quantilab.mu/Corporate-Profile/",
+      "published": "2026",
+      "payer_hypothesis": "QuantiLAB Ltd",
+      "fit_note": "Large/mature operator with direct Mauritius identity and current service/contact evidence. Negative selection applies absent a concrete gap.",
+      "consumer_action": "iSCOPE inspect only bounded client-intake, report delivery, commercial enquiry, scheduling or workflow-automation opportunity; skip if already modern with no gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-322",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Crop Nutrition Laboratory Services Ltd / Cropnuts",
+      "surface": "Private agricultural and food-safety laboratory; Kenya with Zambia operating edge",
+      "observed_need": "Private ISO/IEC 17025-accredited laboratory provides soil, water, food-safety, feed, plant-tissue and environmental analysis plus agronomic advice. Public contacts include Kenya headquarters and Zambia operations.",
+      "outcome_space": [
+        "agricultural laboratory",
+        "food safety",
+        "soil testing",
+        "water testing",
+        "technical support"
+      ],
+      "source": "https://cropnuts.com/laboratory-analysis-services/",
+      "published": "2026",
+      "payer_hypothesis": "Crop Nutrition Laboratory Services Ltd",
+      "fit_note": "Direct private-company service evidence and Kenya/Zambia contact routes. Nigeria is preserved only as an operating-map edge under current no-sell constraint.",
+      "consumer_action": "iSCOPE validate sample intake, report/advice delivery, customer support, Zambia growth or repetitive technical-client workflow; do not outbound to Nigeria under current rule."
     }
   ],
   "current_run_note": "FORX public-web problem-signal tranche appended; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
