@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:19:00+02:00",
+  "last_updated": "2026-10-08T16:42:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -2471,6 +2471,194 @@
       "payer_hypothesis": "Bzaar Namibia product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Explicitly lower freshness and foreign legal developer; retain as Namibia merchant-workflow depth until active status is revalidated.",
       "consumer_action": "iSCOPE verify 2026 service activity/operator ownership before any commercial qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-133",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MAURITIUS TELECOM LTD / myt money merchant",
+      "surface": "Google Play merchant payments; package com.hktpayment.mytmoney.mauritius.business; Mauritius",
+      "observed_need": "Current July 2026 merchant app lets merchants receive payments instantly and inspect transaction details; current release notes state UI optimisation. Mauritius Telecom identity, address and support route are public.",
+      "outcome_space": [
+        "merchant payments",
+        "transaction visibility",
+        "merchant network",
+        "payment operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.hktpayment.mytmoney.mauritius.business",
+      "published": "2026-07-10",
+      "payer_hypothesis": "MAURITIUS TELECOM LTD / myt money product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Mature payment-rail target; useful ecosystem depth, but direct commercial priority requires a bounded current problem.",
+      "consumer_action": "iSCOPE retain as Mauritius merchant-payment rail and validate only if current merchant support, reconciliation, onboarding or UX burden is evidenced."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-134",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "FLIQO Technologies Ltd / Fliqo",
+      "surface": "Google Play verified-seller marketplace; package com.fliqo; Mauritius",
+      "observed_need": "Current August 2026 Mauritius marketplace connects registered sellers/shop owners with buyers, seller listing tools, performance tracking and business-growth visibility; +230 phone/email are public.",
+      "outcome_space": [
+        "marketplace",
+        "seller verification",
+        "merchant acquisition",
+        "seller analytics",
+        "SME visibility"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.fliqo",
+      "published": "2026-08-25",
+      "payer_hypothesis": "FLIQO Technologies Ltd",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong local marketplace/seller operating surface with direct contact; no unresolved defect inferred.",
+      "consumer_action": "iSCOPE validate seller acquisition/activation, verification workload, paid growth/monetization and current support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-135",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Nula Maurice / Megalingam Velu",
+      "surface": "Google Play restaurant vendor operations; package com.inilabs.nulafoodbank.marchantise; Mauritius",
+      "observed_need": "Current March 2026 vendor app manages restaurant orders, menus/prices, order status, sales/earnings, opening hours, discounts, settlements and downloadable reports; first-party description explicitly says it reduces manual order handling.",
+      "outcome_space": [
+        "restaurant operations",
+        "order management",
+        "settlements",
+        "sales reporting",
+        "workflow automation"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.inilabs.nulafoodbank.marchantise",
+      "published": "2026-03-12",
+      "payer_hypothesis": "Nula Maurice operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Mauritius developer identity and highly bounded repetitive-work surface.",
+      "consumer_action": "iSCOPE validate active restaurant/vendor footprint, order/support volume, payout/reporting workflow and current automation/growth pain."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-136",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NEBULA FINTECH LTD / eboo Business Seychelles",
+      "surface": "Google Play business payments/invoicing; package com.bpc.eboo.merchant; Seychelles",
+      "observed_need": "Merchant app supports dynamic/static QR acceptance, invoice creation and tracking, financial analytics and merchant sub-account controls for Seychelles businesses and government users. Last Play update is October 2025, so freshness is explicitly lower.",
+      "outcome_space": [
+        "merchant payments",
+        "invoicing",
+        "financial analytics",
+        "sub-account management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bpc.eboo.merchant",
+      "published": "2025-10-16",
+      "payer_hypothesis": "NEBULA FINTECH LTD",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Local Seychelles legal/contact evidence is strong, but freshness is lower and current activity/problem must be revalidated.",
+      "consumer_action": "iSCOPE verify 2026 product activity, merchant adoption/support and any present invoice/payment/admin burden before commercial qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-137",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Heritage International Bank & Trust Limited / OpenPay.bz",
+      "surface": "Google Play merchant acquiring/payments; package bz.openpay.merchant; Belize",
+      "observed_need": "Current September 2026 Belize business app accepts card payments and payment links, tracks sales/revenue/payouts, supports refunds and staff permissions, and uses local payment rails; Belize bank/developer identity and support are public.",
+      "outcome_space": [
+        "merchant acquiring",
+        "payment links",
+        "refunds",
+        "payout visibility",
+        "staff controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=bz.openpay.merchant",
+      "published": "2026-09-28",
+      "payer_hypothesis": "Heritage International Bank & Trust Limited / OpenPay product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong merchant-operations/payment-rail depth; mature regulated target gets selective priority absent bounded current problem.",
+      "consumer_action": "iSCOPE validate merchant onboarding/support, refund/reconciliation or staff-control friction only with current evidence; otherwise retain as Belize payment ecosystem edge."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-138",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Midas Resort Limited / FoodXpress Merchant",
+      "surface": "Google Play restaurant/business partner operations; package com.foodxpress.merchant; Belize",
+      "observed_need": "Current September 2026 merchant app lets approved Belize restaurant/business partners manage customer orders, menus, product photos/options/prices, promotions, hours, availability, business activity and account settings; Belize phone/email/address are public.",
+      "outcome_space": [
+        "merchant operations",
+        "restaurant network",
+        "order management",
+        "promotions",
+        "business settings"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.foodxpress.merchant",
+      "published": "2026-09-22",
+      "payer_hypothesis": "Midas Resort Limited / FoodXpress",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Very fresh local merchant-side workflow with direct Belize identity/contact.",
+      "consumer_action": "iSCOPE validate partner onboarding, menu/order administration, promotions/support workload and current merchant-network growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-139",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "WaaFiro / Mustapha Drammeh",
+      "surface": "Google Play local commerce/services/delivery; package com.waafiro.app; The Gambia operating market, UK developer location",
+      "observed_need": "Current August 2026 platform connects verified Gambian sellers, restaurants, service providers and couriers with shoppers; businesses can list products/services, manage orders, accept bookings and grow online. +220 support route is public.",
+      "outcome_space": [
+        "marketplace",
+        "seller verification",
+        "service booking",
+        "restaurant network",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.waafiro.app",
+      "published": "2026-08-26",
+      "payer_hypothesis": "WaaFiro product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Gambia operating market and UK developer location are separate facts; direct Gambian support route exists.",
+      "consumer_action": "iSCOPE validate seller/service-provider/courier acquisition, booking/order support and current trust/verification burden."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-140",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tendance Shopping / canonical operator developer DYLANE SOPGUI NIDJO",
+      "surface": "Google Play marketplace; package com.tendanceshop241.tendanceshop; Gabon operating market, Turkey developer address",
+      "observed_need": "Current June 2026 marketplace connects Gabon buyers/sellers across products and services with listings, sales tracking, seller contact, promotion/sponsorship tracking and geolocation. Release notes cite loading/performance, stability and interface improvements.",
+      "outcome_space": [
+        "marketplace",
+        "seller operations",
+        "promotions",
+        "local services",
+        "app performance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tendanceshop241.tendanceshop",
+      "published": "2026-06-08",
+      "payer_hypothesis": "Tendance platform product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Gabon operating market and Turkey developer address remain distinct; maintenance notes are evidence, not proof issues remain.",
+      "consumer_action": "iSCOPE validate seller acquisition, promotion monetization, support and whether performance/stability remains current."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-141",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tendance platform / Tendance Livreur",
+      "surface": "Google Play courier partner operations; package com.tendance.livreur; Gabon operating market",
+      "observed_need": "Current March 2026 courier app handles courier application/verification, location-based assignments, accept/decline, pickup/drop-off details, real-time delivery status, secure confirmation codes and completed-delivery history; launch notes cite route optimisation/status updates.",
+      "outcome_space": [
+        "courier network",
+        "driver onboarding",
+        "delivery operations",
+        "route optimisation",
+        "status tracking"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tendance.livreur",
+      "published": "2026-03-19",
+      "payer_hypothesis": "Tendance platform product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Separate exact package/provenance from Tendance Shopping; likely reconciles to one ecosystem while preserving courier edge.",
+      "consumer_action": "iSCOPE link canonical organization if verified and validate courier recruitment/activation, assignment/support and delivery-visibility burden without duplicate outbound."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-142",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Kaysoon Business / Lekett",
+      "surface": "Google Play local ecommerce marketplace; package com.lekett.app; Gabon",
+      "observed_need": "Current September 2026 marketplace born in Gabon positions verified African products, secure payment and delivery in Gabon; direct +241 support and Gabon developer identity are public.",
+      "outcome_space": [
+        "marketplace",
+        "verified products",
+        "payments",
+        "delivery",
+        "local ecommerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.lekett.app",
+      "published": "2026-09-08",
+      "payer_hypothesis": "Kaysoon Business / Lekett operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh local Gabon contact/developer evidence; candidate-specific current problem still requires iSCOPE validation.",
+      "consumer_action": "iSCOPE validate seller acquisition, product verification, payment/delivery support and current marketplace growth constraint."
     }
   ]
 }
