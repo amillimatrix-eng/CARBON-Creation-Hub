@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T15:55:00+02:00",
+  "last_updated": "2026-10-08T16:10:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -2952,6 +2952,189 @@
       "payer_hypothesis": "Bank of the Federated States of Micronesia",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Lower release freshness but current 2026 activity is evidenced by user reviews; likely ecosystem/financial-infrastructure value exceeds direct SMME targeting value.",
       "consumer_action": "iSCOPE verify current product ownership and whether any bounded current operational/customer-service problem exists; otherwise retain as FSM financial-infrastructure evidence."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-158",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Sargasso Sea Ltd. / Sargasso Sea Merchant",
+      "surface": "Google Play merchant order-management app; package com.sargasso.merchant; Bermuda",
+      "observed_need": "Merchant-side app lets Bermuda restaurants/stores accept/cancel orders, monitor notifications, see store performance and interact with customers. Play currently declares data is not encrypted. Last listed update August 2025, so freshness is lower than 2026 observations.",
+      "outcome_space": [
+        "merchant operations",
+        "restaurant/store orders",
+        "customer interaction",
+        "data safety"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.sargasso.merchant",
+      "published": "2025-08-11",
+      "payer_hypothesis": "Sargasso Sea Ltd.",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Bermuda legal identity/contact is public. Data-safety declaration is a review signal only until validated.",
+      "consumer_action": "iSCOPE verify current 2026 service status, merchant network activity and encryption/declaration state before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-159",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Agility Ltd / QuickPay by YAWP",
+      "surface": "Google Play merchant payments/invoicing/taxi metering; package bm.quickpay.merchant; Bermuda",
+      "observed_need": "Current July 2026 app is built for Bermuda SMEs, not-for-profits, taxi operators and tradespeople, combining card/cash/QR payments, split payments, offline queueing and professional invoicing/payment tracking.",
+      "outcome_space": [
+        "merchant payments",
+        "invoicing",
+        "offline sync",
+        "trades",
+        "taxi operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=bm.quickpay.merchant",
+      "published": "2026-07-27",
+      "payer_hypothesis": "Agility Ltd / QuickPay",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. High-value SMME/trades operating surface with current local company/contact evidence.",
+      "consumer_action": "iSCOPE validate merchant onboarding, invoice/reconciliation workload, offline-sync support and present growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-160",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Bahama Eats Ltd. / BE Merchant",
+      "surface": "Google Play restaurant/merchant operations; package com.bahamaeats.merchant; Bahamas",
+      "observed_need": "Current July 2026 merchant app centralizes incoming orders, statuses, delivery/pickup handling, preparation time, cancellations and receipt printing for Bahama Eats restaurant and merchant partners.",
+      "outcome_space": [
+        "merchant operations",
+        "restaurant delivery",
+        "order management",
+        "receipt printing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bahamaeats.merchant",
+      "published": "2026-07-22",
+      "payer_hypothesis": "Bahama Eats Ltd.",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Nassau company identity and support route; strong merchant-side workflow evidence.",
+      "consumer_action": "iSCOPE validate merchant onboarding, support load, order exceptions and current partner-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-161",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Sun Island Transfers Limited / Bahapay Merchant",
+      "surface": "Google Play merchant/agent financial-services app; package com.bahapay.app; Bahamas",
+      "observed_need": "Current July 2026 app targets agents with mobile top-ups, SandDollar, bill payments and government transactions.",
+      "outcome_space": [
+        "agent network",
+        "mobile money",
+        "bill pay",
+        "government transactions",
+        "merchant operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bahapay.app",
+      "published": "2026-07-16",
+      "payer_hypothesis": "Sun Island Transfers Limited / Bahapay",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Current Bahamas agent/financial-services operating surface; exact present pain requires validation.",
+      "consumer_action": "iSCOPE verify agent onboarding, reconciliation/support burden, SandDollar workflows and current distribution-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-162",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Timothy A. Williams / MIA Merchant",
+      "surface": "Google Play merchant finance app; package mia.merchant.pos; Bahamas",
+      "observed_need": "MIA Merchant is explicitly an updated app for MIA Bahamas merchants. Last update December 2025, so freshness is lower than the 2026 Bahamas merchant apps.",
+      "outcome_space": [
+        "merchant payments",
+        "merchant operations",
+        "POS"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mia.merchant.pos",
+      "published": "2025-12-29",
+      "payer_hypothesis": "MIA Bahamas / Timothy A. Williams",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Local Bahamas operator signal retained with lower freshness and thinner first-party product detail.",
+      "consumer_action": "iSCOPE verify active 2026 service, merchant base, legal/payer identity and current operational problem before promotion."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-163",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Money Maxx Co. Ltd. / MoneyMaxx Wallet",
+      "surface": "Google Play wallet with merchant purchases; package io.revel.paylanes.mmx; Bahamas",
+      "observed_need": "Current March 2026 wallet supports person-to-person transfers, utility bills and purchases at participating Bahamas businesses, with local company/support identity public.",
+      "outcome_space": [
+        "merchant payments",
+        "mobile wallet",
+        "bill pay",
+        "financial services"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=io.revel.paylanes.mmx",
+      "published": "2026-03-23",
+      "payer_hypothesis": "Money Maxx Co. Ltd.",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Merchant network is evidenced at product level, but individual participating businesses are not AMX nodes from this app alone.",
+      "consumer_action": "iSCOPE validate merchant/agent onboarding, support/reconciliation and current wallet-growth needs; FORX may use lawful partner listings separately if public."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-164",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DE PALM TOURS V.B.A. / Aruba To You Merchant",
+      "surface": "Google Play merchant order-management app; package com.merchant.aruba; Aruba",
+      "observed_need": "Merchant app receives order alerts, lets businesses accept/reject customer orders, manage product availability and open/close stores in real time.",
+      "outcome_space": [
+        "merchant operations",
+        "food delivery",
+        "inventory availability",
+        "store status"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.merchant.aruba",
+      "published": "2025-01-11",
+      "payer_hypothesis": "DE PALM TOURS V.B.A. / Aruba To You",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Aruba company identity/contact; lower freshness because listed update is January 2025.",
+      "consumer_action": "iSCOPE verify current 2026 platform activity, merchant acquisition and order/support burden before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-165",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Avant Garde Technologies B.V. / CHIP Wallet",
+      "surface": "Google Play payments/wallet with merchant-account onboarding; package com.chip.curacao; Curaçao",
+      "observed_need": "Current Play release allows businesses to open and manage merchant accounts directly in the app; local Willemstad company identity and support are public.",
+      "outcome_space": [
+        "merchant payments",
+        "wallet",
+        "merchant onboarding",
+        "financial services"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.chip.curacao",
+      "published": "2026",
+      "payer_hypothesis": "Avant Garde Technologies B.V. / CHIP",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Current merchant-account operating surface is explicit; present onboarding/support bottleneck requires validation.",
+      "consumer_action": "iSCOPE validate merchant acquisition/onboarding, account-management support and current payment-network growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-166",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "GO-TO APP CAYMAN / Rebecca Jordison",
+      "surface": "Google Play local-vendor services marketplace; package com.go_to.cayman.app; Cayman Islands operating market",
+      "observed_need": "Current September 2026 app verifies vendors' business licences, spans 100+ service categories, supports booking, escrow-like payment holding, vendor calendars, chat, reviews and open bidding.",
+      "outcome_space": [
+        "local services",
+        "vendor verification",
+        "booking",
+        "bidding",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.go_to.cayman.app",
+      "published": "2026-09-16",
+      "payer_hypothesis": "GO-TO APP CAYMAN operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Cayman operating market is explicit; developer legal address is US-based. Vendor-count/category claims are not node counts.",
+      "consumer_action": "iSCOPE resolve payer/operator identity and validate vendor acquisition, licence verification, bidding/support and current marketplace-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-167",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Digitize Jamaica Ltd / Island Run Merchant",
+      "surface": "Google Play merchant delivery/order-management app; package com.merchant.islandrun; Jamaica",
+      "observed_need": "Merchant app supports real-time incoming orders, product listings, discounts/promotions, delivery tracking, reports and analytics. Last listed update February 2025, so freshness is lower.",
+      "outcome_space": [
+        "merchant operations",
+        "delivery",
+        "promotions",
+        "analytics",
+        "product management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.merchant.islandrun",
+      "published": "2025-02-19",
+      "payer_hypothesis": "Digitize Jamaica Ltd",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Jamaica company identity/contact with lower freshness; current platform status needs verification.",
+      "consumer_action": "iSCOPE verify active 2026 service, merchant base and current order/analytics/support needs before qualification."
     }
   ]
 }
