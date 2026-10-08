@@ -7363,6 +7363,329 @@
       "payer_hypothesis": "Vila Porto Group franchise/marketing owner",
       "fit_note": "Brazil retail/franchise candidate with strong directly observed proof-section placeholder content and live WhatsApp routes.",
       "consumer_action": "iSCOPE verify duplicate/contact history and whether the franchise-growth surface is current enough for a bounded proof/conversion remediation."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-382",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Golds Transportation & Tours",
+      "domain": "goldstransportation.com",
+      "country": "Mexico",
+      "sector": "Private airport transportation / tours",
+      "surface": "Official transportation/tour website; Puerto Vallarta, Mexico",
+      "observed_need": "The live homepage markets reservations and monthly deals but visibly reports that its Mailchimp newsletter is not connected and requires a valid API key. First-party search exposes direct phone/email. This is directly observed lead-capture/integration QA.",
+      "problem_signal": {
+        "family": "newsletter integration / travel lead capture",
+        "evidence": "Official homepage visibly states Mailchimp is not connected on the active newsletter/reservation surface.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@goldstransportation.com",
+        "+52 322 133 8446"
+      ],
+      "outcome_space": [
+        "newsletter repair",
+        "travel lead capture",
+        "repeat-customer marketing",
+        "web QA"
+      ],
+      "source": "https://goldstransportation.com/",
+      "provenance": "Official company homepage plus official-domain contact results; verified 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Golds Transportation owner/operator",
+      "fit_note": "Contactable Mexico travel/transport SME with explicit first-party integration failure on a conversion surface.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether a bounded lead-capture/newsletter fix has near-term buyer value."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-383",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ThinkSoft Argentina S.A.",
+      "domain": "thinksoft.com.ar",
+      "country": "Argentina",
+      "sector": "Healthcare software / hospital and laboratory systems",
+      "surface": "Official software company website; Argentina",
+      "observed_need": "The current homepage sells hospital, laboratory, payer and ERP systems, but both the homepage and About/Contact templates visibly retain unrelated demo e-commerce products, wishlist/cart UI and generic placeholder sections. This is directly observed brand/credibility and web-QA friction; no claim is made about the underlying healthcare software.",
+      "problem_signal": {
+        "family": "template leakage / B2B credibility / web QA",
+        "evidence": "Official site visibly contains unrelated demo products, shopping-cart/wishlist elements and placeholder content alongside enterprise healthcare software messaging.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@thinksoft.com.ar",
+        "Official contact form"
+      ],
+      "outcome_space": [
+        "template cleanup",
+        "B2B credibility",
+        "enterprise lead presentation",
+        "web QA"
+      ],
+      "source": "https://www.thinksoft.com.ar/",
+      "provenance": "Official company home/About/Contact pages; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "ThinkSoft marketing/commercial owner",
+      "fit_note": "Contactable Argentina B2B software candidate with substantial first-party demo/template leakage.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and assess only a bounded website/brand QA offer; do not infer product-quality problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-384",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Ascensores GERHARDT",
+      "domain": "ascensoresg.com.ar",
+      "country": "Argentina",
+      "sector": "Elevator installation / maintenance / modernization",
+      "surface": "Official elevator-services website; Argentina",
+      "observed_need": "The live English contact page is almost entirely Lorem Ipsum, including the 'Book an appointment' section, while the Spanish contact page exposes active administrative, technical and sales phone routes and a service survey form. This is directly observed multilingual lead-page QA.",
+      "problem_signal": {
+        "family": "multilingual contact/booking copy QA",
+        "evidence": "Official English Contact page contains placeholder Lorem Ipsum in the primary contact and appointment sections.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "Sales +54 11 7058 5434",
+        "Administrative +54 11 7368 2471 / +54 11 7063 1117",
+        "Technical +54 11 4421 0759"
+      ],
+      "outcome_space": [
+        "multilingual lead flow",
+        "appointment UX",
+        "copy cleanup",
+        "service conversion"
+      ],
+      "source": "https://www.ascensoresg.com.ar/contact.html",
+      "provenance": "Official English and Spanish contact pages; live public fetch/search verification on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Ascensores GERHARDT owner/commercial department",
+      "fit_note": "Contactable Argentina field-service company with a directly observed English conversion-page defect.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether English-language lead flow matters commercially before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-385",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Leaflow Co.",
+      "domain": "leaflow.cl",
+      "country": "Chile",
+      "sector": "E-commerce gift kits / urban accessories",
+      "surface": "Official Chile e-commerce contact page",
+      "observed_need": "The live contact page presents a real Chile e-commerce business but still displays a template Australian store address, Australian phone, unrelated support@mixtas.com address, Lorem Ipsum and an explicit Google Maps API-key warning. An official return-policy page exposes contacto@leaflow.cl. This is directly observed contact-data/credibility QA.",
+      "problem_signal": {
+        "family": "contact-data QA / maps integration / e-commerce trust",
+        "evidence": "Official contact page exposes template foreign contact data, placeholder copy and a 'Please set Google maps API key' warning.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "contacto@leaflow.cl",
+        "Official site WhatsApp/chat route"
+      ],
+      "outcome_space": [
+        "contact-data cleanup",
+        "maps integration",
+        "e-commerce trust",
+        "conversion QA"
+      ],
+      "source": "https://www.leaflow.cl/contact-us/",
+      "provenance": "Official contact and returns-policy pages; live public fetch/search verification on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Leaflow Co. owner/e-commerce operator",
+      "fit_note": "Chile retail candidate with unusually strong directly observed template/contact corruption and a separate real first-party contact route.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and current trading activity; prioritize if a small contact/trust remediation can be sold quickly."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-386",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Academy of Language Arts (ALA)",
+      "domain": "ala-school.jp",
+      "country": "Japan",
+      "sector": "Japanese language education",
+      "surface": "Official language-school contact page; Tokyo, Japan",
+      "observed_need": "The live official Contact page includes a prominent Lorem Ipsum paragraph directly under important application guidance while presenting a multilingual admissions enquiry form. This is directly observed enrollment-page content QA.",
+      "problem_signal": {
+        "family": "admissions copy QA / enrollment conversion",
+        "evidence": "Official contact/admissions page contains visible Lorem Ipsum between applicant instructions and the enquiry flow.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "Official multilingual contact/admissions form at ala-school.jp/contact/"
+      ],
+      "outcome_space": [
+        "admissions UX",
+        "content cleanup",
+        "international lead conversion",
+        "web QA"
+      ],
+      "source": "https://ala-school.jp/contact/",
+      "provenance": "Official school contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "ALA admissions/operations owner",
+      "fit_note": "Japan education candidate with first-party placeholder content on a high-intent international admissions surface.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and a resolvable admissions decision-maker route before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-387",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Alpha9 Solutions",
+      "domain": "alpha9.solutions",
+      "country": "United Arab Emirates",
+      "sector": "AI / automation / digital growth / business technology consultancy",
+      "surface": "Official consultancy homepage; Dubai, UAE",
+      "observed_need": "The live homepage sells AI, automation, CRM/RevOps, web and growth services but visibly exposes generic placeholder pricing copy and an explicit Mailchimp-not-connected error in its newsletter section. First-party results expose Dubai phone/email. This is directly observed commercial-site QA/integration friction.",
+      "problem_signal": {
+        "family": "newsletter integration / pricing copy / credibility QA",
+        "evidence": "Official homepage visibly shows placeholder pricing copy and a Mailchimp API-key error.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@alpha9.solutions",
+        "+971 50 924 9042",
+        "Official contact form"
+      ],
+      "outcome_space": [
+        "newsletter integration",
+        "pricing-page cleanup",
+        "lead capture",
+        "B2B conversion"
+      ],
+      "source": "https://alpha9.solutions/",
+      "provenance": "Official company homepage/contact page plus official-domain indexed contact details; verified 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Alpha9 owner/commercial lead",
+      "fit_note": "Contactable UAE consultancy with explicit first-party integration/content defects; buyer relevance must be tested because it sells adjacent services.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and qualify only if the internal capacity gap creates a genuine bounded purchase opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-388",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Rayo IT Solutions",
+      "domain": "rayo.qa",
+      "country": "Qatar",
+      "sector": "Web development / digital marketing / branding",
+      "surface": "Official digital-services homepage; Qatar",
+      "observed_need": "The live homepage contains extensive placeholder content across customer experience, engineering/design, portfolio, awards, metrics and blog sections, including zeroed commercial proof metrics, while advertising active web/marketing services and publishing direct contact coordinates. This is directly observed proof/credibility QA.",
+      "problem_signal": {
+        "family": "proof content / template leakage / credibility QA",
+        "evidence": "Official homepage exposes multiple Lorem Ipsum sections, empty portfolio/blog states and 0+ proof metrics on the primary commercial surface.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@rayo.qa",
+        "+974 55 788 861"
+      ],
+      "outcome_space": [
+        "proof packaging",
+        "portfolio cleanup",
+        "conversion copy",
+        "web QA"
+      ],
+      "source": "https://rayo.qa/",
+      "provenance": "Official company homepage plus official-domain contact result; verified 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Rayo IT Solutions owner/commercial lead",
+      "fit_note": "Contactable Qatar digital-services candidate with unusually extensive first-party template leakage.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and buyer relevance before qualifying any bounded proof/website cleanup."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-389",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KIMSHEALTH at Home",
+      "domain": "kimshealthathome.com",
+      "country": "Bahrain",
+      "sector": "Home healthcare services",
+      "surface": "Official Bahrain-facing contact page",
+      "observed_need": "The live Contact page repeats a Lorem Ipsum placeholder as the corporate-head-office address across multiple location blocks while publishing real Bahrain phone, WhatsApp, appointment emails and a booking route. This is directly observed contact-data/credibility QA; no claim is made about healthcare quality.",
+      "problem_signal": {
+        "family": "contact-data QA / booking credibility",
+        "evidence": "Official contact page repeats placeholder Lorem Ipsum where office addresses should appear while exposing active appointment/contact routes.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@healthathome.co",
+        "appointments@healthathome.co",
+        "+973 1734 8300",
+        "WhatsApp +973 3875 8805"
+      ],
+      "outcome_space": [
+        "contact-data cleanup",
+        "booking UX",
+        "web credibility",
+        "conversion QA"
+      ],
+      "source": "https://www.kimshealthathome.com/contact/",
+      "provenance": "Official service contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "KIMSHEALTH at Home operations/marketing owner",
+      "fit_note": "Bahrain service-business candidate with direct appointment routes and obvious first-party contact-page placeholder data.",
+      "consumer_action": "iSCOPE verify the Bahrain entity/contact route and duplicate history; qualify only a bounded web/contact-data remediation."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-390",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tezweed International Trading Company",
+      "domain": "tezweed.com",
+      "country": "Kuwait",
+      "sector": "Retail / home, personal and professional goods trading",
+      "surface": "Official trading/e-commerce website; Kuwait City",
+      "observed_need": "The live Contact page inserts full Lorem Ipsum blocks under Address, Phone and Email headings before the real Kuwait address, phone and email, while the homepage promotes an active online store and regional retail expansion. This is directly observed contact-page credibility QA.",
+      "problem_signal": {
+        "family": "contact-page copy QA / retail credibility",
+        "evidence": "Official contact page displays Lorem Ipsum under each contact-information heading immediately before real contact details.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@tezweed.com",
+        "+965 22469406"
+      ],
+      "outcome_space": [
+        "contact-page cleanup",
+        "retail trust",
+        "e-commerce conversion",
+        "web QA"
+      ],
+      "source": "https://tezweed.com/contact/",
+      "provenance": "Official contact and homepage; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Tezweed owner/commercial lead",
+      "fit_note": "Contactable Kuwait retail/trading candidate with directly observed placeholder content in a high-intent contact surface.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and active trading state before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-391",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Hulul",
+      "domain": "haloul.com.sa",
+      "country": "Saudi Arabia",
+      "sector": "Fire engineering consultancy / fire safety solutions",
+      "surface": "Official consultancy contact page; Riyadh, Saudi Arabia",
+      "observed_need": "The live Contact page consists of untouched template instructions ('I am text block. Click edit button to change this text.') and Lorem Ipsum, while official-domain results publish direct Riyadh phone/email and identify Hulul as a fire-engineering consultancy. This is directly observed professional-services lead-page QA.",
+      "problem_signal": {
+        "family": "contact-page template leakage / professional credibility",
+        "evidence": "Official contact page visibly contains editor instructions and Lorem Ipsum instead of finished customer-facing contact copy.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@holoulcompany.com.sa",
+        "+966 53 735 0652"
+      ],
+      "outcome_space": [
+        "contact-page cleanup",
+        "professional-services credibility",
+        "lead capture",
+        "web QA"
+      ],
+      "source": "https://haloul.com.sa/contact/",
+      "provenance": "Official contact page plus official-domain first-party search result for company identity/contact; verified 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Hulul owner/principal",
+      "fit_note": "Contactable Saudi professional-services candidate with extreme visible template leakage on the contact page.",
+      "consumer_action": "iSCOPE revalidate email spelling/domain, duplicate/contact history and current trading state before qualification."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
