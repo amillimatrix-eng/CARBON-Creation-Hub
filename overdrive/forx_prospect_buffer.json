@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:19:00+02:00",
+  "last_updated": "2026-10-08T17:34:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -4796,6 +4796,136 @@
       "payer_hypothesis": "The Belize Bank Limited",
       "fit_note": "Belize merchant/agent distribution surface; exact update date requires later normalization.",
       "consumer_action": "iSCOPE validate merchant/agent onboarding, dashboard/reconciliation and current network-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-267",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Cucu S.R.L. / CUCU POS",
+      "surface": "Google Play POS + SIAT invoicing; package ai.cucu.pos; Bolivia",
+      "observed_need": "Current Sep 23 2026 first release provides mobile catalogue/barcode/voice sales, cash/card/QR/credit collection, SIAT invoicing and cash-register opening/closing with variance.",
+      "outcome_space": [
+        "POS",
+        "SIAT invoicing",
+        "QR payments",
+        "cash close",
+        "inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ai.cucu.pos",
+      "published": "2026-09-23",
+      "payer_hypothesis": "Cucu S.R.L.",
+      "fit_note": "Fresh Bolivia SMME merchant workflow with direct La Paz legal/contact evidence.",
+      "consumer_action": "iSCOPE validate merchant onboarding, SIAT setup, cash-close/reconciliation and current support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-268",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CDEonline / CDEpos",
+      "surface": "Google Play POS + SIFEN e-invoicing; package com.cdeonline.cdepos_mobile; Paraguay",
+      "observed_need": "Current Sep 30 2026 app provides offline POS, inventory, SIFEN invoices, RUC lookup, WhatsApp/email invoice delivery and multi-currency checkout.",
+      "outcome_space": [
+        "POS",
+        "SIFEN invoicing",
+        "inventory",
+        "multi-currency",
+        "WhatsApp"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.cdeonline.cdepos_mobile",
+      "published": "2026-09-30",
+      "payer_hypothesis": "CDEonline / CDEpos",
+      "fit_note": "Very fresh Paraguay merchant workflow with direct Ciudad del Este support.",
+      "consumer_action": "iSCOPE validate SIFEN onboarding, offline sync, inventory and current merchant-support burden."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-269",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Checklist S.A. / Arai PDV",
+      "surface": "Google Play bank-transfer reconciliation POS; package app.araipy.caja; Paraguay",
+      "observed_need": "Current Sep 16 2026 POS confirms bank-transfer payments by exact amount, supports cashier activation/revocation and optional sales-location mapping.",
+      "outcome_space": [
+        "payment reconciliation",
+        "POS",
+        "bank transfer",
+        "cashier controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.araipy.caja",
+      "published": "2026-09-16",
+      "payer_hypothesis": "Checklist S.A. / Arai",
+      "fit_note": "Distinct high-value reconciliation workflow with direct Paraguay identity.",
+      "consumer_action": "iSCOPE validate merchant adoption, false-match/reconciliation support and current bank-channel integration needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-270",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "EMAGIC / FacturarEc",
+      "surface": "Google Play electronic invoicing; package com.emagic.facturar_ec; Ecuador",
+      "observed_need": "Current Aug 27 2026 first release lets Ecuador businesses issue invoices, credit notes, withholding certificates and delivery notes under current tax rules.",
+      "outcome_space": [
+        "e-invoicing",
+        "tax compliance",
+        "SME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.emagic.facturar_ec",
+      "published": "2026-08-27",
+      "payer_hypothesis": "EMAGIC / FacturarEc",
+      "fit_note": "Fresh Ecuador fiscal-workflow surface with local developer/contact.",
+      "consumer_action": "iSCOPE validate SRI onboarding, document workflow and current SME support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-271",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Acontplus S.A.S. / AcontPlus",
+      "surface": "Google Play SRI invoicing + inventory; package com.acontplus_facturacion; Ecuador",
+      "observed_need": "Current Jun 6 2026 app combines electronic invoicing, electronic signatures, stock/customer management, real-time reports, Bluetooth printing and WhatsApp/email delivery.",
+      "outcome_space": [
+        "e-invoicing",
+        "inventory",
+        "CRM",
+        "reporting",
+        "WhatsApp"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.acontplus_facturacion",
+      "published": "2026-06-06",
+      "payer_hypothesis": "Acontplus S.A.S.",
+      "fit_note": "Direct Ecuador legal identity and broad SME workflow.",
+      "consumer_action": "iSCOPE validate merchant onboarding, inventory/reporting workload and current support/conversion need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-272",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ALQUIMIASOFT SA / Migo",
+      "surface": "Google Play mobile POS + accounting integration; package com.ec.alquimiasoft.minegocio.app; Ecuador",
+      "observed_need": "Current Jul 23 2026 app invoices goods/services/combos by voice or manual entry and includes restaurant POS table management integrated with Migo accounting.",
+      "outcome_space": [
+        "POS",
+        "restaurant operations",
+        "voice entry",
+        "invoicing",
+        "accounting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ec.alquimiasoft.minegocio.app",
+      "published": "2026-07-23",
+      "payer_hypothesis": "ALQUIMIASOFT SA",
+      "fit_note": "Current Ecuador merchant/accounting surface; voice-entry workflow is a distinct automation signal.",
+      "consumer_action": "iSCOPE validate restaurant/SME onboarding, accounting sync and current support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-273",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "FACTURANDO / Facturando.com",
+      "surface": "Google Play mobile POS + stock; package x.facturando.com; Uruguay",
+      "observed_need": "Current 2026 app positions mobile POS for Uruguay/regional businesses with barcode scanning, cash/transfer/card/Mercado Pago collection, thermal-ticket printing and real-time stock/customer integration.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "payments",
+        "barcode",
+        "SME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=x.facturando.com",
+      "published": "2026",
+      "payer_hypothesis": "FACTURANDO",
+      "fit_note": "Uruguay merchant-management surface; source-reported company-count scale must not be converted to AMX nodes.",
+      "consumer_action": "iSCOPE normalize exact update date and validate onboarding, payment/stock workflow and current merchant-growth needs."
     }
   ]
 }
