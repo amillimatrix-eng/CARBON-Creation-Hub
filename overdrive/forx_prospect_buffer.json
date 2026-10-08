@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:19:00+02:00",
+  "last_updated": "2026-10-08T17:24:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -9108,6 +9108,249 @@
       "payer_hypothesis": "Gokiebox / WaykuSoft POS product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-469",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "JPCT LTD / Cloud Clever",
+      "surface": "Cyprus retail POS/ecommerce admin; package com.jpct.cloudclever",
+      "observed_need": "Unified POS and online-store product administration for retailers.",
+      "outcome_space": [
+        "retail POS",
+        "ecommerce",
+        "catalogue"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.jpct.cloudclever",
+      "payer_hypothesis": "JPCT LTD / Cloud Clever product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-470",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "USMANHEART OU / Sayang Seller POS",
+      "surface": "Estonia developer identity; merchant operating geography unresolved; package org.usmanheart.sayang_seller",
+      "observed_need": "Sales, items, expenses, staff, cloud sync and offline caching for retail/food/service merchants.",
+      "outcome_space": [
+        "POS",
+        "staff",
+        "expenses",
+        "offline cache"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=org.usmanheart.sayang_seller",
+      "payer_hypothesis": "USMANHEART OU / Sayang Seller POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-471",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SURF CREATIVE SOLUTIONS LIMITED / Surf Seller Hub",
+      "surface": "Malta seller marketplace; package com.surf.sellerhub",
+      "observed_need": "Verified sellers manage products, inventory, orders, delivery status, sales performance and payout requests.",
+      "outcome_space": [
+        "seller operations",
+        "inventory",
+        "orders",
+        "payouts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.surf.sellerhub",
+      "payer_hypothesis": "SURF CREATIVE SOLUTIONS LIMITED / Surf Seller Hub product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-472",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CONUS AI UAB / OrdeON Merchant Business",
+      "surface": "Lithuania restaurant merchant operations; package io.ordeon.merchant.business",
+      "observed_need": "Orders, menus, reservations and restaurant operations management.",
+      "outcome_space": [
+        "restaurant operations",
+        "orders",
+        "reservations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=io.ordeon.merchant.business",
+      "payer_hypothesis": "CONUS AI UAB / OrdeON Merchant Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-473",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PBT PAYMENT SOLUTIONS LTD / PBT Smart Virtual POS",
+      "surface": "Cyprus mobile payments; package com.pbt.pbtpaymobilepayments",
+      "observed_need": "Mobile-device payment acceptance plus payment-link ordering and transaction management.",
+      "outcome_space": [
+        "merchant acquiring",
+        "payment links",
+        "mobile POS"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.pbt.pbtpaymobilepayments",
+      "payer_hypothesis": "PBT PAYMENT SOLUTIONS LTD / PBT Smart Virtual POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-474",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SMARTON SYSTEMS UAB / SmartOn POS",
+      "surface": "Lithuania restaurant POS; package smarton.app.smartonpos",
+      "observed_need": "Restaurant POS operating surface with current September 2026 maintenance.",
+      "outcome_space": [
+        "restaurant POS",
+        "merchant operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=smarton.app.smartonpos",
+      "payer_hypothesis": "SMARTON SYSTEMS UAB / SmartOn POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-475",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Vibe Coders Studio OU / Cashier Lite POS",
+      "surface": "Estonia developer identity; market geography unresolved; package com.vibecodersstudio.cashierlitepos",
+      "observed_need": "Offline cash register for small business with thermal receipt printing and multilingual support.",
+      "outcome_space": [
+        "offline POS",
+        "cash register",
+        "receipt printing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.vibecodersstudio.cashierlitepos",
+      "payer_hypothesis": "Vibe Coders Studio OU / Cashier Lite POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-476",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Wildix OU / x-hoppers",
+      "surface": "Estonia retail-operations technology; package com.wildix.xhoppers",
+      "observed_need": "In-store staff chat/voice/video and POS/security/call-point alerts for retail operations.",
+      "outcome_space": [
+        "retail operations",
+        "staff communication",
+        "POS alerts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.wildix.xhoppers",
+      "payer_hypothesis": "Wildix OU / x-hoppers product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-477",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "FLOWGATE CYPRUS LTD / Flowgate",
+      "surface": "Cyprus B2B payment infrastructure; package tech.flowgate",
+      "observed_need": "B2B SoftPOS/payment infrastructure for merchant acceptance.",
+      "outcome_space": [
+        "B2B payments",
+        "softPOS",
+        "merchant infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=tech.flowgate",
+      "payer_hypothesis": "FLOWGATE CYPRUS LTD / Flowgate product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-478",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TWINE LIMITED / Twine POS",
+      "surface": "Malta POS; package com.twine.pos",
+      "observed_need": "Business sales processing, inventory and transaction tracking.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "transactions"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.twine.pos",
+      "payer_hypothesis": "TWINE LIMITED / Twine POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-479",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Armitage Labs OU / CREEM",
+      "surface": "Estonia Merchant-of-Record operations; package io.creem.merchant",
+      "observed_need": "Payment alerts, transactions, customers and revenue visibility for software merchants.",
+      "outcome_space": [
+        "merchant of record",
+        "payments",
+        "customers",
+        "revenue"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=io.creem.merchant",
+      "payer_hypothesis": "Armitage Labs OU / CREEM product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-480",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DebuggerTR Consulting SIA / Adisora Business",
+      "surface": "Latvia restaurant operations; package com.debuggertr.adisorabusiness",
+      "observed_need": "Table service, kitchen flow, orders, reservations, QR ordering and pilot invoicing.",
+      "outcome_space": [
+        "restaurant operations",
+        "reservations",
+        "QR ordering",
+        "invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.debuggertr.adisorabusiness",
+      "payer_hypothesis": "DebuggerTR Consulting SIA / Adisora Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-481",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Corporate Solutions SIA / Mily for business",
+      "surface": "Latvia merchant attendance operations; package com.milylab.milymerchant",
+      "observed_need": "Existing Mily merchants manage customer attendance through mobile merchant accounts.",
+      "outcome_space": [
+        "merchant operations",
+        "customer attendance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.milylab.milymerchant",
+      "payer_hypothesis": "Corporate Solutions SIA / Mily for business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-482",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "EKTACO AKTSIASELTS / CompuCash POS",
+      "surface": "Estonia POS; package com.ektaco.cc5_pos",
+      "observed_need": "POS plus campaign, loyalty and e-shop integration operating surface.",
+      "outcome_space": [
+        "POS",
+        "loyalty",
+        "campaigns",
+        "ecommerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ektaco.cc5_pos",
+      "payer_hypothesis": "EKTACO AKTSIASELTS / CompuCash POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-483",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SALLY LTD / Sally POS",
+      "surface": "Cyprus hospitality POS; package app.sally.pos",
+      "observed_need": "Cloud POS for cafés/restaurants with multi-device data sync and hospitality sales operations.",
+      "outcome_space": [
+        "hospitality POS",
+        "sales",
+        "multi-device"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.sally.pos",
+      "payer_hypothesis": "SALLY LTD / Sally POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
+      "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
