@@ -823,6 +823,8 @@ class MarketplaceStore:
             if commitment["state"] != "ACTIVE_COMMITMENT":
                 raise ValueError("commitment is no longer eligible for extension")
             now = iso()
+            previous_terms_hash = commitment["terms_hash"]
+            new_terms_hash = previous_terms_hash
             if action == "ACCEPT":
                 old_start = parse_time(commitment["start_at"])
                 old_deadline = parse_time(commitment["cancellation_deadline_at"])
@@ -830,11 +832,32 @@ class MarketplaceStore:
                 new_start = parse_time(ext["proposed_start_at"])
                 new_end = parse_time(ext["proposed_end_at"])
                 new_deadline = new_start - buffer
+
+                terms = json.loads(commitment["terms_json"] or "{}")
+                amendments = list(terms.get("amendments") or [])
+                amendments.append({
+                    "kind": "TIME_EXTENSION",
+                    "extension_id": extension_id,
+                    "previous_terms_hash": previous_terms_hash,
+                    "accepted_at": now,
+                })
+                terms["amendments"] = amendments
+                terms["window"] = {
+                    "start_at": iso(new_start),
+                    "end_at": iso(new_end),
+                    "cancellation_deadline_at": iso(new_deadline),
+                }
+                terms_json = json.dumps(terms, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+                new_terms_hash = hashlib.sha256(terms_json.encode("utf-8")).hexdigest()
                 conn.execute(
                     """UPDATE commitments
-                       SET start_at=?,end_at=?,cancellation_deadline_at=?,updated_at=?
+                       SET start_at=?,end_at=?,cancellation_deadline_at=?,
+                           terms_json=?,terms_hash=?,updated_at=?
                        WHERE id=?""",
-                    (iso(new_start), iso(new_end), iso(new_deadline), now, commitment["id"]),
+                    (
+                        iso(new_start), iso(new_end), iso(new_deadline),
+                        terms_json, new_terms_hash, now, commitment["id"],
+                    ),
                 )
                 status = "ACCEPTED"
             else:
@@ -846,6 +869,8 @@ class MarketplaceStore:
             self._event(conn, "commitment", commitment["id"], actor, "EXTENSION_"+status, {
                 "extension_id": extension_id,
                 "new_window_applied": status == "ACCEPTED",
+                "previous_terms_hash": previous_terms_hash,
+                "current_terms_hash": new_terms_hash,
             })
             row = conn.execute("SELECT * FROM extension_requests WHERE id=?", (extension_id,)).fetchone()
         return dict(row)
