@@ -11787,6 +11787,56 @@
       "payer_hypothesis": "ABISTAR GROUP OF COMPANIES LIMITED business owner / procurement lead",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Official registry identity evidence. Registration proves operating legitimacy/category, not an unmet commercial problem.",
       "consumer_action": "iSCOPE verify current company status, public lawful contact route, buyer relevance and specific active need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-631",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Karame Rwanda Ltd",
+      "surface": "Rwanda engineering/construction contractor",
+      "observed_need": "Rwandan engineering and construction company with residential, commercial, infrastructure and renovation services; A.E.B.T.P. 2026 certified-member evidence also surfaced. Public contact: info@karamerwanda.com / +250 796 694 878.",
+      "outcome_space": [
+        "construction",
+        "infrastructure",
+        "contractor"
+      ],
+      "source": "https://www.karamerwanda.com/contact-us.php",
+      "payer_hypothesis": "Karame Rwanda Ltd business-development / operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Official/company-owned contact surface plus current industry-network evidence. No unmet problem inferred from company profile.",
+      "consumer_action": "iSCOPE verify current buyer relevance and specific active problem/opportunity before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-632",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NPD Ltd",
+      "surface": "Rwanda civil engineering/construction/manufacturing",
+      "observed_need": "Civil engineering and construction company with roads, dams, bridges, electrical projects and construction-material manufacturing. Public contact: office@npd.co.rw / +250 790 022 000.",
+      "outcome_space": [
+        "construction",
+        "civil engineering",
+        "manufacturing",
+        "infrastructure"
+      ],
+      "source": "https://npd.co.rw/en/contact-us/",
+      "payer_hypothesis": "NPD Ltd business-development / operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Official/company-owned contact surface plus current industry-network evidence. No unmet problem inferred from company profile.",
+      "consumer_action": "iSCOPE verify current buyer relevance and specific active problem/opportunity before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-633",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Real Contractors Ltd",
+      "surface": "Rwanda construction/infrastructure",
+      "observed_need": "End-to-end construction, development, MEP and finishing company; A.E.B.T.P. certified-member evidence and direct public quote/contact route. Public contact: info@real.rw / quotes@real.rw / +250788306817.",
+      "outcome_space": [
+        "construction",
+        "MEP",
+        "infrastructure",
+        "procurement"
+      ],
+      "source": "https://www.real.rw/",
+      "payer_hypothesis": "Real Contractors Ltd business-development / operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Official/company-owned contact surface plus current industry-network evidence. No unmet problem inferred from company profile.",
+      "consumer_action": "iSCOPE verify current buyer relevance and specific active problem/opportunity before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
