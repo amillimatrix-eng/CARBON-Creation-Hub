@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:10:00+02:00",
+  "last_updated": "2026-10-08T16:22:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -3135,6 +3135,199 @@
       "payer_hypothesis": "Digitize Jamaica Ltd",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Jamaica company identity/contact with lower freshness; current platform status needs verification.",
       "consumer_action": "iSCOPE verify active 2026 service, merchant base and current order/analytics/support needs before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-168",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Mobile Money Guyana Inc / MMG",
+      "surface": "Google Play merchant/agent operations; package com.sixdee.mfs.mmg.business; Guyana",
+      "observed_need": "Agent/merchant transaction processing, sales tracking and performance visibility are explicit product surfaces.",
+      "outcome_space": [
+        "merchant payments",
+        "agent operations",
+        "sales analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.sixdee.mfs.mmg.business",
+      "payer_hypothesis": "Mobile Money Guyana Inc / MMG product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-169",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SuriPay",
+      "surface": "Google Play payments; package com.suripayconsumer; Suriname",
+      "observed_need": "Public app supports paying businesses and transferring funds across Suriname.",
+      "outcome_space": [
+        "payments",
+        "merchant acceptance",
+        "fintech"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.suripayconsumer",
+      "payer_hypothesis": "SuriPay product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-170",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PAYITI / NOUPEYE LLC",
+      "surface": "Google Play digital payments; package com.despia.payiti; Haiti",
+      "observed_need": "Public app exposes digital payments, cards and transfers for Haiti.",
+      "outcome_space": [
+        "fintech",
+        "payments",
+        "consumer-to-merchant"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.despia.payiti",
+      "payer_hypothesis": "PAYITI / NOUPEYE LLC product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-171",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "IEC Vanuatu / DOMINO LIMITED / CloudPOS.vu",
+      "surface": "Google Play POS; package vu.iec.cloudpos_vu; Vanuatu",
+      "observed_need": "Public app explicitly covers sales, inventory, invoicing, expenses, banking and Vanuatu fiscal-compliance integration.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "invoicing",
+        "fiscal compliance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=vu.iec.cloudpos_vu",
+      "payer_hypothesis": "IEC Vanuatu / DOMINO LIMITED / CloudPOS.vu product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-172",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BRED (VANUATU) LIMITED",
+      "surface": "Google Play business banking; package com.bankflexbred.vanuatu.prod10; Vanuatu",
+      "observed_need": "Public business app exposes payroll, scheduled transfers, statements and biller workflows.",
+      "outcome_space": [
+        "business banking",
+        "payroll",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bankflexbred.vanuatu.prod10",
+      "payer_hypothesis": "BRED (VANUATU) LIMITED product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-173",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "JBJ Production Multi-Services / MonCash Manager",
+      "surface": "Google Play internal operator tool; package com.moncash.manager; Haiti",
+      "observed_need": "Public listing describes multi-wallet balances/history, merchant payments, withdrawals, recurring transfers and role-restricted operator controls.",
+      "outcome_space": [
+        "operator controls",
+        "payments",
+        "workflow"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.moncash.manager",
+      "payer_hypothesis": "JBJ Production Multi-Services / MonCash Manager product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-174",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BNJ Trans Ltd / WOULIB",
+      "surface": "Google Play merchant operations; package com.woulib.merchant; Haiti",
+      "observed_need": "Public merchant app exposes order and earnings management.",
+      "outcome_space": [
+        "merchant operations",
+        "orders",
+        "earnings"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.woulib.merchant",
+      "payer_hypothesis": "BNJ Trans Ltd / WOULIB product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-175",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CLIKPAY GABON SA",
+      "surface": "Google Play SME payments/accounting; package com.clikpay.business; Gabon",
+      "observed_need": "Public business app exposes QR/payment requests, supplier and employee payments, accounting and invoicing.",
+      "outcome_space": [
+        "merchant payments",
+        "accounting",
+        "invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.clikpay.business",
+      "payer_hypothesis": "CLIKPAY GABON SA product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-176",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "GABON TELECOM SA / Moov Money reseller",
+      "surface": "Google Play reseller operations; package com.telecom.gabon.partner; Gabon",
+      "observed_need": "Public partner app exposes reseller/merchant payment operations and CEMAC interoperability.",
+      "outcome_space": [
+        "reseller network",
+        "merchant payments",
+        "mobile money"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.telecom.gabon.partner",
+      "payer_hypothesis": "GABON TELECOM SA / Moov Money reseller product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-177",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MKF Mobile / MKF Vendeur",
+      "surface": "Google Play seller operations; package com.bjweb.mkf_vendor; Gabon",
+      "observed_need": "Public seller app exposes product, order and sales management.",
+      "outcome_space": [
+        "seller operations",
+        "orders",
+        "marketplace"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bjweb.mkf_vendor",
+      "payer_hypothesis": "MKF Mobile / MKF Vendeur product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-178",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Antigua Public Utilities Authority / iTopup",
+      "surface": "Google Play utility merchant operations; package com.ken.eTopup; Antigua & Barbuda",
+      "observed_need": "Public merchant app enables authorized utility merchants to top up subscribers and check merchant balance.",
+      "outcome_space": [
+        "utility distribution",
+        "merchant operations",
+        "prepaid topup"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ken.eTopup",
+      "payer_hypothesis": "Antigua Public Utilities Authority / iTopup product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-179",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HavEats / Pivot",
+      "surface": "Google Play merchant partner operations; package com.haveats.merchant; Antigua & Barbuda",
+      "observed_need": "Public listing identifies a restaurant/food-stall/merchant partner dashboard.",
+      "outcome_space": [
+        "restaurant operations",
+        "merchant onboarding",
+        "orders"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.haveats.merchant",
+      "payer_hypothesis": "HavEats / Pivot product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
     }
   ]
 }
