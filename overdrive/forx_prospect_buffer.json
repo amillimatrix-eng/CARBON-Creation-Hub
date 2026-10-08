@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:26:00+02:00",
+  "last_updated": "2026-10-08T16:30:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -3662,6 +3662,102 @@
       "payer_hypothesis": "SMART SYSTEMS (SL) LIMITED / Apex product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-201",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tuvalu Telecommunications Corporation / M-Tupe Partner",
+      "surface": "Tuvalu fintech partner app; package com.tuvalu.partner",
+      "observed_need": "Partner wallet supports transfers and merchant payments in Tuvalu.",
+      "outcome_space": [
+        "merchant payments",
+        "fintech",
+        "partner network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tuvalu.partner",
+      "payer_hypothesis": "Tuvalu Telecommunications Corporation / M-Tupe Partner product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package evidence. Operating surface is evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, specific active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-202",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tuvalu Telecommunications Corporation / M-Tupe Customer",
+      "surface": "Tuvalu wallet; package com.tuvalu.consumer",
+      "observed_need": "Consumer wallet explicitly supports merchant payment and cashless commerce in Tuvalu.",
+      "outcome_space": [
+        "merchant-payment ecosystem",
+        "wallet",
+        "financial inclusion"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tuvalu.consumer",
+      "payer_hypothesis": "Tuvalu Telecommunications Corporation / M-Tupe Customer product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package evidence. Operating surface is evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, specific active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-203",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KONOOM SA-CA / Konoom Agent",
+      "surface": "Chad mobile-money agent network; package com.konoom.agent",
+      "observed_need": "Agent network supports deposits, withdrawals, merchant/SME collection, receipts and GIMAC-compatible operations.",
+      "outcome_space": [
+        "agent network",
+        "merchant collection",
+        "mobile money"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.konoom.agent",
+      "payer_hypothesis": "KONOOM SA-CA / Konoom Agent product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package evidence. Operating surface is evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, specific active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-204",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KONOOM SA-CA / Konoom Merchant",
+      "surface": "Chad merchant mobile money; package com.konoom.merchant",
+      "observed_need": "Merchant app supports collections without terminal, payment requests, receipts, bills/taxes and partner-agent cash operations.",
+      "outcome_space": [
+        "merchant payments",
+        "payment requests",
+        "receipts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.konoom.merchant",
+      "payer_hypothesis": "KONOOM SA-CA / Konoom Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package evidence. Operating surface is evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, specific active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-205",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NFCPay Technologies / GuinéPay",
+      "surface": "Guinea-Bissau digital wallet/payment platform; package com.guinepay.wallet",
+      "observed_need": "Public app targets individuals and businesses with receive-payments, Tap-to-POS, transaction history and local/international payments.",
+      "outcome_space": [
+        "merchant payments",
+        "Tap to POS",
+        "wallet"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.guinepay.wallet",
+      "payer_hypothesis": "NFCPay Technologies / GuinéPay product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package evidence. Operating surface is evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, specific active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-206",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "G F T - GOLFINTECH, SA / Dobra Digital",
+      "surface": "São Tomé and Príncipe payments; package io.ionic.dobra.digital",
+      "observed_need": "Licensed local payment app supports entity QR payments, wallet top-up and withdrawals.",
+      "outcome_space": [
+        "merchant payments",
+        "QR",
+        "local fintech"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=io.ionic.dobra.digital",
+      "payer_hypothesis": "G F T - GOLFINTECH, SA / Dobra Digital product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package evidence. Operating surface is evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, specific active need and commercial relevance before PRI action."
     }
   ]
 }
