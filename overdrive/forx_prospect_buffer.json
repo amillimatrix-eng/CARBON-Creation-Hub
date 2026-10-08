@@ -7686,6 +7686,299 @@
       "payer_hypothesis": "Hulul owner/principal",
       "fit_note": "Contactable Saudi professional-services candidate with extreme visible template leakage on the contact page.",
       "consumer_action": "iSCOPE revalidate email spelling/domain, duplicate/contact history and current trading state before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-392",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Ocean Company",
+      "domain": "oceancompany.nl",
+      "country": "Netherlands",
+      "sector": "Seafood ingredients for food and pet-food manufacturing",
+      "surface": "Official seafood-ingredients website/contact page; Urk, Netherlands",
+      "observed_need": "The live public contact-page extraction exposes unrendered Flatsome/UX shortcodes such as [ux_banner], [text_box], [row] and [col] around the real contact content. This is a directly observed rendering/content-delivery signal in the fetched public page, but iSCOPE should confirm in a normal browser before treating it as user-visible.",
+      "problem_signal": {
+        "family": "rendering QA / contact-page usability",
+        "evidence": "Public first-party contact-page fetch exposes raw theme shortcodes intermixed with customer-facing contact content.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@oceancompany.nl",
+        "+31 527 748760"
+      ],
+      "outcome_space": [
+        "rendering QA",
+        "contact-page cleanup",
+        "B2B credibility",
+        "lead conversion"
+      ],
+      "source": "https://oceancompany.nl/contact/",
+      "provenance": "Official company homepage/contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Ocean Company commercial/marketing owner",
+      "fit_note": "Contactable Netherlands B2B ingredient supplier with a potential theme-rendering defect; normal-browser confirmation required.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and confirm whether raw shortcodes are user-visible in a normal browser before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-393",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NovaLoop GmbH",
+      "domain": "novaloop.de",
+      "country": "Germany",
+      "sector": "Product/environmental compliance consulting and training",
+      "surface": "Official consultancy website; Böblingen, Germany",
+      "observed_need": "The live site carries a dated 2 October 2026 'Website under construction!' notice while advertising product circularity, material compliance, labelling, training and eco-design services and publishing direct contact coordinates. This is a directly observed site-completion/content gap.",
+      "problem_signal": {
+        "family": "web completion / professional-services presentation",
+        "evidence": "Official live site states Website under construction and that content/services information is still being updated.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "hello@novaloop.de",
+        "+49 7031 2090 790"
+      ],
+      "outcome_space": [
+        "web completion",
+        "service presentation",
+        "B2B lead capture",
+        "copy QA"
+      ],
+      "source": "https://www.novaloop.de/en/",
+      "provenance": "Official homepage/contact page; live public fetch on 2026-10-08",
+      "freshness": "Under-construction notice dated 2026-10-02; verified live 2026-10-08",
+      "published": "2026-10-02 notice",
+      "payer_hypothesis": "NovaLoop managing/commercial owner",
+      "fit_note": "Contactable German consultancy with a fresh first-party incomplete-site signal.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether a bounded content/site-completion offer is timely."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-394",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BJD Electrical",
+      "domain": "bjdelectrical.ie",
+      "country": "Ireland",
+      "sector": "Electrical business",
+      "surface": "Official business website; Ireland",
+      "observed_need": "The live official domain consists of a 'Website under construction' page with opening hours, phone and sales email but no substantive product/service journey. This is a directly observed digital-presence and enquiry-path gap.",
+      "problem_signal": {
+        "family": "web completion / enquiry path",
+        "evidence": "Official domain currently presents Website under construction plus basic opening hours/contact details only.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "sales@bjdelectrical.ie",
+        "+353 49 855 3641"
+      ],
+      "outcome_space": [
+        "web presence",
+        "service/product presentation",
+        "lead capture",
+        "conversion UX"
+      ],
+      "source": "https://www.bjdelectrical.ie/",
+      "provenance": "Official business website; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "BJD Electrical owner/operator",
+      "fit_note": "Contactable Irish small-business candidate with explicit incomplete web presence; detailed sector should be revalidated by iSCOPE before offer design.",
+      "consumer_action": "iSCOPE verify duplicate/contact history, exact service mix and whether a small web/enquiry package is commercially relevant."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-395",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Spartan Classic EV",
+      "domain": "spartanclassicev.co.uk",
+      "country": "United Kingdom",
+      "sector": "Classic-car EV conversion parts / automotive manufacturing",
+      "surface": "Official automotive conversion-parts contact page; United Kingdom",
+      "observed_need": "The live Contact page exposes an explicit 'Whoops, you're not connected to Mailchimp' API-key error while publishing direct sales phone/email and active business hours. This is directly observed newsletter/lead-capture integration QA.",
+      "problem_signal": {
+        "family": "Mailchimp integration / lead capture",
+        "evidence": "Official contact page visibly states the Mailchimp integration is not connected and requires a valid API key.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "sales@spartanclassicev.co.uk",
+        "+44 1631 700209"
+      ],
+      "outcome_space": [
+        "newsletter integration",
+        "lead capture",
+        "automotive B2B/B2C conversion",
+        "web QA"
+      ],
+      "source": "https://spartanclassicev.co.uk/contact-us/",
+      "provenance": "Official company contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public page with © 2026 observed 2026-10-08",
+      "published": "current 2026 site",
+      "payer_hypothesis": "Spartan Classic EV / Spartan Manufacturing commercial owner",
+      "fit_note": "Contactable UK automotive SME with a directly observed integration failure.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether a bounded newsletter/lead-capture repair has near-term value."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-396",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Kyndra's Kitchen",
+      "domain": "kyndraskitchen.com",
+      "country": "United States",
+      "sector": "Prepared meals / food delivery / catering",
+      "surface": "Official prepared-food website; Kingston, Massachusetts",
+      "observed_need": "The live food-product and Contact pages contain large blocks of unrelated online-casino/support content, while official-domain search also exposes a Mailchimp API-key error. Public business results tie the same phone/domain to Kingston, Massachusetts. This is directly observed severe content/SEO integrity and customer-trust friction; no claim is made about the cause.",
+      "problem_signal": {
+        "family": "content integrity / SEO spam / customer trust",
+        "evidence": "First-party food product/contact pages visibly contain extensive unrelated casino-support content; same-domain results also surface a Mailchimp-not-connected error.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "kyndra@kyndraskitchen.com",
+        "+1 978 771 3303"
+      ],
+      "outcome_space": [
+        "content cleanup",
+        "site integrity review",
+        "SEO remediation",
+        "customer trust",
+        "lead capture"
+      ],
+      "source": "https://kyndraskitchen.com/contact-us/",
+      "provenance": "Official product/contact pages plus same-domain search and public business-location corroboration; verified 2026-10-08",
+      "freshness": "Live public pages/current 2026 domain observed 2026-10-08",
+      "published": "current 2026 site",
+      "payer_hypothesis": "Kyndra's Kitchen owner/operator",
+      "fit_note": "US food SME with unusually high-signal first-party content corruption and direct owner-like contact route.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and inspect the live site in a normal browser; if still present, this is a strong bounded site-cleanup/security/SEO opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-397",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Panchatatva Cosmetics & Herbal Pvt. Ltd.",
+      "domain": "panchatatvacosmetics.com",
+      "country": "India",
+      "sector": "Herbal cosmetics / skincare e-commerce",
+      "surface": "Official cosmetics e-commerce website; India",
+      "observed_need": "The live homepage contains unfinished product/template content such as 'Please select products in Products section' and a generic 'Hemp Flower Tea' block with dummy marketing text, while same-domain indexed pages consistently expose a Mailchimp-not-connected error. The contact page publishes managing-director phone/email. This is directly observed content/integration QA with indexed integration evidence.",
+      "problem_signal": {
+        "family": "e-commerce content QA / Mailchimp integration",
+        "evidence": "Official homepage contains unfinished product/template content; same-domain current search results expose a Mailchimp API-key error across multiple pages.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "maheshraimd@gmail.com",
+        "+91 9821402364",
+        "+91 993056767",
+        "Consultation +91 9307480806"
+      ],
+      "outcome_space": [
+        "e-commerce copy cleanup",
+        "newsletter integration",
+        "product presentation",
+        "conversion trust"
+      ],
+      "source": "https://panchatatvacosmetics.com/",
+      "provenance": "Official homepage/contact page plus same-domain indexed integration evidence; verified 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "current site observed 2026-10-08",
+      "payer_hypothesis": "Mahesh P. Rai / Panchatatva commercial owner",
+      "fit_note": "Contactable India cosmetics SME with live unfinished storefront content; Mailchimp error should be normal-browser revalidated.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and validate the Mailchimp error live before qualifying a bounded e-commerce cleanup/integration offer."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-398",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Ananta Tourism",
+      "domain": "anantatourism.com",
+      "country": "India",
+      "sector": "Travel agency / holidays / air tickets / hotels / visa services",
+      "surface": "Official travel website; Ahmedabad, India",
+      "observed_need": "The live homepage contains generic template copy across value propositions and visibly states the Mailchimp newsletter is not connected, while the contact page exposes direct phone/email and active travel services. This is directly observed lead-capture/content QA.",
+      "problem_signal": {
+        "family": "newsletter integration / travel conversion copy",
+        "evidence": "Official homepage visibly exposes a Mailchimp API-key error and generic template copy in customer-facing benefit sections.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "sanjay@anantatourism.com",
+        "+91 79 48970007",
+        "+91 9924533372",
+        "+91 9925033372"
+      ],
+      "outcome_space": [
+        "newsletter repair",
+        "travel lead capture",
+        "offer copy",
+        "booking conversion"
+      ],
+      "source": "https://anantatourism.com/",
+      "provenance": "Official homepage/contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Ananta Tourism owner/operator",
+      "fit_note": "Contactable India travel SME with explicit first-party integration failure and weak template copy.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether a small lead-capture/copy cleanup can convert quickly."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-399",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SYNCHCOM PVT LTD",
+      "domain": "synchcom.com.pk",
+      "country": "Pakistan",
+      "sector": "IT / telecom / defence / energy systems integration",
+      "surface": "Official systems-integrator contact page; Islamabad, Pakistan",
+      "observed_need": "The live Contact page contains generic Lorem Ipsum and publishes mail@example.com as its email while listing a real Islamabad office and phone. The homepage identifies the business as a systems integrator across IT, telecom, defence, power/energy and automation. This is directly observed contact-data/credibility QA.",
+      "problem_signal": {
+        "family": "contact-data QA / B2B credibility",
+        "evidence": "Official contact page contains placeholder copy and the placeholder email mail@example.com.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "+92 51 486 4925",
+        "Official contact page/form; listed email is placeholder and must not be used"
+      ],
+      "outcome_space": [
+        "contact-data repair",
+        "B2B credibility",
+        "lead capture",
+        "web QA"
+      ],
+      "source": "https://synchcom.com.pk/contact-us/",
+      "provenance": "Official contact page/homepage; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "SYNCHCOM commercial/operations owner",
+      "fit_note": "Pakistan systems-integrator candidate with a direct phone route and obvious first-party contact-data defect.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and identify a real commercial email/decision-maker coordinate before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-400",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Buzz4Tours",
+      "domain": "buzz4tours.com",
+      "country": "Italy",
+      "sector": "Rome Vespa / electric buggy tours and rentals",
+      "surface": "Official tourism/vehicle-rental website; Rome, Italy",
+      "observed_need": "The live booking and contact surfaces are active and healthy in fetched content, but current official-domain search results across the homepage, contact page and multiple articles consistently expose a 'Mailchimp not connected' API-key error in the shared site surface. This is an indexed first-party integration signal, not yet a confirmed visible defect in normal-browser rendering.",
+      "problem_signal": {
+        "family": "newsletter integration candidate signal",
+        "evidence": "Multiple current official-domain indexed pages expose the same Mailchimp API-key error; direct fetched contact page does not show it in extracted body content.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "+39 335 523 6173",
+        "Official contact/request form"
+      ],
+      "outcome_space": [
+        "newsletter integration",
+        "repeat-tour marketing",
+        "lead capture",
+        "web QA"
+      ],
+      "source": "https://buzz4tours.com/contact/",
+      "provenance": "Official contact/booking page live fetch plus repeated current official-domain search evidence; verified 2026-10-08",
+      "freshness": "Live active booking/contact pages observed 2026-10-08",
+      "published": "current site observed 2026-10-08",
+      "payer_hypothesis": "Buzz4Tours owner/operator",
+      "fit_note": "Contactable Rome tourism SME with a repeated indexed Mailchimp error; requires normal-browser confirmation before qualification.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and confirm the Mailchimp error is user-visible before treating it as a sellable defect."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
