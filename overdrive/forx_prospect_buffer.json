@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:48:00+02:00",
+  "last_updated": "2026-10-08T18:02:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -5037,6 +5037,77 @@
       "payer_hypothesis": "C2D Payment Solutions Ltd / Zastrpay",
       "fit_note": "Direct Malta legal identity and agent/payment workflow; geographic service footprint needs validation.",
       "consumer_action": "iSCOPE validate Malta/local operating footprint, distributor onboarding/reconciliation and current support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-280",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Citadele banka AS / Citadele Phone POS",
+      "surface": "Google Play merchant softPOS; package lv.citadele.phonepos; Latvia",
+      "observed_need": "Current Sep 28 2026 app lets merchants accept Visa/Mastercard contactless payments on Android phones/tablets without extra POS hardware.",
+      "outcome_space": [
+        "softPOS",
+        "merchant payments",
+        "SME acquiring"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=lv.citadele.phonepos",
+      "published": "2026-09-28",
+      "payer_hypothesis": "Citadele banka AS",
+      "fit_note": "Fresh Latvia merchant-acquiring surface with direct bank identity.",
+      "consumer_action": "iSCOPE validate merchant onboarding, support and current acquisition-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-281",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "EPS LT UAB / Swedbank Phone Terminal",
+      "surface": "Google Play merchant softPOS; package swedbank.phone.terminal; Lithuania",
+      "observed_need": "Merchant phone terminal accepts Visa/Mastercard contactless payments on smart devices. Listed update Jun 18 2025, so freshness is lower.",
+      "outcome_space": [
+        "softPOS",
+        "merchant payments",
+        "SME acquiring"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=swedbank.phone.terminal",
+      "published": "2025-06-18",
+      "payer_hypothesis": "EPS LT / Swedbank merchant service",
+      "fit_note": "Direct Lithuania developer identity retained with lower freshness.",
+      "consumer_action": "iSCOPE verify current 2026 service status, merchant onboarding and support needs before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-282",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Nets Estonia AS / Nets EE SoftPOS",
+      "surface": "Google Play merchant softPOS; package eu.nets.ee.softpos; Estonia",
+      "observed_need": "Turns smartphones/tablets into POS terminals with cards, contactless wallets, sales tracking, reports and receipts. Listed update Aug 29 2025, so freshness is lower.",
+      "outcome_space": [
+        "softPOS",
+        "merchant payments",
+        "reports",
+        "receipts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=eu.nets.ee.softpos",
+      "published": "2025-08-29",
+      "payer_hypothesis": "Nets Estonia AS",
+      "fit_note": "Direct Estonia legal/operator evidence retained with lower freshness.",
+      "consumer_action": "iSCOPE verify current 2026 service status, merchant onboarding and support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-283",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Sellsome / Sellsome POS",
+      "surface": "Google Play consignment-store POS; package com.sellsome.pos; Denmark",
+      "observed_need": "Current 2026 POS is built specifically for Danish second-hand/consignment stores with barcode sales, automatic commission split, seller/item management, payout calculation and daily cash reports.",
+      "outcome_space": [
+        "POS",
+        "consignment",
+        "commission accounting",
+        "seller management",
+        "cash reports"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.sellsome.pos",
+      "published": "2026",
+      "payer_hypothesis": "Sellsome product owner",
+      "fit_note": "High-information niche merchant workflow in Denmark; exact update date should be normalized later.",
+      "consumer_action": "iSCOPE validate store onboarding, commission/payout reconciliation and current seller-management support needs."
     }
   ]
 }
