@@ -11673,6 +11673,57 @@
       "payer_hypothesis": "Property with Alton / PWA Supplier product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
       "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-624",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Bizy Tech Limited / TFRA AgroDealer Tool",
+      "surface": "Tanzania fertilizer/agrodealer POS; package com.dma.kdh",
+      "observed_need": "Last-mile fertilizer distribution, dealer stock, sales, digital payments, regulatory reporting and demand intelligence.",
+      "outcome_space": [
+        "agriculture",
+        "agrodealer POS",
+        "inventory",
+        "distribution"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dma.kdh",
+      "payer_hypothesis": "Bizy Tech Limited / TFRA AgroDealer Tool product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-625",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Zenski Apps / PharmaOS",
+      "surface": "Nepal pharmacy business management; package com.zenski.pharmaos",
+      "observed_need": "Pharmacy billing, batch/expiry inventory, purchases, supplier ledger, customer credit and staff permissions.",
+      "outcome_space": [
+        "pharmacy",
+        "POS",
+        "inventory",
+        "supplier ledger"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.zenski.pharmaos",
+      "payer_hypothesis": "Zenski Apps / PharmaOS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-626",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "STELLAR ENGINEERS LTD / TradePlan",
+      "surface": "United Kingdom trade-contractor operations; package xyz.stellarengineering.tradeplan",
+      "observed_need": "Enquiries, quotes, job scheduling, team assignment, invoices and customer/job history for electricians/plumbers/builders.",
+      "outcome_space": [
+        "contractors",
+        "quotes",
+        "job scheduling",
+        "invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=xyz.stellarengineering.tradeplan",
+      "payer_hypothesis": "STELLAR ENGINEERS LTD / TradePlan product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
