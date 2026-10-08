@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:30:00+02:00",
+  "last_updated": "2026-10-08T16:32:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -3758,6 +3758,206 @@
       "payer_hypothesis": "G F T - GOLFINTECH, SA / Dobra Digital product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package evidence. Operating surface is evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, specific active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-207",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HalykBank Kazakhstan / Halyk Pos",
+      "surface": "Google Play softPOS merchant acquiring; package ru.m4bank.softpos.halyk; Kazakhstan",
+      "observed_need": "Current Oct 2 2026 app turns NFC Android phones into merchant POS terminals with card/Halyk QR acceptance, e-receipts, refunds and payment reporting.",
+      "outcome_space": [
+        "merchant payments",
+        "softPOS",
+        "refunds",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ru.m4bank.softpos.halyk",
+      "published": "2026-10-02",
+      "payer_hypothesis": "JSC HalykBank",
+      "fit_note": "Current first-party merchant acceptance surface with Kazakhstan developer identity. No problem inferred from app existence.",
+      "consumer_action": "iSCOPE validate merchant onboarding/support, refund/reconciliation friction and any bounded current need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-208",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Paloma365 / Paloma365 AI Касса Склад",
+      "surface": "Google Play POS + inventory; package com.paloma365.aipos; Kazakhstan",
+      "observed_need": "Current Aug 12 2026 app combines POS, stock, offline-first sales, fiscal receipts, inventory, multi-device sync and waiter workstations for retail and food-service SMEs.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "offline sync",
+        "retail",
+        "restaurant operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.paloma365.aipos",
+      "published": "2026-08-12",
+      "payer_hypothesis": "Paloma365 product owner",
+      "fit_note": "Fresh SME business-automation surface with direct Kazakhstan support route.",
+      "consumer_action": "iSCOPE validate onboarding, fiscal/inventory workflow burden and current merchant-growth need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-209",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Paloma365 / Paloma365",
+      "surface": "Google Play cashier/waiter business app; package com.paloma365.paloma; Kazakhstan",
+      "observed_need": "Current May 25 2026 app covers cashier shifts, sales, receipt/day-report printing, server synchronization and waiter workstation use.",
+      "outcome_space": [
+        "POS",
+        "cashier operations",
+        "restaurant operations",
+        "sync"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.paloma365.paloma",
+      "published": "2026-05-25",
+      "payer_hypothesis": "Paloma365 product owner",
+      "fit_note": "Separate package/provenance from AI POS app; likely same canonical organization, preserved for product breadth.",
+      "consumer_action": "iSCOPE reconcile canonical org and validate one current problem without duplicate outbound."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-210",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LARIXON CLASSIFIEDS LTD / Unegui.mn",
+      "surface": "Google Play classifieds/local-services marketplace; package com.larixon.uneguimn; Mongolia operating market, Cyprus legal developer",
+      "observed_need": "Current Sep 16 2026 app covers trade, services, jobs and office rent with ad creation/editing; 1M+ downloads shown on Play.",
+      "outcome_space": [
+        "classifieds",
+        "local services",
+        "jobs",
+        "SME visibility"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.larixon.uneguimn",
+      "published": "2026-09-16",
+      "payer_hypothesis": "Unegui.mn product owner",
+      "fit_note": "Mongolia operating market and Cyprus legal developer kept separate. Strong distribution rail; download count is not an AMX node count.",
+      "consumer_action": "iSCOPE validate business-listing monetization, advertiser acquisition/moderation and current Mongolia-specific needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-211",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KKTT LLC / QPay Business",
+      "surface": "Google Play merchant payment/operations app; package mn.qpay.merchantpos; Mongolia",
+      "observed_need": "Current Sep 29 2026 merchant app supports payment acceptance and business daily operations; Mongolia company address, phone and support are public.",
+      "outcome_space": [
+        "merchant payments",
+        "merchant operations",
+        "SME finance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mn.qpay.merchantpos",
+      "published": "2026-09-29",
+      "payer_hypothesis": "KKTT LLC / QPay",
+      "fit_note": "Very fresh Mongolia merchant-side payment surface with direct legal/contact evidence.",
+      "consumer_action": "iSCOPE validate merchant onboarding, settlement/reconciliation/support burden and current network-growth need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-212",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KKTT LLC / QPay Sales App",
+      "surface": "Google Play merchant-acquisition sales tool; package mn.qpay.qsales; Mongolia",
+      "observed_need": "Current Jul 2 2026 salesperson tool explicitly creates merchant agreements; Mongolia company identity/support are public.",
+      "outcome_space": [
+        "merchant acquisition",
+        "sales operations",
+        "merchant agreements",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mn.qpay.qsales",
+      "published": "2026-07-02",
+      "payer_hypothesis": "KKTT LLC / QPay",
+      "fit_note": "Separate exact package exposing QPay's merchant-acquisition workflow; likely same canonical org as QPay Business.",
+      "consumer_action": "iSCOPE link canonical identity and validate merchant acquisition/onboarding operations once."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-213",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ABB OJSC / ABB Biz",
+      "surface": "Google Play SME/entrepreneur banking; package abb.corporate.mobile; Azerbaijan",
+      "observed_need": "Current Sep 10 2026 app provides digital onboarding/account opening, business loans, mobile POS ordering, QR payments, tax declarations/payments and assigned-manager contact.",
+      "outcome_space": [
+        "SME banking",
+        "mobile POS",
+        "QR payments",
+        "tax workflow",
+        "onboarding"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=abb.corporate.mobile",
+      "published": "2026-09-10",
+      "payer_hypothesis": "ABB OJSC",
+      "fit_note": "Fresh Azerbaijan SME operating/financial infrastructure with direct legal identity.",
+      "consumer_action": "iSCOPE validate SME onboarding, POS activation, tax/payment support and bounded current product need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-214",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Kapital Bank OJSC / Birbank Biznes",
+      "surface": "Google Play business banking; package az.kapitalbank.mushteribank; Azerbaijan",
+      "observed_need": "Current Sep 24 2026 app supports business finance/transfers, accounts/cards, mobile POS ordering and online banking. Current 2026 reviews also report concrete statement/detail and connection issues, but these require direct validation before problem claims.",
+      "outcome_space": [
+        "business banking",
+        "mobile POS",
+        "accounts",
+        "transfers",
+        "support"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=az.kapitalbank.mushteribank",
+      "published": "2026-09-24",
+      "payer_hypothesis": "Kapital Bank OJSC",
+      "fit_note": "Current first-party app plus user-reported 2026 issue signals. User reviews are evidence leads, not verified unresolved defects.",
+      "consumer_action": "iSCOPE reproduce/validate any current statement/connectivity issue before qualification; otherwise assess merchant/SME onboarding."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-215",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Azercell Telekom MMC / A Biznes",
+      "surface": "Google Play dealer/business app; package com.asolutions.b2b; Azerbaijan",
+      "observed_need": "Current Sep 3 2026 dealer app uses mobile-number onboarding, identity data, biometric confirmation, wallet funding and mobile-balance operations.",
+      "outcome_space": [
+        "dealer network",
+        "business onboarding",
+        "identity verification",
+        "wallet"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.asolutions.b2b",
+      "published": "2026-09-03",
+      "payer_hypothesis": "Azercell Telekom MMC",
+      "fit_note": "Fresh Azerbaijan dealer/operator workflow with direct developer identity.",
+      "consumer_action": "iSCOPE validate dealer onboarding, identity/support workload and current distribution-network need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-216",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "POS Boss / canonical operator unresolved",
+      "surface": "Google Play POS system; package hr.posboss.webview; Croatia",
+      "observed_need": "Current Sep 19 2026 POS app supports table/bar/delivery ordering, Croatian Fiscalization 2.0 e-invoices, integrated card/SoftPOS payments, inventory, reports, loyalty and multi-location operation.",
+      "outcome_space": [
+        "POS",
+        "fiscalization",
+        "e-invoicing",
+        "payments",
+        "inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=hr.posboss.webview",
+      "published": "2026-09-19",
+      "payer_hypothesis": "POS Boss product owner",
+      "fit_note": "Very current Croatia fiscalization/merchant-operations surface; canonical legal operator should be resolved by iSCOPE.",
+      "consumer_action": "iSCOPE resolve operator/contact and validate fiscalization onboarding, payment integration and merchant support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-217",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NLB Komercijalna banka AD Beograd / SmartPOS",
+      "surface": "Google Play mobile POS; package com.payten.nlb.serbia; Serbia",
+      "observed_need": "Current service turns NFC Android devices into contactless POS terminals without extra hardware. Listed update Dec 23 2025, so freshness is lower than 2026 apps.",
+      "outcome_space": [
+        "softPOS",
+        "merchant payments",
+        "SME acquiring"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.payten.nlb.serbia",
+      "published": "2025-12-23",
+      "payer_hypothesis": "NLB Komercijalna banka AD Beograd",
+      "fit_note": "Direct Serbia bank/operator identity; retained with lower freshness.",
+      "consumer_action": "iSCOPE verify current 2026 service status, merchant onboarding/support and any bounded current need."
     }
   ]
 }
