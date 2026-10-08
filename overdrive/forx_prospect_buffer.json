@@ -11905,6 +11905,89 @@
       "payer_hypothesis": "Munyax Eco Ltd commercial / operations owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Company-owned/public-sector or industry-directory evidence supports identity and operating surface. No unmet commercial problem inferred.",
       "consumer_action": "iSCOPE verify current buyer relevance, active growth/operations need and commercial route before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-638",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Autotronics Fleet Management / Crafford Apps",
+      "surface": "South Africa fleet tracking; package afm.fleet.management",
+      "observed_need": "Current customer fleet surface for real-time vehicle/asset location, trip history, status and reports; publisher country South Africa.",
+      "outcome_space": [
+        "fleet",
+        "vehicle tracking",
+        "reports"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=afm.fleet.management",
+      "payer_hypothesis": "Autotronics Fleet Management / Crafford Apps fleet/commercial operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and operating surface evidenced; current 2026. Geography remains unresolved where stated.",
+      "consumer_action": "iSCOPE verify current organization identity, operating geography, buyer route and active fleet/operations need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-639",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Mapping Control Africa / MCA Fleet",
+      "surface": "Africa fleet-management platform; package com.mappingcontrolafrique.mcafleet",
+      "observed_need": "Vehicle tracking, safety/fuel/immobilization alerts and fleet administration; exact operating-country attribution unresolved.",
+      "outcome_space": [
+        "fleet",
+        "tracking",
+        "fuel",
+        "alerts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mappingcontrolafrique.mcafleet",
+      "payer_hypothesis": "Mapping Control Africa / MCA Fleet fleet/commercial operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and operating surface evidenced; current 2026. Geography remains unresolved where stated.",
+      "consumer_action": "iSCOPE verify current organization identity, operating geography, buyer route and active fleet/operations need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-640",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Safaricom PLC / Safaricom Telematics",
+      "surface": "Kenya fleet management; package com.safaricom.telematics",
+      "observed_need": "Asset tracking, driver behavior, fuel monitoring, service scheduling, geofencing and analytics; source lower freshness than 2026 tranche.",
+      "outcome_space": [
+        "fleet",
+        "driver management",
+        "fuel",
+        "analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.safaricom.telematics",
+      "payer_hypothesis": "Safaricom PLC / Safaricom Telematics fleet/commercial operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and operating surface evidenced; lower freshness 2025. Geography remains unresolved where stated.",
+      "consumer_action": "iSCOPE verify current organization identity, operating geography, buyer route and active fleet/operations need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-641",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "STG Telematics / STG Fleet Mobile",
+      "surface": "Multi-region Africa fleet management; package com.tracking.stgfleetmobile",
+      "observed_need": "Live fleet tracking, routing/maps, driver performance, safety alerts and dashboard operations; exact country routing unresolved.",
+      "outcome_space": [
+        "fleet",
+        "driver management",
+        "routing",
+        "safety"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tracking.stgfleetmobile",
+      "payer_hypothesis": "STG Telematics / STG Fleet Mobile fleet/commercial operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and operating surface evidenced; current 2026. Geography remains unresolved where stated.",
+      "consumer_action": "iSCOPE verify current organization identity, operating geography, buyer route and active fleet/operations need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-642",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Idealweb / FleetFlow",
+      "surface": "South Africa fleet/task operations; package za.co.fleetflow",
+      "observed_need": "Mobile worker location and assigned-task status integrated with FleetFlow web operations.",
+      "outcome_space": [
+        "fleet",
+        "field operations",
+        "task tracking"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=za.co.fleetflow",
+      "payer_hypothesis": "Idealweb / FleetFlow fleet/commercial operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and operating surface evidenced; current 2026. Geography remains unresolved where stated.",
+      "consumer_action": "iSCOPE verify current organization identity, operating geography, buyer route and active fleet/operations need before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
