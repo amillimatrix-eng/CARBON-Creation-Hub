@@ -166,6 +166,8 @@ class MarketplaceStore:
                     cancellation_deadline_at TEXT NOT NULL,
                     bond_minor INTEGER NOT NULL,
                     at_risk_minor INTEGER NOT NULL,
+                    terms_json TEXT NOT NULL DEFAULT '{}',
+                    terms_hash TEXT NOT NULL DEFAULT '',
                     seller_confirmed INTEGER NOT NULL DEFAULT 0,
                     buyer_confirmed INTEGER NOT NULL DEFAULT 0,
                     buyer_performed INTEGER NOT NULL DEFAULT 0,
@@ -229,6 +231,11 @@ class MarketplaceStore:
                 CREATE INDEX IF NOT EXISTS idx_extensions_commitment ON extension_requests(commitment_id, status);
                 """
             )
+            commitment_columns = {row["name"] for row in conn.execute("PRAGMA table_info(commitments)").fetchall()}
+            if "terms_json" not in commitment_columns:
+                conn.execute("ALTER TABLE commitments ADD COLUMN terms_json TEXT NOT NULL DEFAULT '{}'")
+            if "terms_hash" not in commitment_columns:
+                conn.execute("ALTER TABLE commitments ADD COLUMN terms_hash TEXT NOT NULL DEFAULT ''")
 
     def _event(
         self,
@@ -449,17 +456,48 @@ class MarketplaceStore:
             cancellation_deadline = start - timedelta(minutes=cancellation_buffer_minutes)
             at_risk_minor = (interest["bond_minor"] * interest["at_risk_bps"]) // 10_000
             commitment_id = public_id("COM")
+            terms = {
+                "version": "carbon-commitment-v1",
+                "listing_id": interest["listing_id"],
+                "item": {
+                    "title": listing["title"],
+                    "description": listing["description"],
+                    "price_minor": listing["price_minor"],
+                    "currency": listing["currency"],
+                },
+                "window": {
+                    "start_at": iso(start),
+                    "end_at": iso(end),
+                    "cancellation_deadline_at": iso(cancellation_deadline),
+                },
+                "buyer": {
+                    "must_attend_or_exit_through_carbon": True,
+                    "bond_minor": interest["bond_minor"],
+                    "at_risk_minor": at_risk_minor,
+                    "at_risk_bps": interest["at_risk_bps"],
+                },
+                "seller": {
+                    "reserves_opportunity_for_active_window": True,
+                    "holds_listed_price_and_terms_for_active_window": True,
+                    "must_attend_or_exit_through_carbon": True,
+                    "must_present_item_materially_as_listed": True,
+                },
+                "financial_resolution": "NO_AUTOMATIC_FORFEITURE_OR_PENALTY",
+            }
+            terms_json = json.dumps(terms, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+            terms_hash = hashlib.sha256(terms_json.encode("utf-8")).hexdigest()
             now = iso()
             conn.execute(
                 """INSERT INTO commitments(
                     id,listing_id,interest_id,buyer_ref,seller_ref,start_at,end_at,cancellation_deadline_at,
-                    bond_minor,at_risk_minor,seller_confirmed,buyer_confirmed,buyer_performed,seller_performed,
+                    bond_minor,at_risk_minor,terms_json,terms_hash,
+                    seller_confirmed,buyer_confirmed,buyer_performed,seller_performed,
                     state,resolution,created_at,updated_at
-                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (
                     commitment_id, interest["listing_id"], interest_id, interest["buyer_ref"], seller_ref,
                     iso(start), iso(end), iso(cancellation_deadline), interest["bond_minor"], at_risk_minor,
-                    1, 0, 0, 0, "SELECTED", None, now, now,
+                    terms_json, terms_hash, 1, 0, 0, 0, "SELECTED", None, now, now,
                 ),
             )
             conn.execute("UPDATE interests SET state='SELECTED',updated_at=? WHERE id=?", (now, interest_id))
@@ -467,6 +505,7 @@ class MarketplaceStore:
                 "interest_id": interest_id,
                 "buyer_consequence_active": False,
                 "seller_commitment_declared": True,
+                "terms_hash": terms_hash,
             })
             row = conn.execute("SELECT * FROM commitments WHERE id=?", (commitment_id,)).fetchone()
         return dict(row)
@@ -501,6 +540,7 @@ class MarketplaceStore:
                 "start_at": row["start_at"],
                 "end_at": row["end_at"],
                 "financial_resolution": "NOT_AUTOMATIC",
+                "terms_hash": row["terms_hash"],
             })
             row = conn.execute("SELECT * FROM commitments WHERE id=?", (commitment_id,)).fetchone()
         return dict(row)
