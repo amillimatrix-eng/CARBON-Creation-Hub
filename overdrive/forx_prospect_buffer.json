@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T18:02:00+02:00",
+  "last_updated": "2026-10-08T18:17:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -5108,6 +5108,154 @@
       "payer_hypothesis": "Sellsome product owner",
       "fit_note": "High-information niche merchant workflow in Denmark; exact update date should be normalized later.",
       "consumer_action": "iSCOPE validate store onboarding, commission/payout reconciliation and current seller-management support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-284",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "24/7 CRM Hub",
+      "surface": "Public BPO/contact-center operator; Botswana",
+      "observed_need": "Gaborone BPO provider offering virtual receptionist/contact-center services with cloud ACD, IVR, CTI, AI analytics and omnichannel communications; direct Botswana email/phone are public.",
+      "outcome_space": [
+        "BPO",
+        "contact center",
+        "virtual receptionist",
+        "omnichannel",
+        "AI analytics"
+      ],
+      "source": "https://247crmhub.co.bw/",
+      "published": "2026",
+      "payer_hypothesis": "24/7 CRM Hub",
+      "fit_note": "Real Botswana BPO operating surface; no weakness inferred from service description.",
+      "consumer_action": "iSCOPE inspect current client-acquisition, recruitment, proof/reporting, intake or automation surfaces and qualify only an evidenced gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-285",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Orinoco Outsourced Solutions",
+      "surface": "Public outsourced customer-support operator; Botswana",
+      "observed_need": "Current service page offers 24/7 customer support, bilingual call handling, QA and customer-support expansion and cites a Botswana telco engagement.",
+      "outcome_space": [
+        "BPO",
+        "customer support",
+        "QA",
+        "bilingual call handling"
+      ],
+      "source": "https://orinocoinc.com/services",
+      "published": "2026",
+      "payer_hypothesis": "Orinoco Outsourced Solutions",
+      "fit_note": "Botswana BPO operating evidence; client/project claims are source claims, not AMX outcomes.",
+      "consumer_action": "iSCOPE validate Botswana operating footprint, direct buyer route and any current acquisition/automation/reporting gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-286",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BW Connect",
+      "surface": "Public call-center/BPO operator; Rwanda",
+      "observed_need": "Kigali BPO provider positions multilingual customer-service teams, scalable communication solutions and advanced technology with direct Rwanda email/phone.",
+      "outcome_space": [
+        "BPO",
+        "call center",
+        "customer service",
+        "multilingual support"
+      ],
+      "source": "https://www.bwconnectinternational.com/",
+      "published": "2026",
+      "payer_hypothesis": "BW Connect",
+      "fit_note": "Direct Rwanda operating/contact evidence. No candidate problem inferred.",
+      "consumer_action": "iSCOPE inspect website/client acquisition, intake, staffing/recruitment, reporting or automation for a current bounded opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-287",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SLS Solutions International",
+      "surface": "Public BPO/contact-center operator; Uganda",
+      "observed_need": "Uganda operator provides 24/7 call-center services, customer support, BPO and manpower management for local and international partners.",
+      "outcome_space": [
+        "BPO",
+        "call center",
+        "customer support",
+        "manpower"
+      ],
+      "source": "https://slsbpo.com/",
+      "published": "2026",
+      "payer_hypothesis": "SLS Solutions International",
+      "fit_note": "Direct Uganda BPO operator surface with regional/global positioning.",
+      "consumer_action": "iSCOPE validate current client-acquisition/recruitment/support-reporting workflows and only qualify an evidenced gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-288",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PiTech Tanzania",
+      "surface": "Public outsourced contact-center/BPO operator; Tanzania",
+      "observed_need": "Dar es Salaam operator provides inbound/outbound support, helpdesk, lead generation and back-office processing in English/Swahili, using its own AI-assisted calling platform and direct proposal route.",
+      "outcome_space": [
+        "BPO",
+        "contact center",
+        "helpdesk",
+        "lead generation",
+        "back office"
+      ],
+      "source": "https://pitech.co.tz/call-center-services-tanzania.html",
+      "published": "2026",
+      "payer_hypothesis": "PiTech Tanzania",
+      "fit_note": "Strong current first-party service/contact evidence; provider is already technically capable, so negative-selection applies unless a bounded gap is found.",
+      "consumer_action": "iSCOPE inspect acquisition, packaging, proof, recruitment/capacity, reporting or partnership surfaces; skip if already modern with no bounded defect."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-289",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Atalian Interactive Ltd",
+      "surface": "Public customer-relationship/BPO operator; Mauritius",
+      "observed_need": "Mauritius BPO operator offers acquisition campaigns, customer service, service desk, back office and 24/7 bilingual operations with public Port Louis contact.",
+      "outcome_space": [
+        "BPO",
+        "customer service",
+        "back office",
+        "service desk",
+        "sales acquisition"
+      ],
+      "source": "https://www.atalian-interactive.com/",
+      "published": "2026",
+      "payer_hypothesis": "Atalian Interactive Ltd",
+      "fit_note": "Direct Mauritius BPO operating/contact surface; source states substantial staffing, so do not assume small-business fit.",
+      "consumer_action": "iSCOPE assess only concrete acquisition/reporting/automation or partnership opportunity; otherwise retain as network/market evidence."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-290",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ABC BPO Ltd",
+      "surface": "Public contact-center/BPO operator; Mauritius",
+      "observed_need": "Mauritius contact-center provider offers outsourced customer interactions and revenue-generating activities with direct marketing contact and phone.",
+      "outcome_space": [
+        "BPO",
+        "contact center",
+        "customer experience",
+        "revenue operations"
+      ],
+      "source": "https://abcbpo.mu/",
+      "published": "2026",
+      "payer_hypothesis": "ABC BPO Ltd",
+      "fit_note": "Direct current Mauritius operator evidence.",
+      "consumer_action": "iSCOPE validate current acquisition/intake/recruitment/reporting/automation surface before any commercial qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-291",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Client Care Solutions Limited",
+      "surface": "Public BPO/contact-center operator; Zambia",
+      "observed_need": "Zambia multi-site BPO provides inbound/outbound calls, customer service, social support, telesales, market research and customer-service training across multiple operating sites.",
+      "outcome_space": [
+        "BPO",
+        "contact center",
+        "telesales",
+        "social support",
+        "market research"
+      ],
+      "source": "https://www.clientcaresolutions.co.zm/",
+      "published": "2026",
+      "payer_hypothesis": "Client Care Solutions Limited",
+      "fit_note": "Direct Zambia multi-site BPO evidence; no weakness inferred.",
+      "consumer_action": "iSCOPE inspect client acquisition, campaign intake, proof/reporting, staffing and automation for a current bounded opportunity."
     }
   ]
 }
