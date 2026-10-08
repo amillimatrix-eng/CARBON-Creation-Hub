@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:39:00+02:00",
+  "last_updated": "2026-10-08T17:03:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -4486,6 +4486,137 @@
       "payer_hypothesis": "ALSAT product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
       "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-250",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Carlos Manuel Peralta Solorzano / 2Finanzas",
+      "surface": "Google Play POS + finance for entrepreneurs; package com.reddelivery.a2finanzas; Nicaragua",
+      "observed_need": "Current Sep 1 2026 first release turns phones into offline-capable POS/accounting tools with inventory CSV, delivery-driver settlement, profit/break-even dashboard, WhatsApp quotes and audit log.",
+      "outcome_space": [
+        "POS",
+        "accounting",
+        "inventory",
+        "driver settlement",
+        "WhatsApp commerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.reddelivery.a2finanzas",
+      "published": "2026-09-01",
+      "payer_hypothesis": "2Finanzas operator",
+      "fit_note": "Fresh Nicaragua owner-led SMME operating surface with direct local phone/contact.",
+      "consumer_action": "iSCOPE validate adoption, subscription conversion, delivery settlement and current support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-251",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "COWIB / NegoExpress",
+      "surface": "Google Play POS + inventory; package com.mipulperia.app; Nicaragua/Central America",
+      "observed_need": "Current 2026 app is designed for pulperías, neighborhood shops, markets and small businesses with mobile POS, multi-device operation and barcode scanning.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "small retail",
+        "barcode",
+        "SMME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mipulperia.app",
+      "published": "2026",
+      "payer_hypothesis": "COWIB / NegoExpress",
+      "fit_note": "Strong small-retail operating fit; exact current update date should be retained as 2026 unless further normalized.",
+      "consumer_action": "iSCOPE validate merchant onboarding, stock workflow and current Nicaragua/Central America growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-252",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Caprolis / Angel Jose Castillo Portillo",
+      "surface": "Google Play POS + SAR e-invoicing; package com.caprolis.app; Honduras",
+      "observed_need": "Current Aug 30 2026 app is built in Honduras for entrepreneurs, shops and restaurants with POS, inventory, RTN/ISV handling, SAR electronic invoicing and CAI. Latest notes cite reconnection, cash-close, inactive-product and receipt-sharing fixes.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "fiscal invoicing",
+        "cash close",
+        "SME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.caprolis.app",
+      "published": "2026-08-30",
+      "payer_hypothesis": "Caprolis operator",
+      "fit_note": "Fresh Honduras-specific fiscal/merchant workflow with concrete first-party maintenance signals.",
+      "consumer_action": "iSCOPE validate whether any cash-close/connectivity/invoicing issues remain and assess merchant onboarding/support."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-253",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SADMINSOFT HONDURAS / kioskopos",
+      "surface": "Google Play POS + Honduras fiscal invoicing; package com.sadminsoft.kioskopos; Honduras",
+      "observed_need": "Current 2026 app provides offline-capable POS, inventory, receipt printing and Honduras SAR fiscal invoicing for small and medium businesses.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "fiscal invoicing",
+        "offline operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.sadminsoft.kioskopos",
+      "published": "2026",
+      "payer_hypothesis": "SADMINSOFT HONDURAS",
+      "fit_note": "Direct Honduras developer identity and SME workflow; exact update date to normalize later.",
+      "consumer_action": "iSCOPE validate merchant adoption, CAI/SAR setup burden and current support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-254",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Banistmo S.A. / Banistmo MPOS",
+      "surface": "Google Play mobile POS; package com.kinpos.mposbanistmo; Panama",
+      "observed_need": "Current May 5 2026 app gives businesses mobile POS via Bluetooth reader/pinpad. Latest release changed Android 15/16 compatibility and sales-operation UI plus rebranding.",
+      "outcome_space": [
+        "mPOS",
+        "merchant payments",
+        "Android compatibility",
+        "sales operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kinpos.mposbanistmo",
+      "published": "2026-05-05",
+      "payer_hypothesis": "Banistmo S.A.",
+      "fit_note": "Direct Panama bank/operator evidence and current compatibility maintenance surface.",
+      "consumer_action": "iSCOPE validate merchant onboarding, hardware/support burden and any current Android compatibility issue."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-255",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DesignSoft CR / Facturar Online",
+      "surface": "Google Play POS + electronic invoicing; package com.designsoftcr.facturaonline; Costa Rica",
+      "observed_need": "POS/e-invoicing app targets professional services and small businesses including accountants, doctors, bricklayers, plumbers and street vendors, with inventory, quotes and invoice delivery by email/WhatsApp.",
+      "outcome_space": [
+        "POS",
+        "electronic invoicing",
+        "professional services",
+        "trades",
+        "WhatsApp"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.designsoftcr.facturaonline",
+      "published": "2026",
+      "payer_hypothesis": "DesignSoft CR / Facturar Online",
+      "fit_note": "High SMME/trades front-door fit in Costa Rica; exact update date should be normalized from Play on later pass.",
+      "consumer_action": "iSCOPE validate current service activity, e-invoice onboarding and small-practice/trade workflow burden."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-256",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "POSFactura CR",
+      "surface": "Google Play POS + tax e-invoicing; package cr.posfactura.app; Costa Rica",
+      "observed_need": "Current Jul 27 2026 app provides POS, electronic invoicing, layaway/credit/returns, stock by branch, multi-company roles, accounting reports, WhatsApp/CRM and automatic SINPE MÓVIL reconciliation.",
+      "outcome_space": [
+        "POS",
+        "e-invoicing",
+        "inventory",
+        "SINPE reconciliation",
+        "CRM"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=cr.posfactura.app",
+      "published": "2026-07-27",
+      "payer_hypothesis": "POSFactura CR operator",
+      "fit_note": "Fresh Costa Rica merchant-operating surface with unusually rich payment/reconciliation evidence.",
+      "consumer_action": "iSCOPE validate SINPE reconciliation, branch/accounting workflow and merchant onboarding/support needs."
     }
   ]
 }
