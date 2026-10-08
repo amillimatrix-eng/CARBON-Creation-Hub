@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T19:42:00+02:00",
+  "last_updated": "2026-10-08T19:56:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -6484,6 +6484,139 @@
       "payer_hypothesis": "Naphdec Electrical & Construction Ltd",
       "fit_note": "Direct Zambia field-service operator with multi-trade scope.",
       "consumer_action": "iSCOPE validate quote qualification, site scheduling, multi-service routing, maintenance follow-up and customer continuity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-346",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Big Sky Safaris",
+      "surface": "Locally owned mobile safari operator; Botswana",
+      "observed_need": "Maun locally owned operator offers game drives, mokoro/boat activities, transfers and tailor-made small-group safaris with direct booking/contact route.",
+      "outcome_space": [
+        "tourism",
+        "safari",
+        "booking",
+        "transfers",
+        "tailor-made travel"
+      ],
+      "source": "https://bigskysafaris.co.bw/services.html",
+      "published": "2026",
+      "payer_hypothesis": "Big Sky Safaris",
+      "fit_note": "Direct Botswana local operator with small-group/custom itinerary model.",
+      "consumer_action": "iSCOPE validate enquiry qualification, itinerary/quote assembly, booking follow-up, transfer coordination and post-trip review workflow."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-347",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Brave Africa Safaris",
+      "surface": "Locally owned boutique safari operator; Botswana",
+      "observed_need": "Founder-led Botswana mobile safari business provides customized game drives, walking/mokoro safaris and village experiences with locally operated positioning.",
+      "outcome_space": [
+        "tourism",
+        "safari",
+        "boutique travel",
+        "booking",
+        "customer experience"
+      ],
+      "source": "https://braveafrica.com/",
+      "published": "2026",
+      "payer_hypothesis": "Brave Africa Safaris",
+      "fit_note": "Direct Botswana boutique operator evidence; no booking or marketing weakness inferred.",
+      "consumer_action": "iSCOPE validate lead qualification, itinerary building, booking follow-up, guest communications or review/referral workflow for a current bounded problem."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-348",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tongole Tours",
+      "surface": "Indigenous locally run tour operator; Malawi",
+      "observed_need": "Lilongwe operator provides custom cultural, wilderness, eco-tourism and adventure itineraries across Malawi with direct sales contact and local-community focus.",
+      "outcome_space": [
+        "tourism",
+        "custom itineraries",
+        "eco-tourism",
+        "booking",
+        "local experiences"
+      ],
+      "source": "https://www.tongoletours.com/",
+      "published": "2026",
+      "payer_hypothesis": "Tongole Tours",
+      "fit_note": "Direct Malawi locally run operator with personalized-tour model.",
+      "consumer_action": "iSCOPE validate enquiry-to-itinerary workflow, booking follow-up, supplier coordination, guest communication and post-trip referral/review process."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-349",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Brightpath Travel",
+      "surface": "Locally owned safari operator; Zambia",
+      "observed_need": "Livingstone locally owned company designs tailor-made wildlife safari journeys across Zambia and neighbouring regional destinations with direct reservation route.",
+      "outcome_space": [
+        "tourism",
+        "safari",
+        "custom itinerary",
+        "booking",
+        "regional travel"
+      ],
+      "source": "https://brightpathafrica.com/",
+      "published": "2026",
+      "payer_hypothesis": "Brightpath Travel",
+      "fit_note": "Direct Zambia local operator/contact evidence.",
+      "consumer_action": "iSCOPE validate enquiry qualification, itinerary/quote production, booking follow-up, supplier coordination and client communications."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-350",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Rwanda Drive & Tours",
+      "surface": "Locally owned car-rental and tour operator; Rwanda",
+      "observed_need": "Fully licensed Kigali operator provides self-drive/driver rentals, airport transfers, hiking/trekking and tour packages with direct WhatsApp/contact and stated fast-response workflow.",
+      "outcome_space": [
+        "tourism",
+        "car rental",
+        "booking",
+        "airport transfer",
+        "WhatsApp"
+      ],
+      "source": "https://rwandadriveandtours.com/en/about",
+      "published": "2026",
+      "payer_hypothesis": "Rwanda Drive & Tours",
+      "fit_note": "Direct local Rwanda operator with current booking/contact surface.",
+      "consumer_action": "iSCOPE validate booking qualification, vehicle availability, WhatsApp enquiry routing, reminders and repeat/referral workflow."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-351",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Destination Soleil Mauritius",
+      "surface": "Licensed tour operator/DMC; Mauritius",
+      "observed_need": "Mauritius DMC handles hotels, transfers, excursions, weddings, golf, MICE and corporate travel with phone/WhatsApp/email enquiry routes.",
+      "outcome_space": [
+        "DMC",
+        "tourism",
+        "MICE",
+        "transfers",
+        "booking"
+      ],
+      "source": "https://mauritiusdmc.com/contact-us/",
+      "published": "2026",
+      "payer_hypothesis": "Destination Soleil Mauritius",
+      "fit_note": "Direct Mauritius licensed operator/contact surface; no workflow weakness inferred.",
+      "consumer_action": "iSCOPE validate enquiry routing, proposal assembly, supplier coordination, follow-up and repeat-agent/customer workflow."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-352",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "VSL Travel / Visit Sierra Leone",
+      "surface": "Tour operator and DMC; Sierra Leone",
+      "observed_need": "Sierra Leone operator provides group/FIT tours, visa facilitation, airport transfers, vehicle rental, flight booking, cruise handling and MICE/conference logistics with direct contact.",
+      "outcome_space": [
+        "tourism",
+        "DMC",
+        "MICE",
+        "visa support",
+        "travel logistics"
+      ],
+      "source": "https://www.visitsierraleone.org/",
+      "published": "2026",
+      "payer_hypothesis": "VSL Travel",
+      "fit_note": "Direct Sierra Leone tourism/DMC operator with broad service workflow.",
+      "consumer_action": "iSCOPE validate multi-service intake, itinerary/proposal assembly, booking/document follow-up, conference lead handling and customer continuity."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
