@@ -1,0 +1,11 @@
+{
+  "exact_node_count_readback": 50000,
+  "partition_count": 50,
+  "partition_hashes_verified": true,
+  "receipt_type": "FORX_50K_DURABLE_PERSISTENCE_READBACK",
+  "run_id": "forx-20261007T162100Z",
+  "selected_count": 50000,
+  "selection_sha256": "19cc608b7ba93d107e9c1aa4502011c6992e45e4da7e860afd395bcac932f6fd",
+  "source_file_sha256": "b5782a2f689e3d7acc9f57d543f481610e207bc07b2ba5709c351b78bd34cbed",
+  "status": "PASS_DURABLE_PARTITIONS_VERIFIED"
+}
