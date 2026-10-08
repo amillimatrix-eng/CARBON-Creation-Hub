@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T14:04:00+02:00",
+  "last_updated": "2026-10-08T14:24:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -1292,6 +1292,192 @@
       "payer_hypothesis": "EThrom product owner / Tashi Wangchuk",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Bhutan operating market is explicit while developer address is Australia. Current onboarding changes are attributable maintenance evidence.",
       "consumer_action": "iSCOPE validate current Bhutan operation, seller/buyer onboarding and whether any conversion/support issue remains."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-070",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "FORUS LLC / Caribico",
+      "surface": "Google Play multi-service marketplace; package com.caribico.user; St. Lucia operating market, US legal developer",
+      "observed_need": "Current July 2026 app connects St. Lucia users to food, groceries, pharmacy, shopping, car rentals and local delivery while giving local vendors a digital storefront and island-wide visibility; Play currently declares data is not encrypted.",
+      "outcome_space": [
+        "marketplace",
+        "merchant acquisition",
+        "delivery",
+        "local services",
+        "data safety"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.caribico.user",
+      "published": "2026-07-12",
+      "payer_hypothesis": "FORUS LLC / Caribico product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. St. Lucia operating market and US legal entity are separate facts. Play data-safety declaration is a review surface, not a proven architecture defect.",
+      "consumer_action": "iSCOPE verify local operator/buyer route, merchant acquisition and current encryption/declaration state before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-071",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Karibfusion Limited / KariBites",
+      "surface": "Google Play restaurant delivery network; package com.karibites; Grenada and St. Vincent operating markets, Antigua & Barbuda developer address",
+      "observed_need": "Current May 2026 app operates food delivery in Grenada and St. Vincent; latest release added automatic merchant order printing on compatible devices and public business contact is exposed.",
+      "outcome_space": [
+        "restaurant network",
+        "delivery",
+        "merchant operations",
+        "order automation"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.karibites",
+      "published": "2026-05-19",
+      "payer_hypothesis": "Karibfusion Limited",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Multi-market operating footprint preserved without multiplying one package into multiple nodes.",
+      "consumer_action": "iSCOPE validate restaurant acquisition, printing/order workflow support and current market-specific growth constraints."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-072",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AllMart operator / canonical legal identity unresolved",
+      "surface": "Google Play local marketplace; package com.allmart.customer; Antigua & Barbuda",
+      "observed_need": "Current August 2026 app provides island-wide pickup/delivery and multi-merchant shopping in Antigua and Barbuda, with merchant e-stores and group ordering.",
+      "outcome_space": [
+        "marketplace",
+        "merchant network",
+        "delivery",
+        "local ecommerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.allmart.customer",
+      "published": "2026-08-26",
+      "payer_hypothesis": "AllMart platform owner unresolved",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Current operating market is attributable; canonical legal operator/contact requires normalization before promotion.",
+      "consumer_action": "iSCOPE resolve operator identity and validate merchant acquisition, fulfilment and current conversion/support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-073",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "RPM Express Couriers / My Shopbox Dominica",
+      "surface": "Google Play courier/account app; package com.myshopbox.myshopbox; Dominica",
+      "observed_need": "Play app manages packages, pre-alerts, curbside checkout and shipping estimates for Dominica. Last listed update is August 2025, so freshness is weaker than 2026 observations.",
+      "outcome_space": [
+        "courier",
+        "cross-border shipping",
+        "package management",
+        "customer self-service"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.myshopbox.myshopbox",
+      "published": "2025-08-04",
+      "payer_hypothesis": "RPM Express Couriers",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Retained for Dominica operator depth with explicit lower freshness; active status must be revalidated.",
+      "consumer_action": "iSCOPE verify current 2026 operation/contact and only then assess shipment self-service or support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-074",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SKN Transit / canonical operator unresolved",
+      "surface": "Google Play transport/tour/delivery marketplace; package skntransit.com; St. Kitts & Nevis",
+      "observed_need": "Current September 2026 app supports ferries, taxis, tours, rentals and food delivery across St. Kitts & Nevis.",
+      "outcome_space": [
+        "mobility",
+        "tourism",
+        "food delivery",
+        "local services",
+        "transport booking"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=skntransit.com",
+      "published": "2026-09-23",
+      "payer_hypothesis": "SKN Transit operator unresolved",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh multi-service island operating surface; legal operator and direct payer route require iSCOPE normalization.",
+      "consumer_action": "iSCOPE resolve operator identity/contact, active supplier network and current booking/partner acquisition needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-075",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DELIIV - SERVICOS E COMERCIO, SOCIEDADE UNIPESSOAL LDA / Deliiv Restaurante",
+      "surface": "Google Play merchant delivery app; package com.deliivapp.merchant; Cabo Verde",
+      "observed_need": "Current January 2026 merchant app helps Praia restaurants manage delivery operations and increase restaurant visibility/customer reach; direct Cape Verde company address/email are public. Play declares collected data is not encrypted.",
+      "outcome_space": [
+        "restaurant network",
+        "delivery",
+        "merchant acquisition",
+        "order operations",
+        "data safety"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.deliivapp.merchant",
+      "published": "2026-01-09",
+      "payer_hypothesis": "DELIIV - SERVICOS E COMERCIO, SOCIEDADE UNIPESSOAL LDA",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Local legal entity and merchant-growth surface resolved; data-safety declaration requires verification before any defect claim.",
+      "consumer_action": "iSCOPE validate restaurant acquisition, current Praia expansion, order/support burden and encryption/declaration state."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-076",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BIGTECHNOLOGIES SARL / Inunde",
+      "surface": "Google Play multi-service local platform; package com.bigtechnologies.inunde; Guinea-Bissau",
+      "observed_need": "Current July 2026 app combines restaurant ordering, events/tickets, tourism guides and courier delivery across Guinea-Bissau; Bissau company address, local phone and support email are public.",
+      "outcome_space": [
+        "food delivery",
+        "events",
+        "tourism",
+        "courier network",
+        "local services"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bigtechnologies.inunde",
+      "published": "2026-07-03",
+      "payer_hypothesis": "BIGTECHNOLOGIES SARL",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong local company identity/contact and multi-sided service network; no current defect inferred from generic bug-fix release.",
+      "consumer_action": "iSCOPE validate restaurant/courier/merchant acquisition, ticketing and customer-support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-077",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "YUPOPCAR UNIPESSOAL LIMITADA / PopGo STP",
+      "surface": "Google Play driver mobility; package popgostp.taxi.sao.tome.driver; São Tomé and Príncipe",
+      "observed_need": "Current August 2026 driver app connects local drivers with passenger requests for everyday rides, airport transfers, hotel routes and sightseeing in São Tomé and Príncipe.",
+      "outcome_space": [
+        "driver network",
+        "ride booking",
+        "tourism mobility",
+        "partner acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=popgostp.taxi.sao.tome.driver",
+      "published": "2026-08-12",
+      "payer_hypothesis": "YUPOPCAR UNIPESSOAL LIMITADA / PopGo STP",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh country-specific driver-network surface; current operator contact and driver activation needs require validation.",
+      "consumer_action": "iSCOPE verify company/contact route, driver recruitment/activation and tourism-booking operations."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-078",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Chekea Group / canonical legal operator unresolved",
+      "surface": "Google Play logistics + marketplace; package com.chekea.app; Equatorial Guinea operating market, Spain developer",
+      "observed_need": "Current September 2026 app explicitly solves shipping/moving/import-shopping friction in Equatorial Guinea using WhatsApp, parcel delivery between Malabo/Bata, trucks and a local-seller marketplace.",
+      "outcome_space": [
+        "logistics",
+        "cross-border shopping",
+        "marketplace",
+        "WhatsApp commerce",
+        "moving services"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.chekea.app",
+      "published": "2026-09-12",
+      "payer_hypothesis": "Chekea product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Operating market and Spain developer location kept separate. The claimed market problem is first-party product positioning, not proof of buyer-specific internal pain.",
+      "consumer_action": "iSCOPE resolve legal/operator identity and validate current merchant/logistics partner acquisition and support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-079",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TRATOEG / Antonio Martin Ndong EDO ABANG",
+      "surface": "Google Play local marketplace; package com.tratoeg.app; Equatorial Guinea operating market, Spain developer",
+      "observed_need": "Current September 2026 marketplace supports products, vehicles, real estate, jobs, training and services with chat, offers, appointments, reputation and moderation/reporting.",
+      "outcome_space": [
+        "marketplace",
+        "local services",
+        "trust and safety",
+        "classifieds",
+        "appointments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tratoeg.app",
+      "published": "2026-09-11",
+      "payer_hypothesis": "TRATOEG product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Distinct exact package and operating model from Chekea; no payment-processing claim because listing explicitly says TRATO does not process payments.",
+      "consumer_action": "iSCOPE validate listing/provider acquisition, moderation/trust workload and current marketplace conversion needs."
     }
   ]
 }
