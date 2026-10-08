@@ -1,4 +1,4 @@
-import csv, hashlib, io, json, os, threading, zipfile
+import csv, hashlib, io, json, os, sqlite3, tempfile, threading, zipfile
 from datetime import datetime, timezone
 from urllib.parse import urlparse
 
@@ -38,8 +38,9 @@ state = {
     "status": "STARTING",
     "started_at": None,
     "completed_at": None,
-    "nodes": [],
+    "node_count": 0,
     "partitions": [],
+    "partition_dir": None,
     "manifest": None,
     "receipt": None,
     "errors": [],
@@ -169,89 +170,157 @@ def load_audiala():
 
 
 def load_geonames():
-    raw_zip, observed_sha = fetch_bytes(GEONAMES_URL, "AMX-FORX-GeoNames/2.0")
+    h = hashlib.sha256()
+    fd, zip_path = tempfile.mkstemp(prefix="amx-forx-geonames-", suffix=".zip")
+    os.close(fd)
     raw_rows = 0
     rejected = 0
     duplicates = 0
-    dedup = {}
     latest_modified = None
+    db_fd, db_path = tempfile.mkstemp(prefix="amx-forx-geonames-", suffix=".sqlite3")
+    os.close(db_fd)
 
-    with zipfile.ZipFile(io.BytesIO(raw_zip)) as zf:
-        names = [n for n in zf.namelist() if n.endswith(".txt")]
-        if not names:
-            raise RuntimeError("GeoNames archive contains no .txt payload")
-        payload = zf.read(names[0]).decode("utf-8", errors="replace")
+    try:
+        with requests.get(
+            GEONAMES_URL,
+            stream=True,
+            timeout=180,
+            headers={"User-Agent": "AMX-FORX-GeoNames/2.1"},
+        ) as r:
+            r.raise_for_status()
+            with open(zip_path, "wb") as out:
+                for chunk in r.iter_content(chunk_size=1024 * 1024):
+                    if chunk:
+                        h.update(chunk)
+                        out.write(chunk)
+        observed_sha = h.hexdigest()
 
-    for line in payload.splitlines():
-        if not line.strip():
-            continue
-        raw_rows += 1
-        cols = line.split("	")
-        if len(cols) < 19:
-            rejected += 1
-            continue
+        conn = sqlite3.connect(db_path)
+        try:
+            conn.execute("PRAGMA journal_mode=OFF")
+            conn.execute("PRAGMA synchronous=OFF")
+            conn.execute("PRAGMA temp_store=FILE")
+            conn.execute(
+                """
+                CREATE TABLE nodes (
+                    ck TEXT PRIMARY KEY,
+                    country TEXT NOT NULL,
+                    category TEXT NOT NULL,
+                    source_record_id TEXT NOT NULL,
+                    payload TEXT NOT NULL
+                )
+                """
+            )
 
-        geonameid = cols[0].strip()
-        name = cols[1].strip() or cols[2].strip()
-        lat = parse_float(cols[4])
-        lon = parse_float(cols[5])
-        feature_class = cols[6].strip()
-        feature_code = cols[7].strip()
-        country = cols[8].strip()
-        admin1 = cols[10].strip()
-        population = cols[14].strip()
-        modified = cols[18].strip()
+            with zipfile.ZipFile(zip_path) as zf:
+                names = [n for n in zf.namelist() if n.endswith(".txt")]
+                if not names:
+                    raise RuntimeError("GeoNames archive contains no .txt payload")
+                with zf.open(names[0], "r") as raw:
+                    with io.TextIOWrapper(raw, encoding="utf-8", errors="replace", newline="") as payload:
+                        for line in payload:
+                            if not line.strip():
+                                continue
+                            raw_rows += 1
+                            cols = line.rstrip("\n").split("\t")
+                            if len(cols) < 19:
+                                rejected += 1
+                                continue
 
-        if not geonameid or not name or lat is None or lon is None or not country:
-            rejected += 1
-            continue
-        if not (-90 <= lat <= 90 and -180 <= lon <= 180):
-            rejected += 1
-            continue
+                            geonameid = cols[0].strip()
+                            name = cols[1].strip() or cols[2].strip()
+                            lat = parse_float(cols[4])
+                            lon = parse_float(cols[5])
+                            feature_class = cols[6].strip()
+                            feature_code = cols[7].strip()
+                            country = cols[8].strip()
+                            admin1 = cols[10].strip()
+                            population = cols[14].strip()
+                            modified = cols[18].strip()
 
-        ck = canonical_key(name, lat, lon)
-        if ck in dedup:
-            duplicates += 1
-            continue
+                            if not geonameid or not name or lat is None or lon is None or not country:
+                                rejected += 1
+                                continue
+                            if not (-90 <= lat <= 90 and -180 <= lon <= 180):
+                                rejected += 1
+                                continue
 
-        if modified and (latest_modified is None or modified > latest_modified):
-            latest_modified = modified
+                            ck = canonical_key(name, lat, lon)
+                            category = f"{feature_class}:{feature_code}" if feature_code else feature_class or "place"
+                            if modified and (latest_modified is None or modified > latest_modified):
+                                latest_modified = modified
 
-        dedup[ck] = {
-            "source_record_id": f"geonames:{geonameid}",
-            "name": name,
-            "latitude": lat,
-            "longitude": lon,
-            "country": country,
-            "locality": admin1 or None,
-            "category": f"{feature_class}:{feature_code}" if feature_code else feature_class or "place",
-            "website": None,
-            "domain": None,
-            "source_page": f"https://www.geonames.org/{geonameid}/",
-            "source": GEONAMES_SOURCE,
-            "source_repo": "download.geonames.org/export/dump",
-            "source_file": "cities500.zip",
-            "source_file_sha256": observed_sha,
-            "source_repo_commit": None,
-            "license": GEONAMES_LICENSE,
-            "source_updated": modified or latest_modified,
-            "population": int(population) if population.isdigit() else None,
-            "ingested_at": datetime.now(timezone.utc).isoformat(),
-            "confidence": "geonames-curated-coordinate",
+                            node = {
+                                "source_record_id": f"geonames:{geonameid}",
+                                "name": name,
+                                "latitude": lat,
+                                "longitude": lon,
+                                "country": country,
+                                "locality": admin1 or None,
+                                "category": category,
+                                "website": None,
+                                "domain": None,
+                                "source_page": f"https://www.geonames.org/{geonameid}/",
+                                "source": GEONAMES_SOURCE,
+                                "source_repo": "download.geonames.org/export/dump",
+                                "source_file": "cities500.zip",
+                                "source_file_sha256": observed_sha,
+                                "source_repo_commit": None,
+                                "license": GEONAMES_LICENSE,
+                                "source_updated": modified or None,
+                                "population": int(population) if population.isdigit() else None,
+                                "ingested_at": datetime.now(timezone.utc).isoformat(),
+                                "confidence": "geonames-curated-coordinate",
+                            }
+                            cur = conn.execute(
+                                "INSERT OR IGNORE INTO nodes (ck,country,category,source_record_id,payload) VALUES (?,?,?,?,?)",
+                                (ck, country, category, node["source_record_id"], json.dumps(node, separators=(",", ":"), sort_keys=True)),
+                            )
+                            if cur.rowcount == 0:
+                                duplicates += 1
+
+            conn.commit()
+            rows = conn.execute(
+                """
+                SELECT payload
+                FROM (
+                    SELECT
+                        payload,
+                        country,
+                        category,
+                        source_record_id,
+                        ROW_NUMBER() OVER (
+                            PARTITION BY country, category
+                            ORDER BY source_record_id
+                        ) AS rn
+                    FROM nodes
+                )
+                ORDER BY rn, country, category, source_record_id
+                LIMIT ?
+                """,
+                (TARGET,),
+            )
+            selected = [json.loads(row[0]) for row in rows]
+        finally:
+            conn.close()
+
+        return {
+            "nodes": selected,
+            "raw_rows": raw_rows,
+            "rejected": rejected,
+            "duplicates": duplicates,
+            "source_sha256": observed_sha,
+            "source_url": GEONAMES_URL,
+            "source_name": GEONAMES_SOURCE,
+            "source_license": GEONAMES_LICENSE,
+            "source_revision": latest_modified,
         }
-
-    return {
-        "nodes": list(dedup.values()),
-        "raw_rows": raw_rows,
-        "rejected": rejected,
-        "duplicates": duplicates,
-        "source_sha256": observed_sha,
-        "source_url": GEONAMES_URL,
-        "source_name": GEONAMES_SOURCE,
-        "source_license": GEONAMES_LICENSE,
-        "source_revision": latest_modified,
-    }
-
+    finally:
+        for path in (zip_path, db_path):
+            try:
+                os.remove(path)
+            except FileNotFoundError:
+                pass
 
 def choose_diverse(nodes, target):
     by_country = {}
@@ -322,24 +391,28 @@ def build():
         nodes = choose_diverse(source_result["nodes"], TARGET)
 
         parts = []
+        partition_dir = tempfile.mkdtemp(prefix=f"amx-forx-{RUN_ID}-")
         for i in range(0, len(nodes), PARTITION_SIZE):
             body = {
-                "schema_version": "2.1",
+                "schema_version": "2.2",
                 "run_id": RUN_ID,
                 "checkpoint_id": CHECKPOINT_ID,
                 "partition_index": len(parts) + 1,
                 "nodes": nodes[i : i + PARTITION_SIZE],
             }
             raw = json.dumps(body, separators=(",", ":"), sort_keys=True)
+            part_index = len(parts) + 1
+            part_path = os.path.join(partition_dir, f"partition-{part_index:06d}.json")
+            with open(part_path, "w", encoding="utf-8") as fh:
+                fh.write(raw)
             parts.append(
                 {
-                    "partition_index": len(parts) + 1,
+                    "partition_index": part_index,
                     "count": len(body["nodes"]),
                     "sha256": hashlib.sha256(raw.encode()).hexdigest(),
-                    "body": body,
+                    "path": part_path,
                 }
             )
-
         cdist = {}
         kdist = {}
         source_dist = {}
@@ -356,7 +429,7 @@ def build():
         completed = datetime.now(timezone.utc).isoformat()
 
         manifest = {
-            "schema_version": "2.1",
+            "schema_version": "2.2",
             "manifest_type": "FORX_PRODUCTION_MANIFEST" if MODE != "stage1-proof" else "FORX_STAGE1_MANIFEST",
             "mode": MODE,
             "run_id": RUN_ID,
@@ -389,7 +462,7 @@ def build():
 
         threshold = 1000 if MODE == "stage1-proof" else TARGET
         receipt = {
-            "schema_version": "2.1",
+            "schema_version": "2.2",
             "receipt_type": "FORX_STAGE1_RUNTIME_OUTPUT" if MODE == "stage1-proof" else "FORX_PRODUCTION_RUNTIME_OUTPUT",
             "status": (
                 "RUNTIME_COMPLETE_NOT_YET_DURABLY_VERIFIED"
@@ -434,14 +507,17 @@ def build():
                 "Runtime output alone is not production PASS; durable persistence and independent readback remain required.",
                 "Historical Stage-1 PASS remains immutable provenance and must not receive duplicate productive credit.",
                 "GeoNames cities500 represents global populated places, not a business-ownership registry; downstream iSCOPE must not treat every node as a prospect without qualification.",
+                "Production source ingestion is disk-backed and streamed; partition bodies are file-backed in the running instance to avoid retaining the full source and all partition payloads in RAM.",
+                "Instance-local partition files are not durable acceptance evidence by themselves; external persistence plus independent readback remains required.",
             ],
         }
 
         with lock:
             state.update(
                 {
-                    "nodes": nodes,
+                    "node_count": len(nodes),
                     "partitions": parts,
+                    "partition_dir": partition_dir,
                     "manifest": manifest,
                     "receipt": receipt,
                     "completed_at": completed,
@@ -484,7 +560,7 @@ def status():
         "status": state["status"],
         "mode": MODE,
         "run_id": RUN_ID,
-        "node_count": len(state.get("nodes") or []),
+        "node_count": state.get("node_count", 0),
         "partition_count": len(state.get("partitions") or []),
         "partition_size": PARTITION_SIZE,
         "target": TARGET,
@@ -500,7 +576,9 @@ def partition(idx: int):
     parts = state.get("partitions") or []
     if idx < 1 or idx > len(parts):
         raise HTTPException(404)
-    return JSONResponse(parts[idx - 1]["body"])
+    part = parts[idx - 1]
+    with open(part["path"], "r", encoding="utf-8") as fh:
+        return JSONResponse(json.load(fh))
 
 
 @app.get("/manifest")
