@@ -11837,6 +11837,74 @@
       "payer_hypothesis": "Real Contractors Ltd business-development / operations owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Official/company-owned contact surface plus current industry-network evidence. No unmet problem inferred from company profile.",
       "consumer_action": "iSCOPE verify current buyer relevance and specific active problem/opportunity before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-634",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Soleil Power Limited",
+      "surface": "Uganda battery/energy-storage manufacturing",
+      "observed_need": "Uganda-manufactured lithium battery systems for stationary storage and e-mobility; current USEA membership exposes public contact info@soleilpower.ug / +256 704 374 457.",
+      "outcome_space": [
+        "energy storage",
+        "manufacturing",
+        "e-mobility",
+        "renewables"
+      ],
+      "source": "https://www.soleilpower.ug/home",
+      "payer_hypothesis": "Soleil Power Limited commercial / operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Company-owned/public-sector or industry-directory evidence supports identity and operating surface. No unmet commercial problem inferred.",
+      "consumer_action": "iSCOPE verify current buyer relevance, active growth/operations need and commercial route before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-635",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Klean NRG Ltd",
+      "surface": "Rwanda renewable-energy developer",
+      "observed_need": "Commercial/industrial solar PV development, construction, financing and maintenance plus solar home systems and mini/microgrids. Public contact info@klean-nrg.com / +250 78-383-2060.",
+      "outcome_space": [
+        "renewable energy",
+        "C&I solar",
+        "mini-grids",
+        "maintenance"
+      ],
+      "source": "https://www.klean-nrg.com/",
+      "payer_hypothesis": "Klean NRG Ltd commercial / operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Company-owned/public-sector or industry-directory evidence supports identity and operating surface. No unmet commercial problem inferred.",
+      "consumer_action": "iSCOPE verify current buyer relevance, active growth/operations need and commercial route before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-636",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Nexus Green Ltd",
+      "surface": "Uganda solar/irrigation and C&I energy",
+      "observed_need": "Solar solutions across government, commercial and agricultural sectors; Uganda Solar Energy Association directory exposes public contact info@nexusgreen.com / +256 206 304444.",
+      "outcome_space": [
+        "solar",
+        "irrigation",
+        "agriculture",
+        "C&I energy"
+      ],
+      "source": "https://nexusgreen.com/",
+      "payer_hypothesis": "Nexus Green Ltd commercial / operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Company-owned/public-sector or industry-directory evidence supports identity and operating surface. No unmet commercial problem inferred.",
+      "consumer_action": "iSCOPE verify current buyer relevance, active growth/operations need and commercial route before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-637",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Munyax Eco Ltd",
+      "surface": "Rwanda solar-energy equipment",
+      "observed_need": "Rwandan solar company supplying water heaters, PV panels, street lights, solar home systems and cold-chain solutions; Rwanda utility list exposes public company/contact evidence.",
+      "outcome_space": [
+        "solar",
+        "cold chain",
+        "energy equipment",
+        "rural energy"
+      ],
+      "source": "https://www.munyaxeco.com/",
+      "payer_hypothesis": "Munyax Eco Ltd commercial / operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Company-owned/public-sector or industry-directory evidence supports identity and operating surface. No unmet commercial problem inferred.",
+      "consumer_action": "iSCOPE verify current buyer relevance, active growth/operations need and commercial route before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
