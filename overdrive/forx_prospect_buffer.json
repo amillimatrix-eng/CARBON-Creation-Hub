@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T18:12:00+02:00",
+  "last_updated": "2026-10-08T18:20:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -11119,6 +11119,257 @@
       "payer_hypothesis": "Foyre product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-591",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "B2BDubai24",
+      "surface": "UAE B2B marketplace; package com.b2bdubai24.user",
+      "observed_need": "Supplier profiles, business products, buyer inquiries, deals and order activity across Dubai/UAE/GCC.",
+      "outcome_space": [
+        "B2B marketplace",
+        "supplier discovery",
+        "buyer inquiries"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.b2bdubai24.user",
+      "payer_hypothesis": "B2BDubai24 product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-592",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ASSIST PLUS TRADING BROKERAGE / PROQ",
+      "surface": "UAE verified-company procurement; package com.abt.proq",
+      "observed_need": "RFQ/RFI/RFP creation, structured proposals, supplier matching, comparison, shortlisting and awards.",
+      "outcome_space": [
+        "procurement",
+        "RFQ",
+        "supplier matching",
+        "awards"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.abt.proq",
+      "payer_hypothesis": "ASSIST PLUS TRADING BROKERAGE / PROQ product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-593",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ONEQLIQ PORTAL / QliQ",
+      "surface": "UAE B2B spot commerce; package com.qliqnow.app",
+      "observed_need": "Spot buying requirements, ready inventory, supplier offers and buyer/seller matching.",
+      "outcome_space": [
+        "B2B commerce",
+        "supplier sourcing",
+        "inventory",
+        "buyer matching"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.qliqnow.app",
+      "payer_hypothesis": "ONEQLIQ PORTAL / QliQ product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-594",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "B2B ZONE / One Source",
+      "surface": "Saudi Arabia food-service procurement; package com.one.source",
+      "observed_need": "Wholesale sourcing and unified supply-chain purchasing for restaurants, cafes, hotels and caterers.",
+      "outcome_space": [
+        "procurement",
+        "wholesale",
+        "food service",
+        "supply chain"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.one.source",
+      "payer_hypothesis": "B2B ZONE / One Source product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-595",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Procurement KSA",
+      "surface": "Saudi construction/project procurement; package com.procurement.app",
+      "observed_need": "BOQs, vendor RFQs, quote comparison, purchase orders, vendor chat and role-based team collaboration.",
+      "outcome_space": [
+        "procurement",
+        "construction",
+        "RFQ",
+        "purchase orders"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.procurement.app",
+      "payer_hypothesis": "Procurement KSA product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-596",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Merge Spice Foodstuff Trading LLC / Al Ras Smart",
+      "surface": "UAE food/grocery wholesale B2B; package com.mergespice.alrasmarket",
+      "observed_need": "Supplier/buyer/shipping-company marketplace, requests/offers, AI search, shipping quotes and order tracking.",
+      "outcome_space": [
+        "B2B wholesale",
+        "supplier sourcing",
+        "shipping",
+        "food trade"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mergespice.alrasmarket",
+      "payer_hypothesis": "Merge Spice Foodstuff Trading LLC / Al Ras Smart product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-597",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "QuScout",
+      "surface": "UAE materials vendor marketplace; package com.quscout.vendor",
+      "observed_need": "Licensed vendors receive RFQs, submit/revise quotes, chat with buyers and build supplier reputation.",
+      "outcome_space": [
+        "RFQ",
+        "vendor operations",
+        "materials",
+        "B2B"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.quscout.vendor",
+      "payer_hypothesis": "QuScout product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-598",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SUPPLY QUO COMMERCIAL BROKER / Supply Quo",
+      "surface": "UAE procurement workflow; package com.madeinuae.supplyquoapp",
+      "observed_need": "Purchase requests, inventory visibility, supplier directory, workflow automation and procurement analytics.",
+      "outcome_space": [
+        "procurement",
+        "supplier directory",
+        "inventory",
+        "workflow"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.madeinuae.supplyquoapp",
+      "payer_hypothesis": "SUPPLY QUO COMMERCIAL BROKER / Supply Quo product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-599",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "StockUp",
+      "surface": "Saudi industrial sourcing; package com.onetechs.stockup",
+      "observed_need": "Industrial supplier discovery, RFQs, quote comparison, bidding and surplus-inventory opportunities.",
+      "outcome_space": [
+        "industrial procurement",
+        "RFQ",
+        "supplier sourcing",
+        "surplus inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.onetechs.stockup",
+      "payer_hypothesis": "StockUp product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-600",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AFKARAK WAQIA COMPANY / Merchant ID",
+      "surface": "Saudi B2B merchant/supplier operations; package sa.tajerid.b2b",
+      "observed_need": "Supplier directory, purchase orders, contract/invoice tracking and owner operations dashboard.",
+      "outcome_space": [
+        "B2B",
+        "supplier management",
+        "purchase orders",
+        "contracts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=sa.tajerid.b2b",
+      "payer_hypothesis": "AFKARAK WAQIA COMPANY / Merchant ID product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-601",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TECHNO TAKE COMPANY / OrDex Supplier",
+      "surface": "Saudi supplier operations; package com.ordex_app.ordex_app_supplier",
+      "observed_need": "Supplier-facility linkage and supply-order management.",
+      "outcome_space": [
+        "supplier operations",
+        "orders",
+        "B2B"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ordex_app.ordex_app_supplier",
+      "payer_hypothesis": "TECHNO TAKE COMPANY / OrDex Supplier product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-602",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tamween",
+      "surface": "Oman supplier/outlet B2B; package smart_energy.tamween.buyer_supplier",
+      "observed_need": "Supplier and outlet B2B connection/workflow.",
+      "outcome_space": [
+        "B2B",
+        "suppliers",
+        "outlets"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=smart_energy.tamween.buyer_supplier",
+      "payer_hypothesis": "Tamween product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-603",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ELEXtrade",
+      "surface": "UAE enterprise electronics procurement; package ae.elextrade.mobile",
+      "observed_need": "Authorized buyer/seller RFQ tracking, seller quote preparation and procurement status workflows.",
+      "outcome_space": [
+        "B2B procurement",
+        "electronics",
+        "RFQ",
+        "quotes"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ae.elextrade.mobile",
+      "payer_hypothesis": "ELEXtrade product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-604",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Venda",
+      "surface": "UAE wholesale sourcing; package com.vendatraders.app",
+      "observed_need": "Supplier discovery, price comparison, purchasing workflow, orders and vendor dashboard/low-stock reporting.",
+      "outcome_space": [
+        "wholesale",
+        "supplier discovery",
+        "orders",
+        "vendor operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.vendatraders.app",
+      "payer_hypothesis": "Venda product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-605",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ANJUMAN BURHAN WHOLESALE AND RETAIL TRADING COMPANY / HIS",
+      "surface": "Kuwait import/export/contracting; package com.hakimimohalla.his",
+      "observed_need": "Business gateway for import, export and contracting services.",
+      "outcome_space": [
+        "import export",
+        "contracting",
+        "B2B"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.hakimimohalla.his",
+      "payer_hypothesis": "ANJUMAN BURHAN WHOLESALE AND RETAIL TRADING COMPANY / HIS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
