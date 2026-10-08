@@ -349,6 +349,16 @@ class MarketplaceStore:
             existing = conn.execute("SELECT * FROM commitments WHERE interest_id=?", (interest_id,)).fetchone()
             if existing:
                 return dict(existing)
+            if listing["status"] != "OPEN":
+                raise ValueError("listing is no longer open")
+            blocking = conn.execute(
+                """SELECT id,state FROM commitments
+                   WHERE listing_id=? AND state IN ('SELECTED','ACTIVE_COMMITMENT','HONOURED')
+                   LIMIT 1""",
+                (interest["listing_id"],),
+            ).fetchone()
+            if blocking:
+                raise ValueError("listing already has a selected/active buyer; other bonded interests remain queued")
             if interest["state"] != "BONDED_INTEREST":
                 raise ValueError("interest is not selectable")
 
@@ -533,6 +543,40 @@ class MarketplaceStore:
             row = conn.execute("SELECT * FROM deals WHERE id=?", (deal_id,)).fetchone()
         return dict(row)
 
+    def decline_deal(self, deal_id: str, actor: str, reason: str) -> dict[str, Any]:
+        with self._conn() as conn:
+            deal = conn.execute("SELECT * FROM deals WHERE id=?", (deal_id,)).fetchone()
+            if not deal:
+                raise KeyError("deal not found")
+            if actor not in {deal["buyer_ref"], deal["seller_ref"]}:
+                raise PermissionError("participant credential required")
+            if deal["state"] != "INSPECTION":
+                raise ValueError("only an inspection-stage deal can be declined")
+            commitment = conn.execute(
+                "SELECT * FROM commitments WHERE id=?",
+                (deal["commitment_id"],),
+            ).fetchone()
+            now = iso()
+            conn.execute(
+                "UPDATE deals SET state='NO_DEAL',settlement_state='NO_PURCHASE_SETTLEMENT',updated_at=? WHERE id=?",
+                (now, deal_id),
+            )
+            conn.execute(
+                "UPDATE commitments SET state='CLOSED_NO_DEAL',resolution='BILATERAL_PERFORMANCE_NO_PURCHASE',updated_at=? WHERE id=?",
+                (now, deal["commitment_id"]),
+            )
+            conn.execute(
+                "UPDATE interests SET state='HONOURED_RELEASE_PENDING',provider_state='SANDBOX_RELEASE_PENDING',updated_at=? WHERE id=?",
+                (now, commitment["interest_id"]),
+            )
+            self._event(conn, "deal", deal_id, actor, "DEAL_DECLINED_AFTER_INSPECTION", {
+                "reason": reason.strip(),
+                "bond_resolution": "RELEASE_PENDING",
+                "money_moved": False,
+            })
+            updated = conn.execute("SELECT * FROM deals WHERE id=?", (deal_id,)).fetchone()
+        return dict(updated)
+
     def accept_deal(self, deal_id: str, actor: str) -> dict[str, Any]:
         with self._conn() as conn:
             deal = conn.execute("SELECT * FROM deals WHERE id=?", (deal_id,)).fetchone()
@@ -555,6 +599,24 @@ class MarketplaceStore:
                     (now, deal_id),
                 )
                 conn.execute("UPDATE listings SET status='COMMITTED',updated_at=? WHERE id=?", (now, fresh["listing_id"]))
+                commitment = conn.execute(
+                    "SELECT interest_id FROM commitments WHERE id=?",
+                    (fresh["commitment_id"],),
+                ).fetchone()
+                queued = conn.execute(
+                    """SELECT id FROM interests
+                       WHERE listing_id=? AND id<>? AND state='BONDED_INTEREST'""",
+                    (fresh["listing_id"], commitment["interest_id"]),
+                ).fetchall()
+                for queued_interest in queued:
+                    conn.execute(
+                        "UPDATE interests SET state='RELEASE_PENDING',provider_state='SANDBOX_RELEASE_PENDING',updated_at=? WHERE id=?",
+                        (now, queued_interest["id"]),
+                    )
+                    self._event(conn, "interest", queued_interest["id"], "SYSTEM", "QUEUE_RELEASED_AFTER_SALE", {
+                        "listing_id": fresh["listing_id"],
+                        "money_moved": False,
+                    })
             self._event(conn, "deal", deal_id, actor, "DEAL_ACCEPTANCE_RECORDED", {
                 "buyer_accept": bool(fresh["buyer_accept"] or actor == fresh["buyer_ref"]),
                 "seller_accept": bool(fresh["seller_accept"] or actor == fresh["seller_ref"]),
@@ -793,6 +855,15 @@ def mount_marketplace(
         participant = actor(x_carbon_actor)
         try:
             return {"record": store.open_deal(commitment_id, participant)}
+        except Exception as exc:
+            raise map_error(exc) from exc
+
+    @router.post("/api/carbon/deals/{deal_id}/decline")
+    def decline_deal(deal_id: str, payload: CancelRequest, x_carbon_actor: str | None = Header(default=None)) -> dict[str, Any]:
+        require_demo()
+        participant = actor(x_carbon_actor)
+        try:
+            return {"record": store.decline_deal(deal_id, participant, payload.reason), "money_moved": False}
         except Exception as exc:
             raise map_error(exc) from exc
 
