@@ -6188,7 +6188,171 @@
       "payer_hypothesis": "LUMEN Ltd",
       "fit_note": "Direct Rwanda specialist technical-practice source. Company publishes substantial project experience; no weakness inferred.",
       "consumer_action": "iSCOPE validate project-enquiry intake, quote/proposal workflow, field/lab scheduling, technical-report delivery or follow-up for a current bounded opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-334",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Vyntech",
+      "domain": "vyntech.tn",
+      "country": "Tunisia",
+      "sector": "Web development / digital marketing / IT services",
+      "surface": "Official digital-agency website; Ariana, Tunisia",
+      "observed_need": "The live homepage and contact page contain generic placeholder copy, including Lorem-Ipsum-style text and repeated template marketing sections, while the agency sells web, SEO, branding and digital services and exposes direct contact coordinates. This is directly observed offer/credibility QA.",
+      "problem_signal": {
+        "family": "offer clarity / copy QA / credibility",
+        "evidence": "Official homepage and contact page contain generic placeholder/template copy on active commercial surfaces.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "contact@vyntech.tn",
+        "+216 51 874 845"
+      ],
+      "outcome_space": [
+        "copy cleanup",
+        "offer clarity",
+        "web QA",
+        "lead conversion"
+      ],
+      "source": "https://vyntech.tn/",
+      "provenance": "Official company website and official contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Vyntech owner/commercial lead",
+      "fit_note": "Contactable Tunisia digital-services candidate with first-party unfinished commercial copy; buyer relevance should be tested carefully because the company itself sells web services.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and current buyer relevance; qualify only a bounded credibility/conversion cleanup if there is real willingness to buy."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-335",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "COSMO CHEMICAL CO., LTD.",
+      "domain": "cosmochem.com",
+      "country": "South Korea",
+      "sector": "Chemical manufacturing / titanium dioxide",
+      "surface": "Official industrial manufacturer website; Ulsan, South Korea",
+      "observed_need": "The live Contact Us page exposes the literal Contact Form 7 shortcode and generic Lorem Ipsum instead of a functioning polished enquiry surface. A separate official Location page exposes current phone and overseas email. This is directly observed B2B enquiry-path QA.",
+      "problem_signal": {
+        "family": "enquiry-path QA / broken form presentation",
+        "evidence": "Official Contact Us page renders a literal Contact Form 7 shortcode plus placeholder copy.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "overseas@cosmochem.co.kr",
+        "+82 52 231 6835"
+      ],
+      "outcome_space": [
+        "contact-form repair",
+        "B2B enquiry flow",
+        "web QA",
+        "conversion reliability"
+      ],
+      "source": "https://www.cosmochem.com/index.php/contact-us/",
+      "provenance": "Official Contact Us and Location pages; live public fetch/search verification on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "COSMO CHEMICAL commercial/export or corporate communications owner",
+      "fit_note": "Industrial B2B candidate with directly observed broken-looking enquiry page and first-party overseas contact route.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether the contact-page defect is current in a normal browser before commercial qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-336",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Winter Korean Language Education Center",
+      "domain": "winterkorean.com",
+      "country": "South Korea",
+      "sector": "Language education / training",
+      "surface": "Official language-school website; Seoul, South Korea",
+      "observed_need": "The active 2026 English homepage shows placeholder Campus 1/2/3 descriptions and a visible [winter_course_banner] shortcode while publishing current class schedules and direct phone/chat/email routes. This is directly observed conversion/content QA on an active education site.",
+      "problem_signal": {
+        "family": "content QA / shortcode leakage / enrollment conversion",
+        "evidence": "Official 2026 homepage exposes placeholder campus text and a visible winter_course_banner shortcode.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "contact@winterkorean.com",
+        "+82 2 338 8363",
+        "WhatsApp +82 10 7450 8363",
+        "Kakao/Line: winterkorean"
+      ],
+      "outcome_space": [
+        "content cleanup",
+        "enrollment UX",
+        "web QA",
+        "conversion clarity"
+      ],
+      "source": "https://winterkorean.com/winko/en/",
+      "provenance": "Official website plus official-domain contact search/readback; observed 2026-10-08",
+      "freshness": "Active 2026 class schedules and live page observed 2026-10-08",
+      "published": "current 2026 commercial site",
+      "payer_hypothesis": "Winter Korean owner/academy operator",
+      "fit_note": "Contactable education candidate with strong current activity evidence and visible unfinished customer-facing content.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether a bounded enrollment-page cleanup has near-term commercial value."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-337",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Goussanem & Aloui Law Firm",
+      "domain": "algeria-lawyers.com",
+      "country": "Algeria",
+      "sector": "Business law / corporate legal services",
+      "surface": "Official business-law website; Algiers, Algeria",
+      "observed_need": "The live main business page contains a customer-facing 'Some Facts' section filled with Lorem Ipsum immediately above client/case/experience proof metrics, while publishing direct phone and email. This is directly observed credibility/proof-section QA.",
+      "problem_signal": {
+        "family": "proof-section copy QA / credibility",
+        "evidence": "Official main business page contains Lorem Ipsum in the 'Some Facts' proof section next to client/case metrics.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "contact@algeria-lawyers.com",
+        "+213 44 179 035",
+        "+213 770 512 935"
+      ],
+      "outcome_space": [
+        "proof messaging",
+        "copy cleanup",
+        "professional-services conversion",
+        "web QA"
+      ],
+      "source": "https://algeria-lawyers.com/fr",
+      "provenance": "Official law-firm website; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Goussanem & Aloui managing partners/marketing owner",
+      "fit_note": "Contactable Algeria professional-services candidate with directly observed credibility-content defect.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and qualify only if a bounded proof/copy correction is materially buyer-relevant."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-338",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Franchise Expo Algeria",
+      "domain": "franchise-algeria.com",
+      "country": "Algeria",
+      "sector": "B2B events / franchising / exhibitions",
+      "surface": "Official Franchise Expo Algeria website; Algiers, Algeria",
+      "observed_need": "The live Sponsor and Contact pages expose generic 'Wire Festival' Lorem Ipsum and raw-looking placeholder/shortcode tokens such as <contact_franchise_expo/> and contact_us on active sponsor/contact surfaces. Official-domain results expose current phone/email. This is directly observed event-site lead/sponsor conversion QA.",
+      "problem_signal": {
+        "family": "contact/sponsor flow QA / shortcode leakage",
+        "evidence": "Official Sponsor/Contact pages expose unrelated template copy and raw placeholder/shortcode tokens on commercial conversion surfaces.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "contact@franchise-algeria.com",
+        "+213 552 478 619",
+        "+213 560 81 11 20"
+      ],
+      "outcome_space": [
+        "sponsor conversion",
+        "contact-flow cleanup",
+        "event lead capture",
+        "web QA"
+      ],
+      "source": "https://franchise-algeria.com/contact-us/",
+      "provenance": "Official Contact/Sponsor pages plus official-domain indexed contact details; verified 2026-10-08",
+      "freshness": "Current official site observed 2026-10-08",
+      "published": "current event site; official search result references December 2026",
+      "payer_hypothesis": "Franchise Expo Algeria organizer/commercial owner",
+      "fit_note": "Contactable B2B event candidate with strong first-party template/shortcode leakage on sponsor/contact surfaces.",
+      "consumer_action": "iSCOPE revalidate preferred current phone route, dedupe/contact history, and assess a bounded sponsor/contact conversion cleanup."
     }
   ],
-  "current_run_note": "FORX public-web problem-signal tranche appended; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
+  "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
 }
