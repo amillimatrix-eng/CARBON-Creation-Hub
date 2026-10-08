@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:01:00+02:00",
+  "last_updated": "2026-10-08T17:05:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -8544,6 +8544,87 @@
       ],
       "source": "https://play.google.com/store/apps/details?id=com.wam.pos",
       "payer_hypothesis": "Wam Now, Inc. / Wam POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-435",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Orange Guinée / Orange Money Pro",
+      "surface": "Guinea merchant/point-of-sale mobile money; package com.orange.money.gn.pro",
+      "observed_need": "Digital deposit/withdrawal for Orange Money points of sale plus merchant collection operations.",
+      "outcome_space": [
+        "merchant payments",
+        "agent network",
+        "collections"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.orange.money.gn.pro",
+      "payer_hypothesis": "Orange Guinée / Orange Money Pro product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-436",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "OGN-SDA / NIMBA+",
+      "surface": "Guinea Orange point-of-sale operations; package com.ogn.nimba",
+      "observed_need": "Customer management plus Orange/Orange Money service operations for Guinea points of sale.",
+      "outcome_space": [
+        "agent operations",
+        "customer management",
+        "mobile money"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ogn.nimba",
+      "payer_hypothesis": "OGN-SDA / NIMBA+ product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-437",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Yas Togo / Mixx Business",
+      "surface": "Togo merchant collections; package tg.togocom.merchant",
+      "observed_need": "Business collection and real-time merchant transaction management in Togo.",
+      "outcome_space": [
+        "merchant payments",
+        "collections",
+        "business operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=tg.togocom.merchant",
+      "payer_hypothesis": "Yas Togo / Mixx Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-438",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TOGBE AKOETE / Bolitoo",
+      "surface": "Togo seller/reseller commerce; package com.blttogo",
+      "observed_need": "Product sharing, commission tracking, sales monitoring and online selling tools for merchants/individuals.",
+      "outcome_space": [
+        "seller operations",
+        "commissions",
+        "online commerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.blttogo",
+      "payer_hypothesis": "TOGBE AKOETE / Bolitoo product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-439",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TOGOTULAWO / Lomegno Seller",
+      "surface": "Togo merchant marketplace operations; package com.ag.lomegnoseller",
+      "observed_need": "Merchant product, offer, order and sales-activity management on Lomegno.",
+      "outcome_space": [
+        "merchant operations",
+        "orders",
+        "sales",
+        "marketplace"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ag.lomegnoseller",
+      "payer_hypothesis": "TOGOTULAWO / Lomegno Seller product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
     }
