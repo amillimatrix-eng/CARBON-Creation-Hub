@@ -31,8 +31,13 @@ def test_bilateral_marketplace_loop(tmp_path):
     assert listing["seller_ref"].startswith("C°")
     assert "seller-secret" not in str(listing)
 
-    r=c.post("/api/carbon/listings/"+lid+"/interests",headers={"X-CARBON-Actor":buyer},json={
+    too_large=c.post("/api/carbon/listings/"+lid+"/interests",headers={"X-CARBON-Actor":buyer},json={
         "bond_minor":500_000,"at_risk_bps":5000,"proposed_start_at":future(90),"proposed_duration_minutes":60})
+    assert too_large.status_code==422
+    assert "cannot buy priority" in too_large.json()["detail"]
+
+    r=c.post("/api/carbon/listings/"+lid+"/interests",headers={"X-CARBON-Actor":buyer},json={
+        "bond_minor":150_000,"at_risk_bps":5000,"proposed_start_at":future(90),"proposed_duration_minutes":60})
     assert r.status_code==200
     interest=r.json()["record"]
     assert interest["considered_bond_minor"]==150_000
