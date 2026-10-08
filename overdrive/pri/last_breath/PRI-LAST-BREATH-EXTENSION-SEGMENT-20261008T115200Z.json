@@ -210,18 +210,18 @@
   },
   "new_exact_priced_sends": {
     "raw_after_prior_receipt": {
-      "smalls": 13,
-      "medium": 8,
+      "smalls": 12,
+      "medium": 7,
       "upper_medium": 17,
       "upper": 21,
-      "note": "Includes hard failures and one same-organization redirected continuation; raw SENT is not the counted total."
+      "note": "Excludes Kasey Schaffer Events and Jemack Facilities because both were already included in the prior durable receipt despite their Gmail timestamps falling just after its nominal generated_at."
     },
     "counted_after_current_contact_bounce_dedupe_correction": {
-      "smalls": 11,
-      "medium": 7,
+      "smalls": 10,
+      "medium": 6,
       "upper_medium": 16,
       "upper": 18,
-      "total": 52
+      "total": 50
     },
     "counted_receipts": {
       "smalls": [
@@ -294,13 +294,6 @@
           "recipient": "adomwholesaleprice@gmail.com",
           "subject": "$9 website trust-cleanup check",
           "sent_at": "2026-10-08T02:15:57-07:00"
-        },
-        {
-          "gmail_id": "1a11a4971cc74f78",
-          "thread_id": "1a11a4971cc74f78",
-          "recipient": "kasey@ks.events",
-          "subject": "Indexed sample-page cleanup — USD 9",
-          "sent_at": "2026-10-07T23:53:03-07:00"
         }
       ],
       "medium": [
@@ -345,13 +338,6 @@
           "recipient": "tenthirewiz@gmail.com",
           "subject": "Multi-page trust cleanup for Tent Hire Wiz — USD 39",
           "sent_at": "2026-10-08T02:27:19-07:00"
-        },
-        {
-          "gmail_id": "1a11a4808ac5dfec",
-          "thread_id": "1a11a4808ac5dfec",
-          "recipient": "services@jemackfacilities.com.ng",
-          "subject": "Public-page QA pack — USD 19",
-          "sent_at": "2026-10-07T23:51:31-07:00"
         }
       ],
       "upper_medium": [
@@ -604,11 +590,11 @@
     }
   },
   "cumulative_corrected": {
-    "smalls": 77,
-    "medium": 35,
+    "smalls": 76,
+    "medium": 34,
     "upper_medium": 91,
     "upper": 62,
-    "total": 265,
+    "total": 263,
     "paid_usd": 0
   },
   "response_evidence": {
@@ -628,7 +614,7 @@
     "supposed": "Prioritize warm/due work, consume Radial redirect, send Jojo's single permitted follow-up, reconcile high-value draft execution, suppress hard failures, and leave an attributable receipt.",
     "actual": "Jojo follow-up sent once in-thread; Radial continuation verified; high-value and other concurrent exact-priced sends reconciled; 25 hard failures audited; cumulative count corrected instead of carrying 230 forward unchanged.",
     "proves": "Exact Gmail SENT IDs, thread IDs, bounce IDs, recipient coordinates, and durable GitHub readback.",
-    "changed": "Warm/due actions were progressed and the cumulative scoreboard was restated under the no-bounce counting rule.",
+    "changed": "Warm/due actions were progressed; 50 new valid exact-priced sends were reconciled; and the cumulative scoreboard was corrected to 263 under the no-bounce/no-duplicate counting rule.",
     "remains_unproven": "Delivery for unbounced messages, human response to the new actions, acceptance, conversion, invoice/receivable, and payment. PAID remains USD 0."
   }
 }
