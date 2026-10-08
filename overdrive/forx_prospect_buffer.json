@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T13:00:00+02:00",
+  "last_updated": "2026-10-08T13:18:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -412,6 +412,287 @@
       "payer_hypothesis": "Cyber Food Fiji operator",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Candidate-specific marketplace/vendor-growth surface is attributable; route and present pain need validation.",
       "consumer_action": "iSCOPE resolve direct operator contact and current vendor-acquisition/retention evidence before commercial qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-023",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Gambia Business Center",
+      "surface": "Google Play local business marketplace/delivery; package com.gambiabc.gambiabusinesscenter; Gambia",
+      "observed_need": "Current June 2026 Play listing presents a local business marketplace/delivery surface and exposes direct phone/email contact.",
+      "outcome_space": [
+        "local marketplace",
+        "SME visibility",
+        "delivery",
+        "merchant acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.gambiabc.gambiabusinesscenter",
+      "published": "2026-06-09",
+      "payer_hypothesis": "Gambia Business Center operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh country-depth observation with direct public contact. No specific unresolved defect inferred.",
+      "consumer_action": "iSCOPE verify active merchant/customer acquisition surface and current buyer-relevant problem before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-024",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "INDIL GAMBIA LIMITED / Indil Vendor",
+      "surface": "Google Play vendor operations; package com.indil.vendor; Gambia",
+      "observed_need": "Current March 2026 Play listing lets vendors manage store, products, orders and earnings; direct Gambian support email/phone and company identity are public.",
+      "outcome_space": [
+        "vendor operations",
+        "marketplace",
+        "merchant onboarding",
+        "order management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.indil.vendor",
+      "published": "2026-03-28",
+      "payer_hypothesis": "INDIL GAMBIA LIMITED",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong local operator identity and direct support route; present commercial pain requires validation.",
+      "consumer_action": "iSCOPE verify seller activation, order-flow/support workload and current expansion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-025",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "My PocketShop",
+      "surface": "Google Play seller/rider marketplace; package store.mypocketshop.app; Zambia",
+      "observed_need": "Current September 2026 Play listing lets sellers open shops quickly, riders accept jobs, merchants receive mobile-money payouts, QR handovers and refunds; public phone/email exposed.",
+      "outcome_space": [
+        "seller marketplace",
+        "rider network",
+        "mobile money",
+        "merchant onboarding",
+        "refunds"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=store.mypocketshop.app",
+      "published": "2026-09-10",
+      "payer_hypothesis": "My PocketShop operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Current multi-sided marketplace operating surface with direct contact; no failure assumed.",
+      "consumer_action": "iSCOPE inspect seller/rider acquisition, onboarding, payout/refund support and marketplace activation with direct evidence."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-026",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Katemba",
+      "surface": "Google Play offline-first POS; package com.thinkerstech.katemba; Zambia",
+      "observed_need": "Current September 2026 listing targets shops, restaurants, pharmacies and hardware businesses with offline POS, later sync and MTN/Airtel/Zamtel mobile-money support; direct Zambian contact is public.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "offline sync",
+        "mobile money",
+        "SME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.thinkerstech.katemba",
+      "published": "2026-09-10",
+      "payer_hypothesis": "Katemba / Thinkers Tech operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong SME infrastructure signal; current defect or growth bottleneck not inferred.",
+      "consumer_action": "iSCOPE validate merchant acquisition, onboarding/support and offline-sync operating burden before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-027",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Zamplace",
+      "surface": "Google Play local marketplace; package com.cresora.zamplace; Zambia",
+      "observed_need": "Current April 2026 Play listing supports small businesses, direct chat, ratings and suspicious-activity reporting; Zambia developer phone/address and support email are public.",
+      "outcome_space": [
+        "local marketplace",
+        "small business",
+        "trust and safety",
+        "buyer-seller chat",
+        "ratings"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.cresora.zamplace",
+      "published": "2026-04-04",
+      "payer_hypothesis": "Zamplace / Cresora operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Candidate-specific trust/safety and SME-commerce surfaces are attributable; no unresolved issue claimed.",
+      "consumer_action": "iSCOPE verify active seller growth, moderation/trust workload and conversion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-028",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Habs Technologies SL Limited / Habs Market",
+      "surface": "Google Play approved-seller marketplace; package com.habs.market.shop; Sierra Leone",
+      "observed_need": "Current August 2026 Play listing describes approved sellers, secure payments and delivery, operated by Habs Technologies SL Limited and beginning in Sierra Leone.",
+      "outcome_space": [
+        "marketplace",
+        "seller verification",
+        "payments",
+        "delivery",
+        "local ecommerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.habs.market.shop",
+      "published": "2026-08-27",
+      "payer_hypothesis": "Habs Technologies SL Limited",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong local marketplace/trust operating surface; specific pain and direct buyer route require validation.",
+      "consumer_action": "iSCOPE verify seller onboarding/verification, delivery/payment operations and current contact route."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-029",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "EXPRESBUY SL LIMITED / ExpresBuy",
+      "surface": "Google Play local marketplace/jobs/services; package com.expresbuy.app; Sierra Leone",
+      "observed_need": "Current September 2026 listing supports person-to-person commerce, jobs/services and Krio/English localization; public Sierra Leone phone/email are exposed.",
+      "outcome_space": [
+        "marketplace",
+        "local services",
+        "jobs",
+        "localization",
+        "SME commerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.expresbuy.app",
+      "published": "2026-09-16",
+      "payer_hypothesis": "EXPRESBUY SL LIMITED",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Very fresh local-company observation with direct public route; no candidate problem inferred beyond operating surfaces.",
+      "consumer_action": "iSCOPE inspect marketplace activation, service-provider acquisition and bilingual conversion/support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-030",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Bayna",
+      "surface": "Google Play local buy/sell/services marketplace; package com.anonymous.makit; Sierra Leone",
+      "observed_need": "Current August 2026 Play listing supports local buying, selling and service booking and exposes a Sierra Leone phone/email contact.",
+      "outcome_space": [
+        "marketplace",
+        "service booking",
+        "local commerce",
+        "provider acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.anonymous.makit",
+      "published": "2026-08-27",
+      "payer_hypothesis": "Bayna operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package is retained despite generic package naming; organization identity should remain unresolved until iSCOPE confirms it.",
+      "consumer_action": "iSCOPE verify operator identity, active service-provider acquisition and direct buyer route before promotion."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-031",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "YIELD SARL / Terminal Exchanges",
+      "surface": "Google Play B2B marketplace; package com.terminalechanges.app; Togo",
+      "observed_need": "Initial September 2026 release connects B2B buyers with verified sellers and combines KYC, mobile money, cards, bank payment and supplier credit; Togo company/support identity is public.",
+      "outcome_space": [
+        "B2B marketplace",
+        "seller KYC",
+        "merchant payments",
+        "supplier credit",
+        "trade"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.terminalechanges.app",
+      "published": "2026-09-02",
+      "payer_hypothesis": "YIELD SARL / Terminal Exchanges",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. High-utility trade/merchant-infrastructure observation with first-release freshness; no defect inferred.",
+      "consumer_action": "iSCOPE validate seller/buyer acquisition, KYC onboarding, payment/reconciliation or B2B conversion burden."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-032",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "E-DAVINCI TRADE / E-DAVINCI",
+      "surface": "Google Play B2B/B2C marketplace; package com.edavinci.mobile; Mozambique",
+      "observed_need": "Current August 2026 listing describes verified sellers, escrow, M-Pesa/e-Mola/Movitel Pay and bilingual commerce; direct Maputo company phone/email are public.",
+      "outcome_space": [
+        "marketplace",
+        "seller verification",
+        "escrow",
+        "mobile money",
+        "localization"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.edavinci.mobile",
+      "published": "2026-08-23",
+      "payer_hypothesis": "E-DAVINCI TRADE",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong Mozambique trade/payment surface and direct public contact; present commercial pain requires validation.",
+      "consumer_action": "iSCOPE inspect seller onboarding, trust/escrow support, payment reconciliation and bilingual conversion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-033",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "New Vision World Sociedade Unipessoal Lda / EntregaMoz",
+      "surface": "Google Play marketplace/delivery/transport; package com.entregamoz.app; Mozambique",
+      "observed_need": "2026 release combines marketplace, delivery and transport with M-Pesa/e-Mola and bilingual operation; direct Mozambique company phone/email are public.",
+      "outcome_space": [
+        "marketplace",
+        "delivery",
+        "transport",
+        "mobile money",
+        "localization"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.entregamoz.app",
+      "published": "2026-01",
+      "payer_hypothesis": "New Vision World Sociedade Unipessoal Lda",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Local company and direct contact resolved; no specific current defect inferred.",
+      "consumer_action": "iSCOPE verify current customer/merchant/driver activation, support and payment operations before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-034",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Xavissa",
+      "surface": "Google Play Mozambique POS; package mz.co.xavissa.pos; Mozambique",
+      "observed_need": "Play listing positions an offline-capable POS for Mozambique with stock, receipts, synchronization and multiple payments.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "offline sync",
+        "payments",
+        "SME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mz.co.xavissa.pos",
+      "published": "2026",
+      "payer_hypothesis": "Xavissa operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-specific SME operating surface is attributable; freshness/contact and current buyer pain require normal validation.",
+      "consumer_action": "iSCOPE verify current release/contact route and merchant acquisition/support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-035",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "VuKart",
+      "surface": "Google Play multi-service platform; package com.vanuatu.customer; Vanuatu",
+      "observed_need": "Public Play listing spans taxi, food, parcels, services and ecommerce with driver/restaurant/merchant network participation and real-time tracking.",
+      "outcome_space": [
+        "super app",
+        "merchant network",
+        "driver network",
+        "delivery",
+        "local services"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.vanuatu.customer",
+      "published": "2026",
+      "payer_hypothesis": "VuKart operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Valuable Vanuatu network-depth observation; current freshness/contact and active problem require validation.",
+      "consumer_action": "iSCOPE verify operator identity, active merchant/driver acquisition and current support/conversion surface."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-036",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Kotana",
+      "surface": "Google Play marketplace/community; package com.kotana.app; Madagascar",
+      "observed_need": "Current June 2026 listing combines shopping, food delivery, second-hand marketplace and community functions.",
+      "outcome_space": [
+        "marketplace",
+        "food delivery",
+        "second-hand commerce",
+        "community"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kotana.app",
+      "published": "2026-06-25",
+      "payer_hypothesis": "Kotana operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh Madagascar multi-sided commerce observation; direct route and specific problem require validation.",
+      "consumer_action": "iSCOPE resolve public operator/contact route and inspect seller/delivery/community activation with direct evidence."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-037",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Padi SL",
+      "surface": "Google Play multi-service app; package com.nexgenux.padi; Sierra Leone",
+      "observed_need": "Current June 2026 Play listing combines chat, ride-hailing, food delivery and marketplace functionality focused on Sierra Leone.",
+      "outcome_space": [
+        "super app",
+        "ride hailing",
+        "food delivery",
+        "marketplace",
+        "communications"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.nexgenux.padi",
+      "published": "2026-06-10",
+      "payer_hypothesis": "Padi SL operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Sierra Leone operating focus is clear but developer/operator identity needs reconciliation before outbound.",
+      "consumer_action": "iSCOPE verify legal/operator identity and current driver/merchant/customer acquisition needs."
     }
   ]
 }
