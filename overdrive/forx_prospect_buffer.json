@@ -11724,6 +11724,69 @@
       "payer_hypothesis": "STELLAR ENGINEERS LTD / TradePlan product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-627",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "A J LIMITED",
+      "surface": "Tanzania registered contractor; CRB registration C6/3349/07/2026",
+      "observed_need": "Official 2026 CRB record: local civil contractor, class 6, Kijitonyama / Dar es Salaam; separate building registration also visible. Public contact route unresolved in this pass.",
+      "outcome_space": [
+        "construction",
+        "civil contractor",
+        "registered supplier"
+      ],
+      "source": "https://crb.go.tz/contractordetails/home/search?search=C6%2F3349%2F07%2F2026",
+      "payer_hypothesis": "A J LIMITED business owner / procurement lead",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Official registry identity evidence. Registration proves operating legitimacy/category, not an unmet commercial problem.",
+      "consumer_action": "iSCOPE verify current company status, public lawful contact route, buyer relevance and specific active need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-628",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ABAMA CONSTRUCTION LIMITED",
+      "surface": "Tanzania registered contractor; CRB registration C6/3280/03/2026",
+      "observed_need": "Official 2026 CRB record: local civil contractor, class 6, Dar es Salaam. Public contact route unresolved in this pass.",
+      "outcome_space": [
+        "construction",
+        "civil contractor"
+      ],
+      "source": "https://crb.go.tz/contractordetails/home/search?search=C6%2F3280%2F03%2F2026",
+      "payer_hypothesis": "ABAMA CONSTRUCTION LIMITED business owner / procurement lead",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Official registry identity evidence. Registration proves operating legitimacy/category, not an unmet commercial problem.",
+      "consumer_action": "iSCOPE verify current company status, public lawful contact route, buyer relevance and specific active need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-629",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ABINORAH WOMEN GROUP",
+      "surface": "Tanzania registered contractor; CRB registration SPC3/2312/07/2026",
+      "observed_need": "Official 2026 CRB record: local specialist-civil contractor, class 3, Tanga. Public contact route unresolved in this pass.",
+      "outcome_space": [
+        "construction",
+        "specialist civil",
+        "women-owned/group"
+      ],
+      "source": "https://crb.go.tz/contractordetails/home/search?search=SPC3%2F2312%2F07%2F2026",
+      "payer_hypothesis": "ABINORAH WOMEN GROUP business owner / procurement lead",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Official registry identity evidence. Registration proves operating legitimacy/category, not an unmet commercial problem.",
+      "consumer_action": "iSCOPE verify current company status, public lawful contact route, buyer relevance and specific active need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-630",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ABISTAR GROUP OF COMPANIES LIMITED",
+      "surface": "Tanzania registered contractor; CRB registration B4/918/06/2026",
+      "observed_need": "Official 2026 CRB record: local building contractor, class 4, Dodoma; separate 2026 civil/electrical registrations also visible.",
+      "outcome_space": [
+        "construction",
+        "building contractor",
+        "multi-discipline"
+      ],
+      "source": "https://crb.go.tz/contractordetails/home/search?search=B4%2F918%2F06%2F2026",
+      "payer_hypothesis": "ABISTAR GROUP OF COMPANIES LIMITED business owner / procurement lead",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Official registry identity evidence. Registration proves operating legitimacy/category, not an unmet commercial problem.",
+      "consumer_action": "iSCOPE verify current company status, public lawful contact route, buyer relevance and specific active need before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
