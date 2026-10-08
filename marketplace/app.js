@@ -34,7 +34,7 @@ async function refresh(){try{const results=await Promise.all([api("/api/carbon/b
 
 $$(".nav").forEach(b=>b.onclick=()=>setView(b.dataset.view));
 $$(".filter").forEach(b=>b.onclick=()=>{S.filter=b.dataset.filter;$$(".filter").forEach(x=>x.classList.toggle("active",x===b));renderMarket()});
-$("#persona").onclick=cyclePersona;$("#seed").onclick=seed;$("#listingForm").onsubmit=createListing;$("#bondAmount").oninput=syncBond;$("#riskAmount").oninput=syncBond;$("#bondForm").onsubmit=submitBond;$("#interestClose").onclick=()=>$("#interestDialog").close();$("#interestBondFilter").oninput=renderInterestCandidates;$("#interestRiskFilter").oninput=renderInterestCandidates;$("#interestTodayFilter").onchange=renderInterestCandidates;$("#messageClose").onclick=()=>$("#messageDialog").close();$("#messageForm").onsubmit=sendMessage;$("#extensionForm").onsubmit=submitExtension;$("#intent").oninput=renderMarket;
+$("#persona").onclick=cyclePersona;$("#seed").onclick=seed;$("#listingForm").onsubmit=createListing;$("#bondAmount").oninput=syncBond;$("#riskAmount").oninput=syncBond;$("#bondForm").onsubmit=submitBond;$("#interestClose").onclick=()=>$("#interestDialog").close();$("#interestBondFilter").oninput=renderInterestCandidates;$("#interestRiskFilter").oninput=renderInterestCandidates;$("#interestTodayFilter").onchange=renderInterestCandidates;$("#messageClose").onclick=()=>$("#messageDialog").close();$("#messageForm").onsubmit=sendMessage;$("#extensionClose").onclick=()=>$("#extensionDialog").close();$("#extensionForm").onsubmit=submitExtension;$("#intent").oninput=renderMarket;
 $$("input[name=min_risk],input[name=max_risk]").forEach(i=>i.oninput=()=>i.parentElement.querySelector("output").value=i.value+"%");
 refresh();
 })();
