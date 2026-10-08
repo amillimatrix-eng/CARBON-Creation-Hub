@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T14:47:00+02:00",
+  "last_updated": "2026-10-08T15:09:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -1703,6 +1703,194 @@
       "payer_hypothesis": "Tregu Shqiptar operator",
       "fit_note": "CANDIDATE / PENDING_INGESTION. One exact package with two operating markets is stored once; legal operator/contact remains for iSCOPE resolution.",
       "consumer_action": "iSCOPE resolve operator identity and validate listing acquisition, moderation/verification and country-specific traction without duplicating outbound."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-092",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Salifou Djibo / E-khumaisa",
+      "surface": "Google Play local marketplace; package com.khumaisa.ekhumaisa; Niger",
+      "observed_need": "Current January 2026 app positions itself as a Nigerien marketplace for everyday purchases with home delivery; Niger phone/support and developer country are public.",
+      "outcome_space": [
+        "marketplace",
+        "delivery",
+        "local ecommerce",
+        "merchant network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.khumaisa.ekhumaisa",
+      "published": "2026-01-29",
+      "payer_hypothesis": "E-khumaisa operator / Salifou Djibo",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Niger route resolved; specific merchant-side need remains for iSCOPE validation.",
+      "consumer_action": "iSCOPE verify active merchant base, current contact ownership, delivery footprint and buyer-relevant growth problem."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-093",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "infoStock Tech / InfoStock",
+      "surface": "Google Play marketplace + wallet; package app.infostock; Niger",
+      "observed_need": "Current Niger marketplace spans regional product filtering, seller WhatsApp contact, real-time stock/reviews and a built-in iPay wallet/agent top-up surface.",
+      "outcome_space": [
+        "marketplace",
+        "merchant payments",
+        "wallet",
+        "seller discovery",
+        "inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.infostock",
+      "published": "2026",
+      "payer_hypothesis": "InfoStock operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Candidate-specific payments/merchant operating surface is attributable; legal operator and current problem require validation.",
+      "consumer_action": "iSCOPE resolve legal payer identity and validate merchant onboarding, wallet support, agent operations and current acquisition friction."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-094",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NANODIGITALONE - CONSULTORIA E PRESTACAO DE SERVICOS, (SU), LDA / DOCANAL",
+      "surface": "Google Play wholesale/marketplace/delivery; package shop.docanal.app; Angola",
+      "observed_need": "First September 2026 release connects Angolan wholesalers, traditional markets and shopping centres with buyers, seller chat/price negotiation, merchant delivery policies and driver earnings; Luanda company/contact are public.",
+      "outcome_space": [
+        "wholesale",
+        "merchant marketplace",
+        "delivery",
+        "driver network",
+        "price negotiation"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=shop.docanal.app",
+      "published": "2026-09-22",
+      "payer_hypothesis": "NANODIGITALONE / DOCANAL",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Very fresh Angola economic-infrastructure observation with direct legal identity/contact; no launch defect inferred.",
+      "consumer_action": "iSCOPE validate merchant/wholesaler onboarding, delivery partner supply and current launch/market-activation needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-095",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Jiji Group / Jiji Congo-Brazzaville",
+      "surface": "Google Play classifieds marketplace; package cg.jiji.app; Republic of the Congo operating market",
+      "observed_need": "Current August 2026 Congo-Brazzaville marketplace supports seller listings, premium promotion, chat, seller feedback, jobs and local services.",
+      "outcome_space": [
+        "classifieds",
+        "seller promotion",
+        "local services",
+        "jobs",
+        "marketplace"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=cg.jiji.app",
+      "published": "2026-08-27",
+      "payer_hypothesis": "Jiji Group regional product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Large platform/local market edge; published seller/listing claims are not AMX nodes. Lower SMME direct-operator priority than local owner-led platforms.",
+      "consumer_action": "iSCOPE only pursue if a bounded Congo-specific operating or partner problem is evidenced; otherwise retain as ecosystem/source rail."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-096",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Niqo",
+      "surface": "Google Play peer-to-peer + shop marketplace; package com.niqo.africa; Republic of the Congo",
+      "observed_need": "Current app serves Brazzaville and Pointe-Noire with P2P listings plus brand/shop catalogues, reservations and in-store cash/mobile-money pickup.",
+      "outcome_space": [
+        "marketplace",
+        "local shops",
+        "mobile money",
+        "reservations",
+        "SME visibility"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.niqo.africa",
+      "published": "2026",
+      "payer_hypothesis": "Niqo product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Distinct source and business model from Jiji; canonical legal identity/contact requires validation.",
+      "consumer_action": "iSCOPE resolve operator identity and validate shop acquisition, reservation conversion and merchant support load."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-097",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BAH Ibrahima Diogo / Guineezone",
+      "surface": "Google Play marketplace + delivery-driver network; package www.guineezon.com; Guinea operating market, France developer address",
+      "observed_need": "Current September 2026 Guinea marketplace supports seller stores, promo codes, verified-seller subscriptions, sales statistics, delivery-driver registration/earnings and AI-powered ad verification; +224 business phone is public.",
+      "outcome_space": [
+        "marketplace",
+        "seller tools",
+        "driver network",
+        "trust and safety",
+        "merchant analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=www.guineezon.com",
+      "published": "2026-09-13",
+      "payer_hypothesis": "Guineezone product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Guinea operating market and France developer address remain separate facts; high-value seller/driver operating evidence.",
+      "consumer_action": "iSCOPE validate merchant/driver acquisition, moderation cost, subscription conversion and current support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-098",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "YOBORESTO / Yobo",
+      "surface": "Google Play local delivery network; package com.yobopresto.app; Gabon",
+      "observed_need": "Current June 2026 Libreville app delivers meals, groceries and parcels. Latest release explicitly added admin order modification, delivery-fee change visibility and post-assignment driver replacement; Gabon company phone/address are public.",
+      "outcome_space": [
+        "delivery",
+        "merchant network",
+        "driver operations",
+        "order administration",
+        "fee transparency"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.yobopresto.app",
+      "published": "2026-06-28",
+      "payer_hypothesis": "YOBORESTO",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Concrete recent order/driver workflow changes are attributable maintenance evidence, not proof the underlying issue remains.",
+      "consumer_action": "iSCOPE validate merchant/driver acquisition, order-exception support and whether fee/assignment workflows remain operational pain."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-099",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "La Gabonaise / canonical operator developer is Senegal-based",
+      "surface": "Google Play marketplace + professional directory; package com.dadel.lagabonaise; Gabon operating market",
+      "observed_need": "Current June 2026 platform aggregates Gabonese merchants with a multi-store cart, cash-on-delivery and a verified professional directory for plumbers, electricians and carpenters.",
+      "outcome_space": [
+        "marketplace",
+        "trades directory",
+        "merchant network",
+        "cash on delivery",
+        "local services"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dadel.lagabonaise",
+      "published": "2026-06-21",
+      "payer_hypothesis": "La Gabonaise product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong trades/SMME front-door distribution surface; Gabon operating market and Senegal developer location remain separate.",
+      "consumer_action": "iSCOPE resolve operator/payer identity and validate merchant/professional acquisition, verification and current demand-matching needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-100",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "VANTELE TRADING CC / VanTele Marketplace Lite",
+      "surface": "Google Play local marketplace; package na.com.vantele.vantele_marketplace_lite; Namibia",
+      "observed_need": "Current August 2026 app is built in Namibia and provides local marketplace search, offline favourites and direct seller contact by call/WhatsApp; Namibia business phone/email/address are public.",
+      "outcome_space": [
+        "marketplace",
+        "seller discovery",
+        "WhatsApp commerce",
+        "SME visibility"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=na.com.vantele.vantele_marketplace_lite",
+      "published": "2026-08-03",
+      "payer_hypothesis": "VANTELE TRADING CC",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct local legal/contact evidence with owner-led profile; current business problem requires validation.",
+      "consumer_action": "iSCOPE validate seller acquisition, monetization, WhatsApp conversion and current platform-growth constraint."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-101",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Prime Zimbabwe / ORIGIN FREGHT TRUCKING AND LOGISTICS LIMITED",
+      "surface": "Google Play merchant delivery operations; package com.primeZimbabwe.merchant; Zimbabwe operating market, Zambia legal developer",
+      "observed_need": "Current January 2026 merchant app lets approved Prime merchants receive/manage orders, update preparation status and work with delivery agents; Play currently declares collected data is not encrypted.",
+      "outcome_space": [
+        "merchant operations",
+        "delivery",
+        "order management",
+        "data safety",
+        "merchant acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.primeZimbabwe.merchant",
+      "published": "2026-01-28",
+      "payer_hypothesis": "Prime Zimbabwe product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Zimbabwe operating market and Zambia legal-developer entity remain separate. Data-safety declaration requires validation.",
+      "consumer_action": "iSCOPE verify merchant-network activity, current operator identity and encryption/declaration state before qualification."
     }
   ]
 }
