@@ -1,0 +1,211 @@
+{
+  "receipt_id": "PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T065000Z",
+  "generated_at": "2026-10-08T06:50:00Z",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "line": "ONE iSCOPE->PRI customer-penetration line",
+  "prior_durable_state": {
+    "receipt_path": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T055000Z.json",
+    "commit": "3a0161f502ebe3ce5bce8cc0b836d1516a0b372d",
+    "counts": {
+      "smalls": 64,
+      "medium": 27,
+      "upper_medium": 81,
+      "upper": 45,
+      "total": 217,
+      "paid_usd": 0
+    }
+  },
+  "gmail_reconciliation": {
+    "rule": "Count only unique relevant business contacts with exact-priced fulfillable offers and Gmail SENT receipts. A hard-bounced invalid coordinate is excluded.",
+    "concurrent_smalls": [
+      {
+        "organization": "Kenwaves Cargo",
+        "recipient": "info@kenwavescargo.com",
+        "gmail_id": "1a11a3dd4267ce1a",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      },
+      {
+        "organization": "Kalahari Containers",
+        "recipient": "admin@kalaharicontainers.co.za",
+        "gmail_id": "1a11a3b02cced401",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      },
+      {
+        "organization": "Lia & Co",
+        "recipient": "info@liaandco.co.za",
+        "gmail_id": "1a11a3ae13958b81",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": false,
+        "immediate_bounce": true,
+        "bounce_id": "1a11a3ae9914724a",
+        "reason": "recipient domain does not exist; invalid contact coordinate"
+      },
+      {
+        "organization": "Sweden Inn Guest House",
+        "recipient": "swedeninnguesthouse@gmail.com",
+        "gmail_id": "1a11a3955d413827",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      },
+      {
+        "organization": "Tom's Pan / Panadería Barón",
+        "recipient": "CostaRicaInfoTech@gmail.com",
+        "gmail_id": "1a11a39265a95762",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      },
+      {
+        "organization": "Alba Glam",
+        "recipient": "alaveraeirini@gmail.com",
+        "gmail_id": "1a11a38f84edbc52",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      },
+      {
+        "organization": "Flower Haven Farm",
+        "recipient": "info@flowerhavenfarm.co.za",
+        "gmail_id": "1a11a37af3bfe280",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      },
+      {
+        "organization": "Kwami Catering",
+        "recipient": "info@kwamicatering.co.za",
+        "gmail_id": "1a11a37879f7c68a",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      },
+      {
+        "organization": "Amatista",
+        "recipient": "amatistacentroestetico@gmail.com",
+        "gmail_id": "1a11a35a450095ab",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      },
+      {
+        "organization": "Glad Business",
+        "recipient": "makhathinitt@icloud.com",
+        "gmail_id": "1a11a35785361334",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      },
+      {
+        "organization": "Renee Dreams",
+        "recipient": "reneedreamsent@gmail.com",
+        "gmail_id": "1a11a32ed1112b19",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      },
+      {
+        "organization": "Premier Florist",
+        "recipient": "amanda.n39@yahoo.com",
+        "gmail_id": "1a11a31d42c9a7da",
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "counted": true,
+        "immediate_bounce": false
+      }
+    ],
+    "concurrent_counted_smalls": 11,
+    "excluded_bounces": 1
+  },
+  "attributable_actions": [
+    {
+      "organization": "Jemack Facilities and Engineering Services Ltd",
+      "country": "Nigeria",
+      "sector": "facilities_and_engineering",
+      "recipient": "services@jemackfacilities.com.ng",
+      "public_business_coordinate_source": "https://jemackfacilities.com.ng/contact/",
+      "observed_public_evidence": [
+        "https://jemackfacilities.com.ng/sample-page/",
+        "https://jemackfacilities.com.ng/gallery/",
+        "template footer text visible on public contact/footer surface"
+      ],
+      "dedupe_query": "in:sent to:services@jemackfacilities.com.ng",
+      "dedupe_result": "no prior sent",
+      "tier": "MEDIUM",
+      "price_usd": 19,
+      "deliverable": "Focused public-page QA pack listing affected URLs and exact replacement/removal priority",
+      "gmail_id": "1a11a4808ac5dfec",
+      "thread_id": "1a11a4808ac5dfec",
+      "sent_label_verified": true,
+      "immediate_bounce": false,
+      "counted": true
+    },
+    {
+      "organization": "Kasey Schaffer Events",
+      "country": "United States",
+      "sector": "event_planning",
+      "recipient": "kasey@ks.events",
+      "public_business_coordinate_source": "https://ks.events/",
+      "observed_public_evidence": [
+        "https://ks.events/sample-page/"
+      ],
+      "evidence_note": "Indexed default WordPress Sample Page exposes example-page copy distinct from polished live site.",
+      "dedupe_query": "in:sent to:kasey@ks.events",
+      "dedupe_result": "no prior sent",
+      "tier": "SMALLS",
+      "price_usd": 9,
+      "deliverable": "Exact URL, removal/redirect recommendation, and short verification checklist",
+      "gmail_id": "1a11a4971cc74f78",
+      "thread_id": "1a11a4971cc74f78",
+      "sent_label_verified": true,
+      "immediate_bounce": false,
+      "counted": true
+    }
+  ],
+  "delta": {
+    "smalls": 12,
+    "medium": 1,
+    "upper_medium": 0,
+    "upper": 0,
+    "total": 13,
+    "paid_usd": 0
+  },
+  "cumulative": {
+    "smalls": 76,
+    "medium": 28,
+    "upper_medium": 81,
+    "upper": 45,
+    "total": 230,
+    "paid_usd": 0
+  },
+  "truth_states": {
+    "sent": 230,
+    "delivered": "UNKNOWN except Lia & Co hard-bounce failure",
+    "responded": "No new substantive response in this segment",
+    "accepted": 0,
+    "converted": 0,
+    "paid_usd": 0
+  },
+  "t10": {
+    "supposed": "Recover newest shared Gmail state, exclude invalid/duplicate contacts, and continue exact-priced, evidence-backed offers.",
+    "actual": "Reconciled 12 concurrent SMALLS Gmail sends, counted 11 valid unbounced unique sends, excluded one hard-bounced invalid-domain address, and executed one new MEDIUM plus one new SMALLS send with negative prior-contact dedupe.",
+    "proves": "Exact Gmail SENT IDs, Lia & Co bounce ID, official public evidence URLs, and dedupe queries recorded above.",
+    "changed": "Cumulative counted state advanced from 217 to 230; SMALLS 64 to 76; MEDIUM 27 to 28.",
+    "remains_unproven": "Delivery for unbounced messages, buyer response, acceptance, conversion, invoicing, receivable, and payment. PAID remains USD 0."
+  }
+}
