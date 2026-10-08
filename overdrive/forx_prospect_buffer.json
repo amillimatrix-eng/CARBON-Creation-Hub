@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T20:08:00+02:00",
+  "last_updated": "2026-10-08T23:19:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -13502,6 +13502,168 @@
       "payer_hypothesis": "USO Rentals Samoa / USO Rentals Management business/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no verified graph promotion or commercial outcome claimed.",
       "consumer_action": "iSCOPE verify current identity, active specific problem, buyer relevance, suppression and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-696",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.monier.com.pg/",
+      "organization": "Monier Limited",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Pacific / Oceania",
+      "sector": "construction materials manufacturing and distribution",
+      "business_model": "commercial operator",
+      "surface": "Concrete/quarry products, specification review, quality control and delivery",
+      "observed_need": "Operating surface evidenced; specific unmet buyer problem NOT VERIFIED.",
+      "source": "https://www.monier.com.pg/customer-service-and-sales",
+      "source_observed_at": "2026-10-08T23:19:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "email",
+          "value": "sales@monier.com.pg",
+          "source": "https://www.monier.com.pg/customer-service-and-sales"
+        }
+      ],
+      "current_public_evidence": "Concrete/quarry products, specification review, quality control and delivery",
+      "payer_hypothesis": "Unverified organization buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION; no graph promotion",
+      "consumer_action": "iSCOPE validate current problem, buyer identity, suppression, relevance and lawful contact before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-697",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://tli.tlipng.com/built-environment/",
+      "organization": "Trade Link International Limited",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Pacific / Oceania",
+      "sector": "building product sourcing and contractor supply",
+      "business_model": "commercial operator",
+      "surface": "Manufacturer network, cross-border procurement, installation and project logistics",
+      "observed_need": "Operating surface evidenced; specific unmet buyer problem NOT VERIFIED.",
+      "source": "https://tli.tlipng.com/built-environment/",
+      "source_observed_at": "2026-10-08T23:19:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "email",
+          "value": "sales@tlipng.com",
+          "source": "https://tli.tlipng.com/built-environment/"
+        }
+      ],
+      "current_public_evidence": "Manufacturer network, cross-border procurement, installation and project logistics",
+      "payer_hypothesis": "Unverified organization buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION; no graph promotion",
+      "consumer_action": "iSCOPE validate current problem, buyer identity, suppression, relevance and lawful contact before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-698",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.vateindustries.com/",
+      "organization": "VATE Industries",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Vanuatu",
+      "region": "Pacific / Oceania",
+      "sector": "steel fabrication and construction supply",
+      "business_model": "commercial operator",
+      "surface": "Steel sections, roofing and fabricated structures; project quotations",
+      "observed_need": "Operating surface evidenced; specific unmet buyer problem NOT VERIFIED.",
+      "source": "https://www.vateindustries.com/",
+      "source_observed_at": "2026-10-08T23:19:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_contact",
+          "value": "public website quote form",
+          "source": "https://www.vateindustries.com/"
+        }
+      ],
+      "current_public_evidence": "Steel sections, roofing and fabricated structures; project quotations",
+      "payer_hypothesis": "Unverified organization buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION; no graph promotion",
+      "consumer_action": "iSCOPE validate current problem, buyer identity, suppression, relevance and lawful contact before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-699",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.badilihardware.com/",
+      "organization": "Badili Hardware Limited",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Pacific / Oceania",
+      "sector": "hardware and building materials distribution",
+      "business_model": "commercial operator",
+      "surface": "Two-city retail/trade distribution and trade delivery",
+      "observed_need": "Operating surface evidenced; specific unmet buyer problem NOT VERIFIED.",
+      "source": "https://www.badilihardware.com/contact",
+      "source_observed_at": "2026-10-08T23:19:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "email",
+          "value": "sales@badilihardware.com",
+          "source": "https://www.badilihardware.com/contact"
+        }
+      ],
+      "current_public_evidence": "Two-city retail/trade distribution and trade delivery",
+      "payer_hypothesis": "Unverified organization buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION; no graph promotion",
+      "consumer_action": "iSCOPE validate current problem, buyer identity, suppression, relevance and lawful contact before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-700",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://tradeandfarm.com.vu/",
+      "organization": "Trade & Farm",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Vanuatu",
+      "region": "Pacific / Oceania",
+      "sector": "construction and agricultural supply",
+      "business_model": "commercial operator",
+      "surface": "Hardware, agriculture, steel, timber and building supplies retail",
+      "observed_need": "Operating surface evidenced; specific unmet buyer problem NOT VERIFIED.",
+      "source": "https://tradeandfarm.com.vu/sales/",
+      "source_observed_at": "2026-10-08T23:19:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_contact",
+          "value": "public sales phone +678 23903",
+          "source": "https://tradeandfarm.com.vu/sales/"
+        }
+      ],
+      "current_public_evidence": "Hardware, agriculture, steel, timber and building supplies retail",
+      "payer_hypothesis": "Unverified organization buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION; no graph promotion",
+      "consumer_action": "iSCOPE validate current problem, buyer identity, suppression, relevance and lawful contact before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-701",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.firusgroup.com/",
+      "organization": "FIRUS GROUP",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Fiji",
+      "region": "Pacific / Oceania",
+      "sector": "fish processing and export",
+      "business_model": "commercial operator",
+      "surface": "Fish grading, processing and vacuum-packed fish loins",
+      "observed_need": "Operating surface evidenced; specific unmet buyer problem NOT VERIFIED.",
+      "source": "https://www.firusgroup.com/products",
+      "source_observed_at": "2026-10-08T23:19:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "email",
+          "value": "firusinvest@gmail.com",
+          "source": "https://www.firusgroup.com/products"
+        }
+      ],
+      "current_public_evidence": "Fish grading, processing and vacuum-packed fish loins",
+      "payer_hypothesis": "Unverified organization buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION; no graph promotion",
+      "consumer_action": "iSCOPE validate current problem, buyer identity, suppression, relevance and lawful contact before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -13557,255 +13719,94 @@
     "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
   },
   "last_continuity": {
-    "observed_at": "2026-10-08T20:08:00+02:00",
+    "observed_at": "2026-10-08T23:19:00+02:00",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261008-2000-SAST",
+    "run_identity": "FORX-CONTINUOUS-20261008-2319-SAST",
     "prior_receipt": {
-      "observed_at": "2026-10-08T19:02:00+02:00",
       "producer": "FORX Continuous Play Sweep",
-      "run_identity": "FORX-CONTINUOUS-20261008-1855-SAST",
-      "prior_receipt": {
-        "observed_at": "2026-10-08T19:02:00+02:00",
-        "producer": "MASTER support for FORX→iSCOPE",
-        "candidate_ids": [
-          "FORX-PROSPECT-20261008-646"
-        ],
-        "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
-      },
-      "consumed_sources": [
-        {
-          "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
-          "revision": "AHj4eMQgdQE4GpGOp5bAzEtQmSVCaicQtxVhcFX_WFbgP2oeAwxBLq6wEL0AwTQiQdgUUq_UJtxH0Q3H6As7dAspms0xaMlJtPxR9to46g",
-          "observed_at": "2026-10-08T16:55:00Z"
-        },
-        {
-          "id": "3f28f8b56cd781bd945dcd8630253ef8",
-          "revision": "page_last_edited_at:2026-10-08T16:49:13.800Z",
-          "observed_at": "2026-10-08T16:49:13.800Z"
-        },
-        {
-          "id": "1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc",
-          "revision": "Learning Weights LEARNING-001..020 + Coverage Ledger snapshot",
-          "observed_at": "2026-10-08T19:02:00+02:00"
-        },
-        {
-          "id": "overdrive/forx_prospect_buffer.json",
-          "revision": "de557b54d251fe9fbe2176259a09ff90cdf0b83b",
-          "observed_at": "2026-10-08T19:02:00+02:00"
-        },
-        {
-          "id": "overdrive/forx_staging_health_2026-10-07.json",
-          "revision": "2bdb771f6c11168eb4a3138c00f69cdaf93dfc80",
-          "observed_at": "2026-10-08T19:02:00+02:00"
-        }
-      ],
-      "apply_example": {
-        "prior_learning": [
-          "LEARNING-009",
-          "LEARNING-013",
-          "LEARNING-015",
-          "Root Intake 50K durable PASS"
-        ],
-        "changed_action": "Selected Pacific/Southern-Africa economic infrastructure and asset-heavy workflows (digital addressing, livestock compliance, field sales, supplier/contractor networks, insurance distribution) instead of repeating saturated generic-wallet discovery.",
-        "source_pointers": [
-          "Learning Weights!A1:J200",
-          "Root Intake section FORX 50K DURABLE PASS"
-        ]
-      },
-      "exact_coordinate": {
-        "geography": [
-          "Samoa",
-          "Fiji",
-          "Namibia",
-          "Botswana"
-        ],
-        "language": "English",
-        "sector": [
-          "digital addressing",
-          "livestock/farm operations",
-          "field sales/distribution",
-          "supplier and skilled-service marketplaces",
-          "insurance distribution",
-          "SME banking"
-        ],
-        "source": "Google Play public listings",
-        "surface": "business-operating apps and network rails",
-        "problem": "candidate-specific first-party operating surface only",
-        "size": "local and regional operators",
-        "offer": null,
-        "price": null
-      },
-      "component_evidence": {
-        "discovered": 11,
-        "exact_key_new": 11,
-        "staged_pending_ingestion": 11,
-        "verified_graph_delta_claimed": 0,
-        "explored": 11,
-        "exploited": 0
-      },
+      "observed_at": "2026-10-08T20:08:00+02:00",
       "result_ids": [
-        "FORX-PROSPECT-20261008-678",
-        "FORX-PROSPECT-20261008-679",
-        "FORX-PROSPECT-20261008-680",
-        "FORX-PROSPECT-20261008-681",
-        "FORX-PROSPECT-20261008-682",
-        "FORX-PROSPECT-20261008-683",
-        "FORX-PROSPECT-20261008-684",
-        "FORX-PROSPECT-20261008-685",
-        "FORX-PROSPECT-20261008-686",
-        "FORX-PROSPECT-20261008-687",
-        "FORX-PROSPECT-20261008-688"
-      ],
-      "uncertainty": [
-        "Canonical organization/payer identity remains unresolved where marked.",
-        "Kopo Provider and Maua freshness is weaker than 2026-updated observations.",
-        "No current buyer problem, acceptance, invoice or payment is inferred."
-      ],
-      "cooldown": {
-        "scope": "Exact package IDs in this tranche",
-        "state": "SEARCHED_WITH_QUALIFIED_OBSERVATION",
-        "until": "Revisit only for genuinely new provenance/contact/problem evidence."
-      },
-      "next_alternatives": [
-        {
-          "coordinate": "Pacific islands / construction-supplier or fisheries cold-chain operating apps",
-          "why": "Same weak-geography lane, different asset-heavy sector."
-        },
-        {
-          "coordinate": "Southern Africa / manufacturer-distributor field operations outside payments",
-          "why": "Same high-information workflow family, different geography and source-key set."
-        }
-      ],
-      "chosen_next_action": "Stage this exact-key tranche and independently read it back, then expose only current problem-qualified records to iSCOPE.",
-      "unresolved_gaps": [
-        "Authoritative graph ingestion of these candidate records remains pending.",
-        "Commercial receipt search returned no attributable outcome record for these coordinates."
-      ],
-      "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH; 50K durable production proof is separate and already evidenced in Root Intake."
+        "FORX-PROSPECT-20261008-689",
+        "FORX-PROSPECT-20261008-690",
+        "FORX-PROSPECT-20261008-691",
+        "FORX-PROSPECT-20261008-692",
+        "FORX-PROSPECT-20261008-693",
+        "FORX-PROSPECT-20261008-694",
+        "FORX-PROSPECT-20261008-695"
+      ]
     },
     "consumed_sources": [
       {
-        "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
-        "revision": "ANLCKQkpgyB60Us9MOyetujsMwxlE-dw8L75kUelA92Pd0KcCmqDy_lMRBOYADAwqZgDrfWg4ZDbjE1YKwLjG8eozW4h1Pa9FD6nwmSGAw",
-        "observed_at": "2026-10-08T20:08:00+02:00"
+        "id": "overdrive/forx_prospect_buffer.json",
+        "revision": "f465e24fb8ba719a3536c349df1641040752ae70"
       },
       {
         "id": "3f28f8b56cd781bd945dcd8630253ef8",
-        "revision": "fetched_at_run_entry",
-        "observed_at": "2026-10-08T20:08:00+02:00"
+        "revision": "fetched_this_run"
       },
       {
-        "id": "1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc",
-        "revision": "Learning Weights LEARNING-001..020 + Coverage Ledger snapshot",
-        "observed_at": "2026-10-08T20:08:00+02:00"
-      },
-      {
-        "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "0d1f17110fcd16ac0dc35283c26fac727e700ecf",
-        "observed_at": "2026-10-08T20:08:00+02:00"
-      },
-      {
-        "id": "overdrive/pri/last_breath/",
-        "revision": "search:no_matching_receipts",
-        "observed_at": "2026-10-08T20:08:00+02:00"
+        "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
+        "revision": "fetched_this_run"
       }
     ],
     "apply_example": {
-      "prior_learning": [
-        "prior_receipt.next_alternatives[0]",
-        "LEARNING-015",
-        "LEARNING-016",
-        "LEARNING-018",
-        "LEARNING-020"
-      ],
-      "changed_action": "Executed the saved Pacific fisheries/cold-chain and asset-heavy lateral instead of repeating the prior Samoa/Fiji payments cluster; preserved Maua Seller as a distinct source observation while retaining its link to the already staged buyer-side operator.",
+      "prior_learning": "Prior receipt next_alternatives[1]: PNG/Vanuatu construction and industrial suppliers",
+      "changed_action": "Selected construction suppliers in PNG/Vanuatu and lateral Fiji fisheries operator rather than repeat wallet/payment apps",
       "source_pointers": [
-        "overdrive/forx_prospect_buffer.json:last_continuity.next_alternatives",
-        "Learning Weights!A16:J21"
+        "overdrive/forx_prospect_buffer.json:last_continuity.next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Fiji",
-        "Samoa",
+        "Papua New Guinea",
         "Vanuatu",
-        "Papua New Guinea"
+        "Fiji"
       ],
       "language": "English",
       "sector": [
-        "fisheries compliance",
-        "supplier/MSME operations",
-        "business directories",
-        "workforce/payroll",
-        "vehicle rental operations"
+        "construction supply",
+        "industrial materials",
+        "fisheries processing"
       ],
-      "category": "economic infrastructure",
-      "model": [
-        "B2B",
-        "B2B2C",
-        "internal operations"
-      ],
-      "problem": "first-party operating evidence only",
-      "size": "local and regional operators",
-      "source": [
-        "Google Play",
-        "official chamber/registry/directory sources"
-      ],
-      "surface": "apps plus public business-network rails",
+      "source": "official public business websites",
+      "surface": "individual official operator pages",
       "offer": null,
       "price": null
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 7,
-      "candidates_staged_pending_ingestion": 7,
-      "network_rails_discovered": 7,
+      "candidate_exact_keys_discovered": 6,
+      "candidates_staged_pending_ingestion": 6,
       "verified_graph_delta_claimed": 0,
-      "explored": 13,
+      "explored": 6,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261008-689",
-      "FORX-PROSPECT-20261008-690",
-      "FORX-PROSPECT-20261008-691",
-      "FORX-PROSPECT-20261008-692",
-      "FORX-PROSPECT-20261008-693",
-      "FORX-PROSPECT-20261008-694",
-      "FORX-PROSPECT-20261008-695"
-    ],
-    "network_result_keys": [
-      "google_play:com.fishidentifiers.fish_identifiers",
-      "url:https://ffia.com.fj/member-directory/",
-      "url:https://vcci.vu/about/",
-      "url:https://fijichamber.com/home/connect_with_members",
-      "url:https://samoachamber.ws/about/",
-      "url:https://www.businessregistries.gov.ws/guest/",
-      "url:https://fijitradeportal.gov.fj/en-gb/search-form/view/27"
+      "FORX-PROSPECT-20261008-696",
+      "FORX-PROSPECT-20261008-697",
+      "FORX-PROSPECT-20261008-698",
+      "FORX-PROSPECT-20261008-699",
+      "FORX-PROSPECT-20261008-700",
+      "FORX-PROSPECT-20261008-701"
     ],
     "uncertainty": [
-      "4FJ and the formal directories/registries are network evidence, not private-commercial candidate counts.",
-      "Maua Seller freshness is old despite distinct seller-side provenance.",
-      "No directory member, chamber member, registry entity or published population is promoted automatically."
+      "Official-site contact routes are observed, not delivery-tested.",
+      "Unmet buyer needs and canonical identity unresolved."
     ],
-    "cooldown": {
-      "scope": "Exact package and network URLs in this tranche",
-      "state": "SEARCHED_WITH_QUALIFIED_OBSERVATION",
-      "until": "Revisit only for new record-level evidence or freshness changes."
-    },
     "next_alternatives": [
       {
-        "coordinate": "Pacific islands / fisheries cold-chain operators and exporters by individual official identity",
-        "why": "Convert the network rail into bounded record-level evidence without using member counts."
+        "coordinate": "Fiji/Samoa fish exporters individual current official sites",
+        "why": "Lateral fisheries supply-chain depth"
       },
       {
-        "coordinate": "PNG/Vanuatu / construction and industrial suppliers through current official directories",
-        "why": "Same geography, different high-value asset-heavy sector with public identity rails."
+        "coordinate": "Vanuatu/PNG logistics cold-chain and contractor equipment service",
+        "why": "Different asset-heavy operating model"
       }
     ],
-    "chosen_next_action": "Persist and independently read back this candidate tranche; route separate network rails through existing Root Intake, then continue only with record-level exact keys.",
+    "chosen_next_action": "Continue country-first public-source exploration after readback",
     "unresolved_gaps": [
-      "Authoritative graph ingestion remains separate.",
-      "No attributable commercial response for these coordinates was found in repository receipt search."
+      "Production graph authority separate",
+      "Commercial feedback not attributed to these records"
     ],
-    "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH; NETWORK MEMBER COUNTS != AMX NODES."
+    "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH"
   }
 }
