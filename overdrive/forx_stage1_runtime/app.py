@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 
 import requests
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, Response
 
 app = FastAPI(title="AMX FORX Bulk Runtime")
 
@@ -577,8 +577,12 @@ def partition(idx: int):
     if idx < 1 or idx > len(parts):
         raise HTTPException(404)
     part = parts[idx - 1]
-    with open(part["path"], "r", encoding="utf-8") as fh:
-        return JSONResponse(json.load(fh))
+    # Return the exact stored bytes that were hashed when the partition was written.
+    # Re-serializing the parsed JSON can change the byte stream (for example Unicode
+    # escaping) and makes the durable readback SHA gate fail despite equivalent JSON.
+    with open(part["path"], "rb") as fh:
+        raw = fh.read()
+    return Response(content=raw, media_type="application/json")
 
 
 @app.get("/manifest")
