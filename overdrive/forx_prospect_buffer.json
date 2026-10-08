@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:35:00+02:00",
+  "last_updated": "2026-10-08T16:48:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -4169,6 +4169,146 @@
       "payer_hypothesis": "Eskhata Bank JSK / Eskhata Pay product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
       "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-231",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ING Bank Romania / ING SoftPOS",
+      "surface": "Google Play merchant softPOS; package eu.softpos.softposwrapper.ingro; Romania",
+      "observed_need": "Current Sep 4 2026 app turns NFC phones/tablets into merchant POS terminals; latest release includes connectivity optimization, screen changes and security updates.",
+      "outcome_space": [
+        "softPOS",
+        "merchant payments",
+        "connectivity",
+        "security"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=eu.softpos.softposwrapper.ingro",
+      "published": "2026-09-04",
+      "payer_hypothesis": "ING Bank Romania",
+      "fit_note": "Fresh Romania merchant-acceptance surface with direct local bank identity.",
+      "consumer_action": "iSCOPE validate merchant onboarding, connectivity/support burden and current acquiring-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-232",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PayPoint Services SRL / PayPoint ePOS",
+      "surface": "Google Play softPOS; package com.provisionpay.softpos.cecpaypoint; Romania",
+      "observed_need": "Current May 15 2026 app provides software POS for PayPoint merchants; release includes security update and general enhancements.",
+      "outcome_space": [
+        "softPOS",
+        "merchant payments",
+        "retail agents"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.provisionpay.softpos.cecpaypoint",
+      "published": "2026-05-15",
+      "payer_hypothesis": "PayPoint Services SRL",
+      "fit_note": "Direct Romania company/contact evidence and merchant-payment surface.",
+      "consumer_action": "iSCOPE validate merchant/agent onboarding, transaction support and current payment-acceptance needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-233",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UniCredit Bank Romania / UniCredit SoftPOS",
+      "surface": "Google Play merchant softPOS; package com.provisionpay.softpos.unicreditro; Romania",
+      "observed_need": "Current May 25 2026 app supports contactless Visa/Mastercard acceptance on Android phones, PIN entry and e-mail receipts.",
+      "outcome_space": [
+        "softPOS",
+        "merchant payments",
+        "receipts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.provisionpay.softpos.unicreditro",
+      "published": "2026-05-25",
+      "payer_hypothesis": "UniCredit Bank Romania",
+      "fit_note": "Direct Romania bank/operator evidence; no unresolved defect inferred.",
+      "consumer_action": "iSCOPE validate merchant onboarding/support and bounded current acquiring need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-234",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Eurobank Bulgaria AD / Smart POS by Postbank",
+      "surface": "Google Play merchant softPOS; package cloud.phos.bgpostbank; Bulgaria",
+      "observed_need": "Current May 19 2026 service turns merchant smartphones into NFC POS terminals after bank approval/registration; targeted at small businesses through corporates.",
+      "outcome_space": [
+        "softPOS",
+        "merchant onboarding",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=cloud.phos.bgpostbank",
+      "published": "2026-05-19",
+      "payer_hypothesis": "Eurobank Bulgaria AD",
+      "fit_note": "Current Bulgarian acquiring surface with direct legal identity.",
+      "consumer_action": "iSCOPE validate approval/onboarding friction, merchant activation and support burden."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-235",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BORICA AD / bPOS",
+      "surface": "Google Play softPOS; package bg.borica.bpos; Bulgaria",
+      "observed_need": "Current Jul 24 2026 app turns mobile devices into contactless card-acceptance POS; latest release notes UX improvements.",
+      "outcome_space": [
+        "softPOS",
+        "merchant payments",
+        "UX"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=bg.borica.bpos",
+      "published": "2026-07-24",
+      "payer_hypothesis": "BORICA AD",
+      "fit_note": "Fresh Bulgaria merchant-payment infrastructure with direct local identity.",
+      "consumer_action": "iSCOPE validate merchant activation, UX/support and distribution needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-236",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LUKANET OOD / Barsy.POS",
+      "surface": "Google Play retail-management POS; package com.lukanet.barsy.pos; Bulgaria",
+      "observed_need": "Current Sep 24 2026 app manages retail stores and integrates with multiple SoftPOS solutions so the phone can also accept card payments.",
+      "outcome_space": [
+        "retail management",
+        "POS",
+        "inventory",
+        "softPOS"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.lukanet.barsy.pos",
+      "published": "2026-09-24",
+      "payer_hypothesis": "LUKANET OOD / Barsy",
+      "fit_note": "Very fresh Bulgarian SME retail-operations surface.",
+      "consumer_action": "iSCOPE validate onboarding, inventory/address workflow, SoftPOS integration and current merchant support need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-237",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NLB d.d. / NLB Smart POS Slovenija",
+      "surface": "Google Play merchant softPOS; package com.payten.nlb.slovenia; Slovenia",
+      "observed_need": "Portable merchant POS without extra equipment; listed update Dec 23 2025, so freshness is lower than 2026 observations.",
+      "outcome_space": [
+        "softPOS",
+        "merchant payments",
+        "SME acquiring"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.payten.nlb.slovenia",
+      "published": "2025-12-23",
+      "payer_hypothesis": "NLB d.d.",
+      "fit_note": "Direct Slovenian bank/operator identity retained with lower freshness.",
+      "consumer_action": "iSCOPE verify current 2026 service status, merchant onboarding and support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-238",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Space Invoices / Apollo Invoicing",
+      "surface": "Google Play POS + compliant invoicing; package com.spaceinvoices.mobile; Slovenia/Croatia compliance markets",
+      "observed_need": "Current Oct 4 2026 first Android release combines POS register, invoices/customers/items, SumUp card payments, receipt printing, revenue insights and fiscally compliant receipts for Slovenia and Croatia.",
+      "outcome_space": [
+        "invoicing",
+        "POS",
+        "fiscal compliance",
+        "payments",
+        "SME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.spaceinvoices.mobile",
+      "published": "2026-10-04",
+      "payer_hypothesis": "Apollo / Space Invoices product owner",
+      "fit_note": "Extremely fresh merchant workflow; legal developer is US-based while product explicitly targets Slovenia/Croatia fiscal compliance.",
+      "consumer_action": "iSCOPE validate local merchant adoption, fiscal-onboarding/support and current product-growth needs."
     }
   ]
 }
