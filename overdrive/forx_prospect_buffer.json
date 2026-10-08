@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:32:00+02:00",
+  "last_updated": "2026-10-08T16:35:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -3958,6 +3958,217 @@
       "payer_hypothesis": "NLB Komercijalna banka AD Beograd",
       "fit_note": "Direct Serbia bank/operator identity; retained with lower freshness.",
       "consumer_action": "iSCOPE verify current 2026 service status, merchant onboarding/support and any bounded current need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-218",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ATD SH.P.K. / Billing",
+      "surface": "Kosovo POS/fiscalization; package al.billing.pos",
+      "observed_need": "Business POS, invoicing, inventory, payroll/accounting and ATK SEF fiscalization.",
+      "outcome_space": [
+        "POS",
+        "fiscal compliance",
+        "inventory",
+        "accounting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=al.billing.pos",
+      "payer_hypothesis": "ATD SH.P.K. / Billing product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-219",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Embedded Systems Design and Production SH.P.K. / easyPos Kosova",
+      "surface": "Kosovo certified fiscal POS; package com.esdp.easypos.xk",
+      "observed_need": "Certified SEF fiscal sales, receipts, operators, product/customer management and local checkout.",
+      "outcome_space": [
+        "POS",
+        "fiscalization",
+        "operator controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.esdp.easypos.xk",
+      "payer_hypothesis": "Embedded Systems Design and Production SH.P.K. / easyPos Kosova product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-220",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "IMON International CJSC MDO / IMON Merchant",
+      "surface": "Tajikistan merchant banking; package tj.imcon.wallet.merchant.imon",
+      "observed_need": "Merchant cash-desk status, account support, statements and payment transactions.",
+      "outcome_space": [
+        "merchant banking",
+        "cash desk",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=tj.imcon.wallet.merchant.imon",
+      "payer_hypothesis": "IMON International CJSC MDO / IMON Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-221",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BPAY SRL / Bpay Merchant",
+      "surface": "Moldova merchant payments; package com.bpaymerchant",
+      "observed_need": "Merchant acceptance via MIA QR and Mastercard.",
+      "outcome_space": [
+        "merchant payments",
+        "QR",
+        "cards"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bpaymerchant",
+      "payer_hypothesis": "BPAY SRL / Bpay Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-222",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NLB Banka AD Podgorica / NLB Smart POS",
+      "surface": "Montenegro mobile POS; package com.payten.nlb.podgorica",
+      "observed_need": "Certified NFC smartphone POS for legal entities.",
+      "outcome_space": [
+        "softPOS",
+        "merchant acquiring",
+        "NFC"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.payten.nlb.podgorica",
+      "payer_hypothesis": "NLB Banka AD Podgorica / NLB Smart POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-223",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Istiqboli Dushanbe / Prinesi Store",
+      "surface": "Tajikistan store operations; package com.prinesi.store",
+      "observed_need": "Store owners manage online orders, delivery, inventory and customer feedback.",
+      "outcome_space": [
+        "store operations",
+        "orders",
+        "inventory",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.prinesi.store",
+      "payer_hypothesis": "Istiqboli Dushanbe / Prinesi Store product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-224",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Rubicon-sha / Pago Biznes",
+      "surface": "Albania merchant/business payments; package al.rbcn.pagobusiness",
+      "observed_need": "Card POS/vPOS, payment links, sales detail, account transfers and accounting reports.",
+      "outcome_space": [
+        "merchant acquiring",
+        "payment links",
+        "business banking"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=al.rbcn.pagobusiness",
+      "payer_hypothesis": "Rubicon-sha / Pago Biznes product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-225",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "StarPro L.L.C / FaturaPRO",
+      "surface": "Kosovo business operations; package org.faturapro.app",
+      "observed_need": "Invoicing, POS, fiscal receipts, inventory, expenses, reconciliation, team roles and offline sync.",
+      "outcome_space": [
+        "invoicing",
+        "POS",
+        "inventory",
+        "reconciliation"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=org.faturapro.app",
+      "payer_hypothesis": "StarPro L.L.C / FaturaPRO product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-226",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PRESTOPAY DOO / Presto POS",
+      "surface": "Montenegro merchant payments; package me.prestopay.pos",
+      "observed_need": "Registered merchants accept cryptographically verified QR payments.",
+      "outcome_space": [
+        "merchant payments",
+        "QR",
+        "closed-loop payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=me.prestopay.pos",
+      "payer_hypothesis": "PRESTOPAY DOO / Presto POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-227",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Eskhata Bank JSK / Eskhata Business",
+      "surface": "Tajikistan business banking; package com.eskhata.business",
+      "observed_need": "Business payments/transfers, FX, templates, multicompany controls and 2FA.",
+      "outcome_space": [
+        "business banking",
+        "multicompany",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.eskhata.business",
+      "payer_hypothesis": "Eskhata Bank JSK / Eskhata Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-228",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NLB BANKA D.D. SARAJEVO / NLB Smart POS",
+      "surface": "Bosnia and Herzegovina mobile POS; package com.payten.nlb.sarajevo",
+      "observed_need": "Certified NFC smartphone POS for legal entities in the Federation of Bosnia and Herzegovina.",
+      "outcome_space": [
+        "softPOS",
+        "merchant acquiring",
+        "NFC"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.payten.nlb.sarajevo",
+      "payer_hypothesis": "NLB BANKA D.D. SARAJEVO / NLB Smart POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-229",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "International Bank of Tajikistan / IBT Business",
+      "surface": "Tajikistan business banking; package tj.ibt.business",
+      "observed_need": "Business/sole-proprietor remote banking with payment signing, balances and transaction tracking.",
+      "outcome_space": [
+        "business banking",
+        "payments",
+        "sole proprietors"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=tj.ibt.business",
+      "payer_hypothesis": "International Bank of Tajikistan / IBT Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-230",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Eskhata Bank JSK / Eskhata Pay",
+      "surface": "Tajikistan business payment tracking; package com.eskhata.pay",
+      "observed_need": "Business payment tracking and payment notifications.",
+      "outcome_space": [
+        "payment tracking",
+        "merchant operations",
+        "notifications"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.eskhata.pay",
+      "payer_hypothesis": "Eskhata Bank JSK / Eskhata Pay product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact Play package and operating surface are evidenced; specific unresolved pain is not inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, active need, buyer route and commercial relevance before PRI action."
     }
   ]
 }
