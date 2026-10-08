@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:06:00+02:00",
+  "last_updated": "2026-10-08T15:55:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -2857,6 +2857,101 @@
       "payer_hypothesis": "RWK AFRICA LIMITED",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Kenya company/contact and deep bookkeeping/compliance workflow; minor fixes are maintenance evidence, not proof of current pain.",
       "consumer_action": "iSCOPE validate merchant/accountant adoption, eTIMS/payment/reporting support burden and current bounded growth or automation need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-114",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ETWINTECH LTD / Maketi",
+      "surface": "Google Play Pacific classifieds marketplace; package com.maketi; multi-island operating market",
+      "observed_need": "Current July 2026 app is built for Pacific island communities, supporting local listings, jobs/services, real estate, seller chat, local events and island/village discovery across Fiji, PNG, Solomon Islands, Vanuatu, Samoa, Tonga, Kiribati, Tuvalu, Cook Islands, Niue, Nauru, Tokelau, Pitcairn, Norfolk Island and New Zealand.",
+      "outcome_space": [
+        "classifieds",
+        "local services",
+        "jobs",
+        "SME visibility",
+        "cross-island marketplace"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.maketi",
+      "published": "2026-07-03",
+      "payer_hypothesis": "ETWINTECH LTD / Maketi product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. One exact package with many operating-market edges; store once, preserve multi-country relationships rather than cloning into multiple nodes.",
+      "consumer_action": "iSCOPE validate adoption, seller/listing acquisition, moderation/trust workload and which island markets are currently active."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-116",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tuvalu Telecommunications Corporation / Tuvalu Telecom",
+      "surface": "Google Play telecom billing/customer management; package com.tuvalu.user; Tuvalu",
+      "observed_need": "Current July 2026 billing app exposes subscriber billing statements, multiple payment options and analytics/reporting for TTC's 4G operation.",
+      "outcome_space": [
+        "telecom billing",
+        "payments",
+        "customer operations",
+        "analytics",
+        "revenue management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tuvalu.user",
+      "published": "2026-07-20",
+      "payer_hypothesis": "Tuvalu Telecommunications Corporation",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Separate exact package from reseller app; likely same canonical organization with distinct operating surface.",
+      "consumer_action": "iSCOPE reconcile to TTC canonical entity if verified and assess billing/support/revenue-management needs once, without duplicate outbound."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-117",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Amalgamated Telecom Holdings (Kiribati) Limited / M-PAiSA Kiribati",
+      "surface": "Google Play mobile wallet; package com.kiribatiwalletapp; Kiribati",
+      "observed_need": "Kiribati mobile wallet supports merchant QR payments, bills, top-ups, cash-in/out and agent access across remote islands; local company address, phone and support are public.",
+      "outcome_space": [
+        "mobile money",
+        "merchant payments",
+        "agent network",
+        "financial inclusion",
+        "bill pay"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kiribatiwalletapp",
+      "published": "2025-12-01",
+      "payer_hypothesis": "Amalgamated Telecom Holdings (Kiribati) Limited / Vodafone Kiribati",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Lower release freshness than 2026 apps but direct Kiribati legal/operator evidence and active merchant/agent network are material.",
+      "consumer_action": "iSCOPE verify current 2026 app/service status, agent/merchant onboarding and support or reconciliation needs before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-118",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Solomon Telekom Company Limited / M-Selen Agent",
+      "surface": "Google Play mobile-money agent operations; package com.eclectics.mobilemoney.ourtelekom.agencyapp; Solomon Islands",
+      "observed_need": "Current June 2026 agent app supports customer onboarding, identity verification, deposits and withdrawals for M-Selen agents; latest update includes SIM registration and cash-deposit changes.",
+      "outcome_space": [
+        "agent network",
+        "mobile money",
+        "KYC",
+        "cash operations",
+        "customer onboarding"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.eclectics.mobilemoney.ourtelekom.agencyapp",
+      "published": "2026-06-03",
+      "payer_hypothesis": "Solomon Telekom Company Limited",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. High-value operator-side financial-services surface with direct local company/support evidence.",
+      "consumer_action": "iSCOPE validate agent onboarding, KYC/SIM-registration workload, cash reconciliation and current support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-120",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Bank of the Federated States of Micronesia / BFSM",
+      "surface": "Google Play mobile banking; package com.malauzai.DH12001; Federated States of Micronesia",
+      "observed_need": "FSM bank app supports bill pay, check deposit, balances, transactions, transfers, ATM/branch location and customer service. App release is 2025 but verified 2026 user reviews indicate continuing use.",
+      "outcome_space": [
+        "banking",
+        "payments",
+        "remote service",
+        "customer support",
+        "financial operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.malauzai.DH12001",
+      "published": "2025-05-28",
+      "payer_hypothesis": "Bank of the Federated States of Micronesia",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Lower release freshness but current 2026 activity is evidenced by user reviews; likely ecosystem/financial-infrastructure value exceeds direct SMME targeting value.",
+      "consumer_action": "iSCOPE verify current product ownership and whether any bounded current operational/customer-service problem exists; otherwise retain as FSM financial-infrastructure evidence."
     }
   ]
 }
