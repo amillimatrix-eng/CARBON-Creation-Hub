@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:22:00+02:00",
+  "last_updated": "2026-10-08T16:26:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -3328,6 +3328,340 @@
       "payer_hypothesis": "HavEats / Pivot product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence; specific unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-180",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "EPAY MERCHANT MW",
+      "surface": "Malawi merchant payments; package com.epay.epaymerchantmw",
+      "observed_need": "Merchant payment acceptance, token/ticket redemption and settlement-history operations.",
+      "outcome_space": [
+        "merchant payments",
+        "settlement",
+        "merchant operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.epay.epaymerchantmw",
+      "payer_hypothesis": "EPAY MERCHANT MW product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-181",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LiFa Merchant / LiFa Holdings",
+      "surface": "Malawi merchant delivery operations; package com.lifaholdingslimited.lifamerchant",
+      "observed_need": "Merchant order, delivery and earnings operations.",
+      "outcome_space": [
+        "orders",
+        "delivery",
+        "merchant earnings"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.lifaholdingslimited.lifamerchant",
+      "payer_hypothesis": "LiFa Merchant / LiFa Holdings product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-182",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CENTRIKA LTD / E-MO Agents",
+      "surface": "Rwanda agent/merchant onboarding; package rw.centrika.emo.agents",
+      "observed_need": "Merchant registration and payment-agent onboarding operations.",
+      "outcome_space": [
+        "merchant onboarding",
+        "agent network",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=rw.centrika.emo.agents",
+      "payer_hypothesis": "CENTRIKA LTD / E-MO Agents product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-183",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "cGrate Zambia / 543 Merchant",
+      "surface": "Zambia merchant network; package com.cgrate.merchant_app",
+      "observed_need": "Cash-out merchant/store-network operating surface.",
+      "outcome_space": [
+        "merchant network",
+        "cash-out",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.cgrate.merchant_app",
+      "payer_hypothesis": "cGrate Zambia / 543 Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-184",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SISP / Vinti4 Comerciante",
+      "surface": "Cabo Verde merchant payments; package cv.vinti4.comerciante",
+      "observed_need": "Merchant POS movement, closing and invoice-management operations.",
+      "outcome_space": [
+        "POS",
+        "merchant payments",
+        "invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=cv.vinti4.comerciante",
+      "payer_hypothesis": "SISP / Vinti4 Comerciante product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-185",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SISP / POS Televinti4",
+      "surface": "Cabo Verde QR merchant payments; package pt.bizfirst.cv.bizmobile.merchant",
+      "observed_need": "QR merchant-payment acceptance surface.",
+      "outcome_space": [
+        "QR payments",
+        "merchant acceptance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=pt.bizfirst.cv.bizmobile.merchant",
+      "payer_hypothesis": "SISP / POS Televinti4 product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-186",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HURI MONEY / Comores Telecom",
+      "surface": "Comoros merchant payments; package km.wakati.app",
+      "observed_need": "Mobile merchant acceptance and transaction management for merchants, restaurants and service providers.",
+      "outcome_space": [
+        "merchant payments",
+        "restaurants",
+        "service providers"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=km.wakati.app",
+      "payer_hypothesis": "HURI MONEY / Comores Telecom product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-187",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Digicash South Sudan",
+      "surface": "South Sudan wallet/merchant operations; package com.digicash.digital.digicash",
+      "observed_need": "Merchant wallet, transfer and utility-payment operations.",
+      "outcome_space": [
+        "wallet",
+        "merchant payments",
+        "utilities"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.digicash.digital.digicash",
+      "payer_hypothesis": "Digicash South Sudan product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-188",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SHA4S SOLUTIONS / Yazol Store",
+      "surface": "South Sudan store operations; package com.yazol.store",
+      "observed_need": "Restaurant/grocery merchant order, store-info and delivery coordination.",
+      "outcome_space": [
+        "store operations",
+        "orders",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.yazol.store",
+      "payer_hypothesis": "SHA4S SOLUTIONS / Yazol Store product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-189",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TenderSoko Ltd",
+      "surface": "Procurement/supplier network app; package com.tendersoko.app",
+      "observed_need": "Procurement opportunities and supplier/company profile discovery across named African markets.",
+      "outcome_space": [
+        "procurement",
+        "supplier discovery",
+        "B2B"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tendersoko.app",
+      "payer_hypothesis": "TenderSoko Ltd product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-190",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Jeko Inc / Jeko Business",
+      "surface": "Africa-targeted merchant payments; package com.jeko.business",
+      "observed_need": "Merchant QR/mobile-money payment-management surface; country attribution unresolved.",
+      "outcome_space": [
+        "merchant payments",
+        "QR",
+        "mobile money"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.jeko.business",
+      "payer_hypothesis": "Jeko Inc / Jeko Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-191",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "K-Tech SAS / Kwallet Africa Merchant",
+      "surface": "Africa-targeted merchant transactions; package com.kwallet.merchant",
+      "observed_need": "Merchant payments and business transaction-management surface; country attribution unresolved.",
+      "outcome_space": [
+        "merchant payments",
+        "business transactions"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kwallet.merchant",
+      "payer_hypothesis": "K-Tech SAS / Kwallet Africa Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-192",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TELEMOR / Mosan",
+      "surface": "Timor-Leste mobile wallet; package com.mosan.eu",
+      "observed_need": "Wallet, mobile payments and bank-transfer operations; current public review evidence includes OTP/support friction requiring iSCOPE validation.",
+      "outcome_space": [
+        "wallet",
+        "payments",
+        "support reliability"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mosan.eu",
+      "payer_hypothesis": "TELEMOR / Mosan product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-193",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TELEMOR / Mosan Agent",
+      "surface": "Timor-Leste mobile-money agent operations; package com.mosan.agent",
+      "observed_need": "Authorized agent operations, customer registration/update and service controls.",
+      "outcome_space": [
+        "agent operations",
+        "customer onboarding",
+        "mobile money"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mosan.agent",
+      "payer_hypothesis": "TELEMOR / Mosan Agent product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-194",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AONRAIN SERVICES LIMITED / Pay Aonrain",
+      "surface": "Kiribati payment platform; package com.aonrainwallet",
+      "observed_need": "Merchant/customer payment confirmation and wallet operations.",
+      "outcome_space": [
+        "payments",
+        "merchant acceptance",
+        "wallet"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.aonrainwallet",
+      "payer_hypothesis": "AONRAIN SERVICES LIMITED / Pay Aonrain product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-195",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KOLA DIGITAL FINANCE / KolaKash Merchant",
+      "surface": "Liberia merchant payments; package com.reewire.kolakashmerchant",
+      "observed_need": "Merchant setup, multi-branch/cashier management, reconciliation and QR/bill-payment acceptance.",
+      "outcome_space": [
+        "merchant payments",
+        "cashier controls",
+        "reconciliation"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.reewire.kolakashmerchant",
+      "payer_hypothesis": "KOLA DIGITAL FINANCE / KolaKash Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-196",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Digital Liberia",
+      "surface": "Liberia payment/commerce ecosystem; package com.digitalliberia",
+      "observed_need": "Nation-scale payment and commerce operating surface.",
+      "outcome_space": [
+        "commerce",
+        "payments",
+        "digital ecosystem"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.digitalliberia",
+      "payer_hypothesis": "Digital Liberia product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-197",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NPONTU TECHNOLOGY / e-Liberia",
+      "surface": "Liberia digital-government services; package gov.npontu.eliberia",
+      "observed_need": "Business access to permits/licenses, government payments and status updates.",
+      "outcome_space": [
+        "digital government",
+        "business permits",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=gov.npontu.eliberia",
+      "payer_hypothesis": "NPONTU TECHNOLOGY / e-Liberia product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-198",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TECH'N GOODWILL / SafulPay",
+      "surface": "Sierra Leone merchant/agent wallet; package com.techengood.safulpay",
+      "observed_need": "Merchant/agent wallets, cash-out and transaction operations.",
+      "outcome_space": [
+        "merchant wallet",
+        "agent operations",
+        "cash-out"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.techengood.safulpay",
+      "payer_hypothesis": "TECH'N GOODWILL / SafulPay product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-199",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SMART SYSTEMS (SL) LIMITED / SmartPay-SL",
+      "surface": "Sierra Leone merchant payment platform; package com.smartsystems.smartpay",
+      "observed_need": "POS merchant payments, online gateway, B2P/G2P and bill-payment operations.",
+      "outcome_space": [
+        "POS",
+        "payment gateway",
+        "bill payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.smartsystems.smartpay",
+      "payer_hypothesis": "SMART SYSTEMS (SL) LIMITED / SmartPay-SL product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-200",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SMART SYSTEMS (SL) LIMITED / Apex",
+      "surface": "Sierra Leone payment platform; package com.smartsystems.apex",
+      "observed_need": "Merchant POS and online payment operating surface.",
+      "outcome_space": [
+        "POS",
+        "online payments",
+        "merchant acceptance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.smartsystems.apex",
+      "payer_hypothesis": "SMART SYSTEMS (SL) LIMITED / Apex product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public source-native package evidence. Product surface is evidence; unresolved pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, contact route, active need and buyer relevance before PRI action."
     }
   ]
 }
