@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T19:28:00+02:00",
+  "last_updated": "2026-10-08T19:42:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -6352,6 +6352,138 @@
       "payer_hypothesis": "Franchise Expo Algeria organizer/commercial owner",
       "fit_note": "Contactable B2B event candidate with strong first-party template/shortcode leakage on sponsor/contact surfaces.",
       "consumer_action": "iSCOPE revalidate preferred current phone route, dedupe/contact history, and assess a bounded sponsor/contact conversion cleanup."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-339",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Shockright Plumbing",
+      "surface": "Plumbing/maintenance contractor; Botswana",
+      "observed_need": "Maun-based plumbing business provides residential, commercial and industrial plumbing, leak detection, geysers, drains, solar/heat pumps and emergency repairs with direct quote/contact route.",
+      "outcome_space": [
+        "plumbing",
+        "maintenance",
+        "emergency repair",
+        "solar heat",
+        "field service"
+      ],
+      "source": "https://www.shockrightplumbing.co.bw/",
+      "published": "2026",
+      "payer_hypothesis": "Shockright Plumbing",
+      "fit_note": "Direct Botswana local-trade operator. No missed-enquiry or admin problem inferred.",
+      "consumer_action": "iSCOPE validate quote intake, emergency routing, site scheduling, maintenance reminders and post-service review/follow-up workload."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-340",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Hailhydro",
+      "surface": "Water/plumbing/irrigation field-service operator; Botswana",
+      "observed_need": "Botswana operator offers 24/7 plumbing repairs, leak detection, irrigation design/installation and smart-controller automation with direct phone/WhatsApp route.",
+      "outcome_space": [
+        "plumbing",
+        "irrigation",
+        "field service",
+        "emergency repair",
+        "automation"
+      ],
+      "source": "https://hailhydro.odoo.com/our-services",
+      "published": "2026",
+      "payer_hypothesis": "Hailhydro",
+      "fit_note": "Direct Botswana service-business surface with explicit one-call/contact route.",
+      "consumer_action": "iSCOPE validate enquiry triage, inspection/quote scheduling, emergency dispatch, maintenance follow-up and review workflow."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-341",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MasterLine Solution Ltd",
+      "surface": "Electrical/plumbing/HVAC field-service operator; Rwanda",
+      "observed_need": "Kigali contractor provides electrical installation/repair, plumbing, air-conditioning, fire-safety installation and ongoing maintenance/support with estimate and contact forms.",
+      "outcome_space": [
+        "HVAC",
+        "electrical",
+        "plumbing",
+        "maintenance",
+        "field service"
+      ],
+      "source": "https://www.masterlinesolution.rw/about-us/services",
+      "published": "2026",
+      "payer_hypothesis": "MasterLine Solution Ltd",
+      "fit_note": "Direct Rwanda trade/engineering operator and quote workflow. No weakness inferred.",
+      "consumer_action": "iSCOPE validate quote/site-assessment intake, field scheduling, maintenance-plan reminders and after-service follow-up."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-342",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AGROPTECH Ltd",
+      "surface": "Pest-control/agronomy field-service operator; Rwanda",
+      "observed_need": "Kigali company provides fumigation and pest-control services including termite, rodent, mosquito, snake and agricultural pest treatment with estimation/contact route.",
+      "outcome_space": [
+        "pest control",
+        "fumigation",
+        "field service",
+        "agronomy"
+      ],
+      "source": "https://agroptech.com/about-us/",
+      "published": "2026",
+      "payer_hypothesis": "AGROPTECH Ltd",
+      "fit_note": "Direct Rwanda owner/operator service evidence.",
+      "consumer_action": "iSCOPE validate estimation intake, service scheduling, recurring-treatment reminders, customer follow-up and review generation."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-343",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Yonat",
+      "surface": "Electrical/plumbing/home-automation contractor; Mauritius",
+      "observed_need": "Mauritius founder-led service company provides plumbing, electrical, air-conditioning, home automation, emergency repairs, maintenance contracts and site-visit quotations across the island.",
+      "outcome_space": [
+        "plumbing",
+        "electrical",
+        "HVAC",
+        "home automation",
+        "maintenance"
+      ],
+      "source": "https://yonat.mu/about/",
+      "published": "2026",
+      "payer_hypothesis": "Yonat",
+      "fit_note": "Direct Mauritius trade-business evidence with founder/operations structure and quote/service routes.",
+      "consumer_action": "iSCOPE validate enquiry-to-site-visit conversion, emergency routing, maintenance-contract renewal and after-service follow-up."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-344",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Forty Below Refrigeration",
+      "surface": "Small HVAC/refrigeration/solar contractor; Zambia",
+      "observed_need": "Lusaka small company designs/builds cold/freezer rooms, services HVAC/refrigeration and installs/maintains residential solar systems, solar geysers and pumps.",
+      "outcome_space": [
+        "HVAC",
+        "refrigeration",
+        "solar",
+        "maintenance",
+        "field service"
+      ],
+      "source": "https://www.fortybelowrefrigeration.com/",
+      "published": "2026",
+      "payer_hypothesis": "Forty Below Refrigeration",
+      "fit_note": "Direct Zambia small-operator profile with phone/email. Strong fit for time-poor field-service hypothesis; no current problem inferred.",
+      "consumer_action": "iSCOPE validate quote intake, site survey, service dispatch, maintenance reminders and project/customer follow-up."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-345",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Naphdec Electrical & Construction Ltd",
+      "surface": "Electrical/solar/water/plumbing contractor; Zambia",
+      "observed_need": "Lusaka company provides electrical, solar, pumping, plumbing, refrigeration, air-conditioning, generator and construction services with direct WhatsApp and quotation route.",
+      "outcome_space": [
+        "electrical",
+        "solar",
+        "plumbing",
+        "HVAC",
+        "field service"
+      ],
+      "source": "https://naphdec.com/",
+      "published": "2026",
+      "payer_hypothesis": "Naphdec Electrical & Construction Ltd",
+      "fit_note": "Direct Zambia field-service operator with multi-trade scope.",
+      "consumer_action": "iSCOPE validate quote qualification, site scheduling, multi-service routing, maintenance follow-up and customer continuity."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
