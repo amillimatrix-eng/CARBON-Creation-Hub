@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:24:00+02:00",
+  "last_updated": "2026-10-08T16:58:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -2859,7 +2859,7 @@
       "consumer_action": "iSCOPE validate merchant/accountant adoption, eTIMS/payment/reporting support burden and current bounded growth or automation need."
     },
     {
-      "id": "FORX-PROSPECT-20261008-114",
+      "id": "FORX-PROSPECT-20261008-153",
       "state": "RAW_UNQUALIFIED",
       "organization": "ETWINTECH LTD / Maketi",
       "surface": "Google Play Pacific classifieds marketplace; package com.maketi; multi-island operating market",
@@ -2878,7 +2878,7 @@
       "consumer_action": "iSCOPE validate adoption, seller/listing acquisition, moderation/trust workload and which island markets are currently active."
     },
     {
-      "id": "FORX-PROSPECT-20261008-116",
+      "id": "FORX-PROSPECT-20261008-154",
       "state": "RAW_UNQUALIFIED",
       "organization": "Tuvalu Telecommunications Corporation / Tuvalu Telecom",
       "surface": "Google Play telecom billing/customer management; package com.tuvalu.user; Tuvalu",
@@ -2897,7 +2897,7 @@
       "consumer_action": "iSCOPE reconcile to TTC canonical entity if verified and assess billing/support/revenue-management needs once, without duplicate outbound."
     },
     {
-      "id": "FORX-PROSPECT-20261008-117",
+      "id": "FORX-PROSPECT-20261008-155",
       "state": "RAW_UNQUALIFIED",
       "organization": "Amalgamated Telecom Holdings (Kiribati) Limited / M-PAiSA Kiribati",
       "surface": "Google Play mobile wallet; package com.kiribatiwalletapp; Kiribati",
@@ -2916,7 +2916,7 @@
       "consumer_action": "iSCOPE verify current 2026 app/service status, agent/merchant onboarding and support or reconciliation needs before qualification."
     },
     {
-      "id": "FORX-PROSPECT-20261008-118",
+      "id": "FORX-PROSPECT-20261008-156",
       "state": "RAW_UNQUALIFIED",
       "organization": "Solomon Telekom Company Limited / M-Selen Agent",
       "surface": "Google Play mobile-money agent operations; package com.eclectics.mobilemoney.ourtelekom.agencyapp; Solomon Islands",
@@ -2935,7 +2935,7 @@
       "consumer_action": "iSCOPE validate agent onboarding, KYC/SIM-registration workload, cash reconciliation and current support needs."
     },
     {
-      "id": "FORX-PROSPECT-20261008-120",
+      "id": "FORX-PROSPECT-20261008-157",
       "state": "RAW_UNQUALIFIED",
       "organization": "Bank of the Federated States of Micronesia / BFSM",
       "surface": "Google Play mobile banking; package com.malauzai.DH12001; Federated States of Micronesia",
@@ -9353,5 +9353,48 @@
       "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
-  "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
+  "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
+  "integrity_note": {
+    "duplicate_candidate_id_repair": {
+      "repaired_at": "2026-10-08T16:58:00+02:00",
+      "basis": "Reassigned only later duplicate candidate IDs into the five pre-existing unused sequence numbers; preserved all candidate records, sources and provenance.",
+      "repairs": [
+        {
+          "idx": 152,
+          "oldId": "FORX-PROSPECT-20261008-114",
+          "newId": "FORX-PROSPECT-20261008-153",
+          "organization": "ETWINTECH LTD / Maketi",
+          "source": "https://play.google.com/store/apps/details?id=com.maketi"
+        },
+        {
+          "idx": 153,
+          "oldId": "FORX-PROSPECT-20261008-116",
+          "newId": "FORX-PROSPECT-20261008-154",
+          "organization": "Tuvalu Telecommunications Corporation / Tuvalu Telecom",
+          "source": "https://play.google.com/store/apps/details?id=com.tuvalu.user"
+        },
+        {
+          "idx": 154,
+          "oldId": "FORX-PROSPECT-20261008-117",
+          "newId": "FORX-PROSPECT-20261008-155",
+          "organization": "Amalgamated Telecom Holdings (Kiribati) Limited / M-PAiSA Kiribati",
+          "source": "https://play.google.com/store/apps/details?id=com.kiribatiwalletapp"
+        },
+        {
+          "idx": 155,
+          "oldId": "FORX-PROSPECT-20261008-118",
+          "newId": "FORX-PROSPECT-20261008-156",
+          "organization": "Solomon Telekom Company Limited / M-Selen Agent",
+          "source": "https://play.google.com/store/apps/details?id=com.eclectics.mobilemoney.ourtelekom.agencyapp"
+        },
+        {
+          "idx": 156,
+          "oldId": "FORX-PROSPECT-20261008-120",
+          "newId": "FORX-PROSPECT-20261008-157",
+          "organization": "Bank of the Federated States of Micronesia / BFSM",
+          "source": "https://play.google.com/store/apps/details?id=com.malauzai.DH12001"
+        }
+      ]
+    }
+  }
 }
