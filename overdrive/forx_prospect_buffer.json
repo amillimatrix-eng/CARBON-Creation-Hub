@@ -6617,6 +6617,233 @@
       "payer_hypothesis": "VSL Travel",
       "fit_note": "Direct Sierra Leone tourism/DMC operator with broad service workflow.",
       "consumer_action": "iSCOPE validate multi-service intake, itinerary/proposal assembly, booking/document follow-up, conference lead handling and customer continuity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-353",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Your Lisbon Home",
+      "domain": "yourlisbonhome.com",
+      "country": "Portugal",
+      "sector": "Short-stay accommodation / hospitality",
+      "surface": "Official accommodation website; Lisbon, Portugal",
+      "observed_need": "The live homepage explicitly says the website is under construction and sends prospective guests directly to phone/email for bookings while still advertising apartments, parking and Wi‑Fi. This is a directly observed booking-path/digital-presence gap.",
+      "problem_signal": {
+        "family": "booking path / web completion",
+        "evidence": "Official homepage states website under construction and routes booking enquiries to phone/email instead of a complete booking journey.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "booking@yourlisbonhome.com",
+        "+351 967 363 921"
+      ],
+      "outcome_space": [
+        "booking UX",
+        "web completion",
+        "lead capture",
+        "hospitality conversion"
+      ],
+      "source": "https://www.yourlisbonhome.com/",
+      "provenance": "Official accommodation website; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Your Lisbon Home owner/operator",
+      "fit_note": "Contactable hospitality candidate with explicit first-party incomplete booking surface.",
+      "consumer_action": "iSCOPE verify duplicate/contact history, active inventory and whether a bounded booking/lead-capture improvement is commercially relevant."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-354",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Molde Design Weddings",
+      "domain": "moldedesignweddings.com",
+      "country": "Portugal",
+      "sector": "Wedding stationery / creative design",
+      "surface": "Official wedding-design studio website; Lisbon, Portugal",
+      "observed_need": "The live site explicitly says WEBSITE UNDER CONSTRUCTION while presenting active services and directing prospects to email/WhatsApp. This is a directly observed lead-conversion and portfolio-access gap.",
+      "problem_signal": {
+        "family": "portfolio / lead-flow web completion",
+        "evidence": "Official active studio site states WEBSITE UNDER CONSTRUCTION and relies on off-site gallery/contact routes.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "designmolde@gmail.com",
+        "WhatsApp +351 916 211 475"
+      ],
+      "outcome_space": [
+        "portfolio UX",
+        "lead capture",
+        "web completion",
+        "creative-services conversion"
+      ],
+      "source": "https://www.moldedesignweddings.com/",
+      "provenance": "Official studio website; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Joana Duarte / Molde Design Weddings owner",
+      "fit_note": "Owner-operated contactable creative-services candidate with explicit incomplete web surface.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether a small portfolio/lead-flow package fits current demand."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-355",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CE Logistics",
+      "domain": "celogistics.com.co",
+      "country": "Colombia",
+      "sector": "International logistics / customs / freight forwarding",
+      "surface": "Official logistics website and contact page; Chía, Colombia",
+      "observed_need": "The live Contact page exposes three fake/template international offices using the same US address, +1 phone and info@domain.ltd, states MailChimp is not connected and includes Lorem Ipsum in contact/newsletter copy. A real Colombian mobile number is published on the same page. This is directly observed contact/lead-flow QA.",
+      "problem_signal": {
+        "family": "contact-data QA / CRM-email integration / lead flow",
+        "evidence": "Official contact page publishes template office coordinates, info@domain.ltd, an explicit MailChimp-not-connected notice and placeholder copy.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "+57 313 209 2322",
+        "Official contact page/form"
+      ],
+      "outcome_space": [
+        "contact-data cleanup",
+        "newsletter integration",
+        "lead capture",
+        "web QA"
+      ],
+      "source": "https://celogistics.com.co/contacto/",
+      "provenance": "Official logistics website/contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "CE Logistics commercial/operations owner",
+      "fit_note": "Contactable logistics candidate with unusually explicit fake contact data and disconnected email-marketing integration on a first-party lead surface.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and current commercial owner; prioritize only if a bounded contact/lead-flow cleanup is acceptable."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-356",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SETRAT Green Construction / Groupe SETRAT",
+      "domain": "groupe-setrat.com",
+      "country": "Morocco",
+      "sector": "Construction / renewable-energy infrastructure",
+      "surface": "Official project website; Rabat, Morocco",
+      "observed_need": "A live Aftissat wind-project page publishes placeholder project metadata including 'Client Branding NthPsd Company' and 'Creative Director Lorem Ipsum doler' alongside real project content. The official contact page exposes direct phone/email. This is directly observed project-proof/credibility QA.",
+      "problem_signal": {
+        "family": "project proof / metadata QA / credibility",
+        "evidence": "Official project page leaks placeholder client/creative metadata in a commercial project case surface.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "contact@setrat.com",
+        "+212 5 37 76 58 62",
+        "+212 5 37 76 64 12"
+      ],
+      "outcome_space": [
+        "case-study cleanup",
+        "project proof",
+        "B2B credibility",
+        "web QA"
+      ],
+      "source": "https://groupe-setrat.com/en/villes/parc-eolien-aftissat-extention-boujdour-2/",
+      "provenance": "Official project and contact pages; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Groupe SETRAT marketing/commercial owner",
+      "fit_note": "Contactable upper-value industrial/construction candidate with directly observed proof-page metadata defects.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and determine whether this proof-page issue is current and material enough for a bounded commercial offer."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-357",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Eramo Store / e-RAMO",
+      "domain": "eramostore.com",
+      "country": "Egypt",
+      "sector": "Retail e-commerce",
+      "surface": "Official e-commerce website; Cairo, Egypt",
+      "observed_need": "The live About page is dominated by unrelated startup/design-agency and digital-marketing template copy, repeated Lorem Ipsum and generic placeholder claims, while the store exposes active WhatsApp/email contact and order tracking. This is directly observed brand/offer clarity QA on a retail site.",
+      "problem_signal": {
+        "family": "brand copy / offer clarity / e-commerce trust",
+        "evidence": "Official About page contains extensive unrelated template agency/marketing copy and Lorem Ipsum on an active retail domain.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@e-ramo.net",
+        "info@eramostore.com",
+        "WhatsApp +20 101 155 9674"
+      ],
+      "outcome_space": [
+        "brand copy cleanup",
+        "e-commerce trust",
+        "conversion clarity",
+        "web QA"
+      ],
+      "source": "https://eramostore.com/en/about-store",
+      "provenance": "Official store About and Contact pages; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Eramo Store owner/e-commerce operator",
+      "fit_note": "Contactable Egyptian retail candidate with strong first-party template leakage on an active commercial domain.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and current trading activity; assess a bounded trust/conversion copy cleanup."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-358",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "El Houda",
+      "domain": "elhoudaco.com",
+      "country": "Egypt",
+      "sector": "Agricultural chemicals / pesticides / fertilizers",
+      "surface": "Official agricultural-products website; Beheira, Egypt",
+      "observed_need": "The live homepage contains placeholder marketing labels and Lorem Ipsum in recent-news/product sections alongside active products, nationwide shipping/support claims and direct contact details. This is directly observed content/freshness/offer-presentation QA.",
+      "problem_signal": {
+        "family": "content QA / product marketing clarity",
+        "evidence": "Official homepage contains placeholder phrases and Lorem Ipsum inside customer-facing marketing/news sections.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@elhoudaco.com",
+        "0453245016",
+        "0453245015"
+      ],
+      "outcome_space": [
+        "product copy",
+        "content cleanup",
+        "lead conversion",
+        "web QA"
+      ],
+      "source": "https://www.elhoudaco.com/",
+      "provenance": "Official company homepage and contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "El Houda commercial/marketing owner",
+      "fit_note": "Contactable agricultural-products candidate with first-party unfinished/stale customer-facing content.",
+      "consumer_action": "iSCOPE verify duplicate/contact history, current product-market activity and whether a bounded content/product-presentation fix is commercially relevant."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-359",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Top Analog",
+      "domain": "topanalog.eu",
+      "country": "Czech Republic",
+      "sector": "Vinyl record cutting / cassette duplication / audio mastering",
+      "surface": "Official production-studio website; Prague, Czech Republic",
+      "observed_need": "The live home page explicitly says Website under construction while publishing active price/service navigation and a contact form. The official contact page exposes company ID, phone and email. This is a directly observed commercial web-completion gap.",
+      "problem_signal": {
+        "family": "web completion / quote conversion",
+        "evidence": "Official active service homepage states Website under construction while offering quote/contact actions.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "studio@topanalog.eu",
+        "+420 739 503 718"
+      ],
+      "outcome_space": [
+        "web completion",
+        "quote UX",
+        "service presentation",
+        "lead conversion"
+      ],
+      "source": "https://www.topanalog.eu/home",
+      "provenance": "Official home/contact pages; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Top Analog owner/operator",
+      "fit_note": "Contactable niche manufacturing/media-services candidate with explicit incomplete commercial web surface.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether a small quote/conversion web fix fits near-term demand."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
