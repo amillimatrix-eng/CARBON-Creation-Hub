@@ -12122,6 +12122,54 @@
       "payer_hypothesis": "Find Your Doctor product/provider-network owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and provider/practice operating surface evidenced; no unresolved commercial problem inferred.",
       "consumer_action": "iSCOPE verify current organization identity, buyer/provider-acquisition relevance, contact route and active need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-651",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tiptons Analytics",
+      "surface": "Kenya education-management software; package com.tiptons.analytics",
+      "observed_need": "School administration, enrollment workflow, class management and communications.",
+      "outcome_space": [
+        "education",
+        "school management",
+        "administration"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tiptons.analytics",
+      "payer_hypothesis": "Tiptons Analytics business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public business-operating surface evidenced; no unresolved commercial problem inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-652",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Analytica Solutions / Analytica School Manager",
+      "surface": "Kenya education-management software; package ke.co.analytica.assessment",
+      "observed_need": "Fee administration, reporting, attendance workflow and role-based administration.",
+      "outcome_space": [
+        "education",
+        "school finance",
+        "administration"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ke.co.analytica.assessment",
+      "payer_hypothesis": "Analytica Solutions / Analytica School Manager business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public business-operating surface evidenced; no unresolved commercial problem inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-653",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "JBing Systems Ltd / MyJBS",
+      "surface": "Kenya education-management software; package myjbs.ke.app",
+      "observed_need": "Fees, academic reporting and attendance-management workflow.",
+      "outcome_space": [
+        "education",
+        "school operations",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=myjbs.ke.app",
+      "payer_hypothesis": "JBing Systems Ltd / MyJBS business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public business-operating surface evidenced; no unresolved commercial problem inferred.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
