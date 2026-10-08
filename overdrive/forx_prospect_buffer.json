@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T18:04:00+02:00",
+  "last_updated": "2026-10-08T18:12:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -10884,6 +10884,241 @@
       "payer_hypothesis": "JABU LOGISTICS / JabuPay product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; operating market and developer domicile remain distinct where applicable; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-577",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Imrana Group / Noddu Marchandises",
+      "surface": "Senegal B2B marketplace/business management; package com.noddu.marchandises",
+      "observed_need": "Retailer-wholesaler discovery, B2B orders/delivery, inventory/warehouse, invoices, receivables and seller reliability.",
+      "outcome_space": [
+        "B2B marketplace",
+        "wholesale",
+        "inventory",
+        "receivables"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.noddu.marchandises",
+      "payer_hypothesis": "Imrana Group / Noddu Marchandises product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-578",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SLV CENTER / SV-APP",
+      "surface": "Benin phone-retail operations; package com.slvcenter.smartphonevendor",
+      "observed_need": "Sales, IMEI inventory, multi-store transfers, customer savings plans, staff roles and Mobile Money.",
+      "outcome_space": [
+        "retail operations",
+        "inventory",
+        "multi-store",
+        "staff controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.slvcenter.smartphonevendor",
+      "payer_hypothesis": "SLV CENTER / SV-APP product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-579",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ESTUAIRE SERVICES SARL / Estuaire Achats",
+      "surface": "Cameroon/Central Africa B2B marketplace; package com.estuaireachats.estuaire_achats",
+      "observed_need": "Verified suppliers, wholesale quotes, messaging, order tracking, payments and integrated shipping/logistics.",
+      "outcome_space": [
+        "B2B marketplace",
+        "supplier sourcing",
+        "logistics",
+        "quotes"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.estuaireachats.estuaire_achats",
+      "payer_hypothesis": "ESTUAIRE SERVICES SARL / Estuaire Achats product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-580",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ATAABA SUARL / PayTrack",
+      "surface": "Senegal merchant operations; package com.ataaba.paytrack",
+      "observed_need": "Cash/credit sales, schedules, inventory, supplier/customer orders and Wave/Orange Money collections.",
+      "outcome_space": [
+        "sales",
+        "customer credit",
+        "inventory",
+        "supplier orders"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ataaba.paytrack",
+      "payer_hypothesis": "ATAABA SUARL / PayTrack product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-581",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Futurion Technologies / Luumo",
+      "surface": "Burkina Faso local marketplace; package com.luumo.marketplace",
+      "observed_need": "Local seller listings and buyer/seller commerce across Burkina Faso.",
+      "outcome_space": [
+        "marketplace",
+        "seller distribution",
+        "local commerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.luumo.marketplace",
+      "payer_hypothesis": "Futurion Technologies / Luumo product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-582",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "JDIGITAL SARL / JD Market",
+      "surface": "Cameroon merchant operations; package cm.jdigital.jdmarket",
+      "observed_need": "Multi-location orders, catalogue, inventory, cash register and stock movement.",
+      "outcome_space": [
+        "merchant operations",
+        "inventory",
+        "multi-location",
+        "cash register"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=cm.jdigital.jdmarket",
+      "payer_hypothesis": "JDIGITAL SARL / JD Market product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-583",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Jemo / BridgeYou",
+      "surface": "Cameroon multi-vendor marketplace; package com.jemo.mobile.app",
+      "observed_need": "Vendor listings/orders plus delivery choice and real-time tracking.",
+      "outcome_space": [
+        "marketplace",
+        "vendor operations",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.jemo.mobile.app",
+      "payer_hypothesis": "Jemo / BridgeYou product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-584",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Digita Sénégal / SellHub",
+      "surface": "Senegal sales/inventory management; package com.digita.sellhub",
+      "observed_need": "Goods receipt through sale, real-time inventory, transactions and performance analytics.",
+      "outcome_space": [
+        "inventory",
+        "sales",
+        "analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.digita.sellhub",
+      "payer_hypothesis": "Digita Sénégal / SellHub product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-585",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Kaetix / Distriva",
+      "surface": "Côte d'Ivoire distribution operations; package com.kaetix.distriva",
+      "observed_need": "Sales, stock, customer credit/receivables, suppliers, driver delivery tracking, cash flow and role controls.",
+      "outcome_space": [
+        "distribution",
+        "inventory",
+        "receivables",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kaetix.distriva",
+      "payer_hypothesis": "Kaetix / Distriva product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-586",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CCI BENIN / e-Tchité Gestion",
+      "surface": "Benin chamber-backed merchant POS; package com.ccib.etchite",
+      "observed_need": "Sales/inventory, quotes/invoices/receipts, refunds, real-time analytics and stock control.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "invoicing",
+        "chamber infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ccib.etchite",
+      "payer_hypothesis": "CCI BENIN / e-Tchité Gestion product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-587",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PANIER CART / MOLY",
+      "surface": "Côte d'Ivoire SME business operations; package com.ivoiretech.moly.moly_pos",
+      "observed_need": "Orders, inventory, quotes, expenses, customers, team access, Mobile Money and sales dashboards.",
+      "outcome_space": [
+        "SME operations",
+        "inventory",
+        "expenses",
+        "team controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ivoiretech.moly.moly_pos",
+      "payer_hypothesis": "PANIER CART / MOLY product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-588",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Digita Sénégal / Elactron",
+      "surface": "Senegal wholesale appliance B2B; package com.digita.elactron",
+      "observed_need": "Verified reseller pricing, catalogue, wholesale orders, delivery scheduling and order tracking.",
+      "outcome_space": [
+        "B2B wholesale",
+        "resellers",
+        "orders",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.digita.elactron",
+      "payer_hypothesis": "Digita Sénégal / Elactron product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-589",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "JAMMAS / re-stock",
+      "surface": "Lebanon B2B commerce platform; package com.restock.app",
+      "observed_need": "Supplier-buyer ordering, POS, inventory, storefront, delivery status and cash-on-delivery.",
+      "outcome_space": [
+        "B2B marketplace",
+        "inventory",
+        "POS",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.restock.app",
+      "payer_hypothesis": "JAMMAS / re-stock product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-590",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Foyre",
+      "surface": "Senegal local seller marketplace; package com.ismailaseydou.hanne.foyre",
+      "observed_need": "Seller storefronts, inventory/prices/orders, Senegal-wide delivery and Wave/Orange Money settlement.",
+      "outcome_space": [
+        "marketplace",
+        "seller operations",
+        "inventory",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ismailaseydou.hanne.foyre",
+      "payer_hypothesis": "Foyre product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
