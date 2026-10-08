@@ -358,6 +358,7 @@ class MarketplaceStore:
         buyer_ref: str,
         payload: CreateInterestRequest,
         provider_ref: str,
+        provider_state: str = "SANDBOX_RESERVED",
     ) -> dict[str, Any]:
         start = parse_time(payload.proposed_start_at)
         if start < utcnow() - timedelta(minutes=5):
@@ -395,7 +396,7 @@ class MarketplaceStore:
                 (
                     interest_id, listing_id, buyer_ref, payload.bond_minor, considered, payload.at_risk_bps,
                     iso(start), payload.proposed_duration_minutes, "BONDED_INTEREST", provider_ref,
-                    "SANDBOX_RESERVED", now, now,
+                    provider_state, now, now,
                 ),
             )
             self._event(conn, "interest", interest_id, buyer_ref, "BONDED_INTEREST_CREATED", {
@@ -403,11 +404,30 @@ class MarketplaceStore:
                 "bond_minor": payload.bond_minor,
                 "considered_bond_minor": considered,
                 "at_risk_bps": payload.at_risk_bps,
-                "provider_state": "SANDBOX_RESERVED",
+                "provider_state": provider_state,
                 "money_moved": False,
             })
             row = conn.execute("SELECT * FROM interests WHERE id=?", (interest_id,)).fetchone()
         return dict(row)
+
+    def get_interest(self, interest_id: str) -> dict[str, Any] | None:
+        with self._conn() as conn:
+            row = conn.execute("SELECT * FROM interests WHERE id=?", (interest_id,)).fetchone()
+            return dict(row) if row else None
+
+    def set_interest_provider_state(self, interest_id: str, provider_state: str) -> None:
+        with self._conn() as conn:
+            conn.execute(
+                "UPDATE interests SET provider_state=?,updated_at=? WHERE id=?",
+                (provider_state, iso(), interest_id),
+            )
+
+    def set_deal_settlement_state(self, deal_id: str, settlement_state: str) -> None:
+        with self._conn() as conn:
+            conn.execute(
+                "UPDATE deals SET settlement_state=?,updated_at=? WHERE id=?",
+                (settlement_state, iso(), deal_id),
+            )
 
     def list_interest_for_listing(self, listing_id: str, seller_ref: str) -> list[dict[str, Any]]:
         with self._conn() as conn:
@@ -637,7 +657,7 @@ class MarketplaceStore:
                 (now, commitment_id),
             )
             conn.execute(
-                "UPDATE interests SET state='DISPUTED',provider_state='SANDBOX_HOLD',updated_at=? WHERE id=?",
+                "UPDATE interests SET state='DISPUTED',provider_state='HOLD_PENDING_PROVIDER',updated_at=? WHERE id=?",
                 (now, row["interest_id"]),
             )
             self._event(conn, "commitment", commitment_id, actor, "DISPUTE_OPENED", {"reason": reason.strip()})
@@ -729,7 +749,7 @@ class MarketplaceStore:
                 (now, deal["commitment_id"]),
             )
             conn.execute(
-                "UPDATE interests SET state='HONOURED_RELEASE_PENDING',provider_state='SANDBOX_RELEASE_PENDING',updated_at=? WHERE id=?",
+                "UPDATE interests SET state='HONOURED_RELEASE_PENDING',provider_state='RELEASE_PENDING_PROVIDER',updated_at=? WHERE id=?",
                 (now, commitment["interest_id"]),
             )
             self._event(conn, "deal", deal_id, actor, "DEAL_DECLINED_AFTER_INSPECTION", {
@@ -761,7 +781,7 @@ class MarketplaceStore:
             fresh = conn.execute("SELECT * FROM deals WHERE id=?", (deal_id,)).fetchone()
             if fresh["buyer_accept"] and fresh["seller_accept"]:
                 conn.execute(
-                    "UPDATE deals SET state='BONDED_DEAL',settlement_state='SANDBOX_READY_FOR_PROVIDER',updated_at=? WHERE id=?",
+                    "UPDATE deals SET state='BONDED_DEAL',settlement_state='SETTLEMENT_INSTRUCTION_PENDING',updated_at=? WHERE id=?",
                     (now, deal_id),
                 )
                 conn.execute("UPDATE listings SET status='COMMITTED',updated_at=? WHERE id=?", (now, fresh["listing_id"]))
@@ -776,7 +796,7 @@ class MarketplaceStore:
                 ).fetchall()
                 for queued_interest in queued:
                     conn.execute(
-                        "UPDATE interests SET state='RELEASE_PENDING',provider_state='SANDBOX_RELEASE_PENDING',updated_at=? WHERE id=?",
+                        "UPDATE interests SET state='RELEASE_PENDING',provider_state='RELEASE_PENDING_PROVIDER',updated_at=? WHERE id=?",
                         (now, queued_interest["id"]),
                     )
                     self._event(conn, "interest", queued_interest["id"], "SYSTEM", "QUEUE_RELEASED_AFTER_SALE", {
@@ -1100,9 +1120,16 @@ def mount_marketplace(
         require_demo()
         buyer = actor(x_carbon_actor)
         try:
-            provider_ref = money.reserve(listing_id, buyer, payload.bond_minor)
-            record = store.create_interest(listing_id, buyer, payload, provider_ref)
-            return {"record": record, "money_moved": money.moves_real_money, "provider": money.name}
+            instruction = money.reserve(listing_id, buyer, payload.bond_minor)
+            record = store.create_interest(
+                listing_id, buyer, payload, instruction.provider_ref, instruction.state
+            )
+            return {
+                "record": record,
+                "money_moved": instruction.money_moved,
+                "provider": money.name,
+                "money_instruction": instruction.as_dict(),
+            }
         except Exception as exc:
             raise map_error(exc) from exc
 
@@ -1147,7 +1174,21 @@ def mount_marketplace(
         require_demo()
         participant = actor(x_carbon_actor)
         try:
-            return {"record": store.cancel_commitment(commitment_id, participant, payload.reason)}
+            record = store.cancel_commitment(commitment_id, participant, payload.reason)
+            interest = store.get_interest(record["interest_id"])
+            instruction = None
+            if interest:
+                if record["state"] in {"MUTUAL_RELEASE", "VALID_EXIT"}:
+                    instruction = money.release(interest["provider_ref"], interest["bond_minor"])
+                elif record["state"] in {"BUYER_BREACH_REVIEW", "SELLER_BREACH_REVIEW"}:
+                    instruction = money.hold(interest["provider_ref"], record["state"])
+                if instruction:
+                    store.set_interest_provider_state(record["interest_id"], instruction.state)
+            return {
+                "record": record,
+                "money_instruction": instruction.as_dict() if instruction else None,
+                "money_moved": instruction.money_moved if instruction else False,
+            }
         except Exception as exc:
             raise map_error(exc) from exc
 
@@ -1165,7 +1206,17 @@ def mount_marketplace(
         require_demo()
         participant = actor(x_carbon_actor)
         try:
-            return {"record": store.dispute(commitment_id, participant, payload.reason), "provider_state": "SANDBOX_HOLD"}
+            record = store.dispute(commitment_id, participant, payload.reason)
+            interest = store.get_interest(record["interest_id"])
+            instruction = money.hold(interest["provider_ref"], "DISPUTED") if interest else None
+            if instruction:
+                store.set_interest_provider_state(record["interest_id"], instruction.state)
+            return {
+                "record": record,
+                "provider_state": instruction.state if instruction else "HOLD_PENDING_PROVIDER",
+                "money_instruction": instruction.as_dict() if instruction else None,
+                "money_moved": instruction.money_moved if instruction else False,
+            }
         except Exception as exc:
             raise map_error(exc) from exc
 
@@ -1189,13 +1240,15 @@ def mount_marketplace(
                 raise KeyError("deal not found")
             if deal["buyer_ref"] != buyer:
                 raise PermissionError("buyer credential required")
-            provider_ref = money.reserve(deal_id, buyer, deal["price_minor"])
-            provider_state = "SANDBOX_PURCHASE_FUNDS_SECURED" if not money.moves_real_money else "PROVIDER_SECURED"
-            record = store.fund_deal(deal_id, buyer, provider_ref, provider_state)
+            instruction = money.reserve(deal_id, buyer, deal["price_minor"])
+            record = store.fund_deal(
+                deal_id, buyer, instruction.provider_ref, instruction.state
+            )
             return {
                 "record": record,
                 "provider": money.name,
-                "money_moved": money.moves_real_money,
+                "money_moved": instruction.money_moved,
+                "money_instruction": instruction.as_dict(),
                 "bond_and_purchase_funds_are_separate": True,
             }
         except Exception as exc:
@@ -1206,7 +1259,16 @@ def mount_marketplace(
         require_demo()
         participant = actor(x_carbon_actor)
         try:
-            return {"record": store.decline_deal(deal_id, participant, payload.reason), "money_moved": money.moves_real_money}
+            record = store.decline_deal(deal_id, participant, payload.reason)
+            instruction = None
+            if record.get("purchase_provider_ref"):
+                instruction = money.release(record["purchase_provider_ref"], record["price_minor"])
+                store.set_deal_settlement_state(deal_id, instruction.state)
+            return {
+                "record": record,
+                "money_instruction": instruction.as_dict() if instruction else None,
+                "money_moved": instruction.money_moved if instruction else False,
+            }
         except Exception as exc:
             raise map_error(exc) from exc
 
@@ -1215,7 +1277,19 @@ def mount_marketplace(
         require_demo()
         participant = actor(x_carbon_actor)
         try:
-            return {"record": store.accept_deal(deal_id, participant), "money_moved": money.moves_real_money}
+            record = store.accept_deal(deal_id, participant)
+            instruction = None
+            if record["state"] == "BONDED_DEAL" and record.get("purchase_provider_ref"):
+                instruction = money.prepare_settlement(
+                    record["purchase_provider_ref"], record["price_minor"]
+                )
+                store.set_deal_settlement_state(deal_id, instruction.state)
+                record = {**record, "settlement_state": instruction.state}
+            return {
+                "record": record,
+                "money_instruction": instruction.as_dict() if instruction else None,
+                "money_moved": instruction.money_moved if instruction else False,
+            }
         except Exception as exc:
             raise map_error(exc) from exc
 
