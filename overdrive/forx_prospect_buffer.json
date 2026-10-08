@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T13:31:00+02:00",
+  "last_updated": "2026-10-08T13:48:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -914,6 +914,197 @@
       "payer_hypothesis": "Shiphustle product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Strong Eswatini economic-infrastructure operating surface; legal operator identity/contact should be normalized by iSCOPE.",
       "consumer_action": "iSCOPE resolve operator identity and assess courier/customer acquisition, payment/customs support and expansion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-050",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AYIHA LABS / Ahidaho",
+      "surface": "Google Play marketplace; package com.ayihalabs.ahidaho; Benin",
+      "observed_need": "First September 2026 release is explicitly built for Benin with local sellers, mobile money/cash-on-delivery and seller/delivery participation; Cotonou company address, phone and support are public.",
+      "outcome_space": [
+        "marketplace",
+        "seller onboarding",
+        "mobile money",
+        "delivery",
+        "local commerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ayihalabs.ahidaho",
+      "published": "2026-09-10",
+      "payer_hypothesis": "AYIHA LABS / Ahidaho",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh Benin marketplace launch with direct local identity/contact; no unresolved defect inferred.",
+      "consumer_action": "iSCOPE validate seller/delivery acquisition, launch conversion and current support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-051",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MonLIVREUR / ADAM ADOUL KARIM BOUKOUNGOU",
+      "surface": "Google Play delivery/merchant network; package com.aio.monlivreur; Burkina Faso",
+      "observed_need": "Current June 2026 listing combines on-demand delivery, verified drivers, escrow/mobile-money payments, merchant dashboards and multi-store support; Burkina Faso developer identity and direct WhatsApp/email are public.",
+      "outcome_space": [
+        "delivery",
+        "merchant network",
+        "driver network",
+        "escrow",
+        "mobile money"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.aio.monlivreur",
+      "published": "2026-06-13",
+      "payer_hypothesis": "MonLIVREUR operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct local operator/contact and multi-sided operating surface; no failure inferred.",
+      "consumer_action": "iSCOPE validate merchant/driver acquisition, escrow/support load and current delivery growth constraint."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-052",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AI-KING GROUP / FastGO",
+      "surface": "Google Play delivery marketplace; package com.aikinggroup.fastgo; Burkina Faso",
+      "observed_need": "Current August 2026 app connects customers and drivers with negotiated prices, GPS tracking and Orange/Moov mobile money. First-party release notes cite fixes to Orange Money deposits, stuck payment status and cash-delivery balance display.",
+      "outcome_space": [
+        "delivery",
+        "driver network",
+        "mobile money",
+        "payment reliability",
+        "wallet"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.aikinggroup.fastgo",
+      "published": "2026-08-11",
+      "payer_hypothesis": "AI-KING GROUP",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Release notes provide concrete recent payment-state maintenance evidence; do not assume resolved defects remain.",
+      "consumer_action": "iSCOPE verify whether payment-state/reconciliation issues remain current and assess driver/customer acquisition plus support impact."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-053",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ROUSKI-HOLDING SARL / R-Market",
+      "surface": "Google Play marketplace; package ml.rmarket.app; Mali",
+      "observed_need": "Current September 2026 Malian marketplace supports seller chat/WhatsApp, pay-on-delivery and nationwide delivery. Latest release changed onboarding/order flow, WhatsApp verification, partner-store opening and tracking; Bamako company contact is public.",
+      "outcome_space": [
+        "marketplace",
+        "seller network",
+        "WhatsApp commerce",
+        "order conversion",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ml.rmarket.app",
+      "published": "2026-09-21",
+      "payer_hypothesis": "ROUSKI-HOLDING SARL",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Very fresh first-party conversion/onboarding changes provide candidate-specific operating evidence.",
+      "consumer_action": "iSCOPE validate current seller/customer activation, onboarding conversion and support burden."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-054",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ROUSKI-HOLDING SARL / R-Market",
+      "surface": "Google Play seller operations; package ml.rmarket.vendeur; Mali",
+      "observed_need": "Distinct September 2026 seller app handles products, stock, orders, messaging, sales/revenue statistics, invoices and promotions. Current notes cite clearer/reliable login and removal of endless-loading behavior.",
+      "outcome_space": [
+        "seller operations",
+        "inventory",
+        "order management",
+        "merchant analytics",
+        "app reliability"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ml.rmarket.vendeur",
+      "published": "2026-09-19",
+      "payer_hypothesis": "ROUSKI-HOLDING SARL",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Separate package preserved as provenance; likely one canonical organization with R-Market customer app.",
+      "consumer_action": "iSCOPE link canonical entity if verified and assess seller activation/reliability once, without duplicate outbound."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-055",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BEDEL-SARL / Souq",
+      "surface": "Google Play merchant/service-provider app; package mr.souq.store; Mauritania",
+      "observed_need": "Current September 2026 provider app lets tradespeople receive nearby service requests with photo/voice evidence and negotiate prices, while shop owners manage catalog, stock, orders, payment receipts and earnings; support@bedel.mr is public.",
+      "outcome_space": [
+        "local services",
+        "trades",
+        "merchant marketplace",
+        "provider onboarding",
+        "inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mr.souq.store",
+      "published": "2026-09-22",
+      "payer_hypothesis": "BEDEL-SARL / Souq",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. High-value trades + merchant network observation aligned with SMME front-door continuity; no candidate defect inferred.",
+      "consumer_action": "iSCOPE validate provider/shop acquisition, verification, request conversion and support workload."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-056",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Jini / Mohamed Mohamed Beirouk",
+      "surface": "Google Play merchant POS/order app; package com.overcode.jinipos; Mauritania",
+      "observed_need": "Current February 2026 merchant app handles orders, menus/products, delivery assignment, local payments, commissions, sales reports and customer ratings for Mauritanian businesses; current notes cite translation/language consistency fixes and direct local contact is public.",
+      "outcome_space": [
+        "merchant operations",
+        "POS",
+        "delivery",
+        "payments",
+        "localization",
+        "analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.overcode.jinipos",
+      "published": "2026-02-26",
+      "payer_hypothesis": "Jini product owner / Mohamed Mohamed Beirouk",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Local developer identity/contact resolved; localization work is attributable maintenance evidence.",
+      "consumer_action": "iSCOPE validate merchant acquisition, localization/support burden and current order/payment operating needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-057",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "VERYSAFE-SUARL / Wasselny",
+      "surface": "Google Play urban delivery; package app.wasselny; Mauritania",
+      "observed_need": "Current September 2026 Nouakchott service works with restaurants, shops, pharmacies and local partners using app/WhatsApp ordering, trained couriers and real-time tracking; operational team and public contact are disclosed.",
+      "outcome_space": [
+        "delivery",
+        "merchant partners",
+        "courier network",
+        "WhatsApp commerce",
+        "customer support"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.wasselny",
+      "published": "2026-09-24",
+      "payer_hypothesis": "VERYSAFE-SUARL / Wasselny",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Very fresh Mauritania local-service network with public operator identity; no specific defect inferred.",
+      "consumer_action": "iSCOPE validate merchant/courier acquisition, WhatsApp-to-app conversion and support operations."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-058",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MOUSSA KASSIM MOHAMED / LIMO Djibouti",
+      "surface": "Google Play local marketplace; package com.customer.limoo; Djibouti",
+      "observed_need": "January 2026 first public release is explicitly a Djibouti local marketplace connecting trusted local merchants with mobile-money/card payments, delivery and order tracking; Djibouti developer identity and public contact are resolved.",
+      "outcome_space": [
+        "local marketplace",
+        "merchant network",
+        "mobile money",
+        "delivery",
+        "order tracking"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.customer.limoo",
+      "published": "2026-01-30",
+      "payer_hypothesis": "LIMO Djibouti product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Djibouti operator identity and merchant-network surface; no unresolved stability issue inferred from release notes.",
+      "consumer_action": "iSCOPE validate merchant onboarding, customer acquisition and delivery/support burden."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-059",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Velox .dj / canonical legal operator unresolved",
+      "surface": "Google Play meal delivery + ride hailing; package dj.velox.client; Djibouti operating market, France developer address",
+      "observed_need": "Current September 2026 app combines restaurant delivery, ride-hailing, cash/Waafi/D-Money/CAC Pay and loyalty with French/English/Arabic/Somali/Afar localization; public support email is exposed.",
+      "outcome_space": [
+        "food delivery",
+        "ride hailing",
+        "payments",
+        "localization",
+        "loyalty"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=dj.velox.client",
+      "published": "2026-09-26",
+      "payer_hypothesis": "Velox .dj product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Djibouti operating market is explicit while developer address is France; canonical local operator identity remains unresolved.",
+      "consumer_action": "iSCOPE resolve payer/operator identity and validate restaurant/driver acquisition, localization and retention needs."
     }
   ]
 }
