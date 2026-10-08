@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T18:31:00+02:00",
+  "last_updated": "2026-10-08T18:46:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -5408,6 +5408,155 @@
       "payer_hypothesis": "JS² Solutions",
       "fit_note": "Current Ghana delivery-hub evidence; provider claims about scale are source claims, not AMX-verified facts.",
       "consumer_action": "iSCOPE validate direct Ghana buyer/operating route and any bounded acquisition, staffing, proof or automation opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-300",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CallMe Groupe",
+      "surface": "Public contact-center/BPO operator; Senegal",
+      "observed_need": "Dakar-headquartered West African contact-center group provides insourcing/outsourcing and is actively expanding services across multiple countries.",
+      "outcome_space": [
+        "BPO",
+        "contact center",
+        "outsourcing",
+        "insourcing",
+        "West Africa"
+      ],
+      "source": "https://www.callme.sn/",
+      "published": "2026",
+      "payer_hypothesis": "CallMe Groupe",
+      "fit_note": "Current Senegal operator surface with regional expansion; no weakness inferred.",
+      "consumer_action": "iSCOPE validate current acquisition, campaign intake, staffing, reporting or partnership gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-301",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "OLSY GROUP",
+      "surface": "Public customer-relationship outsourcing/BPO operator; Côte d’Ivoire",
+      "observed_need": "Abidjan operator positions itself in outsourced customer relations; current site states 24/7 BPO call reception and provides direct local contact.",
+      "outcome_space": [
+        "BPO",
+        "customer relationship",
+        "call center",
+        "24/7 support"
+      ],
+      "source": "https://olsygroup.com/",
+      "published": "2026",
+      "payer_hypothesis": "OLSY GROUP",
+      "fit_note": "Direct Côte d’Ivoire operating/contact evidence with current 2026 activity.",
+      "consumer_action": "iSCOPE inspect acquisition, campaign intake, proof/reporting, staffing or automation for an evidenced gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-302",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LOQUELA BUSINESS CENTER",
+      "surface": "Public contact-center/BPO operator; Côte d’Ivoire",
+      "observed_need": "Abidjan operator provides outsourced customer relations, multichannel support, back office, data entry, quality control and reporting with direct quote/contact path.",
+      "outcome_space": [
+        "BPO",
+        "customer support",
+        "back office",
+        "data entry",
+        "reporting"
+      ],
+      "source": "https://lbc.ci/services/",
+      "published": "2026",
+      "payer_hypothesis": "LOQUELA BUSINESS CENTER",
+      "fit_note": "Current operator evidence; source-reported client/call volumes remain source claims only.",
+      "consumer_action": "iSCOPE validate a concrete acquisition, staffing, reporting, automation or partnership opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-303",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CONNECT.RCI",
+      "surface": "Public contact-center operator; Côte d’Ivoire",
+      "observed_need": "Abidjan contact center founded in 2024 provides supervised customer-relations campaigns and quality-focused service with direct project-discussion route.",
+      "outcome_space": [
+        "contact center",
+        "customer relations",
+        "campaign operations",
+        "quality"
+      ],
+      "source": "https://connectrci.com/",
+      "published": "2026",
+      "payer_hypothesis": "CONNECT.RCI",
+      "fit_note": "Current smaller operator surface may fit SMME weighting; no weakness inferred.",
+      "consumer_action": "iSCOPE inspect client acquisition, intake, staffing, reporting and automation for a bounded current need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-304",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PolyCall",
+      "surface": "Public BPO/customer-relationship centre; Tunisia",
+      "observed_need": "Tunisia nearshore operator provides outsourced customer relations and emphasizes audited quality/ISO operating model.",
+      "outcome_space": [
+        "BPO",
+        "customer relationship",
+        "nearshore",
+        "quality operations"
+      ],
+      "source": "https://polycall.tn/en/index.html",
+      "published": "2026",
+      "payer_hypothesis": "PolyCall",
+      "fit_note": "Mature current Tunisia operator; negative-selection applies unless a concrete gap is found.",
+      "consumer_action": "iSCOPE inspect acquisition, proof/reporting, tooling or partnership surfaces; skip if no bounded opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-305",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Synergy Growth",
+      "surface": "Public BPO + remote-teleoperation operator; Tunisia",
+      "observed_need": "Tunis operator combines omnichannel BPO customer support, back-office/data and AI/human moderation with remote robot/drone teleoperation.",
+      "outcome_space": [
+        "BPO",
+        "back office",
+        "AI moderation",
+        "teleoperation",
+        "customer support"
+      ],
+      "source": "https://www.synergygrowthtn.com/en/",
+      "published": "2026",
+      "payer_hypothesis": "Synergy Growth",
+      "fit_note": "Distinct high-tech Tunisia outsourcing surface; source performance claims require independent validation.",
+      "consumer_action": "iSCOPE assess partnership, acquisition, technical presentation or operational tooling only where current evidence supports a gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-306",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Vocalix",
+      "surface": "Public BPO/call-center operator; Cameroon",
+      "observed_need": "Douala operator provides inbound support, technical support, order taking, market research and multilingual 24/7 call-center/BPO services; direct Cameroon phone/email are public.",
+      "outcome_space": [
+        "BPO",
+        "call center",
+        "technical support",
+        "market research",
+        "order taking"
+      ],
+      "source": "https://vocalix.tech/",
+      "published": "2026",
+      "payer_hypothesis": "Vocalix",
+      "fit_note": "Direct Cameroon operating/contact evidence.",
+      "consumer_action": "iSCOPE validate current activity, acquisition, intake, staffing/reporting or automation opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-307",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Advancia Téléservices",
+      "surface": "Public outsourced support/call-center operator; Tunisia",
+      "observed_need": "Tunisia operator provides outsourced help desk, IT support and customer service with multi-channel remote customer relations.",
+      "outcome_space": [
+        "BPO",
+        "help desk",
+        "IT support",
+        "customer service",
+        "nearshore"
+      ],
+      "source": "https://www.advancia-teleservices.com/en/",
+      "published": "2026",
+      "payer_hypothesis": "Advancia Téléservices",
+      "fit_note": "Current Tunisia operator surface; mature capabilities require negative selection.",
+      "consumer_action": "iSCOPE validate only a concrete acquisition, recruitment, reporting, tooling or partnership need."
     }
   ]
 }
