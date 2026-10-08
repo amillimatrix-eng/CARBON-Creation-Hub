@@ -19,7 +19,7 @@ def sweep_marketplace_time(store: MarketplaceStore) -> dict[str, int]:
         pending=conn.execute(
             """SELECT i.*, l.commitment_ttl_minutes
                FROM interests i JOIN listings l ON l.id=i.listing_id
-               WHERE i.state='BONDED_INTEREST'"""
+               WHERE i.state IN ('BONDED_INTEREST','QUALIFIED_INTEREST')"""
         ).fetchall()
         for row in pending:
             created=parse_time(row["created_at"])
