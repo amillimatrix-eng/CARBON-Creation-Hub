@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T15:57:00+02:00",
+  "last_updated": "2026-10-08T16:19:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -2283,6 +2283,194 @@
       "payer_hypothesis": "Vodafone Fiji Pte Ltd / VitiKart product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Mature corporate target; lower owner-led priority unless iSCOPE finds a bounded current defect or distribution opportunity.",
       "consumer_action": "iSCOPE qualify only with current specific problem/buyer fit; otherwise retain as Fiji ecosystem/network evidence."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-123",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Hassaram Haresh Ramchandani / Tana POS",
+      "surface": "Google Play retail/wholesale POS; package com.tana.tanapos; Belize",
+      "observed_need": "Current August 2026 POS built specifically for Belize businesses combines point of sale, inventory, customer management, loyalty, retail and wholesale with local 24/7 support.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "customer management",
+        "loyalty",
+        "retail/wholesale"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tana.tanapos",
+      "published": "2026-08-31",
+      "payer_hypothesis": "Tana Technologies Belize / Hassaram Ramchandani",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Belize developer/contact and country-specific business workflow; maintenance notes do not prove a current defect.",
+      "consumer_action": "iSCOPE validate merchant adoption, support burden, wholesale/retail workflow and current growth or automation need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-124",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NIMBA POS / canonical operator developer in Bangladesh",
+      "surface": "Google Play POS adapted to Guinea businesses; package com.nimbapos.app; Guinea operating market",
+      "observed_need": "Current May 2026 app is explicitly adapted to Guinea with GNF and Mobile Money, covering stock, sales/purchases, invoicing, customers/suppliers and reporting. Play currently declares data is not encrypted.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "supplier management",
+        "mobile money",
+        "invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.nimbapos.app",
+      "published": "2026-05-11",
+      "payer_hypothesis": "NIMBA POS product owner unresolved",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Guinea operating positioning is explicit while developer jurisdiction is Bangladesh; encryption declaration requires validation.",
+      "consumer_action": "iSCOPE resolve local operator/payer relationship, merchant adoption and current encryption/declaration state."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-125",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "OBAME OBIANG Paul / Gabon Vente",
+      "surface": "Google Play Gabonese marketplace/seller stores; package com.gabonvente.app; Gabon",
+      "observed_need": "Current August 2026 platform lets merchants, artisans and SMEs create stores, manage orders and reach Gabon buyers. Latest release explicitly fixed a blocked add-item button, alert-display bugs, receipt-download stability and speed.",
+      "outcome_space": [
+        "marketplace",
+        "seller stores",
+        "order management",
+        "app reliability",
+        "SME visibility"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.gabonvente.app",
+      "published": "2026-08-03",
+      "payer_hypothesis": "Gabon Vente / Paul Obame Obiang",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong first-party maintenance evidence plus direct Gabon developer route; do not assume fixed issues remain.",
+      "consumer_action": "iSCOPE verify merchant adoption, whether catalog/receipt reliability remains current, and present seller-support/conversion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-126",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NES-ITE / Business Gab+",
+      "surface": "Google Play small-business bookkeeping/inventory; package com.ayossoftware.businessgabplus; Gabon",
+      "observed_need": "Current September 2026 app is built for Gabon entrepreneurs to separate business/personal money and manage journal, inventory, receipts and profitability offline with Airtel/Moov Money context; Libreville contact is public.",
+      "outcome_space": [
+        "bookkeeping",
+        "inventory",
+        "profit visibility",
+        "mobile money",
+        "microbusiness operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ayossoftware.businessgabplus",
+      "published": "2026-09-05",
+      "payer_hypothesis": "NES-ITE",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Excellent SMME/repetitive-work surface with local developer/contact; specific buyer need requires validation.",
+      "consumer_action": "iSCOPE validate user acquisition, bookkeeping/reporting support burden and adjacent SME automation opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-127",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "RAQMIYAT TECHNOLOGY SOLUTIONS-SARL / BadrMoov",
+      "surface": "Google Play merchant super-app operations; package com.badrmoov.store; Mauritania",
+      "observed_need": "Current merchant app is built for Mauritania store owners, restaurants, pharmacies and service providers to manage orders and grow sales on BadrMoov.",
+      "outcome_space": [
+        "merchant operations",
+        "restaurants",
+        "pharmacies",
+        "service providers",
+        "order management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.badrmoov.store",
+      "published": "2026",
+      "payer_hypothesis": "RAQMIYAT TECHNOLOGY SOLUTIONS-SARL / BadrMoov",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Distinct merchant package and operating surface; current contact/buyer problem should be validated.",
+      "consumer_action": "iSCOPE validate merchant onboarding, order/support workflow, payouts if present and current platform growth constraint."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-128",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ORANGE (SL) LIMITED / Orange Money Pro",
+      "surface": "Google Play merchant/agent payments; package com.orange.money.sl.pro; Sierra Leone",
+      "observed_need": "Current June 2026 app is reserved for Orange Money merchant partners and points of sale in Sierra Leone, supporting QR payments and cash-in/cash-out daily operations; Freetown company contact is public.",
+      "outcome_space": [
+        "merchant payments",
+        "agent network",
+        "cash-in/out",
+        "QR payments",
+        "financial operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.orange.money.sl.pro",
+      "published": "2026-06-16",
+      "payer_hypothesis": "ORANGE (SL) LIMITED",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. High-scale merchant-rail evidence; mature enterprise target gets lower direct-outbound priority absent bounded current problem.",
+      "consumer_action": "iSCOPE retain as Sierra Leone merchant-payment ecosystem edge; qualify commercially only with current specific buyer/operational evidence."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-129",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ABSA BANK LTD / Absa Mobi Tap Botswana",
+      "surface": "Google Play smartphone merchant acquiring; package com.wizzitdigital.emv.absa.botswana; Botswana",
+      "observed_need": "Current February 2026 app enables Botswana merchants with Absa merchant facilities to accept contactless card payments without POS hardware or device rental. Current release changed Mastercard CVM limit to BWP 500. Play declares collected device/ID data is not encrypted.",
+      "outcome_space": [
+        "merchant acquiring",
+        "contactless payments",
+        "SME payments",
+        "data safety"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.wizzitdigital.emv.absa.botswana",
+      "published": "2026-02-24",
+      "payer_hypothesis": "Absa Botswana / ABSA BANK LTD product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Ecosystem/payment-rail evidence more than owner-led prospect; data declaration needs verification before any defect claim.",
+      "consumer_action": "iSCOPE preserve merchant-payment rail and validate only if a specific current product/support/compliance opportunity exists."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-130",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CYBEX PTE LTD / Cybex Mobile POS",
+      "surface": "Google Play offline/fiscal POS; package com.cybex.mobilepos; Fiji",
+      "observed_need": "Current September 2026 Fiji-developed mobile POS supports offline sales, split payments, inventory/barcode intake and automatic fiscalization/sync to TaxCore; Fiji company phone/email/address are public.",
+      "outcome_space": [
+        "POS",
+        "offline operations",
+        "inventory",
+        "fiscalization",
+        "retail"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.cybex.mobilepos",
+      "published": "2026-09-20",
+      "payer_hypothesis": "CYBEX PTE LTD",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh local product with concrete offline/fiscal workflow; present commercial problem requires validation.",
+      "consumer_action": "iSCOPE validate merchant adoption, fiscalization/support burden, offline sync and current distribution opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-131",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tawanda Muzavazi / Mufungo Geeks",
+      "surface": "Google Play POS/inventory; package com.mufungogeeks.mufungopos; Zimbabwe",
+      "observed_need": "Current September 2026 Zimbabwe-developed POS provides offline checkout, inventory/stock tracking, cloud sync, multi-device operations, profit analytics, WhatsApp/SMS/email receipts and staff cashier roles.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "offline sync",
+        "merchant analytics",
+        "staff operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mufungogeeks.mufungopos",
+      "published": "2026-09-16",
+      "payer_hypothesis": "Mufungo Geeks / Tawanda Muzavazi",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Harare developer/support evidence and rich repetitive-work surface; no current defect inferred.",
+      "consumer_action": "iSCOPE validate merchant acquisition, support/sync burden and current product-growth or distribution needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-132",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NETWORK GREY (PTY) LTD / Bzaar Namibia Partner",
+      "surface": "Google Play restaurant/store order management; package com.bzaarnamibia.partner; Namibia operating market, South Africa legal developer",
+      "observed_need": "Merchant partner app manages real-time orders, item availability and order notifications for restaurants/stores in the Bzaar Namibia ecosystem. Last listed update is May 2025, so freshness is lower.",
+      "outcome_space": [
+        "merchant operations",
+        "restaurants",
+        "order management",
+        "catalog availability"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bzaarnamibia.partner",
+      "published": "2025-05-28",
+      "payer_hypothesis": "Bzaar Namibia product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Explicitly lower freshness and foreign legal developer; retain as Namibia merchant-workflow depth until active status is revalidated.",
+      "consumer_action": "iSCOPE verify 2026 service activity/operator ownership before any commercial qualification."
     }
   ]
 }
