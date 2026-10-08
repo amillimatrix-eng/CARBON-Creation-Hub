@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T23:19:00+02:00",
+  "last_updated": "2026-10-08T23:25:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -13664,6 +13664,114 @@
       "payer_hypothesis": "Unverified organization buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION; no graph promotion",
       "consumer_action": "iSCOPE validate current problem, buyer identity, suppression, relevance and lawful contact before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-702",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://bngtrading.com.pg/about-us/",
+      "organization": "BNG Trading Co. Ltd / Papua Niugini Freezers",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Melanesia / Pacific",
+      "sector": "frozen food distribution and cold-chain manufacturing",
+      "business_model": "commercial operator",
+      "surface": "Official corporate page describes nationwide cold-chain distribution, frozen manufacturing and exports.",
+      "observed_need": "Documented operating surface; no unmet buyer pain established.",
+      "source": "https://bngtrading.com.pg/about-us/",
+      "source_observed_at": "2026-10-08T23:25:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "PUBLIC_WEBSITE",
+          "source": "https://bngtrading.com.pg/about-us/"
+        }
+      ],
+      "current_public_evidence": "Official corporate page describes nationwide cold-chain distribution, frozen manufacturing and exports.",
+      "payer_hypothesis": "Unverified buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION; source-specific operational evidence only",
+      "consumer_action": "iSCOPE validate specific current problem, identity, permission and suppression before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-703",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://pngair.com.pg/cargo/",
+      "organization": "PNG Air Cargo",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Melanesia / Pacific",
+      "sector": "air cargo and perishable cold-chain",
+      "business_model": "commercial operator",
+      "surface": "Official cargo page offers perishable temperature-sensitive handling, priority freight and charters.",
+      "observed_need": "Documented operating surface; no unmet buyer pain established.",
+      "source": "https://pngair.com.pg/cargo/",
+      "source_observed_at": "2026-10-08T23:25:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "OFFICIAL_CONTACT_PAGE",
+          "source": "https://pngair.com.pg/cargo/"
+        }
+      ],
+      "current_public_evidence": "Official cargo page offers perishable temperature-sensitive handling, priority freight and charters.",
+      "payer_hypothesis": "Unverified buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION; source-specific operational evidence only",
+      "consumer_action": "iSCOPE validate specific current problem, identity, permission and suppression before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-704",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://hiliftcompany.com/services/",
+      "organization": "Hi-Lift Company",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Melanesia / Pacific",
+      "sector": "cold-chain consolidation and freight logistics",
+      "business_model": "commercial operator",
+      "surface": "Official services page lists refrigerated plug-in, consolidation, warehousing and customs.",
+      "observed_need": "Documented operating surface; no unmet buyer pain established.",
+      "source": "https://hiliftcompany.com/services/",
+      "source_observed_at": "2026-10-08T23:25:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_email",
+          "value": "info@hiliftcompany.com",
+          "source": "https://hiliftcompany.com/services/"
+        }
+      ],
+      "current_public_evidence": "Official services page lists refrigerated plug-in, consolidation, warehousing and customs.",
+      "payer_hypothesis": "Unverified buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION; source-specific operational evidence only",
+      "consumer_action": "iSCOPE validate specific current problem, identity, permission and suppression before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-705",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.dokonapapua.com/services/logistics",
+      "organization": "Dokona Papua Construction Limited",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Melanesia / Pacific",
+      "sector": "cold-chain logistics and supply chain",
+      "business_model": "commercial operator",
+      "surface": "Official logistics page lists cold-chain transport, warehousing, inventory management and last-mile distribution.",
+      "observed_need": "Documented operating surface; no unmet buyer pain established.",
+      "source": "https://www.dokonapapua.com/services/logistics",
+      "source_observed_at": "2026-10-08T23:25:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_email",
+          "value": "info@dokonapapua.com",
+          "source": "https://www.dokonapapua.com/services/logistics"
+        }
+      ],
+      "current_public_evidence": "Official logistics page lists cold-chain transport, warehousing, inventory management and last-mile distribution.",
+      "payer_hypothesis": "Unverified buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION; source-specific operational evidence only",
+      "consumer_action": "iSCOPE validate specific current problem, identity, permission and suppression before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -13719,94 +13827,91 @@
     "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
   },
   "last_continuity": {
-    "observed_at": "2026-10-08T23:19:00+02:00",
+    "observed_at": "2026-10-08T23:25:00+02:00",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261008-2319-SAST",
+    "run_identity": "FORX-CONTINUOUS-20261008-2325-SAST",
     "prior_receipt": {
-      "producer": "FORX Continuous Play Sweep",
-      "observed_at": "2026-10-08T20:08:00+02:00",
+      "observed_at": "2026-10-08T23:19:00+02:00",
       "result_ids": [
-        "FORX-PROSPECT-20261008-689",
-        "FORX-PROSPECT-20261008-690",
-        "FORX-PROSPECT-20261008-691",
-        "FORX-PROSPECT-20261008-692",
-        "FORX-PROSPECT-20261008-693",
-        "FORX-PROSPECT-20261008-694",
-        "FORX-PROSPECT-20261008-695"
+        "FORX-PROSPECT-20261008-696",
+        "FORX-PROSPECT-20261008-697",
+        "FORX-PROSPECT-20261008-698",
+        "FORX-PROSPECT-20261008-699",
+        "FORX-PROSPECT-20261008-700",
+        "FORX-PROSPECT-20261008-701"
       ]
     },
     "consumed_sources": [
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "f465e24fb8ba719a3536c349df1641040752ae70"
-      },
-      {
-        "id": "3f28f8b56cd781bd945dcd8630253ef8",
-        "revision": "fetched_this_run"
+        "revision": "3fc67f5ee3d3c1bba7efab918ee22540f5c921ae"
       },
       {
         "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
-        "revision": "fetched_this_run"
+        "revision": "prior fetched; latest not reconfirmed this tranche"
+      },
+      {
+        "id": "3f28f8b56cd781bd945dcd8630253ef8",
+        "revision": "prior fetched; latest not reconfirmed this tranche"
       }
     ],
     "apply_example": {
-      "prior_learning": "Prior receipt next_alternatives[1]: PNG/Vanuatu construction and industrial suppliers",
-      "changed_action": "Selected construction suppliers in PNG/Vanuatu and lateral Fiji fisheries operator rather than repeat wallet/payment apps",
+      "prior_learning": "Prior continuity next_alternatives[1]",
+      "changed_action": "Shifted from PNG/Vanuatu industrial suppliers to PNG cold-chain and freight services, rather than repeat suppliers",
       "source_pointers": [
         "overdrive/forx_prospect_buffer.json:last_continuity.next_alternatives"
       ]
     },
     "exact_coordinate": {
-      "geography": [
-        "Papua New Guinea",
-        "Vanuatu",
-        "Fiji"
-      ],
+      "country": "Papua New Guinea",
       "language": "English",
       "sector": [
-        "construction supply",
-        "industrial materials",
-        "fisheries processing"
+        "cold-chain",
+        "freight logistics",
+        "perishable air cargo"
       ],
-      "source": "official public business websites",
-      "surface": "individual official operator pages",
+      "source": "official operator websites",
+      "surface": "operational services",
       "offer": null,
       "price": null
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 6,
-      "candidates_staged_pending_ingestion": 6,
+      "new_exact_keys": 4,
+      "staged_pending_ingestion": 4,
       "verified_graph_delta_claimed": 0,
-      "explored": 6,
+      "explored": 4,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261008-696",
-      "FORX-PROSPECT-20261008-697",
-      "FORX-PROSPECT-20261008-698",
-      "FORX-PROSPECT-20261008-699",
-      "FORX-PROSPECT-20261008-700",
-      "FORX-PROSPECT-20261008-701"
+      "FORX-PROSPECT-20261008-702",
+      "FORX-PROSPECT-20261008-703",
+      "FORX-PROSPECT-20261008-704",
+      "FORX-PROSPECT-20261008-705"
+    ],
+    "network_result_keys": [
+      "url:https://fijitradeportal.gov.fj/en-gb/search-procedure/view/17",
+      "url:https://samoa.tradeportal.org/procedure/6?includeSearch=true&l=en"
     ],
     "uncertainty": [
-      "Official-site contact routes are observed, not delivery-tested.",
-      "Unmet buyer needs and canonical identity unresolved."
+      "No current unmet buyer need proven",
+      "Public routes untested",
+      "Fiji and Samoa fisheries registry pages are network rails, not commercial candidates"
     ],
     "next_alternatives": [
       {
-        "coordinate": "Fiji/Samoa fish exporters individual current official sites",
-        "why": "Lateral fisheries supply-chain depth"
+        "coordinate": "Fiji fisheries exporters with official company websites",
+        "why": "Lateral weak-sector coverage"
       },
       {
-        "coordinate": "Vanuatu/PNG logistics cold-chain and contractor equipment service",
-        "why": "Different asset-heavy operating model"
+        "coordinate": "Vanuatu temperature-controlled logistics operators",
+        "why": "Lateral geographic coverage"
       }
     ],
-    "chosen_next_action": "Continue country-first public-source exploration after readback",
+    "chosen_next_action": "Readback then continue exact-key discovery",
     "unresolved_gaps": [
-      "Production graph authority separate",
-      "Commercial feedback not attributed to these records"
+      "No graph ingest claim",
+      "No iSCOPE qualification claimed"
     ],
-    "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH"
+    "truth_boundary": "STAGED != VERIFIED GRAPH"
   }
 }
