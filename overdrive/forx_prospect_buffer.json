@@ -12425,6 +12425,91 @@
       "payer_hypothesis": "Maisha Meds Inc. / Maisha Meds Pharmacy POS business/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public operating surface evidenced; no unresolved commercial pain is presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-669",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MELA DIGITAL AFRICA / NakaSeed",
+      "surface": "Eswatini agriculture marketplace; package com.hangaapps.app",
+      "observed_need": "Connects farmers, buyers and agricultural service providers; starts in Eswatini with product/supply and farm-service discovery.",
+      "outcome_space": [
+        "agriculture",
+        "marketplace",
+        "service providers",
+        "suppliers"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.hangaapps.app",
+      "payer_hypothesis": "MELA DIGITAL AFRICA / NakaSeed business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public organization-level operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-670",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Rwanda ICT Chamber / Soroma Fresh",
+      "surface": "Rwanda agribusiness/cooperative operations; package com.ictchamber.soromafresh",
+      "observed_need": "Farm-to-market management covering farms, warehouses, harvests, inventory and sales.",
+      "outcome_space": [
+        "agriculture",
+        "cooperatives",
+        "warehouse",
+        "inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ictchamber.soromafresh",
+      "payer_hypothesis": "Rwanda ICT Chamber / Soroma Fresh business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public organization-level operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-671",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "INTELLITE IT SOLUTIONS LIMITED / Smart SIS",
+      "surface": "Ghana school-management software; package com.sisghana.mobileapp",
+      "observed_need": "Multi-school administration, financial workflow, role-based operations, reporting and communications.",
+      "outcome_space": [
+        "education",
+        "school management",
+        "school finance",
+        "multi-school"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.sisghana.mobileapp",
+      "payer_hypothesis": "INTELLITE IT SOLUTIONS LIMITED / Smart SIS business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public organization-level operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-672",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ThirdTap Technologies / SMIK-Af",
+      "surface": "Ghana/Africa school-management platform; package com.smikaf.school",
+      "observed_need": "School administration, academic workflow, role-based dashboards, notices and reporting.",
+      "outcome_space": [
+        "education",
+        "school management",
+        "administration",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.smikaf.school",
+      "payer_hypothesis": "ThirdTap Technologies / SMIK-Af business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public organization-level operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-673",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Emmallex Technologies / MySchoolGH",
+      "surface": "Ghana school-management platform; package com.myschoolgh.app",
+      "observed_need": "School administration, staff/payroll, finance, academic and reporting workflows.",
+      "outcome_space": [
+        "education",
+        "school management",
+        "payroll",
+        "school finance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.myschoolgh.app",
+      "payer_hypothesis": "Emmallex Technologies / MySchoolGH business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public organization-level operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
