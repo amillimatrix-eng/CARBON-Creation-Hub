@@ -1,0 +1,102 @@
+{
+  "receipt_id": "PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T135600Z",
+  "generated_at": "2026-10-08T13:56:00Z",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "line": "ONE iSCOPE->PRI / Last Breath writer",
+  "prior_durable_state": {
+    "path": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T125700Z.json",
+    "commit": "b388ce63bf2e5470ae7b1648ce1cfa66b9e18ab2",
+    "counts": {
+      "smalls": 76,
+      "medium": 34,
+      "upper_medium": 91,
+      "upper": 65,
+      "total": 266,
+      "paid_usd": 0
+    }
+  },
+  "warm_priority_sweep": {
+    "substantive_inbound": false,
+    "accepted_or_discussing_scope_price": false,
+    "due_follow_up_with_new_evidence": false,
+    "inbox_after_prior_receipt": 0,
+    "notes": [
+      "No new Jojo reply; prior single permitted follow-up remains suppression boundary.",
+      "No new Radial/Jonitha reply.",
+      "No new acceptance, invoice request, or payment question."
+    ]
+  },
+  "delivery_state_update": {
+    "account": "DPM Plumbing, Solar and Gas",
+    "gmail_id": "1a11b990cc58fafc",
+    "thread_id": "1a117ff79b42df2b",
+    "sent_readback_verified": true,
+    "hard_bounce_found": false,
+    "checked_at": "2026-10-08T13:55:00Z",
+    "lifecycle": "OFFERED / SENT_TO_PROVIDER / NO_HARD_FAILURE_OBSERVED",
+    "remains_unproven": [
+      "delivery",
+      "read",
+      "response",
+      "acceptance",
+      "conversion",
+      "invoice",
+      "payment"
+    ]
+  },
+  "material_action": {
+    "account": "Rebecca M Properties",
+    "official_source": "https://rebeccamproperties.co.za/",
+    "current_contact_verification": {
+      "recipient": "rebecca@rebeccamproperties.co.za",
+      "official_site_lists_coordinate": true,
+      "public_business_profile_lists_same_coordinate": true,
+      "verified_at": "2026-10-08T13:54:00Z"
+    },
+    "gmail_dedupe": {
+      "prior_sent_message_found": false,
+      "existing_draft_message_id": "1a11808a7e826cbb",
+      "existing_draft_id": "r713874894043637132"
+    },
+    "buyer_value": "Sales, rentals and property-management enquiries converge on a general contact path while live template residue and contradictory contact details create trust and lead-routing friction.",
+    "offer": "One working landlord/tenant/buyer/seller journey with intent routing, property and urgency capture, viewing/application handoff, maintenance photo/document intake, acknowledgement and callback queue, satisfaction follow-up, and cleanup of public template residue.",
+    "tier": "UPPER",
+    "exact_price_usd": 499,
+    "payment_link_in_first_contact": false,
+    "gmail_send_receipt": {
+      "id": "1a11bccddb80741f",
+      "thread_id": "1a11808a7e826cbb",
+      "label_ids": [
+        "SENT"
+      ]
+    },
+    "immediate_hard_bounce": false,
+    "lifecycle": "OFFERED / SENT_TO_PROVIDER",
+    "counted_increment": 1
+  },
+  "cumulative_corrected": {
+    "smalls": 76,
+    "medium": 34,
+    "upper_medium": 91,
+    "upper": 66,
+    "total": 267,
+    "paid_usd": 0
+  },
+  "response_evidence": {
+    "new_substantive_human_response": false,
+    "new_positive_response": false,
+    "new_rejection": false,
+    "new_referral": false,
+    "new_acceptance": false,
+    "new_conversion": false,
+    "new_invoice": false,
+    "new_payment": false
+  },
+  "t10": {
+    "supposed": "Act on warm evidence first, then progress only the strongest executable high-value draft after live contact verification, dedupe, buyer-value validation, and scope review.",
+    "actual": "No warm buyer response existed. DPM SENT/no-hard-failure state was read back. Rebecca M Properties was current-verified, deduped, reviewed, and sent as a USD 499 concrete property-journey pilot.",
+    "proves": "Official site contact evidence; Gmail draft and history readback; Gmail SENT receipt 1a11bccddb80741f; empty immediate hard-bounce search; durable receipt readback.",
+    "changed": "One UPPER offer added; corrected cumulative total moved from 266 to 267.",
+    "remains_unproven": "Delivery, read, response, acceptance, ordered/contracted state, invoice/receivable, conversion, and payment. PAID remains USD 0."
+  }
+}
