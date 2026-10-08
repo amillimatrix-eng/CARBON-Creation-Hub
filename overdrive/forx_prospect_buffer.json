@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T13:18:00+02:00",
+  "last_updated": "2026-10-08T13:31:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -693,6 +693,227 @@
       "payer_hypothesis": "Padi SL operator",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Sierra Leone operating focus is clear but developer/operator identity needs reconciliation before outbound.",
       "consumer_action": "iSCOPE verify legal/operator identity and current driver/merchant/customer acquisition needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-038",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Octra / Maoulida Said M'namdji",
+      "surface": "Google Play marketplace; package km.octra.octrakm; Comoros",
+      "observed_need": "Current March 2026 Play listing is explicitly built for Comoros, with verified sellers, seller shops, WhatsApp ordering and seller visibility/growth; public Comoros phone/email are exposed.",
+      "outcome_space": [
+        "marketplace",
+        "seller verification",
+        "WhatsApp commerce",
+        "SME visibility"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=km.octra.octrakm",
+      "published": "2026-03-23",
+      "payer_hypothesis": "Octra operator / Maoulida Said M'namdji",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong local identity/contact and seller-growth surface; no unresolved defect inferred.",
+      "consumer_action": "iSCOPE validate seller acquisition, verification workload, WhatsApp-order conversion and current operator priorities."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-039",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KARTALYS / KartaPay",
+      "surface": "Google Play commerce/payments; package com.kartapay.app; Comoros operating market, France developer entity",
+      "observed_need": "Current September 2026 listing positions KartaPay for buying, selling and collecting cash in Comoros; direct Comoros phone and support email are public while developer entity is in France.",
+      "outcome_space": [
+        "payments",
+        "local commerce",
+        "cash collection",
+        "merchant operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kartapay.app",
+      "published": "2026-09-08",
+      "payer_hypothesis": "KARTALYS / KartaPay product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Operating market and developer jurisdiction are kept distinct. Current problem requires validation.",
+      "consumer_action": "iSCOPE confirm payer/legal identity, Comoros operating footprint, merchant onboarding and payment-support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-040",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BRING INC LIMITED / Yumi",
+      "surface": "Google Play local delivery marketplace; package com.yumi.customer; Samoa operating market, New Zealand developer entity",
+      "observed_need": "Current August 2026 listing connects Samoa customers with local food, grocery and everyday businesses and exposes direct product support.",
+      "outcome_space": [
+        "local delivery",
+        "merchant network",
+        "food/grocery",
+        "customer support"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.yumi.customer",
+      "published": "2026-08-13",
+      "payer_hypothesis": "BRING INC LIMITED / Yumi product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Samoa operating market is explicit; developer legal address is New Zealand. No local-company claim made.",
+      "consumer_action": "iSCOPE verify Samoa merchant acquisition, order-support and retention surfaces plus actual buyer route."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-041",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BRING INC LIMITED / Yumi",
+      "surface": "Google Play driver network; package com.yumi.driver; Samoa operating market, New Zealand developer entity",
+      "observed_need": "Distinct current August 2026 driver package handles delivery requests, navigation, earnings, documents and flexible scheduling for Samoa delivery partners.",
+      "outcome_space": [
+        "driver network",
+        "delivery operations",
+        "earnings",
+        "document onboarding"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.yumi.driver",
+      "published": "2026-08-13",
+      "payer_hypothesis": "BRING INC LIMITED / Yumi product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Separate exact package preserved as provenance; likely one canonical organization with Yumi customer app.",
+      "consumer_action": "iSCOPE link to Yumi canonical entity if verified and assess driver onboarding/activation without duplicate outreach."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-042",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Ride The Wave: A ridesharing app LLC / Ride the Wave Tonga",
+      "surface": "Google Play ride + food delivery; package com.ridethewavetonga; Tonga operating market, US developer entity",
+      "observed_need": "Current August 2026 listing is explicitly built for Tonga with landmark-based ride booking, restaurant ordering, cash settlement, driver earnings and restaurant order management; public support email is exposed.",
+      "outcome_space": [
+        "ride hailing",
+        "food delivery",
+        "driver network",
+        "restaurant network",
+        "cash operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ridethewavetonga",
+      "published": "2026-08-24",
+      "payer_hypothesis": "Ride The Wave product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Tonga operating market is explicit while legal developer is US-based. No local-company inference.",
+      "consumer_action": "iSCOPE verify Tonga launch/adoption, driver/restaurant acquisition and current operating bottleneck."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-043",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CHRIST VISION MINISTRIES INC / Safe Ride Delivery",
+      "surface": "Google Play parcel delivery; package com.safedelivery.customer; Liberia operating market, US developer entity",
+      "observed_need": "Current May 2026 customer app provides cash-based parcel booking, live tracking, order history and support across Liberia; latest notes cite background-location and privacy improvements.",
+      "outcome_space": [
+        "parcel delivery",
+        "customer booking",
+        "tracking",
+        "privacy",
+        "cash logistics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.safedelivery.customer",
+      "published": "2026-05-17",
+      "payer_hypothesis": "Safe Ride Delivery product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Liberia service focus is explicit; developer legal entity is US-based. Privacy improvement is maintenance evidence, not proof a defect remains.",
+      "consumer_action": "iSCOPE verify Liberia operations, customer acquisition/support and current privacy/location burden."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-044",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CHRIST VISION MINISTRIES INC / Safe Ride Delivery",
+      "surface": "Google Play rider operations; package com.saferidedelivery.rider; Liberia operating market, US developer entity",
+      "observed_need": "Distinct May 2026 rider package manages delivery requests, navigation, active/completed orders and real-time updates for riders in Liberia.",
+      "outcome_space": [
+        "rider network",
+        "last-mile delivery",
+        "route operations",
+        "delivery status"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.saferidedelivery.rider",
+      "published": "2026-05-19",
+      "payer_hypothesis": "Safe Ride Delivery product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Separate exact package retained; likely reconciles to same canonical organization as customer app.",
+      "consumer_action": "iSCOPE link identity if verified and test rider acquisition/activation or delivery-operations problem once."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-045",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "WISE SECURITY LLC / Ormuta",
+      "surface": "Google Play driver mobility; package com.ormuta.drivers; Liberia operating market, US developer entity",
+      "observed_need": "Current May 2026 listing describes a Liberia-focused driver mobility platform. Play currently declares collected/shared location data is not encrypted; public support email is exposed.",
+      "outcome_space": [
+        "mobility",
+        "driver network",
+        "data safety",
+        "ride operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ormuta.drivers",
+      "published": "2026-05-22",
+      "payer_hypothesis": "Ormuta product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Play data-safety declaration is a concrete review surface; iSCOPE must verify architecture/declaration before any defect claim.",
+      "consumer_action": "iSCOPE validate Liberia operations, current encryption/declaration state and driver-network growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-046",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BAZAAR INVESTMENT (PTY) LTD / Ezzy",
+      "surface": "Google Play merchant operations; package sc.ezzy.business; Seychelles",
+      "observed_need": "Current September 2026 merchant app supports approval-based onboarding, order/menu/shelf management, fulfilment, settlement visibility and payouts; Seychelles business address and direct support are public.",
+      "outcome_space": [
+        "merchant marketplace",
+        "seller onboarding",
+        "fulfilment",
+        "settlements",
+        "inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=sc.ezzy.business",
+      "published": "2026-09-28",
+      "payer_hypothesis": "BAZAAR INVESTMENT (PTY) LTD / Ezzy",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Very fresh Seychelles merchant-network operating evidence with local business identity.",
+      "consumer_action": "iSCOPE verify merchant acquisition/onboarding, settlement support and fulfilment operating load."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-047",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Seychelles ride-booking operator / developer identity unresolved",
+      "surface": "Google Play driver ride-booking; package com.seychellesTaxi.driver; Seychelles operating market",
+      "observed_need": "Current July 2026 driver app is explicitly for Seychelles ride booking. Play currently declares collected data is not encrypted and exposes a Seychelles-facing support email; listed developer is India-based.",
+      "outcome_space": [
+        "ride booking",
+        "driver network",
+        "data safety",
+        "mobility"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.seychellesTaxi.driver",
+      "published": "2026-07-24",
+      "payer_hypothesis": "Seychelles ride-booking product owner unresolved",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Canonical organization is unresolved; operating market and Play data-safety declaration are preserved without inferring company locality.",
+      "consumer_action": "iSCOPE resolve operator/payer identity and verify current encryption/declaration state before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-048",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CROSSA (PTY) LTD / Crossa.Africa",
+      "surface": "Google Play cross-border shopping/logistics; package com.crossa.Africa; Eswatini operating market, South Africa developer entity",
+      "observed_need": "Current August 2026 listing serves Eswatini with consolidated South African retail shopping, customs/logistics, package tracking, local EFT/MoMo/iKhokha and current cart/payment improvements.",
+      "outcome_space": [
+        "cross-border ecommerce",
+        "logistics",
+        "payments",
+        "customs",
+        "retail aggregation"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.crossa.Africa",
+      "published": "2026-08-27",
+      "payer_hypothesis": "CROSSA (PTY) LTD product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Eswatini is operating market; legal developer is South African. Current first-party product improvements are attributable.",
+      "consumer_action": "iSCOPE validate Eswatini acquisition, payment/retry, logistics support and market-expansion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-049",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Shiphustle",
+      "surface": "Google Play cross-border courier platform; package com.shiphustle; Eswatini operating market",
+      "observed_need": "Current September 2026 listing serves Eswatini with cross-border retail ordering, duties/levy calculation, Paystack payments, courier messaging, proof of delivery, depots/drivers and courier-business analytics.",
+      "outcome_space": [
+        "cross-border logistics",
+        "courier network",
+        "payments",
+        "customs",
+        "merchant operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.shiphustle",
+      "published": "2026-09-12",
+      "payer_hypothesis": "Shiphustle product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong Eswatini economic-infrastructure operating surface; legal operator identity/contact should be normalized by iSCOPE.",
+      "consumer_action": "iSCOPE resolve operator identity and assess courier/customer acquisition, payment/customs support and expansion needs."
     }
   ]
 }
