@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T19:56:00+02:00",
+  "last_updated": "2026-10-08T20:12:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -6844,6 +6844,134 @@
       "payer_hypothesis": "Top Analog owner/operator",
       "fit_note": "Contactable niche manufacturing/media-services candidate with explicit incomplete commercial web surface.",
       "consumer_action": "iSCOPE verify duplicate/contact history and whether a small quote/conversion web fix fits near-term demand."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-360",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Freedom 77 Recruitment / Freedom Horizon (Pty) Ltd",
+      "surface": "Recruitment agency; Botswana",
+      "observed_need": "Gaborone recruitment agency exposes direct employer/talent WhatsApp/email intake and positions AI-assisted recruitment services.",
+      "outcome_space": [
+        "recruitment",
+        "employer intake",
+        "talent sourcing",
+        "WhatsApp"
+      ],
+      "source": "https://freedom77.org/contact-us/",
+      "published": "2026",
+      "payer_hypothesis": "Freedom 77 Recruitment",
+      "fit_note": "Direct Botswana company registration/contact route; no recruitment-process weakness inferred.",
+      "consumer_action": "iSCOPE validate employer enquiry qualification, vacancy intake, candidate screening, status updates and follow-up workflow."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-361",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Muta Recruitment Agency",
+      "surface": "Staffing/recruitment agency; Zambia and regional",
+      "observed_need": "Licensed Kitwe agency handles search, candidate curation, onboarding and payroll for employer staffing needs across Zambia and neighbouring markets with employer enquiry form.",
+      "outcome_space": [
+        "recruitment",
+        "staffing",
+        "onboarding",
+        "payroll",
+        "employer intake"
+      ],
+      "source": "https://mutarecruitmentagency.com/for-employers/",
+      "published": "2026",
+      "payer_hypothesis": "Muta Recruitment Agency",
+      "fit_note": "Direct Zambia employer-side workflow with regional operations.",
+      "consumer_action": "iSCOPE validate employer intake, job-requirement capture, candidate/status communications, onboarding and partnership follow-up."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-362",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Talent Lab",
+      "surface": "HR/recruitment and temporary staffing operator; Mauritius",
+      "observed_need": "Mauritius HR company provides recruitment, temporary staffing and broader HR services with separate employer service route and managed workforce operations.",
+      "outcome_space": [
+        "recruitment",
+        "temporary staffing",
+        "HR services",
+        "employer operations"
+      ],
+      "source": "https://www.talentlab.mu/",
+      "published": "2026",
+      "payer_hypothesis": "Talent Lab",
+      "fit_note": "Direct Mauritius employer-facing recruitment surface; mature operation means negative selection applies absent a bounded gap.",
+      "consumer_action": "iSCOPE inspect employer intake, temp-staff coordination, reporting, payroll/admin or lead follow-up for a specific current need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-363",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BUNIE International Recruitment Agency",
+      "surface": "Licensed recruitment agency; Malawi",
+      "observed_need": "Salima agency provides local and international recruitment plus B2B agency partnerships with employer/candidate WhatsApp, email and enquiry flows.",
+      "outcome_space": [
+        "recruitment",
+        "international placement",
+        "B2B partnerships",
+        "employer intake"
+      ],
+      "source": "https://www.bunierecruitment.com/",
+      "published": "2026",
+      "payer_hypothesis": "BUNIE International Recruitment Agency",
+      "fit_note": "Direct Malawi licensed recruitment operator. Eligibility, worker-fee and destination rules remain subject to current law/policy; no outbound action by FORX.",
+      "consumer_action": "iSCOPE validate employer mandate intake, document collection, status communication, partner coordination and current business-development needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-364",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LK Recruitment",
+      "surface": "Staffing/recruitment agency; Rwanda",
+      "observed_need": "Kigali agency supports temporary staffing with business requirement intake, candidate sourcing/screening, matching and ongoing placement support, plus distinct business-client contact channel.",
+      "outcome_space": [
+        "recruitment",
+        "temporary staffing",
+        "candidate screening",
+        "employer intake"
+      ],
+      "source": "https://lkrecruitmentrw.com/about",
+      "published": "2026",
+      "payer_hypothesis": "LK Recruitment",
+      "fit_note": "Direct Rwanda employer-side workflow and contact evidence.",
+      "consumer_action": "iSCOPE validate employer requirement capture, candidate-pool operations, client communication, placement status and follow-up burden."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-365",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Elite Employment",
+      "surface": "Owner-managed recruitment consultancy; Namibia",
+      "observed_need": "Windhoek consultancy manages executive and specialist recruitment from client inception through search, shortlisting, interviews, assessments, background screening, offers and post-recruitment strategy.",
+      "outcome_space": [
+        "recruitment",
+        "executive search",
+        "screening",
+        "employer workflow",
+        "client reporting"
+      ],
+      "source": "https://eliteemployment.com.na/clients/",
+      "published": "2026",
+      "payer_hypothesis": "Elite Employment",
+      "fit_note": "Direct Namibia employer workflow; owner-managed but mature. Negative-selection applies unless a bounded process gap is evidenced.",
+      "consumer_action": "iSCOPE inspect client intake, candidate-status reporting, document/assessment coordination, employer communication or business-development workflow."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-366",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MyRecruit Ltd",
+      "surface": "Private recruitment agency; Mauritius",
+      "observed_need": "Mauritius recruitment agency specialises in non-citizen worker recruitment for employment in Mauritius and exposes employer workforce-gap enquiry with screening/work-permit questions and direct office contact.",
+      "outcome_space": [
+        "recruitment",
+        "workforce sourcing",
+        "employer intake",
+        "worker screening"
+      ],
+      "source": "https://myrecruitltd.com/",
+      "published": "2026",
+      "payer_hypothesis": "MyRecruit Ltd",
+      "fit_note": "Direct Mauritius employer-facing workflow. Recruitment must stay within current Mauritius law; worker-fee/compliance issues are not inferred.",
+      "consumer_action": "iSCOPE validate employer workforce-intake, screening, document/status coordination and current business-operation bottlenecks within legal boundaries."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
