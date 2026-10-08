@@ -1189,7 +1189,7 @@ def mount_marketplace(
             record = store.cancel_commitment(commitment_id, participant, payload.reason)
             interest = store.get_interest(record["interest_id"])
             instruction = None
-            if interest:
+            if interest and interest["provider_ref"] != "NO_BOND_REQUIRED":
                 if record["state"] in {"MUTUAL_RELEASE", "VALID_EXIT"}:
                     instruction = money.release(interest["provider_ref"], interest["bond_minor"])
                 elif record["state"] in {"BUYER_BREACH_REVIEW", "SELLER_BREACH_REVIEW"}:
@@ -1220,7 +1220,11 @@ def mount_marketplace(
         try:
             record = store.dispute(commitment_id, participant, payload.reason)
             interest = store.get_interest(record["interest_id"])
-            instruction = money.hold(interest["provider_ref"], "DISPUTED") if interest else None
+            instruction = (
+                money.hold(interest["provider_ref"], "DISPUTED")
+                if interest and interest["provider_ref"] != "NO_BOND_REQUIRED"
+                else None
+            )
             if instruction:
                 store.set_interest_provider_state(record["interest_id"], instruction.state)
             return {
