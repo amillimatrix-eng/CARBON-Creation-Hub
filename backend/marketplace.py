@@ -186,6 +186,8 @@ class MarketplaceStore:
                     seller_ref TEXT NOT NULL,
                     price_minor INTEGER NOT NULL,
                     currency TEXT NOT NULL,
+                    purchase_provider_ref TEXT,
+                    funding_state TEXT NOT NULL DEFAULT 'NOT_FUNDED',
                     buyer_accept INTEGER NOT NULL DEFAULT 0,
                     seller_accept INTEGER NOT NULL DEFAULT 0,
                     state TEXT NOT NULL,
@@ -236,6 +238,11 @@ class MarketplaceStore:
                 conn.execute("ALTER TABLE commitments ADD COLUMN terms_json TEXT NOT NULL DEFAULT '{}'")
             if "terms_hash" not in commitment_columns:
                 conn.execute("ALTER TABLE commitments ADD COLUMN terms_hash TEXT NOT NULL DEFAULT ''")
+            deal_columns = {row["name"] for row in conn.execute("PRAGMA table_info(deals)").fetchall()}
+            if "purchase_provider_ref" not in deal_columns:
+                conn.execute("ALTER TABLE deals ADD COLUMN purchase_provider_ref TEXT")
+            if "funding_state" not in deal_columns:
+                conn.execute("ALTER TABLE deals ADD COLUMN funding_state TEXT NOT NULL DEFAULT 'NOT_FUNDED'")
 
     def _event(
         self,
@@ -654,16 +661,50 @@ class MarketplaceStore:
             now = iso()
             conn.execute(
                 """INSERT INTO deals(id,commitment_id,listing_id,buyer_ref,seller_ref,price_minor,currency,
-                   buyer_accept,seller_accept,state,settlement_state,created_at,updated_at)
-                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                   purchase_provider_ref,funding_state,buyer_accept,seller_accept,state,settlement_state,created_at,updated_at)
+                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (
                     deal_id, commitment_id, com["listing_id"], com["buyer_ref"], com["seller_ref"],
-                    listing["price_minor"], listing["currency"], 0, 0, "INSPECTION", "NOT_READY", now, now,
+                    listing["price_minor"], listing["currency"], None, "NOT_FUNDED",
+                    0, 0, "FUNDING_REQUIRED", "NOT_READY", now, now,
                 ),
             )
-            self._event(conn, "deal", deal_id, actor, "INSPECTION_OPENED", {"commitment_id": commitment_id})
+            self._event(conn, "deal", deal_id, actor, "DEAL_FUNDING_REQUIRED", {
+                "commitment_id": commitment_id,
+                "price_minor": listing["price_minor"],
+                "currency": listing["currency"],
+                "bond_is_not_purchase_price": True,
+            })
             row = conn.execute("SELECT * FROM deals WHERE id=?", (deal_id,)).fetchone()
         return dict(row)
+
+    def fund_deal(self, deal_id: str, buyer_ref: str, provider_ref: str, provider_state: str) -> dict[str, Any]:
+        with self._conn() as conn:
+            deal = conn.execute("SELECT * FROM deals WHERE id=?", (deal_id,)).fetchone()
+            if not deal:
+                raise KeyError("deal not found")
+            if deal["buyer_ref"] != buyer_ref:
+                raise PermissionError("buyer credential required")
+            if deal["state"] == "INSPECTION" and deal["funding_state"] != "NOT_FUNDED":
+                return dict(deal)
+            if deal["state"] != "FUNDING_REQUIRED":
+                raise ValueError("deal is not awaiting purchase funding")
+            now = iso()
+            conn.execute(
+                """UPDATE deals
+                   SET purchase_provider_ref=?,funding_state=?,state='INSPECTION',updated_at=?
+                   WHERE id=?""",
+                (provider_ref, provider_state, now, deal_id),
+            )
+            self._event(conn, "deal", deal_id, buyer_ref, "PURCHASE_FUNDS_SECURED", {
+                "price_minor": deal["price_minor"],
+                "currency": deal["currency"],
+                "provider_state": provider_state,
+                "bond_remains_separate": True,
+                "money_moved": False,
+            })
+            updated = conn.execute("SELECT * FROM deals WHERE id=?", (deal_id,)).fetchone()
+        return dict(updated)
 
     def decline_deal(self, deal_id: str, actor: str, reason: str) -> dict[str, Any]:
         with self._conn() as conn:
@@ -672,8 +713,8 @@ class MarketplaceStore:
                 raise KeyError("deal not found")
             if actor not in {deal["buyer_ref"], deal["seller_ref"]}:
                 raise PermissionError("participant credential required")
-            if deal["state"] != "INSPECTION":
-                raise ValueError("only an inspection-stage deal can be declined")
+            if deal["state"] not in {"FUNDING_REQUIRED", "INSPECTION"}:
+                raise ValueError("only an open deal can be declined")
             commitment = conn.execute(
                 "SELECT * FROM commitments WHERE id=?",
                 (deal["commitment_id"],),
@@ -694,6 +735,7 @@ class MarketplaceStore:
             self._event(conn, "deal", deal_id, actor, "DEAL_DECLINED_AFTER_INSPECTION", {
                 "reason": reason.strip(),
                 "bond_resolution": "RELEASE_PENDING",
+                "purchase_funds_resolution": "RELEASE_PENDING" if deal["purchase_provider_ref"] else "NOT_FUNDED",
                 "money_moved": False,
             })
             updated = conn.execute("SELECT * FROM deals WHERE id=?", (deal_id,)).fetchone()
@@ -706,6 +748,8 @@ class MarketplaceStore:
                 raise KeyError("deal not found")
             if deal["state"] == "BONDED_DEAL":
                 return dict(deal)
+            if deal["state"] != "INSPECTION" or deal["funding_state"] == "NOT_FUNDED":
+                raise ValueError("purchase funds must be secured before deal acceptance")
             if actor == deal["buyer_ref"]:
                 field = "buyer_accept"
             elif actor == deal["seller_ref"]:
@@ -1131,6 +1175,29 @@ def mount_marketplace(
         participant = actor(x_carbon_actor)
         try:
             return {"record": store.open_deal(commitment_id, participant)}
+        except Exception as exc:
+            raise map_error(exc) from exc
+
+    @router.post("/api/carbon/deals/{deal_id}/fund")
+    def fund_deal(deal_id: str, x_carbon_actor: str | None = Header(default=None)) -> dict[str, Any]:
+        require_demo()
+        buyer = actor(x_carbon_actor)
+        try:
+            with store._conn() as conn:
+                deal = conn.execute("SELECT * FROM deals WHERE id=?", (deal_id,)).fetchone()
+            if not deal:
+                raise KeyError("deal not found")
+            if deal["buyer_ref"] != buyer:
+                raise PermissionError("buyer credential required")
+            provider_ref = money.reserve(deal_id, buyer, deal["price_minor"])
+            provider_state = "SANDBOX_PURCHASE_FUNDS_SECURED" if not money.moves_real_money else "PROVIDER_SECURED"
+            record = store.fund_deal(deal_id, buyer, provider_ref, provider_state)
+            return {
+                "record": record,
+                "provider": money.name,
+                "money_moved": money.moves_real_money,
+                "bond_and_purchase_funds_are_separate": True,
+            }
         except Exception as exc:
             raise map_error(exc) from exc
 
