@@ -12721,9 +12721,486 @@
       "payer_hypothesis": "Bundu Power / KVA Xchange commercial/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public business-operating surface evidenced; no unresolved commercial pain is presumed.",
       "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-678",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.samoapayments.clients",
+      "organization": "Samoa Payments / Samoa Payments Clients",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Samoa",
+      "region": "Pacific Islands",
+      "sector": "merchant payments",
+      "business_model": "B2B payments SaaS",
+      "surface": "Samoa merchant payment operations; package com.samoapayments.clients",
+      "observed_need": "Merchants manage QuickPay, PayLinks, transaction lists and payment notifications; current release notes describe the app as a possible final beta.",
+      "outcome_space": [
+        "merchant payments",
+        "PayLinks",
+        "transaction operations",
+        "SME commerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.samoapayments.clients",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2026-04-27",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://samoapayments.com",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "kevin@samoapayments.com",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+6857645435",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play listing and release state directly evidence an operating merchant-payment surface and beta-stage product lifecycle; no defect or purchase intent is inferred.",
+      "payer_hypothesis": "Samoa Payments / Samoa Payments Clients business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-679",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.discover.samoa",
+      "organization": "South Pacific Broadband Co. Limited / Discover Samoa",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Samoa",
+      "region": "Pacific Islands",
+      "sector": "tourism directory",
+      "business_model": "B2B2C local discovery platform",
+      "surface": "Samoa tourism and local-business directory; package com.discover.samoa",
+      "observed_need": "Offline-capable discovery across hotels, resorts, restaurants, attractions, shops, petrol stations and medical services, with events and deals for tourists and residents.",
+      "outcome_space": [
+        "tourism",
+        "hospitality directory",
+        "local business visibility",
+        "offline discovery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.discover.samoa",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2026-05-28",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://discoversamoa.ws",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "contact@spbroadband.com",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+6857609298",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play listing explicitly identifies a Samoa-wide local-business and hospitality discovery rail. Directory members are not promoted as nodes.",
+      "payer_hypothesis": "South Pacific Broadband Co. Limited / Discover Samoa business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-680",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.remaply.app.twa",
+      "organization": "Kabisi Group Pty Ltd / Remaply Fiji",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Fiji",
+      "region": "Melanesia / Pacific Islands",
+      "sector": "digital addressing and logistics",
+      "business_model": "location infrastructure platform",
+      "surface": "Fiji digital-address infrastructure; package com.remaply.app.twa",
+      "observed_need": "Many homes, businesses and villages lack formal addresses, creating delivery, emergency-response and customer-location friction; the app provides shareable offline-capable digital addresses.",
+      "outcome_space": [
+        "digital addressing",
+        "last-mile logistics",
+        "small business delivery",
+        "economic infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.remaply.app.twa",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2026-07-30",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://remaply.com",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "admin@remaply.com",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Candidate-specific Play copy states the precise addressability problem and affected business/delivery surface; this is first-party problem evidence, not a country-level inference.",
+      "payer_hypothesis": "Kabisi Group Pty Ltd / Remaply Fiji business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-681",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:app.ium.mbambi",
+      "organization": "International University of Management / Ombambi",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Namibia",
+      "region": "Southern Africa",
+      "sector": "livestock operations",
+      "business_model": "farm-management software",
+      "surface": "Namibia livestock and field operations; package app.ium.mbambi",
+      "observed_need": "Offline livestock, location and field-operation capture; current release notes say image-sync issues were resolved and livestock relationships added.",
+      "outcome_space": [
+        "agriculture",
+        "livestock",
+        "offline operations",
+        "farm records"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.ium.mbambi",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2026-09-11",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://ombabi.app",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "cdi@ium.edu.na",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+264614336000",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play listing evidences a live 1+ install early-stage farm tool and recent resolved synchronization work. The completed fix is not claimed as an unresolved defect.",
+      "payer_hypothesis": "International University of Management / Ombambi business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-682",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.thuolink.mobile",
+      "organization": "Thuo Tech Pty Ltd / Thuo Link",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Botswana",
+      "region": "Southern Africa",
+      "sector": "livestock compliance and operations",
+      "business_model": "B2B farm-management SaaS",
+      "surface": "Botswana livestock-team operations; package com.thuolink.mobile",
+      "observed_need": "Farm teams manage herd health, breeding, movement logs, BNLA/BAITS compliance, permits, quarantine, feedlots, tasks and desktop synchronization.",
+      "outcome_space": [
+        "agriculture",
+        "livestock compliance",
+        "farm team workflow",
+        "field operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.thuolink.mobile",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2026-07-03",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://thuotech.co.bw",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "info@thuotech.co.bw",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "otsile@thuotech.co.bw",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+26772114791",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play listing provides Botswana-specific regulatory and workflow evidence plus direct domain-matched contacts; no unmet buyer problem is inferred beyond the operating surface.",
+      "payer_hypothesis": "Thuo Tech Pty Ltd / Thuo Link business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-683",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:na.com.namibmills.marketsync",
+      "organization": "Namib Mills (Pty) Ltd / MarketSync",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Namibia",
+      "region": "Southern Africa",
+      "sector": "food distribution and field sales",
+      "business_model": "enterprise field-operations application",
+      "surface": "Namibia bakery/food field-sales operations; package na.com.namibmills.marketsync",
+      "observed_need": "Sales representatives, bakery technical advisers and field marketers log store visits, market surveys, bakery surveys, customer complaints and customer orders while occasionally connected.",
+      "outcome_space": [
+        "food distribution",
+        "field sales",
+        "market surveys",
+        "customer complaints",
+        "orders"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=na.com.namibmills.marketsync",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2026-04-01",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "support_email",
+          "value": "nmdev@nm.na",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+264811429186",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play listing directly exposes an occasionally connected field-sales and complaint/order workflow. Public listing does not establish external procurement intent.",
+      "payer_hypothesis": "Namib Mills (Pty) Ltd / MarketSync business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-684",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.jobajoba.pro",
+      "organization": "Ntebogang Technologies Pty Ltd / Jobajoba Pro",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Botswana",
+      "region": "Southern Africa",
+      "sector": "skilled-services marketplace",
+      "business_model": "B2B2C on-demand services marketplace",
+      "surface": "Botswana skilled-service provider operations; package com.jobajoba.pro",
+      "observed_need": "Providers receive job requests, manage availability, navigate to customers, track work and earnings, build ratings and use secure payment flows.",
+      "outcome_space": [
+        "contractors",
+        "service marketplace",
+        "booking",
+        "provider acquisition",
+        "reputation"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.jobajoba.pro",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2026-03-30",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://www.jobajoba.africa",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "info@atommedia.co.bw",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "support@atommedia.co.bw",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+26772549239",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play listing explicitly frames provider visibility, job matching and service-business growth as the platform's operating surface; no current conversion defect is asserted.",
+      "payer_hypothesis": "Ntebogang Technologies Pty Ltd / Jobajoba Pro business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-685",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.kopo.provider",
+      "organization": "Nexus Innovations Proprietary Limited / Kopo Provider",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Botswana",
+      "region": "Southern Africa",
+      "sector": "skilled-services marketplace",
+      "business_model": "B2B2C on-demand services marketplace",
+      "surface": "Botswana skilled-service provider marketplace; package com.kopo.provider",
+      "observed_need": "Providers list services and prices, create packages, manage bookings, receive payment confirmations and build reputation through reviews.",
+      "outcome_space": [
+        "contractors",
+        "service marketplace",
+        "booking",
+        "provider acquisition",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kopo.provider",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2024-07-10",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://kopo.co.bw",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "support@kopo.co.bw",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "oabile@kopo.co.bw",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+26777919813",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Play listing remains publicly reachable but its recorded update is older than the tranche norm. Data-safety declaration says data is not encrypted; iSCOPE must validate current app state before any security or commercial conclusion.",
+      "payer_hypothesis": "Nexus Innovations Proprietary Limited / Kopo Provider business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-686",
+      "state": "RAW_UNQUALIFIED",
+      "source_key": "google_play:com.app.buyer",
+      "organization": "SkyEye Ltd / Maua",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Samoa",
+      "region": "Pacific Islands",
+      "sector": "local supplier marketplace",
+      "business_model": "B2B2C ecommerce and delivery",
+      "surface": "Samoa supplier/farmer ecommerce network; package com.app.buyer",
+      "observed_need": "Cashless ecommerce for locally based suppliers, self-employed community vendors and farmers, with mobile-money payment and delivery.",
+      "outcome_space": [
+        "local suppliers",
+        "agriculture",
+        "ecommerce",
+        "delivery",
+        "mobile money"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.app.buyer",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2022-11-10",
+      "contactability": "PUBLIC_ROUTE_NOT_RESOLVED",
+      "contact_routes": [],
+      "current_public_evidence": "Play listing describes a Samoa supplier network and 10K+ install footprint, but its last update is old. Preserve as ecosystem evidence with stale-freshness caution; vendor counts are not AMX nodes.",
+      "payer_hypothesis": "SkyEye Ltd / Maua business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-687",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.licifiji.calculator",
+      "organization": "Life Insurance Corporation of India / LICI Fiji Operations",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Fiji",
+      "region": "Melanesia / Pacific Islands",
+      "sector": "insurance distribution",
+      "business_model": "insurance and agent-service platform",
+      "surface": "Fiji insurance customer and agent operations; package com.licifiji.calculator",
+      "observed_need": "Customers and agents access plan details, agent contacts, premium calculations, quotations, agent portal and policy servicing.",
+      "outcome_space": [
+        "insurance",
+        "agent network",
+        "quotations",
+        "policy servicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.licifiji.calculator",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2026-09-21",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://licifiji.com",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "it@licifiji.com.fj",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "developers@oceanic.com.fj",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "phone",
+          "value": "+6799926104",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play declaration says collected location/personal data is not encrypted. This is a concrete review signal only; iSCOPE must verify whether it reflects architecture, declaration error or accepted risk before any security framing.",
+      "payer_hypothesis": "Life Insurance Corporation of India / LICI Fiji Operations business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-688",
+      "state": "CONTACTABLE_UNQUALIFIED",
+      "source_key": "google_play:com.bankflex.bred.fiji.prod10",
+      "organization": "BRED Bank Fiji / BRED Business Connect Fiji",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Fiji",
+      "region": "Melanesia / Pacific Islands",
+      "sector": "SME and corporate banking",
+      "business_model": "B2B financial services",
+      "surface": "Fiji SME/corporate banking; package com.bankflex.bred.fiji.prod10",
+      "observed_need": "Business users manage domestic/international transfers, scheduled payments, statements, balances and notifications; current release expanded eligibility to sole traders, professionals and business individuals.",
+      "outcome_space": [
+        "SME banking",
+        "corporate payments",
+        "sole traders",
+        "business finance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bankflex.bred.fiji.prod10",
+      "source_observed_at": "2026-10-08T19:02:00+02:00",
+      "source_updated": "2026-03-31",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "website",
+          "value": "https://www.bred.com.fj",
+          "source": "Google Play current public listing"
+        },
+        {
+          "type": "support_email",
+          "value": "e-channels@bred.com.fj",
+          "source": "Google Play current public listing"
+        }
+      ],
+      "current_public_evidence": "Current Play release explicitly evidences business-segment expansion. This is a distribution/onboarding surface, not proof of a defect or buying intent.",
+      "payer_hypothesis": "BRED Bank Fiji / BRED Business Connect Fiji business/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface preserved; no acceptance, payment or graph promotion claimed.",
+      "consumer_action": "iSCOPE verify current organization identity, active specific problem, buyer relevance, suppression status and route fitness before PRI action."
     }
   ],
-  "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
+  "current_run_note": "FORX weighted public discovery active; current production truth is 50,000 durable nodes per Root Intake workflow 37810563734, while this file remains candidate/evidence staging only.",
   "integrity_note": {
     "duplicate_candidate_id_repair": {
       "repaired_at": "2026-10-08T16:58:00+02:00",
@@ -12774,5 +13251,128 @@
       "FORX-PROSPECT-20261008-646"
     ],
     "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
+  },
+  "last_continuity": {
+    "observed_at": "2026-10-08T19:02:00+02:00",
+    "producer": "FORX Continuous Play Sweep",
+    "run_identity": "FORX-CONTINUOUS-20261008-1855-SAST",
+    "prior_receipt": {
+      "observed_at": "2026-10-08T19:02:00+02:00",
+      "producer": "MASTER support for FORX→iSCOPE",
+      "candidate_ids": [
+        "FORX-PROSPECT-20261008-646"
+      ],
+      "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
+    },
+    "consumed_sources": [
+      {
+        "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
+        "revision": "AHj4eMQgdQE4GpGOp5bAzEtQmSVCaicQtxVhcFX_WFbgP2oeAwxBLq6wEL0AwTQiQdgUUq_UJtxH0Q3H6As7dAspms0xaMlJtPxR9to46g",
+        "observed_at": "2026-10-08T16:55:00Z"
+      },
+      {
+        "id": "3f28f8b56cd781bd945dcd8630253ef8",
+        "revision": "page_last_edited_at:2026-10-08T16:49:13.800Z",
+        "observed_at": "2026-10-08T16:49:13.800Z"
+      },
+      {
+        "id": "1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc",
+        "revision": "Learning Weights LEARNING-001..020 + Coverage Ledger snapshot",
+        "observed_at": "2026-10-08T19:02:00+02:00"
+      },
+      {
+        "id": "overdrive/forx_prospect_buffer.json",
+        "revision": "de557b54d251fe9fbe2176259a09ff90cdf0b83b",
+        "observed_at": "2026-10-08T19:02:00+02:00"
+      },
+      {
+        "id": "overdrive/forx_staging_health_2026-10-07.json",
+        "revision": "2bdb771f6c11168eb4a3138c00f69cdaf93dfc80",
+        "observed_at": "2026-10-08T19:02:00+02:00"
+      }
+    ],
+    "apply_example": {
+      "prior_learning": [
+        "LEARNING-009",
+        "LEARNING-013",
+        "LEARNING-015",
+        "Root Intake 50K durable PASS"
+      ],
+      "changed_action": "Selected Pacific/Southern-Africa economic infrastructure and asset-heavy workflows (digital addressing, livestock compliance, field sales, supplier/contractor networks, insurance distribution) instead of repeating saturated generic-wallet discovery.",
+      "source_pointers": [
+        "Learning Weights!A1:J200",
+        "Root Intake section FORX 50K DURABLE PASS"
+      ]
+    },
+    "exact_coordinate": {
+      "geography": [
+        "Samoa",
+        "Fiji",
+        "Namibia",
+        "Botswana"
+      ],
+      "language": "English",
+      "sector": [
+        "digital addressing",
+        "livestock/farm operations",
+        "field sales/distribution",
+        "supplier and skilled-service marketplaces",
+        "insurance distribution",
+        "SME banking"
+      ],
+      "source": "Google Play public listings",
+      "surface": "business-operating apps and network rails",
+      "problem": "candidate-specific first-party operating surface only",
+      "size": "local and regional operators",
+      "offer": null,
+      "price": null
+    },
+    "component_evidence": {
+      "discovered": 11,
+      "exact_key_new": 11,
+      "staged_pending_ingestion": 11,
+      "verified_graph_delta_claimed": 0,
+      "explored": 11,
+      "exploited": 0
+    },
+    "result_ids": [
+      "FORX-PROSPECT-20261008-678",
+      "FORX-PROSPECT-20261008-679",
+      "FORX-PROSPECT-20261008-680",
+      "FORX-PROSPECT-20261008-681",
+      "FORX-PROSPECT-20261008-682",
+      "FORX-PROSPECT-20261008-683",
+      "FORX-PROSPECT-20261008-684",
+      "FORX-PROSPECT-20261008-685",
+      "FORX-PROSPECT-20261008-686",
+      "FORX-PROSPECT-20261008-687",
+      "FORX-PROSPECT-20261008-688"
+    ],
+    "uncertainty": [
+      "Canonical organization/payer identity remains unresolved where marked.",
+      "Kopo Provider and Maua freshness is weaker than 2026-updated observations.",
+      "No current buyer problem, acceptance, invoice or payment is inferred."
+    ],
+    "cooldown": {
+      "scope": "Exact package IDs in this tranche",
+      "state": "SEARCHED_WITH_QUALIFIED_OBSERVATION",
+      "until": "Revisit only for genuinely new provenance/contact/problem evidence."
+    },
+    "next_alternatives": [
+      {
+        "coordinate": "Pacific islands / construction-supplier or fisheries cold-chain operating apps",
+        "why": "Same weak-geography lane, different asset-heavy sector."
+      },
+      {
+        "coordinate": "Southern Africa / manufacturer-distributor field operations outside payments",
+        "why": "Same high-information workflow family, different geography and source-key set."
+      }
+    ],
+    "chosen_next_action": "Stage this exact-key tranche and independently read it back, then expose only current problem-qualified records to iSCOPE.",
+    "unresolved_gaps": [
+      "Authoritative graph ingestion of these candidate records remains pending.",
+      "Commercial receipt search returned no attributable outcome record for these coordinates."
+    ],
+    "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH; 50K durable production proof is separate and already evidenced in Root Intake."
   }
 }
