@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:37:00+02:00",
+  "last_updated": "2026-10-08T17:39:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -9810,6 +9810,135 @@
       ],
       "source": "https://play.google.com/store/apps/details?id=com.cashover.merchant",
       "payer_hypothesis": "OVERLAB / CashOver Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-512",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MOHAMMAD ELAYAN / Cash Dukkan",
+      "surface": "Jordan POS; package jo.afaq.cashdukkan",
+      "observed_need": "Offline POS with QR invoicing, inventory and debt tracking.",
+      "outcome_space": [
+        "POS",
+        "invoicing",
+        "inventory",
+        "debt"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=jo.afaq.cashdukkan",
+      "payer_hypothesis": "MOHAMMAD ELAYAN / Cash Dukkan product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-513",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Alaa Mokrani / Boutika",
+      "surface": "Tunisia seller ecommerce; package com.boutika.alaa.mobile",
+      "observed_need": "Online-store product, order and statistics management.",
+      "outcome_space": [
+        "seller ecommerce",
+        "orders",
+        "analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.boutika.alaa.mobile",
+      "payer_hypothesis": "Alaa Mokrani / Boutika product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-514",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "mns system dev / MnsPOS",
+      "surface": "Algeria POS; package com.posmns.pos.mnspos",
+      "observed_need": "Offline sales, inventory, electronic invoices and analytics.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "e-invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.posmns.pos.mnspos",
+      "payer_hypothesis": "mns system dev / MnsPOS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-515",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AL ABJADIYA INFORMATION TECHNOLOGY LLC / Sahla Merchant",
+      "surface": "Iraq service-merchant marketplace; package com.alphabetiq.sahlamerchant",
+      "observed_need": "Business profiles, bookings, services/prices, schedules and reviews.",
+      "outcome_space": [
+        "merchant marketplace",
+        "bookings",
+        "services"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.alphabetiq.sahlamerchant",
+      "payer_hypothesis": "AL ABJADIYA INFORMATION TECHNOLOGY LLC / Sahla Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-516",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Iraq Techno / POS SANAD",
+      "surface": "Iraq POS; package com.iraqtechno.pos_sanad",
+      "observed_need": "Sales, receipts, multiple payments, refunds, cash tracking, barcodes and offline sales.",
+      "outcome_space": [
+        "POS",
+        "payments",
+        "refunds",
+        "offline"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.iraqtechno.pos_sanad",
+      "payer_hypothesis": "Iraq Techno / POS SANAD product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-517",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Jumla IQ merchant",
+      "surface": "Iraq wholesale merchant operations; package com.ahsofttech.iq.trader",
+      "observed_need": "Merchants and warehouses showcase products and manage wholesale orders.",
+      "outcome_space": [
+        "wholesale",
+        "merchant operations",
+        "orders"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ahsofttech.iq.trader",
+      "payer_hypothesis": "Jumla IQ merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-518",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Sherif Kemchi / Sijil",
+      "surface": "Algeria shop accounts; package aplic4159925.mnx",
+      "observed_need": "Customer debts and financial transaction tracking for local shops.",
+      "outcome_space": [
+        "debt ledger",
+        "shop accounting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=aplic4159925.mnx",
+      "payer_hypothesis": "Sherif Kemchi / Sijil product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-519",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Lotfi Zaidi / caissti",
+      "surface": "Tunisia offline POS; package com.ofti.caissti",
+      "observed_need": "Offline products, sales and invoicing with regional currency/language support.",
+      "outcome_space": [
+        "POS",
+        "offline",
+        "invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ofti.caissti",
+      "payer_hypothesis": "Lotfi Zaidi / caissti product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
     }
