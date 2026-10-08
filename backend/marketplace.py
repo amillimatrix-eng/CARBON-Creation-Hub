@@ -277,6 +277,33 @@ class MarketplaceStore:
             row = conn.execute("SELECT * FROM listings WHERE id=?", (listing_id,)).fetchone()
             return self._public_listing(dict(row), conn) if row else None
 
+    def _role_evidence(self, conn: sqlite3.Connection, participant_ref: str, role: str) -> dict[str, Any]:
+        field = "buyer_ref" if role == "buyer" else "seller_ref"
+        commitments = conn.execute(
+            f"""SELECT state FROM commitments
+                WHERE {field}=?""",
+            (participant_ref,),
+        ).fetchall()
+        states = [row["state"] for row in commitments]
+        bonded_deals = conn.execute(
+            f"""SELECT COUNT(*) AS n FROM deals
+                WHERE {field}=? AND state='BONDED_DEAL'""",
+            (participant_ref,),
+        ).fetchone()["n"]
+        if role == "buyer":
+            adverse = {"BUYER_BREACH_REVIEW","DISPUTED","PERFORMANCE_REVIEW"}
+        else:
+            adverse = {"SELLER_BREACH_REVIEW","DISPUTED","PERFORMANCE_REVIEW"}
+        return {
+            "evidence_state": "UNKNOWN" if not states else "OBSERVED",
+            "commitments_observed": len(states),
+            "honoured": sum(1 for state in states if state in {"HONOURED","CLOSED_NO_DEAL"}),
+            "valid_exits": sum(1 for state in states if state in {"VALID_EXIT","MUTUAL_RELEASE"}),
+            "review_states": sum(1 for state in states if state in adverse),
+            "bonded_deals": int(bonded_deals or 0),
+            "score": None,
+        }
+
     def _public_listing(self, record: dict[str, Any], conn: sqlite3.Connection | None = None) -> dict[str, Any]:
         close = False
         if conn is None:
@@ -303,6 +330,7 @@ class MarketplaceStore:
                     "qualified": int(stats["qualified"] or 0),
                     "active_commitments": int(active or 0),
                 },
+                "seller_evidence": self._role_evidence(conn, record["seller_ref"], "seller"),
             }
         finally:
             if close:
@@ -378,7 +406,12 @@ class MarketplaceStore:
                    FROM interests WHERE listing_id=? ORDER BY considered_bond_minor DESC, created_at ASC""",
                 (listing_id,),
             ).fetchall()
-            return [dict(row) for row in rows]
+            records = []
+            for row in rows:
+                record = dict(row)
+                record["buyer_evidence"] = self._role_evidence(conn, record["buyer_ref"], "buyer")
+                records.append(record)
+            return records
 
     def select_interest(
         self,
