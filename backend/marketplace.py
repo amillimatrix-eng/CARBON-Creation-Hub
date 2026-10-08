@@ -288,11 +288,13 @@ class MarketplaceStore:
                 raise ValueError("seller cannot bond their own listing")
             if payload.bond_minor < listing["min_bond_minor"]:
                 raise ValueError("bond does not meet seller minimum")
+            if payload.bond_minor > listing["max_considered_bond_minor"]:
+                raise ValueError("bond exceeds seller/platform maximum; excess money cannot buy priority")
             if not (listing["min_at_risk_bps"] <= payload.at_risk_bps <= listing["max_at_risk_bps"]):
                 raise ValueError("at-risk percentage is outside seller-permitted range")
 
             interest_id = public_id("INT")
-            considered = min(payload.bond_minor, listing["max_considered_bond_minor"])
+            considered = payload.bond_minor
             now = iso()
             conn.execute(
                 """INSERT INTO interests(
