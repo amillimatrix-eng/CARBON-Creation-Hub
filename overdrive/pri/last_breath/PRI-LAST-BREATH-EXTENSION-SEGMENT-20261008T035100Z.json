@@ -1,0 +1,77 @@
+{
+  "schema": "AMX_PRI_LAST_BREATH_EXTENSION_SEGMENT_V1",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "run_utc": "2026-10-08T03:51:00Z",
+  "extension_deadline": "2026-10-08T22:53:00Z",
+  "prior_state": {
+    "receipt": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T025100Z.json",
+    "commit": "6ae961b3f6b873471803fa76d0da78087808a4b1",
+    "counts": {
+      "smalls": 62,
+      "medium": 20,
+      "upper_medium": 81,
+      "upper": 45,
+      "total": 208
+    },
+    "paid_verified_usd": 0
+  },
+  "reconciliation": {
+    "bounce_search": "no matching delivery-failure notices for the prior eight sends at check time",
+    "substantive_reply_search": "no new substantive buyer reply at check time",
+    "truth": "SENT proves Gmail provider submission only; delivery, response, conversion, invoice, and payment remain unproven"
+  },
+  "actions": [
+    {
+      "organization": "Bitlabs",
+      "normalized_domain": "bitlabs.id",
+      "contact": "halo@bitlabs.id",
+      "coordinate_basis": "public business contact on official Bitlabs partner site",
+      "dedupe_query": "in:sent to:halo@bitlabs.id",
+      "dedupe_result": "no prior sent message found",
+      "tier": "MEDIUM",
+      "price_usd": 29,
+      "observed_problem": "Public Prakerja page contains concatenated copy (“sertifikatVerifikasi”), misspelling (“reedeem”), and an instruction-flow formatting defect; public Kampus Merdeka page still exposes a Sep–Dec 2024 batch and '(link)' placeholder.",
+      "bounded_offer": "Two-page enrollment-flow correction pack: defect list, replacement copy, priorities, and CTA/registration-flow check.",
+      "sources": [
+        "https://www.bitlabs.id/prakerja",
+        "https://www.bitlabs.id/kampus-merdeka",
+        "https://partner.bitlabs.id/"
+      ],
+      "gmail": {
+        "id": "1a119a46e463cb82",
+        "thread_id": "1a119a46e463cb82",
+        "labels": [
+          "SENT"
+        ]
+      },
+      "immediate_bounce_search": "none found",
+      "lifecycle_state": "SENT"
+    }
+  ],
+  "delta": {
+    "smalls": 0,
+    "medium": 1,
+    "upper_medium": 0,
+    "upper": 0,
+    "total": 1,
+    "paid_verified_usd": 0
+  },
+  "cumulative": {
+    "smalls": 62,
+    "medium": 21,
+    "upper_medium": 81,
+    "upper": 45,
+    "total": 209,
+    "paid_verified_usd": 0
+  },
+  "t10": {
+    "supposed_outcome": "Advance lawful qualified penetration with a unique, evidence-backed, exactly priced offer and preserve an attributable SENT receipt.",
+    "actual_outcome": "One deduplicated MEDIUM offer was submitted through Gmail to a verified public business coordinate.",
+    "evidence": [
+      "Gmail message 1a119a46e463cb82",
+      "official Bitlabs public pages listed in action.sources"
+    ],
+    "changed": "Cumulative verified Gmail SENT count increased from 208 to 209; MEDIUM increased from 20 to 21.",
+    "remaining_gap": "Delivery, response, acceptance, conversion, invoice, receivable, and payment are unproven. Paid remains USD 0 verified."
+  }
+}
