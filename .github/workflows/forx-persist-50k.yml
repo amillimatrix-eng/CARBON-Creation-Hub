@@ -72,12 +72,12 @@ jobs:
           total=0
           for i in range(1, m['partition_count']+1):
               p=run_dir/f'partition-{i:03d}.json'
-              b=p.read_bytes()
-              got=hashlib.sha256(b).hexdigest()
+              body=json.loads(p.read_text())
+              canonical=json.dumps(body,separators=(',',':'),sort_keys=True).encode()
+              got=hashlib.sha256(canonical).hexdigest()
               exp=m['partition_hashes'][str(i)]
               if got != exp:
-                  raise SystemExit(f'partition {i} hash mismatch: {got} != {exp}')
-              body=json.loads(b)
+                  raise SystemExit(f'partition {i} canonical hash mismatch: {got} != {exp}')
               total += len(body['nodes'])
           if total != m['selected_count']:
               raise SystemExit(f'count mismatch: {total} != {m["selected_count"]}')
