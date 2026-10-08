@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:48:00+02:00",
+  "last_updated": "2026-10-08T16:39:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -4309,6 +4309,183 @@
       "payer_hypothesis": "Apollo / Space Invoices product owner",
       "fit_note": "Extremely fresh merchant workflow; legal developer is US-based while product explicitly targets Slovenia/Croatia fiscal compliance.",
       "consumer_action": "iSCOPE validate local merchant adoption, fiscal-onboarding/support and current product-growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-239",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Asrmall",
+      "surface": "Tajikistan B2B sourcing/ecommerce; package com.asrmall.ecommerce",
+      "observed_need": "Business seller registration, wholesale sourcing from China, logistics and local/international payments.",
+      "outcome_space": [
+        "B2B sourcing",
+        "wholesale",
+        "logistics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.asrmall.ecommerce",
+      "payer_hypothesis": "Asrmall product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-240",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "EasyOS POS",
+      "surface": "Moldova fiscal POS/business operations; package com.easyos.business",
+      "observed_need": "Fiscal POS, reservations, inventory, sales orders and reports for teams.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "reservations",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.easyos.business",
+      "payer_hypothesis": "EasyOS POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-241",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NAZAROV ZOKHIR SI / Savdo Plus",
+      "surface": "Tajikistan retail operations; package com.savdoplus.app",
+      "observed_need": "Cash register, inventory, customer accounts, supplier purchases, expenses and cashier analytics.",
+      "outcome_space": [
+        "retail operations",
+        "inventory",
+        "supplier management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.savdoplus.app",
+      "payer_hypothesis": "NAZAROV ZOKHIR SI / Savdo Plus product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-242",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Osmo / Baymr.com",
+      "surface": "Turkmenistan B2B procurement/logistics; package com.mobile.osmo",
+      "observed_need": "Businesses source from China with order tracking, freight, customs and operator support.",
+      "outcome_space": [
+        "B2B procurement",
+        "logistics",
+        "cross-border sourcing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mobile.osmo",
+      "payer_hypothesis": "Osmo / Baymr.com product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-243",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MILODI NAV JDMM / Tojiron Seller",
+      "surface": "Tajikistan supplier marketplace; package tj.tojiron.tojiron_seller",
+      "observed_need": "Supplier product catalog, orders, settlements, returns, replenishment and sales notifications.",
+      "outcome_space": [
+        "supplier operations",
+        "inventory",
+        "settlements"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=tj.tojiron.tojiron_seller",
+      "payer_hypothesis": "MILODI NAV JDMM / Tojiron Seller product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-244",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "POS SH.P.K. / AppScan",
+      "surface": "Albania warehouse inventory; package al.pos.appscan",
+      "observed_need": "Team inventory counting, Excel imports, barcode scanning, warehouses, users and live count progress.",
+      "outcome_space": [
+        "warehouse",
+        "inventory",
+        "barcode"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=al.pos.appscan",
+      "payer_hypothesis": "POS SH.P.K. / AppScan product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-245",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "POS SH.P.K. / POS.al",
+      "surface": "Albania POS/business operations; package com.pos.al",
+      "observed_need": "Sales/order management, cost/inventory, real-time reporting and fiscalization.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "fiscalization"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.pos.al",
+      "payer_hypothesis": "POS SH.P.K. / POS.al product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-246",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "EDUNAR L.L.C. / Letamed",
+      "surface": "Kosovo pharmacy procurement; package dev.kosova.letamed",
+      "observed_need": "Licensed pharmacies order medicines from warehouses/suppliers with live stock and order tracking.",
+      "outcome_space": [
+        "B2B procurement",
+        "pharmacy",
+        "supplier inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=dev.kosova.letamed",
+      "payer_hypothesis": "EDUNAR L.L.C. / Letamed product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-247",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LOGISOFT IT GROUP SRL / LOGISOFT POS",
+      "surface": "Moldova commerce/HoReCa/warehouse operations; package logisoft.com",
+      "observed_need": "Real-time sales, inventory, warehouse movement and team/location performance.",
+      "outcome_space": [
+        "POS",
+        "warehouse",
+        "team performance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=logisoft.com",
+      "payer_hypothesis": "LOGISOFT IT GROUP SRL / LOGISOFT POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-248",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Gerekli Onum / Gerekli",
+      "surface": "Turkmenistan marketplace; package com.simtech.multivendor.mk",
+      "observed_need": "Digital marketplace connects local sellers with buyers and delivery.",
+      "outcome_space": [
+        "marketplace",
+        "seller distribution",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.simtech.multivendor.mk",
+      "payer_hypothesis": "Gerekli Onum / Gerekli product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-249",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ALSAT",
+      "surface": "Turkmenistan B2B marketplace; package com.alsat.alsat_mobile_client",
+      "observed_need": "B2B trade across textiles, electronics, construction materials and industrial categories.",
+      "outcome_space": [
+        "B2B marketplace",
+        "trade",
+        "supplier network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.alsat.alsat_mobile_client",
+      "payer_hypothesis": "ALSAT product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface are evidenced. Specific unresolved need is not inferred.",
+      "consumer_action": "iSCOPE verify organization identity, current buyer route, active need and commercial relevance before PRI action."
     }
   ]
 }
