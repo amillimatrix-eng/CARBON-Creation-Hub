@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T15:09:00+02:00",
+  "last_updated": "2026-10-08T15:33:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -1891,6 +1891,229 @@
       "payer_hypothesis": "Prime Zimbabwe product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Zimbabwe operating market and Zambia legal-developer entity remain separate. Data-safety declaration requires validation.",
       "consumer_action": "iSCOPE verify merchant-network activity, current operator identity and encryption/declaration state before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-102",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "GetSouthSudan / canonical legal operator unresolved",
+      "surface": "Google Play nationwide classifieds/services marketplace; package com.getsouthsudan.app; South Sudan",
+      "observed_need": "Current 2026 Play listing connects buyers and sellers across South Sudan for goods, vehicles, property, accommodation, jobs, local services and flight tickets with built-in messaging.",
+      "outcome_space": [
+        "classifieds",
+        "local services",
+        "jobs",
+        "property",
+        "SME visibility"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.getsouthsudan.app",
+      "published": "2026-09",
+      "payer_hypothesis": "GetSouthSudan operator unresolved",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong South Sudan coverage signal; legal operator/contact and current commercial problem require iSCOPE validation.",
+      "consumer_action": "iSCOPE resolve operator identity/contact and validate listing acquisition, service-provider onboarding, trust/moderation and current growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-103",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AAA B AUTO PARTS LLC / Suuqabakaaraha Online",
+      "surface": "Google Play local-seller marketplace; package com.trillionaire.suuqabakaaraha; Somalia operating market, US developer entity",
+      "observed_need": "Current July 2026 app explicitly serves Somalia local sellers with storefronts, product search, coupons and delivery; public support phone/email are exposed.",
+      "outcome_space": [
+        "marketplace",
+        "seller storefronts",
+        "delivery",
+        "merchant acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.trillionaire.suuqabakaaraha",
+      "published": "2026-07-08",
+      "payer_hypothesis": "Suuqabakaaraha product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Somalia operating market and US legal developer are kept separate; no defect inferred.",
+      "consumer_action": "iSCOPE verify Somalia operator relationship, seller acquisition/retention and current support/conversion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-104",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Abdirisak Khalif Isse / Egal Eats",
+      "surface": "Google Play merchant ordering and delivery; package com.egaleats.user; Somalia",
+      "observed_need": "Current August 2026 listing identifies Egal Eats as a Somalia online merchant ordering and delivery company; Mogadishu developer/contact evidence is public.",
+      "outcome_space": [
+        "merchant ordering",
+        "food delivery",
+        "local commerce",
+        "customer acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.egaleats.user",
+      "published": "2026-08-17",
+      "payer_hypothesis": "Egal Eats operator / Abdirisak Khalif Isse",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Somalia developer/contact evidence resolved; specific current problem remains for iSCOPE.",
+      "consumer_action": "iSCOPE validate merchant acquisition, delivery operations, order/support load and buyer route."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-105",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "JAHEZ READY DELIVERY SERVICES / Jahez Yemen",
+      "surface": "Google Play restaurant/grocery delivery; package com.jahez.store.yemen; Yemen",
+      "observed_need": "Current August 2026 app provides restaurant and grocery delivery in Yemen and publishes direct Yemeni phone/email/address support.",
+      "outcome_space": [
+        "food delivery",
+        "grocery delivery",
+        "merchant network",
+        "customer support"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.jahez.store.yemen",
+      "published": "2026-08-13",
+      "payer_hypothesis": "JAHEZ READY DELIVERY SERVICES",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Yemen identity/contact; current merchant/driver/problem state needs validation.",
+      "consumer_action": "iSCOPE validate restaurant/shop acquisition, delivery operations and current support or conversion bottlenecks."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-106",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "FAST SMART DELIVERY CO., LTD. / Tawseel Yemen",
+      "surface": "Google Play merchant delivery operations; package app.tawseel.businessapp; Yemen",
+      "observed_need": "Current August 2026 Tawseel Business app is specifically for contracted Yemen shop owners and restaurants to receive and process customer delivery orders; company address and support route are public.",
+      "outcome_space": [
+        "merchant operations",
+        "food delivery",
+        "order processing",
+        "restaurant network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.tawseel.businessapp",
+      "published": "2026-08-15",
+      "payer_hypothesis": "FAST SMART DELIVERY CO., LTD. / Tawseel Yemen",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Merchant-side workflow gives higher downstream utility than generic consumer discovery; no unresolved defect inferred.",
+      "consumer_action": "iSCOPE validate merchant onboarding, order exception/support load and current network growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-107",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Torood",
+      "surface": "Google Play merchant parcel operations; package com.trood; Palestine/Gaza",
+      "observed_need": "Current February 2026 merchant-only app manages parcel transportation/delivery for online pages and companies across Gaza governorates.",
+      "outcome_space": [
+        "merchant logistics",
+        "parcel delivery",
+        "ecommerce operations",
+        "last-mile"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.trood",
+      "published": "2026-02-02",
+      "payer_hypothesis": "Torood operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Merchant-only operating surface is attributable; current operator identity, lawful availability and present needs require validation.",
+      "consumer_action": "iSCOPE verify current operation/contactability and only then assess parcel workflow, merchant support or logistics automation needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-108",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Waselni / canonical legal operator unresolved",
+      "surface": "Google Play markets/delivery/local services; package com.waselne.mobile; Palestine",
+      "observed_need": "Current August 2026 app connects shops/restaurants with customers via WhatsApp orders, printable merchant order forms, shared trips/parcels and trusted-driver matching, plus ratings/reporting.",
+      "outcome_space": [
+        "WhatsApp commerce",
+        "merchant orders",
+        "shared delivery",
+        "driver network",
+        "trust and safety"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.waselne.mobile",
+      "published": "2026-08-10",
+      "payer_hypothesis": "Waselni operator unresolved",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Candidate-specific merchant/driver workflow is attributable; legal operator identity remains unresolved.",
+      "consumer_action": "iSCOPE resolve operator/contact route and validate merchant adoption, driver matching, moderation and support load."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-109",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ABOU JOKH BASSEL / SuperDokan Express",
+      "surface": "Google Play merchant dashboard; package com.superDokan.merchant; Lebanon operating market, US developer address",
+      "observed_need": "Current June 2026 merchant app supports restaurants and retail stores with local-order fulfilment and is explicitly expanding its Lebanon delivery network. Play currently declares collected data is not encrypted.",
+      "outcome_space": [
+        "merchant operations",
+        "delivery",
+        "restaurant network",
+        "retail",
+        "data safety"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.superDokan.merchant",
+      "published": "2026-06-01",
+      "payer_hypothesis": "SuperDokan Express product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Lebanon operating market and developer jurisdiction remain separate; data-safety declaration requires validation before any defect claim.",
+      "consumer_action": "iSCOPE validate merchant acquisition/fulfilment burden and current encryption/declaration state."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-110",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Salti Developments / Tabadaa",
+      "surface": "Google Play merchant restaurant/store management; package com.tabadaa.partner; Lebanon",
+      "observed_need": "Current merchant-only partner app manages approved stores/restaurants, incoming order acceptance/rejection, menus/pricing/availability, opening hours, delivery settings, service radius, customer feedback and support reports.",
+      "outcome_space": [
+        "merchant operations",
+        "restaurant network",
+        "order management",
+        "customer feedback",
+        "delivery settings"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tabadaa.partner",
+      "published": "2026",
+      "payer_hypothesis": "Tabadaa product owner / Salti Developments",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. High-value merchant-side workflow; current buyer problem must be separately validated.",
+      "consumer_action": "iSCOPE validate merchant onboarding, feedback/support workload, order exceptions and current network expansion."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-111",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Qareib / Ali Hamza",
+      "surface": "Google Play merchant store management; package com.qareib; Iraq",
+      "observed_need": "Current October 2026 Iraq merchant app consolidates WhatsApp/phone/store orders, order statuses, cancellations/returns, inventory across warehouses, staff roles, profit and delivery-company handoff. Latest release changed stock history, product-description rendering and stock adjustment flow.",
+      "outcome_space": [
+        "merchant operations",
+        "inventory",
+        "WhatsApp commerce",
+        "profit visibility",
+        "delivery integration"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.qareib",
+      "published": "2026-10-02",
+      "payer_hypothesis": "Qareib product owner / Ali Hamza",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Extremely fresh repetitive-work/merchant workflow evidence and direct Iraq support route.",
+      "consumer_action": "iSCOPE validate merchant adoption, returns/reconciliation/support burden and whether current workflow issues remain after the latest release."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-112",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tarabut wholesale marketplace / Mahmoud Abdulkarim Bahrawi Janabi",
+      "surface": "Google Play B2B wholesale market; package app.tarabut.market; Iraq",
+      "observed_need": "Current September 2026 platform connects Iraqi shop owners with trusted wholesale suppliers, ordering, payment, nationwide delivery and technical support; current release notes cite analytics/ad-measurement reliability improvements.",
+      "outcome_space": [
+        "B2B wholesale",
+        "supplier network",
+        "merchant procurement",
+        "payments",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.tarabut.market",
+      "published": "2026-09-07",
+      "payer_hypothesis": "Tarabut product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong supplier/distribution rail with direct public support; recent reliability work is maintenance evidence only.",
+      "consumer_action": "iSCOPE validate supplier onboarding, repeat ordering, payment/support workload and current B2B growth needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-113",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Nepal Can Move / NCM",
+      "surface": "Google Play vendor logistics app; package com.ncg.ncmvendor; Nepal operating market, Australia developer address",
+      "observed_need": "Current August 2026 vendor app supports one of Nepal Can Move's courier/logistics operations with order and transaction tracking, announcements, support tickets and comments; direct support route is public.",
+      "outcome_space": [
+        "vendor logistics",
+        "order tracking",
+        "transaction tracking",
+        "support tickets",
+        "courier network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ncg.ncmvendor",
+      "published": "2026-08-31",
+      "payer_hypothesis": "Nepal Can Move product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Nepal operating market and developer location kept separate; high-value vendor/logistics workflow.",
+      "consumer_action": "iSCOPE validate vendor support-ticket volume, transaction reconciliation and current courier-network expansion needs."
     }
   ]
 }
