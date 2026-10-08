@@ -28,7 +28,7 @@ class MoneyAdapter(Protocol):
     name: str
     moves_real_money: bool
 
-    def reserve(self, listing_id: str, buyer_ref: str, amount_minor: int) -> str: ...
+    def reserve(self, context_ref: str, buyer_ref: str, amount_minor: int) -> MoneyInstruction: ...
     def release(self, provider_ref: str, amount_minor: int | None = None) -> MoneyInstruction: ...
     def hold(self, provider_ref: str, reason: str) -> MoneyInstruction: ...
     def prepare_settlement(self, provider_ref: str, amount_minor: int) -> MoneyInstruction: ...
@@ -41,9 +41,10 @@ class SandboxMoneyAdapter:
     name = "SANDBOX_NO_MONEY_MOVED"
     moves_real_money = False
 
-    def reserve(self, listing_id: str, buyer_ref: str, amount_minor: int) -> str:
-        material = f"{listing_id}:{buyer_ref}:{amount_minor}:{uuid4().hex}"
-        return "SBX-" + hashlib.sha256(material.encode()).hexdigest()[:24].upper()
+    def reserve(self, context_ref: str, buyer_ref: str, amount_minor: int) -> MoneyInstruction:
+        material = f"{context_ref}:{buyer_ref}:{amount_minor}:{uuid4().hex}"
+        provider_ref = "SBX-" + hashlib.sha256(material.encode()).hexdigest()[:24].upper()
+        return MoneyInstruction(provider_ref, "SANDBOX_RESERVED", amount_minor, False)
 
     def release(self, provider_ref: str, amount_minor: int | None = None) -> MoneyInstruction:
         return MoneyInstruction(provider_ref, "SANDBOX_RELEASE_PENDING", amount_minor, False)
