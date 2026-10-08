@@ -1120,7 +1120,7 @@ def mount_marketplace(
         require_demo()
         buyer = actor(x_carbon_actor)
         try:
-            instruction = money.reserve(listing_id, buyer, payload.bond_minor)
+            instruction = money.reserve(listing_id, buyer, payload.bond_minor, purpose="BOND")
             record = store.create_interest(
                 listing_id, buyer, payload, instruction.provider_ref, instruction.state
             )
@@ -1240,7 +1240,7 @@ def mount_marketplace(
                 raise KeyError("deal not found")
             if deal["buyer_ref"] != buyer:
                 raise PermissionError("buyer credential required")
-            instruction = money.reserve(deal_id, buyer, deal["price_minor"])
+            instruction = money.reserve(deal_id, buyer, deal["price_minor"], purpose="PURCHASE")
             record = store.fund_deal(
                 deal_id, buyer, instruction.provider_ref, instruction.state
             )
