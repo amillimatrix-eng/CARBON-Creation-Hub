@@ -30,9 +30,14 @@ def sweep_marketplace_time(store: MarketplaceStore) -> dict[str, int]:
             if now < expiry:
                 continue
             stamp=iso(now)
+            provider_state = (
+                "NO_BOND_REQUIRED"
+                if row["provider_ref"] == "NO_BOND_REQUIRED"
+                else "RELEASE_PENDING_PROVIDER"
+            )
             conn.execute(
-                "UPDATE interests SET state='EXPIRED_RELEASE_PENDING',provider_state='SANDBOX_RELEASE_PENDING',updated_at=? WHERE id=?",
-                (stamp,row["id"]),
+                "UPDATE interests SET state='EXPIRED_RELEASE_PENDING',provider_state=?,updated_at=? WHERE id=?",
+                (provider_state,stamp,row["id"]),
             )
             store._event(conn,"interest",row["id"],"SYSTEM","BONDED_INTEREST_EXPIRED",{
                 "resolution":"FULL_RELEASE_PENDING",
@@ -51,7 +56,14 @@ def sweep_marketplace_time(store: MarketplaceStore) -> dict[str, int]:
                 (stamp,row["id"]),
             )
             conn.execute(
-                "UPDATE interests SET state='RELEASE_PENDING',provider_state='SANDBOX_RELEASE_PENDING',updated_at=? WHERE id=?",
+                """UPDATE interests
+                   SET state='RELEASE_PENDING',
+                       provider_state=CASE
+                           WHEN provider_ref='NO_BOND_REQUIRED' THEN 'NO_BOND_REQUIRED'
+                           ELSE 'RELEASE_PENDING_PROVIDER'
+                       END,
+                       updated_at=?
+                   WHERE id=?""",
                 (stamp,row["interest_id"]),
             )
             store._event(conn,"commitment",row["id"],"SYSTEM","SELECTION_EXPIRED",{
@@ -70,7 +82,14 @@ def sweep_marketplace_time(store: MarketplaceStore) -> dict[str, int]:
                 (stamp,row["id"]),
             )
             conn.execute(
-                "UPDATE interests SET state='REVIEW_PENDING',provider_state='SANDBOX_HOLD',updated_at=? WHERE id=?",
+                """UPDATE interests
+                   SET state='REVIEW_PENDING',
+                       provider_state=CASE
+                           WHEN provider_ref='NO_BOND_REQUIRED' THEN 'NO_BOND_REQUIRED'
+                           ELSE 'HOLD_PENDING_PROVIDER'
+                       END,
+                       updated_at=?
+                   WHERE id=?""",
                 (stamp,row["interest_id"]),
             )
             store._event(conn,"commitment",row["id"],"SYSTEM","PERFORMANCE_WINDOW_ENDED",{
