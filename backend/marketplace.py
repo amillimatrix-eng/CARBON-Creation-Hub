@@ -71,7 +71,7 @@ class CreateListingRequest(BaseModel):
 
 
 class CreateInterestRequest(BaseModel):
-    bond_minor: int = Field(gt=0, le=100_000_000_000)
+    bond_minor: int = Field(ge=0, le=100_000_000_000)
     at_risk_bps: int = Field(ge=0, le=10_000)
     proposed_start_at: str
     proposed_duration_minutes: int = Field(default=60, ge=15, le=1440)
@@ -387,6 +387,7 @@ class MarketplaceStore:
 
             interest_id = public_id("INT")
             considered = payload.bond_minor
+            interest_state = "QUALIFIED_INTEREST" if payload.bond_minor == 0 else "BONDED_INTEREST"
             now = iso()
             conn.execute(
                 """INSERT INTO interests(
@@ -395,16 +396,18 @@ class MarketplaceStore:
                 ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (
                     interest_id, listing_id, buyer_ref, payload.bond_minor, considered, payload.at_risk_bps,
-                    iso(start), payload.proposed_duration_minutes, "BONDED_INTEREST", provider_ref,
+                    iso(start), payload.proposed_duration_minutes, interest_state, provider_ref,
                     provider_state, now, now,
                 ),
             )
-            self._event(conn, "interest", interest_id, buyer_ref, "BONDED_INTEREST_CREATED", {
+            self._event(conn, "interest", interest_id, buyer_ref, "INTEREST_CREATED", {
                 "listing_id": listing_id,
                 "bond_minor": payload.bond_minor,
                 "considered_bond_minor": considered,
                 "at_risk_bps": payload.at_risk_bps,
                 "provider_state": provider_state,
+                "interest_state": interest_state,
+                "bond_required": payload.bond_minor > 0,
                 "money_moved": False,
             })
             row = conn.execute("SELECT * FROM interests WHERE id=?", (interest_id,)).fetchone()
@@ -475,7 +478,7 @@ class MarketplaceStore:
             ).fetchone()
             if blocking:
                 raise ValueError("listing already has a selected/active buyer; other bonded interests remain queued")
-            if interest["state"] != "BONDED_INTEREST":
+            if interest["state"] not in {"BONDED_INTEREST", "QUALIFIED_INTEREST"}:
                 raise ValueError("interest is not selectable")
 
             start = parse_time(interest["proposed_start_at"])
@@ -791,7 +794,7 @@ class MarketplaceStore:
                 ).fetchone()
                 queued = conn.execute(
                     """SELECT id FROM interests
-                       WHERE listing_id=? AND id<>? AND state='BONDED_INTEREST'""",
+                       WHERE listing_id=? AND id<>? AND state IN ('BONDED_INTEREST','QUALIFIED_INTEREST')""",
                     (fresh["listing_id"], commitment["interest_id"]),
                 ).fetchall()
                 for queued_interest in queued:
@@ -963,7 +966,7 @@ class MarketplaceStore:
             if actor not in {interest["buyer_ref"], seller_ref}:
                 raise PermissionError("interest participant credential required")
             if interest["state"] not in {
-                "BONDED_INTEREST","SELECTED","ACTIVE_COMMITMENT","HONOURED",
+                "BONDED_INTEREST","QUALIFIED_INTEREST","SELECTED","ACTIVE_COMMITMENT","HONOURED",
                 "REVIEW_PENDING","DISPUTED","HONOURED_RELEASE_PENDING"
             }:
                 raise ValueError("this bonded conversation is closed")
@@ -1120,15 +1123,24 @@ def mount_marketplace(
         require_demo()
         buyer = actor(x_carbon_actor)
         try:
-            instruction = money.reserve(listing_id, buyer, payload.bond_minor, purpose="BOND")
+            instruction = None
+            if payload.bond_minor > 0:
+                instruction = money.reserve(
+                    listing_id, buyer, payload.bond_minor, purpose="BOND"
+                )
+                provider_ref = instruction.provider_ref
+                provider_state = instruction.state
+            else:
+                provider_ref = "NO_BOND_REQUIRED"
+                provider_state = "NO_BOND_REQUIRED"
             record = store.create_interest(
-                listing_id, buyer, payload, instruction.provider_ref, instruction.state
+                listing_id, buyer, payload, provider_ref, provider_state
             )
             return {
                 "record": record,
-                "money_moved": instruction.money_moved,
-                "provider": money.name,
-                "money_instruction": instruction.as_dict(),
+                "money_moved": instruction.money_moved if instruction else False,
+                "provider": money.name if instruction else None,
+                "money_instruction": instruction.as_dict() if instruction else None,
             }
         except Exception as exc:
             raise map_error(exc) from exc
