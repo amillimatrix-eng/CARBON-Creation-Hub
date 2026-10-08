@@ -100,12 +100,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- overdrive/forx_50k_proof; then
-            echo "No changes to persist."
+          git add overdrive/forx_50k_proof
+          if git diff --cached --quiet; then
+            echo "No staged changes to persist."
             exit 0
           fi
           git config user.name "amillimatrix-eng"
           git config user.email "amillimatrix@gmail.com"
-          git add overdrive/forx_50k_proof
           git commit -m "FORX: persist and verify 50k production partitions"
           git push origin HEAD:main
