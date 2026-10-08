@@ -1,0 +1,56 @@
+{
+  "receipt_type": "FORX_50K_RUNTIME_READBACK_EVIDENCE",
+  "observed_at": "2026-10-08T16:33:00Z",
+  "service_id": "srv-db2udid9fdbs739b5ru0",
+  "deploy_id": "dep-db3s9t8473hc73f5k640",
+  "deployed_commit": "0f24c07135b5d4620fcd44df1e5b0a5f474bd30c",
+  "pr": 13,
+  "runtime": {
+    "status": "COMPLETE",
+    "mode": "production",
+    "run_id": "forx-20261007T162100Z",
+    "node_count": 50000,
+    "partition_count": 50,
+    "partition_size": 1000,
+    "target": 50000,
+    "source_adapter": "geonames-cities500",
+    "country_count": 246,
+    "category_count": 18,
+    "errors": []
+  },
+  "manifest": {
+    "schema_version": "2.2",
+    "source": "GeoNames cities500",
+    "source_url": "https://download.geonames.org/export/dump/cities500.zip",
+    "source_license": "CC BY 4.0",
+    "source_revision": "2026-10-07",
+    "source_file_sha256": "b5782a2f689e3d7acc9f57d543f481610e207bc07b2ba5709c351b78bd34cbed",
+    "selected_count": 50000,
+    "selection_sha256": "19cc608b7ba93d107e9c1aa4502011c6992e45e4da7e860afd395bcac932f6fd",
+    "raw_rows_ingested": 236014,
+    "rows_rejected": 0,
+    "duplicates_removed": 3,
+    "website_domain_bearing_count": 0,
+    "started_at": "2026-10-08T16:30:18.239316+00:00",
+    "completed_at": "2026-10-08T16:31:58.339001+00:00",
+    "partition_hash_sample": {
+      "1": "970c301e046a0d32bce8286abeaa5d96b03be5509a176a26064da7fdd828ddcf",
+      "25": "dff33ee67aef038321b8385c87b0d85037034b22e67e4553e1aaa87af46204ab",
+      "50": "cb8442bd0322e6507772e78cae8371e67849ecf6b76b79dda1593ab76715354e"
+    }
+  },
+  "memory": {
+    "limit_bytes": 536870900,
+    "observed_peak_bytes": 209924100,
+    "observed_postrun_bytes": 81068030,
+    "oom_event_after_deploy": false
+  },
+  "truth": {
+    "runtime_completion_proven": true,
+    "bounded_memory_fix_proven_for_this_run": true,
+    "durable_partition_bodies_persisted_externally": false,
+    "authoritative_verified_graph_growth": false,
+    "terminal_50k_acceptance": false,
+    "note": "Runtime completed 50k without OOM and public manifest/status were independently read. Partition bodies remain instance-local under schema 2.2; external durable partition persistence + independent readback is still required before terminal verified graph acceptance."
+  }
+}
