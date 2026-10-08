@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T18:55:00+02:00",
+  "last_updated": "2026-10-08T19:02:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -12053,7 +12053,7 @@
       "source": "https://play.google.com/store/apps/details?id=com.afristays.app",
       "payer_hypothesis": "TREV TECH LTD / Afristays hospitality/product operations owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; geography remains unresolved where explicitly noted; no unmet commercial pain is presumed.",
-      "consumer_action": "iSCOPE verify organization identity, operating market, buyer route and current commercial need before PRI action.",
+      "consumer_action": "iSCOPE verify whether the current Android Data Safety declaration and privacy policy refer to the same data flows; if the inconsistency is real and current, identify responsible product/privacy owner and qualify a bounded disclosure-consistency remediation offer before PRI action.",
       "source_updated": "2026-10-05",
       "contactability": "VERIFIED_PUBLIC",
       "contact_routes": [
@@ -12079,7 +12079,30 @@
         }
       ],
       "current_public_evidence": "Google Play listing updated 2026-10-05; Afristays markets accommodation discovery/booking across Kenya/Africa with instant confirmation, map/search, M-Pesa/cards, profiles/history and support.",
-      "qualification_note": "Fresh, contactable hospitality marketplace. No unmet buyer pain evidenced; iSCOPE must verify specific commercial need before PRI."
+      "qualification_note": "Fresh, contactable hospitality marketplace. No unmet buyer pain evidenced; iSCOPE must verify specific commercial need before PRI.",
+      "iscope_signal": {
+        "observed_at": "2026-10-08T19:02:00+02:00",
+        "state": "EVIDENCE_SIGNAL / QUALIFICATION_REQUIRED",
+        "evidence": [
+          {
+            "source": "Google Play current listing",
+            "fact": "Data Safety section states 'Data isn’t encrypted'.",
+            "source_updated": "2026-10-05"
+          },
+          {
+            "source": "https://www.afristays.com/privacy",
+            "fact": "Privacy policy states 'We use encryption and secure servers to protect your data' and says payment information is processed through secure PCI-compliant systems.",
+            "effective_date": "2025-12-01"
+          }
+        ],
+        "issue_hypothesis": "Public privacy/security representation inconsistency between current Play Data Safety disclosure and current privacy-policy wording.",
+        "bounded_value_hypothesis": "A current disclosure-consistency / trust remediation review could be useful if iSCOPE verifies the mismatch remains applicable to the Android app and identifies the responsible buyer.",
+        "cautions": [
+          "Do not infer an exploitable security defect from disclosure text alone.",
+          "Do not claim payment data is transmitted unencrypted.",
+          "Do not send externally until iSCOPE verifies current app/privacy scope and PRI confirms buyer/value fit."
+        ]
+      }
     },
     {
       "id": "FORX-PROSPECT-20261008-647",
@@ -12745,15 +12768,11 @@
     }
   },
   "last_enrichment": {
-    "observed_at": "2026-10-08T18:55:00+02:00",
+    "observed_at": "2026-10-08T19:02:00+02:00",
     "producer": "MASTER support for FORX→iSCOPE",
     "candidate_ids": [
-      "FORX-PROSPECT-20261008-674",
-      "FORX-PROSPECT-20261008-668",
-      "FORX-PROSPECT-20261008-655",
-      "FORX-PROSPECT-20261008-654",
       "FORX-PROSPECT-20261008-646"
     ],
-    "rule": "Public contactability/freshness enrichment only; no buyer pain or PRI readiness inferred."
+    "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
   }
 }
