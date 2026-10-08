@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-07T00:15:00+02:00",
+  "last_updated": "2026-10-08T13:00:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -117,6 +117,301 @@
       "payer_hypothesis": "OpenTrain AI",
       "fit_note": "Current listing explicitly limits applicant countries and excludes South Africa; likely non-executable for Owner unless alternate official route exists. Keep as negative/market evidence.",
       "consumer_action": "iSCOPE mark CLOSED_NOT_ELIGIBLE unless a current official South Africa-compatible route is independently found."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-007",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MMAO SOFTWARE (PTY) LTD / Stocko",
+      "surface": "Google Play business POS + ecommerce; package com.stocko.stocko; Lesotho",
+      "observed_need": "Current first-party Play release states compatibility work, unnecessary-permission removal, smaller install size, and stability/performance improvements. These are maintenance signals, not proof an unresolved defect remains.",
+      "outcome_space": [
+        "SME POS",
+        "ecommerce",
+        "inventory",
+        "app QA"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.stocko.stocko",
+      "published": "2026-08-22",
+      "payer_hypothesis": "MMAO SOFTWARE (PTY) LTD / Stocko product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Lesotho developer address and public support route are exposed on Play. Strong SME-operating-surface signal; iSCOPE must confirm any current unsolved issue before commercial qualification.",
+      "consumer_action": "iSCOPE verify current product/business status, direct buyer route, active pain and whether maintenance/app-conversion work is presently relevant."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-008",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ShopMalawi / Kelvin Chidothi",
+      "surface": "Google Play local marketplace; package com.shopMalawi.app; Malawi",
+      "observed_need": "Current Play release says v3.4.2 was made more data-friendly and uses less data. The app explicitly exists to connect Malawian sellers with more buyers and exposes phone/email support.",
+      "outcome_space": [
+        "marketplace",
+        "seller acquisition",
+        "mobile performance",
+        "SME visibility"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.shopMalawi.app",
+      "published": "2026-07-26",
+      "payer_hypothesis": "ShopMalawi operator / product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Candidate-specific evidence supports seller-acquisition and data-efficiency operating surfaces; do not infer an unresolved performance defect from the completed update.",
+      "consumer_action": "iSCOPE verify current seller-growth bottleneck, app acquisition/retention metrics if public, and direct owner route."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-009",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "E-Nyasa",
+      "surface": "Google Play marketplace + courier network; package mw.enyasa.app; Malawi",
+      "observed_need": "Initial 2026 public release combines seller shops, nationwide delivery, wallet top-ups and parcel tracking; first-party release notes mention performance/stability improvements. Public phone/email/website are exposed.",
+      "outcome_space": [
+        "marketplace",
+        "courier",
+        "seller onboarding",
+        "payments",
+        "logistics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mw.enyasa.app",
+      "published": "2026-07-31",
+      "payer_hypothesis": "E-Nyasa operator / Rhodrick Salima",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. High network-multiplier potential because one platform connects sellers, buyers, courier operations and payments. Specific current commercial problem remains for iSCOPE to validate.",
+      "consumer_action": "iSCOPE validate merchant/courier acquisition, onboarding, support and current growth constraints; preserve as Malawi ecosystem edge even if not commercially qualified."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-010",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LiFa Holdings Limited / LiFa Super App",
+      "surface": "Google Play multi-service super app; package com.lifaholdinglimited.lifa; Malawi",
+      "observed_need": "Current Play listing describes a Malawi-focused digital ecosystem spanning transportation, logistics, retail and agriculture.",
+      "outcome_space": [
+        "multi-service marketplace",
+        "logistics",
+        "retail",
+        "agriculture",
+        "local digital infrastructure"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.lifaholdinglimited.lifa",
+      "published": "2026",
+      "payer_hypothesis": "LiFa Holdings Limited",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Useful economic-infrastructure observation; current candidate-specific pain and buyer route require direct validation.",
+      "consumer_action": "iSCOPE verify official contact route, active verticals, current adoption surface and whether there is a bounded buyer-relevant problem."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-011",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ebsmauritius.com / Streak Technologies LLC",
+      "surface": "Google Play compliant POS; package com.ebsmauritius.ebspos; Mauritius",
+      "observed_need": "Current Play listing describes MRA-compliant POS, e-invoicing, offline queueing/synchronisation, multi-branch reporting and support by phone/email. Updated February 2026.",
+      "outcome_space": [
+        "POS",
+        "e-invoicing",
+        "SME compliance",
+        "offline sync",
+        "multi-branch retail"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ebsmauritius.ebspos",
+      "published": "2026-02-17",
+      "payer_hypothesis": "ebsmauritius.com / product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong Mauritius SME infrastructure surface and public support route; no unresolved defect is claimed.",
+      "consumer_action": "iSCOPE inspect merchant acquisition/onboarding/support or adjacent current product need; otherwise retain as Mauritius ecosystem evidence."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-012",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Bring / Food Monkey Inc.",
+      "surface": "Google Play merchant app; package com.bring.store; Guyana",
+      "observed_need": "Current August 2026 Play listing targets manual order-flow reduction for local merchants and exposes order/product/delivery management. Play currently states collected data is not encrypted.",
+      "outcome_space": [
+        "merchant marketplace",
+        "order management",
+        "delivery",
+        "data safety",
+        "seller activation"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bring.store",
+      "published": "2026-08-11",
+      "payer_hypothesis": "Bring / Food Monkey Inc. product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Candidate-specific Play declaration provides a concrete current data-safety review surface; public support and developer contact are exposed.",
+      "consumer_action": "iSCOPE verify whether the unencrypted-data declaration reflects actual current product architecture, declaration error or accepted risk before any offer."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-013",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Bring / Food Monkey Inc.",
+      "surface": "Google Play driver app; package com.bring.driver; Guyana",
+      "observed_need": "Distinct source observation for the driver side of the Bring network: order acceptance, delivery status, earnings and driver profiles. Play currently states collected data is not encrypted.",
+      "outcome_space": [
+        "driver network",
+        "last-mile logistics",
+        "data safety",
+        "delivery operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bring.driver",
+      "published": "2026-08-11",
+      "payer_hypothesis": "Bring / Food Monkey Inc. product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Separate package ID retained as separate provenance even though it likely reconciles to the same organization as Bring Store.",
+      "consumer_action": "iSCOPE link to the Bring canonical organization if verified, preserve this package as a separate provenance edge, and validate the current data-safety signal once."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-014",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SURPLUSGY.COM INC / Surplus GY",
+      "surface": "Google Play marketplace; package com.SurplusGY.shop; Guyana",
+      "observed_need": "Current October 2026 Play listing recruits local vendors, supports parcels/rides, exposes WhatsApp/email support and invites screenshot feedback; release notes describe active fixes/improvements.",
+      "outcome_space": [
+        "marketplace",
+        "vendor acquisition",
+        "customer support",
+        "delivery",
+        "app feedback"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.SurplusGY.shop",
+      "published": "2026-10-01",
+      "payer_hypothesis": "SURPLUSGY.COM INC",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Very fresh first-party operating evidence and direct public support route. Current exact problem beyond ongoing feedback/fixes requires iSCOPE validation.",
+      "consumer_action": "iSCOPE inspect current vendor activation, support/feedback handling and app-conversion opportunities with direct evidence only."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-015",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Surplus GY",
+      "surface": "Google Play driver app; package com.surplusgyDriver; Guyana",
+      "observed_need": "Distinct driver-network package exposes job offers, pickup/drop-off, payout visibility, delivery confirmation, vehicle/document upload and earnings history.",
+      "outcome_space": [
+        "driver acquisition",
+        "last-mile logistics",
+        "marketplace operations",
+        "document onboarding"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.surplusgyDriver",
+      "published": "2026",
+      "payer_hypothesis": "Surplus GY operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Keep as separate source observation even if linked to the same organization as the marketplace app; useful for multi-sided network depth.",
+      "consumer_action": "iSCOPE reconcile organization identity, then validate driver onboarding/activation or operational pain without duplicating outbound action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-016",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Kanoo (Guyana) Inc / Kanoo X",
+      "surface": "Google Play merchant payments; package com.kanoox.guyana.merchant; Guyana",
+      "observed_need": "July 2026 first release provides merchant QR payments, transaction history and refunds. Merchant onboarding occurs through the Kanoo X platform; public support/website/developer contact are exposed.",
+      "outcome_space": [
+        "merchant payments",
+        "merchant onboarding",
+        "QR payments",
+        "refund workflows"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kanoox.guyana.merchant",
+      "published": "2026-07-15",
+      "payer_hypothesis": "Kanoo (Guyana) Inc",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Current first-release/onboarding surface is attributable; no defect inferred.",
+      "consumer_action": "iSCOPE validate merchant acquisition/onboarding friction, support load and product-growth needs; otherwise retain as Guyana payments infrastructure."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-017",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Awee Marketplace",
+      "surface": "Google Play multi-seller marketplace; package com.awee.customer; Guyana",
+      "observed_need": "Current listing states expanding national service, multiple sellers, accessible customer support, returns and warranties; public support and operator contact are exposed.",
+      "outcome_space": [
+        "marketplace",
+        "seller network",
+        "customer support",
+        "after-sales",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.awee.customer",
+      "published": "2026-05-04",
+      "payer_hypothesis": "Awee Marketplace operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Candidate-specific operating surface supports seller-network and after-sales analysis; no specific defect claimed.",
+      "consumer_action": "iSCOPE verify seller onboarding, support/review workload and current national-expansion bottlenecks before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-018",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "GoFood PNG",
+      "surface": "Google Play merchant app; package com.wlf.gofood.store; Papua New Guinea",
+      "observed_need": "Store app supports online orders, customer calls, earnings reports and product-status management. Play currently states data is not encrypted and exposes a direct support email.",
+      "outcome_space": [
+        "merchant marketplace",
+        "food delivery",
+        "merchant analytics",
+        "data safety"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.wlf.gofood.store",
+      "published": "2025-10-08",
+      "payer_hypothesis": "GoFood PNG operator / Eugene Anang",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Specific Play data-safety declaration is current search evidence; listing freshness is lower than 2026 candidates and must be checked.",
+      "consumer_action": "iSCOPE verify active service/product status and current encryption/declaration state before considering commercial relevance."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-019",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Onit Enterprises TL / Rezerva",
+      "surface": "Google Play tourism-partner app; package space.rezerva.operators; Timor-Leste",
+      "observed_need": "Tourism businesses create accounts with business name, WhatsApp and email, then Rezerva approves them against businesses listed on rezerva.tl; direct WhatsApp route is published.",
+      "outcome_space": [
+        "tourism marketplace",
+        "partner onboarding",
+        "business verification",
+        "operator network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=space.rezerva.operators",
+      "published": "2026",
+      "payer_hypothesis": "Onit Enterprises TL / Rezerva operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Explicit partner-verification/onboarding workflow is first-party evidence and a high-value distribution rail; do not assume it is painful or broken.",
+      "consumer_action": "iSCOPE validate current partner acquisition, verification workload and marketplace growth needs; preserve operator-network edge regardless."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-020",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Luvi Travel",
+      "surface": "Google Play travel booking app; package com.luvitravel.app; Timor-Leste",
+      "observed_need": "Current March 2026 listing offers domestic/international flight search, booking, local travel support and reservation management for Timor-Leste.",
+      "outcome_space": [
+        "travel booking",
+        "customer support",
+        "reservation workflow",
+        "tourism"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.luvitravel.app",
+      "published": "2026-03-08",
+      "payer_hypothesis": "Luvi Travel operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Current local travel-operator observation; contact route and specific pain require iSCOPE validation.",
+      "consumer_action": "iSCOPE resolve public business/contact route and inspect booking/support conversion with direct evidence."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-021",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PloutosStore",
+      "surface": "Google Play local marketplace; Botswana",
+      "observed_need": "Current July 2026 listing explicitly supports local sellers, seller ID verification, ratings/reviews, in-app chat and promoted listings.",
+      "outcome_space": [
+        "marketplace",
+        "seller verification",
+        "trust",
+        "local commerce",
+        "promoted listings"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.techut.ploutosstore",
+      "published": "2026-07-14",
+      "payer_hypothesis": "PloutosStore operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. First-party trust/verification and seller-growth surfaces are attributable; specific commercial pain is not yet verified.",
+      "consumer_action": "iSCOPE resolve operator/contact route and test whether seller acquisition, verification or trust conversion is an active problem."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-022",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Cyber Food Fiji",
+      "surface": "Google Play multi-vendor food/grocery marketplace; Fiji",
+      "observed_need": "Current April 2026 listing describes a multi-vendor ordering/delivery platform intended to expand vendor reach and sales.",
+      "outcome_space": [
+        "food marketplace",
+        "vendor acquisition",
+        "delivery",
+        "merchant growth"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.cyberfoodfiji.cyber_food",
+      "published": "2026-04-26",
+      "payer_hypothesis": "Cyber Food Fiji operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Candidate-specific marketplace/vendor-growth surface is attributable; route and present pain need validation.",
+      "consumer_action": "iSCOPE resolve direct operator contact and current vendor-acquisition/retention evidence before commercial qualification."
     }
   ]
 }
