@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:31:00+02:00",
+  "last_updated": "2026-10-08T17:37:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -9685,6 +9685,133 @@
       "payer_hypothesis": "INTERNET WALLET MYANMAR LTD / OK Dollar Merchant product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-504",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MECHTA MOURAD / MyTPE",
+      "surface": "Algeria merchant SaaS; package com.mytpe.merchant",
+      "observed_need": "POS management, online store, POS-fleet tracking and digital payment collection.",
+      "outcome_space": [
+        "POS",
+        "ecommerce",
+        "merchant payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mytpe.merchant",
+      "payer_hypothesis": "MECHTA MOURAD / MyTPE product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-505",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Unique Business Solution / QuickPay Iraq Merchant",
+      "surface": "Iraq B2B e-voucher merchant system; package com.evoucher.merchant",
+      "observed_need": "Voucher generation/recharge and merchant balance-transfer operations.",
+      "outcome_space": [
+        "B2B",
+        "merchant vouchers",
+        "balance transfer"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.evoucher.merchant",
+      "payer_hypothesis": "Unique Business Solution / QuickPay Iraq Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-506",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Areed Store",
+      "surface": "Iraq merchant ecommerce; package com.areedstore.shop",
+      "observed_need": "Merchant store creation, product management and order receipt.",
+      "outcome_space": [
+        "merchant ecommerce",
+        "orders"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.areedstore.shop",
+      "payer_hypothesis": "Areed Store product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-507",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MAROCPLEX / Caisse212",
+      "surface": "Morocco POS; package com.caisse212.admin",
+      "observed_need": "Payments, sales, inventory and delivery-platform integrations.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.caisse212.admin",
+      "payer_hypothesis": "MAROCPLEX / Caisse212 product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-508",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Comptoir Pro",
+      "surface": "Algeria POS/business operations; package com.comptoirpro.commerce",
+      "observed_need": "Cash register, inventory, customers, sales and offline operation.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "offline"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.comptoirpro.commerce",
+      "payer_hypothesis": "Comptoir Pro product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-509",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "POS.CONTRACTORS.COMPANY / HanoutPro",
+      "surface": "Morocco POS; package com.hanoutpro.client",
+      "observed_need": "Inventory, sales, purchasing and payment operations.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "purchasing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.hanoutpro.client",
+      "payer_hypothesis": "POS.CONTRACTORS.COMPANY / HanoutPro product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-510",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SetShop",
+      "surface": "Algeria ecommerce/POS operations; package set.shop",
+      "observed_need": "Point-of-sale management and order automation.",
+      "outcome_space": [
+        "ecommerce",
+        "POS",
+        "orders"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=set.shop",
+      "payer_hypothesis": "SetShop product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-511",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "OVERLAB / CashOver Merchant",
+      "surface": "Lebanon merchant operations; package com.cashover.merchant",
+      "observed_need": "Payments, order management and business campaigns.",
+      "outcome_space": [
+        "merchant payments",
+        "orders",
+        "campaigns"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.cashover.merchant",
+      "payer_hypothesis": "OVERLAB / CashOver Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
