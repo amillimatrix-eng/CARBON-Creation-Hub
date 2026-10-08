@@ -85,6 +85,10 @@ class DisputeRequest(BaseModel):
     reason: str = Field(min_length=3, max_length=1200)
 
 
+class MessageRequest(BaseModel):
+    body: str = Field(min_length=1, max_length=1200)
+
+
 class MarketplaceStore:
     def __init__(self, db_path: Path):
         self.db_path = Path(db_path)
@@ -184,9 +188,18 @@ class MarketplaceStore:
                     created_at TEXT NOT NULL
                 );
 
+                CREATE TABLE IF NOT EXISTS messages (
+                    id TEXT PRIMARY KEY,
+                    interest_id TEXT NOT NULL REFERENCES interests(id),
+                    sender_ref TEXT NOT NULL,
+                    body TEXT NOT NULL,
+                    created_at TEXT NOT NULL
+                );
+
                 CREATE INDEX IF NOT EXISTS idx_interests_listing ON interests(listing_id, state);
                 CREATE INDEX IF NOT EXISTS idx_commitments_listing ON commitments(listing_id, state);
                 CREATE INDEX IF NOT EXISTS idx_events_entity ON events(entity_kind, entity_id, id);
+                CREATE INDEX IF NOT EXISTS idx_messages_interest ON messages(interest_id, created_at);
                 """
             )
 
@@ -638,6 +651,52 @@ class MarketplaceStore:
                 result.append(record)
             return result
 
+    def _interest_participants(self, conn: sqlite3.Connection, interest_id: str) -> tuple[sqlite3.Row, str]:
+        interest = conn.execute("SELECT * FROM interests WHERE id=?", (interest_id,)).fetchone()
+        if not interest:
+            raise KeyError("interest not found")
+        listing = conn.execute("SELECT seller_ref FROM listings WHERE id=?", (interest["listing_id"],)).fetchone()
+        return interest, listing["seller_ref"]
+
+    def list_messages(self, interest_id: str, actor: str) -> list[dict[str, Any]]:
+        with self._conn() as conn:
+            interest, seller_ref = self._interest_participants(conn, interest_id)
+            if actor not in {interest["buyer_ref"], seller_ref}:
+                raise PermissionError("interest participant credential required")
+            rows = conn.execute(
+                "SELECT id,interest_id,sender_ref,body,created_at FROM messages WHERE interest_id=? ORDER BY created_at,id",
+                (interest_id,),
+            ).fetchall()
+            return [dict(row) for row in rows]
+
+    def post_message(self, interest_id: str, actor: str, body: str) -> dict[str, Any]:
+        with self._conn() as conn:
+            interest, seller_ref = self._interest_participants(conn, interest_id)
+            if actor not in {interest["buyer_ref"], seller_ref}:
+                raise PermissionError("interest participant credential required")
+            if interest["state"] not in {
+                "BONDED_INTEREST","SELECTED","ACTIVE_COMMITMENT","HONOURED",
+                "REVIEW_PENDING","DISPUTED","HONOURED_RELEASE_PENDING"
+            }:
+                raise ValueError("this bonded conversation is closed")
+            message_id = public_id("MSG")
+            now = iso()
+            clean = body.strip()
+            conn.execute(
+                "INSERT INTO messages(id,interest_id,sender_ref,body,created_at) VALUES(?,?,?,?,?)",
+                (message_id, interest_id, actor, clean, now),
+            )
+            self._event(conn, "interest", interest_id, actor, "BONDED_MESSAGE_SENT", {
+                "message_id": message_id,
+                "characters": len(clean),
+                "content_stored_privately": True,
+            })
+            row = conn.execute(
+                "SELECT id,interest_id,sender_ref,body,created_at FROM messages WHERE id=?",
+                (message_id,),
+            ).fetchone()
+        return dict(row)
+
     def seed_demo(self) -> list[dict[str, Any]]:
         with self._conn() as conn:
             count = conn.execute("SELECT COUNT(*) AS n FROM listings").fetchone()["n"]
@@ -873,6 +932,25 @@ def mount_marketplace(
         participant = actor(x_carbon_actor)
         try:
             return {"record": store.accept_deal(deal_id, participant), "money_moved": False}
+        except Exception as exc:
+            raise map_error(exc) from exc
+
+    @router.get("/api/carbon/interests/{interest_id}/messages")
+    def messages(interest_id: str, x_carbon_actor: str | None = Header(default=None)) -> dict[str, Any]:
+        require_demo()
+        participant = actor(x_carbon_actor)
+        try:
+            records = store.list_messages(interest_id, participant)
+            return {"records": records, "count": len(records), "bond_gated": True}
+        except Exception as exc:
+            raise map_error(exc) from exc
+
+    @router.post("/api/carbon/interests/{interest_id}/messages")
+    def send_message(interest_id: str, payload: MessageRequest, x_carbon_actor: str | None = Header(default=None)) -> dict[str, Any]:
+        require_demo()
+        participant = actor(x_carbon_actor)
+        try:
+            return {"record": store.post_message(interest_id, participant, payload.body), "bond_gated": True}
         except Exception as exc:
             raise map_error(exc) from exc
 
