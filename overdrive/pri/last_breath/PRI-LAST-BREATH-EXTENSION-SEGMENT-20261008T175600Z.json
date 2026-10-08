@@ -1,0 +1,183 @@
+{
+  "receipt_id": "PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T175600Z",
+  "generated_at": "2026-10-08T17:56:30Z",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "producer_run_identity": "ONE existing iSCOPE->PRI / Last Breath writer",
+  "prior_receipt": {
+    "path": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T165700Z.json",
+    "commit": "b554bfafb7e18314bfe82f9c33222d271079f577",
+    "blob_sha": "916ec4ab8f3b7df1edb8559ca55d5f88006a8ffc",
+    "counts": {
+      "smalls": 87,
+      "medium": 46,
+      "upper_medium": 90,
+      "upper": 68,
+      "total": 291,
+      "paid_usd": 0
+    }
+  },
+  "continuity": {
+    "consumed_sources": [
+      {
+        "type": "Google Doc",
+        "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
+        "revision": "AHj4eMQgdQE4GpGOp5bAzEtQmSVCaicQtxVhcFX_WFbgP2oeAwxBLq6wEL0AwTQiQdgUUq_UJtxH0Q3H6As7dAspms0xaMlJtPxR9to46g"
+      },
+      {
+        "type": "Notion Root Intake",
+        "id": "3f28f8b56cd781bd945dcd8630253ef8",
+        "page_last_edited_at": "2026-10-08T16:59:18.573Z",
+        "current_disposition": "FORX TECHNICAL SCALE PASS — 50,000 durably verified; earlier failure text explicitly superseded",
+        "proof": {
+          "workflow": "37810563734",
+          "receipt": "overdrive/forx_50k_proof/forx-20261007T162100Z/durable-readback-receipt.json",
+          "node_count": 50000,
+          "partition_hashes_verified": true
+        }
+      },
+      {
+        "type": "GitHub staging",
+        "path": "overdrive/forx_prospect_buffer.json",
+        "blob_sha": "0d1f17110fcd16ac0dc35283c26fac727e700ecf",
+        "staged_candidates": 688,
+        "authority": "candidate/evidence staging only"
+      },
+      {
+        "type": "Google Sheet",
+        "id": "1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc",
+        "ranges": [
+          "Learning Weights!A1:J25",
+          "Coverage Ledger!A1:L25"
+        ],
+        "note": "Scoped inventory; map and penetration state remain independent"
+      }
+    ],
+    "apply_example": {
+      "prior_learning": [
+        "LEARNING-001",
+        "LEARNING-008",
+        "LEARNING-009",
+        "LEARNING-013",
+        "weighted-parent lateral exploration"
+      ],
+      "changed_action": "After the education action, selected an undercovered Namibia owner-led veterinary practice with current first-party contact/service evidence instead of repeating tourism/site-cleanup. Reachability was kept separate from conversion truth.",
+      "source_pointers": [
+        "Learning Weights!A1:J25",
+        "https://www.farmhousevet.com.na/",
+        "Root Intake current FORX disposition pointer"
+      ]
+    }
+  },
+  "exact_coordinate": {
+    "country": "Namibia",
+    "region": "Windhoek",
+    "language": "English",
+    "sector": "Veterinary healthcare",
+    "category": "Mixed-practice appointment and non-clinical follow-up",
+    "business_model": "Owner-led mixed veterinary practice",
+    "problem": "Public route depends on manual contact while services span pets, equine, home and farm visits",
+    "size": "Small practice; owner-vet plus receptionist evidenced",
+    "source": "https://www.farmhousevet.com.na/",
+    "surface": "Official website",
+    "offer": "Non-clinical appointment + follow-up front-desk pilot",
+    "price": {
+      "amount": 499,
+      "currency": "USD",
+      "tier": "UPPER"
+    }
+  },
+  "component_evidence": {
+    "contact": {
+      "recipient": "info@farmhousevet.com.na",
+      "official_site_verified": true,
+      "verified_at": "2026-10-08T17:54:00Z",
+      "prior_sent_count": 0
+    },
+    "problem": {
+      "official_site_confirms": [
+        "owner-veterinarian",
+        "receptionist",
+        "appointments/questions",
+        "pet, equine, home-visit and farm-visit services"
+      ],
+      "uncertainty": "Manual coordination burden is a bounded inference; buyer pain and willingness to pay remain unproven"
+    },
+    "offer": {
+      "version": "existing USD499 Genesis pilot draft",
+      "deliverable": "One protected non-clinical intake journey, workflow logic and measurable acceptance criteria",
+      "exclusions": [
+        "No diagnosis or treatment recommendation",
+        "No medical-record automation",
+        "No production deployment without acceptance",
+        "No buyer-account access implied"
+      ],
+      "minimum_buyer_input": "Reply YES, then confirm intake fields and routing owner",
+      "delivery_clock_start": "After buyer accepts scope and supplies minimum inputs",
+      "completion_check": "Agreed journey captures routing fields, sends acknowledgement and produces agreed reception brief"
+    }
+  },
+  "outcome": {
+    "type": "SENT",
+    "account": "Farmhouse Veterinary Clinic",
+    "gmail_id": "1a11ca877412a20f",
+    "thread_id": "1a1180ae734b804f",
+    "recipient": "info@farmhousevet.com.na",
+    "tier": "UPPER",
+    "exact_price_usd": 499,
+    "immediate_hard_bounce": false,
+    "lifecycle": "OFFERED / SENT_TO_PROVIDER"
+  },
+  "inbox_readback": {
+    "new_substantive_reply": false,
+    "new_acceptance": false,
+    "new_invoice": false,
+    "new_payment": false,
+    "dynamic_learning_bounce": false
+  },
+  "count_reconciliation": {
+    "added": {
+      "upper": 1,
+      "total": 1
+    },
+    "cumulative_corrected": {
+      "smalls": 87,
+      "medium": 46,
+      "upper_medium": 90,
+      "upper": 69,
+      "total": 292,
+      "paid_usd": 0
+    }
+  },
+  "exploration": {
+    "exploited": "Owner-led SMME workflow pilots",
+    "explored": "Namibia mixed veterinary healthcare after South African education",
+    "reserve_preserved": true,
+    "cooldown": "Do not immediately repeat veterinary appointment pilots before another undercovered sector/model is evaluated",
+    "next_two_lateral_alternatives": [
+      {
+        "country": "South Africa",
+        "sector": "Fitness/membership",
+        "candidate": "C4 Fitness Bloemfontein",
+        "draft_message_id": "1a11806816b584a4",
+        "gate": "Re-verify official contact, trial-to-membership friction and Gmail history"
+      },
+      {
+        "coordinate": "FORX Pacific/Southern-Africa asset-heavy candidate supply",
+        "gate": "iSCOPE must establish current buyer problem, payer identity, commercial permission and current coordinate before PRI action"
+      }
+    ],
+    "chosen_next_action": "Monitor warm threads and hard failures; if none, evaluate C4 Fitness under the same current-contact and buyer-value gates"
+  },
+  "unresolved_gaps": [
+    "Farmhouse delivery, response, acceptance, invoice and payment are unproven.",
+    "Global coverage denominator remains unresolved.",
+    "FORX 50,000 technical map nodes do not equal qualified businesses."
+  ],
+  "t10": {
+    "supposed": "Recover continuity, reconcile superseded FORX state, check warm/inbound first, then progress the strongest current executable existing draft.",
+    "actual": "No warm buyer progression appeared; Farmhouse official contact/service evidence and dedupe passed; one existing USD499 draft was sent and read back in SENT.",
+    "proves": "Current source reads, official Farmhouse site, Gmail SENT 1a11ca877412a20f, and this durable receipt.",
+    "changed": "Cumulative qualified SENT count increased 291 to 292; UPPER increased 68 to 69; FORX state corrected to current 50K durable PASS.",
+    "remains_unproven": "Delivery, positive intent, acceptance, order, invoice, conversion and payment. PAID remains USD 0."
+  }
+}
