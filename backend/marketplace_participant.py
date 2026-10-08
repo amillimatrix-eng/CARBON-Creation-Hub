@@ -29,6 +29,13 @@ def participant_projection(store: MarketplaceStore, participant_ref: str) -> dic
                ORDER BY updated_at DESC""",
             (participant_ref,participant_ref),
         ).fetchall()]
+        extensions=[dict(r) for r in conn.execute(
+            """SELECT e.* FROM extension_requests e
+               JOIN commitments c ON c.id=e.commitment_id
+               WHERE c.buyer_ref=? OR c.seller_ref=?
+               ORDER BY e.updated_at DESC""",
+            (participant_ref,participant_ref),
+        ).fetchall()]
 
         event_count=conn.execute(
             "SELECT COUNT(*) AS n FROM events WHERE actor_ref=?",
@@ -61,6 +68,7 @@ def participant_projection(store: MarketplaceStore, participant_ref: str) -> dic
         "interests":interests,
         "commitments":commitments,
         "deals":deals,
+        "extensions":extensions,
         "note":"This is transaction evidence, not a universal reputation score.",
     }
 
