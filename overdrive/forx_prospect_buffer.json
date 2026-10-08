@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T20:27:00+02:00",
+  "last_updated": "2026-10-08T16:52:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -7979,6 +7979,256 @@
       "payer_hypothesis": "Buzz4Tours owner/operator",
       "fit_note": "Contactable Rome tourism SME with a repeated indexed Mailchimp error; requires normal-browser confirmation before qualification.",
       "consumer_action": "iSCOPE verify duplicate/contact history and confirm the Mailchimp error is user-visible before treating it as a sellable defect."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-401",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ISIDRO TOMAS CALDERON ABREU / ProVenta",
+      "surface": "Dominican Republic POS/billing; package com.proventa.app",
+      "observed_need": "NCF billing, customer/product accounts and basic inventory for daily-selling businesses; current Play update Aug 27 2026.",
+      "outcome_space": [
+        "POS",
+        "billing",
+        "inventory",
+        "SME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.proventa.app",
+      "payer_hypothesis": "ISIDRO TOMAS CALDERON ABREU / ProVenta product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-402",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "IguanaTech / PymeFacil",
+      "surface": "Dominican Republic SME POS/e-invoicing; package com.iguanatech.pymefacil",
+      "observed_need": "POS, inventory, customer/profit tracking and certified DGII e-CF electronic invoicing.",
+      "outcome_space": [
+        "POS",
+        "e-invoicing",
+        "inventory",
+        "SME"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.iguanatech.pymefacil",
+      "payer_hypothesis": "IguanaTech / PymeFacil product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-403",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TECNOLAB S.A. / Dpago comercios",
+      "surface": "Paraguay merchant payments; package com.dpago.dpagoapp",
+      "observed_need": "Merchant POS-like collection app supporting national and international payment methods.",
+      "outcome_space": [
+        "merchant payments",
+        "POS",
+        "collections"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dpago.dpagoapp",
+      "payer_hypothesis": "TECNOLAB S.A. / Dpago comercios product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-404",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HOLAAPP TECHNOLOGIES / HolaApp Negocios",
+      "surface": "Dominican Republic merchant operations; package com.holaapp.store",
+      "observed_need": "Store product, order, sales, availability and delivery-network operations.",
+      "outcome_space": [
+        "merchant operations",
+        "orders",
+        "delivery",
+        "seller acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.holaapp.store",
+      "payer_hypothesis": "HOLAAPP TECHNOLOGIES / HolaApp Negocios product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-405",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "QHATU LLC / Katu POS",
+      "surface": "Ecuador neighborhood-store POS; package org.katu.app",
+      "observed_need": "Offline POS, real-time inventory, credit/accounts receivable, profitability/tax stats and SRI e-invoicing.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "credit",
+        "e-invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=org.katu.app",
+      "payer_hypothesis": "QHATU LLC / Katu POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-406",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Administradora de Tarjetas de Crédito S.A. / Contacto POS",
+      "surface": "Bolivia mobile card acceptance; package com.libelula.contacto",
+      "observed_need": "Supervised Bolivia mobile POS allowing debit and credit card acceptance from a device.",
+      "outcome_space": [
+        "merchant acquiring",
+        "card payments",
+        "mobile POS"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.libelula.contacto",
+      "payer_hypothesis": "Administradora de Tarjetas de Crédito S.A. / Contacto POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-407",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Juan Cueva / Sillón Pos",
+      "surface": "Ecuador restaurant/small-business POS; package com.juanxcueva.sillonpos",
+      "observed_need": "Inventory alerts, multiple payments, reports, cloud sync, offline mode, permissions and receipt generation.",
+      "outcome_space": [
+        "restaurant POS",
+        "inventory",
+        "offline sync",
+        "staff controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.juanxcueva.sillonpos",
+      "payer_hypothesis": "Juan Cueva / Sillón Pos product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-408",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Cuadra GT / Cuadra",
+      "surface": "Guatemala business OS; package gt.cuadra.app",
+      "observed_need": "POS, appointments/reservations, inventory, payments and FEL electronic invoicing with offline sales sync.",
+      "outcome_space": [
+        "POS",
+        "appointments",
+        "inventory",
+        "e-invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=gt.cuadra.app",
+      "payer_hypothesis": "Cuadra GT / Cuadra product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-409",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Servitech GT S.A. / POS Móvil Siman 1",
+      "surface": "Guatemala franchise payment POS; package gt.com.servitech.posmovil_siman",
+      "observed_need": "Credisiman purchase and reversal processing for Guatemalan franchises.",
+      "outcome_space": [
+        "merchant acquiring",
+        "franchise POS",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=gt.com.servitech.posmovil_siman",
+      "payer_hypothesis": "Servitech GT S.A. / POS Móvil Siman 1 product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-410",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "EXYS / Exys Business",
+      "surface": "Bolivia merchant delivery operations; package com.mundoexys.businessapps",
+      "observed_need": "Restaurants and shops receive orders, collect counter payments, track sales and coordinate drivers.",
+      "outcome_space": [
+        "merchant operations",
+        "delivery",
+        "orders",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mundoexys.businessapps",
+      "payer_hypothesis": "EXYS / Exys Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-411",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Servitech GT S.A. / POS Móvil Siman 2",
+      "surface": "Guatemala franchise payment POS; package gt.com.servitech.posmovil_siman2",
+      "observed_need": "Separate source-native package for Credisiman purchase and reversal processing.",
+      "outcome_space": [
+        "merchant acquiring",
+        "franchise POS",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=gt.com.servitech.posmovil_siman2",
+      "payer_hypothesis": "Servitech GT S.A. / POS Móvil Siman 2 product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-412",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "eBos / eBos POS",
+      "surface": "Ecuador POS/inventory; package ec.com.ebos.pos",
+      "observed_need": "Sales/purchases, suppliers, accounts receivable/payable, inventory, products, customer RUC validation and backups.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "suppliers",
+        "receivables"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ec.com.ebos.pos",
+      "payer_hypothesis": "eBos / eBos POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-413",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Soluciones Grámark / Altoque",
+      "surface": "Guatemala restaurant POS; package com.altoque.restaurant",
+      "observed_need": "Restaurant sales, tables, inventory and employee management across one or multiple locations.",
+      "outcome_space": [
+        "restaurant POS",
+        "inventory",
+        "staff",
+        "multi-location"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.altoque.restaurant",
+      "payer_hypothesis": "Soluciones Grámark / Altoque product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-414",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Clouget / Clouget Móvil POS",
+      "surface": "Ecuador POS/e-invoicing; package com.clouget.movilpos",
+      "observed_need": "Offline sales, SRI electronic invoicing, inventory visibility and mixed payment handling.",
+      "outcome_space": [
+        "POS",
+        "e-invoicing",
+        "offline sync",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.clouget.movilpos",
+      "payer_hypothesis": "Clouget / Clouget Móvil POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-415",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Code Structure Software & Solutions For Business S.A. / Zero POS",
+      "surface": "Ecuador electronic invoicing POS; package com.zerolite.zeropos",
+      "observed_need": "Electronic invoicing and merchant POS operating surface.",
+      "outcome_space": [
+        "POS",
+        "e-invoicing",
+        "SME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.zerolite.zeropos",
+      "payer_hypothesis": "Code Structure Software & Solutions For Business S.A. / Zero POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; specific unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
