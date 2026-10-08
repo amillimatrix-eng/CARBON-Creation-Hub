@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:09:00+02:00",
+  "last_updated": "2026-10-08T17:14:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -8694,6 +8694,153 @@
       "payer_hypothesis": "FASORA / sagel product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-444",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "VGO INFOTECH SARL / Buyaa Merchants",
+      "surface": "Djibouti merchant marketplace; package com.visonstartspace.buyaamerchants",
+      "observed_need": "Local vendors/service providers manage listings, inquiries, bookings, inventory and promotions; updated Sep 2026.",
+      "outcome_space": [
+        "merchant marketplace",
+        "inventory",
+        "bookings",
+        "customer inquiries"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.visonstartspace.buyaamerchants",
+      "payer_hypothesis": "VGO INFOTECH SARL / Buyaa Merchants product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; current. Unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization/activity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-445",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LIMO dev / LIMO Merchant",
+      "surface": "Djibouti restaurant merchant operations; package com.merchant.limoo",
+      "observed_need": "Restaurants accept/reject orders, manage product availability and store open/close status; updated Mar 2026.",
+      "outcome_space": [
+        "restaurant operations",
+        "orders",
+        "availability"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.merchant.limoo",
+      "payer_hypothesis": "LIMO dev / LIMO Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; current. Unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization/activity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-446",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MOOD-LAB LTD / K-mercial",
+      "surface": "Djibouti marketplace merchant interface; package com.kikidrop.merchant",
+      "observed_need": "Registered merchants manage orders, pricing, catalogue, product availability and ads; last updated Dec 2024.",
+      "outcome_space": [
+        "merchant marketplace",
+        "orders",
+        "catalogue"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kikidrop.merchant",
+      "payer_hypothesis": "MOOD-LAB LTD / K-mercial product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; lower freshness. Unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization/activity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-447",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "VIETTEL BURUNDI SA / Lumicash Channel",
+      "surface": "Burundi agent/merchant mobile money; package bi.lumitel.lumicashchannel",
+      "observed_need": "Agent/merchant registration, transfers, cash withdrawal, airtime/bundles and merchant QR payment; last updated Apr 2024.",
+      "outcome_space": [
+        "agent network",
+        "merchant payments",
+        "QR",
+        "mobile money"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=bi.lumitel.lumicashchannel",
+      "payer_hypothesis": "VIETTEL BURUNDI SA / Lumicash Channel product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; lower freshness. Unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization/activity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-448",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ELLIS BUSINESS COMPANY / CASHTEL",
+      "surface": "Burundi financial/merchant payments; package com.averell1.CashTelAp2025",
+      "observed_need": "Transfers, withdrawals, bill payment, merchant payment and OBR tax payment; updated Jul 2026.",
+      "outcome_space": [
+        "payments",
+        "merchant payments",
+        "tax payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.averell1.CashTelAp2025",
+      "payer_hypothesis": "ELLIS BUSINESS COMPANY / CASHTEL product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; current. Unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization/activity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-449",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HOGI / Pesaflash POS",
+      "surface": "Burundi agent/merchant operations; package bi.hogi.pesaflash",
+      "observed_need": "Agent and merchant management / POS operating surface; last updated Apr 2024.",
+      "outcome_space": [
+        "agent operations",
+        "merchant management",
+        "POS"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=bi.hogi.pesaflash",
+      "payer_hypothesis": "HOGI / Pesaflash POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; lower freshness. Unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization/activity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-450",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NYOTA SARL / NyotaPay",
+      "surface": "Congo-Brazzaville merchant-payment ecosystem; package cg.rbn.nyota.nyotapay",
+      "observed_need": "Digital wallet addresses retail change-return friction and merchant reuse across Pointe-Noire/Congo-Brazzaville; last updated Nov 2024.",
+      "outcome_space": [
+        "merchant payments",
+        "wallet",
+        "retail"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=cg.rbn.nyota.nyotapay",
+      "payer_hypothesis": "NYOTA SARL / NyotaPay product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; lower freshness. Unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization/activity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-451",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AFRIREGISTER / Afripays",
+      "surface": "Burundi payment gateway; package com.afriregister.afripay",
+      "observed_need": "Cross-mobile-network/card payment gateway with Burundi developer identity; last updated Mar 2024.",
+      "outcome_space": [
+        "payment gateway",
+        "mobile payments",
+        "cards"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.afriregister.afripay",
+      "payer_hypothesis": "AFRIREGISTER / Afripays product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; lower freshness. Unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization/activity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-452",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DUSABE GISCARD DANIEL / NIC AFRICA POS",
+      "surface": "Burundi POS; package com.nic.africa.pos",
+      "observed_need": "Offline sales, barcode scanning, multi-screen customer display and staff mode for shops/restaurants; updated Sep 2026.",
+      "outcome_space": [
+        "POS",
+        "offline operations",
+        "barcode",
+        "staff mode"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.nic.africa.pos",
+      "payer_hypothesis": "DUSABE GISCARD DANIEL / NIC AFRICA POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; current. Unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization/activity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
