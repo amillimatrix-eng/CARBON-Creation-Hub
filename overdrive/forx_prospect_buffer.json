@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T20:12:00+02:00",
+  "last_updated": "2026-10-08T20:27:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -6972,6 +6972,138 @@
       "payer_hypothesis": "MyRecruit Ltd",
       "fit_note": "Direct Mauritius employer-facing workflow. Recruitment must stay within current Mauritius law; worker-fee/compliance issues are not inferred.",
       "consumer_action": "iSCOPE validate employer workforce-intake, screening, document/status coordination and current business-operation bottlenecks within legal boundaries."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-367",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Bots Property / Alberta Construction",
+      "surface": "Property rental/management operator; Botswana",
+      "observed_need": "Gaborone locally linked property business markets residential/commercial rentals and sales and provides carpentry, plumbing, electrical, painting and maintenance support with direct WhatsApp/contact.",
+      "outcome_space": [
+        "property management",
+        "rentals",
+        "maintenance",
+        "tenant enquiries",
+        "field services"
+      ],
+      "source": "https://www.botsproperty.com/",
+      "published": "2026",
+      "payer_hypothesis": "Bots Property",
+      "fit_note": "Direct Botswana property/maintenance operating surface; no tenant/admin weakness inferred.",
+      "consumer_action": "iSCOPE validate rental enquiry handling, viewing scheduling, maintenance dispatch, tenant/landlord communication and follow-up."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-368",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Morox Properties",
+      "surface": "Property management/valuation operator; Botswana",
+      "observed_need": "Botswana property company manages onboarding/audits, daily operations, occupancy, maintenance, finances, tenant support and reporting across Gaborone and satellite offices.",
+      "outcome_space": [
+        "property management",
+        "tenant support",
+        "maintenance",
+        "reporting",
+        "valuations"
+      ],
+      "source": "https://moroxproperties.co.bw/management",
+      "published": "2026",
+      "payer_hypothesis": "Morox Properties",
+      "fit_note": "Direct Botswana management workflow with current quote/contact route.",
+      "consumer_action": "iSCOPE validate owner onboarding, tenant ticket routing, maintenance coordination, reporting and lead follow-up for a bounded problem."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-369",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Homeland Real Estate Agency",
+      "surface": "Family-owned real estate/property management firm; Rwanda",
+      "observed_need": "Independent Kigali agency provides agency, valuation, property management and investment services and emphasizes landlord/tenant relationships with direct WhatsApp/contact.",
+      "outcome_space": [
+        "real estate",
+        "property management",
+        "landlord tenant",
+        "valuation",
+        "enquiries"
+      ],
+      "source": "https://homeland.rw/about-us/",
+      "published": "2026",
+      "payer_hypothesis": "Homeland Real Estate Agency",
+      "fit_note": "Direct family-owned Rwanda operator.",
+      "consumer_action": "iSCOPE validate listing/owner intake, enquiry/viewing scheduling, tenant-landlord communication, maintenance and follow-up workflow."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-370",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Jeridu Solutions Ltd",
+      "surface": "Property management operator; Zambia",
+      "observed_need": "Lusaka property manager handles landlord property submission, marketing, viewings and tenant screening, including remote-owner support, with structured property intake form.",
+      "outcome_space": [
+        "property management",
+        "tenant screening",
+        "viewings",
+        "landlord intake"
+      ],
+      "source": "https://jeridu.com/property-management/",
+      "published": "2026",
+      "payer_hypothesis": "Jeridu Solutions Ltd",
+      "fit_note": "Direct Zambia workflow with explicit owner intake and tenant-screening process.",
+      "consumer_action": "iSCOPE validate property intake, viewing scheduling, screening/status communications, maintenance/admin and landlord reporting."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-371",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Signature Properties",
+      "surface": "Property management/estate agency; Zambia",
+      "observed_need": "ZIEA-registered Lusaka estate agents provide rental property management including leases, maintenance, tax/admin and preventative maintenance planning.",
+      "outcome_space": [
+        "property management",
+        "leases",
+        "maintenance",
+        "landlord admin",
+        "rentals"
+      ],
+      "source": "https://signature.properties/property-management/",
+      "published": "2026",
+      "payer_hypothesis": "Signature Properties",
+      "fit_note": "Direct Zambia property-management operating surface.",
+      "consumer_action": "iSCOPE validate landlord onboarding, maintenance ticketing, lease/admin reminders, viewing/enquiry follow-up and reporting."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-372",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Blue Zebra",
+      "surface": "Property and lifestyle management operator; Mauritius",
+      "observed_need": "Mauritius property manager handles long-term rental operations, repair quotations/follow-up, agent liaison, maintenance, insurance renewals and bespoke asset/lifestyle administration.",
+      "outcome_space": [
+        "property management",
+        "maintenance",
+        "owner reporting",
+        "rental operations",
+        "concierge"
+      ],
+      "source": "https://bluezebra.mu/",
+      "published": "2026",
+      "payer_hypothesis": "Blue Zebra",
+      "fit_note": "Direct Mauritius operations surface with complex recurring coordination workload.",
+      "consumer_action": "iSCOPE validate repair-quote routing, owner approvals, maintenance scheduling, reporting and recurring reminders for a specific current gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-373",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BNB Maurice",
+      "surface": "Short-term rental/property-management operator; Mauritius",
+      "observed_need": "North Mauritius concierge manages villas and owner enquiries with structured property-location intake, personal 24-hour response and 24/7 guest support.",
+      "outcome_space": [
+        "short-term rentals",
+        "guest support",
+        "property management",
+        "owner intake",
+        "concierge"
+      ],
+      "source": "https://www.bnbmaurice.com/en/contact.html",
+      "published": "2026",
+      "payer_hypothesis": "BNB Maurice",
+      "fit_note": "Direct Mauritius owner/guest workflow with clear enquiry structure.",
+      "consumer_action": "iSCOPE validate owner lead conversion, guest-message routing, booking/maintenance coordination and post-stay review/follow-up."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
