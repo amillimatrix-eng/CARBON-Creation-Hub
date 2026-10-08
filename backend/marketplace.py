@@ -403,7 +403,7 @@ class MarketplaceStore:
             rows = conn.execute(
                 """SELECT id,listing_id,buyer_ref,bond_minor,considered_bond_minor,at_risk_bps,
                           proposed_start_at,proposed_duration_minutes,state,provider_state,created_at,updated_at
-                   FROM interests WHERE listing_id=? ORDER BY considered_bond_minor DESC, created_at ASC""",
+                   FROM interests WHERE listing_id=? ORDER BY created_at ASC""",
                 (listing_id,),
             ).fetchall()
             records = []
