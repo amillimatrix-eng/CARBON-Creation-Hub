@@ -13,6 +13,8 @@ from fastapi import APIRouter, FastAPI, Header, HTTPException
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field, model_validator
 
+from .marketplace_money import MoneyAdapter, SandboxMoneyAdapter
+
 
 def utcnow() -> datetime:
     return datetime.now(timezone.utc)
@@ -904,28 +906,20 @@ class MarketplaceStore:
         return [self.create_listing(seller, item) for item in samples]
 
 
-class SandboxMoneyAdapter:
-    """Non-custodial development adapter. It records intent only and never moves money."""
-
-    name = "SANDBOX_NO_MONEY_MOVED"
-
-    def reserve(self, listing_id: str, buyer_ref: str, amount_minor: int) -> str:
-        material = f"{listing_id}:{buyer_ref}:{amount_minor}:{uuid4().hex}"
-        return "SBX-" + hashlib.sha256(material.encode()).hexdigest()[:24].upper()
-
-
 def mount_marketplace(
     app: FastAPI,
     root: Path,
     *,
     db_path: Path | None = None,
     demo_mode: bool | None = None,
+    money_adapter: MoneyAdapter | None = None,
 ) -> None:
     db = Path(db_path or os.getenv("CARBON_MARKETPLACE_DB_PATH") or root / "data/carbon_marketplace.db")
     store = MarketplaceStore(db)
-    money = SandboxMoneyAdapter()
+    money = money_adapter or SandboxMoneyAdapter()
     demo_enabled = demo_mode if demo_mode is not None else os.getenv("CARBON_MARKETPLACE_DEMO_MODE", "").strip() in {"1", "true", "TRUE", "yes", "YES"}
     app.state.carbon_marketplace_store = store
+    app.state.carbon_money_adapter = money
 
     router = APIRouter()
 
@@ -956,7 +950,8 @@ def mount_marketplace(
             "product": "CARBON°",
             "thesis": "The marketplace where intent has weight.",
             "money_adapter": money.name,
-            "money_moved": False,
+            "money_contract": money.describe(),
+            "money_moved": money.moves_real_money,
             "demo_mode": demo_enabled,
             "laws": {
                 "freedom_until_commitment": True,
@@ -998,7 +993,7 @@ def mount_marketplace(
         try:
             provider_ref = money.reserve(listing_id, buyer, payload.bond_minor)
             record = store.create_interest(listing_id, buyer, payload, provider_ref)
-            return {"record": record, "money_moved": False, "provider": money.name}
+            return {"record": record, "money_moved": money.moves_real_money, "provider": money.name}
         except Exception as exc:
             raise map_error(exc) from exc
 
@@ -1079,7 +1074,7 @@ def mount_marketplace(
         require_demo()
         participant = actor(x_carbon_actor)
         try:
-            return {"record": store.decline_deal(deal_id, participant, payload.reason), "money_moved": False}
+            return {"record": store.decline_deal(deal_id, participant, payload.reason), "money_moved": money.moves_real_money}
         except Exception as exc:
             raise map_error(exc) from exc
 
@@ -1088,7 +1083,7 @@ def mount_marketplace(
         require_demo()
         participant = actor(x_carbon_actor)
         try:
-            return {"record": store.accept_deal(deal_id, participant), "money_moved": False}
+            return {"record": store.accept_deal(deal_id, participant), "money_moved": money.moves_real_money}
         except Exception as exc:
             raise map_error(exc) from exc
 
