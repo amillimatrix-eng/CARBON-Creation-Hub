@@ -23,6 +23,7 @@ jobs:
       - run: pip install -r requirements-dev.txt
       - run: pytest -q
       - run: python tests/smoke.py
+      - run: node --check marketplace/app.js
       - name: Build provider-neutral container
         run: docker build -t amx-evidence-house .
       - name: Exercise container runtime
