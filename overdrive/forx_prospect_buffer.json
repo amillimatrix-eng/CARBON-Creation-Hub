@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:58:00+02:00",
+  "last_updated": "2026-10-08T17:31:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -9351,6 +9351,340 @@
       "payer_hypothesis": "SALLY LTD / Sally POS product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Developer domicile is not silently treated as operating market where geography is unresolved.",
       "consumer_action": "iSCOPE verify operating market, current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-484",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Joyoma / Yangon POS",
+      "surface": "Myanmar POS; package com.yangonpos.mm",
+      "observed_need": "Mobile POS, barcode scanning, web inventory, sales analytics, CRM and MMK handling for Myanmar businesses.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "analytics",
+        "CRM"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.yangonpos.mm",
+      "payer_hypothesis": "Joyoma / Yangon POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-485",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Quibit / Quibit Suite",
+      "surface": "Myanmar SME business OS; package com.quibit.quibitsuite",
+      "observed_need": "POS, inventory, invoices, expenses, team roles/tasks, messaging, bookings and financial reports for Myanmar SMEs.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "invoicing",
+        "team management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.quibit.quibitsuite",
+      "payer_hypothesis": "Quibit / Quibit Suite product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-486",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MSCT PTE. LTD. / BurmaMart Merchant",
+      "surface": "Myanmar-linked multi-market seller operations; package com.burmamart.merchant",
+      "observed_need": "Catalogue/stock, order fulfilment, delivery handover, earnings/payouts, reviews and buyer chat across Myanmar/Thailand/Singapore/Japan.",
+      "outcome_space": [
+        "seller operations",
+        "inventory",
+        "payouts",
+        "cross-border"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.burmamart.merchant",
+      "payer_hypothesis": "MSCT PTE. LTD. / BurmaMart Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-487",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Chandra Budha / MeroBill",
+      "surface": "Nepal billing/POS; package com.crp.billing_app",
+      "observed_need": "Barcode billing, thermal/PDF receipts and customer credit/debt tracking tailored to Nepali shopkeepers.",
+      "outcome_space": [
+        "POS",
+        "billing",
+        "customer credit",
+        "receipts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.crp.billing_app",
+      "payer_hypothesis": "Chandra Budha / MeroBill product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-488",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SPEMAI (PVT) LTD / OnePay Merchant",
+      "surface": "Sri Lanka merchant payments; package lk.onepay.merchant.android",
+      "observed_need": "Payment links, SMS Pay, sales/payout dashboard, analytics and partial-payment workflows for registered merchants.",
+      "outcome_space": [
+        "merchant payments",
+        "payment links",
+        "payouts",
+        "analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=lk.onepay.merchant.android",
+      "payer_hypothesis": "SPEMAI (PVT) LTD / OnePay Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-489",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "VeyChlat / Sim Chomroeun",
+      "surface": "Cambodia merchant POS; package com.veychlat.merchant",
+      "observed_need": "Orders, payments, menu/inventory, table QR ordering, receipt printing and store-performance dashboard.",
+      "outcome_space": [
+        "POS",
+        "orders",
+        "inventory",
+        "QR ordering"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.veychlat.merchant",
+      "payer_hypothesis": "VeyChlat / Sim Chomroeun product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-490",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CHIT SU WAI / Daung Kyal Ni",
+      "surface": "Myanmar shop POS; package com.dkn.dkn_pos",
+      "observed_need": "Stock/profit, owner/staff accounts, customer/supplier history and local shop-server data control.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "staff",
+        "suppliers"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dkn.dkn_pos",
+      "payer_hypothesis": "CHIT SU WAI / Daung Kyal Ni product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-491",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "iPay / LOLC Merchant Cambodia",
+      "surface": "Cambodia merchant digitization; package kh.loits.ipay.merchantadmin",
+      "observed_need": "Merchant digital transaction acceptance and broader digital-service operations.",
+      "outcome_space": [
+        "merchant payments",
+        "digitization",
+        "merchant services"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=kh.loits.ipay.merchantadmin",
+      "payer_hypothesis": "iPay / LOLC Merchant Cambodia product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-492",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ZA INFORMATION TECHNOLOGY COMPANY LIMITED / ePost Merchant",
+      "surface": "Myanmar postal merchant operations; package com.deliverysoftware.epost",
+      "observed_need": "Authorized merchants create domestic/international shipment labels and manage delivery information for Myanmar Post services.",
+      "outcome_space": [
+        "logistics",
+        "shipping labels",
+        "merchant operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.deliverysoftware.epost",
+      "payer_hypothesis": "ZA INFORMATION TECHNOLOGY COMPANY LIMITED / ePost Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-493",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AUTUMNTECH IT SOLUTIONS COMPANY LIMITED / Autumn POS",
+      "surface": "Myanmar POS; package com.autumn.rtpos",
+      "observed_need": "Small-business POS with customer/expense management and Bluetooth/network receipt printing.",
+      "outcome_space": [
+        "POS",
+        "expenses",
+        "customers",
+        "receipt printing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.autumn.rtpos",
+      "payer_hypothesis": "AUTUMNTECH IT SOLUTIONS COMPANY LIMITED / Autumn POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-494",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MYANMA APEX BANK LIMITED / MAB Merchant",
+      "surface": "Myanmar merchant payments; package com.mabbank.prodmmqrmerchant",
+      "observed_need": "MMQR acceptance, transaction monitoring and business-performance visibility.",
+      "outcome_space": [
+        "merchant payments",
+        "MMQR",
+        "sales tracking"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mabbank.prodmmqrmerchant",
+      "payer_hypothesis": "MYANMA APEX BANK LIMITED / MAB Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-495",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Zapp Partner / Myanmar operator identity unresolved",
+      "surface": "Myanmar merchant wallet; package net.mminvest.zapppartnet",
+      "observed_need": "Verified merchants link bank accounts and manage digital payments/merchant-wallet operations.",
+      "outcome_space": [
+        "merchant wallet",
+        "payments",
+        "merchant onboarding"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=net.mminvest.zapppartnet",
+      "payer_hypothesis": "Zapp Partner / Myanmar operator identity unresolved product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-496",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ASIA BRIGHTWAY INFORMATION TECHNOLOGY COMPANY LIMITED / Mini POS",
+      "surface": "Myanmar POS; package com.abw.minipos",
+      "observed_need": "Sales, inventory and purchase management with offline support and sync.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "purchasing",
+        "offline sync"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.abw.minipos",
+      "payer_hypothesis": "ASIA BRIGHTWAY INFORMATION TECHNOLOGY COMPANY LIMITED / Mini POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-497",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Olyzono LLC / olyone",
+      "surface": "Sri Lanka seller operations; package lk.oly.merchant",
+      "observed_need": "Social-commerce store link, orders, COD-risk controls, mini-POS, courier labels and inventory for Sri Lankan sellers.",
+      "outcome_space": [
+        "social commerce",
+        "COD",
+        "seller operations",
+        "courier"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=lk.oly.merchant",
+      "payer_hypothesis": "Olyzono LLC / olyone product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-498",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BCEL Public / OnePay Shop",
+      "surface": "Laos merchant POS; package com.bcel.onepayshop",
+      "observed_need": "QR payments, staff controls, refunds and reporting for stores.",
+      "outcome_space": [
+        "merchant payments",
+        "QR",
+        "staff controls",
+        "refunds"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bcel.onepayshop",
+      "payer_hypothesis": "BCEL Public / OnePay Shop product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-499",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "QPay / QPay Merchant Nepal",
+      "surface": "Nepal merchant payments; package net.qpaysolutions.QPayMerchant",
+      "observed_need": "Mobile merchant payments plus bill-payment and wallet-withdrawal revenue services.",
+      "outcome_space": [
+        "merchant payments",
+        "bill payments",
+        "wallet cash-out"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=net.qpaysolutions.QPayMerchant",
+      "payer_hypothesis": "QPay / QPay Merchant Nepal product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-500",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Nepal Clearing House Ltd / NEPALPAY Business",
+      "surface": "Nepal business payments; package com.nchl.creditor.nchl_nps_creditor_app",
+      "observed_need": "QR acceptance, payment detail, settlement and daily sales/earnings dashboard.",
+      "outcome_space": [
+        "merchant payments",
+        "QR",
+        "settlement",
+        "sales tracking"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.nchl.creditor.nchl_nps_creditor_app",
+      "payer_hypothesis": "Nepal Clearing House Ltd / NEPALPAY Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-501",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Go Serve / Sabin Neupane",
+      "surface": "Nepal restaurant POS; package com.goserve.app",
+      "observed_need": "Offline orders with safe sync, inventory/menu depletion, shift reconciliation, KDS and thermal printing.",
+      "outcome_space": [
+        "restaurant POS",
+        "inventory",
+        "offline sync",
+        "reconciliation"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.goserve.app",
+      "payer_hypothesis": "Go Serve / Sabin Neupane product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-502",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HATTHA BANK PLC. / Hattha Merchant",
+      "surface": "Cambodia mobile POS; package com.hatthabank.merchant",
+      "observed_need": "KHQR payments, multi-shop/counter monitoring, refunds and merchant onboarding.",
+      "outcome_space": [
+        "merchant payments",
+        "KHQR",
+        "multi-shop",
+        "refunds"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.hatthabank.merchant",
+      "payer_hypothesis": "HATTHA BANK PLC. / Hattha Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-503",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "INTERNET WALLET MYANMAR LTD / OK Dollar Merchant",
+      "surface": "Myanmar MMQR merchant payments; package com.okdollar.merchantapp",
+      "observed_need": "Multi-wallet MMQR acceptance, real-time confirmations, transaction history and reporting.",
+      "outcome_space": [
+        "merchant payments",
+        "MMQR",
+        "transaction reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.okdollar.merchantapp",
+      "payer_hypothesis": "INTERNET WALLET MYANMAR LTD / OK Dollar Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
