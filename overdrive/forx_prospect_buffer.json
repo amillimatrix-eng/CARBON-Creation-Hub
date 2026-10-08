@@ -12170,6 +12170,125 @@
       "payer_hypothesis": "JBing Systems Ltd / MyJBS business/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public business-operating surface evidenced; no unresolved commercial problem inferred.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-654",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LEKKELET (PTY) LTD / LekkeLet",
+      "surface": "South Africa property-management SaaS; package com.lekkelet.com",
+      "observed_need": "Landlord portfolio operations covering leases, invoices, rent, maintenance and inspections.",
+      "outcome_space": [
+        "property",
+        "landlord operations",
+        "rent",
+        "maintenance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.lekkelet.com",
+      "payer_hypothesis": "LEKKELET (PTY) LTD / LekkeLet commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-655",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ADDPROP PROPERTY MANAGEMENT SYSTEMS (PTY) LTD / AddProp",
+      "surface": "South Africa property-management platform; package com.Addprop",
+      "observed_need": "Leases, invoices, deposits, maintenance, property marketplace and service-provider discovery.",
+      "outcome_space": [
+        "property",
+        "leases",
+        "payments",
+        "service providers"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.Addprop",
+      "payer_hypothesis": "ADDPROP PROPERTY MANAGEMENT SYSTEMS (PTY) LTD / AddProp commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-656",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Easy Rental / EasyApply",
+      "surface": "South Africa rental-management platform; package easyapplymove.app.za.rental",
+      "observed_need": "Property listing, applications, leases, rent collection, inspections and maintenance workflow.",
+      "outcome_space": [
+        "property",
+        "rental operations",
+        "leases",
+        "maintenance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=easyapplymove.app.za.rental",
+      "payer_hypothesis": "Easy Rental / EasyApply commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-657",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "RENTALSHUB (PTY) LTD",
+      "surface": "South Africa property-management platform; package com.rentalshub.mobile",
+      "observed_need": "Listings, lease administration, rent collection, maintenance, portfolio financial visibility and letting-agent workflows.",
+      "outcome_space": [
+        "property",
+        "rent",
+        "maintenance",
+        "portfolio management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.rentalshub.mobile",
+      "payer_hypothesis": "RENTALSHUB (PTY) LTD commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-658",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PROPERTY MANAGEMENT CONSOLE LLC / PMC",
+      "surface": "Ghana-facing/Africa property-management platform; package com.pmcglobal.portal",
+      "observed_need": "Property, rent/service-charge, maintenance, owner/tenant communication and reporting workflows; Ghana phone-verification support surfaced.",
+      "outcome_space": [
+        "property",
+        "rent",
+        "maintenance",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.pmcglobal.portal",
+      "payer_hypothesis": "PROPERTY MANAGEMENT CONSOLE LLC / PMC commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-659",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "VETRA MARKETPLACE LIMITED / BuySolar Africa",
+      "surface": "Africa solar-product marketplace; package com.buysolar.africa",
+      "observed_need": "Verified solar vendors, product comparison, checkout, financing and order tracking for solar equipment.",
+      "outcome_space": [
+        "energy",
+        "solar",
+        "vendor marketplace",
+        "financing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.buysolar.africa",
+      "payer_hypothesis": "VETRA MARKETPLACE LIMITED / BuySolar Africa commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-660",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Sibesonke Ltd / mFarming Sales & Agronomy",
+      "surface": "Africa agribusiness field-sales operations; package com.sibesonke.mfarming",
+      "observed_need": "Agrodealer/farmer sales, field reporting, retail-stock visibility, orders and field-team performance.",
+      "outcome_space": [
+        "agriculture",
+        "field sales",
+        "inventory",
+        "agrodealer network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.sibesonke.mfarming",
+      "payer_hypothesis": "Sibesonke Ltd / mFarming Sales & Agronomy commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
