@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T13:48:00+02:00",
+  "last_updated": "2026-10-08T14:04:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -1105,6 +1105,193 @@
       "payer_hypothesis": "Velox .dj product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Djibouti operating market is explicit while developer address is France; canonical local operator identity remains unresolved.",
       "consumer_action": "iSCOPE resolve payer/operator identity and validate restaurant/driver acquisition, localization and retention needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-060",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "WEB-NUK / Bhutan Product",
+      "surface": "Google Play marketplace; package com.bhutanproduct.www.twa; Bhutan",
+      "observed_need": "Current September 2026 Play listing is a Bhutan-wide marketplace built around verified local vendors, nationwide delivery and seller recruitment; direct Bhutan phone/email are public.",
+      "outcome_space": [
+        "marketplace",
+        "seller acquisition",
+        "SME visibility",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bhutanproduct.www.twa",
+      "published": "2026-09-06",
+      "payer_hypothesis": "WEB-NUK / Bhutan Product operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh Bhutan marketplace observation with direct local route; no unresolved defect inferred.",
+      "consumer_action": "iSCOPE validate seller recruitment, conversion/support and current growth bottleneck before commercial qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-061",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "GENNEX SOLUTIONS SOLE CO., LTD / G-Shop",
+      "surface": "Google Play local marketplace; package com.gennexs.gshop.twa; Laos",
+      "observed_need": "Current July 2026 Laos marketplace connects verified local shops with shoppers and includes live selling, seller order/customer/delivery management, built-in POS and Lao/Thai/Hmong/English support; direct Vientiane company contact is public.",
+      "outcome_space": [
+        "marketplace",
+        "seller operations",
+        "live commerce",
+        "POS",
+        "localization"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.gennexs.gshop.twa",
+      "published": "2026-07-02",
+      "payer_hypothesis": "GENNEX SOLUTIONS SOLE CO., LTD",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong local seller-network and POS operating surface; no defect inferred.",
+      "consumer_action": "iSCOPE validate seller activation, live-commerce conversion, support/localization burden and buyer route."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-062",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ZAPPY CO., LTD / Zappy Partner",
+      "surface": "Google Play B2B wholesale marketplace; package seller.zappy.la; Laos",
+      "observed_need": "Current September 2026 app is designed for Lao shop owners, distributors and corporate buyers to source from verified local suppliers using bulk ordering and account/order tools; Vientiane company contact is public.",
+      "outcome_space": [
+        "B2B wholesale",
+        "supplier network",
+        "merchant procurement",
+        "bulk ordering",
+        "distribution"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=seller.zappy.la",
+      "published": "2026-09-03",
+      "payer_hypothesis": "ZAPPY CO., LTD",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. High-leverage B2B distribution rail with current local-company evidence; present pain requires iSCOPE validation.",
+      "consumer_action": "iSCOPE validate supplier onboarding, buyer acquisition, repeat ordering and current B2B support friction."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-063",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DHESAA GROUP PVT LTD / Dhesaa",
+      "surface": "Google Play multi-vendor marketplace; package com.dhesaa.app; Maldives",
+      "observed_need": "Current September 2026 marketplace serves Maldives businesses and consumers with products, services, jobs, rooms, real estate, rentals and vehicles; direct Malé address/phone/email are public.",
+      "outcome_space": [
+        "multi-vendor marketplace",
+        "local services",
+        "jobs",
+        "property",
+        "seller network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dhesaa.app",
+      "published": "2026-09-02",
+      "payer_hypothesis": "DHESAA GROUP PVT LTD",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh local-company marketplace evidence; no specific current defect inferred.",
+      "consumer_action": "iSCOPE validate seller/listing acquisition, order/contact conversion and current marketplace support burden."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-064",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MV Bytes LLC / IsleBooks",
+      "surface": "Google Play business POS; package mv.islebooks.app; Maldives operating market, US legal developer",
+      "observed_need": "Current August 2026 Maldives business platform covers sales, invoicing, inventory, purchasing, AI invoice/receipt capture, supplier dues, HR, delivery and multi-location operations, with Maldives phone/support and current customer-login release.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "AI document capture",
+        "HR",
+        "business operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mv.islebooks.app",
+      "published": "2026-08-14",
+      "payer_hypothesis": "MV Bytes LLC / IsleBooks product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Maldives operating market is explicit while legal developer is US-based; direct Maldives route exists. Current problem requires validation.",
+      "consumer_action": "iSCOPE inspect merchant onboarding, document automation, support and local compliance/operations needs without inferring a defect."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-065",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MV Bytes LLC / DhiGrab",
+      "surface": "Google Play driver network; package com.dhigrab.deliveryApp; Maldives operating market",
+      "observed_need": "Current May 2026 driver app recruits delivery partners for eCommerce, pharmacy, grocery and parcel businesses across the Maldives and pays commissions for completed delivery work.",
+      "outcome_space": [
+        "driver network",
+        "last-mile delivery",
+        "merchant logistics",
+        "partner acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dhigrab.deliveryApp",
+      "published": "2026-05-13",
+      "payer_hypothesis": "MV Bytes LLC / DhiGrab product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Separate package/provenance from IsleBooks even though developer overlaps; canonical product/org relationship should be reconciled later.",
+      "consumer_action": "iSCOPE validate driver acquisition/activation, delivery-partner supply and current operations burden before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-066",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ThreeG Media Sdn Bhd / heydomo",
+      "surface": "Google Play marketplace + delivery; package com.suteramedia.domo; Brunei",
+      "observed_need": "Current July 2026 Brunei-based marketplace connects businesses and delivery services, supports online payments and exposes direct +673 phone/email support.",
+      "outcome_space": [
+        "marketplace",
+        "merchant network",
+        "delivery",
+        "payments",
+        "customer support"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.suteramedia.domo",
+      "published": "2026-07-30",
+      "payer_hypothesis": "ThreeG Media Sdn Bhd / heydomo",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Current Brunei operating surface with direct contact and material installed base; no problem inferred solely from scale.",
+      "consumer_action": "iSCOPE validate merchant/delivery acquisition, support/review patterns and present conversion need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-067",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AURONX L.L.C / SuriBuys",
+      "surface": "Google Play local marketplace; package com.suribuys.marketplace; Suriname operating market, US legal developer",
+      "observed_need": "Current September 2026 app helps Surinamese stores and entrepreneurs become visible online, offers delivery/pickup and order tracking, and exposes a +597 route while developer legal address is US-based.",
+      "outcome_space": [
+        "local marketplace",
+        "SME visibility",
+        "merchant network",
+        "delivery",
+        "order tracking"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.suribuys.marketplace",
+      "published": "2026-09-07",
+      "payer_hypothesis": "AURONX L.L.C / SuriBuys product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Suriname operating market and US legal-developer location are kept separate. No current defect inferred.",
+      "consumer_action": "iSCOPE verify local merchant acquisition/retention, support route ownership and current marketplace bottleneck."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-068",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ShopiZone Haiti / Samuel Rodney",
+      "surface": "Google Play local marketplace; package com.shopizonehaiti.mza; Haiti operating market, Canada developer location",
+      "observed_need": "Play listing targets the Haitian market with seller inventory/order management and local marketplace discovery, with public ShopiZone support email; latest listed update is May 2025 so freshness is weaker than current 2026 candidates.",
+      "outcome_space": [
+        "marketplace",
+        "seller operations",
+        "local ecommerce",
+        "inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.shopizonehaiti.mza",
+      "published": "2025-05-04",
+      "payer_hypothesis": "ShopiZone Haiti operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Retained for Haiti coverage with explicit lower freshness; operator/legal identity and current activity require validation.",
+      "consumer_action": "iSCOPE verify the service is still active in 2026, resolve payer identity and only then assess seller/acquisition needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-069",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tashi Wangchuk / EThrom",
+      "surface": "Google Play Bhutan marketplace; package org.ethrom; Bhutan operating market, Australia developer location",
+      "observed_need": "Current May 2026 app is tailored to Bhutan payment/delivery processes; first-party changes simplified login/registration, removed SMS support and prioritized location-based inventory.",
+      "outcome_space": [
+        "marketplace",
+        "seller acquisition",
+        "onboarding",
+        "localization",
+        "inventory"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=org.ethrom",
+      "published": "2026-05-08",
+      "payer_hypothesis": "EThrom product owner / Tashi Wangchuk",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Bhutan operating market is explicit while developer address is Australia. Current onboarding changes are attributable maintenance evidence.",
+      "consumer_action": "iSCOPE validate current Bhutan operation, seller/buyer onboarding and whether any conversion/support issue remains."
     }
   ]
 }
