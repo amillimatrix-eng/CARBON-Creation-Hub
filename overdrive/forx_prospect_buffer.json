@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:39:00+02:00",
+  "last_updated": "2026-10-08T17:45:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -9941,6 +9941,256 @@
       "payer_hypothesis": "Lotfi Zaidi / caissti product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-520",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Daftar.uz",
+      "surface": "Uzbekistan retail automation; package com.pos.daftaruz",
+      "observed_need": "Sales, cash register, warehouse, returns, clients and employee access controls.",
+      "outcome_space": [
+        "POS",
+        "warehouse",
+        "staff controls",
+        "returns"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.pos.daftaruz",
+      "payer_hypothesis": "Daftar.uz product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-521",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "E-POS SYSTEMS LLC / E-POS Mobile",
+      "surface": "Uzbekistan fiscal POS; package uz.uzpos.mobile",
+      "observed_need": "Fiscalized mobile POS with offline mode, QR payments, receipt printing, OFD sync and product labeling.",
+      "outcome_space": [
+        "POS",
+        "fiscalization",
+        "offline sync",
+        "QR payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=uz.uzpos.mobile",
+      "payer_hypothesis": "E-POS SYSTEMS LLC / E-POS Mobile product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-522",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "STEP CORE / STEP Mobile Cashier",
+      "surface": "Uzbekistan retail POS; package uz.step.cashier.step_cashier",
+      "observed_need": "Cash shifts, offline sales sync, receipts, customers, barcode/QR scanning and split payments.",
+      "outcome_space": [
+        "POS",
+        "offline sync",
+        "cash shifts",
+        "split payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=uz.step.cashier.step_cashier",
+      "payer_hypothesis": "STEP CORE / STEP Mobile Cashier product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-523",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Pos Service",
+      "surface": "Kyrgyzstan-targeted trade automation; package app.posservice.app",
+      "observed_need": "Warehouse, sales, purchases, receivables, expenses, customer base and barcode retail operations.",
+      "outcome_space": [
+        "POS",
+        "warehouse",
+        "receivables",
+        "CRM"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.posservice.app",
+      "payer_hypothesis": "Pos Service product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-524",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BC CARD KYRGYZSTAN / BCKG",
+      "surface": "Kyrgyzstan merchant payment operations; package com.bais.app",
+      "observed_need": "POS/QR transaction and settlement monitoring plus merchant connection to payment infrastructure.",
+      "outcome_space": [
+        "merchant payments",
+        "settlement",
+        "QR",
+        "merchant onboarding"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bais.app",
+      "payer_hypothesis": "BC CARD KYRGYZSTAN / BCKG product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-525",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Kasa.az / Cowsel",
+      "surface": "Azerbaijan wholesale ERP; package app.kasa.az",
+      "observed_need": "Wholesale sales, inventory, customers, multi-user teams and real-time reporting.",
+      "outcome_space": [
+        "ERP",
+        "wholesale",
+        "inventory",
+        "multi-user"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.kasa.az",
+      "payer_hypothesis": "Kasa.az / Cowsel product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-526",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Open Merchant",
+      "surface": "Uzbekistan installment-sales merchant tool; package com.openmerchant.uz",
+      "observed_need": "Partner-store customer scoring, installment-limit workflow and seller incentives.",
+      "outcome_space": [
+        "merchant sales",
+        "installments",
+        "customer scoring"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.openmerchant.uz",
+      "payer_hypothesis": "Open Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-527",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Topsavdo",
+      "surface": "Uzbekistan retail ERP/POS; package uz.topsavdo.mob",
+      "observed_need": "Checkout, stock, branches/transfers, customer credit, cash flow, staff permissions and offline sync.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "customer credit",
+        "staff controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=uz.topsavdo.mob",
+      "payer_hypothesis": "Topsavdo product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-528",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ROBOSELL LLC / Robosell Business",
+      "surface": "Uzbekistan seller operations; package uz.robosell.app",
+      "observed_need": "Orders, products, customers and seller chat across website, Telegram, QR menu and marketplaces.",
+      "outcome_space": [
+        "seller operations",
+        "orders",
+        "customers",
+        "omnichannel"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=uz.robosell.app",
+      "payer_hypothesis": "ROBOSELL LLC / Robosell Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-529",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Hoomo POS",
+      "surface": "Uzbekistan mobile POS; package uz.hoomo.pos.hoomo_pos",
+      "observed_need": "Mobile sales/POS operating surface for local merchants.",
+      "outcome_space": [
+        "POS",
+        "sales"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=uz.hoomo.pos.hoomo_pos",
+      "payer_hypothesis": "Hoomo POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-530",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BEKRZ LLC / Savat POS",
+      "surface": "Uzbekistan retail/restaurant POS; package io.savat.pos",
+      "observed_need": "Shared inventory, offline-safe synchronization, staff-role controls and payment-reference reconciliation.",
+      "outcome_space": [
+        "POS",
+        "offline sync",
+        "staff controls",
+        "reconciliation"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=io.savat.pos",
+      "payer_hypothesis": "BEKRZ LLC / Savat POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-531",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Biznex / Biznex Waiter",
+      "surface": "Uzbekistan restaurant automation; package com.bixnex.biznex_pos",
+      "observed_need": "Restaurant/cafe/fast-food order automation designed to reduce paper/order errors.",
+      "outcome_space": [
+        "restaurant operations",
+        "orders",
+        "workflow"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bixnex.biznex_pos",
+      "payer_hypothesis": "Biznex / Biznex Waiter product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-532",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CentralPOS Manager",
+      "surface": "Azerbaijan-ready multi-branch POS management; package pro.centralpos.manager",
+      "observed_need": "Live branch dashboards, order monitoring, menu management, staff shifts, refunds/discounts and tax/VAT reporting.",
+      "outcome_space": [
+        "POS management",
+        "multi-branch",
+        "staff shifts",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=pro.centralpos.manager",
+      "payer_hypothesis": "CentralPOS Manager product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-533",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ONLYFINANCE LLC / BirLiy POS",
+      "surface": "Uzbekistan offline retail POS; package uz.birliy.pos",
+      "observed_need": "Offline sales, debt, inventory, reports, cashier PINs and duplicate-safe server sync.",
+      "outcome_space": [
+        "POS",
+        "offline sync",
+        "customer debt",
+        "cashier controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=uz.birliy.pos",
+      "payer_hypothesis": "ONLYFINANCE LLC / BirLiy POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-534",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PULPAL LLC / PulPal Business",
+      "surface": "Azerbaijan business payments; package az.pulpal",
+      "observed_need": "Online/cash/installment payment acceptance plus direct invoicing for entrepreneurs.",
+      "outcome_space": [
+        "merchant payments",
+        "invoicing",
+        "installments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=az.pulpal",
+      "payer_hypothesis": "PULPAL LLC / PulPal Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
