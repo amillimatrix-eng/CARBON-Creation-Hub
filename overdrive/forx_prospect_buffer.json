@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:45:00+02:00",
+  "last_updated": "2026-10-08T17:50:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -10191,6 +10191,233 @@
       "payer_hypothesis": "PULPAL LLC / PulPal Business product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; developer domicile and operating market remain distinct where applicable; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-535",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DOMINAITE EOOD / dominaite",
+      "surface": "Bulgaria merchant finance; package com.dominaite.mobile",
+      "observed_need": "Payments, payouts, invoices, chargebacks and card-terminal management from a merchant mobile app.",
+      "outcome_space": [
+        "merchant payments",
+        "payouts",
+        "invoicing",
+        "chargebacks"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dominaite.mobile",
+      "payer_hypothesis": "DOMINAITE EOOD / dominaite product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-536",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DEVFIRE WEB SRL / Portia",
+      "surface": "Romania local-services distribution; package ro.portia.app",
+      "observed_need": "Satu Mare merchant discovery with live availability, booking and explicit merchant recruitment.",
+      "outcome_space": [
+        "local services",
+        "bookings",
+        "merchant acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ro.portia.app",
+      "payer_hypothesis": "DEVFIRE WEB SRL / Portia product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-537",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "IT CORNER HUB PLUS / REVO",
+      "surface": "Romania restaurant POS; package ro.waveit.revo",
+      "observed_need": "Tables/orders, split bills, kitchen display, stocks, recipes, reports, cash register and loyalty.",
+      "outcome_space": [
+        "restaurant POS",
+        "inventory",
+        "KDS",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ro.waveit.revo",
+      "payer_hypothesis": "IT CORNER HUB PLUS / REVO product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-538",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AIGO DELIVERY SRL / AIGO Merchant",
+      "surface": "Romania battery-swap merchant operations; package com.aigo.ops",
+      "observed_need": "Swap-station oversight, battery-status monitoring and rider coordination.",
+      "outcome_space": [
+        "energy infrastructure",
+        "merchant operations",
+        "rider coordination"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.aigo.ops",
+      "payer_hypothesis": "AIGO DELIVERY SRL / AIGO Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-539",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DSK BANK AD / dskPOS",
+      "surface": "Bulgaria softPOS; package bg.dskbank.dskpos",
+      "observed_need": "Smartphone payment acceptance and integration with merchant business systems.",
+      "outcome_space": [
+        "softPOS",
+        "merchant acquiring",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=bg.dskbank.dskpos",
+      "payer_hypothesis": "DSK BANK AD / dskPOS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-540",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Aleksandar Jovovic / EleFakt",
+      "surface": "Serbia fiscal business app; package rs.elefakt.pos",
+      "observed_need": "Inventory plus fiscal-invoice request generation for Serbian businesses.",
+      "outcome_space": [
+        "fiscal invoicing",
+        "inventory",
+        "POS"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=rs.elefakt.pos",
+      "payer_hypothesis": "Aleksandar Jovovic / EleFakt product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-541",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "VEDERA 22 DOOEL / Viteloo",
+      "surface": "North Macedonia local-merchant reward network; package com.novamedia.app",
+      "observed_need": "Verified-attention rewards redeemable at local merchants, with merchant bill payment functionality.",
+      "outcome_space": [
+        "merchant network",
+        "local commerce",
+        "rewards"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.novamedia.app",
+      "payer_hypothesis": "VEDERA 22 DOOEL / Viteloo product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-542",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HAMBAR MARKETPLACE SRL / Hambar Merchant",
+      "surface": "Romania producer marketplace; package ro.hambar.merchant",
+      "observed_need": "Orders, products, stock and earnings management for merchant shops.",
+      "outcome_space": [
+        "marketplace",
+        "seller operations",
+        "inventory",
+        "earnings"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ro.hambar.merchant",
+      "payer_hypothesis": "HAMBAR MARKETPLACE SRL / Hambar Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-543",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "OTP banka Srbija / OTP Go POS",
+      "surface": "Serbia softPOS; package com.provisionpay.softpos.otpbankserbia",
+      "observed_need": "NFC smartphone Visa/Mastercard/mobile-wallet acceptance and digital receipt delivery.",
+      "outcome_space": [
+        "softPOS",
+        "merchant acquiring",
+        "receipts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.provisionpay.softpos.otpbankserbia",
+      "payer_hypothesis": "OTP banka Srbija / OTP Go POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-544",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Payten DOO / Payten Buddy",
+      "surface": "Serbia POS-support operations; package rs.buddy",
+      "observed_need": "Merchants report terminal problems and order receipt rolls through a service app.",
+      "outcome_space": [
+        "POS support",
+        "merchant service",
+        "field operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=rs.buddy",
+      "payer_hypothesis": "Payten DOO / Payten Buddy product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-545",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KODIT DOO / eKompanija POS",
+      "surface": "Serbia fiscal POS; package com.kodit.ekompanija.pos",
+      "observed_need": "Retail/hospitality fiscal receipts with online/offline operation and tax-administration integration.",
+      "outcome_space": [
+        "POS",
+        "fiscalization",
+        "offline operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kodit.ekompanija.pos",
+      "payer_hypothesis": "KODIT DOO / eKompanija POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-546",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BANCA INTESA AD BEOGRAD / Soft POS",
+      "surface": "Serbia softPOS; package com.payten.supercase",
+      "observed_need": "Card and IPS payment acceptance via merchant mobile device.",
+      "outcome_space": [
+        "softPOS",
+        "merchant acquiring",
+        "instant payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.payten.supercase",
+      "payer_hypothesis": "BANCA INTESA AD BEOGRAD / Soft POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-547",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Storepay / Storepay Merchant",
+      "surface": "Mongolia merchant installment-payments; package mn.storepay.merchant",
+      "observed_need": "Partner merchants make sales, monitor settlement/payment activity and maintain merchant information.",
+      "outcome_space": [
+        "merchant payments",
+        "installments",
+        "settlement"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mn.storepay.merchant",
+      "payer_hypothesis": "Storepay / Storepay Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-548",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "EBARION DOOEL / Platero",
+      "surface": "North Macedonia corporate-meal payments; package mk.platero.app",
+      "observed_need": "Employee meal allowance, QR payment and team-lunch coordination.",
+      "outcome_space": [
+        "B2B payments",
+        "employee benefits",
+        "QR"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mk.platero.app",
+      "payer_hypothesis": "EBARION DOOEL / Platero product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
