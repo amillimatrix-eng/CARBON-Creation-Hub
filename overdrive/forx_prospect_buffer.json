@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:43:00+02:00",
+  "last_updated": "2026-10-08T17:19:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -4650,6 +4650,152 @@
       "payer_hypothesis": "Yeah Mall / YEAHMALL product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; no unresolved pain inferred.",
       "consumer_action": "iSCOPE verify current identity, buyer route and active commercial need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-259",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Biyu / Josue Humberto Montecinos Torres",
+      "surface": "Google Play SMME business app; package com.biyu.pos; El Salvador",
+      "observed_need": "Current Sep 13 2026 first release is made in El Salvador for Salvadoran businesses, covering quick payments, expense tracking and business performance without requiring registration.",
+      "outcome_space": [
+        "SMME finance",
+        "payments",
+        "expense tracking",
+        "business management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.biyu.pos",
+      "published": "2026-09-13",
+      "payer_hypothesis": "Biyu product owner",
+      "fit_note": "Fresh owner-led El Salvador SMME surface with direct local developer identity.",
+      "consumer_action": "iSCOPE validate adoption, recovery/support workflow and current business-management pain."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-260",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HazConta, S.A. de C.V. / HazConta",
+      "surface": "Google Play digital accounting; package app.haz_conta; El Salvador",
+      "observed_need": "Current Jan 22 2026 app is specifically for entrepreneurs, shops and small businesses in El Salvador to organize sales, collections and payments from mobile.",
+      "outcome_space": [
+        "accounting",
+        "sales",
+        "collections",
+        "payments",
+        "SMME operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.haz_conta",
+      "published": "2026-01-22",
+      "payer_hypothesis": "HazConta, S.A. de C.V.",
+      "fit_note": "Direct local legal identity and SMME bookkeeping surface.",
+      "consumer_action": "iSCOPE validate merchant acquisition, accounting workflow burden and current conversion/support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-261",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KSTEC / KosalDTE",
+      "surface": "Google Play DTE e-invoicing + POS; package com.kosaltec.operator; El Salvador",
+      "observed_need": "Current 2026 app provides El Salvador DTE generation, offline support, multiple fiscal document types, 4-step POS flow and barcode scanning.",
+      "outcome_space": [
+        "e-invoicing",
+        "POS",
+        "offline operations",
+        "fiscal compliance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kosaltec.operator",
+      "published": "2026",
+      "payer_hypothesis": "KSTEC / KosalDTE",
+      "fit_note": "Strong local fiscal/merchant operations surface; exact update date can be normalized later.",
+      "consumer_action": "iSCOPE validate DTE onboarding/support, offline workflow and small-business adoption."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-262",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Cámara de Comercio de Guatemala / CCG FEL operator",
+      "surface": "Google Play chamber-linked electronic invoicing; package com.fel_camcom; Guatemala",
+      "observed_need": "Current Aug 18 2026 app lets companies using Guatemala Chamber e-invoicing services perform sale and electronic invoice generation from one app with configured pricing, discounts, payment methods and receipt printing.",
+      "outcome_space": [
+        "e-invoicing",
+        "sales",
+        "merchant payments",
+        "chamber services"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.fel_camcom",
+      "published": "2026-08-18",
+      "payer_hypothesis": "CCG FEL service owner",
+      "fit_note": "Current chamber-linked merchant operating surface; treat chamber network as distribution rail, not member-node multiplier.",
+      "consumer_action": "iSCOPE validate SME onboarding/support and e-invoice sales workflow; preserve chamber distribution edge."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-263",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Homeland S.A. / Tigo POS",
+      "surface": "Google Play mobile POS; package gt.com.homeland.xpos.tigo; Guatemala",
+      "observed_need": "Current Sep 17 2026 app turns smartphones into mobile POS. Latest notes cite Android 12+ reader connection fix, card-reading/message improvements and Android 16 compatibility. Play currently declares data is not encrypted.",
+      "outcome_space": [
+        "mPOS",
+        "merchant payments",
+        "Android compatibility",
+        "card reader"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=gt.com.homeland.xpos.tigo",
+      "published": "2026-09-17",
+      "payer_hypothesis": "Homeland S.A. / Tigo POS service owner",
+      "fit_note": "Fresh Guatemala merchant surface with concrete maintenance and data-safety review signals.",
+      "consumer_action": "iSCOPE validate current reader/connectivity state and data-safety declaration before any defect claim."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-264",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Hypernova Labs S.A. / FacturaLibre",
+      "surface": "Google Play electronic invoicing; package com.hnl.facturalibre; Panama",
+      "observed_need": "Current Sep 4 2026 app provides mobile Panama DGI-compliant e-invoicing, 4-step issuance, biometric authentication and business metrics/dashboard.",
+      "outcome_space": [
+        "e-invoicing",
+        "fiscal compliance",
+        "business metrics",
+        "mobile workflow"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.hnl.facturalibre",
+      "published": "2026-09-04",
+      "payer_hypothesis": "Hypernova Labs S.A.",
+      "fit_note": "Direct Panama legal/contact evidence; Play currently reports data not encrypted, a review signal requiring validation.",
+      "consumer_action": "iSCOPE validate merchant onboarding, DGI workflow, dashboard/support needs and data-safety declaration."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-265",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MPOS Global / Panama-Central America acquiring operator",
+      "surface": "Google Play mobile acquiring; package mposglobal.com.mposglobal; Panama/Central America",
+      "observed_need": "Current Jun 2 2026 mPOS service accepts card-present payments and is marketed across Panama, Nicaragua, Costa Rica and Honduras with immediate activation and no monthly fee.",
+      "outcome_space": [
+        "mPOS",
+        "merchant acquiring",
+        "regional distribution",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mposglobal.com.mposglobal",
+      "published": "2026-06-02",
+      "payer_hypothesis": "MPOS Global product owner",
+      "fit_note": "One exact package with multi-country operating edges; store once and preserve regional relationships.",
+      "consumer_action": "iSCOPE validate merchant acquisition, activation/support and strongest country-specific growth need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-266",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "The Belize Bank Limited / E-kyash Business",
+      "surface": "Google Play merchant/retail-operator wallet; package com.belizebank.ekyash_business; Belize",
+      "observed_need": "Business app lets Belize merchants accept QR payments in-store or online/WhatsApp, track payments and act as retail cash-in/cash-out operators earning commission.",
+      "outcome_space": [
+        "merchant payments",
+        "QR",
+        "agent network",
+        "cash in/out",
+        "WhatsApp commerce"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.belizebank.ekyash_business",
+      "published": "2026",
+      "payer_hypothesis": "The Belize Bank Limited",
+      "fit_note": "Belize merchant/agent distribution surface; exact update date requires later normalization.",
+      "consumer_action": "iSCOPE validate merchant/agent onboarding, dashboard/reconciliation and current network-growth needs."
     }
   ]
 }
