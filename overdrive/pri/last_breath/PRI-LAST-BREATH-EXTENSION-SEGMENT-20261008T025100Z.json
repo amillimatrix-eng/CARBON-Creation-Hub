@@ -1,0 +1,110 @@
+{
+  "receipt_id": "PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T025100Z",
+  "executed_at_utc": "2026-10-08T02:51:00Z",
+  "executed_at_sast": "2026-10-08T04:51:00+02:00",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "prior_checkpoint": {
+    "path": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T014900Z.json",
+    "commit": "4ee07b452f6e7135b10bf923126fc3b1be6af736",
+    "counts": {
+      "smalls": 60,
+      "medium": 19,
+      "upper_medium": 81,
+      "upper": 45,
+      "total": 205,
+      "paid_usd_verified": 0
+    }
+  },
+  "reconciliation": {
+    "substantive_buyer_replies": 0,
+    "new_bounces": 0,
+    "new_external_sends": 0
+  },
+  "actions": [
+    {
+      "target": "Remote Rebellion",
+      "contact": "info@remoterebellion.com",
+      "geography": "Estonia/UK-facing",
+      "sector": "remote-career services",
+      "evidence": [
+        "https://remoterebellion.com/",
+        "https://remoterebellion.com/contact-us"
+      ],
+      "problem": "Contact page contains duplicated word in program-choice sentence and exposes raw layout values before navigation in retrieved public output.",
+      "offer": "One-page copy/rendering defect check with exact locations and corrected text.",
+      "price_usd": 9,
+      "tier": "SMALLS",
+      "dedupe": "PASS",
+      "gmail_sent_id": "1a1196d5f8bcfcdb",
+      "immediate_bounce": "NONE_FOUND"
+    },
+    {
+      "target": "Center for Lean Excellence",
+      "contact": "hello@centerforlean.com",
+      "geography": "Singapore",
+      "sector": "professional training",
+      "evidence": [
+        "https://centerforlean.com/toyota-production-system-certificate/"
+      ],
+      "problem": "TPS registration page places examination on 13 Jan 2027 before later sessions on 23 and 30 Jan, shows zero seats beside active registration, and presents conflicting early-bird copy.",
+      "offer": "Registration-page correction pack covering dates, seat state, pricing/discount copy, and CTA consistency.",
+      "price_usd": 49,
+      "tier": "MEDIUM",
+      "dedupe": "PASS",
+      "gmail_sent_id": "1a1196d5d513ff29",
+      "immediate_bounce": "NONE_FOUND"
+    },
+    {
+      "target": "zonaebt.com",
+      "contact": "hello@zonaebt.com",
+      "geography": "Indonesia",
+      "sector": "renewable-energy education",
+      "evidence": [
+        "https://zonaebt.com/"
+      ],
+      "problem": "Homepage AI & Consultant block shows a Learn More CTA without a link while adjacent services are linked.",
+      "offer": "One-page missing-CTA defect report with expected behavior, target-link recommendation, and adjacent-CTA check.",
+      "price_usd": 9,
+      "tier": "SMALLS",
+      "dedupe": "PASS",
+      "gmail_sent_id": "1a1196d6123cd6c2",
+      "immediate_bounce": "NONE_FOUND"
+    }
+  ],
+  "count_delta": {
+    "smalls": 2,
+    "medium": 1,
+    "upper_medium": 0,
+    "upper": 0,
+    "total": 3,
+    "paid_usd_verified": 0
+  },
+  "cumulative_counts": {
+    "smalls": 62,
+    "medium": 20,
+    "upper_medium": 81,
+    "upper": 45,
+    "total": 208,
+    "paid_usd_verified": 0
+  },
+  "truth": {
+    "intended": "Continue qualified, unique, buyer-specific priced outbound.",
+    "actual": "Three new offers entered Gmail SENT after exact-recipient dedupe.",
+    "evidence": [
+      "1a1196d5f8bcfcdb",
+      "1a1196d5d513ff29",
+      "1a1196d6123cd6c2"
+    ],
+    "changed": "Counted penetration increased from 205 to 208.",
+    "unproven": [
+      "remote delivery",
+      "read",
+      "response",
+      "acceptance",
+      "conversion",
+      "invoice",
+      "payment"
+    ],
+    "rule": "SENT != DELIVERED != RESPONDED != ACCEPTED != INVOICED != PAID"
+  }
+}
