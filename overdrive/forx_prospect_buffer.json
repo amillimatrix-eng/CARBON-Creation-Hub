@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:56:00+02:00",
+  "last_updated": "2026-10-08T17:01:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -8445,6 +8445,107 @@
       "payer_hypothesis": "New Technology Honduras / Zafra Cloud product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-429",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "YOLO Delivery Limited / HelloFoodTT Merchant",
+      "surface": "Trinidad & Tobago merchant delivery operations; package com.merchant.hellofoodtt",
+      "observed_need": "Order acceptance, menu availability, earnings/payout tracking and customer communication.",
+      "outcome_space": [
+        "merchant operations",
+        "delivery",
+        "earnings",
+        "customer communication"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.merchant.hellofoodtt",
+      "payer_hypothesis": "YOLO Delivery Limited / HelloFoodTT Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-430",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Region Designs Inc. / CURI POS",
+      "surface": "Saint Lucia POS/inventory; package com.regiondesigns.curi_pos",
+      "observed_need": "Offline transactions, inventory, card payments and kitchen-screen operations for retail/food merchants.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "offline operations",
+        "card payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.regiondesigns.curi_pos",
+      "payer_hypothesis": "Region Designs Inc. / CURI POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-431",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Garth Alexander / My Store",
+      "surface": "Trinidad & Tobago mobile POS; package pos.mystore.com",
+      "observed_need": "Sales, inventory, billing and customer management for small businesses.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "billing",
+        "customers"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=pos.mystore.com",
+      "payer_hypothesis": "Garth Alexander / My Store product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-432",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KGI Technology Solutions Limited / Tappogo Merchant",
+      "surface": "Trinidad & Tobago marketplace merchant app; package com.merchant.tappago",
+      "observed_need": "Merchant product selling/marketing with delivery logistics handled by platform across Tobago.",
+      "outcome_space": [
+        "marketplace",
+        "merchant acquisition",
+        "delivery",
+        "online ordering"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.merchant.tappago",
+      "payer_hypothesis": "KGI Technology Solutions Limited / Tappogo Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-433",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ABED VENTURES 7 Inc. / mMoney Merchant",
+      "surface": "Barbados mobile-money merchant POS; package com.mmoney.merchant",
+      "observed_need": "Merchant mobile-money payment acceptance, transaction management and cash-risk reduction.",
+      "outcome_space": [
+        "merchant payments",
+        "mobile money",
+        "transaction management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.mmoney.merchant",
+      "payer_hypothesis": "ABED VENTURES 7 Inc. / mMoney Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-434",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Wam Now, Inc. / Wam POS",
+      "surface": "Trinidad & Tobago softPOS; package com.wam.pos",
+      "observed_need": "Smartphone debit-card acceptance, business verification/onboarding, sales tracking and wallet settlement.",
+      "outcome_space": [
+        "softPOS",
+        "merchant acquiring",
+        "settlement",
+        "merchant onboarding"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.wam.pos",
+      "payer_hypothesis": "Wam Now, Inc. / Wam POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current identity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
