@@ -1,0 +1,154 @@
+{
+  "receipt_id": "PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T014900Z",
+  "executed_at_utc": "2026-10-08T01:49:00Z",
+  "executed_at_sast": "2026-10-08T03:49:00+02:00",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "extension_deadline_sast": "2026-10-09T00:53:00+02:00",
+  "prior_checkpoint": {
+    "path": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T005029Z.json",
+    "commit": "865f2de6dc8d26fc23bd03ef94aec10e44964821",
+    "counts": {
+      "smalls": 58,
+      "medium": 16,
+      "upper_medium": 81,
+      "upper": 45,
+      "total": 200,
+      "paid_usd_verified": 0
+    }
+  },
+  "reconciliation": {
+    "recent_substantive_buyer_replies": 0,
+    "new_preexisting_sends_after_checkpoint": 0,
+    "new_bounces_affecting_checkpoint": 0,
+    "note": "No new buyer reply or fresh delivery failure was found before execution."
+  },
+  "actions": [
+    {
+      "target": "Human Capital University",
+      "contact": "humancapitaluniversity@gmail.com",
+      "geography": "Indonesia",
+      "sector": "professional training",
+      "evidence": [
+        "https://humancapitaluniversity.id/pelatihan-hrd/",
+        "https://humancapitaluniversity.id/sertifikasi-hrd/"
+      ],
+      "observed_problem": "Public search results expose gambling-spam titles for key program URLs while the currently opened training page appears normal, indicating stale compromise/index residue requiring verification.",
+      "offer": "Search-index incident evidence pack: affected URLs/queries, capture notes, related-page checks, and CMS/Search Console remediation checklist.",
+      "price_usd": 49,
+      "tier": "MEDIUM",
+      "dedupe": "PASS; no prior SENT mail to exact address",
+      "gmail_sent_id": "1a1193611fb11e1b",
+      "state": "SENT_PROVIDER_ACCEPTED",
+      "immediate_bounce": "NONE_FOUND"
+    },
+    {
+      "target": "eTraining.id",
+      "contact": "apakabar@etraining.id",
+      "geography": "Indonesia",
+      "sector": "online education",
+      "evidence": [
+        "https://etraining.id/",
+        "https://etraining.id/faq/"
+      ],
+      "observed_problem": "FAQ still presents 4,800+ members and a 2025 footer while the current homepage presents 14,800+ professionals and 2026; support and general contact routes are inconsistent.",
+      "offer": "FAQ/footer/contact-route consistency correction pack.",
+      "price_usd": 19,
+      "tier": "MEDIUM",
+      "dedupe": "PASS; no prior SENT mail to exact address",
+      "gmail_sent_id": "1a11936084b15f94",
+      "state": "SENT_PROVIDER_ACCEPTED",
+      "immediate_bounce": "NONE_FOUND"
+    },
+    {
+      "target": "Life At FMCG",
+      "contact": "hello@lifeatfmcg.org",
+      "geography": "Indonesia",
+      "sector": "career education",
+      "evidence": [
+        "https://lifeatfmcg.org/",
+        "https://lifeatfmcg.org/academy/fclp"
+      ],
+      "observed_problem": "Public pages render repeated headings, CTAs, and footer blocks, producing visible component duplication.",
+      "offer": "Public-page rendering QA pack with affected URLs, desktop/mobile reproduction, defect priority, and component correction specification.",
+      "price_usd": 29,
+      "tier": "MEDIUM",
+      "dedupe": "PASS; no prior SENT mail to exact address",
+      "gmail_sent_id": "1a1193618c79f2c2",
+      "state": "SENT_PROVIDER_ACCEPTED",
+      "immediate_bounce": "NONE_FOUND"
+    },
+    {
+      "target": "Narabahasa",
+      "contact": "narahubung@narabahasa.id",
+      "geography": "Indonesia",
+      "sector": "language education",
+      "evidence": [
+        "https://sinara.narabahasa.id/kelas/detail/KDP-26009"
+      ],
+      "observed_problem": "Public class detail displays 24 September 2026 with 07:00–07:00 WIB, implying zero duration.",
+      "offer": "One-page schedule-display defect report with reproduction, expected behavior, and adjacent-class check.",
+      "price_usd": 9,
+      "tier": "SMALLS",
+      "dedupe": "PASS; no prior SENT mail to exact address",
+      "gmail_sent_id": "1a11936147560b63",
+      "state": "SENT_PROVIDER_ACCEPTED",
+      "immediate_bounce": "NONE_FOUND"
+    },
+    {
+      "target": "Latih.co",
+      "contact": "admin@latih.co",
+      "geography": "Indonesia",
+      "sector": "online professional training",
+      "evidence": [
+        "https://latih.co/terms",
+        "https://latih.co/"
+      ],
+      "observed_problem": "Terms updated 20 August 2026 direct users to a Contact page, while visible public navigation does not expose a clear Contact route.",
+      "offer": "Public contact-path check with one navigation/link correction specification.",
+      "price_usd": 9,
+      "tier": "SMALLS",
+      "dedupe": "PASS; no prior SENT mail to exact address",
+      "gmail_sent_id": "1a119361c4bab5a5",
+      "state": "SENT_PROVIDER_ACCEPTED",
+      "immediate_bounce": "NONE_FOUND"
+    }
+  ],
+  "count_delta": {
+    "smalls": 2,
+    "medium": 3,
+    "upper_medium": 0,
+    "upper": 0,
+    "total": 5,
+    "paid_usd_verified": 0
+  },
+  "cumulative_counts": {
+    "smalls": 60,
+    "medium": 19,
+    "upper_medium": 81,
+    "upper": 45,
+    "total": 205,
+    "paid_usd_verified": 0
+  },
+  "truth": {
+    "intended": "Send qualified, unique, evidenced, priced offers and preserve exact receipts.",
+    "actual": "Five unique buyer-specific offers were accepted into Gmail SENT after recipient dedupe.",
+    "evidence": [
+      "1a1193611fb11e1b",
+      "1a11936084b15f94",
+      "1a1193618c79f2c2",
+      "1a11936147560b63",
+      "1a119361c4bab5a5"
+    ],
+    "changed": "Counted penetration increased from 200 to 205.",
+    "unproven": [
+      "remote delivery",
+      "read",
+      "buyer response",
+      "acceptance",
+      "conversion",
+      "invoice",
+      "payment"
+    ],
+    "lifecycle_rule": "SENT != DELIVERED != RESPONDED != ACCEPTED != INVOICED != PAID"
+  }
+}
