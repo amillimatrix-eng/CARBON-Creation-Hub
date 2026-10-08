@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>CARBON° — Intent has weight.</title>
+<meta name="description" content="CARBON° makes marketplace intent visible. Browse freely. Commit deliberately.">
+<link rel="stylesheet" href="/market/assets/styles.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="/market">CARBON<span>°</span></a>
+  <nav><button data-view="market" class="nav active">Market</button><button data-view="sell" class="nav">Sell</button><button data-view="activity" class="nav">Activity</button></nav>
+  <button id="persona" class="persona"><i></i><span id="personaLabel">Browser</span></button>
+</header>
+<main>
+<section class="hero">
+  <p class="eyebrow">THE MARKET WHERE INTENT HAS WEIGHT</p>
+  <h1>What's your intent?</h1>
+  <p class="lead">Browse all you want. When you mean it, show it.</p>
+  <div class="intent"><span>Just looking</span><input id="intent" type="range" min="0" max="100" value="18"><span>High intent</span></div>
+  <div class="heroActions"><button id="seed" class="button primary">Load demo market</button><span id="mode" class="pill">Connecting…</span></div>
+</section>
+
+<section id="market" class="view activeView">
+  <div class="head"><div><p class="eyebrow">LIVE MARKET</p><h2>Less noise. More signal.</h2></div>
+    <div class="filters"><button class="filter active" data-filter="ALL">All</button><button class="filter" data-filter="URGENT">Urgent</button><button class="filter" data-filter="MOTIVATED">Motivated</button><button class="filter" data-filter="PATIENT">Patient</button></div>
+  </div>
+  <div id="stats" class="stats"></div><div id="grid" class="grid"></div><div id="emptyMarket" class="empty hidden"><b>No listings yet.</b><span>Looking is not a commitment.</span></div>
+</section>
+
+<section id="sell" class="view">
+  <div class="head"><div><p class="eyebrow">SELLER INTENT</p><h2>You decide what serious means.</h2></div></div>
+  <form id="listingForm" class="panel form">
+    <label class="wide">What are you selling?<input name="title" required maxlength="120" placeholder="MacBook Pro 14&quot;"></label>
+    <label class="wide">Description<textarea name="description" maxlength="1500" placeholder="What should a serious buyer know?"></textarea></label>
+    <label>Price (R)<input name="price" type="number" min="1" value="10000" required></label>
+    <label>Seller intent<select name="seller_intent"><option>PATIENT</option><option selected>OPEN</option><option>MOTIVATED</option><option>URGENT</option></select></label>
+    <label>Negotiability<select name="negotiability"><option>FIXED</option><option selected>OPEN</option><option>NEGOTIABLE</option></select></label>
+    <label>Minimum bond (R)<input name="min_bond" type="number" min="0" value="500" required></label>
+    <label>Maximum bond considered (R)<input name="max_bond" type="number" min="1" value="1500" required></label>
+    <label>Minimum at risk<div class="range"><input name="min_risk" type="range" min="0" max="100" value="30"><output>30%</output></div></label>
+    <label>Maximum at risk<div class="range"><input name="max_risk" type="range" min="0" max="100" value="60"><output>60%</output></div></label>
+    <p class="micro wide">A buyer's consequence does not activate merely because they bond. It begins only after you select them and they confirm the reciprocal commitment.</p>
+    <button class="button primary wide">Publish intent</button>
+  </form>
+  <div id="sellerListings" class="stack"></div>
+</section>
+
+<section id="activity" class="view">
+  <div class="head"><div><p class="eyebrow">YOUR COMMITMENTS</p><h2>Freedom until commitment.</h2><p>Accountability after commitment.</p></div></div>
+  <div id="activityList" class="stack"></div><div id="emptyActivity" class="empty"><b>Nothing to prove yet.</b><span>Looking is not a commitment.</span></div>
+</section>
+</main>
+
+<dialog id="bondDialog"><form id="bondForm" method="dialog" class="dialog">
+<button class="close" value="cancel">×</button><p class="eyebrow">SHOW YOUR INTENT</p><h2 id="bondTitle">Bond interest</h2><p id="bondRules" class="muted"></p>
+<label>Bond amount<div class="range big"><input id="bondAmount" type="range" step="10"><output id="bondOut"></output></div></label>
+<label>Amount at risk after bilateral activation<div class="range big"><input id="riskAmount" type="range" min="0" max="100"><output id="riskOut"></output></div></label>
+<div class="twocol"><label>Proposed meeting<input id="meeting" type="datetime-local" required></label><label>Window<select id="duration"><option value="30">30 min</option><option value="60" selected>1 hour</option><option value="120">2 hours</option></select></label></div>
+<div class="note"><b>This does not buy priority.</b><span>Only the seller's permitted range counts toward commitment strength. No money moves in this prototype.</span></div>
+<button class="button primary">Secure bonded interest</button></form></dialog>
+
+<dialog id="interestDialog"><div class="dialog"><button id="interestClose" class="close">×</button><p class="eyebrow">QUALIFIED INTEREST</p><h2 id="interestTitle">Buyer intent</h2><div id="interestList" class="stack"></div></div></dialog>
+<div id="toast" class="toast"></div>
+<script src="/market/assets/app.js" defer></script>
+</body></html>
