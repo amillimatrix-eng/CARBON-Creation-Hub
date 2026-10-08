@@ -1,0 +1,78 @@
+{
+  "receipt_type": "MASTER_INBOUND_RECONCILIATION",
+  "producer": "MASTER COFFEE",
+  "observed_window": "2026-10-07T00:00Z..2026-10-08T16:50Z",
+  "purpose": "Feed exact inbound/provider evidence into the existing PRI/Last Breath continuity without creating a second writer.",
+  "prior_worker_receipt": "PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T135600Z.json",
+  "worker_receipt_gap": {
+    "state": "OPEN",
+    "evidence": "Fresh Gmail SENT activity exists after the 13:56Z worker receipt, but no newer Last Breath worker receipt was present at readback.",
+    "rule": "This Master reconciliation is not a substitute for the worker's own post-install APPLY receipt."
+  },
+  "signals": [
+    {
+      "organization": "Colonia Estudio",
+      "lifecycle": "RESPONDED_REJECTED",
+      "source_message_id": "1a11c640dcda5d8f",
+      "thread_id": "1a1181380d534ec3",
+      "evidence": "Buyer replied exactly 'No' to the USD 499 pilot.",
+      "required_action": "SUPPRESS current coordinate/thread from further unsolicited follow-up unless buyer later initiates new evidence."
+    },
+    {
+      "organization": "Small Luxury Hotels of the World",
+      "lifecycle": "AUTO_REPLY_REFERRAL",
+      "source_message_id": "1a1177ac23afaca4",
+      "evidence": "Ryan Schlemmer auto-reply routes sales assistance to Lizzy Marks at elizabeth.marks@slh.com.",
+      "required_action": "Before any outreach to Lizzy, re-read original thread, dedupe organization history, re-qualify a current buyer-value problem, and do not resend the prior generic $9 audit merely because a referral exists."
+    },
+    {
+      "organization": "MPRTC",
+      "lifecycle": "ROUTE_INVALIDATED",
+      "source_message_id": "1a117c950871a70c",
+      "evidence": "info@mprtc.co.za states mailbox is unmonitored and applications must go through website.",
+      "required_action": "SUPPRESS the email coordinate. If the opportunity is still prioritized, use official website application route only; do not treat mailbox send as delivered application."
+    },
+    {
+      "organization": "Bareskinn",
+      "lifecycle": "DELIVERY_FAILED",
+      "source_message_id": "1a117e38bae1b331",
+      "evidence": "Permanent mail delivery failure for prior offer.",
+      "required_action": "SUPPRESS failed coordinate; discover a currently verified public route before any retry."
+    },
+    {
+      "provider": "TinyFish",
+      "lifecycle": "DEPENDENCY_LOW_BALANCE",
+      "source_message_id": "1a1174ad80f245f0",
+      "evidence": "Wallet balance USD 4.836752 below USD 5 threshold as of 2026-10-07T16:55:43Z.",
+      "required_action": "Do not stop lawful work or incur spend automatically; Banker/Owner handles any capital top-up decision. Use other lawful routes if TinyFish balance becomes execution-limiting."
+    },
+    {
+      "opportunity": "OpenTrain Python AI Agent Infrastructure Developer",
+      "lifecycle": "CURRENTLY_OPEN_PUBLICLY_VERIFIED",
+      "source_message_id": "1a11152c1411f31c",
+      "evidence": "Public page live 2026-10-08; $300 per approved task; worldwide remote; four-week contract.",
+      "required_action": "PRI may prioritize through authenticated official application route if expected value beats current alternatives; login/assessment remains local gate."
+    },
+    {
+      "opportunity": "OpenTrain Python Backend Developer for AI Agent Data",
+      "lifecycle": "CURRENTLY_OPEN_PUBLICLY_VERIFIED",
+      "source_message_id": "1a1111bcb3c8793a",
+      "evidence": "Public page live 2026-10-08; $300 per approved task; worldwide remote; four-week contract.",
+      "required_action": "Same as above; no application/assessment state should be inferred from public availability."
+    }
+  ],
+  "continuity_apply": {
+    "concrete_example": "Inbound evidence changes action before new cold outreach: Colonia is suppressed; SLH is a referral that requires re-qualification rather than replay; dead/unmonitored coordinates are removed from executable inventory.",
+    "next_lateral_actions": [
+      "Prefer current verified contact + concrete-fix offers over audit-only micro-offers.",
+      "Compare live $300/task OpenTrain route against current qualified direct-sale inventory by time-to-cash and auth friction."
+    ]
+  },
+  "truth": [
+    "AUTO_REPLY != BUYER_INTENT",
+    "SENT != DELIVERED",
+    "PUBLIC_JOB_OPEN != APPLIED",
+    "LOGIN_GATE != GLOBAL_BLOCKER",
+    "MASTER_RECONCILIATION != WORKER_APPLY_RECEIPT"
+  ]
+}
