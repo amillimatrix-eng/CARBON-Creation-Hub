@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T19:02:00+02:00",
+  "last_updated": "2026-10-08T19:15:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -5986,6 +5986,80 @@
       "payer_hypothesis": "Crop Nutrition Laboratory Services Ltd",
       "fit_note": "Direct private-company service evidence and Kenya/Zambia contact routes. Nigeria is preserved only as an operating-map edge under current no-sell constraint.",
       "consumer_action": "iSCOPE validate sample intake, report/advice delivery, customer support, Zambia growth or repetitive technical-client workflow; do not outbound to Nigeria under current rule."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-323",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Wellfield Geosciences Group / Laboratory Services",
+      "surface": "Private analytical laboratory; Botswana",
+      "observed_need": "Gaborone laboratory within Wellfield Geosciences provides water/wastewater chemistry and bacteriology, soil analysis and pollution/contaminant monitoring for external clients and industry sectors.",
+      "outcome_space": [
+        "analytical laboratory",
+        "water testing",
+        "soil analysis",
+        "environmental monitoring"
+      ],
+      "source": "https://wellfieldgroup.com/service/laboratory-services/",
+      "published": "2026",
+      "payer_hypothesis": "Wellfield Geosciences Group",
+      "fit_note": "Direct Botswana private specialist/operator source. No workflow deficiency inferred.",
+      "consumer_action": "iSCOPE validate enquiry/sample intake, quotation, result delivery, client follow-up and technical-reporting workload for a bounded current opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-324",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Labex Investments Zambia Limited",
+      "surface": "Private laboratory-solutions supplier/service operator; Zambia",
+      "observed_need": "Wholly Zambian laboratory-solutions company supplies equipment, reagents and consumables plus installation, commissioning, training, maintenance, repair and technical support across agriculture, mining, healthcare and environmental labs.",
+      "outcome_space": [
+        "laboratory equipment",
+        "technical support",
+        "maintenance",
+        "training",
+        "B2B supply"
+      ],
+      "source": "https://www.labexzambia.co.zm/",
+      "published": "2026",
+      "payer_hypothesis": "Labex Investments Zambia Limited",
+      "fit_note": "Direct Zambia private B2B technical operator with current quote/contact route. It is a supplier/service business rather than a testing lab.",
+      "consumer_action": "iSCOPE inspect quote intake, technical-support routing, maintenance scheduling, lead follow-up and regional B2B acquisition for an evidenced gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-325",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AfriQA Labs",
+      "surface": "Private laboratory quality-assurance technology operator; Zambia",
+      "observed_need": "Zambia-based African laboratory-quality company is developing external quality-assessment programs, digital EQA tooling and cold-chain-free specimen technology for diagnostic networks.",
+      "outcome_space": [
+        "laboratory QA",
+        "diagnostics",
+        "digital EQA",
+        "health-tech",
+        "technical training"
+      ],
+      "source": "https://afriqalabs.com/",
+      "published": "2026",
+      "payer_hypothesis": "AfriQA Labs",
+      "fit_note": "Direct Zambia specialist technology/operator source; growth-stage positioning is public, but no commercial weakness is inferred.",
+      "consumer_action": "iSCOPE validate lab-network onboarding, program enrolment, technical-support, evidence/proof presentation or partnership workflow before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-326",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Innovative Diagnostic Centre Limited",
+      "surface": "Private diagnostic laboratory and medical-supply operator; Zambia",
+      "observed_need": "Lusaka private diagnostic centre provides laboratory diagnostics alongside medical and laboratory equipment/supplies and related technical services.",
+      "outcome_space": [
+        "diagnostic laboratory",
+        "medical equipment",
+        "laboratory supplies",
+        "B2B healthcare services"
+      ],
+      "source": "https://idcentralsolutions.com/about-us.php",
+      "published": "2026",
+      "payer_hypothesis": "Innovative Diagnostic Centre Limited",
+      "fit_note": "Direct Zambia specialist-business source. Healthcare services require normal privacy/compliance boundaries; no patient-level data is involved in FORX discovery.",
+      "consumer_action": "iSCOPE validate business enquiry, corporate-client intake, equipment quotation/follow-up or appointment/admin workflow at organization level only."
     }
   ],
   "current_run_note": "FORX public-web problem-signal tranche appended; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
