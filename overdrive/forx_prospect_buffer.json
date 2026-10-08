@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T14:24:00+02:00",
+  "last_updated": "2026-10-08T14:47:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -1478,6 +1478,231 @@
       "payer_hypothesis": "TRATOEG product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Distinct exact package and operating model from Chekea; no payment-processing claim because listing explicitly says TRATO does not process payments.",
       "consumer_action": "iSCOPE validate listing/provider acquisition, moderation/trust workload and current marketplace conversion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-080",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Paykon / Gulboy Qaroev",
+      "surface": "Google Play courier/store operations; package tj.paykon.paykon_client; Tajikistan",
+      "observed_need": "Current September 2026 Dushanbe courier app supports store users with repeated ordering, batch parcel processing and daily reconciliation statements showing client collections and merchant amounts due; Tajikistan developer/support are public.",
+      "outcome_space": [
+        "courier",
+        "merchant logistics",
+        "reconciliation",
+        "batch operations",
+        "SME delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=tj.paykon.paykon_client",
+      "published": "2026-09-14",
+      "payer_hypothesis": "Paykon product owner / Gulboy Qaroev",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong candidate-specific repetitive-work and reconciliation surface; no unresolved defect inferred.",
+      "consumer_action": "iSCOPE validate merchant volume, reconciliation/support burden and current automation need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-081",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Алиф Технология / Alif Shop Partners",
+      "surface": "Google Play seller marketplace; package tj.alifshop.partners; Tajikistan",
+      "observed_need": "Partner app gives Tajik sellers store registration, product/inventory management, real-time orders, sales analytics, notifications and payouts.",
+      "outcome_space": [
+        "marketplace",
+        "seller operations",
+        "inventory",
+        "analytics",
+        "payouts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=tj.alifshop.partners",
+      "published": "2026",
+      "payer_hypothesis": "Alif Shop / Алиф Технология",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. High-leverage seller-side operating surface; current buyer problem and route need iSCOPE validation.",
+      "consumer_action": "iSCOPE validate seller onboarding/retention, payout/support workload and any current operations bottleneck."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-082",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SANLY CHOZGUT TOPARY / TmTrade",
+      "surface": "Google Play business directory + product listing; package tm.com.trade.tmtradeapp; Turkmenistan",
+      "observed_need": "Current September 2026 rebuild lets Turkmen businesses register, list products, search companies/products/posts, chat with companies and publish company posts; Turkmenistan company phone/email/address are public.",
+      "outcome_space": [
+        "business directory",
+        "B2B discovery",
+        "merchant listings",
+        "company messaging",
+        "distribution"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=tm.com.trade.tmtradeapp",
+      "published": "2026-09-09",
+      "payer_hypothesis": "SANLY CHOZGUT TOPARY",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Also a network-multiplier source, but member/company claims must remain separate from AMX node counts.",
+      "consumer_action": "iSCOPE validate platform adoption, business onboarding, directory freshness and current operator needs; FORX may use lawful public listings as separate source observations."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-083",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BIAR / Begench Rejepov",
+      "surface": "Google Play multi-store marketplace; package tm.biryerden.app; Turkmenistan",
+      "observed_need": "First October 2026 release aggregates stores across Turkmenistan, supports one cart across multiple shops, regional delivery, pay-on-delivery and Turkmen/Russian/English.",
+      "outcome_space": [
+        "marketplace",
+        "merchant network",
+        "delivery",
+        "multi-store cart",
+        "localization"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=tm.biryerden.app",
+      "published": "2026-10-06",
+      "payer_hypothesis": "BIAR / 1Ýerden product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Extremely fresh first-release operating evidence; no stability or growth problem inferred solely from launch status.",
+      "consumer_action": "iSCOPE verify store acquisition, launch conversion/support and current merchant onboarding needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-084",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Klodian Pepkolaj / Skifteri Delivery",
+      "surface": "Google Play business-customer-courier platform; package com.albatrix.skifteri; Albania",
+      "observed_need": "Current August 2026 platform connects Albanian businesses, customers and couriers and explicitly provides fast seller order management; Tirana developer phone/email are public.",
+      "outcome_space": [
+        "delivery",
+        "merchant operations",
+        "courier network",
+        "order management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.albatrix.skifteri",
+      "published": "2026-08-30",
+      "payer_hypothesis": "Skifteri / Klodian Pepkolaj",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Local-market and direct contact evidence resolved; current problem requires validation.",
+      "consumer_action": "iSCOPE validate merchant/courier acquisition, order-flow support and current expansion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-085",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "IVO MARKETPLACE, SRL / IVO.md",
+      "surface": "Google Play local marketplace; package md.ivo.app; Moldova",
+      "observed_need": "Current August 2026 platform helps Moldovan local merchants reach new customers and sell online without technical complexity; Bălți company identity, phone and support are public.",
+      "outcome_space": [
+        "marketplace",
+        "merchant digitization",
+        "SME visibility",
+        "online sales"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=md.ivo.app",
+      "published": "2026-08-09",
+      "payer_hypothesis": "IVO MARKETPLACE, SRL",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong local merchant-digitization positioning with direct legal identity; no specific defect inferred.",
+      "consumer_action": "iSCOPE validate merchant onboarding, catalog/support workload, conversion and current growth constraint."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-086",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AI LAB, LLC / Breeze Marketplace",
+      "surface": "Google Play verified-seller marketplace; package am.breeze.app; Armenia",
+      "observed_need": "Current September 2026 Yerevan marketplace uses verified local sellers, card payments, delivery and daily support; latest release changed support-answer visibility, support-list scrolling and recommendation presentation.",
+      "outcome_space": [
+        "marketplace",
+        "seller verification",
+        "support UX",
+        "recommendations",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=am.breeze.app",
+      "published": "2026-09-17",
+      "payer_hypothesis": "AI LAB, LLC",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. First-party support/recommendation changes are specific maintenance evidence; no unresolved defect assumed.",
+      "consumer_action": "iSCOPE validate seller acquisition, support workload and whether recommendation/support UX remains a current business problem."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-087",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Butterfly Effect, LLC / GET Merchant",
+      "surface": "Google Play merchant delivery operations; package com.butterfly.getdelivery.merchant; Georgia",
+      "observed_need": "Current September 2026 app manages merchant orders, earnings and business performance for GET partners in Marneuli and supports Georgian/Azerbaijani/Russian/English; local company phone/email/address are public.",
+      "outcome_space": [
+        "merchant operations",
+        "delivery",
+        "earnings",
+        "localization",
+        "restaurant network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.butterfly.getdelivery.merchant",
+      "published": "2026-09-28",
+      "payer_hypothesis": "Butterfly Effect, LLC / GET",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Very fresh local merchant-network evidence; no current defect inferred.",
+      "consumer_action": "iSCOPE validate merchant onboarding, multilingual support, earnings/reconciliation and market-expansion needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-088",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DOSTAVICA DOO / Patuljak",
+      "surface": "Google Play classifieds marketplace; package com.patuljak.app; Montenegro",
+      "observed_need": "Current July 2026 app connects Montenegrin buyers/sellers across vehicles, property, technology, services and jobs; Podgorica company address, phone/email are public.",
+      "outcome_space": [
+        "classifieds",
+        "local services",
+        "jobs",
+        "marketplace",
+        "SME visibility"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.patuljak.app",
+      "published": "2026-07-22",
+      "payer_hypothesis": "DOSTAVICA DOO",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Montenegro legal/contact evidence; generic performance/stability notes are maintenance signals only.",
+      "consumer_action": "iSCOPE validate listing/provider acquisition, monetization, moderation and current growth bottlenecks."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-089",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MCI d.o.o. Siroki Brijeg / MCI HoReCa",
+      "surface": "Google Play B2B ordering; package ba.mci.horeca; Bosnia & Herzegovina",
+      "observed_need": "Current September 2026 B2B app lets catering establishments reorder products, choose delivery dates, track orders, view invoices/open items and manage multiple branches; local company and support are public.",
+      "outcome_space": [
+        "B2B ordering",
+        "HoReCa",
+        "invoices",
+        "multi-branch",
+        "distribution"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ba.mci.horeca",
+      "published": "2026-09-14",
+      "payer_hypothesis": "MCI d.o.o. Siroki Brijeg",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. High-value repetitive procurement/invoice surface; no unresolved product problem inferred.",
+      "consumer_action": "iSCOPE validate customer ordering/reconciliation burden, branch workflows and supplier-distribution opportunities."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-090",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "OGI DOSTAVA D.O.O.E.L. / OGI Partners",
+      "surface": "Google Play supplier/partner delivery operations; package mk.ogi.partners; North Macedonia",
+      "observed_need": "Current May 2026 partner/supplier app gives real-time control over orders, deliveries and status; latest notes add in-app courier calling and bug fixes. Local company phone/email/address are public.",
+      "outcome_space": [
+        "supplier operations",
+        "delivery",
+        "order management",
+        "courier coordination"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mk.ogi.partners",
+      "published": "2026-05-20",
+      "payer_hypothesis": "OGI DOSTAVA D.O.O.E.L.",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Local supplier/delivery operating surface with specific recent courier-call change; current need requires validation.",
+      "consumer_action": "iSCOPE validate partner onboarding, courier coordination, support load and current automation opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-091",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Ruko's Apps / Tregu Shqiptar",
+      "surface": "Google Play classifieds marketplace; package com.tregushqiptar.myapp; Albania + Kosovo operating markets",
+      "observed_need": "Current July 2026 marketplace serves Albania and Kosovo across property, vehicles, jobs, furniture, accessories and other listings with direct seller contact.",
+      "outcome_space": [
+        "classifieds",
+        "property",
+        "vehicles",
+        "jobs",
+        "cross-border marketplace"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.tregushqiptar.myapp",
+      "published": "2026-07-27",
+      "payer_hypothesis": "Tregu Shqiptar operator",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. One exact package with two operating markets is stored once; legal operator/contact remains for iSCOPE resolution.",
+      "consumer_action": "iSCOPE resolve operator identity and validate listing acquisition, moderation/verification and country-specific traction without duplicating outbound."
     }
   ]
 }
