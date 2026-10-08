@@ -28,6 +28,7 @@ def test_extension_requires_counterparty_acceptance(tmp_path):
     seller="seller-extend-0001"; buyer="buyer-extend-00001"
     com=active_commitment(c,seller,buyer)
     old_start=com["start_at"]
+    old_hash=com["terms_hash"]
 
     req=c.post("/api/carbon/commitments/"+com["id"]+"/extensions",headers={"X-CARBON-Actor":buyer},json={
         "proposed_start_at":iso_future(180),"proposed_duration_minutes":90,"reason":"traffic delay"
@@ -48,3 +49,8 @@ def test_extension_requires_counterparty_acceptance(tmp_path):
     updated=c.get("/api/carbon/commitments/"+com["id"]).json()
     assert updated["start_at"]==ext["proposed_start_at"]
     assert updated["end_at"]==ext["proposed_end_at"]
+    assert updated["terms_hash"]!=old_hash
+    import json
+    terms=json.loads(updated["terms_json"])
+    assert terms["window"]["start_at"]==ext["proposed_start_at"]
+    assert terms["amendments"][-1]["previous_terms_hash"]==old_hash
