@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T18:20:00+02:00",
+  "last_updated": "2026-10-08T18:55:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -12041,7 +12041,7 @@
     },
     {
       "id": "FORX-PROSPECT-20261008-646",
-      "state": "RAW_UNQUALIFIED",
+      "state": "CONTACTABLE_UNQUALIFIED",
       "organization": "TREV TECH LTD / Afristays",
       "surface": "Kenya/Africa hospitality distribution; package com.afristays.app",
       "observed_need": "Accommodation discovery/booking distribution across Kenya and wider Africa, connecting hotels/lodges/apartments with travelers.",
@@ -12053,7 +12053,33 @@
       "source": "https://play.google.com/store/apps/details?id=com.afristays.app",
       "payer_hypothesis": "TREV TECH LTD / Afristays hospitality/product operations owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; geography remains unresolved where explicitly noted; no unmet commercial pain is presumed.",
-      "consumer_action": "iSCOPE verify organization identity, operating market, buyer route and current commercial need before PRI action."
+      "consumer_action": "iSCOPE verify organization identity, operating market, buyer route and current commercial need before PRI action.",
+      "source_updated": "2026-10-05",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "support_email",
+          "value": "info@afristays.com",
+          "source": "Google Play current listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "liveletrevin6@gmail.com",
+          "source": "Google Play developer contact"
+        },
+        {
+          "type": "website",
+          "value": "https://www.afristays.com",
+          "source": "Google Play developer website"
+        },
+        {
+          "type": "phone",
+          "value": "+254700422356",
+          "source": "Google Play listing"
+        }
+      ],
+      "current_public_evidence": "Google Play listing updated 2026-10-05; Afristays markets accommodation discovery/booking across Kenya/Africa with instant confirmation, map/search, M-Pesa/cards, profiles/history and support.",
+      "qualification_note": "Fresh, contactable hospitality marketplace. No unmet buyer pain evidenced; iSCOPE must verify specific commercial need before PRI."
     },
     {
       "id": "FORX-PROSPECT-20261008-647",
@@ -12173,7 +12199,7 @@
     },
     {
       "id": "FORX-PROSPECT-20261008-654",
-      "state": "RAW_UNQUALIFIED",
+      "state": "CONTACTABLE_UNQUALIFIED",
       "organization": "LEKKELET (PTY) LTD / LekkeLet",
       "surface": "South Africa property-management SaaS; package com.lekkelet.com",
       "observed_need": "Landlord portfolio operations covering leases, invoices, rent, maintenance and inspections.",
@@ -12186,11 +12212,32 @@
       "source": "https://play.google.com/store/apps/details?id=com.lekkelet.com",
       "payer_hypothesis": "LEKKELET (PTY) LTD / LekkeLet commercial/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public business-operating surface evidenced; no unresolved commercial pain is presumed.",
-      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action.",
+      "source_updated": "2026-09-08",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "support_email",
+          "value": "support@lekkelet.co.za",
+          "source": "Google Play current listing"
+        },
+        {
+          "type": "website",
+          "value": "https://lekkelet.co.za/",
+          "source": "Google Play developer website"
+        },
+        {
+          "type": "phone",
+          "value": "+27637148432",
+          "source": "Google Play listing"
+        }
+      ],
+      "current_public_evidence": "Google Play listing updated 2026-09-08; platform covers tenant/lease/rent/invoicing, expenses, maintenance, suppliers, inspections, asset valuation, documents and messaging for South African landlords/managers/tenants.",
+      "qualification_note": "Contactability and operational breadth verified. No buyer pain evidenced; retain as contactable iSCOPE candidate, not PRI-ready."
     },
     {
       "id": "FORX-PROSPECT-20261008-655",
-      "state": "RAW_UNQUALIFIED",
+      "state": "CONTACTABLE_UNQUALIFIED",
       "organization": "ADDPROP PROPERTY MANAGEMENT SYSTEMS (PTY) LTD / AddProp",
       "surface": "South Africa property-management platform; package com.Addprop",
       "observed_need": "Leases, invoices, deposits, maintenance, property marketplace and service-provider discovery.",
@@ -12203,7 +12250,33 @@
       "source": "https://play.google.com/store/apps/details?id=com.Addprop",
       "payer_hypothesis": "ADDPROP PROPERTY MANAGEMENT SYSTEMS (PTY) LTD / AddProp commercial/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public business-operating surface evidenced; no unresolved commercial pain is presumed.",
-      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action.",
+      "source_updated": "2026-10-05",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "support_email",
+          "value": "info@addprop.co.za",
+          "source": "Google Play current listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "addproppms@gmail.com",
+          "source": "Google Play developer contact"
+        },
+        {
+          "type": "website",
+          "value": "https://addprop.co.za",
+          "source": "Google Play developer website"
+        },
+        {
+          "type": "phone",
+          "value": "+27795456115",
+          "source": "Google Play listing"
+        }
+      ],
+      "current_public_evidence": "Google Play listing updated 2026-10-05; platform covers South African property browsing, leases, invoices, deposits, maintenance, Paystack payments, insurance and service-provider discovery; listing states 23,000+ community members and R4.8bn+ portfolio snapshot.",
+      "qualification_note": "Fresh, contactable, commercially active platform. No buyer pain evidenced; iSCOPE should seek current specific need before PRI."
     },
     {
       "id": "FORX-PROSPECT-20261008-656",
@@ -12411,7 +12484,7 @@
     },
     {
       "id": "FORX-PROSPECT-20261008-668",
-      "state": "RAW_UNQUALIFIED",
+      "state": "CONTACTABLE_UNQUALIFIED",
       "organization": "Maisha Meds Inc. / Maisha Meds Pharmacy POS",
       "surface": "Kenya/Tanzania/Uganda pharmacy operations; package org.maishameds.maishamedsapp",
       "observed_need": "Pharmacy/clinic/drug-store inventory and stock-management operating surface. Nigeria service presence is excluded from FORX penetration targeting under current owner rule.",
@@ -12424,7 +12497,28 @@
       "source": "https://play.google.com/store/apps/details?id=org.maishameds.maishamedsapp",
       "payer_hypothesis": "Maisha Meds Inc. / Maisha Meds Pharmacy POS business/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and current public operating surface evidenced; no unresolved commercial pain is presumed.",
-      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action.",
+      "source_updated": "2026-09-29",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "support_email",
+          "value": "technology@maishameds.org",
+          "source": "Google Play current listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "contact@maishameds.org",
+          "source": "Google Play developer contact"
+        },
+        {
+          "type": "website",
+          "value": "http://maishameds.org",
+          "source": "Google Play developer website"
+        }
+      ],
+      "current_public_evidence": "Google Play listing updated 2026-09-29; app supports pharmacy/clinic inventory, sales, patient records, stock takes, multiple tills, P&L, fast-moving goods and supplier/patient credit; public support routes list Kenya/Tanzania/Uganda and Nigeria.",
+      "qualification_note": "Contactability and multi-country operating surface verified. Current Owner rule keeps Nigeria commercial penetration closed; Kenya/Tanzania/Uganda remain candidate markets. No unmet buyer pain inferred."
     },
     {
       "id": "FORX-PROSPECT-20261008-669",
@@ -12513,7 +12607,7 @@
     },
     {
       "id": "FORX-PROSPECT-20261008-674",
-      "state": "RAW_UNQUALIFIED",
+      "state": "CONTACTABLE_UNQUALIFIED",
       "organization": "SOLAR MD (PTY) LTD / myPower24",
       "surface": "South Africa solar/storage operations; package co.za.solarmd.mypower24",
       "observed_need": "Owners/installers monitor PV, batteries, inverters, loggers, production history and on-site setup.",
@@ -12526,7 +12620,33 @@
       "source": "https://play.google.com/store/apps/details?id=co.za.solarmd.mypower24",
       "payer_hypothesis": "SOLAR MD (PTY) LTD / myPower24 commercial/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public business-operating surface evidenced; no unresolved commercial pain is presumed.",
-      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action.",
+      "source_updated": "2026-09-23",
+      "contactability": "VERIFIED_PUBLIC",
+      "contact_routes": [
+        {
+          "type": "support_email",
+          "value": "support@solarmd.co.za",
+          "source": "Google Play current listing"
+        },
+        {
+          "type": "developer_email",
+          "value": "henry.thomas@solarmd.co.za",
+          "source": "Google Play developer contact"
+        },
+        {
+          "type": "website",
+          "value": "https://www.solarmd.co.za/contact/",
+          "source": "Google Play developer website"
+        },
+        {
+          "type": "phone",
+          "value": "+27815552181",
+          "source": "Google Play listing"
+        }
+      ],
+      "current_public_evidence": "Google Play listing updated 2026-09-23; myPower24 serves owners/installers with live solar/battery/grid/load monitoring, historical energy/savings, device management and local logger setup.",
+      "qualification_note": "Contactability and product-operation surface verified. No buyer pain or purchase intent evidenced; keep iSCOPE qualification open."
     },
     {
       "id": "FORX-PROSPECT-20261008-675",
@@ -12623,5 +12743,17 @@
         }
       ]
     }
+  },
+  "last_enrichment": {
+    "observed_at": "2026-10-08T18:55:00+02:00",
+    "producer": "MASTER support for FORX→iSCOPE",
+    "candidate_ids": [
+      "FORX-PROSPECT-20261008-674",
+      "FORX-PROSPECT-20261008-668",
+      "FORX-PROSPECT-20261008-655",
+      "FORX-PROSPECT-20261008-654",
+      "FORX-PROSPECT-20261008-646"
+    ],
+    "rule": "Public contactability/freshness enrichment only; no buyer pain or PRI readiness inferred."
   }
 }
