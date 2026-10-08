@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T18:17:00+02:00",
+  "last_updated": "2026-10-08T18:31:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -5256,6 +5256,158 @@
       "payer_hypothesis": "Client Care Solutions Limited",
       "fit_note": "Direct Zambia multi-site BPO evidence; no weakness inferred.",
       "consumer_action": "iSCOPE inspect client acquisition, campaign intake, proof/reporting, staffing and automation for a current bounded opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-292",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Satas Communications Ltd",
+      "surface": "Public call-center/BPO operator; Kenya",
+      "observed_need": "Nairobi operator provides inbound/outbound calls, customer support, BPO, back-office and bulk SMS with 24/7 Kenya-based agents.",
+      "outcome_space": [
+        "BPO",
+        "call center",
+        "customer support",
+        "back office",
+        "SMS"
+      ],
+      "source": "https://www.satas.co.ke/",
+      "published": "2026",
+      "payer_hypothesis": "Satas Communications Ltd",
+      "fit_note": "Direct Kenya operating evidence; no weakness inferred.",
+      "consumer_action": "iSCOPE validate current acquisition, campaign intake, staffing/recruitment, reporting or automation gap before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-293",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "iCall Outsourcing",
+      "surface": "Public contact-center/BPO operator; Egypt",
+      "observed_need": "Cairo operator provides customer-experience management, HR outsourcing and contact-center hosting with multilingual omnichannel delivery for Egypt, MENA and GCC.",
+      "outcome_space": [
+        "BPO",
+        "contact center",
+        "HR outsourcing",
+        "omnichannel",
+        "hosting"
+      ],
+      "source": "https://www.icall.eg/",
+      "published": "2026",
+      "payer_hypothesis": "iCall Outsourcing",
+      "fit_note": "Direct Egypt BPO operating surface with mature capabilities; negative-selection applies unless a bounded gap is found.",
+      "consumer_action": "iSCOPE inspect acquisition, proof/reporting, staffing, automation or partnership surfaces; skip if already modern with no current gap."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-294",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Centrium Contact Center",
+      "surface": "Public outsourced contact-center operator; Morocco",
+      "observed_need": "Morocco provider offers helpdesk, customer care, appointment setting, telemarketing, back office and multilingual support with direct quote/book-call route.",
+      "outcome_space": [
+        "BPO",
+        "customer care",
+        "telemarketing",
+        "back office",
+        "appointment setting"
+      ],
+      "source": "https://www.centrium.cc/",
+      "published": "2026",
+      "payer_hypothesis": "Centrium Contact Center",
+      "fit_note": "Current Morocco BPO operating/contact evidence.",
+      "consumer_action": "iSCOPE validate acquisition funnel, campaign intake, proof/reporting and current automation/recruitment needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-295",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Housal Consulting",
+      "surface": "Public call-center/BPO operator; Morocco",
+      "observed_need": "Casablanca operator provides customer service, telesales, technical support, virtual reception and back-office services across voice/chat/email and multiple languages 24/7.",
+      "outcome_space": [
+        "BPO",
+        "customer service",
+        "technical support",
+        "back office",
+        "virtual reception"
+      ],
+      "source": "https://www.housalconsulting.com/",
+      "published": "2026",
+      "payer_hypothesis": "Housal Consulting",
+      "fit_note": "Direct Morocco operator/contact evidence; no defect inferred.",
+      "consumer_action": "iSCOPE validate buyer acquisition, booking/intake, recruitment, reporting or automation surface before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-296",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Telecommunicate / AMD Holding",
+      "surface": "Public contact-center/CX outsourcing operator; Egypt/GCC",
+      "observed_need": "Certified AI-enabled BPO operates major delivery capacity in Egypt and UAE across multiple sectors/languages with regional and international delivery.",
+      "outcome_space": [
+        "BPO",
+        "contact center",
+        "AI-enabled CX",
+        "multilingual",
+        "regional delivery"
+      ],
+      "source": "https://www.tele-communicate.com/en",
+      "published": "2026",
+      "payer_hypothesis": "Telecommunicate / AMD Holding",
+      "fit_note": "Large/mature operator; treat as INDEX unless a concrete high-value gap exists.",
+      "consumer_action": "iSCOPE apply negative selection; inspect only bounded partnership, proof/reporting or automation opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-297",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ABPO Ltd",
+      "surface": "Public BPO/contact-center operator; Ghana",
+      "observed_need": "Accra operator provides customer support, back-office, telephone campaigns, technical support, sales/marketing and administrative outsourcing with direct Ghana contact.",
+      "outcome_space": [
+        "BPO",
+        "customer support",
+        "back office",
+        "technical support",
+        "sales"
+      ],
+      "source": "https://abpo.org/about.html",
+      "published": "2026",
+      "payer_hypothesis": "ABPO Ltd",
+      "fit_note": "Direct Ghana operator and contact evidence.",
+      "consumer_action": "iSCOPE validate current client acquisition, recruitment, service proof/reporting or automation gaps."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-298",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Siisi Solutions",
+      "surface": "Public BPO operator; Ghana",
+      "observed_need": "Accra BPO provides inbound/outbound customer service, helpdesk, email/chat support and front/back-end process support for SMEs.",
+      "outcome_space": [
+        "BPO",
+        "customer service",
+        "helpdesk",
+        "email chat",
+        "SME support"
+      ],
+      "source": "https://www.siisisolutions.com/",
+      "published": "2026",
+      "payer_hypothesis": "Siisi Solutions",
+      "fit_note": "Ghana SME-focused BPO surface; site freshness should be revalidated because crawl metadata is older.",
+      "consumer_action": "iSCOPE verify current activity/contactability first, then inspect acquisition/recruitment/reporting or automation need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-299",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Justice Solutions Services / JS² Solutions",
+      "surface": "Public BPO/contact-center operator; Ghana delivery hub",
+      "observed_need": "Operator markets an Accra delivery hub for contact centers, managed services, healthcare/financial/technology support and rapid seat deployment, with current direct contact.",
+      "outcome_space": [
+        "BPO",
+        "contact center",
+        "managed services",
+        "healthcare support",
+        "financial services"
+      ],
+      "source": "https://js2solutionsllc.com/",
+      "published": "2026",
+      "payer_hypothesis": "JS² Solutions",
+      "fit_note": "Current Ghana delivery-hub evidence; provider claims about scale are source claims, not AMX-verified facts.",
+      "consumer_action": "iSCOPE validate direct Ghana buyer/operating route and any bounded acquisition, staffing, proof or automation opportunity."
     }
   ]
 }
