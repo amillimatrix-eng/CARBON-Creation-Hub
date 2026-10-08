@@ -1,0 +1,67 @@
+{
+  "schema": "AMX_PRI_LAST_BREATH_EXTENSION_SEGMENT_V1",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "observed_at_utc": "2026-10-08T00:50:29Z",
+  "prior_durable_checkpoint": {
+    "path": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-RECONCILIATION-20261007T235511Z.json",
+    "commit": "5ff98c0a2905a519c7ac8e03e9015a327f3cf68a",
+    "counted_total": 197
+  },
+  "actions": [
+    {
+      "organization": "Hotelier Indonesia",
+      "recipient": "admin@hotelier-indonesia.com",
+      "tier": "MEDIUM",
+      "price_usd": 29,
+      "problem_evidence": "Advertising return-policy page included the template sentence 'You can adapt this template further'; current advertising page showed a 2025 footer alongside 2026 offers.",
+      "deliverable": "Five-page public trust/copy QA pack with affected URLs and exact replacement text.",
+      "gmail_message_id": "1a118fd68c4a0ff3",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    },
+    {
+      "organization": "Career Renew",
+      "recipient": "office@career-renew.com",
+      "tier": "MEDIUM",
+      "price_usd": 29,
+      "problem_evidence": "Indexed Test product page, misspelled delivery-and-return-poilicy route, and terms page listing the domain where an email address should appear.",
+      "deliverable": "Storefront QA pack with exact redirects, removals, and copy fixes.",
+      "gmail_message_id": "1a118fd6710b59ab",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    },
+    {
+      "organization": "Diario Imobiliario",
+      "recipient": "geral@diarioimobiliario.pt",
+      "tier": "SMALLS",
+      "price_usd": 9,
+      "problem_evidence": "Newsletter consent copy showed 'utilizemos os meus sados' instead of 'os meus dados'.",
+      "deliverable": "Short form and consent-copy check with exact corrections.",
+      "gmail_message_id": "1a118fd6b3e9a197",
+      "state": "SENT_NO_IMMEDIATE_BOUNCE"
+    }
+  ],
+  "reconciliation": {
+    "new_sent": 3,
+    "matching_immediate_bounces": 0,
+    "new_substantive_replies": 0,
+    "cumulative_counts": {
+      "smalls": 58,
+      "medium": 16,
+      "upper_medium": 81,
+      "upper": 45,
+      "total": 200
+    },
+    "verified_paid_usd": 0
+  },
+  "dedupe": {
+    "gmail_sent_history_checked": true,
+    "duplicate_initial_outreach_counted": 0
+  },
+  "t10": {
+    "intended": "Advance qualified unique paid offers during the extension.",
+    "actual": "Three evidence-backed unique offers sent; cumulative bounce-excluded penetration reached 200.",
+    "proof": "Gmail SENT IDs and no matching immediate failure notices; durable receipt readback required.",
+    "change": "SMALLS +1, MEDIUM +2.",
+    "unproven": "Delivery beyond absence of failure notice, response, acceptance, conversion, invoice, receivable, payment."
+  },
+  "state": "IN_PROGRESS"
+}
