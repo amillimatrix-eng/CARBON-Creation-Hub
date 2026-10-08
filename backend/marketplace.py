@@ -89,6 +89,16 @@ class MessageRequest(BaseModel):
     body: str = Field(min_length=1, max_length=1200)
 
 
+class ExtensionRequest(BaseModel):
+    proposed_start_at: str
+    proposed_duration_minutes: int = Field(default=60, ge=15, le=1440)
+    reason: str = Field(default="", max_length=500)
+
+
+class ExtensionResponse(BaseModel):
+    action: str = Field(pattern="^(ACCEPT|REJECT)$")
+
+
 class MarketplaceStore:
     def __init__(self, db_path: Path):
         self.db_path = Path(db_path)
@@ -196,10 +206,23 @@ class MarketplaceStore:
                     created_at TEXT NOT NULL
                 );
 
+                CREATE TABLE IF NOT EXISTS extension_requests (
+                    id TEXT PRIMARY KEY,
+                    commitment_id TEXT NOT NULL REFERENCES commitments(id),
+                    requester_ref TEXT NOT NULL,
+                    proposed_start_at TEXT NOT NULL,
+                    proposed_end_at TEXT NOT NULL,
+                    reason TEXT NOT NULL DEFAULT '',
+                    status TEXT NOT NULL,
+                    created_at TEXT NOT NULL,
+                    updated_at TEXT NOT NULL
+                );
+
                 CREATE INDEX IF NOT EXISTS idx_interests_listing ON interests(listing_id, state);
                 CREATE INDEX IF NOT EXISTS idx_commitments_listing ON commitments(listing_id, state);
                 CREATE INDEX IF NOT EXISTS idx_events_entity ON events(entity_kind, entity_id, id);
                 CREATE INDEX IF NOT EXISTS idx_messages_interest ON messages(interest_id, created_at);
+                CREATE INDEX IF NOT EXISTS idx_extensions_commitment ON extension_requests(commitment_id, status);
                 """
             )
 
@@ -651,6 +674,96 @@ class MarketplaceStore:
                 result.append(record)
             return result
 
+    def request_extension(
+        self,
+        commitment_id: str,
+        actor: str,
+        proposed_start_at: str,
+        proposed_duration_minutes: int,
+        reason: str,
+    ) -> dict[str, Any]:
+        start = parse_time(proposed_start_at)
+        if start <= utcnow():
+            raise ValueError("extension start must be in the future")
+        end = start + timedelta(minutes=proposed_duration_minutes)
+        with self._conn() as conn:
+            commitment = conn.execute("SELECT * FROM commitments WHERE id=?", (commitment_id,)).fetchone()
+            if not commitment:
+                raise KeyError("commitment not found")
+            if actor not in {commitment["buyer_ref"], commitment["seller_ref"]}:
+                raise PermissionError("participant credential required")
+            if commitment["state"] != "ACTIVE_COMMITMENT":
+                raise ValueError("extensions require an active bilateral commitment")
+            pending = conn.execute(
+                "SELECT id FROM extension_requests WHERE commitment_id=? AND status='PENDING' LIMIT 1",
+                (commitment_id,),
+            ).fetchone()
+            if pending:
+                raise ValueError("an extension request is already pending")
+            request_id = public_id("EXT")
+            now = iso()
+            conn.execute(
+                """INSERT INTO extension_requests(
+                    id,commitment_id,requester_ref,proposed_start_at,proposed_end_at,reason,status,created_at,updated_at
+                ) VALUES(?,?,?,?,?,?,?,?,?)""",
+                (
+                    request_id, commitment_id, actor, iso(start), iso(end), reason.strip(),
+                    "PENDING", now, now,
+                ),
+            )
+            self._event(conn, "commitment", commitment_id, actor, "EXTENSION_REQUESTED", {
+                "extension_id": request_id,
+                "proposed_start_at": iso(start),
+                "proposed_end_at": iso(end),
+                "original_commitment_unchanged": True,
+            })
+            row = conn.execute("SELECT * FROM extension_requests WHERE id=?", (request_id,)).fetchone()
+        return dict(row)
+
+    def respond_extension(self, extension_id: str, actor: str, action: str) -> dict[str, Any]:
+        with self._conn() as conn:
+            ext = conn.execute("SELECT * FROM extension_requests WHERE id=?", (extension_id,)).fetchone()
+            if not ext:
+                raise KeyError("extension request not found")
+            if ext["status"] != "PENDING":
+                return dict(ext)
+            commitment = conn.execute("SELECT * FROM commitments WHERE id=?", (ext["commitment_id"],)).fetchone()
+            if not commitment:
+                raise KeyError("commitment not found")
+            if actor not in {commitment["buyer_ref"], commitment["seller_ref"]}:
+                raise PermissionError("participant credential required")
+            if actor == ext["requester_ref"]:
+                raise PermissionError("requester cannot approve their own extension")
+            if commitment["state"] != "ACTIVE_COMMITMENT":
+                raise ValueError("commitment is no longer eligible for extension")
+            now = iso()
+            if action == "ACCEPT":
+                old_start = parse_time(commitment["start_at"])
+                old_deadline = parse_time(commitment["cancellation_deadline_at"])
+                buffer = max(timedelta(0), old_start - old_deadline)
+                new_start = parse_time(ext["proposed_start_at"])
+                new_end = parse_time(ext["proposed_end_at"])
+                new_deadline = new_start - buffer
+                conn.execute(
+                    """UPDATE commitments
+                       SET start_at=?,end_at=?,cancellation_deadline_at=?,updated_at=?
+                       WHERE id=?""",
+                    (iso(new_start), iso(new_end), iso(new_deadline), now, commitment["id"]),
+                )
+                status = "ACCEPTED"
+            else:
+                status = "REJECTED"
+            conn.execute(
+                "UPDATE extension_requests SET status=?,updated_at=? WHERE id=?",
+                (status, now, extension_id),
+            )
+            self._event(conn, "commitment", commitment["id"], actor, "EXTENSION_"+status, {
+                "extension_id": extension_id,
+                "new_window_applied": status == "ACCEPTED",
+            })
+            row = conn.execute("SELECT * FROM extension_requests WHERE id=?", (extension_id,)).fetchone()
+        return dict(row)
+
     def _interest_participants(self, conn: sqlite3.Connection, interest_id: str) -> tuple[sqlite3.Row, str]:
         interest = conn.execute("SELECT * FROM interests WHERE id=?", (interest_id,)).fetchone()
         if not interest:
@@ -932,6 +1045,30 @@ def mount_marketplace(
         participant = actor(x_carbon_actor)
         try:
             return {"record": store.accept_deal(deal_id, participant), "money_moved": False}
+        except Exception as exc:
+            raise map_error(exc) from exc
+
+    @router.post("/api/carbon/commitments/{commitment_id}/extensions")
+    def request_extension(commitment_id: str, payload: ExtensionRequest, x_carbon_actor: str | None = Header(default=None)) -> dict[str, Any]:
+        require_demo()
+        participant = actor(x_carbon_actor)
+        try:
+            return {"record": store.request_extension(
+                commitment_id,
+                participant,
+                payload.proposed_start_at,
+                payload.proposed_duration_minutes,
+                payload.reason,
+            )}
+        except Exception as exc:
+            raise map_error(exc) from exc
+
+    @router.post("/api/carbon/extensions/{extension_id}/respond")
+    def respond_extension(extension_id: str, payload: ExtensionResponse, x_carbon_actor: str | None = Header(default=None)) -> dict[str, Any]:
+        require_demo()
+        participant = actor(x_carbon_actor)
+        try:
+            return {"record": store.respond_extension(extension_id, participant, payload.action)}
         except Exception as exc:
             raise map_error(exc) from exc
 
