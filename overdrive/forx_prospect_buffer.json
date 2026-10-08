@@ -7104,6 +7104,265 @@
       "payer_hypothesis": "BNB Maurice",
       "fit_note": "Direct Mauritius owner/guest workflow with clear enquiry structure.",
       "consumer_action": "iSCOPE validate owner lead conversion, guest-message routing, booking/maintenance coordination and post-stay review/follow-up."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-374",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Eng Star Shipping Pte Ltd",
+      "domain": "engstarshipping-sg.com",
+      "country": "Singapore",
+      "sector": "Petroleum/petrochemical tank storage / shipping / transshipment",
+      "surface": "Official shipping/storage contact page; Singapore",
+      "observed_need": "The live Contact page publishes active storage/shipping enquiry routes and an explicit 'Whoops, you're not connected to Mailchimp' API-key error in its newsletter section. This is directly observed email-capture/integration QA on a commercial lead surface.",
+      "problem_signal": {
+        "family": "email capture / integration QA",
+        "evidence": "Official contact page visibly states the Mailchimp integration is not connected and requests a valid API key.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "Info@engstarshipping-sg.com",
+        "nlrtm@engstarshipping-sg.com",
+        "+65-321-047 (published first-party; iSCOPE to revalidate format)"
+      ],
+      "outcome_space": [
+        "newsletter integration",
+        "lead capture",
+        "B2B enquiry flow",
+        "web QA"
+      ],
+      "source": "https://engstarshipping-sg.com/about-us/our-company/contact-us/",
+      "provenance": "Official company contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Eng Star Shipping commercial/operations owner",
+      "fit_note": "Singapore B2B logistics/storage candidate with explicit first-party integration failure; phone format should be revalidated before use.",
+      "consumer_action": "iSCOPE verify business/contact identity, duplicate history and the malformed-looking Singapore phone; qualify only a bounded lead-capture/integration fix."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-375",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Buildbest Roofing & Construction Pte Ltd",
+      "domain": "buildbestroofing.com.sg",
+      "country": "Singapore",
+      "sector": "Roofing / construction",
+      "surface": "Official contractor contact page; Singapore",
+      "observed_need": "The live Contact page includes generic Lorem Ipsum newsletter/request copy and an explicit Mailchimp-not-connected API-key error while exposing active phone/mobile routes. This is directly observed lead-capture/integration and copy QA.",
+      "problem_signal": {
+        "family": "lead capture / Mailchimp integration / copy QA",
+        "evidence": "Official contact page visibly says Mailchimp is not connected and displays placeholder newsletter/request copy.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "+65 8448 6052",
+        "+65 6631 8940"
+      ],
+      "outcome_space": [
+        "newsletter integration",
+        "lead capture",
+        "contact-page cleanup",
+        "contractor conversion"
+      ],
+      "source": "https://buildbestroofing.com.sg/contact/",
+      "provenance": "Official contractor contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Buildbest Roofing commercial/owner operator",
+      "fit_note": "Contactable Singapore field-service/construction candidate with explicit integration and content defects.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether a bounded contact/newsletter remediation is commercially relevant."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-376",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Uptrend Corporate Sdn Bhd",
+      "domain": "uptrend.com.my",
+      "country": "Malaysia",
+      "sector": "Corporate secretarial / business services",
+      "surface": "Official corporate-services website; Penang, Malaysia",
+      "observed_need": "The live site explicitly states Website Under Construction while advertising active corporate/secretarial services and publishing direct phone/email. This is a directly observed digital-presence/lead-conversion gap.",
+      "problem_signal": {
+        "family": "web completion / professional-services lead flow",
+        "evidence": "Official active corporate-services site states Website Under Construction and directs enquiries to phone/email.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "admin@uptrend.com.my",
+        "+60 4 287 2988"
+      ],
+      "outcome_space": [
+        "web completion",
+        "professional-services presentation",
+        "lead capture",
+        "conversion UX"
+      ],
+      "source": "https://www.uptrend.com.my/index.html",
+      "provenance": "Official company website; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Uptrend Corporate owner/director",
+      "fit_note": "Contactable Malaysian professional-services candidate with explicit incomplete first-party site.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether a small lead-generation/web-completion offer fits current need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-377",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Jetsin",
+      "domain": "jetsin.com.my",
+      "country": "Malaysia",
+      "sector": "Halal food retail / distribution",
+      "surface": "Official halal-food business website; Kota Kinabalu, Sabah, Malaysia",
+      "observed_need": "The live official site is an explicit Website Under Construction page stating operations remain fully active and directing visitors to get in touch. Official-domain search exposes current Kota Kinabalu phone/email. This is a directly observed online-catalog/lead-flow gap.",
+      "problem_signal": {
+        "family": "web completion / retail lead flow",
+        "evidence": "Official domain states Website Under Construction while business operations remain active.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@jetsin.com.my",
+        "+60 88 256 317"
+      ],
+      "outcome_space": [
+        "web completion",
+        "product/catalog presentation",
+        "lead capture",
+        "retail conversion"
+      ],
+      "source": "https://jetsin.com.my/",
+      "provenance": "Official company page plus official-domain indexed contact route; verified 2026-10-08",
+      "freshness": "Live official site observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Jetsin business owner/commercial operator",
+      "fit_note": "Contactable Malaysian food-business candidate with explicit incomplete digital presence.",
+      "consumer_action": "iSCOPE revalidate contact coordinates and duplicate history; assess bounded catalog/lead-flow remediation only if current need is confirmed."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-378",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Chyun Jye Machinery",
+      "domain": "chyunjye.com",
+      "country": "Taiwan",
+      "sector": "Filling / capping / labeling / cartoning machinery",
+      "surface": "Official machinery-manufacturer contact page; Taoyuan, Taiwan",
+      "observed_need": "The live Contact page contains a prominent generic Lorem Ipsum paragraph above real enquiry coordinates while the company sells industrial filling, capping, labeling and cartoning equipment internationally. This is directly observed B2B enquiry-page credibility/copy QA.",
+      "problem_signal": {
+        "family": "B2B enquiry copy / credibility QA",
+        "evidence": "Official contact page uses generic Lorem Ipsum as its contact-form introduction.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "info@chyunjye.com",
+        "+886 3 320 5757",
+        "+886 3 329 5378"
+      ],
+      "outcome_space": [
+        "contact-page copy",
+        "industrial lead flow",
+        "B2B credibility",
+        "web QA"
+      ],
+      "source": "https://www.chyunjye.com/en/contact",
+      "provenance": "Official manufacturer homepage/contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public pages observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Chyun Jye commercial/export owner",
+      "fit_note": "Contactable Taiwan industrial-manufacturing candidate with directly observed placeholder content on the enquiry surface.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and qualify only if a bounded B2B contact-page/offer-clarity fix is meaningful."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-379",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Hartford Industrial Co., Ltd.",
+      "domain": "hartfordbikes.com",
+      "country": "Taiwan",
+      "sector": "Motorcycles / engines / electric golf carts",
+      "surface": "Official manufacturer enquiry page; Taichung, Taiwan",
+      "observed_need": "The live Get In Touch page includes generic Lorem Ipsum immediately above real sales contact details and a detailed business inquiry form. This is directly observed enquiry-page copy/credibility QA on an export-oriented manufacturing site.",
+      "problem_signal": {
+        "family": "enquiry copy / B2B conversion QA",
+        "evidence": "Official inquiry page displays generic Lorem Ipsum adjacent to the active business inquiry form and sales contact.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "sales@hartford-motors.com.tw",
+        "+886 4 2359 9218"
+      ],
+      "outcome_space": [
+        "inquiry UX",
+        "copy cleanup",
+        "B2B conversion",
+        "manufacturer web QA"
+      ],
+      "source": "https://www.hartfordbikes.com/en/contact/getInTouch",
+      "provenance": "Official manufacturer website; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Hartford export sales/marketing owner",
+      "fit_note": "Contactable Taiwan manufacturer with first-party placeholder content on a high-intent inquiry surface.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether a bounded enquiry-page cleanup offers enough value."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-380",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Grand Winner VN International Co., Ltd.",
+      "domain": "gpahelmet.com.vn",
+      "country": "Vietnam",
+      "sector": "Helmet manufacturing",
+      "surface": "Official manufacturer contact page; Long An, Vietnam",
+      "observed_need": "The live Contact page repeats generic Lorem Ipsum in the company introduction before real factory/contact details and a contact form. This is directly observed credibility/copy QA on a manufacturing enquiry surface.",
+      "problem_signal": {
+        "family": "manufacturer contact copy / credibility QA",
+        "evidence": "Official contact page contains repeated Lorem Ipsum in the company introduction immediately above real factory/contact details.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "vngrandwinner@gmail.com",
+        "+84 272 375 8827",
+        "Contact person mobile 0902863478"
+      ],
+      "outcome_space": [
+        "contact-page cleanup",
+        "export lead flow",
+        "manufacturer credibility",
+        "web QA"
+      ],
+      "source": "https://gpahelmet.com.vn/en/lien-he/",
+      "provenance": "Official manufacturer contact page; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Grand Winner commercial/export owner",
+      "fit_note": "Contactable Vietnamese manufacturer with directly observed placeholder content on its lead surface.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and current export/commercial route before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-381",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Vila Porto Group / Ville du Vin",
+      "domain": "grupovilaporto.com.br",
+      "country": "Brazil",
+      "sector": "Wine retail / e-commerce / franchising / distribution",
+      "surface": "Official franchise/e-commerce business page; Brazil",
+      "observed_need": "The live Ville du Vin page markets physical stores, e-commerce and franchise expansion but exposes four placeholder metric blocks reading '0000 Lorem Ipsum' directly above the franchise conversion section. This is directly observed proof/conversion content QA.",
+      "problem_signal": {
+        "family": "franchise proof / conversion content QA",
+        "evidence": "Official franchise page displays four '0000 Lorem Ipsum' metric blocks on the commercial franchise section.",
+        "observed_at": "2026-10-08"
+      },
+      "public_contact_route": [
+        "WhatsApp +55 27 99717 6347",
+        "WhatsApp +55 27 99861 3432"
+      ],
+      "outcome_space": [
+        "franchise proof",
+        "conversion copy",
+        "e-commerce trust",
+        "web QA"
+      ],
+      "source": "https://grupovilaporto.com.br/en/ville-du-vin/",
+      "provenance": "Official group commercial page; live public fetch on 2026-10-08",
+      "freshness": "Live public page observed 2026-10-08",
+      "published": "live page observed 2026-10-08",
+      "payer_hypothesis": "Vila Porto Group franchise/marketing owner",
+      "fit_note": "Brazil retail/franchise candidate with strong directly observed proof-section placeholder content and live WhatsApp routes.",
+      "consumer_action": "iSCOPE verify duplicate/contact history and whether the franchise-growth surface is current enough for a bounded proof/conversion remediation."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
