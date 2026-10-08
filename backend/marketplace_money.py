@@ -28,7 +28,13 @@ class MoneyAdapter(Protocol):
     name: str
     moves_real_money: bool
 
-    def reserve(self, context_ref: str, buyer_ref: str, amount_minor: int) -> MoneyInstruction: ...
+    def reserve(
+        self,
+        context_ref: str,
+        buyer_ref: str,
+        amount_minor: int,
+        purpose: str = "BOND",
+    ) -> MoneyInstruction: ...
     def release(self, provider_ref: str, amount_minor: int | None = None) -> MoneyInstruction: ...
     def hold(self, provider_ref: str, reason: str) -> MoneyInstruction: ...
     def prepare_settlement(self, provider_ref: str, amount_minor: int) -> MoneyInstruction: ...
@@ -41,10 +47,20 @@ class SandboxMoneyAdapter:
     name = "SANDBOX_NO_MONEY_MOVED"
     moves_real_money = False
 
-    def reserve(self, context_ref: str, buyer_ref: str, amount_minor: int) -> MoneyInstruction:
-        material = f"{context_ref}:{buyer_ref}:{amount_minor}:{uuid4().hex}"
+    def reserve(
+        self,
+        context_ref: str,
+        buyer_ref: str,
+        amount_minor: int,
+        purpose: str = "BOND",
+    ) -> MoneyInstruction:
+        purpose = purpose.upper()
+        if purpose not in {"BOND", "PURCHASE"}:
+            raise ValueError("unsupported money reservation purpose")
+        material = f"{purpose}:{context_ref}:{buyer_ref}:{amount_minor}:{uuid4().hex}"
         provider_ref = "SBX-" + hashlib.sha256(material.encode()).hexdigest()[:24].upper()
-        return MoneyInstruction(provider_ref, "SANDBOX_RESERVED", amount_minor, False)
+        state = "SANDBOX_BOND_RESERVED" if purpose == "BOND" else "SANDBOX_PURCHASE_FUNDS_SECURED"
+        return MoneyInstruction(provider_ref, state, amount_minor, False)
 
     def release(self, provider_ref: str, amount_minor: int | None = None) -> MoneyInstruction:
         return MoneyInstruction(provider_ref, "SANDBOX_RELEASE_PENDING", amount_minor, False)
