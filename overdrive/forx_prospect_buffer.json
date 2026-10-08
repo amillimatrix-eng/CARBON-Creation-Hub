@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T16:42:00+02:00",
+  "last_updated": "2026-10-08T17:06:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -2659,6 +2659,204 @@
       "payer_hypothesis": "Kaysoon Business / Lekett operator",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh local Gabon contact/developer evidence; candidate-specific current problem still requires iSCOPE validation.",
       "consumer_action": "iSCOPE validate seller acquisition, product verification, payment/delivery support and current marketplace growth constraint."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-143",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Irankunda Adolphe / Biz Pro",
+      "surface": "Google Play SME business management; package rw.bizpro.mobile; Rwanda",
+      "observed_need": "Current August 2026 Rwanda-developed app covers clients, invoicing, paid/unpaid/overdue tracking, inventory/barcodes, sales/expenses, reports, team roles/audit logs, cloud backup and offline operation; direct +250 support is public.",
+      "outcome_space": [
+        "invoicing",
+        "inventory",
+        "customer management",
+        "team controls",
+        "offline operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=rw.bizpro.mobile",
+      "published": "2026-08-08",
+      "payer_hypothesis": "Biz Pro / Irankunda Adolphe",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Rwanda developer/contact and broad SME workflow; product positioning is not proof a specific customer pain exists.",
+      "consumer_action": "iSCOPE validate current user/customer acquisition, support load, invoicing/inventory workflow and product-growth need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-144",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "G.K.B. CONSTRUCTION AND LOGISTICS LTD / InvoiceFlow Africa",
+      "surface": "Google Play SME invoicing/finance; package com.invoiceflowafrica; Ghana",
+      "observed_need": "Current July 2026 app for African SMEs combines branded/recurring invoices, Paystack payments, expenses/budgets, inventory, customers, reports, quotes, team roles, offline sync and AI-drafted invoice items. Play currently declares data is not encrypted.",
+      "outcome_space": [
+        "invoicing",
+        "expenses",
+        "inventory",
+        "payments",
+        "AI workflow",
+        "data safety"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.invoiceflowafrica",
+      "published": "2026-07-07",
+      "payer_hypothesis": "G.K.B. CONSTRUCTION AND LOGISTICS LTD",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Ghana legal/contact evidence and rich SME workflow; Play encryption declaration requires verification before any defect claim.",
+      "consumer_action": "iSCOPE validate product adoption, payment/invoice workflow, support burden and current encryption/declaration state."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-145",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "GODIAN FRANCIS MALANGWA / Uza Manager",
+      "surface": "Google Play shop management; package com.uzamanager.app; Tanzania",
+      "observed_need": "Current August 2026 Tanzania app manages cash/credit sales, invoices, customer payments/debts, stock, expenses, P&L/cost-of-sales reports, staff sales, offline sync and English/Swahili workflows; +255 contact is public.",
+      "outcome_space": [
+        "shop management",
+        "debt tracking",
+        "inventory",
+        "expense reporting",
+        "staff operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.uzamanager.app",
+      "published": "2026-08-05",
+      "payer_hypothesis": "Uza Manager / Godian Francis Malangwa",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Tanzania developer/contact and bounded repetitive-work surface; no unresolved defect inferred.",
+      "consumer_action": "iSCOPE validate active merchant footprint, debt/stock/reporting support burden and current growth/distribution needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-146",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KHAMIAR ENTERPRISES LTD / Apex POS",
+      "surface": "Google Play retail POS; package com.apexlite.app; Tanzania",
+      "observed_need": "Current June 2026 Tanzania POS covers products, stock-in/out/damage/returns, sales/receipts, suppliers/procurement, staff roles, expenses and profit/daily reporting; current release added product images and stock quantity.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "returns",
+        "supplier procurement",
+        "staff roles",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.apexlite.app",
+      "published": "2026-06-03",
+      "payer_hypothesis": "KHAMIAR ENTERPRISES LTD",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct local company/contact with high-value procurement and inventory workflows; release change is maintenance evidence only.",
+      "consumer_action": "iSCOPE validate merchant adoption, supplier/inventory workflow, support load and current product-growth problem."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-147",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ISOLVEAFRICA LIMITED / oPOS Africa",
+      "surface": "Google Play cloud POS/business management; package com.opos.africa; Ghana",
+      "observed_need": "Current July 2026 Ghana platform handles sales, inventory, purchase management, customer ledgers/outstanding balances, invoicing/returns, multi-location cloud sync and reporting. Release notes state customer-ledger and custom-domain issues were solved.",
+      "outcome_space": [
+        "POS",
+        "customer ledger",
+        "inventory",
+        "returns",
+        "multi-location",
+        "cloud sync"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.opos.africa",
+      "published": "2026-07-19",
+      "payer_hypothesis": "ISOLVEAFRICA LIMITED",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Concrete recent ledger/domain maintenance evidence; do not assume resolved issues remain current.",
+      "consumer_action": "iSCOPE validate current customer-ledger/domain/support issues, merchant acquisition and multi-location workflow before qualification."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-148",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Geoki360 / VICTOR NG'ANG'A GIKERA",
+      "surface": "Google Play SME ERP/POS; package com.geoki360.pos; Kenya",
+      "observed_need": "Current September 2026 Kenya-focused SME ERP/POS supports retail sales/inventory/supplier purchases/expenses plus specialized water bottling, hotel, butcher and church modules and linked ecommerce/construction-hardware market integration.",
+      "outcome_space": [
+        "ERP",
+        "POS",
+        "supplier purchases",
+        "vertical business modules",
+        "ecommerce integration"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.geoki360.pos",
+      "published": "2026-09-27",
+      "payer_hypothesis": "Geoki360 product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh Kenya SME/vertical workflow surface with direct +254 contact; specific current commercial pain requires validation.",
+      "consumer_action": "iSCOPE validate strongest vertical adoption, supplier/procurement workflow, support load and current expansion opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-149",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DIGITALEO SOLUTIONS / Kaunta",
+      "surface": "Google Play offline-first POS/inventory; package com.digitaleo.kaunta; Kenya",
+      "observed_need": "Current August 2026 Kenya POS targets dukas, hardware, pharmacies, salons and wholesalers with barcode checkout, offline sync, M-Pesa, stock alerts, multi-store, profit reporting and staff controls; direct Nairobi contact is public.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "M-Pesa",
+        "offline operations",
+        "multi-store",
+        "staff controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.digitaleo.kaunta",
+      "published": "2026-08-03",
+      "payer_hypothesis": "DIGITALEO SOLUTIONS",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Strong owner-led SME workflow and direct Kenya route; product claims about messy records are market positioning, not candidate-specific pain.",
+      "consumer_action": "iSCOPE validate merchant acquisition, offline/M-Pesa support burden, multi-store needs and current distribution opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-150",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Waka Marketplace Limited / waka POS",
+      "surface": "Google Play POS/business management; package ug.waka.pos; Uganda",
+      "observed_need": "Current September 2026 Uganda-focused POS supports checkout, discounts/refunds, customer credit, inventory/supplier records, staff roles/activity, profit analytics, cloud backup and offline sync.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "customer credit",
+        "supplier records",
+        "staff roles",
+        "offline operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=ug.waka.pos",
+      "published": "2026-09-25",
+      "payer_hypothesis": "Waka Marketplace Limited",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Fresh Uganda merchant-side operating surface; public support route exists and current buyer problem requires validation.",
+      "consumer_action": "iSCOPE validate shop onboarding, credit/inventory/support workflows and current growth or distribution need."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-151",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PANDORA SOFTWARE CONSULTING LTD / Biz360 ERP",
+      "surface": "Google Play ERP; package com.pscgh.biz360; Ghana",
+      "observed_need": "Current August 2026 Ghana ERP spans HR, procurement, revenue, inventory, payroll, financials and grants. Latest release changed recent activity, item quantities, revenue/receipt cancellation, approval flows, business-partner modules, offline support and timeout handling.",
+      "outcome_space": [
+        "ERP",
+        "procurement",
+        "revenue",
+        "inventory",
+        "payroll",
+        "approvals",
+        "offline support"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.pscgh.biz360",
+      "published": "2026-08-20",
+      "payer_hypothesis": "PANDORA SOFTWARE CONSULTING LTD",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Concrete current enterprise-workflow changes and direct Ghana company/contact; current unresolved need still requires validation.",
+      "consumer_action": "iSCOPE inspect approval/revenue/receipt/offline-support recurrence, buyer segment and current support/implementation opportunity."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-152",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "RWK AFRICA LIMITED / MyAccurate Books",
+      "surface": "Google Play accounting/POS/inventory; package core.rwk.myaccuratebooks; Kenya",
+      "observed_need": "Current September 2026 Kenya SME platform covers sales/POS, quotations/invoices/receipts, inventory, purchases/expenses, customers/suppliers/branches/staff, full financial statements, M-Pesa/payment and eTIMS-related workflows; current release cites font-legibility and minor bug fixes.",
+      "outcome_space": [
+        "accounting",
+        "POS",
+        "inventory",
+        "financial reporting",
+        "M-Pesa",
+        "eTIMS"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=core.rwk.myaccuratebooks",
+      "published": "2026-09-16",
+      "payer_hypothesis": "RWK AFRICA LIMITED",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Direct Kenya company/contact and deep bookkeeping/compliance workflow; minor fixes are maintenance evidence, not proof of current pain.",
+      "consumer_action": "iSCOPE validate merchant/accountant adoption, eTIMS/payment/reporting support burden and current bounded growth or automation need."
     }
   ]
 }
