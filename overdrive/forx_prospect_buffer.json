@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:14:00+02:00",
+  "last_updated": "2026-10-08T17:19:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -8841,6 +8841,273 @@
       "payer_hypothesis": "DUSABE GISCARD DANIEL / NIC AFRICA POS product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; current. Unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization/activity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-453",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "JOSE CARLOS GOMEZ ZAPATA / cfactpro",
+      "surface": "Peru electronic invoicing/POS; package com.cfactpro.app",
+      "observed_need": "SUNAT-authorized electronic receipts, POS, barcode scanning, cash-register control and real-time sales reports.",
+      "outcome_space": [
+        "POS",
+        "e-invoicing",
+        "cash register",
+        "sales reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.cfactpro.app",
+      "payer_hypothesis": "JOSE CARLOS GOMEZ ZAPATA / cfactpro product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-454",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Plazabea / seller operator unresolved",
+      "surface": "Bolivia marketplace vendor operations; package com.plazabea.plazabeavendor",
+      "observed_need": "Approved sellers manage orders, delivery riders, returns/refunds, in-store POS, wallet earnings and customer reviews.",
+      "outcome_space": [
+        "marketplace",
+        "vendor operations",
+        "delivery",
+        "payouts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.plazabea.plazabeavendor",
+      "payer_hypothesis": "Plazabea / seller operator unresolved product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-455",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "RESTAURANT.PE S.A.C. / QuipuPOS",
+      "surface": "Peru mobile POS; package pe.restaurant.app",
+      "observed_need": "Mobile point-of-sale surface for Peruvian businesses; updated Aug 2026.",
+      "outcome_space": [
+        "POS",
+        "restaurant operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=pe.restaurant.app",
+      "payer_hypothesis": "RESTAURANT.PE S.A.C. / QuipuPOS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-456",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Totalnet Uruguay / canonical operator unresolved",
+      "surface": "Uruguay softPOS; package core.reader.fttecnologias.com.t2p.totalneturuguay",
+      "observed_need": "NFC smartphone card acceptance for SMEs/entrepreneurs with settlement visibility.",
+      "outcome_space": [
+        "softPOS",
+        "merchant acquiring",
+        "card payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=core.reader.fttecnologias.com.t2p.totalneturuguay",
+      "payer_hypothesis": "Totalnet Uruguay / canonical operator unresolved product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-457",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tiendix / canonical operator unresolved",
+      "surface": "Argentina mobile POS; package app.tiendix.mobile",
+      "observed_need": "POS, barcode scanning, inventory, cash/card/transfer recording and sales reports for Argentine businesses.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "payments",
+        "sales reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=app.tiendix.mobile",
+      "payer_hypothesis": "Tiendix / canonical operator unresolved product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-458",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MiTienda / canonical operator unresolved",
+      "surface": "Peru mobile POS; package pe.mitienda.pdv",
+      "observed_need": "Android POS for Peruvian businesses with multiple payment methods, receipt printing and hardware-assisted barcode/payment workflows.",
+      "outcome_space": [
+        "POS",
+        "payments",
+        "receipt printing",
+        "barcode"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=pe.mitienda.pdv",
+      "payer_hypothesis": "MiTienda / canonical operator unresolved product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-459",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ESTUDIO TASKER DIGITAL S.R.L. / InventarioApp",
+      "surface": "Argentina SME operations; package net.inventarioapp.app",
+      "observed_need": "POS, inventory, orders, delivery tracking, cash and shareable WhatsApp catalogue with offline sync.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "delivery",
+        "offline sync"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=net.inventarioapp.app",
+      "payer_hypothesis": "ESTUDIO TASKER DIGITAL S.R.L. / InventarioApp product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-460",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "EgeaINC / Kioskeo",
+      "surface": "Argentina offline POS; package com.egeainc.kioskeo",
+      "observed_need": "Offline neighborhood-shop POS with clients, store credit, closings, employee PIN access and backups.",
+      "outcome_space": [
+        "POS",
+        "offline operations",
+        "store credit",
+        "staff controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.egeainc.kioskeo",
+      "payer_hypothesis": "EgeaINC / Kioskeo product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-461",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Qway EIRL / QwayPOS",
+      "surface": "Peru restaurant POS; package pe.qway.pos",
+      "observed_need": "Tables, orders, payments, billing, notifications and printer workflows for restaurants.",
+      "outcome_space": [
+        "restaurant POS",
+        "orders",
+        "payments",
+        "billing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=pe.qway.pos",
+      "payer_hypothesis": "Qway EIRL / QwayPOS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-462",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Alvaro Dasso / ID POS",
+      "surface": "Peru inventory/POS operations; package pe.idbi.pos",
+      "observed_need": "Inventory, purchases, returns/claims, customer trends and business-system integration.",
+      "outcome_space": [
+        "inventory",
+        "purchasing",
+        "returns",
+        "reporting"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=pe.idbi.pos",
+      "payer_hypothesis": "Alvaro Dasso / ID POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-463",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MAXTECH ARGENTINA / Rolamax POS",
+      "surface": "Argentina point-of-sale management; package com.rolamax.pos",
+      "observed_need": "Sales/payment recording, transaction visibility and daily point-of-sale task management.",
+      "outcome_space": [
+        "POS",
+        "payments",
+        "transactions"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.rolamax.pos",
+      "payer_hypothesis": "MAXTECH ARGENTINA / Rolamax POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-464",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "FacturalaYa / canonical operator unresolved",
+      "surface": "Peru electronic invoicing/POS; package pe.facturalaya.app_facturacion",
+      "observed_need": "Sales/business management, electronic invoicing, cloud sync and offline operation.",
+      "outcome_space": [
+        "POS",
+        "e-invoicing",
+        "offline sync",
+        "business management"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=pe.facturalaya.app_facturacion",
+      "payer_hypothesis": "FacturalaYa / canonical operator unresolved product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-465",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Banco de Credito del Peru / YapePOS",
+      "surface": "Peru softPOS; package com.yapepos",
+      "observed_need": "Phone-based contactless Visa/Mastercard/Apple Pay/Google Pay acceptance, receipt delivery and settlement tracking.",
+      "outcome_space": [
+        "softPOS",
+        "merchant acquiring",
+        "settlement"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.yapepos",
+      "payer_hypothesis": "Banco de Credito del Peru / YapePOS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-466",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Banco del Estado de Chile / Compraqui",
+      "surface": "Chile mobile POS; package com.compraqui.mpos",
+      "observed_need": "mPOS/Tap-to-phone card acceptance, instalments and sales management for merchants.",
+      "outcome_space": [
+        "merchant acquiring",
+        "softPOS",
+        "cards",
+        "sales"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.compraqui.mpos",
+      "payer_hypothesis": "Banco del Estado de Chile / Compraqui product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-467",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "InsiderStudios / Suba POS",
+      "surface": "Peru offline POS/business management; package io.github.insideranh.suba",
+      "observed_need": "Offline sales, inventory and finances with encrypted sync and cash/card/transfer/credit acceptance.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "offline operations",
+        "finance"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=io.github.insideranh.suba",
+      "payer_hypothesis": "InsiderStudios / Suba POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-468",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Gokiebox / WaykuSoft POS",
+      "surface": "Peru restaurant POS; package com.gokiebox.waykusoft_pos",
+      "observed_need": "Restaurant tables/orders/takeout/delivery, kitchen printing and SUNAT electronic invoicing.",
+      "outcome_space": [
+        "restaurant POS",
+        "delivery",
+        "kitchen",
+        "e-invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.gokiebox.waykusoft_pos",
+      "payer_hypothesis": "Gokiebox / WaykuSoft POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; canonical operator remains unresolved where explicitly noted; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound."
