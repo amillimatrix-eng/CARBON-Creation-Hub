@@ -1,0 +1,111 @@
+name: FORX 50K Durable Persistence
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/forx-persist-50k.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: forx-50k-durable-persistence
+  cancel-in-progress: false
+
+jobs:
+  persist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Persist and verify current completed 50k run
+        shell: bash
+        env:
+          SERVICE: https://amx-forx-stage1-proof.onrender.com
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/forx50k
+          curl -fsSL "$SERVICE/status" -o /tmp/forx50k/status.json
+          curl -fsSL "$SERVICE/manifest" -o /tmp/forx50k/manifest.json
+
+          python - <<'PY'
+          import json
+          s=json.load(open('/tmp/forx50k/status.json'))
+          m=json.load(open('/tmp/forx50k/manifest.json'))
+          assert s['status']=='COMPLETE', s
+          assert s['mode']=='production', s
+          assert s['node_count']==50000, s
+          assert s['partition_count']==50, s
+          assert m['selected_count']==50000, m
+          assert m['partition_count']==50, m
+          print(m['run_id'])
+          PY
+
+          RUN_ID="$(python - <<'PY'
+          import json
+          print(json.load(open('/tmp/forx50k/manifest.json'))['run_id'])
+          PY
+          )"
+          DEST="overdrive/forx_50k_proof/$RUN_ID"
+          mkdir -p "$DEST"
+
+          cp /tmp/forx50k/status.json "$DEST/status.json"
+          cp /tmp/forx50k/manifest.json "$DEST/manifest.json"
+
+          for i in $(seq 1 50); do
+            curl -fsSL "$SERVICE/partition/$i" -o "$DEST/partition-$(printf '%03d' "$i").json"
+          done
+
+          python - <<'PY'
+          import hashlib, json, pathlib
+          root=pathlib.Path('overdrive/forx_50k_proof')
+          manifests=list(root.glob('*/manifest.json'))
+          if not manifests:
+              raise SystemExit('manifest missing')
+          manifest_path=max(manifests, key=lambda p:p.stat().st_mtime)
+          run_dir=manifest_path.parent
+          m=json.load(open(manifest_path))
+          total=0
+          for i in range(1, m['partition_count']+1):
+              p=run_dir/f'partition-{i:03d}.json'
+              b=p.read_bytes()
+              got=hashlib.sha256(b).hexdigest()
+              exp=m['partition_hashes'][str(i)]
+              if got != exp:
+                  raise SystemExit(f'partition {i} hash mismatch: {got} != {exp}')
+              body=json.loads(b)
+              total += len(body['nodes'])
+          if total != m['selected_count']:
+              raise SystemExit(f'count mismatch: {total} != {m["selected_count"]}')
+          receipt={
+              'receipt_type':'FORX_50K_DURABLE_PERSISTENCE_READBACK',
+              'run_id':m['run_id'],
+              'selected_count':m['selected_count'],
+              'partition_count':m['partition_count'],
+              'selection_sha256':m['selection_sha256'],
+              'source_file_sha256':m['source_file_sha256'],
+              'partition_hashes_verified':True,
+              'exact_node_count_readback':total,
+              'status':'PASS_DURABLE_PARTITIONS_VERIFIED'
+          }
+          (run_dir/'durable-readback-receipt.json').write_text(json.dumps(receipt,indent=2,sort_keys=True)+'\n')
+          print(json.dumps(receipt,indent=2))
+          PY
+
+      - name: Commit durable proof
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- overdrive/forx_50k_proof; then
+            echo "No changes to persist."
+            exit 0
+          fi
+          git config user.name "amillimatrix-eng"
+          git config user.email "amillimatrix@gmail.com"
+          git add overdrive/forx_50k_proof
+          git commit -m "FORX: persist and verify 50k production partitions"
+          git push origin HEAD:main
