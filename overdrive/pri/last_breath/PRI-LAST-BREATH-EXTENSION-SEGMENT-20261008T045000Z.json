@@ -1,0 +1,167 @@
+{
+  "schema": "AMX_PRI_LAST_BREATH_EXTENSION_SEGMENT_V1",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "run_utc": "2026-10-08T04:50:00Z",
+  "prior_state": {
+    "receipt": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T035100Z.json",
+    "commit": "feb21b26d3b8ff0852289c641206712ddb56e89f",
+    "counts": {
+      "smalls": 62,
+      "medium": 21,
+      "upper_medium": 81,
+      "upper": 45,
+      "total": 209
+    },
+    "paid_verified_usd": 0
+  },
+  "reconciliation": {
+    "substantive_new_buyer_replies": 0,
+    "verified_payments": 0,
+    "observed_historical_noncommercial_messages": [
+      "Cork City Gaol explicit rejection already known",
+      "auto-response redirects and out-of-office notices",
+      "historical delivery failures"
+    ],
+    "counting_truth": "This segment counts only messages with Gmail SENT labels, exact price/tier, target-specific public-page evidence, public business coordinates, and negative prior-contact dedupe."
+  },
+  "actions": [
+    {
+      "organization": "Cardinal Golf Group",
+      "normalized_domain": "cardinalgolfgroup.com",
+      "contact": "info@cardinalgolfclub.com",
+      "tier": "SMALLS",
+      "price_usd": 9,
+      "observed_problem": "Public indexed /sample-page/ exposes Lorem Ipsum and generic template headings.",
+      "bounded_offer": "One-page cleanup checklist with exact URL, removal/replacement priorities, and indexability check.",
+      "evidence_urls": [
+        "https://cardinalgolfgroup.com/sample-page/"
+      ],
+      "dedupe_result": "no prior sent message found",
+      "gmail": {
+        "id": "1a119da20275eb59",
+        "thread_id": "1a119da20275eb59",
+        "labels": [
+          "SENT"
+        ]
+      },
+      "immediate_bounce_search": "none found"
+    },
+    {
+      "organization": "Grayville Chamber of Commerce",
+      "normalized_domain": "grayvillechamber.com",
+      "contact": "grayvillecofc109@gmail.com",
+      "tier": "SMALLS",
+      "price_usd": 9,
+      "observed_problem": "Public Contact Info page exposes Lorem Ipsum and placeholder email/phone fields alongside the real Chamber coordinate.",
+      "bounded_offer": "One-page cleanup checklist identifying placeholders and exact replacement/removal order.",
+      "evidence_urls": [
+        "https://grayvillechamber.com/contact-info/"
+      ],
+      "dedupe_result": "no prior sent message found",
+      "gmail": {
+        "id": "1a119da2220f3db9",
+        "thread_id": "1a119da2220f3db9",
+        "labels": [
+          "SENT"
+        ]
+      },
+      "immediate_bounce_search": "none found"
+    },
+    {
+      "organization": "SITAL College",
+      "normalized_domain": "sitalcollege.com",
+      "contact": "info@sitalcollege.edu.tt",
+      "tier": "MEDIUM",
+      "price_usd": 19,
+      "observed_problem": "Public executive team page contains Lorem Ipsum; student-facing navigation still exposes a 2025 schedule.",
+      "bounded_offer": "Focused public-page QA pack with affected URLs, replacement/removal priorities, and navigation freshness check.",
+      "evidence_urls": [
+        "https://sitalcollege.com/edu/our_team/ann-marina-white/",
+        "https://sitalcollege.com/edu/home/"
+      ],
+      "dedupe_result": "no prior sent message found",
+      "gmail": {
+        "id": "1a119da8b51562a9",
+        "thread_id": "1a119da8b51562a9",
+        "labels": [
+          "SENT"
+        ]
+      },
+      "immediate_bounce_search": "none found"
+    },
+    {
+      "organization": "Amani Salem Ltd",
+      "normalized_domain": "amanisalem.co.ke",
+      "contact": "info@amanisalem.co.ke",
+      "tier": "MEDIUM",
+      "price_usd": 19,
+      "observed_problem": "Public privacy page still contains WordPress 'Suggested text' boilerplate and conditional template wording.",
+      "bounded_offer": "Page-specific content QA cleanup pack with boilerplate locations, replacement structure, and publishing checklist; explicitly not legal advice.",
+      "evidence_urls": [
+        "https://amanisalem.co.ke/privacy-policy/",
+        "https://amanisalem.co.ke/contact/"
+      ],
+      "dedupe_result": "no prior sent message found",
+      "gmail": {
+        "id": "1a119da888c4b800",
+        "thread_id": "1a119da888c4b800",
+        "labels": [
+          "SENT"
+        ]
+      },
+      "immediate_bounce_search": "none found"
+    },
+    {
+      "organization": "Provictus Innovation Ltd",
+      "normalized_domain": "provictus.co.ke",
+      "contact": "provictus.store@gmail.com",
+      "tier": "MEDIUM",
+      "price_usd": 29,
+      "observed_problem": "Public Track Order page exposes dummy Brooklyn/Google contact fields; another store contact page exposes template names, US numbers, and Lowe addresses.",
+      "bounded_offer": "Two-page trust-surface correction pack with dummy-field inventory, replacement map, and final QA checklist.",
+      "evidence_urls": [
+        "https://provictus.co.ke/track-order/",
+        "https://farmtools.provictus.co.ke/contact-us/",
+        "https://provictus.co.ke/contact-us/"
+      ],
+      "dedupe_result": "no prior sent message found",
+      "gmail": {
+        "id": "1a119da8637068f1",
+        "thread_id": "1a119da8637068f1",
+        "labels": [
+          "SENT"
+        ]
+      },
+      "immediate_bounce_search": "none found"
+    }
+  ],
+  "delta": {
+    "smalls": 2,
+    "medium": 3,
+    "upper_medium": 0,
+    "upper": 0,
+    "total": 5,
+    "paid_verified_usd": 0
+  },
+  "cumulative": {
+    "smalls": 64,
+    "medium": 24,
+    "upper_medium": 81,
+    "upper": 45,
+    "total": 214,
+    "paid_verified_usd": 0
+  },
+  "t10": {
+    "supposed_outcome": "Advance the penetration line with unique, target-specific, exactly priced outbound and preserve attributable receipts.",
+    "actual_outcome": "Five deduplicated offers were submitted through Gmail to public business coordinates across Canada, the United States, Trinidad and Tobago, and Kenya.",
+    "evidence": [
+      "Gmail SENT 1a119da20275eb59",
+      "Gmail SENT 1a119da2220f3db9",
+      "Gmail SENT 1a119da8b51562a9",
+      "Gmail SENT 1a119da888c4b800",
+      "Gmail SENT 1a119da8637068f1"
+    ],
+    "changed": "Cumulative SENT count increased from 209 to 214; SMALLS from 62 to 64; MEDIUM from 21 to 24.",
+    "remaining_gap": "Delivery, response, acceptance, conversion, invoice, receivable, and payment remain unproven. Paid remains USD 0 verified."
+  }
+}
