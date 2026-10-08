@@ -11988,6 +11988,89 @@
       "payer_hypothesis": "Idealweb / FleetFlow fleet/commercial operations owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and operating surface evidenced; current 2026. Geography remains unresolved where stated.",
       "consumer_action": "iSCOPE verify current organization identity, operating geography, buyer route and active fleet/operations need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-643",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Afrisauti VAS Ltd / Pesatime Restaurant POS",
+      "surface": "Kenya restaurant POS; package com.pesatime.pos.restaurant",
+      "observed_need": "Orders, payments, receipt printing, staff login and stock-session management for restaurants/cafes/bars.",
+      "outcome_space": [
+        "restaurant POS",
+        "payments",
+        "inventory",
+        "staff"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.pesatime.pos.restaurant",
+      "payer_hypothesis": "Afrisauti VAS Ltd / Pesatime Restaurant POS hospitality/product operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; geography remains unresolved where explicitly noted; no unmet commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify organization identity, operating market, buyer route and current commercial need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-644",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Taste Tech / RestauPOS",
+      "surface": "Morocco restaurant/hospitality POS; package omnipos.restaurant.pos",
+      "observed_need": "Restaurant POS/billing and hospitality operations; publisher country Morocco, current 2026 maintenance.",
+      "outcome_space": [
+        "restaurant POS",
+        "hospitality",
+        "billing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=omnipos.restaurant.pos",
+      "payer_hypothesis": "Taste Tech / RestauPOS hospitality/product operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; geography remains unresolved where explicitly noted; no unmet commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify organization identity, operating market, buyer route and current commercial need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-645",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "DevLabs South Africa / Flow Triage",
+      "surface": "South Africa hotel/property service operations; package com.devlabs.flowtriage",
+      "observed_need": "Offline-capable service-ticket coordination for hotel/resort staff, property management, housekeeping and maintenance crews.",
+      "outcome_space": [
+        "hospitality operations",
+        "maintenance",
+        "ticketing",
+        "offline"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.devlabs.flowtriage",
+      "payer_hypothesis": "DevLabs South Africa / Flow Triage hospitality/product operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; geography remains unresolved where explicitly noted; no unmet commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify organization identity, operating market, buyer route and current commercial need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-646",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "TREV TECH LTD / Afristays",
+      "surface": "Kenya/Africa hospitality distribution; package com.afristays.app",
+      "observed_need": "Accommodation discovery/booking distribution across Kenya and wider Africa, connecting hotels/lodges/apartments with travelers.",
+      "outcome_space": [
+        "hospitality",
+        "booking distribution",
+        "travel marketplace"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.afristays.app",
+      "payer_hypothesis": "TREV TECH LTD / Afristays hospitality/product operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; geography remains unresolved where explicitly noted; no unmet commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify organization identity, operating market, buyer route and current commercial need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-647",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SovenTech / Hotel Management System",
+      "surface": "Hotel operations software; package com.soventech.hotelsoftware",
+      "observed_need": "Bookings, rooms, check-out, billing and housekeeping management; exact operating geography unresolved.",
+      "outcome_space": [
+        "hotel operations",
+        "bookings",
+        "billing",
+        "housekeeping"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.soventech.hotelsoftware",
+      "payer_hypothesis": "SovenTech / Hotel Management System hospitality/product operations owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; geography remains unresolved where explicitly noted; no unmet commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify organization identity, operating market, buyer route and current commercial need before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
