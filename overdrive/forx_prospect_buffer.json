@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:03:00+02:00",
+  "last_updated": "2026-10-08T16:43:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -4617,6 +4617,39 @@
       "payer_hypothesis": "POSFactura CR operator",
       "fit_note": "Fresh Costa Rica merchant-operating surface with unusually rich payment/reconciliation evidence.",
       "consumer_action": "iSCOPE validate SINPE reconciliation, branch/accounting workflow and merchant onboarding/support needs."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-257",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "CYBER@GE PTE LTD / Cyber Food Vendor",
+      "surface": "Fiji vendor operations; package com.cyberfoodfiji.cyber_food_store",
+      "observed_need": "Vendor order/menu/staff/inventory management and sales analytics for online food/grocery operations.",
+      "outcome_space": [
+        "vendor operations",
+        "inventory",
+        "orders",
+        "sales analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.cyberfoodfiji.cyber_food_store",
+      "payer_hypothesis": "CYBER@GE PTE LTD / Cyber Food Vendor product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; no unresolved pain inferred.",
+      "consumer_action": "iSCOPE verify current identity, buyer route and active commercial need before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-258",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Yeah Mall / YEAHMALL",
+      "surface": "Vanuatu cross-border ecommerce/logistics; package com.yeahmall.shop",
+      "observed_need": "Local platform supports China-to-Vanuatu product sourcing, parcel consolidation and merchant logistics.",
+      "outcome_space": [
+        "cross-border sourcing",
+        "ecommerce",
+        "logistics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.yeahmall.shop",
+      "payer_hypothesis": "Yeah Mall / YEAHMALL product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; no unresolved pain inferred.",
+      "consumer_action": "iSCOPE verify current identity, buyer route and active commercial need before PRI action."
     }
   ]
 }
