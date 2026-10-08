@@ -13758,7 +13758,7 @@
     "component_evidence": {
       "candidate_exact_keys_discovered": 7,
       "candidates_staged_pending_ingestion": 7,
-      "network_rails_discovered": 6,
+      "network_rails_discovered": 7,
       "verified_graph_delta_claimed": 0,
       "explored": 13,
       "exploited": 0
