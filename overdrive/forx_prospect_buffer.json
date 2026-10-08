@@ -12510,6 +12510,74 @@
       "payer_hypothesis": "Emmallex Technologies / MySchoolGH business/product owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public organization-level operating surface evidenced; no unresolved commercial pain is presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active operational need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-674",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "SOLAR MD (PTY) LTD / myPower24",
+      "surface": "South Africa solar/storage operations; package co.za.solarmd.mypower24",
+      "observed_need": "Owners/installers monitor PV, batteries, inverters, loggers, production history and on-site setup.",
+      "outcome_space": [
+        "energy",
+        "solar",
+        "battery",
+        "installer operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=co.za.solarmd.mypower24",
+      "payer_hypothesis": "SOLAR MD (PTY) LTD / myPower24 commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-675",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Chint PVSTAR Energy Solution B.V. / PVSTAR EZBUY",
+      "surface": "Africa solar distributor/agent CRM; package com.chintanneng.pvstarezbuy",
+      "observed_need": "Distributor and agent business operations, CRM and partner growth across Africa.",
+      "outcome_space": [
+        "energy",
+        "solar",
+        "distributors",
+        "CRM"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.chintanneng.pvstarezbuy",
+      "payer_hypothesis": "Chint PVSTAR Energy Solution B.V. / PVSTAR EZBUY commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-676",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Weenja Technologies Limited / SolarMarket Seller",
+      "surface": "Uganda solar-seller operations; package com.solarmarket.seller",
+      "observed_need": "Solar shop/catalogue management, customer inquiries, discounts, orders and sales tracking.",
+      "outcome_space": [
+        "energy",
+        "solar",
+        "seller operations",
+        "orders"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.solarmarket.seller",
+      "payer_hypothesis": "Weenja Technologies Limited / SolarMarket Seller commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-677",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Bundu Power / KVA Xchange",
+      "surface": "South Africa power-hardware marketplace; package co.za.kvax.app",
+      "observed_need": "Buy/sell/swap/recycle solar, battery, generator and EV-charger hardware with direct buyer-seller messaging.",
+      "outcome_space": [
+        "energy",
+        "solar",
+        "hardware marketplace",
+        "circular economy"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=co.za.kvax.app",
+      "payer_hypothesis": "Bundu Power / KVA Xchange commercial/product owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public business-operating surface evidenced; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
