@@ -1,0 +1,140 @@
+{
+  "schema": "AMX_PRI_LAST_BREATH_EXTENSION_SEGMENT_V1",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "run_utc": "2026-10-08T05:50:00Z",
+  "prior_state": {
+    "receipt": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T045000Z.json",
+    "commit": "f64c4026809a7314feb34f89a9b3e22182cb3430",
+    "counts": {
+      "smalls": 64,
+      "medium": 24,
+      "upper_medium": 81,
+      "upper": 45,
+      "total": 214
+    },
+    "paid_verified_usd": 0
+  },
+  "inbound_reconciliation": [
+    {
+      "organization": "Cuina Teva Soluciones Horeca 2026, S.L.",
+      "thread_id": "1a1185016fd604aa",
+      "original_gmail_id": "1a1185016fd604aa",
+      "reply_gmail_id": "1a119ecf8e1a7297",
+      "original_offer": {
+        "tier": "SMALLS",
+        "price_usd": 9,
+        "subject": "Revisión de confianza web — 9 USD"
+      },
+      "buyer_response": "No",
+      "signer": "Alessia Ricchiari, CEO",
+      "lifecycle_result": "EXPLICIT_REJECTION",
+      "action": "Target closed; no follow-up sent.",
+      "truth": "Real external response; not acceptance, conversion, receivable, or payment."
+    }
+  ],
+  "actions": [
+    {
+      "organization": "GNT Logistics",
+      "normalized_domain": "gnt.ng",
+      "contact": "logistics@gnt.ng",
+      "tier": "MEDIUM",
+      "price_usd": 29,
+      "observed_problem": "Public sample, service, portfolio and specialist pages expose template/lorem content, 'John Smith', companyname.com coordinates and a default Hello World post.",
+      "bounded_offer": "Prioritized cleanup pack with affected URLs, dummy fields and replacement/removal order.",
+      "evidence_urls": [
+        "https://gnt.ng/sample-page/",
+        "https://gnt.ng/services/logistics/",
+        "https://gnt.ng/portfolio/",
+        "https://gnt.ng/author/Intelscape/"
+      ],
+      "dedupe_result": "no prior sent message found",
+      "gmail": {
+        "id": "1a11a10e5c4a9019",
+        "thread_id": "1a11a10e5c4a9019",
+        "labels": [
+          "SENT"
+        ]
+      },
+      "immediate_bounce_search": "none found"
+    },
+    {
+      "organization": "GC Accounting & Business Services",
+      "normalized_domain": "gcaccounting.com.au",
+      "contact": "gianni@gcaccounting.com.au",
+      "tier": "MEDIUM",
+      "price_usd": 49,
+      "observed_problem": "Public indexed sample/contact-test/coming-soon pages plus an unrelated 'Grey Vinyl Wrap' page under /common/ on the accounting domain.",
+      "bounded_offer": "Compact site-integrity report with affected URLs, severity, removal/indexing priorities and post-cleanup verification checklist.",
+      "evidence_urls": [
+        "https://gcaccounting.com.au/sample-page/",
+        "https://gcaccounting.com.au/contact-test/",
+        "https://gcaccounting.com.au/coming-soon/",
+        "https://gcaccounting.com.au/common/Grey_Vinyl_Wrap.html"
+      ],
+      "dedupe_result": "no prior sent message found",
+      "gmail": {
+        "id": "1a11a10e2fc5c2d8",
+        "thread_id": "1a11a10e2fc5c2d8",
+        "labels": [
+          "SENT"
+        ]
+      },
+      "immediate_bounce_search": "none found"
+    },
+    {
+      "organization": "Kelsons Estates Management and Developers Ltd",
+      "normalized_domain": "kelsonsestates.com.ng",
+      "contact": "admin@kelsonsestates.com.ng",
+      "tier": "MEDIUM",
+      "price_usd": 29,
+      "observed_problem": "Public mission, leadership and sample/default pages expose lorem text, contact@example.com and stock executive/template content.",
+      "bounded_offer": "Prioritized cleanup pack with affected URLs, dummy fields and exact replacement/removal order.",
+      "evidence_urls": [
+        "https://www.kelsonsestates.com.ng/our-mission",
+        "https://www.kelsonsestates.com.ng/our-leaders",
+        "https://www.kelsonsestates.com.ng/sample-page",
+        "https://www.kelsonsestates.com.ng/contact-us"
+      ],
+      "dedupe_result": "no prior sent message found",
+      "gmail": {
+        "id": "1a11a112a51faa0e",
+        "thread_id": "1a11a112a51faa0e",
+        "labels": [
+          "SENT"
+        ]
+      },
+      "immediate_bounce_search": "none found"
+    }
+  ],
+  "delta": {
+    "smalls": 0,
+    "medium": 3,
+    "upper_medium": 0,
+    "upper": 0,
+    "total": 3,
+    "substantive_responses": 1,
+    "positive_responses": 0,
+    "explicit_rejections": 1,
+    "paid_verified_usd": 0
+  },
+  "cumulative": {
+    "smalls": 64,
+    "medium": 27,
+    "upper_medium": 81,
+    "upper": 45,
+    "total": 217,
+    "paid_verified_usd": 0
+  },
+  "t10": {
+    "supposed_outcome": "Prioritize live buyer evidence, close explicit rejection without pressure, then advance new evidence-backed paid offers.",
+    "actual_outcome": "One external SMALLS buyer explicitly rejected and was closed; three new deduplicated MEDIUM offers were submitted through Gmail.",
+    "evidence": [
+      "Reply 1a119ecf8e1a7297",
+      "Gmail SENT 1a11a10e5c4a9019",
+      "Gmail SENT 1a11a10e2fc5c2d8",
+      "Gmail SENT 1a11a112a51faa0e"
+    ],
+    "changed": "Cumulative SENT count increased from 214 to 217; MEDIUM from 24 to 27. Cuina Teva moved from OFFERED to EXPLICIT_REJECTION/CLOSED.",
+    "remaining_gap": "No positive response, commitment, conversion, invoice, receivable or verified payment. Paid remains USD 0."
+  }
+}
