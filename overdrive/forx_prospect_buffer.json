@@ -11370,6 +11370,309 @@
       "payer_hypothesis": "ANJUMAN BURHAN WHOLESALE AND RETAIL TRADING COMPANY / HIS product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public B2B/procurement operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active need, procurement relevance and commercial fit before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-606",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Africa Healthtech LTD / TanzMED Doctor",
+      "surface": "Tanzania healthcare-practice operations; package africa.tanzmed.business",
+      "observed_need": "Professional practice surface for appointments, home visits, patient chat, virtual consults and revenue/reimbursement tracking.",
+      "outcome_space": [
+        "healthcare operations",
+        "appointments",
+        "telehealth",
+        "revenue"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=africa.tanzmed.business",
+      "payer_hypothesis": "Africa Healthtech LTD / TanzMED Doctor product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-607",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "NodePoint",
+      "surface": "Multi-sector SME operations; package com.getnodepoint.app",
+      "observed_need": "Offline-capable POS, inventory, bookings and business books for shops, restaurants, hotels and service businesses across Africa/Middle East/Asia; canonical operator geography unresolved.",
+      "outcome_space": [
+        "POS",
+        "inventory",
+        "bookings",
+        "offline operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.getnodepoint.app",
+      "payer_hypothesis": "NodePoint product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-608",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Mutual Life Africa / PHYRONE LTD / Builders24",
+      "surface": "Africa built-environment marketplace; package net.builders24.app",
+      "observed_need": "Materials, construction services, procurement, logistics, vehicles and wholesale trade across the built environment.",
+      "outcome_space": [
+        "construction",
+        "procurement",
+        "materials",
+        "logistics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=net.builders24.app",
+      "payer_hypothesis": "Mutual Life Africa / PHYRONE LTD / Builders24 product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-609",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Booysen Logistics and Services / BLS Fleet",
+      "surface": "South Africa fleet operations; package za.co.booysenlogistics.fleet",
+      "observed_need": "Driver, vehicle and trailer allocation to collections plus fleet dashboard and subcontractor sourcing.",
+      "outcome_space": [
+        "fleet",
+        "logistics",
+        "subcontractors",
+        "dispatch"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=za.co.booysenlogistics.fleet",
+      "payer_hypothesis": "Booysen Logistics and Services / BLS Fleet product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-610",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "QUATA DIGITAL / Abaqwa Hotel Merchant",
+      "surface": "Cameroon hospitality operations; package com.abaqwa.hotel",
+      "observed_need": "Hotel/guesthouse bookings, rooms/rates, guest check-in/out, reports and payouts.",
+      "outcome_space": [
+        "hospitality",
+        "bookings",
+        "guest operations",
+        "payouts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.abaqwa.hotel",
+      "payer_hypothesis": "QUATA DIGITAL / Abaqwa Hotel Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-611",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "African Fertilizer and Agribusiness Partnership / AFAP IMS",
+      "surface": "African agri-retailer operations; package org.afappartnership.afap_mobile",
+      "observed_need": "Input-dealer branch, inventory, sales, credit, invoicing, customer and admin workflows; source freshness lower than 2026 tranches.",
+      "outcome_space": [
+        "agriculture",
+        "inventory",
+        "credit",
+        "invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=org.afappartnership.afap_mobile",
+      "payer_hypothesis": "African Fertilizer and Agribusiness Partnership / AFAP IMS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-612",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ContractorPro South Africa",
+      "surface": "South Africa contractor business operations; package cs.contractorpro",
+      "observed_need": "Contractor profile, qualified leads, pipeline plus VAT quotes/invoices.",
+      "outcome_space": [
+        "contractors",
+        "lead management",
+        "quotes",
+        "invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=cs.contractorpro",
+      "payer_hypothesis": "ContractorPro South Africa product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-613",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "THE REAL GO COMPANY / Go Motion",
+      "surface": "South Africa owner-driver/fleet operations; package mobile.gomotion.cloud",
+      "observed_need": "Vehicle, fuel, finance and logistics fleet-management workflows.",
+      "outcome_space": [
+        "fleet",
+        "fuel",
+        "finance",
+        "logistics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=mobile.gomotion.cloud",
+      "payer_hypothesis": "THE REAL GO COMPANY / Go Motion product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-614",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Cargo Connect South Africa",
+      "surface": "South Africa freight/equipment marketplace; package com.cargoconnect.app",
+      "observed_need": "Loads, plant hire, storage, logistics, truck hire and equipment marketplace operations.",
+      "outcome_space": [
+        "freight",
+        "equipment",
+        "logistics",
+        "marketplace"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.cargoconnect.app",
+      "payer_hypothesis": "Cargo Connect South Africa product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-615",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Construction EzyFind",
+      "surface": "South Africa construction-services marketplace; package com.inno.ezyfind.construction",
+      "observed_need": "Construction products/services discovery, bidding and hire surface tied to local contractor ecosystem.",
+      "outcome_space": [
+        "construction",
+        "contractors",
+        "bidding",
+        "hire"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.inno.ezyfind.construction",
+      "payer_hypothesis": "Construction EzyFind product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-616",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "LA TORA TECHNOLOGIES / Gazole Fleet",
+      "surface": "South Africa fleet/logistics operations; package za.co.gazole.fleet",
+      "observed_need": "Routes, fuel capture, inspections, proof of delivery and vehicle-custody workflows.",
+      "outcome_space": [
+        "fleet",
+        "fuel",
+        "proof of delivery",
+        "inspections"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=za.co.gazole.fleet",
+      "payer_hypothesis": "LA TORA TECHNOLOGIES / Gazole Fleet product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-617",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "KHULA APP PTY LTD / KHULA! Inputs",
+      "surface": "South Africa agricultural procurement; package za.co.khula.farmer",
+      "observed_need": "Farmers order agricultural inputs from trusted suppliers.",
+      "outcome_space": [
+        "agriculture",
+        "procurement",
+        "supplier network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=za.co.khula.farmer",
+      "payer_hypothesis": "KHULA APP PTY LTD / KHULA! Inputs product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-618",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Krome Harvest LLC",
+      "surface": "B2B agricultural marketplace; package com.kromeharvest.app",
+      "observed_need": "Agricultural seller inventory, orders, payouts and logistics; operating geography unresolved.",
+      "outcome_space": [
+        "agriculture",
+        "B2B marketplace",
+        "inventory",
+        "payouts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.kromeharvest.app",
+      "payer_hypothesis": "Krome Harvest LLC product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-619",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AgNexus Africa / Mavuno POS",
+      "surface": "East Africa agrodealer POS; package africa.agnexus.mavunopos",
+      "observed_need": "Agrodealer input inventory, sales and invoicing designed for low-connectivity operating contexts.",
+      "outcome_space": [
+        "agriculture",
+        "POS",
+        "inventory",
+        "low connectivity"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=africa.agnexus.mavunopos",
+      "payer_hypothesis": "AgNexus Africa / Mavuno POS product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-620",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Collins & Sons Transport / CargoSwift",
+      "surface": "South Africa delivery operations; package com.cargoswift_mobile",
+      "observed_need": "Pickup and delivery management for approved drivers.",
+      "outcome_space": [
+        "logistics",
+        "delivery",
+        "driver operations"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.cargoswift_mobile",
+      "payer_hypothesis": "Collins & Sons Transport / CargoSwift product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-621",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BuildConnect South Africa",
+      "surface": "South Africa contractor marketplace; package com.buildconnect.app",
+      "observed_need": "Verified local contractors, jobs, quotes and provider profiles.",
+      "outcome_space": [
+        "contractors",
+        "jobs",
+        "quotes",
+        "marketplace"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.buildconnect.app",
+      "payer_hypothesis": "BuildConnect South Africa product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-622",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MYFUELORDERS (PTY) LTD / MFO PRO",
+      "surface": "Southern Africa commercial-fuel operations; package co.za.mfopro.mobile",
+      "observed_need": "Fuel procurement and management across depots/sites, order tracking, vehicles, credit limits, invoices and statements.",
+      "outcome_space": [
+        "fuel procurement",
+        "fleet",
+        "credit",
+        "invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=co.za.mfopro.mobile",
+      "payer_hypothesis": "MYFUELORDERS (PTY) LTD / MFO PRO product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-623",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Property with Alton / PWA Supplier",
+      "surface": "South Africa property-services marketplace; package com.pwa.supplier",
+      "observed_need": "Supplier/home-service business marketplace with portfolios and quotes.",
+      "outcome_space": [
+        "property services",
+        "supplier marketplace",
+        "quotes"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.pwa.supplier",
+      "payer_hypothesis": "Property with Alton / PWA Supplier product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced. Market geography remains unresolved where explicitly noted; no unresolved commercial pain is presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, operating market, buyer route, active need and commercial relevance before PRI action."
     }
   ],
   "current_run_note": "FORX weighted public problem-signal supply active; staging only; iSCOPE retains verification/dedupe/qualification; PRI retains outbound.",
