@@ -1,0 +1,634 @@
+{
+  "receipt_id": "PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T115200Z",
+  "generated_at": "2026-10-08T11:52:00Z",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "line": "ONE iSCOPE->PRI / Last Breath writer",
+  "prior_reported_state": {
+    "receipt_path": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T065000Z.json",
+    "commit": "465f6929256dbaf60ad4aad881e98190ee44d162",
+    "counts": {
+      "smalls": 76,
+      "medium": 28,
+      "upper_medium": 81,
+      "upper": 45,
+      "total": 230,
+      "paid_usd": 0
+    }
+  },
+  "warm_due_actions": [
+    {
+      "account": "Jojo Luu / Stage 32",
+      "condition_verified": "Original proposal sent 2026-10-04; Gmail thread had no inbound response and no later follow-up before this action.",
+      "action": "Exactly one concise in-thread follow-up asking whether the proposal remains under review or whether any current submission requirement is missing. Proposal PDF was not resent.",
+      "gmail_id": "1a11b5d0168259b0",
+      "thread_id": "1a0f1a3a7ad58e63",
+      "sent_label_verified": true,
+      "immediate_bounce": false,
+      "lifecycle": "FOLLOW_UP_SENT / RESPONSE_PENDING",
+      "suppression": "No further unsolicited follow-up unless Jojo replies or new buyer evidence changes the route."
+    },
+    {
+      "account": "Radial Entertainment",
+      "provenance": "Carolyn Marcus auto-reply redirected business enquiries to Jonitha Keymoore.",
+      "action_reconciled": "Existing writer forwarded the original relevant note to Jonitha; did not pretend Jonitha requested it.",
+      "gmail_id": "1a11b3fc9aacb4c2",
+      "recipient": "JKeymoore@radialentertainment.com",
+      "sent_label_verified": true,
+      "immediate_bounce": false,
+      "lifecycle": "WARM_REDIRECT_CONTINUED / RESPONSE_PENDING",
+      "tier_counted": false,
+      "reason_not_counted": "Continuation within existing organization history and no exact priced tier in the forwarded message."
+    }
+  ],
+  "hard_failure_audit": {
+    "gmail_hard_failures_total": 25,
+    "exact_priced_offer_failures": 24,
+    "unpriced_application_failure": {
+      "recipient": "careers@auditrax.io",
+      "sent_id": "1a11b55bbaaab27c",
+      "bounce_id": "1a11b55cd7af468b"
+    },
+    "priced_failures": [
+      {
+        "recipient": "kuminandkhors@gmail.com",
+        "tier": "upper",
+        "sent_id": "1a11b4e737148a7b",
+        "bounce_id": "1a11b4e78676b847"
+      },
+      {
+        "recipient": "orders@risingstarcafe.co.ke",
+        "tier": "upper",
+        "sent_id": "1a11b4e6b3bd1153",
+        "bounce_id": "1a11b4e757041f55"
+      },
+      {
+        "recipient": "management@otnautos.com",
+        "tier": "upper",
+        "sent_id": "1a11b4e2670b6a11",
+        "bounce_id": "1a11b4e37a3a36ae"
+      },
+      {
+        "recipient": "info@lckidspreschool.co.za",
+        "tier": "um",
+        "sent_id": "1a11adf2661d0d26",
+        "bounce_id": "1a11adf36f431920"
+      },
+      {
+        "recipient": "afriglowomenchoiceawards@gmail.com",
+        "tier": "medium",
+        "sent_id": "1a11ad7d88fe93a1",
+        "bounce_id": "1a11ad7dfeda1405"
+      },
+      {
+        "recipient": "info@fusedelectrics.co.ke",
+        "tier": "smalls",
+        "sent_id": "1a11acf6067b61a2",
+        "bounce_id": "1a11acf67eec51f5"
+      },
+      {
+        "recipient": "info@liaandco.co.za",
+        "tier": "smalls",
+        "sent_id": "1a11a3ae13958b81",
+        "bounce_id": "1a11a3ae9914724a",
+        "already_excluded_in_prior_receipt": true
+      },
+      {
+        "recipient": "Akwantufuomusic@gmail.com",
+        "tier": "smalls",
+        "sent_id": "1a1185417e249a45",
+        "bounce_id": "1a118541dd2daf49"
+      },
+      {
+        "recipient": "vksenterprises@gmail.com",
+        "tier": "smalls",
+        "sent_id": "1a118526e811f0b0",
+        "bounce_id": "1a1185274e2b7bb5"
+      },
+      {
+        "recipient": "packetswork.sales@gmail.com",
+        "tier": "smalls",
+        "sent_id": "1a1184d6bb58ce8b",
+        "bounce_id": "1a1184d7367362cb"
+      },
+      {
+        "recipient": "admn.playqroundph@gmail.com",
+        "tier": "smalls",
+        "sent_id": "1a11848e9821bd36",
+        "bounce_id": "1a11848f1d54249b"
+      },
+      {
+        "recipient": "info@afrikandelibutchery.co.za",
+        "tier": "smalls",
+        "sent_id": "1a11845eea92efdb",
+        "bounce_id": "1a11845f6f744600"
+      },
+      {
+        "recipient": "contact@tokaitrading.com",
+        "tier": "smalls",
+        "sent_id": "1a11844bd3c5ee2a",
+        "bounce_id": "1a11844c4d77ae66"
+      },
+      {
+        "recipient": "hello@ymstudio.io",
+        "tier": "smalls",
+        "sent_id": "1a1183ca09b743cd",
+        "bounce_id": "1a1183cb1591d519"
+      },
+      {
+        "recipient": "info@thegeek.boutique",
+        "tier": "smalls",
+        "sent_id": "1a118147390eddff",
+        "bounce_id": "1a118147864841cc"
+      },
+      {
+        "recipient": "info@1877-doughnut-bar.shop",
+        "tier": "smalls",
+        "sent_id": "1a11800922fd0d0b",
+        "bounce_id": "1a118009930969d2"
+      },
+      {
+        "recipient": "partnerships@internpulse.com",
+        "tier": "smalls",
+        "sent_id": "1a117fbc111b9b5d",
+        "bounce_id": "1a117fbd24b032f8"
+      },
+      {
+        "recipient": "admin@willtonpb.com",
+        "tier": "um",
+        "sent_id": "1a117e6129111fe5",
+        "bounce_id": "1a117e61a2f6e730",
+        "replacement_sent_id": "1a11b41d6e021269"
+      },
+      {
+        "recipient": "booking@bareskinspa.com",
+        "tier": "um",
+        "sent_id": "1a117e497aa2020f",
+        "bounce_id": "1a117e49ab13a5ae"
+      },
+      {
+        "recipient": "bookings@ohemaassalon.com",
+        "tier": "um",
+        "sent_id": "1a117e2dabc76afc",
+        "bounce_id": "1a117e2ea87fbe19"
+      },
+      {
+        "recipient": "info@physiokenya.com",
+        "tier": "um",
+        "sent_id": "1a117e299f01cf43",
+        "bounce_id": "1a117e2a10865bf0"
+      },
+      {
+        "recipient": "info@pgffinancialservices.co.za",
+        "tier": "um",
+        "sent_id": "1a117e28e3cc3554",
+        "bounce_id": "1a117e2943115e6b"
+      },
+      {
+        "recipient": "pichelarialiberdade@gmail.com",
+        "tier": "um",
+        "sent_id": "1a117e14e533a01a",
+        "bounce_id": "1a117e156d08da97"
+      },
+      {
+        "recipient": "james.ndambiri@mncconsulting.co.ke",
+        "tier": "upper",
+        "sent_id": "1a117d3266a28f9a",
+        "bounce_id": "1a117d3cd8c4873c"
+      }
+    ],
+    "historical_correction": {
+      "previously_reported_230_reduced_by": 17,
+      "basis": "17 previously counted exact-priced offers are now proven hard failures; Lia & Co was already excluded and six additional priced failures belong to sends after the prior receipt.",
+      "corrected_prior": {
+        "smalls": 66,
+        "medium": 28,
+        "upper_medium": 75,
+        "upper": 44,
+        "total": 213
+      }
+    }
+  },
+  "new_exact_priced_sends": {
+    "raw_after_prior_receipt": {
+      "smalls": 13,
+      "medium": 8,
+      "upper_medium": 17,
+      "upper": 21,
+      "note": "Includes hard failures and one same-organization redirected continuation; raw SENT is not the counted total."
+    },
+    "counted_after_current_contact_bounce_dedupe_correction": {
+      "smalls": 11,
+      "medium": 7,
+      "upper_medium": 16,
+      "upper": 18,
+      "total": 52
+    },
+    "counted_receipts": {
+      "smalls": [
+        {
+          "gmail_id": "1a11ad34b3c2241a",
+          "thread_id": "1a11ad34b3c2241a",
+          "recipient": "info.finnmorphix@gmail.com",
+          "subject": "I spotted a few placeholder details — $9 check",
+          "sent_at": "2026-10-08T02:23:37-07:00"
+        },
+        {
+          "gmail_id": "1a11ad34102c588a",
+          "thread_id": "1a11ad34102c588a",
+          "recipient": "mtghero@gmail.com",
+          "subject": "Small thing on your contact page — $9",
+          "sent_at": "2026-10-08T02:23:35-07:00"
+        },
+        {
+          "gmail_id": "1a11ad26b2e92fb9",
+          "thread_id": "1a11ad26b2e92fb9",
+          "recipient": "deyglobalexport@gmail.com",
+          "subject": "$9 public-contact trust check",
+          "sent_at": "2026-10-08T02:22:40-07:00"
+        },
+        {
+          "gmail_id": "1a11ad0d6f54d406",
+          "thread_id": "1a11ad0d6f54d406",
+          "recipient": "she2shipping@gmail.com",
+          "subject": "$9 website trust-cleanup check",
+          "sent_at": "2026-10-08T02:20:56-07:00"
+        },
+        {
+          "gmail_id": "1a11ad0ccfe6335b",
+          "thread_id": "1a11ad0ccfe6335b",
+          "recipient": "eleduka.academy24@gmail.com",
+          "subject": "$9 public-site consistency check",
+          "sent_at": "2026-10-08T02:20:54-07:00"
+        },
+        {
+          "gmail_id": "1a11ad0c0b9c980d",
+          "thread_id": "1a11ad0c0b9c980d",
+          "recipient": "ubuntuscrapmetalsandrecycling@gmail.com",
+          "subject": "$9 website trust-cleanup check",
+          "sent_at": "2026-10-08T02:20:50-07:00"
+        },
+        {
+          "gmail_id": "1a11acf6afd4b4e5",
+          "thread_id": "1a11acf6afd4b4e5",
+          "recipient": "kiptalam54@gmail.com",
+          "subject": "$9 public-site trust check",
+          "sent_at": "2026-10-08T02:19:23-07:00"
+        },
+        {
+          "gmail_id": "1a11acc5ecce11b5",
+          "thread_id": "1a11acc5ecce11b5",
+          "recipient": "davetcompanyltd@gmail.com",
+          "subject": "$9 public-site trust check",
+          "sent_at": "2026-10-08T02:16:03-07:00"
+        },
+        {
+          "gmail_id": "1a11acc5240a629b",
+          "thread_id": "1a11acc5240a629b",
+          "recipient": "entrepreneurshipinstituteinfo@gmail.com",
+          "subject": "$9 course-page trust check",
+          "sent_at": "2026-10-08T02:16:00-07:00"
+        },
+        {
+          "gmail_id": "1a11acc47864a120",
+          "thread_id": "1a11acc47864a120",
+          "recipient": "adomwholesaleprice@gmail.com",
+          "subject": "$9 website trust-cleanup check",
+          "sent_at": "2026-10-08T02:15:57-07:00"
+        },
+        {
+          "gmail_id": "1a11a4971cc74f78",
+          "thread_id": "1a11a4971cc74f78",
+          "recipient": "kasey@ks.events",
+          "subject": "Indexed sample-page cleanup — USD 9",
+          "sent_at": "2026-10-07T23:53:03-07:00"
+        }
+      ],
+      "medium": [
+        {
+          "gmail_id": "1a11ae76c6d50ffb",
+          "thread_id": "1a11ae76c6d50ffb",
+          "recipient": "regiecees@gmail.com",
+          "subject": "Public trust-layer cleanup — USD 39",
+          "sent_at": "2026-10-08T02:45:36-07:00"
+        },
+        {
+          "gmail_id": "1a11ae5402aa13fb",
+          "thread_id": "1a11ae5402aa13fb",
+          "recipient": "hello@yaisatangwell.com",
+          "subject": "Photography-site trust cleanup — USD 49",
+          "sent_at": "2026-10-08T02:43:14-07:00"
+        },
+        {
+          "gmail_id": "1a11ad9284c554e1",
+          "thread_id": "1a11ad9284c554e1",
+          "recipient": "info@ama-travel.com",
+          "subject": "Multi-page trust cleanup for AMA Travel — USD 49",
+          "sent_at": "2026-10-08T02:30:02-07:00"
+        },
+        {
+          "gmail_id": "1a11ad7d153ea908",
+          "thread_id": "1a11ad7d153ea908",
+          "recipient": "eaglecapitalafrica@gmail.com",
+          "subject": "Multi-page contact + trust cleanup — USD 39",
+          "sent_at": "2026-10-08T02:28:33-07:00"
+        },
+        {
+          "gmail_id": "1a11ad6b88e85c7d",
+          "thread_id": "1a11ad6b88e85c7d",
+          "recipient": "flagshipcouriers876@gmail.com",
+          "subject": "Public trust-layer cleanup for FlagShip — USD 49",
+          "sent_at": "2026-10-08T02:27:22-07:00"
+        },
+        {
+          "gmail_id": "1a11ad6af713f8b7",
+          "thread_id": "1a11ad6af713f8b7",
+          "recipient": "tenthirewiz@gmail.com",
+          "subject": "Multi-page trust cleanup for Tent Hire Wiz — USD 39",
+          "sent_at": "2026-10-08T02:27:19-07:00"
+        },
+        {
+          "gmail_id": "1a11a4808ac5dfec",
+          "thread_id": "1a11a4808ac5dfec",
+          "recipient": "services@jemackfacilities.com.ng",
+          "subject": "Public-page QA pack — USD 19",
+          "sent_at": "2026-10-07T23:51:31-07:00"
+        }
+      ],
+      "upper_medium": [
+        {
+          "gmail_id": "1a11b41d6e021269",
+          "thread_id": "1a117e6129111fe5",
+          "recipient": "admin@willtonpb.co.bw",
+          "subject": "Fwd: $99 before/after + quote-flow pilot for Willton",
+          "sent_at": "2026-10-08T04:24:21-07:00"
+        },
+        {
+          "gmail_id": "1a11ae7752d04fcf",
+          "thread_id": "1a11ae7752d04fcf",
+          "recipient": "info@ghappliances.co.za",
+          "subject": "Repair-intake pilot for GH Appliances — USD 149",
+          "sent_at": "2026-10-08T02:45:38-07:00"
+        },
+        {
+          "gmail_id": "1a11ae254154ac09",
+          "thread_id": "1a11ae254154ac09",
+          "recipient": "info@futuregenius-sz.com",
+          "subject": "Parent-enquiry + enrolment intake pilot — USD 149",
+          "sent_at": "2026-10-08T02:40:02-07:00"
+        },
+        {
+          "gmail_id": "1a11ae24affdacae",
+          "thread_id": "1a11ae24affdacae",
+          "recipient": "salomaovilanculo12@gmail.com",
+          "subject": "Piloto de presença moderna + pedidos personalizados — USD 149",
+          "sent_at": "2026-10-08T02:40:00-07:00"
+        },
+        {
+          "gmail_id": "1a11adf2ef4a7fc8",
+          "thread_id": "1a11adf2ef4a7fc8",
+          "recipient": "mbae685@gmail.com",
+          "subject": "Photography portfolio + booking pilot — USD 149",
+          "sent_at": "2026-10-08T02:36:36-07:00"
+        },
+        {
+          "gmail_id": "1a11add4086bae34",
+          "thread_id": "1a11add4086bae34",
+          "recipient": "njugunaalex321@gmail.com",
+          "subject": "Project-proof + quote-flow pilot — USD 149",
+          "sent_at": "2026-10-08T02:34:29-07:00"
+        },
+        {
+          "gmail_id": "1a11add36a7dc7ef",
+          "thread_id": "1a11add36a7dc7ef",
+          "recipient": "sandasabusaplumbingservices@gmail.com",
+          "subject": "Plumbing visibility + quote pilot — USD 149",
+          "sent_at": "2026-10-08T02:34:27-07:00"
+        },
+        {
+          "gmail_id": "1a11add2b995c9a2",
+          "thread_id": "1a11add2b995c9a2",
+          "recipient": "ezrangwenya4@gmail.com",
+          "subject": "Owned business front-door + quote pilot — USD 149",
+          "sent_at": "2026-10-08T02:34:22-07:00"
+        },
+        {
+          "gmail_id": "1a11adba21902b7f",
+          "thread_id": "1a11adba21902b7f",
+          "recipient": "dieselbrothersws@gmail.com",
+          "subject": "Repair-quote intake pilot — USD 99",
+          "sent_at": "2026-10-08T02:32:44-07:00"
+        },
+        {
+          "gmail_id": "1a11adb98272e5b0",
+          "thread_id": "1a11adb98272e5b0",
+          "recipient": "custom.rpblk@gmail.com",
+          "subject": "Custom-print quote intake pilot — USD 149",
+          "sent_at": "2026-10-08T02:32:41-07:00"
+        },
+        {
+          "gmail_id": "1a11ada7225e3a12",
+          "thread_id": "1a11ada7225e3a12",
+          "recipient": "ptmalomaphysio@gmail.com",
+          "subject": "Appointment-confirmation + follow-up pilot — USD 149",
+          "sent_at": "2026-10-08T02:31:26-07:00"
+        },
+        {
+          "gmail_id": "1a11ada6a36b2a9f",
+          "thread_id": "1a11ada6a36b2a9f",
+          "recipient": "koomevti56@gmail.com",
+          "subject": "Course-enquiry + enrolment intake pilot — USD 149",
+          "sent_at": "2026-10-08T02:31:24-07:00"
+        },
+        {
+          "gmail_id": "1a11ad9416505690",
+          "thread_id": "1a11ad9416505690",
+          "recipient": "info.zonita@gmail.com",
+          "subject": "Direct-reservation intake pilot for Zonita — USD 149",
+          "sent_at": "2026-10-08T02:30:07-07:00"
+        },
+        {
+          "gmail_id": "1a11ad9378761511",
+          "thread_id": "1a11ad9378761511",
+          "recipient": "cakesbyphlo@gmail.com",
+          "subject": "Custom-cake order intake pilot — USD 99",
+          "sent_at": "2026-10-08T02:30:05-07:00"
+        },
+        {
+          "gmail_id": "1a11ad7c6d7f89e3",
+          "thread_id": "1a11ad7c6d7f89e3",
+          "recipient": "alihairnails@gmail.com",
+          "subject": "Booking + contact-flow pilot for Ali Hair & Nail — USD 99",
+          "sent_at": "2026-10-08T02:28:31-07:00"
+        },
+        {
+          "gmail_id": "1a11ad6c3257fa2c",
+          "thread_id": "1a11ad6c3257fa2c",
+          "recipient": "delsimontessorischool@gmail.com",
+          "subject": "Parent-enquiry + school-tour intake pilot — USD 149",
+          "sent_at": "2026-10-08T02:27:24-07:00"
+        }
+      ],
+      "upper": [
+        {
+          "gmail_id": "1a11b5bf978ae87c",
+          "thread_id": "1a11b5bf978ae87c",
+          "recipient": "info@aahorizon.com",
+          "subject": "AAA Horizon B2B catalogue + enquiry pilot — USD 499",
+          "sent_at": "2026-10-08T04:52:54-07:00"
+        },
+        {
+          "gmail_id": "1a11b5be17e63065",
+          "thread_id": "1a11b5be17e63065",
+          "recipient": "info@water.co.bw",
+          "subject": "Puritech product + current-price enquiry pilot — USD 499",
+          "sent_at": "2026-10-08T04:52:48-07:00"
+        },
+        {
+          "gmail_id": "1a11b5bd9b7acc66",
+          "thread_id": "1a11b5bd9b7acc66",
+          "recipient": "info@globalreachgh.com",
+          "subject": "GlobalReach three-division enquiry front-door pilot — USD 499",
+          "sent_at": "2026-10-08T04:52:46-07:00"
+        },
+        {
+          "gmail_id": "1a11b5ab7d7cdab7",
+          "thread_id": "1a11b5ab7d7cdab7",
+          "recipient": "sales@afriwellgroup.com",
+          "subject": "Afriwell B2B capability + enquiry pilot — USD 499",
+          "sent_at": "2026-10-08T04:51:32-07:00"
+        },
+        {
+          "gmail_id": "1a11b5aae6218e08",
+          "thread_id": "1a11b5aae6218e08",
+          "recipient": "hello@waru-plus.com",
+          "subject": "Waru-Plus launch front-door pilot — USD 499",
+          "sent_at": "2026-10-08T04:51:30-07:00"
+        },
+        {
+          "gmail_id": "1a11b4eb72f4381d",
+          "thread_id": "1a118122fd4e2b52",
+          "recipient": "geral@villarch-studio.com",
+          "subject": "Piloto de intake e qualificação de projetos — USD 499",
+          "sent_at": "2026-10-08T04:38:25-07:00"
+        },
+        {
+          "gmail_id": "1a11b4eaddcc506d",
+          "thread_id": "1a11813361292380",
+          "recipient": "hola@paulinagutierrez.mx",
+          "subject": "Piloto de conversión para bodas de autor — USD 499",
+          "sent_at": "2026-10-08T04:38:23-07:00"
+        },
+        {
+          "gmail_id": "1a11b4ea7c16c32c",
+          "thread_id": "1a1181380d534ec3",
+          "recipient": "coloniaestudio.di@gmail.com",
+          "subject": "Piloto de intake y conversión de proyectos — USD 499",
+          "sent_at": "2026-10-08T04:38:21-07:00"
+        },
+        {
+          "gmail_id": "1a11b4e6365ac01c",
+          "thread_id": "1a1183d2e98f723f",
+          "recipient": "info@smartmindsecd.co.za",
+          "subject": "Parent-enquiry → enrolment pilot for Smart Minds — USD 499",
+          "sent_at": "2026-10-08T04:38:04-07:00"
+        },
+        {
+          "gmail_id": "1a11b4e5707efe58",
+          "thread_id": "1a1183d37efa2a60",
+          "recipient": "rhemadrivingschool@gmail.com",
+          "subject": "Learner-enquiry → lesson scheduling pilot for Rhema — USD 499",
+          "sent_at": "2026-10-08T04:38:01-07:00"
+        },
+        {
+          "gmail_id": "1a11b4e48beed2b6",
+          "thread_id": "1a11a343e3b6c44c",
+          "recipient": "careywangaretracy@gmail.com",
+          "subject": "Mobile-vet appointment + follow-up pilot for Paws & Hooves — USD 499",
+          "sent_at": "2026-10-08T04:37:57-07:00"
+        },
+        {
+          "gmail_id": "1a11b4e4099670ac",
+          "thread_id": "1a11a3449266a80b",
+          "recipient": "info@pulsevet.co.za",
+          "subject": "Appointment + preventive-care follow-up pilot for Pulse Vet — USD 499",
+          "sent_at": "2026-10-08T04:37:55-07:00"
+        },
+        {
+          "gmail_id": "1a11b4e38b97f08d",
+          "thread_id": "1a11a3450d596f8c",
+          "recipient": "southbroom.vet@outlook.com",
+          "subject": "Client booking + follow-up pilot for Southbroom Vet — USD 499",
+          "sent_at": "2026-10-08T04:37:53-07:00"
+        },
+        {
+          "gmail_id": "1a11b4e31cbcb4e2",
+          "thread_id": "1a11a36b448bba48",
+          "recipient": "theflowershopbytsl@gmail.com",
+          "subject": "Event-enquiry + client follow-up pilot for TSL — USD 499",
+          "sent_at": "2026-10-08T04:37:51-07:00"
+        },
+        {
+          "gmail_id": "1a11b4e1f1b57f13",
+          "thread_id": "1a11ace00c89b364",
+          "recipient": "vippetslimited@gmail.com",
+          "subject": "Pet-booking + repeat-grooming pilot for VIP Pets — USD 499",
+          "sent_at": "2026-10-08T04:37:47-07:00"
+        },
+        {
+          "gmail_id": "1a11b4e168c25294",
+          "thread_id": "1a11ace0bd278de1",
+          "recipient": "info@door2doorlaundry.co.za",
+          "subject": "Order + tracking conversion pilot for Door2Door Laundry — USD 499",
+          "sent_at": "2026-10-08T04:37:44-07:00"
+        },
+        {
+          "gmail_id": "1a11b4dfae6de793",
+          "thread_id": "1a11ace1c3c70895",
+          "recipient": "bathhouseglenwood@gmail.com",
+          "subject": "Repeat-grooming booking pilot for Bath House — USD 499",
+          "sent_at": "2026-10-08T04:37:37-07:00"
+        },
+        {
+          "gmail_id": "1a11b4df005fb7a8",
+          "thread_id": "1a11ace2614008f8",
+          "recipient": "info@lennixgym.co.ke",
+          "subject": "Trial → membership retention pilot for Lennix Gym — USD 499",
+          "sent_at": "2026-10-08T04:37:35-07:00"
+        }
+      ]
+    },
+    "excluded_same_org_continuation": {
+      "gmail_id": "1a11b4007a6cddf9",
+      "recipient": "elizabeth.marks@slh.com",
+      "reason": "Referral/continuation inside an already-contacted organization; preserved as valid progression but not counted as another unique initial offer."
+    }
+  },
+  "cumulative_corrected": {
+    "smalls": 77,
+    "medium": 35,
+    "upper_medium": 91,
+    "upper": 62,
+    "total": 265,
+    "paid_usd": 0
+  },
+  "response_evidence": {
+    "new_substantive_human_response": false,
+    "new_positive_response": false,
+    "new_acceptance": false,
+    "new_conversion": false,
+    "new_payment": false,
+    "automated_acknowledgement": {
+      "sender": "HumanSignal Contractor Support",
+      "gmail_id": "1a11b4832642efbe",
+      "subject": "[Request received]",
+      "classification": "AUTO_RESPONSE / request acknowledged; not buyer acceptance or conversion"
+    }
+  },
+  "t10": {
+    "supposed": "Prioritize warm/due work, consume Radial redirect, send Jojo's single permitted follow-up, reconcile high-value draft execution, suppress hard failures, and leave an attributable receipt.",
+    "actual": "Jojo follow-up sent once in-thread; Radial continuation verified; high-value and other concurrent exact-priced sends reconciled; 25 hard failures audited; cumulative count corrected instead of carrying 230 forward unchanged.",
+    "proves": "Exact Gmail SENT IDs, thread IDs, bounce IDs, recipient coordinates, and durable GitHub readback.",
+    "changed": "Warm/due actions were progressed and the cumulative scoreboard was restated under the no-bounce counting rule.",
+    "remains_unproven": "Delivery for unbounced messages, human response to the new actions, acceptance, conversion, invoice/receivable, and payment. PAID remains USD 0."
+  }
+}
