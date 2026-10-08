@@ -1,0 +1,108 @@
+{
+  "receipt_id": "PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T125700Z",
+  "generated_at": "2026-10-08T12:57:00Z",
+  "execution_origin": "SCHEDULER_AUTOMATION",
+  "line": "ONE iSCOPE->PRI / Last Breath writer",
+  "prior_durable_state": {
+    "path": "overdrive/pri/last_breath/PRI-LAST-BREATH-EXTENSION-SEGMENT-20261008T115200Z.json",
+    "commit": "c3ba8fa1b9ff63ceabfc6cbce7147c64d191a0c3",
+    "counts": {
+      "smalls": 76,
+      "medium": 34,
+      "upper_medium": 91,
+      "upper": 62,
+      "total": 263,
+      "paid_usd": 0
+    }
+  },
+  "priority_sweep": {
+    "substantive_inbound": false,
+    "accepted_or_discussing_scope_price": false,
+    "due_follow_up_with_new_evidence": false,
+    "notes": [
+      "Jojo single permitted follow-up already sent in prior wake; no new inbound response.",
+      "Radial redirect already progressed in prior wake; no new inbound response.",
+      "HumanSignal request acknowledgment is automated support intake, not buyer acceptance.",
+      "TinyFish market-news email is not a buyer response."
+    ]
+  },
+  "reconciled_post_receipt_sends": [
+    {
+      "gmail_id": "1a11b5bf10af5695",
+      "recipient": "info@harker.co.za",
+      "subject": "Harker Attorneys professional front-door pilot — USD 399",
+      "tier": "UPPER",
+      "exact_price_usd": 399,
+      "sent_label_verified": true,
+      "hard_bounce_after_prior_receipt": false,
+      "counted_increment": 1
+    },
+    {
+      "gmail_id": "1a11b5be6e81b421",
+      "recipient": "martine@myohealth.co.za",
+      "subject": "Myohealth branded booking front-door pilot — USD 299",
+      "tier": "UPPER",
+      "exact_price_usd": 299,
+      "sent_label_verified": true,
+      "hard_bounce_after_prior_receipt": false,
+      "counted_increment": 1
+    }
+  ],
+  "material_action": {
+    "account": "DPM Plumbing, Solar and Gas",
+    "source_url": "https://dpmplumbing.co.za/",
+    "contact_verification": {
+      "recipient": "info@dpmplumbing.co.za",
+      "official_site_currently_lists_coordinate": true,
+      "official_site_phone": "012 881 9865 / 082 631 9104",
+      "verified_at": "2026-10-08T12:55:00Z"
+    },
+    "gmail_dedupe": {
+      "query_scope": "all non-trash Gmail history for recipient plus live draft",
+      "prior_sent_message_found": false,
+      "existing_unsent_draft_id": "r5119352061018901388"
+    },
+    "buyer_value": "Reduce repetitive collection, scheduling and follow-up work across emergency and scheduled plumbing/gas/solar jobs.",
+    "offer": "One working quote-to-review customer journey: job/location/urgency/photo intake, emergency routing, estimate-ready brief, acknowledgement/reminder, callback queue, satisfaction and review/referral follow-up.",
+    "tier": "UPPER",
+    "exact_price_usd": 499,
+    "payment_link_in_first_contact": false,
+    "gmail_send_receipt": {
+      "id": "1a11b990cc58fafc",
+      "thread_id": "1a117ff79b42df2b",
+      "label_ids": [
+        "SENT"
+      ]
+    },
+    "lifecycle": "OFFERED / SENT_TO_PROVIDER",
+    "counted_increment": 1
+  },
+  "provider_state": {
+    "immediate_post_send_search": "RATE_LIMIT_EXCEEDED",
+    "classification": "TRANSIENT",
+    "implication": "SENT label is proven by send response; downstream delivery and absence of a later bounce are not yet proven."
+  },
+  "cumulative_corrected": {
+    "smalls": 76,
+    "medium": 34,
+    "upper_medium": 91,
+    "upper": 65,
+    "total": 266,
+    "paid_usd": 0
+  },
+  "response_evidence": {
+    "new_substantive_human_response": false,
+    "new_positive_response": false,
+    "new_acceptance": false,
+    "new_conversion": false,
+    "new_invoice": false,
+    "new_payment": false
+  },
+  "t10": {
+    "supposed": "Prioritize warm/due state, then send the strongest executable high-value draft only after current official contact verification, Gmail dedupe, buyer-value qualification, and scope review.",
+    "actual": "No new warm human response existed. Two post-receipt UPPER sends were reconciled, and the DPM USD 499 concrete pilot was current-verified, deduped, reviewed, and sent through the one existing writer.",
+    "proves": "Official DPM contact page, Gmail history query, draft readback, Gmail SENT receipt 1a11b990cc58fafc, and this durable receipt.",
+    "changed": "Three UPPER offers are added to the corrected cumulative ledger, moving total counted penetration from 263 to 266.",
+    "remains_unproven": "Delivery for the DPM message, buyer response, acceptance, ordered/contracted state, invoice/receivable, and payment. PAID remains USD 0."
+  }
+}
