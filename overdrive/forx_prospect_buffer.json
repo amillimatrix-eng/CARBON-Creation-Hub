@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T17:50:00+02:00",
+  "last_updated": "2026-10-08T17:57:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -10416,6 +10416,292 @@
       ],
       "source": "https://play.google.com/store/apps/details?id=mk.platero.app",
       "payer_hypothesis": "EBARION DOOEL / Platero product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-549",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BRIQ DIGITAL AFRICA / Ziing Merchant",
+      "surface": "Tanzania delivery-platform merchant operations; package com.ziingdelivery.merchant",
+      "observed_need": "Orders, catalogue, barcode stock, promotions, revenue and payouts for stores/restaurants/supermarkets.",
+      "outcome_space": [
+        "merchant operations",
+        "inventory",
+        "delivery",
+        "payouts"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.ziingdelivery.merchant",
+      "payer_hypothesis": "BRIQ DIGITAL AFRICA / Ziing Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-550",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "K2 Telecom / Digii Merchant",
+      "surface": "Uganda merchant payments; package com.digii.merchant",
+      "observed_need": "QR payments, payment requests, sales history, digital receipts, analytics and earnings withdrawal.",
+      "outcome_space": [
+        "merchant payments",
+        "QR",
+        "receipts",
+        "analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.digii.merchant",
+      "payer_hypothesis": "K2 Telecom / Digii Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-551",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "PAISHA APP LIMITED / Pamoja B2B",
+      "surface": "Tanzania wholesale/retail B2B marketplace; package com.pamoja.customer",
+      "observed_need": "Verified suppliers, wholesaler-retailer trade, secure payments and live product listings.",
+      "outcome_space": [
+        "B2B marketplace",
+        "wholesale",
+        "supplier network"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.pamoja.customer",
+      "payer_hypothesis": "PAISHA APP LIMITED / Pamoja B2B product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-552",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Zata Global Limited / Zata EBM",
+      "surface": "Rwanda fiscal POS/invoicing; package com.zata.app",
+      "observed_need": "RRA-compliant invoices, stock, supplier/customer contacts, payments, analytics and multi-branch operations.",
+      "outcome_space": [
+        "POS",
+        "fiscal invoicing",
+        "inventory",
+        "multi-branch"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.zata.app",
+      "payer_hypothesis": "Zata Global Limited / Zata EBM product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-553",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Vodacom Tanzania PLC / M-PESA Business",
+      "surface": "Tanzania merchant mobile money; package com.vodacom.mpesa.tz.business",
+      "observed_need": "Sales/balance tracking, supplier and bill payments, withdrawals, store/staff management and multi-till rollup.",
+      "outcome_space": [
+        "merchant payments",
+        "supplier payments",
+        "staff",
+        "multi-store"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.vodacom.mpesa.tz.business",
+      "payer_hypothesis": "Vodacom Tanzania PLC / M-PESA Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-554",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Cosmic Wire / ZambiaTrade",
+      "surface": "Zambia trader/farmer marketplace; package com.zambiatrade.app",
+      "observed_need": "Storefronts, listings/auctions, buyer-seller chat, transport requests, delivery tracking and order management.",
+      "outcome_space": [
+        "marketplace",
+        "agri trade",
+        "logistics",
+        "orders"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.zambiatrade.app",
+      "payer_hypothesis": "Cosmic Wire / ZambiaTrade product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-555",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "AlgoLab Africa / Letaa",
+      "surface": "Tanzania merchant-driver delivery platform; package africa.algolab.letaa_app",
+      "observed_need": "Merchant catalogue/orders, dispatch, balances plus driver jobs and vehicle-based delivery.",
+      "outcome_space": [
+        "merchant operations",
+        "delivery",
+        "driver network",
+        "catalogue"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=africa.algolab.letaa_app",
+      "payer_hypothesis": "AlgoLab Africa / Letaa product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-556",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Quickdrop / phix Tz",
+      "surface": "Tanzania local-commerce operations; package com.quickdrop.businessapp",
+      "observed_need": "Seller/agent/dropper roles, orders, inventory, rider dispatch, proof-of-delivery, earnings and reports.",
+      "outcome_space": [
+        "local commerce",
+        "inventory",
+        "delivery",
+        "role controls"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.quickdrop.businessapp",
+      "payer_hypothesis": "Quickdrop / phix Tz product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-557",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "INVICT TECHNOLOGY COMPANY LIMITED / BodaLink Business",
+      "surface": "Tanzania marketplace merchant operations; package com.bodalinkmerchant.app",
+      "observed_need": "Multi-shop products/inventory, orders, payouts, sales reports, operating hours and merchant verification.",
+      "outcome_space": [
+        "merchant marketplace",
+        "inventory",
+        "payouts",
+        "multi-shop"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.bodalinkmerchant.app",
+      "payer_hypothesis": "INVICT TECHNOLOGY COMPANY LIMITED / BodaLink Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-558",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Twende Tech / Twende Venda",
+      "surface": "Tanzania merchant delivery; package twendetech.venda",
+      "observed_need": "Orders, menu, delivery tracking, staff accounts, merchant onboarding and local M-Pesa/bodaboda workflows.",
+      "outcome_space": [
+        "merchant operations",
+        "delivery",
+        "staff",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=twendetech.venda",
+      "payer_hypothesis": "Twende Tech / Twende Venda product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-559",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ROCKET TECHNOLOGIES LIMITED / UTrade B2B",
+      "surface": "Tanzania wholesale marketplace; package com.utrade.buyer",
+      "observed_need": "Supplier/distributor/retailer B2B trade with supplier reviews and wholesale discovery.",
+      "outcome_space": [
+        "B2B marketplace",
+        "suppliers",
+        "wholesale"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.utrade.buyer",
+      "payer_hypothesis": "ROCKET TECHNOLOGIES LIMITED / UTrade B2B product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-560",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "MsosiDrop / Msosidrop Merchant",
+      "surface": "Tanzania WhatsApp-commerce merchant OS; package com.dukastore",
+      "observed_need": "AI-assisted WhatsApp ordering, merchant order handling, payment, delivery and follow-up workflows.",
+      "outcome_space": [
+        "merchant operations",
+        "WhatsApp commerce",
+        "orders",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dukastore",
+      "payer_hypothesis": "MsosiDrop / Msosidrop Merchant product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-561",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "BRICK-WORLD ZAMBIA LIMITED / ConstructLink",
+      "surface": "Zambia contractor/service-provider marketplace; package com.iconstruct_link.users",
+      "observed_need": "Job posting, provider proposals, scheduling, payments, invoices and verified local-professional discovery.",
+      "outcome_space": [
+        "contractor network",
+        "services",
+        "procurement",
+        "invoicing"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.iconstruct_link.users",
+      "payer_hypothesis": "BRICK-WORLD ZAMBIA LIMITED / ConstructLink product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-562",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Mytalu Zambia Limited / Mytalu Business",
+      "surface": "Zambia business finance/operations; package com.dej123.mytalubusinessmobileapp",
+      "observed_need": "Payments, budgets, inventory, customers, analytics, sub-balances and KYB onboarding.",
+      "outcome_space": [
+        "business finance",
+        "inventory",
+        "customers",
+        "KYB"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dej123.mytalubusinessmobileapp",
+      "payer_hypothesis": "Mytalu Zambia Limited / Mytalu Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-563",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tangazoletu / Fariji Merchants",
+      "surface": "Kenya merchant payments; package com.farijimerchant.tangazoletu",
+      "observed_need": "Payment acceptance, transaction tracking and business performance visibility.",
+      "outcome_space": [
+        "merchant payments",
+        "transactions",
+        "analytics"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.farijimerchant.tangazoletu",
+      "payer_hypothesis": "Tangazoletu / Fariji Merchants product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-564",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HDM Business",
+      "surface": "Rwanda-linked marketplace; package com.dussoft.hdm",
+      "observed_need": "Verified sellers, order handling, customer messaging, earnings and mobile-money/bank-transfer visibility.",
+      "outcome_space": [
+        "marketplace",
+        "seller operations",
+        "customer messaging",
+        "payments"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dussoft.hdm",
+      "payer_hypothesis": "HDM Business product/business owner",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
+      "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-565",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "HEFA Vendor",
+      "surface": "Nigeria/Kenya marketplace vendor operations; package com.hefa.vendor",
+      "observed_need": "Store setup, products/services, order fulfilment, wallet/payout visibility, promotions and reports.",
+      "outcome_space": [
+        "marketplace",
+        "vendor operations",
+        "payouts",
+        "promotions"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.hefa.vendor",
+      "payer_hypothesis": "HEFA Vendor product/business owner",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Exact package and public operating surface evidenced; unresolved commercial pain is not presumed.",
       "consumer_action": "iSCOPE verify current organization identity, buyer route, active need and commercial relevance before PRI action."
     }
