@@ -1,0 +1,18 @@
+{
+  "checkpoint_id": "forx-20261009-100k-01",
+  "exact_node_count_readback": 100000,
+  "new_source_record_ids_vs_50k": 50000,
+  "partition_count": 100,
+  "partition_hashes_verified": true,
+  "previous_50k_source_record_ids": 50000,
+  "previous_durable_checkpoint": "overdrive/forx_50k_proof/forx-20261007T162100Z",
+  "receipt_type": "FORX_SCALE_DURABLE_PERSISTENCE_READBACK",
+  "retained_source_record_ids_vs_50k": 50000,
+  "run_id": "forx-20261009-100k-01",
+  "selection_sha256": "8262696f71ccb9ff56144a67d73f2bb8c71746e9854466e1b8b611af026979db",
+  "source_file_sha256": "4022ba76d34abbcd7c7b32597a6f968f51edfa4fb262bf04f15c109624ae3db2",
+  "source_revision": "2026-10-08",
+  "status": "PASS_DURABLE_SCALE_DELTA_VERIFIED",
+  "target": 100000,
+  "unique_source_record_ids": 100000
+}
