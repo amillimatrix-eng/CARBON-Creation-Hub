@@ -163,6 +163,21 @@
       "id": "G32",
       "name": "Dynamic Intention focus",
       "test": "At material state changes the engine updates Measured Intent/hypothesis weights and prioritizes search using probability-weighted utility, decision sensitivity and cost-of-error while retaining alternatives that could materially change the outcome."
+    },
+    {
+      "id": "G33",
+      "name": "Decisive primary resolution",
+      "test": "When evidence supports a useful decision-stable leading interpretation, Search returns the strongest defensible primary result without forcing a clarification question merely because alternate hypotheses still exist."
+    },
+    {
+      "id": "G34",
+      "name": "Bounded intent pivot affordances",
+      "test": "When one or two materially supported alternate measured-intent outcomes remain plausibly competitive or decision-sensitive, Search exposes no more than two concise intent-pivot actions by default; speculative low-value branches are suppressed."
+    },
+    {
+      "id": "G35",
+      "name": "Same-session intent pivot continuation",
+      "test": "Selecting a confirmation, alternate, deviation or deeper-search pivot preserves the current session/evidence, records the pivot, updates Measured Intent/hypothesis weights, invalidates only obsolete derived state, and continues from the furthest valid state."
     }
   ],
   "build_state_values": [
@@ -190,5 +205,11 @@
     "correction_rule": "ACTIVE ERROR != END SEARCH; rollback affected derived state, preserve valid evidence, reweight, continue.",
     "prioritization": "probability × intent utility × decision sensitivity × cost of being wrong",
     "surface_rule": "same core engine; context/scope/permissions/actions/disclosure vary by caller"
+  },
+  "intent_branch_affordances": {
+    "primary_rule": "resolve first; do not interrogate first when a defensible primary result exists",
+    "default_max_alternate_pivots": 2,
+    "pivot_rule": "offer only materially supported parallel outcomes that could plausibly improve or materially change the user's measured-intent outcome",
+    "continuation_rule": "pivots continue the existing session and evidence chain; they do not silently rewrite history"
   }
 }
