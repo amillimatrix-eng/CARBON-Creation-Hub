@@ -1223,3 +1223,14 @@ A proposal may remain operationally unfinished after classification, but it may 
 - **Supersession rule:** old failure evidence remains true as history even after repair; current state comes from the latest explicit disposition/readback, not from the most alarming historical sentence.
 - **Consumer requirement:** ROOT, MASTER/Librarian, FORX, iSCOPE, PRI, Banker, Reaper, builders and any continuity consumer must apply this status-precedence contract before acting on Intake-derived state.
 - **Anti-drift invariant:** `SEARCH MATCH != CURRENT STATUS`. `HISTORICAL STATUS != LIVE STATE`. `INTAKE CLOSED != EXECUTION COMPLETE`.
+
+
+## 2026-10-09 — CARBON° Search Birth-State Dependency Misclassification Drift
+- **Intake ID / Notion source:** `3f48f8b5-6cd7-81e7-a135-f93c5deb31aa`
+- **Disposition:** **ACCEPTED / MERGED — DRIFT + BUILD-CONTROL DISCIPLINE.**
+- **Invariant:** `REQUIRED AT RUNTIME != REQUIRED TO PRE-EXIST THE BUILD.`
+- **Dependency classification:** every supposed build dependency must be classified as `PRE-EXISTING INPUT | BUILD OUTPUT | EXTERNAL EXECUTION DEPENDENCY | UNKNOWN` before it can block implementation.
+- **CARBON° Search consequence:** Marketplace contract, provider-neutral router contract, retrieval-adapter contract, ACL model, deployment-config contract and Matrix-wide invocation contract are BUILD OUTPUTS TO CREATE under the authorized initiative unless an actually existing authoritative component is evidenced and reusable.
+- **HOLD rule:** only a specifically evidenced unavailable external credential/permission/provider requirement may place the affected gate on HOLD.
+- **Continuity repair:** GitHub issue #16 now points to current default-branch artifacts and explicitly treats historical commit hashes as provenance only.
+- **Intake state:** CLOSED. Execution remains OPEN under issue #16 until the frozen current 35/35 mandatory-gate build acceptance and deployed-runtime readback pass.
