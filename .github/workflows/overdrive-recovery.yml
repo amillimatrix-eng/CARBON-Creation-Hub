@@ -66,5 +66,17 @@ jobs:
           assert receipts, "no durable receipts"
           claims=json.load(open("overdrive/claims.json"))
           assert "claims" in claims
+          opportunities=json.load(open("overdrive/opportunities.json"))
+          gated={"NO_CONTACT","REJECTED"}
+          readiness_gates={"WAITING","BLOCKED","HUMAN_PROVIDER_GATE","HUMAN_ONLY_GATE","OWNER_GATE","PROVIDER_GATE"}
+          for claim in claims["claims"].values():
+              if claim.get("status") != "READY":
+                  continue
+              record=opportunities.get("records",{}).get(claim.get("opportunity_key"),{})
+              state=str(record.get("state","")).upper()
+              readiness=str(record.get("execution_readiness") or record.get("readiness") or "").upper()
+              assert state not in gated, f"suppressed state routed READY: {state} {claim.get('opportunity_key')}"
+              assert not readiness.startswith(("HOLD","SUPPRESSED")), f"held/suppressed readiness routed READY: {readiness} {claim.get('opportunity_key')}"
+              assert readiness not in readiness_gates, f"gated readiness routed READY: {readiness} {claim.get('opportunity_key')}"
           print("OVERDRIVE minute execution window PASS", len(receipts), "claims", claims.get("ready_count",0))
           PY
