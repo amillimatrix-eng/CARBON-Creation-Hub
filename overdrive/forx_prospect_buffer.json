@@ -18172,6 +18172,222 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-869",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://cga.omegaconseil.net/",
+      "organization": "OMEGA CONSEIL / CGA",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Republic of Congo",
+      "region": "Central Africa",
+      "sector": "accounting/tax/SME advisory",
+      "business_model": "local professional services",
+      "surface": "Brazzaville professional practice explicitly supporting SMEs with accounting, tax, legal, management, financing and training.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://cga.omegaconseil.net/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://cga.omegaconseil.net/",
+          "source": "https://cga.omegaconseil.net/"
+        }
+      ],
+      "current_public_evidence": "Brazzaville professional practice explicitly supporting SMEs with accounting, tax, legal, management, financing and training.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-870",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cairq.com/",
+      "organization": "CAIRQ CONSEIL",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Republic of Congo",
+      "region": "Central Africa",
+      "sector": "accounting/audit/tax/advisory",
+      "business_model": "local professional services",
+      "surface": "Two-partner CEMAC accounting and advisory practice operating from Brazzaville and Pointe-Noire.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cairq.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cairq.com/",
+          "source": "https://www.cairq.com/"
+        }
+      ],
+      "current_public_evidence": "Two-partner CEMAC accounting and advisory practice operating from Brazzaville and Pointe-Noire.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-871",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.egworldwidelawfirm.com/",
+      "organization": "WORLDWIDE LAW FIRM S.L.",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Equatorial Guinea",
+      "region": "Central Africa",
+      "sector": "legal/compliance advisory",
+      "business_model": "local professional services",
+      "surface": "Malabo legal practice providing general advisory, corporate compliance, legal audit and representation.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.egworldwidelawfirm.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.egworldwidelawfirm.com/",
+          "source": "https://www.egworldwidelawfirm.com/"
+        }
+      ],
+      "current_public_evidence": "Malabo legal practice providing general advisory, corporate compliance, legal audit and representation.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-872",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.latogaabogadosyasesores.com/",
+      "organization": "LA TOGA Abogados & Asesores",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Equatorial Guinea",
+      "region": "Central Africa",
+      "sector": "legal/tax/accounting advisory",
+      "business_model": "local professional services",
+      "surface": "Bata professional practice established in 2023 providing legal, tax, labour and accounting advisory services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.latogaabogadosyasesores.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.latogaabogadosyasesores.com/",
+          "source": "https://www.latogaabogadosyasesores.com/"
+        }
+      ],
+      "current_public_evidence": "Bata professional practice established in 2023 providing legal, tax, labour and accounting advisory services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-873",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://santaisabel-abogados.com/",
+      "organization": "Santa Isabel Abogados & Consultores",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Equatorial Guinea",
+      "region": "Central Africa",
+      "sector": "legal/consulting",
+      "business_model": "local professional services",
+      "surface": "Malabo legal and consulting practice with direct public contact surface.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://santaisabel-abogados.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://santaisabel-abogados.com/",
+          "source": "https://santaisabel-abogados.com/"
+        }
+      ],
+      "current_public_evidence": "Malabo legal and consulting practice with direct public contact surface.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-874",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.eligeconsultoria.com/",
+      "organization": "ELIGE Consultoría",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Equatorial Guinea",
+      "region": "Central Africa",
+      "sector": "accounting/business consulting",
+      "business_model": "local professional services",
+      "surface": "Professional consulting practice operating in Malabo and Bata with accounting and enterprise-advisory services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.eligeconsultoria.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.eligeconsultoria.com/",
+          "source": "https://www.eligeconsultoria.com/"
+        }
+      ],
+      "current_public_evidence": "Professional consulting practice operating in Malabo and Bata with accounting and enterprise-advisory services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-875",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://alogolawfirm.org/",
+      "organization": "Alogo Law Firm",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Equatorial Guinea",
+      "region": "Central Africa",
+      "sector": "business/commercial law",
+      "business_model": "local professional services",
+      "surface": "Malabo commercial and business-law practice covering legal, tax, corporate and compliance services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://alogolawfirm.org/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://alogolawfirm.org/",
+          "source": "https://alogolawfirm.org/"
+        }
+      ],
+      "current_public_evidence": "Malabo commercial and business-law practice covering legal, tax, corporate and compliance services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-876",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://garcianzambi.com/",
+      "organization": "García-Nzambí & Asociados",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Equatorial Guinea",
+      "region": "Central Africa",
+      "sector": "business law/tax advisory",
+      "business_model": "local professional services",
+      "surface": "Malabo-based local law practice helping businesses with legal and tax decisions in Equatorial Guinea.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://garcianzambi.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://garcianzambi.com/",
+          "source": "https://garcianzambi.com/"
+        }
+      ],
+      "current_public_evidence": "Malabo-based local law practice helping businesses with legal and tax decisions in Equatorial Guinea.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -18229,21 +18445,20 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-CAMEROON-GABON-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-CONGO-EQUATORIAL-GUINEA",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-848",
-        "FORX-PROSPECT-20261009-849",
-        "FORX-PROSPECT-20261009-850",
-        "FORX-PROSPECT-20261009-851",
-        "FORX-PROSPECT-20261009-852",
-        "FORX-PROSPECT-20261009-853",
-        "FORX-PROSPECT-20261009-854",
-        "FORX-PROSPECT-20261009-855",
-        "FORX-PROSPECT-20261009-856",
-        "FORX-PROSPECT-20261009-857",
-        "FORX-PROSPECT-20261009-858"
+        "FORX-PROSPECT-20261009-859",
+        "FORX-PROSPECT-20261009-860",
+        "FORX-PROSPECT-20261009-861",
+        "FORX-PROSPECT-20261009-862",
+        "FORX-PROSPECT-20261009-863",
+        "FORX-PROSPECT-20261009-864",
+        "FORX-PROSPECT-20261009-865",
+        "FORX-PROSPECT-20261009-866",
+        "FORX-PROSPECT-20261009-867",
+        "FORX-PROSPECT-20261009-868"
       ]
     },
     "consumed_sources": [
@@ -18253,74 +18468,78 @@
       },
       {
         "id": "3f28f8b56cd781bd945dcd8630253ef8",
-        "revision": "FORX-FIRST-BREATH-WEST-AFRICA-CHECKPOINT-20261009-04"
+        "revision": "FORX-FIRST-BREATH-CENTRAL-AFRICA-CHECKPOINT-20261009-05"
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "1d04cba466c853c439f7cf6301567e7ca936d5fa"
+        "revision": "c83e0c053a662488fc1e3e36f8a139dad43ed650"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "Cameroon/Gabon lateral",
-        "country-first anti-starvation",
-        "SMME-first",
-        "corporates index-only"
+        "Republic of Congo / Equatorial Guinea weak-country lateral",
+        "failed first pass != exhausted",
+        "country-first anti-starvation"
       ],
-      "changed_action": "Executed the saved Cameroon/Gabon lateral with SME-oriented local accounting, advisory and boutique enterprise-support practices while leaving international-network firms as context.",
+      "changed_action": "Executed the harder Central-Africa coordinate instead of returning to easier Cameroon/Gabon; staged only operator-level official sources and kept government/bar-association evidence as rails.",
       "source_pointers": [
         "weighted continuity revision 31",
+        "Root Intake checkpoint 05",
         "prior receipt next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Cameroon",
-        "Gabon"
+        "Republic of Congo",
+        "Equatorial Guinea"
       ],
       "sector": [
         "accounting",
         "tax",
-        "business creation",
         "SME advisory",
-        "legal/compliance"
+        "business law",
+        "compliance"
       ],
       "model": "local professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 10,
-      "candidates_staged_pending_ingestion": 10,
+      "candidate_exact_keys_discovered": 8,
+      "candidates_staged_pending_ingestion": 8,
+      "network_rails_discovered": 2,
       "verified_graph_delta_claimed": 0,
-      "explored": 10,
+      "explored": 8,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-859",
-      "FORX-PROSPECT-20261009-860",
-      "FORX-PROSPECT-20261009-861",
-      "FORX-PROSPECT-20261009-862",
-      "FORX-PROSPECT-20261009-863",
-      "FORX-PROSPECT-20261009-864",
-      "FORX-PROSPECT-20261009-865",
-      "FORX-PROSPECT-20261009-866",
-      "FORX-PROSPECT-20261009-867",
-      "FORX-PROSPECT-20261009-868"
+      "FORX-PROSPECT-20261009-869",
+      "FORX-PROSPECT-20261009-870",
+      "FORX-PROSPECT-20261009-871",
+      "FORX-PROSPECT-20261009-872",
+      "FORX-PROSPECT-20261009-873",
+      "FORX-PROSPECT-20261009-874",
+      "FORX-PROSPECT-20261009-875",
+      "FORX-PROSPECT-20261009-876"
+    ],
+    "network_result_keys": [
+      "url:https://www.entreprises.gouv.cg/",
+      "url:https://barreaudebrazzaville.net/"
     ],
     "uncertainty": [
-      "Public operating surfaces do not establish unmet buyer pain, practice size or outreach consent."
+      "Republic of Congo operator yield was thinner on this source pass; country remains open for new surfaces rather than exhausted.",
+      "Public operating surfaces do not establish unmet buyer pain, staff size or outreach consent."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Republic of Congo / Equatorial Guinea small professional practices",
-        "why": "Continue Central-Africa weak-country rotation."
+        "coordinate": "Central African Republic / Chad small professional operators",
+        "why": "Continue zero/weak-country Central-Africa rotation."
       },
       {
-        "coordinate": "Cameroon/Gabon allied-health/training micro-practices",
-        "why": "Different professional family only after weaker-country alternatives."
+        "coordinate": "Republic of Congo alternate sources: official SME ecosystem and local directories",
+        "why": "Failed/thin first pass remains open under continuity rules."
       }
     ],
-    "chosen_next_action": "Rotate into Republic of Congo / Equatorial Guinea before deepening Cameroon/Gabon.",
-    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFIED BUYER."
+    "chosen_next_action": "Rotate into Central African Republic / Chad, preserving Congo for later alternate-source revisit.",
+    "truth_boundary": "SEARCHED_THIN != EXHAUSTED; NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH."
   }
 }
