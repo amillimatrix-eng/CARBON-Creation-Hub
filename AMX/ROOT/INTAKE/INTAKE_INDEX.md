@@ -1449,3 +1449,12 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Boundary:** staging != production graph; RAW_UNQUALIFIED != qualified; no buyer intent/revenue inferred.
 - **Still OPEN:** separate FORX downstream outcome → affected weight → changed next selection → durable readback acceptance.
 - **Intake effect:** remove #12 and #17 from active defect queue; preserve them as closed provenance.
+
+
+## 2026-10-09 — FORX #12/#17 FINAL SUPERSESSION + FRESH BUYER OUTCOMES
+- **FORX #17:** CLOSED / COMPLETED. PR #19 merge `79376997e8235b33f806c0d9c72c74d0d7c48cec`; PR #20 continuation merge `16acd2eb9df020d615bf001aca263557ea8dc137`; post-merge main CI `37972932449` SUCCESS. Current logical staging = 943 unique source keys / 943 unique current IDs / 0 implicit freshness. Six fresh Ethiopia/Eritrea records proved continued append beyond the former >1 MiB choke.
+- **FORX #12:** CLOSED / COMPLETED. The merged logical-store contract resolves current identity/freshness semantics; legacy provenance is preserved. Historical #12/#17 OPEN wording is superseded.
+- **Still OPEN FORX acceptance:** outcome → attributable weight change → changed next selection → durable readback. This is separate from #12/#17 and remains FORX-owned with bounded T-COD support where implementation is required.
+- **SakuBloom:** inbound `1a121e83d33c7b0f` = REJECTED for the current graphic-designer project; Gmail labeled `AMX/REJECTED`; canonical commercial ledger contains no SakuBloom match. Existing iSCOPE/PRI owns deduped reconciliation.
+- **Radial Entertainment:** inbound `1a115e34a78b13d0` says Carolyn Marcus left and refers business inquiries to Jonitha Keymoore. Classified WRONG_ROUTE / REFERRED_ROUTE_AVAILABLE and labeled `AMX/WRONG-ROUTE`; canonical ledger currently has no Radial/Keymoore match. Existing iSCOPE/PRI must reconcile before any referred-contact approach.
+- **Cork City Gaol:** thread `1a115302e8719783` contains explicit current-process rejection (“happy with the way we currently process booking”); canonical ledger currently has no Cork City Gaol match. No further unsolicited progression absent new evidence.
