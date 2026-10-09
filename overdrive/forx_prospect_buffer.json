@@ -14905,6 +14905,330 @@
       "payer_hypothesis": "Unverified practice owner/manager identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Time-poor professional-practice weighting applied; no regulated outcome claim.",
       "consumer_action": "iSCOPE may inspect only public-facing booking/enquiry/presentation friction; do not infer patient/client problems or regulated outcomes."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-748",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.mokhtari-avocats.com/",
+      "organization": "Mokhtari Avocats",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Morocco",
+      "region": "Africa",
+      "sector": "boutique business law",
+      "business_model": "professional practice / consultancy",
+      "surface": "Boutique Casablanca law firm founded in 2017, serving corporate/project/finance matters and maintaining links to Moroccan SMEs.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://www.mokhtari-avocats.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.mokhtari-avocats.com/",
+          "source": "https://www.mokhtari-avocats.com/"
+        }
+      ],
+      "current_public_evidence": "Boutique Casablanca law firm founded in 2017, serving corporate/project/finance matters and maintaining links to Moroccan SMEs.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-749",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://takafilawfirm.com/en/",
+      "organization": "TAKAFI LAW FIRM",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Morocco",
+      "region": "Africa",
+      "sector": "business/legal advisory",
+      "business_model": "professional practice / consultancy",
+      "surface": "Founder-led Casablanca practice offering personalized legal services to businesses and individuals.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://takafilawfirm.com/en/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://takafilawfirm.com/en/",
+          "source": "https://takafilawfirm.com/en/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Casablanca practice offering personalized legal services to businesses and individuals.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-750",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://foddalaw.evidence-prod.com/",
+      "organization": "Cabinet FODDA",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Morocco",
+      "region": "Africa",
+      "sector": "legal advisory/litigation",
+      "business_model": "professional practice / consultancy",
+      "surface": "Casablanca founder-led law office offering tailored advice and litigation for companies, professionals and individuals.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://foddalaw.evidence-prod.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://foddalaw.evidence-prod.com/",
+          "source": "https://foddalaw.evidence-prod.com/"
+        }
+      ],
+      "current_public_evidence": "Casablanca founder-led law office offering tailored advice and litigation for companies, professionals and individuals.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-751",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.sadkilawfirm.com/en",
+      "organization": "Sadki Law Firm",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Morocco",
+      "region": "Africa",
+      "sector": "business law",
+      "business_model": "professional practice / consultancy",
+      "surface": "Founder-led Casablanca business-law practice established in 2023, serving companies, executives and investors.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://www.sadkilawfirm.com/en",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.sadkilawfirm.com/en",
+          "source": "https://www.sadkilawfirm.com/en"
+        }
+      ],
+      "current_public_evidence": "Founder-led Casablanca business-law practice established in 2023, serving companies, executives and investors.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-752",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.i-team.ma/",
+      "organization": "ITEAM Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Morocco",
+      "region": "Africa",
+      "sector": "management/IT transformation consulting",
+      "business_model": "professional practice / consultancy",
+      "surface": "Independent Casablanca management and transformation consultancy with approximately 12+ collaborators and SME/enterprise project work.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://www.i-team.ma/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.i-team.ma/",
+          "source": "https://www.i-team.ma/"
+        }
+      ],
+      "current_public_evidence": "Independent Casablanca management and transformation consultancy with approximately 12+ collaborators and SME/enterprise project work.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-753",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.ipc.tn/en/",
+      "organization": "Independent Partners Consulting (IPC)",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "business development consulting",
+      "business_model": "professional practice / consultancy",
+      "surface": "Founder-led Tunis business-development consultancy supporting market entry, partner discovery and local representation.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://www.ipc.tn/en/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.ipc.tn/en/",
+          "source": "https://www.ipc.tn/en/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Tunis business-development consultancy supporting market entry, partner discovery and local representation.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-754",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://juris-med.com/",
+      "organization": "JURISMED",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "business law",
+      "business_model": "professional practice / consultancy",
+      "surface": "Tunisian-bar law firm founded in 2011 by Maya Boureghda Chebeane; tailored business-law support.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://juris-med.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://juris-med.com/",
+          "source": "https://juris-med.com/"
+        }
+      ],
+      "current_public_evidence": "Tunisian-bar law firm founded in 2011 by Maya Boureghda Chebeane; tailored business-law support.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-755",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://medlar.tn/",
+      "organization": "MEDLAR",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "business law",
+      "business_model": "professional practice / consultancy",
+      "surface": "Two-founder Tunis business-law practice explicitly built as a human-scale firm with close client relationships.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://medlar.tn/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://medlar.tn/",
+          "source": "https://medlar.tn/"
+        }
+      ],
+      "current_public_evidence": "Two-founder Tunis business-law practice explicitly built as a human-scale firm with close client relationships.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-756",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.chabbi-law.com/",
+      "organization": "CHABBI Law",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "business law/legal advisory",
+      "business_model": "professional practice / consultancy",
+      "surface": "Founder-led Tunis legal practice with a 20-person multidisciplinary team and modernized legal-service positioning.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://www.chabbi-law.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.chabbi-law.com/",
+          "source": "https://www.chabbi-law.com/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Tunis legal practice with a 20-person multidisciplinary team and modernized legal-service positioning.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-757",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://cnlawfirms.com/en/home/",
+      "organization": "CN Law Firms",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "business law",
+      "business_model": "professional practice / consultancy",
+      "surface": "Independent Tunis business-law firm founded by two lawyers, providing strategic legal support to companies and investors.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://cnlawfirms.com/en/home/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://cnlawfirms.com/en/home/",
+          "source": "https://cnlawfirms.com/en/home/"
+        }
+      ],
+      "current_public_evidence": "Independent Tunis business-law firm founded by two lawyers, providing strategic legal support to companies and investors.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-758",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://insaflegal.com/fr/",
+      "organization": "INSAF LAW FIRM",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "business law/legal advisory",
+      "business_model": "professional practice / consultancy",
+      "surface": "Independent Tunis business-law practice with a compact experienced team and public consultation/contact surface.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://insaflegal.com/fr/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://insaflegal.com/fr/",
+          "source": "https://insaflegal.com/fr/"
+        }
+      ],
+      "current_public_evidence": "Independent Tunis business-law practice with a compact experienced team and public consultation/contact surface.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-759",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://lawyers-tunisia.com/",
+      "organization": "CAAT / Consortium des Avocats d'Affaires Tunisiens",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "business law",
+      "business_model": "professional practice / consultancy",
+      "surface": "Founder-led Tunis business-law consortium providing tailored legal assistance for companies and individuals.",
+      "observed_need": "Current public professional-services surface evidenced; no client, legal, operational or conversion problem inferred.",
+      "source": "https://lawyers-tunisia.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://lawyers-tunisia.com/",
+          "source": "https://lawyers-tunisia.com/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Tunis business-law consortium providing tailored legal assistance for companies and individuals.",
+      "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
+      "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -14962,19 +15286,15 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-MAURITIUS-ALLIED-HEALTH",
+    "run_identity": "FORX-CONTINUOUS-20261009-MAGHREB-LEGAL-CONSULT",
     "prior_receipt": {
-      "observed_at": "2026-10-09T07:08:00+02:00",
+      "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-734",
-        "FORX-PROSPECT-20261009-735",
-        "FORX-PROSPECT-20261009-736",
-        "FORX-PROSPECT-20261009-737",
-        "FORX-PROSPECT-20261009-738",
-        "FORX-PROSPECT-20261009-739",
-        "FORX-PROSPECT-20261009-740",
-        "FORX-PROSPECT-20261009-741",
-        "FORX-PROSPECT-20261009-742"
+        "FORX-PROSPECT-20261009-743",
+        "FORX-PROSPECT-20261009-744",
+        "FORX-PROSPECT-20261009-745",
+        "FORX-PROSPECT-20261009-746",
+        "FORX-PROSPECT-20261009-747"
       ]
     },
     "consumed_sources": [
@@ -14988,16 +15308,17 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "0bd5a07974fd7c0db2a665b0ec0724746204008c"
+        "revision": "d191cfc93ccf72006cd842583a75a44764975494"
       }
     ],
     "apply_example": {
       "prior_learning": [
+        "FIRST BREATH lateral expansion",
         "time-poor professional micro-practices",
-        "medical/legal public-friction-only boundary",
-        "country-first anti-saturation"
+        "country-first anti-saturation",
+        "corporates index-only"
       ],
-      "changed_action": "Moved laterally from accounting practices into Mauritius psychology, dental, physical-therapy and specialist-clinic public operating surfaces without inferring patient or clinical problems.",
+      "changed_action": "Rotated from accounting and allied-health into founder-led/human-scale law and consulting practices in Morocco and Tunisia while keeping large institutional firms secondary.",
       "source_pointers": [
         "weighted continuity revision 31",
         "prior receipt next_alternatives"
@@ -15005,46 +15326,54 @@
     },
     "exact_coordinate": {
       "geography": [
-        "Mauritius"
+        "Morocco",
+        "Tunisia"
       ],
       "sector": [
-        "psychology",
-        "dental",
-        "physical therapy",
-        "specialist clinic"
+        "business law",
+        "legal advisory",
+        "management consulting",
+        "business development"
       ],
-      "model": "small professional practice",
-      "source": "public business profiles"
+      "model": "founder-led / human-scale professional practice",
+      "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 5,
-      "candidates_staged_pending_ingestion": 5,
+      "candidate_exact_keys_discovered": 12,
+      "candidates_staged_pending_ingestion": 12,
       "verified_graph_delta_claimed": 0,
-      "explored": 5,
+      "explored": 12,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-743",
-      "FORX-PROSPECT-20261009-744",
-      "FORX-PROSPECT-20261009-745",
-      "FORX-PROSPECT-20261009-746",
-      "FORX-PROSPECT-20261009-747"
+      "FORX-PROSPECT-20261009-748",
+      "FORX-PROSPECT-20261009-749",
+      "FORX-PROSPECT-20261009-750",
+      "FORX-PROSPECT-20261009-751",
+      "FORX-PROSPECT-20261009-752",
+      "FORX-PROSPECT-20261009-753",
+      "FORX-PROSPECT-20261009-754",
+      "FORX-PROSPECT-20261009-755",
+      "FORX-PROSPECT-20261009-756",
+      "FORX-PROSPECT-20261009-757",
+      "FORX-PROSPECT-20261009-758",
+      "FORX-PROSPECT-20261009-759"
     ],
     "uncertainty": [
-      "Business profiles are public source observations; official-domain identity remains unresolved where absent.",
-      "No medical, patient, booking, conversion or business problem is inferred from category or listing alone."
+      "Public professional-service surfaces verified; no current unmet need or confidential client problem inferred.",
+      "Firm size varies; professional-practice relevance does not imply commercial qualification."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Morocco/Tunisia small legal and independent consulting practices",
-        "why": "Different professional family across weak-count countries."
+        "coordinate": "Algeria small accounting/legal/consulting practices with official domains",
+        "why": "Country remains weak in current staged explicit-country subset."
       },
       {
-        "coordinate": "Mauritius allied-health official-domain resolution and public booking-surface inspection",
-        "why": "Increase provenance depth without duplicating first approaches."
+        "coordinate": "East Africa owner-led clinics/accountants/legal practices outside already-saturated lanes",
+        "why": "Broaden geography while preserving professional-family diversity."
       }
     ],
-    "chosen_next_action": "Continue country-first professional-family rotation and official-domain resolution.",
-    "truth_boundary": "PUBLIC BUSINESS PROFILE != OFFICIAL DOMAIN != QUALIFIED BUYER; NO REGULATED PROBLEM INFERENCE."
+    "chosen_next_action": "Rotate to another weak country before deepening Morocco/Tunisia further.",
+    "truth_boundary": "PROFESSIONAL PRACTICE != PROBLEM; PUBLIC CONTACT != CONSENT; CANDIDATE != VERIFIED GRAPH."
   }
 }
