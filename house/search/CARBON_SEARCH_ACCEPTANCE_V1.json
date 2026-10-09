@@ -143,6 +143,26 @@
       "id": "G28",
       "name": "Capability version and upgrade continuity",
       "test": "Search responses expose capability/contract version and compatible callers continue to use the shared engine after an engine upgrade without independent copied-logic rewrites; incompatible changes fail explicitly."
+    },
+    {
+      "id": "G29",
+      "name": "Surface parity",
+      "test": "Human/Owner, Matrix-worker, client and public surfaces invoke the same core intent-resolution semantics; differences are limited to authorized context, scopes, actions and disclosure."
+    },
+    {
+      "id": "G30",
+      "name": "Canonical directory / ontology discipline",
+      "test": "Search keeps products, services, capabilities, utilities, marketplace offers, evidence records and other canonical entity types distinct using versioned IDs/aliases/relationships; similar names or tags cannot silently merge identities."
+    },
+    {
+      "id": "G31",
+      "name": "Active-search correction and rollback",
+      "test": "When a wrong claim/entity/mapping/hypothesis/ranking is detected mid-search, the engine invalidates only dependent state, preserves unaffected evidence, reweights intent, continues from the furthest valid state and does not terminate solely because of its own correctable mistake."
+    },
+    {
+      "id": "G32",
+      "name": "Dynamic Intention focus",
+      "test": "At material state changes the engine updates Measured Intent/hypothesis weights and prioritizes search using probability-weighted utility, decision sensitivity and cost-of-error while retaining alternatives that could materially change the outcome."
     }
   ],
   "build_state_values": [
@@ -164,5 +184,11 @@
     "intelligence_layer": "INTELLAGENT",
     "mode": "single versioned shared engine with thin Matrix-wide adapters",
     "anti_pattern": "copied or forked intent-engine logic per worker/model"
+  },
+  "intention": {
+    "definition": "Continuous evidence-bound orientation toward the best defensible resolution of Measured Intent.",
+    "correction_rule": "ACTIVE ERROR != END SEARCH; rollback affected derived state, preserve valid evidence, reweight, continue.",
+    "prioritization": "probability × intent utility × decision sensitivity × cost of being wrong",
+    "surface_rule": "same core engine; context/scope/permissions/actions/disclosure vary by caller"
   }
 }
