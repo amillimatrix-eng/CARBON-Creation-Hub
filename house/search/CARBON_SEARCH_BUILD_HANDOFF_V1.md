@@ -1,3 +1,19 @@
+## 0. ORIGINATING INTENTION MUST BE READ FIRST
+
+Before interpreting architecture or writing implementation code, read:
+
+`house/search/CARBON_SEARCH_ORIGINATING_INTENTION_RECEIPT_V1.md`
+
+This receipt transfers the first working interpretation of **INTENTION** from the originating concept-development instance.
+
+The builder must inherit both:
+- the formal specification; and
+- the intended product behavior that produced it.
+
+Do not reconstruct product meaning from module names alone.
+
+---
+
 # CARBON° SEARCH — BUILD HANDOFF V1
 
 Date: 2026-10-09  
@@ -12,6 +28,7 @@ Current default-branch files govern:
 - `house/search/CARBON_SEARCH_BUILD_INITIATIVE_V1.md`
 - `house/search/CARBON_SEARCH_ACCEPTANCE_V1.json`
 - `house/search/CARBON_SEARCH_ACCEPTANCE_VECTORS_V1.md`
+- `house/search/CARBON_SEARCH_ORIGINATING_INTENTION_RECEIPT_V1.md`
 - GitHub issue #16
 
 Current authoritative commits at handoff:
