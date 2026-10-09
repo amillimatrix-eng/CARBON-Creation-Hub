@@ -348,7 +348,7 @@
     },
     "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
       "domain": "laverticaldramamarket.com",
-      "due_at": "2026-10-04T15:15:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -386,13 +386,21 @@
           "thread_id": "1a0f1fba9e5a5efb",
           "observed_at": "2026-10-02",
           "summary": "PRI followed up once at human cadence on the alternate submission route previously offered by LAVDM; standard FilmFreeway verification remained blocked."
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a11b45497d6cab6",
+          "thread_id": "1a0f1fba9e5a5efb",
+          "observed_at": "2026-10-08T11:28:08Z",
+          "summary": "PRI sent a final/once-more follow-up requesting the alternate provider-approved FilmFreeway submission route; no later LAVDM response is evidenced."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
-      "last_action_at": "2026-10-02T15:15:00Z",
+      "last_action_at": "2026-10-08T11:28:08Z",
       "message_id": "1a0f1fba9e5a5efb",
-      "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
+      "next_action": "WAIT for buyer/provider route evidence. Do not send another unsolicited follow-up: the thread already contains the buyer's one response plus three subsequent asks, latest 2026-10-08 explicitly framed as 'following up once more'. If LAVDM replies with an official alternate route, resume through that route. Otherwise re-check official competition status only when needed; no buyer response means no submission/acceptance.",
       "opportunity": "alternate-submission-route",
       "organization": "LAVDM / VertIGo",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -410,7 +418,7 @@
       "video_access_verified": true,
       "video_access_verified_at": "2026-09-30T16:52:12.432Z",
       "execution_readiness": "WAITING",
-      "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW"
+      "routing_reason": "BUYER_OFFERED_ALTERNATE_ROUTE_BUT_NO_ROUTE_DELIVERED_AFTER_MULTIPLE_FOLLOWUPS"
     },
     "magicpictures.net|co-production|the-dragon-who-could-not-claim-me": {
       "domain": "magicpictures.net",
@@ -983,20 +991,36 @@
           "thread_id": "1a0fd28f0a697b2f",
           "recipient": "info@staff-remotely.com",
           "summary": "PRI sent concise targeted application with CV attached and requested active project scope, rate and start date."
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a110c33e388e5fb",
+          "thread_id": "1a0fd28f0a697b2f",
+          "observed_at": "2026-10-06T10:29:53Z",
+          "summary": "PRI followed up in the original Staff Remotely thread asking only for a current paid AI QA/prompt/RLHF/Python scope, rate and start date."
+        },
+        {
+          "kind": "DUPLICATE_OUTREACH_SENT",
+          "source": "GMAIL",
+          "source_id": "1a11b52e03a6a671",
+          "thread_id": "1a11b52e03a6a671",
+          "observed_at": "2026-10-08T11:42:58Z",
+          "summary": "A new standalone Staff Remotely application was sent after the earlier application and follow-up. Gmail now labels this message AMX/DUPLICATE-OUTREACH. This is historical pre-repair duplicate evidence, not a buyer response."
         }
       ],
       "recipient": "info@staff-remotely.com",
       "thread_id": "1a0fd28f0a697b2f",
       "message_id": "1a0fd28f0a697b2f",
       "subject": "South Africa — AI QA / Prompt Evaluation / Python",
-      "last_action_at": "2026-10-02T15:00:00Z",
-      "next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
-      "due_at": "2026-10-04T15:00:00Z",
+      "last_action_at": "2026-10-08T11:42:58Z",
+      "next_action": "WAIT for a substantive Staff Remotely response. Do not send another general application or follow-up to info@staff-remotely.com. If a distinct current role with a separate official application route is evidenced, iSCOPE/PRI may qualify that role without reusing the generic mailbox as another initial pitch.",
+      "due_at": null,
       "constraints": [
         "No payment is assumed until a specific paid assignment/contract is evidenced."
       ],
       "execution_readiness": "WAITING",
-      "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW"
+      "routing_reason": "APPLICATION_ALREADY_SENT_MULTIPLE_TIMES_AWAITING_BUYER_RESPONSE"
     },
     "redrama.ai|adaptation-distribution|the-dragon-who-could-not-claim-me": {
       "organization": "Redrama",
@@ -3150,9 +3174,9 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-09T13:00:00Z",
-  "last_updated_at": "2026-10-09T13:00:00Z",
-  "last_updated_by": "Master/Librarian bounded reconciliation — Jojo follow-up already sent",
+  "updated_at": "2026-10-09T13:04:00Z",
+  "last_updated_at": "2026-10-09T13:04:00Z",
+  "last_updated_by": "Master/Librarian bounded reconciliation — LAVDM and Staff Remotely current Gmail state",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
@@ -3235,6 +3259,6 @@
   ],
   "generated_at": "2026-10-03T22:13:20Z",
   "record_count": 66,
-  "last_reconciled_at": "2026-10-09T13:00:00Z",
-  "last_reconciled_reason": "Reconcile Jojo/Stage32 canonical state with Gmail follow-up receipt 1a11b5d0168259b0; prevent duplicate follow-up."
+  "last_reconciled_at": "2026-10-09T13:04:00Z",
+  "last_reconciled_reason": "Reconcile LAVDM Oct8 final follow-up and Staff Remotely Oct6/Oct8 duplicate-outreach evidence; prevent further unsolicited repeat actions."
 }
