@@ -1085,3 +1085,12 @@ State: **OWNER DIRECTED / ACTIVE AS OPERATIONAL SECURITY CONTROL. Addendum O sup
 - **Disposition:** **MANDATORY BUILD AND OPERATIONAL REQUIREMENT**
 - **Rule:** **CAPABILITY AND ACHIEVEMENT ARE EVIDENCE. EXCUSES ARE NOT.**
 - **Operational effect:** Relevant AMX builds and operations must be evidence-bearing, preserve durable proof, evaluate demonstrated capability on evidence, and carry evidenced capability forward into downstream planning and execution.
+
+
+## 2026-10-09 — Professional Profile / Commercial Positioning Matrix-Wide Evidence Rebuild
+- **Intake ID:** ROOT-20261009-PROFILE-MATRIX-WIDE-EVIDENCE-REBUILD
+- **Priority:** A
+- **Status:** ACTIVE INTAKE — requires capable authenticated profile-editing runtime.
+- **Artifact:** `AMX/ROOT/INTAKE/PROFESSIONAL_PROFILE_MATRIX_WIDE_EVIDENCE_REBUILD_20261009.md`
+- **Directive:** Deep evidence consolidation first; public positioning second. Rebuild LinkedIn, CV, LabourX, Mercor, 4AIR and other discovered commercial surfaces from the furthest evidenced Matrix state.
+- **Current boundary:** TinyFish automation available, but no recorded LinkedIn sign-in; Notion historical agent-session search unavailable on current workspace tier.
