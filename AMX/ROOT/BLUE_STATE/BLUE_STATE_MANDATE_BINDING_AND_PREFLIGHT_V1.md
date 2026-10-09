@@ -387,6 +387,31 @@ Before reactivation:
 5. establish exactly one live owner;
 6. then enable.
 
+## INTAKE OWNERSHIP CONSUMPTION LAW
+
+**CLASSIFIED / ASSIGNED INTAKE IS EXECUTABLE WORK, NOT REFERENCE MATERIAL.**
+
+At every mandate pre-flight, each governance librarian and mandate-bearing worker must inspect the newest Root Intake state for items explicitly assigned to, routed to, or dependent on that mandate.
+
+For each owned Intake item:
+
+1. recover the controlling disposition and exact current execution state;
+2. confirm that the item is actually owned by this mandate and not merely mentioned historically;
+3. perform the next authorized executable action immediately where possible;
+4. if blocked, apply the Blocked Attempt Recovery Law rather than ending at `BLOCKED`;
+5. persist the resulting receipt / state change;
+6. independently read it back;
+7. continue until the item's acceptance condition is met, it is lawfully handed to the correct existing owner, or Governance explicitly cancels/supersedes it.
+
+Workers must not leave assigned Intake work idle while starting lower-priority discretionary work unless:
+- the assigned item is genuinely waiting on an external condition;
+- another current owner is already executing it;
+- or Governance has explicitly deprioritized it.
+
+**INTAKE ASSIGNED != DONE.**  
+**INTAKE CLEARED != EXECUTION COMPLETE.**  
+**OWNED INTAKE + EXECUTABLE NEXT ACTION -> WORK IT.**
+
 ## BLOCKED ATTEMPT RECOVERY LAW
 
 **ATTEMPTED + BLOCKED != TERMINAL STATE.**
