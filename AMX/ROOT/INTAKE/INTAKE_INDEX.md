@@ -1061,3 +1061,12 @@ State: **OWNER DIRECTED / ACTIVE AS OPERATIONAL SECURITY CONTROL. Addendum O sup
 
 **Recommended disposition:** MODIFY / MERGE → BOTH GOVERNANCE + BLUE STATE.
 
+
+## 2026-10-09 — FORX 50K PATCH-BUILDER ATTRIBUTION
+
+- **Intake ID:** ROOT-20261009-FORX-50K-PATCH-BUILDER-ATTRIBUTION
+- **Priority:** A
+- **Disposition:** PASS — Owner-authorized for immediate operational/commercial-evidence use; independent Librarian assurance pending/non-blocking.
+- **Artifact:** `AMX/ROOT/INTAKE/FORX_50K_PATCH_BUILDER_ATTRIBUTION_OWNER_PASS_20261009.md`
+- **Core finding:** decisive FORX 50/50 repair attributed to the ChatGPT governing Librarian session using the connected GitHub connector; no separate Owner manual patch observed or required by the recovered causal chain.
+- **Supporting forensic record:** `overdrive/forensics/FORX-50K-PATCH-BUILDER-PROVENANCE-20261009.json`; PR #15; merge `187fab56af7e70acf7372e14abf74525e542cb69`.
