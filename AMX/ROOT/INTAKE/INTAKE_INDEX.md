@@ -1315,3 +1315,17 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Verified public completion evidence:** Render deploy `dep-db4e41nlk1mc73fo6dhg` reached **live** and public readback returned **"CARBON° — Intent has weight."** with the Marketplace surface.
 - **RGR implication:** repository correctness / reconciliation / mergeability must not substitute for user-facing completion. For this case the required chain was `IMPLEMENTED → RECONCILED → DEPLOYED → PUBLICLY OPENABLE → READ BACK → COMPLETE`.
 - **Requested treatment:** attach to existing RGR/continuation/execution-completion control if already owned; otherwise classify through existing Intake protocol. No automatic Canon/Merge authority.
+
+
+## 2026-10-09 — BLUE STATE — Mandate Binding, Hash Registry & Pre-Flight V1
+- **Blue State ID:** `AMX-BLUE-STATE-MANDATE-BINDING-V1`
+- **Disposition:** **OWNER ACCEPTED / MERGED / ACTIVE MATRIX-WIDE.**
+- **Artifact:** `AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md`
+- **Machine registry:** `AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json`
+- **Registry root SHA-256:** `a9e7b787b454ee6422c8f4b2d55a9253fc5ccb47ac65019002a49f51f6140d21`
+- **Core law:** **MANDATE PRECEDES EXECUTION.**
+- Every governance librarian and mandate-bearing worker must resolve its current `MANDATE_ID`, read the linked mandate payload, verify the registered SHA-256, confirm current status/owner, recover supersessions/state, check boundaries, and only then perform material work.
+- **Fail-safe:** `MANDATE_UNKNOWN | HASH_MISMATCH | UNREGISTERED ROLE => HOLD THAT ROLE'S EXECUTION + ROUTE TO ROOT`.
+- **Liveness:** `ACTIVE MANDATE + NONTERMINAL EXECUTABLE OBLIGATIONS + NO LIVE EXECUTION OWNER = INVALID STATE -> REMEDIATE`.
+- **Succession:** `ONE MANDATE -> ONE CURRENT EXECUTION OWNER -> ONE EVIDENCED SUCCESSOR PATH`, unless governing architecture explicitly permits otherwise.
+- **Prompt law:** `PROMPT != MANDATE`; prompts consume mandates and may not silently replace them.
