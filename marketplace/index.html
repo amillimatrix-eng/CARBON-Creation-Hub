@@ -41,6 +41,10 @@
   <div class="head"><div><p class="eyebrow">LIVE MARKET</p><h2>Less noise. More signal.</h2></div>
     <div class="filters"><button class="filter active" data-filter="ALL">All</button><button class="filter" data-filter="URGENT">Urgent</button><button class="filter" data-filter="MOTIVATED">Motivated</button><button class="filter" data-filter="PATIENT">Patient</button></div>
   </div>
+  <div class="marketTools">
+    <label class="marketSearch"><span>Find something</span><input id="marketSearch" type="search" placeholder="Search this market…" autocomplete="off"></label>
+    <span id="discoveryMode" class="pill">Local market</span>
+  </div>
   <div id="stats" class="stats"></div>
   <div class="marketWheelShell">
     <button id="railPrev" class="railNav railPrev" type="button" aria-label="Scroll market left">←</button>
@@ -81,6 +85,13 @@
 </main>
 
 <canvas id="matrixRain" class="matrixRain" aria-hidden="true"></canvas>
+<dialog id="galleryDialog"><div class="dialog galleryDialog">
+<button id="galleryClose" type="button" class="close">×</button>
+<p class="eyebrow">LISTING GALLERY</p><h2 id="galleryTitle">Listing images</h2>
+<div class="galleryStage"><img id="galleryMain" alt=""></div>
+<div id="galleryThumbs" class="galleryThumbs"></div>
+</div></dialog>
+
 <dialog id="themeDialog"><div class="dialog themeDialog">
 <button id="themeClose" type="button" class="close">×</button>
 <p class="eyebrow">ROLE PALETTE</p><h2>Buyer feels different from seller.</h2>
