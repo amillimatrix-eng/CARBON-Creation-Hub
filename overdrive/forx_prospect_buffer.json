@@ -18739,6 +18739,168 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Lusophone-island rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-890",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://jl-advogados.org/",
+      "organization": "J&L Advogados",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Guinea-Bissau",
+      "region": "West Africa / Indian Ocean",
+      "sector": "business/general law",
+      "business_model": "local professional services",
+      "surface": "Guinea-Bissau law practice combining experienced and younger lawyers for legal assistance, advice and representation.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://jl-advogados.org/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://jl-advogados.org/",
+          "source": "https://jl-advogados.org/"
+        }
+      ],
+      "current_public_evidence": "Guinea-Bissau law practice combining experienced and younger lawyers for legal assistance, advice and representation.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Guinea-Bissau/Seychelles rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-891",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.equitas-advogados.com/",
+      "organization": "EQUITAS Advogados",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Guinea-Bissau",
+      "region": "West Africa / Indian Ocean",
+      "sector": "business law/legal consulting",
+      "business_model": "local professional services",
+      "surface": "Guinea-Bissau legal and consulting practice serving companies, institutions and individuals with local business-law support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.equitas-advogados.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.equitas-advogados.com/",
+          "source": "https://www.equitas-advogados.com/"
+        }
+      ],
+      "current_public_evidence": "Guinea-Bissau legal and consulting practice serving companies, institutions and individuals with local business-law support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Guinea-Bissau/Seychelles rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-892",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://accountingvcca.com/",
+      "organization": "Victoria Chartered Certified Accountants",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Seychelles",
+      "region": "West Africa / Indian Ocean",
+      "sector": "accounting/audit/tax/advisory",
+      "business_model": "local professional services",
+      "surface": "Providence, Mahé accounting practice serving entrepreneurs and businesses with bookkeeping, tax, audit and business planning.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://accountingvcca.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://accountingvcca.com/",
+          "source": "https://accountingvcca.com/"
+        }
+      ],
+      "current_public_evidence": "Providence, Mahé accounting practice serving entrepreneurs and businesses with bookkeeping, tax, audit and business planning.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Guinea-Bissau/Seychelles rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-893",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://arthafinances.com/",
+      "organization": "Artha Tax and Accounting Services",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Seychelles",
+      "region": "West Africa / Indian Ocean",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "local professional services",
+      "surface": "Victoria accounting and advisory practice supporting private businesses, owner-managed businesses and growing organisations.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://arthafinances.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://arthafinances.com/",
+          "source": "https://arthafinances.com/"
+        }
+      ],
+      "current_public_evidence": "Victoria accounting and advisory practice supporting private businesses, owner-managed businesses and growing organisations.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Guinea-Bissau/Seychelles rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-894",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://victorialawfirm.lawyer/",
+      "organization": "Victoria Law Firm",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Seychelles",
+      "region": "West Africa / Indian Ocean",
+      "sector": "business/commercial law",
+      "business_model": "local professional services",
+      "surface": "Seychelles law practice led by Frank Elizabeth offering tailored corporate, commercial, property and notarial services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://victorialawfirm.lawyer/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://victorialawfirm.lawyer/",
+          "source": "https://victorialawfirm.lawyer/"
+        }
+      ],
+      "current_public_evidence": "Seychelles law practice led by Frank Elizabeth offering tailored corporate, commercial, property and notarial services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Guinea-Bissau/Seychelles rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-895",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.ilcssez.com/",
+      "organization": "International Law & Corporate Services",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Seychelles",
+      "region": "West Africa / Indian Ocean",
+      "sector": "legal/corporate services",
+      "business_model": "local professional services",
+      "surface": "Victoria professional practice providing legal, corporate, maritime and financial-services support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.ilcssez.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.ilcssez.com/",
+          "source": "https://www.ilcssez.com/"
+        }
+      ],
+      "current_public_evidence": "Victoria professional practice providing legal, corporate, maritime and financial-services support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Guinea-Bissau/Seychelles rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -18796,16 +18958,17 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-STP-CABO-VERDE",
+    "run_identity": "FORX-CONTINUOUS-20261009-GUINEA-BISSAU-SEYCHELLES",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-877",
-        "FORX-PROSPECT-20261009-878",
-        "FORX-PROSPECT-20261009-879",
-        "FORX-PROSPECT-20261009-880",
-        "FORX-PROSPECT-20261009-881",
-        "FORX-PROSPECT-20261009-882"
+        "FORX-PROSPECT-20261009-883",
+        "FORX-PROSPECT-20261009-884",
+        "FORX-PROSPECT-20261009-885",
+        "FORX-PROSPECT-20261009-886",
+        "FORX-PROSPECT-20261009-887",
+        "FORX-PROSPECT-20261009-888",
+        "FORX-PROSPECT-20261009-889"
       ]
     },
     "consumed_sources": [
@@ -18819,17 +18982,16 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "d99bdd9938e06f9d3f5b339aa50e80db9aec49ac"
+        "revision": "171b30864163b729691fc2c46bd5d460dc6866c5"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "Lusophone island Africa lateral",
+        "Guinea-Bissau / Seychelles weak-country lateral",
         "country-first anti-starvation",
-        "SMME-first",
-        "network/context separation"
+        "professional-family rotation"
       ],
-      "changed_action": "Rotated out of thin Central Africa into São Tomé and Príncipe / Cabo Verde professional micro-practices instead of repeatedly probing the same scarce source surface.",
+      "changed_action": "Executed the saved coastal/island weak-country lateral rather than deepening São Tomé/Cabo Verde; kept bar-association evidence separate from individual practice candidates.",
       "source_pointers": [
         "weighted continuity revision 31",
         "prior receipt next_alternatives"
@@ -18837,55 +18999,54 @@
     },
     "exact_coordinate": {
       "geography": [
-        "São Tomé and Príncipe",
-        "Cabo Verde"
+        "Guinea-Bissau",
+        "Seychelles"
       ],
       "sector": [
+        "business law",
+        "legal consulting",
         "accounting",
         "tax",
-        "business consulting",
-        "boutique law",
-        "HR/admin"
+        "audit",
+        "corporate services"
       ],
       "model": "local professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 7,
-      "candidates_staged_pending_ingestion": 7,
-      "network_rails_discovered": 2,
+      "candidate_exact_keys_discovered": 6,
+      "candidates_staged_pending_ingestion": 6,
+      "network_rails_discovered": 1,
       "verified_graph_delta_claimed": 0,
-      "explored": 7,
+      "explored": 6,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-883",
-      "FORX-PROSPECT-20261009-884",
-      "FORX-PROSPECT-20261009-885",
-      "FORX-PROSPECT-20261009-886",
-      "FORX-PROSPECT-20261009-887",
-      "FORX-PROSPECT-20261009-888",
-      "FORX-PROSPECT-20261009-889"
+      "FORX-PROSPECT-20261009-890",
+      "FORX-PROSPECT-20261009-891",
+      "FORX-PROSPECT-20261009-892",
+      "FORX-PROSPECT-20261009-893",
+      "FORX-PROSPECT-20261009-894",
+      "FORX-PROSPECT-20261009-895"
     ],
     "network_result_keys": [
-      "url:https://opacc.cv/",
-      "url:https://pt.investsaotome.com/"
+      "url:https://oagb.gw/"
     ],
     "uncertainty": [
-      "VNA's international partner-network relationship is context and does not elevate it above smaller local operators.",
-      "Professional association and investment-hub sources are network rails only."
+      "Guinea-Bissau current official-web operator yield remains thin; country stays open for accounting/business-advisory alternate-source discovery.",
+      "Professional associations are network rails only."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Guinea-Bissau / Seychelles small professional operators",
-        "why": "Continue island/coastal Africa weak-country rotation."
+        "coordinate": "Madagascar / Comoros small professional operators",
+        "why": "Continue Indian Ocean / island Africa weak-country rotation."
       },
       {
-        "coordinate": "São Tomé / Cabo Verde allied-health and training micro-practices",
-        "why": "Different professional family only if weaker-country options yield poorly."
+        "coordinate": "Guinea-Bissau alternate-source accounting and SME advisory operators",
+        "why": "Thin first pass remains open."
       }
     ],
-    "chosen_next_action": "Rotate into Guinea-Bissau / Seychelles before deepening represented island markets.",
-    "truth_boundary": "NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFIED BUYER."
+    "chosen_next_action": "Rotate Madagascar/Comoros before revisiting thin Guinea-Bissau source surfaces.",
+    "truth_boundary": "SEARCHED_THIN != EXHAUSTED; NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH."
   }
 }
