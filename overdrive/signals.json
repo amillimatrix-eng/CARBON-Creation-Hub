@@ -207,11 +207,11 @@
     {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": true,
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
       "priority": 2,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -219,11 +219,11 @@
     {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": true,
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
       "priority": 2,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -231,11 +231,11 @@
     {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": true,
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
       "priority": 2,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -435,11 +435,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
       "priority": 8,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -529,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-09T19:04:37.728860+00:00",
+  "generated_at": "2026-10-09T19:09:55.636951+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -1196,11 +1196,11 @@
     "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57": {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": true,
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "opportunity_key": "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57",
       "priority": 2,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -1244,11 +1244,11 @@
     "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y": {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": true,
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
       "priority": 2,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -1268,11 +1268,11 @@
     "opentrain.ai|python-backend-ai-agent-developer|2026-10-01": {
       "due_at": null,
       "due_now": false,
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "opportunity_key": "opentrain.ai|python-backend-ai-agent-developer|2026-10-01",
       "priority": 8,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -1292,11 +1292,11 @@
     "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3": {
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": true,
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
       "priority": 2,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
