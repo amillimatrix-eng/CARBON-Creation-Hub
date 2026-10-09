@@ -1384,3 +1384,15 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Search boundary:** no mutation of frozen Search #16 35/35 semantics; core-touching convergence waits for Search build completion.
 - **Design law:** `ONE CARBON. MANY SURFACES. ONE CONTINUITY.`
 - **Tracking:** issue #18.
+
+
+## 2026-10-09 — CARBON° App / Media Implementation Packet
+- **Disposition:** EXECUTION READY / ASSIGNED.
+- **Product owner:** CARBON°.
+- **Implementation owner:** T-COD.
+- **Artifact:** `house/product/CARBON_APP_MEDIA_IMPLEMENTATION_PACKET_V1.md`
+- **Scope now executable:** app shell, Projects, Media object/library, media action abstraction, provider-neutral storage adapter, PWA scaffolding, Matrix Mode theme layer, analytics and first-user flow.
+- **Domain:** custom domain remains DEFERRED / BUDGET HOLD and is not a dependency.
+- **Search boundary:** no Search #16 semantic mutation.
+- **Acceptance:** deployed user can create/reopen a Project, attach/generate media, see it in Media, preserve ACL/provenance, reload persisted state, and install PWA where supported.
+- **Tracking:** GitHub issue #18.
