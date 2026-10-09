@@ -2955,8 +2955,8 @@
       "recipient": "jojoooluu@gmail.com",
       "thread_id": "1a0f1a3a7ad58e63",
       "deadline": "2026-10-15",
-      "next_action": "Monitor existing Jojo thread for response or delivery failure. On a material response, continue in-thread with only current requested proof. If no response by 2026-10-08 10:00 SAST, send at most one concise follow-up before the October 15 deadline. Do not resend the initial proposal, claim acceptance, or invoice before agreed commission/terms.",
-      "due_at": "2026-10-08T08:00:00Z",
+      "next_action": "Monitor the existing Jojo thread through the October 15 deadline for a material buyer response or delivery failure. The one concise follow-up was already sent on 2026-10-08; do not send another unsolicited follow-up or resend the proposal. On buyer response, supply only the requested missing proof and preserve fee/rights/scope truth.",
+      "due_at": null,
       "package_version": "PUBLIC_v2",
       "package_sha256": "de71e9bf167ba8a4baa624cc8246d364bbb20b5e59fb13e7686fd3045dd44f69",
       "artifact_library_id": "libfile_eed0bf4dedb88191b0da1269705de632",
@@ -2988,6 +2988,14 @@
           "attachment_bytes": 835781,
           "sha256": "de71e9bf167ba8a4baa624cc8246d364bbb20b5e59fb13e7686fd3045dd44f69",
           "summary": "Gmail SENT readback verifies intended address, requested subject, existing thread and application/pdf attachment; recipient receipt/open/acceptance not proven."
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a11b5d0168259b0",
+          "thread_id": "1a0f1a3a7ad58e63",
+          "observed_at": "2026-10-08T11:54:02Z",
+          "summary": "PRI sent the single concise due follow-up before the October 15 deadline, asking whether the proposal remained under review and offering to supply only any missing submission requirement."
         }
       ],
       "execution_reservation": {
@@ -3000,7 +3008,7 @@
         "completed_at": "2026-10-04T00:36:41.096Z"
       },
       "message_id": "1a10456971cfcdf9",
-      "last_action_at": "2026-10-04T00:35:45Z",
+      "last_action_at": "2026-10-08T11:54:02Z",
       "subject": "Vertical Drama Proposal – Ulrich du Plessis – AI",
       "submission_channel": "GMAIL_ATTACHMENT",
       "attachment_bytes": 835781,
@@ -3014,7 +3022,9 @@
         "preserve_due_at": "2026-10-08T08:00:00Z",
         "quality_receipt": "overdrive/control_receipts/PROOF_ASSET_ENHANCEMENTS_20261004.json",
         "next_material_action": "Monitor current thread; use improved buyer-relevant proof if requested or at the existing due follow-up. Do not duplicate the application."
-      }
+      },
+      "execution_readiness": "WAITING",
+      "routing_reason": "FOLLOWUP_ALREADY_SENT_AWAITING_BUYER_RESPONSE"
     },
     "opentrain.ai|python-backend-developer-ai-agent-data|cmutoopjw000306mwfvbs4c88": {
       "domain": "opentrain.ai",
@@ -3140,9 +3150,9 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-09T12:56:00Z",
-  "last_updated_at": "2026-10-09T12:56:00Z",
-  "last_updated_by": "Master/Librarian bounded reconciliation — GoodShort wrong-route state",
+  "updated_at": "2026-10-09T13:00:00Z",
+  "last_updated_at": "2026-10-09T13:00:00Z",
+  "last_updated_by": "Master/Librarian bounded reconciliation — Jojo follow-up already sent",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
@@ -3225,6 +3235,6 @@
   ],
   "generated_at": "2026-10-03T22:13:20Z",
   "record_count": 66,
-  "last_reconciled_at": "2026-10-09T12:56:00Z",
-  "last_reconciled_reason": "Reconcile GoodShort canonical opportunity state with delivered wrong-route Gmail evidence and AMX/WRONG-ROUTE annotation. No external outreach performed."
+  "last_reconciled_at": "2026-10-09T13:00:00Z",
+  "last_reconciled_reason": "Reconcile Jojo/Stage32 canonical state with Gmail follow-up receipt 1a11b5d0168259b0; prevent duplicate follow-up."
 }
