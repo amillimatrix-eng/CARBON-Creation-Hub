@@ -18550,6 +18550,195 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH CAR/Chad weak-country rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-883",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://empresadecel.com/",
+      "organization": "DECEL, LDA",
+      "canonical_identity": "UNRESOLVED",
+      "country": "São Tomé and Príncipe",
+      "region": "Lusophone Island Africa",
+      "sector": "accounting/audit/business consulting",
+      "business_model": "local professional services",
+      "surface": "São Tomé family-scale accounting, audit, consulting, outsourcing and training practice operating since the mid-2000s.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://empresadecel.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://empresadecel.com/",
+          "source": "https://empresadecel.com/"
+        }
+      ],
+      "current_public_evidence": "São Tomé family-scale accounting, audit, consulting, outsourcing and training practice operating since the mid-2000s.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Lusophone-island rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-884",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://dejuris.st/",
+      "organization": "De Juris — Posser da Costa & Associados",
+      "canonical_identity": "UNRESOLVED",
+      "country": "São Tomé and Príncipe",
+      "region": "Lusophone Island Africa",
+      "sector": "boutique business law",
+      "business_model": "local professional services",
+      "surface": "São Tomé boutique law practice serving companies and investors with local commercial-law expertise.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://dejuris.st/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://dejuris.st/",
+          "source": "https://dejuris.st/"
+        }
+      ],
+      "current_public_evidence": "São Tomé boutique law practice serving companies and investors with local commercial-law expertise.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Lusophone-island rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-885",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.vnaadvogados.com/pt/",
+      "organization": "VNA Advogados",
+      "canonical_identity": "UNRESOLVED",
+      "country": "São Tomé and Príncipe",
+      "region": "Lusophone Island Africa",
+      "sector": "business law",
+      "business_model": "local professional services",
+      "surface": "São Tomé resident law practice providing local legal support with an international partner-network relationship preserved as context.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.vnaadvogados.com/pt/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.vnaadvogados.com/pt/",
+          "source": "https://www.vnaadvogados.com/pt/"
+        }
+      ],
+      "current_public_evidence": "São Tomé resident law practice providing local legal support with an international partner-network relationship preserved as context.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Lusophone-island rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-886",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.pca.cv/",
+      "organization": "PCA — Peritos Contabilistas Associados",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Cabo Verde",
+      "region": "Lusophone Island Africa",
+      "sector": "accounting/tax/financial advisory",
+      "business_model": "local professional services",
+      "surface": "Cape Verde accounting and fiscal practice with Praia and Mindelo presence, financial-management support and SME-oriented service packages.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.pca.cv/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.pca.cv/",
+          "source": "https://www.pca.cv/"
+        }
+      ],
+      "current_public_evidence": "Cape Verde accounting and fiscal practice with Praia and Mindelo presence, financial-management support and SME-oriented service packages.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Lusophone-island rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-887",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://epaccounting.cv/",
+      "organization": "EP Accounting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Cabo Verde",
+      "region": "Lusophone Island Africa",
+      "sector": "accounting/payroll/business advisory",
+      "business_model": "local professional services",
+      "surface": "Praia accounting practice providing company formation, payroll, financial management, training and outsourcing for small businesses.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://epaccounting.cv/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://epaccounting.cv/",
+          "source": "https://epaccounting.cv/"
+        }
+      ],
+      "current_public_evidence": "Praia accounting practice providing company formation, payroll, financial management, training and outsourcing for small businesses.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Lusophone-island rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-888",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://contabilidadecv.com/",
+      "organization": "CGC Cabo Verde",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Cabo Verde",
+      "region": "Lusophone Island Africa",
+      "sector": "accounting/management consulting",
+      "business_model": "local professional services",
+      "surface": "Praia accounting and consulting practice explicitly serving micro, small, medium and larger businesses with local certified professionals.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://contabilidadecv.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://contabilidadecv.com/",
+          "source": "https://contabilidadecv.com/"
+        }
+      ],
+      "current_public_evidence": "Praia accounting and consulting practice explicitly serving micro, small, medium and larger businesses with local certified professionals.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Lusophone-island rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-889",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://sigacv.cv/",
+      "organization": "SIGA — Serviços Integrados de Gestão",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Cabo Verde",
+      "region": "Lusophone Island Africa",
+      "sector": "accounting/tax/SME advisory",
+      "business_model": "local professional services",
+      "surface": "Cape Verde integrated-management practice offering company registration, accounting, tax, business consulting, HR and administration for SMEs.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://sigacv.cv/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://sigacv.cv/",
+          "source": "https://sigacv.cv/"
+        }
+      ],
+      "current_public_evidence": "Cape Verde integrated-management practice offering company registration, accounting, tax, business consulting, HR and administration for SMEs.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Lusophone-island rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -18607,18 +18796,16 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-CAR-CHAD-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-STP-CABO-VERDE",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-869",
-        "FORX-PROSPECT-20261009-870",
-        "FORX-PROSPECT-20261009-871",
-        "FORX-PROSPECT-20261009-872",
-        "FORX-PROSPECT-20261009-873",
-        "FORX-PROSPECT-20261009-874",
-        "FORX-PROSPECT-20261009-875",
-        "FORX-PROSPECT-20261009-876"
+        "FORX-PROSPECT-20261009-877",
+        "FORX-PROSPECT-20261009-878",
+        "FORX-PROSPECT-20261009-879",
+        "FORX-PROSPECT-20261009-880",
+        "FORX-PROSPECT-20261009-881",
+        "FORX-PROSPECT-20261009-882"
       ]
     },
     "consumed_sources": [
@@ -18632,16 +18819,17 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "c1eeca00b303a6106892737b70a078a67804481c"
+        "revision": "d99bdd9938e06f9d3f5b339aa50e80db9aec49ac"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "Central African Republic / Chad weak-country lateral",
-        "failed first pass != exhausted",
-        "SMME/local-operator priority"
+        "Lusophone island Africa lateral",
+        "country-first anti-starvation",
+        "SMME-first",
+        "network/context separation"
       ],
-      "changed_action": "Executed the saved CAR/Chad coordinate and retained only current official operator surfaces as candidates; public SME/registration institutions remain network rails.",
+      "changed_action": "Rotated out of thin Central Africa into São Tomé and Príncipe / Cabo Verde professional micro-practices instead of repeatedly probing the same scarce source surface.",
       "source_pointers": [
         "weighted continuity revision 31",
         "prior receipt next_alternatives"
@@ -18649,55 +18837,55 @@
     },
     "exact_coordinate": {
       "geography": [
-        "Central African Republic",
-        "Chad"
+        "São Tomé and Príncipe",
+        "Cabo Verde"
       ],
       "sector": [
         "accounting",
-        "audit",
         "tax",
-        "business law",
-        "training/advisory"
+        "business consulting",
+        "boutique law",
+        "HR/admin"
       ],
       "model": "local professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 6,
-      "candidates_staged_pending_ingestion": 6,
+      "candidate_exact_keys_discovered": 7,
+      "candidates_staged_pending_ingestion": 7,
       "network_rails_discovered": 2,
       "verified_graph_delta_claimed": 0,
-      "explored": 6,
+      "explored": 7,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-877",
-      "FORX-PROSPECT-20261009-878",
-      "FORX-PROSPECT-20261009-879",
-      "FORX-PROSPECT-20261009-880",
-      "FORX-PROSPECT-20261009-881",
-      "FORX-PROSPECT-20261009-882"
+      "FORX-PROSPECT-20261009-883",
+      "FORX-PROSPECT-20261009-884",
+      "FORX-PROSPECT-20261009-885",
+      "FORX-PROSPECT-20261009-886",
+      "FORX-PROSPECT-20261009-887",
+      "FORX-PROSPECT-20261009-888",
+      "FORX-PROSPECT-20261009-889"
     ],
     "network_result_keys": [
-      "url:https://cpmec-rca.org/",
-      "url:https://gufe-rca.org/"
+      "url:https://opacc.cv/",
+      "url:https://pt.investsaotome.com/"
     ],
     "uncertainty": [
-      "CAR/Chad source density remains thinner than easier markets; neither country is exhausted.",
-      "BCF is a regional firm operating in both CAR and Chad; one source-native key is preserved once, with branch relationship in provenance.",
-      "Institutional SME/registration sources are rails only, not candidate populations."
+      "VNA's international partner-network relationship is context and does not elevate it above smaller local operators.",
+      "Professional association and investment-hub sources are network rails only."
     ],
     "next_alternatives": [
       {
-        "coordinate": "São Tomé and Príncipe / Cabo Verde professional micro-practices",
-        "why": "Rotate toward island Africa and Portuguese-speaking weak coverage."
+        "coordinate": "Guinea-Bissau / Seychelles small professional operators",
+        "why": "Continue island/coastal Africa weak-country rotation."
       },
       {
-        "coordinate": "CAR/Chad alternate-source local directories and individual practitioner sites",
-        "why": "Thin first pass remains open for later lateral source strategy."
+        "coordinate": "São Tomé / Cabo Verde allied-health and training micro-practices",
+        "why": "Different professional family only if weaker-country options yield poorly."
       }
     ],
-    "chosen_next_action": "Rotate to Lusophone island Africa before revisiting thin Central-Africa source surfaces.",
-    "truth_boundary": "SEARCHED_THIN != EXHAUSTED; NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH."
+    "chosen_next_action": "Rotate into Guinea-Bissau / Seychelles before deepening represented island markets.",
+    "truth_boundary": "NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFIED BUYER."
   }
 }
