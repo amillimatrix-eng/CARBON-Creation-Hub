@@ -1070,3 +1070,11 @@ State: **OWNER DIRECTED / ACTIVE AS OPERATIONAL SECURITY CONTROL. Addendum O sup
 - **Artifact:** `AMX/ROOT/INTAKE/FORX_50K_PATCH_BUILDER_ATTRIBUTION_OWNER_PASS_20261009.md`
 - **Core finding:** decisive FORX 50/50 repair attributed to the ChatGPT governing Librarian session using the connected GitHub connector; no separate Owner manual patch observed or required by the recovered causal chain.
 - **Supporting forensic record:** `overdrive/forensics/FORX-50K-PATCH-BUILDER-PROVENANCE-20261009.json`; PR #15; merge `187fab56af7e70acf7372e14abf74525e542cb69`.
+
+
+## 2026-10-09 — WEIGHTED CONTINUITY — Benchmark Integrity & Dynamic Milestone Rule
+- **Intake ID:** ROOT-20261009-WEIGHTED-CONTINUITY-BENCHMARK-INTEGRITY
+- **Class:** Governance / Evaluation Discipline / Weighted Continuity
+- **Status:** Submitted for formalization and Matrix-wide propagation.
+- **Artifact:** `AMX/ROOT/INTAKE/WEIGHTED_CONTINUITY_BENCHMARK_INTEGRITY_DYNAMIC_MILESTONE_RULE_20261009.md`
+- **Core rule:** Dynamic milestones are permitted; invented retrospective benchmarks are not. Where no valid benchmark exists, classify the result as unranked rather than insignificant.
