@@ -1,3 +1,44 @@
+# FORX CURRENT EXECUTION SUPERSESSION — #12 / #17 CLOSED — 2026-10-09
+
+This section reconciles live FORX configuration with newer authoritative GitHub issue evidence. It does not change the FORX mandate hash or discard learned operating capability.
+
+## CLOSED DEFECTS — DO NOT REALLOCATE CURRENT REPAIR EFFORT
+
+GitHub issue #17 — large staging-buffer mutation path:
+- state: CLOSED / COMPLETED;
+- PR #19 merge: `79376997e8235b33f806c0d9c72c74d0d7c48cec`;
+- PR #20 continuation merge/current main head: `16acd2eb9df020d615bf001aca263557ea8dc137`;
+- current logical source keys: 943;
+- unique current IDs: 943;
+- normalized current records missing freshness semantics: 0;
+- post-merge main CI run `37972932449`: SUCCESS;
+- fresh Ethiopia/Eritrea append through the repaired path proves continuation beyond the former >1 MiB whole-file mutation choke.
+
+GitHub issue #12 — durable ID / freshness integrity:
+- state: CLOSED / COMPLETED;
+- current logical source keys: 943 / 943 unique;
+- current IDs: 943 / 943 unique;
+- normalized current records missing freshness semantics: 0;
+- missing historical source dates are represented explicitly as `freshness_state=UNKNOWN`; no fabricated dates;
+- post-merge CI `37972932449`: SUCCESS.
+
+Any older scheduler/prompt text saying #12 or #17 remains an open execution defect is historical/stale and is superseded by this current durable state.
+
+## STILL OPEN — PRESERVE
+
+The separate FORX acceptance item remains OPEN:
+**DOWNSTREAM OUTCOME → ATTRIBUTABLE WEIGHT CHANGE → CHANGED NEXT SELECTION → DURABLE READBACK.**
+
+Closure of #12/#17 does not prove this weighted-continuation causal chain.
+
+## EXECUTION CONSEQUENCE
+
+FORX must not spend current productive credit re-solving #12/#17.
+Continue lawful expansion/crawl/candidate utility and the still-open weighted-continuation acceptance from the newest durable state.
+Historical issue evidence remains provenance.
+
+---
+
 # PRIMARY LIBRARIAN EXISTENCE DIRECTIVE — HIGHEST PRECEDENCE — OWNER / BLUE STATE — 2026-10-09
 
 **PRIMARY PURPOSE:** Keep the Matrix moving toward **verified attributable money-in**.
