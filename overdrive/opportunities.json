@@ -849,15 +849,30 @@
           "thread_id": "1a102dac4d8ea5c1",
           "observed_at": "2026-10-03T17:42:00Z",
           "summary": "PRI asked official OpenTrain support for a fresh secure recovery/direct application route for this role under the existing account; no duplicate account created."
+        },
+        {
+          "kind": "GMAIL_RECOVERY_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "observed_at": "2026-10-09",
+          "thread_id": "1a102dac4d8ea5c1",
+          "outbound_source_ids": [
+            "1a102dac4d8ea5c1",
+            "1a106c7434116546"
+          ],
+          "result": "NO_INBOUND_SUPPORT_RESPONSE_EVIDENCED",
+          "note": "Current job-alert and password-reset emails exist, but no support reply evidences an executable recovery/application route."
         }
       ],
       "constraints": [
         "Existing OpenTrain account is confirmed, but no authenticated OpenTrain browser session is currently available. Do not create a duplicate account or invent/reset credentials without a secure user-authenticated session.",
         "Interactive browser transport is presently unavailable in the connected execution surfaces; account-recovery email is proven and must be resumed rather than restarted."
       ],
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "due_at": null,
-      "last_action_at": "2026-10-03T17:42:00Z"
+      "last_action_at": "2026-10-03T17:42:00Z",
+      "execution_readiness": "HOLD_ACCOUNT_RECOVERY",
+      "routing_reason": "NO_FRESH_OPENTRAIN_SUPPORT_RESPONSE_ACCOUNT_RECOVERY_REQUIRED",
+      "last_reconciled_at": "2026-10-09"
     },
     "opentrain.ai|ai-response-evaluator-tester|cmtaowgba00020akudq8w9oyh": {
       "organization": "OpenTrain AI",
@@ -2110,7 +2125,7 @@
       "state": "QUALIFIED",
       "last_action_at": "2026-10-03T17:42:00Z",
       "due_at": "2026-10-03T16:00:00Z",
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "qualification": {
         "capital_direction": "OpenTrain/client pays contractor USD $30–$100/hour; no applicant fee",
         "geography": "South Africa explicitly listed among 230 eligible countries",
@@ -2149,11 +2164,26 @@
           "thread_id": "1a102dac4d8ea5c1",
           "observed_at": "2026-10-03T17:42:00Z",
           "summary": "PRI asked official OpenTrain support for a fresh secure recovery/direct application route for this role under the existing account; no duplicate account created."
+        },
+        {
+          "kind": "GMAIL_RECOVERY_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "observed_at": "2026-10-09",
+          "thread_id": "1a102dac4d8ea5c1",
+          "outbound_source_ids": [
+            "1a102dac4d8ea5c1",
+            "1a106c7434116546"
+          ],
+          "result": "NO_INBOUND_SUPPORT_RESPONSE_EVIDENCED",
+          "note": "Current job-alert and password-reset emails exist, but no support reply evidences an executable recovery/application route."
         }
       ],
       "constraints": [
         "Interactive browser transport is presently unavailable in the connected execution surfaces; account-recovery email is proven and must be resumed rather than restarted."
-      ]
+      ],
+      "execution_readiness": "HOLD_ACCOUNT_RECOVERY",
+      "routing_reason": "NO_FRESH_OPENTRAIN_SUPPORT_RESPONSE_ACCOUNT_RECOVERY_REQUIRED",
+      "last_reconciled_at": "2026-10-09"
     },
     "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57": {
       "domain": "opentrain.ai",
@@ -2165,7 +2195,7 @@
       "state": "QUALIFIED",
       "last_action_at": "2026-10-03T17:42:00Z",
       "due_at": "2026-10-03T16:00:00Z",
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "qualification": {
         "capital_direction": "OpenTrain/client pays contractor USD $20–$70/hour; no applicant fee",
         "geography": "South Africa explicitly listed among 230 eligible countries",
@@ -2197,11 +2227,26 @@
           "thread_id": "1a102dac4d8ea5c1",
           "observed_at": "2026-10-03T17:42:00Z",
           "summary": "PRI asked official OpenTrain support for a fresh secure recovery/direct application route for this role under the existing account; no duplicate account created."
+        },
+        {
+          "kind": "GMAIL_RECOVERY_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "observed_at": "2026-10-09",
+          "thread_id": "1a102dac4d8ea5c1",
+          "outbound_source_ids": [
+            "1a102dac4d8ea5c1",
+            "1a106c7434116546"
+          ],
+          "result": "NO_INBOUND_SUPPORT_RESPONSE_EVIDENCED",
+          "note": "Current job-alert and password-reset emails exist, but no support reply evidences an executable recovery/application route."
         }
       ],
       "constraints": [
         "Interactive browser transport is presently unavailable in the connected execution surfaces; account-recovery email is proven and must be resumed rather than restarted."
-      ]
+      ],
+      "execution_readiness": "HOLD_ACCOUNT_RECOVERY",
+      "routing_reason": "NO_FRESH_OPENTRAIN_SUPPORT_RESPONSE_ACCOUNT_RECOVERY_REQUIRED",
+      "last_reconciled_at": "2026-10-09"
     },
     "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3": {
       "domain": "opentrain.ai",
@@ -2213,7 +2258,7 @@
       "state": "QUALIFIED",
       "last_action_at": "2026-10-03T17:42:00Z",
       "due_at": "2026-10-03T16:00:00Z",
-      "next_action": "Monitor official OpenTrain support thread 1a102dac4d8ea5c1 for a fresh secure recovery/direct application route, then resume the existing account and submit this role. Do not create a duplicate account.",
+      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "qualification": {
         "capital_direction": "OpenTrain/client pays contractor USD $50–$90/hour; no applicant fee",
         "geography": "South Africa is listed among 230 eligible countries",
@@ -2245,11 +2290,26 @@
           "thread_id": "1a102dac4d8ea5c1",
           "observed_at": "2026-10-03T17:42:00Z",
           "summary": "PRI asked official OpenTrain support for a fresh secure recovery/direct application route for this role under the existing account; no duplicate account created."
+        },
+        {
+          "kind": "GMAIL_RECOVERY_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "observed_at": "2026-10-09",
+          "thread_id": "1a102dac4d8ea5c1",
+          "outbound_source_ids": [
+            "1a102dac4d8ea5c1",
+            "1a106c7434116546"
+          ],
+          "result": "NO_INBOUND_SUPPORT_RESPONSE_EVIDENCED",
+          "note": "Current job-alert and password-reset emails exist, but no support reply evidences an executable recovery/application route."
         }
       ],
       "constraints": [
         "Interactive browser transport is presently unavailable in the connected execution surfaces; account-recovery email is proven and must be resumed rather than restarted."
-      ]
+      ],
+      "execution_readiness": "HOLD_ACCOUNT_RECOVERY",
+      "routing_reason": "NO_FRESH_OPENTRAIN_SUPPORT_RESPONSE_ACCOUNT_RECOVERY_REQUIRED",
+      "last_reconciled_at": "2026-10-09"
     },
     "mindrift.ai|senior-data-scraping-engineer-python|9D9FF7E392": {
       "domain": "mindrift.ai",
