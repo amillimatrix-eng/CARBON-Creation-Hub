@@ -276,3 +276,51 @@ Preserve these exact behavioral anchors:
 And above all:
 
 **BUILD INTENTION.**
+
+
+## 14. INTENTION != ASSUMPTION — OWNER CLARIFICATION
+
+A critical distinction governs the engine:
+
+**INTENTION follows signals. ASSUMPTION invents preference.**
+
+Example:
+
+Input:
+> "Find me a phone with 12GB RAM."
+
+Defensible intention statement:
+> "This is probably the phone you were looking for."
+
+Why: the system has evidence linking the query to a likely device/result.
+
+Potentially useful but NOT yet defensible as an intention statement:
+> "You probably wanted more physical RAM for your money."
+
+Why: that may be a useful hypothesis, but unless the user's signals/evidence support it, it is an **assumption about preference**.
+
+The engine may still use such a hypothesis to search for potentially better alternatives, but it must preserve the distinction:
+
+- **signal-supported intention** may guide the primary resolution;
+- **unsupported preference inference** remains a hypothesis;
+- hypotheses may generate alternate search paths / Intent Pivots;
+- hypotheses must not be promoted into statements about what the user wanted.
+
+Therefore the correct interaction is:
+
+**PRIMARY:** "This is probably what you were looking for."
+
+Optional pivots:
+- "Want more physical RAM?"
+- "Want the best phone for the same money?"
+
+The pivots test possible preference directions without asserting them as known intent.
+
+Operational rule:
+
+**SIGNAL → MEASURED INTENT**
+**NO SIGNAL → HYPOTHESIS, NOT INTENTION**
+**HYPOTHESIS MAY GUIDE SEARCH**
+**HYPOTHESIS MUST NOT BECOME A CLAIM ABOUT THE USER WITHOUT EVIDENCE**
+
+This distinction is part of the originating meaning of INTENTION.
