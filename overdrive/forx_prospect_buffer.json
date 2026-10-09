@@ -18901,6 +18901,168 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Guinea-Bissau/Seychelles rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-896",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cabinetmbc.com/",
+      "organization": "Cabinet MBC",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Madagascar",
+      "region": "Indian Ocean / Africa",
+      "sector": "accounting/audit/SME advisory",
+      "business_model": "local professional services",
+      "surface": "Antananarivo accounting practice created in 2024, explicitly serving SMEs with accounting setup, audit, tax and professional training.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cabinetmbc.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cabinetmbc.com/",
+          "source": "https://www.cabinetmbc.com/"
+        }
+      ],
+      "current_public_evidence": "Antananarivo accounting practice created in 2024, explicitly serving SMEs with accounting setup, audit, tax and professional training.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Madagascar/Comoros rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-897",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://mcl-madagascar.com/",
+      "organization": "MCL Madagascar",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Madagascar",
+      "region": "Indian Ocean / Africa",
+      "sector": "legal/accounting/business advisory",
+      "business_model": "local professional services",
+      "surface": "Antananarivo human-scale practice providing turnkey legal, accounting, administrative and financial support to small enterprises.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://mcl-madagascar.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://mcl-madagascar.com/",
+          "source": "https://mcl-madagascar.com/"
+        }
+      ],
+      "current_public_evidence": "Antananarivo human-scale practice providing turnkey legal, accounting, administrative and financial support to small enterprises.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Madagascar/Comoros rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-898",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cabinet-fenitra.mg/",
+      "organization": "Cabinet Fenitra",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Madagascar",
+      "region": "Indian Ocean / Africa",
+      "sector": "accounting/tax/audit/advisory",
+      "business_model": "local professional services",
+      "surface": "Antananarivo accounting practice offering tailored accounting, tax, audit, legal-assistance and business-plan support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cabinet-fenitra.mg/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cabinet-fenitra.mg/",
+          "source": "https://www.cabinet-fenitra.mg/"
+        }
+      ],
+      "current_public_evidence": "Antananarivo accounting practice offering tailored accounting, tax, audit, legal-assistance and business-plan support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Madagascar/Comoros rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-899",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cac.mg/",
+      "organization": "Cabinet CAC",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Madagascar",
+      "region": "Indian Ocean / Africa",
+      "sector": "accounting/audit/advisory",
+      "business_model": "local professional services",
+      "surface": "Founder-led Antananarivo accounting, audit and management-advisory practice with direct appointment surface.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cac.mg/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cac.mg/",
+          "source": "https://www.cac.mg/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Antananarivo accounting, audit and management-advisory practice with direct appointment surface.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Madagascar/Comoros rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-900",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://iaa-avocats.com/",
+      "organization": "ITIBAR & AVOCATS ASSOCIÉS",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Comoros",
+      "region": "Indian Ocean / Africa",
+      "sector": "business law",
+      "business_model": "local professional services",
+      "surface": "Independent Moroni business-law practice serving Comorian companies, investors and strategic operations under OHADA.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://iaa-avocats.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://iaa-avocats.com/",
+          "source": "https://iaa-avocats.com/"
+        }
+      ],
+      "current_public_evidence": "Independent Moroni business-law practice serving Comorian companies, investors and strategic operations under OHADA.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Madagascar/Comoros rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-901",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.smsh-avocat.com/",
+      "organization": "SMSH Avocat",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Comoros",
+      "region": "Indian Ocean / Africa",
+      "sector": "business law",
+      "business_model": "local professional services",
+      "surface": "Independent practice with a Moroni office supporting TPE, PME, startups and professionals on OHADA and cross-border legal matters.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.smsh-avocat.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.smsh-avocat.com/",
+          "source": "https://www.smsh-avocat.com/"
+        }
+      ],
+      "current_public_evidence": "Independent practice with a Moroni office supporting TPE, PME, startups and professionals on OHADA and cross-border legal matters.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Madagascar/Comoros rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -18958,17 +19120,16 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-GUINEA-BISSAU-SEYCHELLES",
+    "run_identity": "FORX-CONTINUOUS-20261009-MADAGASCAR-COMOROS",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-883",
-        "FORX-PROSPECT-20261009-884",
-        "FORX-PROSPECT-20261009-885",
-        "FORX-PROSPECT-20261009-886",
-        "FORX-PROSPECT-20261009-887",
-        "FORX-PROSPECT-20261009-888",
-        "FORX-PROSPECT-20261009-889"
+        "FORX-PROSPECT-20261009-890",
+        "FORX-PROSPECT-20261009-891",
+        "FORX-PROSPECT-20261009-892",
+        "FORX-PROSPECT-20261009-893",
+        "FORX-PROSPECT-20261009-894",
+        "FORX-PROSPECT-20261009-895"
       ]
     },
     "consumed_sources": [
@@ -18982,16 +19143,17 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "171b30864163b729691fc2c46bd5d460dc6866c5"
+        "revision": "132b96c8251ffb692454dc21c11604d5b0ba1d51"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "Guinea-Bissau / Seychelles weak-country lateral",
-        "country-first anti-starvation",
-        "professional-family rotation"
+        "Madagascar / Comoros weak-country lateral",
+        "SMME-first",
+        "professional-family rotation",
+        "failed first pass != exhausted"
       ],
-      "changed_action": "Executed the saved coastal/island weak-country lateral rather than deepening São Tomé/Cabo Verde; kept bar-association evidence separate from individual practice candidates.",
+      "changed_action": "Executed the saved Indian-Ocean lateral using SME-oriented accounting/advisory practices in Madagascar and local resident legal practices in Comoros; retained Comoros SME-finance institution evidence as a rail only.",
       "source_pointers": [
         "weighted continuity revision 31",
         "prior receipt next_alternatives"
@@ -18999,16 +19161,15 @@
     },
     "exact_coordinate": {
       "geography": [
-        "Guinea-Bissau",
-        "Seychelles"
+        "Madagascar",
+        "Comoros"
       ],
       "sector": [
-        "business law",
-        "legal consulting",
         "accounting",
         "tax",
         "audit",
-        "corporate services"
+        "business advisory",
+        "business law"
       ],
       "model": "local professional services",
       "source": "official public websites"
@@ -19022,31 +19183,31 @@
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-890",
-      "FORX-PROSPECT-20261009-891",
-      "FORX-PROSPECT-20261009-892",
-      "FORX-PROSPECT-20261009-893",
-      "FORX-PROSPECT-20261009-894",
-      "FORX-PROSPECT-20261009-895"
+      "FORX-PROSPECT-20261009-896",
+      "FORX-PROSPECT-20261009-897",
+      "FORX-PROSPECT-20261009-898",
+      "FORX-PROSPECT-20261009-899",
+      "FORX-PROSPECT-20261009-900",
+      "FORX-PROSPECT-20261009-901"
     ],
     "network_result_keys": [
-      "url:https://oagb.gw/"
+      "url:https://sogak.org/"
     ],
     "uncertainty": [
-      "Guinea-Bissau current official-web operator yield remains thin; country stays open for accounting/business-advisory alternate-source discovery.",
-      "Professional associations are network rails only."
+      "Comoros current operator web density remains thin; country remains open for alternate-source professional operators.",
+      "SOGAK is a financial ecosystem rail serving TPMEs and is not promoted as a commercial operator candidate population."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Madagascar / Comoros small professional operators",
-        "why": "Continue Indian Ocean / island Africa weak-country rotation."
+        "coordinate": "Mauritania / Djibouti small professional operators",
+        "why": "Continue Africa weak-country rotation into Sahel/Horn markets."
       },
       {
-        "coordinate": "Guinea-Bissau alternate-source accounting and SME advisory operators",
-        "why": "Thin first pass remains open."
+        "coordinate": "Comoros alternate-source accounting and SME-advisory practices",
+        "why": "Thin source pass remains open."
       }
     ],
-    "chosen_next_action": "Rotate Madagascar/Comoros before revisiting thin Guinea-Bissau source surfaces.",
+    "chosen_next_action": "Rotate Mauritania/Djibouti before revisiting Comoros.",
     "truth_boundary": "SEARCHED_THIN != EXHAUSTED; NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH."
   }
 }
