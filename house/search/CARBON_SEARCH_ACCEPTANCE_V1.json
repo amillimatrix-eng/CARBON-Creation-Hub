@@ -6,8 +6,8 @@
   "mandatory_gates": [
     {
       "id": "G01",
-      "name": "Typed intent model",
-      "test": "Query produces explicit constraints, hypotheses, weights, unknowns, action target and provenance."
+      "name": "Typed intent model / Measured Intent boundary",
+      "test": "Query produces explicit constraints, defensibly measured intent, latent hypotheses, weights, unknowns, action target and provenance; inferred intent is not silently promoted to fact."
     },
     {
       "id": "G02",
@@ -56,8 +56,8 @@
     },
     {
       "id": "G11",
-      "name": "Expected Intent Fulfilment",
-      "test": "Candidate ranking exposes reproducible probability-weighted intent utility inputs and result."
+      "name": "Expected Intent Fulfilment over Measured Intent",
+      "test": "Candidate ranking exposes reproducible probability-weighted intent utility inputs and result, anchored to the defensibly measured intent layer plus explicitly uncertain latent hypotheses."
     },
     {
       "id": "G12",
@@ -136,5 +136,11 @@
     "HOLD",
     "MATRIX_GRADE"
   ],
-  "matrix_grade_condition": "mandatory_gates.every(g => g.state === 'PASS')"
+  "matrix_grade_condition": "mandatory_gates.every(g => g.state === 'PASS')",
+  "metric_layer": {
+    "name": "Measured Intent",
+    "definition": "The portion of user intent CARBON can defensibly infer, weight, test and support with evidence.",
+    "objective": "Maximize Measured Intent resolution while minimizing material Expected Regret.",
+    "boundary": "Unknown or merely hypothesized intent must remain explicitly uncertain."
+  }
 }
