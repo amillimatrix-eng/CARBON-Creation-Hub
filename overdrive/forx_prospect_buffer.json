@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-09T07:02:00+02:00",
+  "last_updated": "2026-10-09T07:08:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -14527,6 +14527,249 @@
       "payer_hypothesis": "Unverified owner/practice buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
       "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-734",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://cfaconseil.ma/",
+      "organization": "CFA Conseil",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Morocco",
+      "region": "Africa",
+      "sector": "accounting/tax/advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Founder-led Casablanca accounting, tax and advisory practice serving SMEs and larger firms; founded 2006.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://cfaconseil.ma/",
+      "source_observed_at": "2026-10-09T07:08:00+02:00",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://cfaconseil.ma/",
+          "source": "https://cfaconseil.ma/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Casablanca accounting, tax and advisory practice serving SMEs and larger firms; founded 2006.",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH SMME-first weighting applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful contact route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-735",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://houri.ma/",
+      "organization": "CABINET ANAM",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Morocco",
+      "region": "Africa",
+      "sector": "accounting/tax/legal advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Independent human-scale Casablanca practice with 10 collaborators serving PME/TPE.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://houri.ma/",
+      "source_observed_at": "2026-10-09T07:08:00+02:00",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://houri.ma/",
+          "source": "https://houri.ma/"
+        }
+      ],
+      "current_public_evidence": "Independent human-scale Casablanca practice with 10 collaborators serving PME/TPE.",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH SMME-first weighting applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful contact route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-736",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://travaudit.ma/",
+      "organization": "TRAVAUDIT",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Morocco",
+      "region": "Africa",
+      "sector": "accounting/company formation/advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Founder-led Casablanca accounting/fiduciary practice explicitly positioned as human-scale and direct-service.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://travaudit.ma/",
+      "source_observed_at": "2026-10-09T07:08:00+02:00",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://travaudit.ma/",
+          "source": "https://travaudit.ma/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Casablanca accounting/fiduciary practice explicitly positioned as human-scale and direct-service.",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH SMME-first weighting applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful contact route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-737",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.africainedescomptes.ma/",
+      "organization": "Africaine des Comptes",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Morocco",
+      "region": "Africa",
+      "sector": "accounting/tax/strategic advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Casablanca chartered-accounting practice serving entrepreneurs, SMEs and investors.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.africainedescomptes.ma/",
+      "source_observed_at": "2026-10-09T07:08:00+02:00",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.africainedescomptes.ma/",
+          "source": "https://www.africainedescomptes.ma/"
+        }
+      ],
+      "current_public_evidence": "Casablanca chartered-accounting practice serving entrepreneurs, SMEs and investors.",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH SMME-first weighting applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful contact route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-738",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.ccgm.com.tn/Welcome",
+      "organization": "CCGM",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "accounting/tax/company formation",
+      "business_model": "SMME/professional services",
+      "surface": "Tunisian PME of 15 accounting professionals with accounting, tax, audit and company-formation services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.ccgm.com.tn/Welcome",
+      "source_observed_at": "2026-10-09T07:08:00+02:00",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.ccgm.com.tn/Welcome",
+          "source": "https://www.ccgm.com.tn/Welcome"
+        }
+      ],
+      "current_public_evidence": "Tunisian PME of 15 accounting professionals with accounting, tax, audit and company-formation services.",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH SMME-first weighting applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful contact route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-739",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://tmconsult.tn/",
+      "organization": "TM Consult",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "accounting/tax/payroll/advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Accounting and advisory firm serving SMEs, project creators and small structures, including remote service.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://tmconsult.tn/",
+      "source_observed_at": "2026-10-09T07:08:00+02:00",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://tmconsult.tn/",
+          "source": "https://tmconsult.tn/"
+        }
+      ],
+      "current_public_evidence": "Accounting and advisory firm serving SMEs, project creators and small structures, including remote service.",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH SMME-first weighting applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful contact route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-740",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://ctb.tn/",
+      "organization": "Cabinet TAHAR BAKIR / CTB",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "accounting/audit/advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Founder-led Tunis accounting and advisory practice with personalized single-interlocutor service.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://ctb.tn/",
+      "source_observed_at": "2026-10-09T07:08:00+02:00",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://ctb.tn/",
+          "source": "https://ctb.tn/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Tunis accounting and advisory practice with personalized single-interlocutor service.",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH SMME-first weighting applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful contact route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-741",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cabinetnfm.com/",
+      "organization": "Cabinet NFM",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "accounting/audit/advisory",
+      "business_model": "SMME/professional services",
+      "surface": "La Marsa accounting and audit practice founded by Nadia Fakhfakh Mdhaffar; personalized advisory and outsourcing.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cabinetnfm.com/",
+      "source_observed_at": "2026-10-09T07:08:00+02:00",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cabinetnfm.com/",
+          "source": "https://www.cabinetnfm.com/"
+        }
+      ],
+      "current_public_evidence": "La Marsa accounting and audit practice founded by Nadia Fakhfakh Mdhaffar; personalized advisory and outsourcing.",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH SMME-first weighting applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful contact route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-742",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.standfors.com/",
+      "organization": "Standfor's",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tunisia",
+      "region": "Africa",
+      "sector": "accounting/tax/outsourcing",
+      "business_model": "SMME/professional services",
+      "surface": "Founder/partner-led Tunis practice serving TPE, PME and startups with in-office and online services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.standfors.com/",
+      "source_observed_at": "2026-10-09T07:08:00+02:00",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.standfors.com/",
+          "source": "https://www.standfors.com/"
+        }
+      ],
+      "current_public_evidence": "Founder/partner-led Tunis practice serving TPE, PME and startups with in-office and online services.",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH SMME-first weighting applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful contact route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -14582,112 +14825,102 @@
     "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
   },
   "last_continuity": {
-    "observed_at": "2026-10-09T07:02:00+02:00",
+    "observed_at": "2026-10-09T07:08:00+02:00",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-0702-SAST",
+    "run_identity": "FORX-CONTINUOUS-20261009-0708-SAST",
     "prior_receipt": {
-      "observed_at": "2026-10-09T06:59:00+02:00",
+      "observed_at": "2026-10-09T07:02:00+02:00",
       "result_ids": [
-        "FORX-PROSPECT-20261009-717",
-        "FORX-PROSPECT-20261009-718",
-        "FORX-PROSPECT-20261009-719",
-        "FORX-PROSPECT-20261009-720",
-        "FORX-PROSPECT-20261009-721"
+        "FORX-PROSPECT-20261009-722",
+        "FORX-PROSPECT-20261009-723",
+        "FORX-PROSPECT-20261009-724",
+        "FORX-PROSPECT-20261009-725",
+        "FORX-PROSPECT-20261009-726",
+        "FORX-PROSPECT-20261009-727",
+        "FORX-PROSPECT-20261009-728",
+        "FORX-PROSPECT-20261009-729",
+        "FORX-PROSPECT-20261009-730",
+        "FORX-PROSPECT-20261009-731",
+        "FORX-PROSPECT-20261009-732",
+        "FORX-PROSPECT-20261009-733"
       ]
     },
     "consumed_sources": [
       {
         "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
-        "revision": "31",
-        "observed_at": "2026-10-08T20:57:57.241Z"
+        "revision": "31"
       },
       {
         "id": "3f28f8b56cd781bd945dcd8630253ef8",
-        "revision": "page_last_edited_at:2026-10-08T21:09:40.403Z"
-      },
-      {
-        "id": "1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc",
-        "revision": "modified_time:2026-10-08T09:38:30.142Z"
+        "revision": "readback:2026-10-09T04:56:31.227Z"
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "424532ee001dbb98822418cd4f08cfd728d332eb"
+        "revision": "c3efcabe6feabed80b72d43550b43019b19fb821"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "FIRST BREATH state transition",
-        "SMME-first weighting / corporates index-only",
-        "time-poor professional micro-practice family",
-        "LEARNING-008 reachability != conversion"
+        "FIRST BREATH",
+        "SMME-first",
+        "professional micro-practices",
+        "country-first anti-saturation"
       ],
-      "changed_action": "Stopped expanding large Pacific infrastructure incumbents and selected small SME-focused accounting/advisory practices across Botswana, Namibia and Mauritius; preserved contactability separately from qualification.",
+      "changed_action": "Expanded from Botswana/Namibia/Mauritius into weak-count Morocco/Tunisia using founder-led and small-team accounting/advisory practices instead of large corporates.",
       "source_pointers": [
         "weighted continuity revision 31",
-        "Root Intake page 3f28f8b56cd781bd945dcd8630253ef8",
-        "Learning Weights ledger"
+        "Root Intake FORX-FIRST-BREATH-APPLY-20261009-01",
+        "prior receipt next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Botswana",
-        "Namibia",
-        "Mauritius"
+        "Morocco",
+        "Tunisia"
       ],
       "sector": [
         "accounting",
-        "bookkeeping",
         "tax",
+        "bookkeeping",
+        "audit",
         "SME advisory"
       ],
-      "model": "small professional practice / SMME-serving firm",
-      "source": "official public business websites",
-      "surface": "public service/contact operations",
-      "offer": null,
-      "price": null
+      "model": "founder-led / small professional practice",
+      "source": "official public business websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 12,
-      "candidates_staged_pending_ingestion": 12,
+      "candidate_exact_keys_discovered": 9,
+      "candidates_staged_pending_ingestion": 9,
       "verified_graph_delta_claimed": 0,
-      "explored": 12,
+      "explored": 9,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-722",
-      "FORX-PROSPECT-20261009-723",
-      "FORX-PROSPECT-20261009-724",
-      "FORX-PROSPECT-20261009-725",
-      "FORX-PROSPECT-20261009-726",
-      "FORX-PROSPECT-20261009-727",
-      "FORX-PROSPECT-20261009-728",
-      "FORX-PROSPECT-20261009-729",
-      "FORX-PROSPECT-20261009-730",
-      "FORX-PROSPECT-20261009-731",
-      "FORX-PROSPECT-20261009-732",
-      "FORX-PROSPECT-20261009-733"
+      "FORX-PROSPECT-20261009-734",
+      "FORX-PROSPECT-20261009-735",
+      "FORX-PROSPECT-20261009-736",
+      "FORX-PROSPECT-20261009-737",
+      "FORX-PROSPECT-20261009-738",
+      "FORX-PROSPECT-20261009-739",
+      "FORX-PROSPECT-20261009-740",
+      "FORX-PROSPECT-20261009-741",
+      "FORX-PROSPECT-20261009-742"
     ],
     "uncertainty": [
-      "Contact routes are public but not delivery-tested.",
-      "No public-facing defect or unmet need is inferred solely from sector membership.",
-      "Root Intake contains a 50K PASS assertion that conflicts with the later direct Owner truth in this conversation; Owner truth remains controlling until independently superseded."
+      "Official operating surface verified; current unmet need not inferred.",
+      "Website availability is not buyer qualification or outreach permission."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Morocco/Tunisia small accounting and professional micro-practices via official local directories + official sites",
-        "why": "Weak-country, SMME-first continuation."
+        "coordinate": "Mauritius small allied-health / therapy practices with individual public booking/contact surfaces",
+        "why": "Different time-poor professional sector in underweighted geography."
       },
       {
-        "coordinate": "Mauritius small clinics/therapy/allied-health practices with public booking/enquiry surfaces",
-        "why": "Apply time-poor professional-practice weighting in a different sector."
+        "coordinate": "Morocco/Tunisia small legal/consulting micro-practices",
+        "why": "Different professional family without country starvation."
       }
     ],
-    "chosen_next_action": "Continue FIRST BREATH country-first/SMME-first discovery in larger batches; corporates index-only unless a specific current gap is evidenced.",
-    "unresolved_gaps": [
-      "Authoritative graph ingestion remains separate.",
-      "Commercial qualification remains with iSCOPE.",
-      "Current direct Owner truth remains 1,200 VERIFIED / 48 countries / 50 categories until explicit newer authoritative evidence supersedes it."
-    ],
-    "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH; CONTACTABLE != QUALIFIED; INTAKE EVIDENCE != OWNER-SUPERSEDING AUTHORITY."
+    "chosen_next_action": "Continue larger FIRST BREATH batches across weak countries and professional families; preserve exploration reserve.",
+    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC WEBSITE != QUALIFIED BUYER."
   }
 }
