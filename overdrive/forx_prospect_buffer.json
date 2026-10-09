@@ -15229,6 +15229,492 @@
       "payer_hypothesis": "Unverified founder/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH professional-practice rotation applied.",
       "consumer_action": "iSCOPE may inspect only current public-facing presentation, enquiry or intake friction; do not infer confidential client/legal problems."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-760",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://loucif.law/",
+      "organization": "Loucif + Co",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Algeria",
+      "region": "Africa",
+      "sector": "boutique business law",
+      "business_model": "SMME / professional services",
+      "surface": "Independent Algiers boutique business-law firm founded in 2021.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://loucif.law/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://loucif.law/",
+          "source": "https://loucif.law/"
+        }
+      ],
+      "current_public_evidence": "Independent Algiers boutique business-law firm founded in 2021.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-761",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.ceccf-dz.com/en/",
+      "organization": "CECCF",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Algeria",
+      "region": "Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Algiers accounting and tax consulting firm with management-advisory services and long operating history.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.ceccf-dz.com/en/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.ceccf-dz.com/en/",
+          "source": "https://www.ceccf-dz.com/en/"
+        }
+      ],
+      "current_public_evidence": "Algiers accounting and tax consulting firm with management-advisory services and long operating history.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-762",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://aouraconsulting.com/",
+      "organization": "AouraConsulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Algeria",
+      "region": "Africa",
+      "sector": "strategic/business consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Founder-led independent Algerian strategic consulting practice supporting entrepreneurs and companies through creation, growth and restructuring.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://aouraconsulting.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://aouraconsulting.com/",
+          "source": "https://aouraconsulting.com/"
+        }
+      ],
+      "current_public_evidence": "Founder-led independent Algerian strategic consulting practice supporting entrepreneurs and companies through creation, growth and restructuring.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-763",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://ghellal-associates.com/",
+      "organization": "Ghellal & Associates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Algeria",
+      "region": "Africa",
+      "sector": "business law",
+      "business_model": "SMME / professional services",
+      "surface": "Algiers business-law practice with a direct public enquiry route.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://ghellal-associates.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://ghellal-associates.com/",
+          "source": "https://ghellal-associates.com/"
+        }
+      ],
+      "current_public_evidence": "Algiers business-law practice with a direct public enquiry route.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-764",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://mokoteli.co.ls/",
+      "organization": "Mokoteli & Associates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Lesotho",
+      "region": "Africa",
+      "sector": "accounting/tax/admin advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Maseru accounting and taxation support practice serving small, medium and large enterprises.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://mokoteli.co.ls/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://mokoteli.co.ls/",
+          "source": "https://mokoteli.co.ls/"
+        }
+      ],
+      "current_public_evidence": "Maseru accounting and taxation support practice serving small, medium and large enterprises.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-765",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://legalsolutions.africa/",
+      "organization": "Legal Solutions Africa",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Lesotho",
+      "region": "Africa",
+      "sector": "legal/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Maseru legal consulting and business-advisory firm serving new and existing businesses.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://legalsolutions.africa/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://legalsolutions.africa/",
+          "source": "https://legalsolutions.africa/"
+        }
+      ],
+      "current_public_evidence": "Maseru legal consulting and business-advisory firm serving new and existing businesses.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-766",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJibqnn6_LjR4RuV2Cf7loXTw",
+      "organization": "Legalize Daily",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Lesotho",
+      "region": "Africa",
+      "sector": "legal services",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies a Maseru law/legal-services practice with direct phone route.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJibqnn6_LjR4RuV2Cf7loXTw",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJibqnn6_LjR4RuV2Cf7loXTw",
+          "source": "google_business:ChIJibqnn6_LjR4RuV2Cf7loXTw"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a Maseru law/legal-services practice with direct phone route.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-767",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJewGhNeTLjR4R5HspU-ecbhg",
+      "organization": "Khoboko Law Chambers",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Lesotho",
+      "region": "Africa",
+      "sector": "law practice",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies a Maseru law firm with appointment and phone contact surfaces.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJewGhNeTLjR4R5HspU-ecbhg",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJewGhNeTLjR4R5HspU-ecbhg",
+          "source": "google_business:ChIJewGhNeTLjR4R5HspU-ecbhg"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a Maseru law firm with appointment and phone contact surfaces.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-768",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJJ8SAGebLjR4RFxXTBt5dRRY",
+      "organization": "Lebo Business Consultants",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Lesotho",
+      "region": "Africa",
+      "sector": "business consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies a Maseru business-management consultancy with appointment and phone surfaces.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJJ8SAGebLjR4RFxXTBt5dRRY",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJJ8SAGebLjR4RFxXTBt5dRRY",
+          "source": "google_business:ChIJJ8SAGebLjR4RFxXTBt5dRRY"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a Maseru business-management consultancy with appointment and phone surfaces.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-769",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.smeclinic.mw/services/",
+      "organization": "SME Clinic",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Malawi",
+      "region": "Africa",
+      "sector": "SME strategy/accounting/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Blantyre SME-focused advisory practice covering strategy, accounting, taxation, funding, systems and business improvement.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.smeclinic.mw/services/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.smeclinic.mw/services/",
+          "source": "https://www.smeclinic.mw/services/"
+        }
+      ],
+      "current_public_evidence": "Blantyre SME-focused advisory practice covering strategy, accounting, taxation, funding, systems and business improvement.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-770",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://lmaccountingglobal.com/",
+      "organization": "L & M Accounting Solutions",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Malawi",
+      "region": "Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Lilongwe accounting and business-advisory firm focused on SMEs and growing businesses.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://lmaccountingglobal.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://lmaccountingglobal.com/",
+          "source": "https://lmaccountingglobal.com/"
+        }
+      ],
+      "current_public_evidence": "Lilongwe accounting and business-advisory firm focused on SMEs and growing businesses.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-771",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://dfsconsultinggroup.com/",
+      "organization": "DFS Consulting Group",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Malawi",
+      "region": "Africa",
+      "sector": "accounting/tax/IT/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Blantyre/Lilongwe consulting practice offering accounting, payroll, audit, tax, business advisory and IT solutions.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://dfsconsultinggroup.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://dfsconsultinggroup.com/",
+          "source": "https://dfsconsultinggroup.com/"
+        }
+      ],
+      "current_public_evidence": "Blantyre/Lilongwe consulting practice offering accounting, payroll, audit, tax, business advisory and IT solutions.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-772",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://auditconsult.mw/",
+      "organization": "Audit Consult Malawi",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Malawi",
+      "region": "Africa",
+      "sector": "audit/accounting/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Malawian-owned and managed audit/advisory practice with Blantyre and Lilongwe offices; larger-network affiliation retained as context.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://auditconsult.mw/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://auditconsult.mw/",
+          "source": "https://auditconsult.mw/"
+        }
+      ],
+      "current_public_evidence": "Malawian-owned and managed audit/advisory practice with Blantyre and Lilongwe offices; larger-network affiliation retained as context.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-773",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.motsadlamini.com/",
+      "organization": "Motsa Dlamini & Associates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Eswatini",
+      "region": "Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Eswatini bookkeeping, accounting, taxation, procurement-training and business-advisory practice.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.motsadlamini.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.motsadlamini.com/",
+          "source": "https://www.motsadlamini.com/"
+        }
+      ],
+      "current_public_evidence": "Eswatini bookkeeping, accounting, taxation, procurement-training and business-advisory practice.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-774",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://gebsna.co.za/",
+      "organization": "Gebsna Business Solutions",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Eswatini",
+      "region": "Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Manzini accounting and business-advisory firm supporting entrepreneurs and growing organisations.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://gebsna.co.za/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://gebsna.co.za/",
+          "source": "https://gebsna.co.za/"
+        }
+      ],
+      "current_public_evidence": "Manzini accounting and business-advisory firm supporting entrepreneurs and growing organisations.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-775",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://mygrowthinvestments.com/",
+      "organization": "My Growth Investments",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Eswatini",
+      "region": "Africa",
+      "sector": "SME consulting/accounting/compliance",
+      "business_model": "SMME / professional services",
+      "surface": "Local Eswatini multi-service consultancy supporting entrepreneurs and small businesses with accounting, tax, compliance and business development.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://mygrowthinvestments.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://mygrowthinvestments.com/",
+          "source": "https://mygrowthinvestments.com/"
+        }
+      ],
+      "current_public_evidence": "Local Eswatini multi-service consultancy supporting entrepreneurs and small businesses with accounting, tax, compliance and business development.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-776",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.360dbs.biz/",
+      "organization": "Three Sixty Degrees Business Solutions",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Eswatini",
+      "region": "Africa",
+      "sector": "business consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Manzini multidisciplinary business-solutions consultancy operating since 2010.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.360dbs.biz/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.360dbs.biz/",
+          "source": "https://www.360dbs.biz/"
+        }
+      ],
+      "current_public_evidence": "Manzini multidisciplinary business-solutions consultancy operating since 2010.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-777",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.n-globalconsulting.com/",
+      "organization": "N-Global Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Eswatini",
+      "region": "Africa",
+      "sector": "business/technology/data consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Consultancy with Eswatini liaison office and explicit booking/intake surface for business, technology and data-analytics engagements.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.n-globalconsulting.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.n-globalconsulting.com/",
+          "source": "https://www.n-globalconsulting.com/"
+        }
+      ],
+      "current_public_evidence": "Consultancy with Eswatini liaison office and explicit booking/intake surface for business, technology and data-analytics engagements.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -15286,15 +15772,22 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-MAGHREB-LEGAL-CONSULT",
+    "run_identity": "FORX-CONTINUOUS-20261009-ZERO-WEAK-AFRICA-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-743",
-        "FORX-PROSPECT-20261009-744",
-        "FORX-PROSPECT-20261009-745",
-        "FORX-PROSPECT-20261009-746",
-        "FORX-PROSPECT-20261009-747"
+        "FORX-PROSPECT-20261009-748",
+        "FORX-PROSPECT-20261009-749",
+        "FORX-PROSPECT-20261009-750",
+        "FORX-PROSPECT-20261009-751",
+        "FORX-PROSPECT-20261009-752",
+        "FORX-PROSPECT-20261009-753",
+        "FORX-PROSPECT-20261009-754",
+        "FORX-PROSPECT-20261009-755",
+        "FORX-PROSPECT-20261009-756",
+        "FORX-PROSPECT-20261009-757",
+        "FORX-PROSPECT-20261009-758",
+        "FORX-PROSPECT-20261009-759"
       ]
     },
     "consumed_sources": [
@@ -15304,76 +15797,95 @@
       },
       {
         "id": "3f28f8b56cd781bd945dcd8630253ef8",
-        "revision": "readback:2026-10-09T04:56:31.227Z"
+        "revision": "FORX-FIRST-BREATH-CONTINUATION-20261009-02"
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "d191cfc93ccf72006cd842583a75a44764975494"
+        "revision": "bb5cc54bd9e7374ea5df08f96440b17240ed478b"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "FIRST BREATH lateral expansion",
-        "time-poor professional micro-practices",
-        "country-first anti-saturation",
-        "corporates index-only"
+        "country coverage heavily favored",
+        "SMME-first",
+        "professional micro-practice family",
+        "sector anti-saturation"
       ],
-      "changed_action": "Rotated from accounting and allied-health into founder-led/human-scale law and consulting practices in Morocco and Tunisia while keeping large institutional firms secondary.",
+      "changed_action": "Left Morocco/Tunisia after the legal/consulting tranche and rotated into Algeria, Lesotho, Malawi and Eswatini professional-service operators, prioritizing countries absent or weak in the explicit staged-country subset.",
       "source_pointers": [
         "weighted continuity revision 31",
-        "prior receipt next_alternatives"
+        "prior receipt next_alternatives",
+        "Root Intake continuation receipt"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Morocco",
-        "Tunisia"
+        "Algeria",
+        "Lesotho",
+        "Malawi",
+        "Eswatini"
       ],
       "sector": [
-        "business law",
-        "legal advisory",
-        "management consulting",
-        "business development"
+        "accounting",
+        "tax",
+        "legal",
+        "business consulting",
+        "SME advisory"
       ],
-      "model": "founder-led / human-scale professional practice",
-      "source": "official public websites"
+      "model": "SMME / founder-led / local professional operator",
+      "source": [
+        "official websites",
+        "public business profiles"
+      ]
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 12,
-      "candidates_staged_pending_ingestion": 12,
+      "candidate_exact_keys_discovered": 18,
+      "candidates_staged_pending_ingestion": 18,
+      "network_rails_discovered": 2,
       "verified_graph_delta_claimed": 0,
-      "explored": 12,
+      "explored": 18,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-748",
-      "FORX-PROSPECT-20261009-749",
-      "FORX-PROSPECT-20261009-750",
-      "FORX-PROSPECT-20261009-751",
-      "FORX-PROSPECT-20261009-752",
-      "FORX-PROSPECT-20261009-753",
-      "FORX-PROSPECT-20261009-754",
-      "FORX-PROSPECT-20261009-755",
-      "FORX-PROSPECT-20261009-756",
-      "FORX-PROSPECT-20261009-757",
-      "FORX-PROSPECT-20261009-758",
-      "FORX-PROSPECT-20261009-759"
+      "FORX-PROSPECT-20261009-760",
+      "FORX-PROSPECT-20261009-761",
+      "FORX-PROSPECT-20261009-762",
+      "FORX-PROSPECT-20261009-763",
+      "FORX-PROSPECT-20261009-764",
+      "FORX-PROSPECT-20261009-765",
+      "FORX-PROSPECT-20261009-766",
+      "FORX-PROSPECT-20261009-767",
+      "FORX-PROSPECT-20261009-768",
+      "FORX-PROSPECT-20261009-769",
+      "FORX-PROSPECT-20261009-770",
+      "FORX-PROSPECT-20261009-771",
+      "FORX-PROSPECT-20261009-772",
+      "FORX-PROSPECT-20261009-773",
+      "FORX-PROSPECT-20261009-774",
+      "FORX-PROSPECT-20261009-775",
+      "FORX-PROSPECT-20261009-776",
+      "FORX-PROSPECT-20261009-777"
+    ],
+    "network_result_keys": [
+      "url:https://esia.org.sz/list-of-audit-firms/",
+      "url:https://ceec-msme.com/"
     ],
     "uncertainty": [
-      "Public professional-service surfaces verified; no current unmet need or confidential client problem inferred.",
-      "Firm size varies; professional-practice relevance does not imply commercial qualification."
+      "Public operating surfaces and directory/profile evidence do not establish buyer pain or outreach consent.",
+      "Audit Consult Malawi has an international correspondent affiliation; retain as context and do not automatically prioritize over smaller practices.",
+      "Network directories are rails only; their member counts are not promoted as nodes."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Algeria small accounting/legal/consulting practices with official domains",
-        "why": "Country remains weak in current staged explicit-country subset."
+        "coordinate": "Angola/Mozambique owner-led accounting, legal and consulting practices",
+        "why": "Country-first zero/weak coverage continuation in Lusophone Southern Africa."
       },
       {
-        "coordinate": "East Africa owner-led clinics/accountants/legal practices outside already-saturated lanes",
-        "why": "Broaden geography while preserving professional-family diversity."
+        "coordinate": "Zambia/Malawi small allied-health, training and professional practices",
+        "why": "Different professional family without saturating accounting/legal."
       }
     ],
-    "chosen_next_action": "Rotate to another weak country before deepening Morocco/Tunisia further.",
-    "truth_boundary": "PROFESSIONAL PRACTICE != PROBLEM; PUBLIC CONTACT != CONSENT; CANDIDATE != VERIFIED GRAPH."
+    "chosen_next_action": "Continue into zero/weak Lusophone Southern Africa before returning to represented clusters.",
+    "truth_boundary": "NETWORK MEMBER COUNTS != NODES; CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != CONSENT OR QUALIFICATION."
   }
 }
