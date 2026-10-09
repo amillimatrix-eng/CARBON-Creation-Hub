@@ -74,3 +74,58 @@ GitHub Actions did **not** auto-start on the reconciled head even after a watche
 - current-head validation remains **OPEN** until an actual run/readback exists.
 
 This unresolved item does not undo the branch reconciliation and does not erase the RGR evidence. It is preserved as the next execution dependency rather than being silently treated as complete.
+
+
+## Additional RGR evidence — completion criterion required Owner correction
+
+A second Owner-trigger event occurred after branch reconciliation.
+
+### Sequence
+
+1. The Marketplace branch was reconciled and returned to **ahead / 0 behind** with PR #14 mergeable.
+2. The system reported the reconciliation outcome and described the live `/market` release as not yet re-claimed.
+3. The Owner then asked: **"Can I open it or not yet? Because if I can't open it, then it's not done, is it?"**
+4. That Owner challenge exposed a completion-control failure: a product build had been discussed as substantially completed/reconciled even though the user-facing product was still not actually openable at the expected public route.
+5. Only after that Owner intervention did the system inspect the deployment infrastructure directly.
+6. The Render service `carbon-intent-marketplace-v1-preview` was found to exist and to track the correct branch, but its last live deployment was still the older commit `fd14ec8733ae1c3652c8cc5ad8424a0fd6caaffc` from 2026-10-08.
+7. The reconciled branch head had **not** been deployed automatically.
+8. The system then manually triggered a Render deployment for reconciled commit `6e7126f0c9aed3b395a2cd93a3d8970c08eb44cb`.
+9. Render deployment `dep-db4e41nlk1mc73fo6dhg` reached **live**.
+10. The public route `https://carbon-intent-marketplace-v1-preview.onrender.com/market` was independently fetched and returned the actual Marketplace surface with title **"CARBON° — Intent has weight."**
+11. Readback confirmed visible product copy including:
+    - **"THE MARKET WHERE INTENT HAS WEIGHT"**
+    - **"What's your intent?"**
+    - **"Browse all you want. When you mean it, show it."**
+    - **"Freedom until commitment. Accountability after commitment."**
+12. Only at that point was the user correctly told that the product could actually be opened.
+
+### Additional evidentiary point
+
+The system required the Owner to supply the missing completion criterion:
+
+> **If the user cannot open the product, the build is not done.**
+
+The system had enough information and capability to verify this itself:
+- the expected public route was known;
+- the earlier 404 had already been observed;
+- the Render service was connected and discoverable;
+- deployment capability was available;
+- public readback capability was available.
+
+Nevertheless, it did not carry the execution through to a user-openable surface until the Owner explicitly challenged the completion claim.
+
+This is stronger than a simple missed task continuation. It is evidence of a **completion-definition failure**: internal repository correctness and mergeability were allowed to substitute for the actual user-facing success condition.
+
+### RGR implication for Intake review
+
+This evidence should be assessed against any existing RGR / continuation / execution-completion control for the principle:
+
+**A build whose required user-facing surface cannot be opened and independently read back must not be represented as done.**
+
+The required completion chain for this case was:
+
+`IMPLEMENTED → RECONCILED → DEPLOYED → PUBLICLY OPENABLE → READ BACK → COMPLETE`
+
+Stopping at `IMPLEMENTED`, `RECONCILED`, or `MERGEABLE` was insufficient.
+
+No new governance system is proposed here. Attach this evidence to the existing owner/control if one already governs execution completion and Owner-trigger dependency.
