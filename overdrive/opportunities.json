@@ -495,7 +495,7 @@
         }
       ],
       "domain": "microdrama.id",
-      "due_at": "2026-10-06T15:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -518,13 +518,22 @@
           "thread_id": "1a0f25a83088e914",
           "observed_at": "2026-10-02T22:02:01Z",
           "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
+        },
+        {
+          "kind": "DUE_THREAD_READBACK",
+          "source": "GMAIL",
+          "source_id": "1a0f25a83088e914",
+          "thread_id": "1a0f25a83088e914",
+          "observed_at": "2026-10-09",
+          "result": "NO_INBOUND_AFTER_INITIAL_PLUS_ONE_FOLLOWUP",
+          "consequence": "CENSORED_WAITING_NO_ADDITIONAL_UNSOLICITED_FOLLOWUP"
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
       "last_action_at": "2026-10-02T22:02:01Z",
       "message_id": "1a0f25a83088e914",
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Initial outreach plus one follow-up are already evidenced and the 2026-10-09 thread readback found no inbound reply. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official intake route emerges.",
       "opportunity": "catalogue-co-production",
       "organization": "Microdrama AI",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -544,7 +553,10 @@
       "thread_id": "1a0f25a83088e914",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
-      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z",
+      "execution_readiness": "WAITING",
+      "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
+      "last_reconciled_at": "2026-10-09"
     },
     "mountainriverfilms.com|co-production-distribution|the-dragon-who-could-not-claim-me": {
       "contact_history": [
@@ -559,7 +571,7 @@
         }
       ],
       "domain": "mountainriverfilms.com",
-      "due_at": "2026-10-06T15:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -582,13 +594,22 @@
           "thread_id": "1a0f2e2af4f0d5cc",
           "observed_at": "2026-10-02T22:02:02Z",
           "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
+        },
+        {
+          "kind": "DUE_THREAD_READBACK",
+          "source": "GMAIL",
+          "source_id": "1a0f2e2af4f0d5cc",
+          "thread_id": "1a0f2e2af4f0d5cc",
+          "observed_at": "2026-10-09",
+          "result": "NO_INBOUND_AFTER_INITIAL_PLUS_ONE_FOLLOWUP",
+          "consequence": "CENSORED_WAITING_NO_ADDITIONAL_UNSOLICITED_FOLLOWUP"
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
       "last_action_at": "2026-10-02T22:02:02Z",
       "message_id": "1a0f2e2af4f0d5cc",
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Initial outreach plus one follow-up are already evidenced and the 2026-10-09 thread readback found no inbound reply. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official intake route emerges.",
       "opportunity": "co-production-distribution",
       "organization": "Mountain River Films",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -604,11 +625,14 @@
       "thread_id": "1a0f2e2af4f0d5cc",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
-      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z",
+      "execution_readiness": "WAITING",
+      "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
+      "last_reconciled_at": "2026-10-09"
     },
     "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me": {
       "domain": "seastarfilm.com",
-      "due_at": "2026-10-06T15:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -631,13 +655,22 @@
           "thread_id": "1a0f2ea1c5a8c36a",
           "observed_at": "2026-10-02T22:02:03Z",
           "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
+        },
+        {
+          "kind": "DUE_THREAD_READBACK",
+          "source": "GMAIL",
+          "source_id": "1a0f2ea1c5a8c36a",
+          "thread_id": "1a0f2ea1c5a8c36a",
+          "observed_at": "2026-10-09",
+          "result": "NO_INBOUND_AFTER_INITIAL_PLUS_ONE_FOLLOWUP",
+          "consequence": "CENSORED_WAITING_NO_ADDITIONAL_UNSOLICITED_FOLLOWUP"
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
       "last_action_at": "2026-10-02T22:02:03Z",
       "message_id": "1a0f2ea1c5a8c36a",
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Initial outreach plus one follow-up are already evidenced and the 2026-10-09 thread readback found no inbound reply. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official intake route emerges.",
       "opportunity": "production-licensing",
       "organization": "Sea Star Productions",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -653,11 +686,14 @@
       "thread_id": "1a0f2ea1c5a8c36a",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
-      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z",
+      "execution_readiness": "WAITING",
+      "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
+      "last_reconciled_at": "2026-10-09"
     },
     "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me": {
       "domain": "yuientertainment.com",
-      "due_at": "2026-10-06T15:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -680,13 +716,22 @@
           "thread_id": "1a0f2eadceb4a96f",
           "observed_at": "2026-10-02T22:02:04Z",
           "summary": "PRI sent one concise in-thread follow-up at human cadence; no duplicate initial outreach."
+        },
+        {
+          "kind": "DUE_THREAD_READBACK",
+          "source": "GMAIL",
+          "source_id": "1a0f2eadceb4a96f",
+          "thread_id": "1a0f2eadceb4a96f",
+          "observed_at": "2026-10-09",
+          "result": "NO_INBOUND_AFTER_INITIAL_PLUS_ONE_FOLLOWUP",
+          "consequence": "CENSORED_WAITING_NO_ADDITIONAL_UNSOLICITED_FOLLOWUP"
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
       "last_action_at": "2026-10-02T22:02:04Z",
       "message_id": "1a0f2eadceb4a96f",
-      "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Initial outreach plus one follow-up are already evidenced and the 2026-10-09 thread readback found no inbound reply. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official intake route emerges.",
       "opportunity": "cross-border-production",
       "organization": "YUI Entertainment",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -702,7 +747,10 @@
       "thread_id": "1a0f2eadceb4a96f",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
-      "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+      "video_access_verified_at": "2026-09-30T16:52:12.432Z",
+      "execution_readiness": "WAITING",
+      "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
+      "last_reconciled_at": "2026-10-09"
     },
     "cherryone.ai|content-partner-distribution|carbon-degree-of-business": {
       "organization": "Cherry One",
