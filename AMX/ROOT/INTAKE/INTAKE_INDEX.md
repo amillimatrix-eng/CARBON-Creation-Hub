@@ -1247,3 +1247,15 @@ A proposal may remain operationally unfinished after classification, but it may 
 - **Core law:** `USER INTENT != CLAIM ACCEPTANCE`; `EVIDENCE CONSTRAINT != OUTCOME STEERING`; `CONSTRAINTS MUST BOUND INTENT, NOT REPLACE IT`; `UNPROVEN JOIN != INVALIDATE THE EVIDENCE BENEATH IT`.
 - **Failure class captured:** assumption substitution, intent displacement, strongest-claim collapse, unproven-join contamination, omission by controversy, constraint-to-conclusion steering, superficial/passing compliance, and other non-Matrix behavior that answers a substituted objective rather than the caller's lawful inquiry.
 - **Anti-drift sequencing:** **BUILD COMPLETE FIRST → GOVERNED PATCH INTEGRATION SECOND.** This submission does not move the active 35-gate target.
+
+
+## 2026-10-09 — GOVERNANCE UPGRADE PROPOSAL — No Synthetic Upgrade Pressure + Promotion Classification
+- **Intake ID:** `ROOT-20261009-GOV-NO-SYNTHETIC-UPGRADES-PROMOTION-CLASSIFICATION`
+- **Owner status:** **ACCEPTED AS OPERATING INTENT / ROUTED TO ROOT FOR GOVERNANCE CLASSIFICATION.**
+- **Artifact:** `AMX/ROOT/INTAKE/GOVERNANCE_UPGRADE_NO_SYNTHETIC_UPGRADE_PRESSURE_AND_PROMOTION_CLASSIFICATION_20261009.md`
+- **Recommended classification:** **GOVERNANCE UPGRADE**.
+- **Core invariant:** `NO EVIDENCED PROBLEM OR MATERIAL OPPORTUNITY → NO PATCH`; `INTAKE CAPACITY != REQUIREMENT TO PRODUCE INTAKE`; `ACTIVITY != IMPROVEMENT`; `MORE RULES != BETTER GOVERNANCE`.
+- **Promotion discipline:** classify each substantive proposal as PRODUCT UPGRADE | BLUE STATE / OPERATING RULE | GOVERNANCE UPGRADE | ECOSYSTEM / INTEGRATION UPGRADE | NO-ACTION/REJECT/ALREADY-SUBSUMED before promotion; identify primary authority target, conflicts/duplication, expected value, and affected secondary surfaces.
+- **Value test:** promote only where there is material product, Matrix, utility, integration, evidence, maintainability, continuity, commercial-goal, or Owner-intervention benefit.
+- **Conflict test:** do not silently stack contradictory authority, fork shared capability, weaken frozen acceptance, or create unnecessary dependency.
+- **CARBON boundary:** does not alter the active CARBON° Search 35/35 build. The existing Category A INTENTION-fidelity post-build patch remains separate and awaits its own governance classification/integration after build completion.
