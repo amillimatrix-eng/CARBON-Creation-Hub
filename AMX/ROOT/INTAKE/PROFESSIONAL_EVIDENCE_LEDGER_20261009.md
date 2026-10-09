@@ -58,3 +58,26 @@ Do not lead professional surfaces with internal mythology where it obscures capa
 ## Retrieval boundary
 
 This ledger is intentionally versioned. It must expand as additional historical transcripts and evidence are recovered. Absence from this version does not erase earlier capability.
+
+## Public LinkedIn baseline — recovered 2026-10-09
+
+Public LinkedIn is discoverable at the canonical profile URL and currently presents Ulrich under AMilliMATRiX with an older positioning layer.
+
+Current public evidence recovered includes:
+
+- public title surface: **Ulrich Du Plessis - AMiLLiMATRiX | LinkedIn**;
+- search-index headline: **Solutions Architect | AI Product Builder | Full-Stack Developer | AI Governance**;
+- public About metadata begins: **"I design and ship AI-assisted products from ambiguous requirements through architecture..."**;
+- public Services currently include web development, IT consulting, business analytics, strategic planning, application development, database development, mobile development, custom software, cloud application development and UX design;
+- public activity surface reports approximately **1K followers**;
+- public project sections currently include **AMX Continuity Spine**, **H0B° unchAIned**, **IRIS MiCase**, and **JAM3S**;
+- the public profile does not yet expose the October FORX 50,000-node / 50-partition execution evidence, the recovered Librarian executor attribution, or the BLUE STATE Weighted Continuity build/operational benchmark.
+
+### Rebuild implication
+
+The LinkedIn profile is not empty or invalid; it is **materially stale relative to the current Matrix evidence state**.
+
+The correct operation is therefore **reconciliation and upgrade**, not wholesale reinvention.
+
+Before authenticated editing, preserve a before-state snapshot and map each proposed edit to the professional evidence ledger.
+
