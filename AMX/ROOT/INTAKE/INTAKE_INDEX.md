@@ -1211,3 +1211,15 @@ State: **OWNER DIRECTED / ACTIVE AS OPERATIONAL SECURITY CONTROL. Addendum O sup
 New Intake submissions must leave Intake in exactly one explicit state:
 `ACCEPT/MERGE | MODIFY/MERGE | REJECT | HOLD(exact blocker + owner + return condition) | ASSIGNED(execution owner + acceptance test) | SUPERSEDED/HISTORICAL`.
 A proposal may remain operationally unfinished after classification, but it may not remain indefinitely as generic `PENDING` when authority/ownership can already be resolved.
+
+
+## 2026-10-09 — INTAKE STATUS INTERPRETATION CONTRACT
+- **Purpose:** prevent historical `PENDING`, `DEGRADED`, `OPEN`, `FAIL`, `HOLD`, or pre-repair labels from being misread as current state after a later disposition.
+- **Precedence rule:** a page's explicit top-level `CURRENT DISPOSITION — CONTROLLING STATE` block governs current Intake interpretation unless a newer explicit controlling disposition exists.
+- **Search rule:** a search hit containing the word `PENDING` is **not** evidence that the item is currently pending. Search is discovery only. Fetch the source and reconcile the controlling disposition before classifying state.
+- **Historical rule:** labels explicitly marked `Historical status (superseded)`, `Historical lifecycle (superseded)`, or equivalent remain provenance only and must not drive current routing.
+- **Split-state rule:** Intake state and execution state are separate. `INTAKE CLOSED / ASSIGNED` may coexist with `EXECUTION OPEN`; `PARTIAL MERGE / EXPLICIT HOLD` means only the named hold scope remains non-executable.
+- **HOLD rule:** current HOLD is valid only when exact held scope, owner, blocker/reason, and return condition are stated.
+- **Supersession rule:** old failure evidence remains true as history even after repair; current state comes from the latest explicit disposition/readback, not from the most alarming historical sentence.
+- **Consumer requirement:** ROOT, MASTER/Librarian, FORX, iSCOPE, PRI, Banker, Reaper, builders and any continuity consumer must apply this status-precedence contract before acting on Intake-derived state.
+- **Anti-drift invariant:** `SEARCH MATCH != CURRENT STATUS`. `HISTORICAL STATUS != LIVE STATE`. `INTAKE CLOSED != EXECUTION COMPLETE`.
