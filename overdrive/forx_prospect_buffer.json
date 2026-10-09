@@ -17065,6 +17065,222 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-828",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.semegachambers.info/",
+      "organization": "Semega Chambers",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Gambia",
+      "region": "West Africa",
+      "sector": "business law",
+      "business_model": "SMME / professional services",
+      "surface": "Banjul/Fajara law practice with corporate, commercial, banking, finance and dispute-resolution services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.semegachambers.info/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.semegachambers.info/",
+          "source": "https://www.semegachambers.info/"
+        }
+      ],
+      "current_public_evidence": "Banjul/Fajara law practice with corporate, commercial, banking, finance and dispute-resolution services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-829",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://mcjamesandfrancis.com/",
+      "organization": "McJames & Francis Management Solutions",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Liberia",
+      "region": "West Africa",
+      "sector": "accounting/tax/financial management",
+      "business_model": "SMME / professional services",
+      "surface": "Monrovia financial-management practice providing accounting, payroll, tax and business support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://mcjamesandfrancis.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://mcjamesandfrancis.com/",
+          "source": "https://mcjamesandfrancis.com/"
+        }
+      ],
+      "current_public_evidence": "Monrovia financial-management practice providing accounting, payroll, tax and business support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-830",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://enagconsultinglr.com/",
+      "organization": "ENAG Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Liberia",
+      "region": "West Africa",
+      "sector": "accounting/tax/audit/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Monrovia strategic advisory and consulting practice providing accounting, tax, legal and audit support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://enagconsultinglr.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://enagconsultinglr.com/",
+          "source": "https://enagconsultinglr.com/"
+        }
+      ],
+      "current_public_evidence": "Monrovia strategic advisory and consulting practice providing accounting, tax, legal and audit support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-831",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://kfaconsults.co/",
+      "organization": "KFA Consults",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Liberia",
+      "region": "West Africa",
+      "sector": "assurance/tax/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Independent Monrovia assurance, tax and advisory practice established in 2016.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://kfaconsults.co/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://kfaconsults.co/",
+          "source": "https://kfaconsults.co/"
+        }
+      ],
+      "current_public_evidence": "Independent Monrovia assurance, tax and advisory practice established in 2016.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-832",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://nobleliberia.com/",
+      "organization": "Noble Partners Law Offices",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Liberia",
+      "region": "West Africa",
+      "sector": "law practice",
+      "business_model": "SMME / professional services",
+      "surface": "Founder-led Monrovia law practice with direct public consultation route.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://nobleliberia.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://nobleliberia.com/",
+          "source": "https://nobleliberia.com/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Monrovia law practice with direct public consultation route.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-833",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.simidiftal.com/",
+      "organization": "Simidi Financial Tax & Advisory Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Liberia",
+      "region": "West Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Founder-led finance, tax and advisory firm serving startups, SMEs, nonprofits and established businesses.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.simidiftal.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.simidiftal.com/",
+          "source": "https://www.simidiftal.com/"
+        }
+      ],
+      "current_public_evidence": "Founder-led finance, tax and advisory firm serving startups, SMEs, nonprofits and established businesses.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-834",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cmblawliberia.com/",
+      "organization": "CMB Law Group",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Liberia",
+      "region": "West Africa",
+      "sector": "legal/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Monrovia legal and advisory practice combining commercial advice with corporate and employment-law services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cmblawliberia.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cmblawliberia.com/",
+          "source": "https://www.cmblawliberia.com/"
+        }
+      ],
+      "current_public_evidence": "Monrovia legal and advisory practice combining commercial advice with corporate and employment-law services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-835",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://legacypartnerscpas.com/index",
+      "organization": "Legacy Partners CPAs",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Liberia",
+      "region": "West Africa",
+      "sector": "accounting/audit/tax/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Monrovia accounting, audit, tax and advisory practice with public consultation surface.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://legacypartnerscpas.com/index",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://legacypartnerscpas.com/index",
+          "source": "https://legacypartnerscpas.com/index"
+        }
+      ],
+      "current_public_evidence": "Monrovia accounting, audit, tax and advisory practice with public consultation surface.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -17122,17 +17338,20 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-WEST-AFRICA-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-GAMBIA-LIBERIA-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-811",
-        "FORX-PROSPECT-20261009-812",
-        "FORX-PROSPECT-20261009-813",
-        "FORX-PROSPECT-20261009-814",
-        "FORX-PROSPECT-20261009-815",
-        "FORX-PROSPECT-20261009-816",
-        "FORX-PROSPECT-20261009-817"
+        "FORX-PROSPECT-20261009-818",
+        "FORX-PROSPECT-20261009-819",
+        "FORX-PROSPECT-20261009-820",
+        "FORX-PROSPECT-20261009-821",
+        "FORX-PROSPECT-20261009-822",
+        "FORX-PROSPECT-20261009-823",
+        "FORX-PROSPECT-20261009-824",
+        "FORX-PROSPECT-20261009-825",
+        "FORX-PROSPECT-20261009-826",
+        "FORX-PROSPECT-20261009-827"
       ]
     },
     "consumed_sources": [
@@ -17146,17 +17365,16 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "0f28efa00cb117cd12219c7f126b0be1e937d5e8"
+        "revision": "0435b5c6520cf78a4868ecd0f64f1364c8223dd5"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "West-Africa rotation",
+        "West-Africa country rotation",
         "Nigeria commercial closure",
-        "SMME-first",
-        "professional-family diversity"
+        "SMME-first"
       ],
-      "changed_action": "Moved from Kenya/Rwanda into Sierra Leone/Ghana professional operators while excluding Nigeria from commercial penetration and avoiding generic directory inflation.",
+      "changed_action": "Executed the saved Gambia/Liberia lateral after Sierra Leone/Ghana, keeping Nigeria out of commercial penetration and continuing owner/professional-service discovery.",
       "source_pointers": [
         "weighted continuity revision 31",
         "prior receipt next_alternatives"
@@ -17164,51 +17382,50 @@
     },
     "exact_coordinate": {
       "geography": [
-        "Sierra Leone",
-        "Ghana"
+        "Gambia",
+        "Liberia"
       ],
       "sector": [
+        "law",
         "accounting",
         "tax",
-        "business advisory",
-        "boutique law"
+        "audit",
+        "business advisory"
       ],
       "model": "SMME / professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 10,
-      "candidates_staged_pending_ingestion": 10,
+      "candidate_exact_keys_discovered": 8,
+      "candidates_staged_pending_ingestion": 8,
       "verified_graph_delta_claimed": 0,
-      "explored": 10,
+      "explored": 8,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-818",
-      "FORX-PROSPECT-20261009-819",
-      "FORX-PROSPECT-20261009-820",
-      "FORX-PROSPECT-20261009-821",
-      "FORX-PROSPECT-20261009-822",
-      "FORX-PROSPECT-20261009-823",
-      "FORX-PROSPECT-20261009-824",
-      "FORX-PROSPECT-20261009-825",
-      "FORX-PROSPECT-20261009-826",
-      "FORX-PROSPECT-20261009-827"
+      "FORX-PROSPECT-20261009-828",
+      "FORX-PROSPECT-20261009-829",
+      "FORX-PROSPECT-20261009-830",
+      "FORX-PROSPECT-20261009-831",
+      "FORX-PROSPECT-20261009-832",
+      "FORX-PROSPECT-20261009-833",
+      "FORX-PROSPECT-20261009-834",
+      "FORX-PROSPECT-20261009-835"
     ],
     "uncertainty": [
       "Public operating surface does not establish current buyer pain or commercial readiness."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Gambia/Liberia owner-led professional practices",
-        "why": "Continue West-Africa country-first expansion outside Nigeria."
+        "coordinate": "Senegal/Côte d'Ivoire small professional practices",
+        "why": "Continue non-Nigeria West-Africa country-first rotation."
       },
       {
-        "coordinate": "Ghana accounting/bookkeeping micro-practices",
-        "why": "Increase sector diversity only if weak-country alternatives are less productive."
+        "coordinate": "Liberia training/health professional micro-practices",
+        "why": "Different sector if further country depth is justified."
       }
     ],
-    "chosen_next_action": "Rotate into Gambia/Liberia before further Ghana depth.",
+    "chosen_next_action": "Rotate Francophone West Africa before deepening Liberia.",
     "truth_boundary": "MAP EVERYWHERE; SELL ONLY WHERE PERMITTED. CANDIDATE != VERIFIED GRAPH."
   }
 }
