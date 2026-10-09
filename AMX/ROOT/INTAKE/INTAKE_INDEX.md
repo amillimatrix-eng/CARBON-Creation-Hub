@@ -1310,5 +1310,5 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Artifact:** AMX/ROOT/INTAKE/RGR_CARBON_MARKETPLACE_OWNER_TRIGGER_EVIDENCE_20261009.md
 - **Evidence:** CARBON° Marketplace review found the live `/market` surface broken/stale and the implementation branch materially behind current `main`. The system identified the exact correction but stopped at recommendation until the Owner explicitly instructed: **"Then rebase reconcile"**.
 - **Evidentiary point:** Owner had to convert an already-known corrective requirement into action despite the defect, remedy and available execution capability already being established.
-- **Same-run correction:** branch reconciliation is being executed in the same run; subsequent success/failure does not erase the RGR evidence.
+- **Same-run correction:** reconciliation completed non-destructively; PR #14 returned mergeable and the branch reached 77 ahead / 0 behind at the recorded checkpoint. Current-head CI remains OPEN because no workflow run auto-started on the reconciliation SHA.
 - **Requested treatment:** attach to existing RGR/continuation/execution-completion control if already owned; otherwise classify through existing Intake protocol. No automatic Canon/Merge authority.
