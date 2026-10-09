@@ -194,7 +194,9 @@ Registry root hash is SHA-256 over the canonical ordered lines:
 
 sorted lexicographically by ROLE_KEY.
 
-**REGISTRY_ROOT_SHA256:** `a9e7b787b454ee6422c8f4b2d55a9253fc5ccb47ac65019002a49f51f6140d21`
+**REGISTRY_ROOT_SHA256:** `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`  
+**REGISTRY VERSION:** `1.2`  
+**SUPERSESSION:** any prompt-cached prior registry root, including `a9e7b787b454ee6422c8f4b2d55a9253fc5ccb47ac65019002a49f51f6140d21`, is historical after T-MED registration and must not be treated as the current expected root.
 
 ---
 
@@ -572,6 +574,11 @@ A local blocker remains local. Unrelated executable work continues.
 
 **NO MANDATE RECEIPT -> NO MATERIAL EXECUTION CLAIM.**
 
+
+## T-MED
+
+**MANDATE_ID:** AMX-MANDATE-TMED-V1  
+**SHA-256:** `3204cb5d8dfcfbc1e904a4a23f0077959bb9371152a2ef32be48e7e858d148f1`
 
 BEGIN_CANONICAL_MANDATE
 MANDATE_ID: AMX-MANDATE-TMED-V1
