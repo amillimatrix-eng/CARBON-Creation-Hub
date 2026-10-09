@@ -171,5 +171,11 @@ def test_repository_manifest_exact_readback():
         "url:https://sstconsultancy.bi/",
         "url:https://www.rohnproctor.com/",
         "url:https://cabinetsacofi.com/",
+        "google_play:et.zaf.app",
+        "google_play:com.etmarketplace.app",
+        "google_play:wollo.gebeya.com",
+        "url:https://www.seller.fetanmarket.com/",
+        "url:https://www.tolofinds.com/",
+        "google_play:com.dkwana.app",
     }
     assert expected <= keys
