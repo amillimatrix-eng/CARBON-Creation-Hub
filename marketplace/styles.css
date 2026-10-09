@@ -106,3 +106,12 @@ body.matrixPreview .brand,body.matrixPremium .brand{text-shadow:0 0 18px rgba(0,
 @media(max-width:800px){.themeButton span:last-child{display:none}.themeChoices{grid-template-columns:1fr}.customTheme{grid-template-columns:1fr 1fr}.customTheme>div,.customTheme .button{grid-column:1/-1}.profileMetrics{grid-template-columns:repeat(2,1fr)}}
 
 .sellerMeta{display:flex;align-items:center;gap:9px;margin-top:2px}.sellerMeta>span:last-child{display:grid;gap:1px;min-width:0}.sellerMeta b{font-size:.72rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sellerMeta small{font:500 .57rem "IBM Plex Mono",monospace;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:17rem}.sellerAvatar{width:29px;height:29px;flex:0 0 29px;border-radius:50%;display:grid;place-items:center;overflow:hidden;background:linear-gradient(145deg,var(--acid),#262626);color:#050505;font:800 .55rem "IBM Plex Mono",monospace;border:1px solid color-mix(in srgb,var(--acid) 35%,#333)}.sellerAvatar img{width:100%;height:100%;object-fit:cover}.buyerIdentity{align-self:flex-start}
+
+/* Final role/readability polish */
+body[data-role="buyer"] main{background:radial-gradient(ellipse at 72% 8%,color-mix(in srgb,var(--buyer) 8%,transparent),transparent 30%)}
+body[data-role="seller"] main{background:radial-gradient(ellipse at 72% 8%,color-mix(in srgb,var(--seller) 9%,transparent),transparent 30%)}
+body[data-role="buyer"] .persona,body[data-role="seller"] .persona{border-color:color-mix(in srgb,var(--acid) 58%,var(--line));box-shadow:0 0 28px color-mix(in srgb,var(--acid) 10%,transparent)}
+body[data-role="buyer"] .persona i,body[data-role="seller"] .persona i{background:var(--acid);box-shadow:0 0 20px var(--acid)}
+body[data-role="buyer"] .hero,body[data-role="seller"] .hero{box-shadow:inset 0 -1px color-mix(in srgb,var(--acid) 15%,var(--line))}
+.railNav{border-color:color-mix(in srgb,var(--acid) 70%,#3a3a3a);background:color-mix(in srgb,#080808 84%,var(--acid));box-shadow:0 10px 35px rgba(0,0,0,.45),0 0 0 1px color-mix(in srgb,var(--acid) 12%,transparent);opacity:1}
+.marketWheelShell:hover .railNav{transform:translateY(-50%) scale(1.04)}
