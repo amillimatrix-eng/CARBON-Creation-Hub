@@ -51,3 +51,26 @@ The subsequent success or failure of the reconciliation does not erase the evide
 ## Immediate corrective action in the same run
 
 The CARBON° Marketplace branch is being reconciled against current `main` in the same run in which this evidence is submitted, rather than creating another Owner handoff.
+
+
+## Same-run corrective outcome
+
+The corrective action requested by the Owner was executed in the same run.
+
+- Reconciliation method: **non-destructive merge reconciliation** rather than history-rewriting rebase, preserving branch provenance.
+- Current-main authority incorporated through: `18faf14db0a31c6e44d6fd8851c5e8e27ffdbe89`.
+- Reconciliation commit: `027a699a7cd213202f66fa24a256b2fda467974d`.
+- CI-trigger receipt commit: `9fe82f9398f13950732f65ca31107093b251380b`.
+- Post-reconciliation comparison: **77 commits ahead / 0 behind main**.
+- PR #14 state after reconciliation: **OPEN / DRAFT / MERGEABLE**.
+- Conflict assessment: current-main changes since the original merge base did not overlap the 24 marketplace branch paths, so the reconciliation could preserve both main and marketplace content without semantic conflict substitution.
+
+### Remaining unresolved execution item
+
+GitHub Actions did **not** auto-start on the reconciled head even after a watched-path Marketplace reconciliation receipt was committed. Therefore:
+
+- no new green CI claim is made for `9fe82f9398f13950732f65ca31107093b251380b`;
+- prior green CI remains historical evidence only;
+- current-head validation remains **OPEN** until an actual run/readback exists.
+
+This unresolved item does not undo the branch reconciliation and does not erase the RGR evidence. It is preserved as the next execution dependency rather than being silently treated as complete.
