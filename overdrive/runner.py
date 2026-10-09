@@ -274,10 +274,24 @@ def commercial_action(key, record, now):
     active_deps = [v for v in (record.get("active_dependencies") or {}).values() if v.get("state") == "ACTIVE"]
     unavailable_route = any(phrase in str(constraint).lower() for constraint in record.get("constraints", [])
                             for phrase in ("no authenticated", "is presently unavailable", "registration/authentication is still required"))
+    suppressed_state = state in {"NO_CONTACT", "REJECTED"}
+    readiness_gate = (
+        readiness.startswith(("HOLD", "SUPPRESSED"))
+        or readiness in {
+            "WAITING",
+            "BLOCKED",
+            "HUMAN_PROVIDER_GATE",
+            "HUMAN_ONLY_GATE",
+            "OWNER_GATE",
+            "PROVIDER_GATE",
+        }
+    )
     if state.startswith("CLOSED") or state == "PAID": status = "CLOSED"
-    elif state.startswith("HOLD") or state == "DEPRIORITIZED" or readiness.startswith("HOLD"):
+    elif suppressed_state:
+        status, reason = "WAITING", state
+    elif state.startswith("HOLD") or state == "DEPRIORITIZED" or readiness_gate:
         status, reason = "WAITING", state if state.startswith("HOLD") else (readiness or state)
-    elif active_deps or readiness in {"WAITING", "BLOCKED"}:
+    elif active_deps:
         status, reason = "WAITING", "ACTIVE_DEPENDENCY"
     elif unavailable_route or (record.get("submission_ready") is True and record.get("route_verified_live") is not True):
         status, reason = "WAITING", "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED"
