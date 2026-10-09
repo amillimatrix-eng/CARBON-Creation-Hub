@@ -17605,6 +17605,303 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-848",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://cabinetseca.com/",
+      "organization": "Cabinet SECA",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Benin",
+      "region": "Francophone West Africa",
+      "sector": "accounting/audit/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Cotonou accounting, audit, project-study and management-advisory practice with public consultation route.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://cabinetseca.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://cabinetseca.com/",
+          "source": "https://cabinetseca.com/"
+        }
+      ],
+      "current_public_evidence": "Cotonou accounting, audit, project-study and management-advisory practice with public consultation route.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-849",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://sica-corp.com/",
+      "organization": "SICA-Conseils & Intermédiaires (SICA-CI)",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Benin",
+      "region": "Francophone West Africa",
+      "sector": "tax/accounting/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Cotonou consulting practice specialized in tax, business management, accounting and legal support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://sica-corp.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://sica-corp.com/",
+          "source": "https://sica-corp.com/"
+        }
+      ],
+      "current_public_evidence": "Cotonou consulting practice specialized in tax, business management, accounting and legal support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-850",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://secca-sarl.com/",
+      "organization": "SECCA SARL",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Benin",
+      "region": "Francophone West Africa",
+      "sector": "accounting/audit/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Cotonou accounting, audit and advisory practice with direct project-enquiry surface.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://secca-sarl.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://secca-sarl.com/",
+          "source": "https://secca-sarl.com/"
+        }
+      ],
+      "current_public_evidence": "Cotonou accounting, audit and advisory practice with direct project-enquiry surface.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-851",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://cabinetgcpro.com/",
+      "organization": "GC Pro Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Benin",
+      "region": "Francophone West Africa",
+      "sector": "accounting/management consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Cotonou consulting practice serving entrepreneurs and growing SMEs with accounting, management and business support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://cabinetgcpro.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://cabinetgcpro.com/",
+          "source": "https://cabinetgcpro.com/"
+        }
+      ],
+      "current_public_evidence": "Cotonou consulting practice serving entrepreneurs and growing SMEs with accounting, management and business support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-852",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://acofservice.bj/",
+      "organization": "ACOF Service",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Benin",
+      "region": "Francophone West Africa",
+      "sector": "financial/accounting/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Founder-managed Cotonou financial-advisory practice supporting businesses with administrative, financial and accounting management.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://acofservice.bj/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://acofservice.bj/",
+          "source": "https://acofservice.bj/"
+        }
+      ],
+      "current_public_evidence": "Founder-managed Cotonou financial-advisory practice supporting businesses with administrative, financial and accounting management.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-853",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://accsarl.com/NEW/",
+      "organization": "ACC SARL",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Togo",
+      "region": "Francophone West Africa",
+      "sector": "accounting/tax/business support",
+      "business_model": "SMME / professional services",
+      "surface": "Lomé accounting and tax practice explicitly supporting PME/PMI with organizational, payroll and business-management services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://accsarl.com/NEW/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://accsarl.com/NEW/",
+          "source": "https://accsarl.com/NEW/"
+        }
+      ],
+      "current_public_evidence": "Lomé accounting and tax practice explicitly supporting PME/PMI with organizational, payroll and business-management services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-854",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://figescoconseil.com/",
+      "organization": "FIGESCO Conseil",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Togo",
+      "region": "Francophone West Africa",
+      "sector": "accounting/audit/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Lomé practice serving professionals, SMEs, associations and merchants with accounting, audit, project and legal guidance.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://figescoconseil.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://figescoconseil.com/",
+          "source": "https://figescoconseil.com/"
+        }
+      ],
+      "current_public_evidence": "Lomé practice serving professionals, SMEs, associations and merchants with accounting, audit, project and legal guidance.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-855",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://cabinet-cifa.com/",
+      "organization": "Cabinet CIFA",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Togo",
+      "region": "Francophone West Africa",
+      "sector": "accounting/tax/project advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Lomé accounting and tax practice providing project feasibility, finance and public-tender support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://cabinet-cifa.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://cabinet-cifa.com/",
+          "source": "https://cabinet-cifa.com/"
+        }
+      ],
+      "current_public_evidence": "Lomé accounting and tax practice providing project feasibility, finance and public-tender support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-856",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.audifiskconseils.com/",
+      "organization": "AUDIFISK CONSEILS",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Togo",
+      "region": "Francophone West Africa",
+      "sector": "accounting/audit/tax/training",
+      "business_model": "SMME / professional services",
+      "surface": "Lomé accounting, audit, tax and practical-training practice founded in 2016.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.audifiskconseils.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.audifiskconseils.com/",
+          "source": "https://www.audifiskconseils.com/"
+        }
+      ],
+      "current_public_evidence": "Lomé accounting, audit, tax and practical-training practice founded in 2016.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-857",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://cec-ti.com/",
+      "organization": "CEC-TI",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Togo",
+      "region": "Francophone West Africa",
+      "sector": "accounting/audit/financial advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Lomé accounting and advisory practice explicitly serving SMEs, microfinance, NGOs and associations.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://cec-ti.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://cec-ti.com/",
+          "source": "https://cec-ti.com/"
+        }
+      ],
+      "current_public_evidence": "Lomé accounting and advisory practice explicitly serving SMEs, microfinance, NGOs and associations.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-858",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cremtogo.com/",
+      "organization": "CREM SARL",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Togo",
+      "region": "Francophone West Africa",
+      "sector": "accounting/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Lomé accounting and business-advisory practice emphasizing proximity and tailored enterprise support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cremtogo.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cremtogo.com/",
+          "source": "https://www.cremtogo.com/"
+        }
+      ],
+      "current_public_evidence": "Lomé accounting and business-advisory practice emphasizing proximity and tailored enterprise support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -17662,18 +17959,22 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-SENEGAL-CIV-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-BENIN-TOGO-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-828",
-        "FORX-PROSPECT-20261009-829",
-        "FORX-PROSPECT-20261009-830",
-        "FORX-PROSPECT-20261009-831",
-        "FORX-PROSPECT-20261009-832",
-        "FORX-PROSPECT-20261009-833",
-        "FORX-PROSPECT-20261009-834",
-        "FORX-PROSPECT-20261009-835"
+        "FORX-PROSPECT-20261009-836",
+        "FORX-PROSPECT-20261009-837",
+        "FORX-PROSPECT-20261009-838",
+        "FORX-PROSPECT-20261009-839",
+        "FORX-PROSPECT-20261009-840",
+        "FORX-PROSPECT-20261009-841",
+        "FORX-PROSPECT-20261009-842",
+        "FORX-PROSPECT-20261009-843",
+        "FORX-PROSPECT-20261009-844",
+        "FORX-PROSPECT-20261009-845",
+        "FORX-PROSPECT-20261009-846",
+        "FORX-PROSPECT-20261009-847"
       ]
     },
     "consumed_sources": [
@@ -17687,78 +17988,72 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "1bd9e56d8053f3fb5f0b80f2e7043e49b922afd5"
+        "revision": "751e8671daffe93ee7ef339623fac68c04b4a93c"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "Francophone West-Africa rotation",
+        "Benin/Togo weak-country lateral",
         "country-first anti-starvation",
         "SMME-first",
-        "corporates index-only"
+        "avoid corporate networks"
       ],
-      "changed_action": "Executed the saved Senegal/Côte d’Ivoire lateral using SME-oriented accounting, tax, legal and advisory practices rather than large multinational/professional networks.",
+      "changed_action": "Executed the saved Benin/Togo lateral using local accounting, tax, advisory and training practices while excluding large international-network results from the primary tranche.",
       "source_pointers": [
         "weighted continuity revision 31",
-        "Root Intake checkpoint 04",
         "prior receipt next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Senegal",
-        "Côte d'Ivoire"
+        "Benin",
+        "Togo"
       ],
       "sector": [
         "accounting",
         "tax",
         "audit",
-        "business advisory",
-        "boutique law"
+        "financial advisory",
+        "business consulting",
+        "training"
       ],
-      "model": "SMME / professional services",
+      "model": "local SMME / professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 12,
-      "candidates_staged_pending_ingestion": 12,
-      "network_rails_discovered": 1,
+      "candidate_exact_keys_discovered": 11,
+      "candidates_staged_pending_ingestion": 11,
       "verified_graph_delta_claimed": 0,
-      "explored": 12,
+      "explored": 11,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-836",
-      "FORX-PROSPECT-20261009-837",
-      "FORX-PROSPECT-20261009-838",
-      "FORX-PROSPECT-20261009-839",
-      "FORX-PROSPECT-20261009-840",
-      "FORX-PROSPECT-20261009-841",
-      "FORX-PROSPECT-20261009-842",
-      "FORX-PROSPECT-20261009-843",
-      "FORX-PROSPECT-20261009-844",
-      "FORX-PROSPECT-20261009-845",
-      "FORX-PROSPECT-20261009-846",
-      "FORX-PROSPECT-20261009-847"
-    ],
-    "network_result_keys": [
-      "url:https://rec.senegalpme.sn/cabinets-daccompagnement/"
+      "FORX-PROSPECT-20261009-848",
+      "FORX-PROSPECT-20261009-849",
+      "FORX-PROSPECT-20261009-850",
+      "FORX-PROSPECT-20261009-851",
+      "FORX-PROSPECT-20261009-852",
+      "FORX-PROSPECT-20261009-853",
+      "FORX-PROSPECT-20261009-854",
+      "FORX-PROSPECT-20261009-855",
+      "FORX-PROSPECT-20261009-856",
+      "FORX-PROSPECT-20261009-857",
+      "FORX-PROSPECT-20261009-858"
     ],
     "uncertainty": [
-      "Public operating surface does not establish unmet buyer pain, staff size or commercial qualification.",
-      "Senegal PME support directory retained as a network rail only; member counts are not promoted as nodes."
+      "Public operating surfaces do not establish unmet buyer pain, practice size or outreach consent."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Benin/Togo owner-led accounting, legal and advisory practices",
-        "why": "Continue Francophone West-Africa weak-country rotation."
+        "coordinate": "Cameroon/Gabon owner-led accounting, legal and advisory practices",
+        "why": "Continue Francophone Africa country rotation."
       },
       {
-        "coordinate": "Senegal/Côte d’Ivoire allied-health/training micro-practices",
-        "why": "Different professional family only after weaker-country alternatives."
+        "coordinate": "Benin/Togo allied-health/training micro-practices",
+        "why": "Different professional family only if weaker-country alternatives are less productive."
       }
     ],
-    "chosen_next_action": "Rotate into Benin/Togo before deepening Senegal/Côte d’Ivoire.",
-    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; NETWORK MEMBER COUNT != NODE; PUBLIC ROUTE != QUALIFIED BUYER."
+    "chosen_next_action": "Rotate into Cameroon/Gabon before deepening Benin/Togo.",
+    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFIED BUYER."
   }
 }
