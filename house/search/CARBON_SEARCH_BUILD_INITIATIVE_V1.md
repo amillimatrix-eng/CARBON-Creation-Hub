@@ -404,8 +404,8 @@ Required behavior:
 2. detect 12GB at that price as anomalous;
 3. test physical vs virtual RAM;
 4. discover 4+8 split;
-5. update intent posterior toward high physical-RAM/value expectation;
-6. search nearby options that could better satisfy that latent expectation;
+5. treat high physical RAM/value as a **latent hypothesis** unless additional user signals support promoting it into Measured Intent;
+6. use that hypothesis to search nearby options that could produce a better outcome without claiming it is what the user wanted;
 7. rank alternatives by expected intent fulfilment, not headline RAM;
 8. expose current orderability/stock evidence when relevant;
 9. stop only when unresolved variables are unlikely to change the decision materially.
@@ -869,3 +869,75 @@ Therefore:
 **NO SIGNAL → HYPOTHESIS, NOT INTENTION**
 
 This distinction prevents CARBON° Search from turning useful inference into fabricated user preference.
+
+
+## 26. SURFACE-NEUTRAL CORE / CONTEXT-SIGNAL ARCHITECTURE
+
+CARBON° Search V1 is **not** defined by a standalone app, a web page, or a single Matrix worker integration.
+
+The authoritative product core is a **headless, versioned intent-resolution capability/service** implemented within the existing CARBON° backend substrate and exposed through stable contracts.
+
+V1 distribution shape:
+
+`PUBLIC WEB SURFACE / MATRIX ADAPTER / AUTHORIZED CLIENT SURFACE → CARBON° SEARCH CORE → INTELLAGENT → EVIDENCE + SCOPES → DECISION + ACTION`
+
+### 26.1 V1 surfaces
+
+Required first-cycle surfaces:
+- a callable CARBON° Search API/service contract;
+- a thin Matrix-wide adapter/tool contract;
+- a minimal public/web reference surface sufficient to prove human-facing behavior and public-scope parity.
+
+A standalone native mobile/desktop application is **not required for V1** and must not become a blocker.
+
+A future native application may consume the same core service if device-native capabilities materially improve outcomes.
+
+### 26.2 Context signals
+
+The core must accept permissioned context as typed signals rather than hard-code surface-specific assumptions.
+
+A context signal should be able to represent, where relevant:
+- signal type;
+- value;
+- source;
+- timestamp/freshness;
+- confidence;
+- permission/visibility;
+- precision/granularity;
+- provenance.
+
+Possible future context signals include:
+- location;
+- time;
+- current task/workflow;
+- caller identity/capability;
+- active document/entity;
+- prior session state;
+- explicit preferences;
+- corrections/rejections;
+- device/runtime context.
+
+**CONTEXT SIGNAL != USER INTENT.**
+
+Context may affect retrieval, weighting or available actions only where its relationship to the decision is defensible.
+
+### 26.3 Location
+
+Location is an **optional permissioned context signal**, not a mandatory architecture dependency.
+
+V1 must make room for location-aware retrieval through the context-signal and scope contracts without requiring a standalone native application.
+
+Examples:
+- public web surface may receive coarse or precise location only when lawfully/explicitly available;
+- Matrix/client callers may provide authorized location context;
+- precise/background/geofencing behavior may justify a future native adapter.
+
+Location must carry provenance, freshness and precision and may not silently become evidence of preference.
+
+### 26.4 Future-surface rule
+
+Future surfaces must integrate with the same versioned core.
+
+Do not fork INTELLAGENT behavior merely because a new surface has richer device signals.
+
+A new surface can add lawful context/capabilities; it cannot redefine Search semantics.
