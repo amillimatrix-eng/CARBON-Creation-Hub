@@ -241,18 +241,6 @@
       "thread_id": "1a0fedc93e232877"
     },
     {
-      "due_at": "2026-10-04T09:00:00Z",
-      "due_now": true,
-      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
-      "opportunity_key": "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
-      "state": "DELIVERY_FAILED",
-      "status": "WAITING",
-      "thread_id": "1a100231731ae464"
-    },
-    {
       "due_at": "2026-10-04T15:12:00Z",
       "due_now": true,
       "next_action": "Monitor existing Redrama thread; on material response, verify terms/rights/payment and provide controlled sample/package only through an authorized access route.",
@@ -423,6 +411,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Do not blindly retry moboreels@moboreader.com. iSCOPE must first revalidate a current official MoboReels commercial/submission route and confirm whether this mailbox remains appropriate. If the same address is current and route viability is re-established, PRI may decide one bounded retry under current dedupe/contact rules; otherwise use only a newly verified official route. No delivery/response/acceptance is evidenced.",
+      "opportunity_key": "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "HOLD_ROUTE_REVALIDATION",
+      "smallest_next_action": "Do not blindly retry moboreels@moboreader.com. iSCOPE must first revalidate a current official MoboReels commercial/submission route and confirm whether this mailbox remains appropriate. If the same address is current and route viability is re-established, PRI may decide one bounded retry under current dedupe/contact rules; otherwise use only a newly verified official route. No delivery/response/acceptance is evidenced.",
+      "state": "DELIVERY_FAILED",
+      "status": "WAITING",
+      "thread_id": "1a100231731ae464"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
       "opportunity_key": "opentrain.ai|python-ai-agent-infrastructure-developer|cmui8x2wr00050bgmasl5oj95",
       "priority": 8,
@@ -529,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-09T13:04:17.576401+00:00",
+  "generated_at": "2026-10-09T13:05:20.293133+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -1134,13 +1134,13 @@
       "thread_id": null
     },
     "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-04T09:00:00Z",
-      "due_now": true,
-      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Do not blindly retry moboreels@moboreader.com. iSCOPE must first revalidate a current official MoboReels commercial/submission route and confirm whether this mailbox remains appropriate. If the same address is current and route viability is re-established, PRI may decide one bounded retry under current dedupe/contact rules; otherwise use only a newly verified official route. No delivery/response/acceptance is evidenced.",
       "opportunity_key": "moboreels.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
+      "priority": 8,
+      "routing_reason": "HOLD_ROUTE_REVALIDATION",
+      "smallest_next_action": "Do not blindly retry moboreels@moboreader.com. iSCOPE must first revalidate a current official MoboReels commercial/submission route and confirm whether this mailbox remains appropriate. If the same address is current and route viability is re-established, PRI may decide one bounded retry under current dedupe/contact rules; otherwise use only a newly verified official route. No delivery/response/acceptance is evidenced.",
       "state": "DELIVERY_FAILED",
       "status": "WAITING",
       "thread_id": "1a100231731ae464"
