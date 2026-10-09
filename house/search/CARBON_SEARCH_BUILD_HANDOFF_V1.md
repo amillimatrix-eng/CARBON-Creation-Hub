@@ -274,3 +274,25 @@ permits:
 `MATRIX_GRADE`
 
 Anything else remains BUILDING / HOLD / NOT_MATRIX_GRADE.
+
+
+## 10A. Intention is not assumption
+
+**INTENTION follows signals. ASSUMPTION invents preference.**
+
+A plausible preference hypothesis may improve retrieval, but it must remain a hypothesis until supported.
+
+Defensible:
+> "This is probably the phone you were looking for."
+
+Not defensible without supporting signal:
+> "You probably wanted more physical RAM for your money."
+
+Allowed alternate pivots:
+- "Want more physical RAM?"
+- "Want the best phone for the same money?"
+
+**SIGNAL → MEASURED INTENT**
+**NO SIGNAL → HYPOTHESIS, NOT INTENTION**
+
+Do not confuse a useful search hypothesis with evidence about the user's preference.
