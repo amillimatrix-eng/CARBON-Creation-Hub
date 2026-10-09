@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "receipt_type": "FORX_STAGING_DELTA_REPAIR_READBACK",
+  "status": "BRANCH_READBACK_PASS_CI_PASS_PRE_MERGE",
+  "date": "2026-10-09",
+  "branch": "fix/forx-staging-delta-store-v1",
+  "base_main_sha": "5f10b5e996f947a3130f31a99b569656703f8ac2",
+  "legacy_base": {
+    "path": "overdrive/forx_prospect_buffer.json",
+    "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
+    "raw_observation_versions": 929,
+    "canonical_unique_source_keys": 928,
+    "historical_exact_source_duplicate": "url:https://www.nabasalaw.com/",
+    "raw_records_missing_explicit_freshness": 337
+  },
+  "delta": {
+    "path": "overdrive/forx_staging/delta-20261009-south-sudan-burundi.json",
+    "git_blob_sha": "3ee3c5a1ed1ed23f217d26e9a87898b15a23cb9d",
+    "records": 9,
+    "new_source_keys": 9,
+    "upserts": 0,
+    "south_sudan": 3,
+    "burundi": 6
+  },
+  "independent_connector_readback": {
+    "current_logical_records": 937,
+    "current_unique_ids": 937,
+    "gross_observation_versions_preserved": 938,
+    "normalized_missing_freshness": 0,
+    "manifest_match": true
+  },
+  "first_ci": {
+    "workflow": "Evidence House Backend Tests",
+    "run_id": 37972102334,
+    "head_sha": "6fa12df987c49d015e59c562136e74a94dc6eb93",
+    "conclusion": "success",
+    "pytest": "53 passed, 0 failed, 1 warning",
+    "smoke": "PASS",
+    "container_build": "PASS",
+    "container_runtime": "PASS"
+  },
+  "boundaries": [
+    "Staging persistence is not production graph growth.",
+    "The nine new records remain RAW_UNQUALIFIED and require iSCOPE/policy qualification.",
+    "South Sudan downstream commercial action remains HOLD pending policy review.",
+    "The legacy base is preserved unchanged as provenance.",
+    "Exact-source duplicate history is preserved; current logical readback upserts by canonical source key.",
+    "Freshness UNKNOWN is explicit where no source date evidence exists; no date is fabricated.",
+    "Weighted outcome-to-next-selection causal proof remains a separate open acceptance item."
+  ]
+}

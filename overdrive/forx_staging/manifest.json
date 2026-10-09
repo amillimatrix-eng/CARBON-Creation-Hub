@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "overdrive/forx_prospect_buffer.json",
+  "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
+  "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
+  "manifest_version": 1,
+  "base_snapshot": {
+    "path": "overdrive/forx_prospect_buffer.json",
+    "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
+    "raw_candidate_count": 929,
+    "logical_unique_source_keys_after_canonicalization": 928,
+    "missing_explicit_freshness_in_raw_snapshot": 337,
+    "preservation": "UNCHANGED MIGRATION PROVENANCE"
+  },
+  "segments": [
+    {
+      "path": "overdrive/forx_staging/delta-20261009-south-sudan-burundi.json",
+      "git_blob_sha": "3ee3c5a1ed1ed23f217d26e9a87898b15a23cb9d",
+      "count": 9,
+      "batch_id": "root-intake-south-sudan-burundi-20261009",
+      "source_keys": [
+        "url:https://oluxconsulting.com/",
+        "url:https://msassd.com/",
+        "url:https://newpeakss.com/",
+        "url:https://hashenconsulting.com/",
+        "url:https://amani-juris.bi/",
+        "url:https://nconsultea.com/",
+        "url:https://sstconsultancy.bi/",
+        "url:https://www.rohnproctor.com/",
+        "url:https://cabinetsacofi.com/"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261009-SS-001",
+        "FORX-PROSPECT-20261009-SS-002",
+        "FORX-PROSPECT-20261009-SS-003",
+        "FORX-PROSPECT-20261009-BI-001",
+        "FORX-PROSPECT-20261009-BI-002",
+        "FORX-PROSPECT-20261009-BI-003",
+        "FORX-PROSPECT-20261009-BI-004",
+        "FORX-PROSPECT-20261009-BI-005",
+        "FORX-PROSPECT-20261009-BI-006"
+      ]
+    }
+  ],
+  "current_unique_source_keys": 937,
+  "gross_observation_versions": 938,
+  "current_normalized_missing_explicit_freshness": 0,
+  "historical_exact_source_duplicate_versions_preserved": 1,
+  "next_segment_sequence": 2,
+  "last_updated": "2026-10-09",
+  "concurrency_contract": {
+    "immutable_base": true,
+    "immutable_deltas": true,
+    "small_manifest_is_conflict_point": true,
+    "stale_manifest_version_must_fail": true,
+    "batch_id_retry_is_idempotent": true,
+    "same_source_key_is_upsert_not_productive_growth": true,
+    "independent_readback_required": true
+  },
+  "claim_boundary": [
+    "This is the same logical FORX prospect staging store; it is not a second graph, database, worker, scheduler or scoring authority.",
+    "The legacy 929-record file remains intact as provenance and is no longer the append mutation surface.",
+    "Current logical readback canonicalizes missing source_key from exact source URL and exposes freshness_state=UNKNOWN when no date evidence exists.",
+    "Nine Intake-held candidates are staged but not graph-verified, qualified, contacted or revenue-bearing by this storage repair."
+  ]
+}

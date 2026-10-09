@@ -1,0 +1,180 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "batch_id": "root-intake-south-sudan-burundi-20261009",
+  "created_at": "2026-10-09",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261009-SS-001",
+      "state": "RAW_UNQUALIFIED",
+      "prior_intake_state": "CANDIDATE / PENDING_INGESTION",
+      "organization": "Olux Consulting",
+      "surface": "audit/tax/financial advisory; Juba, South Sudan",
+      "observed_need": "No current unmet buyer problem inferred; candidate discovered as a local/operator business surface.",
+      "source": "https://oluxconsulting.com/",
+      "source_key": "url:https://oluxconsulting.com/",
+      "freshness_state": "UNKNOWN",
+      "geography": {
+        "country": "South Sudan",
+        "locality": "Juba"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to qualify current buyer/problem relevance.",
+      "fit_note": "Public mapping candidate only. South Sudan downstream commercial action remains HOLD pending current policy review. Public route does not imply consent, buyer status or qualification.",
+      "consumer_action": "iSCOPE verify current business identity, current unmet problem, decision-maker route, policy eligibility and bounded AMX fit before PRI handoff.",
+      "intake_custody": "ROOT INTAKE — P0 FORX MAP-CRAWL LIVENESS FAILURE — 2026-10-08"
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-SS-002",
+      "state": "RAW_UNQUALIFIED",
+      "prior_intake_state": "CANDIDATE / PENDING_INGESTION",
+      "organization": "MSA Consulting Ltd",
+      "surface": "accounting/audit/tax/HR consulting; Juba, South Sudan",
+      "observed_need": "No current unmet buyer problem inferred; candidate discovered as a local/operator business surface.",
+      "source": "https://msassd.com/",
+      "source_key": "url:https://msassd.com/",
+      "freshness_state": "UNKNOWN",
+      "geography": {
+        "country": "South Sudan",
+        "locality": "Juba"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to qualify current buyer/problem relevance.",
+      "fit_note": "Public mapping candidate only. South Sudan downstream commercial action remains HOLD pending current policy review. Public route does not imply consent, buyer status or qualification.",
+      "consumer_action": "iSCOPE verify current business identity, current unmet problem, decision-maker route, policy eligibility and bounded AMX fit before PRI handoff.",
+      "intake_custody": "ROOT INTAKE — P0 FORX MAP-CRAWL LIVENESS FAILURE — 2026-10-08"
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-SS-003",
+      "state": "RAW_UNQUALIFIED",
+      "prior_intake_state": "CANDIDATE / PENDING_INGESTION",
+      "organization": "NewPeak Accounting and Consulting",
+      "surface": "accounting/audit/HR/training/ICT; Juba, South Sudan",
+      "observed_need": "No current unmet buyer problem inferred; candidate discovered as a local/operator business surface.",
+      "source": "https://newpeakss.com/",
+      "source_key": "url:https://newpeakss.com/",
+      "freshness_state": "UNKNOWN",
+      "geography": {
+        "country": "South Sudan",
+        "locality": "Juba"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to qualify current buyer/problem relevance.",
+      "fit_note": "Public mapping candidate only. South Sudan downstream commercial action remains HOLD pending current policy review. Public route does not imply consent, buyer status or qualification.",
+      "consumer_action": "iSCOPE verify current business identity, current unmet problem, decision-maker route, policy eligibility and bounded AMX fit before PRI handoff.",
+      "intake_custody": "ROOT INTAKE — P0 FORX MAP-CRAWL LIVENESS FAILURE — 2026-10-08"
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-BI-001",
+      "state": "RAW_UNQUALIFIED",
+      "prior_intake_state": "CANDIDATE / PENDING_INGESTION",
+      "organization": "Hashen Consulting",
+      "surface": "accounting/tax/business consulting; Bujumbura, Burundi",
+      "observed_need": "No current unmet buyer problem inferred; candidate discovered as a local/operator business surface.",
+      "source": "https://hashenconsulting.com/",
+      "source_key": "url:https://hashenconsulting.com/",
+      "freshness_state": "UNKNOWN",
+      "geography": {
+        "country": "Burundi",
+        "locality": "Bujumbura"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to qualify current buyer/problem relevance.",
+      "fit_note": "Public mapping candidate only. iSCOPE/policy qualification required. Public route does not imply consent, buyer status or qualification.",
+      "consumer_action": "iSCOPE verify current business identity, current unmet problem, decision-maker route, policy eligibility and bounded AMX fit before PRI handoff.",
+      "intake_custody": "ROOT INTAKE — P0 FORX MAP-CRAWL LIVENESS FAILURE — 2026-10-08"
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-BI-002",
+      "state": "RAW_UNQUALIFIED",
+      "prior_intake_state": "CANDIDATE / PENDING_INGESTION",
+      "organization": "AMANI-JURIS",
+      "surface": "business law/consulting; Bujumbura, Burundi",
+      "observed_need": "No current unmet buyer problem inferred; candidate discovered as a local/operator business surface.",
+      "source": "https://amani-juris.bi/",
+      "source_key": "url:https://amani-juris.bi/",
+      "freshness_state": "UNKNOWN",
+      "geography": {
+        "country": "Burundi",
+        "locality": "Bujumbura"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to qualify current buyer/problem relevance.",
+      "fit_note": "Public mapping candidate only. iSCOPE/policy qualification required. Public route does not imply consent, buyer status or qualification.",
+      "consumer_action": "iSCOPE verify current business identity, current unmet problem, decision-maker route, policy eligibility and bounded AMX fit before PRI handoff.",
+      "intake_custody": "ROOT INTAKE — P0 FORX MAP-CRAWL LIVENESS FAILURE — 2026-10-08"
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-BI-003",
+      "state": "RAW_UNQUALIFIED",
+      "prior_intake_state": "CANDIDATE / PENDING_INGESTION",
+      "organization": "N-Consult EA",
+      "surface": "business/project consulting; Bujumbura, Burundi",
+      "observed_need": "No current unmet buyer problem inferred; candidate discovered as a local/operator business surface.",
+      "source": "https://nconsultea.com/",
+      "source_key": "url:https://nconsultea.com/",
+      "freshness_state": "UNKNOWN",
+      "geography": {
+        "country": "Burundi",
+        "locality": "Bujumbura"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to qualify current buyer/problem relevance.",
+      "fit_note": "Public mapping candidate only. iSCOPE/policy qualification required. Public route does not imply consent, buyer status or qualification.",
+      "consumer_action": "iSCOPE verify current business identity, current unmet problem, decision-maker route, policy eligibility and bounded AMX fit before PRI handoff.",
+      "intake_custody": "ROOT INTAKE — P0 FORX MAP-CRAWL LIVENESS FAILURE — 2026-10-08"
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-BI-004",
+      "state": "RAW_UNQUALIFIED",
+      "prior_intake_state": "CANDIDATE / PENDING_INGESTION",
+      "organization": "SSTC Group",
+      "surface": "tax/business consulting; Bujumbura, Burundi",
+      "observed_need": "No current unmet buyer problem inferred; candidate discovered as a local/operator business surface.",
+      "source": "https://sstconsultancy.bi/",
+      "source_key": "url:https://sstconsultancy.bi/",
+      "freshness_state": "UNKNOWN",
+      "geography": {
+        "country": "Burundi",
+        "locality": "Bujumbura"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to qualify current buyer/problem relevance.",
+      "fit_note": "Public mapping candidate only. iSCOPE/policy qualification required. Public route does not imply consent, buyer status or qualification.",
+      "consumer_action": "iSCOPE verify current business identity, current unmet problem, decision-maker route, policy eligibility and bounded AMX fit before PRI handoff.",
+      "intake_custody": "ROOT INTAKE — P0 FORX MAP-CRAWL LIVENESS FAILURE — 2026-10-08"
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-BI-005",
+      "state": "RAW_UNQUALIFIED",
+      "prior_intake_state": "CANDIDATE / PENDING_INGESTION",
+      "organization": "Rohn Proctor",
+      "surface": "boutique financial/business law; Bujumbura, Burundi",
+      "observed_need": "No current unmet buyer problem inferred; candidate discovered as a local/operator business surface.",
+      "source": "https://www.rohnproctor.com/",
+      "source_key": "url:https://www.rohnproctor.com/",
+      "freshness_state": "UNKNOWN",
+      "geography": {
+        "country": "Burundi",
+        "locality": "Bujumbura"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to qualify current buyer/problem relevance.",
+      "fit_note": "Public mapping candidate only. iSCOPE/policy qualification required. Public route does not imply consent, buyer status or qualification.",
+      "consumer_action": "iSCOPE verify current business identity, current unmet problem, decision-maker route, policy eligibility and bounded AMX fit before PRI handoff.",
+      "intake_custody": "ROOT INTAKE — P0 FORX MAP-CRAWL LIVENESS FAILURE — 2026-10-08"
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-BI-006",
+      "state": "RAW_UNQUALIFIED",
+      "prior_intake_state": "CANDIDATE / PENDING_INGESTION",
+      "organization": "SACOFI",
+      "surface": "audit/accounting/tax/business advisory; Burundi",
+      "observed_need": "No current unmet buyer problem inferred; candidate discovered as a local/operator business surface.",
+      "source": "https://cabinetsacofi.com/",
+      "source_key": "url:https://cabinetsacofi.com/",
+      "freshness_state": "UNKNOWN",
+      "geography": {
+        "country": "Burundi",
+        "locality": "UNKNOWN"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to qualify current buyer/problem relevance.",
+      "fit_note": "Public mapping candidate only. iSCOPE/policy qualification required. Public route does not imply consent, buyer status or qualification.",
+      "consumer_action": "iSCOPE verify current business identity, current unmet problem, decision-maker route, policy eligibility and bounded AMX fit before PRI handoff.",
+      "intake_custody": "ROOT INTAKE — P0 FORX MAP-CRAWL LIVENESS FAILURE — 2026-10-08"
+    }
+  ]
+}
