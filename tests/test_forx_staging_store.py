@@ -148,3 +148,27 @@ def test_segment_blob_hash_is_verified(tmp_path):
     delta.write_text(delta.read_text() + " ", encoding="utf-8")
     with pytest.raises(ValueError, match="blob hash mismatch"):
         read_current(tmp_path)
+
+
+def test_repository_manifest_exact_readback():
+    root = __import__("pathlib").Path(__file__).resolve().parents[1]
+    records = read_current(root)
+    keys = {r["source_key"] for r in records}
+    assert len(records) == 937
+    assert len({r["id"] for r in records}) == 937
+    assert all(
+        any(r.get(field) for field in ("source_observed_at", "published", "source_updated", "freshness_state"))
+        for r in records
+    )
+    expected = {
+        "url:https://oluxconsulting.com/",
+        "url:https://msassd.com/",
+        "url:https://newpeakss.com/",
+        "url:https://hashenconsulting.com/",
+        "url:https://amani-juris.bi/",
+        "url:https://nconsultea.com/",
+        "url:https://sstconsultancy.bi/",
+        "url:https://www.rohnproctor.com/",
+        "url:https://cabinetsacofi.com/",
+    }
+    assert expected <= keys
