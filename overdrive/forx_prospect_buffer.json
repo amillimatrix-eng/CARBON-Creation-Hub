@@ -17281,6 +17281,330 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-836",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://horas.sn/",
+      "organization": "Horizon Audit & Accounting Services (HORAS)",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Senegal",
+      "region": "Francophone West Africa",
+      "sector": "accounting/audit/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Dakar accounting, audit and advisory practice providing tailored services to business leaders.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://horas.sn/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://horas.sn/",
+          "source": "https://horas.sn/"
+        }
+      ],
+      "current_public_evidence": "Dakar accounting, audit and advisory practice providing tailored services to business leaders.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-837",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://asma-conseil.com/",
+      "organization": "Asma Audit & Conseil",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Senegal",
+      "region": "Francophone West Africa",
+      "sector": "accounting/audit/SME advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Dakar accounting practice explicitly assisting PME/PMI and TPE with daily administration, finance and growth.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://asma-conseil.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://asma-conseil.com/",
+          "source": "https://asma-conseil.com/"
+        }
+      ],
+      "current_public_evidence": "Dakar accounting practice explicitly assisting PME/PMI and TPE with daily administration, finance and growth.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-838",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://okt.sn/",
+      "organization": "OKT Advisory",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Senegal",
+      "region": "Francophone West Africa",
+      "sector": "tax/legal/financial advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Dakar advisory practice supporting businesses and leaders across tax, legal, finance and business planning.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://okt.sn/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://okt.sn/",
+          "source": "https://okt.sn/"
+        }
+      ],
+      "current_public_evidence": "Dakar advisory practice supporting businesses and leaders across tax, legal, finance and business planning.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-839",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.finlex.sn/",
+      "organization": "Finlex",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Senegal",
+      "region": "Francophone West Africa",
+      "sector": "boutique business law",
+      "business_model": "SMME / professional services",
+      "surface": "Dakar boutique legal practice focused on company, digital, financial-services, labour, tax and business law.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.finlex.sn/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.finlex.sn/",
+          "source": "https://www.finlex.sn/"
+        }
+      ],
+      "current_public_evidence": "Dakar boutique legal practice focused on company, digital, financial-services, labour, tax and business law.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-840",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cecagroupe.com/",
+      "organization": "CECA Groupe",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Senegal",
+      "region": "Francophone West Africa",
+      "sector": "accounting/audit/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Dakar accounting and advisory practice led by two chartered accountants with entrepreneur and SME-support services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cecagroupe.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cecagroupe.com/",
+          "source": "https://www.cecagroupe.com/"
+        }
+      ],
+      "current_public_evidence": "Dakar accounting and advisory practice led by two chartered accountants with entrepreneur and SME-support services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-841",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.mgservices.ci/",
+      "organization": "Millenium Gestion & Services",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Côte d'Ivoire",
+      "region": "Francophone West Africa",
+      "sector": "accounting/tax/legal SME advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Abidjan practice explicitly serving SMEs and entrepreneurs with accounting, tax, legal and business-creation support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.mgservices.ci/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.mgservices.ci/",
+          "source": "https://www.mgservices.ci/"
+        }
+      ],
+      "current_public_evidence": "Abidjan practice explicitly serving SMEs and entrepreneurs with accounting, tax, legal and business-creation support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-842",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://oliva-cm.com/",
+      "organization": "Oliva Management & Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Côte d'Ivoire",
+      "region": "Francophone West Africa",
+      "sector": "accounting/tax/management consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Abidjan practice specializing in accounting, tax, social and management support for SMEs, artisans and other small operators.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://oliva-cm.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://oliva-cm.com/",
+          "source": "https://oliva-cm.com/"
+        }
+      ],
+      "current_public_evidence": "Abidjan practice specializing in accounting, tax, social and management support for SMEs, artisans and other small operators.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-843",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://fisaco.ci/",
+      "organization": "FISACO",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Côte d'Ivoire",
+      "region": "Francophone West Africa",
+      "sector": "accounting/tax/audit/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Ivorian-owned Abidjan accounting, tax, audit and strategic-advisory practice with appointment surfaces.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://fisaco.ci/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://fisaco.ci/",
+          "source": "https://fisaco.ci/"
+        }
+      ],
+      "current_public_evidence": "Ivorian-owned Abidjan accounting, tax, audit and strategic-advisory practice with appointment surfaces.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-844",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cabinet3c.net/",
+      "organization": "Cabinet 3C",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Côte d'Ivoire",
+      "region": "Francophone West Africa",
+      "sector": "accounting/tax/SME advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Abidjan accounting and tax practice providing SME/PMI creation, financial structuring and growth support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cabinet3c.net/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cabinet3c.net/",
+          "source": "https://www.cabinet3c.net/"
+        }
+      ],
+      "current_public_evidence": "Abidjan accounting and tax practice providing SME/PMI creation, financial structuring and growth support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-845",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.pcs-ci.com/",
+      "organization": "Performance Consultance & Services",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Côte d'Ivoire",
+      "region": "Francophone West Africa",
+      "sector": "accounting/tax/legal advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Abidjan practice founded in 2021 to support growing demand from PME, PMI and startups.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.pcs-ci.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.pcs-ci.com/",
+          "source": "https://www.pcs-ci.com/"
+        }
+      ],
+      "current_public_evidence": "Abidjan practice founded in 2021 to support growing demand from PME, PMI and startups.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-846",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.gedbered.com/",
+      "organization": "GED-BERED",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Côte d'Ivoire",
+      "region": "Francophone West Africa",
+      "sector": "accounting/tax/SME advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Abidjan advisory-led accounting practice serving entrepreneurs and SMEs with dedicated interlocutors and transparent quotes.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.gedbered.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.gedbered.com/",
+          "source": "https://www.gedbered.com/"
+        }
+      ],
+      "current_public_evidence": "Abidjan advisory-led accounting practice serving entrepreneurs and SMEs with dedicated interlocutors and transparent quotes.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-847",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://ecsconsultinggroup.com/",
+      "organization": "ECS Consulting Group",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Côte d'Ivoire",
+      "region": "Francophone West Africa",
+      "sector": "accounting/tax/legal/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Abidjan proximity-oriented practice serving business creators and SMEs across accounting, tax, legal, payroll and strategy.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://ecsconsultinggroup.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://ecsconsultinggroup.com/",
+          "source": "https://ecsconsultinggroup.com/"
+        }
+      ],
+      "current_public_evidence": "Abidjan proximity-oriented practice serving business creators and SMEs across accounting, tax, legal, payroll and strategy.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Francophone-West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -17338,20 +17662,18 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-GAMBIA-LIBERIA-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-SENEGAL-CIV-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-818",
-        "FORX-PROSPECT-20261009-819",
-        "FORX-PROSPECT-20261009-820",
-        "FORX-PROSPECT-20261009-821",
-        "FORX-PROSPECT-20261009-822",
-        "FORX-PROSPECT-20261009-823",
-        "FORX-PROSPECT-20261009-824",
-        "FORX-PROSPECT-20261009-825",
-        "FORX-PROSPECT-20261009-826",
-        "FORX-PROSPECT-20261009-827"
+        "FORX-PROSPECT-20261009-828",
+        "FORX-PROSPECT-20261009-829",
+        "FORX-PROSPECT-20261009-830",
+        "FORX-PROSPECT-20261009-831",
+        "FORX-PROSPECT-20261009-832",
+        "FORX-PROSPECT-20261009-833",
+        "FORX-PROSPECT-20261009-834",
+        "FORX-PROSPECT-20261009-835"
       ]
     },
     "consumed_sources": [
@@ -17361,71 +17683,82 @@
       },
       {
         "id": "3f28f8b56cd781bd945dcd8630253ef8",
-        "revision": "FORX-FIRST-BREATH-COUNTRY-CHECKPOINT-20261009-03"
+        "revision": "FORX-FIRST-BREATH-WEST-AFRICA-CHECKPOINT-20261009-04"
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "0435b5c6520cf78a4868ecd0f64f1364c8223dd5"
+        "revision": "1bd9e56d8053f3fb5f0b80f2e7043e49b922afd5"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "West-Africa country rotation",
-        "Nigeria commercial closure",
-        "SMME-first"
+        "Francophone West-Africa rotation",
+        "country-first anti-starvation",
+        "SMME-first",
+        "corporates index-only"
       ],
-      "changed_action": "Executed the saved Gambia/Liberia lateral after Sierra Leone/Ghana, keeping Nigeria out of commercial penetration and continuing owner/professional-service discovery.",
+      "changed_action": "Executed the saved Senegal/Côte d’Ivoire lateral using SME-oriented accounting, tax, legal and advisory practices rather than large multinational/professional networks.",
       "source_pointers": [
         "weighted continuity revision 31",
+        "Root Intake checkpoint 04",
         "prior receipt next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Gambia",
-        "Liberia"
+        "Senegal",
+        "Côte d'Ivoire"
       ],
       "sector": [
-        "law",
         "accounting",
         "tax",
         "audit",
-        "business advisory"
+        "business advisory",
+        "boutique law"
       ],
       "model": "SMME / professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 8,
-      "candidates_staged_pending_ingestion": 8,
+      "candidate_exact_keys_discovered": 12,
+      "candidates_staged_pending_ingestion": 12,
+      "network_rails_discovered": 1,
       "verified_graph_delta_claimed": 0,
-      "explored": 8,
+      "explored": 12,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-828",
-      "FORX-PROSPECT-20261009-829",
-      "FORX-PROSPECT-20261009-830",
-      "FORX-PROSPECT-20261009-831",
-      "FORX-PROSPECT-20261009-832",
-      "FORX-PROSPECT-20261009-833",
-      "FORX-PROSPECT-20261009-834",
-      "FORX-PROSPECT-20261009-835"
+      "FORX-PROSPECT-20261009-836",
+      "FORX-PROSPECT-20261009-837",
+      "FORX-PROSPECT-20261009-838",
+      "FORX-PROSPECT-20261009-839",
+      "FORX-PROSPECT-20261009-840",
+      "FORX-PROSPECT-20261009-841",
+      "FORX-PROSPECT-20261009-842",
+      "FORX-PROSPECT-20261009-843",
+      "FORX-PROSPECT-20261009-844",
+      "FORX-PROSPECT-20261009-845",
+      "FORX-PROSPECT-20261009-846",
+      "FORX-PROSPECT-20261009-847"
+    ],
+    "network_result_keys": [
+      "url:https://rec.senegalpme.sn/cabinets-daccompagnement/"
     ],
     "uncertainty": [
-      "Public operating surface does not establish current buyer pain or commercial readiness."
+      "Public operating surface does not establish unmet buyer pain, staff size or commercial qualification.",
+      "Senegal PME support directory retained as a network rail only; member counts are not promoted as nodes."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Senegal/Côte d'Ivoire small professional practices",
-        "why": "Continue non-Nigeria West-Africa country-first rotation."
+        "coordinate": "Benin/Togo owner-led accounting, legal and advisory practices",
+        "why": "Continue Francophone West-Africa weak-country rotation."
       },
       {
-        "coordinate": "Liberia training/health professional micro-practices",
-        "why": "Different sector if further country depth is justified."
+        "coordinate": "Senegal/Côte d’Ivoire allied-health/training micro-practices",
+        "why": "Different professional family only after weaker-country alternatives."
       }
     ],
-    "chosen_next_action": "Rotate Francophone West Africa before deepening Liberia.",
-    "truth_boundary": "MAP EVERYWHERE; SELL ONLY WHERE PERMITTED. CANDIDATE != VERIFIED GRAPH."
+    "chosen_next_action": "Rotate into Benin/Togo before deepening Senegal/Côte d’Ivoire.",
+    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; NETWORK MEMBER COUNT != NODE; PUBLIC ROUTE != QUALIFIED BUYER."
   }
 }
