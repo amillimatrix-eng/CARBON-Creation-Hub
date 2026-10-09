@@ -20,6 +20,8 @@
       <input id="uiScale" type="range" min="85" max="125" step="5" value="100" aria-label="Interface size">
       <button id="sizeUp" type="button" aria-label="Make interface larger">A+</button>
     </div>
+    <button id="themeButton" class="themeButton" type="button" aria-label="Choose role colors"><span class="themeDots"><i></i><i></i></span><span>Theme</span></button>
+    <button id="profileButton" class="profileButton" type="button" aria-label="Open profile"><span id="avatarMini" class="avatarMini">C°</span></button>
     <button id="persona" class="persona"><i></i><span id="personaLabel">Browser</span></button>
   </div>
 </header>
@@ -77,6 +79,41 @@
   <div id="activityList" class="stack"></div><div id="emptyActivity" class="empty"><b>Nothing to prove yet.</b><span>Looking is not a commitment.</span></div>
 </section>
 </main>
+
+<canvas id="matrixRain" class="matrixRain" aria-hidden="true"></canvas>
+<dialog id="themeDialog"><div class="dialog themeDialog">
+<button id="themeClose" type="button" class="close">×</button>
+<p class="eyebrow">ROLE PALETTE</p><h2>Buyer feels different from seller.</h2>
+<p class="muted">Choose a paired identity. Buyer uses the first color; seller uses the second. Browser remains neutral until you take a role.</p>
+<div id="themeChoices" class="themeChoices">
+  <button type="button" class="themeChoice" data-theme="carbon"><span><i style="--sw:#E8FF5C"></i><i style="--sw:#FF7A3D"></i></span><b>Carbon / Ember</b><small>Default</small></button>
+  <button type="button" class="themeChoice" data-theme="ice"><span><i style="--sw:#69D8FF"></i><i style="--sw:#FF8257"></i></span><b>Ice / Ember</b><small>Clear contrast</small></button>
+  <button type="button" class="themeChoice" data-theme="orchid"><span><i style="--sw:#BC8CFF"></i><i style="--sw:#F2C85A"></i></span><b>Orchid / Gold</b><small>Soft luxury</small></button>
+  <button type="button" class="themeChoice" data-theme="cobalt"><span><i style="--sw:#4B86FF"></i><i style="--sw:#FF668E"></i></span><b>Cobalt / Rose</b><small>Modern signal</small></button>
+  <button type="button" class="themeChoice" data-theme="teal"><span><i style="--sw:#40D5C1"></i><i style="--sw:#FF8069"></i></span><b>Teal / Coral</b><small>Warm / cool</small></button>
+  <button type="button" class="themeChoice" data-theme="pearl"><span><i style="--sw:#E7E0D2"></i><i style="--sw:#C78A59"></i></span><b>Pearl / Bronze</b><small>Quiet luxury</small></button>
+  <button type="button" class="themeChoice premiumTheme" data-theme="matrix" data-premium="true"><span><i style="--sw:#00FF72"></i><i style="--sw:#D7FF00"></i></span><b>Matrix° Experience</b><small>Premium · preview available</small></button>
+</div>
+<div class="customTheme panel">
+  <div><b>Custom pair</b><small>Buyer / seller</small></div>
+  <label>Buyer<input id="customBuyer" type="color" value="#69D8FF"></label>
+  <label>Seller<input id="customSeller" type="color" value="#FF8257"></label>
+  <button id="applyCustomTheme" type="button" class="button">Use custom</button>
+</div>
+<p class="micro">Matrix° entitlement is designed to be granted by the payment/plan connector. This prototype offers a timed preview only.</p>
+</div></dialog>
+
+<dialog id="profileDialog"><div class="dialog profileDialog">
+<button id="profileClose" type="button" class="close">×</button>
+<p class="eyebrow">YOUR CARBON° PROFILE</p>
+<div class="profileHero">
+  <label class="avatarUpload"><span id="profileAvatar" class="profileAvatar">C°</span><input id="avatarInput" type="file" accept="image/jpeg,image/png,image/webp"><small>Change thumbnail</small></label>
+  <div><h2 id="profileName">Participant</h2><p id="profileRef" class="muted">C°…</p><p class="micro">Transaction evidence, not a universal reputation score.</p></div>
+</div>
+<label>Display name<input id="displayName" maxlength="48" placeholder="How should CARBON° address you?"></label>
+<div id="profileMetrics" class="profileMetrics"></div>
+<button id="saveProfile" type="button" class="button primary">Save profile</button>
+</div></dialog>
 
 <dialog id="bondDialog"><form id="bondForm" method="dialog" class="dialog">
 <button class="close" value="cancel">×</button><p class="eyebrow">SHOW YOUR INTENT</p><h2 id="bondTitle">Bond interest</h2><p id="bondRules" class="muted"></p>
