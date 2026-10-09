@@ -128,6 +128,21 @@
       "id": "G25",
       "name": "Deployment readback",
       "test": "Deployed runtime is tested end-to-end against the same build commit/config and returns the expected bounded outcomes."
+    },
+    {
+      "id": "G26",
+      "name": "Matrix-wide callable capability",
+      "test": "An authorized non-CARBON Matrix caller can invoke the same versioned CARBON Search engine through a thin shared interface and receive a valid decision/HOLD contract without embedding a duplicate intent engine."
+    },
+    {
+      "id": "G27",
+      "name": "Shared capability permission boundary",
+      "test": "Matrix-wide invocation preserves caller/scope ACLs at the Search capability boundary; a caller cannot gain unauthorized private/client/Matrix evidence access through Search."
+    },
+    {
+      "id": "G28",
+      "name": "Capability version and upgrade continuity",
+      "test": "Search responses expose capability/contract version and compatible callers continue to use the shared engine after an engine upgrade without independent copied-logic rewrites; incompatible changes fail explicitly."
     }
   ],
   "build_state_values": [
@@ -142,5 +157,12 @@
     "definition": "The portion of user intent CARBON can defensibly infer, weight, test and support with evidence.",
     "objective": "Maximize Measured Intent resolution while minimizing material Expected Regret.",
     "boundary": "Unknown or merely hypothesized intent must remain explicitly uncertain."
+  },
+  "matrix_distribution": {
+    "product_owner": "CARBON°",
+    "capability": "CARBON° Search",
+    "intelligence_layer": "INTELLAGENT",
+    "mode": "single versioned shared engine with thin Matrix-wide adapters",
+    "anti_pattern": "copied or forked intent-engine logic per worker/model"
   }
 }
