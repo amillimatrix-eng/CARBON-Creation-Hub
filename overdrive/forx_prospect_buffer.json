@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-09T07:08:00+02:00",
+  "last_updated": "2026-10-09",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -14770,6 +14770,141 @@
       "payer_hypothesis": "Unverified owner/practice buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH SMME-first weighting applied.",
       "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful contact route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-743",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJfcHYHoBbfCERz8_YuvdXK-k",
+      "organization": "Bilaal Sookia",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritius",
+      "region": "Africa / Indian Ocean",
+      "sector": "psychology practice",
+      "business_model": "small professional practice",
+      "surface": "Public business profile identifies an appointment-based psychologist practice in Vacoas-Phoenix.",
+      "observed_need": "Public practice/contact surface evidenced; no clinical, patient, business or conversion problem inferred.",
+      "source": "google_business:ChIJfcHYHoBbfCERz8_YuvdXK-k",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_phone",
+          "value": "+230 5254 7426",
+          "source": "google_business:ChIJfcHYHoBbfCERz8_YuvdXK-k"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies an appointment-based psychologist practice in Vacoas-Phoenix.",
+      "payer_hypothesis": "Unverified practice owner/manager identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Time-poor professional-practice weighting applied; no regulated outcome claim.",
+      "consumer_action": "iSCOPE may inspect only public-facing booking/enquiry/presentation friction; do not infer patient/client problems or regulated outcomes."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-744",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJe1v-KcthfCERtWV-3FHf3zY",
+      "organization": "Psychologist Lovnima Gungah",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritius",
+      "region": "Africa / Indian Ocean",
+      "sector": "psychology practice",
+      "business_model": "small professional practice",
+      "surface": "Public business profile identifies an appointment-based psychologist practice in New Grove.",
+      "observed_need": "Public practice/contact surface evidenced; no clinical, patient, business or conversion problem inferred.",
+      "source": "google_business:ChIJe1v-KcthfCERtWV-3FHf3zY",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_phone",
+          "value": "+230 5704 1654",
+          "source": "google_business:ChIJe1v-KcthfCERtWV-3FHf3zY"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies an appointment-based psychologist practice in New Grove.",
+      "payer_hypothesis": "Unverified practice owner/manager identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Time-poor professional-practice weighting applied; no regulated outcome claim.",
+      "consumer_action": "iSCOPE may inspect only public-facing booking/enquiry/presentation friction; do not infer patient/client problems or regulated outcomes."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-745",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJCUJgTfBcfCERoRqbH5xX4zE",
+      "organization": "Modern Dental Care Mauritius",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritius",
+      "region": "Africa / Indian Ocean",
+      "sector": "dental practice",
+      "business_model": "small professional practice",
+      "surface": "Public business profile identifies a dental clinic in Vacoas-Phoenix with direct public phone contact.",
+      "observed_need": "Public practice/contact surface evidenced; no clinical, patient, business or conversion problem inferred.",
+      "source": "google_business:ChIJCUJgTfBcfCERoRqbH5xX4zE",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_phone",
+          "value": "+230 698 7998",
+          "source": "google_business:ChIJCUJgTfBcfCERoRqbH5xX4zE"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a dental clinic in Vacoas-Phoenix with direct public phone contact.",
+      "payer_hypothesis": "Unverified practice owner/manager identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Time-poor professional-practice weighting applied; no regulated outcome claim.",
+      "consumer_action": "iSCOPE may inspect only public-facing booking/enquiry/presentation friction; do not infer patient/client problems or regulated outcomes."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-746",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJL0kVwmNrfCERgNFOFjuL1rk",
+      "organization": "Deep Fascia Massage Therapy MAURITIUS",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritius",
+      "region": "Africa / Indian Ocean",
+      "sector": "physical therapy / pain clinic",
+      "business_model": "small professional practice",
+      "surface": "Public business profile identifies a therapist/physical-therapy/pain-control practice in Tamarin.",
+      "observed_need": "Public practice/contact surface evidenced; no clinical, patient, business or conversion problem inferred.",
+      "source": "google_business:ChIJL0kVwmNrfCERgNFOFjuL1rk",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_phone",
+          "value": "+230 5456 0035",
+          "source": "google_business:ChIJL0kVwmNrfCERgNFOFjuL1rk"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a therapist/physical-therapy/pain-control practice in Tamarin.",
+      "payer_hypothesis": "Unverified practice owner/manager identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Time-poor professional-practice weighting applied; no regulated outcome claim.",
+      "consumer_action": "iSCOPE may inspect only public-facing booking/enquiry/presentation friction; do not infer patient/client problems or regulated outcomes."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-747",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJzxGypj9bfCERJ52g3pucQN4",
+      "organization": "PolyConsult Mauritius",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritius",
+      "region": "Africa / Indian Ocean",
+      "sector": "specialist medical clinic",
+      "business_model": "small professional practice",
+      "surface": "Public business profile identifies a specialist medical clinic in Quatre Bornes with public phone contact.",
+      "observed_need": "Public practice/contact surface evidenced; no clinical, patient, business or conversion problem inferred.",
+      "source": "google_business:ChIJzxGypj9bfCERJ52g3pucQN4",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_phone",
+          "value": "+230 467 2526",
+          "source": "google_business:ChIJzxGypj9bfCERJ52g3pucQN4"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a specialist medical clinic in Quatre Bornes with public phone contact.",
+      "payer_hypothesis": "Unverified practice owner/manager identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Time-poor professional-practice weighting applied; no regulated outcome claim.",
+      "consumer_action": "iSCOPE may inspect only public-facing booking/enquiry/presentation friction; do not infer patient/client problems or regulated outcomes."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -14825,24 +14960,21 @@
     "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
   },
   "last_continuity": {
-    "observed_at": "2026-10-09T07:08:00+02:00",
+    "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-0708-SAST",
+    "run_identity": "FORX-CONTINUOUS-20261009-MAURITIUS-ALLIED-HEALTH",
     "prior_receipt": {
-      "observed_at": "2026-10-09T07:02:00+02:00",
+      "observed_at": "2026-10-09T07:08:00+02:00",
       "result_ids": [
-        "FORX-PROSPECT-20261009-722",
-        "FORX-PROSPECT-20261009-723",
-        "FORX-PROSPECT-20261009-724",
-        "FORX-PROSPECT-20261009-725",
-        "FORX-PROSPECT-20261009-726",
-        "FORX-PROSPECT-20261009-727",
-        "FORX-PROSPECT-20261009-728",
-        "FORX-PROSPECT-20261009-729",
-        "FORX-PROSPECT-20261009-730",
-        "FORX-PROSPECT-20261009-731",
-        "FORX-PROSPECT-20261009-732",
-        "FORX-PROSPECT-20261009-733"
+        "FORX-PROSPECT-20261009-734",
+        "FORX-PROSPECT-20261009-735",
+        "FORX-PROSPECT-20261009-736",
+        "FORX-PROSPECT-20261009-737",
+        "FORX-PROSPECT-20261009-738",
+        "FORX-PROSPECT-20261009-739",
+        "FORX-PROSPECT-20261009-740",
+        "FORX-PROSPECT-20261009-741",
+        "FORX-PROSPECT-20261009-742"
       ]
     },
     "consumed_sources": [
@@ -14856,71 +14988,63 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "c3efcabe6feabed80b72d43550b43019b19fb821"
+        "revision": "0bd5a07974fd7c0db2a665b0ec0724746204008c"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "FIRST BREATH",
-        "SMME-first",
-        "professional micro-practices",
+        "time-poor professional micro-practices",
+        "medical/legal public-friction-only boundary",
         "country-first anti-saturation"
       ],
-      "changed_action": "Expanded from Botswana/Namibia/Mauritius into weak-count Morocco/Tunisia using founder-led and small-team accounting/advisory practices instead of large corporates.",
+      "changed_action": "Moved laterally from accounting practices into Mauritius psychology, dental, physical-therapy and specialist-clinic public operating surfaces without inferring patient or clinical problems.",
       "source_pointers": [
         "weighted continuity revision 31",
-        "Root Intake FORX-FIRST-BREATH-APPLY-20261009-01",
         "prior receipt next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Morocco",
-        "Tunisia"
+        "Mauritius"
       ],
       "sector": [
-        "accounting",
-        "tax",
-        "bookkeeping",
-        "audit",
-        "SME advisory"
+        "psychology",
+        "dental",
+        "physical therapy",
+        "specialist clinic"
       ],
-      "model": "founder-led / small professional practice",
-      "source": "official public business websites"
+      "model": "small professional practice",
+      "source": "public business profiles"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 9,
-      "candidates_staged_pending_ingestion": 9,
+      "candidate_exact_keys_discovered": 5,
+      "candidates_staged_pending_ingestion": 5,
       "verified_graph_delta_claimed": 0,
-      "explored": 9,
+      "explored": 5,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-734",
-      "FORX-PROSPECT-20261009-735",
-      "FORX-PROSPECT-20261009-736",
-      "FORX-PROSPECT-20261009-737",
-      "FORX-PROSPECT-20261009-738",
-      "FORX-PROSPECT-20261009-739",
-      "FORX-PROSPECT-20261009-740",
-      "FORX-PROSPECT-20261009-741",
-      "FORX-PROSPECT-20261009-742"
+      "FORX-PROSPECT-20261009-743",
+      "FORX-PROSPECT-20261009-744",
+      "FORX-PROSPECT-20261009-745",
+      "FORX-PROSPECT-20261009-746",
+      "FORX-PROSPECT-20261009-747"
     ],
     "uncertainty": [
-      "Official operating surface verified; current unmet need not inferred.",
-      "Website availability is not buyer qualification or outreach permission."
+      "Business profiles are public source observations; official-domain identity remains unresolved where absent.",
+      "No medical, patient, booking, conversion or business problem is inferred from category or listing alone."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Mauritius small allied-health / therapy practices with individual public booking/contact surfaces",
-        "why": "Different time-poor professional sector in underweighted geography."
+        "coordinate": "Morocco/Tunisia small legal and independent consulting practices",
+        "why": "Different professional family across weak-count countries."
       },
       {
-        "coordinate": "Morocco/Tunisia small legal/consulting micro-practices",
-        "why": "Different professional family without country starvation."
+        "coordinate": "Mauritius allied-health official-domain resolution and public booking-surface inspection",
+        "why": "Increase provenance depth without duplicating first approaches."
       }
     ],
-    "chosen_next_action": "Continue larger FIRST BREATH batches across weak countries and professional families; preserve exploration reserve.",
-    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC WEBSITE != QUALIFIED BUYER."
+    "chosen_next_action": "Continue country-first professional-family rotation and official-domain resolution.",
+    "truth_boundary": "PUBLIC BUSINESS PROFILE != OFFICIAL DOMAIN != QUALIFIED BUYER; NO REGULATED PROBLEM INFERENCE."
   }
 }
