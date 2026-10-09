@@ -1778,14 +1778,14 @@
       "opportunity": "content-partnership",
       "title": "The Dragon Who Could Not Claim Me",
       "internal_tracking_id": "Production 001",
-      "state": "SUBMITTED",
+      "state": "HOLD_WRONG_ROUTE",
       "execution_owner": "PRI",
       "recipient": "contact@goodshort.com",
       "thread_id": "1a0fedd72ae6fde3",
       "message_id": "1a0fedd72ae6fde3",
-      "last_action_at": "2026-10-03T04:01:21Z",
-      "due_at": "2026-10-07T04:01:21Z",
-      "next_action": "Monitor the existing clarified thread for business-team routing and verified package requirements; no duplicate approach.",
+      "last_action_at": "2026-10-03T04:05:55Z",
+      "due_at": null,
+      "next_action": "Do not resend to contact@goodshort.com as though it were a verified business-development route. Preserve the delivered wrong-route evidence. iSCOPE may qualify a distinct current official content-acquisition/licensing route if one is evidenced; PRI acts only after that route is verified.",
       "evidence": [
         {
           "kind": "CURRENT_PRIMARY_ROUTE",
@@ -1817,8 +1817,25 @@
           "thread_id": "1a0fedda19ef40df",
           "observed_at": "2026-10-03T04:01:21Z",
           "summary": "PRI replied in-thread, clarified this is a content licensing/production-partnership enquiry, and requested routing to the content acquisition/licensing/production team."
+        },
+        {
+          "kind": "WRONG_ROUTE_RESPONSE",
+          "source": "GMAIL",
+          "source_id": "1a0fedda19ef40df",
+          "thread_id": "1a0fedda19ef40df",
+          "observed_at": "2026-10-02T23:05:31Z",
+          "summary": "GoodShort contact route returned subscription-cancellation instructions rather than a content-acquisition/business response. This proves the mailbox/route is wrong for the commercial request; it does not prove rejection by the content buyer."
         }
-      ]
+      ],
+      "execution_readiness": "HOLD_ROUTING_GAP",
+      "routing_reason": "DELIVERED_TO_WRONG_SUPPORT_ROUTE",
+      "route_quality": {
+        "address": "contact@goodshort.com",
+        "state": "WRONG_ROUTE",
+        "gmail_label": "AMX/WRONG-ROUTE",
+        "observed_at": "2026-10-09",
+        "evidence_id": "1a0fedda19ef40df"
+      }
     },
     "vigloo.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "vigloo.com",
@@ -3123,9 +3140,9 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-09T12:53:00Z",
-  "last_updated_at": "2026-10-09T12:53:00Z",
-  "last_updated_by": "Master/Librarian bounded reconciliation — Owner no-contact supersession + My Drama current-thread state",
+  "updated_at": "2026-10-09T12:56:00Z",
+  "last_updated_at": "2026-10-09T12:56:00Z",
+  "last_updated_by": "Master/Librarian bounded reconciliation — GoodShort wrong-route state",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
@@ -3208,6 +3225,6 @@
   ],
   "generated_at": "2026-10-03T22:13:20Z",
   "record_count": 66,
-  "last_reconciled_at": "2026-10-09T12:53:00Z",
-  "last_reconciled_reason": "Reconcile canonical commercial inventory with explicit Owner NO-CONTACT suppression for Face Production and current Gmail evidence for My Drama through 2026-10-07. No external sales action performed."
+  "last_reconciled_at": "2026-10-09T12:56:00Z",
+  "last_reconciled_reason": "Reconcile GoodShort canonical opportunity state with delivered wrong-route Gmail evidence and AMX/WRONG-ROUTE annotation. No external outreach performed."
 }
