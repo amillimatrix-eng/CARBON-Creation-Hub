@@ -1291,3 +1291,14 @@ A proposal may remain operationally unfinished after classification, but it may 
 
 ### Governance request
 Assess each proposal independently for product/Matrix/utility/integration value, conflict, duplication and speed-to-money consequence. ACCEPT / MODIFY / REJECT / ALREADY-SUBSUMED / HOLD with exact owner and acceptance test. Do not alter CARBON° Search's frozen 35/35 build with these findings unless a separately governed post-build integration decision explicitly requires it.
+
+## 2026-10-09 — FORX + PRI Mandate Restoration — Money-In Execution
+- **Intake ID:** ROOT-20261009-FORX-PRI-MANDATE-RESTORATION
+- **Recommended classification:** EXECUTION REMEDIATION + GOVERNANCE ROLE-BOUNDARY CORRECTION.
+- **Artifact:** AMX/ROOT/INTAKE/FORX_PRI_MANDATE_RESTORATION_MONEY_IN_20261009.md
+- **Evidence:** FORX mapping scale is live/proven but weighted commercial learning is not sufficiently proven end-to-end; issue #17 blocks large staging-buffer mutation; issue #12 retains residual staging/freshness state. PRI issue #3 already defines full salesman behavior, but current Close readback has 0 active opportunities while durable AMX/Gmail state contains live RESPONDED Face Production work and a USD 1,000 offer.
+- **Root cause:** mandate compression + role drift + fragmented commercial memory + handoff/learning observability gaps; not absence of authority.
+- **Applied remediation:** existing FORX and iSCOPE→PRI automations updated in place. No new workers/pipelines.
+- **FORX restored chain:** discovery → provenance → candidate quality → iSCOPE handoff → downstream outcome → weight update → changed next selection → readback.
+- **PRI restored chain:** full issue #3 salesman loop + durable/Gmail/Close reconciliation + warm-state priority + multi-item work conservation + exact NEXT_ACTION/DUE.
+- **Role law:** Librarian/Master verifies/hardens/restores owners; it does not become the standing substitute for FORX expansion or PRI sales execution.
