@@ -387,6 +387,43 @@ Before reactivation:
 5. establish exactly one live owner;
 6. then enable.
 
+## BLOCKED ATTEMPT RECOVERY LAW
+
+**ATTEMPTED + BLOCKED != TERMINAL STATE.**
+
+A blocked material action creates an **OPEN EXECUTION OBLIGATION**. The worker may not discharge that obligation by merely reporting `BLOCKED`.
+
+For every blocked attempt, preserve a durable recovery parcel containing:
+
+- original mandate / role;
+- exact intended action;
+- object/work item affected;
+- furthest completed state;
+- evidence/receipt of the attempt;
+- exact blocker and its scope;
+- whether the blocker is transient, route-specific, authority-specific, dependency-specific, or genuinely global;
+- safe retry/idempotency key or dedupe condition where applicable;
+- next lawful recovery action;
+- current execution owner;
+- completion acceptance condition.
+
+Required continuation:
+
+1. **RECOVER** the blocked attempt as an open obligation on the next continuity pass.
+2. **RETRY OR REROUTE** through an already-authorized equivalent path when the same owner can lawfully complete it.
+3. If completion requires another existing owner, authority decision, implementation repair, or dependency resolution, **ROUTE THE RECOVERY PARCEL THROUGH ROOT/INTAKE FOR COMPLETION OWNERSHIP** while preserving the original work item and evidence.
+4. Intake must classify/route the unresolved execution obligation; it must not convert the block into passive history.
+5. The receiving owner resumes from the furthest evidenced state. Do not restart from zero, duplicate external actions, or discard completed work.
+6. Closure requires the original acceptance condition to be met and independently read back, or an explicit governed cancellation/supersession.
+
+**BLOCKED RECEIPT -> OPEN OBLIGATION -> RECOVERY OWNER -> COMPLETION / GOVERNED CANCELLATION.**
+
+A local blocker remains local. Unrelated executable work continues.
+
+**REPORTING A BLOCKER != HANDING OFF THE BLOCKER.**  
+**HANDING OFF != COMPLETION.**  
+**NO RECOVERY OWNER / NEXT ACTION -> INVALID BLOCKED STATE.**
+
 ## COMPLETION / NON-DRIFT
 
 **PROMPT != MANDATE.** Prompts consume mandates; they do not replace them.
