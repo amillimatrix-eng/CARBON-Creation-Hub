@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-09T06:49:00+02:00",
+  "last_updated": "2026-10-09T06:55:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -13798,6 +13798,276 @@
       "payer_hypothesis": "Unverified",
       "fit_note": "CANDIDATE / PENDING_INGESTION",
       "consumer_action": "iSCOPE qualify current need, identity, suppression, route before PRI"
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-707",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://pafcofiji.com/",
+      "organization": "Pacific Fishing Company Pte Limited (PAFCO)",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Fiji",
+      "region": "Pacific/Oceania",
+      "sector": "tuna processing/export",
+      "business_model": "commercial operator",
+      "surface": "Cannery, canned tuna production, local and international standards",
+      "observed_need": "Operating surface evidenced; unmet buyer problem not established.",
+      "source": "https://pafcofiji.com/",
+      "source_observed_at": "2026-10-09T06:55:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://pafcofiji.com/",
+          "source": "https://pafcofiji.com/"
+        }
+      ],
+      "current_public_evidence": "Cannery, canned tuna production, local and international standards",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-708",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://solander.com.fj/cold-chain/",
+      "organization": "Solander (Pacific) Ltd",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Fiji",
+      "region": "Pacific/Oceania",
+      "sector": "fisheries cold-chain/export",
+      "business_model": "commercial operator",
+      "surface": "Refrigerated handling, airport chilled storage, temperature monitoring",
+      "observed_need": "Operating surface evidenced; unmet buyer problem not established.",
+      "source": "https://solander.com.fj/cold-chain/",
+      "source_observed_at": "2026-10-09T06:55:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://solander.com.fj/cold-chain/",
+          "source": "https://solander.com.fj/cold-chain/"
+        }
+      ],
+      "current_public_evidence": "Refrigerated handling, airport chilled storage, temperature monitoring",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-709",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://viti-foods-ltd.webflow.io/",
+      "organization": "Viti Foods Limited",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Fiji",
+      "region": "Pacific/Oceania",
+      "sector": "tuna/mackerel processing/export",
+      "business_model": "commercial operator",
+      "surface": "Processes tuna and mackerel for Fiji and export markets",
+      "observed_need": "Operating surface evidenced; unmet buyer problem not established.",
+      "source": "https://viti-foods-ltd.webflow.io/",
+      "source_observed_at": "2026-10-09T06:55:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://viti-foods-ltd.webflow.io/",
+          "source": "https://viti-foods-ltd.webflow.io/"
+        }
+      ],
+      "current_public_evidence": "Processes tuna and mackerel for Fiji and export markets",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-710",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.foodspacific.com/tripac/",
+      "organization": "Tripacific Marine Ltd",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Fiji",
+      "region": "Pacific/Oceania",
+      "sector": "tuna processing/export",
+      "business_model": "commercial operator",
+      "surface": "HACCP processing plant and international tuna export",
+      "observed_need": "Operating surface evidenced; unmet buyer problem not established.",
+      "source": "https://www.foodspacific.com/tripac/",
+      "source_observed_at": "2026-10-09T06:55:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.foodspacific.com/tripac/",
+          "source": "https://www.foodspacific.com/tripac/"
+        }
+      ],
+      "current_public_evidence": "HACCP processing plant and international tuna export",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-711",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.spectra.com.pg/en/index.php/services",
+      "organization": "Spectra Industrial",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Pacific/Oceania",
+      "sector": "industrial equipment hire/maintenance",
+      "business_model": "commercial operator",
+      "surface": "Forklifts, gensets, earthmoving hire and machinery repair",
+      "observed_need": "Operating surface evidenced; unmet buyer problem not established.",
+      "source": "https://www.spectra.com.pg/en/index.php/services",
+      "source_observed_at": "2026-10-09T06:55:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.spectra.com.pg/en/index.php/services",
+          "source": "https://www.spectra.com.pg/en/index.php/services"
+        }
+      ],
+      "current_public_evidence": "Forklifts, gensets, earthmoving hire and machinery repair",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-712",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.kingston.com.pg/index.php/our-businesses/hire-and-services",
+      "organization": "KK Kingston Ltd",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Pacific/Oceania",
+      "sector": "industrial/construction equipment hire",
+      "business_model": "commercial operator",
+      "surface": "Nationwide equipment hire, delivery and backup service",
+      "observed_need": "Operating surface evidenced; unmet buyer problem not established.",
+      "source": "https://www.kingston.com.pg/index.php/our-businesses/hire-and-services",
+      "source_observed_at": "2026-10-09T06:55:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.kingston.com.pg/index.php/our-businesses/hire-and-services",
+          "source": "https://www.kingston.com.pg/index.php/our-businesses/hire-and-services"
+        }
+      ],
+      "current_public_evidence": "Nationwide equipment hire, delivery and backup service",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-713",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.tlcholdings.com.pg/services",
+      "organization": "TLC Holdings Limited",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Pacific/Oceania",
+      "sector": "material handling equipment rental/service",
+      "business_model": "commercial operator",
+      "surface": "Forklift rental, sales and maintenance",
+      "observed_need": "Operating surface evidenced; unmet buyer problem not established.",
+      "source": "https://www.tlcholdings.com.pg/services",
+      "source_observed_at": "2026-10-09T06:55:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.tlcholdings.com.pg/services",
+          "source": "https://www.tlcholdings.com.pg/services"
+        }
+      ],
+      "current_public_evidence": "Forklift rental, sales and maintenance",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-714",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://higharctic.com/",
+      "organization": "High Arctic",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Pacific/Oceania",
+      "sector": "industrial equipment rental/asset management",
+      "business_model": "commercial operator",
+      "surface": "Equipment rental, drilling support, fire protection and asset integrity",
+      "observed_need": "Operating surface evidenced; unmet buyer problem not established.",
+      "source": "https://higharctic.com/",
+      "source_observed_at": "2026-10-09T06:55:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://higharctic.com/",
+          "source": "https://higharctic.com/"
+        }
+      ],
+      "current_public_evidence": "Equipment rental, drilling support, fire protection and asset integrity",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-715",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://eastwesttransport.com.pg/",
+      "organization": "EastWest Transport",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Pacific/Oceania",
+      "sector": "supply-chain/logistics",
+      "business_model": "commercial operator",
+      "surface": "Freight, warehousing, transport logistics and equipment hire",
+      "observed_need": "Operating surface evidenced; unmet buyer problem not established.",
+      "source": "https://eastwesttransport.com.pg/",
+      "source_observed_at": "2026-10-09T06:55:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://eastwesttransport.com.pg/",
+          "source": "https://eastwesttransport.com.pg/"
+        }
+      ],
+      "current_public_evidence": "Freight, warehousing, transport logistics and equipment hire",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-716",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://pcspng.com/",
+      "organization": "Pacific Cargo Services",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Papua New Guinea",
+      "region": "Pacific/Oceania",
+      "sector": "freight forwarding/logistics",
+      "business_model": "commercial operator",
+      "surface": "Customs, freight forwarding, storage, warehousing and vessel agency",
+      "observed_need": "Operating surface evidenced; unmet buyer problem not established.",
+      "source": "https://pcspng.com/",
+      "source_observed_at": "2026-10-09T06:55:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://pcspng.com/",
+          "source": "https://pcspng.com/"
+        }
+      ],
+      "current_public_evidence": "Customs, freight forwarding, storage, warehousing and vessel agency",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -13853,52 +14123,78 @@
     "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
   },
   "last_continuity": {
-    "observed_at": "2026-10-09T06:49:00+02:00",
+    "observed_at": "2026-10-09T06:55:00+02:00",
     "producer": "FORX Continuous Play Sweep",
+    "run_identity": "FORX-CONTINUOUS-20261009-0655-SAST",
     "prior_receipt": {
-      "observed_at": "2026-10-08T23:25:00+02:00",
+      "observed_at": "2026-10-09T06:49:00+02:00",
       "result_ids": [
-        "FORX-PROSPECT-20261008-702",
-        "FORX-PROSPECT-20261008-703",
-        "FORX-PROSPECT-20261008-704",
-        "FORX-PROSPECT-20261008-705"
+        "FORX-PROSPECT-20261009-706"
       ]
     },
     "consumed_sources": [
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "6300c13c25b66c5d372288afc303c8934f915ebb"
+        "revision": "364baf07ad9c85b374e774dc31f19824b1c34a0a"
       }
     ],
     "apply_example": {
-      "prior_learning": "Previous receipt Fiji fisheries exporter lateral",
-      "changed_action": "Selected individual Fiji fisheries exporter rather than reusing trade-portal member counts",
+      "prior_learning": "Prior receipt Fiji fisheries exporter + Vanuatu/PNG cold-chain/equipment-service lateral",
+      "changed_action": "Expanded Fiji fisheries processing/export plus PNG equipment/logistics operators in one larger batch; avoided member-count promotion",
       "source_pointers": [
         "overdrive/forx_prospect_buffer.json:last_continuity.next_alternatives"
       ]
     },
     "exact_coordinate": {
-      "country": "Fiji",
-      "sector": "fish processing/export",
-      "source": "official company website"
+      "geography": [
+        "Fiji",
+        "Papua New Guinea"
+      ],
+      "sector": [
+        "fisheries processing/export",
+        "cold-chain",
+        "industrial equipment hire",
+        "freight/logistics"
+      ],
+      "source": "official public business websites"
     },
     "component_evidence": {
-      "new_exact_keys": 1,
-      "verified_graph_delta_claimed": 0
+      "candidate_exact_keys_discovered": 10,
+      "candidates_staged_pending_ingestion": 10,
+      "verified_graph_delta_claimed": 0,
+      "network_rails_discovered": 1
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-706"
+      "FORX-PROSPECT-20261009-707",
+      "FORX-PROSPECT-20261009-708",
+      "FORX-PROSPECT-20261009-709",
+      "FORX-PROSPECT-20261009-710",
+      "FORX-PROSPECT-20261009-711",
+      "FORX-PROSPECT-20261009-712",
+      "FORX-PROSPECT-20261009-713",
+      "FORX-PROSPECT-20261009-714",
+      "FORX-PROSPECT-20261009-715",
+      "FORX-PROSPECT-20261009-716"
+    ],
+    "network_result_keys": [
+      "url:https://tradeportal.gov.vu/procedure/1068/step/714?l=en"
+    ],
+    "uncertainty": [
+      "Official web presence observed; contact delivery not tested.",
+      "No unmet buyer problem inferred.",
+      "Vanuatu trade portal retained as network/operational rail only."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Vanuatu refrigerated freight",
-        "why": "Weak country and different sector"
+        "coordinate": "Vanuatu logistics/cold-room operators by individual identity",
+        "why": "Country remains thinner than PNG/Fiji."
       },
       {
-        "coordinate": "Fiji independent fisheries exporters",
-        "why": "Different business identity"
+        "coordinate": "Samoa fisheries/export operators and cold-chain",
+        "why": "Same economic-infrastructure family in weaker coverage."
       }
     ],
-    "truth_boundary": "CANDIDATE != VERIFIED GRAPH"
+    "chosen_next_action": "Continue larger batched discovery with exact-key dedupe and one write/readback per tranche",
+    "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH; NETWORK RAIL != NODE"
   }
 }
