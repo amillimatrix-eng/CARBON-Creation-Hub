@@ -11,22 +11,39 @@
 <header class="bar">
   <a class="brand" href="/market">CARBON<span>°</span></a>
   <nav><button data-view="market" class="nav active">Market</button><button data-view="sell" class="nav">Sell</button><button data-view="activity" class="nav">Activity</button></nav>
-  <button id="persona" class="persona"><i></i><span id="personaLabel">Browser</span></button>
+  <div class="headerTools">
+    <div class="sizeControl" aria-label="Display size">
+      <button id="sizeDown" type="button" aria-label="Make interface smaller">A−</button>
+      <input id="uiScale" type="range" min="85" max="125" step="5" value="100" aria-label="Interface size">
+      <button id="sizeUp" type="button" aria-label="Make interface larger">A+</button>
+    </div>
+    <button id="persona" class="persona"><i></i><span id="personaLabel">Browser</span></button>
+  </div>
 </header>
 <main>
 <section class="hero">
+  <canvas id="carbonField" class="carbonField" aria-hidden="true"></canvas>
+  <div class="heroContent">
   <p class="eyebrow">THE MARKET WHERE INTENT HAS WEIGHT</p>
   <h1>What's your intent?</h1>
   <p class="lead">Browse all you want. When you mean it, show it.</p>
   <div class="intent"><span>Just looking</span><input id="intent" type="range" min="0" max="100" value="18"><span>High intent</span></div>
   <div class="heroActions"><button id="seed" class="button primary">Load demo market</button><span id="mode" class="pill">Connecting…</span></div>
+  </div>
 </section>
 
 <section id="market" class="view activeView">
   <div class="head"><div><p class="eyebrow">LIVE MARKET</p><h2>Less noise. More signal.</h2></div>
     <div class="filters"><button class="filter active" data-filter="ALL">All</button><button class="filter" data-filter="URGENT">Urgent</button><button class="filter" data-filter="MOTIVATED">Motivated</button><button class="filter" data-filter="PATIENT">Patient</button></div>
   </div>
-  <div id="stats" class="stats"></div><div id="grid" class="grid"></div><div id="emptyMarket" class="empty hidden"><b>No listings yet.</b><span>Looking is not a commitment.</span></div>
+  <div id="stats" class="stats"></div>
+  <div class="marketWheelShell">
+    <button id="railPrev" class="railNav railPrev" type="button" aria-label="Scroll market left">←</button>
+    <div id="grid" class="wheelRail" aria-label="Marketplace listings"></div>
+    <button id="railNext" class="railNav railNext" type="button" aria-label="Scroll market right">→</button>
+  </div>
+  <p class="micro railHint">Scroll sideways, drag, or use the arrows. The market wraps around you; it does not need to shout at you.</p>
+  <div id="emptyMarket" class="empty hidden"><b>No listings yet.</b><span>Looking is not a commitment.</span></div>
 </section>
 
 <section id="sell" class="view">
