@@ -940,13 +940,23 @@
           "url": "https://www.upwork.com/freelance-jobs/apply/Automation-Fix-Debug-Optimize-Existing-Agent-Workflow_~022105205564933219360/",
           "observed_at": "2026-10-02T11:20:20Z",
           "summary": "Worldwide one-time $100 AI automation repair; client has prior spend and active hires."
+        },
+        {
+          "kind": "OPERA_CONNECTOR_READBACK",
+          "source": "OPERA_BROWSER_CONNECTOR",
+          "observed_at": "2026-10-09",
+          "result": "BROWSER_NOT_CONNECTED",
+          "summary": "Current connector returned Browser not connected; enable Allow AI connection and sign in to restore this authenticated-browser execution route. This blocks only routes that require authenticated browser interaction."
         }
       ],
       "constraints": [
         "No authenticated Upwork submission surface is connected to the current runtime."
       ],
-      "next_action": "PRI to submit through the existing Upwork identity/session when an authenticated execution route is available; keep proposal evidence-specific and concise.",
-      "due_at": null
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
+      "due_at": null,
+      "execution_readiness": "HOLD_AUTHENTICATED_ROUTE",
+      "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
+      "last_reconciled_at": "2026-10-09"
     },
     "upwork.com|python-django-api-backend-fixes|022102430880684043532": {
       "organization": "Upwork client",
@@ -969,13 +979,23 @@
           "url": "https://www.upwork.com/freelance-jobs/apply/Python-Django-Developer-Needed-for-API-Automation-Backend-Fixes_~022102430880684043532/",
           "observed_at": "2026-10-02T11:20:20Z",
           "summary": "Worldwide $50 fixed-price backend/API repair; existing application, not greenfield rebuild."
+        },
+        {
+          "kind": "OPERA_CONNECTOR_READBACK",
+          "source": "OPERA_BROWSER_CONNECTOR",
+          "observed_at": "2026-10-09",
+          "result": "BROWSER_NOT_CONNECTED",
+          "summary": "Current connector returned Browser not connected; enable Allow AI connection and sign in to restore this authenticated-browser execution route. This blocks only routes that require authenticated browser interaction."
         }
       ],
       "constraints": [
         "No authenticated Upwork submission surface is connected to the current runtime."
       ],
-      "next_action": "PRI to submit through the existing Upwork identity/session when authenticated access is available.",
-      "due_at": null
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
+      "due_at": null,
+      "execution_readiness": "HOLD_AUTHENTICATED_ROUTE",
+      "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
+      "last_reconciled_at": "2026-10-09"
     },
     "staff-remotely.com|remote-ai-qa-prompt-python|south-africa": {
       "organization": "Staff Remotely",
@@ -1130,7 +1150,10 @@
       ],
       "next_action": "Resume the existing official TELUS application through secure authentication. Current irreducible gate is provider OTP/identity verification; do not expose or persist OTP values.",
       "due_at": "2026-10-03T15:55:00Z",
-      "last_action_at": "2026-10-03T14:01:44Z"
+      "last_action_at": "2026-10-03T14:01:44Z",
+      "execution_readiness": "HUMAN_PROVIDER_GATE",
+      "routing_reason": "PROVIDER_OTP_IDENTITY_VERIFICATION_REQUIRED",
+      "last_reconciled_at": "2026-10-09"
     },
     "crowdgen.com|project-coffee-data-labeling-specialist|south-africa": {
       "organization": "CrowdGen by Appen",
@@ -1160,13 +1183,23 @@
           "source_url": "https://crowdgen.com/coffee-en-za/",
           "observed_at": "2026-10-03",
           "summary": "Official South Africa Project Coffee route remains current; application requires account/CV and provider screening."
+        },
+        {
+          "kind": "OPERA_CONNECTOR_READBACK",
+          "source": "OPERA_BROWSER_CONNECTOR",
+          "observed_at": "2026-10-09",
+          "result": "BROWSER_NOT_CONNECTED",
+          "summary": "Current connector returned Browser not connected; enable Allow AI connection and sign in to restore this authenticated-browser execution route. This blocks only routes that require authenticated browser interaction."
         }
       ],
       "constraints": [
         "Application requires CV; some tasks may require microphone/video reactions."
       ],
-      "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
-      "due_at": "2026-10-03T15:55:00Z"
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
+      "due_at": "2026-10-03T15:55:00Z",
+      "execution_readiness": "HOLD_AUTHENTICATED_ROUTE",
+      "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
+      "last_reconciled_at": "2026-10-09"
     },
     "outlier.ai|coding-expertise-ai-training|south-africa": {
       "organization": "Outlier AI",
@@ -1343,6 +1376,13 @@
           "observed_at": "2026-10-02T16:00:00Z",
           "run_id": "31a84679-c511-4238-9877-5884b776e81e",
           "summary": "Official Alignerr application route reached LinkedIn authentication gate; no duplicate application submitted."
+        },
+        {
+          "kind": "OPERA_CONNECTOR_READBACK",
+          "source": "OPERA_BROWSER_CONNECTOR",
+          "observed_at": "2026-10-09",
+          "result": "BROWSER_NOT_CONNECTED",
+          "summary": "Current connector returned Browser not connected; enable Allow AI connection and sign in to restore this authenticated-browser execution route. This blocks only routes that require authenticated browser interaction."
         }
       ],
       "constraints": [
@@ -1350,8 +1390,11 @@
         "Official application requires LinkedIn authentication; no authenticated LinkedIn browser/profile is currently connected.",
         "TinyFish browser wallet is exhausted; under AMX no-pay-to-work rule, no further paid browser automation is authorized by default."
       ],
-      "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
-      "due_at": "2026-10-03T15:55:00Z"
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
+      "due_at": "2026-10-03T15:55:00Z",
+      "execution_readiness": "HOLD_AUTHENTICATED_ROUTE",
+      "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
+      "last_reconciled_at": "2026-10-09"
     },
     "mindrift.ai|all-access-ai-training|global": {
       "organization": "Mindrift / Toloka",
@@ -1388,13 +1431,23 @@
           "source_url": "https://mindrift.ai/apply",
           "observed_at": "2026-10-03",
           "summary": "Official live apply surface currently lists design and Python/data-scraping roles up to $45-$50/hour, plus all-access task route; registration and profile verification remain required."
+        },
+        {
+          "kind": "OPERA_CONNECTOR_READBACK",
+          "source": "OPERA_BROWSER_CONNECTOR",
+          "observed_at": "2026-10-09",
+          "result": "BROWSER_NOT_CONNECTED",
+          "summary": "Current connector returned Browser not connected; enable Allow AI connection and sign in to restore this authenticated-browser execution route. This blocks only routes that require authenticated browser interaction."
         }
       ],
       "constraints": [
         "No existing Mindrift/Toloka account history found in Gmail; registration/authentication is still required before task execution."
       ],
-      "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
-      "due_at": "2026-10-03T16:15:00Z"
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
+      "due_at": "2026-10-03T16:15:00Z",
+      "execution_readiness": "HOLD_AUTHENTICATED_ROUTE",
+      "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
+      "last_reconciled_at": "2026-10-09"
     },
     "oneforma.com|ai-ml-projects|south-africa": {
       "organization": "OneForma",
