@@ -4,6 +4,7 @@ on:
     paths:
       - 'backend/**'
       - 'house/remediation/**'
+      - 'house/search/**'
       - 'tests/**'
       - 'requirements*.txt'
       - 'Dockerfile'
@@ -34,12 +35,23 @@ jobs:
           done
           cat /tmp/amx-health.json
           curl -fsS http://127.0.0.1:8000/api/house/bootstrap > /tmp/amx-bootstrap.json
+          curl -fsS http://127.0.0.1:8000/api/search/health > /tmp/search-health.json
+          curl -fsS http://127.0.0.1:8000/api/search/contract > /tmp/search-contract.json
+          curl -fsS http://127.0.0.1:8000/search > /tmp/search.html
           python - <<'PY'
           import json
           h=json.load(open('/tmp/amx-health.json'))
           b=json.load(open('/tmp/amx-bootstrap.json'))
+          s=json.load(open('/tmp/search-health.json'))
+          c=json.load(open('/tmp/search-contract.json'))
+          html=open('/tmp/search.html', encoding='utf-8').read()
           assert h['status']=='CONNECTED'
           assert b['controls']['no_false_live_state'] is True
           assert b['controls']['model_not_matrix'] is True
-          print({'container_health':'PASS','container_bootstrap':'PASS','evidence_count':b['evidence']['count']})
+          assert s['status']=='CONNECTED'
+          assert s['contract_version']=='CARBON_SEARCH_V1'
+          assert c['mandatory_gates']==35
+          assert "getContext('webgl2'" in html
+          assert 'INTELLAGENT' in html
+          print({'container_health':'PASS','container_bootstrap':'PASS','search_health':'PASS','search_surface':'PASS','evidence_count':b['evidence']['count']})
           PY

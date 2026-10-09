@@ -1,0 +1,66 @@
+{
+  "schema": "CARBON_SEARCH_DIRECTORY_V1",
+  "version": "1.0.0",
+  "entities": [
+    {
+      "entity_id": "CARBON_SEARCH",
+      "canonical_name": "CARBON° Search",
+      "entity_type": "PRODUCT",
+      "parent": "CARBON°",
+      "aliases": ["Carbon Search", "Engine of Intent"],
+      "description": "Surface-neutral intent-resolution product powered by INTELLAGENT.",
+      "capabilities": ["Measured Intent", "Intent Pivots", "evidence-weighted search", "correction continuity"],
+      "offered_actions": ["OPEN"],
+      "visibility": "PUBLIC",
+      "lifecycle_state": "BUILDING",
+      "authoritative_source": "house/search/CARBON_SEARCH_BUILD_COMMISSIONING_CONTRACT_V1.md",
+      "version": "1",
+      "evidence_pointer": "house/search/CARBON_SEARCH_BUILD_COMMISSIONING_CONTRACT_V1.md"
+    },
+    {
+      "entity_id": "INTELLAGENT",
+      "canonical_name": "INTELLAGENT",
+      "entity_type": "CAPABILITY",
+      "parent": "CARBON_SEARCH",
+      "aliases": ["Engine of Intent intelligence layer"],
+      "description": "Intent intelligence layer for CARBON° Search.",
+      "capabilities": ["intent interpretation", "hypothesis quarantine", "decision stability"],
+      "offered_actions": [],
+      "visibility": "PUBLIC",
+      "lifecycle_state": "BUILDING",
+      "authoritative_source": "house/search/CARBON_SEARCH_BUILD_COMMISSIONING_CONTRACT_V1.md",
+      "version": "1",
+      "evidence_pointer": "house/search/CARBON_SEARCH_BUILD_COMMISSIONING_CONTRACT_V1.md"
+    },
+    {
+      "entity_id": "CARBON_MARKETPLACE",
+      "canonical_name": "CARBON° Marketplace",
+      "entity_type": "PRODUCT",
+      "parent": "CARBON°",
+      "aliases": ["Market of Intent"],
+      "description": "CARBON° market surface for intent, availability and outcome signals.",
+      "capabilities": ["market intent signals", "availability signals", "outcome signals"],
+      "offered_actions": ["OPEN"],
+      "visibility": "PUBLIC",
+      "lifecycle_state": "BUILT_BRANCH",
+      "authoritative_source": "build/carbon-intent-marketplace-v1",
+      "version": "1",
+      "evidence_pointer": "build/carbon-intent-marketplace-v1/backend/marketplace.py"
+    },
+    {
+      "entity_id": "AMX_EVIDENCE_HOUSE",
+      "canonical_name": "AMX Evidence House",
+      "entity_type": "CAPABILITY",
+      "parent": "AMilliMATRiX",
+      "aliases": ["Evidence House"],
+      "description": "Deterministic governed evidence retrieval, provenance and T10 outcome-truth surface.",
+      "capabilities": ["deterministic evidence search", "provenance", "T10 outcome truth"],
+      "offered_actions": ["OPEN"],
+      "visibility": "PUBLIC",
+      "lifecycle_state": "ACTIVE",
+      "authoritative_source": "backend/app.py",
+      "version": "2",
+      "evidence_pointer": "backend/app.py"
+    }
+  ]
+}
