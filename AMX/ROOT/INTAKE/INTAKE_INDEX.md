@@ -1423,3 +1423,9 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Notion Business trial:** published `CRM Intelligence` agent remains discoverable, but a fresh connector session start returned `FORBIDDEN / restricted_resource`. The activation/use obligation remains OPEN; the rest of the 14-day Business-trial work continues through available Notion Search/Research/page surfaces.
 - **HASH continuity:** TEMP exact-capture queue remains 4 OPEN items: `builder-agent-loop-gate.txt`, `local-inference-gate.txt`, `packaging-restore-gate.txt`, `security-gate.txt`. No digest was guessed or transcribed from screenshots.
 - **Liveness:** existing FIRST BREATH Librarian, FORX, iSCOPE/PRI, Banker and Bounty Reaper workers remain enabled. No duplicate runtime was created.
+
+
+## 2026-10-09 — MASTER CONTINUATION DELTA — 20:15 SAST
+- **Librarian liveness persistence:** VERIFIED for the repaired condition. The existing `FIRST BREATH — AMX Librarian Continuation` completed an ordinary wake at 20:14:53 SAST and remained enabled afterward. Earlier “repaired once / next wake unproven” state is closed for that exact liveness defect. Standing mandate remains active.
+- **Commercial wrong-route delta:** fresh Gmail readback recovered MPRTC `Unmonitored Mailbox`: the mailbox explicitly will not review CVs and directs applicants to the official website. Canonical `overdrive/opportunities.json` currently contains no MPRTC match. State = WRONG_ROUTE / ASSIGNED to existing iSCOPE→PRI reconciliation; no replacement email from Librarian.
+- **HASH visibility correction:** direct `HASH_CALIBRATION_TEMP` readback shows ROOT SEEN=YES and MASTER SEEN=YES on all four exact-capture rows; T-LIB SEEN remains PENDING and exact SHA capture remains OPEN. Drive provenance confirms the filenames existed under `C:\LIB\AMX\evidence`, but does not expose the individual file bytes/hashes. No digest inferred.
