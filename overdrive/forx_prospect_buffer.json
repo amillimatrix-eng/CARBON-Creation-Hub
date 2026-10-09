@@ -17902,6 +17902,276 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Benin/Togo rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-859",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.pme-compta.com/",
+      "organization": "PME Compta",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Cameroon",
+      "region": "Central Africa",
+      "sector": "accounting/business creation/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Yaoundé financial-expertise and enterprise-creation practice covering business plans, market studies, audit and SME lifecycle support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.pme-compta.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.pme-compta.com/",
+          "source": "https://www.pme-compta.com/"
+        }
+      ],
+      "current_public_evidence": "Yaoundé financial-expertise and enterprise-creation practice covering business plans, market studies, audit and SME lifecycle support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-860",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.kdaccountings.com/",
+      "organization": "KD Accounting Solutions",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Cameroon",
+      "region": "Central Africa",
+      "sector": "accounting/tax/business creation",
+      "business_model": "SMME / professional services",
+      "surface": "Douala accounting and tax practice using a single-interlocutor model for entrepreneurs and SMEs.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.kdaccountings.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.kdaccountings.com/",
+          "source": "https://www.kdaccountings.com/"
+        }
+      ],
+      "current_public_evidence": "Douala accounting and tax practice using a single-interlocutor model for entrepreneurs and SMEs.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-861",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://lacliniquecomptable.com/",
+      "organization": "La Clinique Comptable",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Cameroon",
+      "region": "Central Africa",
+      "sector": "accounting/tax advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Douala accounting and tax practice serving entrepreneurs, SMEs and organisations.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://lacliniquecomptable.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://lacliniquecomptable.com/",
+          "source": "https://lacliniquecomptable.com/"
+        }
+      ],
+      "current_public_evidence": "Douala accounting and tax practice serving entrepreneurs, SMEs and organisations.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-862",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://cgandp.com/",
+      "organization": "CGA NDP",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Cameroon",
+      "region": "Central Africa",
+      "sector": "accounting/tax/SME development",
+      "business_model": "SMME / professional services",
+      "surface": "Yaoundé approved management centre supporting TPE/PME, individual entrepreneurs, startups and cooperatives.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://cgandp.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://cgandp.com/",
+          "source": "https://cgandp.com/"
+        }
+      ],
+      "current_public_evidence": "Yaoundé approved management centre supporting TPE/PME, individual entrepreneurs, startups and cooperatives.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-863",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://proconseilssarl.com/",
+      "organization": "PRO CONSEILS SARL",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Cameroon",
+      "region": "Central Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Yaoundé professional-advisory practice serving entrepreneurs and SMEs across accounting, tax and business structuring.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://proconseilssarl.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://proconseilssarl.com/",
+          "source": "https://proconseilssarl.com/"
+        }
+      ],
+      "current_public_evidence": "Yaoundé professional-advisory practice serving entrepreneurs and SMEs across accounting, tax and business structuring.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-864",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://pfaccameroun.com/",
+      "organization": "PFAC Cameroun",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Cameroon",
+      "region": "Central Africa",
+      "sector": "accounting/tax/coaching",
+      "business_model": "SMME / professional services",
+      "surface": "Douala accounting, tax and coaching practice founded in 2016 and dedicated to Cameroonian SMEs.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://pfaccameroun.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://pfaccameroun.com/",
+          "source": "https://pfaccameroun.com/"
+        }
+      ],
+      "current_public_evidence": "Douala accounting, tax and coaching practice founded in 2016 and dedicated to Cameroonian SMEs.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-865",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://eccgabon.ga/",
+      "organization": "ECC Gabon",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Gabon",
+      "region": "Central Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Libreville accounting and advisory practice explicitly serving SMEs, entrepreneurs, creators and professionals.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://eccgabon.ga/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://eccgabon.ga/",
+          "source": "https://eccgabon.ga/"
+        }
+      ],
+      "current_public_evidence": "Libreville accounting and advisory practice explicitly serving SMEs, entrepreneurs, creators and professionals.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-866",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://asconsulting-gabon.com/",
+      "organization": "A&S CONSULTING",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Gabon",
+      "region": "Central Africa",
+      "sector": "accounting/tax/business creation",
+      "business_model": "SMME / professional services",
+      "surface": "Libreville professional-services practice providing accounting, tax, payroll and company-creation support to SMEs, startups and entrepreneurs.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://asconsulting-gabon.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://asconsulting-gabon.com/",
+          "source": "https://asconsulting-gabon.com/"
+        }
+      ],
+      "current_public_evidence": "Libreville professional-services practice providing accounting, tax, payroll and company-creation support to SMEs, startups and entrepreneurs.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-867",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://linkmakergabon.com/",
+      "organization": "LinkMaker",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Gabon",
+      "region": "Central Africa",
+      "sector": "accounting/audit/tax/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Independent Libreville audit, accounting, tax and advisory practice using proximity and tailored support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://linkmakergabon.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://linkmakergabon.com/",
+          "source": "https://linkmakergabon.com/"
+        }
+      ],
+      "current_public_evidence": "Independent Libreville audit, accounting, tax and advisory practice using proximity and tailored support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-868",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cabinetaegis.com/",
+      "organization": "Cabinet AEGIS",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Gabon",
+      "region": "Central Africa",
+      "sector": "legal/accounting/tax advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Libreville enterprise and individual advisory practice covering business law, accounting, tax, payroll and compliance.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cabinetaegis.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cabinetaegis.com/",
+          "source": "https://www.cabinetaegis.com/"
+        }
+      ],
+      "current_public_evidence": "Libreville enterprise and individual advisory practice covering business law, accounting, tax, payroll and compliance.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Cameroon/Gabon rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -17959,22 +18229,21 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-BENIN-TOGO-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-CAMEROON-GABON-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-836",
-        "FORX-PROSPECT-20261009-837",
-        "FORX-PROSPECT-20261009-838",
-        "FORX-PROSPECT-20261009-839",
-        "FORX-PROSPECT-20261009-840",
-        "FORX-PROSPECT-20261009-841",
-        "FORX-PROSPECT-20261009-842",
-        "FORX-PROSPECT-20261009-843",
-        "FORX-PROSPECT-20261009-844",
-        "FORX-PROSPECT-20261009-845",
-        "FORX-PROSPECT-20261009-846",
-        "FORX-PROSPECT-20261009-847"
+        "FORX-PROSPECT-20261009-848",
+        "FORX-PROSPECT-20261009-849",
+        "FORX-PROSPECT-20261009-850",
+        "FORX-PROSPECT-20261009-851",
+        "FORX-PROSPECT-20261009-852",
+        "FORX-PROSPECT-20261009-853",
+        "FORX-PROSPECT-20261009-854",
+        "FORX-PROSPECT-20261009-855",
+        "FORX-PROSPECT-20261009-856",
+        "FORX-PROSPECT-20261009-857",
+        "FORX-PROSPECT-20261009-858"
       ]
     },
     "consumed_sources": [
@@ -17988,17 +18257,17 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "751e8671daffe93ee7ef339623fac68c04b4a93c"
+        "revision": "1d04cba466c853c439f7cf6301567e7ca936d5fa"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "Benin/Togo weak-country lateral",
+        "Cameroon/Gabon lateral",
         "country-first anti-starvation",
         "SMME-first",
-        "avoid corporate networks"
+        "corporates index-only"
       ],
-      "changed_action": "Executed the saved Benin/Togo lateral using local accounting, tax, advisory and training practices while excluding large international-network results from the primary tranche.",
+      "changed_action": "Executed the saved Cameroon/Gabon lateral with SME-oriented local accounting, advisory and boutique enterprise-support practices while leaving international-network firms as context.",
       "source_pointers": [
         "weighted continuity revision 31",
         "prior receipt next_alternatives"
@@ -18006,54 +18275,52 @@
     },
     "exact_coordinate": {
       "geography": [
-        "Benin",
-        "Togo"
+        "Cameroon",
+        "Gabon"
       ],
       "sector": [
         "accounting",
         "tax",
-        "audit",
-        "financial advisory",
-        "business consulting",
-        "training"
+        "business creation",
+        "SME advisory",
+        "legal/compliance"
       ],
-      "model": "local SMME / professional services",
+      "model": "local professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 11,
-      "candidates_staged_pending_ingestion": 11,
+      "candidate_exact_keys_discovered": 10,
+      "candidates_staged_pending_ingestion": 10,
       "verified_graph_delta_claimed": 0,
-      "explored": 11,
+      "explored": 10,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-848",
-      "FORX-PROSPECT-20261009-849",
-      "FORX-PROSPECT-20261009-850",
-      "FORX-PROSPECT-20261009-851",
-      "FORX-PROSPECT-20261009-852",
-      "FORX-PROSPECT-20261009-853",
-      "FORX-PROSPECT-20261009-854",
-      "FORX-PROSPECT-20261009-855",
-      "FORX-PROSPECT-20261009-856",
-      "FORX-PROSPECT-20261009-857",
-      "FORX-PROSPECT-20261009-858"
+      "FORX-PROSPECT-20261009-859",
+      "FORX-PROSPECT-20261009-860",
+      "FORX-PROSPECT-20261009-861",
+      "FORX-PROSPECT-20261009-862",
+      "FORX-PROSPECT-20261009-863",
+      "FORX-PROSPECT-20261009-864",
+      "FORX-PROSPECT-20261009-865",
+      "FORX-PROSPECT-20261009-866",
+      "FORX-PROSPECT-20261009-867",
+      "FORX-PROSPECT-20261009-868"
     ],
     "uncertainty": [
       "Public operating surfaces do not establish unmet buyer pain, practice size or outreach consent."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Cameroon/Gabon owner-led accounting, legal and advisory practices",
-        "why": "Continue Francophone Africa country rotation."
+        "coordinate": "Republic of Congo / Equatorial Guinea small professional practices",
+        "why": "Continue Central-Africa weak-country rotation."
       },
       {
-        "coordinate": "Benin/Togo allied-health/training micro-practices",
-        "why": "Different professional family only if weaker-country alternatives are less productive."
+        "coordinate": "Cameroon/Gabon allied-health/training micro-practices",
+        "why": "Different professional family only after weaker-country alternatives."
       }
     ],
-    "chosen_next_action": "Rotate into Cameroon/Gabon before deepening Benin/Togo.",
+    "chosen_next_action": "Rotate into Republic of Congo / Equatorial Guinea before deepening Cameroon/Gabon.",
     "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFIED BUYER."
   }
 }
