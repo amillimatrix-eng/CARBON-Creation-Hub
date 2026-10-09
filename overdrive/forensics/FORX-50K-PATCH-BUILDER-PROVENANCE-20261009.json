@@ -1,0 +1,70 @@
+{
+  "finding_id": "FORX-50K-PATCH-BUILDER-PROVENANCE-20261009",
+  "subject": "Builder attribution for the final FORX 50/50 durable-persistence repair chain",
+  "claim_under_test": "Who built the patch chain that turned the failing FORX 50-partition persistence verification into a successful 50/50 durable proof, and does the evidence show an Owner manual patch was required?",
+  "evidence_chain": [
+    {
+      "order": 1,
+      "event": "Initial durable-persistence workflow created",
+      "commit": "0ddfecf641530926949a0e10b217226c47cd5166",
+      "time_utc": "2026-10-08T16:35:51Z",
+      "effect": "Created .github/workflows/forx-persist-50k.yml. First run failed on partition 1 because HTTP JSON bytes did not equal the runtime canonical JSON serialization hash.",
+      "execution_origin": "Current ChatGPT governing Librarian session issued the GitHub connector create-file action in this conversation.",
+      "github_identity": "amillimatrix-eng"
+    },
+    {
+      "order": 2,
+      "event": "50/50 hash-verification patch",
+      "commit": "2d18275729841e67db7107bc7a452660b0368ad6",
+      "time_utc": "2026-10-08T16:37:48Z",
+      "effect": "Changed verification from hashing raw HTTP JSON bytes to parsing and canonical JSON reserialization before SHA-256 comparison. The next workflow run verified exact_node_count_readback=50000 and partition_hashes_verified=true.",
+      "execution_origin": "Current ChatGPT governing Librarian session issued the GitHub connector update-file action in this conversation.",
+      "github_identity": "amillimatrix-eng"
+    },
+    {
+      "order": 3,
+      "event": "Final persistence-gate patch",
+      "commit": "40a346cbc2d29d33cbd73ca6dec7547640867b1e",
+      "time_utc": "2026-10-08T16:39:54Z",
+      "effect": "Moved git add before the change test and switched to git diff --cached --quiet. This fixed the untracked-file blind spot that had caused verified proof files not to be committed.",
+      "exact_change": "git add overdrive/forx_50k_proof now occurs before the cached-diff gate.",
+      "execution_origin": "Current ChatGPT governing Librarian session issued the GitHub connector update-file action in this conversation.",
+      "github_identity": "amillimatrix-eng"
+    },
+    {
+      "order": 4,
+      "event": "Automatic execution of final patch",
+      "github_actions_run": 37810563734,
+      "trigger_head_sha": "40a346cbc2d29d33cbd73ca6dec7547640867b1e",
+      "event_type": "push",
+      "actor": "amillimatrix-eng",
+      "triggering_actor": "amillimatrix-eng",
+      "started_utc": "2026-10-08T16:39:56Z",
+      "result": "success",
+      "effect": "GitHub Actions fetched, verified, staged and committed the durable 50-partition proof automatically."
+    },
+    {
+      "order": 5,
+      "event": "Automatic durable-proof commit",
+      "commit": "8b3aea6d5f53859ed7a3cd4b44bb8afe988b8f21",
+      "time_utc": "2026-10-08T16:40:30Z",
+      "message": "FORX: persist and verify 50k production partitions",
+      "effect": "Committed status, manifest, 50 partition files and durable-readback-receipt.json with exact_node_count_readback=50000, partition_count=50 and partition_hashes_verified=true.",
+      "mechanical_executor": "GitHub Actions workflow created and repaired by the current ChatGPT Librarian session."
+    }
+  ],
+  "attribution": {
+    "operational_builder": "Current ChatGPT governing Librarian session in this conversation, acting through the connected GitHub account amillimatrix-eng.",
+    "mechanical_executor_after_patch": "GitHub Actions run 37810563734.",
+    "repository_identity_visible_in_git": "amillimatrix-eng / AmillimatriX | GALOR3",
+    "owner_manual_patch_observed": false,
+    "owner_manual_patch_required_by_evidence_chain": false,
+    "conclusion": "The available execution record attributes both the 50/50 canonical-hash repair (2d182757...) and the final persistence-gate repair (40a346cb...) to connector write actions issued by the current ChatGPT Librarian session. The durable-proof commit was then produced automatically by GitHub Actions. No separate Owner manual GitHub edit or commit appears in this causal chain."
+  },
+  "evidence_boundary": {
+    "important": "GitHub author/committer fields alone do not distinguish a human action from an authorized connector write because connector writes are recorded under the linked GitHub identity.",
+    "stronger_causal_evidence": "The current conversation contains the assistant tool invocations that issued the GitHub create/update actions, followed by the matching commit SHAs and push-triggered workflow run.",
+    "residual_limit": "A provider-side OAuth/GitHub App audit log would be stronger external actor attestation if legal-grade non-repudiation were required; that audit surface is not exposed by the currently available GitHub connector.",
+    "classification": "PASS for Matrix operational provenance; external legal-grade attribution caveat preserved."
+  }
+}
