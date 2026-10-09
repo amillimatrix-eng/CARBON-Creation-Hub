@@ -36,7 +36,7 @@ But the deeper useful outcome was not merely:
 
 The search revealed that the advertised 12GB likely represented physical + virtual RAM.
 
-The Owner's actual hoped-for outcome included the possibility that an unusually strong physical-RAM configuration existed near that price.
+Later explicit conversation revealed that the Owner had hoped the advertised memory might represent a stronger physical-RAM configuration. That later signal validates why the alternative was useful, but it must **not** be projected backward as something the engine was entitled to assume from the initial query.
 
 Therefore a strong search should:
 1. identify the likely device;
@@ -44,8 +44,8 @@ Therefore a strong search should:
 3. normalize the claim;
 4. discover the physical/virtual split;
 5. recognize that this new evidence changes the meaning of the search;
-6. update the Measured Intent model;
-7. search for nearby outcomes more likely to satisfy that now-better-understood intent;
+6. update the Measured Intent model only where the evidence/signals justify promotion;
+7. use unsupported but decision-relevant possibilities as quarantined hypotheses to search nearby outcomes;
 8. return the strongest result;
 9. optionally expose one or two plausible parallel intent outcomes.
 
