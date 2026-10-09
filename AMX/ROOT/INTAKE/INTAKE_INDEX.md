@@ -1370,3 +1370,17 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Core law:** `IF A CONSTRAINT CAN BE EXPRESSED NATURALLY OR WITH A SIMPLE SLIDER/CHIP, DO NOT TURN IT INTO A COMPLEX FILTER FORM.`
 - **Build boundary:** no automatic change to the frozen Search 35/35 gate count. If implementation reveals a genuine missing invariant, route that finding separately through Intake/Governance.
 - **Tracking:** GitHub issue #18.
+
+
+## 2026-10-09 — CARBON° Simple App / Media Workspace Execution
+- **Owner disposition:** ACCEPTED / EXECUTION STARTED.
+- **Artifact:** `house/product/CARBON_SIMPLE_APP_MEDIA_WORKSPACE_V1.md`
+- **Primary owner:** **CARBON° PRODUCT / EXPERIENCE**.
+- **Implementation owner:** **T-COD**.
+- **Governance/continuity:** ROOT / Master / Librarian.
+- **Distribution:** standalone web app first → installable PWA → Android/Google Play later → optional Telegram thin surface later.
+- **Custom domain:** **DEFERRED / BUDGET HOLD**; no paid domain may be treated as a build or launch dependency.
+- **Immediate executable scope:** app shell, Projects, Media object/library, create-media action contract, PWA spec, provider-neutral storage interface, Matrix Mode theme spec, demo flow, analytics contract.
+- **Search boundary:** no mutation of frozen Search #16 35/35 semantics; core-touching convergence waits for Search build completion.
+- **Design law:** `ONE CARBON. MANY SURFACES. ONE CONTINUITY.`
+- **Tracking:** issue #18.
