@@ -92,7 +92,7 @@
     },
     "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "faceproduction.net",
-      "due_at": "2026-10-06T15:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -139,13 +139,20 @@
           "thread_id": "1a0f2ea3874d5fde",
           "observed_at": "2026-10-05T20:40:38Z",
           "summary": "PRI sent the current buyer development one-sheet and asked Face Production to identify the relevant commercial route."
+        },
+        {
+          "kind": "OWNER_NO_CONTACT_SUPERSESSION",
+          "source": "OWNER_DIRECTIVE / ROOT_INTAKE",
+          "source_id": "3f48f8b5-6cd7-8118-a45a-dc2c012c8001",
+          "observed_at": "2026-10-09",
+          "summary": "Owner explicitly directed no further contact with Face Production / Antoine. Historical buyer evidence is preserved for learning, but no outbound, follow-up, alternate-mailbox recovery or new offer is authorized unless Owner explicitly reverses the instruction."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
       "last_action_at": "2026-10-05T20:40:38Z",
       "message_id": "1a0f2ea3874d5fde",
-      "next_action": "Monitor the existing Antoine Picot thread for review feedback or acceptance of the bounded USD 1,000 commissioned development sprint. If scope/price is explicitly accepted, move immediately to CONTRACTED/ORDERED and issue the payment/invoice step through an approved rail. Do not duplicate-follow-up before a reasonable review interval.",
+      "next_action": "NO OUTBOUND. Preserve historical evidence for learning/provenance only. Do not follow up, resend, recover through another mailbox, contact another person at Face Production, or create a new offer unless Owner explicitly reverses the 2026-10-09 no-contact directive.",
       "opportunity": "catalogue-partnership",
       "organization": "Face Production",
       "package_version": "combined-master@2026-09-30T16:52:12.432Z",
@@ -156,20 +163,27 @@
         "visibility": "CONTROLLED_READER"
       },
       "recipient": "contact@faceproduction.net",
-      "state": "RESPONDED",
+      "state": "NO_CONTACT",
       "subject": "Producer / catalogue partnership — CARBON°",
       "thread_id": "1a0f2ea3874d5fde",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
       "video_access_verified_at": "2026-09-30T16:52:12.432Z",
-      "execution_readiness": "WAITING",
-      "routing_reason": "BUYER_REVIEWING_PACKAGE_AND_COMMERCIAL_OFFER",
+      "execution_readiness": "SUPPRESSED_OWNER_DIRECTIVE",
+      "routing_reason": "OWNER_NO_CONTACT_2026_10_09",
       "commercial_offer": {
         "amount": 1000,
         "currency": "USD",
         "scope": "Bounded commissioned development sprint: two production-ready 60–90 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after brief.",
         "status": "OFFER_PRESENTED_NOT_ACCEPTED",
         "source_id": "1a10da53d6a035a0"
+      },
+      "last_reconciled_at": "2026-10-09",
+      "suppression": {
+        "type": "OWNER_NO_CONTACT",
+        "observed_at": "2026-10-09",
+        "intake_id": "3f48f8b5-6cd7-8118-a45a-dc2c012c8001",
+        "reversible_only_by": "EXPLICIT_OWNER_REVERSAL_OR_SUPERSEDING_OWNER_AUTHORITY"
       }
     },
     "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me": {
@@ -1672,9 +1686,9 @@
       "recipient": "support@my-drama.com",
       "thread_id": "1a0fedc9bdd30527",
       "message_id": "1a0fedc9bdd30527",
-      "last_action_at": "2026-10-03T04:01:21Z",
-      "due_at": "2026-10-06T23:04:25Z",
-      "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
+      "last_action_at": "2026-10-07T09:04:43Z",
+      "due_at": null,
+      "next_action": "WAITING after the 2026-10-07 route-check follow-up. Do not duplicate the package or send another unsolicited message until PRI's declared follow-up window is actually due. On due review, re-check the current thread and route evidence first; any buyer reply/request outranks cold replenishment.",
       "evidence": [
         {
           "kind": "CURRENT_PRIMARY_ROUTE",
@@ -1698,8 +1712,33 @@
           "thread_id": "1a0fedc9bdd30527",
           "observed_at": "2026-10-03T04:01:21Z",
           "summary": "My Drama confirmed the proposal was passed to the appropriate team for review and follow-up on submission route and minimum review package."
+        },
+        {
+          "kind": "REVIEW_PACKAGE_SENT",
+          "source": "GMAIL",
+          "source_id": "1a10da6be548ddfb",
+          "thread_id": "1a0fedc9bdd30527",
+          "observed_at": "2026-10-05T19:59:53Z",
+          "summary": "PRI sent the current DRAGON review package (Ivory Eclipse key art, Pitch Episodes 01–02 script master, canonical cast/visual continuity pack) and presented a bounded USD 1,000 commissioned development sprint. Offer was presented, not accepted."
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a1159ba1113f211",
+          "thread_id": "1a0fedc9bdd30527",
+          "observed_at": "2026-10-07T09:04:43Z",
+          "summary": "PRI sent one concise route-check follow-up asking whether the current review pack reached the commissioning/licensing team or whether a specific submission route should be used."
         }
-      ]
+      ],
+      "execution_readiness": "WAITING",
+      "routing_reason": "BUYER_ROUTED_TO_REVIEW_TEAM_AWAITING_FURTHER_RESPONSE",
+      "commercial_offer": {
+        "amount": 1000,
+        "currency": "USD",
+        "scope": "Bounded commissioned development sprint: two production-ready 60–90 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after receiving the brief.",
+        "status": "OFFER_PRESENTED_NOT_ACCEPTED",
+        "source_id": "1a10da6be548ddfb"
+      }
     },
     "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "organization": "ReelShort / Crazy Maple Studio",
@@ -3084,9 +3123,9 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-04T04:42:04Z",
-  "last_updated_at": "2026-10-04T04:42:04Z",
-  "last_updated_by": "Codex root; bounded commercial gate reconciliation; not scheduled execution",
+  "updated_at": "2026-10-09T12:53:00Z",
+  "last_updated_at": "2026-10-09T12:53:00Z",
+  "last_updated_by": "Master/Librarian bounded reconciliation — Owner no-contact supersession + My Drama current-thread state",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
@@ -3169,6 +3208,6 @@
   ],
   "generated_at": "2026-10-03T22:13:20Z",
   "record_count": 66,
-  "last_reconciled_at": "2026-10-06T16:22:00Z",
-  "last_reconciled_reason": "Deep Sweep money-home sync: persist two current USD 300/task OpenTrain roles verified by current alerts and official live listings; preserve existing-account recovery as the exact submission gate."
+  "last_reconciled_at": "2026-10-09T12:53:00Z",
+  "last_reconciled_reason": "Reconcile canonical commercial inventory with explicit Owner NO-CONTACT suppression for Face Production and current Gmail evidence for My Drama through 2026-10-07. No external sales action performed."
 }
