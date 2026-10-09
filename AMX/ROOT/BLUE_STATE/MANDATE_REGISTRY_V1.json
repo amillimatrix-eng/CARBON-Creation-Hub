@@ -1,6 +1,6 @@
 {
   "registry_id": "AMX-BLUE-STATE-MANDATE-REGISTRY-V1",
-  "version": "1.0",
+  "version": "1.1",
   "effective_date": "2026-10-09",
   "state": "OWNER_ACCEPTED_MERGED_BLUE_STATE",
   "blue_state_path": "AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md",
@@ -9,16 +9,135 @@
   "preflight_rule": "MANDATE_PRECEDES_EXECUTION",
   "unregistered_role_rule": "HOLD_AND_ROUTE_TO_ROOT_BEFORE_EXECUTION",
   "entries": [
-    {"role_key":"ROOT-TGOV","mandate_id":"AMX-MANDATE-ROOT-TGOV-V1","status":"CURRENT","sha256":"d92852d15f66168990290aece801b8c8573d48037b88765a081a26d58e10b120","source_refs":["AMX/ROOT/INTAKE/INTAKE_INDEX.md","GitHub issue #6"]},
-    {"role_key":"MASTER-LIBRARIAN","mandate_id":"AMX-MANDATE-MASTER-LIBRARIAN-V1","status":"CURRENT","sha256":"f127bec771d398c7c2c3a1e746734619568b5641c91d6f810514d08f7f76b4f8","source_refs":["FIRST BREATH — AMX Librarian Continuation","AMX/ROOT/INTAKE/INTAKE_INDEX.md"]},
-    {"role_key":"T-COD","mandate_id":"AMX-MANDATE-TCOD-V1","status":"CURRENT","sha256":"67a9fc18adc6323ea93f86bc70bb677b7e063b5f6f6a8218d1ec2713c4f0e9b3","source_refs":["GitHub issues #11","#16","#17"]},
-    {"role_key":"FORX","mandate_id":"AMX-MANDATE-FORX-V1","status":"CURRENT","sha256":"a9570686dae130bd36d0995d9f58dbd0f7cde1597968dc16245c94a65f0f3109","source_refs":["FIRST BREATH — FORX Continuous Play Sweep","GitHub issues #12","#17","commit 8b3aea6d5f53859ed7a3cd4b44bb8afe988b8f21"]},
-    {"role_key":"ISCOPE","mandate_id":"AMX-MANDATE-ISCOPE-V1","status":"CURRENT","sha256":"6371943e42023ac27c45dbeb973eb33db73843f929c48b57e32c5ee84e461bc7","source_refs":["GitHub issue #4","FIRST BREATH — iSCOPE PRI Field Force"]},
-    {"role_key":"PRI","mandate_id":"AMX-MANDATE-PRI-V1","status":"CURRENT","sha256":"306a3ec9ee64b222e6e73a4e20cbccc07c3e33f7dc450509cf883e40c9fe17fd","source_refs":["GitHub issue #3","FIRST BREATH — iSCOPE PRI Field Force"]},
-    {"role_key":"BANKER","mandate_id":"AMX-MANDATE-BANKER-V1","status":"CURRENT","sha256":"ba568bd0d0370abd4f3a17f3b767b5aae768e10970884acad8bfe07fb99e1daf","source_refs":["FIRST BREATH — AMX Banker Cash Watch","ROOT INTAKE — BANK UPDATE — FIRST BREATH"]},
-    {"role_key":"BOUNTY-REAPER","mandate_id":"AMX-MANDATE-BOUNTY-REAPER-V1","status":"CURRENT","sha256":"754d8fb9b6816da1bf0013940883106e0d3928b1637526ee82b38e1792c1dcd3","source_refs":["Bounty Reaper automation","ROOT INTAKE — Bounty Reaper Priority Repair/Deployment"]},
-    {"role_key":"CARBON","mandate_id":"AMX-MANDATE-CARBON-V1","status":"CURRENT","sha256":"44444338f303acdd481f3a8b67ec3813701e4b655d3a14ba8af3d46350860be6","source_refs":["CARBON° Production-to-Revenue Conveyor","GitHub issue #16","HALTED — CARBON° Production Studio"]},
-    {"role_key":"MATRIX-CRITIC","mandate_id":"AMX-MANDATE-MATRIX-CRITIC-V1","status":"CURRENT_WHEN_INVOKED","sha256":"d3ad5aec0d78058a7f96056808013a4c95f15b35f0f298879f24b5b1fb2f71a4","source_refs":["CARBON° production quality/critic controls","Matrix falsification/review practice"]},
-    {"role_key":"COMMISSIONING-INSPECTOR","mandate_id":"AMX-MANDATE-COMMISSIONING-INSPECTOR-V1","status":"DORMANT_CAPACITY_MERGED","sha256":"b7d1a8b6a6ea5726aba8b3043a5a60a031926acc155dc30a3ad37dc98cb4b593","source_refs":["CAPACITY-MERGED — Matrix Commissioning Inspector","BLUE STATE — Mandate Liveness & Objective Enforcement"]}
-  ]
+    {
+      "role_key": "ROOT-TGOV",
+      "mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
+      "status": "CURRENT",
+      "sha256": "d92852d15f66168990290aece801b8c8573d48037b88765a081a26d58e10b120",
+      "source_refs": [
+        "AMX/ROOT/INTAKE/INTAKE_INDEX.md",
+        "GitHub issue #6"
+      ]
+    },
+    {
+      "role_key": "MASTER-LIBRARIAN",
+      "mandate_id": "AMX-MANDATE-MASTER-LIBRARIAN-V1",
+      "status": "CURRENT",
+      "sha256": "f127bec771d398c7c2c3a1e746734619568b5641c91d6f810514d08f7f76b4f8",
+      "source_refs": [
+        "FIRST BREATH — AMX Librarian Continuation",
+        "AMX/ROOT/INTAKE/INTAKE_INDEX.md"
+      ]
+    },
+    {
+      "role_key": "T-COD",
+      "mandate_id": "AMX-MANDATE-TCOD-V1",
+      "status": "CURRENT",
+      "sha256": "67a9fc18adc6323ea93f86bc70bb677b7e063b5f6f6a8218d1ec2713c4f0e9b3",
+      "source_refs": [
+        "GitHub issues #11",
+        "#16",
+        "#17"
+      ]
+    },
+    {
+      "role_key": "FORX",
+      "mandate_id": "AMX-MANDATE-FORX-V1",
+      "status": "CURRENT",
+      "sha256": "a9570686dae130bd36d0995d9f58dbd0f7cde1597968dc16245c94a65f0f3109",
+      "source_refs": [
+        "FIRST BREATH — FORX Continuous Play Sweep",
+        "GitHub issues #12",
+        "#17",
+        "commit 8b3aea6d5f53859ed7a3cd4b44bb8afe988b8f21"
+      ]
+    },
+    {
+      "role_key": "ISCOPE",
+      "mandate_id": "AMX-MANDATE-ISCOPE-V1",
+      "status": "CURRENT",
+      "sha256": "6371943e42023ac27c45dbeb973eb33db73843f929c48b57e32c5ee84e461bc7",
+      "source_refs": [
+        "GitHub issue #4",
+        "FIRST BREATH — iSCOPE PRI Field Force"
+      ]
+    },
+    {
+      "role_key": "PRI",
+      "mandate_id": "AMX-MANDATE-PRI-V1",
+      "status": "CURRENT",
+      "sha256": "306a3ec9ee64b222e6e73a4e20cbccc07c3e33f7dc450509cf883e40c9fe17fd",
+      "source_refs": [
+        "GitHub issue #3",
+        "FIRST BREATH — iSCOPE PRI Field Force"
+      ]
+    },
+    {
+      "role_key": "BANKER",
+      "mandate_id": "AMX-MANDATE-BANKER-V1",
+      "status": "CURRENT",
+      "sha256": "ba568bd0d0370abd4f3a17f3b767b5aae768e10970884acad8bfe07fb99e1daf",
+      "source_refs": [
+        "FIRST BREATH — AMX Banker Cash Watch",
+        "ROOT INTAKE — BANK UPDATE — FIRST BREATH"
+      ]
+    },
+    {
+      "role_key": "BOUNTY-REAPER",
+      "mandate_id": "AMX-MANDATE-BOUNTY-REAPER-V1",
+      "status": "CURRENT",
+      "sha256": "754d8fb9b6816da1bf0013940883106e0d3928b1637526ee82b38e1792c1dcd3",
+      "source_refs": [
+        "Bounty Reaper automation",
+        "ROOT INTAKE — Bounty Reaper Priority Repair/Deployment"
+      ]
+    },
+    {
+      "role_key": "CARBON",
+      "mandate_id": "AMX-MANDATE-CARBON-V1",
+      "status": "CURRENT",
+      "sha256": "44444338f303acdd481f3a8b67ec3813701e4b655d3a14ba8af3d46350860be6",
+      "source_refs": [
+        "CARBON° Production-to-Revenue Conveyor",
+        "GitHub issue #16",
+        "HALTED — CARBON° Production Studio"
+      ]
+    },
+    {
+      "role_key": "MATRIX-CRITIC",
+      "mandate_id": "AMX-MANDATE-MATRIX-CRITIC-V1",
+      "status": "CURRENT_WHEN_INVOKED",
+      "sha256": "d3ad5aec0d78058a7f96056808013a4c95f15b35f0f298879f24b5b1fb2f71a4",
+      "source_refs": [
+        "CARBON° production quality/critic controls",
+        "Matrix falsification/review practice"
+      ]
+    },
+    {
+      "role_key": "COMMISSIONING-INSPECTOR",
+      "mandate_id": "AMX-MANDATE-COMMISSIONING-INSPECTOR-V1",
+      "status": "DORMANT_CAPACITY_MERGED",
+      "sha256": "b7d1a8b6a6ea5726aba8b3043a5a60a031926acc155dc30a3ad37dc98cb4b593",
+      "source_refs": [
+        "CAPACITY-MERGED — Matrix Commissioning Inspector",
+        "BLUE STATE — Mandate Liveness & Objective Enforcement"
+      ]
+    }
+  ],
+  "blocked_attempt_recovery": {
+    "rule": "ATTEMPTED_BLOCKED_IS_OPEN_EXECUTION_OBLIGATION",
+    "terminal": false,
+    "requirements": [
+      "PRESERVE_EXACT_INTENDED_ACTION_AND_FURTHEST_EVIDENCED_STATE",
+      "PRESERVE_ATTEMPT_RECEIPT_AND_EXACT_BLOCKER_SCOPE",
+      "ASSIGN_RECOVERY_OWNER_AND_NEXT_LAWFUL_ACTION",
+      "RETRY_OR_REROUTE_IF_EXISTING_OWNER_CAN_COMPLETE",
+      "ROUTE_RECOVERY_PARCEL_TO_ROOT_INTAKE_IF_ANOTHER_OWNER_AUTHORITY_OR_REPAIR_IS_REQUIRED",
+      "RECEIVING_OWNER_RESUMES_FROM_FURTHEST_EVIDENCED_STATE",
+      "NO_DUPLICATE_EXTERNAL_ACTIONS",
+      "CLOSE_ONLY_ON_ACCEPTANCE_READBACK_OR_GOVERNED_CANCELLATION"
+    ],
+    "invalid_state": "BLOCKED_WITHOUT_RECOVERY_OWNER_OR_NEXT_ACTION",
+    "continuation_law": "BLOCKED_RECEIPT -> OPEN_OBLIGATION -> RECOVERY_OWNER -> COMPLETION_OR_GOVERNED_CANCELLATION"
+  }
 }
