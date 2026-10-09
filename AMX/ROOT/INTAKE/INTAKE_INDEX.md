@@ -1436,3 +1436,16 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **FORX #17:** exact implementation head `ebfc67218c3964c195d5d56445c21c5b1c9344c0`; Actions run `37972250449` is SUCCESS; repo-level acceptance/readback proves 937 logical source keys and all nine Intake-held records with explicit freshness. Implementation/readback/CI slice = PASS. Remaining boundary = existing T-COD merge/continuation into current main + post-merge readback. No rebuild.
 - **NO-CONTACT Intake:** Face Production / Antoine + Ecognix item is now CLOSED — OWNER DIRECTIVE ENFORCED / STANDING SUPPRESSION ACTIVE. Reopen only on contradictory outbound or explicit Owner reversal.
 - **Current-contact remediation:** remains ASSIGNED / OPEN. Fresh MPRTC thread `1a117c950871a70c` explicitly says the mailbox is unmonitored and CVs will not be reviewed there; official website is the route. State = WRONG_ROUTE. Canonical ledger currently has no MPRTC match; existing iSCOPE/PRI owns reconciliation.
+
+
+## 2026-10-09 — MASTER CONTINUATION DELTA — FORX #12/#17 CLOSURE
+- **#17 large staging-buffer mutation blocker:** **CLOSED / COMPLETED** on current main.
+- **#12 duplicate-ID / freshness integrity blocker:** **CLOSED / COMPLETED** on current main.
+- **PR #19 merge:** `79376997e8235b33f806c0d9c72c74d0d7c48cec`.
+- **PR #20 continuation merge:** `16acd2eb9df020d615bf001aca263557ea8dc137`.
+- **Post-merge CI:** run `37972932449` — **SUCCESS** at exact main head `16acd2eb9df020d615bf001aca263557ea8dc137`.
+- **Current logical staging readback:** 943 unique source keys / 943 unique IDs; 0 normalized current records missing freshness semantics.
+- **Fresh continuation proof:** six Ethiopia/Eritrea exact source keys were ingested through the repaired staging path after the original >1 MiB mutation choke.
+- **Boundary:** staging != production graph; RAW_UNQUALIFIED != qualified; no buyer intent/revenue inferred.
+- **Still OPEN:** separate FORX downstream outcome → affected weight → changed next selection → durable readback acceptance.
+- **Intake effect:** remove #12 and #17 from active defect queue; preserve them as closed provenance.
