@@ -730,3 +730,105 @@ A valid CARBON° Search implementation must demonstrate:
 without conflating offerings, discarding valid work, or ending the search because its own intermediate interpretation was wrong.
 
 **INTENTION is continuous evidence-bound orientation toward the best defensible outcome.**
+
+
+## 24. INTENT BRANCH AFFORDANCES — RESOLVE FIRST, THEN OFFER BOUNDED ALTERNATIVES
+
+CARBON° Search should not default to interrogating the user before returning a result.
+
+The engine should first produce the strongest defensible primary resolution from current Measured Intent, evidence and decision state.
+
+Where one or two materially plausible alternate intent outcomes remain close enough that they could produce an equally or more desirable result, Search may expose **bounded intent branch affordances**.
+
+These may render as buttons, links, chips, or equivalent actions.
+
+Examples:
+- **YES — THIS IS WHAT I MEANT**
+- **SHOW THE HIGHER-PHYSICAL-RAM PATH**
+- **COMPARE THE CHEAPER ALTERNATIVE**
+- **I MEANT THE OTHER CARBON° SERVICE**
+- **KEEP SEARCHING THIS DIRECTION**
+
+The interaction contract is:
+
+`PRIMARY RESOLUTION → OPTIONAL 1–2 INTENT BRANCHES → CONTINUE SAME SEARCH SESSION`
+
+### 24.1 Primary-result confidence
+
+The default user experience should be decisive.
+
+Do not ask "what did you mean?" merely because several hypotheses exist internally.
+
+Return the current best result when:
+- the leading Measured Intent resolution is decision-stable enough to be useful;
+- remaining ambiguity does not justify blocking the result;
+- the result can be stated with honest confidence and material gaps.
+
+Clarification is a **secondary affordance**, not a prerequisite, unless no defensible primary result exists.
+
+### 24.2 When to expose branches
+
+Expose an alternate intent branch only when it is materially supported by evidence and one or more are true:
+- posterior probability is competitive with the leading interpretation;
+- expected utility is close enough that the alternate could plausibly be preferred;
+- cost of choosing the wrong interpretation is material;
+- the alternate resolves an important hidden variable;
+- the alternate outcome would change the recommended action materially.
+
+Do not expose low-value speculative branches merely because they are imaginable.
+
+### 24.3 Branch count
+
+Default maximum: **two alternate intent actions** in addition to the primary result.
+
+The purpose is to preserve useful optionality without recreating a filter menu or forcing the user to manage the search manually.
+
+More branches require an evidenced reason.
+
+### 24.4 Same-session continuation
+
+Selecting an intent branch must not start a disconnected search unless technically unavoidable.
+
+The engine must:
+1. preserve the existing evidence/session;
+2. record which branch was selected;
+3. update Measured Intent and hypothesis probabilities;
+4. invalidate only state made obsolete by the selected interpretation;
+5. preserve still-valid evidence;
+6. continue search/ranking from the furthest valid state;
+7. return the updated resolution.
+
+### 24.5 Branch semantics
+
+A branch action may:
+- confirm the current interpretation;
+- bias toward a parallel plausible intent;
+- request a materially different trade-off;
+- continue deeper on the current path;
+- deliberately deviate to a different but evidence-supported outcome.
+
+It must not silently rewrite the original query history.
+
+### 24.6 Confidence without arrogance
+
+The engine should behave as though it understands the user's likely intent well enough to be useful, while preserving explicit uncertainty where it matters.
+
+Therefore:
+
+**CONFIDENT PRIMARY RESULT != CLAIM OF PERFECT INTENT KNOWLEDGE.**
+
+**ALTERNATE BRANCH != ENGINE FAILURE.**
+
+An alternate branch exists because a second outcome may remain materially desirable, not because Search failed to resolve anything.
+
+### 24.7 User-facing principle
+
+The ideal interaction is:
+
+> "Here is what I believe best satisfies what you are trying to achieve."
+
+followed, only where useful, by one or two actions equivalent to:
+
+> "If you meant this nearby outcome instead, take this path."
+
+This preserves decisiveness, user agency, measured uncertainty and search continuity.
