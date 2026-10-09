@@ -1,18 +1,6 @@
 {
   "PRI": [
     {
-      "due_at": "2026-10-03T15:55:00Z",
-      "due_now": true,
-      "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
-      "opportunity_key": "crowdgen.com|project-coffee-data-labeling-specialist|south-africa",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
-      "state": "QUALIFIED",
-      "status": "READY",
-      "thread_id": null
-    },
-    {
       "due_at": "2026-10-06T15:00:00Z",
       "due_now": true,
       "next_action": "Monitor the existing thread for a material response. Do not send another follow-up before the due interval.",
@@ -183,11 +171,23 @@
     {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
-      "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "opportunity_key": "alignerr.com|search-quality-ai-training|south-africa",
       "priority": 2,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
+      "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-03T15:55:00Z",
+      "due_now": true,
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
+      "opportunity_key": "crowdgen.com|project-coffee-data-labeling-specialist|south-africa",
+      "priority": 2,
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -243,11 +243,11 @@
     {
       "due_at": "2026-10-03T16:15:00Z",
       "due_now": true,
-      "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "opportunity_key": "mindrift.ai|all-access-ai-training|global",
       "priority": 2,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -495,11 +495,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "PRI to submit through the existing Upwork identity/session when an authenticated execution route is available; keep proposal evidence-specific and concise.",
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "opportunity_key": "upwork.com|ai-automation-fix|022105205564933219360",
       "priority": 8,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "PRI to submit through the existing Upwork identity/session when an authenticated execution route is available; keep proposal evidence-specific and concise.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -507,11 +507,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "PRI to submit through the existing Upwork identity/session when authenticated access is available.",
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "opportunity_key": "upwork.com|python-django-api-backend-fixes|022102430880684043532",
       "priority": 8,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "PRI to submit through the existing Upwork identity/session when authenticated access is available.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -529,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-09T19:11:59.226725+00:00",
+  "generated_at": "2026-10-09T19:13:00.782160+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -788,11 +788,11 @@
     "alignerr.com|search-quality-ai-training|south-africa": {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
-      "next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "opportunity_key": "alignerr.com|search-quality-ai-training|south-africa",
       "priority": 2,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Resume the existing Alignerr application through an authenticated LinkedIn/browser surface; do not create a duplicate application. No payment/spend route required for the job itself.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -836,13 +836,13 @@
     "crowdgen.com|project-coffee-data-labeling-specialist|south-africa": {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
-      "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "opportunity_key": "crowdgen.com|project-coffee-data-labeling-specialist|south-africa",
       "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "state": "QUALIFIED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": null
     },
     "dataannotation.tech|generalist-ai-training|south-africa-unverified": {
@@ -1112,11 +1112,11 @@
     "mindrift.ai|all-access-ai-training|global": {
       "due_at": "2026-10-03T16:15:00Z",
       "due_now": true,
-      "next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "opportunity_key": "mindrift.ai|all-access-ai-training|global",
       "priority": 2,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "Use recovered truthful applicant/CV data and the official route to progress onboarding through a secure browser; ordinary personal/profile requirements are not a blocker. Stop only at an exact unavailable fact or provider-enforced human-only step.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -1460,11 +1460,11 @@
     "upwork.com|ai-automation-fix|022105205564933219360": {
       "due_at": null,
       "due_now": false,
-      "next_action": "PRI to submit through the existing Upwork identity/session when an authenticated execution route is available; keep proposal evidence-specific and concise.",
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "opportunity_key": "upwork.com|ai-automation-fix|022105205564933219360",
       "priority": 8,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "PRI to submit through the existing Upwork identity/session when an authenticated execution route is available; keep proposal evidence-specific and concise.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -1472,11 +1472,11 @@
     "upwork.com|python-django-api-backend-fixes|022102430880684043532": {
       "due_at": null,
       "due_now": false,
-      "next_action": "PRI to submit through the existing Upwork identity/session when authenticated access is available.",
+      "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "opportunity_key": "upwork.com|python-django-api-backend-fixes|022102430880684043532",
       "priority": 8,
-      "routing_reason": "EXECUTION_ROUTE_UNAVAILABLE_OR_UNVERIFIED",
-      "smallest_next_action": "PRI to submit through the existing Upwork identity/session when authenticated access is available.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
