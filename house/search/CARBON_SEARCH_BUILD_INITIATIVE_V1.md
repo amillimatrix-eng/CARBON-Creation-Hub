@@ -593,3 +593,140 @@ Matrix-wide use does not strip product ownership or identity.
 - **INTELLAGENT** remains the intent intelligence layer.
 - **Engine of Intent** remains the positioning.
 - Matrix workers consume the capability; they do not each become separate CARBON° Search implementations.
+
+
+## 23. INTENTION CONTINUITY — SURFACE PARITY, DIRECTORY DISCIPLINE AND ACTIVE SELF-CORRECTION
+
+The core capability being built is **INTENTION**: CARBON° Search must continuously orient search execution toward the most defensible, highest-probability resolution of Measured Intent while preserving uncertainty honestly.
+
+This applies whether the caller is:
+- the Owner or another human using CARBON° Search directly;
+- a Matrix worker/model invoking Search while performing another job;
+- a CARBON° product surface;
+- the public CARBON° Search surface;
+- an authorized client/private surface.
+
+The **core intent engine is the same**. What changes by surface is lawful context, scope, permissions, available actions and disclosure—not the meaning of Search.
+
+### 23.1 Surface parity
+
+Public, Matrix, Owner and client searches must share the same core rules:
+- Measured Intent boundary;
+- latent-intent plurality;
+- evidence normalization;
+- provenance;
+- contradiction preservation;
+- hidden-variable detection;
+- EIF;
+- Expected Regret;
+- decision stability;
+- active correction;
+- truthful HOLD.
+
+No surface may replace CARBON° Search with a materially weaker keyword/relevance engine while presenting it as the same capability.
+
+### 23.2 Canonical offer / directory discipline
+
+CARBON° and the Matrix may expose many different products, services, capabilities, utilities, assets, marketplace entries and evidence records.
+
+Search must not conflate them merely because names, language, tags or use-cases overlap.
+
+The build must create a canonical searchable directory / ontology contract containing, at minimum:
+- canonical entity_id;
+- canonical name;
+- entity_type;
+- parent / domain;
+- aliases;
+- description / purpose;
+- capabilities;
+- offered actions;
+- visibility / scope;
+- lifecycle state;
+- source of authority;
+- version;
+- supersession / rename links;
+- evidence pointer.
+
+Entity types must remain distinguishable (for example: PRODUCT, SERVICE, CAPABILITY, UTILITY, MARKETPLACE_OFFER, EVIDENCE_RECORD, CLIENT_ASSET, INTERNAL_WORKER) unless an evidenced relationship explicitly connects them.
+
+**SIMILAR LANGUAGE != SAME OFFERING.**
+**ALIAS != IDENTITY UNLESS MAPPED.**
+**SEARCH MATCH != AUTHORITY TO MERGE.**
+
+Where directories or names conflict, preserve the conflict and resolve identity before ranking across the conflated candidates.
+
+### 23.3 Active-search mistake recovery
+
+A mistake discovered during active search is a recoverable state transition, not automatically a terminal state.
+
+Examples:
+- wrong entity selected;
+- incorrect attribute parsed;
+- stale source outranked a current source;
+- alias mapped to the wrong canonical item;
+- two offerings were conflated;
+- a hidden variable invalidates an earlier ranking;
+- a user correction changes the meaning of earlier evidence;
+- the engine itself detects that an earlier assumption was unsupported.
+
+Required behavior:
+
+1. identify the exact invalid claim, mapping, hypothesis, score or branch;
+2. mark the affected state invalid / superseded rather than silently overwriting it;
+3. roll back only the dependent derived state;
+4. preserve unaffected valid evidence and work;
+5. update Measured Intent and latent-intent probabilities;
+6. re-run affected normalization / ranking / regret checks;
+7. continue from the furthest valid evidenced state;
+8. expose the corrected result only after decision stability is restored.
+
+**ACTIVE ERROR != END SEARCH.**
+**CORRECTION != RESTART EVERYTHING.**
+**ROLLBACK AFFECTED STATE → REWEIGHT → CONTINUE.**
+
+Search may terminate only when the normal stop rule is satisfied or when the truthful terminal action is HOLD / GET EVIDENCE.
+
+### 23.4 Dynamic intent focus
+
+At every material state change, CARBON° Search must update its intent model.
+
+The engine should dynamically focus execution on the currently highest-supported probability-weighted path to Measured Intent resolution, while retaining materially plausible alternatives until evidence justifies pruning them.
+
+This does not mean blindly selecting the single highest-probability hypothesis at all times. A lower-probability hypothesis with high decision sensitivity or high cost-of-error may still require testing because resolving it could change the final outcome materially.
+
+Therefore priority is governed by:
+
+`PROBABILITY × INTENT UTILITY × DECISION SENSITIVITY × COST OF BEING WRONG`
+
+subject to evidence, permissions and Expected Regret.
+
+### 23.5 Search-session continuity
+
+Every active session must preserve enough state to recover deterministically from correction:
+- intent-model version;
+- Measured Intent snapshot;
+- hypothesis set + weights;
+- canonical entities considered;
+- normalized claims;
+- claim validity/supersession state;
+- evidence pointers;
+- ranking snapshot;
+- contradictions;
+- stop / continue decision;
+- correction events;
+- rollback boundary;
+- current furthest valid state.
+
+The audit record must show what changed without exposing private chain-of-thought.
+
+### 23.6 Intention acceptance principle
+
+The target capability is not merely "good search."
+
+A valid CARBON° Search implementation must demonstrate:
+
+`SIGNAL → MEASURE INTENT → FORM HYPOTHESES → SEARCH → DETECT ERROR/NEW EVIDENCE → CORRECT → REWEIGHT → CONTINUE → STABILIZE → ACT`
+
+without conflating offerings, discarding valid work, or ending the search because its own intermediate interpretation was wrong.
+
+**INTENTION is continuous evidence-bound orientation toward the best defensible outcome.**
