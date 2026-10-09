@@ -1090,7 +1090,7 @@ State: **OWNER DIRECTED / ACTIVE AS OPERATIONAL SECURITY CONTROL. Addendum O sup
 ## 2026-10-09 — Professional Profile / Commercial Positioning Matrix-Wide Evidence Rebuild
 - **Intake ID:** ROOT-20261009-PROFILE-MATRIX-WIDE-EVIDENCE-REBUILD
 - **Priority:** A
-- **Status:** ACTIVE INTAKE — requires capable authenticated profile-editing runtime.
+- **Status:** **DISPOSITIONED — EXECUTION ASSIGNED / LOCAL AUTHENTICATION HOLDS.** Intake classification is complete. Existing Professional Evidence Ledger governs public claims; external profile mutation remains subject to each surface's authenticated/authorized route. No new worker.
 - **Artifact:** `AMX/ROOT/INTAKE/PROFESSIONAL_PROFILE_MATRIX_WIDE_EVIDENCE_REBUILD_20261009.md`
 - **Directive:** Deep evidence consolidation first; public positioning second. Rebuild LinkedIn, CV, LabourX, Mercor, 4AIR and other discovered commercial surfaces from the furthest evidenced Matrix state.
 - **Current boundary:** TinyFish automation available, but no recorded LinkedIn sign-in; Notion historical agent-session search unavailable on current workspace tier.
@@ -1105,17 +1105,18 @@ State: **OWNER DIRECTED / ACTIVE AS OPERATIONAL SECURITY CONTROL. Addendum O sup
 ## 2026-10-09 — Artifact Delivery False-Completion / CV Export Failure
 - **Intake ID:** ROOT-20261009-ARTIFACT-DELIVERY-FALSE-COMPLETION-CV
 - **Priority:** A
-- **Status:** GOVERNANCE CLASSIFICATION REQUIRED.
+- **Status:** **ACCEPTED / MERGED — GOVERNANCE + BLUE STATE COMPLETION TRUTH.**
 - **Artifact:** `AMX/ROOT/INTAKE/ARTIFACT_DELIVERY_FALSE_COMPLETION_CV_20261009.md`
 - **Core evidence:** local artifact existence was incorrectly treated as successful user delivery; user received "library file not found"; first repair renamed/re-exported before the failed boundary was properly diagnosed.
-- **Candidate rule:** `LOCAL_ARTIFACT_EXISTS != USER_DELIVERABLE_AVAILABLE`.
-- **Requested action:** classify and map into existing BLUE STATE / completion / evidence governance; propagate if accepted.
+- **Rule:** `LOCAL_ARTIFACT_EXISTS != USER_DELIVERABLE_AVAILABLE`. For material user-facing artifacts, generation/render/file existence and user-deliverable surfacing remain separate states; completion requires a valid surfaced/access path and truthful delivery evidence.
+- **Disposition effect:** merged into existing completion/evidence governance. Repair must diagnose the failed boundary before re-export/rename; do not infer user access from runtime existence.
 
 
 ## 2026-10-09 — Category B Revenue Inflow Mechanics Deep Research
 - **Intake ID:** ROOT-20261009-CATB-REVENUE-INFLOW-MECHANICS
 - **Classification:** CATEGORY B
-- **Authority effect:** ADVISORY / RECOMMENDATION ONLY — NOT A DIRECTIVE.
+- **Disposition:** **ACCEPTED AS SEQUENCED FIRST BREATH OPTIMIZATION INPUT — BOUNDED TESTING ONLY.**
+- **Authority effect:** ADVISORY / RECOMMENDATION ONLY — NOT A DIRECTIVE. Accepting the sequence does not authorize mass contact, new architecture, or payment action.
 - **Artifact:** `AMX/ROOT/INTAKE/CATEGORY_B_REVENUE_INFLOW_MECHANICS_DEEP_RESEARCH_20261009.md`
 - **Scope:** Evidence-backed analysis of why substantial global discovery/outbound activity is not yet producing attributable money inflow.
 - **Sequential recommendation:** Truth reconciliation → contact/authority quality → one-decision offer testing → accepted-scope/payment handoff → CRM projection → proof-led warm demand → scale only from evidenced winners.
@@ -1130,3 +1131,83 @@ State: **OWNER DIRECTED / ACTIVE AS OPERATIONAL SECURITY CONTROL. Addendum O sup
 - **Invariant:** **POSITIONING MAY CHANGE. TRUTH MAY NOT.**
 - **Continuity effect:** Owner no longer needs to restate the age-positioning method each time; the numeral alone is sufficient where context supports the shorthand.
 - **Precedence:** quantities, calculations, IDs, versions, prices, percentages, dates/times, durations, scores, factual ages, worker/model counts and other clearly literal numeric uses override shorthand interpretation.
+
+
+## 2026-10-09 — FINAL INTAKE SWEEP / CLEARANCE
+- **Sweep state:** **CURRENT INTAKE CLASSIFICATION QUEUE CLEARED FOR THE SURFACES SWEPT.**
+- **Scope checked:** current ROOT/Intake Notion pages surfaced by pending/classification searches; recent Notion pages; current GitHub Intake index; recent GitHub intake/governance/build commits; active FIRST BREATH worker state.
+- **Truth boundary:** operational work may remain OPEN after Intake classification. **INTAKE CLEARED != EXECUTION COMPLETE.**
+
+### Librarian drift — cross-chain evidence contamination
+- **Source page:** `3f48f8b56cd781eab541dcbe8a1d8124`.
+- **Disposition:** **ACCEPT / MERGE** into existing drift/non-drift discipline.
+- **Invariant:** **TRUE A + TRUE B != A→B without an evidenced join.**
+- **Required check:** identity, durable keys, owner/handoff, causality, timeline, lifecycle state, and readback of the joined proposition.
+- **Fallback:** missing join => `UNKNOWN / UNLINKED / HOLD`; preserve chains separately.
+- **No new office/process.**
+
+### Banker false Notion dependency / route misidentification
+- **Source page:** `3f18f8b56cd781b59728e7cf5865280f`.
+- **Disposition:** **ACCEPT / MERGE** as dependency-validation and route-resolution learning.
+- **Rule:** failure of an optional/specialized provider feature does not prove the ordinary governance transport is unavailable. Test the existing authorized route before escalating a subscription/entitlement as a Matrix dependency.
+- **Capability/repair discipline on same page:** **ACCEPT / MERGE** — specialist tools do not gain authority merely by being connected; repair only evidenced breakage; healthy systems are VERIFIED / LEFT UNCHANGED.
+
+### iSCOPE→PRI post-repair artifact — 2026-10-06
+- **Source page:** `3f18f8b56cd781349623c1385ffc816d`.
+- **Disposition:** **CLASSIFIED / HISTORICAL / SUPERSEDED FOR CURRENT OPERATING STATE.**
+- The 2026-10-06 degraded acceptance remains immutable repair provenance. It is not the current FIRST BREATH worker state. Current single writer `6ac17e8999648191ba125236de46f012` is enabled and has attributable current wakes; scheduler liveness is therefore no longer an Intake question. Commercial outcome truth remains separately evidence-bound.
+
+### Reaper / EEALER misidentification
+- **Source page:** `3f18f8b56cd781979934e704fcc0cd6d`.
+- **Disposition:** **RESOLVED / MERGED.**
+- `EEALER` is classified as assistant transcription/identity-resolution error and non-authoritative erroneous provenance.
+- Correct identity: **Bounty Reaper**. No alias, second Reaper, office, authority or dependency is created.
+- Current Reaper remains the one existing worker; submission/award/payment states remain evidence-gated and are not implied by this classification.
+
+### H0B° Card Journey / Star Seeding
+- **Source page:** `3f08f8b56cd781e9b039e4a7c4948cc7`.
+- **Disposition:** **PARTIAL MERGE / EXPLICIT HOLD.**
+- Merge as **conceptual H0B° journey/share mechanic** only where it does not duplicate JAM3S identity/referral/reputation/accountability infrastructure.
+- HOLD: Stars-as-gas, community funding/refund, collectible/asset economics, milestone rights, wallet implementation and any regulated-money implication until infrastructure, economic, legal/regulatory and JAM3S-integration review explicitly resolves them.
+- No financial-return, investment, yield or ownership claim is authorized.
+
+### Professional Profile / Commercial Positioning evidence rebuild
+- **Intake ID:** `ROOT-20261009-PROFILE-MATRIX-WIDE-EVIDENCE-REBUILD`.
+- **Disposition:** **EXECUTION ASSIGNED / INTAKE COMPLETE.**
+- Existing Professional Evidence Ledger is the claim boundary. External LinkedIn/LabourX/Mercor/4AIR/etc. edits are local authenticated execution tasks, not unresolved Intake classification.
+- Missing sign-in/verification is a per-surface execution HOLD, not a reason to reopen governance.
+
+### Artifact Delivery False-Completion / CV Export Failure
+- **Intake ID:** `ROOT-20261009-ARTIFACT-DELIVERY-FALSE-COMPLETION-CV`.
+- **Disposition:** **ACCEPT / MERGE** into completion/evidence governance.
+- **Invariant:** `LOCAL_ARTIFACT_EXISTS != USER_DELIVERABLE_AVAILABLE`.
+- Material artifact state chain: `CREATE → VERIFY CONTENT → VERIFY FILE/PATH → SURFACE/ATTACH → VERIFY ACCESS PATH/DELIVERY RECEIPT WHERE AVAILABLE → COMPLETE`.
+- If final user access cannot be independently proven, claim only the strongest evidenced state.
+
+### Category B — Revenue Inflow Mechanics
+- **Intake ID:** `ROOT-20261009-CATB-REVENUE-INFLOW-MECHANICS`.
+- **Disposition:** **ACCEPT AS SEQUENCED RECOMMENDATION / BOUNDED EXPERIMENTS.**
+- Order retained: (1) revenue-truth reconciliation; (2) contact/authority quality; (3) one-decision offer experiment; (4) accepted-scope→existing-rail bridge; (5) CRM projection, not replacement; (6) proof-led warm surface; (7) keep general infrastructure secondary unless a specific buyer/payment dependency proves otherwise.
+- Each step retains its stated falsifier; no step becomes universal policy merely because the packet is accepted.
+
+### CARBON° Search — Engine of Intent
+- **Owner-authorized build artifacts:** `house/search/CARBON_SEARCH_BUILD_INITIATIVE_V1.md`, `house/search/CARBON_SEARCH_ACCEPTANCE_V1.json`.
+- **Disposition:** **BUILD AUTHORIZED / INTAKE COMPLETE / ASSIGNED TO EXISTING T-COD BUILD OWNERSHIP.**
+- **Execution issue:** #16 — `CARBON Search — implement Engine of Intent V1 to 100/100 acceptance`.
+- Product/build authority is active from Owner authorization; Intake does not create another search worker or governance layer. Mandatory acceptance remains 100/100 gates with truthful UNKNOWN/HOLD allowed for individual searches.
+
+### FORX capture-first / weighted-continuity proposals
+- **Disposition:** **MERGED WHERE ALREADY CONSISTENT; RESIDUAL IMPLEMENTATION ASSIGNED.**
+- Accepted invariants already reflected in FIRST BREATH FORX: exact source-key discipline, candidate vs verified-state separation, provenance retention, independent readback, country/sector anti-starvation, weighted-continuity consumption, outcome feedback, and strongest conflict check at commercial action boundary.
+- Provisional numeric weighting coefficients are not promoted as canon merely by this disposition.
+- Existing 50K durable GeoNames technical baseline remains current production-scale proof; 1,200 remains immutable Stage-1 provenance only unless newer authoritative evidence explicitly supersedes the 50K receipt.
+
+### FORX staging mutation blocker
+- **Disposition:** **CLASSIFIED / ASSIGNED TO T-COD; REMOVED FROM INTAKE DECISION QUEUE.**
+- **Execution issue:** #17 — `FORX — repair large staging-buffer mutation path without forking storage`.
+- Intake-custodied South Sudan/Burundi records remain `CANDIDATE / PENDING_INGESTION` until actual durable ingestion + independent readback; that is execution state, not pending governance classification.
+
+### Queue rule after clearance
+New Intake submissions must leave Intake in exactly one explicit state:
+`ACCEPT/MERGE | MODIFY/MERGE | REJECT | HOLD(exact blocker + owner + return condition) | ASSIGNED(execution owner + acceptance test) | SUPERSEDED/HISTORICAL`.
+A proposal may remain operationally unfinished after classification, but it may not remain indefinitely as generic `PENDING` when authority/ownership can already be resolved.
