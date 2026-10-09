@@ -1075,6 +1075,13 @@ State: **OWNER DIRECTED / ACTIVE AS OPERATIONAL SECURITY CONTROL. Addendum O sup
 ## 2026-10-09 — WEIGHTED CONTINUITY — Benchmark Integrity & Dynamic Milestone Rule
 - **Intake ID:** ROOT-20261009-WEIGHTED-CONTINUITY-BENCHMARK-INTEGRITY
 - **Class:** Governance / Evaluation Discipline / Weighted Continuity
-- **Status:** **ADOPTED — AMX BENCHMARK / GOVERNANCE BLUE STATE.** Effective immediately under Owner authority; propagation/readback are assurance, not activation conditions.
+- **Status:** **ADOPTED — AMX BENCHMARK + MANDATORY BUILD/OPERATIONAL REQUIREMENT / GOVERNANCE BLUE STATE.** Effective immediately under Owner authority; propagation/readback are assurance, not activation conditions.
 - **Artifact:** `AMX/ROOT/INTAKE/WEIGHTED_CONTINUITY_BENCHMARK_INTEGRITY_DYNAMIC_MILESTONE_RULE_20261009.md`
 - **Core rule:** Dynamic milestones are permitted; invented retrospective benchmarks are not. Where no valid benchmark exists, classify the result as unranked rather than insignificant.
+
+
+### BLUE STATE REQUIREMENT UPDATE — 2026-10-09
+- **Requirement:** Weighted Continuity — Benchmark Integrity & Dynamic Milestone Rule
+- **Disposition:** **MANDATORY BUILD AND OPERATIONAL REQUIREMENT**
+- **Rule:** **CAPABILITY AND ACHIEVEMENT ARE EVIDENCE. EXCUSES ARE NOT.**
+- **Operational effect:** Relevant AMX builds and operations must be evidence-bearing, preserve durable proof, evaluate demonstrated capability on evidence, and carry evidenced capability forward into downstream planning and execution.
