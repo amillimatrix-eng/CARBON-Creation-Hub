@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-09T06:55:00+02:00",
+  "last_updated": "2026-10-09T06:59:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -14068,6 +14068,141 @@
       "payer_hypothesis": "Unverified",
       "fit_note": "CANDIDATE / PENDING_INGESTION",
       "consumer_action": "iSCOPE validate current problem, buyer relevance, identity, suppression and route fitness before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-717",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.fr8.vu/",
+      "organization": "Vanuatu Freight Services / FR8 Logistics",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Vanuatu",
+      "region": "Pacific/Oceania",
+      "sector": "freight forwarding/logistics",
+      "business_model": "commercial operator",
+      "surface": "International sea/air freight, customs clearing, inter-island distribution",
+      "observed_need": "Operating surface evidenced; current unmet buyer problem not established.",
+      "source": "https://www.fr8.vu/",
+      "source_observed_at": "2026-10-09T06:59:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.fr8.vu/",
+          "source": "https://www.fr8.vu/"
+        }
+      ],
+      "current_public_evidence": "International sea/air freight, customs clearing, inter-island distribution",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity and suppression before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-718",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://tal.vu/",
+      "organization": "Tropical Agency Limited",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Vanuatu",
+      "region": "Pacific/Oceania",
+      "sector": "shipping agency/logistics",
+      "business_model": "commercial operator",
+      "surface": "Shipping-line representation, quotes, schedules and bookings",
+      "observed_need": "Operating surface evidenced; current unmet buyer problem not established.",
+      "source": "https://tal.vu/",
+      "source_observed_at": "2026-10-09T06:59:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://tal.vu/",
+          "source": "https://tal.vu/"
+        }
+      ],
+      "current_public_evidence": "Shipping-line representation, quotes, schedules and bookings",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity and suppression before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-719",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.southseacargo.com/about",
+      "organization": "South Sea Cargo Ltd",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Vanuatu",
+      "region": "Pacific/Oceania",
+      "sector": "inter-island freight/logistics",
+      "business_model": "commercial operator",
+      "surface": "Domestic shipping across Port Vila, Santo and Malekula",
+      "observed_need": "Operating surface evidenced; current unmet buyer problem not established.",
+      "source": "https://www.southseacargo.com/about",
+      "source_observed_at": "2026-10-09T06:59:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.southseacargo.com/about",
+          "source": "https://www.southseacargo.com/about"
+        }
+      ],
+      "current_public_evidence": "Domestic shipping across Port Vila, Santo and Malekula",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity and suppression before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-720",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.transam.ws/",
+      "organization": "Transam Samoa Ltd",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Samoa",
+      "region": "Pacific/Oceania",
+      "sector": "port agency/freight/logistics",
+      "business_model": "commercial operator",
+      "surface": "Port agency, NVOCC, warehousing, container handling and consolidation",
+      "observed_need": "Operating surface evidenced; current unmet buyer problem not established.",
+      "source": "https://www.transam.ws/",
+      "source_observed_at": "2026-10-09T06:59:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.transam.ws/",
+          "source": "https://www.transam.ws/"
+        }
+      ],
+      "current_public_evidence": "Port agency, NVOCC, warehousing, container handling and consolidation",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity and suppression before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-721",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.tmjpacific.com/",
+      "organization": "TMJ Incorporated",
+      "canonical_identity": "UNRESOLVED",
+      "country": "American Samoa",
+      "region": "Pacific/Oceania",
+      "sector": "supply-chain/wholesale distribution",
+      "business_model": "commercial operator",
+      "surface": "Warehousing, distribution, freight coordination and cold-chain support across Pacific markets",
+      "observed_need": "Operating surface evidenced; current unmet buyer problem not established.",
+      "source": "https://www.tmjpacific.com/",
+      "source_observed_at": "2026-10-09T06:59:00+02:00",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.tmjpacific.com/",
+          "source": "https://www.tmjpacific.com/"
+        }
+      ],
+      "current_public_evidence": "Warehousing, distribution, freight coordination and cold-chain support across Pacific markets",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE validate current problem, buyer relevance, identity and suppression before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -14123,78 +14258,86 @@
     "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
   },
   "last_continuity": {
-    "observed_at": "2026-10-09T06:55:00+02:00",
+    "observed_at": "2026-10-09T06:59:00+02:00",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-0655-SAST",
+    "run_identity": "FORX-CONTINUOUS-20261009-0659-SAST",
     "prior_receipt": {
-      "observed_at": "2026-10-09T06:49:00+02:00",
+      "observed_at": "2026-10-09T06:55:00+02:00",
       "result_ids": [
-        "FORX-PROSPECT-20261009-706"
+        "FORX-PROSPECT-20261009-707",
+        "FORX-PROSPECT-20261009-708",
+        "FORX-PROSPECT-20261009-709",
+        "FORX-PROSPECT-20261009-710",
+        "FORX-PROSPECT-20261009-711",
+        "FORX-PROSPECT-20261009-712",
+        "FORX-PROSPECT-20261009-713",
+        "FORX-PROSPECT-20261009-714",
+        "FORX-PROSPECT-20261009-715",
+        "FORX-PROSPECT-20261009-716"
       ]
     },
     "consumed_sources": [
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "364baf07ad9c85b374e774dc31f19824b1c34a0a"
+        "revision": "9a67c70a38a8b400bc8476b90b6dc77856d6f1b9"
       }
     ],
     "apply_example": {
-      "prior_learning": "Prior receipt Fiji fisheries exporter + Vanuatu/PNG cold-chain/equipment-service lateral",
-      "changed_action": "Expanded Fiji fisheries processing/export plus PNG equipment/logistics operators in one larger batch; avoided member-count promotion",
+      "prior_learning": "Prior receipt prioritized Vanuatu logistics/cold-room and Samoa fisheries/cold-chain lateral",
+      "changed_action": "Moved into Vanuatu/Samoa logistics operators; retained fisheries/trade portals as network rails instead of nodes",
       "source_pointers": [
         "overdrive/forx_prospect_buffer.json:last_continuity.next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Fiji",
-        "Papua New Guinea"
+        "Vanuatu",
+        "Samoa",
+        "American Samoa"
       ],
       "sector": [
-        "fisheries processing/export",
-        "cold-chain",
-        "industrial equipment hire",
-        "freight/logistics"
+        "freight forwarding",
+        "shipping agency",
+        "inter-island logistics",
+        "warehousing",
+        "cold-chain support"
       ],
       "source": "official public business websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 10,
-      "candidates_staged_pending_ingestion": 10,
+      "candidate_exact_keys_discovered": 5,
+      "candidates_staged_pending_ingestion": 5,
       "verified_graph_delta_claimed": 0,
-      "network_rails_discovered": 1
+      "network_rails_discovered": 3
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-707",
-      "FORX-PROSPECT-20261009-708",
-      "FORX-PROSPECT-20261009-709",
-      "FORX-PROSPECT-20261009-710",
-      "FORX-PROSPECT-20261009-711",
-      "FORX-PROSPECT-20261009-712",
-      "FORX-PROSPECT-20261009-713",
-      "FORX-PROSPECT-20261009-714",
-      "FORX-PROSPECT-20261009-715",
-      "FORX-PROSPECT-20261009-716"
+      "FORX-PROSPECT-20261009-717",
+      "FORX-PROSPECT-20261009-718",
+      "FORX-PROSPECT-20261009-719",
+      "FORX-PROSPECT-20261009-720",
+      "FORX-PROSPECT-20261009-721"
     ],
     "network_result_keys": [
-      "url:https://tradeportal.gov.vu/procedure/1068/step/714?l=en"
+      "url:https://fisheries.gov.vu/index.php",
+      "url:https://tradeportal.gov.vu/procedure/1247/step/274?embed=true&includeSearch=true&l=en",
+      "url:https://samoa.tradeportal.org/"
     ],
     "uncertainty": [
-      "Official web presence observed; contact delivery not tested.",
-      "No unmet buyer problem inferred.",
-      "Vanuatu trade portal retained as network/operational rail only."
+      "No current buyer pain inferred.",
+      "Public contact routes not delivery-tested.",
+      "Government/trade portals retained as ecosystem/network evidence only."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Vanuatu logistics/cold-room operators by individual identity",
-        "why": "Country remains thinner than PNG/Fiji."
+        "coordinate": "Samoa agriculture/manufacturing exporters outside logistics",
+        "why": "Different sector in weak-coverage geography."
       },
       {
-        "coordinate": "Samoa fisheries/export operators and cold-chain",
-        "why": "Same economic-infrastructure family in weaker coverage."
+        "coordinate": "Vanuatu construction/industrial service operators",
+        "why": "Different business model in same weak geography."
       }
     ],
-    "chosen_next_action": "Continue larger batched discovery with exact-key dedupe and one write/readback per tranche",
-    "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH; NETWORK RAIL != NODE"
+    "chosen_next_action": "Continue larger batched exact-key exploration",
+    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; NETWORK RAIL != NODE"
   }
 }
