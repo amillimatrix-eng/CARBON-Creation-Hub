@@ -16795,6 +16795,276 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-818",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.teimandassociates.com/",
+      "organization": "TEIM & Associates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Sierra Leone",
+      "region": "West Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Freetown chartered-accounting firm serving small, medium and large businesses with founder access and fixed-fee plans.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.teimandassociates.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.teimandassociates.com/",
+          "source": "https://www.teimandassociates.com/"
+        }
+      ],
+      "current_public_evidence": "Freetown chartered-accounting firm serving small, medium and large businesses with founder access and fixed-fee plans.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-819",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.bakarrandassociates.com/",
+      "organization": "Bakarr & Associates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Sierra Leone",
+      "region": "West Africa",
+      "sector": "boutique business law",
+      "business_model": "SMME / professional services",
+      "surface": "Founder-led Freetown boutique law firm established in 2021 with six legal practitioners and commercial lifecycle support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.bakarrandassociates.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.bakarrandassociates.com/",
+          "source": "https://www.bakarrandassociates.com/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Freetown boutique law firm established in 2021 with six legal practitioners and commercial lifecycle support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-820",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.atasconsultants.com/",
+      "organization": "ATASC",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Sierra Leone",
+      "region": "West Africa",
+      "sector": "accounting/tax/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Partner-led Freetown tax, audit, payroll, HR and compliance practice serving SMEs and NGOs.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.atasconsultants.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.atasconsultants.com/",
+          "source": "https://www.atasconsultants.com/"
+        }
+      ],
+      "current_public_evidence": "Partner-led Freetown tax, audit, payroll, HR and compliance practice serving SMEs and NGOs.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-821",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.skpcolaw.com/",
+      "organization": "Sufian-Kargbo Pratt & Co.",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Sierra Leone",
+      "region": "West Africa",
+      "sector": "law practice",
+      "business_model": "SMME / professional services",
+      "surface": "Freetown professional law and consultancy practice with direct founder/partner experience and public contact route.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.skpcolaw.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.skpcolaw.com/",
+          "source": "https://www.skpcolaw.com/"
+        }
+      ],
+      "current_public_evidence": "Freetown professional law and consultancy practice with direct founder/partner experience and public contact route.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-822",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://thebettsfirmsl.com/",
+      "organization": "The Betts Firm SL",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Sierra Leone",
+      "region": "West Africa",
+      "sector": "tax/accounting/consultancy",
+      "business_model": "SMME / professional services",
+      "surface": "Freetown tax, accounting and consultancy practice with current public enquiry and advisory surfaces.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://thebettsfirmsl.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://thebettsfirmsl.com/",
+          "source": "https://thebettsfirmsl.com/"
+        }
+      ],
+      "current_public_evidence": "Freetown tax, accounting and consultancy practice with current public enquiry and advisory surfaces.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-823",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://ktbprofessionals.com/",
+      "organization": "KTB Professionals",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Sierra Leone",
+      "region": "West Africa",
+      "sector": "accounting/tax/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Freetown accounting practice offering advisory, tax, audit and appointment surface.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://ktbprofessionals.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://ktbprofessionals.com/",
+          "source": "https://ktbprofessionals.com/"
+        }
+      ],
+      "current_public_evidence": "Freetown accounting practice offering advisory, tax, audit and appointment surface.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-824",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://jplegalgh.com/",
+      "organization": "JP Legal",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Ghana",
+      "region": "West Africa",
+      "sector": "boutique business law",
+      "business_model": "SMME / professional services",
+      "surface": "Two-partner Accra boutique law firm established in 2024 with commercially focused legal counsel.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://jplegalgh.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://jplegalgh.com/",
+          "source": "https://jplegalgh.com/"
+        }
+      ],
+      "current_public_evidence": "Two-partner Accra boutique law firm established in 2024 with commercially focused legal counsel.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-825",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://liandoafrica.com/",
+      "organization": "Liando Africa",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Ghana",
+      "region": "West Africa",
+      "sector": "boutique law/business development",
+      "business_model": "SMME / professional services",
+      "surface": "Accra boutique law practice providing legal consultancy plus startup and SME strategy support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://liandoafrica.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://liandoafrica.com/",
+          "source": "https://liandoafrica.com/"
+        }
+      ],
+      "current_public_evidence": "Accra boutique law practice providing legal consultancy plus startup and SME strategy support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-826",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://sandhgroup.com/sh-group/",
+      "organization": "S&H Group",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Ghana",
+      "region": "West Africa",
+      "sector": "boutique law/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Founder-led Accra boutique law firm offering tailored legal and business solutions.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://sandhgroup.com/sh-group/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://sandhgroup.com/sh-group/",
+          "source": "https://sandhgroup.com/sh-group/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Accra boutique law firm offering tailored legal and business solutions.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-827",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://slalegal.sl/",
+      "organization": "Sierra Legal Advocates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Sierra Leone",
+      "region": "West Africa",
+      "sector": "law practice",
+      "business_model": "SMME / professional services",
+      "surface": "Freetown legal practice with corporate advisory, tax compliance and emergency intake surfaces.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://slalegal.sl/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://slalegal.sl/",
+          "source": "https://slalegal.sl/"
+        }
+      ],
+      "current_public_evidence": "Freetown legal practice with corporate advisory, tax compliance and emergency intake surfaces.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH West-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -16852,18 +17122,17 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-KENYA-RWANDA-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-WEST-AFRICA-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-803",
-        "FORX-PROSPECT-20261009-804",
-        "FORX-PROSPECT-20261009-805",
-        "FORX-PROSPECT-20261009-806",
-        "FORX-PROSPECT-20261009-807",
-        "FORX-PROSPECT-20261009-808",
-        "FORX-PROSPECT-20261009-809",
-        "FORX-PROSPECT-20261009-810"
+        "FORX-PROSPECT-20261009-811",
+        "FORX-PROSPECT-20261009-812",
+        "FORX-PROSPECT-20261009-813",
+        "FORX-PROSPECT-20261009-814",
+        "FORX-PROSPECT-20261009-815",
+        "FORX-PROSPECT-20261009-816",
+        "FORX-PROSPECT-20261009-817"
       ]
     },
     "consumed_sources": [
@@ -16877,17 +17146,17 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "980c06555ee0d78e4c2f0febe0628830a78ab304"
+        "revision": "0f28efa00cb117cd12219c7f126b0be1e937d5e8"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "East-Africa rotation",
+        "West-Africa rotation",
+        "Nigeria commercial closure",
         "SMME-first",
-        "professional-family diversity",
-        "corporates index-only"
+        "professional-family diversity"
       ],
-      "changed_action": "Extended the East-Africa professional lane into Kenya and Rwanda using SME/founder-serving accounting, CFO and boutique-law practices rather than BPO/POS repetition.",
+      "changed_action": "Moved from Kenya/Rwanda into Sierra Leone/Ghana professional operators while excluding Nigeria from commercial penetration and avoiding generic directory inflation.",
       "source_pointers": [
         "weighted continuity revision 31",
         "prior receipt next_alternatives"
@@ -16895,49 +17164,51 @@
     },
     "exact_coordinate": {
       "geography": [
-        "Kenya",
-        "Rwanda"
+        "Sierra Leone",
+        "Ghana"
       ],
       "sector": [
         "accounting",
         "tax",
-        "CFO advisory",
-        "boutique law",
-        "training"
+        "business advisory",
+        "boutique law"
       ],
-      "model": "SMME/founder-serving professional practice",
+      "model": "SMME / professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 7,
-      "candidates_staged_pending_ingestion": 7,
+      "candidate_exact_keys_discovered": 10,
+      "candidates_staged_pending_ingestion": 10,
       "verified_graph_delta_claimed": 0,
-      "explored": 7,
+      "explored": 10,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-811",
-      "FORX-PROSPECT-20261009-812",
-      "FORX-PROSPECT-20261009-813",
-      "FORX-PROSPECT-20261009-814",
-      "FORX-PROSPECT-20261009-815",
-      "FORX-PROSPECT-20261009-816",
-      "FORX-PROSPECT-20261009-817"
+      "FORX-PROSPECT-20261009-818",
+      "FORX-PROSPECT-20261009-819",
+      "FORX-PROSPECT-20261009-820",
+      "FORX-PROSPECT-20261009-821",
+      "FORX-PROSPECT-20261009-822",
+      "FORX-PROSPECT-20261009-823",
+      "FORX-PROSPECT-20261009-824",
+      "FORX-PROSPECT-20261009-825",
+      "FORX-PROSPECT-20261009-826",
+      "FORX-PROSPECT-20261009-827"
     ],
     "uncertainty": [
-      "Public service positioning does not establish current buyer pain, staff size or commercial readiness."
+      "Public operating surface does not establish current buyer pain or commercial readiness."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Ghana/Sierra Leone owner-led professional practices",
-        "why": "West-Africa country rotation outside Nigeria."
+        "coordinate": "Gambia/Liberia owner-led professional practices",
+        "why": "Continue West-Africa country-first expansion outside Nigeria."
       },
       {
-        "coordinate": "Rwanda allied-health/training micro-practices",
-        "why": "Different sector if further depth is warranted."
+        "coordinate": "Ghana accounting/bookkeeping micro-practices",
+        "why": "Increase sector diversity only if weak-country alternatives are less productive."
       }
     ],
-    "chosen_next_action": "Rotate to West Africa while preserving Nigeria CLOSED_OWNER commercial boundary.",
-    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFICATION; MAP STATE != PENETRATION STATE."
+    "chosen_next_action": "Rotate into Gambia/Liberia before further Ghana depth.",
+    "truth_boundary": "MAP EVERYWHERE; SELL ONLY WHERE PERMITTED. CANDIDATE != VERIFIED GRAPH."
   }
 }
