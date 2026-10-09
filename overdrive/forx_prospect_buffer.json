@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-08T23:25:00+02:00",
+  "last_updated": "2026-10-09T06:49:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -13772,6 +13772,32 @@
       "payer_hypothesis": "Unverified buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION; source-specific operational evidence only",
       "consumer_action": "iSCOPE validate specific current problem, identity, permission and suppression before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-706",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://goldenoceantuna.com/company/",
+      "organization": "Golden Ocean Group of Companies",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Fiji",
+      "region": "Pacific/Oceania",
+      "sector": "tuna fishing, processing and export",
+      "business_model": "integrated fisheries producer/exporter",
+      "surface": "Official company page describes long-line fishing, processing, export and traceability",
+      "observed_need": "Traceability and export operations evidenced; unmet buyer problem not established",
+      "source": "https://goldenoceantuna.com/company/",
+      "source_observed_at": "2026-10-09T06:49:00+02:00",
+      "contactability": "OFFICIAL_WEBSITE_ROUTE_ONLY",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://goldenoceantuna.com/company/"
+        }
+      ],
+      "current_public_evidence": "Integrated value chain with traceability and multiple fish species",
+      "payer_hypothesis": "Unverified",
+      "fit_note": "CANDIDATE / PENDING_INGESTION",
+      "consumer_action": "iSCOPE qualify current need, identity, suppression, route before PRI"
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -13827,91 +13853,52 @@
     "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
   },
   "last_continuity": {
-    "observed_at": "2026-10-08T23:25:00+02:00",
+    "observed_at": "2026-10-09T06:49:00+02:00",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261008-2325-SAST",
     "prior_receipt": {
-      "observed_at": "2026-10-08T23:19:00+02:00",
+      "observed_at": "2026-10-08T23:25:00+02:00",
       "result_ids": [
-        "FORX-PROSPECT-20261008-696",
-        "FORX-PROSPECT-20261008-697",
-        "FORX-PROSPECT-20261008-698",
-        "FORX-PROSPECT-20261008-699",
-        "FORX-PROSPECT-20261008-700",
-        "FORX-PROSPECT-20261008-701"
+        "FORX-PROSPECT-20261008-702",
+        "FORX-PROSPECT-20261008-703",
+        "FORX-PROSPECT-20261008-704",
+        "FORX-PROSPECT-20261008-705"
       ]
     },
     "consumed_sources": [
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "3fc67f5ee3d3c1bba7efab918ee22540f5c921ae"
-      },
-      {
-        "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
-        "revision": "prior fetched; latest not reconfirmed this tranche"
-      },
-      {
-        "id": "3f28f8b56cd781bd945dcd8630253ef8",
-        "revision": "prior fetched; latest not reconfirmed this tranche"
+        "revision": "6300c13c25b66c5d372288afc303c8934f915ebb"
       }
     ],
     "apply_example": {
-      "prior_learning": "Prior continuity next_alternatives[1]",
-      "changed_action": "Shifted from PNG/Vanuatu industrial suppliers to PNG cold-chain and freight services, rather than repeat suppliers",
+      "prior_learning": "Previous receipt Fiji fisheries exporter lateral",
+      "changed_action": "Selected individual Fiji fisheries exporter rather than reusing trade-portal member counts",
       "source_pointers": [
         "overdrive/forx_prospect_buffer.json:last_continuity.next_alternatives"
       ]
     },
     "exact_coordinate": {
-      "country": "Papua New Guinea",
-      "language": "English",
-      "sector": [
-        "cold-chain",
-        "freight logistics",
-        "perishable air cargo"
-      ],
-      "source": "official operator websites",
-      "surface": "operational services",
-      "offer": null,
-      "price": null
+      "country": "Fiji",
+      "sector": "fish processing/export",
+      "source": "official company website"
     },
     "component_evidence": {
-      "new_exact_keys": 4,
-      "staged_pending_ingestion": 4,
-      "verified_graph_delta_claimed": 0,
-      "explored": 4,
-      "exploited": 0
+      "new_exact_keys": 1,
+      "verified_graph_delta_claimed": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261008-702",
-      "FORX-PROSPECT-20261008-703",
-      "FORX-PROSPECT-20261008-704",
-      "FORX-PROSPECT-20261008-705"
-    ],
-    "network_result_keys": [
-      "url:https://fijitradeportal.gov.fj/en-gb/search-procedure/view/17",
-      "url:https://samoa.tradeportal.org/procedure/6?includeSearch=true&l=en"
-    ],
-    "uncertainty": [
-      "No current unmet buyer need proven",
-      "Public routes untested",
-      "Fiji and Samoa fisheries registry pages are network rails, not commercial candidates"
+      "FORX-PROSPECT-20261009-706"
     ],
     "next_alternatives": [
       {
-        "coordinate": "Fiji fisheries exporters with official company websites",
-        "why": "Lateral weak-sector coverage"
+        "coordinate": "Vanuatu refrigerated freight",
+        "why": "Weak country and different sector"
       },
       {
-        "coordinate": "Vanuatu temperature-controlled logistics operators",
-        "why": "Lateral geographic coverage"
+        "coordinate": "Fiji independent fisheries exporters",
+        "why": "Different business identity"
       }
     ],
-    "chosen_next_action": "Readback then continue exact-key discovery",
-    "unresolved_gaps": [
-      "No graph ingest claim",
-      "No iSCOPE qualification claimed"
-    ],
-    "truth_boundary": "STAGED != VERIFIED GRAPH"
+    "truth_boundary": "CANDIDATE != VERIFIED GRAPH"
   }
 }
