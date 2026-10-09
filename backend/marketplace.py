@@ -14,6 +14,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, model_validator
 
+from .marketplace_media import LocalMediaStore, media_store_from_env
 from .marketplace_money import MoneyAdapter, SandboxMoneyAdapter
 
 
@@ -1099,9 +1100,10 @@ def mount_marketplace(
 ) -> None:
     db = Path(db_path or os.getenv("CARBON_MARKETPLACE_DB_PATH") or root / "data/carbon_marketplace.db")
     store = MarketplaceStore(db)
-    media_dir = Path(os.getenv("CARBON_MARKETPLACE_MEDIA_DIR") or root / "data/carbon_media")
-    media_dir.mkdir(parents=True, exist_ok=True)
-    app.mount("/market/media", StaticFiles(directory=media_dir), name="carbon-media")
+    media = media_store_from_env(root)
+    if isinstance(media, LocalMediaStore):
+        app.mount("/market/media", StaticFiles(directory=media.root), name="carbon-media")
+    app.state.carbon_media_store = media
     money = money_adapter or SandboxMoneyAdapter()
     demo_enabled = demo_mode if demo_mode is not None else os.getenv("CARBON_MARKETPLACE_DEMO_MODE", "").strip() in {"1", "true", "TRUE", "yes", "YES"}
     app.state.carbon_marketplace_store = store
@@ -1169,17 +1171,13 @@ def mount_marketplace(
             data = await upload.read(4_000_001)
             if len(data) > 4_000_000:
                 raise HTTPException(status_code=413, detail="each image must be 4 MB or smaller")
-            filename = f"{public_id('MED')}{ext}"
-            path = media_dir / filename
-            path.write_bytes(data)
-            urls.append(f"/market/media/{filename}")
+            urls.append(media.save(data, upload.content_type or "application/octet-stream", ext))
         return {
             "urls": urls,
             "count": len(urls),
             "owner_ref": participant,
-            "storage": "prototype-local-adapter",
-            "durability": "ephemeral-unless-CARBON_MARKETPLACE_MEDIA_DIR-is-mounted-or-replaced",
-            "production_seam": "swap media adapter/provider without changing listing image_urls contract",
+            "storage": media.describe(),
+            "production_seam": "S3-compatible object storage is configured by environment; listing image_urls contract is unchanged",
         }
 
     @router.get("/api/carbon/listings")
