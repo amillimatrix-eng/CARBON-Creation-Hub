@@ -16147,6 +16147,249 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
       "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-794",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.ckuhuniattorneys.com/",
+      "organization": "C Kuhuni Attorneys",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "sector": "boutique law",
+      "business_model": "SMME / professional services",
+      "surface": "Harare boutique law firm with corporate, property, labour, family and technology-law services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.ckuhuniattorneys.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.ckuhuniattorneys.com/",
+          "source": "https://www.ckuhuniattorneys.com/"
+        }
+      ],
+      "current_public_evidence": "Harare boutique law firm with corporate, property, labour, family and technology-law services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-795",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://masangoattorneys.com/",
+      "organization": "Masango Attorneys",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "sector": "boutique law",
+      "business_model": "SMME / professional services",
+      "surface": "Founder-led Harare boutique practice providing personalized legal services to individuals, families and businesses.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://masangoattorneys.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://masangoattorneys.com/",
+          "source": "https://masangoattorneys.com/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Harare boutique practice providing personalized legal services to individuals, families and businesses.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-796",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.praxisaccountants.co.zw/",
+      "organization": "Praxis Accountants",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "sector": "accounting/tax/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Harare multidisciplinary accounting and advisory practice serving owner-managed businesses, NGOs and public entities.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.praxisaccountants.co.zw/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.praxisaccountants.co.zw/",
+          "source": "https://www.praxisaccountants.co.zw/"
+        }
+      ],
+      "current_public_evidence": "Harare multidisciplinary accounting and advisory practice serving owner-managed businesses, NGOs and public entities.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-797",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://pinnacleconsultingservices.co.zw/",
+      "organization": "Pinnacle Consulting Services",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Harare professional-services firm providing accounting, tax, internal audit and business advisory.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://pinnacleconsultingservices.co.zw/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://pinnacleconsultingservices.co.zw/",
+          "source": "https://pinnacleconsultingservices.co.zw/"
+        }
+      ],
+      "current_public_evidence": "Harare professional-services firm providing accounting, tax, internal audit and business advisory.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-798",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.businessideas.co.zw/",
+      "organization": "Business Ideas",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "sector": "accounting/payroll/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Harare practice serving small and medium business owners with bookkeeping, payroll, tax, compliance and business advisory.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.businessideas.co.zw/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.businessideas.co.zw/",
+          "source": "https://www.businessideas.co.zw/"
+        }
+      ],
+      "current_public_evidence": "Harare practice serving small and medium business owners with bookkeeping, payroll, tax, compliance and business advisory.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-799",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJf32MtgK5-WMRoWz3sEmGS3w",
+      "organization": "QuickPro Solutions Zimbabwe",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "sector": "accounting practice",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies a Harare accounting firm with direct phone route.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJf32MtgK5-WMRoWz3sEmGS3w",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJf32MtgK5-WMRoWz3sEmGS3w",
+          "source": "google_business:ChIJf32MtgK5-WMRoWz3sEmGS3w"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a Harare accounting firm with direct phone route.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-800",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJsXcz4RqlMRkRXOvdRAPiNfs",
+      "organization": "Actux Consultancy",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "sector": "accounting practice",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies a Harare accounting consultancy with direct phone route.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJsXcz4RqlMRkRXOvdRAPiNfs",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJsXcz4RqlMRkRXOvdRAPiNfs",
+          "source": "google_business:ChIJsXcz4RqlMRkRXOvdRAPiNfs"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a Harare accounting consultancy with direct phone route.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-801",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJ_8eOedWlMRkR-6lgeRzOzQs",
+      "organization": "Muchini Attorneys",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "sector": "law practice",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies a Harare law firm with appointment and direct contact surfaces.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJ_8eOedWlMRkR-6lgeRzOzQs",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJ_8eOedWlMRkR-6lgeRzOzQs",
+          "source": "google_business:ChIJ_8eOedWlMRkR-6lgeRzOzQs"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a Harare law firm with appointment and direct contact surfaces.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-802",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJLSrB9belMRkR2sN9DhWPWLA",
+      "organization": "Numeri",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "sector": "tax/business consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies a Harare tax and business-management consultancy.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJLSrB9belMRkR2sN9DhWPWLA",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJLSrB9belMRkR2sN9DhWPWLA",
+          "source": "google_business:ChIJLSrB9belMRkR2sN9DhWPWLA"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a Harare tax and business-management consultancy.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -16204,19 +16447,17 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-ZAMBIA-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-ZIMBABWE-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-778",
-        "FORX-PROSPECT-20261009-779",
-        "FORX-PROSPECT-20261009-780",
-        "FORX-PROSPECT-20261009-781",
-        "FORX-PROSPECT-20261009-782",
-        "FORX-PROSPECT-20261009-783",
-        "FORX-PROSPECT-20261009-784",
-        "FORX-PROSPECT-20261009-785",
-        "FORX-PROSPECT-20261009-786"
+        "FORX-PROSPECT-20261009-787",
+        "FORX-PROSPECT-20261009-788",
+        "FORX-PROSPECT-20261009-789",
+        "FORX-PROSPECT-20261009-790",
+        "FORX-PROSPECT-20261009-791",
+        "FORX-PROSPECT-20261009-792",
+        "FORX-PROSPECT-20261009-793"
       ]
     },
     "consumed_sources": [
@@ -16230,68 +16471,74 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "8d8b50a294d37cd79cd771fbd3d133b529749369"
+        "revision": "5f8ca9d561f93c98066b9052ee905884309ed500"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "country-first African rotation",
+        "country-first Southern Africa continuation",
         "SMME-first",
-        "professional-family diversity"
+        "professional micro-practice family"
       ],
-      "changed_action": "Executed the saved Zambia lateral and mixed accounting, boutique-law and training/career operators instead of deepening Angola/Mozambique.",
+      "changed_action": "Rotated from Zambia into Zimbabwe owner-led/small professional accounting and legal practices, plus business/tax consultants; retained the SME Association directory as a network rail only.",
       "source_pointers": [
-        "prior receipt next_alternatives",
-        "weighted continuity revision 31"
+        "weighted continuity revision 31",
+        "prior receipt next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Zambia"
+        "Zimbabwe"
       ],
       "sector": [
         "accounting",
-        "bookkeeping",
         "tax",
+        "bookkeeping",
         "boutique law",
-        "career/training"
+        "business consulting"
       ],
       "model": "SMME / professional services",
       "source": [
-        "official sites",
+        "official websites",
         "public business profiles"
       ]
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 7,
-      "candidates_staged_pending_ingestion": 7,
+      "candidate_exact_keys_discovered": 9,
+      "candidates_staged_pending_ingestion": 9,
+      "network_rails_discovered": 1,
       "verified_graph_delta_claimed": 0,
-      "explored": 7,
+      "explored": 9,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-787",
-      "FORX-PROSPECT-20261009-788",
-      "FORX-PROSPECT-20261009-789",
-      "FORX-PROSPECT-20261009-790",
-      "FORX-PROSPECT-20261009-791",
-      "FORX-PROSPECT-20261009-792",
-      "FORX-PROSPECT-20261009-793"
+      "FORX-PROSPECT-20261009-794",
+      "FORX-PROSPECT-20261009-795",
+      "FORX-PROSPECT-20261009-796",
+      "FORX-PROSPECT-20261009-797",
+      "FORX-PROSPECT-20261009-798",
+      "FORX-PROSPECT-20261009-799",
+      "FORX-PROSPECT-20261009-800",
+      "FORX-PROSPECT-20261009-801",
+      "FORX-PROSPECT-20261009-802"
+    ],
+    "network_result_keys": [
+      "url:https://www.smeaz.org.zw/index.php/shop-online/business-directory"
     ],
     "uncertainty": [
-      "Public source evidence does not establish unmet buyer need or outreach consent."
+      "Directory membership and business listings are not outreach consent or buyer qualification."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Zimbabwe owner-led accounting/legal/training practices",
-        "why": "Country-first Southern Africa continuation."
+        "coordinate": "Tanzania/Uganda small professional practices outside BPO/POS lanes",
+        "why": "East-Africa professional-family rotation."
       },
       {
-        "coordinate": "Zambia allied-health and appointment practices",
-        "why": "Different professional family if further Zambia depth is justified."
+        "coordinate": "Zimbabwe allied-health/training micro-practices",
+        "why": "Different sector if further country depth is warranted."
       }
     ],
-    "chosen_next_action": "Rotate country before deepening accounting/legal.",
-    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFIED BUYER."
+    "chosen_next_action": "Rotate region rather than saturate accounting/legal in Southern Africa.",
+    "truth_boundary": "NETWORK DIRECTORY != NODE COUNT; CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFICATION."
   }
 }
