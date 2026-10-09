@@ -74,7 +74,7 @@ function initCarbonField(){const canvas=$("#carbonField");if(!canvas)return;cons
 if($("#listingImages"))$("#listingImages").onchange=previewImages;
 if($("#avatarInput"))$("#avatarInput").onchange=()=>{const file=$("#avatarInput").files&&$("#avatarInput").files[0];if(!file)return;const url=URL.createObjectURL(file);$("#profileAvatar").innerHTML='<img src="'+url+'" alt="Profile thumbnail preview">';setTimeout(()=>URL.revokeObjectURL(url),60000)};
 $("#themeButton").onclick=openTheme;$("#themeClose").onclick=()=>$("#themeDialog").close();$("#profileButton").onclick=openProfile;$("#profileClose").onclick=()=>$("#profileDialog").close();$("#saveProfile").onclick=saveProfile;
-$(".themeChoice").forEach(btn=>btn.onclick=()=>{if(btn.dataset.premium==="true"){previewMatrix();return}saveTheme(btn.dataset.theme);$("#themeDialog").close()});
+$$(".themeChoice").forEach(btn=>btn.onclick=()=>{if(btn.dataset.premium==="true"){previewMatrix();return}saveTheme(btn.dataset.theme);$("#themeDialog").close()});
 $("#applyCustomTheme").onclick=()=>{saveTheme("custom",$("#customBuyer").value,$("#customSeller").value);$("#themeDialog").close()};
 initUIScale();applyRoleTheme();initMarketRail();initCarbonField();initMatrixRain();refresh();
 })();
