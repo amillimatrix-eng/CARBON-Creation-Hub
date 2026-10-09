@@ -3,7 +3,7 @@
   "logical_store": "overdrive/forx_prospect_buffer.json",
   "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
   "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "base_snapshot": {
     "path": "overdrive/forx_prospect_buffer.json",
     "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
@@ -40,13 +40,35 @@
         "FORX-PROSPECT-20261009-BI-005",
         "FORX-PROSPECT-20261009-BI-006"
       ]
+    },
+    {
+      "path": "overdrive/forx_staging/delta-20261009-ethiopia-eritrea-01.json",
+      "git_blob_sha": "6f8150aabd94991774af22ab8565fa74d58dab13",
+      "count": 6,
+      "batch_id": "forx-ethiopia-eritrea-weighted-crawl-20261009-01",
+      "source_keys": [
+        "google_play:et.zaf.app",
+        "google_play:com.etmarketplace.app",
+        "google_play:wollo.gebeya.com",
+        "url:https://www.seller.fetanmarket.com/",
+        "url:https://www.tolofinds.com/",
+        "google_play:com.dkwana.app"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261009-ET-001",
+        "FORX-PROSPECT-20261009-ET-002",
+        "FORX-PROSPECT-20261009-ET-003",
+        "FORX-PROSPECT-20261009-ET-004",
+        "FORX-PROSPECT-20261009-ET-005",
+        "FORX-PROSPECT-20261009-ER-001"
+      ]
     }
   ],
-  "current_unique_source_keys": 937,
-  "gross_observation_versions": 938,
+  "current_unique_source_keys": 943,
+  "gross_observation_versions": 944,
   "current_normalized_missing_explicit_freshness": 0,
   "historical_exact_source_duplicate_versions_preserved": 1,
-  "next_segment_sequence": 2,
+  "next_segment_sequence": 3,
   "last_updated": "2026-10-09",
   "concurrency_contract": {
     "immutable_base": true,
@@ -61,6 +83,7 @@
     "This is the same logical FORX prospect staging store; it is not a second graph, database, worker, scheduler or scoring authority.",
     "The legacy 929-record file remains intact as provenance and is no longer the append mutation surface.",
     "Current logical readback canonicalizes missing source_key from exact source URL and exposes freshness_state=UNKNOWN when no date evidence exists.",
-    "Nine Intake-held candidates are staged but not graph-verified, qualified, contacted or revenue-bearing by this storage repair."
+    "Nine Intake-held candidates are staged but not graph-verified, qualified, contacted or revenue-bearing by this storage repair.",
+    "Fresh Ethiopia/Eritrea crawl records are RAW_UNQUALIFIED source observations; staging does not imply current buyer need, iSCOPE qualification, PRI authority, graph verification or revenue."
   ]
 }

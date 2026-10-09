@@ -1,0 +1,176 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "batch_id": "forx-ethiopia-eritrea-weighted-crawl-20261009-01",
+  "created_at": "2026-10-09",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261009-ET-001",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ZAF",
+      "surface": "Ethiopia local-services marketplace connecting service seekers with freelancers, small businesses and independent providers; listing, direct contact, ordering, reviews and seller dashboard.",
+      "observed_need": "Public product design indicates provider discovery, trust/reviews, service ordering, seller visibility and engagement are core marketplace functions; no current buyer pain is inferred.",
+      "outcome_space": [
+        "local services",
+        "provider acquisition",
+        "marketplace liquidity",
+        "seller visibility",
+        "reviews/trust"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=et.zaf.app",
+      "source_key": "google_play:et.zaf.app",
+      "source_observed_at": "2026-10-09",
+      "source_updated": "2026-03-24",
+      "geography": {
+        "country": "Ethiopia",
+        "locality": "UNKNOWN"
+      },
+      "public_route": {
+        "email": "zaf.ethiopia@gmail.com",
+        "phone": "+251965029219"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE must establish current business problem and decision-maker relevance.",
+      "fit_note": "Current public source; Ethiopia-focused. Contactability does not imply buyer intent or consent.",
+      "consumer_action": "iSCOPE verify operator identity, current traction/problem instance, route authority and bounded AMX value before any PRI handoff."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-ET-002",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "ET Marketplace",
+      "surface": "Ethiopian multi-vendor ecommerce platform for local sellers with shop creation, listings, order management, earnings/payout tracking, seller verification and local payment rails.",
+      "observed_need": "Public product design depends on seller acquisition/activation, order flow, trust/verification, delivery and local payment conversion; no current buyer pain is inferred.",
+      "outcome_space": [
+        "ecommerce",
+        "seller acquisition",
+        "merchant activation",
+        "payments",
+        "trust",
+        "delivery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.etmarketplace.app",
+      "source_key": "google_play:com.etmarketplace.app",
+      "source_observed_at": "2026-10-09",
+      "source_updated": "2026-09-22",
+      "geography": {
+        "country": "Ethiopia",
+        "locality": "UNKNOWN"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to identify current operator and measurable unmet problem.",
+      "fit_note": "0+ installs are an adoption/activation signal only; they are not proof of failure or commercial need.",
+      "consumer_action": "iSCOPE verify operator identity, adoption state, seller-side friction, decision-maker route and whether a bounded AMX offer is justified."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-ET-003",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Wollo Gebeya",
+      "surface": "Wollo-focused local marketplace for sellers and buyers across food, farming products, clothing, electronics and services; zero-middleman local commerce positioning.",
+      "observed_need": "Public product design centers seller discoverability and local buyer reach; no current operator pain or demand for AMX services is inferred.",
+      "outcome_space": [
+        "local marketplace",
+        "seller visibility",
+        "local commerce",
+        "merchant acquisition"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=wollo.gebeya.com",
+      "source_key": "google_play:wollo.gebeya.com",
+      "source_observed_at": "2026-10-09",
+      "source_updated": "2026-06-30",
+      "geography": {
+        "country": "Ethiopia",
+        "locality": "Wollo"
+      },
+      "public_route": {
+        "email": "miftahfentawdev@gmail.com",
+        "phone": "+251956291689"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to verify operating entity and current commercial problem.",
+      "fit_note": "Local-market representation is strong; current buyer readiness is unknown.",
+      "consumer_action": "iSCOPE verify operator/business state, seller activation or distribution friction, buyer relevance and lawful route."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-ET-004",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Fetan Market",
+      "surface": "Ethiopian seller store-builder / marketplace and POS-adjacent commerce platform designed for small shops, social sellers and growing brands with local payments and sales/inventory tooling.",
+      "observed_need": "The platform explicitly targets sellers relying on calls, DMs and word-of-mouth and positions digitized selling, payments, inventory and customer reach as the replacement; this is product-problem evidence, not proof the operator is buying services.",
+      "outcome_space": [
+        "SME digitization",
+        "seller enablement",
+        "social commerce",
+        "payments",
+        "inventory",
+        "customer acquisition"
+      ],
+      "source": "https://www.seller.fetanmarket.com/",
+      "source_key": "url:https://www.seller.fetanmarket.com/",
+      "source_observed_at": "2026-10-09",
+      "geography": {
+        "country": "Ethiopia",
+        "locality": "UNKNOWN"
+      },
+      "public_route": {
+        "email": "info@fetanmarket.com",
+        "phone": "+251985229218"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to verify operator, stage, commercial constraints and decision-maker.",
+      "fit_note": "Strong public problem-language for Ethiopian seller digitization; no direct AMX demand inferred.",
+      "consumer_action": "iSCOPE verify current operator state, merchant acquisition/activation economics, product gaps and bounded value route."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-ET-005",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Tolo Finds",
+      "surface": "Ethiopian local-services marketplace connecting customers with verified plumbers, electricians, cleaners and other professionals; booking, reviews, secure payments, messaging and provider onboarding.",
+      "observed_need": "Public product design relies on provider supply, verification/trust, booking conversion and service-job liquidity; no current buyer pain is inferred.",
+      "outcome_space": [
+        "local services",
+        "provider acquisition",
+        "trust/verification",
+        "booking conversion",
+        "marketplace liquidity"
+      ],
+      "source": "https://www.tolofinds.com/",
+      "source_key": "url:https://www.tolofinds.com/",
+      "source_observed_at": "2026-10-09",
+      "geography": {
+        "country": "Ethiopia",
+        "locality": "UNKNOWN"
+      },
+      "public_route": {
+        "email": "info@tolofinds.com"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to establish operator identity and current measurable problem.",
+      "fit_note": "Contactable current web surface; public marketplace mechanics do not establish commercial intent.",
+      "consumer_action": "iSCOPE verify operator, provider acquisition/liquidity state, buyer route and whether current evidence supports a bounded offer."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-ER-001",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Dkwana",
+      "surface": "Eritrea-focused online marketplace for buying and selling local products, with Tigrinya/Arabic/English support and seller listing without a physical store.",
+      "observed_need": "Public product design targets local buying/selling and seller access; no current operator pain or AMX demand is inferred.",
+      "outcome_space": [
+        "local marketplace",
+        "seller access",
+        "multilingual commerce",
+        "local product discovery"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.dkwana.app",
+      "source_key": "google_play:com.dkwana.app",
+      "source_observed_at": "2026-10-09",
+      "source_updated": "2025-12-13",
+      "geography": {
+        "country": "Eritrea",
+        "locality": "UNKNOWN"
+      },
+      "public_route": {
+        "email": "hello@dkwana.com",
+        "phone": "+46723006292"
+      },
+      "payer_hypothesis": "UNKNOWN — iSCOPE to verify current operator and buyer relevance.",
+      "fit_note": "Product-market geography is Eritrea, but the public developer location is Sweden. Treat as Eritrea market representation/context, not evidence of a locally domiciled Eritrean operator.",
+      "consumer_action": "iSCOPE verify operator geography, current commercial state, local-market relevance and any lawful buyer route before PRI handoff."
+    }
+  ]
+}
