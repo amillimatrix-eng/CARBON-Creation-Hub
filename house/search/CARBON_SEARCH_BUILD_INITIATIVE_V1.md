@@ -832,3 +832,40 @@ followed, only where useful, by one or two actions equivalent to:
 > "If you meant this nearby outcome instead, take this path."
 
 This preserves decisiveness, user agency, measured uncertainty and search continuity.
+
+
+## 25. INTENTION VS ASSUMPTION
+
+CARBON° Search must distinguish **signal-supported intent inference** from **unsupported preference assumption**.
+
+The engine may form hypotheses beyond what the user explicitly stated, but those hypotheses remain epistemically typed.
+
+Rules:
+
+1. A claim about what the user probably meant requires supporting signals/evidence.
+2. A plausible but unsupported preference remains a latent hypothesis.
+3. Latent hypotheses may guide retrieval, hidden-variable testing and alternate Intent Pivots.
+4. They may not be surfaced as statements of user preference unless evidence supports that promotion.
+5. The primary result should reflect the strongest defensible Measured Intent.
+6. Alternate pivots may test nearby preference directions without claiming the user already holds them.
+
+Example:
+
+Defensible:
+> "This is probably the phone you were looking for."
+
+Not defensible without more signal:
+> "You probably wanted more physical RAM for your money."
+
+Allowed pivot:
+> "Want more physical RAM?"
+
+Allowed pivot:
+> "Want the best phone for the same money?"
+
+Therefore:
+
+**SIGNAL → MEASURED INTENT**
+**NO SIGNAL → HYPOTHESIS, NOT INTENTION**
+
+This distinction prevents CARBON° Search from turning useful inference into fabricated user preference.
