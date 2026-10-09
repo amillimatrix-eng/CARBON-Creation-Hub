@@ -19063,6 +19063,249 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Madagascar/Comoros rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-902",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.inter7mede.com/",
+      "organization": "INTER7MEDE SARL",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritania",
+      "region": "Sahel / Horn of Africa",
+      "sector": "accounting/audit/tax/advisory",
+      "business_model": "local professional services",
+      "surface": "Independent Nouakchott practice combining audit, tax, legal, finance and payroll support for enterprises and organisations.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.inter7mede.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.inter7mede.com/",
+          "source": "https://www.inter7mede.com/"
+        }
+      ],
+      "current_public_evidence": "Independent Nouakchott practice combining audit, tax, legal, finance and payroll support for enterprises and organisations.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Mauritania/Djibouti rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-903",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.avocat-mr.com/",
+      "organization": "Mauritanie Avocats Associés (MAA)",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritania",
+      "region": "Sahel / Horn of Africa",
+      "sector": "business law",
+      "business_model": "local professional services",
+      "surface": "Nouakchott multidisciplinary law practice advising local and international clients including SMEs on establishment, contracts, tax and business law.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.avocat-mr.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.avocat-mr.com/",
+          "source": "https://www.avocat-mr.com/"
+        }
+      ],
+      "current_public_evidence": "Nouakchott multidisciplinary law practice advising local and international clients including SMEs on establishment, contracts, tax and business law.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Mauritania/Djibouti rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-904",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.bechir-co.mr/",
+      "organization": "BECHIR & CO",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritania",
+      "region": "Sahel / Horn of Africa",
+      "sector": "accounting/audit/advisory",
+      "business_model": "local professional services",
+      "surface": "Nouakchott accounting and audit practice providing personalized support to entrepreneurs, SMEs, associations and project promoters.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.bechir-co.mr/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.bechir-co.mr/",
+          "source": "https://www.bechir-co.mr/"
+        }
+      ],
+      "current_public_evidence": "Nouakchott accounting and audit practice providing personalized support to entrepreneurs, SMEs, associations and project promoters.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Mauritania/Djibouti rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-905",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://fiduciairejfc.com/",
+      "organization": "Fiduciaire JFC",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritania",
+      "region": "Sahel / Horn of Africa",
+      "sector": "accounting/audit/tax/legal advisory",
+      "business_model": "local professional services",
+      "surface": "Nouakchott accounting, audit, legal and tax practice positioning itself as a direct partner to business leaders.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://fiduciairejfc.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://fiduciairejfc.com/",
+          "source": "https://fiduciairejfc.com/"
+        }
+      ],
+      "current_public_evidence": "Nouakchott accounting, audit, legal and tax practice positioning itself as a direct partner to business leaders.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Mauritania/Djibouti rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-906",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.cabinet-ceca.com/",
+      "organization": "Cabinet CECA",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Djibouti",
+      "region": "Sahel / Horn of Africa",
+      "sector": "accounting/audit/tax/advisory",
+      "business_model": "local professional services",
+      "surface": "Djibouti accounting and audit practice providing personalized accounting, tax, organisation and training support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.cabinet-ceca.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.cabinet-ceca.com/",
+          "source": "https://www.cabinet-ceca.com/"
+        }
+      ],
+      "current_public_evidence": "Djibouti accounting and audit practice providing personalized accounting, tax, organisation and training support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Mauritania/Djibouti rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-907",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://cabinet-boulboul.com/",
+      "organization": "Cabinet Boulboul",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Djibouti",
+      "region": "Sahel / Horn of Africa",
+      "sector": "boutique business law",
+      "business_model": "local professional services",
+      "surface": "Human-scale Djibouti business-law practice founded in 2018 with direct, tailored client support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://cabinet-boulboul.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://cabinet-boulboul.com/",
+          "source": "https://cabinet-boulboul.com/"
+        }
+      ],
+      "current_public_evidence": "Human-scale Djibouti business-law practice founded in 2018 with direct, tailored client support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Mauritania/Djibouti rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-908",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.avocatsdjibouti.com/",
+      "organization": "Cabinet Maître Abdoulkader Hassan",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Djibouti",
+      "region": "Sahel / Horn of Africa",
+      "sector": "business/legal advisory",
+      "business_model": "local professional services",
+      "surface": "Djibouti-bar legal practice providing company advice and representation with direct public consultation route.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.avocatsdjibouti.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.avocatsdjibouti.com/",
+          "source": "https://www.avocatsdjibouti.com/"
+        }
+      ],
+      "current_public_evidence": "Djibouti-bar legal practice providing company advice and representation with direct public consultation route.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Mauritania/Djibouti rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-909",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://im-lawyer.com/",
+      "organization": "Cabinet Maître Ibrahim Mohamed",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Djibouti",
+      "region": "Sahel / Horn of Africa",
+      "sector": "boutique business law",
+      "business_model": "local professional services",
+      "surface": "Boutique Djibouti business-law practice focused on enterprises, investors and leaders with a direct intake surface.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://im-lawyer.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://im-lawyer.com/",
+          "source": "https://im-lawyer.com/"
+        }
+      ],
+      "current_public_evidence": "Boutique Djibouti business-law practice focused on enterprises, investors and leaders with a direct intake surface.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Mauritania/Djibouti rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-910",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://asm-lawfirm.com/",
+      "organization": "Ayman Said Law Firm",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Djibouti",
+      "region": "Sahel / Horn of Africa",
+      "sector": "business law",
+      "business_model": "local professional services",
+      "surface": "Djibouti business-law practice established in 2016 serving companies and individuals with local and cross-border legal support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://asm-lawfirm.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://asm-lawfirm.com/",
+          "source": "https://asm-lawfirm.com/"
+        }
+      ],
+      "current_public_evidence": "Djibouti business-law practice established in 2016 serving companies and individuals with local and cross-border legal support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Mauritania/Djibouti rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -19120,16 +19363,16 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-MADAGASCAR-COMOROS",
+    "run_identity": "FORX-CONTINUOUS-20261009-MAURITANIA-DJIBOUTI",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-890",
-        "FORX-PROSPECT-20261009-891",
-        "FORX-PROSPECT-20261009-892",
-        "FORX-PROSPECT-20261009-893",
-        "FORX-PROSPECT-20261009-894",
-        "FORX-PROSPECT-20261009-895"
+        "FORX-PROSPECT-20261009-896",
+        "FORX-PROSPECT-20261009-897",
+        "FORX-PROSPECT-20261009-898",
+        "FORX-PROSPECT-20261009-899",
+        "FORX-PROSPECT-20261009-900",
+        "FORX-PROSPECT-20261009-901"
       ]
     },
     "consumed_sources": [
@@ -19143,17 +19386,17 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "132b96c8251ffb692454dc21c11604d5b0ba1d51"
+        "revision": "45e1aed1b10651a5fb390df1b5e0111ac4c7696b"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "Madagascar / Comoros weak-country lateral",
+        "Mauritania / Djibouti weak-country lateral",
         "SMME-first",
-        "professional-family rotation",
-        "failed first pass != exhausted"
+        "local professional priority",
+        "corporates/index networks secondary"
       ],
-      "changed_action": "Executed the saved Indian-Ocean lateral using SME-oriented accounting/advisory practices in Madagascar and local resident legal practices in Comoros; retained Comoros SME-finance institution evidence as a rail only.",
+      "changed_action": "Executed the saved Sahel/Horn coordinate with independent/local accounting and law practices; international-network accounting results were not used as primary candidate supply.",
       "source_pointers": [
         "weighted continuity revision 31",
         "prior receipt next_alternatives"
@@ -19161,53 +19404,57 @@
     },
     "exact_coordinate": {
       "geography": [
-        "Madagascar",
-        "Comoros"
+        "Mauritania",
+        "Djibouti"
       ],
       "sector": [
         "accounting",
-        "tax",
         "audit",
-        "business advisory",
-        "business law"
+        "tax",
+        "business law",
+        "legal advisory"
       ],
       "model": "local professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 6,
-      "candidates_staged_pending_ingestion": 6,
-      "network_rails_discovered": 1,
+      "candidate_exact_keys_discovered": 9,
+      "candidates_staged_pending_ingestion": 9,
+      "network_rails_discovered": 2,
       "verified_graph_delta_claimed": 0,
-      "explored": 6,
+      "explored": 9,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-896",
-      "FORX-PROSPECT-20261009-897",
-      "FORX-PROSPECT-20261009-898",
-      "FORX-PROSPECT-20261009-899",
-      "FORX-PROSPECT-20261009-900",
-      "FORX-PROSPECT-20261009-901"
+      "FORX-PROSPECT-20261009-902",
+      "FORX-PROSPECT-20261009-903",
+      "FORX-PROSPECT-20261009-904",
+      "FORX-PROSPECT-20261009-905",
+      "FORX-PROSPECT-20261009-906",
+      "FORX-PROSPECT-20261009-907",
+      "FORX-PROSPECT-20261009-908",
+      "FORX-PROSPECT-20261009-909",
+      "FORX-PROSPECT-20261009-910"
     ],
     "network_result_keys": [
-      "url:https://sogak.org/"
+      "url:https://www.oecdjibouti.com/",
+      "url:https://entreprendre.dj/"
     ],
     "uncertainty": [
-      "Comoros current operator web density remains thin; country remains open for alternate-source professional operators.",
-      "SOGAK is a financial ecosystem rail serving TPMEs and is not promoted as a commercial operator candidate population."
+      "Public service surface does not establish unmet buyer pain or commercial readiness.",
+      "Djibouti professional-order and e-government sources are network rails only."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Mauritania / Djibouti small professional operators",
-        "why": "Continue Africa weak-country rotation into Sahel/Horn markets."
+        "coordinate": "Ethiopia / Eritrea small professional operators",
+        "why": "Continue Horn-of-Africa country rotation; respect source and commercial constraints."
       },
       {
-        "coordinate": "Comoros alternate-source accounting and SME-advisory practices",
-        "why": "Thin source pass remains open."
+        "coordinate": "Mauritania/Djibouti allied-health and training micro-practices",
+        "why": "Different professional family only if weaker-country routes yield poorly."
       }
     ],
-    "chosen_next_action": "Rotate Mauritania/Djibouti before revisiting Comoros.",
-    "truth_boundary": "SEARCHED_THIN != EXHAUSTED; NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH."
+    "chosen_next_action": "Rotate into Ethiopia/Eritrea public mapping with commercial-state checks before any downstream handoff.",
+    "truth_boundary": "MAP STATE != PENETRATION STATE; NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH."
   }
 }
