@@ -145,6 +145,30 @@
       "thread_id": "1a100231af090dc1"
     },
     {
+      "due_at": "2026-10-09T17:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing Agent Factory thread. Official page states a five-working-day response expectation; follow up only after that interval if no response.",
+      "opportunity_key": "agentfactory.verder.com|ai-engineer|cape-town",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a103d3f1631dffd for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a103d3f1631dffd"
+    },
+    {
+      "due_at": "2026-10-09T17:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the existing Syrup thread for a response. If invited, answer the buyer's exact question and progress to interview/technical validation; do not send duplicate outreach before due.",
+      "opportunity_key": "poursyrup.ai|senior-ai-delivery-engineer|cape-town",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a103d3e49774780 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a103d3e49774780"
+    },
+    {
       "due_at": null,
       "due_now": false,
       "next_action": "NO OUTBOUND. Preserve historical evidence for learning/provenance only. Do not follow up, resend, recover through another mailbox, contact another person at Face Production, or create a new offer unless Owner explicitly reverses the 2026-10-09 no-contact directive.",
@@ -287,30 +311,6 @@
       "state": "RESPONDED",
       "status": "WAITING",
       "thread_id": "1a0fedc9bdd30527"
-    },
-    {
-      "due_at": "2026-10-09T17:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing Agent Factory thread. Official page states a five-working-day response expectation; follow up only after that interval if no response.",
-      "opportunity_key": "agentfactory.verder.com|ai-engineer|cape-town",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing Agent Factory thread. Official page states a five-working-day response expectation; follow up only after that interval if no response.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a103d3f1631dffd"
-    },
-    {
-      "due_at": "2026-10-09T17:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the existing Syrup thread for a response. If invited, answer the buyer's exact question and progress to interview/technical validation; do not send duplicate outreach before due.",
-      "opportunity_key": "poursyrup.ai|senior-ai-delivery-engineer|cape-town",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing Syrup thread for a response. If invited, answer the buyer's exact question and progress to interview/technical validation; do not send duplicate outreach before due.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a103d3e49774780"
     },
     {
       "due_at": "2026-10-10T17:00:00Z",
@@ -529,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-09T13:44:11.950840+00:00",
+  "generated_at": "2026-10-09T19:01:33.221309+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -763,14 +763,14 @@
     },
     "agentfactory.verder.com|ai-engineer|cape-town": {
       "due_at": "2026-10-09T17:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the existing Agent Factory thread. Official page states a five-working-day response expectation; follow up only after that interval if no response.",
       "opportunity_key": "agentfactory.verder.com|ai-engineer|cape-town",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing Agent Factory thread. Official page states a five-working-day response expectation; follow up only after that interval if no response.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a103d3f1631dffd for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a103d3f1631dffd"
     },
     "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me": {
@@ -1315,14 +1315,14 @@
     },
     "poursyrup.ai|senior-ai-delivery-engineer|cape-town": {
       "due_at": "2026-10-09T17:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the existing Syrup thread for a response. If invited, answer the buyer's exact question and progress to interview/technical validation; do not send duplicate outreach before due.",
       "opportunity_key": "poursyrup.ai|senior-ai-delivery-engineer|cape-town",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the existing Syrup thread for a response. If invited, answer the buyer's exact question and progress to interview/technical validation; do not send duplicate outreach before due.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a103d3e49774780 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a103d3e49774780"
     },
     "prolific.com|participant-studies|south-africa": {
