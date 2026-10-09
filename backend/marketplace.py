@@ -299,6 +299,18 @@ class MarketplaceStore:
             row = conn.execute("SELECT * FROM listings WHERE id=?", (listing_id,)).fetchone()
             return self._public_listing(dict(row), conn) if row else None
 
+    def _profile_for(self, conn: sqlite3.Connection, participant_ref: str) -> dict[str, Any]:
+        exists = conn.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' AND name='participant_profiles'"
+        ).fetchone()
+        if not exists:
+            return {"actor_ref": participant_ref, "display_name": "", "avatar_url": ""}
+        row = conn.execute(
+            "SELECT actor_ref,display_name,avatar_url FROM participant_profiles WHERE actor_ref=?",
+            (participant_ref,),
+        ).fetchone()
+        return dict(row) if row else {"actor_ref": participant_ref, "display_name": "", "avatar_url": ""}
+
     def _role_evidence(self, conn: sqlite3.Connection, participant_ref: str, role: str) -> dict[str, Any]:
         field = "buyer_ref" if role == "buyer" else "seller_ref"
         commitments = conn.execute(
@@ -358,6 +370,7 @@ class MarketplaceStore:
                     "qualified": int(stats["qualified"] or 0),
                     "active_commitments": int(active or 0),
                 },
+                "seller_profile": self._profile_for(conn, record["seller_ref"]),
                 "seller_evidence": self._role_evidence(conn, record["seller_ref"], "seller"),
             }
         finally:
@@ -460,6 +473,7 @@ class MarketplaceStore:
             records = []
             for row in rows:
                 record = dict(row)
+                record["buyer_profile"] = self._profile_for(conn, record["buyer_ref"])
                 record["buyer_evidence"] = self._role_evidence(conn, record["buyer_ref"], "buyer")
                 records.append(record)
             return records
@@ -1017,6 +1031,17 @@ class MarketplaceStore:
                     )
                 return self.list_listings()
         seller = actor_ref("carbon-demo-seller-2026")
+        with self._conn() as conn:
+            has_profiles = conn.execute(
+                "SELECT 1 FROM sqlite_master WHERE type='table' AND name='participant_profiles'"
+            ).fetchone()
+            if has_profiles:
+                conn.execute(
+                    """INSERT INTO participant_profiles(actor_ref,display_name,avatar_url,updated_at)
+                       VALUES(?,?,?,?)
+                       ON CONFLICT(actor_ref) DO NOTHING""",
+                    (seller, "Carbon Demo Seller", "", iso()),
+                )
         samples = [
             CreateListingRequest(
                 title='MacBook Pro 14"',
