@@ -456,3 +456,36 @@ CARBON° Search is complete only when it can repeatedly:
 with provenance, permission boundaries, contradiction discipline, honest uncertainty and 100/100 mandatory build acceptance.
 
 Anything less is not CARBON° Search.
+
+
+## 21. ACCEPTED METRIC LAYER — MEASURED INTENT
+
+**Owner disposition: ACCEPTED — 2026-10-09**
+
+**Measured Intent** is the portion of user intent that CARBON° can defensibly infer, weight, test and support with evidence.
+
+It is the formal boundary between:
+- what the user explicitly stated;
+- what the engine can defensibly infer from observed signals and evidence;
+- what remains latent, uncertain or unknown.
+
+Measured Intent must never be presented as perfect knowledge of the user's true internal intent.
+
+The governing flow is:
+
+`OBSERVED SIGNALS → MEASURED INTENT → LATENT INTENT HYPOTHESES → EVIDENCE → EXPECTED INTENT FULFILMENT → EXPECTED REGRET → RESOLUTION → ACTION`
+
+The engine objective is:
+
+**MAXIMIZE MEASURED INTENT RESOLUTION WHILE MINIMIZING MATERIAL EXPECTED REGRET.**
+
+This metric layer does not replace latent-intent hypotheses, EIF or Expected Regret. It anchors them.
+
+- **Measured Intent** defines what CARBON° can currently defend.
+- **Latent Intent Hypotheses** represent plausible unresolved intent beyond the directly measured layer.
+- **EIF** estimates how well candidate outcomes satisfy the probability-weighted intent model.
+- **Expected Regret** governs whether additional search is materially worth continuing.
+
+If an intent component cannot be defensibly measured, it remains **UNKNOWN / HYPOTHESIZED** and may influence exploration only with explicit uncertainty. It may not be silently promoted to a fact or hard constraint.
+
+This section is part of the locked build initiative and must not be diluted into conventional filter matching or generic relevance scoring.
