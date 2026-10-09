@@ -1094,3 +1094,9 @@ State: **OWNER DIRECTED / ACTIVE AS OPERATIONAL SECURITY CONTROL. Addendum O sup
 - **Artifact:** `AMX/ROOT/INTAKE/PROFESSIONAL_PROFILE_MATRIX_WIDE_EVIDENCE_REBUILD_20261009.md`
 - **Directive:** Deep evidence consolidation first; public positioning second. Rebuild LinkedIn, CV, LabourX, Mercor, 4AIR and other discovered commercial surfaces from the furthest evidenced Matrix state.
 - **Current boundary:** TinyFish automation available, but no recorded LinkedIn sign-in; Notion historical agent-session search unavailable on current workspace tier.
+
+
+### Professional Evidence Ledger — 2026-10-09
+- **Artifact:** `AMX/ROOT/INTAKE/PROFESSIONAL_EVIDENCE_LEDGER_20261009.md`
+- **Function:** Claim -> evidence -> public-use boundary for LinkedIn, CV, LabourX, Mercor, 4AIR, GitHub and other commercial surfaces.
+- **Rule:** Capability/achievement claims follow evidence; proposal != acceptance; configured != executed; invoice != paid; missing benchmark != negative evidence.
