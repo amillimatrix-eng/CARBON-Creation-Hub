@@ -97,18 +97,6 @@
       "thread_id": "1a0fedd719d7bfdd"
     },
     {
-      "due_at": "2026-10-07T04:01:21Z",
-      "due_now": true,
-      "next_action": "Monitor the existing clarified thread for business-team routing and verified package requirements; no duplicate approach.",
-      "opportunity_key": "goodshort.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fedd72ae6fde3 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a0fedd72ae6fde3"
-    },
-    {
       "due_at": "2026-10-07T05:00:00Z",
       "due_now": true,
       "next_action": "Monitor the same business thread for a current intake route; do not duplicate outreach.",
@@ -387,6 +375,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Do not resend to contact@goodshort.com as though it were a verified business-development route. Preserve the delivered wrong-route evidence. iSCOPE may qualify a distinct current official content-acquisition/licensing route if one is evidenced; PRI acts only after that route is verified.",
+      "opportunity_key": "goodshort.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "HOLD_WRONG_ROUTE",
+      "smallest_next_action": "Do not resend to contact@goodshort.com as though it were a verified business-development route. Preserve the delivered wrong-route evidence. iSCOPE may qualify a distinct current official content-acquisition/licensing route if one is evidenced; PRI acts only after that route is verified.",
+      "state": "HOLD_WRONG_ROUTE",
+      "status": "WAITING",
+      "thread_id": "1a0fedd72ae6fde3"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "Resume the existing HumanSignal onboarding at the current dashboard. Complete the provider training and assessment personally where required, then await/accept an eligible project. Provider terms prohibit automated/AI completion of Tasks unless the applicable Task instructions explicitly permit it. No project assignment, completed paid task, receivable or payment is yet evidenced.",
       "opportunity_key": "humansignal.com|data-collection-contributor|south-africa",
       "priority": 8,
@@ -529,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-09T12:53:01.567414+00:00",
+  "generated_at": "2026-10-09T12:54:03.888079+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -978,15 +978,15 @@
       "thread_id": "1a100231af090dc1"
     },
     "goodshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-07T04:01:21Z",
-      "due_now": true,
-      "next_action": "Monitor the existing clarified thread for business-team routing and verified package requirements; no duplicate approach.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Do not resend to contact@goodshort.com as though it were a verified business-development route. Preserve the delivered wrong-route evidence. iSCOPE may qualify a distinct current official content-acquisition/licensing route if one is evidenced; PRI acts only after that route is verified.",
       "opportunity_key": "goodshort.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fedd72ae6fde3 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
+      "priority": 8,
+      "routing_reason": "HOLD_WRONG_ROUTE",
+      "smallest_next_action": "Do not resend to contact@goodshort.com as though it were a verified business-development route. Preserve the delivered wrong-route evidence. iSCOPE may qualify a distinct current official content-acquisition/licensing route if one is evidenced; PRI acts only after that route is verified.",
+      "state": "HOLD_WRONG_ROUTE",
+      "status": "WAITING",
       "thread_id": "1a0fedd72ae6fde3"
     },
     "humansignal.com|content-creator-flexible-gig|remote": {
