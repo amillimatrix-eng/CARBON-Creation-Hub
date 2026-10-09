@@ -253,18 +253,6 @@
       "thread_id": "1a100231731ae464"
     },
     {
-      "due_at": "2026-10-04T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
-      "opportunity_key": "staff-remotely.com|remote-ai-qa-prompt-python|south-africa",
-      "priority": 2,
-      "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a0fd28f0a697b2f"
-    },
-    {
       "due_at": "2026-10-04T15:12:00Z",
       "due_now": true,
       "next_action": "Monitor existing Redrama thread; on material response, verify terms/rights/payment and provide controlled sample/package only through an authorized access route.",
@@ -277,18 +265,6 @@
       "thread_id": "1a0fd2b475e05861"
     },
     {
-      "due_at": "2026-10-04T15:15:00Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
-      "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
-      "state": "RESPONDED",
-      "status": "WAITING",
-      "thread_id": "1a0f1fba9e5a5efb"
-    },
-    {
       "due_at": "2026-10-04T15:20:00Z",
       "due_now": true,
       "next_action": "Monitor the existing Inkwave Drama Creator Program application for response. If they request samples or next steps, provide only controlled evidence and preserve exact terms. Do not submit a duplicate application.",
@@ -299,6 +275,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a0f2de385883f66"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for buyer/provider route evidence. Do not send another unsolicited follow-up: the thread already contains the buyer's one response plus three subsequent asks, latest 2026-10-08 explicitly framed as 'following up once more'. If LAVDM replies with an official alternate route, resume through that route. Otherwise re-check official competition status only when needed; no buyer response means no submission/acceptance.",
+      "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
+      "priority": 2,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "WAIT for buyer/provider route evidence. Do not send another unsolicited follow-up: the thread already contains the buyer's one response plus three subsequent asks, latest 2026-10-08 explicitly framed as 'following up once more'. If LAVDM replies with an official alternate route, resume through that route. Otherwise re-check official competition status only when needed; no buyer response means no submission/acceptance.",
+      "state": "RESPONDED",
+      "status": "WAITING",
+      "thread_id": "1a0f1fba9e5a5efb"
     },
     {
       "due_at": null,
@@ -483,6 +471,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "WAIT for a substantive Staff Remotely response. Do not send another general application or follow-up to info@staff-remotely.com. If a distinct current role with a separate official application route is evidenced, iSCOPE/PRI may qualify that role without reusing the generic mailbox as another initial pitch.",
+      "opportunity_key": "staff-remotely.com|remote-ai-qa-prompt-python|south-africa",
+      "priority": 8,
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "WAIT for a substantive Staff Remotely response. Do not send another general application or follow-up to info@staff-remotely.com. If a distinct current role with a separate official application route is evidenced, iSCOPE/PRI may qualify that role without reusing the generic mailbox as another initial pitch.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a0fd28f0a697b2f"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "Monitor the existing Jojo thread through the October 15 deadline for a material buyer response or delivery failure. The one concise follow-up was already sent on 2026-10-08; do not send another unsolicited follow-up or resend the proposal. On buyer response, supply only the requested missing proof and preserve fee/rights/scope truth.",
       "opportunity_key": "stage32.com|jojo-luu-ai-proposal|the-dragon-who-could-not-claim-me",
       "priority": 8,
@@ -529,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-09T13:02:37.646809+00:00",
+  "generated_at": "2026-10-09T13:04:17.576401+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -1062,13 +1062,13 @@
       "thread_id": "1a0f2ea2a952c85d"
     },
     "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-04T15:15:00Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for buyer/provider route evidence. Do not send another unsolicited follow-up: the thread already contains the buyer's one response plus three subsequent asks, latest 2026-10-08 explicitly framed as 'following up once more'. If LAVDM replies with an official alternate route, resume through that route. Otherwise re-check official competition status only when needed; no buyer response means no submission/acceptance.",
       "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
       "priority": 2,
       "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Monitor existing thread for the alternate submission instructions. Do not send another follow-up until a material response or a reasonable interval has elapsed.",
+      "smallest_next_action": "WAIT for buyer/provider route evidence. Do not send another unsolicited follow-up: the thread already contains the buyer's one response plus three subsequent asks, latest 2026-10-08 explicitly framed as 'following up once more'. If LAVDM replies with an official alternate route, resume through that route. Otherwise re-check official competition status only when needed; no buyer response means no submission/acceptance.",
       "state": "RESPONDED",
       "status": "WAITING",
       "thread_id": "1a0f1fba9e5a5efb"
@@ -1398,13 +1398,13 @@
       "thread_id": "1a0f2ea1c5a8c36a"
     },
     "staff-remotely.com|remote-ai-qa-prompt-python|south-africa": {
-      "due_at": "2026-10-04T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a substantive Staff Remotely response. Do not send another general application or follow-up to info@staff-remotely.com. If a distinct current role with a separate official application route is evidenced, iSCOPE/PRI may qualify that role without reusing the generic mailbox as another initial pitch.",
       "opportunity_key": "staff-remotely.com|remote-ai-qa-prompt-python|south-africa",
-      "priority": 2,
+      "priority": 8,
       "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Monitor existing thread for active paid project scope/rate/start date; act in-thread on material response. Do not send duplicate initial outreach.",
+      "smallest_next_action": "WAIT for a substantive Staff Remotely response. Do not send another general application or follow-up to info@staff-remotely.com. If a distinct current role with a separate official application route is evidenced, iSCOPE/PRI may qualify that role without reusing the generic mailbox as another initial pitch.",
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a0fd28f0a697b2f"
