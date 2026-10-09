@@ -18388,6 +18388,168 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH weak-country rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-877",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.lewaconsultingroup.com/fr",
+      "organization": "Cabinet COSI Lewa-Consulting Group",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Central African Republic",
+      "region": "Central Africa",
+      "sector": "accounting/audit/training/advisory",
+      "business_model": "local professional services",
+      "surface": "Bangui independent accounting, audit, management-advisory and professional-training practice supporting private companies and local operators.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.lewaconsultingroup.com/fr",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.lewaconsultingroup.com/fr",
+          "source": "https://www.lewaconsultingroup.com/fr"
+        }
+      ],
+      "current_public_evidence": "Bangui independent accounting, audit, management-advisory and professional-training practice supporting private companies and local operators.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH CAR/Chad weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-878",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://scp-parse-associes.com/",
+      "organization": "SCP PARSÉ & ASSOCIÉS",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Central African Republic",
+      "region": "Central Africa",
+      "sector": "business law",
+      "business_model": "local professional services",
+      "surface": "Bangui law practice serving individuals and companies across corporate, labour, tax and commercial law.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://scp-parse-associes.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://scp-parse-associes.com/",
+          "source": "https://scp-parse-associes.com/"
+        }
+      ],
+      "current_public_evidence": "Bangui law practice serving individuals and companies across corporate, labour, tax and commercial law.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH CAR/Chad weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-879",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.bcf-afrique.com/",
+      "organization": "Bureau Comptable et Fiscal (BCF Afrique)",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Central African Republic",
+      "region": "Central Africa",
+      "sector": "accounting/audit/tax/business advisory",
+      "business_model": "local professional services",
+      "surface": "Bangui-founded accounting and fiscal practice providing bookkeeping, tax, legal, company-creation and business-management support; Chad branch preserved as provenance.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.bcf-afrique.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.bcf-afrique.com/",
+          "source": "https://www.bcf-afrique.com/"
+        }
+      ],
+      "current_public_evidence": "Bangui-founded accounting and fiscal practice providing bookkeeping, tax, legal, company-creation and business-management support; Chad branch preserved as provenance.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH CAR/Chad weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-880",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://cabinet-nj.com/",
+      "organization": "Cabinet NGADJADOUM Josué",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Chad",
+      "region": "Central Africa",
+      "sector": "business law",
+      "business_model": "local professional services",
+      "surface": "N'Djamena founder-led eight-lawyer practice covering business, banking, social, petroleum/mining and judicial services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://cabinet-nj.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://cabinet-nj.com/",
+          "source": "https://cabinet-nj.com/"
+        }
+      ],
+      "current_public_evidence": "N'Djamena founder-led eight-lawyer practice covering business, banking, social, petroleum/mining and judicial services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH CAR/Chad weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-881",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.lexafric.com/fr",
+      "organization": "LEXAFRIC",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Chad",
+      "region": "Central Africa",
+      "sector": "legal/tax/business advisory",
+      "business_model": "local professional services",
+      "surface": "N'Djamena legal and tax advisory practice focused on OHADA/CEMAC business support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.lexafric.com/fr",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.lexafric.com/fr",
+          "source": "https://www.lexafric.com/fr"
+        }
+      ],
+      "current_public_evidence": "N'Djamena legal and tax advisory practice focused on OHADA/CEMAC business support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH CAR/Chad weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-882",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.oums-tchad.com/",
+      "organization": "OumS",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Chad",
+      "region": "Central Africa",
+      "sector": "accounting/audit/business advisory",
+      "business_model": "local professional services",
+      "surface": "N'Djamena audit, accounting and advisory practice with local CEMAC/OHADA expertise and tailored services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.oums-tchad.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.oums-tchad.com/",
+          "source": "https://www.oums-tchad.com/"
+        }
+      ],
+      "current_public_evidence": "N'Djamena audit, accounting and advisory practice with local CEMAC/OHADA expertise and tailored services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH CAR/Chad weak-country rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -18445,20 +18607,18 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-CONGO-EQUATORIAL-GUINEA",
+    "run_identity": "FORX-CONTINUOUS-20261009-CAR-CHAD-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-859",
-        "FORX-PROSPECT-20261009-860",
-        "FORX-PROSPECT-20261009-861",
-        "FORX-PROSPECT-20261009-862",
-        "FORX-PROSPECT-20261009-863",
-        "FORX-PROSPECT-20261009-864",
-        "FORX-PROSPECT-20261009-865",
-        "FORX-PROSPECT-20261009-866",
-        "FORX-PROSPECT-20261009-867",
-        "FORX-PROSPECT-20261009-868"
+        "FORX-PROSPECT-20261009-869",
+        "FORX-PROSPECT-20261009-870",
+        "FORX-PROSPECT-20261009-871",
+        "FORX-PROSPECT-20261009-872",
+        "FORX-PROSPECT-20261009-873",
+        "FORX-PROSPECT-20261009-874",
+        "FORX-PROSPECT-20261009-875",
+        "FORX-PROSPECT-20261009-876"
       ]
     },
     "consumed_sources": [
@@ -18472,74 +18632,72 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "c83e0c053a662488fc1e3e36f8a139dad43ed650"
+        "revision": "c1eeca00b303a6106892737b70a078a67804481c"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "Republic of Congo / Equatorial Guinea weak-country lateral",
+        "Central African Republic / Chad weak-country lateral",
         "failed first pass != exhausted",
-        "country-first anti-starvation"
+        "SMME/local-operator priority"
       ],
-      "changed_action": "Executed the harder Central-Africa coordinate instead of returning to easier Cameroon/Gabon; staged only operator-level official sources and kept government/bar-association evidence as rails.",
+      "changed_action": "Executed the saved CAR/Chad coordinate and retained only current official operator surfaces as candidates; public SME/registration institutions remain network rails.",
       "source_pointers": [
         "weighted continuity revision 31",
-        "Root Intake checkpoint 05",
         "prior receipt next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Republic of Congo",
-        "Equatorial Guinea"
+        "Central African Republic",
+        "Chad"
       ],
       "sector": [
         "accounting",
+        "audit",
         "tax",
-        "SME advisory",
         "business law",
-        "compliance"
+        "training/advisory"
       ],
       "model": "local professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 8,
-      "candidates_staged_pending_ingestion": 8,
+      "candidate_exact_keys_discovered": 6,
+      "candidates_staged_pending_ingestion": 6,
       "network_rails_discovered": 2,
       "verified_graph_delta_claimed": 0,
-      "explored": 8,
+      "explored": 6,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-869",
-      "FORX-PROSPECT-20261009-870",
-      "FORX-PROSPECT-20261009-871",
-      "FORX-PROSPECT-20261009-872",
-      "FORX-PROSPECT-20261009-873",
-      "FORX-PROSPECT-20261009-874",
-      "FORX-PROSPECT-20261009-875",
-      "FORX-PROSPECT-20261009-876"
+      "FORX-PROSPECT-20261009-877",
+      "FORX-PROSPECT-20261009-878",
+      "FORX-PROSPECT-20261009-879",
+      "FORX-PROSPECT-20261009-880",
+      "FORX-PROSPECT-20261009-881",
+      "FORX-PROSPECT-20261009-882"
     ],
     "network_result_keys": [
-      "url:https://www.entreprises.gouv.cg/",
-      "url:https://barreaudebrazzaville.net/"
+      "url:https://cpmec-rca.org/",
+      "url:https://gufe-rca.org/"
     ],
     "uncertainty": [
-      "Republic of Congo operator yield was thinner on this source pass; country remains open for new surfaces rather than exhausted.",
-      "Public operating surfaces do not establish unmet buyer pain, staff size or outreach consent."
+      "CAR/Chad source density remains thinner than easier markets; neither country is exhausted.",
+      "BCF is a regional firm operating in both CAR and Chad; one source-native key is preserved once, with branch relationship in provenance.",
+      "Institutional SME/registration sources are rails only, not candidate populations."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Central African Republic / Chad small professional operators",
-        "why": "Continue zero/weak-country Central-Africa rotation."
+        "coordinate": "São Tomé and Príncipe / Cabo Verde professional micro-practices",
+        "why": "Rotate toward island Africa and Portuguese-speaking weak coverage."
       },
       {
-        "coordinate": "Republic of Congo alternate sources: official SME ecosystem and local directories",
-        "why": "Failed/thin first pass remains open under continuity rules."
+        "coordinate": "CAR/Chad alternate-source local directories and individual practitioner sites",
+        "why": "Thin first pass remains open for later lateral source strategy."
       }
     ],
-    "chosen_next_action": "Rotate into Central African Republic / Chad, preserving Congo for later alternate-source revisit.",
+    "chosen_next_action": "Rotate to Lusophone island Africa before revisiting thin Central-Africa source surfaces.",
     "truth_boundary": "SEARCHED_THIN != EXHAUSTED; NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH."
   }
 }
