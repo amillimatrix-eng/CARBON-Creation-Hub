@@ -9,8 +9,9 @@ from pathlib import Path
 from typing import Any
 from uuid import uuid4
 
-from fastapi import APIRouter, FastAPI, Header, HTTPException
+from fastapi import APIRouter, FastAPI, File, Header, HTTPException, UploadFile
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, model_validator
 
 from .marketplace_money import MoneyAdapter, SandboxMoneyAdapter
@@ -49,6 +50,7 @@ def public_id(prefix: str) -> str:
 class CreateListingRequest(BaseModel):
     title: str = Field(min_length=2, max_length=120)
     description: str = Field(default="", max_length=1500)
+    image_urls: list[str] = Field(default_factory=list, max_length=6)
     price_minor: int = Field(gt=0, le=100_000_000_000)
     currency: str = Field(default="ZAR", min_length=3, max_length=3)
     seller_intent: str = Field(default="OPEN", pattern="^(PATIENT|OPEN|MOTIVATED|URGENT)$")
@@ -125,6 +127,7 @@ class MarketplaceStore:
                     seller_ref TEXT NOT NULL,
                     title TEXT NOT NULL,
                     description TEXT NOT NULL DEFAULT '',
+                    image_urls_json TEXT NOT NULL DEFAULT '[]',
                     price_minor INTEGER NOT NULL,
                     currency TEXT NOT NULL,
                     seller_intent TEXT NOT NULL,
@@ -233,6 +236,9 @@ class MarketplaceStore:
                 CREATE INDEX IF NOT EXISTS idx_extensions_commitment ON extension_requests(commitment_id, status);
                 """
             )
+            listing_columns = {row["name"] for row in conn.execute("PRAGMA table_info(listings)").fetchall()}
+            if "image_urls_json" not in listing_columns:
+                conn.execute("ALTER TABLE listings ADD COLUMN image_urls_json TEXT NOT NULL DEFAULT '[]'")
             commitment_columns = {row["name"] for row in conn.execute("PRAGMA table_info(commitments)").fetchall()}
             if "terms_json" not in commitment_columns:
                 conn.execute("ALTER TABLE commitments ADD COLUMN terms_json TEXT NOT NULL DEFAULT '{}'")
@@ -264,12 +270,12 @@ class MarketplaceStore:
         with self._conn() as conn:
             conn.execute(
                 """INSERT INTO listings(
-                    id,seller_ref,title,description,price_minor,currency,seller_intent,negotiability,
+                    id,seller_ref,title,description,image_urls_json,price_minor,currency,seller_intent,negotiability,
                     min_bond_minor,max_considered_bond_minor,min_at_risk_bps,max_at_risk_bps,
                     commitment_ttl_minutes,status,created_at,updated_at
-                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (
-                    listing_id, seller_ref, payload.title.strip(), payload.description.strip(),
+                    listing_id, seller_ref, payload.title.strip(), payload.description.strip(), json.dumps(payload.image_urls[:6]),
                     payload.price_minor, payload.currency.upper(), payload.seller_intent, payload.negotiability,
                     payload.min_bond_minor, payload.max_considered_bond_minor, payload.min_at_risk_bps,
                     payload.max_at_risk_bps, payload.commitment_ttl_minutes, "OPEN", now, now,
@@ -338,8 +344,14 @@ class MarketplaceStore:
                 "SELECT COUNT(*) AS n FROM commitments WHERE listing_id=? AND state='ACTIVE_COMMITMENT'",
                 (record["id"],),
             ).fetchone()["n"]
+            public_record = {k: v for k, v in record.items() if k != "image_urls_json"}
+            try:
+                image_urls = json.loads(record.get("image_urls_json") or "[]")
+            except (TypeError, json.JSONDecodeError):
+                image_urls = []
             return {
-                **record,
+                **public_record,
+                "image_urls": image_urls if isinstance(image_urls, list) else [],
                 "market": {
                     "interested": int(stats["interested"] or 0),
                     "bonded": int(stats["bonded"] or 0),
@@ -998,6 +1010,7 @@ class MarketplaceStore:
             CreateListingRequest(
                 title='MacBook Pro 14"',
                 description="Local handover. Inspect before either side confirms the deal.",
+                image_urls=["/market/demo/macbook.svg"],
                 price_minor=28_500_00,
                 currency="ZAR",
                 seller_intent="PATIENT",
@@ -1011,6 +1024,7 @@ class MarketplaceStore:
             CreateListingRequest(
                 title="Sony A7 IV body",
                 description="High demand. Seller is available this evening for inspection.",
+                image_urls=["/market/demo/camera.svg"],
                 price_minor=31_000_00,
                 currency="ZAR",
                 seller_intent="MOTIVATED",
@@ -1024,6 +1038,7 @@ class MarketplaceStore:
             CreateListingRequest(
                 title="Workshop tool bundle",
                 description="Seller wants it gone today. Collection only.",
+                image_urls=["/market/demo/tools.svg"],
                 price_minor=7_500_00,
                 currency="ZAR",
                 seller_intent="URGENT",
@@ -1048,6 +1063,9 @@ def mount_marketplace(
 ) -> None:
     db = Path(db_path or os.getenv("CARBON_MARKETPLACE_DB_PATH") or root / "data/carbon_marketplace.db")
     store = MarketplaceStore(db)
+    media_dir = Path(os.getenv("CARBON_MARKETPLACE_MEDIA_DIR") or root / "data/carbon_media")
+    media_dir.mkdir(parents=True, exist_ok=True)
+    app.mount("/market/media", StaticFiles(directory=media_dir), name="carbon-media")
     money = money_adapter or SandboxMoneyAdapter()
     demo_enabled = demo_mode if demo_mode is not None else os.getenv("CARBON_MARKETPLACE_DEMO_MODE", "").strip() in {"1", "true", "TRUE", "yes", "YES"}
     app.state.carbon_marketplace_store = store
@@ -1099,6 +1117,27 @@ def mount_marketplace(
     def demo_seed() -> dict[str, Any]:
         require_demo()
         return {"listings": store.seed_demo(), "money_moved": False}
+
+    @router.post("/api/carbon/media")
+    async def upload_media(files: list[UploadFile] = File(...), x_carbon_actor: str | None = Header(default=None)) -> dict[str, Any]:
+        require_demo()
+        participant = actor(x_carbon_actor)
+        if not files or len(files) > 6:
+            raise HTTPException(status_code=422, detail="upload between 1 and 6 images")
+        allowed = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp"}
+        urls: list[str] = []
+        for upload in files:
+            ext = allowed.get(upload.content_type or "")
+            if not ext:
+                raise HTTPException(status_code=415, detail="images must be JPEG, PNG, or WebP")
+            data = await upload.read(4_000_001)
+            if len(data) > 4_000_000:
+                raise HTTPException(status_code=413, detail="each image must be 4 MB or smaller")
+            filename = f"{public_id('MED')}{ext}"
+            path = media_dir / filename
+            path.write_bytes(data)
+            urls.append(f"/market/media/{filename}")
+        return {"urls": urls, "count": len(urls), "owner_ref": participant, "storage": "prototype-local-adapter"}
 
     @router.get("/api/carbon/listings")
     def listings() -> dict[str, Any]:
@@ -1361,6 +1400,15 @@ def mount_marketplace(
 
     market_dir = root / "marketplace"
     if market_dir.exists():
+        @router.get("/market/demo/{asset}")
+        def market_demo_asset(asset: str):
+            if asset not in {"macbook.svg", "camera.svg", "tools.svg"}:
+                raise HTTPException(status_code=404, detail="demo asset not found")
+            path = market_dir / "demo" / asset
+            if path.is_symlink() or not path.is_file():
+                raise HTTPException(status_code=404, detail="demo asset not found")
+            return FileResponse(path)
+
         @router.get("/market/assets/{asset}")
         def market_asset(asset: str):
             if asset not in {"styles.css", "app.js"}:
