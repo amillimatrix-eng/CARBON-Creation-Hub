@@ -1360,3 +1360,13 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Data direction proposed for governance:** user owns source/business data; hosted/BYO/minimal-retention modes; frontend hosting is not the canonical media vault.
 - **Launch discipline:** no paid scale before buyer-viewable demo, working workflows, pricing/limits, storage/privacy policy, analytics and conversion evidence.
 - **Truth:** `PROPOSED != IMPLEMENTED != DEPLOYED != BUYER-VIEWABLE != COMMERCIAL CONVERSION`.
+
+
+## 2026-10-09 — CARBON° Search Simple Discovery UX Tuning
+- **Classification recommendation:** PRODUCT / UX TUNING; implementation calibration, not new governance machinery.
+- **Artifact:** `house/product/CARBON_SEARCH_SIMPLE_DISCOVERY_UX_V1.md`
+- **Owner direction:** Search must be immediately understandable; support brand, brand+model, model-only, model-code and product-type searches; infer category/type where evidence supports it.
+- **Minimal filter rule:** avoid marketplace-style filter walls. Default visible controls should remain limited to decision-relevant type/category, price slider, condition, location/distance and availability only when materially relevant.
+- **Core law:** `IF A CONSTRAINT CAN BE EXPRESSED NATURALLY OR WITH A SIMPLE SLIDER/CHIP, DO NOT TURN IT INTO A COMPLEX FILTER FORM.`
+- **Build boundary:** no automatic change to the frozen Search 35/35 gate count. If implementation reveals a genuine missing invariant, route that finding separately through Intake/Governance.
+- **Tracking:** GitHub issue #18.
