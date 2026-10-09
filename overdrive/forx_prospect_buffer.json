@@ -3,7 +3,7 @@
   "owner": "FORX run-ahead prospect intelligence",
   "consumer": "iSCOPE",
   "authority_note": "Evidence/staging only. iSCOPE retains verification, dedupe and qualification. PRI retains conversion. This file is not a commercial truth ledger.",
-  "last_updated": "2026-10-09T06:59:00+02:00",
+  "last_updated": "2026-10-09T07:02:00+02:00",
   "candidates": [
     {
       "id": "FORX-PROSPECT-20261007-001",
@@ -14203,6 +14203,330 @@
       "payer_hypothesis": "Unverified",
       "fit_note": "CANDIDATE / PENDING_INGESTION",
       "consumer_action": "iSCOPE validate current problem, buyer relevance, identity and suppression before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-722",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://greengrowth.co.bw/",
+      "organization": "Greengrowth Partners",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Botswana",
+      "region": "Africa",
+      "sector": "accounting/advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Small accountancy firm serving auditing, accounting, finance, taxation and secretarial needs",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://greengrowth.co.bw/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_email",
+          "value": "info@greengrowth.co.bw",
+          "source": "https://greengrowth.co.bw/"
+        }
+      ],
+      "current_public_evidence": "Small accountancy firm serving auditing, accounting, finance, taxation and secretarial needs",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-723",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.addmath.net/",
+      "organization": "Addmath",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Botswana",
+      "region": "Africa",
+      "sector": "accounting/advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Boutique accounting, taxation, finance and governance advisory explicitly targeting SMEs",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.addmath.net/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_email",
+          "value": "info@addmath.net",
+          "source": "https://www.addmath.net/"
+        }
+      ],
+      "current_public_evidence": "Boutique accounting, taxation, finance and governance advisory explicitly targeting SMEs",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-724",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://evolvealliance.co.bw/",
+      "organization": "Evolve Alliance",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Botswana",
+      "region": "Africa",
+      "sector": "accounting/tax advisory",
+      "business_model": "SMME/professional services",
+      "surface": "BICA-registered accounting firm serving business owners with tax, records and decision support",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://evolvealliance.co.bw/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_email",
+          "value": "info@evolvealliance.co.bw",
+          "source": "https://evolvealliance.co.bw/"
+        }
+      ],
+      "current_public_evidence": "BICA-registered accounting firm serving business owners with tax, records and decision support",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-725",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.integritas.com.na/",
+      "organization": "Integritas",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Namibia",
+      "region": "Africa",
+      "sector": "accounting/bookkeeping/audit",
+      "business_model": "SMME/professional services",
+      "surface": "Professional accounting, bookkeeping, audit and taxation focused on smaller businesses",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.integritas.com.na/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.integritas.com.na/",
+          "source": "https://www.integritas.com.na/"
+        }
+      ],
+      "current_public_evidence": "Professional accounting, bookkeeping, audit and taxation focused on smaller businesses",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-726",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.ras.com.na/",
+      "organization": "Real Accounting Solutions",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Namibia",
+      "region": "Africa",
+      "sector": "accounting/bookkeeping/HR",
+      "business_model": "SMME/professional services",
+      "surface": "Accounting, bookkeeping, HR, tax and consulting with retainer and pay-as-you-go models",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.ras.com.na/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_email",
+          "value": "zarita@ras.com.na",
+          "source": "https://www.ras.com.na/"
+        }
+      ],
+      "current_public_evidence": "Accounting, bookkeeping, HR, tax and consulting with retainer and pay-as-you-go models",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-727",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.fhbcnam.com/",
+      "organization": "FHBC Consultants Namibia",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Namibia",
+      "region": "Africa",
+      "sector": "accounting/payroll/tax",
+      "business_model": "SMME/professional services",
+      "surface": "Integrated professional financial services explicitly serving small and medium businesses",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.fhbcnam.com/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_email",
+          "value": "admin@fhbcnam.com",
+          "source": "https://www.fhbcnam.com/"
+        }
+      ],
+      "current_public_evidence": "Integrated professional financial services explicitly serving small and medium businesses",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-728",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://oabconsultants.com/",
+      "organization": "OAB Consultants",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Namibia",
+      "region": "Africa",
+      "sector": "accounting/bookkeeping/advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Accounting and consulting services tailored specifically for SMEs and startups",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://oabconsultants.com/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://oabconsultants.com/",
+          "source": "https://oabconsultants.com/"
+        }
+      ],
+      "current_public_evidence": "Accounting and consulting services tailored specifically for SMEs and startups",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-729",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.integris.com.na/",
+      "organization": "Integris Financial Services",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Namibia",
+      "region": "Africa",
+      "sector": "accounting/payroll/tax",
+      "business_model": "SMME/professional services",
+      "surface": "Small-business accounting, bookkeeping, payroll and tax services",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.integris.com.na/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.integris.com.na/",
+          "source": "https://www.integris.com.na/"
+        }
+      ],
+      "current_public_evidence": "Small-business accounting, bookkeeping, payroll and tax services",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-730",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://namswaaccounting.com/",
+      "organization": "Namswa Accounting Services",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Namibia",
+      "region": "Africa",
+      "sector": "accounting/bookkeeping",
+      "business_model": "SMME/professional services",
+      "surface": "Founder-led accounting and financial management for small businesses and growing enterprises",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://namswaaccounting.com/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://namswaaccounting.com/",
+          "source": "https://namswaaccounting.com/"
+        }
+      ],
+      "current_public_evidence": "Founder-led accounting and financial management for small businesses and growing enterprises",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-731",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://nlraccounting.biz/",
+      "organization": "NLR Accounting Solutions",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Namibia",
+      "region": "Africa",
+      "sector": "accounting/software/advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Accounting, payroll, compliance and subscription/software support for startups and small businesses",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://nlraccounting.biz/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://nlraccounting.biz/",
+          "source": "https://nlraccounting.biz/"
+        }
+      ],
+      "current_public_evidence": "Accounting, payroll, compliance and subscription/software support for startups and small businesses",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-732",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.jmappanah.mu/",
+      "organization": "JM Appanah & Co Ltd",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritius",
+      "region": "Africa",
+      "sector": "accounting/business consultancy",
+      "business_model": "SMME/professional services",
+      "surface": "Founder-established accounting and business consultancy with SME-sector experience",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.jmappanah.mu/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.jmappanah.mu/",
+          "source": "https://www.jmappanah.mu/"
+        }
+      ],
+      "current_public_evidence": "Founder-established accounting and business consultancy with SME-sector experience",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-733",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.louiscorporate.com/",
+      "organization": "CL Consulting / Louis Corporate Services Ltd",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mauritius",
+      "region": "Africa",
+      "sector": "accounting/tax/advisory",
+      "business_model": "SMME/professional services",
+      "surface": "Personalised bilingual accounting and advisory packages built for Mauritian SMEs",
+      "observed_need": "Public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.louiscorporate.com/",
+      "source_observed_at": "2026-10-09T07:02:00+02:00",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_phone",
+          "value": "+230 5821 5169",
+          "source": "https://www.louiscorporate.com/"
+        }
+      ],
+      "current_public_evidence": "Personalised bilingual accounting and advisory packages built for Mauritian SMEs",
+      "payer_hypothesis": "Unverified owner/practice buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. SMME-first weighting applied; no commercial qualification claimed.",
+      "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -14258,86 +14582,112 @@
     "rule": "Evidence-backed signal only; no vulnerability, buyer pain, or PRI readiness inferred."
   },
   "last_continuity": {
-    "observed_at": "2026-10-09T06:59:00+02:00",
+    "observed_at": "2026-10-09T07:02:00+02:00",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-0659-SAST",
+    "run_identity": "FORX-CONTINUOUS-20261009-0702-SAST",
     "prior_receipt": {
-      "observed_at": "2026-10-09T06:55:00+02:00",
+      "observed_at": "2026-10-09T06:59:00+02:00",
       "result_ids": [
-        "FORX-PROSPECT-20261009-707",
-        "FORX-PROSPECT-20261009-708",
-        "FORX-PROSPECT-20261009-709",
-        "FORX-PROSPECT-20261009-710",
-        "FORX-PROSPECT-20261009-711",
-        "FORX-PROSPECT-20261009-712",
-        "FORX-PROSPECT-20261009-713",
-        "FORX-PROSPECT-20261009-714",
-        "FORX-PROSPECT-20261009-715",
-        "FORX-PROSPECT-20261009-716"
+        "FORX-PROSPECT-20261009-717",
+        "FORX-PROSPECT-20261009-718",
+        "FORX-PROSPECT-20261009-719",
+        "FORX-PROSPECT-20261009-720",
+        "FORX-PROSPECT-20261009-721"
       ]
     },
     "consumed_sources": [
       {
+        "id": "1uzMrfqg0n2SE5h9_eWKA9MSXe5mJchxxw-JXXLmARDE",
+        "revision": "31",
+        "observed_at": "2026-10-08T20:57:57.241Z"
+      },
+      {
+        "id": "3f28f8b56cd781bd945dcd8630253ef8",
+        "revision": "page_last_edited_at:2026-10-08T21:09:40.403Z"
+      },
+      {
+        "id": "1dWS4BIO1_8WE3hZgxN61EoNQC8uoumNs6H7l_Bc7yFc",
+        "revision": "modified_time:2026-10-08T09:38:30.142Z"
+      },
+      {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "9a67c70a38a8b400bc8476b90b6dc77856d6f1b9"
+        "revision": "424532ee001dbb98822418cd4f08cfd728d332eb"
       }
     ],
     "apply_example": {
-      "prior_learning": "Prior receipt prioritized Vanuatu logistics/cold-room and Samoa fisheries/cold-chain lateral",
-      "changed_action": "Moved into Vanuatu/Samoa logistics operators; retained fisheries/trade portals as network rails instead of nodes",
+      "prior_learning": [
+        "FIRST BREATH state transition",
+        "SMME-first weighting / corporates index-only",
+        "time-poor professional micro-practice family",
+        "LEARNING-008 reachability != conversion"
+      ],
+      "changed_action": "Stopped expanding large Pacific infrastructure incumbents and selected small SME-focused accounting/advisory practices across Botswana, Namibia and Mauritius; preserved contactability separately from qualification.",
       "source_pointers": [
-        "overdrive/forx_prospect_buffer.json:last_continuity.next_alternatives"
+        "weighted continuity revision 31",
+        "Root Intake page 3f28f8b56cd781bd945dcd8630253ef8",
+        "Learning Weights ledger"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Vanuatu",
-        "Samoa",
-        "American Samoa"
+        "Botswana",
+        "Namibia",
+        "Mauritius"
       ],
       "sector": [
-        "freight forwarding",
-        "shipping agency",
-        "inter-island logistics",
-        "warehousing",
-        "cold-chain support"
+        "accounting",
+        "bookkeeping",
+        "tax",
+        "SME advisory"
       ],
-      "source": "official public business websites"
+      "model": "small professional practice / SMME-serving firm",
+      "source": "official public business websites",
+      "surface": "public service/contact operations",
+      "offer": null,
+      "price": null
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 5,
-      "candidates_staged_pending_ingestion": 5,
+      "candidate_exact_keys_discovered": 12,
+      "candidates_staged_pending_ingestion": 12,
       "verified_graph_delta_claimed": 0,
-      "network_rails_discovered": 3
+      "explored": 12,
+      "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-717",
-      "FORX-PROSPECT-20261009-718",
-      "FORX-PROSPECT-20261009-719",
-      "FORX-PROSPECT-20261009-720",
-      "FORX-PROSPECT-20261009-721"
-    ],
-    "network_result_keys": [
-      "url:https://fisheries.gov.vu/index.php",
-      "url:https://tradeportal.gov.vu/procedure/1247/step/274?embed=true&includeSearch=true&l=en",
-      "url:https://samoa.tradeportal.org/"
+      "FORX-PROSPECT-20261009-722",
+      "FORX-PROSPECT-20261009-723",
+      "FORX-PROSPECT-20261009-724",
+      "FORX-PROSPECT-20261009-725",
+      "FORX-PROSPECT-20261009-726",
+      "FORX-PROSPECT-20261009-727",
+      "FORX-PROSPECT-20261009-728",
+      "FORX-PROSPECT-20261009-729",
+      "FORX-PROSPECT-20261009-730",
+      "FORX-PROSPECT-20261009-731",
+      "FORX-PROSPECT-20261009-732",
+      "FORX-PROSPECT-20261009-733"
     ],
     "uncertainty": [
-      "No current buyer pain inferred.",
-      "Public contact routes not delivery-tested.",
-      "Government/trade portals retained as ecosystem/network evidence only."
+      "Contact routes are public but not delivery-tested.",
+      "No public-facing defect or unmet need is inferred solely from sector membership.",
+      "Root Intake contains a 50K PASS assertion that conflicts with the later direct Owner truth in this conversation; Owner truth remains controlling until independently superseded."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Samoa agriculture/manufacturing exporters outside logistics",
-        "why": "Different sector in weak-coverage geography."
+        "coordinate": "Morocco/Tunisia small accounting and professional micro-practices via official local directories + official sites",
+        "why": "Weak-country, SMME-first continuation."
       },
       {
-        "coordinate": "Vanuatu construction/industrial service operators",
-        "why": "Different business model in same weak geography."
+        "coordinate": "Mauritius small clinics/therapy/allied-health practices with public booking/enquiry surfaces",
+        "why": "Apply time-poor professional-practice weighting in a different sector."
       }
     ],
-    "chosen_next_action": "Continue larger batched exact-key exploration",
-    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; NETWORK RAIL != NODE"
+    "chosen_next_action": "Continue FIRST BREATH country-first/SMME-first discovery in larger batches; corporates index-only unless a specific current gap is evidenced.",
+    "unresolved_gaps": [
+      "Authoritative graph ingestion remains separate.",
+      "Commercial qualification remains with iSCOPE.",
+      "Current direct Owner truth remains 1,200 VERIFIED / 48 countries / 50 categories until explicit newer authoritative evidence supersedes it."
+    ],
+    "truth_boundary": "CANDIDATE SUPPLY != GRAPH GROWTH; CONTACTABLE != QUALIFIED; INTAKE EVIDENCE != OWNER-SUPERSEDING AUTHORITY."
   }
 }
