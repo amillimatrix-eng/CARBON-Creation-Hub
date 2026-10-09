@@ -5,6 +5,9 @@
 <meta name="theme-color" content="#080808">
 <title>CARBON° — Intent has weight.</title>
 <meta name="description" content="CARBON° makes marketplace intent visible. Browse freely. Commit deliberately.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/market/assets/styles.css">
 </head>
 <body>
@@ -51,6 +54,11 @@
   <form id="listingForm" class="panel form">
     <label class="wide">What are you selling?<input name="title" required maxlength="120" placeholder="MacBook Pro 14&quot;"></label>
     <label class="wide">Description<textarea name="description" maxlength="1500" placeholder="What should a serious buyer know?"></textarea></label>
+    <label class="wide mediaUpload">Images
+      <input id="listingImages" type="file" accept="image/jpeg,image/png,image/webp" multiple>
+      <span class="uploadDrop"><b>Add up to 6 images</b><small>JPEG, PNG or WebP · cover image is first</small></span>
+      <span id="imagePreview" class="imagePreview"></span>
+    </label>
     <label>Price (R)<input name="price" type="number" min="1" value="10000" required></label>
     <label>Seller intent<select name="seller_intent"><option>PATIENT</option><option selected>OPEN</option><option>MOTIVATED</option><option>URGENT</option></select></label>
     <label>Negotiability<select name="negotiability"><option>FIXED</option><option selected>OPEN</option><option>NEGOTIABLE</option></select></label>
