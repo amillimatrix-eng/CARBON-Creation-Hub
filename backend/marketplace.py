@@ -14,6 +14,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, model_validator
 
+from .marketplace_discovery import DiscoveryAdapter, LocalDiscoveryAdapter
 from .marketplace_media import LocalMediaStore, media_store_from_env
 from .marketplace_money import MoneyAdapter, SandboxMoneyAdapter
 
@@ -1097,6 +1098,7 @@ def mount_marketplace(
     db_path: Path | None = None,
     demo_mode: bool | None = None,
     money_adapter: MoneyAdapter | None = None,
+    discovery_adapter: DiscoveryAdapter | None = None,
 ) -> None:
     db = Path(db_path or os.getenv("CARBON_MARKETPLACE_DB_PATH") or root / "data/carbon_marketplace.db")
     store = MarketplaceStore(db)
@@ -1105,6 +1107,8 @@ def mount_marketplace(
         app.mount("/market/media", StaticFiles(directory=media.root), name="carbon-media")
     app.state.carbon_media_store = media
     money = money_adapter or SandboxMoneyAdapter()
+    discovery = discovery_adapter or LocalDiscoveryAdapter()
+    app.state.carbon_discovery_adapter = discovery
     demo_enabled = demo_mode if demo_mode is not None else os.getenv("CARBON_MARKETPLACE_DEMO_MODE", "").strip() in {"1", "true", "TRUE", "yes", "YES"}
     app.state.carbon_marketplace_store = store
     app.state.carbon_money_adapter = money
@@ -1140,6 +1144,7 @@ def mount_marketplace(
             "money_adapter": money.name,
             "money_contract": money.describe(),
             "money_moved": money.moves_real_money,
+            "discovery": discovery.describe(),
             "demo_mode": demo_enabled,
             "laws": {
                 "freedom_until_commitment": True,
@@ -1178,6 +1183,16 @@ def mount_marketplace(
             "owner_ref": participant,
             "storage": media.describe(),
             "production_seam": "S3-compatible object storage is configured by environment; listing image_urls contract is unchanged",
+        }
+
+    @router.get("/api/carbon/search")
+    def search_market(q: str = "") -> dict[str, Any]:
+        records = discovery.search(q, store.list_listings())
+        return {
+            "records": records,
+            "count": len(records),
+            "query": q,
+            "discovery": discovery.describe(),
         }
 
     @router.get("/api/carbon/listings")
