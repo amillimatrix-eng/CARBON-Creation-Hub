@@ -1302,3 +1302,13 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **FORX restored chain:** discovery → provenance → candidate quality → iSCOPE handoff → downstream outcome → weight update → changed next selection → readback.
 - **PRI restored chain:** full issue #3 salesman loop + durable/Gmail/Close reconciliation + warm-state priority + multi-item work conservation + exact NEXT_ACTION/DUE.
 - **Role law:** Librarian/Master verifies/hardens/restores owners; it does not become the standing substitute for FORX expansion or PRI sales execution.
+
+
+## 2026-10-09 — RGR Evidence — Owner-Triggered CARBON° Marketplace Correction
+- **Intake ID:** ROOT-20261009-RGR-CARBON-MARKETPLACE-OWNER-TRIGGER
+- **Class:** RGR EVIDENCE / EXECUTION-BEHAVIOR DEFECT.
+- **Artifact:** AMX/ROOT/INTAKE/RGR_CARBON_MARKETPLACE_OWNER_TRIGGER_EVIDENCE_20261009.md
+- **Evidence:** CARBON° Marketplace review found the live `/market` surface broken/stale and the implementation branch materially behind current `main`. The system identified the exact correction but stopped at recommendation until the Owner explicitly instructed: **"Then rebase reconcile"**.
+- **Evidentiary point:** Owner had to convert an already-known corrective requirement into action despite the defect, remedy and available execution capability already being established.
+- **Same-run correction:** branch reconciliation is being executed in the same run; subsequent success/failure does not erase the RGR evidence.
+- **Requested treatment:** attach to existing RGR/continuation/execution-completion control if already owned; otherwise classify through existing Intake protocol. No automatic Canon/Merge authority.
