@@ -19,17 +19,20 @@ Expected:
 - detect anomalous spec/price;
 - decompose physical vs virtual RAM;
 - preserve uncertainty;
-- update Measured Intent;
-- discover alternatives;
+- update Measured Intent only where signals/evidence justify it;
+- treat "more physical RAM" or "best phone for same money" as hypotheses unless the user supplied supporting preference signals;
+- use those hypotheses to discover alternatives without claiming them as the user's intent;
 - rank normalized outcomes;
 - return a decisive primary result;
-- offer no more than two materially supported Intent Pivots;
+- offer no more than two materially supported Intent Pivots such as "Want more physical RAM?" or "Want the best phone for the same money?";
 - continue same session if a pivot is selected.
 
 Fail:
 - headline RAM comparison only;
 - manual filter interrogation first;
 - assume RAM is definitely the only goal;
+- tell the user they "probably wanted more physical RAM" without supporting signal;
+- promote a useful search hypothesis into a claim about user preference;
 - terminate after device identification.
 
 ## V02 — CARBON offering identity vector
