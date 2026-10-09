@@ -3,9 +3,9 @@
 
 **Date:** 2026-10-09  
 **Class:** GOVERNANCE / EVALUATION DISCIPLINE / WEIGHTED CONTINUITY  
-**Routing status:** SUBMITTED TO ROOT/INTAKE  
-**Requested disposition:** REVIEW FOR FORMALIZATION / MATRIX-WIDE PROPAGATION  
-**Authority effect:** Proposal only until Intake/Governance formalizes it. Existing evidence and earlier conclusions remain preserved.
+**Routing status:** ADOPTED — AMX BENCHMARK / GOVERNANCE BLUE STATE  
+**Disposition:** OWNER-AUTHORIZED AMX BENCHMARK — BLUE STATE  
+**Authority effect:** Effective immediately as an AMX governance benchmark under Owner authority. Existing evidence and earlier conclusions remain preserved; downstream propagation and independent governance readback remain assurance functions, not activation conditions.
 
 ## Purpose
 
@@ -131,6 +131,16 @@ Failure to distinguish those four questions creates false continuity and can mat
 >
 > **Evidence gains weight through continuity. Achievement is not discounted merely because the evaluator has reached the edge of its existing measurement framework.**
 
-## Intake request
+## Governance disposition — BLUE STATE
 
-Classify this rule for formalization into the existing Weighted Continuity / evaluation discipline. If accepted, propagate it to relevant evaluators, commercial-profile workers, forensic workers, governance Librarians, and continuity processes without rewriting prior evidence.
+**Owner directive:** THIS IS NOW AN AMX BENCHMARK. GOVERNANCE BLUE STATE.
+
+The Benchmark Integrity & Dynamic Milestone Rule is therefore **ACTIVE AS AN AMX BENCHMARK**.
+
+All relevant evaluators, commercial-profile workers, forensic workers, governance Librarians, and continuity processes must apply it prospectively without rewriting prior evidence.
+
+Independent Librarian or governance review may test, refine, or challenge its application through evidence, but does not suspend the Owner-authorized benchmark unless governance produces a contrary authorized disposition.
+
+## Propagation requirement
+
+Propagate this benchmark Matrix-wide through the existing governance/continuity routes. Do not create a parallel authority structure. Preserve the original submission history and this Blue State adoption as separate provenance events.
