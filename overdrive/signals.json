@@ -73,18 +73,6 @@
       "thread_id": "1a0fc58012594488"
     },
     {
-      "due_at": "2026-10-06T23:04:25Z",
-      "due_now": true,
-      "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
-      "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fedc9bdd30527 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "RESPONDED",
-      "status": "READY",
-      "thread_id": "1a0fedc9bdd30527"
-    },
-    {
       "due_at": "2026-10-06T23:04:27Z",
       "due_now": true,
       "next_action": "Monitor for the official content/production review route; provide only the controlled sample and accurate rights/technical summary on request.",
@@ -179,6 +167,18 @@
       "state": "SUBMITTED",
       "status": "READY",
       "thread_id": "1a0f1a3a7ad58e63"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "NO OUTBOUND. Preserve historical evidence for learning/provenance only. Do not follow up, resend, recover through another mailbox, contact another person at Face Production, or create a new offer unless Owner explicitly reverses the 2026-10-09 no-contact directive.",
+      "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": null,
+      "smallest_next_action": "NO OUTBOUND. Preserve historical evidence for learning/provenance only. Do not follow up, resend, recover through another mailbox, contact another person at Face Production, or create a new offer unless Owner explicitly reverses the 2026-10-09 no-contact directive.",
+      "state": "NO_CONTACT",
+      "status": "READY",
+      "thread_id": "1a0f2ea3874d5fde"
     },
     {
       "due_at": "2026-10-03T15:55:00Z",
@@ -325,16 +325,16 @@
       "thread_id": "1a0f2de385883f66"
     },
     {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing Antoine Picot thread for review feedback or acceptance of the bounded USD 1,000 commissioned development sprint. If scope/price is explicitly accepted, move immediately to CONTRACTED/ORDERED and issue the payment/invoice step through an approved rail. Do not duplicate-follow-up before a reasonable review interval.",
-      "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAITING after the 2026-10-07 route-check follow-up. Do not duplicate the package or send another unsolicited message until PRI's declared follow-up window is actually due. On due review, re-check the current thread and route evidence first; any buyer reply/request outranks cold replenishment.",
+      "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
       "priority": 2,
       "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Monitor the existing Antoine Picot thread for review feedback or acceptance of the bounded USD 1,000 commissioned development sprint. If scope/price is explicitly accepted, move immediately to CONTRACTED/ORDERED and issue the payment/invoice step through an approved rail. Do not duplicate-follow-up before a reasonable review interval.",
+      "smallest_next_action": "WAITING after the 2026-10-07 route-check follow-up. Do not duplicate the package or send another unsolicited message until PRI's declared follow-up window is actually due. On due review, re-check the current thread and route evidence first; any buyer reply/request outranks cold replenishment.",
       "state": "RESPONDED",
       "status": "WAITING",
-      "thread_id": "1a0f2ea3874d5fde"
+      "thread_id": "1a0fedc9bdd30527"
     },
     {
       "due_at": "2026-10-09T17:00:00Z",
@@ -529,7 +529,7 @@
       "thread_id": "1a0fcfea76c7355d"
     }
   ],
-  "generated_at": "2026-10-09T06:33:55.128319+00:00",
+  "generated_at": "2026-10-09T12:53:01.567414+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -942,15 +942,15 @@
       "thread_id": null
     },
     "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-06T15:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing Antoine Picot thread for review feedback or acceptance of the bounded USD 1,000 commissioned development sprint. If scope/price is explicitly accepted, move immediately to CONTRACTED/ORDERED and issue the payment/invoice step through an approved rail. Do not duplicate-follow-up before a reasonable review interval.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "NO OUTBOUND. Preserve historical evidence for learning/provenance only. Do not follow up, resend, recover through another mailbox, contact another person at Face Production, or create a new offer unless Owner explicitly reverses the 2026-10-09 no-contact directive.",
       "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": "ACTIVE_DEPENDENCY",
-      "smallest_next_action": "Monitor the existing Antoine Picot thread for review feedback or acceptance of the bounded USD 1,000 commissioned development sprint. If scope/price is explicitly accepted, move immediately to CONTRACTED/ORDERED and issue the payment/invoice step through an approved rail. Do not duplicate-follow-up before a reasonable review interval.",
-      "state": "RESPONDED",
-      "status": "WAITING",
+      "priority": 8,
+      "routing_reason": null,
+      "smallest_next_action": "NO OUTBOUND. Preserve historical evidence for learning/provenance only. Do not follow up, resend, recover through another mailbox, contact another person at Face Production, or create a new offer unless Owner explicitly reverses the 2026-10-09 no-contact directive.",
+      "state": "NO_CONTACT",
+      "status": "READY",
       "thread_id": "1a0f2ea3874d5fde"
     },
     "flextv.cc|content-partnership|the-dragon-who-could-not-claim-me": {
@@ -1158,15 +1158,15 @@
       "thread_id": "1a0f2e2af4f0d5cc"
     },
     "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-06T23:04:25Z",
-      "due_now": true,
-      "next_action": "Monitor the existing thread for the reviewing team's submission route and minimum package request; do not send a courtesy or duplicate reply.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAITING after the 2026-10-07 route-check follow-up. Do not duplicate the package or send another unsolicited message until PRI's declared follow-up window is actually due. On due review, re-check the current thread and route evidence first; any buyer reply/request outranks cold replenishment.",
       "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
       "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fedc9bdd30527 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "routing_reason": "ACTIVE_DEPENDENCY",
+      "smallest_next_action": "WAITING after the 2026-10-07 route-check follow-up. Do not duplicate the package or send another unsolicited message until PRI's declared follow-up window is actually due. On due review, re-check the current thread and route evidence first; any buyer reply/request outranks cold replenishment.",
       "state": "RESPONDED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0fedc9bdd30527"
     },
     "netshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
