@@ -2,10 +2,10 @@
 ## Benchmark Integrity & Dynamic Milestone Rule
 
 **Date:** 2026-10-09  
-**Class:** GOVERNANCE / EVALUATION DISCIPLINE / WEIGHTED CONTINUITY  
+**Class:** GOVERNANCE / MANDATORY BUILD REQUIREMENT / MANDATORY OPERATIONAL REQUIREMENT / WEIGHTED CONTINUITY  
 **Routing status:** ADOPTED — AMX BENCHMARK / GOVERNANCE BLUE STATE  
 **Disposition:** OWNER-AUTHORIZED AMX BENCHMARK — BLUE STATE  
-**Authority effect:** Effective immediately as an AMX governance benchmark under Owner authority. Existing evidence and earlier conclusions remain preserved; downstream propagation and independent governance readback remain assurance functions, not activation conditions.
+**Authority effect:** Effective immediately under Owner authority as an AMX governance benchmark AND mandatory build/operational requirement. It governs how AMX capabilities are designed, executed, evidenced, accepted, operated, evaluated, and advanced. Existing evidence and earlier conclusions remain preserved; downstream propagation and independent governance readback remain assurance functions, not activation conditions.
 
 ## Purpose
 
@@ -60,6 +60,42 @@ Any new evaluative bar must be identified as one of the following:
 These categories must not be conflated.
 
 An exploratory challenge may be extremely difficult, but it may not be represented as an established industry benchmark unless evidence supports that classification.
+
+## Mandatory Build & Operational Requirement
+
+This benchmark is not merely an evidence-recording or evaluator-discipline rule.
+
+It is a **mandatory AMX build and operational requirement**.
+
+Every relevant AMX build, repair, workflow, worker, runtime, operational process, acceptance gate, and capability claim must be structured so that actual capability and achievement can be evidenced through observable execution and durable receipts.
+
+### Required behavior
+
+1. **Build for evidence-bearing execution.**  
+   Material capability must produce inspectable outputs, state transitions, tests, receipts, commits, run records, readbacks, or equivalent durable proof appropriate to the work.
+
+2. **Operate against capability and achievement.**  
+   Operational decisions must be grounded in what the system demonstrably can do and has done. Missing familiarity, missing precedent, missing comparison data, evaluator discomfort, or institutional uncertainty do not reduce demonstrated capability.
+
+3. **Acceptance must test the actual claim.**  
+   A build or operation must be judged against the capability or achievement it is intended to establish. New requirements may be added prospectively, but may not be smuggled backward into an already-cleared acceptance condition.
+
+4. **No-excuses execution discipline.**  
+   Explanations of model limitations, provider limitations, unfamiliarity, lack of benchmark, organizational convention, or evaluator uncertainty may be recorded as constraints. They are not substitutes for execution and are not negative evidence against a demonstrated result.
+
+5. **Evidence must survive continuity.**  
+   Material outcomes must be preserved so later workers can recover the furthest evidenced state without requiring the Owner to re-prove or manually restate prior achievements.
+
+6. **Capability discovered becomes operationally relevant.**  
+   Once a capability is evidenced, downstream planning, building, commercial positioning, routing, and governance must reason from that evidenced capability unless and until contrary evidence changes it.
+
+### Mandatory disposition
+
+**CAPABILITY AND ACHIEVEMENT ARE EVIDENCE.**
+
+**EXCUSES ARE NOT.**
+
+This requirement is binding on relevant AMX building and operations under BLUE STATE governance.
 
 ## Evidence Supremacy / No-Excuses Rule
 
@@ -157,9 +193,9 @@ Failure to distinguish those four questions creates false continuity and can mat
 
 ## Governance disposition — BLUE STATE
 
-**Owner directive:** THIS IS NOW AN AMX BENCHMARK. GOVERNANCE BLUE STATE.
+**Owner directive:** THIS IS NOW AN AMX BENCHMARK AND A MANDATORY BUILD AND OPERATIONAL REQUIREMENT. GOVERNANCE BLUE STATE.
 
-The Benchmark Integrity & Dynamic Milestone Rule is therefore **ACTIVE AS AN AMX BENCHMARK**.
+The Benchmark Integrity & Dynamic Milestone Rule is therefore **ACTIVE AS AN AMX BENCHMARK AND MANDATORY BUILD/OPERATIONAL REQUIREMENT**.
 
 All relevant evaluators, commercial-profile workers, forensic workers, governance Librarians, and continuity processes must apply it prospectively without rewriting prior evidence.
 
