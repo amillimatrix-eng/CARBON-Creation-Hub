@@ -1,0 +1,220 @@
+{
+  "schema": "CARBON_SEARCH_MATRIX_GRADE_ACCEPTANCE_V1",
+  "build_law": "100/100 mandatory gates or NOT_MATRIX_GRADE",
+  "promotion_rule": "ALL mandatory gates must PASS; no weighted average, waiver by silence, or partial-pass promotion.",
+  "search_truth_rule": "A Matrix-grade build may truthfully return HOLD/UNKNOWN for an individual search. Build acceptance measures correct behavior, not fabricated certainty.",
+  "mandatory_gates": [
+    {
+      "id": "G01",
+      "name": "Typed intent model / Measured Intent boundary",
+      "test": "Query produces explicit constraints, defensibly Measured Intent, latent hypotheses, weights, unknowns, action target and provenance; unsupported preference inference remains a hypothesis and is not silently promoted to user intent."
+    },
+    {
+      "id": "G02",
+      "name": "Latent-intent plurality",
+      "test": "Ambiguous query preserves multiple plausible intent hypotheses until evidence justifies collapse; hypotheses without sufficient signal remain explicitly hypothetical rather than statements about what the user wants."
+    },
+    {
+      "id": "G03",
+      "name": "Intent posterior update",
+      "test": "Material new evidence changes hypothesis probabilities/weights without restarting valid prior work."
+    },
+    {
+      "id": "G04",
+      "name": "Hidden-variable detection",
+      "test": "Decision-sensitive implicit variables are generated and tested."
+    },
+    {
+      "id": "G05",
+      "name": "Permission-aware scope routing",
+      "test": "Only authorized internal/client/market/web/connected scopes may participate."
+    },
+    {
+      "id": "G06",
+      "name": "Claim normalization",
+      "test": "Marketing/raw text is normalized into comparable typed claims before ranking."
+    },
+    {
+      "id": "G07",
+      "name": "Provenance",
+      "test": "Every material ranked claim is traceable to source, timestamp/freshness and evidence pointer."
+    },
+    {
+      "id": "G08",
+      "name": "Contradiction preservation",
+      "test": "Conflicting credible claims are not silently merged or averaged."
+    },
+    {
+      "id": "G09",
+      "name": "Cross-chain join discipline",
+      "test": "No causal/identity relation is synthesized without an evidenced join."
+    },
+    {
+      "id": "G10",
+      "name": "Freshness sensitivity",
+      "test": "Time-sensitive attributes such as price/stock/state decay or require current evidence."
+    },
+    {
+      "id": "G11",
+      "name": "Expected Intent Fulfilment over Measured Intent",
+      "test": "Candidate ranking exposes reproducible probability-weighted intent utility inputs and result, anchored to the defensibly measured intent layer plus explicitly uncertain latent hypotheses."
+    },
+    {
+      "id": "G12",
+      "name": "Expected Regret controller",
+      "test": "Search continuation/stop decision responds to remaining decision-sensitive uncertainty."
+    },
+    {
+      "id": "G13",
+      "name": "Decision stability",
+      "test": "Engine tests whether plausible remaining uncertainty could materially change winner/ranking/action."
+    },
+    {
+      "id": "G14",
+      "name": "Truthful HOLD",
+      "test": "Insufficient evidence returns HOLD/UNKNOWN rather than synthetic certainty."
+    },
+    {
+      "id": "G15",
+      "name": "Provider failure discipline",
+      "test": "Intent/search provider outage does not silently downgrade into keyword search branded as CARBON Search."
+    },
+    {
+      "id": "G16",
+      "name": "Result compression",
+      "test": "Default output is decision-grade and concise while evidence remains inspectable."
+    },
+    {
+      "id": "G17",
+      "name": "Action routing",
+      "test": "Result maps to an authorized next action or explicit HOLD; no authority is invented."
+    },
+    {
+      "id": "G18",
+      "name": "Outcome learning",
+      "test": "Feedback can update versioned calibration without rewriting historical evidence."
+    },
+    {
+      "id": "G19",
+      "name": "Internal evidence scenario",
+      "test": "End-to-end CARBON internal search passes with state/provenance awareness."
+    },
+    {
+      "id": "G20",
+      "name": "External decision scenario",
+      "test": "Phone-style ambiguous product search identifies anomaly, decomposes hidden specification, updates latent intent and ranks actionable alternatives."
+    },
+    {
+      "id": "G21",
+      "name": "Marketplace scenario",
+      "test": "Marketplace-of-Intent integration resolves demand/supply signals through the same intent engine using the Marketplace contract/schema/interface created by this build, or a reusable authoritative contract only if one is actually evidenced."
+    },
+    {
+      "id": "G22",
+      "name": "Privacy isolation",
+      "test": "Private/client evidence cannot leak into unauthorized/public result surfaces."
+    },
+    {
+      "id": "G23",
+      "name": "Audit receipt",
+      "test": "Each search records model version/provider, intent snapshot, sources, claims, scores, stop reason and action without exposing private chain-of-thought."
+    },
+    {
+      "id": "G24",
+      "name": "Regression suite",
+      "test": "All prior mandatory search acceptance vectors pass after any consequential engine change."
+    },
+    {
+      "id": "G25",
+      "name": "Deployment readback",
+      "test": "Deployed runtime is tested end-to-end against the same build commit/config and returns the expected bounded outcomes."
+    },
+    {
+      "id": "G26",
+      "name": "Matrix-wide callable capability",
+      "test": "An authorized non-CARBON Matrix caller can invoke the same versioned CARBON Search engine through a thin shared interface and receive a valid decision/HOLD contract without embedding a duplicate intent engine."
+    },
+    {
+      "id": "G27",
+      "name": "Shared capability permission boundary",
+      "test": "Matrix-wide invocation preserves caller/scope ACLs at the Search capability boundary; a caller cannot gain unauthorized private/client/Matrix evidence access through Search."
+    },
+    {
+      "id": "G28",
+      "name": "Capability version and upgrade continuity",
+      "test": "Search responses expose capability/contract version and compatible callers continue to use the shared engine after an engine upgrade without independent copied-logic rewrites; incompatible changes fail explicitly."
+    },
+    {
+      "id": "G29",
+      "name": "Surface parity",
+      "test": "Human/Owner, Matrix-worker, client and public surfaces invoke the same core intent-resolution semantics; differences are limited to authorized context, scopes, actions and disclosure."
+    },
+    {
+      "id": "G30",
+      "name": "Canonical directory / ontology discipline",
+      "test": "Search keeps products, services, capabilities, utilities, marketplace offers, evidence records and other canonical entity types distinct using versioned IDs/aliases/relationships; similar names or tags cannot silently merge identities."
+    },
+    {
+      "id": "G31",
+      "name": "Active-search correction and rollback",
+      "test": "When a wrong claim/entity/mapping/hypothesis/ranking is detected mid-search, the engine invalidates only dependent state, preserves unaffected evidence, reweights intent, continues from the furthest valid state and does not terminate solely because of its own correctable mistake."
+    },
+    {
+      "id": "G32",
+      "name": "Dynamic Intention focus",
+      "test": "At material state changes the engine updates Measured Intent/hypothesis weights and prioritizes search using probability-weighted utility, decision sensitivity and cost-of-error while retaining alternatives that could materially change the outcome."
+    },
+    {
+      "id": "G33",
+      "name": "Decisive primary resolution",
+      "test": "When evidence supports a useful decision-stable leading interpretation, Search returns the strongest defensible primary result without forcing clarification; primary wording may state probable intent only where signals/evidence support that inference."
+    },
+    {
+      "id": "G34",
+      "name": "Bounded intent pivot affordances",
+      "test": "When one or two materially supported alternate outcome hypotheses remain plausibly useful, Search exposes no more than two concise intent-pivot actions by default; pivots may test preference directions but must not assert those preferences as already known."
+    },
+    {
+      "id": "G35",
+      "name": "Same-session intent pivot continuation",
+      "test": "Selecting a confirmation, alternate, deviation or deeper-search pivot preserves the current session/evidence, records the pivot, updates Measured Intent/hypothesis weights, invalidates only obsolete derived state, and continues from the furthest valid state."
+    }
+  ],
+  "build_state_values": [
+    "NOT_STARTED",
+    "BUILDING",
+    "HOLD",
+    "MATRIX_GRADE"
+  ],
+  "matrix_grade_condition": "mandatory_gates.every(g => g.state === 'PASS')",
+  "metric_layer": {
+    "name": "Measured Intent",
+    "definition": "The portion of user intent CARBON can defensibly infer, weight, test and support with evidence.",
+    "objective": "Maximize Measured Intent resolution while minimizing material Expected Regret.",
+    "boundary": "Unknown or merely hypothesized intent must remain explicitly uncertain."
+  },
+  "matrix_distribution": {
+    "product_owner": "CARBON°",
+    "capability": "CARBON° Search",
+    "intelligence_layer": "INTELLAGENT",
+    "mode": "single versioned shared engine with thin Matrix-wide adapters",
+    "anti_pattern": "copied or forked intent-engine logic per worker/model"
+  },
+  "intention": {
+    "definition": "Continuous evidence-bound orientation toward the best defensible resolution of Measured Intent.",
+    "correction_rule": "ACTIVE ERROR != END SEARCH; rollback affected derived state, preserve valid evidence, reweight, continue.",
+    "prioritization": "probability × intent utility × decision sensitivity × cost of being wrong",
+    "surface_rule": "same core engine; context/scope/permissions/actions/disclosure vary by caller"
+  },
+  "intent_branch_affordances": {
+    "primary_rule": "resolve first; do not interrogate first when a defensible primary result exists",
+    "default_max_alternate_pivots": 2,
+    "pivot_rule": "offer only materially supported parallel outcomes that could plausibly improve or materially change the user's measured-intent outcome",
+    "continuation_rule": "pivots continue the existing session and evidence chain; they do not silently rewrite history"
+  },
+  "intention_assumption_boundary": {
+    "rule": "SIGNAL -> MEASURED INTENT; NO SIGNAL -> HYPOTHESIS, NOT INTENTION",
+    "use": "Unsupported preference hypotheses may guide search and Intent Pivots.",
+    "prohibition": "Do not state an unsupported preference hypothesis as what the user probably wanted."
+  }
+}
