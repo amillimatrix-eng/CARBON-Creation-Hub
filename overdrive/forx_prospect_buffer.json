@@ -16606,6 +16606,195 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa professional-family rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-811",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.keegalegal.com/",
+      "organization": "Keega & Company Advocates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Kenya",
+      "region": "East Africa",
+      "sector": "specialist business law",
+      "business_model": "SMME / professional services",
+      "surface": "Nairobi specialist firm serving startup founders, SMEs and digital businesses across corporate, tax, data and finance matters.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.keegalegal.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.keegalegal.com/",
+          "source": "https://www.keegalegal.com/"
+        }
+      ],
+      "current_public_evidence": "Nairobi specialist firm serving startup founders, SMEs and digital businesses across corporate, tax, data and finance matters.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-812",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.accmakglobal.co.ke/",
+      "organization": "Accmak Global",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Kenya",
+      "region": "East Africa",
+      "sector": "accounting/tax/transaction advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Kenyan professional-services practice explicitly serving SMEs and founder-led businesses alongside other client groups.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.accmakglobal.co.ke/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.accmakglobal.co.ke/",
+          "source": "https://www.accmakglobal.co.ke/"
+        }
+      ],
+      "current_public_evidence": "Kenyan professional-services practice explicitly serving SMEs and founder-led businesses alongside other client groups.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-813",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://probityfinance.co.ke/",
+      "organization": "Probity Finance",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Kenya",
+      "region": "East Africa",
+      "sector": "accounting/tax/CFO advisory",
+      "business_model": "SMME / professional services",
+      "surface": "CPA-led Nairobi finance practice running accounting, tax, payroll and reporting for growing Kenyan businesses.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://probityfinance.co.ke/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://probityfinance.co.ke/",
+          "source": "https://probityfinance.co.ke/"
+        }
+      ],
+      "current_public_evidence": "CPA-led Nairobi finance practice running accounting, tax, payroll and reporting for growing Kenyan businesses.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-814",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.gracenlaw.com/",
+      "organization": "Gracen Law",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Kenya",
+      "region": "East Africa",
+      "sector": "boutique business law",
+      "business_model": "SMME / professional services",
+      "surface": "Boutique Nairobi law firm supporting entrepreneurs, families, investors and organisations.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.gracenlaw.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.gracenlaw.com/",
+          "source": "https://www.gracenlaw.com/"
+        }
+      ],
+      "current_public_evidence": "Boutique Nairobi law firm supporting entrepreneurs, families, investors and organisations.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-815",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.alsm.ltd/",
+      "organization": "ALSM Consulting Group",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Rwanda",
+      "region": "East Africa",
+      "sector": "accounting/audit/tax/CFO",
+      "business_model": "SMME / professional services",
+      "surface": "Partner-led Kigali accounting, audit, tax and CFO practice serving SMEs and larger organisations.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.alsm.ltd/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.alsm.ltd/",
+          "source": "https://www.alsm.ltd/"
+        }
+      ],
+      "current_public_evidence": "Partner-led Kigali accounting, audit, tax and CFO practice serving SMEs and larger organisations.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-816",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://nsp.rw/",
+      "organization": "NSP Associates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Rwanda",
+      "region": "East Africa",
+      "sector": "accounting/tax/consulting/training",
+      "business_model": "SMME / professional services",
+      "surface": "Kigali accounting, tax and consulting practice serving SMEs among its client groups.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://nsp.rw/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://nsp.rw/",
+          "source": "https://nsp.rw/"
+        }
+      ],
+      "current_public_evidence": "Kigali accounting, tax and consulting practice serving SMEs among its client groups.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-817",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.opa.rw/",
+      "organization": "OPA Rwanda",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Rwanda",
+      "region": "East Africa",
+      "sector": "accounting/bookkeeping/tax/training",
+      "business_model": "SMME / professional services",
+      "surface": "Kigali professional-services practice with SME accounting software, bookkeeping, tax advisory and training services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.opa.rw/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.opa.rw/",
+          "source": "https://www.opa.rw/"
+        }
+      ],
+      "current_public_evidence": "Kigali professional-services practice with SME accounting software, bookkeeping, tax advisory and training services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -16663,19 +16852,18 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-EAST-AFRICA-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-KENYA-RWANDA-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-794",
-        "FORX-PROSPECT-20261009-795",
-        "FORX-PROSPECT-20261009-796",
-        "FORX-PROSPECT-20261009-797",
-        "FORX-PROSPECT-20261009-798",
-        "FORX-PROSPECT-20261009-799",
-        "FORX-PROSPECT-20261009-800",
-        "FORX-PROSPECT-20261009-801",
-        "FORX-PROSPECT-20261009-802"
+        "FORX-PROSPECT-20261009-803",
+        "FORX-PROSPECT-20261009-804",
+        "FORX-PROSPECT-20261009-805",
+        "FORX-PROSPECT-20261009-806",
+        "FORX-PROSPECT-20261009-807",
+        "FORX-PROSPECT-20261009-808",
+        "FORX-PROSPECT-20261009-809",
+        "FORX-PROSPECT-20261009-810"
       ]
     },
     "consumed_sources": [
@@ -16689,17 +16877,17 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "2343a99ab5f8b9dc67f658e01ee2234db0b02b2a"
+        "revision": "980c06555ee0d78e4c2f0febe0628830a78ab304"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "regional rotation after Southern Africa",
+        "East-Africa rotation",
         "SMME-first",
         "professional-family diversity",
-        "avoid BPO/POS saturation"
+        "corporates index-only"
       ],
-      "changed_action": "Moved into East African accounting/CFO/boutique-law practices outside the already-developed BPO/POS lanes.",
+      "changed_action": "Extended the East-Africa professional lane into Kenya and Rwanda using SME/founder-serving accounting, CFO and boutique-law practices rather than BPO/POS repetition.",
       "source_pointers": [
         "weighted continuity revision 31",
         "prior receipt next_alternatives"
@@ -16707,50 +16895,49 @@
     },
     "exact_coordinate": {
       "geography": [
-        "Tanzania",
-        "Uganda"
+        "Kenya",
+        "Rwanda"
       ],
       "sector": [
         "accounting",
         "tax",
         "CFO advisory",
-        "business advisory",
-        "boutique law"
+        "boutique law",
+        "training"
       ],
-      "model": "SMME / professional services",
+      "model": "SMME/founder-serving professional practice",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 8,
-      "candidates_staged_pending_ingestion": 8,
+      "candidate_exact_keys_discovered": 7,
+      "candidates_staged_pending_ingestion": 7,
       "verified_graph_delta_claimed": 0,
-      "explored": 8,
+      "explored": 7,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-803",
-      "FORX-PROSPECT-20261009-804",
-      "FORX-PROSPECT-20261009-805",
-      "FORX-PROSPECT-20261009-806",
-      "FORX-PROSPECT-20261009-807",
-      "FORX-PROSPECT-20261009-808",
-      "FORX-PROSPECT-20261009-809",
-      "FORX-PROSPECT-20261009-810"
+      "FORX-PROSPECT-20261009-811",
+      "FORX-PROSPECT-20261009-812",
+      "FORX-PROSPECT-20261009-813",
+      "FORX-PROSPECT-20261009-814",
+      "FORX-PROSPECT-20261009-815",
+      "FORX-PROSPECT-20261009-816",
+      "FORX-PROSPECT-20261009-817"
     ],
     "uncertainty": [
-      "Public professional-service surface does not prove current unmet need or commercial qualification."
+      "Public service positioning does not establish current buyer pain, staff size or commercial readiness."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Kenya/Rwanda owner-led professional practices outside BPO/POS",
-        "why": "Continue East-Africa family rotation without repeating existing lanes."
+        "coordinate": "Ghana/Sierra Leone owner-led professional practices",
+        "why": "West-Africa country rotation outside Nigeria."
       },
       {
-        "coordinate": "Uganda accounting/bookkeeping micro-practices with official domains",
-        "why": "Increase sector diversity inside a still-thin country."
+        "coordinate": "Rwanda allied-health/training micro-practices",
+        "why": "Different sector if further depth is warranted."
       }
     ],
-    "chosen_next_action": "Continue East-Africa country rotation before returning to Southern Africa.",
-    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFICATION."
+    "chosen_next_action": "Rotate to West Africa while preserving Nigeria CLOSED_OWNER commercial boundary.",
+    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFICATION; MAP STATE != PENETRATION STATE."
   }
 }
