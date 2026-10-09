@@ -61,6 +61,30 @@ These categories must not be conflated.
 
 An exploratory challenge may be extremely difficult, but it may not be represented as an established industry benchmark unless evidence supports that classification.
 
+## Evidence Supremacy / No-Excuses Rule
+
+**Capability and achievement are evidence questions. Excuses are not evidence.**
+
+An evaluator may identify uncertainty, missing comparison data, benchmark gaps, model limitations, tooling limits, institutional unfamiliarity, or any other constraint.
+
+Those constraints may limit the evaluator's ability to rank or contextualize a result.
+
+They **must not be used as negative evidence against a demonstrated capability or achievement.**
+
+Therefore:
+
+**EVIDENCE OF CAPABILITY > EVALUATOR DISCOMFORT.**
+
+**EVIDENCE OF ACHIEVEMENT > ABSENCE OF COMPARABLE BENCHMARK.**
+
+**MISSING BENCHMARK != NEGATIVE EVIDENCE.**
+
+**EXPLANATION != REFUTATION.**
+
+**EXCUSE != EVIDENCE.**
+
+Where evidence establishes a capability or achievement, the evaluator must acknowledge that result at the weight supported by the evidence. Any limitation in comparison, ranking, familiarity, or institutional precedent must be recorded separately and may not be used to dilute the proved result.
+
 ## No-Benchmark Rule
 
 When no valid benchmark exists, the correct classification is:
