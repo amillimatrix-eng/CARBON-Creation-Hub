@@ -387,6 +387,16 @@ def test_g35_same_session_pivot_continuation(tmp_path):
     assert any(x["event_type"] == "INTENT_PIVOT_SELECTED" and x["payload"]["evidence_preserved"] for x in ev["events"])
 
 
+
+
+def test_public_free_text_correction_is_reinterpreted_without_restart(tmp_path):
+    e = build_engine(tmp_path)
+    r = e.search(phone_request(), {SearchScope.PUBLIC})
+    corrected = e.feedback(r.session_id, FeedbackRequest(kind="CORRECT", message="I want 8GB physical RAM"))
+    assert corrected.session_id == r.session_id
+    assert corrected.primary.candidate_id == "alt8"
+    assert any(c.key == "physical_ram_gb" and c.value == 8 for c in corrected.measured_intent)
+
 def test_api_contract_acl_and_public_surface(tmp_path, monkeypatch):
     monkeypatch.setenv("AMX_SEARCH_DB_PATH", str(tmp_path / "api.db"))
     monkeypatch.setenv("AMX_ADMIN_TOKEN", "admin-secret")
@@ -409,3 +419,5 @@ def test_webgl_premium_surface_is_real_not_mock():
     assert "INTELLAGENT" in html
     assert "Expected regret" in html
     assert "/api/search/intent" in html
+    assert "/evidence" in html and "/feedback" in html and "/action" in html
+    assert "Correct" in html and "Confirm" in html and "Not this" in html

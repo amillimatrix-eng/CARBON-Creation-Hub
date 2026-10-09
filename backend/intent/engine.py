@@ -286,22 +286,35 @@ class SearchEngine:
 
         if request.kind == "CORRECT":
             session.correction_count += 1
+            correction_criteria: list[IntentCriterion] = []
             if request.signal:
                 if request.signal.visibility not in set(session.allowed_scopes):
                     raise PermissionError("correction signal visibility is not authorized")
                 session.observed_signals.append(request.signal)
                 if request.signal.signal_type in {"criterion", "preference", "constraint"} and isinstance(request.signal.value, dict) and request.signal.value.get("key"):
-                    criterion = IntentCriterion(
+                    correction_criteria.append(IntentCriterion(
                         key=str(request.signal.value["key"]),
                         operator=request.signal.value.get("operator", "eq"),
                         value=request.signal.value.get("value"),
                         weight=float(request.signal.value.get("weight", 1.0)),
                         epistemic_state=EpistemicState.MEASURED,
                         signal_basis=[request.signal.provenance or request.signal.source],
-                    )
-                    session.measured_intent = [c for c in session.measured_intent if c.key != criterion.key] + [criterion]
+                    ))
                 if request.signal.signal_type in {"reject", "negative"}:
                     session.negative_signals.append(str(request.signal.value))
+            if request.message.strip():
+                parsed = self.interpreter.interpret(SearchIntentRequest(
+                    query=request.message.strip(),
+                    surface=session.surface if session.surface in {"public", "matrix", "client", "internal"} else "public",
+                    requested_scopes=list(session.allowed_scopes),
+                ))
+                session.observed_signals.extend(parsed.observed_signals)
+                session.negative_signals.extend(parsed.negative_signals)
+                correction_criteria.extend([c for c in parsed.criteria if c.epistemic_state in {EpistemicState.EXPLICIT, EpistemicState.MEASURED}])
+                known_hypotheses = {h.hypothesis_id for h in session.hypotheses}
+                session.hypotheses.extend([h for h in parsed.hypotheses if h.hypothesis_id not in known_hypotheses])
+            for criterion in correction_criteria:
+                session.measured_intent = [c for c in session.measured_intent if c.key != criterion.key] + [criterion]
             self._recompute(session, "Correction applied; dependent ranking/stop state reweighted while evidence/session continuity was preserved.")
             event = {
                 "message": request.message,

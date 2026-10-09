@@ -72,12 +72,15 @@ class DeterministicIntentInterpreter:
 
         ram_match = self._ram.search(query)
         if ram_match and "ram" in q:
-            advertised = float(ram_match.group(1))
+            amount = float(ram_match.group(1))
+            explicit_physical = any(term in q for term in ("physical ram", "real ram", "hardware ram"))
+            explicit_virtual = any(term in q for term in ("virtual ram", "extended ram", "memory expansion"))
+            key = "physical_ram_gb" if explicit_physical else ("virtual_ram_gb" if explicit_virtual else "advertised_ram_gb")
             criteria.append(IntentCriterion(
-                key="advertised_ram_gb", operator="eq", value=advertised, weight=1.0,
+                key=key, operator="eq", value=amount, weight=1.3 if explicit_physical else 1.0,
                 epistemic_state=EpistemicState.EXPLICIT, signal_basis=[ram_match.group(0).strip()],
             ))
-            if not any(h.hypothesis_id == "ram-physical-split" for h in hypotheses):
+            if not explicit_physical and not explicit_virtual and not any(h.hypothesis_id == "ram-physical-split" for h in hypotheses):
                 hypotheses.append(IntentHypothesis(
                     hypothesis_id="ram-physical-split",
                     label="more physical RAM may matter separately from advertised/virtual RAM",
