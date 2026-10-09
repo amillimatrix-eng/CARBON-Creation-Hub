@@ -15715,6 +15715,249 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first/SMME-first FIRST BREATH weighting applied.",
       "consumer_action": "iSCOPE validate current specific public-facing friction, buyer relevance, identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-778",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://emjconsultoria.com/",
+      "organization": "EMJ Consultoria & Prestação de Serviços",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Angola",
+      "region": "Africa / Lusophone Southern Africa",
+      "sector": "accounting/tax/SME consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Luanda firm explicitly focused on micro, small and medium enterprises with accounting, tax, training and business-creation support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://emjconsultoria.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://emjconsultoria.com/",
+          "source": "https://emjconsultoria.com/"
+        }
+      ],
+      "current_public_evidence": "Luanda firm explicitly focused on micro, small and medium enterprises with accounting, tax, training and business-creation support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first SMME-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-779",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.simjs.co.ao/",
+      "organization": "SIMJS Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Angola",
+      "region": "Africa / Lusophone Southern Africa",
+      "sector": "accounting/audit/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Luanda practice serving micro, small and medium enterprises with accounting, audit and daily-management advisory.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.simjs.co.ao/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.simjs.co.ao/",
+          "source": "https://www.simjs.co.ao/"
+        }
+      ],
+      "current_public_evidence": "Luanda practice serving micro, small and medium enterprises with accounting, audit and daily-management advisory.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first SMME-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-780",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://safeplace.ao/",
+      "organization": "SAFEPLACE LDA",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Angola",
+      "region": "Africa / Lusophone Southern Africa",
+      "sector": "accounting/tax/management consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Luanda accounting and fiscal-consulting company founded in 2023 and focused on SMEs.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://safeplace.ao/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://safeplace.ao/",
+          "source": "https://safeplace.ao/"
+        }
+      ],
+      "current_public_evidence": "Luanda accounting and fiscal-consulting company founded in 2023 and focused on SMEs.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first SMME-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-781",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.wlconsultoria.ao/",
+      "organization": "WL Consultoria",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Angola",
+      "region": "Africa / Lusophone Southern Africa",
+      "sector": "accounting/tax/financial advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Angolan practice explicitly offering accounting, taxation and decision-support services for small and medium enterprises.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.wlconsultoria.ao/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.wlconsultoria.ao/",
+          "source": "https://www.wlconsultoria.ao/"
+        }
+      ],
+      "current_public_evidence": "Angolan practice explicitly offering accounting, taxation and decision-support services for small and medium enterprises.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first SMME-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-782",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJHaKLUf33URoRaMyLFdZVjCY",
+      "organization": "Chinhundo",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Angola",
+      "region": "Africa / Lusophone Southern Africa",
+      "sector": "accounting practice",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies a Luanda-area accounting firm with direct phone route.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJHaKLUf33URoRaMyLFdZVjCY",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJHaKLUf33URoRaMyLFdZVjCY",
+          "source": "google_business:ChIJHaKLUf33URoRaMyLFdZVjCY"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a Luanda-area accounting firm with direct phone route.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first SMME-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-783",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://taxadvisorymoz.com/",
+      "organization": "Tax Advisory Mozambique",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mozambique",
+      "region": "Africa / Lusophone Southern Africa",
+      "sector": "tax/business consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Growing Maputo consulting practice offering tax, due diligence, customs and business-startup services to companies of all sizes.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://taxadvisorymoz.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://taxadvisorymoz.com/",
+          "source": "https://taxadvisorymoz.com/"
+        }
+      ],
+      "current_public_evidence": "Growing Maputo consulting practice offering tax, due diligence, customs and business-startup services to companies of all sizes.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first SMME-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-784",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://tplalawfirm.com/",
+      "organization": "TPLA Law Firm",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mozambique",
+      "region": "Africa / Lusophone Southern Africa",
+      "sector": "boutique business law",
+      "business_model": "SMME / professional services",
+      "surface": "Maputo boutique law firm founded in 2015 by Taciana Peão Lopes with tailored legal and regulatory services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://tplalawfirm.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://tplalawfirm.com/",
+          "source": "https://tplalawfirm.com/"
+        }
+      ],
+      "current_public_evidence": "Maputo boutique law firm founded in 2015 by Taciana Peão Lopes with tailored legal and regulatory services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first SMME-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-785",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://acbmoz.com/",
+      "organization": "ACB Mozambique",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mozambique",
+      "region": "Africa / Lusophone Southern Africa",
+      "sector": "accounting/SME advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Maputo accounting advisory firm explicitly supporting SMEs with accounting, payroll, business planning, valuation and financing support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://acbmoz.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://acbmoz.com/",
+          "source": "https://acbmoz.com/"
+        }
+      ],
+      "current_public_evidence": "Maputo accounting advisory firm explicitly supporting SMEs with accounting, payroll, business planning, valuation and financing support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first SMME-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-786",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://tree-consulting.co.mz/ksadvogados/",
+      "organization": "KS Advogados",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Mozambique",
+      "region": "Africa / Lusophone Southern Africa",
+      "sector": "boutique business law",
+      "business_model": "SMME / professional services",
+      "surface": "Modern Maputo legal boutique serving SMEs, entrepreneurs and regulated institutions across corporate, tax, compliance and investment matters.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://tree-consulting.co.mz/ksadvogados/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://tree-consulting.co.mz/ksadvogados/",
+          "source": "https://tree-consulting.co.mz/ksadvogados/"
+        }
+      ],
+      "current_public_evidence": "Modern Maputo legal boutique serving SMEs, entrepreneurs and regulated institutions across corporate, tax, compliance and investment matters.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first SMME-first rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -15772,22 +16015,28 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-ZERO-WEAK-AFRICA-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-LUSOPHONE-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-748",
-        "FORX-PROSPECT-20261009-749",
-        "FORX-PROSPECT-20261009-750",
-        "FORX-PROSPECT-20261009-751",
-        "FORX-PROSPECT-20261009-752",
-        "FORX-PROSPECT-20261009-753",
-        "FORX-PROSPECT-20261009-754",
-        "FORX-PROSPECT-20261009-755",
-        "FORX-PROSPECT-20261009-756",
-        "FORX-PROSPECT-20261009-757",
-        "FORX-PROSPECT-20261009-758",
-        "FORX-PROSPECT-20261009-759"
+        "FORX-PROSPECT-20261009-760",
+        "FORX-PROSPECT-20261009-761",
+        "FORX-PROSPECT-20261009-762",
+        "FORX-PROSPECT-20261009-763",
+        "FORX-PROSPECT-20261009-764",
+        "FORX-PROSPECT-20261009-765",
+        "FORX-PROSPECT-20261009-766",
+        "FORX-PROSPECT-20261009-767",
+        "FORX-PROSPECT-20261009-768",
+        "FORX-PROSPECT-20261009-769",
+        "FORX-PROSPECT-20261009-770",
+        "FORX-PROSPECT-20261009-771",
+        "FORX-PROSPECT-20261009-772",
+        "FORX-PROSPECT-20261009-773",
+        "FORX-PROSPECT-20261009-774",
+        "FORX-PROSPECT-20261009-775",
+        "FORX-PROSPECT-20261009-776",
+        "FORX-PROSPECT-20261009-777"
       ]
     },
     "consumed_sources": [
@@ -15801,91 +16050,73 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "bb5cc54bd9e7374ea5df08f96440b17240ed478b"
+        "revision": "948b8e257ef934c3c0993e67d1e3a4ef86b6f316"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "country coverage heavily favored",
+        "country-first zero/weak protection",
         "SMME-first",
         "professional micro-practice family",
-        "sector anti-saturation"
+        "Lusophone/localization relevance"
       ],
-      "changed_action": "Left Morocco/Tunisia after the legal/consulting tranche and rotated into Algeria, Lesotho, Malawi and Eswatini professional-service operators, prioritizing countries absent or weak in the explicit staged-country subset.",
+      "changed_action": "Executed the saved Angola/Mozambique lateral and selected SME-focused accounting, tax, consulting and boutique-law operators instead of returning to richer represented clusters.",
       "source_pointers": [
         "weighted continuity revision 31",
-        "prior receipt next_alternatives",
-        "Root Intake continuation receipt"
+        "prior receipt next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Algeria",
-        "Lesotho",
-        "Malawi",
-        "Eswatini"
+        "Angola",
+        "Mozambique"
       ],
       "sector": [
         "accounting",
         "tax",
-        "legal",
+        "SME advisory",
         "business consulting",
-        "SME advisory"
+        "boutique law"
       ],
-      "model": "SMME / founder-led / local professional operator",
+      "model": "SMME / founder-led professional operator",
       "source": [
-        "official websites",
-        "public business profiles"
+        "official public websites",
+        "public business profile"
       ]
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 18,
-      "candidates_staged_pending_ingestion": 18,
-      "network_rails_discovered": 2,
+      "candidate_exact_keys_discovered": 9,
+      "candidates_staged_pending_ingestion": 9,
       "verified_graph_delta_claimed": 0,
-      "explored": 18,
+      "explored": 9,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-760",
-      "FORX-PROSPECT-20261009-761",
-      "FORX-PROSPECT-20261009-762",
-      "FORX-PROSPECT-20261009-763",
-      "FORX-PROSPECT-20261009-764",
-      "FORX-PROSPECT-20261009-765",
-      "FORX-PROSPECT-20261009-766",
-      "FORX-PROSPECT-20261009-767",
-      "FORX-PROSPECT-20261009-768",
-      "FORX-PROSPECT-20261009-769",
-      "FORX-PROSPECT-20261009-770",
-      "FORX-PROSPECT-20261009-771",
-      "FORX-PROSPECT-20261009-772",
-      "FORX-PROSPECT-20261009-773",
-      "FORX-PROSPECT-20261009-774",
-      "FORX-PROSPECT-20261009-775",
-      "FORX-PROSPECT-20261009-776",
-      "FORX-PROSPECT-20261009-777"
-    ],
-    "network_result_keys": [
-      "url:https://esia.org.sz/list-of-audit-firms/",
-      "url:https://ceec-msme.com/"
+      "FORX-PROSPECT-20261009-778",
+      "FORX-PROSPECT-20261009-779",
+      "FORX-PROSPECT-20261009-780",
+      "FORX-PROSPECT-20261009-781",
+      "FORX-PROSPECT-20261009-782",
+      "FORX-PROSPECT-20261009-783",
+      "FORX-PROSPECT-20261009-784",
+      "FORX-PROSPECT-20261009-785",
+      "FORX-PROSPECT-20261009-786"
     ],
     "uncertainty": [
-      "Public operating surfaces and directory/profile evidence do not establish buyer pain or outreach consent.",
-      "Audit Consult Malawi has an international correspondent affiliation; retain as context and do not automatically prioritize over smaller practices.",
-      "Network directories are rails only; their member counts are not promoted as nodes."
+      "Public operating surface does not establish unmet buyer need or consent.",
+      "Candidate size and owner identity remain unresolved where not explicit."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Angola/Mozambique owner-led accounting, legal and consulting practices",
-        "why": "Country-first zero/weak coverage continuation in Lusophone Southern Africa."
+        "coordinate": "Zambia owner-led accounting/legal/training practices",
+        "why": "Country-first African rotation into another undercovered market."
       },
       {
-        "coordinate": "Zambia/Malawi small allied-health, training and professional practices",
-        "why": "Different professional family without saturating accounting/legal."
+        "coordinate": "Mozambique small allied-health/training practices",
+        "why": "Same geography, different professional family if country depth is still warranted."
       }
     ],
-    "chosen_next_action": "Continue into zero/weak Lusophone Southern Africa before returning to represented clusters.",
-    "truth_boundary": "NETWORK MEMBER COUNTS != NODES; CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != CONSENT OR QUALIFICATION."
+    "chosen_next_action": "Rotate to Zambia before deepening Lusophone professional services further.",
+    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFIED BUYER."
   }
 }
