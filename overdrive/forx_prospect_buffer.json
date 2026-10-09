@@ -19567,6 +19567,316 @@
       "penetration_state": "HOLD_PENDING_POLICY_RESOLUTION",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Public mapping only; commercial permission remains separate.",
       "consumer_action": "Hold downstream action until current commercial/security policy is explicitly resolved; mapping provenance may continue."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-920",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.insaafgroup.com/",
+      "organization": "Insaaf Law Group",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Somalia",
+      "source_geography_label": "Somalia",
+      "canonical_jurisdiction_key": "Somalia",
+      "region": "Horn of Africa",
+      "sector": "boutique business law",
+      "business_model": "local professional services",
+      "surface": "Five-person partner-led Mogadishu law firm advising on market entry, financial services, projects, regulation and disputes.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.insaafgroup.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.insaafgroup.com/",
+          "source": "https://www.insaafgroup.com/"
+        }
+      ],
+      "current_public_evidence": "Five-person partner-led Mogadishu law firm advising on market entry, financial services, projects, regulation and disputes.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_SECURITY_AND_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Source geography preserved exactly; no silent jurisdiction merge.",
+      "consumer_action": "Mapping provenance may continue. Hold downstream commercial action until current security, jurisdiction and penetration policy are explicitly resolved."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-921",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://corporatebook.so/",
+      "organization": "CorporateBook Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Somalia",
+      "source_geography_label": "Somalia",
+      "canonical_jurisdiction_key": "Somalia",
+      "region": "Horn of Africa",
+      "sector": "accounting/audit/consulting",
+      "business_model": "local professional services",
+      "surface": "Mogadishu financial-services company established in 2023 providing accounting, auditing and consulting to businesses.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://corporatebook.so/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://corporatebook.so/",
+          "source": "https://corporatebook.so/"
+        }
+      ],
+      "current_public_evidence": "Mogadishu financial-services company established in 2023 providing accounting, auditing and consulting to businesses.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_SECURITY_AND_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Source geography preserved exactly; no silent jurisdiction merge.",
+      "consumer_action": "Mapping provenance may continue. Hold downstream commercial action until current security, jurisdiction and penetration policy are explicitly resolved."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-922",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://sombridge.so/",
+      "organization": "SomBridge Advisory",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Somalia",
+      "source_geography_label": "Somalia",
+      "canonical_jurisdiction_key": "Somalia",
+      "region": "Horn of Africa",
+      "sector": "audit/consulting/financial advisory",
+      "business_model": "local professional services",
+      "surface": "Mogadishu advisory practice established in 2026 providing audit, consulting, financial advisory, risk/compliance and capacity building.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://sombridge.so/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://sombridge.so/",
+          "source": "https://sombridge.so/"
+        }
+      ],
+      "current_public_evidence": "Mogadishu advisory practice established in 2026 providing audit, consulting, financial advisory, risk/compliance and capacity building.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_SECURITY_AND_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Source geography preserved exactly; no silent jurisdiction merge.",
+      "consumer_action": "Mapping provenance may continue. Hold downstream commercial action until current security, jurisdiction and penetration policy are explicitly resolved."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-923",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://ttc-ea.com/",
+      "organization": "TTC-EA Partners Certified Public Accountants",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Somalia",
+      "source_geography_label": "Somalia",
+      "canonical_jurisdiction_key": "Somalia",
+      "region": "Horn of Africa",
+      "sector": "accounting/audit/tax/advisory",
+      "business_model": "local professional services",
+      "surface": "Mogadishu certified-accounting practice providing tax, audit, financial modelling and advisory services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://ttc-ea.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://ttc-ea.com/",
+          "source": "https://ttc-ea.com/"
+        }
+      ],
+      "current_public_evidence": "Mogadishu certified-accounting practice providing tax, audit, financial modelling and advisory services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_SECURITY_AND_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Source geography preserved exactly; no silent jurisdiction merge.",
+      "consumer_action": "Mapping provenance may continue. Hold downstream commercial action until current security, jurisdiction and penetration policy are explicitly resolved."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-924",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://ihsanconsulting.net/",
+      "organization": "Ihsan Auditing & Consulting Firm",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Somaliland",
+      "source_geography_label": "Somaliland",
+      "canonical_jurisdiction_key": "UNRESOLVED_HOLD",
+      "region": "Horn of Africa",
+      "sector": "audit/accounting/business consulting",
+      "business_model": "local professional services",
+      "surface": "Hargeisa-headquartered local audit and consulting practice with accounting, tax, business-development and training services; Somalia branches preserved as provenance.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://ihsanconsulting.net/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://ihsanconsulting.net/",
+          "source": "https://ihsanconsulting.net/"
+        }
+      ],
+      "current_public_evidence": "Hargeisa-headquartered local audit and consulting practice with accounting, tax, business-development and training services; Somalia branches preserved as provenance.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_SECURITY_AND_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Source geography preserved exactly; no silent jurisdiction merge.",
+      "consumer_action": "Mapping provenance may continue. Hold downstream commercial action until current security, jurisdiction and penetration policy are explicitly resolved."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-925",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.hiilconsulting.com/",
+      "organization": "HIIL Consultancy Firm",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Somaliland",
+      "source_geography_label": "Somaliland",
+      "canonical_jurisdiction_key": "UNRESOLVED_HOLD",
+      "region": "Horn of Africa",
+      "sector": "management/policy consulting",
+      "business_model": "local professional services",
+      "surface": "Hargeisa multidisciplinary advisory firm founded in 2023 providing policy, governance, strategy and institutional consulting.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.hiilconsulting.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.hiilconsulting.com/",
+          "source": "https://www.hiilconsulting.com/"
+        }
+      ],
+      "current_public_evidence": "Hargeisa multidisciplinary advisory firm founded in 2023 providing policy, governance, strategy and institutional consulting.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_SECURITY_AND_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Source geography preserved exactly; no silent jurisdiction merge.",
+      "consumer_action": "Mapping provenance may continue. Hold downstream commercial action until current security, jurisdiction and penetration policy are explicitly resolved."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-926",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.iram-intl.com/",
+      "organization": "Iram International Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Somaliland",
+      "source_geography_label": "Somaliland",
+      "canonical_jurisdiction_key": "UNRESOLVED_HOLD",
+      "region": "Horn of Africa",
+      "sector": "accounting/audit/financial and technology consulting",
+      "business_model": "local professional services",
+      "surface": "Hargeisa consultancy founded in 2024 with accounting, audit, financial-management and technology services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.iram-intl.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.iram-intl.com/",
+          "source": "https://www.iram-intl.com/"
+        }
+      ],
+      "current_public_evidence": "Hargeisa consultancy founded in 2024 with accounting, audit, financial-management and technology services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_SECURITY_AND_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Source geography preserved exactly; no silent jurisdiction merge.",
+      "consumer_action": "Mapping provenance may continue. Hold downstream commercial action until current security, jurisdiction and penetration policy are explicitly resolved."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-927",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://aleelconsulting.com/",
+      "organization": "Aleel Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Somaliland",
+      "source_geography_label": "Somaliland",
+      "canonical_jurisdiction_key": "UNRESOLVED_HOLD",
+      "region": "Horn of Africa",
+      "sector": "accounting/audit/tax/training",
+      "business_model": "local professional services",
+      "surface": "Hargeisa local financial consultancy providing accounting, audit, tax and professional training.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://aleelconsulting.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://aleelconsulting.com/",
+          "source": "https://aleelconsulting.com/"
+        }
+      ],
+      "current_public_evidence": "Hargeisa local financial consultancy providing accounting, audit, tax and professional training.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_SECURITY_AND_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Source geography preserved exactly; no silent jurisdiction merge.",
+      "consumer_action": "Mapping provenance may continue. Hold downstream commercial action until current security, jurisdiction and penetration policy are explicitly resolved."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-928",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://taamconsulting.com/",
+      "organization": "TAAM Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Somaliland",
+      "source_geography_label": "Somaliland",
+      "canonical_jurisdiction_key": "UNRESOLVED_HOLD",
+      "region": "Horn of Africa",
+      "sector": "management/technology consulting",
+      "business_model": "local professional services",
+      "surface": "Hargeisa advisory firm providing business consulting, compliance, IT systems, AI/technology advisory, digital transformation and training.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://taamconsulting.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://taamconsulting.com/",
+          "source": "https://taamconsulting.com/"
+        }
+      ],
+      "current_public_evidence": "Hargeisa advisory firm providing business consulting, compliance, IT systems, AI/technology advisory, digital transformation and training.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_SECURITY_AND_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Source geography preserved exactly; no silent jurisdiction merge.",
+      "consumer_action": "Mapping provenance may continue. Hold downstream commercial action until current security, jurisdiction and penetration policy are explicitly resolved."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-929",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://stonebrookstrategy.com/",
+      "organization": "Stonebrook Strategy",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Somaliland",
+      "source_geography_label": "Somaliland",
+      "canonical_jurisdiction_key": "UNRESOLVED_HOLD",
+      "region": "Horn of Africa",
+      "sector": "management/IT consulting",
+      "business_model": "local professional services",
+      "surface": "Hargeisa-based management and IT consulting firm serving enterprises, institutions and development partners.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://stonebrookstrategy.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://stonebrookstrategy.com/",
+          "source": "https://stonebrookstrategy.com/"
+        }
+      ],
+      "current_public_evidence": "Hargeisa-based management and IT consulting firm serving enterprises, institutions and development partners.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_SECURITY_AND_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Source geography preserved exactly; no silent jurisdiction merge.",
+      "consumer_action": "Mapping provenance may continue. Hold downstream commercial action until current security, jurisdiction and penetration policy are explicitly resolved."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -19624,19 +19934,19 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-ETHIOPIA-ERITREA",
+    "run_identity": "FORX-CONTINUOUS-20261009-SOMALIA-SOMALILAND",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-902",
-        "FORX-PROSPECT-20261009-903",
-        "FORX-PROSPECT-20261009-904",
-        "FORX-PROSPECT-20261009-905",
-        "FORX-PROSPECT-20261009-906",
-        "FORX-PROSPECT-20261009-907",
-        "FORX-PROSPECT-20261009-908",
-        "FORX-PROSPECT-20261009-909",
-        "FORX-PROSPECT-20261009-910"
+        "FORX-PROSPECT-20261009-911",
+        "FORX-PROSPECT-20261009-912",
+        "FORX-PROSPECT-20261009-913",
+        "FORX-PROSPECT-20261009-914",
+        "FORX-PROSPECT-20261009-915",
+        "FORX-PROSPECT-20261009-916",
+        "FORX-PROSPECT-20261009-917",
+        "FORX-PROSPECT-20261009-918",
+        "FORX-PROSPECT-20261009-919"
       ]
     },
     "consumed_sources": [
@@ -19650,78 +19960,79 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "3aa49b4248a31bf28eaab5874f821a6e12f5aeec"
+        "revision": "b4b05c0edebd5ef217eec6d47e27eb61d248e9e0"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "Ethiopia/Eritrea Horn-of-Africa lateral",
+        "Somalia/Somaliland Horn-of-Africa lateral",
         "MAP_STATE != PENETRATION_STATE",
-        "failed/thin source != exhausted",
-        "SMME/local operator priority"
+        "canonical jurisdiction key before coverage count",
+        "security/policy uncertainty -> HOLD"
       ],
-      "changed_action": "Mapped current local Ethiopian professional-service firms and a smaller Eritrean operator set; Eritrea downstream commercial state is held separately pending explicit policy resolution rather than inferred from mapping.",
+      "changed_action": "Mapped operator-level public evidence in Somalia and source-labelled Somaliland while holding downstream action and preserving Somaliland as an unresolved jurisdiction label rather than silently merging it into coverage math.",
       "source_pointers": [
         "weighted continuity revision 31",
-        "Root Intake checkpoint 06",
+        "LEARNING-013",
+        "LEARNING-017",
         "prior receipt next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Ethiopia",
-        "Eritrea"
+        "Somalia",
+        "Somaliland (source label; canonical jurisdiction unresolved)"
       ],
       "sector": [
         "accounting",
-        "tax",
         "audit",
-        "business advisory",
-        "IT/software",
-        "market-entry consulting",
-        "technical consulting"
+        "tax",
+        "business law",
+        "management consulting",
+        "technology consulting"
       ],
-      "model": "local/regional professional operators",
+      "model": "local professional services",
       "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 9,
-      "candidates_staged_pending_ingestion": 9,
+      "candidate_exact_keys_discovered": 10,
+      "candidates_staged_pending_ingestion": 10,
       "network_rails_discovered": 1,
       "verified_graph_delta_claimed": 0,
-      "explored": 9,
+      "explored": 10,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-911",
-      "FORX-PROSPECT-20261009-912",
-      "FORX-PROSPECT-20261009-913",
-      "FORX-PROSPECT-20261009-914",
-      "FORX-PROSPECT-20261009-915",
-      "FORX-PROSPECT-20261009-916",
-      "FORX-PROSPECT-20261009-917",
-      "FORX-PROSPECT-20261009-918",
-      "FORX-PROSPECT-20261009-919"
+      "FORX-PROSPECT-20261009-920",
+      "FORX-PROSPECT-20261009-921",
+      "FORX-PROSPECT-20261009-922",
+      "FORX-PROSPECT-20261009-923",
+      "FORX-PROSPECT-20261009-924",
+      "FORX-PROSPECT-20261009-925",
+      "FORX-PROSPECT-20261009-926",
+      "FORX-PROSPECT-20261009-927",
+      "FORX-PROSPECT-20261009-928",
+      "FORX-PROSPECT-20261009-929"
     ],
     "network_result_keys": [
-      "url:https://aabe.gov.et/auditors-list/"
+      "url:https://www.icpasorg.com/"
     ],
     "uncertainty": [
-      "Eritrea commercial/security permission is not inferred from lawful public mapping; downstream action is HOLD pending explicit resolution.",
-      "AABE 2026 auditor list is a network/verification rail only; its listed firms are not automatically promoted.",
-      "Current public operating surfaces do not establish unmet buyer pain or outreach consent."
+      "Somalia/Somaliland commercial-security state is not inferred from public mapping; downstream action remains HOLD.",
+      "Somaliland source geography is preserved while canonical jurisdiction/coverage treatment remains unresolved; no silent normalization.",
+      "ICPAS is a professional-body/network rail only."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Somalia / Somaliland small professional operators with policy separation",
-        "why": "Continue Horn-of-Africa weak-country mapping while preserving commercial-state independence."
+        "coordinate": "South Sudan / Burundi small professional operators",
+        "why": "Continue undercovered East/Central Africa mapping with policy separation."
       },
       {
-        "coordinate": "Ethiopia allied-health/training micro-practices",
-        "why": "Different professional family only if harder weak-country routes yield poorly."
+        "coordinate": "Somalia alternate-source small training/health/SME operators",
+        "why": "Different family only after harder weak-country alternatives."
       }
     ],
-    "chosen_next_action": "Rotate into Somalia/Somaliland public mapping with explicit jurisdiction and commercial-policy separation before any handoff.",
-    "truth_boundary": "MAP STATE != PENETRATION STATE; POLICY HOLD != EXHAUSTED; NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH."
+    "chosen_next_action": "Rotate into South Sudan/Burundi before deepening Somalia/Somaliland.",
+    "truth_boundary": "SOURCE GEOGRAPHY != CANONICAL JURISDICTION; MAP STATE != PENETRATION STATE; POLICY HOLD != EXHAUSTED; CANDIDATE != VERIFIED GRAPH."
   }
 }
