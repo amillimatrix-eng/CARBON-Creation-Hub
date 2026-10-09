@@ -19306,6 +19306,267 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH Mauritania/Djibouti rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-911",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://habtaudit.com/",
+      "organization": "HabtAudit",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Ethiopia",
+      "region": "Horn of Africa",
+      "sector": "audit/accounting/tax/advisory",
+      "business_model": "local / regional professional operator",
+      "surface": "Independent Addis Ababa audit, accounting, tax and advisory firm established from a local certified audit practice.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://habtaudit.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://habtaudit.com/",
+          "source": "https://habtaudit.com/"
+        }
+      ],
+      "current_public_evidence": "Independent Addis Ababa audit, accounting, tax and advisory firm established from a local certified audit practice.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "UNRESOLVED_PENDING_ISCOPE",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public mapping only; commercial permission remains separate.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-912",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.ascendadvisoryet.com/",
+      "organization": "Ascend Accounting & Advisory",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Ethiopia",
+      "region": "Horn of Africa",
+      "sector": "accounting/tax/financial advisory",
+      "business_model": "local / regional professional operator",
+      "surface": "Addis Ababa accounting and financial-advisory team with direct public enquiry surface.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.ascendadvisoryet.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.ascendadvisoryet.com/",
+          "source": "https://www.ascendadvisoryet.com/"
+        }
+      ],
+      "current_public_evidence": "Addis Ababa accounting and financial-advisory team with direct public enquiry surface.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "UNRESOLVED_PENDING_ISCOPE",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public mapping only; commercial permission remains separate.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-913",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://apexfinancials.et/",
+      "organization": "Apex Financial Solutions",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Ethiopia",
+      "region": "Horn of Africa",
+      "sector": "accounting/tax/business support",
+      "business_model": "local / regional professional operator",
+      "surface": "Addis Ababa financial-services practice providing tax compliance and advisory tailored to Ethiopian businesses.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://apexfinancials.et/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://apexfinancials.et/",
+          "source": "https://apexfinancials.et/"
+        }
+      ],
+      "current_public_evidence": "Addis Ababa financial-services practice providing tax compliance and advisory tailored to Ethiopian businesses.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "UNRESOLVED_PENDING_ISCOPE",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public mapping only; commercial permission remains separate.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-914",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://paritytaxconsulting.com/",
+      "organization": "Parity Consultancy PLC",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Ethiopia",
+      "region": "Horn of Africa",
+      "sector": "tax/audit/business advisory",
+      "business_model": "local / regional professional operator",
+      "surface": "Registered Addis Ababa tax and advisory practice providing tax, audit and business-advisory services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://paritytaxconsulting.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://paritytaxconsulting.com/",
+          "source": "https://paritytaxconsulting.com/"
+        }
+      ],
+      "current_public_evidence": "Registered Addis Ababa tax and advisory practice providing tax, audit and business-advisory services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "UNRESOLVED_PENDING_ISCOPE",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public mapping only; commercial permission remains separate.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-915",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://impactconsultancyplc.com/",
+      "organization": "Impact Consulting PLC",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Ethiopia",
+      "region": "Horn of Africa",
+      "sector": "audit/SME advisory/tax/legal advisory",
+      "business_model": "local / regional professional operator",
+      "surface": "Addis Ababa consulting practice with explicit SME business-development, accounting/reporting, tax and legal advisory surfaces.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://impactconsultancyplc.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://impactconsultancyplc.com/",
+          "source": "https://impactconsultancyplc.com/"
+        }
+      ],
+      "current_public_evidence": "Addis Ababa consulting practice with explicit SME business-development, accounting/reporting, tax and legal advisory surfaces.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "UNRESOLVED_PENDING_ISCOPE",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public mapping only; commercial permission remains separate.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-916",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.ethiopiantax.com/",
+      "organization": "Kenmos Consulting PLC / EthiopianTax",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Ethiopia",
+      "region": "Horn of Africa",
+      "sector": "tax/finance/business advisory",
+      "business_model": "local / regional professional operator",
+      "surface": "Co-founder-led Ethiopian tax and operational-excellence advisory practice with tax, training and transaction-support services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.ethiopiantax.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.ethiopiantax.com/",
+          "source": "https://www.ethiopiantax.com/"
+        }
+      ],
+      "current_public_evidence": "Co-founder-led Ethiopian tax and operational-excellence advisory practice with tax, training and transaction-support services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "UNRESOLVED_PENDING_ISCOPE",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public mapping only; commercial permission remains separate.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-917",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.gabiplc.com/",
+      "organization": "GABI PLC",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Eritrea",
+      "region": "Horn of Africa",
+      "sector": "market-entry/business consulting/logistics",
+      "business_model": "local / regional professional operator",
+      "surface": "Asmara business consultancy providing representation, market entry, sourcing, logistics and project support.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.gabiplc.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.gabiplc.com/",
+          "source": "https://www.gabiplc.com/"
+        }
+      ],
+      "current_public_evidence": "Asmara business consultancy providing representation, market entry, sourcing, logistics and project support.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public mapping only; commercial permission remains separate.",
+      "consumer_action": "Hold downstream action until current commercial/security policy is explicitly resolved; mapping provenance may continue."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-918",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://dahlakitsolutions.com/",
+      "organization": "Dahlak IT Solutions",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Eritrea",
+      "region": "Horn of Africa",
+      "sector": "software/IT/training",
+      "business_model": "local / regional professional operator",
+      "surface": "Asmara software and IT-services company with a 35+ person team serving business automation, web development and training.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://dahlakitsolutions.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://dahlakitsolutions.com/",
+          "source": "https://dahlakitsolutions.com/"
+        }
+      ],
+      "current_public_evidence": "Asmara software and IT-services company with a 35+ person team serving business automation, web development and training.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public mapping only; commercial permission remains separate.",
+      "consumer_action": "Hold downstream action until current commercial/security policy is explicitly resolved; mapping provenance may continue."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-919",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://summitexpertsolutions.com/",
+      "organization": "Summit Global Solutions",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Eritrea",
+      "region": "Horn of Africa",
+      "sector": "technical consulting/engineering services",
+      "business_model": "local / regional professional operator",
+      "surface": "Eritrea-founded technical consultancy with Asmara office covering water, earth science, irrigation and supplier representation.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://summitexpertsolutions.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://summitexpertsolutions.com/",
+          "source": "https://summitexpertsolutions.com/"
+        }
+      ],
+      "current_public_evidence": "Eritrea-founded technical consultancy with Asmara office covering water, earth science, irrigation and supplier representation.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "map_state": "REPRESENTED",
+      "penetration_state": "HOLD_PENDING_POLICY_RESOLUTION",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. Public mapping only; commercial permission remains separate.",
+      "consumer_action": "Hold downstream action until current commercial/security policy is explicitly resolved; mapping provenance may continue."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -19363,16 +19624,19 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-MAURITANIA-DJIBOUTI",
+    "run_identity": "FORX-CONTINUOUS-20261009-ETHIOPIA-ERITREA",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-896",
-        "FORX-PROSPECT-20261009-897",
-        "FORX-PROSPECT-20261009-898",
-        "FORX-PROSPECT-20261009-899",
-        "FORX-PROSPECT-20261009-900",
-        "FORX-PROSPECT-20261009-901"
+        "FORX-PROSPECT-20261009-902",
+        "FORX-PROSPECT-20261009-903",
+        "FORX-PROSPECT-20261009-904",
+        "FORX-PROSPECT-20261009-905",
+        "FORX-PROSPECT-20261009-906",
+        "FORX-PROSPECT-20261009-907",
+        "FORX-PROSPECT-20261009-908",
+        "FORX-PROSPECT-20261009-909",
+        "FORX-PROSPECT-20261009-910"
       ]
     },
     "consumed_sources": [
@@ -19382,79 +19646,82 @@
       },
       {
         "id": "3f28f8b56cd781bd945dcd8630253ef8",
-        "revision": "FORX-FIRST-BREATH-CENTRAL-AFRICA-CHECKPOINT-20261009-05"
+        "revision": "FORX-FIRST-BREATH-AFRICA-WEAK-COUNTRY-CHECKPOINT-20261009-06"
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "45e1aed1b10651a5fb390df1b5e0111ac4c7696b"
+        "revision": "3aa49b4248a31bf28eaab5874f821a6e12f5aeec"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "Mauritania / Djibouti weak-country lateral",
-        "SMME-first",
-        "local professional priority",
-        "corporates/index networks secondary"
+        "Ethiopia/Eritrea Horn-of-Africa lateral",
+        "MAP_STATE != PENETRATION_STATE",
+        "failed/thin source != exhausted",
+        "SMME/local operator priority"
       ],
-      "changed_action": "Executed the saved Sahel/Horn coordinate with independent/local accounting and law practices; international-network accounting results were not used as primary candidate supply.",
+      "changed_action": "Mapped current local Ethiopian professional-service firms and a smaller Eritrean operator set; Eritrea downstream commercial state is held separately pending explicit policy resolution rather than inferred from mapping.",
       "source_pointers": [
         "weighted continuity revision 31",
+        "Root Intake checkpoint 06",
         "prior receipt next_alternatives"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Mauritania",
-        "Djibouti"
+        "Ethiopia",
+        "Eritrea"
       ],
       "sector": [
         "accounting",
-        "audit",
         "tax",
-        "business law",
-        "legal advisory"
+        "audit",
+        "business advisory",
+        "IT/software",
+        "market-entry consulting",
+        "technical consulting"
       ],
-      "model": "local professional services",
+      "model": "local/regional professional operators",
       "source": "official public websites"
     },
     "component_evidence": {
       "candidate_exact_keys_discovered": 9,
       "candidates_staged_pending_ingestion": 9,
-      "network_rails_discovered": 2,
+      "network_rails_discovered": 1,
       "verified_graph_delta_claimed": 0,
       "explored": 9,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-902",
-      "FORX-PROSPECT-20261009-903",
-      "FORX-PROSPECT-20261009-904",
-      "FORX-PROSPECT-20261009-905",
-      "FORX-PROSPECT-20261009-906",
-      "FORX-PROSPECT-20261009-907",
-      "FORX-PROSPECT-20261009-908",
-      "FORX-PROSPECT-20261009-909",
-      "FORX-PROSPECT-20261009-910"
+      "FORX-PROSPECT-20261009-911",
+      "FORX-PROSPECT-20261009-912",
+      "FORX-PROSPECT-20261009-913",
+      "FORX-PROSPECT-20261009-914",
+      "FORX-PROSPECT-20261009-915",
+      "FORX-PROSPECT-20261009-916",
+      "FORX-PROSPECT-20261009-917",
+      "FORX-PROSPECT-20261009-918",
+      "FORX-PROSPECT-20261009-919"
     ],
     "network_result_keys": [
-      "url:https://www.oecdjibouti.com/",
-      "url:https://entreprendre.dj/"
+      "url:https://aabe.gov.et/auditors-list/"
     ],
     "uncertainty": [
-      "Public service surface does not establish unmet buyer pain or commercial readiness.",
-      "Djibouti professional-order and e-government sources are network rails only."
+      "Eritrea commercial/security permission is not inferred from lawful public mapping; downstream action is HOLD pending explicit resolution.",
+      "AABE 2026 auditor list is a network/verification rail only; its listed firms are not automatically promoted.",
+      "Current public operating surfaces do not establish unmet buyer pain or outreach consent."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Ethiopia / Eritrea small professional operators",
-        "why": "Continue Horn-of-Africa country rotation; respect source and commercial constraints."
+        "coordinate": "Somalia / Somaliland small professional operators with policy separation",
+        "why": "Continue Horn-of-Africa weak-country mapping while preserving commercial-state independence."
       },
       {
-        "coordinate": "Mauritania/Djibouti allied-health and training micro-practices",
-        "why": "Different professional family only if weaker-country routes yield poorly."
+        "coordinate": "Ethiopia allied-health/training micro-practices",
+        "why": "Different professional family only if harder weak-country routes yield poorly."
       }
     ],
-    "chosen_next_action": "Rotate into Ethiopia/Eritrea public mapping with commercial-state checks before any downstream handoff.",
-    "truth_boundary": "MAP STATE != PENETRATION STATE; NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH."
+    "chosen_next_action": "Rotate into Somalia/Somaliland public mapping with explicit jurisdiction and commercial-policy separation before any handoff.",
+    "truth_boundary": "MAP STATE != PENETRATION STATE; POLICY HOLD != EXHAUSTED; NETWORK RAIL != NODE; CANDIDATE != VERIFIED GRAPH."
   }
 }
