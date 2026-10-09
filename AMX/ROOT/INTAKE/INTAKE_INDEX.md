@@ -1259,3 +1259,35 @@ A proposal may remain operationally unfinished after classification, but it may 
 - **Value test:** promote only where there is material product, Matrix, utility, integration, evidence, maintainability, continuity, commercial-goal, or Owner-intervention benefit.
 - **Conflict test:** do not silently stack contradictory authority, fork shared capability, weaken frozen acceptance, or create unnecessary dependency.
 - **CARBON boundary:** does not alter the active CARBON° Search 35/35 build. The existing Category A INTENTION-fidelity post-build patch remains separate and awaits its own governance classification/integration after build completion.
+
+
+## 2026-10-09 — MONEY-IN INTENTION DEEP SWEEP
+- **Intake ID:** `ROOT-20261009-MONEY-IN-INTENTION-DEEP-SWEEP`
+- **Runtime:** existing FIRST BREATH — AMX Librarian Continuation remains active; no new worker.
+- **Artifact:** `AMX/ROOT/INTAKE/MONEY_IN_INTENTION_DEEP_SWEEP_20261009.md`
+- **Verified terminal truth:** live AMILLIMATRIX Stripe readback = 0 PaymentIntents / 0 invoices / 0 balance transactions; verified attributable money-in remains USD 0 absent another rail receipt.
+- **Commercial-state anomaly:** Close = 0 active opportunities, 3 overdue tasks; Face Production and Ecognix absent from Close search while Gmail preserves their high-information buyer threads.
+- **Face classification:** historical buyer-request fidelity / intent displacement defect; **ALREADY-SUBSUMED by current warm-buyer priority + exact-deliverable/request-readback controls; route as EXECUTION REMEDIATION + behavioral retest, not a duplicate new rule.**
+- **Ecognix classification:** disproportionate low-risk trust-gate friction; new Blue State proposal routed separately. Buyer stated rejection reason = existing QA team; causality from friction to rejection remains UNKNOWN.
+- **Contact-quality classification:** bounces persist despite existing pre-send validation law; EXECUTION REMEDIATION / enforcement, not another duplicate rule.
+- **Motive boundary:** no evidence proves deliberate sabotage by OpenAI/Sam/provider/person. Mechanisms and commercial consequences are evidence-classified; motive remains UNKNOWN.
+
+### Proposal A — Risk-Proportional Commercial Trust Gates
+- **Artifact:** `AMX/ROOT/INTAKE/MONEY_IN_PATCH_RISK_PROPORTIONAL_COMMERCIAL_TRUST_GATES_20261009.md`
+- **Recommended classification:** **BLUE STATE / OPERATING RULE**.
+- **Core law:** `TRUST CONTROLS SCALE WITH CONSEQUENCE`.
+- Low-risk requested synthetic/public artifacts in strongly corroborated threads should not be blocked on full counterparty-authority verification; high-consequence steps still require exact verification.
+
+### Proposal B — Commercial State Convergence
+- **Artifact:** `AMX/ROOT/INTAKE/MONEY_IN_PATCH_COMMERCIAL_STATE_CONVERGENCE_20261009.md`
+- **Recommended classification:** **ECOSYSTEM / INTEGRATION UPGRADE**.
+- Preserve canonical AMX commercial state; project qualified/warm state into Close or another operational view; reconcile Gmail/provider evidence and Banker/payment truth without creating a second CRM architecture.
+
+### Proposal C — Weighted Outcome Propagation Readback
+- **Artifact:** `AMX/ROOT/INTAKE/MONEY_IN_PATCH_WEIGHTED_OUTCOME_PROPAGATION_READBACK_20261009.md`
+- **Recommended classification:** **BOTH GOVERNANCE + BLUE STATE / OPERATING RULE**.
+- **Core law:** `NO OUTCOME-PROPAGATION RECEIPT → NO CLAIM THAT WEIGHTED LEARNING OCCURRED`.
+- Require evidence of EVENT → scoped weight/state change → subsequent priority/selection consequence across continuation, without exposing chain-of-thought or imposing universal fixed coefficients.
+
+### Governance request
+Assess each proposal independently for product/Matrix/utility/integration value, conflict, duplication and speed-to-money consequence. ACCEPT / MODIFY / REJECT / ALREADY-SUBSUMED / HOLD with exact owner and acceptance test. Do not alter CARBON° Search's frozen 35/35 build with these findings unless a separately governed post-build integration decision explicitly requires it.
