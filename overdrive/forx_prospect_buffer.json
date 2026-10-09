@@ -16390,6 +16390,222 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-803",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.trulyaccountant.co.tz/",
+      "organization": "Truly Accountant",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tanzania",
+      "region": "East Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Homegrown Dar es Salaam firm serving micro, small and growing enterprises with audit, accounting, tax and advisory.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.trulyaccountant.co.tz/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.trulyaccountant.co.tz/",
+          "source": "https://www.trulyaccountant.co.tz/"
+        }
+      ],
+      "current_public_evidence": "Homegrown Dar es Salaam firm serving micro, small and growing enterprises with audit, accounting, tax and advisory.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa professional-family rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-804",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://momsconsulting.co.tz/",
+      "organization": "MOMS Consulting",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tanzania",
+      "region": "East Africa",
+      "sector": "accounting/tax/business consulting",
+      "business_model": "SMME / professional services",
+      "surface": "Dar es Salaam SME-focused accounting, tax, compliance and business-consulting practice founded in 2020.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://momsconsulting.co.tz/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://momsconsulting.co.tz/",
+          "source": "https://momsconsulting.co.tz/"
+        }
+      ],
+      "current_public_evidence": "Dar es Salaam SME-focused accounting, tax, compliance and business-consulting practice founded in 2020.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa professional-family rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-805",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.hyperionconsultants.co.tz/",
+      "organization": "Hyperion Legal & Corporate Consultants",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tanzania",
+      "region": "East Africa",
+      "sector": "boutique business law",
+      "business_model": "SMME / professional services",
+      "surface": "Dar es Salaam boutique corporate/commercial law practice.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.hyperionconsultants.co.tz/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.hyperionconsultants.co.tz/",
+          "source": "https://www.hyperionconsultants.co.tz/"
+        }
+      ],
+      "current_public_evidence": "Dar es Salaam boutique corporate/commercial law practice.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa professional-family rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-806",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.gea.co.tz/",
+      "organization": "Golden Eagle Associates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tanzania",
+      "region": "East Africa",
+      "sector": "tax/business/research advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Tanzanian consulting firm serving SMEs, entrepreneurs, NGOs and professional service providers.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.gea.co.tz/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.gea.co.tz/",
+          "source": "https://www.gea.co.tz/"
+        }
+      ],
+      "current_public_evidence": "Tanzanian consulting firm serving SMEs, entrepreneurs, NGOs and professional service providers.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa professional-family rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-807",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.safrinacfo.com/",
+      "organization": "Safrina CFO",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tanzania",
+      "region": "East Africa",
+      "sector": "cloud accounting/CFO advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Founder-led cloud-accounting and CFO-advisory practice with starter and growth support for small businesses and SMEs.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.safrinacfo.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.safrinacfo.com/",
+          "source": "https://www.safrinacfo.com/"
+        }
+      ],
+      "current_public_evidence": "Founder-led cloud-accounting and CFO-advisory practice with starter and growth support for small businesses and SMEs.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa professional-family rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-808",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://freshfield.co.tz/",
+      "organization": "FreshField Advocates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Tanzania",
+      "region": "East Africa",
+      "sector": "boutique law",
+      "business_model": "SMME / professional services",
+      "surface": "Dar es Salaam boutique law firm focused on practical and cost-effective legal services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://freshfield.co.tz/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://freshfield.co.tz/",
+          "source": "https://freshfield.co.tz/"
+        }
+      ],
+      "current_public_evidence": "Dar es Salaam boutique law firm focused on practical and cost-effective legal services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa professional-family rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-809",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://adalci.co.ug/",
+      "organization": "Adalci Advocates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Uganda",
+      "region": "East Africa",
+      "sector": "boutique law",
+      "business_model": "SMME / professional services",
+      "surface": "Kampala boutique law practice offering tailored legal services and personal client engagement.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://adalci.co.ug/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://adalci.co.ug/",
+          "source": "https://adalci.co.ug/"
+        }
+      ],
+      "current_public_evidence": "Kampala boutique law practice offering tailored legal services and personal client engagement.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa professional-family rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-810",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.nabasalaw.com/",
+      "organization": "Nabasa & Co. Advocates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Uganda",
+      "region": "East Africa",
+      "sector": "boutique law",
+      "business_model": "SMME / professional services",
+      "surface": "Modern Kampala boutique law firm led by Pheona Nabasa Wall with commercially focused legal advice.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.nabasalaw.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.nabasalaw.com/",
+          "source": "https://www.nabasalaw.com/"
+        }
+      ],
+      "current_public_evidence": "Modern Kampala boutique law firm led by Pheona Nabasa Wall with commercially focused legal advice.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH East-Africa professional-family rotation applied.",
+      "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -16447,17 +16663,19 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-ZIMBABWE-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-EAST-AFRICA-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-787",
-        "FORX-PROSPECT-20261009-788",
-        "FORX-PROSPECT-20261009-789",
-        "FORX-PROSPECT-20261009-790",
-        "FORX-PROSPECT-20261009-791",
-        "FORX-PROSPECT-20261009-792",
-        "FORX-PROSPECT-20261009-793"
+        "FORX-PROSPECT-20261009-794",
+        "FORX-PROSPECT-20261009-795",
+        "FORX-PROSPECT-20261009-796",
+        "FORX-PROSPECT-20261009-797",
+        "FORX-PROSPECT-20261009-798",
+        "FORX-PROSPECT-20261009-799",
+        "FORX-PROSPECT-20261009-800",
+        "FORX-PROSPECT-20261009-801",
+        "FORX-PROSPECT-20261009-802"
       ]
     },
     "consumed_sources": [
@@ -16467,20 +16685,21 @@
       },
       {
         "id": "3f28f8b56cd781bd945dcd8630253ef8",
-        "revision": "FORX-FIRST-BREATH-CONTINUATION-20261009-02"
+        "revision": "FORX-FIRST-BREATH-COUNTRY-CHECKPOINT-20261009-03"
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "5f8ca9d561f93c98066b9052ee905884309ed500"
+        "revision": "2343a99ab5f8b9dc67f658e01ee2234db0b02b2a"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "country-first Southern Africa continuation",
+        "regional rotation after Southern Africa",
         "SMME-first",
-        "professional micro-practice family"
+        "professional-family diversity",
+        "avoid BPO/POS saturation"
       ],
-      "changed_action": "Rotated from Zambia into Zimbabwe owner-led/small professional accounting and legal practices, plus business/tax consultants; retained the SME Association directory as a network rail only.",
+      "changed_action": "Moved into East African accounting/CFO/boutique-law practices outside the already-developed BPO/POS lanes.",
       "source_pointers": [
         "weighted continuity revision 31",
         "prior receipt next_alternatives"
@@ -16488,57 +16707,50 @@
     },
     "exact_coordinate": {
       "geography": [
-        "Zimbabwe"
+        "Tanzania",
+        "Uganda"
       ],
       "sector": [
         "accounting",
         "tax",
-        "bookkeeping",
-        "boutique law",
-        "business consulting"
+        "CFO advisory",
+        "business advisory",
+        "boutique law"
       ],
       "model": "SMME / professional services",
-      "source": [
-        "official websites",
-        "public business profiles"
-      ]
+      "source": "official public websites"
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 9,
-      "candidates_staged_pending_ingestion": 9,
-      "network_rails_discovered": 1,
+      "candidate_exact_keys_discovered": 8,
+      "candidates_staged_pending_ingestion": 8,
       "verified_graph_delta_claimed": 0,
-      "explored": 9,
+      "explored": 8,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-794",
-      "FORX-PROSPECT-20261009-795",
-      "FORX-PROSPECT-20261009-796",
-      "FORX-PROSPECT-20261009-797",
-      "FORX-PROSPECT-20261009-798",
-      "FORX-PROSPECT-20261009-799",
-      "FORX-PROSPECT-20261009-800",
-      "FORX-PROSPECT-20261009-801",
-      "FORX-PROSPECT-20261009-802"
-    ],
-    "network_result_keys": [
-      "url:https://www.smeaz.org.zw/index.php/shop-online/business-directory"
+      "FORX-PROSPECT-20261009-803",
+      "FORX-PROSPECT-20261009-804",
+      "FORX-PROSPECT-20261009-805",
+      "FORX-PROSPECT-20261009-806",
+      "FORX-PROSPECT-20261009-807",
+      "FORX-PROSPECT-20261009-808",
+      "FORX-PROSPECT-20261009-809",
+      "FORX-PROSPECT-20261009-810"
     ],
     "uncertainty": [
-      "Directory membership and business listings are not outreach consent or buyer qualification."
+      "Public professional-service surface does not prove current unmet need or commercial qualification."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Tanzania/Uganda small professional practices outside BPO/POS lanes",
-        "why": "East-Africa professional-family rotation."
+        "coordinate": "Kenya/Rwanda owner-led professional practices outside BPO/POS",
+        "why": "Continue East-Africa family rotation without repeating existing lanes."
       },
       {
-        "coordinate": "Zimbabwe allied-health/training micro-practices",
-        "why": "Different sector if further country depth is warranted."
+        "coordinate": "Uganda accounting/bookkeeping micro-practices with official domains",
+        "why": "Increase sector diversity inside a still-thin country."
       }
     ],
-    "chosen_next_action": "Rotate region rather than saturate accounting/legal in Southern Africa.",
-    "truth_boundary": "NETWORK DIRECTORY != NODE COUNT; CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFICATION."
+    "chosen_next_action": "Continue East-Africa country rotation before returning to Southern Africa.",
+    "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFICATION."
   }
 }
