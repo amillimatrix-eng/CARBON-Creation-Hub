@@ -3291,6 +3291,163 @@
           "summary": "PRI asked OpenTrain support for a fresh secure recovery/direct application route under the existing account."
         }
       ]
+    },
+    "xubio.com|onboarding-support-pilot|2026-10-07": {
+      "domain": "xubio.com",
+      "organization": "Xubio",
+      "opportunity": "onboarding-support-pilot",
+      "title": "48-hour onboarding-support pilot",
+      "state": "SUBMITTED",
+      "execution_owner": "PRI",
+      "recipient": "lnotrica@xubio.com",
+      "last_action_at": "2026-10-07T10:31:04Z",
+      "due_at": "2026-10-08T00:00:00Z",
+      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "execution_readiness": "WAITING_RESPONSE_FOLLOWUP_DUE",
+      "routing_reason": "ORIGINAL_OFFER_SENT_NO_SUBSTANTIVE_REPLY_EVIDENCED",
+      "commercial_offer": {
+        "amount": 49,
+        "currency": "USD",
+        "scope": "Turn one existing onboarding flow into a concise customer-facing checklist plus support-response pack within 48 hours.",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "source_id": "1a115eab0eca3203"
+      },
+      "evidence": [
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a115eab0eca3203",
+          "thread_id": "1a115eab0eca3203",
+          "observed_at": "2026-10-07T10:31:04Z",
+          "summary": "PRI sent a fixed USD 49 / 48-hour onboarding-support pilot to Lucila Notrica at Xubio."
+        },
+        {
+          "kind": "CLOSE_TASK_OVERDUE",
+          "source": "CLOSE",
+          "source_id": "task_Do97iN71mej6gag8DbqUpj6e4jbTm740dBsTzzVRr1L",
+          "observed_at": "2026-10-09",
+          "summary": "Close projects the follow-up as overdue; bounded Gmail reconciliation recovered no substantive buyer reply."
+        }
+      ],
+      "last_reconciled_at": "2026-10-09"
+    },
+    "kingstonstanley.com|sourcing-overflow-pilot|2026-10-07": {
+      "domain": "kingstonstanley.com",
+      "organization": "Kingston Stanley",
+      "opportunity": "sourcing-overflow-pilot",
+      "title": "48-hour sourcing overflow pilot",
+      "state": "SUBMITTED",
+      "execution_owner": "PRI",
+      "recipient": "vanessa@kingstonstanley.com",
+      "last_action_at": "2026-10-07T10:31:02Z",
+      "due_at": "2026-10-08T00:00:00Z",
+      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "execution_readiness": "WAITING_RESPONSE_FOLLOWUP_DUE",
+      "routing_reason": "ORIGINAL_OFFER_SENT_NO_SUBSTANTIVE_REPLY_EVIDENCED",
+      "commercial_offer": {
+        "amount": 99,
+        "currency": "USD",
+        "scope": "One live role; externally sourced candidate research and pre-screen notes within 48 hours.",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "source_id": "1a115eaaa87931dd"
+      },
+      "evidence": [
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a115eaaa87931dd",
+          "thread_id": "1a115eaaa87931dd",
+          "observed_at": "2026-10-07T10:31:02Z",
+          "summary": "PRI sent a fixed USD 99 / 48-hour sourcing-overflow pilot to Vanessa Placido at Kingston Stanley."
+        },
+        {
+          "kind": "CLOSE_TASK_OVERDUE",
+          "source": "CLOSE",
+          "source_id": "task_NUbriT3UcJflluR34JwvJmahe8hRZHZVKgPCeMH1pR8",
+          "observed_at": "2026-10-09",
+          "summary": "Close projects the follow-up as overdue; bounded Gmail reconciliation recovered no substantive buyer reply."
+        }
+      ],
+      "last_reconciled_at": "2026-10-09"
+    },
+    "sinyc.com|candidate-sourcing-pilot|2026-10-07": {
+      "domain": "sinyc.com",
+      "organization": "Synergy Interactive",
+      "opportunity": "candidate-sourcing-pilot",
+      "title": "24-hour candidate sourcing pilot",
+      "state": "SUBMITTED",
+      "execution_owner": "PRI",
+      "recipient": "blake@sinyc.com",
+      "last_action_at": "2026-10-07T10:31:00Z",
+      "due_at": "2026-10-08T00:00:00Z",
+      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "execution_readiness": "WAITING_RESPONSE_FOLLOWUP_DUE",
+      "routing_reason": "ORIGINAL_OFFER_SENT_NO_SUBSTANTIVE_REPLY_EVIDENCED",
+      "commercial_offer": {
+        "amount": 99,
+        "currency": "USD",
+        "scope": "One open role; source-linked shortlist with candidate fit notes and screening questions within 24 hours.",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "source_id": "1a115eaa267e2344"
+      },
+      "evidence": [
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a115eaa267e2344",
+          "thread_id": "1a115eaa267e2344",
+          "observed_at": "2026-10-07T10:31:00Z",
+          "summary": "PRI sent a fixed USD 99 / 24-hour candidate-sourcing pilot to Blake Bhatia at Synergy Interactive."
+        },
+        {
+          "kind": "CLOSE_TASK_OVERDUE",
+          "source": "CLOSE",
+          "source_id": "task_LaDuW9GeM8nS9BzNRQLFayCGE4lzObbElO4qNjbP6Wz",
+          "observed_at": "2026-10-09",
+          "summary": "Close projects the follow-up as overdue; bounded Gmail reconciliation recovered no substantive buyer reply."
+        }
+      ],
+      "last_reconciled_at": "2026-10-09"
+    },
+    "sakubloom.com|graphic-designer-role|2026-10-05": {
+      "domain": "sakubloom.com",
+      "organization": "SakuBloom",
+      "opportunity": "graphic-designer-role",
+      "title": "Graphic Designer — SakuBloom",
+      "state": "REJECTED",
+      "execution_owner": "PRI",
+      "recipient": "hello@sakubloom.com",
+      "last_action_at": "2026-10-05T19:09:06Z",
+      "due_at": null,
+      "next_action": "NO UNSOLICITED FOLLOW-UP for the current project. Preserve the rejection and future-portfolio note; only requalify on a distinct new buyer-initiated or independently current opportunity.",
+      "execution_readiness": "SUPPRESSED_REJECTION",
+      "routing_reason": "BUYER_SELECTED_ANOTHER_DESIGNER_FOR_CURRENT_PROJECT",
+      "commercial_offer": {
+        "amount": 20,
+        "currency": "USD",
+        "scope": "One tightened visual direction, three social template concepts, type/color guidance, copy/CTA suggestions, 24-hour turnaround.",
+        "status": "OFFER_REJECTED_CURRENT_PROJECT",
+        "source_id": "1a10d783f7d9e055"
+      },
+      "evidence": [
+        {
+          "kind": "GMAIL_SENT",
+          "source": "GMAIL",
+          "source_id": "1a10d783f7d9e055",
+          "thread_id": "1a10d783f7d9e055",
+          "observed_at": "2026-10-05T19:09:06Z",
+          "summary": "PRI sent a fixed USD 20 paid brand-kit/social-template trial."
+        },
+        {
+          "kind": "BUYER_REJECTION",
+          "source": "GMAIL",
+          "source_id": "1a121e83d33c7b0f",
+          "thread_id": "1a121e83d33c7b0f",
+          "observed_at": "2026-10-09T18:23:42Z",
+          "summary": "SakuBloom said it reviewed the application and chose another designer for the current project; portfolio may be kept for future projects."
+        }
+      ],
+      "last_reconciled_at": "2026-10-09"
     }
   },
   "version": 1,
