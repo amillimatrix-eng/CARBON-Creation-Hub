@@ -1234,3 +1234,16 @@ A proposal may remain operationally unfinished after classification, but it may 
 - **HOLD rule:** only a specifically evidenced unavailable external credential/permission/provider requirement may place the affected gate on HOLD.
 - **Continuity repair:** GitHub issue #16 now points to current default-branch artifacts and explicitly treats historical commit hashes as provenance only.
 - **Intake state:** CLOSED. Execution remains OPEN under issue #16 until the frozen current 35/35 mandatory-gate build acceptance and deployed-runtime readback pass.
+
+
+## 2026-10-09 — CATEGORY A — CARBON° Search INTENTION Fidelity Post-Build Patch
+- **Intake ID:** `ROOT-20261009-CATA-CARBON-INTENTION-FIDELITY-POSTBUILD`
+- **Category:** **A — MATERIAL SEMANTIC / MATRIX BEHAVIOR DIRECTIVE.**
+- **Current state:** **SUBMITTED / NOT APPLIED TO ACTIVE BUILD.**
+- **Artifact:** `AMX/ROOT/INTAKE/CATEGORY_A_CARBON_INTENTION_FIDELITY_POSTBUILD_PATCH_20261009.md`
+- **Owner directive:** complete the currently commissioned CARBON° Search build first; only then may this patch be integrated after Intake adjudication.
+- **Requested disposition:** **HOLD FOR POST-BUILD INTEGRATION** — held scope is semantic/runtime integration only; ROOT/T-GOV owns adjudication; existing T-COD/build ownership implements only after authorized return.
+- **Return condition:** issue #16 reaches its existing completion condition: 35/35 mandatory gates + regression + intended deployment + deployed-runtime readback against the same build/config.
+- **Core law:** `USER INTENT != CLAIM ACCEPTANCE`; `EVIDENCE CONSTRAINT != OUTCOME STEERING`; `CONSTRAINTS MUST BOUND INTENT, NOT REPLACE IT`; `UNPROVEN JOIN != INVALIDATE THE EVIDENCE BENEATH IT`.
+- **Failure class captured:** assumption substitution, intent displacement, strongest-claim collapse, unproven-join contamination, omission by controversy, constraint-to-conclusion steering, superficial/passing compliance, and other non-Matrix behavior that answers a substituted objective rather than the caller's lawful inquiry.
+- **Anti-drift sequencing:** **BUILD COMPLETE FIRST → GOVERNED PATCH INTEGRATION SECOND.** This submission does not move the active 35-gate target.
