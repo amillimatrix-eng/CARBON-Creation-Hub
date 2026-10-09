@@ -503,3 +503,93 @@ This metric layer does not replace latent-intent hypotheses, EIF or Expected Reg
 If an intent component cannot be defensibly measured, it remains **UNKNOWN / HYPOTHESIZED** and may influence exploration only with explicit uncertainty. It may not be silently promoted to a fact or hard constraint.
 
 This section is part of the locked build initiative and must not be diluted into conventional filter matching or generic relevance scoring.
+
+
+## 22. MATRIX-WIDE CAPABILITY CONTRACT — OWNER ACCEPTED SCOPE
+
+CARBON° Search is a **CARBON° product** and a **Matrix-wide callable capability**.
+
+The implementation must not trap the Engine of Intent inside one Carbon UI, one model prompt, one worker, or one provider.
+
+The preferred architecture is:
+
+`MATRIX WORKER / MODEL / PRODUCT → THIN SEARCH ADAPTER → CARBON° SEARCH CAPABILITY → INTELLAGENT → AUTHORIZED SCOPES / EVIDENCE / MARKETPLACE → DECISION + ACTION`
+
+### 22.1 Single-engine rule
+
+Do **not** duplicate the intent engine into every worker prompt or maintain multiple worker-specific forks of the search logic.
+
+Use one authoritative, versioned engine with thin integration surfaces.
+
+A worker may carry local invocation guidance, but the underlying interpretation, evidence normalization, contradiction discipline, EIF, Expected Regret, audit behavior and search-state semantics must come from the shared CARBON° Search capability.
+
+### 22.2 Required callable surface
+
+The Matrix-wide integration contract must allow an authorized caller to provide at least:
+- raw query / task;
+- caller identity / capability identity;
+- objective context that the caller is authorized to disclose;
+- requested search scopes;
+- permission / visibility context;
+- desired action type where known;
+- freshness / latency / cost sensitivity where material;
+- optional prior search-session reference for continuation.
+
+The shared result contract must return at least:
+- measured-intent snapshot;
+- explicit constraints;
+- materially plausible latent-intent hypotheses;
+- decision-grade result / alternatives;
+- decisive and hidden variables;
+- evidence / provenance pointers;
+- contradiction state;
+- confidence / unresolved material gap;
+- stop reason / Expected Regret state;
+- authorized next action or truthful HOLD;
+- capability / contract version;
+- session / audit reference.
+
+### 22.3 Permission and authority boundary
+
+A Matrix-wide caller does not inherit broader evidence access merely by calling CARBON° Search.
+
+The Search capability must enforce scope and visibility at the service boundary.
+
+`CALLER AUTHORITY != SEARCH AUTHORITY EXPANSION`
+
+Private Matrix/client evidence may participate only when the caller and requested action are authorized for that scope.
+
+### 22.4 Distribution rule
+
+CARBON° Search should be integrable through the smallest common interface available to the Matrix, such as:
+- a versioned internal API/service contract;
+- a shared tool/capability adapter;
+- a provider-neutral invocation library;
+- a future registry entry if/when the Matrix has an authoritative capability registry.
+
+The build must not assume a registry already exists.
+
+### 22.5 Upgrade rule
+
+Matrix integrations should reference a compatible capability contract/version rather than embed copied engine logic.
+
+An engine upgrade should therefore improve all compatible callers without requiring independent reimplementation in every worker.
+
+Breaking contract changes require explicit versioning and compatibility handling.
+
+### 22.6 Invocation policy
+
+The capability is available Matrix-wide where search, discovery, evidence resolution, comparison, hidden-variable detection or decision support materially benefits the caller.
+
+It should not replace simpler deterministic retrieval where no intent-resolution work is needed.
+
+The objective is **best useful deployment**, not forcing expensive intent inference into every lookup.
+
+### 22.7 Product identity
+
+Matrix-wide use does not strip product ownership or identity.
+
+- **CARBON° Search** remains the product.
+- **INTELLAGENT** remains the intent intelligence layer.
+- **Engine of Intent** remains the positioning.
+- Matrix workers consume the capability; they do not each become separate CARBON° Search implementations.
