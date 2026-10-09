@@ -1343,3 +1343,20 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Closure:** only original acceptance readback or explicit governed cancellation/supersession closes the obligation.
 - **Law:** `BLOCKED RECEIPT -> OPEN OBLIGATION -> RECOVERY OWNER -> COMPLETION / GOVERNED CANCELLATION`.
 - **Anti-drift:** merely saying/reporting `BLOCKED` is not completion and is not a valid handoff.
+
+
+## 2026-10-09 — CARBON° Product Convergence — Search + Marketplace + Studios + Matrix
+- **Intake ID:** `ROOT-20261009-CARBON-PRODUCT-CONVERGENCE`
+- **Owner authorization:** **MAKE IT HAPPEN / RUN WITH IT.**
+- **Primary classification:** **PRODUCT / ECOSYSTEM INTEGRATION UPGRADE.**
+- **Blueprint:** `house/product/CARBON_PRODUCT_CONVERGENCE_BLUEPRINT_V1.md`
+- **Storage/GTM policy:** `house/product/CARBON_MARKET_ENTRY_AND_STORAGE_POLICY_V1.md`
+- **Intake packet:** `AMX/ROOT/INTAKE/CARBON_PRODUCT_CONVERGENCE_INTAKE_20261009.md`
+- **Implementation tracking:** GitHub issue #18.
+- **Core architecture:** `SEARCH = INTENT | MARKETPLACE = MATCH | STUDIOS = FULFILMENT | MATRIX = CONTINUITY / GOVERNANCE / TRUST`.
+- **Current proof boundary:** Search V1 remains OPEN under issue #16; Search→Marketplace executable contract, unified image/video/voice routing, product storage, premium Matrix theme and paid acquisition are not yet claimed implemented.
+- **Build protection:** issue #18 may prepare non-core contracts/design now, but any convergence change that touches frozen Search V1 semantics waits for issue #16 completion and governed post-build integration.
+- **Proposed V1 convergence:** image actions, bounded short-video actions, voice/audio actions, listing/package workflows, object storage + ACL, Matrix adapter, optional premium Matrix Mode theme, and bounded evidence-driven acquisition after launch gates pass.
+- **Data direction proposed for governance:** user owns source/business data; hosted/BYO/minimal-retention modes; frontend hosting is not the canonical media vault.
+- **Launch discipline:** no paid scale before buyer-viewable demo, working workflows, pricing/limits, storage/privacy policy, analytics and conversion evidence.
+- **Truth:** `PROPOSED != IMPLEMENTED != DEPLOYED != BUYER-VIEWABLE != COMMERCIAL CONVERSION`.
