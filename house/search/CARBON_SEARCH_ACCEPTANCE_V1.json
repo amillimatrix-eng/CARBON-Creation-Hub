@@ -107,7 +107,7 @@
     {
       "id": "G21",
       "name": "Marketplace scenario",
-      "test": "Marketplace-of-Intent integration resolves demand/supply signals through the same intent engine once authoritative contract is connected."
+      "test": "Marketplace-of-Intent integration resolves demand/supply signals through the same intent engine using the Marketplace contract/schema/interface created by this build, or a reusable authoritative contract only if one is actually evidenced."
     },
     {
       "id": "G22",
