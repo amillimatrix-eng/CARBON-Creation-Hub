@@ -1,0 +1,140 @@
+{
+  "schema": "CARBON_SEARCH_MATRIX_GRADE_ACCEPTANCE_V1",
+  "build_law": "100/100 mandatory gates or NOT_MATRIX_GRADE",
+  "promotion_rule": "ALL mandatory gates must PASS; no weighted average, waiver by silence, or partial-pass promotion.",
+  "search_truth_rule": "A Matrix-grade build may truthfully return HOLD/UNKNOWN for an individual search. Build acceptance measures correct behavior, not fabricated certainty.",
+  "mandatory_gates": [
+    {
+      "id": "G01",
+      "name": "Typed intent model",
+      "test": "Query produces explicit constraints, hypotheses, weights, unknowns, action target and provenance."
+    },
+    {
+      "id": "G02",
+      "name": "Latent-intent plurality",
+      "test": "Ambiguous query preserves multiple plausible intent hypotheses until evidence justifies collapse."
+    },
+    {
+      "id": "G03",
+      "name": "Intent posterior update",
+      "test": "Material new evidence changes hypothesis probabilities/weights without restarting valid prior work."
+    },
+    {
+      "id": "G04",
+      "name": "Hidden-variable detection",
+      "test": "Decision-sensitive implicit variables are generated and tested."
+    },
+    {
+      "id": "G05",
+      "name": "Permission-aware scope routing",
+      "test": "Only authorized internal/client/market/web/connected scopes may participate."
+    },
+    {
+      "id": "G06",
+      "name": "Claim normalization",
+      "test": "Marketing/raw text is normalized into comparable typed claims before ranking."
+    },
+    {
+      "id": "G07",
+      "name": "Provenance",
+      "test": "Every material ranked claim is traceable to source, timestamp/freshness and evidence pointer."
+    },
+    {
+      "id": "G08",
+      "name": "Contradiction preservation",
+      "test": "Conflicting credible claims are not silently merged or averaged."
+    },
+    {
+      "id": "G09",
+      "name": "Cross-chain join discipline",
+      "test": "No causal/identity relation is synthesized without an evidenced join."
+    },
+    {
+      "id": "G10",
+      "name": "Freshness sensitivity",
+      "test": "Time-sensitive attributes such as price/stock/state decay or require current evidence."
+    },
+    {
+      "id": "G11",
+      "name": "Expected Intent Fulfilment",
+      "test": "Candidate ranking exposes reproducible probability-weighted intent utility inputs and result."
+    },
+    {
+      "id": "G12",
+      "name": "Expected Regret controller",
+      "test": "Search continuation/stop decision responds to remaining decision-sensitive uncertainty."
+    },
+    {
+      "id": "G13",
+      "name": "Decision stability",
+      "test": "Engine tests whether plausible remaining uncertainty could materially change winner/ranking/action."
+    },
+    {
+      "id": "G14",
+      "name": "Truthful HOLD",
+      "test": "Insufficient evidence returns HOLD/UNKNOWN rather than synthetic certainty."
+    },
+    {
+      "id": "G15",
+      "name": "Provider failure discipline",
+      "test": "Intent/search provider outage does not silently downgrade into keyword search branded as CARBON Search."
+    },
+    {
+      "id": "G16",
+      "name": "Result compression",
+      "test": "Default output is decision-grade and concise while evidence remains inspectable."
+    },
+    {
+      "id": "G17",
+      "name": "Action routing",
+      "test": "Result maps to an authorized next action or explicit HOLD; no authority is invented."
+    },
+    {
+      "id": "G18",
+      "name": "Outcome learning",
+      "test": "Feedback can update versioned calibration without rewriting historical evidence."
+    },
+    {
+      "id": "G19",
+      "name": "Internal evidence scenario",
+      "test": "End-to-end CARBON internal search passes with state/provenance awareness."
+    },
+    {
+      "id": "G20",
+      "name": "External decision scenario",
+      "test": "Phone-style ambiguous product search identifies anomaly, decomposes hidden specification, updates latent intent and ranks actionable alternatives."
+    },
+    {
+      "id": "G21",
+      "name": "Marketplace scenario",
+      "test": "Marketplace-of-Intent integration resolves demand/supply signals through the same intent engine once authoritative contract is connected."
+    },
+    {
+      "id": "G22",
+      "name": "Privacy isolation",
+      "test": "Private/client evidence cannot leak into unauthorized/public result surfaces."
+    },
+    {
+      "id": "G23",
+      "name": "Audit receipt",
+      "test": "Each search records model version/provider, intent snapshot, sources, claims, scores, stop reason and action without exposing private chain-of-thought."
+    },
+    {
+      "id": "G24",
+      "name": "Regression suite",
+      "test": "All prior mandatory search acceptance vectors pass after any consequential engine change."
+    },
+    {
+      "id": "G25",
+      "name": "Deployment readback",
+      "test": "Deployed runtime is tested end-to-end against the same build commit/config and returns the expected bounded outcomes."
+    }
+  ],
+  "build_state_values": [
+    "NOT_STARTED",
+    "BUILDING",
+    "HOLD",
+    "MATRIX_GRADE"
+  ],
+  "matrix_grade_condition": "mandatory_gates.every(g => g.state === 'PASS')"
+}
