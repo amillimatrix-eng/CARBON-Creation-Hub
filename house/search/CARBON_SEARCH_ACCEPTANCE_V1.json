@@ -7,12 +7,12 @@
     {
       "id": "G01",
       "name": "Typed intent model / Measured Intent boundary",
-      "test": "Query produces explicit constraints, defensibly measured intent, latent hypotheses, weights, unknowns, action target and provenance; inferred intent is not silently promoted to fact."
+      "test": "Query produces explicit constraints, defensibly Measured Intent, latent hypotheses, weights, unknowns, action target and provenance; unsupported preference inference remains a hypothesis and is not silently promoted to user intent."
     },
     {
       "id": "G02",
       "name": "Latent-intent plurality",
-      "test": "Ambiguous query preserves multiple plausible intent hypotheses until evidence justifies collapse."
+      "test": "Ambiguous query preserves multiple plausible intent hypotheses until evidence justifies collapse; hypotheses without sufficient signal remain explicitly hypothetical rather than statements about what the user wants."
     },
     {
       "id": "G03",
@@ -167,12 +167,12 @@
     {
       "id": "G33",
       "name": "Decisive primary resolution",
-      "test": "When evidence supports a useful decision-stable leading interpretation, Search returns the strongest defensible primary result without forcing a clarification question merely because alternate hypotheses still exist."
+      "test": "When evidence supports a useful decision-stable leading interpretation, Search returns the strongest defensible primary result without forcing clarification; primary wording may state probable intent only where signals/evidence support that inference."
     },
     {
       "id": "G34",
       "name": "Bounded intent pivot affordances",
-      "test": "When one or two materially supported alternate measured-intent outcomes remain plausibly competitive or decision-sensitive, Search exposes no more than two concise intent-pivot actions by default; speculative low-value branches are suppressed."
+      "test": "When one or two materially supported alternate outcome hypotheses remain plausibly useful, Search exposes no more than two concise intent-pivot actions by default; pivots may test preference directions but must not assert those preferences as already known."
     },
     {
       "id": "G35",
@@ -211,5 +211,10 @@
     "default_max_alternate_pivots": 2,
     "pivot_rule": "offer only materially supported parallel outcomes that could plausibly improve or materially change the user's measured-intent outcome",
     "continuation_rule": "pivots continue the existing session and evidence chain; they do not silently rewrite history"
+  },
+  "intention_assumption_boundary": {
+    "rule": "SIGNAL -> MEASURED INTENT; NO SIGNAL -> HYPOTHESIS, NOT INTENTION",
+    "use": "Unsupported preference hypotheses may guide search and Intent Pivots.",
+    "prohibition": "Do not state an unsupported preference hypothesis as what the user probably wanted."
   }
 }
