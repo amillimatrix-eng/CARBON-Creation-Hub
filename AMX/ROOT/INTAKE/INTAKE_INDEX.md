@@ -1396,3 +1396,18 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Search boundary:** no Search #16 semantic mutation.
 - **Acceptance:** deployed user can create/reopen a Project, attach/generate media, see it in Media, preserve ACL/provenance, reload persisted state, and install PWA where supported.
 - **Tracking:** GitHub issue #18.
+
+
+## 2026-10-09 — CONTROLLING INTAKE RECONCILIATION — 20:00 SAST
+- **Intake triage state:** CLEARED FOR CURRENT CLASSIFICATION SURFACES; assigned implementation/operational work remains open.
+- **Truth:** `INTAKE CLEARED != EXECUTION COMPLETE`.
+- **CARBON° Search #16:** CLOSED / COMPLETED; first-cycle MATRIX_GRADE promotion evidence satisfied on deployed/CI commit `69834610dfb0945490b5d6f8047c8d99a0f83477`, CI run `37939788569`, Render deploy `dep-db4f2tjtqb8s73f2eu00`.
+- **Category A INTENTION-fidelity post-build patch:** prior HOLD return condition is SATISFIED. State becomes **ASSIGNED FOR GOVERNED POST-BUILD INTEGRATION** under existing CARBON°/T-COD ownership and issue #18. Historical HOLD remains provenance only.
+- **CARBON° convergence #18:** OPEN / EXECUTION; Search-first dependency satisfied; app/media/PWA + Search↔Marketplace convergence may proceed under its existing acceptance contract. Explicit assignee restored.
+- **FORX scale:** current controlling technical checkpoint is **100,000 DURABLY VERIFIED**, not 50K. 1,200 and 50K remain historical provenance. Commercial candidate quality and outcome→weight→selection remain separate.
+- **FORX #12:** collision/source-key portion materially repaired; residual freshness/UNKNOWN field-shape completeness remains OPEN / T-COD execution remediation. Explicit assignee restored.
+- **FORX #17:** OPEN / ASSIGNED to existing T-COD/FORX repair ownership; no second staging store/graph.
+- **PULS3/ROS3 admission-gap packet:** CLOSED AS MISCLASSIFIED. Current authority says PULSE/ROSE are not mandatory execution credential gates. Residual current-session holder-continuity question remains assigned to existing ROOT/T-GOV only where consequential MASTER authority is invoked.
+- **14-day Notion Business trial:** OWNER DIRECTIVE / EXECUTION PROGRAM; existing roles target **1,000,000+ lawful penetration** and **500+ Banker-guaranteed outcomes**. Agent activation blocker remains an OPEN EXECUTION OBLIGATION; it does not stop other trial leverage.
+- **Process topology recommendation:** ASSIGNED to ROOT/T-GOV reconciliation; no new governance layer and no healthy role/schedule may be disabled merely to satisfy the recommendation.
+- **Current Transcript Obligation Gap Audit:** Intake triage complete; remaining items are execution obligations under existing owners, not generic pending Intake.
