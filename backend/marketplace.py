@@ -1001,10 +1001,21 @@ class MarketplaceStore:
         return dict(row)
 
     def seed_demo(self) -> list[dict[str, Any]]:
+        demo_images = {
+            'MacBook Pro 14"': ["/market/demo/macbook.svg"],
+            "Sony A7 IV body": ["/market/demo/camera.svg"],
+            "Workshop tool bundle": ["/market/demo/tools.svg"],
+        }
         with self._conn() as conn:
             count = conn.execute("SELECT COUNT(*) AS n FROM listings").fetchone()["n"]
-        if count:
-            return self.list_listings()
+            if count:
+                for title, urls in demo_images.items():
+                    conn.execute(
+                        """UPDATE listings SET image_urls_json=?,updated_at=?
+                           WHERE title=? AND (image_urls_json IS NULL OR image_urls_json='[]' OR image_urls_json='')""",
+                        (json.dumps(urls), iso(), title),
+                    )
+                return self.list_listings()
         seller = actor_ref("carbon-demo-seller-2026")
         samples = [
             CreateListingRequest(
@@ -1137,7 +1148,14 @@ def mount_marketplace(
             path = media_dir / filename
             path.write_bytes(data)
             urls.append(f"/market/media/{filename}")
-        return {"urls": urls, "count": len(urls), "owner_ref": participant, "storage": "prototype-local-adapter"}
+        return {
+            "urls": urls,
+            "count": len(urls),
+            "owner_ref": participant,
+            "storage": "prototype-local-adapter",
+            "durability": "ephemeral-unless-CARBON_MARKETPLACE_MEDIA_DIR-is-mounted-or-replaced",
+            "production_seam": "swap media adapter/provider without changing listing image_urls contract",
+        }
 
     @router.get("/api/carbon/listings")
     def listings() -> dict[str, Any]:
