@@ -426,9 +426,9 @@ The first executable slice must prove the architecture end-to-end on:
 
 No production claim until all mandatory acceptance gates pass across all required scenarios.
 
-## 19. REQUIRED DEPENDENCIES
+## 19. BUILD INPUTS VS BUILD OUTPUTS
 
-Known available foundation:
+Known available build foundation:
 - writable `amillimatrix-eng/CARBON-Creation-Hub`;
 - FastAPI;
 - Pydantic;
@@ -438,14 +438,28 @@ Known available foundation:
 - House public interface;
 - current test framework.
 
-Still required for full Matrix-grade external/Marketplace integration:
-- authoritative Marketplace-of-Intent artifact/API/schema location;
-- authorized runtime intent-model provider/router;
-- authorized external-search/retrieval provider(s) and credentials where required;
-- deployment environment configuration for those providers;
-- scope/ACL rules for any private client or Matrix sources to be searched.
+The following are **NOT pre-existing dependencies** and must not be treated as blockers or evidence gaps merely because no prior artifact exists.
 
-Missing dependencies must produce HOLD, not invention.
+They are part of this new initiative and are therefore **BUILD OUTPUTS / DESIGN CONTRACTS TO CREATE**:
+
+- Marketplace-of-Intent contract/schema/interface;
+- INTELLAGENT runtime intent-provider/router contract;
+- external-search/retrieval adapter contract;
+- scope/ACL model for private Matrix/client sources;
+- deployment configuration contract for whichever authorized providers are selected.
+
+The only authoritative source for these concepts at initiative birth is:
+1. this Owner-authorized conversation;
+2. the durable CARBON° Search build initiative;
+3. the corresponding ROOT Intake record.
+
+Therefore:
+
+**NON-EXISTENCE OF A PREVIOUS ARTIFACT != BLOCKER.**
+
+The builder must derive these components from the locked intent architecture, implement them, test them, and then make them authoritative through the normal evidence/build process.
+
+A HOLD is appropriate only when a real external dependency is required for execution and is unavailable after the build has defined exactly what is needed.
 
 ## 20. TERMINAL DEFINITION
 
