@@ -15958,6 +15958,195 @@
       "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
       "fit_note": "CANDIDATE / PENDING_INGESTION. Country-first SMME-first rotation applied.",
       "consumer_action": "iSCOPE validate current public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-787",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.lilybrownassociates.com/",
+      "organization": "Lily Brown & Associates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zambia",
+      "region": "Africa",
+      "sector": "boutique law",
+      "business_model": "SMME / professional services",
+      "surface": "Newly established Lusaka boutique law firm with a small dynamic team and tailored corporate/legal services.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.lilybrownassociates.com/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.lilybrownassociates.com/",
+          "source": "https://www.lilybrownassociates.com/"
+        }
+      ],
+      "current_public_evidence": "Newly established Lusaka boutique law firm with a small dynamic team and tailored corporate/legal services.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-788",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://harveychartered.co.zm/",
+      "organization": "Harvey Chartered Accountants",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zambia",
+      "region": "Africa",
+      "sector": "accounting/tax/business advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Lusaka accounting and tax practice serving local SMEs through accounting, advisory, assurance and training.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://harveychartered.co.zm/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://harveychartered.co.zm/",
+          "source": "https://harveychartered.co.zm/"
+        }
+      ],
+      "current_public_evidence": "Lusaka accounting and tax practice serving local SMEs through accounting, advisory, assurance and training.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-789",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://acuitas.co.zm/",
+      "organization": "Acuitas Associates",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zambia",
+      "region": "Africa",
+      "sector": "accounting/tax/advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Lusaka chartered-accounting practice offering assurance, tax and business advisory.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://acuitas.co.zm/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://acuitas.co.zm/",
+          "source": "https://acuitas.co.zm/"
+        }
+      ],
+      "current_public_evidence": "Lusaka chartered-accounting practice offering assurance, tax and business advisory.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-790",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "url:https://www.resolvedbooks.co.zm/",
+      "organization": "Resolved Books",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zambia",
+      "region": "Africa",
+      "sector": "bookkeeping/accounting/SME advisory",
+      "business_model": "SMME / professional services",
+      "surface": "Founder-led Zambian professional-services firm built specifically for SMEs, family-owned businesses and entrepreneurs.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "https://www.resolvedbooks.co.zm/",
+      "source_observed_at": "2026-10-09",
+      "contactability": "OFFICIAL_PUBLIC_ROUTE_PRESENT",
+      "contact_routes": [
+        {
+          "type": "official_website",
+          "value": "https://www.resolvedbooks.co.zm/",
+          "source": "https://www.resolvedbooks.co.zm/"
+        }
+      ],
+      "current_public_evidence": "Founder-led Zambian professional-services firm built specifically for SMEs, family-owned businesses and entrepreneurs.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-791",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJOYL482uLQBkRPrWHuHwvnZA",
+      "organization": "ABACUS360",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zambia",
+      "region": "Africa",
+      "sector": "accounting/bookkeeping/tax",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies Lusaka audit/accounting/bookkeeping/payroll/tax practice.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJOYL482uLQBkRPrWHuHwvnZA",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJOYL482uLQBkRPrWHuHwvnZA",
+          "source": "google_business:ChIJOYL482uLQBkRPrWHuHwvnZA"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies Lusaka audit/accounting/bookkeeping/payroll/tax practice.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-792",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJraeuLHLzQBkRFZJpk0HAzRY",
+      "organization": "Nitram Management Consultants",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zambia",
+      "region": "Africa",
+      "sector": "tax/accounting/bookkeeping",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies a Lusaka tax/accounting/bookkeeping/company-registry practice with appointments.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJraeuLHLzQBkRFZJpk0HAzRY",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJraeuLHLzQBkRFZJpk0HAzRY",
+          "source": "google_business:ChIJraeuLHLzQBkRFZJpk0HAzRY"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies a Lusaka tax/accounting/bookkeeping/company-registry practice with appointments.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful route before PRI."
+    },
+    {
+      "id": "FORX-PROSPECT-20261009-793",
+      "state": "CANDIDATE_PENDING_INGESTION",
+      "source_key": "google_business:ChIJE9wTdY3zQBkRaFtnazS0o5Q",
+      "organization": "Peza Job Zambia",
+      "canonical_identity": "UNRESOLVED",
+      "country": "Zambia",
+      "region": "Africa",
+      "sector": "career/training services",
+      "business_model": "SMME / professional services",
+      "surface": "Public business profile identifies Lusaka career guidance, recruiting and training services with direct contact route.",
+      "observed_need": "Current public operating surface evidenced; no unmet buyer problem inferred.",
+      "source": "google_business:ChIJE9wTdY3zQBkRaFtnazS0o5Q",
+      "source_observed_at": "2026-10-09",
+      "contactability": "PUBLIC_ROUTE_OBSERVED_NOT_TESTED",
+      "contact_routes": [
+        {
+          "type": "public_business_profile",
+          "value": "google_business:ChIJE9wTdY3zQBkRaFtnazS0o5Q",
+          "source": "google_business:ChIJE9wTdY3zQBkRaFtnazS0o5Q"
+        }
+      ],
+      "current_public_evidence": "Public business profile identifies Lusaka career guidance, recruiting and training services with direct contact route.",
+      "payer_hypothesis": "Unverified owner/partner/manager buyer identity",
+      "fit_note": "CANDIDATE / PENDING_INGESTION. FIRST BREATH country-first rotation applied.",
+      "consumer_action": "iSCOPE validate a current specific public-facing friction, buyer identity, suppression and lawful route before PRI."
     }
   ],
   "current_run_note": "FORX weighted public discovery active; production graph remains separately evidenced at 50,000 durable nodes. This file is candidate/evidence staging only.",
@@ -16015,28 +16204,19 @@
   "last_continuity": {
     "observed_at": "2026-10-09",
     "producer": "FORX Continuous Play Sweep",
-    "run_identity": "FORX-CONTINUOUS-20261009-LUSOPHONE-PROFESSIONAL",
+    "run_identity": "FORX-CONTINUOUS-20261009-ZAMBIA-PROFESSIONAL",
     "prior_receipt": {
       "observed_at": "2026-10-09",
       "result_ids": [
-        "FORX-PROSPECT-20261009-760",
-        "FORX-PROSPECT-20261009-761",
-        "FORX-PROSPECT-20261009-762",
-        "FORX-PROSPECT-20261009-763",
-        "FORX-PROSPECT-20261009-764",
-        "FORX-PROSPECT-20261009-765",
-        "FORX-PROSPECT-20261009-766",
-        "FORX-PROSPECT-20261009-767",
-        "FORX-PROSPECT-20261009-768",
-        "FORX-PROSPECT-20261009-769",
-        "FORX-PROSPECT-20261009-770",
-        "FORX-PROSPECT-20261009-771",
-        "FORX-PROSPECT-20261009-772",
-        "FORX-PROSPECT-20261009-773",
-        "FORX-PROSPECT-20261009-774",
-        "FORX-PROSPECT-20261009-775",
-        "FORX-PROSPECT-20261009-776",
-        "FORX-PROSPECT-20261009-777"
+        "FORX-PROSPECT-20261009-778",
+        "FORX-PROSPECT-20261009-779",
+        "FORX-PROSPECT-20261009-780",
+        "FORX-PROSPECT-20261009-781",
+        "FORX-PROSPECT-20261009-782",
+        "FORX-PROSPECT-20261009-783",
+        "FORX-PROSPECT-20261009-784",
+        "FORX-PROSPECT-20261009-785",
+        "FORX-PROSPECT-20261009-786"
       ]
     },
     "consumed_sources": [
@@ -16050,73 +16230,68 @@
       },
       {
         "id": "overdrive/forx_prospect_buffer.json",
-        "revision": "948b8e257ef934c3c0993e67d1e3a4ef86b6f316"
+        "revision": "8d8b50a294d37cd79cd771fbd3d133b529749369"
       }
     ],
     "apply_example": {
       "prior_learning": [
-        "country-first zero/weak protection",
+        "country-first African rotation",
         "SMME-first",
-        "professional micro-practice family",
-        "Lusophone/localization relevance"
+        "professional-family diversity"
       ],
-      "changed_action": "Executed the saved Angola/Mozambique lateral and selected SME-focused accounting, tax, consulting and boutique-law operators instead of returning to richer represented clusters.",
+      "changed_action": "Executed the saved Zambia lateral and mixed accounting, boutique-law and training/career operators instead of deepening Angola/Mozambique.",
       "source_pointers": [
-        "weighted continuity revision 31",
-        "prior receipt next_alternatives"
+        "prior receipt next_alternatives",
+        "weighted continuity revision 31"
       ]
     },
     "exact_coordinate": {
       "geography": [
-        "Angola",
-        "Mozambique"
+        "Zambia"
       ],
       "sector": [
         "accounting",
+        "bookkeeping",
         "tax",
-        "SME advisory",
-        "business consulting",
-        "boutique law"
+        "boutique law",
+        "career/training"
       ],
-      "model": "SMME / founder-led professional operator",
+      "model": "SMME / professional services",
       "source": [
-        "official public websites",
-        "public business profile"
+        "official sites",
+        "public business profiles"
       ]
     },
     "component_evidence": {
-      "candidate_exact_keys_discovered": 9,
-      "candidates_staged_pending_ingestion": 9,
+      "candidate_exact_keys_discovered": 7,
+      "candidates_staged_pending_ingestion": 7,
       "verified_graph_delta_claimed": 0,
-      "explored": 9,
+      "explored": 7,
       "exploited": 0
     },
     "result_ids": [
-      "FORX-PROSPECT-20261009-778",
-      "FORX-PROSPECT-20261009-779",
-      "FORX-PROSPECT-20261009-780",
-      "FORX-PROSPECT-20261009-781",
-      "FORX-PROSPECT-20261009-782",
-      "FORX-PROSPECT-20261009-783",
-      "FORX-PROSPECT-20261009-784",
-      "FORX-PROSPECT-20261009-785",
-      "FORX-PROSPECT-20261009-786"
+      "FORX-PROSPECT-20261009-787",
+      "FORX-PROSPECT-20261009-788",
+      "FORX-PROSPECT-20261009-789",
+      "FORX-PROSPECT-20261009-790",
+      "FORX-PROSPECT-20261009-791",
+      "FORX-PROSPECT-20261009-792",
+      "FORX-PROSPECT-20261009-793"
     ],
     "uncertainty": [
-      "Public operating surface does not establish unmet buyer need or consent.",
-      "Candidate size and owner identity remain unresolved where not explicit."
+      "Public source evidence does not establish unmet buyer need or outreach consent."
     ],
     "next_alternatives": [
       {
-        "coordinate": "Zambia owner-led accounting/legal/training practices",
-        "why": "Country-first African rotation into another undercovered market."
+        "coordinate": "Zimbabwe owner-led accounting/legal/training practices",
+        "why": "Country-first Southern Africa continuation."
       },
       {
-        "coordinate": "Mozambique small allied-health/training practices",
-        "why": "Same geography, different professional family if country depth is still warranted."
+        "coordinate": "Zambia allied-health and appointment practices",
+        "why": "Different professional family if further Zambia depth is justified."
       }
     ],
-    "chosen_next_action": "Rotate to Zambia before deepening Lusophone professional services further.",
+    "chosen_next_action": "Rotate country before deepening accounting/legal.",
     "truth_boundary": "CANDIDATE != VERIFIED GRAPH; PUBLIC ROUTE != QUALIFIED BUYER."
   }
 }
