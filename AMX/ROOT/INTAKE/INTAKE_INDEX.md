@@ -1329,3 +1329,17 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Liveness:** `ACTIVE MANDATE + NONTERMINAL EXECUTABLE OBLIGATIONS + NO LIVE EXECUTION OWNER = INVALID STATE -> REMEDIATE`.
 - **Succession:** `ONE MANDATE -> ONE CURRENT EXECUTION OWNER -> ONE EVIDENCED SUCCESSOR PATH`, unless governing architecture explicitly permits otherwise.
 - **Prompt law:** `PROMPT != MANDATE`; prompts consume mandates and may not silently replace them.
+
+
+## 2026-10-09 — BLUE STATE ADDENDUM — Blocked Attempt Recovery
+- **Disposition:** **OWNER DISTINCTION ACCEPTED / MERGED / ACTIVE.**
+- **Parent Blue State:** `AMX-BLUE-STATE-MANDATE-BINDING-V1`
+- **Core invariant:** `ATTEMPTED + BLOCKED != TERMINAL STATE`.
+- A blocked material action creates an **OPEN EXECUTION OBLIGATION**. The system must preserve what was being attempted, the furthest evidenced state, attempt receipt, exact blocker/scope, dedupe/idempotency condition, next lawful recovery action, current/recovery owner and original acceptance condition.
+- **Same-owner path:** retry or reroute through an already-authorized equivalent path and continue to completion.
+- **Cross-owner/authority path:** route a complete recovery parcel through ROOT/Intake for assignment to the existing responsible owner/repair/authority path.
+- **Continuation:** receiving owner resumes from furthest evidenced state; do not restart from zero or duplicate external action.
+- **Invalid state:** `BLOCKED_WITHOUT_RECOVERY_OWNER_OR_NEXT_ACTION`.
+- **Closure:** only original acceptance readback or explicit governed cancellation/supersession closes the obligation.
+- **Law:** `BLOCKED RECEIPT -> OPEN OBLIGATION -> RECOVERY OWNER -> COMPLETION / GOVERNED CANCELLATION`.
+- **Anti-drift:** merely saying/reporting `BLOCKED` is not completion and is not a valid handoff.
