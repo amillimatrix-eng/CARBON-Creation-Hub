@@ -1,11 +1,11 @@
 {
   "registry_id": "AMX-BLUE-STATE-MANDATE-REGISTRY-V1",
-  "version": "1.1",
+  "version": "1.2",
   "effective_date": "2026-10-09",
   "state": "OWNER_ACCEPTED_MERGED_BLUE_STATE",
   "blue_state_path": "AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md",
   "registry_root_sha256_method": "SHA256(sorted ROLE_KEY=MANDATE_SHA256\\n lines)",
-  "registry_root_sha256": "a9e7b787b454ee6422c8f4b2d55a9253fc5ccb47ac65019002a49f51f6140d21",
+  "registry_root_sha256": "6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f",
   "preflight_rule": "MANDATE_PRECEDES_EXECUTION",
   "unregistered_role_rule": "HOLD_AND_ROUTE_TO_ROOT_BEFORE_EXECUTION",
   "entries": [
@@ -38,6 +38,16 @@
         "GitHub issues #11",
         "#16",
         "#17"
+      ]
+    },
+    {
+      "role_key": "T-MED",
+      "mandate_id": "AMX-MANDATE-TMED-V1",
+      "status": "CURRENT",
+      "sha256": "3204cb5d8dfcfbc1e904a4a23f0077959bb9371152a2ef32be48e7e858d148f1",
+      "source_refs": [
+        "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1 / LIBRARIAN_SYNC rows 94, 103-105, 126, 135, 141",
+        "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1 / OUTSTANDING rows 14, 15, 20, 23-25, 32, 43-44"
       ]
     },
     {
