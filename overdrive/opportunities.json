@@ -1986,8 +1986,8 @@
       "recipient": "moboreels@moboreader.com",
       "thread_id": "1a100231731ae464",
       "last_action_at": "2026-10-03T05:01:05Z",
-      "due_at": "2026-10-04T09:00:00Z",
-      "next_action": "Retry the same official thread once after a reasonable interval if the mailbox-capacity failure clears, or use a newly verified official commercial endpoint. Do not send a duplicate initial pitch elsewhere.",
+      "due_at": null,
+      "next_action": "Do not blindly retry moboreels@moboreader.com. iSCOPE must first revalidate a current official MoboReels commercial/submission route and confirm whether this mailbox remains appropriate. If the same address is current and route viability is re-established, PRI may decide one bounded retry under current dedupe/contact rules; otherwise use only a newly verified official route. No delivery/response/acceptance is evidenced.",
       "package_version": "route-request-no-attachment/2026-10-03",
       "qualification": {
         "capital_direction": "buyer/platform pays or licenses if accepted; no fee requested",
@@ -2025,8 +2025,15 @@
           "summary": "The official MoboReels contact mailbox rejected the message because the recipient inbox was full; this is not a successful submission."
         }
       ],
-      "execution_readiness": "WAITING",
-      "routing_reason": "DELIVERY_ROUTE_DEGRADED"
+      "execution_readiness": "HOLD_ROUTE_REVALIDATION",
+      "routing_reason": "RECIPIENT_INBOX_FULL_DELIVERY_FAILED",
+      "route_quality": {
+        "address": "moboreels@moboreader.com",
+        "state": "DELIVERY_FAILED_INBOX_FULL",
+        "evidence_id": "1a10023248ed0d30",
+        "observed_at": "2026-10-03T05:01:05Z",
+        "retry_requires": "CURRENT_ROUTE_REVALIDATION"
+      }
     },
     "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "free-reels.com",
@@ -3174,9 +3181,9 @@
     }
   },
   "version": 1,
-  "updated_at": "2026-10-09T13:04:00Z",
-  "last_updated_at": "2026-10-09T13:04:00Z",
-  "last_updated_by": "Master/Librarian bounded reconciliation — LAVDM and Staff Remotely current Gmail state",
+  "updated_at": "2026-10-09T13:05:00Z",
+  "last_updated_at": "2026-10-09T13:05:00Z",
+  "last_updated_by": "Master/Librarian bounded reconciliation — MoboReels inbox-full delivery failure",
   "last_run": {
     "run_at": "2026-10-03T17:42:00Z",
     "execution_origin": "SCHEDULER_AUTOMATION",
@@ -3259,6 +3266,6 @@
   ],
   "generated_at": "2026-10-03T22:13:20Z",
   "record_count": 66,
-  "last_reconciled_at": "2026-10-09T13:04:00Z",
-  "last_reconciled_reason": "Reconcile LAVDM Oct8 final follow-up and Staff Remotely Oct6/Oct8 duplicate-outreach evidence; prevent further unsolicited repeat actions."
+  "last_reconciled_at": "2026-10-09T13:05:00Z",
+  "last_reconciled_reason": "Reconcile MoboReels DSN and remove stale automatic retry posture."
 }
