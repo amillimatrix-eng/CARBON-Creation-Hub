@@ -3375,9 +3375,21 @@
           "source_id": "task_Do97iN71mej6gag8DbqUpj6e4jbTm740dBsTzzVRr1L",
           "observed_at": "2026-10-09",
           "summary": "Close projects the follow-up as overdue; bounded Gmail reconciliation recovered no substantive buyer reply."
+        },
+        {
+          "kind": "CURRENT_CONTACT_ROUTE_VERIFICATION",
+          "source": "PUBLIC_WEB_GMAIL",
+          "observed_at": "2026-10-09",
+          "person": "Lucila Notrica",
+          "organization": "Xubio",
+          "route": "lnotrica@xubio.com",
+          "public_source": "https://es.linkedin.com/posts/lucilanotrica_la-semana-pasada-cumpl%C3%AD-5-a%C3%B1os-en-xubio-activity-7349465424431874048-zxQC",
+          "result": "CURRENT_PERSON_ORG_VERIFIED; EXACT_MAILBOX_NOT_INDEPENDENTLY_PUBLISHED_IN_RECOVERED_SOURCE; PRIOR_SEND_NO_BOUNCE"
         }
       ],
-      "last_reconciled_at": "2026-10-09"
+      "last_reconciled_at": "2026-10-09",
+      "current_route_status": "CURRENT_PERSON_ORG_VERIFIED_EMAIL_UNPUBLISHED",
+      "current_route_confidence": "MEDIUM"
     },
     "kingstonstanley.com|sourcing-overflow-pilot|2026-10-07": {
       "domain": "kingstonstanley.com",
@@ -3414,9 +3426,21 @@
           "source_id": "task_NUbriT3UcJflluR34JwvJmahe8hRZHZVKgPCeMH1pR8",
           "observed_at": "2026-10-09",
           "summary": "Close projects the follow-up as overdue; bounded Gmail reconciliation recovered no substantive buyer reply."
+        },
+        {
+          "kind": "CURRENT_CONTACT_ROUTE_VERIFICATION",
+          "source": "PUBLIC_WEB_GMAIL",
+          "observed_at": "2026-10-09",
+          "person": "Vanessa Placido",
+          "organization": "Kingston Stanley",
+          "route": "vanessa@kingstonstanley.com",
+          "public_source": "https://ae.linkedin.com/in/vanessa-placido-4a566727",
+          "result": "CURRENT_PERSON_ORG_AND_EXACT_EMAIL_PUBLICLY_EVIDENCED_PLUS_PRIOR_SEND_NO_BOUNCE"
         }
       ],
-      "last_reconciled_at": "2026-10-09"
+      "last_reconciled_at": "2026-10-09",
+      "current_route_status": "CURRENT_CONTACT_ROUTE_VERIFIED",
+      "current_route_confidence": "HIGH"
     },
     "sinyc.com|candidate-sourcing-pilot|2026-10-07": {
       "domain": "sinyc.com",
@@ -3453,9 +3477,21 @@
           "source_id": "task_LaDuW9GeM8nS9BzNRQLFayCGE4lzObbElO4qNjbP6Wz",
           "observed_at": "2026-10-09",
           "summary": "Close projects the follow-up as overdue; bounded Gmail reconciliation recovered no substantive buyer reply."
+        },
+        {
+          "kind": "CURRENT_CONTACT_ROUTE_VERIFICATION",
+          "source": "PUBLIC_WEB_GMAIL",
+          "observed_at": "2026-10-09",
+          "person": "Blake Bhatia",
+          "organization": "Synergy Interactive",
+          "route": "blake@sinyc.com",
+          "public_source": "https://www.linkedin.com/company/synergy-interactive-solutions",
+          "result": "CURRENT_PERSON_ORG_VERIFIED; EXACT_MAILBOX_NOT_INDEPENDENTLY_PUBLISHED_IN_RECOVERED_SOURCE; PRIOR_SEND_NO_BOUNCE"
         }
       ],
-      "last_reconciled_at": "2026-10-09"
+      "last_reconciled_at": "2026-10-09",
+      "current_route_status": "CURRENT_PERSON_ORG_VERIFIED_EMAIL_UNPUBLISHED",
+      "current_route_confidence": "MEDIUM"
     },
     "sakubloom.com|graphic-designer-role|2026-10-05": {
       "domain": "sakubloom.com",
