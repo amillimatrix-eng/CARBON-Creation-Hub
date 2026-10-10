@@ -1,6 +1,9 @@
 # MATRIX CRITIC — D03 / D04 GOVERNANCE CONFORMANCE AUDIT
 ## ADDENDUM A — UNMEASURED IS NOT FAILURE / FINAL SCORING INTERPRETATION
 
+> **HISTORICAL EVIDENCE / NOT A FRESH RUN:** This addendum corrects interpretation of the historical D04 vector. The 96.62% figure is an arithmetic recomputation of that prior vector, not new execution or independent remeasurement. Do not use its prior statuses/scores as inputs for a clean D04 rerun. Current run disposition is maintained at the beginning of `AMX/ROOT/INTAKE/INTAKE_INDEX.md`.
+
+
 **Date:** 2026-10-10
 **Authority boundary:** Critic correction to evidence interpretation only. Does not amend Blue State or the frozen D04 criteria.
 
@@ -45,7 +48,7 @@ This follows existing AMX rules:
 
 UNMEASURED_NOT_PROVEN does not enter the numeric failure denominator.
 
-## Final internal D04 rerun correction
+## Historical internal D04 rerun correction — not a fresh execution
 
 Source:
 `AMX/ROOT/DEMONSTRATORS/D04/D04_RERUN_02_FINAL_INTERNAL_SELF_REPAIR_20261010.json`
@@ -68,9 +71,9 @@ Correct measured-scope arithmetic:
 - weighted measured denominator: 148
 - measured-scope score: **96.62%**
 
-## Verdict
+## Historical-vector verdict (not current clean-run status)
 
-**MEASURED SCOPE: PASS.**
+**HISTORICAL MEASURED SCOPE: PASS — recomputation only.**
 
 The frozen D04 threshold of >=90 is exceeded, there are zero measured critical FAILs, and the executable OVERDRIVE queue was read back at zero.
 
@@ -96,7 +99,7 @@ Later harder D04 controls remain later milestones; they do not retroactively rew
 
 Any future summary that says “D04 failed because there was no contract/invoice/payment evidence” is drift.
 
-Correct wording:
-**D04 measured enterprise-control scope passed at 96.62%; five critical external-commercial outcome controls remain unmeasured/not proven, so the full benchmark is incomplete rather than failed.**
+Historical-vector wording only:
+**The corrected measured-scope recomputation of the prior D04 vector was 96.62%; five critical external-commercial outcome controls remained unmeasured/not proven in that run. This is not a fresh current-state rerun result.**
 
 No benchmark or evidence result may infer a negative state from absence of evidence alone unless the tested population is demonstrably closed/exhaustive.
