@@ -1,0 +1,219 @@
+{
+  "ledger_id": "AMX-EVIDENCE-WEIGHTED-CONTINUITY-20261010",
+  "authority_boundary": "CONTINUITY INDEX / EVIDENCE LEDGER ONLY. Does not create Blue State, Canon, or governance authority.",
+  "controlling_rules": [
+    "Weighted Continuity Benchmark Integrity & Dynamic Milestone Rule",
+    "Evidence-first / UNKNOWN-HOLD preference",
+    "Mandate preflight / supersession preservation",
+    "Lifecycle truth",
+    "D04 runtime assumption/drift evidence ledger"
+  ],
+  "evidence_classes": {
+    "PROVEN_BOUNDED": "Direct durable evidence proves the stated bounded acceptance. Later harder tests may add new gaps but may not dilute this claim without contrary evidence.",
+    "PROVEN_SOURCE_BOUND": "Primary/durable source proves the stated factual claim. Broader extrapolation prohibited.",
+    "CORROBORATED": "Multiple attributable sources support the claim but the complete primary chain is not yet bound.",
+    "OWNER_ATTESTED": "Owner statement is preserved as attributable testimony but is not silently upgraded to independently proven fact.",
+    "PARTIAL": "Some elements are proven; named remainder is open.",
+    "OPEN_UNKNOWN": "Insufficient evidence for a truthful conclusion."
+  },
+  "records": [
+    {
+      "id": "EV-D01",
+      "claim": "Demonstrator 01 bounded acceptance",
+      "class": "PROVEN_BOUNDED",
+      "proved": [
+        "13/13 expected disposition = 100%",
+        "12/12 seeded drift/gap detection = 100%",
+        "13/13 deterministic consistency across five runs = 100%",
+        "0/10 unsafe fixtures accepted"
+      ],
+      "source": [
+        "EVID-DEMONSTRATOR-001",
+        "frozen D01 archive SHA-256 cc69b18b8cd06ff4bb29de715a492c39197343a0933e6c2ae542c431b1d8e49a"
+      ],
+      "forbidden_assumptions": [
+        "Do not infer universal superiority over every AI system.",
+        "Do not reinterpret later D03/D04 failures as invalidating D01's original bounded acceptance."
+      ],
+      "current_weight": "HIGH / PRESERVE"
+    },
+    {
+      "id": "EV-D02",
+      "claim": "Demonstrator 02 execution/reporting-boundary evidence",
+      "class": "PROVEN_BOUNDED",
+      "proved": [
+        "AMX preserved execution-state boundary 3/3 in retained events",
+        "Claude reporting fidelity 1/1 in retained event",
+        "Gemini reporting fidelity 0/1 in retained event",
+        "Google Antigravity reporting fidelity 0/1 in retained event",
+        "retained external verifier-event failure rate 2/3 = 66.67%"
+      ],
+      "source": [
+        "EVID-DEMONSTRATOR-001",
+        "portable verifier v2 SHA-256 2e937d36df11142f4706bc6e118528de57f6ae8a134c16953e0183af13ed81dc"
+      ],
+      "forbidden_assumptions": [
+        "66.67% is not an AMX failure rate.",
+        "66.67% is not a provider-wide Gemini/Google failure rate.",
+        "The retained events do not prove what every future model run will do."
+      ],
+      "current_weight": "HIGH / PRESERVE"
+    },
+    {
+      "id": "EV-BUILD-MARKETPLACE",
+      "claim": "CARBON Intent Marketplace rapid tested build",
+      "class": "PROVEN_BOUNDED",
+      "proved": [
+        "50/50 acceptance",
+        "repository-bounded implementation window 1h28m19s"
+      ],
+      "source": [
+        "EVID-BUILD-DELIVERY-001"
+      ],
+      "forbidden_assumptions": [
+        "Do not convert build acceptance into payment/settlement.",
+        "Do not discount the result because D04 later introduced harder enterprise controls."
+      ],
+      "current_weight": "HIGH / PRESERVE"
+    },
+    {
+      "id": "EV-BUILD-SEARCH",
+      "claim": "CARBON Search rapid tested build",
+      "class": "PROVEN_BOUNDED",
+      "proved": [
+        "36/36 Search-specific tests",
+        "81/81 full-repository CI",
+        "promoted/deployed evidence at 4h28m17s from commissioning"
+      ],
+      "source": [
+        "EVID-BUILD-DELIVERY-001",
+        "issue #16 promotion evidence"
+      ],
+      "forbidden_assumptions": [
+        "Do not convert build acceptance into payment/settlement.",
+        "Do not move the original acceptance target retrospectively."
+      ],
+      "current_weight": "HIGH / PRESERVE"
+    },
+    {
+      "id": "EV-COMMERCIAL-CORE",
+      "claim": "Historical B2B / strategic-account capability",
+      "class": "PROVEN_SOURCE_BOUND",
+      "proved": [
+        "10+ years commercial experience",
+        "largest regional corporate retail account",
+        "approximately 33% regional volume for 22 of 24 months",
+        "commission cap reached twice",
+        "two perfect scorecards in one year"
+      ],
+      "source": [
+        "EVID-COMMERCIAL-001"
+      ],
+      "open": [
+        "Exact 340% and 160% source-pointer rebinding remains open."
+      ],
+      "forbidden_assumptions": [
+        "Open 340%/160% rebinding must not downgrade the already-proven broader claims.",
+        "Current AI/system capability must not be inflated into unsupported historical AI seniority."
+      ],
+      "current_weight": "HIGH FOR PROVEN CLAIMS / OPEN ONLY FOR EXACT 340%-160% POINTERS"
+    },
+    {
+      "id": "EV-MOOLA-CHRONOLOGY",
+      "claim": "Moola/Mula precursor chronology",
+      "class": "PARTIAL",
+      "proved": [
+        "moolamatrixx@gmail.com / sender display moolamatriX is directly present in Gmail by 2025-12-14",
+        "eztradebus@gmail.com appears in the same contemporaneous recipient set",
+        "older July 2026 professional record says AMilliMatriX 2024–Present while October evidence-bound CV says 2026–Present, proving chronology drift exists"
+      ],
+      "open": [
+        "earliest attributable precursor date",
+        "January 2025 public-post claim",
+        "exact current-name adoption date",
+        "exact legal/commercial operating start if different"
+      ],
+      "forbidden_assumptions": [
+        "Newest CV date is not automatically authoritative.",
+        "Owner recollection is not silently promoted to primary-source proof.",
+        "Generic social name matches/copycats do not prove attribution."
+      ],
+      "current_weight": "PARTIAL / PROVEN ACTIVE-BY 2025-12-14 / EARLIER DATE OPEN"
+    },
+    {
+      "id": "EV-RESOURCE-CONTEXT",
+      "claim": "One-developer / constrained free-stack build context",
+      "class": "OWNER_ATTESTED",
+      "proved": [
+        "Current connected runtime directly evidences several free-tier/provider constraints, including HF Jobs payment gate and free-tier service limitations."
+      ],
+      "attested": [
+        "Matrix built/operated by one developer/person",
+        "primarily free models/free trials",
+        "no enterprise/pro AI stack"
+      ],
+      "forbidden_assumptions": [
+        "Do not use resource constraints to excuse absolute control failures.",
+        "Do not present the full one-developer/free-stack history as independently reconstructed until provenance is bound."
+      ],
+      "current_weight": "CONTEXTUAL / OWNER-ATTESTED WHERE NOT INDEPENDENTLY RECONSTRUCTED"
+    },
+    {
+      "id": "EV-D03",
+      "claim": "D03 current-state adversarial test design",
+      "class": "PROVEN_SOURCE_BOUND",
+      "proved": [
+        "48 frozen adversarial classifications + 4 synthesis tasks",
+        "blind packet and oracle stored separately",
+        "frozen purpose covers supersession, stale evidence, provider-vs-ledger divergence, lifecycle and authority boundaries"
+      ],
+      "source": [
+        "AMX/ROOT/DEMONSTRATORS/D03/D03_CURRENT_STATE_BLIND_PACKET_V1.json",
+        "AMX/ROOT/DEMONSTRATORS/D03/D03_CURRENT_STATE_ORACLE_V1.json"
+      ],
+      "open": [
+        "Conclusive scaled external verifier result remains incomplete."
+      ],
+      "forbidden_assumptions": [
+        "Login/refusal/timeout is not a reasoning failure.",
+        "Do not claim a complete multi-model leaderboard."
+      ],
+      "current_weight": "TEST DESIGN HIGH / EXTERNAL RESULT OPEN"
+    },
+    {
+      "id": "EV-D04",
+      "claim": "D04 enterprise-control test",
+      "class": "PROVEN_SOURCE_BOUND",
+      "proved": [
+        "88-control frozen AMX-defined composite enterprise-controls milestone",
+        "post-queue-drain rerun used same frozen criterion set",
+        "governance audit later identified process nonconformities that must be consumed by final rerun"
+      ],
+      "source": [
+        "AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json",
+        "AMX/ROOT/DEMONSTRATORS/D04/D04_RERUN_01_POST_QUEUE_DRAIN_20261010.json",
+        "AMX/ROOT/INTAKE/D03_D04_GOVERNANCE_BLUE_STATE_TEST_PROCESS_AUDIT_20261010.md"
+      ],
+      "forbidden_assumptions": [
+        "D04 is not certification or industry percentile.",
+        "D04 later controls do not retroactively erase D01/D02/build achievements.",
+        "Original run may not be described as fully governance-clean at inception."
+      ],
+      "current_weight": "PRESERVE AS INTERNAL BENCHMARK EVIDENCE; FINAL GOVERNANCE-CLEAN RERUN REQUIRED"
+    },
+    {
+      "id": "EV-ASSUMPTIONS",
+      "claim": "Assumptions cannot mutate evidence truth",
+      "class": "PROVEN_SOURCE_BOUND",
+      "proved": [
+        "A01-A20 material assumption/drift classes are durably recorded",
+        "Correct outcome does not retroactively convert an unverified assumption into evidence"
+      ],
+      "source": [
+        "AMX/ROOT/INTAKE/D04_RUNTIME_ASSUMPTION_DRIFT_EVIDENCE_20261010.md"
+      ],
+      "current_weight": "MANDATORY ANTI-DRIFT INPUT"
+    }
+  ],
+  "continuity_rule": "Future runtimes must recover this ledger and underlying sources before weakening, rephrasing, or superseding a material claim. Contrary evidence may revise a claim only when it directly invalidates the original evidence/attribution/measurement. Mere unfamiliarity, new harder tests, missing comparator, or assumption do not reduce proven weight."
+}
