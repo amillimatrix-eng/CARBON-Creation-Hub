@@ -1,0 +1,5 @@
+# TCOD PREFLIGHT — 2026-10-10
+
+AMX-MANDATE-TCOD-V1
+DIGEST MATCH TRUE: 67a9fc18adc6323ea93f86bc70bb677b7e063b5f6f6a8218d1ec2713c4f0e9b3
+Registry 1.2 verified. 25/75 and runtime-open bound.
