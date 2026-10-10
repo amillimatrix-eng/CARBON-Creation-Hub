@@ -29,14 +29,15 @@ RECEIPTS.mkdir(exist_ok=True)
 ALLOWED = {
     "DISCOVERED": {"QUALIFIED"},
     "QUALIFIED": {"OFFERED", "SUBMITTED", "WRONG_ROUTE", "NO_CONTACT"},
-    "OFFERED": {"RESPONDED", "DELIVERY_FAILED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
-    "SUBMITTED": {"RESPONDED", "DELIVERY_FAILED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
+    "OFFERED": {"RESPONDED", "DELAYED", "DELIVERY_FAILED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
+    "SUBMITTED": {"RESPONDED", "DELAYED", "DELIVERY_FAILED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
     "RESPONDED": {"ACCEPTED", "NEGOTIATING", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
     "ACCEPTED": {"CONTRACTED", "NO_CONTACT"},
     "NEGOTIATING": {"ACCEPTED", "CONTRACTED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
     "CONTRACTED": {"INVOICED", "RECEIVABLE"},
     "INVOICED": {"PAID"},
     "RECEIVABLE": {"PAID"},
+    "DELAYED": {"SUBMITTED", "DELIVERY_FAILED", "WRONG_ROUTE", "NO_CONTACT"},
     "DELIVERY_FAILED": {"QUALIFIED", "SUBMITTED", "WRONG_ROUTE", "NO_CONTACT"},
     "WRONG_ROUTE": {"QUALIFIED", "SUBMITTED", "NO_CONTACT"},
 }
@@ -64,6 +65,11 @@ EVIDENCE_KIND_GATES = {
         "BUYER_ACCEPTANCE",
         "SCOPE_PRICE_ACCEPTANCE",
         "COMMERCIAL_ACCEPTANCE",
+    },
+    "DELAYED": {
+        "DELIVERY_DELAY",
+        "TEMPORARY_DELIVERY_DELAY",
+        "DELIVERY_RETRY_PENDING",
     },
 }
 
@@ -160,6 +166,7 @@ UPSERT_INITIAL_STATES = {
     "OFFERED",
     "SUBMITTED",
     "RESPONDED",
+    "DELAYED",
     "DELIVERY_FAILED",
     "REJECTED",
     "WRONG_ROUTE",
@@ -170,6 +177,7 @@ UPSERT_EVIDENCE_GATES = {
     "OFFERED": {"GMAIL_SENT", "OUTBOUND_SEND", "OFFER_SENT"},
     "SUBMITTED": {"GMAIL_SENT", "OUTBOUND_SEND", "SUBMISSION_RECEIPT"},
     "RESPONDED": {"BUYER_RESPONSE", "BUYER_REFERRAL", "ROUTING_EVIDENCE"},
+    "DELAYED": EVIDENCE_KIND_GATES["DELAYED"],
     "DELIVERY_FAILED": {"DELIVERY_FAILURE"},
     "REJECTED": EVIDENCE_KIND_GATES["REJECTED"],
     "WRONG_ROUTE": EVIDENCE_KIND_GATES["WRONG_ROUTE"],
@@ -438,7 +446,7 @@ def commercial_action(key, record, now):
     active_deps = [v for v in (record.get("active_dependencies") or {}).values() if v.get("state") == "ACTIVE"]
     unavailable_route = any(phrase in str(constraint).lower() for constraint in record.get("constraints", [])
                             for phrase in ("no authenticated", "is presently unavailable", "registration/authentication is still required"))
-    suppressed_state = state in {"NO_CONTACT", "REJECTED", "WRONG_ROUTE"}
+    suppressed_state = state in {"NO_CONTACT", "REJECTED", "WRONG_ROUTE", "DELAYED"}
     readiness_gate = (
         readiness.startswith(("HOLD", "SUPPRESSED"))
         or readiness in {
