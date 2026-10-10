@@ -1,0 +1,114 @@
+{
+  "version": "1.0",
+  "date": "2026-10-10",
+  "rule": "Observed provider constraints are scoped risks, not evidence that unrelated Matrix functions failed.",
+  "providers": [
+    {
+      "provider": "GitHub",
+      "critical_functions": [
+        "canonical repository read/write",
+        "CI/issues/PR evidence"
+      ],
+      "observed_risks": [
+        "connector safety blocks on some writes",
+        "workflow/branch state may lag narrative"
+      ],
+      "fallback": "Git history + issue/PR metadata + bounded alternate connector/API paths when available",
+      "residual": "Provider/account access remains external dependency"
+    },
+    {
+      "provider": "Gmail",
+      "critical_functions": [
+        "commercial send/receive receipts"
+      ],
+      "observed_risks": [
+        "send connector may safety-block individual messages",
+        "delivery may remain DELAYED"
+      ],
+      "fallback": "Existing thread/provider receipt readback; alternate official route only when independently verified",
+      "residual": "No alternate may fabricate delivery or buyer response"
+    },
+    {
+      "provider": "Close",
+      "critical_functions": [
+        "bounded sales projection"
+      ],
+      "observed_risks": [
+        "default 50% confidence was non-evidentiary",
+        "projection can lag canonical ledger"
+      ],
+      "fallback": "Canonical OVERDRIVE ledger remains authority",
+      "residual": "Close is intentionally projection only"
+    },
+    {
+      "provider": "TinyFish",
+      "critical_functions": [
+        "browser automation/public route execution"
+      ],
+      "observed_risks": [
+        "wallet exposed as approx -$1.05",
+        "runtime timeouts",
+        "modal/login blocks",
+        "underlying wallet-account identity unresolved"
+      ],
+      "fallback": "Opera/browser connector or direct provider/API/public web where available",
+      "residual": "Some form submissions remain irreducible browser/provider gates"
+    },
+    {
+      "provider": "Opera Browser Connector",
+      "critical_functions": [
+        "authenticated/local browser continuity"
+      ],
+      "observed_risks": [
+        "BROWSER_NOT_CONNECTED observed in commercial records"
+      ],
+      "fallback": "Provider-specific connector/web automation when available; otherwise OWNER_GATE",
+      "residual": "Authenticated owner session cannot be invented"
+    },
+    {
+      "provider": "Render",
+      "critical_functions": [
+        "hosted services/runtime"
+      ],
+      "observed_risks": [
+        "free-tier sleep/wake 503 behavior"
+      ],
+      "fallback": "GitHub/local/container evidence and alternate runtime where provisioned",
+      "residual": "Free-tier availability is not enterprise SLA"
+    },
+    {
+      "provider": "Hugging Face",
+      "critical_functions": [
+        "model/job execution and model discovery"
+      ],
+      "observed_risks": [
+        "Jobs returned 402/payment required",
+        "HuggingChat login required in D03 attempt"
+      ],
+      "fallback": "Other already-provisioned/free model surfaces",
+      "residual": "No paid capacity is assumed"
+    },
+    {
+      "provider": "Stripe",
+      "critical_functions": [
+        "direct observable settlement where used"
+      ],
+      "observed_risks": [
+        "covers only Stripe-observable rail scope"
+      ],
+      "fallback": "Banker rail-specific evidence from other approved rails",
+      "residual": "Stripe cannot prove all-rail settlement"
+    },
+    {
+      "provider": "Google Drive/Library",
+      "critical_functions": [
+        "controlled evidence and rails registry"
+      ],
+      "observed_risks": [
+        "connector/file-mount scope varies"
+      ],
+      "fallback": "GitHub public-safe receipts + controlled Library source pointers",
+      "residual": "Private evidence must not be exposed to create redundancy"
+    }
+  ]
+}
