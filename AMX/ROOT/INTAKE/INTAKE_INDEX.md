@@ -1496,3 +1496,11 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Timing / collision control:** CallForce's canonical follow-up is due 2026-10-10T17:00:00Z; at this wake it is not yet due. Recently submitted PRI threads (including SocialsGroup, Media Removal and Black Bear) remain waiting on buyer response; do not duplicate outreach or infer a response without inbox readback.
 - **Required recovery action:** restore the existing authenticated browser and/or Gmail read/write route for the existing commercial worker. Then re-read current buyer threads and proceed first with any material inbound/acceptance/contract/invoice/payment event; otherwise execute the highest-value current application route. This is a route blocker, not permission for global idle, a new worker, a second ledger, or evidence/CV polishing.
 - **Lifecycle truth:** no application submission, buyer acceptance, contract, invoice/receivable or payment is claimed by this wake.
+
+## 2026-10-10 — D04 pre-test prompt recovery remains attested, not raw transcript
+- **Fresh prior-context retrieval:** user-constraint entry timestamped `2026-10-10T09:21:11Z` returned recalled wording: `Make it difficult, make it hard, find the difficult stuff`; stop trivia; `Test it against corporates… corporate infrastructure`; user did not handpick or know the 88 controls in advance.
+- **Evidence class:** contextual retrieval / Owner-attested recollection. It is **not yet the raw original ChatGPT message stream**.
+- **Frozen D04 remains untouched.** The exact pre-test prompt and exact ingress timestamp remain not raw-transcript-verified.
+- **Search anchors for future primary-history recovery:** `Make it difficult, make it hard, find the difficult stuff`; `Test it against corporates`.
+- **Current controlling result:** measured-scope D04 PASS 96.62%; 77 PASS / 6 PARTIAL / 0 measured FAIL; five VAL controls remain UNMEASURED_NOT_PROVEN, not FAIL.
+- **Disposition:** preserve the quoted recollection as attested, not raw proof. Do not rewrite frozen test or convert the absence of transcript retrieval into evidence of the opposite.
