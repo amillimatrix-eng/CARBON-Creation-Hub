@@ -1,49 +1,67 @@
-# CAPABILITY DOWNSELLING DRIFT (CDD) — BLUE STATE — OWNER ACCEPTED / MERGED — 2026-10-10
+# CAPABILITY DOWNSELLING DRIFT (CDD) — ENFORCEMENT BINDING TO EXISTING PUBLIC-EVIDENCE LAW — 2026-10-10
 
-**Drift class:** CAPABILITY DOWNSELLING DRIFT (**CDD**)
+**Owner disposition:** **CDD is a named enforcement-failure class under the already-existing AMX Public Evidence & Commercial Positioning Standard. It is NOT a second evidence standard and does NOT create parallel authority.**
 
-CDD exists when durable evidence supports a stronger bounded capability/result claim but a Matrix worker, Librarian, model, media surface or projection unnecessarily weakens that claim below what the evidence supports.
+Existing governing source:
+- Notion: **ROOT INTAKE — AMX Public Evidence & Commercial Positioning Standard V1 — 2026-10-09**
+- Page ID: `3f48f8b5-6cd7-8144-9e95-dd356293680c`
+- Existing core law: **CLAIM <= EVIDENCE**
+- Existing standard explicitly permits strong factual claims and bounded benchmark statements when supported by exact evidence.
 
-## Controlling representation law
+## Enforcement defect proven
 
-**DO NOT CLAIM ABOVE THE EVIDENCE. DO NOT REPRESENT BELOW THE EVIDENCE.**
+The D04 incident proves that the problem was **not missing policy**.
 
-For capability/result presentation:
+The policy already existed.
 
-**STRONGEST TRUTHFUL BOUNDED CLAIM SUPPORTED BY CURRENT EVIDENCE = PRESENTATION FLOOR.**
+The failure was:
+**CURRENT EVIDENCE + EXISTING GOVERNANCE LAW + PRESENTATION WORKER/MODEL FAILED TO CONSUME/ENFORCE THEM → CAPABILITY WAS DOWN-SOLD.**
 
-A representation may be narrowed only when contrary/limiting evidence requires it, or when factual/lifecycle/legal/security truth requires the narrower wording.
+That enforcement failure is named:
 
-It may not be weakened merely because:
-- the result is unusual or impressive;
-- the result was produced internally;
-- there is no public comparator or leaderboard;
-- external organizations did not certify/endorse it;
-- constrained resources were used;
-- the claim may attract scrutiny;
-- the model/reviewer is uncomfortable stating the evidence at full strength.
+**CAPABILITY DOWNSELLING DRIFT (CDD).**
 
-**SCRUTINY IS ANSWERED WITH EVIDENCE, NOT PRE-EMPTIVE DISCOUNTING.**
+CDD occurs when current evidence supports a materially stronger bounded claim, but a downstream representation weakens it through unnecessary caveat-leading, provenance foregrounding, weaker status language, reputational hedging, or similar compression that causes the audience to receive a materially weaker capability signal than the evidence supports.
 
-## CDD detection and repair
+## Required behavior
 
-If a current statement materially reduces evidenced capability through unnecessary caveat-leading, provenance foregrounding, reputational hedging, sympathy framing, or weaker status language:
+CDD must be repaired through the **existing** Public Evidence & Commercial Positioning Standard, not by creating another standard.
 
-**CDD = DETECTED.**
+Required flow:
 
-Then:
-1. recover the newest controlling evidence;
-2. identify the exact downselling wording;
-3. restore the strongest truthful bounded formulation;
-4. place necessary boundaries in the appropriate detail layer rather than using them to weaken the headline;
-5. propagate the correction to affected public/professional/media surfaces;
-6. preserve the incident as drift evidence.
+**RECOVER EXISTING STANDARD → RECOVER CURRENT CANONICAL EVIDENCE → COMPARE REPRESENTATION TO EVIDENCE → IF MATERIALLY UNDER-REPRESENTED, FLAG CDD → REPAIR THE SURFACE → READ BACK.**
 
-CDD never authorizes exaggeration, false certification, unsupported market ranking, lifecycle inflation, hidden failures, or unsupported causal joins.
+The existing law remains controlling. CDD is a diagnostic/enforcement label.
 
-D04 reference case: all 88 frozen controls carry one or more framework/control-discipline references; public presentation may accurately state that D04 is a **world-class enterprise-controls benchmark informed by globally recognized enterprise frameworks and control disciplines**, that AMilliMATRiX ran it against live infrastructure, and the current controlling result is **96.62% PASS / zero measured FAILs**.
+## D04 failure evidence
 
-Governance evidence:
+The current D04 evidence supported:
+- world-class enterprise-controls benchmark framing;
+- 88 frozen controls / 11 domains / 70 critical;
+- all 88 frozen controls explicitly carrying one or more framework/control-discipline references;
+- 96.62% PASS;
+- zero measured FAILs.
+
+The representation failure included:
+- leading with `AMX-defined` as a discounting qualifier;
+- leading with `designed by AMilliMATRiX` when unnecessary for the headline and when it introduced an avoidable implication that the benchmark may have been tailored;
+- placing certification/endorsement caveats ahead of the achievement instead of in the detail layer;
+- reducing the concentrated evidence run to language such as `three good results`;
+- weakening claims because they were unusual rather than because contrary evidence required weakening.
+
+## Existing-standard addendum
+
+CDD has been attached as an addendum to the existing Public Evidence & Commercial Positioning Standard, including:
+- definition;
+- exact D04 failure modes;
+- enforcement interpretation;
+- repair path;
+- D04 reference correction;
+- root-cause statement: **EXISTING GOVERNANCE WAS PRESENT; CONSUMPTION / ENFORCEMENT FAILED.**
+
+**NO DUPLICATE AUTHORITY. EXISTING STANDARD → CDD DETECTION → REPAIR → READBACK.**
+
+Supporting governance evidence:
 - `AMX/ROOT/INTAKE/GOVERNANCE_CAPABILITY_DOWNSELLING_DRIFT_CDD_20261010.md`
 
 ---
