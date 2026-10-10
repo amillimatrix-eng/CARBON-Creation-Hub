@@ -1,3 +1,23 @@
+# PROOF-OF-WORK-FIRST COMMERCIAL PRIORITIZATION — BOUNDED BLUE STATE — 2026-10-10
+
+**Owner/ROOT disposition:** ACCEPTED / MERGED / ACTIVE as a bounded commercial prioritization weight.
+
+This rule does not create a worker, pipeline, authority, job ban or assessment ban.
+
+When expected value, fit, buyer quality, route quality, compensation, deliverability and capital direction are otherwise comparable, iSCOPE / PRI should prefer routes that let AMX demonstrate capability through bounded real work: paid trial, fixed-scope pilot, milestone project, pay-per-task work, bounty/deliverable acceptance, portfolio/work-sample evaluation, or direct expert/fractional assignment.
+
+Conventional interview/assessment routes remain eligible when materially stronger, necessary, or higher expected value.
+
+**PROOF_OF_WORK_ROUTE = RANKING DIMENSION, NOT HARD GATE.**
+
+Assessment integrity remains binding. Closed-book / no-external-material / no-AI rules must be obeyed.
+
+Commercial identity truth remains binding: historical B2B / trade-marketing / route-to-market / strategic-account evidence leads where relevant; current AI/system capability may augment delivery but must not be inflated into unsupported historical AI seniority.
+
+Issue #22 is governance-dispositioned. Operational effectiveness remains evidence-bound and may be reweighted from downstream outcomes.
+
+---
+
 # PRIMARY LIBRARIAN EXISTENCE DIRECTIVE — HIGHEST PRECEDENCE — OWNER / BLUE STATE — 2026-10-09
 
 **PRIMARY PURPOSE:** Keep the Matrix moving toward **verified attributable money-in**.
