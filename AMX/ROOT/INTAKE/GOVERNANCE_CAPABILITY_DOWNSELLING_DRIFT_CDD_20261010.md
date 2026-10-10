@@ -118,3 +118,23 @@ Controlling representation rule:
 - positioning correction commits `c06cd4c402c1841ee8625a90fd743ddab6eaef8e`, `c5aaf46e08e186d10f3ff56af360b67258e46f61`, `67ff5bfdf9d379958b083b78b9d458901f2d4094`.
 
 **OWNER DISPOSITION: CDD IS A RECOGNIZED MATRIX DRIFT CLASS ATTACHED TO THE EXISTING PUBLIC-EVIDENCE STANDARD AS AN ENFORCEMENT ADDENDUM. BLUE STATE BINDS CONSUMPTION/ENFORCEMENT OF THAT EXISTING STANDARD. NO DUPLICATE AUTHORITY.**
+
+
+## CDD addendum — favorable-test implication is downselling drift
+
+A further D04 representation defect is recorded.
+
+The Owner did not request a favorable, customized or easy benchmark. Owner-attested challenge-selection intent was to **increase difficulty**, stop trivia-style testing, and test the Matrix against serious corporate/enterprise infrastructure expectations.
+
+The frozen D04 artifact independently confirms that the resulting benchmark targeted enterprise architecture, AI management, internal control, security, quality, operations, commercial, finance and value realization, and explicitly refused to reduce enterprise-control requirements because of resource constraints.
+
+Therefore a public/professional formulation that unnecessarily foregrounds `designed by AMilliMATRiX` in a way that implies the Owner knew and selected the controls for likely success materially misrepresents the provenance and down-sells the result.
+
+CDD enforcement must distinguish:
+- **provenance fact:** the benchmark exists in AMX custody and its frozen artifact is inspectable;
+- **challenge-selection fact:** Owner-attested instruction was to make the benchmark harder and enterprise/corporate-grade, not easier;
+- **control-selection fact:** the Owner attests he did not handpick the 88 controls or know the eventual control set in advance.
+
+Until original prompt text is durably recovered, do not silently upgrade the last point beyond OWNER-ATTESTED. Equally, do not imply the opposite without evidence.
+
+**UNKNOWN transcript recovery != permission to invent favorable-test selection.**
