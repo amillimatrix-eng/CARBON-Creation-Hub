@@ -1730,3 +1730,14 @@ These are candidate inputs, not submissions, buyer responses, acceptances or rev
 - Exact eligible deployment, impact, program asset mapping, executor retry path, and full audit dedupe remain unresolved. No PoC, submission, award or payment is claimed.
 - Tracker fallback: `TRACKER_WRITE_BLOCKED`; no Google Sheets/Drive read-write connector. Current Q1 remains UNKNOWN.
 - Receipt: `AMX/ROOT/INTAKE/BOUNTY_REAPER_LAYERZERO_NATIVE_DROP_TRIAGE_RECEIPT_20261010.md`; created commit to be verified below. Continue other lawful Reaper work while gates remain open.
+
+
+---
+
+## 2026-10-10 — Bounty Reaper XOXNO INV-ACCT-10 static triage receipt
+
+- Existing parcel `REAPER-XOXNO` / jobs A and B, immutable source `XOXNO/rs-lending-xlm@a2486b255b974ef8432ce44de014931f51552f4b`.
+- Result: Q3 narrowed; the static paths inspected derive standard scaled-position merges from pool-returned mutations. Credit liquidation explicitly conserves `seized = receiver credit + protocol fee`; its fee-only pool reclassification preserves market totals. The zero-position `WITHDRAW_ALL_SENTINEL` is a deliberate empty-close footprint path introduced/tested in commit `9566b23f1d9ccd14a66ff2def51e9acdeb179250`, which is an ancestor of the pinned source.
+- The generic stale/non-returned-position sub-claim was not reproduced. Repository property-test and Certora definitions were inspected, not executed. No vulnerability, Q2 promotion, submission, award or payment is claimed.
+- Tracker fallback: `TRACKER_WRITE_BLOCKED`; no Google Sheets/Drive read-write connector. Current Q1 stays UNKNOWN.
+- Receipt: `AMX/ROOT/INTAKE/BOUNTY_REAPER_XOXNO_INV_ACCT10_STATIC_TRIAGE_RECEIPT_20261010.md`; ROOT should use the evidence to mark this specific sub-claim killed/narrowed or amend if a concrete counterexample is produced.
