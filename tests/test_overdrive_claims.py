@@ -160,5 +160,71 @@ class EvidenceTransitionTest(unittest.TestCase):
         )
         self.assertEqual(result["to"], "CONTRACTED")
 
+
+class MissingRecordUpsertTest(unittest.TestCase):
+    def task(self, key="new-opp", target="SUBMITTED", kind="GMAIL_SENT", **extra):
+        payload = {
+            "opportunity_key": key,
+            "identity": {
+                "organization": "Example Buyer",
+                "opportunity": "Bounded pilot",
+                "domain": "example.com",
+            },
+            "execution_owner": "PRI",
+            "to": target,
+            "evidence": [{"kind": kind, "source_id": "gmail-message-1"}],
+            "observed_at": "2026-10-10T04:45:00Z",
+            "next_action": "Read the existing thread and progress only if due.",
+            "thread_id": "thread-1",
+            "recipient": "buyer@example.com",
+        }
+        payload.update(extra)
+        return {"payload": payload}
+
+    def test_missing_record_upsert_creates_canonical_record(self):
+        opportunities = {"records": {}}
+        result = runner.missing_record_upsert(self.task(), opportunities)
+        record = opportunities["records"]["new-opp"]
+        self.assertEqual(result["adapter"], "MISSING_RECORD_UPSERT")
+        self.assertEqual(record["state"], "SUBMITTED")
+        self.assertEqual(record["execution_owner"], "PRI")
+        self.assertEqual(record["thread_id"], "thread-1")
+        self.assertEqual(record["evidence"][0]["source_id"], "gmail-message-1")
+        self.assertEqual(record["canonical_ingest"]["kind"], "MISSING_RECORD_RECOVERY")
+
+    def test_missing_record_upsert_refuses_existing_key(self):
+        opportunities = {"records": {"new-opp": {"state": "SUBMITTED"}}}
+        with self.assertRaisesRegex(ValueError, "already exists"):
+            runner.missing_record_upsert(self.task(), opportunities)
+
+    def test_missing_record_upsert_refuses_duplicate_identity(self):
+        opportunities = {"records": {
+            "existing": {
+                "state": "QUALIFIED",
+                "organization": "Example Buyer",
+                "opportunity": "Bounded pilot",
+                "domain": "example.com",
+            }
+        }}
+        with self.assertRaisesRegex(ValueError, "possible duplicate canonical identity"):
+            runner.missing_record_upsert(self.task(key="another-key"), opportunities)
+
+    def test_missing_record_upsert_is_evidence_gated(self):
+        opportunities = {"records": {}}
+        with self.assertRaisesRegex(ValueError, "requires attributable evidence"):
+            runner.missing_record_upsert(
+                self.task(target="WRONG_ROUTE", kind="GMAIL_SENT"),
+                opportunities,
+            )
+
+    def test_missing_record_upsert_cannot_skip_to_accepted(self):
+        opportunities = {"records": {}}
+        with self.assertRaisesRegex(ValueError, "cannot initialize state ACCEPTED"):
+            runner.missing_record_upsert(
+                self.task(target="ACCEPTED", kind="SCOPE_PRICE_ACCEPTANCE"),
+                opportunities,
+            )
+
+
 if __name__ == "__main__":
     unittest.main()
