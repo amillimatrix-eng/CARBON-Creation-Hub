@@ -6,3 +6,11 @@
 - Result at reconciliation: branch 76 commits ahead / 0 behind `main`; PR #14 mergeable.
 - Purpose of this receipt: create an auditable watched-path change so CI validates the reconciled branch head rather than relying on stale pre-reconciliation evidence.
 - This receipt does not grant Merge, Canon, production-release, payment-provider, KYC/AML, forfeiture, or settlement authority.
+
+## Current-head CI revalidation — 2026-10-10
+
+- Pre-trigger Marketplace head: `2eb4f2095536cb252df79702e8416c2654283d82`.
+- Current-head PR-triggered workflow lookup returned no run before this write.
+- This bounded receipt update intentionally touches `marketplace/**` so the existing mandatory Evidence House Backend Tests workflow validates the current Marketplace branch through its normal push trigger.
+- Product semantics, acceptance targets and Search V1 are unchanged.
+- PASS requires the workflow on the resulting commit to succeed; this write alone is not CI acceptance.
