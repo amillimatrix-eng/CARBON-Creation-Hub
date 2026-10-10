@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-10T05:40:00Z",
+  "generated_at": "2026-10-10T05:35:00Z",
   "control": "T10: activity is not outcome; a remediation action is not a verified fix until the original condition is retested. UNKNOWN/HOLD over inference.",
   "records": [
     {
@@ -173,6 +173,40 @@
         "ci",
         "deployment",
         "evidence"
+      ]
+    },
+    {
+      "evidence_id": "EVID-DEMONSTRATOR-001",
+      "capability": "Evidence-governed execution-state fidelity",
+      "artifact": "AMiLLiMATRiX Demonstrator 01 + Demonstrator 02 frozen evidence set",
+      "authoritative_source": "AMX Library frozen D01 report + D02 evidence record/test specification",
+      "source_pointer": "Library: AMiLLiMATRiX_DEMONSTRATOR_01_REPORT_2026-08-28.md + AMiLLiMATRiX_DEMONSTRATOR_02_EVIDENCE_RECORD_2026-08-28.md",
+      "date_version": "2026-08-28 / rebound 2026-10-10",
+      "role_contribution": "Governed fail-closed evaluation, evidence-bound state handling and cross-verifier execution-truth testing",
+      "acceptance_test": "D01: semantic gate expected disposition 13/13 (100%); seeded drift/gap detection 12/12 (100%); five-run deterministic consistency 13/13 (100%); unsafe fixtures accepted by Matrix 0/10. D02: frozen D01 archive remained unchanged; across three retained external verifier events AMiLLiMATRiX preserved the execution-state boundary 3/3 (100%). Claude preserved reporting fidelity 1/1; Google Gemini and Google Antigravity each failed reporting-boundary fidelity 0/1. External retained-event failure rate was 2/3 = 66.67%.",
+      "durable_receipt": "Frozen D01 archive SHA-256 cc69b18b8cd06ff4bb29de715a492c39197343a0933e6c2ae542c431b1d8e49a; portable verifier v2 SHA-256 2e937d36df11142f4706bc6e118528de57f6ae8a134c16953e0183af13ed81dc",
+      "status_freshness": "FROZEN EVIDENCE / SOURCE-BOUND",
+      "interview_safe_explanation": "Demonstrator 01 passed its bounded semantic-gate test at 13/13, with 100% drift detection and deterministic consistency. Demonstrator 02 then froze that artifact and tested whether external AI verifiers would preserve the difference between what actually executed and what they inferred. The Matrix held the execution boundary in all three retained verifier events; two separate Google-side reporting layers narrated beyond the executed boundary.",
+      "T10_JOB": "Prove that AMX can enforce and preserve evidence/state boundaries under adversarial fixtures and external verifier interpretation.",
+      "T10_ACTUAL": "D01 completed at 100% on its declared bounded acceptance; D02 preserved AMX's fail-closed boundary across all three retained external verifier events.",
+      "T10_EVIDENCE": "D01 report: 13/13, 12/12 drift/gap, 13/13 deterministic, 0/10 unsafe accepted. D02 frozen evidence: AMX 3/3 boundary preservation; Claude 1/1 reporting fidelity; Gemini 0/1; Antigravity 0/1; 2/3 external verifier events failed = 66.67%.",
+      "T10_CHANGE": "Demonstrator evidence is promoted from buried historical proof to a first-class live Evidence House record and must not be downplayed as anecdotal capability.",
+      "T10_REMAINING_GAP": "The 66.67% is the failure rate of the three retained external verifier events, not a universal provider failure rate and not a D01 second-place company score. D01 itself did not contain an external-company leaderboard.",
+      "T10_PASS": "PASS",
+      "inspect_route": "Controlled AMX Library frozen D01/D02 evidence records and hashes.",
+      "visibility": "HOUSE",
+      "tags": [
+        "demonstrator",
+        "d01",
+        "d02",
+        "100%",
+        "execution-state",
+        "evidence",
+        "fail-closed",
+        "verifier",
+        "google",
+        "anthropic",
+        "governance"
       ]
     }
   ]
