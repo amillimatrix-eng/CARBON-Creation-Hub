@@ -226,5 +226,63 @@ class MissingRecordUpsertTest(unittest.TestCase):
             )
 
 
+
+class SemanticNoOpPersistenceTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        base = Path(self.tmp.name)
+        runner.STATE = base / "state.json"
+        runner.OPPORTUNITIES = base / "opportunities.json"
+        runner.SIGNALS = base / "signals.json"
+        runner.CLAIMS = base / "claims.json"
+        runner.LOCK = base / ".tick.lock"
+        runner.RECEIPTS = base / "receipts"
+        runner.RECEIPTS.mkdir()
+        runner.REQUESTS = base / "missing-requests.jsonl"
+
+    def test_semantic_projection_ignores_scan_timestamps_only(self):
+        a = {"generated_at": "one", "claims": {"x": {"status": "READY", "last_seen_at": "one"}}}
+        b = {"generated_at": "two", "claims": {"x": {"status": "READY", "last_seen_at": "two"}}}
+        self.assertEqual(runner.semantic_projection(a), runner.semantic_projection(b))
+        b["claims"]["x"]["status"] = "WAITING"
+        self.assertNotEqual(runner.semantic_projection(a), runner.semantic_projection(b))
+
+    def test_second_identical_noop_tick_keeps_tracked_bytes_identical(self):
+        runner.write(runner.STATE, {
+            "version": 2,
+            "adapter_status": "OPERATIONAL",
+            "sequence": 0,
+            "queue": [],
+        })
+        runner.write(runner.OPPORTUNITIES, {
+            "records": {
+                "opp": {
+                    "state": "QUALIFIED",
+                    "execution_owner": "PRI",
+                    "next_action": "prepare bounded offer",
+                    "evidence": [{"kind": "SOURCE", "source_id": "source-1"}],
+                }
+            }
+        })
+
+        self.assertEqual(runner.tick(), 0)
+        first = {
+            "state": runner.STATE.read_bytes(),
+            "signals": runner.SIGNALS.read_bytes(),
+            "claims": runner.CLAIMS.read_bytes(),
+            "opportunities": runner.OPPORTUNITIES.read_bytes(),
+        }
+
+        self.assertEqual(runner.tick(), 0)
+        second = {
+            "state": runner.STATE.read_bytes(),
+            "signals": runner.SIGNALS.read_bytes(),
+            "claims": runner.CLAIMS.read_bytes(),
+            "opportunities": runner.OPPORTUNITIES.read_bytes(),
+        }
+        self.assertEqual(first, second)
+
+
 if __name__ == "__main__":
     unittest.main()
