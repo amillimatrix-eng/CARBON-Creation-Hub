@@ -67,3 +67,13 @@ Review this fix report against the prior execution trail and confirm or amend:
 - Payment/settlement: none verified.
 - Live Tracker Runs row: not written; fallback marker is in this Root Intake report.
 - Current Q1: UNKNOWN pending current tracker/completion-artifact recovery.
+
+
+## 8. Automation prompt update — recovery remains open
+
+- Attempted action: update the existing enabled Bounty Reaper automation prompt to make the new self-repair law explicit, while leaving its scheduled cadence unchanged.
+- Exact tool response: automation_schedule_not_available — the current plan does not support the existing hourly schedule. The update was rejected; the saved prompt and schedule were not changed by this attempt.
+- No workaround was used to create a second automation or silently change the cadence. The additive law is already persisted in canonical Blue State, and the existing Bounty Reaper pre-flight says Blue State is fetched every wake.
+- Recovery owner: ROOT/T-GOV / schedule owner. Required next action: disposition an authorized way to update the existing prompt without changing its intended cadence, or explicitly authorize a supported schedule change.
+- This route-specific blocker is not terminal; independent lawful static/source work remains executable.
+
