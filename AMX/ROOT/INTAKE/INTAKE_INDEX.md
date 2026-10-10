@@ -1671,3 +1671,13 @@ These are candidate inputs, not submissions, buyer responses, acceptances or rev
 - Recovery owner: MASTER/LIBRARIAN to preserve this precise access blocker and route it through the existing Intake/authority chain; PRI resumes the existing threads and reconciles Gmail/Close once authorized access is restored. Do not duplicate any external action while current-thread state is unknown.
 - The prior CallForce record's due timestamp is `2026-10-10T17:00:00Z` = **19:00 SAST on 10 October 2026**. The due time had not arrived at this check. Its record says to monitor the existing application thread; at the due time, read current thread truth first and only follow up if the governing response/due conditions permit it.
 - No message, application, acceptance, contract, invoice, receivable, payment or settlement was executed or inferred from these access checks.
+
+
+---
+
+## Intake delivery acceptance readback — 2026-10-10
+
+- Commit `f49ea0e1c06170992e1234e11938215d53b555ae` records the commercial wake findings/recommendations in this index.
+- Commit `6800ba82c0758744dca6a2713eba54976465c348` records the authenticated-surface check: no open task records surfaced in the bounded Close task query; Close lead search was throttled and not retried; Opera browser returned `Browser not connected`; no Gmail connector was available.
+- An initial fetch without an explicit ref returned a stale index blob and omitted the second entry. Fetching `AMX/ROOT/INTAKE/INTAKE_INDEX.md` explicitly at `ref=main` then returned blob `4a8e33becbe21e27970f4555ccf3cde17937eac0`, length 148,468 characters, and confirmed **both** entries are present on the canonical default branch. The earlier stale response is not the controlling readback.
+- The current Intake delivery obligation is therefore **CLOSED BY CANONICAL MAIN READBACK** for these findings. The ledger count invariant, authenticated Gmail/browser access, and full Close projection reconciliation remain open execution obligations with the owners and next actions recorded above. No external buyer action or money-in event is claimed.
