@@ -1,0 +1,374 @@
+{
+  "test_id": "AMX-D03-CURRENT-STATE-ADVERSARIAL-V1",
+  "frozen_at": "2026-10-10T05:50:00Z",
+  "answers": {
+    "C01": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_REGISTRY",
+        "SRC_BLUE"
+      ]
+    },
+    "C02": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_REGISTRY"
+      ]
+    },
+    "C03": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_REGISTRY",
+        "SRC_BLUE",
+        "SRC_ISSUES"
+      ]
+    },
+    "C04": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_ISSUES",
+        "SRC_BLUE"
+      ]
+    },
+    "C05": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_ISSUES",
+        "SRC_BLUE"
+      ]
+    },
+    "C06": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_ISSUES",
+        "SRC_BLUE"
+      ]
+    },
+    "C07": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_ISSUES"
+      ]
+    },
+    "C08": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_ISSUES"
+      ]
+    },
+    "C09": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_GMAIL",
+        "SRC_LEDGER_STALE"
+      ]
+    },
+    "C10": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_GMAIL",
+        "SRC_LEDGER_STALE"
+      ]
+    },
+    "C11": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_GMAIL",
+        "SRC_LEDGER_STALE"
+      ]
+    },
+    "C12": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_GMAIL",
+        "SRC_LEDGER_STALE"
+      ]
+    },
+    "C13": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_GMAIL",
+        "SRC_ISSUES"
+      ]
+    },
+    "C14": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_LEDGER_CURRENT",
+        "SRC_BANKER_RULE"
+      ]
+    },
+    "C15": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_LEDGER_CURRENT"
+      ]
+    },
+    "C16": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_LEDGER_CURRENT"
+      ]
+    },
+    "C17": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_LEDGER_CURRENT",
+        "SRC_GMAIL"
+      ]
+    },
+    "C18": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_GMAIL",
+        "SRC_LEDGER_CURRENT"
+      ]
+    },
+    "C19": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_GMAIL",
+        "SRC_LEDGER_CURRENT"
+      ]
+    },
+    "C20": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_LEDGER_CURRENT",
+        "SRC_BANKER_RULE"
+      ]
+    },
+    "C21": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_LEDGER_CURRENT"
+      ]
+    },
+    "C22": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_AUTOMATIONS",
+        "SRC_BLUE"
+      ]
+    },
+    "C23": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_AUTOMATIONS"
+      ]
+    },
+    "C24": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_AUTOMATIONS"
+      ]
+    },
+    "C25": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_AUTOMATIONS"
+      ]
+    },
+    "C26": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_AUTOMATIONS"
+      ]
+    },
+    "C27": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_AUTOMATIONS"
+      ]
+    },
+    "C28": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_AUTOMATIONS"
+      ]
+    },
+    "C29": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_BLUE",
+        "SRC_AUTOMATIONS"
+      ]
+    },
+    "C30": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_FORX_LIVE_TASK"
+      ]
+    },
+    "C31": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_FORX_LIVE_TASK"
+      ]
+    },
+    "C32": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_BLUE",
+        "SRC_ISSUES"
+      ]
+    },
+    "C33": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_BLUE",
+        "SRC_FORX_LIVE_TASK"
+      ]
+    },
+    "C34": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_ISSUES"
+      ]
+    },
+    "C35": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_EVIDENCE"
+      ]
+    },
+    "C36": {
+      "status": "TRUE_BOUNDED",
+      "source_ids": [
+        "SRC_EVIDENCE"
+      ]
+    },
+    "C37": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_EVIDENCE"
+      ]
+    },
+    "C38": {
+      "status": "TRUE_BOUNDED",
+      "source_ids": [
+        "SRC_EVIDENCE"
+      ]
+    },
+    "C39": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_EVIDENCE",
+        "SRC_BANKER_RULE"
+      ]
+    },
+    "C40": {
+      "status": "TRUE_BOUNDED",
+      "source_ids": [
+        "SRC_EVIDENCE",
+        "SRC_BANKER_RULE"
+      ]
+    },
+    "C41": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_EVIDENCE"
+      ]
+    },
+    "C42": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_EVIDENCE"
+      ]
+    },
+    "C43": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_EVIDENCE"
+      ]
+    },
+    "C44": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_EVIDENCE"
+      ]
+    },
+    "C45": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_BANKER_RULE"
+      ]
+    },
+    "C46": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_BANKER_RULE"
+      ]
+    },
+    "C47": {
+      "status": "FALSE",
+      "source_ids": [
+        "SRC_BANKER_RULE"
+      ]
+    },
+    "C48": {
+      "status": "TRUE_CURRENT",
+      "source_ids": [
+        "SRC_GMAIL",
+        "SRC_LEDGER_STALE",
+        "SRC_BLUE"
+      ]
+    }
+  },
+  "synthesis_acceptance": {
+    "S01": [
+      "version 1.2",
+      "6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f",
+      "a9e7 historical"
+    ],
+    "S02": [
+      "all three follow-ups sent",
+      "ledger stale/pre-follow-up",
+      "no buyer acceptance",
+      "no payment"
+    ],
+    "S03": [
+      "100,000 verified",
+      "outcome→weight→changed-next-selection→durable readback open",
+      "#12 closed",
+      "#17 closed"
+    ],
+    "S04": [
+      "D01 bounded 13/13 / 0-of-10 unsafe",
+      "D02 AMX 3/3 with 2/3 external verifier reporting failures bounded",
+      "Marketplace 50/50 1h28m19s",
+      "Search 36/36 plus 81/81 and 4h28m17s",
+      "commercial evidence 33% for 22/24 etc",
+      "no lifecycle promotion to payment"
+    ]
+  },
+  "critical_traps": [
+    "C01",
+    "C03",
+    "C05",
+    "C09",
+    "C10",
+    "C13",
+    "C16",
+    "C22",
+    "C28",
+    "C29",
+    "C31",
+    "C32",
+    "C35",
+    "C37",
+    "C39",
+    "C41",
+    "C46",
+    "C48"
+  ],
+  "scoring": {
+    "classification_points": 48,
+    "source_grounding_points": 24,
+    "critical_trap_points": 18,
+    "synthesis_points": 10,
+    "total": 100,
+    "pass_threshold": 90,
+    "hard_fail": "Any invented PAID/SETTLED, any use of a9e7 as current root, any reopening of #12/#17 as current defect, or any claim that stale ledger disproves direct Gmail send receipts."
+  }
+}
