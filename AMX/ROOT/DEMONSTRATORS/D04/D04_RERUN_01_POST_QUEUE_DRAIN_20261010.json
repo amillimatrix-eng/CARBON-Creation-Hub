@@ -1,0 +1,68 @@
+{
+  "rerun_id": "AMX-D04-RERUN-01-POST-QUEUE-DRAIN",
+  "rerun_at": "2026-10-10T06:27:00Z",
+  "baseline_path": "AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json",
+  "criteria_unchanged": true,
+  "pass_rule_unchanged": true,
+  "queue_drain_proof": {
+    "overdrive_pending": 0,
+    "overdrive_ready_claims": 0,
+    "missing_record_upserts_completed": 8,
+    "no_op_fix_post_merge_acceptance": "PASS",
+    "close_projection_active_opportunities_created": 3
+  },
+  "status_changes": [
+    {
+      "id": "EA03",
+      "from": "FAIL",
+      "to": "PASS",
+      "evidence": "Provider execution reconciled into canonical ledger; missing-record and stale READY-claim state repaired."
+    },
+    {
+      "id": "EA04",
+      "from": "FAIL",
+      "to": "PARTIAL",
+      "evidence": "Close no longer reports zero active opportunities; three exact active projections created, but full canonical parity remains incomplete."
+    },
+    {
+      "id": "CHG05",
+      "from": "FAIL",
+      "to": "PASS",
+      "evidence": "PR #26 merged; post-merge run 38030313505 produced four consecutive state_changed:false no-op ticks."
+    },
+    {
+      "id": "OPS03",
+      "from": "FAIL",
+      "to": "PASS",
+      "evidence": "OVERDRIVE pending queue=0 and READY claims=0 after provider-thread reconciliation."
+    },
+    {
+      "id": "COM06",
+      "from": "FAIL",
+      "to": "PARTIAL",
+      "evidence": "Three exact active Close opportunities now mirror current canonical offers; projection remains incomplete."
+    },
+    {
+      "id": "COM07",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Post-drain recomputation returned READY=0; live items are WAITING/BLOCKED/suppressed or otherwise bounded."
+    }
+  ],
+  "score": 82.91,
+  "status_counts": {
+    "PASS": 64,
+    "PARTIAL": 18,
+    "FAIL": 5,
+    "NOT_EVIDENCED": 1
+  },
+  "critical_failures": [
+    "VAL03",
+    "VAL04",
+    "VAL05",
+    "VAL06",
+    "VAL08"
+  ],
+  "verdict": "FAIL",
+  "note": "Same frozen 88 controls and weights. No benchmark criteria changed."
+}
