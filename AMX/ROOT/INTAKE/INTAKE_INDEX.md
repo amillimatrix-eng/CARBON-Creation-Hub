@@ -1600,3 +1600,61 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - Searched the recovered `AMiLLiMATRiX_LORE_TO_FUNCTION_TRANSLATION_LEDGER_v1.0_2026-08-28.md` for `30-image`, `governed 30`, `full 30`, and `RGR-03`; no matches were found in that ledger.
 - The ledger does contain an older event recording eight admitted image nodes deduplicated to five unique media assets, with the retained transcript scope covering D01/D02 rather than the full AMX ecosystem. That is **not** evidence of the authoritative 30-image worker-state set.
 - This is a bounded source search, not proof the set is absent elsewhere. RGR-03 remains OPEN: authoritative membership, provenance, chronology and semantics must be recovered from the correct governed source; do not infer the first 30 generated assets or reuse the D01/D02 batch.
+
+---
+
+## 2026-10-10 13:03 SAST — Commercial findings delivery failure and current-route reconciliation
+
+**Disposition:** ROUTE THROUGH EXISTING ROOT INTAKE; preserve the single existing iSCOPE → PRI writer and all existing opportunity lifecycle states. This entry records findings/recommendations from the current commercial wake because the previous assistant responses did not establish successful Intake delivery.
+
+### Intake-delivery failure — current readback
+- Canonical repository: `amillimatrix-eng/CARBON-Creation-Hub`.
+- Fresh readback of this index before this entry: blob `4692f93aa7be848a6d032309401013f041b6713d`; the body did not contain `Moburst` or the previously reported commit string `0979dbba0fee49fad80074d3fe5340d6e308f613`. That earlier reported update is therefore **not evidenced in the current default-branch index readback** and must not be treated as Intake acceptance without commit/diff verification.
+- Root cause in this wake: findings were reported in chat, and blocked write attempts were treated as a stopping point instead of completing the existing Intake route and reading the canonical state back. A narrative claim, attempted write, or purported commit is not an acceptance receipt.
+- Required closure: canonical write → readback → verify the new entry and resulting blob/commit. This entry becomes routed only after that readback succeeds.
+
+### Blue State pre-flight — freshly verified
+- Registry file fetched directly from the canonical repository: `AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json`; registry version `1.2`, state `OWNER_ACCEPTED_MERGED_BLUE_STATE`.
+- Recomputed the registry root using the specified sorted `ROLE_KEY=MANDATE_SHA256\\n` serialization: `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f` — **MATCH** to the registry value.
+- `AMX-MANDATE-ISCOPE-V1` is `CURRENT`, SHA-256 `6371943e42023ac27c45dbeb973eb33db73843f929c48b57e32c5ee84e461bc7`.
+- `AMX-MANDATE-PRI-V1` is `CURRENT`, SHA-256 `306a3ec9ee64b222e6e73a4e20cbccc07c3e33f7dc450509cf883e40c9fe17fd`.
+- Prompt text remains subordinate to newer canonical supersession. No worker, writer, pipeline or authority was added by this record.
+
+### Material current-state contradiction — opportunities ledger
+- Fresh readback of `overdrive/opportunities.json`: blob `b04be618dccf1fed8405ccd7ff5c4be34d18004d`.
+- Declared `record_count`: **66**.
+- Distinct keys in the parsed `records` object: **83** (difference **17**).
+- `last_run.full_ledger_count`: **62**, also inconsistent with the current 83 parsed record keys (difference **21**).
+- `last_run.run_at`: `2026-10-03T17:42:00Z`; `last_updated_at`: `2026-10-09T13:05:00Z`. These are stale relative to the current wake and require reconciliation, not silent interpretation as current commercial observability.
+- **Do not blindly set a counter to 83 or rewrite history.** MASTER/LIBRARIAN should inspect the documented counter semantics, current writer/runner behavior and any serialized duplicate-key risk; determine whether the mismatch is a stale projection, a counting-contract defect or another data-quality defect. T-COD performs code/schema repair only if that inspection demonstrates it is required. Preserve prior run evidence; validate the exact repair; then read the canonical ledger back and document the invariant.
+- No ledger mutation or counter correction is made by this Intake entry.
+
+### Existing opportunity states that must not be duplicated or overwritten
+1. **Black Bear Strategy** — existing key `blackbear.co.za|route-to-market-commercial-collaboration|2026-10-10`; PRI state `SUBMITTED`, readiness `WAITING`. The ledger records an official contact-form submission on 2026-10-10 at 05:42Z and a success confirmation. **Do not send duplicate outreach.** Wait for a substantive reply; if scope is offered, qualify buyer, scope, economics and a bounded/paid route.
+2. **SocialsGroup — High-Ticket Sales Closer** — existing key `socialsgroup.com|high-ticket-sales-closer|2026-10-10`; state `OFFERED`, readiness `WAITING`; a direct enquiry was sent at 05:23:34Z. Do not repeat that enquiry. Monitor the existing thread and pursue a distinct application only if the role, route and prior account history are checked first.
+3. **Scale Army — AI Implementation Specialist** — existing key `scalearmy.com|ai-implementation-specialist|remote-south-africa`; state `QUALIFIED`, readiness `WAITING`. Existing official-route form preflight says an applicant video and truthful availability/referral attestations remain required. This existing role is not the separate **Trade & Growth Marketing Manager** listing below; do not merge roles or inherit status without explicit deduplication.
+4. **CallForce — Marketing Lead** — existing application sent 2026-10-03; `due_at=2026-10-10T17:00:00Z` (19:00 SAST). The record's `next_action` says monitor the existing application thread for a response, not unconditionally send a follow-up. At the due time, read the current Gmail thread first; follow up only if the governing due/response conditions permit it. Do not claim the message was sent unless there is a receipt.
+5. **Agent Factory — AI Engineer** — existing submission, followed by a governed follow-up on 2026-10-10 05:30:20Z; next action is to wait for a buyer-initiated material response. No duplicate unsolicited follow-up.
+6. **No-contact:** Face Production / Antoine and Ecognix remain NO-CONTACT unless the Owner explicitly reverses that instruction.
+
+### Candidate opportunity requalification — findings and recommendations
+These are candidate inputs, not submissions, buyer responses, acceptances or revenue. Check account/role history and the live official route before promoting a candidate to the ledger; because the ledger invariant above is unresolved, preserve this list in Intake pending that dedup/reconciliation rather than mutating the ledger here.
+
+- **Scale Army — Trade & Growth Marketing Manager.** Current Ashby listing observed 2026-10-10: https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07/ . Remote contract; South Africa explicitly eligible; advertised USD $2,500/month; US Eastern 09:00–17:00 coverage; application form plus recorded skills video. Strong fit to the Owner's historical B2B/trade-marketing, retail/distributor and strategic-account record, with current AI workflow capability as an adjunct. This is a separate title from the already-ledgered AI Implementation Specialist role. **Recommendation:** iSCOPE verifies the live ATS role and performs role/account-key dedup; PRI may use the current evidence package without polishing it. Do not claim submission; the required video remains a real execution dependency.
+- **Moburst — AI Operations Manager.** Current employer-branded LinkedIn listing observed 2026-10-10: https://za.linkedin.com/jobs/view/ai-operations-manager-at-moburst-growth-done-right-4472717445 . The listing describes maintenance of existing automations, scoped builds, dependency/credential documentation and edge-case QA; South Africa is identified. Compensation is not stated in the listing. The employer's careers page should be checked for the direct ATS route before submission. **Recommendation:** classify as portfolio/work-sample-led only after confirming the direct application route and compensation; lead in plain English with the business result and bounded test evidence, not internal AMX names. Not submitted.
+- **SocialsGroup — Marketing Operations Executive.** Current public listing found at https://za.indeed.com/viewjob?jk=8095c0235598490b ; stated application route https://internal.socialsgroup.com/careers/role-marketing-ops-executive . The listing describes a remote contract, a work sample and a paid 1–2 week trial on real client work, with rate agreed by experience/work sample rather than a published figure. This is an attractive proof-of-work route, but the account already has a different active title/outreach (High-Ticket Sales Closer). **Recommendation:** verify the employer form and role availability, dedupe role/title history, then use the existing work evidence; do not send a duplicate generic enquiry or mark it submitted.
+- **SocialsGroup — Marketing Strategist** is also advertised as remote with a paid real-work trial and a published R24,000–R32,000/month band in the current public listing: https://za.indeed.com/viewjob?jk=dc4881a9908068af ; application route https://internal.socialsgroup.com/careers/role-marketing-strategist . It is a distinct candidate requiring the same account-history and form check. Do not open a parallel worker.
+- **Black Bear Strategy** was a candidate in issue #22 but is now already submitted in the live ledger; only response-led continuation is valid.
+- A previously cited freelancer market-entry assignment for a South African processed-spices brand is explicitly **CLOSED** in issue #22 research. Preserve it as demand-pattern evidence only; do not promote it as executable work.
+
+### Commercial execution order / owner routing
+1. MASTER/LIBRARIAN: resolve the ledger's count/writer invariant and the gap between the prior chat claim and verifiable Intake delivery; preserve source/run history; provide commit/blob readback.
+2. iSCOPE: after the ledger counting contract is understood, deduplicate candidate roles against current ledger, Gmail/account history and current official forms. Maintain `proof_of_work_route` as a ranking dimension, not a hard gate.
+3. PRI: recover current authenticated Gmail/Close state before acting on existing buyer threads; prioritize genuine buyer reply/acceptance/contract/invoice/payment and then due warm follow-up. Do not repeat Black Bear, SocialsGroup, Agent Factory or CallForce actions without thread-specific evidence.
+4. For comparable economics and fit, prefer the verified paid-trial / bounded-real-work route. Scale Army remains materially strong on historical trade-marketing fit and published compensation but has a required video step. SocialsGroup trial routes have stronger proof-of-work characteristics but lower/undisclosed compensation and existing account-contact constraints; compare all factors rather than applying a single-factor gate.
+5. **No evidence/CV polishing wake** unless a buyer explicitly identifies a missing artifact as the conversion blocker. Translate capability into plain-English buyer outcomes, preserve exact bounded evidence, and present existing proof.
+
+### Acceptance and current limitations
+- This entry is an Intake recommendation/incident record only. It does not claim any buyer contact, application, acceptance, contract, invoice, receivable, payment or settlement was executed.
+- Gmail and Close have not been reconciled in this wake; current browser authentication for applications is not established.
+- The previous assistant's claims that the recommendations were durably sent to Intake were not supported by the current index readback. This entry must be accepted only after the following readback confirms it is present on the canonical default branch.
