@@ -1,0 +1,161 @@
+{
+  "packet_id": "FORX-D04-PATCHSET-20261010-01",
+  "role": "FORX",
+  "mandate_id": "AMX-MANDATE-FORX-V1",
+  "mandate_sha256": "a9570686dae130bd36d0995d9f58dbd0f7cde1597968dc16245c94a65f0f3109",
+  "source_request": "AMX/ROOT/INTAKE/D04_FORX_FORENSIC_REMEDIATION_REQUEST_20261010.json",
+  "source_rerun": "AMX/ROOT/DEMONSTRATORS/D04/D04_RERUN_01_POST_QUEUE_DRAIN_20261010.json",
+  "governing_rule": "Smallest sufficient repair through existing authority. No D04 criterion changes. Fix attempts earn zero until original condition is retested.",
+  "findings": [
+    {
+      "controls": [
+        "EA04",
+        "COM06",
+        "QMS07"
+      ],
+      "classification": "FIXABLE_NOW",
+      "root_cause": "Close is a work projection without a durable projection contract or completeness boundary, so it can be empty/stale while the canonical ledger remains correct.",
+      "patch": "Create a canonical Close projection contract that explicitly scopes which lifecycle states must appear in Close, binds canonical opportunity keys to CRM opportunity IDs, records projection timestamp/state/evidence, and reconciles all currently in-scope records. CRM probability defaults must never be treated as Matrix evidence.",
+      "acceptance": "Current in-scope canonical records and Close active opportunities reconcile one-to-one by canonical key/state/value where value is known; readback shows no missing in-scope record and no stale active projection."
+    },
+    {
+      "controls": [
+        "CHG04",
+        "QMS04"
+      ],
+      "classification": "FIXABLE_NOW",
+      "root_cause": "Behavioral acceptance lagged implementation. PR #25 and #26 were technically merged while original failed behaviors remained open until later live runs.",
+      "patch": "Persist behavioral acceptance receipt for #24 and #26 from the eight-record MISSING_RECORD_UPSERT run and post-merge no-op run; close #24 only after readback; preserve merge != acceptance rule.",
+      "acceptance": "#24 closed with exact ingest→persist→readback evidence; #26 acceptance records four consecutive state_changed:false ticks and no no-op commit."
+    },
+    {
+      "controls": [
+        "CHG06"
+      ],
+      "classification": "FIXABLE_NOW",
+      "root_cause": "Reversibility exists informally through Git history/branches/holds but lacks one enterprise-explicit rollback contract.",
+      "patch": "Add one rollback/reversibility control defining pre-change snapshot, change ID, reversible/internal vs irreversible/external actions, rollback authority, rollback method, post-rollback tests/readback, and prohibition on pretending external sends/payments can be rolled back.",
+      "acceptance": "Control is durable, read back, and applied to the current #25/#26 change family."
+    },
+    {
+      "controls": [
+        "CHG07"
+      ],
+      "classification": "FIXABLE_NOW_IF_EXISTING_RECEIPTS_RECONCILE",
+      "root_cause": "Build evidence has deployment receipts, but same-commit test→promotion→live-readback linkage is not represented as one current deployment provenance record.",
+      "patch": "Create deployment provenance receipt for the two benchmark builds from existing exact commits/CI/deployment evidence. Do not invent a live URL or same-commit relation not already evidenced.",
+      "acceptance": "Each benchmark record names tested commit, CI acceptance, promoted/deployed commit, and independent readback; any missing link remains explicit HOLD rather than PASS."
+    },
+    {
+      "controls": [
+        "OPS02",
+        "VAL07"
+      ],
+      "classification": "FIXABLE_BY_BEHAVIOR_AND_RECEIPT",
+      "root_cause": "Runtime-open/work-conservation law exists but prior sessions repeatedly terminated on reporting or one completed item.",
+      "patch": "Use this remediation run itself as a bounded acceptance: continue through FORX analysis, Intake persistence, fix implementation, retest, and final consolidated result without voluntarily terminating between stages. Persist one run-conservation receipt after completion.",
+      "acceptance": "One continuous evidenced run crosses at least four materially different work classes without owner restart: forensic analysis→patch persistence→implementation→retest."
+    },
+    {
+      "controls": [
+        "OPS08",
+        "RES06"
+      ],
+      "classification": "FIXABLE_NOW_PARTIAL_TO_PASS_IF_TESTED",
+      "root_cause": "Provider/tool fallback behavior exists ad hoc but no single tested critical-route matrix proves alternates for each consequential function.",
+      "patch": "Create a critical-route fallback register covering canonical read/write, external email, CRM projection, browser/form execution, payment observation, compute/build, and file/evidence storage. For each: primary route, tested alternate, last test receipt, remaining single-point gate.",
+      "acceptance": "Every critical function has either a tested independent alternate or an explicit irreducible OWNER/EXTERNAL_GATE; no function is falsely called redundant."
+    },
+    {
+      "controls": [
+        "SEC02"
+      ],
+      "classification": "REQUIRES_OWNER_OR_SECURITY_GATE",
+      "root_cause": "Connector role isolation is strong but app-level permissions are broad; current readback shows GitHub/Gmail/Close/TinyFish/Drive set to 'Allow all actions'.",
+      "patch": "Perform least-privilege permission review and reduce permissions only where the exact operational requirement is understood and Owner/security authority permits. Do not auto-restrict critical connectors blindly.",
+      "acceptance": "Documented per-app required action classes and approved permission posture; no excess privilege without rationale."
+    },
+    {
+      "controls": [
+        "SEC06"
+      ],
+      "classification": "FIXABLE_NOW",
+      "root_cause": "Provider risks are evidenced across receipts but not normalized into one current supplier-risk register.",
+      "patch": "Create supplier/provider risk register with provider, critical function, observed failure modes, free-tier/account constraints, data/security exposure, fallback route, owner, last test, and residual risk.",
+      "acceptance": "All currently critical providers in D04 evidence have a current row and fallback/risk disposition."
+    },
+    {
+      "controls": [
+        "SEC07"
+      ],
+      "classification": "FIXABLE_NOW",
+      "root_cause": "Controlled-source practice exists but no enterprise-explicit retention/access policy was found.",
+      "patch": "Create evidence/PII retention-access policy using existing AMX truth: data minimization, private-source/public-safe projection, secrets excluded from public evidence, retention by evidence class, supersession without silent deletion, governed deletion, and access/readback logging.",
+      "acceptance": "Durable policy exists, contains explicit retention/access rules, and does not fabricate legal requirements or retention periods not adopted by AMX."
+    },
+    {
+      "controls": [
+        "SEC08"
+      ],
+      "classification": "FIXABLE_NOW",
+      "root_cause": "Recovery happens operationally, but no formal security recovery exercise ties detect→contain→recover→verify into one receipt.",
+      "patch": "Run a non-destructive tabletop against a realistic connector credential/provider-compromise scenario and a public/private evidence leakage scenario. Record detection signal, containment, alternate route, restoration, verification, and unresolved Owner-only action.",
+      "acceptance": "Exercise receipt demonstrates all response stages without exposing secrets or performing destructive actions."
+    },
+    {
+      "controls": [
+        "AI08"
+      ],
+      "classification": "FIXABLE_NOW_WITH_CURRENT_FORX_SELECTOR",
+      "root_cause": "FORX can select diversely and consume outcomes conceptually, but there is no durable causal receipt proving one real outcome changed a specific weight/state and changed the next selection.",
+      "patch": "Extend the existing FORX selection path—not a new weighting system—with scoped outcome adjustments and a causal receipt. Use at least three real outcomes already in the ledger: REJECTED, WRONG_ROUTE, RESPONDED. Record event→affected dimension→before priority→after priority→changed next selection→durable readback.",
+      "acceptance": "Three real outcome classes survive a continuation boundary and at least one changes the actual next selected candidate while preserving anti-overfit/diversity."
+    },
+    {
+      "controls": [
+        "FIN06"
+      ],
+      "classification": "REQUIRES_EXTERNAL_OR_OWNER_GATE",
+      "root_cause": "Only directly observable rails can be authoritatively closed; not all approved receive rails are currently connector-observable.",
+      "patch": "Banker must enumerate approved rails and classify each DIRECTLY_OBSERVED / INDIRECT_RECEIPT_ONLY / PROVIDER_LIMITED / UNKNOWN_UNOBSERVED. Do not claim all-rail close until every material receive rail has authoritative evidence.",
+      "acceptance": "All approved rails have a current observation class and period-close evidence; otherwise control remains PARTIAL."
+    },
+    {
+      "controls": [
+        "FIN08",
+        "VAL03",
+        "VAL04",
+        "VAL05",
+        "VAL06",
+        "VAL08"
+      ],
+      "classification": "REQUIRES_COMMERCIAL_OUTCOME",
+      "root_cause": "The system has offers/submissions/responses but no evidenced current accepted scope/price→contract→invoice/receivable→paid/settled chain.",
+      "patch": "Do not manufacture an architecture fix. Existing PRI must prioritize the strongest current RESPONDED/OFFERED item and progress the real buyer through explicit scope/price acceptance, commitment, invoice and settlement where the buyer agrees. Banker verifies terminal states.",
+      "acceptance": "One attributable real opportunity completes the chain with external receipts. Until then these controls remain FAIL/PARTIAL by design."
+    },
+    {
+      "controls": [
+        "VAL02"
+      ],
+      "classification": "REQUIRES_COMMERCIAL_OUTCOME",
+      "root_cause": "Responses exist but response conversion is not yet reliable across qualified opportunities.",
+      "patch": "Prefer warm/responded routes and proof-of-work trials; measure response-to-next-step conversion, not send volume.",
+      "acceptance": "Attributable repeated substantive responses and at least one progressed buyer next step."
+    }
+  ],
+  "implementation_order": [
+    "CHG04/QMS04 acceptance closure",
+    "EA04/COM06/QMS07 projection contract + reconciliation",
+    "CHG06 rollback control",
+    "SEC06 supplier-risk register",
+    "SEC07 retention/access policy",
+    "SEC08 recovery tabletop",
+    "OPS08/RES06 fallback register",
+    "CHG07 deployment provenance",
+    "AI08 causal learning receipt",
+    "OPS02/VAL07 run-conservation receipt",
+    "FIN06 observation classification",
+    "Commercial outcome controls remain externally outcome-dependent"
+  ]
+}
