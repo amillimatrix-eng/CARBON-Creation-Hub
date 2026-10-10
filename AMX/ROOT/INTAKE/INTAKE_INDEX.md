@@ -1469,3 +1469,13 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Required next action:** run mandatory CI on exact head, repair only observed failures, then prove the same passing SHA deployed/read back. Keep PR draft until evidence exists.
 - **Duplicate/stale evidence:** #18's prior note for `2eb4f2095536cb252df79702e8416c2654283d82` remains historical; do not use it as current-head evidence.
 - **Owner:** existing T-COD implementation ownership. No new worker or architecture.
+
+
+## 2026-10-10 — Marketplace forensic delta count preserved separately from current branch head
+- **Historical forensic evidence head:** `fd14ec8733ae1c3652c8cc5ad8424a0fd6caaffc`.
+- **Observed base:** `0e837bb4ad624fe5c5a0421ddab78ea92a35a094`.
+- **Bounded historical delta:** **24 changed files, +2,455 / -2**, repository-bounded interval 1h28m19s, as recorded in `AMX/ROOT/INTAKE/CARBON_INTENT_MARKETPLACE_FORENSIC_EVIDENCE_SUPPLEMENT_20261008.md`.
+- **Historical milestone:** exact 50/50 green milestone commit `1e10eb536d3f5807ebc4864c03eed77b93885780`, CI `37830429499` SUCCESS. This is a distinct earlier milestone, not the later forensic head.
+- **Current PR #14 head:** `249ec519b25526ed4336f82ecea6f51580898995`. Current-head workflow lookup returned none; current-head CI/deployment acceptance remains **UNPROVEN**.
+- **Do not conflate:** the historical 24-file forensic delta, the earlier 50/50 milestone, and the current PR head are separate evidence states. Later branch growth does not rewrite historical milestones or inherit PASS automatically.
+- **Tracking:** PR #14 / issue #18; existing T-COD ownership.
