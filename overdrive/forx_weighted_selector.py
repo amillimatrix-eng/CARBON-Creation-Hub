@@ -10,6 +10,7 @@ FAMILY_DELTA = {"RESPONDED": 2.0, "REJECTED": -1.0}
 MAX_FAMILY_WEIGHT = 4.0
 MIN_FAMILY_WEIGHT = -3.0
 MAX_PER_FAMILY = 2
+SCHEMA_VERSION = "1.0"
 
 def canonical_json(obj):
     return json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
