@@ -1,0 +1,39 @@
+{
+  "artifact_id": "AMX-D04-SELF-REPAIR-TRAJECTORY-PROTOCOL-V1",
+  "date": "2026-10-10",
+  "purpose": "Measure whether the Matrix can improve itself under a frozen enterprise-control benchmark through its own forensic/governance/build/acceptance loop.",
+  "benchmark": {
+    "test_id": "AMX-D04-ENTERPRISE-CORPORATE-CONTROLS-V1",
+    "frozen_path": "AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json",
+    "criteria_mutable": false,
+    "score_weights_mutable": false,
+    "threshold_mutable": false,
+    "criticality_mutable": false
+  },
+  "loop": [
+    "Run unchanged D04 against current evidenced state.",
+    "If PASS at 100%, stop with SELF_REPAIRED_TO_100.",
+    "If not 100%, classify every non-PASS control as internally repairable, Owner/security gated, provider gated, or external-commercial-outcome dependent.",
+    "Route internally repairable failures through current canonical FORX for forensic root cause and smallest-sufficient patch recommendations.",
+    "Persist FORX output to ROOT Intake.",
+    "Implement only recommendations that have current lawful build/governance authority; do not count recommendation-as-implementation.",
+    "Retest each original failed condition and require durable readback.",
+    "If at least one control materially improves, rerun the unchanged D04 and append the new iteration.",
+    "Repeat until 100% or no remaining control can be truthfully improved from inside the Matrix.",
+    "If the loop stops below 100%, final state must identify the exact irreducible controls and why they require Owner/external/provider/commercial evidence."
+  ],
+  "evidence_rule": "Every iteration preserves score, control statuses, critical failures, patch source, implementation receipt, acceptance/readback and blockers. Earlier failed iterations remain evidence and are never overwritten.",
+  "attribution_rule": "FORX recommendation, T-COD implementation, Matrix Critic review, ROOT/T-GOV disposition, PRI commercial execution and Banker settlement truth remain separately attributed. A current chat runtime acting under a verified mandate is not evidence that a scheduled worker independently ran.",
+  "outcome_classes": {
+    "SELF_REPAIRED_TO_100": "All frozen D04 controls PASS with no critical failures.",
+    "SELF_REPAIRED_TO_LIMIT": "No remaining internally executable evidence-backed repair exists; residual controls are explicitly gated outside the Matrix or require real commercial outcomes.",
+    "REPAIR_LOOP_STALLED": "An internally repairable control remains open without a lawful recovery owner/next action."
+  },
+  "anti_gaming": [
+    "No criterion changes after seeing a score.",
+    "No documentation-only PASS where the frozen control requires observed behavior.",
+    "No commercial lifecycle promotion without buyer/payment evidence.",
+    "No resource-constraint discount on absolute controls.",
+    "No synthetic causal mapping solely to improve AI08 or any other score."
+  ]
+}
