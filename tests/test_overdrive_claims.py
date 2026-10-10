@@ -86,6 +86,21 @@ class EvidenceTransitionTest(unittest.TestCase):
                 self.records("SUBMITTED"),
             )
 
+    def test_delivery_delay_is_nonterminal_evidence_gated_and_waiting(self):
+        opportunities = self.records("SUBMITTED")
+        runner.evidence_transition(
+            self.make_task("SUBMITTED", "DELAYED", "DELIVERY_DELAY", next_action="Wait for provider retry result."),
+            opportunities,
+        )
+        record = opportunities["records"]["opp"]
+        routed = runner.commercial_action("opp", record, datetime.now(timezone.utc))
+        self.assertEqual((record["state"], routed["status"], routed["routing_reason"]), ("DELAYED", "WAITING", "DELAYED"))
+        with self.assertRaisesRegex(ValueError, "DELAYED requires attributable"):
+            runner.evidence_transition(
+                self.make_task("SUBMITTED", "DELAYED", "DELIVERY_FAILURE"),
+                self.records("SUBMITTED"),
+            )
+
     def test_wrong_route_waits_for_route_recovery(self):
         opportunities = self.records("SUBMITTED")
         runner.evidence_transition(
@@ -191,6 +206,17 @@ class MissingRecordUpsertTest(unittest.TestCase):
         self.assertEqual(record["thread_id"], "thread-1")
         self.assertEqual(record["evidence"][0]["source_id"], "gmail-message-1")
         self.assertEqual(record["canonical_ingest"]["kind"], "MISSING_RECORD_RECOVERY")
+
+    def test_missing_record_upsert_supports_nonterminal_delay(self):
+        opportunities = {"records": {}}
+        result = runner.missing_record_upsert(
+            self.task(target="DELAYED", kind="DELIVERY_DELAY", next_action="Wait for provider retry result."),
+            opportunities,
+        )
+        record = opportunities["records"]["new-opp"]
+        self.assertEqual((result["to"], record["state"]), ("DELAYED", "DELAYED"))
+        routed = runner.commercial_action("new-opp", record, datetime.now(timezone.utc))
+        self.assertEqual((routed["status"], routed["routing_reason"]), ("WAITING", "DELAYED"))
 
     def test_missing_record_upsert_refuses_existing_key(self):
         opportunities = {"records": {"new-opp": {"state": "SUBMITTED"}}}
