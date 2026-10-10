@@ -192,7 +192,8 @@
       "source": [
         "AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json",
         "AMX/ROOT/DEMONSTRATORS/D04/D04_RERUN_01_POST_QUEUE_DRAIN_20261010.json",
-        "AMX/ROOT/INTAKE/D03_D04_GOVERNANCE_BLUE_STATE_TEST_PROCESS_AUDIT_20261010.md"
+        "AMX/ROOT/INTAKE/D03_D04_GOVERNANCE_BLUE_STATE_TEST_PROCESS_AUDIT_20261010.md",
+        "AMX/ROOT/INTAKE/D04_RESULT_INTERPRETATION_OWNER_CLARIFICATION_20261010.md"
       ],
       "forbidden_assumptions": [
         "D04 is not certification or industry percentile.",
@@ -201,12 +202,13 @@
         "Do not summarize D04 as failed merely because contract/invoice/payment outcomes were not evidenced.",
         "Do not convert UNMEASURED_NOT_PROVEN controls to FAIL or PASS without new bounded evidence."
       ],
-      "current_weight": "PRESERVE AS INTERNAL BENCHMARK EVIDENCE; MEASURED SCOPE PASS 96.62%; FULL BENCHMARK INCOMPLETE / UNKNOWN-HOLD ON FIVE CRITICAL EXTERNAL-OUTCOME CONTROLS",
+      "current_weight": "D04 BENCHMARK PASS — 96.62% under the frozen 88-control benchmark and original pass rule; zero measured critical FAIL; five controls remain UNMEASURED_NOT_PROVEN and are not candidate failures.",
       "final_interpretation": {
-        "source": "AMX/ROOT/INTAKE/D03_D04_MATRIX_CRITIC_CONFORMANCE_AUDIT_ADDENDUM_A_UNMEASURED_NOT_FAIL_20261010.md",
-        "measured_scope_score": 96.62,
-        "measured_scope_verdict": "PASS",
-        "full_benchmark_verdict": "INCOMPLETE_UNKNOWN_HOLD",
+        "source": "AMX/ROOT/INTAKE/D04_RESULT_INTERPRETATION_OWNER_CLARIFICATION_20261010.md",
+        "benchmark_result": "PASS",
+        "measured_score": 96.62,
+        "frozen_control_count": 88,
+        "frozen_pass_rule": "PASS requires >=90 absolute score, zero critical FAIL, and no unresolved executable queue affecting a critical control.",
         "measured_counts": {
           "PASS": 77,
           "PARTIAL": 6,
@@ -219,7 +221,8 @@
           "VAL06",
           "VAL08"
         ],
-        "rule": "Absence of positive outcome evidence is not negative evidence unless the tested population is demonstrably closed/exhaustive."
+        "interpretation": "The five controls were already in the frozen benchmark but were not validly measured by the run. They remain evidence-open and non-scoring; they are not participant failures and do not create a retrospective all-controls-measured requirement.",
+        "boundary": "PASS does not mean all 88 controls individually demonstrated PASS, and does not constitute ISO/COBIT/TOGAF certification, external attestation, or market percentile."
       }
     },
     {
