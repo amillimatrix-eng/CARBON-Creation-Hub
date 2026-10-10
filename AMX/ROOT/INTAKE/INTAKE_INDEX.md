@@ -1536,3 +1536,13 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - Public preview: https://carbon-intent-marketplace-v1-preview.onrender.com
 - This supersedes earlier Intake entries that say current-head CI/deployment remains UNPROVEN for this exact SHA. Preserve them as provenance of the earlier bounded read.
 - **Remaining:** PR #14 remains DRAFT/OPEN/UNMERGED; issue #18 remains OPEN for Projects/Media/PWA and full Search→Marketplace→media convergence. Production payment/KYC/settlement gates remain outside this acceptance.
+## 2026-10-10 12:15 SAST — Evidence House commercial coverage correction
+- Current `evidence/index.json` blob `cd42859c5362383aba4b94f6b2b1188c72c88223`, generated `2026-10-10T05:45:00Z`, contains 7 records including `EVID-COMMERCIAL-001` (Commercial leadership / strategic accounts / route-to-market; status PASS; visibility HOUSE; source pointer `AMX/ROOT/INTAKE/COMMERCIAL_EVIDENCE_RECOVERY_20261010.md`).
+- Therefore the earlier issue #21 body claim that the index lacks commercial-history evidence is superseded for this snapshot.
+- `customer-directory/work/evidence-house.html` remains a static overview, not the requested dynamic public search/filter → evidence-card experience. T-COD still owns the UI/deployed-route acceptance; reuse the existing index and do not duplicate evidence storage.
+- Exact current-head CI + deployment reconciliation for #18/PR #14 is now PASS at SHA `249ec519b25526ed4336f82ecea6f51580898995` (CI run `38033106463`; Render deploy `dep-db4u77vlot8c73d1mnl0`). PR remains DRAFT/OPEN/UNMERGED; broader convergence remains OPEN.
+
+## 2026-10-10 12:15 SAST — D04 conflict inventory follow-through
+- Direct D04 directory inventory recovered rerun sequence: 82.91 FAIL (`D04_RERUN_01_POST_QUEUE_DRAIN_20261010.json`); 89.24 FAIL (`D04_RERUN_02_POST_FORX_IMPLEMENTATION_20261010.json`); 90.19 FAIL (`D04_RERUN_03_RUN_CONSERVATION_20261010.json`); 90.51 FAIL (`D04_RERUN_02_FINAL_INTERNAL_SELF_REPAIR_20261010.json`).
+- The enumerated D04 directory did not expose a primary 96.62 artifact/raw vector. Preserve **CONFLICT / READBACK REQUIRED**; ROOT/T-GOV owns disposition. Do not present 96.62 as established from prose alone and do not overwrite the 90.51 artifact.
+- Supporting Notion Intake record `3f58f8b5-6cd7-8116-ba52-d5fcded88425` was updated with this primary-artifact inventory.
