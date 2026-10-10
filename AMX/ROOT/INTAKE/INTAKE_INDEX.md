@@ -1458,3 +1458,14 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **SakuBloom:** inbound `1a121e83d33c7b0f` = REJECTED for the current graphic-designer project; Gmail labeled `AMX/REJECTED`; canonical commercial ledger contains no SakuBloom match. Existing iSCOPE/PRI owns deduped reconciliation.
 - **Radial Entertainment:** inbound `1a115e34a78b13d0` says Carolyn Marcus left and refers business inquiries to Jonitha Keymoore. Classified WRONG_ROUTE / REFERRED_ROUTE_AVAILABLE and labeled `AMX/WRONG-ROUTE`; canonical ledger currently has no Radial/Keymoore match. Existing iSCOPE/PRI must reconcile before any referred-contact approach.
 - **Cork City Gaol:** thread `1a115302e8719783` contains explicit current-process rejection (“happy with the way we currently process booking”); canonical ledger currently has no Cork City Gaol match. No further unsolicited progression absent new evidence.
+
+
+## 2026-10-10 — Marketplace exact-head CI continuation
+- **State:** OPEN / T-COD execution acceptance gap.
+- **Current PR:** #14 remains DRAFT / OPEN / unmerged.
+- **Exact current head:** `249ec519b25526ed4336f82ecea6f51580898995`.
+- **Current-head workflow evidence:** GitHub connector lookup returned no associated workflow runs. This means CI PASS is **UNPROVEN**, not PASS and not FAIL.
+- **Deployment boundary:** prior Render branch-preview evidence applies to its exact deployed SHA only; it does not prove this current head is deployed.
+- **Required next action:** run mandatory CI on exact head, repair only observed failures, then prove the same passing SHA deployed/read back. Keep PR draft until evidence exists.
+- **Duplicate/stale evidence:** #18's prior note for `2eb4f2095536cb252df79702e8416c2654283d82` remains historical; do not use it as current-head evidence.
+- **Owner:** existing T-COD implementation ownership. No new worker or architecture.
