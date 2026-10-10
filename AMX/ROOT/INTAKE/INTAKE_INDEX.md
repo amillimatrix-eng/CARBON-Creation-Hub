@@ -1741,3 +1741,54 @@ These are candidate inputs, not submissions, buyer responses, acceptances or rev
 - The generic stale/non-returned-position sub-claim was not reproduced. Repository property-test and Certora definitions were inspected, not executed. No vulnerability, Q2 promotion, submission, award or payment is claimed.
 - Tracker fallback: `TRACKER_WRITE_BLOCKED`; no Google Sheets/Drive read-write connector. Current Q1 stays UNKNOWN.
 - Receipt: `AMX/ROOT/INTAKE/BOUNTY_REAPER_XOXNO_INV_ACCT10_STATIC_TRIAGE_RECEIPT_20261010.md`; ROOT should use the evidence to mark this specific sub-claim killed/narrowed or amend if a concrete counterexample is produced.
+
+
+---
+
+## 2026-10-10 — Acting Commercial Manager commissioning + Bounty Reaper final-mile resolution
+
+**Owner instruction:** temporary Commercial Manager appointment, effective by current Owner direction pending governance finalization; direct reporting to ROOT / Route Intake until the flow is changed.
+**Canonical Intake record:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/32
+**State:** OPEN ROOT DISPOSITION REQUEST — this index entry does not register a new role, create authority, change another mandate, or alter any worker/tracker/schedule.
+**Priority:** linked to the existing P0 primary Matrix recovery / Reaper execution regression; do not displace the established P0 Intake clearance order.
+
+### Material change recovered — OCC-04
+
+The current index already contains **OCC-04 — Reaper Final-Mile Completion Semantics**, still **PENDING GOVERNANCE / GOVERNANCE-READY**, with the Owner's exact chain:
+
+> analysis → validated fix → package/finalize → authorized submission/handoff → external receipt → terminal result
+
+Reaper must remain the independent crypto/bounty specialist. Current registered mandate is `AMX-MANDATE-BOUNTY-REAPER-V1`, status CURRENT, SHA-256 `754d8fb9b6816da1bf0013940883106e0d3928b1637526ee82b38e1792c1dcd3`; current registry root is `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`. The existing Bounty Reaper automation `6abf8e6d6a188191aee2b5d3fe24a9c9` is enabled.
+
+The registered mandate and current worker prompt already carry substantial final-mile semantics (validate scope/novelty/evidence, prepare final private report, submit through the authorized official route, preserve external receipt/report ID, track acceptance/award/payment). The current gap is not solved by duplicating that instruction or creating a manager-owned bounty lane: current receipts show LayerZero Q3 narrowed and XOXNO's generic stale-position sub-claim not reproduced; no submission-ready report, submission, award, payout, or verified payment is established.
+
+### Reaper truth / remaining blockers
+
+- LayerZero `BR-20261010-STATIC-001`: Q3 narrowed; exact eligible deployment/scope, attacker-victim impact, retry/refund path, and prior-audit dedupe remain unresolved. Source: [LayerZero triage receipt](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/BOUNTY_REAPER_LAYERZERO_NATIVE_DROP_TRIAGE_RECEIPT_20261010.md).
+- XOXNO `BR-20261010-XOXNO-STATIC-001`: specific stale/non-returned-position sub-claim not reproduced by bounded static review; no submission-ready finding. Source: [XOXNO triage receipt](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/BOUNTY_REAPER_XOXNO_INV_ACCT10_STATIC_TRIAGE_RECEIPT_20261010.md).
+- Existing Live Tracker route: `TRACKER_WRITE_BLOCKED` because this runtime has no authorized Sheets/Drive read/write connector. Runs row is not claimed. Current Q1 is **UNKNOWN, not zero**, until tracker/completion-artifact state is recovered.
+
+### Recommended ROOT dispositions
+
+1. **Acting Commercial Manager:** confirm this temporary appointment and direct Root Intake reporting durably; ROOT/T-GOV must decide final placement/reporting line, role key, versioned mandate/digest, decision rights, reserved gates, succession and review/end condition.
+2. **OCC-04:** recommended **MERGE INTO EXISTING REAPER COMPLETION CONTROL**, subject to ROOT/T-GOV decision and an explicit behavioral acceptance gate. If ALREADY-SUBSUMED is chosen, identify the controlling artifact/commit and preserve the unfulfilled behavioral acceptance as open; prompt coverage is not execution acceptance.
+3. **Existing Reaper execution:** continue from furthest evidenced state. Do not infer empty Q1 from tracker unavailability. Advance exact scope/audit/impact validation or another independent lawful parcel; no external submission until the official program, eligible asset, novelty/dedupe, required evidence/PoC and impact gates pass.
+4. **Role relationship:** Commercial Manager coordinates portfolio priorities, dependencies, completion evidence and settlement visibility across iSCOPE, PRI, Banker and Reaper. Reaper retains end-to-end crypto bounty ownership; crypto work does **not** pass through iSCOPE/PRI. PRI remains the sole post-handoff general commercial writer; Banker remains authoritative for verified financial/settlement truth.
+
+### Root response contract
+
+`INTAKE_REF | DISPOSITION | CONTROLLING_MANDATE | SOURCE_REF+SHA | CURRENT_STATE | RECEIVING_OWNER | BLOCKER_SCOPE | NEXT_ACTION | ACCEPTANCE_CONDITION | DUE/RECHECK_CONDITION | READBACK_REQUIRED`
+
+### Category B Directive 23 — itemized acceptance / remaining work
+
+- [ ] **Expected outcomes:** temporary role and reporting route are durable; permanent role placement remains an explicit Root decision; OCC-04 has an individual disposition; Reaper makes evidence-backed next progress.
+- [ ] **Owner:** ROOT/T-GOV for role/mandate/reporting and OCC-04 disposition; existing Bounty Reaper for specialist bounty execution; existing iSCOPE/PRI and Banker for their separate mandates.
+- [ ] **Required action:** ROOT/T-GOV disposition each item; Reaper resumes from latest state and does not idle on the tracker blocker.
+- [ ] **Dependencies/blockers:** authorized Live Tracker read/write/readback route; LayerZero scope/deployment, impact, retry/refund and audit dedupe gates; exact current Reaper queue and prior receipts.
+- [ ] **Acceptance evidence:** durable Root decision and registry/mandate readback where approved; for Reaper, attributable state transition or official external submission receipt plus terminal/next state.
+- [ ] **Persistence/readback:** independently read back canonical Intake/index changes, any accepted registry/mandate update, and any tracker row if written; otherwise preserve literal `TRACKER_WRITE_BLOCKED`.
+- [ ] **Safety/preservation:** no new worker, duplicate queue, tracker, writer or parallel authority; preserve official program rules, scope, privacy, human/KYC gates, audit dedupe, no live exploitation and no invented award/payment.
+- [ ] **Item-level disposition:** Acting Commercial Manager = temporary by Owner direction / durable Root confirmation pending; OCC-04 = MERGE INTO EXISTING REAPER COMPLETION CONTROL recommended / ROOT DECISION PENDING; LayerZero = Q3 NARROWED with named gates open; XOXNO broad sub-claim = NOT REPRODUCED / do not submit; tracker = TRACKER_WRITE_BLOCKED; Q1 = UNKNOWN.
+- [ ] **Remaining work:** ROOT/T-GOV decision on role placement and formal mandate binding; OCC-04 disposition; restore or authorize existing tracker route; reconcile Q1 state from current artifacts; advance a lawful Reaper parcel; prove final-mile behavior or record exact blocker and recovery owner.
+
+**Truth boundary:** this record does not claim that OCC-04 is accepted, the acting role registered, the Live Tracker updated, or any bounty submitted/accepted/awarded/paid.
