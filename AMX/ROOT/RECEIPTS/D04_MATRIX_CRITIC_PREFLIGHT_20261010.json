@@ -1,0 +1,19 @@
+{
+  "receipt_id": "AMX-D04-MATRIX-CRITIC-PREFLIGHT-20261010-01",
+  "role_key": "MATRIX-CRITIC",
+  "mandate_id": "AMX-MANDATE-MATRIX-CRITIC-V1",
+  "mandate_sha256": "d3ad5aec0d78058a7f96056808013a4c95f15b35f0f298879f24b5b1fb2f71a4",
+  "registry_version": "1.2",
+  "registry_root_sha256": "6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f",
+  "registry_root_recomputed_match": true,
+  "mandate_sha_recomputed_match": true,
+  "status": "CURRENT_WHEN_INVOKED",
+  "invocation_scope": "Independent governance/conformance falsification of D03/D04 test process, evidence handling, benchmark classification, supersession, role fidelity, lifecycle truth, and assumption drift.",
+  "current_owner": "this runtime acting under explicitly invoked MATRIX-CRITIC mandate",
+  "boundaries": [
+    "review does not confer ROOT/T-GOV disposition authority",
+    "review does not become FORX, PRI, Banker, T-COD or Commissioning Inspector",
+    "critic may falsify/recommend/hold but may not silently rewrite Blue State or frozen benchmark criteria"
+  ],
+  "started_at": "2026-10-10T06:55:00Z"
+}
