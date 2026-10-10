@@ -1516,3 +1516,14 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **1M+ penetration / 500+ banked guarantees:** OWNER TARGETS, not achieved counts. Require attributable durable counters; no technical-scale conflation or invented baseline.
 - **Commercial truth:** iSCOPE→PRI owns external progression; preserve NO-CONTACT suppressions; no sent/response/acceptance/payment claim without its own evidence.
 - **Runtime law:** this reconciliation is a waypoint, not a stop. Continue independently executable mandate work; blocked items retain a recovery owner and next action.
+
+
+## 2026-10-10 — D04 counting-integrity conflict — controlling state
+- **State:** OPEN / PRIMARY-EVIDENCE READBACK REQUIRED.
+- Historical immutable artifact `AMX/ROOT/DEMONSTRATORS/D04/D04_RERUN_02_FINAL_INTERNAL_SELF_REPAIR_20261010.json`, blob `91917922e11baea512782d28efa72f8cac09e7f6`, records 90.51 / 77 PASS / 6 PARTIAL / 5 FAIL / verdict FAIL.
+- Independent parse of its 88-control vector matches 77 PASS / 6 PARTIAL / 5 FAIL; critical FAIL IDs: VAL03, VAL04, VAL05, VAL06, VAL08.
+- A later entry in this index claims measured-scope 96.62 PASS / 77 PASS / 6 PARTIAL / 0 measured FAIL and five VAL controls UNMEASURED_NOT_PROVEN. Its primary raw vector/artifact and reproducible arithmetic have not been recovered in this pass.
+- **Do not overwrite or silently select either result.** Current D04 status is CONFLICT / READBACK REQUIRED until the 96.62 source scope/vector is recovered and independently recomputed against frozen criteria.
+- ROOT/T-GOV: set controlling disposition. MASTER/LIBRARIAN: recover primary evidence, recompute, persist/read back correction receipt. T-COD only if a concrete counting/serialization defect is demonstrated.
+- Counting law: UNMEASURED_NOT_PROVEN is neither PASS nor FAIL; missing evidence is not a measured failure. Preserve both historical artifacts unchanged.
+- Supporting Notion Intake record: `3f58f8b5-6cd7-8116-ba52-d5fcded88425`.
