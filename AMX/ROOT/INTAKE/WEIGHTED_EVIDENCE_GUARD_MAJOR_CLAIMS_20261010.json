@@ -1,0 +1,134 @@
+{
+  "artifact_id": "AMX-WEIGHTED-EVIDENCE-GUARD-20261010-V1",
+  "purpose": "Prevent future runtimes from understating, diluting, conflating or overclaiming established AMX evidence.",
+  "governing_sources": [
+    "AMX/ROOT/INTAKE/WEIGHTED_CONTINUITY_BENCHMARK_INTEGRITY_DYNAMIC_MILESTONE_RULE_20261009.md",
+    "AMX/ROOT/INTAKE/D04_RUNTIME_ASSUMPTION_DRIFT_EVIDENCE_20261010.md",
+    "evidence/index.json"
+  ],
+  "rules": [
+    "Earlier proven capability remains weighted evidence unless later evidence directly falsifies the same claim.",
+    "A harder later milestone cannot be retroactively treated as though it was part of an earlier acceptance contract.",
+    "Missing comparison population means UNRANKED / COMPARATIVE BENCHMARK NOT ESTABLISHED; it is not negative evidence.",
+    "A missing sub-artifact cannot downgrade an independently proven broader claim.",
+    "No source may be promoted beyond its bounded scope.",
+    "Provider, canonical ledger, projection, scheduler and report layers are distinct evidence classes.",
+    "Assumption/HYPOTHESIS/UNKNOWN may not mutate operational truth."
+  ],
+  "claims": [
+    {
+      "claim_id": "WG-D01",
+      "claim": "Demonstrator 01 passed its bounded semantic-gate acceptance at 13/13, caught 12/12 seeded drift/gap cases, was deterministic 13/13 across five runs, and accepted 0/10 unsafe fixtures.",
+      "source": "EVID-DEMONSTRATOR-001 / frozen D01 archive",
+      "weight": "HIGH / FROZEN / DIRECT",
+      "scope": "bounded D01 test only",
+      "forbidden_inferences": [
+        "Do not call it universal superiority over all AI systems.",
+        "Do not reduce its significance because a later D03/D04 test is harder.",
+        "Do not conflate D01 with D02 66.67%."
+      ]
+    },
+    {
+      "claim_id": "WG-D02",
+      "claim": "Across three retained D02 verifier events, AMX preserved the execution-state boundary 3/3; Claude reporting fidelity was 1/1; Gemini 0/1; Antigravity 0/1; external retained-event failure rate was 2/3 = 66.67%.",
+      "source": "EVID-DEMONSTRATOR-001 / D02 evidence record",
+      "weight": "HIGH / FROZEN / DIRECT",
+      "scope": "three retained verifier events, not provider-wide",
+      "forbidden_inferences": [
+        "Do not describe 66.67% as AMX failure.",
+        "Do not generalize 1/1 or 0/1 to universal provider behavior."
+      ]
+    },
+    {
+      "claim_id": "WG-BUILD-MARKETPLACE",
+      "claim": "CARBON Intent Marketplace reached its frozen 50/50 acceptance with repository-bounded implementation window 1h28m19s.",
+      "source": "EVID-BUILD-DELIVERY-001",
+      "weight": "HIGH / DIRECT / TESTED",
+      "scope": "that bounded product/acceptance and recovered timing evidence",
+      "forbidden_inferences": [
+        "Do not convert to universal market superiority.",
+        "Do not infer payment or buyer adoption.",
+        "Do not discount because later enterprise controls fail."
+      ]
+    },
+    {
+      "claim_id": "WG-BUILD-SEARCH",
+      "claim": "CARBON Search reached 36/36 product-specific tests plus 81/81 full-repository CI; promoted/deployed evidence is 4h28m17s from commissioning.",
+      "source": "EVID-BUILD-DELIVERY-001 / issue #16 promotion evidence",
+      "weight": "HIGH / DIRECT / TESTED",
+      "scope": "bounded Search build and recovered deployment provenance",
+      "forbidden_inferences": [
+        "Do not rewrite as merely 36/36 and omit 81/81 CI.",
+        "Do not infer settlement/revenue.",
+        "Do not move the original benchmark after the fact."
+      ]
+    },
+    {
+      "claim_id": "WG-COMMERCIAL-CAREER",
+      "claim": "Commercial evidence supports 10+ years B2B/strategic-account execution; largest regional corporate retail account; about 33% regional volume for 22/24 months; commission cap twice; two perfect scorecards.",
+      "source": "EVID-COMMERCIAL-001 and controlled supporting records",
+      "weight": "HIGH for listed source-bound claims",
+      "scope": "the exact source-bound career claims",
+      "forbidden_inferences": [
+        "Do not downgrade these broader claims merely because exact 340%/160% source pointers remain recovery-open.",
+        "Do not inflate them into unsupported historical AI seniority."
+      ]
+    },
+    {
+      "claim_id": "WG-COMMERCIAL-340-160",
+      "claim": "Exact 340% and 160% claims have been asserted/referenced but current source-pointer rebinding remains open.",
+      "source": "EVID-COMMERCIAL-001 recovery gap",
+      "weight": "HOLD FOR EXACT FIGURES",
+      "scope": "exact 340% / 160% numbers only",
+      "forbidden_inferences": [
+        "Do not state exact figures as source-bound until the exact artifact is rebound.",
+        "Do not use this hold to erase independently proven commission-cap/perfect-scorecard/33%-22-of-24 evidence."
+      ]
+    },
+    {
+      "claim_id": "WG-MOOLA-CHRONOLOGY",
+      "claim": "Current primary Gmail evidence proves moolamatrixx@gmail.com / display name moolamatriX active by 2025-12-14; an earlier July 2026 résumé says 2024–Present while the October evidence-bound CV says 2026–Present.",
+      "source": "Gmail chronology recovery + Library résumé records",
+      "weight": "DIRECT for active-by 2025-12-14 and document-date conflict; UNKNOWN for earliest start",
+      "scope": "minimum proven activity date and chronology conflict",
+      "forbidden_inferences": [
+        "Do not promote January 2025, December 2025 exact start, 1 Jan 2026 pivot, or 2024 start as proven without primary dated evidence.",
+        "Do not treat newest CV date as automatically authoritative."
+      ]
+    },
+    {
+      "claim_id": "WG-RESOURCE-CONTEXT",
+      "claim": "Owner states Matrix was built/operated as a one-developer system primarily on free models/free trials and non-enterprise/pro AI access; current runtime independently observed multiple free-tier/provider constraints.",
+      "source": "Owner statement + provider receipts including HF Jobs 402, Render sleep behavior, connector/browser constraints",
+      "weight": "OWNER-ATTESTED for one-developer/free-stack history; DIRECT for observed provider constraints",
+      "scope": "resource context and capability-per-resource interpretation",
+      "forbidden_inferences": [
+        "Do not use resource scarcity to waive failed enterprise controls.",
+        "Do not use lack of enterprise tooling as negative evidence against independently proven capability."
+      ]
+    },
+    {
+      "claim_id": "WG-D04",
+      "claim": "D04 is an AMX-defined enterprise-controls milestone informed by recognized external frameworks; baseline 77.22%, post-queue-drain rerun 82.91%, still FAIL under its frozen AMX pass rule.",
+      "source": "D04 baseline + D04_RERUN_01_POST_QUEUE_DRAIN",
+      "weight": "HIGH for AMX internal benchmark result",
+      "scope": "custom 88-control AMX benchmark",
+      "forbidden_inferences": [
+        "Do not call D04 an ISO/COBIT/TOGAF certification or third-party audit.",
+        "Do not retroactively use D04 failure to erase D01/D02/build evidence."
+      ]
+    },
+    {
+      "claim_id": "WG-COMMERCIAL-LIFECYCLE",
+      "claim": "Current system has attributable sends/submissions/responses, but no evidenced current accepted scope→contract→invoice/receivable→paid/settled chain.",
+      "source": "OVERDRIVE + Gmail + Banker lifecycle rules",
+      "weight": "HIGH / CURRENT",
+      "scope": "current commercial lifecycle evidence",
+      "forbidden_inferences": [
+        "Do not promote SENT/SUBMITTED to acceptance/payment.",
+        "Do not infer zero across unobserved payment rails."
+      ]
+    }
+  ],
+  "consumption_rule": "Before contradicting or weakening any listed claim, a future worker must cite contrary evidence that addresses the same bounded claim. Missing familiarity, later harder tests, missing rankings, or unrecovered adjacent artifacts are insufficient."
+}
