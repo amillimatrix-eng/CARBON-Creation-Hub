@@ -28,10 +28,19 @@
       ],
       "preview": "https://carbon-intent-marketplace-v1-preview.onrender.com/market",
       "independent_readback": "Dedicated preview readback recorded product CARBON°, sandbox/no-money boundary and core marketplace invariants.",
-      "exact_deployment_commit": "UNKNOWN_HOLD",
+      "exact_deployment_commit": "fd14ec8733ae1c3652c8cc5ad8424a0fd6caaffc",
       "repository_bounded_window": "1h28m19s",
-      "result": "PARTIAL",
-      "gap": "Recovered evidence does not establish that the provider preview deployed commit equals fd14ec8733ae1c3652c8cc5ad8424a0fd6caaffc. Do not infer same-commit promotion."
+      "result": "PASS",
+      "gap": "",
+      "deployment": {
+        "service_id": "srv-db3uv4942hec73f5l4cg",
+        "service": "carbon-intent-marketplace-v1-preview",
+        "deploy_id": "dep-db3uv4p42hec73f5l6c0",
+        "status": "deactivated_by_later_deploy",
+        "commit": "fd14ec8733ae1c3652c8cc5ad8424a0fd6caaffc",
+        "created_at": "2026-10-08T19:31:31.77276Z",
+        "finished_at": "2026-10-08T19:32:37.211418Z"
+      }
     },
     {
       "artifact": "CARBON Search",
@@ -56,15 +65,20 @@
         "commit": "69834610dfb0945490b5d6f8047c8d99a0f83477"
       },
       "deployment": {
+        "service_id": "srv-db4etm1srm7s73at90gg",
         "service": "carbon-search-intention-v1",
         "deploy_id": "dep-db4f2tjtqb8s73f2eu00",
-        "status": "LIVE",
-        "commit": "69834610dfb0945490b5d6f8047c8d99a0f83477"
+        "status": "live",
+        "commit": "69834610dfb0945490b5d6f8047c8d99a0f83477",
+        "created_at": "2026-10-09T13:51:50.412153Z",
+        "finished_at": "2026-10-09T13:52:18.662652Z"
       },
       "independent_readback": "Public Search surface loaded; CARBON Search query RESOLVED; evidence control, confirm feedback, correct control and OPEN action routing all recorded PASS.",
       "result": "PASS"
     }
   ],
-  "result": "PARTIAL",
-  "reason": "Search has exact tested/promoted/deployed same-commit evidence. Marketplace has strong CI + preview evidence but exact provider deployment-commit linkage remains UNKNOWN/HOLD."
+  "result": "PASS",
+  "reason": "Render deployment history now binds both benchmark deployments to exact repository commits; existing independent surface readbacks remain the acceptance evidence.",
+  "render_workspace": "tea-davpb1gu01pc73fl088g",
+  "evidence_readback": "Render list_deploys read on 2026-10-10 for both services."
 }
