@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-10",
+  "control": "CHG07",
+  "rule": "Do not infer same-commit deployment where the evidence only proves implementation commit and later promoted/deployed commit.",
+  "benchmarks": [
+    {
+      "artifact": "CARBON Intent Marketplace",
+      "acceptance": "50/50",
+      "merge_base": {
+        "commit": "0e837bb4…",
+        "timestamp": "2026-10-08T18:02:13Z"
+      },
+      "verified_head": {
+        "commit": "fd14ec87…",
+        "timestamp": "2026-10-08T19:30:32Z"
+      },
+      "repository_bounded_window": "1h28m19s",
+      "evidence_source": "EVID-BUILD-DELIVERY-001 + AMX/ROOT/INTAKE/CARBON_INTENT_MARKETPLACE_FORENSIC_EVIDENCE_SUPPLEMENT_20261008.md",
+      "deployment_boundary": "Current receipt does not manufacture a same-commit live deployment claim beyond the recovered Marketplace forensic evidence."
+    },
+    {
+      "artifact": "CARBON Search",
+      "acceptance": "36/36 Search-specific tests + 81/81 full-repository CI",
+      "commissioning": {
+        "commit": "a98afabb…",
+        "timestamp": "2026-10-09T09:22:30Z"
+      },
+      "first_implementation": {
+        "commit": "7ef32c8b…",
+        "timestamp": "2026-10-09T13:39:26Z",
+        "elapsed": "4h16m56s"
+      },
+      "promoted_deployed": {
+        "commit": "69834610…",
+        "timestamp": "2026-10-09T13:50:47Z",
+        "elapsed": "4h28m17s"
+      },
+      "evidence_source": "EVID-BUILD-DELIVERY-001 + issue #16 promotion evidence",
+      "deployment_boundary": "Promotion/deployed commit is later than first implementation; no false same-commit claim."
+    }
+  ],
+  "result": "PASS_WITH_EXPLICIT_COMMIT_CHAIN"
+}
