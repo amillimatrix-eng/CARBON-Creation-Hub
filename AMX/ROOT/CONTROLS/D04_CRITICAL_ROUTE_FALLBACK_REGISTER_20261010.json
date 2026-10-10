@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "date": "2026-10-10",
+  "functions": [
+    {
+      "function": "canonical repository read/write",
+      "primary": "GitHub connector",
+      "alternate": "GitHub workflow/issue/PR path where the required mutation is supported",
+      "tested": "Both direct file mutation and workflow-produced commits observed in this run",
+      "residual_gate": "Provider/account outage remains external"
+    },
+    {
+      "function": "external commercial email",
+      "primary": "Gmail connector",
+      "alternate": "Existing authenticated provider/browser route only if independently available",
+      "tested": "Gmail provider sends/readbacks proven; alternate not universally available",
+      "residual_gate": "If Gmail and authenticated browser are unavailable, OWNER/EXTERNAL_GATE"
+    },
+    {
+      "function": "CRM projection",
+      "primary": "Close",
+      "alternate": "Canonical OVERDRIVE ledger",
+      "tested": "Close and OVERDRIVE independently read back in this run",
+      "residual_gate": "Close outage does not stop canonical commercial truth"
+    },
+    {
+      "function": "browser/form execution",
+      "primary": "TinyFish web automation",
+      "alternate": "Opera authenticated browser connector / direct official mailbox when verified",
+      "tested": "TinyFish and Opera paths were both probed; direct Gmail route used where official mailbox existed",
+      "residual_gate": "Some authenticated forms remain OWNER/PROVIDER_GATE"
+    },
+    {
+      "function": "payment observation",
+      "primary": "rail-specific provider e.g. Stripe",
+      "alternate": "Banker receipt/authoritative rail-specific evidence",
+      "tested": "Settlement logic distinguishes provider scope; all-rail observability not proven",
+      "residual_gate": "UNOBSERVED rails remain UNKNOWN"
+    },
+    {
+      "function": "build/compute",
+      "primary": "GitHub CI / repository workflows",
+      "alternate": "local/container or other provisioned runtime",
+      "tested": "GitHub CI/workflow and local/tool runtime evidence used across builds",
+      "residual_gate": "No enterprise SLA assumed"
+    },
+    {
+      "function": "evidence storage",
+      "primary": "GitHub public-safe canon",
+      "alternate": "controlled Library/Drive source with hash pointer",
+      "tested": "Both canonical repository artifacts and controlled Library evidence are in use",
+      "residual_gate": "Private raw evidence must remain controlled"
+    }
+  ],
+  "acceptance_rule": "A function is redundant only when an independent alternate is actually tested; otherwise the residual field must name the explicit Owner/provider gate."
+}
