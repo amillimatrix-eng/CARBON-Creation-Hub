@@ -121,30 +121,6 @@
       "thread_id": null
     },
     {
-      "due_at": "2026-10-09T17:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing Agent Factory thread. Official page states a five-working-day response expectation; follow up only after that interval if no response.",
-      "opportunity_key": "agentfactory.verder.com|ai-engineer|cape-town",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a103d3f1631dffd for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a103d3f1631dffd"
-    },
-    {
-      "due_at": "2026-10-09T17:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing Syrup thread for a response. If invited, answer the buyer's exact question and progress to interview/technical validation; do not send duplicate outreach before due.",
-      "opportunity_key": "poursyrup.ai|senior-ai-delivery-engineer|cape-town",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a103d3e49774780 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a103d3e49774780"
-    },
-    {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
       "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
@@ -315,6 +291,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
+      "opportunity_key": "agentfactory.verder.com|ai-engineer|cape-town",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a103d3f1631dffd"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "NO OUTBOUND. Preserve historical evidence for learning/provenance only. Do not follow up, resend, recover through another mailbox, contact another person at Face Production, or create a new offer unless Owner explicitly reverses the 2026-10-09 no-contact directive.",
       "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
       "priority": 8,
@@ -383,6 +371,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a0f2ea89285fcc3"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Wait for buyer response. If invited, answer the exact next-step request and progress to trial/interview without rebuilding the evidence package.",
+      "opportunity_key": "mediaremoval.com|remote-sales-closer-inbound|2026-10-10",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for buyer response. If invited, answer the exact next-step request and progress to trial/interview without rebuilding the evidence package.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a1244c82b1b4abc"
     },
     {
       "due_at": null,
@@ -471,6 +471,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
+      "opportunity_key": "poursyrup.ai|senior-ai-delivery-engineer|cape-town",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a103d3e49774780"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "NO UNSOLICITED FOLLOW-UP for the current project. Preserve the rejection and future-portfolio note; only requalify on a distinct new buyer-initiated or independently current opportunity.",
       "opportunity_key": "sakubloom.com|graphic-designer-role|2026-10-05",
       "priority": 8,
@@ -503,6 +515,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a0f2ea1c5a8c36a"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Wait for a substantive response. If the buyer directs the formal application route, complete only the required current steps without duplicating the direct enquiry.",
+      "opportunity_key": "socialsgroup.com|high-ticket-sales-closer|2026-10-10",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a substantive response. If the buyer directs the formal application route, complete only the required current steps without duplicating the direct enquiry.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": "1a124443e231891a"
     },
     {
       "due_at": null,
@@ -577,7 +601,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-10T04:58:31.332303+00:00",
+  "generated_at": "2026-10-10T05:33:46.479517+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -810,15 +834,15 @@
       "thread_id": "1a0f2ea400877a18"
     },
     "agentfactory.verder.com|ai-engineer|cape-town": {
-      "due_at": "2026-10-09T17:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing Agent Factory thread. Official page states a five-working-day response expectation; follow up only after that interval if no response.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
       "opportunity_key": "agentfactory.verder.com|ai-engineer|cape-town",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a103d3f1631dffd for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a103d3f1631dffd"
     },
     "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me": {
@@ -1145,6 +1169,18 @@
       "status": "WAITING",
       "thread_id": "1a0f2ea89285fcc3"
     },
+    "mediaremoval.com|remote-sales-closer-inbound|2026-10-10": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Wait for buyer response. If invited, answer the exact next-step request and progress to trial/interview without rebuilding the evidence package.",
+      "opportunity_key": "mediaremoval.com|remote-sales-closer-inbound|2026-10-10",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for buyer response. If invited, answer the exact next-step request and progress to trial/interview without rebuilding the evidence package.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a1244c82b1b4abc"
+    },
     "mercor.com|existing-profile-current-state|2026-10-02": {
       "due_at": null,
       "due_now": false,
@@ -1374,15 +1410,15 @@
       "thread_id": "1a0fedc93e232877"
     },
     "poursyrup.ai|senior-ai-delivery-engineer|cape-town": {
-      "due_at": "2026-10-09T17:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the existing Syrup thread for a response. If invited, answer the buyer's exact question and progress to interview/technical validation; do not send duplicate outreach before due.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
       "opportunity_key": "poursyrup.ai|senior-ai-delivery-engineer|cape-town",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a103d3e49774780 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a103d3e49774780"
     },
     "prolific.com|participant-studies|south-africa": {
@@ -1480,6 +1516,18 @@
       "state": "SUBMITTED",
       "status": "READY",
       "thread_id": null
+    },
+    "socialsgroup.com|high-ticket-sales-closer|2026-10-10": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Wait for a substantive response. If the buyer directs the formal application route, complete only the required current steps without duplicating the direct enquiry.",
+      "opportunity_key": "socialsgroup.com|high-ticket-sales-closer|2026-10-10",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a substantive response. If the buyer directs the formal application route, complete only the required current steps without duplicating the direct enquiry.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": "1a124443e231891a"
     },
     "staff-remotely.com|remote-ai-qa-prompt-python|south-africa": {
       "due_at": null,
