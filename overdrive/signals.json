@@ -265,6 +265,18 @@
       "thread_id": "1a0fedc9bdd30527"
     },
     {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for RemotePuzzle hiring-team shortlist/next-step request; do not send another unsolicited message before new buyer evidence.",
+      "opportunity_key": "remotepuzzle.com|agentic-systems-engineer|2026-10-08",
+      "priority": 2,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for RemotePuzzle hiring-team shortlist/next-step request; do not send another unsolicited message before new buyer evidence.",
+      "state": "RESPONDED",
+      "status": "WAITING",
+      "thread_id": "1a11b54b561ebb5c"
+    },
+    {
       "due_at": "2026-10-10T17:00:00Z",
       "due_now": false,
       "next_action": "Monitor the CallForce application thread for a response. If progressed, answer role-specific marketing/pipeline questions from current evidence; do not infer acceptance or compensation.",
@@ -315,6 +327,42 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
+      "opportunity_key": "coloniaestudio.com|intake-conversion-pilot|2026-10-08",
+      "priority": 8,
+      "routing_reason": "REJECTED",
+      "smallest_next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
+      "state": "REJECTED",
+      "status": "WAITING",
+      "thread_id": "1a1181380d534ec3"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "CLOSED for unsolicited follow-up; buyer stated current process is satisfactory.",
+      "opportunity_key": "corkcitygaol.com|group-booking-flow|2026-10-07",
+      "priority": 8,
+      "routing_reason": "REJECTED",
+      "smallest_next_action": "CLOSED for unsolicited follow-up; buyer stated current process is satisfactory.",
+      "state": "REJECTED",
+      "status": "WAITING",
+      "thread_id": "1a115302e8719783"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
+      "opportunity_key": "cuinatevabarcelona.com|website-trust-review|2026-10-07",
+      "priority": 8,
+      "routing_reason": "REJECTED",
+      "smallest_next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
+      "state": "REJECTED",
+      "status": "WAITING",
+      "thread_id": "1a1185016fd604aa"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "NO OUTBOUND. Preserve historical evidence for learning/provenance only. Do not follow up, resend, recover through another mailbox, contact another person at Face Production, or create a new offer unless Owner explicitly reverses the 2026-10-09 no-contact directive.",
       "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
       "priority": 8,
@@ -351,6 +399,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "WAIT for Gmail terminal delivery evidence; do not classify as delivered or failed while provider retry remains active.",
+      "opportunity_key": "jobnect.co.ke|trust-page-cleanup|2026-10-07",
+      "priority": 8,
+      "routing_reason": "DELAYED",
+      "smallest_next_action": "WAIT for Gmail terminal delivery evidence; do not classify as delivered or failed while provider retry remains active.",
+      "state": "DELAYED",
+      "status": "WAITING",
+      "thread_id": "1a117bedff2ec0bd"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "Monitor for an inbound response in the existing thread. Two outbound contacts are already on record and the 2026-10-06 due-thread check found no inbound reply. Do not send a third unsolicited follow-up unless new buyer evidence or an explicit intake route emerges.",
       "opportunity_key": "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me",
       "priority": 8,
@@ -371,6 +431,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a0f2ea2a952c85d"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for Gmail terminal delivery evidence; do not classify as delivered or failed while provider retry remains active.",
+      "opportunity_key": "kjplumbing.co.za|quote-request-pilot|2026-10-07",
+      "priority": 8,
+      "routing_reason": "DELAYED",
+      "smallest_next_action": "WAIT for Gmail terminal delivery evidence; do not classify as delivered or failed while provider retry remains active.",
+      "state": "DELAYED",
+      "status": "WAITING",
+      "thread_id": "1a117e1e2b753369"
     },
     {
       "due_at": null,
@@ -443,6 +515,30 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a0f2e2af4f0d5cc"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Do not repeat to the unmonitored mailbox. Requalify only if a verified business-development route emerges.",
+      "opportunity_key": "mprtc.co.za|recruitment-conversion-intelligence-pilot|2026-10-07",
+      "priority": 8,
+      "routing_reason": "WRONG_ROUTE",
+      "smallest_next_action": "Do not repeat to the unmonitored mailbox. Requalify only if a verified business-development route emerges.",
+      "state": "WRONG_ROUTE",
+      "status": "WAITING",
+      "thread_id": "1a117c9194098d85"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for buyer response; no duplicate initial outreach.",
+      "opportunity_key": "ontrackmulching.com|website-trust-cleanup|2026-10-08",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for buyer response; no duplicate initial outreach.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": "1a11c73d83090f13"
     },
     {
       "due_at": null,
@@ -613,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-10T06:20:58.999739+00:00",
+  "generated_at": "2026-10-10T06:22:00.633195+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -929,6 +1025,30 @@
       "status": "READY",
       "thread_id": "1a0fc58012594488"
     },
+    "coloniaestudio.com|intake-conversion-pilot|2026-10-08": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
+      "opportunity_key": "coloniaestudio.com|intake-conversion-pilot|2026-10-08",
+      "priority": 8,
+      "routing_reason": "REJECTED",
+      "smallest_next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
+      "state": "REJECTED",
+      "status": "WAITING",
+      "thread_id": "1a1181380d534ec3"
+    },
+    "corkcitygaol.com|group-booking-flow|2026-10-07": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "CLOSED for unsolicited follow-up; buyer stated current process is satisfactory.",
+      "opportunity_key": "corkcitygaol.com|group-booking-flow|2026-10-07",
+      "priority": 8,
+      "routing_reason": "REJECTED",
+      "smallest_next_action": "CLOSED for unsolicited follow-up; buyer stated current process is satisfactory.",
+      "state": "REJECTED",
+      "status": "WAITING",
+      "thread_id": "1a115302e8719783"
+    },
     "crowdgen.com|project-coffee-data-labeling-specialist|south-africa": {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
@@ -940,6 +1060,18 @@
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
+    },
+    "cuinatevabarcelona.com|website-trust-review|2026-10-07": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
+      "opportunity_key": "cuinatevabarcelona.com|website-trust-review|2026-10-07",
+      "priority": 8,
+      "routing_reason": "REJECTED",
+      "smallest_next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
+      "state": "REJECTED",
+      "status": "WAITING",
+      "thread_id": "1a1185016fd604aa"
     },
     "dataannotation.tech|generalist-ai-training|south-africa-unverified": {
       "due_at": null,
@@ -1133,6 +1265,18 @@
       "status": "WAITING",
       "thread_id": "1a0f2de385883f66"
     },
+    "jobnect.co.ke|trust-page-cleanup|2026-10-07": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for Gmail terminal delivery evidence; do not classify as delivered or failed while provider retry remains active.",
+      "opportunity_key": "jobnect.co.ke|trust-page-cleanup|2026-10-07",
+      "priority": 8,
+      "routing_reason": "DELAYED",
+      "smallest_next_action": "WAIT for Gmail terminal delivery evidence; do not classify as delivered or failed while provider retry remains active.",
+      "state": "DELAYED",
+      "status": "WAITING",
+      "thread_id": "1a117bedff2ec0bd"
+    },
     "jukboxproductions.com|production-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": null,
       "due_now": false,
@@ -1168,6 +1312,18 @@
       "state": "SUBMITTED",
       "status": "READY",
       "thread_id": null
+    },
+    "kjplumbing.co.za|quote-request-pilot|2026-10-07": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for Gmail terminal delivery evidence; do not classify as delivered or failed while provider retry remains active.",
+      "opportunity_key": "kjplumbing.co.za|quote-request-pilot|2026-10-07",
+      "priority": 8,
+      "routing_reason": "DELAYED",
+      "smallest_next_action": "WAIT for Gmail terminal delivery evidence; do not classify as delivered or failed while provider retry remains active.",
+      "state": "DELAYED",
+      "status": "WAITING",
+      "thread_id": "1a117e1e2b753369"
     },
     "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
       "due_at": null,
@@ -1277,6 +1433,18 @@
       "status": "WAITING",
       "thread_id": "1a0f2e2af4f0d5cc"
     },
+    "mprtc.co.za|recruitment-conversion-intelligence-pilot|2026-10-07": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Do not repeat to the unmonitored mailbox. Requalify only if a verified business-development route emerges.",
+      "opportunity_key": "mprtc.co.za|recruitment-conversion-intelligence-pilot|2026-10-07",
+      "priority": 8,
+      "routing_reason": "WRONG_ROUTE",
+      "smallest_next_action": "Do not repeat to the unmonitored mailbox. Requalify only if a verified business-development route emerges.",
+      "state": "WRONG_ROUTE",
+      "status": "WAITING",
+      "thread_id": "1a117c9194098d85"
+    },
     "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": null,
       "due_now": false,
@@ -1312,6 +1480,18 @@
       "state": "DISCOVERED",
       "status": "READY",
       "thread_id": "1a0fedc966c2c687"
+    },
+    "ontrackmulching.com|website-trust-cleanup|2026-10-08": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for buyer response; no duplicate initial outreach.",
+      "opportunity_key": "ontrackmulching.com|website-trust-cleanup|2026-10-08",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for buyer response; no duplicate initial outreach.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": "1a11c73d83090f13"
     },
     "opentrain.ai|ai-content-evaluation-editing|cmurzv9vd001704l22ss6tt57": {
       "due_at": "2026-10-03T16:00:00Z",
@@ -1480,6 +1660,18 @@
       "state": "SUBMITTED",
       "status": "READY",
       "thread_id": "1a0fedd719d7bfdd"
+    },
+    "remotepuzzle.com|agentic-systems-engineer|2026-10-08": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for RemotePuzzle hiring-team shortlist/next-step request; do not send another unsolicited message before new buyer evidence.",
+      "opportunity_key": "remotepuzzle.com|agentic-systems-engineer|2026-10-08",
+      "priority": 2,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for RemotePuzzle hiring-team shortlist/next-step request; do not send another unsolicited message before new buyer evidence.",
+      "state": "RESPONDED",
+      "status": "WAITING",
+      "thread_id": "1a11b54b561ebb5c"
     },
     "rws.com|trainai-global-talent-pool|remote": {
       "due_at": null,

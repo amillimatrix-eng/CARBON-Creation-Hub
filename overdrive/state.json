@@ -25,22 +25,18 @@
   },
   "last_receipt": "receipts/0000000020-qdrain-20261010-mprtc-wrongroute.json",
   "last_signal_count": {
-    "PRI": 51,
+    "PRI": 59,
     "iSCOPE": 18
   },
-  "last_tick": "2026-10-10T06:20:59.007739+00:00",
+  "last_tick": "2026-10-10T06:22:00.638198+00:00",
   "last_tick_result": {
     "pending": 0,
-    "processed": [
-      "qdrain-20261010-remotepuzzle-responded",
-      "qdrain-20261010-ontrack-offered",
-      "qdrain-20261010-kjplumbing-delayed",
-      "qdrain-20261010-jobnect-delayed",
-      "qdrain-20261010-colonia-rejected",
-      "qdrain-20261010-cuinateva-rejected",
-      "qdrain-20261010-cork-rejected",
-      "qdrain-20261010-mprtc-wrongroute"
-    ]
+    "processed": [],
+    "signals": {
+      "PRI": 59,
+      "iSCOPE": 18
+    },
+    "state_changed": true
   },
   "queue": [
     {
