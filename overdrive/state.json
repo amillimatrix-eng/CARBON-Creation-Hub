@@ -325,6 +325,272 @@
       "receipt": "receipts/0000000012-access-yuientertainment-com-20260930.json",
       "receipt_sha256": "d37b46eff54729c53fabef54bc91e5c54547c48bac35f815ef45ecaee4186f8e",
       "status": "COMPLETED"
+    },
+    {
+      "id": "qdrain-20261010-remotepuzzle-responded",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "remotepuzzle.com|agentic-systems-engineer|2026-10-08",
+        "identity": {
+          "organization": "RemotePuzzle",
+          "opportunity": "Agentic Systems Engineer",
+          "domain": "remotepuzzle.com"
+        },
+        "to": "RESPONDED",
+        "execution_owner": "PRI",
+        "recipient": "team@remotepuzzle.com",
+        "thread_id": "1a11b54b561ebb5c",
+        "observed_at": "2026-10-09T20:23:52Z",
+        "due_at": null,
+        "next_action": "WAIT for RemotePuzzle hiring-team shortlist/next-step request; do not send another unsolicited message before new buyer evidence.",
+        "evidence": [
+          {
+            "kind": "GMAIL_SENT",
+            "source_id": "1a11b54b561ebb5c",
+            "source": "GMAIL",
+            "observed_at": "2026-10-08T11:44:58Z"
+          },
+          {
+            "kind": "BUYER_RESPONSE",
+            "source_id": "1a12256578560597",
+            "source": "GMAIL",
+            "observed_at": "2026-10-09T20:23:52Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qdrain-20261010-ontrack-offered",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "ontrackmulching.com|website-trust-cleanup|2026-10-08",
+        "identity": {
+          "organization": "OnTrack Mulching",
+          "opportunity": "Website trust-cleanup check",
+          "domain": "ontrackmulching.com"
+        },
+        "to": "OFFERED",
+        "execution_owner": "PRI",
+        "recipient": "ontrackmulching@gmail.com",
+        "thread_id": "1a11c73d83090f13",
+        "observed_at": "2026-10-08T16:58:36Z",
+        "due_at": null,
+        "next_action": "WAIT for buyer response; no duplicate initial outreach.",
+        "evidence": [
+          {
+            "kind": "GMAIL_SENT",
+            "source_id": "1a11c73d83090f13",
+            "source": "GMAIL",
+            "observed_at": "2026-10-08T16:58:36Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qdrain-20261010-kjplumbing-delayed",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "kjplumbing.co.za|quote-request-pilot|2026-10-07",
+        "identity": {
+          "organization": "KJ Plumbing",
+          "opportunity": "Quote-request pilot",
+          "domain": "kjplumbing.co.za"
+        },
+        "to": "DELAYED",
+        "execution_owner": "PRI",
+        "recipient": "info@kjplumbing.co.za",
+        "thread_id": "1a117e1e2b753369",
+        "observed_at": "2026-10-09T22:39:03Z",
+        "due_at": null,
+        "next_action": "WAIT for Gmail terminal delivery evidence; do not classify as delivered or failed while provider retry remains active.",
+        "evidence": [
+          {
+            "kind": "GMAIL_SENT",
+            "source_id": "1a117e1e2b753369",
+            "source": "GMAIL",
+            "observed_at": "2026-10-07T19:40:42Z"
+          },
+          {
+            "kind": "DELIVERY_DELAY",
+            "source_id": "1a122d1e69aebfac",
+            "source": "GMAIL",
+            "observed_at": "2026-10-09T22:39:03Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qdrain-20261010-jobnect-delayed",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "jobnect.co.ke|trust-page-cleanup|2026-10-07",
+        "identity": {
+          "organization": "JobNect",
+          "opportunity": "Trust-page cleanup",
+          "domain": "jobnect.co.ke"
+        },
+        "to": "DELAYED",
+        "execution_owner": "PRI",
+        "recipient": "career@jobnect.co.ke",
+        "thread_id": "1a117bedff2ec0bd",
+        "observed_at": "2026-10-09T21:14:01Z",
+        "due_at": null,
+        "next_action": "WAIT for Gmail terminal delivery evidence; do not classify as delivered or failed while provider retry remains active.",
+        "evidence": [
+          {
+            "kind": "GMAIL_SENT",
+            "source_id": "1a117bedff2ec0bd",
+            "source": "GMAIL",
+            "observed_at": "2026-10-07T19:02:27Z"
+          },
+          {
+            "kind": "DELIVERY_DELAY",
+            "source_id": "1a122840c1ebf786",
+            "source": "GMAIL",
+            "observed_at": "2026-10-09T21:14:01Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qdrain-20261010-colonia-rejected",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "coloniaestudio.com|intake-conversion-pilot|2026-10-08",
+        "identity": {
+          "organization": "Colonia Estudio",
+          "opportunity": "Intake and conversion pilot",
+          "domain": "coloniaestudio.com"
+        },
+        "to": "REJECTED",
+        "execution_owner": "PRI",
+        "recipient": "coloniaestudio.di@gmail.com",
+        "thread_id": "1a1181380d534ec3",
+        "observed_at": "2026-10-08T16:41:10Z",
+        "due_at": null,
+        "next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
+        "evidence": [
+          {
+            "kind": "GMAIL_SENT",
+            "source_id": "1a11b4ea7c16c32c",
+            "source": "GMAIL",
+            "observed_at": "2026-10-08T11:38:21Z"
+          },
+          {
+            "kind": "BUYER_REJECTION",
+            "source_id": "1a11c640dcda5d8f",
+            "source": "GMAIL",
+            "observed_at": "2026-10-08T16:41:10Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qdrain-20261010-cuinateva-rejected",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "cuinatevabarcelona.com|website-trust-review|2026-10-07",
+        "identity": {
+          "organization": "Cuina Teva",
+          "opportunity": "Website trust review",
+          "domain": "cuinatevabarcelona.com"
+        },
+        "to": "REJECTED",
+        "execution_owner": "PRI",
+        "recipient": "cuinatevabarcelona@gmail.com",
+        "thread_id": "1a1185016fd604aa",
+        "observed_at": "2026-10-08T05:11:51Z",
+        "due_at": null,
+        "next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
+        "evidence": [
+          {
+            "kind": "GMAIL_SENT",
+            "source_id": "1a1185016fd604aa",
+            "source": "GMAIL",
+            "observed_at": "2026-10-07T21:41:04Z"
+          },
+          {
+            "kind": "BUYER_REJECTION",
+            "source_id": "1a119ecf8e1a7297",
+            "source": "GMAIL",
+            "observed_at": "2026-10-08T05:11:51Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qdrain-20261010-cork-rejected",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "corkcitygaol.com|group-booking-flow|2026-10-07",
+        "identity": {
+          "organization": "Cork City Gaol",
+          "opportunity": "Group booking flow",
+          "domain": "corkcitygaol.com"
+        },
+        "to": "REJECTED",
+        "execution_owner": "PRI",
+        "recipient": "info@corkcitygaol.com",
+        "thread_id": "1a115302e8719783",
+        "observed_at": "2026-10-07T07:32:51Z",
+        "due_at": null,
+        "next_action": "CLOSED for unsolicited follow-up; buyer stated current process is satisfactory.",
+        "evidence": [
+          {
+            "kind": "GMAIL_SENT",
+            "source_id": "1a115302e8719783",
+            "source": "GMAIL",
+            "observed_at": "2026-10-07T07:07:21Z"
+          },
+          {
+            "kind": "BUYER_REJECTION",
+            "source_id": "1a115478ee90c3a9",
+            "source": "GMAIL",
+            "observed_at": "2026-10-07T07:32:51Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qdrain-20261010-mprtc-wrongroute",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "mprtc.co.za|recruitment-conversion-intelligence-pilot|2026-10-07",
+        "identity": {
+          "organization": "MPRTC",
+          "opportunity": "Recruitment conversion-intelligence pilot",
+          "domain": "mprtc.co.za"
+        },
+        "to": "WRONG_ROUTE",
+        "execution_owner": "PRI",
+        "recipient": "info@mprtc.co.za",
+        "thread_id": "1a117c9194098d85",
+        "observed_at": "2026-10-07T19:13:47Z",
+        "due_at": null,
+        "next_action": "Do not repeat to the unmonitored mailbox. Requalify only if a verified business-development route emerges.",
+        "evidence": [
+          {
+            "kind": "GMAIL_SENT",
+            "source_id": "1a117c9194098d85",
+            "source": "GMAIL",
+            "observed_at": "2026-10-07T19:13:37Z"
+          },
+          {
+            "kind": "WRONG_ROUTE_RESPONSE",
+            "source_id": "1a117c950871a70c",
+            "source": "GMAIL",
+            "observed_at": "2026-10-07T19:13:47Z"
+          }
+        ]
+      }
     }
   ],
   "ready_claims": 11,
