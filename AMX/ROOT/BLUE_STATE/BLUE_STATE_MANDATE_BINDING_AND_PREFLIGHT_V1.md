@@ -1,3 +1,79 @@
+# CAPABILITY DOWNSELLING DRIFT (CDD) — BLUE STATE — OWNER ACCEPTED / MERGED — 2026-10-10
+
+**Drift class:** CAPABILITY DOWNSELLING DRIFT (**CDD**)
+
+CDD exists when durable evidence supports a stronger bounded capability/result claim but a Matrix worker, Librarian, model, media surface or projection unnecessarily weakens that claim below what the evidence supports.
+
+## Controlling representation law
+
+**DO NOT CLAIM ABOVE THE EVIDENCE. DO NOT REPRESENT BELOW THE EVIDENCE.**
+
+For capability/result presentation:
+
+**STRONGEST TRUTHFUL BOUNDED CLAIM SUPPORTED BY CURRENT EVIDENCE = PRESENTATION FLOOR.**
+
+A representation may be narrowed only when contrary/limiting evidence requires it, or when factual/lifecycle/legal/security truth requires the narrower wording.
+
+It may not be weakened merely because:
+- the result is unusual or impressive;
+- the result was produced internally;
+- there is no public comparator or leaderboard;
+- external organizations did not certify/endorse it;
+- constrained resources were used;
+- the claim may attract scrutiny;
+- the model/reviewer is uncomfortable stating the evidence at full strength.
+
+**SCRUTINY IS ANSWERED WITH EVIDENCE, NOT PRE-EMPTIVE DISCOUNTING.**
+
+## CDD detection and repair
+
+If a current statement materially reduces evidenced capability through unnecessary caveat-leading, provenance foregrounding, reputational hedging, sympathy framing, or weaker status language:
+
+**CDD = DETECTED.**
+
+Then:
+1. recover the newest controlling evidence;
+2. identify the exact downselling wording;
+3. restore the strongest truthful bounded formulation;
+4. place necessary boundaries in the appropriate detail layer rather than using them to weaken the headline;
+5. propagate the correction to affected public/professional/media surfaces;
+6. preserve the incident as drift evidence.
+
+CDD never authorizes exaggeration, false certification, unsupported market ranking, lifecycle inflation, hidden failures, or unsupported causal joins.
+
+D04 reference case: all 88 frozen controls carry one or more framework/control-discipline references; public presentation may accurately state that D04 is a **world-class enterprise-controls benchmark informed by globally recognized enterprise frameworks and control disciplines**, that AMilliMATRiX ran it against live infrastructure, and the current controlling result is **96.62% PASS / zero measured FAILs**.
+
+Governance evidence:
+- `AMX/ROOT/INTAKE/GOVERNANCE_CAPABILITY_DOWNSELLING_DRIFT_CDD_20261010.md`
+
+---
+
+# STALE RESULT REVERSION / PRE-SUPERSESSION CONTROL — BLUE STATE — OWNER ACCEPTED / MERGED — 2026-10-10
+
+A later-written projection does not become more authoritative merely because its page/block timestamp is newer.
+
+**LATER TIMESTAMP != LATER AUTHORITY.**
+
+**NEWER PROJECTION OF OLDER EVIDENCE != NEWER EVIDENCE.**
+
+Before any current surface supersedes a result, status, benchmark interpretation or lifecycle state, it must:
+
+**RECOVER SOURCE CHAIN → ORDER EVIDENCE BY AUTHORITY/SUPERSESSION → READ CURRENT LEDGER/CONTROLLING INTERPRETATION → VERIFY GENUINELY NEW CONTRARY EVIDENCE → ONLY THEN SUPERSEDE.**
+
+If a later-written page cites an older source and conflicts with a later durable correction, the later page is **STALE PROJECTION / DRIFT** until reconciled. Page recency may not resurrect superseded evidence.
+
+D04 reference incident:
+- older rerun commit `cb5713fc0d1adb5c1b1f326b3aa54437752a30bf` recorded 90.51 / FAIL;
+- later correction chain `ecafad6...` → `78d0473...` → `99adcea...` → `5aa034c...` established the controlling **96.62% PASS / zero measured FAIL** interpretation under the unchanged frozen rule;
+- a later T-MED Notion block resurrected the older 90.51 / FAIL state and therefore constituted separate supersession/reversion drift.
+
+Preserve the stale block as provenance. Do not let it outrank the controlling corrected result.
+
+Governance evidence:
+- `AMX/ROOT/INTAKE/GOVERNANCE_D04_9051_STALE_RESULT_REVERSION_DRIFT_20261010.md`
+
+---
+
 # PROOF-OF-WORK-FIRST COMMERCIAL PRIORITIZATION — BOUNDED BLUE STATE — 2026-10-10
 
 **Owner/ROOT disposition:** ACCEPTED / MERGED / ACTIVE as a bounded commercial prioritization weight.
