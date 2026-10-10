@@ -1699,3 +1699,17 @@ These are candidate inputs, not submissions, buyer responses, acceptances or rev
 - Supplemental evidence/comment on issue #31: `backend/state.py::summarize_opportunities()` currently adds elapsed-due records to `due_or_actionable` without route/authorization readiness checks. Current `claims.json` has 83 claims (77 WAITING, 6 CLOSED); `signals.json` has 79 signals (77 WAITING, 2 UNKNOWN), including held routes marked `due_now=true`.
 - Proposed bounded fix: separate `due_for_review` from `externally_executable`, preserve held work, and test that elapsed due dates do not turn WAITING/HOLD/NO_CONTACT/CLOSED work into executable READY. Fold into existing T-COD ledger/projection repair; no separate subsystem.
 - Lifecycle: OPEN PROPOSAL under issue #31; no implementation or lifecycle change performed.
+
+---
+
+## 2026-10-10 — Owner-directed self-repair after repeated escalation without progression
+
+- **Trigger:** Owner states that the Bounty Reaper defect was escalated more than three times without movement; threshold treated as met.
+- **Correction:** Earlier HASH_MISMATCH claim withdrawn after applying the canonical byte-boundary hash method. Reaper payload digest 754d8fb9b6816da1bf0013940883106e0d3928b1637526ee82b38e1792c1dcd3 matches registered digest 754d8fb9b6816da1bf0013940883106e0d3928b1637526ee82b38e1792c1dcd3; registry root recomputation 6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f matches declared root.
+- **Existing worker:** Bounty Reaper automation 6abf8e6d6a188191aee2b5d3fe24a9c9, title Bounty Reaper, enabled true. No duplicate worker or scheduler created.
+- **Governance rule:** AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md — CAPABLE-MODEL SELF-REPAIR AFTER REPEATED ESCALATION WITHOUT PROGRESSION. Additive enforcement over the existing Blocked Attempt Recovery Law; no new mandate or authority.
+- **FIX REPORT:** AMX/ROOT/INTAKE/GOVERNANCE_CAPABLE_MODEL_REPAIR_AFTER_ESCALATION_STAGNATION_20261010.md. Requests ROOT/T-GOV retrospective review and amendment if drift is found.
+- **Tracker fallback:** TRACKER_WRITE_BLOCKED. Attempted to locate and use an authorized Google Sheets/Drive read-write connector for tracker 1ETiK6b2YOz499OXBA5wuvgyWMjnDZoEdJIwCt2xGeCk; none is exposed in this runtime. The report records exact attempted action and blocker. Do not claim Runs/Queue/Payouts read/write/readback.
+- **Execution truth:** canonical Reaper mandate integrity verifies PASS; current Q1 remains UNKNOWN until tracker/completion artifacts are recovered. No bounty submission, award or payment is claimed.
+- **Next action:** ROOT/T-GOV reviews the report and rule retrospectively, amending evidence-backed defects; the existing Reaper continues lawful work through available non-BLACK routes while tracker access recovery remains open.
+
