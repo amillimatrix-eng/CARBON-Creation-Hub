@@ -65,6 +65,31 @@ class RoutingReconciliationTest(unittest.TestCase):
         self.assertEqual(result["external_ready_count"], 0)
         self.assertEqual(result["executable_order"], [])
 
+    def test_completed_claim_cannot_retain_external_ready_flag(self):
+        runner.write(runner.CLAIMS, {
+            "version": 1,
+            "ready_count": 0,
+            "external_ready_count": 1,
+            "executable_order": [],
+            "claims": {
+                "PRI|done": {
+                    "opportunity_key": "done",
+                    "status": "COMPLETED",
+                    "receipt": "immutable-receipt",
+                    "external_action_ready": True,
+                }
+            },
+        })
+        result = runner.claim_work({"PRI": [], "iSCOPE": []}, {"records": {}})
+        claim = result["claims"]["PRI|done"]
+
+        self.assertEqual(claim["status"], "COMPLETED")
+        self.assertEqual(claim["receipt"], "immutable-receipt")
+        self.assertFalse(claim["external_action_ready"])
+        self.assertEqual(result["external_ready_count"], 0)
+        self.assertEqual(result["ready_count"], 0)
+        self.assertEqual(result["executable_order"], [])
+
     def test_closed_owner_is_not_routed_and_closure_keeps_evidence(self):
         result = self.seed({"alakai": {"state": "CLOSED_NO_FIT", "execution_owner": "iSCOPE", "evidence": [{"kind": "BUYER_RESPONSE", "source_id": "real-message"}]}},
                            {"iSCOPE|alakai": {"opportunity_key": "alakai", "status": "READY"}})
