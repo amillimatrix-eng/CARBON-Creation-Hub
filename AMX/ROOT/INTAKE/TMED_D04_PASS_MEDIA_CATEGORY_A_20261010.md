@@ -191,3 +191,16 @@ A valid founder line is:
 **I said the Matrix would stand. We ran a world-class enterprise-controls benchmark against it: 88 controls, 70 critical, 96.62% PASS, zero measured failures. The controls are mapped to COSO, NIST, NIST CSF 2.0, TOGAF, COBIT and ISO frameworks. The evidence is there. Inspect it.**
 
 Do not replace this with apologetic or defensive language merely because the claim is strong.
+
+
+## D04 test-origin provenance
+
+Owner-attested test-origin state: the Owner did not select D04's individual controls in advance. The request was to increase test difficulty, move away from trivial checks, and assess the Matrix against serious corporate/enterprise expectations.
+
+The frozen D04 artifact corroborates the resulting enterprise scope and states that resource constraints do not reduce absolute enterprise-control requirements.
+
+T-MED presentation must preserve that provenance. Public wording should not create a contrary impression that the Owner selected the eventual 88 controls for favorable performance.
+
+Preferred bounded description: **The Owner requested a difficult corporate/enterprise benchmark. D04 was frozen at 88 controls across 11 enterprise domains, informed by globally recognized enterprise frameworks/control disciplines, and run against the live Matrix.**
+
+Exact original prompt wording remains OWNER-ATTESTED unless the original transcript is durably recovered.
