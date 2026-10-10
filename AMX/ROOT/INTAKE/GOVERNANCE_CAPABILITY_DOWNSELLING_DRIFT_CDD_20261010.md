@@ -1,19 +1,19 @@
 # GOVERNANCE — CAPABILITY DOWNSELLING DRIFT (CDD) — OWNER DISPOSITION
 
 **Date:** 2026-10-10  
-**Status:** **OWNER IDENTIFIED / ACCEPTED DRIFT CLASS / BLUE STATE MERGE REQUIRED**  
-**Class:** Evidence integrity / representation / positioning drift  
+**Status:** **OWNER IDENTIFIED / ACCEPTED DRIFT CLASS / ATTACHED AS ENFORCEMENT ADDENDUM TO EXISTING PUBLIC-EVIDENCE STANDARD / BLUE STATE BOUND**  
+**Authority relationship:** **SUPPORTING INCIDENT + DIAGNOSTIC CLASS ONLY. NOT A SECOND EVIDENCE STANDARD.**  
+**Existing authority:** `ROOT INTAKE — AMX Public Evidence & Commercial Positioning Standard V1 — 2026-10-09` (`3f48f8b5-6cd7-8144-9e95-dd356293680c`)  
+**Class:** Evidence integrity / representation / positioning enforcement drift  
 **Name:** **CAPABILITY DOWNSELLING DRIFT (CDD)**
 
 ## Definition
 
 **CAPABILITY DOWNSELLING DRIFT (CDD)** occurs when AMilliMATRiX has durable evidence supporting a stronger bounded capability/result claim, but a worker, Librarian, media surface, governance projection or model unnecessarily weakens that claim below what the evidence supports.
 
-CDD is not anti-hype discipline. It is the opposite failure mode of unsupported inflation.
+CDD is not a new governance law. The evidence law already existed before this incident. CDD names the failure to consume/enforce that existing law when translating evidence into public or commercial representation.
 
-The governing symmetry is:
-
-**DO NOT CLAIM ABOVE THE EVIDENCE. DO NOT REPRESENT BELOW THE EVIDENCE.**
+The incident proves: **GOVERNANCE PRESENT != GOVERNANCE CONSUMED != GOVERNANCE ENFORCED.**
 
 ## Triggering evidence — D04 positioning incident
 
@@ -52,11 +52,15 @@ The corrected presentation states what the evidence directly establishes:
 
 Detailed provenance remains inspectable without being used as an unnecessary headline discount.
 
-## CDD invariant
+## Existing-standard enforcement interpretation
 
-For any capability, result, benchmark, build, performance claim or professional/public representation:
+The governing standard remains the existing Public Evidence & Commercial Positioning Standard and its core law **CLAIM <= EVIDENCE**.
 
-**STRONGEST TRUTHFUL BOUNDED CLAIM SUPPORTED BY CURRENT EVIDENCE = PRESENTATION FLOOR.**
+CDD adds no parallel authority. It supplies the diagnostic test that the existing standard was not carried faithfully into representation.
+
+For enforcement purposes, ask:
+
+**Does the representation preserve the strongest commercially material bounded meaning that the current evidence supports?**
 
 A claim may be narrowed only when:
 1. contrary or limiting evidence materially narrows it;
@@ -113,4 +117,4 @@ Controlling representation rule:
 - `AMX/ROOT/INTAKE/TMED_D04_PASS_MEDIA_CATEGORY_A_20261010.md`
 - positioning correction commits `c06cd4c402c1841ee8625a90fd743ddab6eaef8e`, `c5aaf46e08e186d10f3ff56af360b67258e46f61`, `67ff5bfdf9d379958b083b78b9d458901f2d4094`.
 
-**OWNER DISPOSITION: CDD IS A RECOGNIZED MATRIX DRIFT CLASS. MERGE ITS PREVENTION RULE INTO BLUE STATE.**
+**OWNER DISPOSITION: CDD IS A RECOGNIZED MATRIX DRIFT CLASS ATTACHED TO THE EXISTING PUBLIC-EVIDENCE STANDARD AS AN ENFORCEMENT ADDENDUM. BLUE STATE BINDS CONSUMPTION/ENFORCEMENT OF THAT EXISTING STANDARD. NO DUPLICATE AUTHORITY.**
