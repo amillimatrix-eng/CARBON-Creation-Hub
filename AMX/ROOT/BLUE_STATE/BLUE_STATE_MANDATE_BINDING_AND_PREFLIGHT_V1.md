@@ -772,3 +772,40 @@ The rule is active when the same material defect or execution obligation has bee
 The repair is accepted only when the intended state transition is supported by evidence, the authoritative existing sink is independently read back, and ROOT has a complete retrospective FIX REPORT to inspect. If an external or human gate prevents final closure, the record must state the exact gate and continue any remaining executable work.
 
 **OPERATING LAW: REPEATED ESCALATION WITHOUT PROGRESS -> RECOVER EXACT STATE -> REPAIR WITHIN AUTHORITY OR ROUTE A COMPLETION-READY RECOVERY PARCEL -> PERSIST -> READ BACK -> FIX REPORT TO ROOT -> RETROSPECTIVE AUDIT / AMEND IF DRIFT -> CONTINUE UNTIL RUNTIME ENDS OR LAWFUL WORK IS EXHAUSTED.**
+
+
+---
+
+# OWNER-AUTHORIZED OCC-04 REAPER FINAL-MILE EXECUTION CONTROL — 2026-10-10
+
+**Status:** Operational control applied under Owner authorization; ROOT/T-GOV retrospective review and formal Intake disposition remain pending.  
+**Scope:** Existing BOUNTY-REAPER only. Additive execution discipline, not a new mandate, worker, authority plane, queue, scheduler, tracker or submission permission. The canonical Reaper mandate payload between its hash markers is unchanged, so its registered digest is unchanged by this section. OCC-04 remains formally pending Root disposition.
+
+**Owner completion chain:** **analysis → validated fix → package/finalize → authorized submission/handoff → external receipt → terminal result.**
+
+## Required behavior on every Reaper wake
+
+1. Recover the current Live Tracker if its authorized route is available, plus existing Root Intake receipts, completion/report artifacts and current official program scope. Reconcile completed, near-complete and submitted parcels and deduplicate before consequential action. A missing tracker read does **not** establish an empty Q1 queue: keep Q1 **UNKNOWN** and record `TRACKER_WRITE_BLOCKED`.
+2. Resume from the furthest evidenced state. Distinguish hypothesis/signal; validated or killed/narrowed finding; finalized private package; scope/authority gate passed; authorized submission; external receipt/report ID; acceptance/rejection/award/receivable; independently verified settlement. No stage implies the next.
+3. Before submission, verify the program is currently open; exact in-scope asset/deployment and source version; impact; permissions; novelty and audit/prior-disclosure dedupe; required PoC/evidence; package quality; and official submission route. Submit only when program and human/authority gates are satisfied. Preserve exact submitted version and external receipt/report ID. Never duplicate a consequential submission on retry.
+4. After an external receipt, record the attributable next state, response/obligation, owner, due/recheck and next action. A successful form/POST or internal report is not acceptance; award is not payment; configured payout rails are not verified settlement. Banker/independent evidence governs paid state.
+5. If no eligible Q1 is evidenced, advance the strongest independently executable Q2/Q3 parcel with the smallest lawful promotion-or-kill action in the same wake. One parcel blocked on scope/audit/impact/PoC/KYC or a human gate does not idle unrelated lawful work. BLACK remains an accelerator, not a Reaper dependency.
+6. Persist the actual consequence to the existing Live Tracker and independently read back the Runs row when an authorized connector is available. Otherwise write the receipt to existing Root Intake with literal `TRACKER_WRITE_BLOCKED`, attempted action and exact blocker; independently read back that fallback artifact/index entry. Never claim a tracker update when only fallback persistence occurred.
+7. Keep unresolved final-mile work open with recovery owner, exact blocker/dependency, next lawful action and acceptance/recheck condition. Close only on attributable external receipt plus terminal/next-state readback, or explicit governed cancellation/supersession.
+8. Preserve official program terms, authorization/scope, privacy, dedupe, KYC/wallet-ownership and other human-only gates. No unauthorized live exploitation, public disclosure, fund movement, credential expansion, unsupported finding, or invented award/payment.
+
+## Immediate existing-parcel application
+
+- **LayerZero `BR-20261003-024` / `BR-20261010-STATIC-001`:** Q3 narrowed, not submission-ready. The sub-claim that failed native-drop alone prevents `lzReceive` is killed. Exact deployment/scope, attacker/victim impact, retry/refund behavior and prior-audit dedupe remain unresolved. Continue those bounded steps or another independent lawful parcel; do not submit until all gates pass.
+- **XOXNO `REAPER-XOXNO` / `BR-20261010-XOXNO-STATIC-001`:** the generic stale/non-returned-position sub-claim was not reproduced by bounded static review. Do not submit it. Reopen only with a concrete new counterexample; otherwise preserve its killed/narrowed disposition and continue another eligible parcel.
+- **Tracker:** current connector surface does not provide authorized Google Sheets/Drive read/write. Keep `TRACKER_WRITE_BLOCKED`; Q1 remains UNKNOWN until current tracker or equivalent attributable completion-artifact recovery establishes its state. No Runs row is claimed by this control.
+
+## Acceptance and retrospective audit
+
+**Control-content acceptance:** this rule defines final-mile stages, state boundaries, current parcel gates, safety limits, existing sink/fallback and readback criteria. It does not prove a future runtime outcome.
+
+**Behavioral acceptance still required:** a fresh attributable Reaper wake must read this rule, materially advance/kill a parcel or submit an eligible package when authorized, persist the consequence and independently read it back. If the tracker remains unavailable, readback must establish the Intake fallback. For an eligible submission, prove the chain through official receipt and recorded terminal/next state.
+
+**ROOT/T-GOV retrospective review:** verify this is the smallest correct OCC-04 application; confirm Reaper mandate payload/hash and registry root remain unchanged; check the index/report readbacks and evidence boundaries; amend any drift and re-read amended artifacts. Formal OCC-04 disposition remains pending until Root records it.
+
+**Invalid closure:** document/prompt updated alone; scheduler wake alone; Q1=0 inferred from missing tracker access; submitted without official receipt; award described as paid without independent settlement; a killed sub-claim left submission-ready; or an unresolved block lacking owner/next action.
