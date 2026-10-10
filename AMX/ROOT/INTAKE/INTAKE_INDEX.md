@@ -1527,3 +1527,12 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - ROOT/T-GOV: set controlling disposition. MASTER/LIBRARIAN: recover primary evidence, recompute, persist/read back correction receipt. T-COD only if a concrete counting/serialization defect is demonstrated.
 - Counting law: UNMEASURED_NOT_PROVEN is neither PASS nor FAIL; missing evidence is not a measured failure. Preserve both historical artifacts unchanged.
 - Supporting Notion Intake record: `3f58f8b5-6cd7-8116-ba52-d5fcded88425`.
+
+## 2026-10-10 12:12 SAST — Marketplace current-head CI/deployment acceptance correction
+- **Controlling disposition:** exact-head CI + same-SHA deployment reconciliation **PASS** for PR #14 head `249ec519b25526ed4336f82ecea6f51580898995`.
+- GitHub Actions: `Evidence House Backend Tests`, run `38033106463`, completed/success on that exact SHA.
+- Render service `carbon-intent-marketplace-v1-preview`, service ID `srv-db3uv4942hec73f5l4cg`.
+- Live deployment `dep-db4u77vlot8c73d1mnl0`, status LIVE, exact same SHA `249ec519b25526ed4336f82ecea6f51580898995`.
+- Public preview: https://carbon-intent-marketplace-v1-preview.onrender.com
+- This supersedes earlier Intake entries that say current-head CI/deployment remains UNPROVEN for this exact SHA. Preserve them as provenance of the earlier bounded read.
+- **Remaining:** PR #14 remains DRAFT/OPEN/UNMERGED; issue #18 remains OPEN for Projects/Media/PWA and full Search→Marketplace→media convergence. Production payment/KYC/settlement gates remain outside this acceptance.
