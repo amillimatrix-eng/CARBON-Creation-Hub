@@ -1,43 +1,70 @@
 {
   "date": "2026-10-10",
   "control": "CHG07",
-  "rule": "Do not infer same-commit deployment where the evidence only proves implementation commit and later promoted/deployed commit.",
+  "rule": "Do not infer same-commit deployment where the evidence does not prove it.",
   "benchmarks": [
     {
       "artifact": "CARBON Intent Marketplace",
       "acceptance": "50/50",
       "merge_base": {
-        "commit": "0e837bb4…",
+        "commit": "0e837bb4ad624fe5c5a0421ddab78ea92a35a094",
         "timestamp": "2026-10-08T18:02:13Z"
       },
       "verified_head": {
-        "commit": "fd14ec87…",
+        "commit": "fd14ec8733ae1c3652c8cc5ad8424a0fd6caaffc",
         "timestamp": "2026-10-08T19:30:32Z"
       },
+      "ci": [
+        {
+          "run_id": "37830184039",
+          "result": "PASS",
+          "boundary": "recorded branch-head CI"
+        },
+        {
+          "run_id": "37832482959",
+          "result": "SUCCESS",
+          "boundary": "later verified CI"
+        }
+      ],
+      "preview": "https://carbon-intent-marketplace-v1-preview.onrender.com/market",
+      "independent_readback": "Dedicated preview readback recorded product CARBON°, sandbox/no-money boundary and core marketplace invariants.",
+      "exact_deployment_commit": "UNKNOWN_HOLD",
       "repository_bounded_window": "1h28m19s",
-      "evidence_source": "EVID-BUILD-DELIVERY-001 + AMX/ROOT/INTAKE/CARBON_INTENT_MARKETPLACE_FORENSIC_EVIDENCE_SUPPLEMENT_20261008.md",
-      "deployment_boundary": "Current receipt does not manufacture a same-commit live deployment claim beyond the recovered Marketplace forensic evidence."
+      "result": "PARTIAL",
+      "gap": "Recovered evidence does not establish that the provider preview deployed commit equals fd14ec8733ae1c3652c8cc5ad8424a0fd6caaffc. Do not infer same-commit promotion."
     },
     {
       "artifact": "CARBON Search",
       "acceptance": "36/36 Search-specific tests + 81/81 full-repository CI",
       "commissioning": {
-        "commit": "a98afabb…",
+        "commit": "a98afabb90ee36074b03582ad7a1f2ee816b0be0",
         "timestamp": "2026-10-09T09:22:30Z"
       },
       "first_implementation": {
-        "commit": "7ef32c8b…",
+        "commit": "7ef32c8bf7eac7e3c6993fbfceac898eb326606f",
         "timestamp": "2026-10-09T13:39:26Z",
         "elapsed": "4h16m56s"
       },
       "promoted_deployed": {
-        "commit": "69834610…",
+        "commit": "69834610dfb0945490b5d6f8047c8d99a0f83477",
         "timestamp": "2026-10-09T13:50:47Z",
         "elapsed": "4h28m17s"
       },
-      "evidence_source": "EVID-BUILD-DELIVERY-001 + issue #16 promotion evidence",
-      "deployment_boundary": "Promotion/deployed commit is later than first implementation; no false same-commit claim."
+      "ci": {
+        "run_id": "37939788569",
+        "result": "SUCCESS",
+        "commit": "69834610dfb0945490b5d6f8047c8d99a0f83477"
+      },
+      "deployment": {
+        "service": "carbon-search-intention-v1",
+        "deploy_id": "dep-db4f2tjtqb8s73f2eu00",
+        "status": "LIVE",
+        "commit": "69834610dfb0945490b5d6f8047c8d99a0f83477"
+      },
+      "independent_readback": "Public Search surface loaded; CARBON Search query RESOLVED; evidence control, confirm feedback, correct control and OPEN action routing all recorded PASS.",
+      "result": "PASS"
     }
   ],
-  "result": "PASS_WITH_EXPLICIT_COMMIT_CHAIN"
+  "result": "PARTIAL",
+  "reason": "Search has exact tested/promoted/deployed same-commit evidence. Marketplace has strong CI + preview evidence but exact provider deployment-commit linkage remains UNKNOWN/HOLD."
 }
