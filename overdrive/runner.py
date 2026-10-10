@@ -430,6 +430,10 @@ def claim_work(signals, opportunities):
                 "next_action": record.get("next_action"),
                 "due_at": record.get("due_at"),
             })
+        # Execution authorization is a current-state projection, not durable history.
+        # Never let an old READY flag survive a current WAITING/CLOSED/COMPLETED state.
+        if claim.get("status") != "READY":
+            claim["external_action_ready"] = False
         if claim.get("status") == "COMPLETED" and claim.get("receipt"):
             continue
         if key not in seen and not claim.get("customer_request_id"):
@@ -445,6 +449,10 @@ def claim_work(signals, opportunities):
     reconcile_customer_requests(active, records)
     claims["generated_at"] = now.isoformat()
     claims["ready_count"] = sum(v.get("status") == "READY" for v in active.values())
+    claims["external_ready_count"] = sum(
+        v.get("status") == "READY" and v.get("external_action_ready") is True
+        for v in active.values()
+    )
     claims["executable_order"] = sorted((k for k,v in active.items() if v.get("status")=="READY"), key=lambda k:(active[k].get("priority",99), active[k].get("due_at") or "9999",k))
     write(CLAIMS, claims)
     return claims

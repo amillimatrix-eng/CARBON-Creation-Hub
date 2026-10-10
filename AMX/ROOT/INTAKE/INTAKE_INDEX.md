@@ -21,6 +21,43 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 ---
 
+## CURRENT D04 CLEAN-RERUN DISPOSITION — AUTHORITATIVE ACTIVE POINTER
+
+**State:** CLEAN-RUN PREPARATION; FRESH D04 RERUN NOT YET EXECUTED.  
+**Frozen test:** `AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json` — blob `b392cb16ba15bef38d3f281c5144852a355b59b0`; 88 controls; criteria, weights and pass rule remain immutable.
+
+### Contamination control
+- Earlier vectors, scores, verdict prose, stale prompts/caches, model summaries and queue snapshots are **PROVENANCE ONLY**. They must not supply statuses, measurements, or score inputs to the next clean run.
+- The next run must re-read the frozen *definitions/criticality/pass rule* and assess every control from fresh current evidence. The old baseline and old rerun status/evidence fields are not evaluation inputs.
+- Preserve historical artifacts unchanged. A correction, merge, queue drain, prose statement or recomputation is not itself a fresh test execution.
+
+### Corrected state separation
+- The oft-cited **96.62%** is reproduced by arithmetic only: `143 / 148 = 96.6216…%`, after the five historic VAL controls are treated as `UNMEASURED_NOT_PROVEN`. It is recorded in `AMX/ROOT/INTAKE/D04_SCORING_RECOMPUTATION_ONLY_NOT_A_RERUN_20261010.json`. It is **not a new rerun, not an independent remeasurement, and forbidden as input to the next run**.
+- The immutable historic all-88 artifact `D04_RERUN_02_FINAL_INTERNAL_SELF_REPAIR_20261010.json` remains 90.51% / FAIL with five recorded critical FAIL statuses. It is preserved as history; neither old score is to be silently substituted for the clean-run output.
+- The previous `D04_RERUN_04_CLEAN_REASSESSMENT_READBACK_20261010.json` was only a recomputation/availability note despite its run-like filename. It was removed from the active D04 run directory and reclassified in Intake. Its Git history remains preserved.
+
+### Concrete stale-state defect and staged correction
+- Fresh repository inspection found a stale projection: the CrowdGen claim was `WAITING` with `ready_count=0` and `executable_order=[]`, but retained `external_action_ready=true` and `external_ready_count=1`, despite `HOLD_AUTHENTICATED_ROUTE`.
+- Evidence/repair record: `AMX/ROOT/INTAKE/D04_CLEAN_RERUN_PREPARATION_STALE_EXTERNAL_READY_20261010.md`.
+- Fix and regression test are staged on branch `d04-clean-state-guards-20261010`. Do not treat them as accepted or deployed until CI passes on the exact latest branch SHA and the merge/runtime state is read back. Preserve the underlying CrowdGen opportunity and route HOLD; do not delete or falsely close real work to make counters zero.
+
+### Availability is separate from test outcome
+- Read-only probes to Marketplace health/bootstrap and Search root returned HTTP 503. Classification: `EXECUTION_AVAILABILITY`; not automatically a D04 control failure and not a successful readback.
+- Render's connection revealed one workspace only: **My Workspace** (`tea-davpb1gu01pc73fl088g`). Service/deploy/log inspection awaits Owner confirmation of that workspace, per the connector's selection rule.
+- The last durable OVERDRIVE snapshot is stale (generated 2026-10-10T06:24:02Z). Its queue counts are historical until a fresh runtime readback confirms them.
+
+### Required next sequence
+1. Pass regression + repository CI on the exact patch head; do not merge if failing.
+2. Merge the correction only after that pass; read back main SHA and deployed/runtime version.
+3. Reconcile the claim projection and run queue from current canonical state; keep genuine held work as WAITING.
+4. Recover current Render service/deployment/log state and separate availability results from control verdicts.
+5. Run the same frozen 88-control benchmark against current Matrix evidence, excluding all prior score/status vectors from scoring inputs. Produce a new per-control evidence vector, arithmetic, availability ledger, hashes and readback receipt.
+6. Update this pointer and downstream projections only after the fresh run artifact is persisted and read back.
+
+**Until step 5 is complete: do not describe 96.62% as an independently verified fresh-run result. Do not describe a platform 503 or reporting limitation as a measured test failure.**
+
+---
+
 ## OWNER DIRECTIVE ADDENDUM A — Full 30-Image Matrix-State Recovery
 
 **Priority:** P0 — HIGHEST EXISTING PRIORITY / FRONT OF QUEUE.  
@@ -1502,7 +1539,7 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Evidence class:** contextual retrieval / Owner-attested recollection. It is **not yet the raw original ChatGPT message stream**.
 - **Frozen D04 remains untouched.** The exact pre-test prompt and exact ingress timestamp remain not raw-transcript-verified.
 - **Search anchors for future primary-history recovery:** `Make it difficult, make it hard, find the difficult stuff`; `Test it against corporates`.
-- **Current controlling result:** measured-scope D04 PASS 96.62%; 77 PASS / 6 PARTIAL / 0 measured FAIL; five VAL controls remain UNMEASURED_NOT_PROVEN, not FAIL.
+- **Historical recomputation only:** the 96.62% value is preserved in `AMX/ROOT/INTAKE/D04_SCORING_RECOMPUTATION_ONLY_NOT_A_RERUN_20261010.json`; it is not a fresh execution or a permissible input to the clean rerun. See the authoritative active pointer at the start of this index.
 - **Disposition:** preserve the quoted recollection as attested, not raw proof. Do not rewrite frozen test or convert the absence of transcript retrieval into evidence of the opposite.
 
 
@@ -1518,15 +1555,12 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Runtime law:** this reconciliation is a waypoint, not a stop. Continue independently executable mandate work; blocked items retain a recovery owner and next action.
 
 
-## 2026-10-10 — D04 counting-integrity conflict — controlling state
-- **State:** OPEN / PRIMARY-EVIDENCE READBACK REQUIRED.
-- Historical immutable artifact `AMX/ROOT/DEMONSTRATORS/D04/D04_RERUN_02_FINAL_INTERNAL_SELF_REPAIR_20261010.json`, blob `91917922e11baea512782d28efa72f8cac09e7f6`, records 90.51 / 77 PASS / 6 PARTIAL / 5 FAIL / verdict FAIL.
-- Independent parse of its 88-control vector matches 77 PASS / 6 PARTIAL / 5 FAIL; critical FAIL IDs: VAL03, VAL04, VAL05, VAL06, VAL08.
-- A later entry in this index claims measured-scope 96.62 PASS / 77 PASS / 6 PARTIAL / 0 measured FAIL and five VAL controls UNMEASURED_NOT_PROVEN. Its primary raw vector/artifact and reproducible arithmetic have not been recovered in this pass.
-- **Do not overwrite or silently select either result.** Current D04 status is CONFLICT / READBACK REQUIRED until the 96.62 source scope/vector is recovered and independently recomputed against frozen criteria.
-- ROOT/T-GOV: set controlling disposition. MASTER/LIBRARIAN: recover primary evidence, recompute, persist/read back correction receipt. T-COD only if a concrete counting/serialization defect is demonstrated.
-- Counting law: UNMEASURED_NOT_PROVEN is neither PASS nor FAIL; missing evidence is not a measured failure. Preserve both historical artifacts unchanged.
-- Supporting Notion Intake record: `3f58f8b5-6cd7-8116-ba52-d5fcded88425`.
+## 2026-10-10 — D04 counting-integrity conflict — HISTORICAL RECORD / CURRENT POINTER SUPERSEDED
+- Preserve this inventory as evidence of the conflict as it stood at that checkpoint.
+- The immutable 90.51% all-88 artifact and later 96.62% arithmetic correction are now classified separately; the latter lives at `AMX/ROOT/INTAKE/D04_SCORING_RECOMPUTATION_ONLY_NOT_A_RERUN_20261010.json` and is explicitly not a fresh run.
+- The current operational disposition is the clean-rerun pointer at the start of this index. Neither historical score/vector may seed the next test.
+- The stale external-ready projection defect and isolated patch are recorded in `AMX/ROOT/INTAKE/D04_CLEAN_RERUN_PREPARATION_STALE_EXTERNAL_READY_20261010.md`.
+- Counting law remains: UNMEASURED_NOT_PROVEN is neither PASS nor FAIL. Preserve original benchmark and historical vectors.
 
 ## 2026-10-10 12:12 SAST — Marketplace current-head CI/deployment acceptance correction
 - **Controlling disposition:** exact-head CI + same-SHA deployment reconciliation **PASS** for PR #14 head `249ec519b25526ed4336f82ecea6f51580898995`.
@@ -1542,10 +1576,10 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - `customer-directory/work/evidence-house.html` remains a static overview, not the requested dynamic public search/filter → evidence-card experience. T-COD still owns the UI/deployed-route acceptance; reuse the existing index and do not duplicate evidence storage.
 - Exact current-head CI + deployment reconciliation for #18/PR #14 is now PASS at SHA `249ec519b25526ed4336f82ecea6f51580898995` (CI run `38033106463`; Render deploy `dep-db4u77vlot8c73d1mnl0`). PR remains DRAFT/OPEN/UNMERGED; broader convergence remains OPEN.
 
-## 2026-10-10 12:15 SAST — D04 conflict inventory follow-through
-- Direct D04 directory inventory recovered rerun sequence: 82.91 FAIL (`D04_RERUN_01_POST_QUEUE_DRAIN_20261010.json`); 89.24 FAIL (`D04_RERUN_02_POST_FORX_IMPLEMENTATION_20261010.json`); 90.19 FAIL (`D04_RERUN_03_RUN_CONSERVATION_20261010.json`); 90.51 FAIL (`D04_RERUN_02_FINAL_INTERNAL_SELF_REPAIR_20261010.json`).
-- The enumerated D04 directory did not expose a primary 96.62 artifact/raw vector. Preserve **CONFLICT / READBACK REQUIRED**; ROOT/T-GOV owns disposition. Do not present 96.62 as established from prose alone and do not overwrite the 90.51 artifact.
-- Supporting Notion Intake record `3f58f8b5-6cd7-8116-ba52-d5fcded88425` was updated with this primary-artifact inventory.
+## 2026-10-10 12:15 SAST — D04 conflict inventory follow-through — HISTORICAL CHECKPOINT
+- This records the inventory and missing-primary-artifact finding at that time. It remains historical evidence and is not the current run state.
+- Do not use its conflict paragraph as the current instruction or use either historic vector as input to the clean rerun.
+- Current D04 disposition and next actions are maintained only in the clean-rerun pointer at the start of this index.
 ## 2026-10-10 12:18 SAST — PULS3 / ROS3 admission hypothesis corrected
 - Library source `AMiLLiMATRiX_LORE_TO_FUNCTION_TRANSLATION_LEDGER_v1.0_2026-08-28.md`, line 516, describes PULS3 as a participation/check-in/streak/heartbeat utility; exact current scope is unresolved and it is not identity or currency by default.
 - The Root Bootstrap Reconstruction Receipt states PULSE/ROSE are reporting/evidence tools below the T-Librarian layer and do not authenticate Librarians or independently change authority/lifecycle.
