@@ -1,0 +1,83 @@
+{
+  "receipt_id": "D04-FIN06-RAIL-OBSERVATION-20261010",
+  "source": "AMX Income Rails Registry — Google Sheets",
+  "source_spreadsheet_id": "1B_4WWcX6KzI3166Zow_DQGzp7yES1VeQB311IN1Z3Xo",
+  "source_tab": "Income Rails",
+  "source_updated_at": "2026-10-02T15:05:01.096Z",
+  "privacy_boundary": "Receiving identifiers/account numbers/addresses intentionally omitted from this public-safe receipt.",
+  "rails": [
+    {
+      "rail": "GoTyme Bank",
+      "registry_status": "AVAILABLE",
+      "observation_class": "UNKNOWN_UNOBSERVED",
+      "reason": "No authoritative connected bank-transaction source was available in this runtime."
+    },
+    {
+      "rail": "PayPal",
+      "registry_status": "AVAILABLE",
+      "observation_class": "UNKNOWN_UNOBSERVED",
+      "reason": "No authoritative PayPal transaction connector was available in this runtime."
+    },
+    {
+      "rail": "AMX EVM receive",
+      "registry_status": "APPROVED",
+      "observation_class": "PROVIDER_LIMITED",
+      "reason": "Public-chain observability may exist, but this runtime did not establish an all-network/all-asset authoritative period close."
+    },
+    {
+      "rail": "AMX BTC receive",
+      "registry_status": "APPROVED",
+      "observation_class": "PROVIDER_LIMITED",
+      "reason": "No authoritative BTC period-close receipt was established in this runtime."
+    },
+    {
+      "rail": "AMX SOL receive",
+      "registry_status": "APPROVED",
+      "observation_class": "PROVIDER_LIMITED",
+      "reason": "No authoritative Solana period-close receipt was established in this runtime."
+    },
+    {
+      "rail": "AMX TRON receive",
+      "registry_status": "APPROVED",
+      "observation_class": "PROVIDER_LIMITED",
+      "reason": "No authoritative Tron period-close receipt was established in this runtime."
+    },
+    {
+      "rail": "AMX BNB receive",
+      "registry_status": "APPROVED",
+      "observation_class": "PROVIDER_LIMITED",
+      "reason": "No authoritative BNB-chain period-close receipt was established in this runtime."
+    },
+    {
+      "rail": "AMX Polygon receive",
+      "registry_status": "APPROVED",
+      "observation_class": "PROVIDER_LIMITED",
+      "reason": "No authoritative Polygon period-close receipt was established in this runtime."
+    },
+    {
+      "rail": "AMX Avalanche receive",
+      "registry_status": "APPROVED",
+      "observation_class": "PROVIDER_LIMITED",
+      "reason": "No authoritative Avalanche period-close receipt was established in this runtime."
+    },
+    {
+      "rail": "AMX HyperEVM receive",
+      "registry_status": "APPROVED_WITH_NETWORK_MATCH",
+      "observation_class": "PROVIDER_LIMITED",
+      "reason": "Exact network/asset period close not established."
+    },
+    {
+      "rail": "OKX / Agentic Wallet",
+      "registry_status": "HOLD_FOR_EXACT_NETWORK",
+      "observation_class": "UNKNOWN_UNOBSERVED",
+      "reason": "Registry itself says exact receiving address/network is not yet authoritative."
+    },
+    {
+      "rail": "Program-provided payout account",
+      "registry_status": "AVAILABLE_WHEN_PROGRAM_BINDS",
+      "observation_class": "UNKNOWN_UNOBSERVED",
+      "reason": "Provider-managed/onboarding-specific and no authoritative current payout event was bound."
+    }
+  ],
+  "conclusion": "FIN06 remains PARTIAL. The rail inventory is authoritative, but all-rail period-close settlement observability is not."
+}
