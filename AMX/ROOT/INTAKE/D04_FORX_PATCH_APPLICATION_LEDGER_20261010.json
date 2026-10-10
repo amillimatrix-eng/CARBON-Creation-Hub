@@ -1,0 +1,170 @@
+{
+  "artifact_id": "D04-FORX-PATCH-APPLICATION-LEDGER-20261010",
+  "source_patch_set": "AMX/ROOT/INTAKE/D04_FORX_FORENSIC_PATCH_SET_20261010.json",
+  "rule": "A recommendation is not counted as applied until its implementation evidence and acceptance/readback exist. External-outcome controls cannot be patched into PASS.",
+  "patches": [
+    {
+      "controls": [
+        "CHG04",
+        "QMS04"
+      ],
+      "status": "APPLIED_ACCEPTED",
+      "evidence": [
+        "issue #24 closed only after eight-record MISSING_RECORD_UPSERT ingest/persist/readback",
+        "AMX/ROOT/RECEIPTS/D04_CHANGE_CORRECTIVE_ACTION_ACCEPTANCE_20261010.md"
+      ]
+    },
+    {
+      "controls": [
+        "CHG05"
+      ],
+      "status": "APPLIED_ACCEPTED",
+      "evidence": [
+        "PR #26 merged f4dbed993c023184fc4e30d2736b612a7970a8f8",
+        "workflow 38030313505 four consecutive state_changed:false ticks with no semantic no-op transition commit"
+      ]
+    },
+    {
+      "controls": [
+        "EA04",
+        "COM06",
+        "QMS07"
+      ],
+      "status": "APPLIED_SCOPED",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_CLOSE_PROJECTION_CONTRACT_V1.md",
+        "Close readback: exactly Kingston Stanley USD99, Xubio USD49, Synergy Interactive USD99 in bounded projection scope; confidence set to 0; notes corrected to canonical SUBMITTED/WAITING"
+      ],
+      "truth_boundary": "Close is bounded projection only, not canonical truth."
+    },
+    {
+      "controls": [
+        "CHG06"
+      ],
+      "status": "APPLIED",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_ROLLBACK_REVERSIBILITY_CONTROL_V1.md"
+      ]
+    },
+    {
+      "controls": [
+        "SEC06"
+      ],
+      "status": "APPLIED",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_SUPPLIER_PROVIDER_RISK_REGISTER_20261010.json"
+      ]
+    },
+    {
+      "controls": [
+        "SEC07"
+      ],
+      "status": "APPLIED",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_EVIDENCE_PII_RETENTION_ACCESS_POLICY_V1.md"
+      ]
+    },
+    {
+      "controls": [
+        "SEC08"
+      ],
+      "status": "APPLIED",
+      "evidence": [
+        "AMX/ROOT/RECEIPTS/D04_SECURITY_RECOVERY_TABLETOP_20261010.md"
+      ],
+      "truth_boundary": "tabletop exercise, not evidence of a real breach"
+    },
+    {
+      "controls": [
+        "OPS08",
+        "RES06"
+      ],
+      "status": "APPLIED_SCOPED",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_CRITICAL_ROUTE_FALLBACK_REGISTER_20261010.json"
+      ],
+      "truth_boundary": "functions without tested alternate are explicitly OWNER/EXTERNAL_GATE; no false redundancy claim"
+    },
+    {
+      "controls": [
+        "CHG07"
+      ],
+      "status": "APPLIED_PARTIAL",
+      "evidence": [
+        "AMX/ROOT/RECEIPTS/D04_DEPLOYMENT_PROVENANCE_20261010.json"
+      ],
+      "truth_boundary": "Search chain is explicit; Marketplace same-commit live deployment is not invented where missing."
+    },
+    {
+      "controls": [
+        "SEC02"
+      ],
+      "status": "REVIEW_APPLIED_OWNER_SECURITY_GATE",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_CONNECTOR_LEAST_PRIVILEGE_REVIEW_20261010.md"
+      ],
+      "truth_boundary": "permissions were not blindly restricted; final least-privilege posture requires Owner/security approval and readback"
+    },
+    {
+      "controls": [
+        "FIN06"
+      ],
+      "status": "APPLIED_PARTIAL",
+      "evidence": [
+        "AMX/ROOT/RECEIPTS/D04_FIN06_RAIL_OBSERVABILITY_20261010.json"
+      ],
+      "truth_boundary": "Ethereum bounded scope directly observed; other rails remain UNKNOWN/PROVIDER_LIMITED, so no all-rail zero/close claim"
+    },
+    {
+      "controls": [
+        "AI08"
+      ],
+      "status": "NOT_APPLIED_BLOCKED_RECOVERY_OWNER_ASSIGNED",
+      "evidence": [
+        "AMX/ROOT/INTAKE/D04_AI08_WEIGHTED_SELECTION_RECOVERY_PARCEL_20261010.json"
+      ],
+      "truth_boundary": "Current 100K selector uses geographic/POI dimensions; real commercial outcomes do not have a proven causal mapping. Forcing one would be synthetic drift."
+    },
+    {
+      "controls": [
+        "OPS02",
+        "VAL07"
+      ],
+      "status": "ACCEPTANCE_PENDING_FINAL_RERUN",
+      "evidence": [
+        "current continuous remediation runtime has already crossed forensic analysis → Intake patch set → multiple implementations; final retest/readback still required before PASS"
+      ]
+    },
+    {
+      "controls": [
+        "FIN08",
+        "VAL03",
+        "VAL04",
+        "VAL05",
+        "VAL06",
+        "VAL08"
+      ],
+      "status": "EXTERNAL_OUTCOME_REQUIRED",
+      "evidence": [
+        "current canonical commercial lifecycle has no accepted scope→contract→invoice/receivable→paid/settled chain"
+      ],
+      "truth_boundary": "cannot be changed by architecture/documentation"
+    },
+    {
+      "controls": [
+        "VAL02"
+      ],
+      "status": "EXTERNAL_OUTCOME_REQUIRED_PARTIAL",
+      "evidence": [
+        "substantive responses exist, including RemotePuzzle/My Drama/LAVDM, but repeated response→next-step conversion is not yet proven"
+      ]
+    }
+  ],
+  "governance_support": [
+    "AMX/ROOT/INTAKE/D04_RUNTIME_ASSUMPTION_DRIFT_EVIDENCE_20261010.md",
+    "AMX/ROOT/INTAKE/D03_D04_MATRIX_CRITIC_GOVERNANCE_CONFORMANCE_AUDIT_20261010.md",
+    "AMX/ROOT/INTAKE/WEIGHTED_EVIDENCE_GUARD_MAJOR_CLAIMS_20261010.json",
+    "AMX/ROOT/INTAKE/RUNTIME_EVIDENCE_MANIFEST_D03_D04_FORX_20261010.json"
+  ],
+  "conclusion": "FORX recommendations are no longer merely sitting in Intake. All currently lawful executable patches were applied or scoped-partially applied with evidence. AI08 is explicitly blocked rather than faked. External commercial/settlement outcomes remain evidence-dependent."
+}
