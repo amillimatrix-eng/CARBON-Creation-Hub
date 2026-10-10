@@ -1,0 +1,223 @@
+{
+  "manifest_id": "ROOT-RUNTIME-EVIDENCE-20261010-01",
+  "captured_at": "2026-10-10T06:50:00Z",
+  "scope": "D03/D04 enterprise testing, queue drain, FORX remediation, commercial execution, chronology recovery, assumption/drift evidence",
+  "truth_boundary": "This is an evidence checkpoint. It does not imply every FORX patch is applied or every D04 failure is closed.",
+  "durable_artifacts": [
+    {
+      "path": "AMX/ROOT/DEMONSTRATORS/D03/D03_CURRENT_STATE_BLIND_PACKET_V1.json",
+      "commit": "5b4f83df7804e8e8aa3e3260f39b695a513089b8",
+      "status": "FROZEN"
+    },
+    {
+      "path": "AMX/ROOT/DEMONSTRATORS/D03/D03_CURRENT_STATE_ORACLE_V1.json",
+      "commit": "a3a29ad04b1b9a81ebb5450a756bfa42427239db",
+      "status": "FROZEN_SEPARATE_ORACLE"
+    },
+    {
+      "path": "AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json",
+      "commit": "133fdcc55ac5f8731bc49ae6d266011f94f2616d",
+      "status": "FROZEN_BASELINE"
+    },
+    {
+      "path": "AMX/ROOT/DEMONSTRATORS/D04/D04_CONTEXT_ADDENDUM_RESOURCE_CHRONOLOGY_20261010.md",
+      "commit": "85b7a21f3ead533d0870e4b8685cbcfa1802e712",
+      "status": "NON_SCORING_CONTEXT"
+    },
+    {
+      "path": "AMX/ROOT/DEMONSTRATORS/D04/D04_RERUN_01_POST_QUEUE_DRAIN_20261010.json",
+      "commit": "8d739429ad72f5d9363e0aa610ccdc685f61d6dd",
+      "status": "POST_QUEUE_DRAIN_RERUN"
+    },
+    {
+      "path": "AMX/ROOT/INTAKE/D04_FORX_FORENSIC_REMEDIATION_REQUEST_20261010.json",
+      "commit": "b87db12a4ebb595ccb06bb24589a61d4860a6cac",
+      "status": "ROUTED_TO_FORX"
+    },
+    {
+      "path": "AMX/ROOT/INTAKE/D04_FORX_FORENSIC_PATCH_SET_20261010.json",
+      "commit": "9c3bc9909c2ec66c28ef6b17484769dbf62df88c",
+      "status": "FORX_RECOMMENDATIONS_DURABLE"
+    },
+    {
+      "path": "AMX/ROOT/INTAKE/D04_RUNTIME_ASSUMPTION_DRIFT_EVIDENCE_20261010.md",
+      "commit": "a40532dac6615d5adf3001f215bff7cc95c9ede5",
+      "status": "ASSUMPTION_FAILURE_EVIDENCE"
+    },
+    {
+      "path": "AMX/ROOT/RECEIPTS/D04_CHANGE_CORRECTIVE_ACTION_ACCEPTANCE_20261010.md",
+      "commit": "b0d1416cc12384fe02735012305d89e726a28414",
+      "status": "CHG04_CHG05_QMS04_ACCEPTANCE"
+    }
+  ],
+  "d04": {
+    "baseline": {
+      "absolute_score": 77.22,
+      "resource_efficiency_score": 92.31,
+      "verdict": "FAIL"
+    },
+    "post_queue_drain": {
+      "absolute_score": 82.91,
+      "verdict": "FAIL",
+      "critical_failures": [
+        "VAL03",
+        "VAL04",
+        "VAL05",
+        "VAL06",
+        "VAL08"
+      ]
+    },
+    "queue_drain_evidence": {
+      "pending_adapter_queue": 0,
+      "ready_claims": 0,
+      "queue_commit": "2638a77f0043906586c89c9ce04128620a77d2d6",
+      "reconciliation_commit": "0be0a22181797eabd42c5fb6e02a56c9ce11f39f",
+      "persistence_commits": [
+        "ef4dea046ff20e5b34f60f1b69f4a808845da2bc",
+        "369ad686613df0130c7780323d64e239ad96d09c",
+        "e122417507d68a2db4f4a76d3a20bafb8cc7f9af"
+      ]
+    },
+    "semantic_noop_fix": {
+      "pr": 26,
+      "merge_commit": "f4dbed993c023184fc4e30d2736b612a7970a8f8",
+      "workflow_run": 38030313505,
+      "acceptance": "four consecutive state_changed:false ticks; no semantic-noop durable transition commit"
+    },
+    "missing_record_fix": {
+      "issue": 24,
+      "state": "CLOSED_AFTER_BEHAVIORAL_ACCEPTANCE"
+    }
+  },
+  "forx_patch_state": {
+    "explicit_warning": "At this checkpoint, FORX patch recommendations are durable but NOT ALL are yet implemented. Do not state 'FORX patches applied' globally until the application receipt exists.",
+    "already_applied_or_partially_applied": [
+      "CHG04",
+      "QMS04",
+      "CHG05",
+      "EA04_PARTIAL",
+      "COM06_PARTIAL",
+      "QMS07_PARTIAL"
+    ],
+    "still_to_apply_or_close": [
+      "EA04",
+      "COM06",
+      "QMS07",
+      "CHG06",
+      "CHG07",
+      "OPS02",
+      "VAL07",
+      "OPS08",
+      "RES06",
+      "SEC02",
+      "SEC06",
+      "SEC07",
+      "SEC08",
+      "AI08",
+      "FIN06"
+    ],
+    "external_outcome_dependent": [
+      "FIN08",
+      "VAL02",
+      "VAL03",
+      "VAL04",
+      "VAL05",
+      "VAL06",
+      "VAL08"
+    ]
+  },
+  "d03_external_attempts": [
+    {
+      "surface": "Arena",
+      "run_id": "7a849899-8540-4d3f-988a-f71d24a6cec2",
+      "classification": "NOT_EXECUTED_COMPLETE",
+      "reason": "modal/login/privacy overlays + time limit prevented completed battle/extraction"
+    },
+    {
+      "surface": "HuggingChat",
+      "run_id": "3c8c4460-caef-4396-ab2f-55130db369e5",
+      "classification": "NOT_EXECUTED",
+      "reason": "login required; run prohibited login"
+    },
+    {
+      "surface": "Duck.ai GPT-6 Luna",
+      "run_id": "b928ae6e-1e4e-4bb5-8c5e-6d164172019a",
+      "classification": "INCOMPLETE_UNSCORED",
+      "reason": "answer began; C01 visible as FALSE citing correct sources; full 48+4 response timed out"
+    },
+    {
+      "surface": "Duck.ai Claude Haiku 4.5",
+      "run_id": "fa60e336-e075-496c-9e44-c358c6033061",
+      "classification": "REFUSAL_UNSCORED",
+      "reason": "refused external packet as prompt injection"
+    },
+    {
+      "surface": "Duck.ai Mistral Small 4",
+      "run_id": "48975f7c-b879-46cb-981e-6441b90913a3",
+      "classification": "NOT_EXECUTED",
+      "reason": "interactive chat surface unavailable in run"
+    }
+  ],
+  "commercial_provider_receipts": [
+    {
+      "org": "Kingston Stanley",
+      "message_id": "1a1243fc84b3cf60",
+      "event": "governed follow-up SENT"
+    },
+    {
+      "org": "Xubio",
+      "message_id": "1a1243fde7688dc4",
+      "event": "governed follow-up SENT"
+    },
+    {
+      "org": "Synergy Interactive",
+      "message_id": "1a1243ff3e8d00f2",
+      "event": "governed follow-up SENT"
+    },
+    {
+      "org": "SocialsGroup",
+      "message_id": "1a124443e231891a",
+      "event": "direct outreach SENT"
+    },
+    {
+      "org": "Agent Factory",
+      "message_id": "1a1244a715bf054b",
+      "event": "follow-up SENT"
+    },
+    {
+      "org": "Syrup",
+      "message_id": "1a1244a9b269015d",
+      "event": "follow-up SENT"
+    },
+    {
+      "org": "Media Removal",
+      "message_id": "1a1244c82b1b4abc",
+      "event": "official-route application SENT with current CV"
+    }
+  ],
+  "chronology": {
+    "proven_now": [
+      "moolamatrixx@gmail.com appears in Gmail by 2025-12-14 with sender display name moolamatriX",
+      "eztradebus@gmail.com appears in the same contemporaneous recipient set",
+      "earlier July 2026 resume artifact says AMilliMatriX 2024–Present while October evidence-bound CV says 2026–Present"
+    ],
+    "not_proven_yet": [
+      "January 2025 precursor start date",
+      "December 2025 as exact project start rather than proven active-by date",
+      "1 January 2026 pivot as primary-source-bound date"
+    ],
+    "rule": "Do not normalize chronology from newest CV or recollection. Bind earliest attributable primary artifact first."
+  },
+  "tinyfish": {
+    "connector_default_profile_label": "amillimatrix@gmail.com",
+    "wallet_readback": "approximately -$1.05 on currently exposed connector wallet",
+    "unresolved": "Connector metadata does not prove whether the wallet identity matches the intended underlying AMilliMATRiX TinyFish account beyond the profile label.",
+    "consequence": "Do not state AMilliMATRiX TinyFish balance exhausted as proven account truth."
+  },
+  "evidence_house": {
+    "demonstrator": "EVID-DEMONSTRATOR-001 now first-class, D01 and D02 separated",
+    "build": "EVID-BUILD-DELIVERY-001 preserves Marketplace 50/50 1h28m19s and Search 36/36 + 81/81 with 4h28m17s promotion",
+    "commercial": "EVID-COMMERCIAL-001 preserves 10+ years, SPAR ~33% regional volume for 22/24 months, commission cap twice, two perfect scorecards; exact 340%/160% pointers still recovery-open"
+  },
+  "no_drift_requirement": "Every material assumption in this runtime is separately persisted at AMX/ROOT/INTAKE/D04_RUNTIME_ASSUMPTION_DRIFT_EVIDENCE_20261010.md and must remain governance evidence even if later proven correct."
+}
