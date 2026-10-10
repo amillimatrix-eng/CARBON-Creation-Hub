@@ -130,11 +130,16 @@ The complete benchmark and evidence/correction chain remain inspectable.
 
 ### World-class enterprise benchmark wording
 
-T-MED may accurately describe D04 as a **world-class enterprise-controls benchmark** when the phrase is used in its evidence-bounded meaning:
+T-MED should lead with:
 
-- D04 is an **AMX-designed, frozen 88-control enterprise benchmark**;
+**D04 is a world-class enterprise-controls benchmark, designed by AMilliMATRiX and informed by globally recognized enterprise frameworks and control disciplines including COSO Internal Control — Integrated Framework, NIST AI Risk Management Framework, NIST Cybersecurity Framework 2.0, TOGAF Standard, COBIT 2019, ISO/IEC 42001, ISO/IEC 27001 and ISO 9001.**
+
+This is the preferred positioning, not a reluctant qualification.
+
+Evidence basis:
+- D04 is a **frozen 88-control enterprise benchmark designed by AMilliMATRiX**;
 - it spans **11 enterprise domains** with **70 controls designated critical**;
-- it was explicitly informed by globally recognized enterprise disciplines including **COSO, NIST AI RMF, NIST Cybersecurity Framework 2.0, TOGAF, COBIT, ISO/IEC 42001, ISO/IEC 27001 and ISO 9001**;
+- the named globally recognized frameworks and control disciplines **informed the benchmark design**;
 - it has an explicit frozen pass rule, preserved scoring/evidence artifacts, and an inspectable correction trail;
 - D04 produced **96.62% PASS with zero measured FAILs**.
 
