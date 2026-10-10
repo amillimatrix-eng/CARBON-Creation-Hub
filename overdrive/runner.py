@@ -28,15 +28,43 @@ RECEIPTS.mkdir(exist_ok=True)
 
 ALLOWED = {
     "DISCOVERED": {"QUALIFIED"},
-    "QUALIFIED": {"OFFERED", "SUBMITTED"},
-    "OFFERED": {"RESPONDED", "DELIVERY_FAILED"},
-    "SUBMITTED": {"RESPONDED", "DELIVERY_FAILED"},
-    "RESPONDED": {"NEGOTIATING"},
-    "NEGOTIATING": {"CONTRACTED"},
+    "QUALIFIED": {"OFFERED", "SUBMITTED", "WRONG_ROUTE", "NO_CONTACT"},
+    "OFFERED": {"RESPONDED", "DELIVERY_FAILED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
+    "SUBMITTED": {"RESPONDED", "DELIVERY_FAILED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
+    "RESPONDED": {"ACCEPTED", "NEGOTIATING", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
+    "ACCEPTED": {"CONTRACTED", "NO_CONTACT"},
+    "NEGOTIATING": {"ACCEPTED", "CONTRACTED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
     "CONTRACTED": {"INVOICED", "RECEIVABLE"},
     "INVOICED": {"PAID"},
     "RECEIVABLE": {"PAID"},
-    "DELIVERY_FAILED": {"QUALIFIED", "SUBMITTED"},
+    "DELIVERY_FAILED": {"QUALIFIED", "SUBMITTED", "WRONG_ROUTE", "NO_CONTACT"},
+    "WRONG_ROUTE": {"QUALIFIED", "SUBMITTED", "NO_CONTACT"},
+}
+
+EVIDENCE_KIND_GATES = {
+    "REJECTED": {
+        "BUYER_REJECTION",
+        "PLATFORM_REJECTION",
+        "APPLICATION_REJECTION",
+        "OFFER_REJECTION",
+    },
+    "WRONG_ROUTE": {
+        "WRONG_ROUTE_RESPONSE",
+        "WRONG_ROUTE",
+        "ROUTING_EVIDENCE",
+        "WRONG_PERSON",
+        "WRONG_MAILBOX",
+    },
+    "NO_CONTACT": {
+        "OWNER_NO_CONTACT_SUPERSESSION",
+        "GOVERNED_NO_CONTACT",
+        "NO_CONTACT_DIRECTIVE",
+    },
+    "ACCEPTED": {
+        "BUYER_ACCEPTANCE",
+        "SCOPE_PRICE_ACCEPTANCE",
+        "COMMERCIAL_ACCEPTANCE",
+    },
 }
 
 def utcnow():
@@ -87,13 +115,31 @@ def evidence_transition(task, opportunities):
         e["kind"] == "DELIVERY_FAILURE" for e in evidence
     ):
         raise ValueError("DELIVERY_FAILED requires DELIVERY_FAILURE evidence")
+    required_kinds = EVIDENCE_KIND_GATES.get(target)
+    if required_kinds and not any(str(e.get("kind", "")).upper() in required_kinds for e in evidence):
+        raise ValueError(f"{target} requires attributable {target} evidence")
+    if target == "ACCEPTED":
+        accepted_scope = payload.get("accepted_scope")
+        accepted_price = payload.get("accepted_price")
+        if not accepted_scope or accepted_price in (None, ""):
+            raise ValueError("ACCEPTED requires exact accepted_scope and accepted_price")
     if target == "PAID" and not verified_payment(record, key, evidence):
         raise ValueError("PAID requires independent attributable verified settlement covering the receivable")
     old = record["state"]
     record["state"] = target
     record["last_action_at"] = payload["observed_at"]
     record["next_action"] = payload["next_action"]
-    record["evidence"].extend(evidence)
+    record.setdefault("evidence", []).extend(evidence)
+    if target == "ACCEPTED":
+        acceptance = {
+            "scope": payload["accepted_scope"],
+            "price": payload["accepted_price"],
+            "observed_at": payload["observed_at"],
+            "evidence_source_ids": [e["source_id"] for e in evidence],
+        }
+        if payload.get("accepted_currency"):
+            acceptance["currency"] = payload["accepted_currency"]
+        record["commercial_acceptance"] = acceptance
     return {
         "adapter": "EVIDENCE_TRANSITION",
         "opportunity_key": key,
@@ -262,6 +308,7 @@ def commercial_action(key, record, now):
             pass
     priority = 8
     if state in {"INVOICED", "RECEIVABLE"} and due_now: priority = 1
+    elif state == "ACCEPTED" and action: priority = 1
     elif state in {"RESPONDED", "NEGOTIATING"} and action: priority = 2
     elif state in {"CONTRACTED", "ORDERED"}: priority = 3
     elif state in {"INVOICED", "RECEIVABLE", "PAYMENT_UNVERIFIED"}: priority = 4
@@ -274,7 +321,7 @@ def commercial_action(key, record, now):
     active_deps = [v for v in (record.get("active_dependencies") or {}).values() if v.get("state") == "ACTIVE"]
     unavailable_route = any(phrase in str(constraint).lower() for constraint in record.get("constraints", [])
                             for phrase in ("no authenticated", "is presently unavailable", "registration/authentication is still required"))
-    suppressed_state = state in {"NO_CONTACT", "REJECTED"}
+    suppressed_state = state in {"NO_CONTACT", "REJECTED", "WRONG_ROUTE"}
     readiness_gate = (
         readiness.startswith(("HOLD", "SUPPRESSED"))
         or readiness in {
