@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "date": "2026-10-10",
+  "scope_contract": "AMX/ROOT/CONTROLS/D04_CLOSE_PROJECTION_CONTRACT_V1.md",
+  "authority": "Projection only; overdrive/opportunities.json remains canonical.",
+  "bindings": [
+    {
+      "canonical_key": "kingstonstanley.com|sourcing-overflow-pilot|2026-10-07",
+      "canonical_state": "SUBMITTED",
+      "execution_readiness": "WAITING",
+      "offer_usd": 99,
+      "close_lead_id": "lead_5DJKP5DXb65RHlW0LGw9yaiotGiDpV78HqqNGjsD1sN",
+      "close_opportunity_id": "oppo_yPIgvP3QSZn0m0v7XuWagWHXJwJkTMPbmDHFKfCiiRM",
+      "close_value_cents": 9900,
+      "close_confidence": 0,
+      "provider_followup_id": "1a1243fc84b3cf60"
+    },
+    {
+      "canonical_key": "xubio.com|onboarding-support-pilot|2026-10-07",
+      "canonical_state": "SUBMITTED",
+      "execution_readiness": "WAITING",
+      "offer_usd": 49,
+      "close_lead_id": "lead_ddtWPDp7O0y9XAcisoqXEQ5zkbyuvzXHQdROsDJS1ja",
+      "close_opportunity_id": "oppo_KphZpxaSRG2FjT4GcRxBuIitq0sUQXFr1oDauyG3fzS",
+      "close_value_cents": 4900,
+      "close_confidence": 0,
+      "provider_followup_id": "1a1243fde7688dc4"
+    },
+    {
+      "canonical_key": "sinyc.com|candidate-sourcing-pilot|2026-10-07",
+      "canonical_state": "SUBMITTED",
+      "execution_readiness": "WAITING",
+      "offer_usd": 99,
+      "close_lead_id": "lead_GVQt2o7oteMaeFGUs2m1RzMWQeEnUwOUGL9ZMezq2Dw",
+      "close_opportunity_id": "oppo_BKbA0RFpienQbgD81KZTOHVdexYnhoTSA9Q3Nl7dQpL",
+      "close_value_cents": 9900,
+      "close_confidence": 0,
+      "provider_followup_id": "1a1243ff3e8d00f2"
+    }
+  ],
+  "acceptance": "Exactly three records are in the bounded projection scope and all three have a one-to-one canonical key -> Close opportunity binding, matching offer value, confidence=0, and explicit canonical SUBMITTED/WAITING truth in Close notes."
+}
