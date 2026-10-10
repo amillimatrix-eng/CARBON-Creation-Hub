@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-02T17:00:00Z",
+  "generated_at": "2026-10-10T05:15:00Z",
   "control": "T10: activity is not outcome; a remediation action is not a verified fix until the original condition is retested. UNKNOWN/HOLD over inference.",
   "records": [
     {
@@ -21,7 +21,12 @@
       "T10_REMAINING_GAP": "Asset production and access do not prove buyer acceptance, conversion, or payment.",
       "T10_PASS": "PASS",
       "inspect_route": "Controlled Drive access; not public.",
-      "tags": ["carbon", "production", "provenance", "commercial-evidence"]
+      "tags": [
+        "carbon",
+        "production",
+        "provenance",
+        "commercial-evidence"
+      ]
     },
     {
       "evidence_id": "EVID-OVERDRIVE-001",
@@ -41,7 +46,13 @@
       "T10_REMAINING_GAP": "These historical receipts are provenance for capability; they do not by themselves prove current scheduled autonomous reliability.",
       "T10_PASS": "PASS",
       "inspect_route": "GitHub repository evidence.",
-      "tags": ["overdrive", "state-machine", "commercial", "receipts", "observability"]
+      "tags": [
+        "overdrive",
+        "state-machine",
+        "commercial",
+        "receipts",
+        "observability"
+      ]
     },
     {
       "evidence_id": "EVID-IRIS-001",
@@ -61,7 +72,13 @@
       "T10_REMAINING_GAP": "Retest the current deployment and source/hash synchronization before asserting current implementation details.",
       "T10_PASS": "HOLD",
       "inspect_route": "Repository and deployment reference; verify freshness before asserting current implementation details.",
-      "tags": ["iris", "micase", "interview", "evidence-surface", "freshness"]
+      "tags": [
+        "iris",
+        "micase",
+        "interview",
+        "evidence-surface",
+        "freshness"
+      ]
     },
     {
       "evidence_id": "EVID-T10-001",
@@ -84,7 +101,47 @@
       "T10_PASS": "PASS",
       "inspect_route": "AMX Root governance artifact; verify the SHA-256 before relying on the text.",
       "visibility": "HOUSE",
-      "tags": ["t10", "outcome-truth", "observability", "governance", "reliability", "incident-response", "interview"]
+      "tags": [
+        "t10",
+        "outcome-truth",
+        "observability",
+        "governance",
+        "reliability",
+        "incident-response",
+        "interview"
+      ]
+    },
+    {
+      "evidence_id": "EVID-COMMERCIAL-001",
+      "capability": "Commercial leadership / strategic accounts / route-to-market",
+      "artifact": "Evidence-bound commercial performance record",
+      "authoritative_source": "AMX Library evidence-bound CV plus controlled primary screenshot retained outside the public evidence surface",
+      "source_pointer": "AMX/ROOT/INTAKE/COMMERCIAL_EVIDENCE_RECOVERY_20261010.md",
+      "date_version": "2026-10-10",
+      "role_contribution": "B2B sales, strategic accounts, route-to-market, distribution, negotiation and executive stakeholder management",
+      "acceptance_test": "Durable AMX Library evidence preserves 10+ years commercial leadership; largest regional corporate retail account; approximately 33% of regional volume for 22 of 24 months; High Potential (+1); commission cap twice; and two perfect scorecards in one year. Current controlled screenshot independently identifies The SPAR Group and approximately 33% regional sales volume. Raw private source remains controlled.",
+      "durable_receipt": "AMX/ROOT/INTAKE/COMMERCIAL_EVIDENCE_RECOVERY_20261010.md",
+      "source_hash": "a155c97866834b8486034dcdd03a500293abfcbd5851d1101793e07e68f04039",
+      "status_freshness": "CURRENT / SOURCE-BOUND",
+      "interview_safe_explanation": "My core experience is commercial execution: more than a decade in B2B sales and strategic accounts. I managed the region's largest corporate retail account, The SPAR Group, at about one-third of regional volume for 22 of 24 months, reached the commission cap twice and recorded two perfect scorecards in one year.",
+      "T10_JOB": "Provide live, evidence-bound proof of historical commercial performance without exposing private source documents.",
+      "T10_ACTUAL": "The canonical Evidence House index now carries the previously proven commercial record instead of downgrading it when one connector search misses the underlying source.",
+      "T10_EVIDENCE": "AMX Library evidence-bound CV + controlled screenshot SHA-256 a155c97866834b8486034dcdd03a500293abfcbd5851d1101793e07e68f04039 + Root Intake recovery receipt",
+      "T10_CHANGE": "Commercial evidence is now queryable by Evidence House and bound to durable source evidence; the prior false HOLD is superseded.",
+      "T10_REMAINING_GAP": "Exact 340% and 160% numeric source pointers still need rebinding to their original artifacts; this does not downgrade the already-proven 33% / 22-of-24 / commission-cap / perfect-scorecard claims.",
+      "T10_PASS": "PASS",
+      "inspect_route": "Public-safe claim record here; controlled primary artifact retained privately.",
+      "visibility": "HOUSE",
+      "tags": [
+        "commercial",
+        "sales",
+        "spar",
+        "strategic-accounts",
+        "route-to-market",
+        "scorecard",
+        "commission",
+        "interview"
+      ]
     }
   ]
 }
