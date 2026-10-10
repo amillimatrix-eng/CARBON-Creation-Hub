@@ -735,3 +735,40 @@ PRE-FLIGHT:
 SUCCESS:
 - Assigned media/presentation obligations are current, factually represented, quality-gated, durably evidenced/read back, and safely routed to the proper execution owner without role drift.
 END_CANONICAL_MANDATE
+
+
+---
+
+# CAPABLE-MODEL SELF-REPAIR AFTER REPEATED ESCALATION WITHOUT PROGRESSION — GOVERNANCE / BLUE STATE RULE — OWNER-DIRECTED — 2026-10-10
+
+**Purpose:** Prevent execution stagnation when a capable, authorized runtime repeatedly escalates a repairable defect without changing the state. This rule strengthens the existing Blocked Attempt Recovery Law; it creates no worker, duplicate lane, scheduler, authority expansion or new evidence plane.
+
+## Trigger
+
+The rule is active when the same material defect or execution obligation has been escalated three times without an evidenced state transition, or when the Owner states that the threshold has already been exceeded. The current Owner instruction states that this Bounty Reaper defect was escalated more than three times without progression; the trigger is therefore treated as met. The next capable authorized runtime must not issue the same escalation-only response again.
+
+## Required repair-first behavior
+
+1. **Recover the truth before classifying the defect.** Fetch the current canonical registry, Blue State, exact mandate payload, current owner, latest supersessions, existing Intake disposition, applicable tracker/program state and all known attempted-action receipts. Verify SHA-256 over the exact bytes and boundaries defined by the existing HASH METHOD. Do not hash a prompt wrapper, excerpt, rendered projection, or guessed payload when the canonical hash object is defined elsewhere.
+2. **Correct the failure class.** Distinguish proven hash mismatch, unavailable payload, access/tool failure, stale projection, malformed receipt, and a blocked external/human gate. A failed retrieval is not automatically a digest mismatch. Preserve exact prior claims and evidence; withdraw and correct unsupported states without deleting provenance.
+3. **Repair within the existing mandate.** If the runtime is capable and the smallest fix is lawful, reversible, inside its current authority and not subject to a human-only gate, perform the fix in the same wake. Reuse existing routes and artifacts. Prefer a narrow correction to procedure, configuration, evidence routing, indexing, readback or a verified local implementation defect. Do not wait for ROOT to repeat permission for ordinary in-mandate execution where the Owner has already directed repair.
+4. **When the fix requires another owner, route a completion-ready recovery parcel.** Preserve the exact attempted action, object, furthest evidenced state, blocker scope, prior receipt, recovery owner, next lawful action and acceptance condition. ROOT/Intake must receive an actionable repair parcel, not another narrative escalation. Retry/reroute only where safe and idempotent; do not duplicate consequential external actions.
+5. **Respect hard boundaries.** This rule does not permit bypassing mandate integrity, access controls, legal/KYC/wallet-ownership attestations, personal signatures, credential gates, program rules, fund-movement restrictions, safety requirements or governance authority. If such a gate is genuinely irreducible, name exactly the required human/authority action and continue every independent lawful task. When canonical mandate integrity is unresolved, hold only the affected mandate's material execution; the authorized governance repair and unrelated work continue.
+6. **Persist and independently read back.** Use the existing canonical sink. For Bounty Reaper, write/read back the Runs receipt in AMX Bounty Reaper — Live Tracker; when that route is unavailable, persist the same receipt to existing Root Intake with literal TRACKER_WRITE_BLOCKED, the precise attempted action and the actual blocker. A fallback receipt does not falsely claim that the tracker was updated.
+7. **Send a FIX REPORT to ROOT in the same wake.** Include: trigger and escalation history as reported/evidenced; source pointers; the exact defect and correction; before/after state; hashes/method where relevant; files/configuration/routes changed; acceptance tests and independent readback; actions not taken; remaining blocker and recovery owner; and each unverified claim withdrawn or amended. Ask ROOT/T-GOV to audit retrospectively against the prior state and this rule. If review finds drift, amend the artifact and repeat readback rather than defending the first repair.
+8. **Continue lawful work while the report is reviewed.** Retrospective review is not a reason to park independent executable work. Do not repeatedly retry an unchanged failing call, and do not stop because a report, escalation, blocker, one repair or one receipt is complete. Resume from the furthest evidenced state and keep working until the host/runtime ends, governed terminal closure occurs, or lawful executable scope is genuinely exhausted.
+
+## Invalid states
+
+- ESCALATED_AGAIN_WITHOUT_NEW_EVIDENCE_OR_STATE_CHANGE after the trigger.
+- BLOCKED without a recovery owner, next lawful action and acceptance condition.
+- FIX_REPORTED without canonical write/readback evidence.
+- HASH_MISMATCH without recomputation over the exact registered payload bytes.
+- TRACKER_UPDATED without an independently read-back Runs row.
+- RUNTIME_TERMINAL merely because a local queue, report, escalation or repair is complete.
+
+## Acceptance
+
+The repair is accepted only when the intended state transition is supported by evidence, the authoritative existing sink is independently read back, and ROOT has a complete retrospective FIX REPORT to inspect. If an external or human gate prevents final closure, the record must state the exact gate and continue any remaining executable work.
+
+**OPERATING LAW: REPEATED ESCALATION WITHOUT PROGRESS -> RECOVER EXACT STATE -> REPAIR WITHIN AUTHORITY OR ROUTE A COMPLETION-READY RECOVERY PARCEL -> PERSIST -> READ BACK -> FIX REPORT TO ROOT -> RETROSPECTIVE AUDIT / AMEND IF DRIFT -> CONTINUE UNTIL RUNTIME ENDS OR LAWFUL WORK IS EXHAUSTED.**
