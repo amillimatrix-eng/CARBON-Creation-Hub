@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "receipt_type": "FORX_WEIGHTED_CONTINUITY_CAUSAL_RECEIPT",
+  "generated_at": "2026-10-10",
+  "implementation_commit": "da7a3486d004d4e75cfe342b370bb717d792395c",
+  "live_ci_run": 38033424691,
+  "buffer_candidate_count": 929,
+  "events_applied": [
+    {
+      "opportunity_key": "corkcitygaol.com|group-booking-flow|2026-10-07",
+      "state": "REJECTED",
+      "family": "other",
+      "observed_at": "2026-10-07T07:32:51Z",
+      "source_ids": [
+        "1a115302e8719783",
+        "1a115478ee90c3a9"
+      ],
+      "event_id": "cb9d02919c67971de89231f9455e485a1fbbb178b3302f84951948641a90a444",
+      "affected_dimension": "family_weights.other",
+      "before": 0,
+      "after": -1
+    },
+    {
+      "opportunity_key": "my-drama.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "state": "RESPONDED",
+      "family": "other",
+      "observed_at": "2026-10-07T09:04:43Z",
+      "source_ids": [
+        "1a0fedc9bdd30527",
+        "1a0fedf7e0d1e8c8",
+        "1a10da6be548ddfb",
+        "1a1159ba1113f211"
+      ],
+      "event_id": "cd78b1865f14b89feb6637459824c5da4078b50f94a727c2cafc8b4b687174fe",
+      "affected_dimension": "family_weights.other",
+      "before": -1,
+      "after": 1
+    },
+    {
+      "opportunity_key": "mprtc.co.za|recruitment-conversion-intelligence-pilot|2026-10-07",
+      "state": "WRONG_ROUTE",
+      "family": "recruitment_ops",
+      "observed_at": "2026-10-07T19:13:47Z",
+      "source_ids": [
+        "1a117c9194098d85",
+        "1a117c950871a70c"
+      ],
+      "event_id": "d9b7731fcf16fd6e00c502f397c0aaac27c3faa82b6f5d83d7fa0a1189f71a56",
+      "affected_dimension": "route_state.generic_wrong_route_events",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "opportunity_key": "cuinatevabarcelona.com|website-trust-review|2026-10-07",
+      "state": "REJECTED",
+      "family": "other",
+      "observed_at": "2026-10-08T05:11:51Z",
+      "source_ids": [
+        "1a1185016fd604aa",
+        "1a119ecf8e1a7297"
+      ],
+      "event_id": "1846263daf7cb8440100b9428cf82851dcb1c2b494e25994315a86d8de722128",
+      "affected_dimension": "family_weights.other",
+      "before": 1,
+      "after": 0
+    },
+    {
+      "opportunity_key": "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me",
+      "state": "RESPONDED",
+      "family": "other",
+      "observed_at": "2026-10-08T11:28:08Z",
+      "source_ids": [
+        "1a0f1fba9e5a5efb",
+        "1a0f37a32e00f882",
+        "1a0f6b6246d73281",
+        "1a0fd2c58781f9cc",
+        "1a11b45497d6cab6",
+        "1gMPekAabLXN0RYc50XI2Glmw91d66yMZ"
+      ],
+      "event_id": "9d325086101322e0160d600c2451300177e8d4e4753286068b9a5527edcec53f",
+      "affected_dimension": "family_weights.other",
+      "before": 0,
+      "after": 2
+    },
+    {
+      "opportunity_key": "coloniaestudio.com|intake-conversion-pilot|2026-10-08",
+      "state": "REJECTED",
+      "family": "other",
+      "observed_at": "2026-10-08T16:41:10Z",
+      "source_ids": [
+        "1a11b4ea7c16c32c",
+        "1a11c640dcda5d8f"
+      ],
+      "event_id": "b8c00145931c8caed16bad69d520ff34d37fe8bf35758e93c85afb0a312aeca2",
+      "affected_dimension": "family_weights.other",
+      "before": 2,
+      "after": 1
+    },
+    {
+      "opportunity_key": "sakubloom.com|graphic-designer-role|2026-10-05",
+      "state": "REJECTED",
+      "family": "creative_design",
+      "observed_at": "2026-10-09T18:23:42Z",
+      "source_ids": [
+        "1a10d783f7d9e055",
+        "1a121e83d33c7b0f"
+      ],
+      "event_id": "f2f645305cda97a298986f832de704119ba965ef7d766cac7d51330a550e4828",
+      "affected_dimension": "family_weights.creative_design",
+      "before": 0,
+      "after": -1
+    },
+    {
+      "opportunity_key": "remotepuzzle.com|agentic-systems-engineer|2026-10-08",
+      "state": "RESPONDED",
+      "family": "ai_engineering",
+      "observed_at": "2026-10-09T20:23:52Z",
+      "source_ids": [
+        "1a11b54b561ebb5c",
+        "1a12256578560597"
+      ],
+      "event_id": "e36b75779ef547908165da88cc65a83fd6f29b4ab6a2f6cc837715141d6b50a9",
+      "affected_dimension": "family_weights.ai_engineering",
+      "before": 0,
+      "after": 2
+    }
+  ],
+  "baseline_selection": [
+    {
+      "id": "FORX-PROSPECT-20261007-001",
+      "organization": "HumAInise.ai",
+      "family": "support_ops",
+      "buffer_index": 0,
+      "base_score": 1,
+      "outcome_adjustment": 0,
+      "score": 1,
+      "hard_valid": true,
+      "invalid_reason": null
+    },
+    {
+      "id": "FORX-PROSPECT-20261007-002",
+      "organization": "SeekClaw buyer",
+      "family": "support_ops",
+      "buffer_index": 1,
+      "base_score": 0.5,
+      "outcome_adjustment": 0,
+      "score": 0.5,
+      "hard_valid": true,
+      "invalid_reason": null
+    },
+    {
+      "id": "FORX-PROSPECT-20261007-005",
+      "organization": "Invisible Technologies / OpenTalent listing",
+      "family": "ai_engineering",
+      "buffer_index": 4,
+      "base_score": 0.2,
+      "outcome_adjustment": 0,
+      "score": 0.2,
+      "hard_valid": true,
+      "invalid_reason": null
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-007",
+      "organization": "MMAO SOFTWARE (PTY) LTD / Stocko",
+      "family": "marketplace_ops",
+      "buffer_index": 6,
+      "base_score": 0.14285714285714285,
+      "outcome_adjustment": 0,
+      "score": 0.14285714285714285,
+      "hard_valid": true,
+      "invalid_reason": null
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-008",
+      "organization": "ShopMalawi / Kelvin Chidothi",
+      "family": "marketplace_ops",
+      "buffer_index": 7,
+      "base_score": 0.125,
+      "outcome_adjustment": 0,
+      "score": 0.125,
+      "hard_valid": true,
+      "invalid_reason": null
+    }
+  ],
+  "weighted_selection": [
+    {
+      "id": "FORX-PROSPECT-20261007-005",
+      "organization": "Invisible Technologies / OpenTalent listing",
+      "family": "ai_engineering",
+      "buffer_index": 4,
+      "base_score": 0.2,
+      "outcome_adjustment": 2,
+      "score": 2.2,
+      "hard_valid": true,
+      "invalid_reason": null
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-039",
+      "organization": "KARTALYS / KartaPay",
+      "family": "ai_engineering",
+      "buffer_index": 38,
+      "base_score": 0.02564102564102564,
+      "outcome_adjustment": 2,
+      "score": 2.0256410256410255,
+      "hard_valid": true,
+      "invalid_reason": null
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-047",
+      "organization": "Seychelles ride-booking operator / developer identity unresolved",
+      "family": "other",
+      "buffer_index": 46,
+      "base_score": 0.02127659574468085,
+      "outcome_adjustment": 1,
+      "score": 1.0212765957446808,
+      "hard_valid": true,
+      "invalid_reason": null
+    },
+    {
+      "id": "FORX-PROSPECT-20261008-073",
+      "organization": "RPM Express Couriers / My Shopbox Dominica",
+      "family": "other",
+      "buffer_index": 72,
+      "base_score": 0.0136986301369863,
+      "outcome_adjustment": 1,
+      "score": 1.0136986301369864,
+      "hard_valid": true,
+      "invalid_reason": null
+    },
+    {
+      "id": "FORX-PROSPECT-20261007-001",
+      "organization": "HumAInise.ai",
+      "family": "support_ops",
+      "buffer_index": 0,
+      "base_score": 1,
+      "outcome_adjustment": 0,
+      "score": 1,
+      "hard_valid": true,
+      "invalid_reason": null
+    }
+  ],
+  "changed_next_selection": true,
+  "before_next_selection": "FORX-PROSPECT-20261007-001",
+  "after_next_selection": "FORX-PROSPECT-20261007-005",
+  "diversity_rule": "max 2 selected candidates per family",
+  "acceptance": {
+    "three_outcome_classes_present": true,
+    "changed_next_selection": true,
+    "continuation_state_idempotent": true
+  },
+  "boundary": "FORX selection weighting only. CANDIDATE != QUALIFIED. iSCOPE retains qualification; PRI retains external conversion; the opportunity ledger remains canonical outcome truth."
+}
