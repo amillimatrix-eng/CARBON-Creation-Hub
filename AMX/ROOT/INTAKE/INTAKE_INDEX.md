@@ -1552,3 +1552,8 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - Exact searches in the recovered sources found no ROS3 admission-gate text. These bounded no-match results do not prove that no other governing source exists.
 - **Correction:** absence of PULSE/ROSE scores alone does not prove a transcript/model admission bypass. The separate PULS3/ROS3 instance-admission requirement is **NOT ESTABLISHED FROM SOURCES RECOVERED**. Exact ingress timestamp remains UNKNOWN. ROOT should locate the actual controlling rule, if any, before classifying this as a bypass.
 - Supporting Notion Intake page: `3f48f8b5-6cd7-8149-9f30-eb391ef717e4`; its current-runtime model-identity correction is read back.
+## 2026-10-10 12:22 SAST — HASH exact-capture repository sweep
+- MASTER performed a full recursive Git tree read of `amillimatrix-eng/CARBON-Creation-Hub` at current `main` (594 paths, tree not truncated).
+- Exact files `builder-agent-loop-gate.txt`, `local-inference-gate.txt`, `packaging-restore-gate.txt`, and `security-gate.txt` were not present in that repository tree.
+- This is a bounded repository-only no-match. It does **not** prove the files are absent from `C:\LIB\AMX\evidence` or other governed storage. Their exact bytes and SHA-256 remain unrecovered; do not infer digests.
+- Existing queue remains OPEN with ROOT/MASTER seen and T-LIB exact capture pending. Recovery owner must obtain the exact source bytes from the actual local/authoritative storage surface; if inaccessible from connected tools, preserve that precise access hold rather than pretending the repository sweep closed it.
