@@ -1713,3 +1713,10 @@ These are candidate inputs, not submissions, buyer responses, acceptances or rev
 - **Execution truth:** canonical Reaper mandate integrity verifies PASS; current Q1 remains UNKNOWN until tracker/completion artifacts are recovered. No bounty submission, award or payment is claimed.
 - **Next action:** ROOT/T-GOV reviews the report and rule retrospectively, amending evidence-backed defects; the existing Reaper continues lawful work through available non-BLACK routes while tracker access recovery remains open.
 
+
+
+### Reaper prompt-update recovery — 2026-10-10
+
+- The existing enabled Bounty Reaper prompt update was attempted without changing schedule. The automation connector rejected the update with automation_schedule_not_available because the current plan does not support the existing hourly cadence.
+- No schedule change or duplicate automation was created. Blue State rule and Root Intake FIX REPORT remain persisted. ROOT/T-GOV / schedule owner must resolve prompt-update compatibility; independent lawful work continues.
+- Amended FIX REPORT: AMX/ROOT/INTAKE/GOVERNANCE_CAPABLE_MODEL_REPAIR_AFTER_ESCALATION_STAGNATION_20261010.md; readback includes the exact blocker.
