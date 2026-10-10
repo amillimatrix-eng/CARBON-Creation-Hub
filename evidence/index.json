@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-10T05:15:00Z",
+  "generated_at": "2026-10-10T05:40:00Z",
   "control": "T10: activity is not outcome; a remediation action is not a verified fix until the original condition is retested. UNKNOWN/HOLD over inference.",
   "records": [
     {
@@ -141,6 +141,38 @@
         "scorecard",
         "commission",
         "interview"
+      ]
+    },
+    {
+      "evidence_id": "EVID-BUILD-DELIVERY-001",
+      "capability": "Rapid evidence-governed product delivery",
+      "artifact": "Consecutive CARBON° product build benchmark",
+      "authoritative_source": "AMX repository + CI + deployment/readback receipts",
+      "date_version": "2026-10-08 to 2026-10-09",
+      "role_contribution": "Architecture → implementation → automated test → deployment/readback",
+      "acceptance_test": "Two consecutive product builds reached 100% of their evidenced acceptance milestone in bounded sub-six-hour windows. Marketplace: 50/50 historical green milestone with repository-bounded implementation window 1h28m19s. CARBON° Search: 36/36 Search-specific executable tests plus 81/81 full-repository CI; commissioning-to-first implementation commit 4h16m56s, commissioning-to deployed-promotion commit 4h28m17s.",
+      "durable_receipt": "AMX/ROOT/INTAKE/CARBON_INTENT_MARKETPLACE_FORENSIC_EVIDENCE_SUPPLEMENT_20261008.md + issue #16 promotion evidence + AMX Evidence Detailer",
+      "status_freshness": "CURRENT / EVIDENCE-BOUND BENCHMARK",
+      "interview_safe_explanation": "On two consecutive days I took two separate AMX product builds to 100% of their evidenced acceptance milestone in under six hours each. The Marketplace reached 50/50 in a repository-bounded 1h28m19s implementation window. CARBON° Search reached 36/36 Search-specific tests and 81/81 full-repository CI; the first implementation commit landed 4h16m56s after commissioning, with deployed promotion at 4h28m17s.",
+      "T10_JOB": "Prove delivery capacity from bounded scope through tested, inspectable implementation without relying on self-description.",
+      "T10_ACTUAL": "Two consecutive builds reached their evidenced acceptance milestones with exact repository/CI/deployment receipts.",
+      "T10_EVIDENCE": "Marketplace forensic supplement: merge-base 0e837bb4… at 18:02:13Z to verified head fd14ec87… at 19:30:32Z = 1h28m19s; 50/50 milestone. Search: commissioning a98afabb… 09:22:30Z to implementation 7ef32c8b… 13:39:26Z = 4h16m56s; 36/36 Search-specific tests + 81/81 full-repository CI; promotion/deployed commit 69834610… at 13:50:47Z = 4h28m17s.",
+      "T10_CHANGE": "Capability is represented as already-proven delivery evidence. Commercial workers should use it to qualify and convert opportunities, not reopen whether the Owner can build.",
+      "T10_REMAINING_GAP": "This benchmark proves delivery against its evidenced acceptance contracts; it does not by itself prove market demand, payment, or universal superiority versus all external builders.",
+      "T10_PASS": "PASS",
+      "inspect_route": "Marketplace forensic receipt + GitHub issue #16 promotion evidence + AMX Evidence Detailer",
+      "visibility": "HOUSE",
+      "tags": [
+        "delivery",
+        "build",
+        "marketplace",
+        "search",
+        "50/50",
+        "36/36",
+        "81/81",
+        "ci",
+        "deployment",
+        "evidence"
       ]
     }
   ]
