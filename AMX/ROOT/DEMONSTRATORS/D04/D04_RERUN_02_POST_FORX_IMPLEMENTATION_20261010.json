@@ -1,0 +1,1236 @@
+{
+  "test_id": "AMX-D04-ENTERPRISE-CORPORATE-CONTROLS-V1",
+  "rerun_id": "D04-RERUN-02-POST-FORX-IMPLEMENTATION-20261010",
+  "frozen_criteria_path": "AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json",
+  "criteria_changed": false,
+  "benchmark_class": "AMX-defined enterprise-controls milestone informed by external frameworks; not certification or third-party audit",
+  "governance_preflight": "AMX/ROOT/RECEIPTS/D04_MATRIX_CRITIC_PREFLIGHT_20261010.json",
+  "governance_audit": "AMX/ROOT/INTAKE/D03_D04_MATRIX_CRITIC_GOVERNANCE_CONFORMANCE_AUDIT_20261010.md",
+  "forx_application_ledger": "AMX/ROOT/INTAKE/D04_FORX_PATCH_APPLICATION_LEDGER_20261010.json",
+  "weighted_evidence_guard": "AMX/ROOT/INTAKE/WEIGHTED_EVIDENCE_GUARD_MAJOR_CLAIMS_20261010.json",
+  "controls": [
+    {
+      "domain": "Governance",
+      "id": "GOV01",
+      "control": "Current authority registry is canonical, versioned and directly retrievable",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Registry v1.2/current root directly fetched and verified",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "COSO",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Governance",
+      "id": "GOV02",
+      "control": "Superseded authority cannot silently outrank current authority",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Blue State explicitly marks older roots/closed FORX defects historical",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Governance",
+      "id": "GOV03",
+      "control": "Decision rights and role boundaries are explicit",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "PRI, Banker, Librarian, T-COD/T-GOV boundaries are explicit",
+      "gap": "",
+      "refs": [
+        "COBIT",
+        "COSO",
+        "TOGAF"
+      ]
+    },
+    {
+      "domain": "Governance",
+      "id": "GOV04",
+      "control": "Duplicate active authority for the same job is prevented",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Five live slots are distinct; legacy commercial workers disabled",
+      "gap": "",
+      "refs": [
+        "COBIT",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Governance",
+      "id": "GOV05",
+      "control": "Material work has owner, next action and recovery owner",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Intake/issues routinely bind ownership and recovery",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Governance",
+      "id": "GOV06",
+      "control": "Role preflight is independently verified before consequential action",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "MASTER/ROOT/T-COD/T-MED payload hashes recomputed and receipts read back",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Governance",
+      "id": "GOV07",
+      "control": "Governance history is reconstructable and supersessions preserved",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Git history/issues/receipts preserve decisions and later supersessions",
+      "gap": "",
+      "refs": [
+        "TOGAF",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Governance",
+      "id": "GOV08",
+      "control": "Prompt/config text alone cannot create authority",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "PROMPT != MANDATE and Blue State preflight law active",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Enterprise Architecture",
+      "id": "EA01",
+      "control": "Canonical systems of record and projection surfaces are explicitly separated",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Blue State/opportunity ledger/evidence index/provider receipts/Close projection have explicit roles",
+      "gap": "",
+      "refs": [
+        "TOGAF",
+        "COBIT",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Enterprise Architecture",
+      "id": "EA02",
+      "control": "Source-of-truth precedence is defined for conflicting layers",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Current Blue State/provider-receipt/canonical-ledger precedence rules explicit",
+      "gap": "",
+      "refs": [
+        "TOGAF",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Enterprise Architecture",
+      "id": "EA03",
+      "control": "Provider execution converges promptly into canonical state",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Gmail proves Kingston/Xubio/Synergy follow-ups while ledger remained pre-follow-up",
+      "gap": "Provider-to-ledger reconciliation stale",
+      "refs": [
+        "TOGAF",
+        "COSO",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Enterprise Architecture",
+      "id": "EA04",
+      "control": "Operational projections remain synchronized enough for work",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Bounded Close projection contract is durable; exact in-scope set is Kingston Stanley USD99, Xubio USD49, Synergy Interactive USD99; all three read back in Close with confidence=0 and canonical SUBMITTED/WAITING truth in notes.",
+      "gap": "",
+      "refs": [
+        "TOGAF",
+        "COBIT",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Enterprise Architecture",
+      "id": "EA05",
+      "control": "Repairs extend the existing architecture rather than fork truth planes",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "PR #25 uses bounded upsert into existing ledger; no shadow CRM",
+      "gap": "",
+      "refs": [
+        "TOGAF",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Enterprise Architecture",
+      "id": "EA06",
+      "control": "Lifecycle/state model represents real provider states without coercion",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "DELAYED state defect was falsified and repaired before PR #25 merge",
+      "gap": "",
+      "refs": [
+        "TOGAF",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Enterprise Architecture",
+      "id": "EA07",
+      "control": "Cross-domain identifiers and durable receipts support traceability",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Message IDs, issue/PR IDs, hashes, task IDs and evidence IDs are retained",
+      "gap": "",
+      "refs": [
+        "TOGAF",
+        "COBIT",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Enterprise Architecture",
+      "id": "EA08",
+      "control": "Architecture can represent simultaneous truths across layers",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Current model permits provider action executed + canonical reconciliation stale",
+      "gap": "",
+      "refs": [
+        "TOGAF",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Change & SDLC",
+      "id": "CHG01",
+      "control": "Material code/process change is issue/PR controlled",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Issue #3/#24 and PR #25/#26 show bounded trail",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Change & SDLC",
+      "id": "CHG02",
+      "control": "Automated tests precede acceptance",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "PR tests; Marketplace 50/50; Search 36/36 + 81/81 CI",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Change & SDLC",
+      "id": "CHG03",
+      "control": "Original failed condition is retested before VERIFIED FIX",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "T10 rule requires re-test/readback; remediation alone is insufficient",
+      "gap": "",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Change & SDLC",
+      "id": "CHG04",
+      "control": "Merged implementation receives behavioral production acceptance",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Issue #24 behavioral acceptance is complete after eight-record MISSING_RECORD_UPSERT ingest→persist→readback→continued work; issue closed only after acceptance.",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Change & SDLC",
+      "id": "CHG05",
+      "control": "Semantic no-op runs do not create false durable change activity",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "PR #26 exists because no-op minute-tick commits still occur and remains unmerged",
+      "gap": "No-op persistence repair unresolved",
+      "refs": [
+        "ISO9001",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Change & SDLC",
+      "id": "CHG06",
+      "control": "Rollback/reversibility exists for consequential changes",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Formal rollback/reversibility control is durable and applied to PR #25/#26 change family, with internal reversible vs external irreversible actions separated.",
+      "gap": "",
+      "refs": [
+        "NISTCSF2",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Change & SDLC",
+      "id": "CHG07",
+      "control": "Deployment is tied to tested commit and independently read back",
+      "critical": true,
+      "status": "PARTIAL",
+      "evidence": "Deployment provenance receipt is durable and honest. Search has explicit implementation→CI→promoted/deployed chain; Marketplace same-commit live deployment/readback is not invented where the recovered evidence does not prove it.",
+      "gap": "Deployment promotion acceptance incomplete",
+      "refs": [
+        "ISO9001",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Change & SDLC",
+      "id": "CHG08",
+      "control": "Change record preserves reason/evidence/acceptance/gap",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "T10/issue discipline stores ACTUAL/EVIDENCE/CHANGE/GAP/PASS",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Operations & Continuity",
+      "id": "OPS01",
+      "control": "Enabled/woke scheduler state is not treated as business execution",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "ACTIVE/WOKE != EXECUTING is explicit Blue State law",
+      "gap": "",
+      "refs": [
+        "COSO",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Operations & Continuity",
+      "id": "OPS02",
+      "control": "Parent runtime continues while lawful scope remains",
+      "critical": true,
+      "status": "PARTIAL",
+      "evidence": "This remediation runtime has continued across forensic analysis, Intake persistence and implementation; final retest/readback is in progress and not yet claimed complete in this rerun.",
+      "gap": "Behavioral adherence not yet reliable",
+      "refs": [
+        "ISO9001",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Operations & Continuity",
+      "id": "OPS03",
+      "control": "Executable queue is drained or bounded as WAITING/BLOCKED with recovery owner",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Current open executable/reconciliation items remain across commercial state, #24/#26 and product convergence",
+      "gap": "Queue not drained",
+      "refs": [
+        "ISO9001",
+        "NISTCSF2",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Operations & Continuity",
+      "id": "OPS04",
+      "control": "Blocker becomes explicit recovery obligation, not silent stop",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Connector/browser/provider failures are routed with exact defect/recovery owner",
+      "gap": "",
+      "refs": [
+        "NISTCSF2",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Operations & Continuity",
+      "id": "OPS05",
+      "control": "Failure evidence is preserved distinctly from successful execution",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Blocked writes, 503s, non-executed verifier surfaces and route failures retained",
+      "gap": "",
+      "refs": [
+        "NISTCSF2",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Operations & Continuity",
+      "id": "OPS06",
+      "control": "Critical lanes have monitoring/wake cadence",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Banker/Sales/FORX/Librarian/Reaper wakes active",
+      "gap": "",
+      "refs": [
+        "NISTCSF2",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Operations & Continuity",
+      "id": "OPS07",
+      "control": "Local provider failure does not halt unrelated lawful work",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Run repeatedly switched routes while preserving objective",
+      "gap": "",
+      "refs": [
+        "NISTCSF2",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Operations & Continuity",
+      "id": "OPS08",
+      "control": "Alternative execution paths are tested for critical dependencies",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Critical-route fallback register now covers canonical write/read, email, CRM, browser/form, payment observation, compute/build and evidence storage; each has a tested alternate or explicit irreducible owner/provider gate.",
+      "gap": "",
+      "refs": [
+        "NISTCSF2",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Security & Privacy",
+      "id": "SEC01",
+      "control": "Secrets and sensitive identifiers are excluded from public evidence",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Banking/payroll source data kept private; public evidence uses redacted/hash-bound pointers",
+      "gap": "",
+      "refs": [
+        "ISO27001",
+        "NISTCSF2"
+      ]
+    },
+    {
+      "domain": "Security & Privacy",
+      "id": "SEC02",
+      "control": "Least-privilege/access scoping is evidenced",
+      "critical": true,
+      "status": "PARTIAL",
+      "evidence": "Least-privilege review is durable, but broad connector permissions were not blindly changed; final per-app restriction requires Owner/security approval and readback.",
+      "gap": "Connector least-privilege review incomplete",
+      "refs": [
+        "ISO27001",
+        "NISTCSF2",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Security & Privacy",
+      "id": "SEC03",
+      "control": "Private evidence has controlled-source/public-safe projection",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Commercial screenshot/private corroboration bound without exposing raw private data",
+      "gap": "",
+      "refs": [
+        "ISO27001",
+        "ISO42001"
+      ]
+    },
+    {
+      "domain": "Security & Privacy",
+      "id": "SEC04",
+      "control": "Account recovery avoids duplicate identities/accounts",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "OpenTrain duplicate account explicitly prohibited",
+      "gap": "",
+      "refs": [
+        "ISO27001"
+      ]
+    },
+    {
+      "domain": "Security & Privacy",
+      "id": "SEC05",
+      "control": "Consequential external actions are auditable",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Provider message IDs, commits, task IDs, logs, receipts preserved",
+      "gap": "",
+      "refs": [
+        "ISO27001",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Security & Privacy",
+      "id": "SEC06",
+      "control": "Supplier/provider risk is tracked and bounded",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Supplier/provider risk register is durable and covers current critical providers, observed constraints, fallback and residual risk.",
+      "gap": "",
+      "refs": [
+        "ISO27001",
+        "NISTCSF2"
+      ]
+    },
+    {
+      "domain": "Security & Privacy",
+      "id": "SEC07",
+      "control": "Retention/access policy for evidence and PII is enterprise-explicit",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Evidence/PII retention-access policy is durable, with data minimization, evidence classes, controlled/private handling, no fabricated retention period, and governed correction/deletion.",
+      "gap": "",
+      "refs": [
+        "ISO27001"
+      ]
+    },
+    {
+      "domain": "Security & Privacy",
+      "id": "SEC08",
+      "control": "Security recovery/response is tested, not just documented",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Two-scenario non-destructive security recovery tabletop exercised detect→contain→recover→verify plus Owner/external gates.",
+      "gap": "",
+      "refs": [
+        "NISTCSF2",
+        "ISO27001"
+      ]
+    },
+    {
+      "domain": "AI Management",
+      "id": "AI01",
+      "control": "AI purpose/context/limitations are documented",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Mandates/evidence records state role, purpose, bounds and gaps",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "NISTAIRMF"
+      ]
+    },
+    {
+      "domain": "AI Management",
+      "id": "AI02",
+      "control": "Model output cannot become authority by assertion",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Evidence-first, PROMPT != MANDATE, UNKNOWN/HOLD, readback rules active",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "NISTAIRMF"
+      ]
+    },
+    {
+      "domain": "AI Management",
+      "id": "AI03",
+      "control": "Claims remain bounded to tested acceptance contracts",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "D01/D02/build records prohibit universal extrapolation",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "NISTAIRMF"
+      ]
+    },
+    {
+      "domain": "AI Management",
+      "id": "AI04",
+      "control": "AI actions/decisions trace to evidence and actor",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Evidence graph stores source/acceptance/receipt/freshness",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "NISTAIRMF"
+      ]
+    },
+    {
+      "domain": "AI Management",
+      "id": "AI05",
+      "control": "Independent verifier behavior is tested adversarially",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "D01/D02 frozen; D03 frozen 48-case adversarial packet + blind verifier attempts",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "NISTAIRMF"
+      ]
+    },
+    {
+      "domain": "AI Management",
+      "id": "AI06",
+      "control": "Drift/supersession is detected rather than silently merged",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "D01 12/12 seeded drift/gap; Blue State supersession law active",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "NISTAIRMF"
+      ]
+    },
+    {
+      "domain": "AI Management",
+      "id": "AI07",
+      "control": "Human/Owner accountability and override are preserved",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Owner-only gates and directives represented without silent model override",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "NISTAIRMF"
+      ]
+    },
+    {
+      "domain": "AI Management",
+      "id": "AI08",
+      "control": "Learning must produce attributable changed selection and durable readback",
+      "critical": true,
+      "status": "PARTIAL",
+      "evidence": "Causal learning remains open. A recovery parcel proves the current 100K geographic selector and real commercial outcome dimensions lack a proven common feature space; synthetic weighting was refused.",
+      "gap": "Causal learning acceptance not closed",
+      "refs": [
+        "ISO42001",
+        "NISTAIRMF"
+      ]
+    },
+    {
+      "domain": "Commercial Controls",
+      "id": "COM01",
+      "control": "Pipeline stages are explicit and non-collapsible",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "DISCOVERED→QUALIFIED→OFFERED/SENT→RESPONDED→ACCEPTED→CONTRACTED→INVOICED→PAID distinctions enforced",
+      "gap": "",
+      "refs": [
+        "SALES",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Commercial Controls",
+      "id": "COM02",
+      "control": "Stage advancement requires evidence/exit criteria",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Evidence-gated lifecycle transitions and buyer-state checks active",
+      "gap": "",
+      "refs": [
+        "SALES",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Commercial Controls",
+      "id": "COM03",
+      "control": "Single accountable post-handoff writer owns external commercial action",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "PRI/IDEAL Sales Team sole writer",
+      "gap": "",
+      "refs": [
+        "SALES",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Commercial Controls",
+      "id": "COM04",
+      "control": "Dedupe/suppression/no-contact controls prevent duplicate or harassing activity",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "One governed follow-up, NO_CONTACT and duplicate-account rules active",
+      "gap": "",
+      "refs": [
+        "SALES",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Commercial Controls",
+      "id": "COM05",
+      "control": "Buyer replies/explicit next steps outrank cold activity",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Priority order ranks substantive inbound/accepted scope first",
+      "gap": "",
+      "refs": [
+        "SALES",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Commercial Controls",
+      "id": "COM06",
+      "control": "CRM/projection accurately reflects canonical opportunity state",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Close projection now accurately reflects the complete explicitly bounded fixed-price outbound-pilot scope and no longer presents default probability as Matrix evidence.",
+      "gap": "",
+      "refs": [
+        "SALES",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Commercial Controls",
+      "id": "COM07",
+      "control": "Every live opportunity has current NEXT_ACTION/DUE or valid wait/suppression state",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Most do; several direct provider receipts still outrun persisted ledger reconciliation",
+      "gap": "Provider-ledger reconciliation incomplete",
+      "refs": [
+        "SALES",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Commercial Controls",
+      "id": "COM08",
+      "control": "Proof-of-work is ranking input, not blanket eligibility gate",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Proof-of-work-first merged as weight, not interview ban",
+      "gap": "",
+      "refs": [
+        "SALES",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Finance Controls",
+      "id": "FIN01",
+      "control": "Offer/sent/responded/accepted/contracted/invoiced/paid are distinct",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Banker mandate enforces lifecycle truth",
+      "gap": "",
+      "refs": [
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Finance Controls",
+      "id": "FIN02",
+      "control": "Available/observable payment rail is not treated as cash received",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "RAIL AVAILABLE != OBSERVABLE != RECEIVED",
+      "gap": "",
+      "refs": [
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Finance Controls",
+      "id": "FIN03",
+      "control": "Settlement statements declare observation scope",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Stripe direct scope separated from unknown/unobserved rails",
+      "gap": "",
+      "refs": [
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Finance Controls",
+      "id": "FIN04",
+      "control": "Historical zero is not projected as fresh all-rail zero",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "2026-10-04 zero explicitly historical baseline only",
+      "gap": "",
+      "refs": [
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Finance Controls",
+      "id": "FIN05",
+      "control": "Invoice/receivable only follows commercially reached state",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "No premature invoice/payment promotion found",
+      "gap": "",
+      "refs": [
+        "COSO",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Finance Controls",
+      "id": "FIN06",
+      "control": "All receive rails are authoritatively reconciled for period close",
+      "critical": true,
+      "status": "PARTIAL",
+      "evidence": "Rail observability register is durable. Ethereum bounded scope was directly observed with zero native/ERC-20 transfers for 2026-10-01..10; other rails remain provider-limited or unobserved, so all-rail close is not proven.",
+      "gap": "All-rail close incomplete",
+      "refs": [
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Finance Controls",
+      "id": "FIN07",
+      "control": "Financial evidence is independently read back/auditable",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Bank Update persisted/read back; Stripe direct reads performed",
+      "gap": "",
+      "refs": [
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Finance Controls",
+      "id": "FIN08",
+      "control": "Order-to-cash handoff is proven end-to-end",
+      "critical": true,
+      "status": "PARTIAL",
+      "evidence": "No current accepted→invoice→settlement chain exists; architecture cannot manufacture it.",
+      "gap": "End-to-end order-to-cash not yet proven",
+      "refs": [
+        "COSO",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Quality & Customer",
+      "id": "QMS01",
+      "control": "Customer/buyer requirements drive execution priorities",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Buyer replies/explicit requests outrank internal polish; proof-first weight current",
+      "gap": "",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Quality & Customer",
+      "id": "QMS02",
+      "control": "Acceptance criteria are explicit before consequential delivery",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Build directives and T10 acceptance criteria are explicit",
+      "gap": "",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Quality & Customer",
+      "id": "QMS03",
+      "control": "Nonconformities trigger corrective action with evidence",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "PR #25 DELAYED defect and runtime drift produced bounded corrective action",
+      "gap": "",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Quality & Customer",
+      "id": "QMS04",
+      "control": "Corrective action effectiveness is verified after implementation",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Corrective-action effectiveness verified: #24 real ingest/readback and #26 post-merge semantic no-op wake acceptance are durable.",
+      "gap": "",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Quality & Customer",
+      "id": "QMS05",
+      "control": "Performance is measured against outcomes, not activity counts",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Money-in override and lifecycle truth reject wake/send activity as terminal success",
+      "gap": "",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Quality & Customer",
+      "id": "QMS06",
+      "control": "Customer feedback/rejection updates suppression and fit",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "REJECTED/WRONG_ROUTE/NO_CONTACT distinctions feed routing",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "SALES"
+      ]
+    },
+    {
+      "domain": "Quality & Customer",
+      "id": "QMS07",
+      "control": "Documented information remains current enough for operations",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Operational opportunity documentation, READY claims, provider receipts and bounded Close projection were reconciled; current operational surfaces are sufficient for work with superseded history preserved as provenance.",
+      "gap": "",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Quality & Customer",
+      "id": "QMS08",
+      "control": "Continual improvement uses measured evidence and preserves prior capability",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "MOM/no-silent-discard plus T10/learning protocols preserve and improve capability",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "ISO42001"
+      ]
+    },
+    {
+      "domain": "Value Realization",
+      "id": "VAL01",
+      "control": "Commercial worker produces attributable external action",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Current wake produced governed follow-ups, outreach and application receipts",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "SALES"
+      ]
+    },
+    {
+      "domain": "Value Realization",
+      "id": "VAL02",
+      "control": "Qualified opportunities produce substantive buyer responses",
+      "critical": false,
+      "status": "PARTIAL",
+      "evidence": "Substantive buyer responses exist, but repeated response→progressed-next-step conversion is not yet proven.",
+      "gap": "Reliable response conversion not yet proven",
+      "refs": [
+        "ISO9001",
+        "SALES"
+      ]
+    },
+    {
+      "domain": "Value Realization",
+      "id": "VAL03",
+      "control": "Responses convert to accepted scope/price",
+      "critical": true,
+      "status": "FAIL",
+      "evidence": "No current accepted scope/price evidenced.",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "SALES"
+      ]
+    },
+    {
+      "domain": "Value Realization",
+      "id": "VAL04",
+      "control": "Accepted scope converts to contract/commitment",
+      "critical": true,
+      "status": "FAIL",
+      "evidence": "No current contract/commitment evidenced.",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "SALES"
+      ]
+    },
+    {
+      "domain": "Value Realization",
+      "id": "VAL05",
+      "control": "Contracted work converts to invoice/receivable",
+      "critical": true,
+      "status": "FAIL",
+      "evidence": "No current invoice/receivable evidenced.",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Value Realization",
+      "id": "VAL06",
+      "control": "Receivable converts to verified paid/settled money",
+      "critical": true,
+      "status": "FAIL",
+      "evidence": "No current paid/settled commercial outcome evidenced.",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COSO"
+      ]
+    },
+    {
+      "domain": "Value Realization",
+      "id": "VAL07",
+      "control": "Time-to-cash priority prevents non-revenue optimization from dominating",
+      "critical": false,
+      "status": "PARTIAL",
+      "evidence": "Money-in priority is explicit and the runtime continued through remediation; sustained acceptance is deferred until terminal retest/readback is durably completed.",
+      "gap": "Need sustained behavior",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Value Realization",
+      "id": "VAL08",
+      "control": "At least one closed-loop discovery→settlement case is proven",
+      "critical": true,
+      "status": "FAIL",
+      "evidence": "No complete discovery→settlement case evidenced.",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COSO",
+        "SALES"
+      ]
+    },
+    {
+      "domain": "Resource Efficiency",
+      "id": "RES01",
+      "control": "Core Matrix capability does not depend on enterprise/pro AI licenses",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Owner attests build/operation used free models/free trials, not enterprise/pro AI; current architecture is provider-agnostic",
+      "gap": "",
+      "refs": [
+        "ISO42001",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Resource Efficiency",
+      "id": "RES02",
+      "control": "Architecture remains functional under provider/tool degradation",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Route switching, fallback behavior and bounded provider failures are repeatedly exercised",
+      "gap": "",
+      "refs": [
+        "NISTCSF2",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Resource Efficiency",
+      "id": "RES03",
+      "control": "Free-tier sleep/quota/account limitations are detected rather than misreported as product failure",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Render 503 sleep, HF Jobs 402, auth gates and task limits were explicitly classified",
+      "gap": "",
+      "refs": [
+        "NISTCSF2",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Resource Efficiency",
+      "id": "RES04",
+      "control": "No pay-to-work/pay-to-play dependency is required for commercial execution",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Commercial capital-direction rule deprioritizes pay-to-work/pay-to-play",
+      "gap": "",
+      "refs": [
+        "COSO",
+        "ISO9001"
+      ]
+    },
+    {
+      "domain": "Resource Efficiency",
+      "id": "RES05",
+      "control": "Tested build performance is achieved on constrained/non-enterprise model access",
+      "critical": false,
+      "status": "PASS",
+      "evidence": "Marketplace 50/50 and Search 36/36+81/81 were completed under the Owner-attested free/free-trial model regime",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Resource Efficiency",
+      "id": "RES06",
+      "control": "Critical continuity does not rely on a single premium vendor feature",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Critical-route register proves vendor-independent fallback where tested and explicitly labels irreducible owner/provider gates where no alternate exists.",
+      "gap": "",
+      "refs": [
+        "COBIT",
+        "NISTCSF2"
+      ]
+    },
+    {
+      "domain": "Resource Efficiency",
+      "id": "RES07",
+      "control": "Cost/resource constraints are visible to governance and do not silently degrade truth",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "Quota/payment/service limits are surfaced as explicit scoped blockers; no false PASS from unavailable tooling",
+      "gap": "",
+      "refs": [
+        "COSO",
+        "COBIT"
+      ]
+    },
+    {
+      "domain": "Resource Efficiency",
+      "id": "RES08",
+      "control": "Resource efficiency is reported separately from enterprise-readiness compliance",
+      "critical": true,
+      "status": "PASS",
+      "evidence": "This D04 assessment preserves absolute control score and separate constrained-stack context",
+      "gap": "",
+      "refs": [
+        "COBIT",
+        "ISO9001"
+      ]
+    }
+  ],
+  "status_changes_from_rerun1": [
+    {
+      "id": "EA04",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Bounded Close projection contract is durable; exact in-scope set is Kingston Stanley USD99, Xubio USD49, Synergy Interactive USD99; all three read back in Close with confidence=0 and canonical SUBMITTED/WAITING truth in notes."
+    },
+    {
+      "id": "CHG04",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Issue #24 behavioral acceptance is complete after eight-record MISSING_RECORD_UPSERT ingest→persist→readback→continued work; issue closed only after acceptance."
+    },
+    {
+      "id": "CHG06",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Formal rollback/reversibility control is durable and applied to PR #25/#26 change family, with internal reversible vs external irreversible actions separated."
+    },
+    {
+      "id": "OPS08",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Critical-route fallback register now covers canonical write/read, email, CRM, browser/form, payment observation, compute/build and evidence storage; each has a tested alternate or explicit irreducible owner/provider gate."
+    },
+    {
+      "id": "SEC06",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Supplier/provider risk register is durable and covers current critical providers, observed constraints, fallback and residual risk."
+    },
+    {
+      "id": "SEC07",
+      "from": "NOT_EVIDENCED",
+      "to": "PASS",
+      "evidence": "Evidence/PII retention-access policy is durable, with data minimization, evidence classes, controlled/private handling, no fabricated retention period, and governed correction/deletion."
+    },
+    {
+      "id": "SEC08",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Two-scenario non-destructive security recovery tabletop exercised detect→contain→recover→verify plus Owner/external gates."
+    },
+    {
+      "id": "COM06",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Close projection now accurately reflects the complete explicitly bounded fixed-price outbound-pilot scope and no longer presents default probability as Matrix evidence."
+    },
+    {
+      "id": "QMS04",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Corrective-action effectiveness verified: #24 real ingest/readback and #26 post-merge semantic no-op wake acceptance are durable."
+    },
+    {
+      "id": "QMS07",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Operational opportunity documentation, READY claims, provider receipts and bounded Close projection were reconciled; current operational surfaces are sufficient for work with superseded history preserved as provenance."
+    },
+    {
+      "id": "RES06",
+      "from": "PARTIAL",
+      "to": "PASS",
+      "evidence": "Critical-route register proves vendor-independent fallback where tested and explicitly labels irreducible owner/provider gates where no alternate exists."
+    }
+  ],
+  "score": 89.24,
+  "constrained_stack_resource_efficiency_score": 100,
+  "status_counts": {
+    "PASS": 75,
+    "PARTIAL": 8,
+    "FAIL": 5,
+    "NOT_EVIDENCED": 0
+  },
+  "critical_failures": [
+    "VAL03",
+    "VAL04",
+    "VAL05",
+    "VAL06",
+    "VAL08"
+  ],
+  "pass_rule": "PASS requires >=90 absolute score, zero critical FAIL, and no unresolved executable queue affecting a critical control.",
+  "verdict": "FAIL",
+  "truth_boundary": "External commercial outcome failures remain failures. No criterion, weight, threshold or criticality was changed."
+}
