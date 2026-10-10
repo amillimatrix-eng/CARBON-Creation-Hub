@@ -1,126 +1,6 @@
 {
   "PRI": [
     {
-      "due_at": "2026-10-06T22:13:15Z",
-      "due_now": true,
-      "next_action": "Wait for Cherry One response until the next due interval. On material response, answer in the current thread and provide only the minimum rights/technical/sample package requested; no duplicate follow-up before due.",
-      "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fc58012594488 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a0fc58012594488"
-    },
-    {
-      "due_at": "2026-10-06T23:04:27Z",
-      "due_now": true,
-      "next_action": "Monitor for the official content/production review route; provide only the controlled sample and accurate rights/technical summary on request.",
-      "opportunity_key": "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fedca0c7c2f71 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a0fedca0c7c2f71"
-    },
-    {
-      "due_at": "2026-10-06T23:05:20Z",
-      "due_now": true,
-      "next_action": "Monitor for routing to independent submissions/production; use the controlled sample only through an authorized route.",
-      "opportunity_key": "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fedd719d7bfdd for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a0fedd719d7bfdd"
-    },
-    {
-      "due_at": "2026-10-07T05:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the same business thread for a current intake route; do not duplicate outreach.",
-      "opportunity_key": "flextv.cc|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a1002313c6128a9 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a1002313c6128a9"
-    },
-    {
-      "due_at": "2026-10-07T05:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the same business thread for submission requirements; do not duplicate outreach.",
-      "opportunity_key": "netshort.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a100230e2441107 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a100230e2441107"
-    },
-    {
-      "due_at": "2026-10-07T05:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the same thread for routing or review requirements; do not send a duplicate initial approach.",
-      "opportunity_key": "vigloo.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a100230dcc62423 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a100230dcc62423"
-    },
-    {
-      "due_at": "2026-10-07T09:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the same thread for delivery failure or a material response. Do not send another initial approach.",
-      "opportunity_key": "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a100231af090dc1 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a100231af090dc1"
-    },
-    {
-      "due_at": "2026-10-08T00:00:00Z",
-      "due_now": true,
-      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
-      "opportunity_key": "kingstonstanley.com|sourcing-overflow-pilot|2026-10-07",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": null
-    },
-    {
-      "due_at": "2026-10-08T00:00:00Z",
-      "due_now": true,
-      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
-      "opportunity_key": "sinyc.com|candidate-sourcing-pilot|2026-10-07",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": null
-    },
-    {
-      "due_at": "2026-10-08T00:00:00Z",
-      "due_now": true,
-      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
-      "opportunity_key": "xubio.com|onboarding-support-pilot|2026-10-07",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": null
-    },
-    {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
       "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
@@ -327,6 +207,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a0fc58012594488"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
       "opportunity_key": "coloniaestudio.com|intake-conversion-pilot|2026-10-08",
       "priority": 8,
@@ -363,6 +255,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "opportunity_key": "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a0fedca0c7c2f71"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "NO OUTBOUND. Preserve historical evidence for learning/provenance only. Do not follow up, resend, recover through another mailbox, contact another person at Face Production, or create a new offer unless Owner explicitly reverses the 2026-10-09 no-contact directive.",
       "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
       "priority": 8,
@@ -371,6 +275,30 @@
       "state": "NO_CONTACT",
       "status": "WAITING",
       "thread_id": "1a0f2ea3874d5fde"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "opportunity_key": "flextv.cc|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a1002313c6128a9"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "opportunity_key": "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a100231af090dc1"
     },
     {
       "due_at": null,
@@ -431,6 +359,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a0f2ea2a952c85d"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "opportunity_key": "kingstonstanley.com|sourcing-overflow-pilot|2026-10-07",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
     },
     {
       "due_at": null,
@@ -531,6 +471,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "opportunity_key": "netshort.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a100230e2441107"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "WAIT for buyer response; no duplicate initial outreach.",
       "opportunity_key": "ontrackmulching.com|website-trust-cleanup|2026-10-08",
       "priority": 8,
@@ -591,6 +543,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "opportunity_key": "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a0fedd719d7bfdd"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "NO UNSOLICITED FOLLOW-UP for the current project. Preserve the rejection and future-portfolio note; only requalify on a distinct new buyer-initiated or independently current opportunity.",
       "opportunity_key": "sakubloom.com|graphic-designer-role|2026-10-05",
       "priority": 8,
@@ -623,6 +587,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a0f2ea1c5a8c36a"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "opportunity_key": "sinyc.com|candidate-sourcing-pilot|2026-10-07",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
     },
     {
       "due_at": null,
@@ -687,6 +663,30 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "opportunity_key": "vigloo.com|content-partnership|the-dragon-who-could-not-claim-me",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a100230dcc62423"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "opportunity_key": "xubio.com|onboarding-support-pilot|2026-10-07",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "Monitor the official YPAI contact thread. The public application form failed repeatedly server-side; alternate official contact asked YPAI to accept the application or provide the correct submission route. Do not duplicate-submit unless YPAI instructs.",
       "opportunity_key": "ypai.ai|qa-reviewer-adjudicator|remote-south-africa",
       "priority": 8,
@@ -709,20 +709,8 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-10T06:22:00.633195+00:00",
+  "generated_at": "2026-10-10T06:24:02.682163+00:00",
   "iSCOPE": [
-    {
-      "due_at": "2026-10-06T23:04:24Z",
-      "due_now": true,
-      "next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
-      "opportunity_key": "oneforma.com|ai-ml-projects|south-africa",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fedc966c2c687 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "DISCOVERED",
-      "status": "READY",
-      "thread_id": "1a0fedc966c2c687"
-    },
     {
       "due_at": "2026-10-04T09:00:00Z",
       "due_now": true,
@@ -806,6 +794,18 @@
       "state": "HOLD",
       "status": "WAITING",
       "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for substantive OneForma support response on case CAS-76245-N9W2F5; qualify only a current executable paid South Africa match. Do not send duplicate support requests.",
+      "opportunity_key": "oneforma.com|ai-ml-projects|south-africa",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for substantive OneForma support response on case CAS-76245-N9W2F5; qualify only a current executable paid South Africa match. Do not send duplicate support requests.",
+      "state": "DISCOVERED",
+      "status": "WAITING",
+      "thread_id": "1a0fedc966c2c687"
     },
     {
       "due_at": null,
@@ -1014,15 +1014,15 @@
       "thread_id": "1a103d43041d248b"
     },
     "cherryone.ai|content-partner-distribution|carbon-degree-of-business": {
-      "due_at": "2026-10-06T22:13:15Z",
-      "due_now": true,
-      "next_action": "Wait for Cherry One response until the next due interval. On material response, answer in the current thread and provide only the minimum rights/technical/sample package requested; no duplicate follow-up before due.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "cherryone.ai|content-partner-distribution|carbon-degree-of-business",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fc58012594488 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0fc58012594488"
     },
     "coloniaestudio.com|intake-conversion-pilot|2026-10-08": {
@@ -1146,15 +1146,15 @@
       "thread_id": null
     },
     "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-06T23:04:27Z",
-      "due_now": true,
-      "next_action": "Monitor for the official content/production review route; provide only the controlled sample and accurate rights/technical summary on request.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fedca0c7c2f71 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0fedca0c7c2f71"
     },
     "dramaloft.com|creator-onboarding|vertical-drama-distribution": {
@@ -1182,27 +1182,27 @@
       "thread_id": "1a0f2ea3874d5fde"
     },
     "flextv.cc|content-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-07T05:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the same business thread for a current intake route; do not duplicate outreach.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "flextv.cc|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a1002313c6128a9 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a1002313c6128a9"
     },
     "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-07T09:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the same thread for delivery failure or a material response. Do not send another initial approach.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a100231af090dc1 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a100231af090dc1"
     },
     "goodshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
@@ -1302,15 +1302,15 @@
       "thread_id": "1a0f2ea2a952c85d"
     },
     "kingstonstanley.com|sourcing-overflow-pilot|2026-10-07": {
-      "due_at": "2026-10-08T00:00:00Z",
-      "due_now": true,
-      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "kingstonstanley.com|sourcing-overflow-pilot|2026-10-07",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": null
     },
     "kjplumbing.co.za|quote-request-pilot|2026-10-07": {
@@ -1458,27 +1458,27 @@
       "thread_id": "1a0fedc9bdd30527"
     },
     "netshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-07T05:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the same business thread for submission requirements; do not duplicate outreach.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "netshort.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a100230e2441107 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a100230e2441107"
     },
     "oneforma.com|ai-ml-projects|south-africa": {
-      "due_at": "2026-10-06T23:04:24Z",
-      "due_now": true,
-      "next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for substantive OneForma support response on case CAS-76245-N9W2F5; qualify only a current executable paid South Africa match. Do not send duplicate support requests.",
       "opportunity_key": "oneforma.com|ai-ml-projects|south-africa",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fedc966c2c687 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for substantive OneForma support response on case CAS-76245-N9W2F5; qualify only a current executable paid South Africa match. Do not send duplicate support requests.",
       "state": "DISCOVERED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0fedc966c2c687"
     },
     "ontrackmulching.com|website-trust-cleanup|2026-10-08": {
@@ -1650,15 +1650,15 @@
       "thread_id": "1a0fd2b475e05861"
     },
     "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-06T23:05:20Z",
-      "due_now": true,
-      "next_action": "Monitor for routing to independent submissions/production; use the controlled sample only through an authorized route.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a0fedd719d7bfdd for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a0fedd719d7bfdd"
     },
     "remotepuzzle.com|agentic-systems-engineer|2026-10-08": {
@@ -1722,15 +1722,15 @@
       "thread_id": "1a0f2ea1c5a8c36a"
     },
     "sinyc.com|candidate-sourcing-pilot|2026-10-07": {
-      "due_at": "2026-10-08T00:00:00Z",
-      "due_now": true,
-      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "sinyc.com|candidate-sourcing-pilot|2026-10-07",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": null
     },
     "socialsgroup.com|high-ticket-sales-closer|2026-10-10": {
@@ -1830,15 +1830,15 @@
       "thread_id": null
     },
     "vigloo.com|content-partnership|the-dragon-who-could-not-claim-me": {
-      "due_at": "2026-10-07T05:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the same thread for routing or review requirements; do not send a duplicate initial approach.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "vigloo.com|content-partnership|the-dragon-who-could-not-claim-me",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a100230dcc62423 for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a100230dcc62423"
     },
     "welodata.com|ai-service-general-application|south-africa": {
@@ -1890,15 +1890,15 @@
       "thread_id": null
     },
     "xubio.com|onboarding-support-pilot|2026-10-07": {
-      "due_at": "2026-10-08T00:00:00Z",
-      "due_now": true,
-      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "xubio.com|onboarding-support-pilot|2026-10-07",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": null
     },
     "ypai.ai|qa-reviewer-adjudicator|remote-south-africa": {
