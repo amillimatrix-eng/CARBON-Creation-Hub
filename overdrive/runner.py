@@ -29,14 +29,15 @@ RECEIPTS.mkdir(exist_ok=True)
 ALLOWED = {
     "DISCOVERED": {"QUALIFIED"},
     "QUALIFIED": {"OFFERED", "SUBMITTED", "WRONG_ROUTE", "NO_CONTACT"},
-    "OFFERED": {"RESPONDED", "DELIVERY_FAILED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
-    "SUBMITTED": {"RESPONDED", "DELIVERY_FAILED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
+    "OFFERED": {"RESPONDED", "DELAYED", "DELIVERY_FAILED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
+    "SUBMITTED": {"RESPONDED", "DELAYED", "DELIVERY_FAILED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
     "RESPONDED": {"ACCEPTED", "NEGOTIATING", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
     "ACCEPTED": {"CONTRACTED", "NO_CONTACT"},
     "NEGOTIATING": {"ACCEPTED", "CONTRACTED", "REJECTED", "WRONG_ROUTE", "NO_CONTACT"},
     "CONTRACTED": {"INVOICED", "RECEIVABLE"},
     "INVOICED": {"PAID"},
     "RECEIVABLE": {"PAID"},
+    "DELAYED": {"SUBMITTED", "DELIVERY_FAILED", "WRONG_ROUTE", "NO_CONTACT"},
     "DELIVERY_FAILED": {"QUALIFIED", "SUBMITTED", "WRONG_ROUTE", "NO_CONTACT"},
     "WRONG_ROUTE": {"QUALIFIED", "SUBMITTED", "NO_CONTACT"},
 }
@@ -64,6 +65,11 @@ EVIDENCE_KIND_GATES = {
         "BUYER_ACCEPTANCE",
         "SCOPE_PRICE_ACCEPTANCE",
         "COMMERCIAL_ACCEPTANCE",
+    },
+    "DELAYED": {
+        "DELIVERY_DELAY",
+        "TEMPORARY_DELIVERY_DELAY",
+        "DELIVERY_RETRY_PENDING",
     },
 }
 
@@ -155,6 +161,124 @@ def evidence_transition(task, opportunities):
     }
 
 
+
+UPSERT_INITIAL_STATES = {
+    "OFFERED",
+    "SUBMITTED",
+    "RESPONDED",
+    "DELAYED",
+    "DELIVERY_FAILED",
+    "REJECTED",
+    "WRONG_ROUTE",
+    "NO_CONTACT",
+}
+
+UPSERT_EVIDENCE_GATES = {
+    "OFFERED": {"GMAIL_SENT", "OUTBOUND_SEND", "OFFER_SENT"},
+    "SUBMITTED": {"GMAIL_SENT", "OUTBOUND_SEND", "SUBMISSION_RECEIPT"},
+    "RESPONDED": {"BUYER_RESPONSE", "BUYER_REFERRAL", "ROUTING_EVIDENCE"},
+    "DELAYED": EVIDENCE_KIND_GATES["DELAYED"],
+    "DELIVERY_FAILED": {"DELIVERY_FAILURE"},
+    "REJECTED": EVIDENCE_KIND_GATES["REJECTED"],
+    "WRONG_ROUTE": EVIDENCE_KIND_GATES["WRONG_ROUTE"],
+    "NO_CONTACT": EVIDENCE_KIND_GATES["NO_CONTACT"],
+}
+
+def _identity_token(value):
+    return " ".join(str(value or "").strip().lower().split())
+
+def missing_record_upsert(task, opportunities):
+    """Create one missing canonical commercial record from attributable external evidence.
+
+    This is deliberately narrower than generic CRM creation. It only repairs an
+    external-execution-without-record gap under existing iSCOPE/PRI identity rules.
+    Existing records must use EVIDENCE_TRANSITION instead.
+    """
+    payload = task["payload"]
+    records = opportunities.setdefault("records", {})
+    key = str(payload.get("opportunity_key") or "").strip()
+    if not key:
+        raise ValueError("opportunity_key is required")
+    if key in records:
+        raise ValueError("opportunity already exists; use EVIDENCE_TRANSITION")
+
+    identity = payload.get("identity") or {}
+    organization = str(identity.get("organization") or "").strip()
+    opportunity = str(identity.get("opportunity") or "").strip()
+    domain = str(identity.get("domain") or "").strip().lower()
+    if not organization or not opportunity:
+        raise ValueError("identity.organization and identity.opportunity are required")
+
+    target = str(payload.get("to") or "").upper()
+    if target not in UPSERT_INITIAL_STATES:
+        raise ValueError(f"missing-record upsert cannot initialize state {target}")
+
+    owner = str(payload.get("execution_owner") or "PRI")
+    if owner not in {"PRI", "iSCOPE"}:
+        raise ValueError("execution_owner must be PRI or iSCOPE")
+
+    evidence = payload.get("evidence", [])
+    if not evidence or any(not e.get("source_id") or not e.get("kind") for e in evidence):
+        raise ValueError("durable evidence is required")
+    required = UPSERT_EVIDENCE_GATES[target]
+    if not any(str(e.get("kind", "")).upper() in required for e in evidence):
+        raise ValueError(f"{target} requires attributable evidence for missing-record ingestion")
+
+    org_token = _identity_token(organization)
+    opp_token = _identity_token(opportunity)
+    domain_token = _identity_token(domain)
+    for existing_key, existing in records.items():
+        existing_org = _identity_token(existing.get("organization") or existing.get("buyer") or existing.get("company"))
+        existing_opp = _identity_token(existing.get("opportunity") or existing.get("title") or existing.get("name"))
+        existing_domain = _identity_token(existing.get("domain"))
+        same_named_identity = existing_org and existing_opp and existing_org == org_token and existing_opp == opp_token
+        same_domain_identity = domain_token and existing_domain == domain_token and existing_opp and existing_opp == opp_token
+        if same_named_identity or same_domain_identity:
+            raise ValueError(f"possible duplicate canonical identity: {existing_key}")
+
+    observed_at = payload.get("observed_at")
+    next_action = str(payload.get("next_action") or "").strip()
+    if not observed_at or not next_action:
+        raise ValueError("observed_at and next_action are required")
+
+    record = {
+        "state": target,
+        "execution_owner": owner,
+        "organization": organization,
+        "opportunity": opportunity,
+        "domain": domain or None,
+        "recipient": payload.get("recipient"),
+        "thread_id": payload.get("thread_id"),
+        "last_action_at": observed_at,
+        "next_action": next_action,
+        "due_at": payload.get("due_at"),
+        "evidence": list(evidence),
+        "canonical_ingest": {
+            "kind": "MISSING_RECORD_RECOVERY",
+            "observed_at": observed_at,
+            "identity": {
+                "organization": organization,
+                "opportunity": opportunity,
+                "domain": domain or None,
+            },
+            "evidence_source_ids": [e["source_id"] for e in evidence],
+        },
+    }
+    records[key] = record
+    return {
+        "adapter": "MISSING_RECORD_UPSERT",
+        "opportunity_key": key,
+        "to": target,
+        "created": True,
+        "evidence": evidence,
+        "critic": {
+            "factual_claims": "PASS_EVIDENCE_GATED",
+            "duplicate_identity": "PASS_NO_MATCH_FOUND",
+            "commercial_state": "PASS",
+            "external_action": "NOT_PERFORMED_BY_ADAPTER",
+        },
+    }
+
 def access_verification(task, opportunities):
     payload = task["payload"]
     key = payload["opportunity_key"]
@@ -228,6 +352,7 @@ def stripe_payment_settlement(task, opportunities):
 
 ADAPTERS = {
     "EVIDENCE_TRANSITION": evidence_transition,
+    "MISSING_RECORD_UPSERT": missing_record_upsert,
     "ACCESS_VERIFICATION": access_verification,
     "STRIPE_PAYMENT_SETTLEMENT": stripe_payment_settlement,
 }
@@ -321,7 +446,7 @@ def commercial_action(key, record, now):
     active_deps = [v for v in (record.get("active_dependencies") or {}).values() if v.get("state") == "ACTIVE"]
     unavailable_route = any(phrase in str(constraint).lower() for constraint in record.get("constraints", [])
                             for phrase in ("no authenticated", "is presently unavailable", "registration/authentication is still required"))
-    suppressed_state = state in {"NO_CONTACT", "REJECTED", "WRONG_ROUTE"}
+    suppressed_state = state in {"NO_CONTACT", "REJECTED", "WRONG_ROUTE", "DELAYED"}
     readiness_gate = (
         readiness.startswith(("HOLD", "SUPPRESSED"))
         or readiness in {
