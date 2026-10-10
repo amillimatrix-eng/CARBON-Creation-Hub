@@ -1,0 +1,69 @@
+{
+  "artifact_id": "AMX-D04-SCORING-RECOMPUTATION-ONLY-20261010-01",
+  "artifact_class": "HISTORICAL SCORING RECOMPUTATION — NOT A TEST RUN",
+  "recorded_at_utc": "2026-10-10T10:52:00Z",
+  "status": "ARITHMETIC_REPRODUCED_FROM_HISTORICAL_VECTOR; FRESH RERUN NOT PERFORMED",
+  "benchmark": {
+    "test_id": "AMX-D04-ENTERPRISE-CORPORATE-CONTROLS-V1",
+    "frozen_criteria_path": "AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json",
+    "frozen_criteria_blob_sha": "b392cb16ba15bef38d3f281c5144852a355b59b0",
+    "control_count": 88,
+    "pass_rule": ">=90 absolute score; zero critical FAIL; no unresolved executable queue affecting a critical control"
+  },
+  "immutable_historical_input": {
+    "path": "AMX/ROOT/DEMONSTRATORS/D04/D04_RERUN_02_FINAL_INTERNAL_SELF_REPAIR_20261010.json",
+    "git_blob_sha": "91917922e11baea512782d28efa72f8cac09e7f6",
+    "historical_all_88_score": 90.51,
+    "historical_verdict": "FAIL",
+    "historical_status_counts": {
+      "PASS": 77,
+      "PARTIAL": 6,
+      "FAIL": 5,
+      "NOT_EVIDENCED": 0
+    },
+    "historical_critical_failures": [
+      "VAL03",
+      "VAL04",
+      "VAL05",
+      "VAL06",
+      "VAL08"
+    ]
+  },
+  "corrected_evidence_classification": {
+    "controls": [
+      "VAL03",
+      "VAL04",
+      "VAL05",
+      "VAL06",
+      "VAL08"
+    ],
+    "classification": "UNMEASURED_NOT_PROVEN",
+    "scoring_effect": "Exclude their weight from measured numerator and denominator; do not call them PASS or FAIL.",
+    "basis": "The recovered evidence statements are absence-of-proof statements and the bounded run did not establish an exhaustive measurement of external buyer/contract/invoice/payment outcomes."
+  },
+  "arithmetic": {
+    "measured_numerator": 143,
+    "measured_denominator": 148,
+    "equation": "143 / 148 * 100 = 96.621621...%",
+    "rounded_measured_scope_score": 96.62,
+    "measured_counts": {
+      "PASS": 77,
+      "PARTIAL": 6,
+      "FAIL": 0,
+      "UNMEASURED_NOT_PROVEN": 5
+    }
+  },
+  "interpretation": {
+    "statement": "The corrected 96.62% is reproducible as a measured-scope recomputation of the historical 90.51% vector after excluding five controls classified UNMEASURED_NOT_PROVEN.",
+    "not_an_execution": true,
+    "not_independently_remeasured": true,
+    "prohibited_use": "This artifact must not be used as input evidence, prior status vector, initial state, or result for the next clean D04 run.",
+    "next_clean_run_inputs": "Frozen control definitions/weights/pass rule plus fresh current-state evidence gathered without reading prior run status fields or score summaries."
+  },
+  "preservation": {
+    "original_historical_vector": "PRESERVE UNCHANGED",
+    "correction_history": "PRESERVE AS PROVENANCE",
+    "old_active_path_status": "The former D04_RERUN_04_CLEAN_REASSESSMENT_READBACK_20261010.json label was misleading because it described recomputation, not execution; it is being removed from the active D04 run directory and preserved in Git history.",
+    "execution_availability": "Report platform/service interruptions separately; do not convert a reporting or marking failure into a test-control failure."
+  }
+}
