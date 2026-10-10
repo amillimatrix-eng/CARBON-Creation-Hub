@@ -31,7 +31,7 @@ Corrected result:
 - 77 measured PASS;
 - 6 measured PARTIAL;
 - 0 measured FAIL;
-- five controls remain `UNMEASURED_NOT_PROVEN` and are not candidate failures.
+- five controls were **not validly measured by the run** and therefore are not failures; the evidence record preserves them as `UNMEASURED_NOT_PROVEN`.
 
 The benchmark result is PASS under the original frozen rule.
 
@@ -86,12 +86,13 @@ Do not inflate it beyond the evidence.
 
 Preferred leading public statement:
 
-**AMilliMATRiX passed its frozen 88-control enterprise-controls benchmark at 96.62%, with zero measured FAILs, across governance, architecture, security, AI management, operations, finance, commercial controls, quality and value-realization domains informed by COSO, NIST, NIST CSF 2.0, TOGAF, COBIT and ISO control frameworks.**
+**AMilliMATRiX passed its frozen 88-control enterprise-controls benchmark at 96.62%, with zero measured FAILs, across governance, architecture, security, AI management, operations, finance, commercial controls, quality and value-realization domains informed by COSO, NIST AI RMF, NIST CSF 2.0, TOGAF, COBIT and ISO control frameworks. The complete evidence and correction trail is available for scrutiny.**
 
 Then state the boundary:
 - AMX-defined benchmark;
 - not an ISO/COBIT/TOGAF certification;
-- five controls were not validly measured and remain `UNMEASURED_NOT_PROVEN`;
+- five controls were not validly measured by the run; this is a test-execution/evidence-coverage fact, not an AMX failure state;
+- the complete underlying evidence and correction trail remain available for scrutiny;
 - no unsupported customer/payment outcome may be implied.
 
 ## Acceptance
