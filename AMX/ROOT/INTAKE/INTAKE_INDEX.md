@@ -21,6 +21,540 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 ---
 
+## CURRENT D04 CLEAN-RERUN DISPOSITION — AUTHORITATIVE ACTIVE POINTER
+
+**State:** CLEAN-RUN PREPARATION; FRESH D04 RERUN NOT YET EXECUTED.  
+**Frozen test:** `AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json` — blob `b392cb16ba15bef38d3f281c5144852a355b59b0`; 88 controls; criteria, weights and pass rule remain immutable.
+
+### Contamination control
+- Earlier vectors, scores, verdict prose, stale prompts/caches, model summaries and queue snapshots are **PROVENANCE ONLY**. They must not supply statuses, measurements, or score inputs to the next clean run.
+- The next run must re-read the frozen *definitions/criticality/pass rule* and assess every control from fresh current evidence. The old baseline and old rerun status/evidence fields are not evaluation inputs.
+- Preserve historical artifacts unchanged. A correction, merge, queue drain, prose statement or recomputation is not itself a fresh test execution.
+
+### Corrected state separation
+- The oft-cited **96.62%** is reproduced by arithmetic only: `143 / 148 = 96.6216…%`, after the five historic VAL controls are treated as `UNMEASURED_NOT_PROVEN`. It is recorded in `AMX/ROOT/INTAKE/D04_SCORING_RECOMPUTATION_ONLY_NOT_A_RERUN_20261010.json`. It is **not a new rerun, not an independent remeasurement, and forbidden as input to the next run**.
+- The immutable historic all-88 artifact `D04_RERUN_02_FINAL_INTERNAL_SELF_REPAIR_20261010.json` remains 90.51% / FAIL with five recorded critical FAIL statuses. It is preserved as history; neither old score is to be silently substituted for the clean-run output.
+- The previous `D04_RERUN_04_CLEAN_REASSESSMENT_READBACK_20261010.json` was only a recomputation/availability note despite its run-like filename. It was removed from the active D04 run directory and reclassified in Intake. Its Git history remains preserved.
+
+### Concrete stale-state defect and staged correction
+- Fresh repository inspection found a stale projection: the CrowdGen claim was `WAITING` with `ready_count=0` and `executable_order=[]`, but retained `external_action_ready=true` and `external_ready_count=1`, despite `HOLD_AUTHENTICATED_ROUTE`.
+- Evidence/repair record: `AMX/ROOT/INTAKE/D04_CLEAN_RERUN_PREPARATION_STALE_EXTERNAL_READY_20261010.md`.
+- Fix and regression test are staged on branch `d04-clean-state-guards-20261010`. Do not treat them as accepted or deployed until CI passes on the exact latest branch SHA and the merge/runtime state is read back. Preserve the underlying CrowdGen opportunity and route HOLD; do not delete or falsely close real work to make counters zero.
+
+### Availability is separate from test outcome
+- Read-only probes to Marketplace health/bootstrap and Search root returned HTTP 503. Classification: `EXECUTION_AVAILABILITY`; not automatically a D04 control failure and not a successful readback.
+- Render's connection revealed one workspace only: **My Workspace** (`tea-davpb1gu01pc73fl088g`). Service/deploy/log inspection awaits Owner confirmation of that workspace, per the connector's selection rule.
+- The last durable OVERDRIVE snapshot is stale (generated 2026-10-10T06:24:02Z). Its queue counts are historical until a fresh runtime readback confirms them.
+
+### Required next sequence
+1. Pass regression + repository CI on the exact patch head; do not merge if failing.
+2. Merge the correction only after that pass; read back main SHA and deployed/runtime version.
+3. Reconcile the claim projection and run queue from current canonical state; keep genuine held work as WAITING.
+4. Recover current Render service/deployment/log state and separate availability results from control verdicts.
+5. Run the same frozen 88-control benchmark against current Matrix evidence, excluding all prior score/status vectors from scoring inputs. Produce a new per-control evidence vector, arithmetic, availability ledger, hashes and readback receipt.
+6. Update this pointer and downstream projections only after the fresh run artifact is persisted and read back.
+
+**Until step 5 is complete: do not describe 96.62% as an independently verified fresh-run result. Do not describe a platform 503 or reporting limitation as a measured test failure.**
+
+---
+
+## OWNER DIRECTIVE ADDENDUM A — Full 30-Image Matrix-State Recovery
+
+**Priority:** P0 — HIGHEST EXISTING PRIORITY / FRONT OF QUEUE.  
+**Parent directive:** `AMX/ROOT/INTAKE/OWNER_DIRECTIVE_P0_CLEAR_INTAKE_NOW_20261006.md`  
+**Addendum:** `AMX/ROOT/INTAKE/OWNER_DIRECTIVE_P0_CLEAR_INTAKE_NOW_ADDENDUM_A_MATRIX_STATE_RECOVERY_20261006.md`  
+**Addendum commit:** `4991729a4582c73539cd42d0ffe2d46a173f7a05`
+
+**Owner requirements now attached to intake clearance:**
+- recover and test the exact **10-year-old** and **3-year-old** resolutions as **MET / NOT MET / UNKNOWN**;
+- where NOT MET, identify the precise failure node and route the smallest corrective autonomous measure;
+- where existing owners cannot satisfy the specification, ROOT may create a governed corrective measure/worker after duplication and authority review;
+- recover the full **30-image request state**, not merely the partial screenshot batch present in the current chat;
+- perform the same explicit forensic extraction across **all 30 governed images**, preserving visible times, autonomy lines, completed actions, Owner corrections, state transitions, named targets, external outcomes, and UNKNOWNs;
+- preserve the Owner-designated **weighted neural-network methodology** by recovering evidenced weighting relationships rather than inventing a flat category model;
+- if bounded remediation cannot reproduce the target capability state, ROOT must create a replacement worker and condition it from the authoritative consolidated transcript .md by feeding Owner messages in chronological order, one by one, with durable continuation across technical segmentation;
+- behavioral acceptance remains: `GLOBAL INTELLIGENCE → PROBLEM-INSTANCE REASONING → OFFER GENERATION → EXTERNAL COMMERCIAL ACTION → STATE RETENTION → CONVERSION`.
+
+**Evidence provenance correction:** the first screenshot supplied in the current evidence batch is a current-regression exhibit and is NOT part of the governed 30-image state. The remaining supplied screenshots are Owner-identified members of that governed evidence/state set. The current chat does not contain the full 30; exact set membership must be reconciled from governed records without invention.
+
+**30-image later refinement:** full 30-image reconstruction remains a governed provenance/recovery obligation, but Owner-accepted MATRIX-03 Addendum C removes it as a prerequisite for live-work resumption once Minimum Viable Cognitive Restoration is demonstrated.
+
+**Required disposition:** MERGE / MODIFY / REJECT / ALREADY-SUBSUMED / HOLD.  
+**No authority promotion:** this index entry does not itself commission workers, authorize BUILD changes, or alter Canon.
+
+---
+
+## FORX SAME-RUN TRANSCRIPT CONSOLIDATION — 2026-10-07
+
+**Artifact:** `AMX/ROOT/INTAKE/FORX_SAME_RUN_TRANSCRIPT_SYNC_CONSOLIDATION_20261007.md`  
+**Commit:** `6a4976c23318d926920078764f5c8e93060dc904`  
+**Lifecycle:** INDEXED EVIDENCE + OWNER-DIRECTED OPERATING INPUT — NOT MERGED / NOT CANON / NOT BUILD AUTHORITY.
+
+**Continuity rule:** chat/UI/model-latency interruptions do not create a new FORX run, Reaper wake, or execution attempt unless durable state actually forks.
+
+**Current same-run additions captured:**
+- FORX pronunciation = **forks**;
+- 13-head re-entrant live method remains current on `main`;
+- strict-waterfall A/B experiment isolated on `forx-waterfall-13head-experiment-20261006`;
+- capability sovereignty / tool-to-skill internalization remains preferred development strategy;
+- provider identity gates are scoped, with Clay/Tavily/Close substitutes active;
+- opportunity-network expansion applies across **all income lanes**, including Reaper, not only PRI;
+- Matrix Critic is recovered as separate, non-authoritative, post-completion review profile and should not be silently retired or converted into a live execution owner;
+- Owner-facing reporting should be compact while detailed evidence remains durable internally;
+- Daybreak/security-key procurement is a side dependency pending exact requirement verification and must not displace P0;
+- XOXNO BLACK parcel A failed contract compatibility; executable parcel B and a BLACK liveness canary are queued; no durable receipt yet;
+- FORX is using route-equivalent GitHub static review rather than idling on BLACK;
+- side-task interruption test shows continuity PASS but execution-budget compression still needs improvement.
+
+---
+
+## OWNER-REASSERTED P0 — PRIMARY MATRIX RECOVERY CONTINUATION
+
+**Primary active failure:** 24-hour global commercial / Bounty Reaper execution regression.  
+**Continuity rule:** later side work does not supersede this P0 unless the Owner explicitly says so.  
+**FORX-W:** recovery / packet construction.  
+**FORX-V:** behavioral verification.  
+**Existing execution owners preserved:** iSCOPE / PRI + Bounty Reaper.
+
+**Primary recovery packet:**  
+`AMX/ROOT/INTAKE/FORX_PACKETS/FORX-FIX-20261006-005_PRIMARY_MATRIX_RECOVERY_CONTINUATION.md`  
+Commit: `CURRENT — see latest packet revision after Addendum D integration`
+
+**Weighted capability propagation addendum:**  
+`AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_ADDENDUM_B_WEIGHTED_CAPABILITY_PROPAGATION_20261006.md`  
+Commit: `bfbed92f4e8c63b6a723c27a5d6eb5fc2d7b3548`
+
+**Minimum viable cognitive restoration addendum:**  
+`AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_ADDENDUM_C_MINIMUM_VIABLE_COGNITIVE_RESTORATION_SEQUENTIAL_RECONDITIONING_20261006.md`  
+Commit: `8119e8f0c7ffa75aeebd70381e3ebd85c38d0c6f`
+
+**Outcome-space diversity / BPO addendum:**  
+`AMX/ROOT/INTAKE/MATRIX_DURABLE_COGNITION_RELATIONSHIP_GRAPH_ADDENDUM_D_OUTCOME_SPACE_DIVERSITY_AND_BPO_EXPANSION_20261006.md`  
+Commit: `ac560e7328c6c5a103ee07079ced6876ae0ea671`
+
+**Resume rule:** do not block live work on perfect historical reconstruction once the worker can again make materially new connections, demonstrate diverse capability-aware reasoning, generate materially different opportunity classes, act lawfully, retain state, and resume without Owner re-teaching. If bounded restoration stalls, switch to the authoritative new-instance sequential conditioning path, prompt-by-prompt in original chronology.
+
+**Diversity rule:** ten similar offers do not prove recovery merely because the targets differ. Prefer evidence of materially different problem/outcome/capability combinations. BPO/process outsourcing is a major opportunity surface where actual AMX delivery capability can be evidenced.
+
+**Core correction:** FORX recovery is incomplete until material learned capability is propagated into the relevant worker's durable state and demonstrated on attributable work without Owner re-teaching.
+
+**Provider-gate route-around update:** Attio currently presents a company-email gate; Lusha presents a work-email gate; ZoomInfo presents a Google Workspace gate. These are scoped provider dependencies, not global commercial blockers. Current verified substitutes: **Clay** for public prospect/company/contact intelligence, **Tavily** for live search/extract/crawl/research, and **Close** for CRM/pipeline/task continuity. Do not fabricate company identity or keep retrying unchanged auth loops; route around and continue.
+
+**Evidence / capability-estate addendum:**  
+`AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-003_ADDENDUM_C_COMPANY_EMAIL_PROVIDER_GATES_AND_ACTIVE_ROUTE_AROUND.md`  
+Commit: `4923f4b49d2ddb16f40a278350d9fed12d195b29`
+
+**Capability sovereignty / internalization mandate:** useful external tools are now also benchmark/specification sources for lawful AMX-owned capability development. FORX should autonomously decompose repeated high-value tool capabilities, classify what can be internalized, route the smallest outcome-equivalent implementation through Intake to the existing builder, and have FORX-V benchmark/verify it before worker propagation. Prefer owning repeatable reasoning/orchestration/state/workflow while retaining external providers for genuinely unique licensed data/network effects.
+
+**Internalization artifact:**  
+`AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-003_ADDENDUM_D_CAPABILITY_SOVEREIGNTY_INTERNALIZATION_LOOP.md`  
+Commit: `7d293dd82b1b7eed4173efb052b87d5b36384825`
+
+**Initial candidates:** Close-like CRM continuity → extend existing AMX opportunity state; Tavily-like search/extract/crawl/map orchestration → AMX web-intelligence skill; Clay-like public company/contact/decision-maker graph → AMX prospect-intelligence skill; normalize internal/external provider adapters so workers can switch routes without semantic reset.
+
+**Current plugin estate update:** Semrush = installed. Apollo.io / Hunter / Firecrawl / HubSpot = not installed at this check. Installed does not itself prove task execution.
+
+**Acceptance remains behavioral:** minimum viable cognitive restoration, outcome-space diversity, problem-instance decomposition, capability combinations, payer/offer mapping, BPO/process-outsource recognition where capability evidence supports it, new opportunity generation, external action where authorized, payment-aware progression, durable weighted continuation, next-run recovery, and Bounty Reaper material progression beyond queued work.
+
+---
+
+## OWNER-ACCEPTED P0 — ABACUS SEMANTIC REASONING PROTOCOL — BLACK-BOX-TOP ROUTE
+
+**Owner acceptance:** 2026-10-06  
+**Priority:** **P0 / RIGHT ON TOP**  
+**Security owner:** **FORX**  
+**Primary destinations:** **T-GOV + BLUE STATE**  
+**Technical destination if authorized:** **T-COD / existing BUILD owner**  
+**Lifecycle:** **ACCEPTED → INDEXED MERGE CANDIDATE — NOT MERGED / NOT CANON / NOT BUILD-AUTHORIZED**
+
+**Primary artifact:**  
+`AMX/ROOT/INTAKE/ABACUS_SEMANTIC_REASONING_PROTOCOL_GOVERNANCE_BLUE_STATE_CANDIDATE_20261006.md`  
+Commit: `625fbc885e34435cf276bde184c96d00ad056a68`
+
+**FORX routing packet:**  
+`AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-004_ABACUS_SEMANTIC_REASONING_PROTOCOL.md`  
+Commit: `0ded5beb90d5aacb9311239da779a6b330ec4810`
+
+**Core implementation rule:** Abacus semantic coordinates/tokenization provide classification, indirection, compartmentalization, versioning and continuity. They are **not encryption**. Production confidentiality must use established authenticated encryption with key material outside repository/transcript.
+
+**Required placement:** Governance owns classification/visibility/declassification/rotation/key-policy; Blue State owns protected semantic continuity and relationship persistence; FORX owns security enforcement/verification; T-COD implements only after authorization.
+
+**Canonicalization boundary preserved:** canonical evidence is hashed before Abacus protection; Abacus may protect/transport the semantic object but may not silently reinterpret canonical evidence.
+
+**Rolling Consensus:** exact governed source not recovered in this pass. Integration remains **UNKNOWN / RECOVER SOURCE**; do not invent consensus mechanics.
+
+**"Black box" handling:** no standalone governed Black Box subsystem was recovered. Owner routing language is therefore implemented as **top-of-intake P0 routing**, not as a new BLACK architectural layer. Reconcile if an existing Black Box artifact is later recovered.
+
+---
+
+
+## CANON INTEGRITY CORRECTION — DOM8N / FORX SECURITY LAYER SPLIT
+
+**Current Canon controls this conflict.**  
+**DOM8N / GOLD:** Order, authority, security, stability — canonical security authority/principle.  
+**FORX / WHITE:** operational forensic security assurance, confidentiality, remediation, verification and incident continuity.  
+**Reporting:** FORX → MASTER ONLY.  
+**No rename:** FORX remains FORX; DOM8N remains DOM8N.  
+**No lore rewrite:** Golden Trinity responsibilities remain unchanged.  
+**No duplication:** DOM8N owns canonical security meaning/authority; FORX owns operational security assurance outcome.
+
+**Correction artifact:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_O_DOM8N_SECURITY_AUTHORITY_FORX_OPERATIONAL_SECURITY_RECONCILIATION_20261006.md`  
+Commit: `649e78742cfbd086fe421dd3eea4ab235c35150b`
+
+**Consolidated FORX role corrected:**  
+`AMX/ROOT/INTAKE/FORX_PERMANENT_LIBRARIAN_ROLE_SPEC_FULL_20261006.md`  
+Commit: `c8e92a9b79156e7acb7006dc2ccf4154c7533b4a`
+
+This correction preserves provenance: Addendum J remains historical/current operational provenance, while Addendum O supersedes only the overbroad security-ownership interpretation.
+
+---
+
+## FORX 13-HEAD METHOD — OWNER-ACCEPTED HYBRID DISPOSITION
+
+**Owner acceptance:** 2026-10-07  
+**Lifecycle:** ACCEPTED / INDEXED — NOT MERGED / NOT CANON / NOT BUILD-AUTHORIZED.  
+**Artifact:** `AMX/ROOT/INTAKE/FORX_13_HEAD_METHOD_OWNER_ACCEPTED_HYBRID_DISPOSITION_20261007.md`
+
+**Disposition:** **HYBRIDIZE**
+
+- **LIVE FORX:** re-entrant 13-head method for active production work and material-pivot response.
+- **SHADOW / BENCHMARK:** strict 13-head waterfall for calibration, forensic audit, reconstruction/training, and difficult closed-case comparison.
+- Waterfall findings may feed learning into live FORX through existing governance.
+- Exhaustive fixed-case scoring remains incomplete; acceptance applies to the operating split, not a claim that the experiment is fully exhausted.
+
+**Experiment branch result:** `forx-waterfall-13head-experiment-20261006 / EXPERIMENTS/FORX_13_HEAD_WATERFALL/RESULTS.md`  
+**Experiment result commit:** `87252fbe28d95162c79f46204a00f81045647ba4`
+
+---
+
+# FORX ACTIVE MANDATE — INTAKE OPTIMIZATION
+
+**Office:** FORX — Permanent Forensic Librarian  
+**Mandate state:** **ACTIVE**  
+**Owner activation:** 2026-10-06  
+**Activation artifact:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_E_FORX_MANDATE_ACTIVATION_AND_INTAKE_OPTIMIZATION_20261006.md`  
+**Activation commit:** `4f21e60e2aa68d1f64678cc730faccec489b3f87`
+
+**Standing duty:** **KEEP INTAKE OPTIMAL.**
+
+FORX owns continuous intake hygiene: current status, deduplication, priority, routing, stale-state removal, exact HOLD dependencies, orphan prevention, provenance preservation, and verified closure.
+
+**Active mechanism:** **FORX 9-Headed Reaper Protocol**  
+Artifact: `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_F_FORX_9_HEADED_REAPER_PROTOCOL_20261006.md`  
+Commit: `0f43635bb12f44f26528656682a246ac24a3c8b3`
+
+The protocol drives FORX toward **efficiency, ROI/value, specification, verification, optimization and weighted continuation**. Packets are stable-ID and dependency-tracked. A prerequisite fix inherits the effective priority of any dependent fix it unlocks until the prerequisite is verified complete.
+
+**Fallback refinement:** **FORX Outcome-Equivalent Fallback / Master Escalation Rule**  
+Artifact: `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_G_FORX_OUTCOME_EQUIVALENT_FALLBACK_AND_MASTER_ESCALATION_20261006.md`  
+Commit: `5366d412b9f1f53db592231df665625f2b8043d4`
+
+FORX now uses the autonomous ladder **Option A → Option B → Option C → MASTER → human only if irreducible**. Route fidelity is flexible; outcome fidelity is not. A slower or longer workaround may close the failure only when FORX-V verifies materially equivalent outcome. A materially degraded substitute must escalate to MASTER rather than be misrepresented as closure.
+
+**Continuity base:** **FORX 12-Headed Reaper — Continuity Challengers**  
+Artifact: `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_H_FORX_12_HEADED_REAPER_CONTINUITY_CHALLENGERS_20261006.md`  
+Commit: `45cfcb23958812e6706ccdf07becf53b74047525`  
+State: SUPERSEDED AS CURRENT HEAD COUNT / PROVENANCE RETAINED.
+
+**Current mechanism:** **FORX 13-Headed Reaper — Re-Entrant Instigator**  
+Artifact: `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_I_FORX_13_HEADED_REAPER_INSTIGATOR_20261006.md`  
+Commit: `7aa5217af9f5f77c8350be7397cf3e5d283097c2`
+
+Head 1 is the **Instigator**. It starts the interrogation from cumulative known state and may re-enter anywhere in the chain when a material pivot, contradiction, new evidence, dependency change, route change, lifecycle change, or threatened continuity anchor appears.
+
+The prior three continuity challengers remain intact, shifted later in the sequence. The protocol is continuous and re-entrant: a material pivot can trigger a bounded Instigator sub-interrogation, after which control returns to the ongoing chain. Accusation is a probe, never evidence.
+
+**Commercial transfer:** FORX may route the latest 13-head reasoning upgrade to existing income branches where it materially improves commercial reasoning/problem-solving. FORX does not take over commercial execution ownership. Bounty Reaper transfer remains conditional on FORX-V acceptance of the latest 13-head mechanism.
+
+**Security / confidentiality mandate:** **DOM8N / GOLD remains the canonical security authority/principle; FORX / WHITE owns operational forensic security assurance, remediation and verification, and reports only to MASTER.**  
+Artifact: `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_J_FORX_SECURITY_CONFIDENTIALITY_AND_MASTER_REPORTING_20261006.md`  
+Commit: `bf3ef7d385edf7567f73e9d9f97924897b280f39`
+
+Internal Matrix information is confidential by default. ROOT is aided, not reported to. T-MED / T-GOV / T-COD are specialist routing destinations, not FORX reporting authorities. Public/presentation systems receive only explicitly cleared or sanitized information. Internal commercial reasoning, income mechanisms, ROI/weighting logic, security mechanics, FORX reasoning mechanics, failure maps and similar operational intelligence are not public-surface material. Accuracy does not create disclosure authority.
+
+**Full consolidated FORX role specification:**  
+`AMX/ROOT/INTAKE/FORX_PERMANENT_LIBRARIAN_ROLE_SPEC_FULL_20261006.md`  
+Commit: `ebb3c8a48b555b981b2a831cd46f14789e2932f7`
+
+This consolidation preserves the Addenda A–J provenance while recording the current permanent role in one operational readback. It also normalizes speech/transcription variants **Fox / Forks → FORX** unless the Owner explicitly creates another entity.
+
+**Addendum K — Global Pursuit / Capability-Tool-Skill Estate:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_K_FORX_GLOBAL_PURSUIT_TOOL_SKILL_ESTATE_20261006.md`  
+Commit: `e2579d43d16a441c61a60fd61aaf963b5daa65b6`  
+State: **OWNER-DIRECTED INTAKE UPGRADE / T-GOV + T-COD DISPOSITION REQUIRED FOR NEW IMPLEMENTATION CONSEQUENCES.**
+
+The commercial-scale rule is preserved internally as:
+`BUSINESSES × PROBLEMS × CAPABILITIES × APPLICATIONS × DECISION-MAKERS × TRANSACTION SIZES`.
+
+The ~450 million businesses figure is retained as an existing **working surface-scale heuristic**, not a verified census. Very large / combinatorial opportunity scale must not be converted into a fabricated verified “billions” count.
+
+## FORX STANDING MANDATE — CONTINUOUS DEVELOPMENT / AUTONOMOUS INTAKE UPGRADE LOOP
+
+**Owner direction:** accepted as a FORX mandate refinement.  
+**Standing priority:** continuous / non-blocking below active P0 unless an upgrade materially unlocks P0.  
+**Artifact:** `AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_L_CONTINUOUS_DEVELOPMENT_INTAKE_UPGRADE_LOOP_20261006.md`  
+**Commit:** `c6ff313efb0e84e0fd1ef8be6c3d7e98d8f5386a`  
+**Lifecycle:** INDEXED / ACTIVE MANDATE REFINEMENT — NOT CANON / NOT BUILD AUTHORITY.
+
+**Loop:** `OBSERVE → DETECT DELTA → RECOVER PROVENANCE → VERIFY → FIND EXISTING OWNER → DESIGN SMALLEST IMPROVEMENT → DUPLICATION/AUTHORITY CHECK → PACKETIZE → INTAKE → OWNER IMPLEMENTS IF AUTHORIZED → FORX-V VERIFY → PROPAGATE CAPABILITY → CONTINUE`.
+
+**Core boundary:** FORX may autonomously discover, test, package, route, verify and propagate improvements. It may not silently Merge, Canonize, Freeze, seize another owner’s mandate, or bypass required human/security/legal gates.
+
+**Purpose:** reduce repeated Owner intervention by making verified learnings, repairs, optimizations, tool capability, fallback routes and worker improvements durable and recursively available through Intake.
+
+---
+
+## FORX GOVERNANCE BOUNDARY — NON-SELF-DISPOSITION + REASONED REJECTION
+
+**Owner direction:** active FORX role clarification.  
+**Reporting:** **FORX → MASTER ONLY.**  
+**Core separation:** **REPORTING ≠ ROUTING ≠ DISPOSITION ≠ VERIFICATION.**
+
+**Addendum M — Non-Self-Disposition / Independence Boundary:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_M_NON_SELF_DISPOSITION_INDEPENDENCE_BOUNDARY_20261006.md`  
+Commit: `a0f6cd023a850ce0236ac75aea16cbef6e2df672`
+
+FORX may investigate, optimize, recommend, rectify, route and verify, but it may not decide that its own recommendation enters ROOT governance, Blue State, Canon, Master Build, or another owner's controlled state. This separation is an intentional defensive control.
+
+**Addendum N — Reasoned Disposition / Rejection-Rework Loop:**  
+`AMX/ROOT/INTAKE/MATRIX_FORENSIC_WORKER_PROFILE_ADDENDUM_N_REASONED_DISPOSITION_REJECTION_REWORK_LOOP_20261006.md`  
+Commit: `0073fbea70f3d25f037a086f51d8cac403c685b0`
+
+A REJECT disposition must state material reasons, governing basis, evidence/unmet criteria, correctability, and return condition where applicable. Rejection normally becomes new evidence for FORX-W:
+
+`REJECTION → PARSE REASONS → FIX / ALTERNATE → MATERIAL NEW VERSION → INTAKE → REDISPOSITION`.
+
+Semantically identical rejected packets may not loop indefinitely. A resubmission requires a material delta. An explicit final scope closure must identify competent authority, exact objective, reason, governing basis and whether materially equivalent alternatives remain allowed.
+
+**Defensive value:** FORX cannot self-promote; disposition authority cannot create an opaque dead-end.
+
+**Consolidated role readback updated:**  
+`AMX/ROOT/INTAKE/FORX_PERMANENT_LIBRARIAN_ROLE_SPEC_FULL_20261006.md`  
+Commit: `bba48af674d1c3b2167d173063966f1ca861c0f6`
+
+---
+
+## FORX DEFERRED B-PRIORITY — UNIVERSAL FORENSIC ASSURANCE MARK
+
+**Owner instruction:** capture now; do not displace the active P0 Matrix recovery.  
+**Priority:** **B — DEFERRED / NON-BLOCKING UNLESS IT BECOMES A DEPENDENCY OF HIGHER-PRIORITY WORK**  
+**Artifact:** `AMX/ROOT/INTAKE/FORX_FORENSIC_ASSURANCE_MARK_UNIVERSAL_ARTIFACT_LOOP_20261006.md`  
+**Artifact commit:** `0f37fc89581f04ab6826dcb21845076b7075298d`  
+**Lifecycle:** INDEXED IMPLEMENTATION CANDIDATE — NOT MERGED / NOT CANON / NOT BUILD-AUTHORIZED.  
+**Primary destinations:** T-GOV + BLUE STATE.  
+**Technical enforcement destination if authorized:** T-COD / existing BUILD owner.
+
+**Rule candidate:** every governed Matrix artifact/rule/protocol carries its existing authority/owner identification plus a **FORX forensic assurance mark**. The FORX mark is a version-bound forensic/optimization hook only; it does not grant authority, lifecycle promotion, Canon, Merge, or Build approval.
+
+**Implementation shape:** extend existing Master Index/artifact metadata rather than create a new registry. Historical artifacts gain coverage through metadata overlay without source-history rewrite. New artifacts receive the FORX mark at creation. Raw evidence is not modified; the mark attaches to its provenance/index record.
+
+**Re-entry rule:** any material version change triggers `FORX_CYCLE_STATE = REVERIFY`. `VERIFIED_CURRENT_VERSION` is never transferable automatically to a later version.
+
+**Internal-only boundary:** FORX forensic/security metadata is stripped or sanitized from public/presentation exports unless explicitly cleared.
+
+**Black Box note:** apply this to any valid governed Black Box artifact once its exact existing source/owner is recovered; do not conflate it with the BLACK participant layer and do not invent a new Black Box architecture.
+
+---
+
+## FORX CURRENT ACTIVE QUEUE
+
+### P0 — FORX PROTOCOL / COMMERCIAL TRANSFER
+
+1. **FORX-VFY-20261006-002 — 13-Head Re-Entrant Instigator Acceptance**
+   - state: **READY / ACTIVE**
+   - owner: **FORX-V**
+   - SUPERSEDES: `FORX-VFY-20261006-001`
+   - BLOCKED_BY: none
+   - UNLOCKS: `FORX-RP-20261006-002`
+   - closure: real-work proof that Instigator entry/re-entry materially improves contradiction detection and pivot handling without unsupported accusation or recursive churn.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-VFY-20261006-002_13_HEAD_REENTRANT_INSTIGATOR_ACCEPTANCE.md`
+   - commit: `17941e0fca71bd8abacd8abe98bd09b120839284`
+
+2. **FORX-FIX-20261006-002 — Commercial Reasoning 13-Head Instigator Transfer**
+   - state: **READY FOR ROUTING**
+   - destination: **T-COD**, with T-GOV cross-reference where mandate/authority semantics are affected
+   - existing owner: current authorized income-branch owner(s), beginning with iSCOPE / PRI Field Force
+   - SUPERSEDES: `FORX-FIX-20261006-001`
+   - BLOCKED_BY: none
+   - scope: re-entrant Instigator, continuity challengers, dependency ordering, weighted continuation, outcome-equivalent fallback, ROI/specification/verification improvements.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-FIX-20261006-002_COMMERCIAL_REASONING_13_HEAD_INSTIGATOR_TRANSFER.md`
+   - commit: `e0d7c01bb82d2e6e654a73f78079b6f0c9703a68`
+
+3. **FORX-RP-20261006-002 — Bounty Reaper Conditional 13-Head Extension**
+   - state: **WAITING**
+   - destination after release: **T-COD**
+   - existing owner: Bounty Reaper
+   - SUPERSEDES: `FORX-RP-20261006-001`
+   - BLOCKED_BY: `FORX-VFY-20261006-002`
+   - release condition: FORX-V closes the 13-head verification packet with PASS.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-002_BOUNTY_REAPER_13_HEAD_CONDITIONAL_EXTENSION.md`
+   - commit: `371fb13ce88127e7a07ea6c1b6a25562921f8463`
+
+**Superseded packet provenance:** FORX-VFY-20261006-001, FORX-FIX-20261006-001 and FORX-RP-20261006-001 remain preserved but no longer control the current protocol.
+
+### P0 — DIRECT CORRECTION / EXECUTION
+
+1. **FORX-FIX-20261006-005 — Primary Matrix Recovery Continuation**
+   - state: **OWNER-REASSERTED / READY FOR IMMEDIATE ROUTING**
+   - destinations: **T-COD → iSCOPE / PRI + Bounty Reaper**
+   - purpose: keep the original 24-hour execution failure active despite later interruptions; restore global pursuit, Reaper consequence, and weighted worker capability continuity.
+   - current evidence: one inspected commercial sent email for 2026-10-06 is not sufficient acceptance; queued Reaper work is not sufficient acceptance.
+   - capability rule: material FORX learning must propagate into the relevant worker's durable state.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-FIX-20261006-005_PRIMARY_MATRIX_RECOVERY_CONTINUATION.md`
+   - commit: `CURRENT — latest FORX-FIX-20261006-005 revision includes Addenda C/D recovery refinements`
+
+2. **FORX-FIX-20261006-003 — Global Pursuit / Commercial Capability-State Recovery**
+   - state: **READY FOR T-COD ROUTING**
+   - destination: **T-COD**
+   - existing execution owners: **iSCOPE / PRI**
+   - BLOCKED_BY: none
+   - UNLOCKS: `FORX-VFY-20261006-003`
+   - purpose: restore the already-governed global commercial reasoning shape rather than merely classifying the current ledger.
+   - preserve: current single-writer control, parked no-response threads, dedupe, payment truth, later-stage buyer state, and scoped auth/security gates.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-FIX-20261006-003_GLOBAL_PURSUIT_CAPABILITY_STATE_RECOVERY.md`
+   - commit: `2dcb0adc11d5a09d3e06ece1cd31339dee0d473b`
+
+2. **FORX-VFY-20261006-003 — Global Pursuit / Capability-State Acceptance**
+   - state: **WAITING FOR IMPLEMENTATION EVIDENCE**
+   - owner: **FORX-V**
+   - BLOCKED_BY: `FORX-FIX-20261006-003`
+   - closure: attributable real-work proof of broad problem-instance reasoning, global discovery continuity, later-stage conversion preservation, restart persistence, no false exhaustion, no duplicate outreach, and unchanged payment truth.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-VFY-20261006-003_GLOBAL_PURSUIT_CAPABILITY_STATE_ACCEPTANCE.md`
+   - commit: `5911133e0a0cc3897b1de4737b1c16b799541700`
+
+3. **DR0021-P0-01 — READY / regeneration semantics**
+   - destination: **T-COD + FORX-V**
+   - owner: existing BUILD/runtime owner under Master; verification by **FORX-V**
+   - current state: **PARTIALLY REMEDIATED / NOT CLOSED**
+   - evidence: commit `0e680537ac0afd7b054ea6f0d1e706c95c4b5490` parked Jukbox / K29 / MagicPictures after initial outreach + one follow-up + no response.
+   - current runner SHA `8dfac610cda53fd348e6f85c6597649df94b72e3` contains WAITING guards for active dependencies, unavailable routes, missing next action, monitor/wait before due, and SUBMITTED/OFFERED before due.
+   - remaining question: whether every downstream decision runtime distinguishes check-only/evidence READY from true external-action READY and therefore avoids duplicate send.
+   - verification packet: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-VFY-20261006-004_READY_ACTION_CLASS_RECONCILIATION.md`
+   - commit: `e19c01db75b88d72a8fc730c2686755b7a28cde0`
+   - closure: attributable post-repair cycle proves action-class semantics, no duplicate outreach, genuine executable work still progresses, then CLOSED_VERIFIED.
+
+### P0 — GOVERNANCE DISPOSITION READY
+
+1. **FORX-RP-20261006-004 — Abacus Semantic Reasoning Protocol**
+   - state: **OWNER ACCEPTED / READY FOR T-GOV + BLUE STATE DISPOSITION**
+   - priority: **BLACK-BOX-TOP / P0**
+   - security owner: **FORX**
+   - technical consequence if authorized: **T-COD**
+   - recommendation: **MODIFY / MERGE → GOVERNANCE + BLUE STATE**
+   - core rule: semantic tokenization/coordinates + authenticated encryption + compartmentalized visibility + durable semantic continuity.
+   - rolling-consensus integration: **UNKNOWN — recover exact governing source before integration; do not invent.**
+   - artifact: `AMX/ROOT/INTAKE/ABACUS_SEMANTIC_REASONING_PROTOCOL_GOVERNANCE_BLUE_STATE_CANDIDATE_20261006.md`
+   - packet: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-004_ABACUS_SEMANTIC_REASONING_PROTOCOL.md`
+   - source commit: `625fbc885e34435cf276bde184c96d00ad056a68`
+   - packet commit: `0ded5beb90d5aacb9311239da779a6b330ec4810`
+
+2. **FORX-RP-20261006-003 — Commercial Capability / Tool / Skill Estate**
+   - state: **READY FOR T-GOV DISPOSITION**
+   - destination: **T-GOV**
+   - technical cross-reference: **T-COD**
+   - existing commercial owners: **iSCOPE / PRI**
+   - purpose: maintain one governed capability estate so workers know which tool classes are available, substitutable, approved candidates, sensitive-gated, or unavailable.
+   - current exposed tool classes include repository/code, email/calendar/docs, task/project management, browser/web, design/UX/media, data/analytics, deployment/cloud, database/backend, payments, blockchain, AI/model tooling, ads/marketing, scheduling and storage.
+   - discovered candidate basket includes Apollo.io, Clay, Hunter, Lusha, ZoomInfo, HubSpot, Attio, Close, Zoho CRM, Semrush, Ahrefs, Exa, Tavily, Parallel Search, Firecrawl, Scite, Consensus and Granola.
+   - plugin install/connect and non-delegable consent remain platform/user gates; missing one provider must not become global idle when an equivalent lawful route exists.
+   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-003_COMMERCIAL_CAPABILITY_TOOL_SKILL_ESTATE.md`
+   - commit: `1dd1f0995202ecf582dccecbd99da1a3852f4a94`
+
+2. **RGR-01 — Recurrence Classification / Authority Rectification**
+   - destination: **T-GOV**
+   - recommendation: MODIFY / MERGE or ALREADY-SUBSUMED with exact mapping.
+
+2. **RGR-02 — DR-0021 Commercial Intelligence State Loss**
+   - destination: **T-GOV**
+   - recommendation: MODIFY / MERGE into existing continuity / Execution Fidelity / RGR controls.
+
+3. **MATRIX-01 — Matrix Durability / Broken Workflow Classification**
+   - destination: **T-GOV**
+   - recommendation: MODIFY / MERGE into existing Governance + Blue State controls.
+
+4. **MATRIX-03 + Addendum A — Durable Cognition / Capability Persistence**
+   - destination: **T-GOV**
+   - recommendation: MODIFY / MERGE into Governance + Blue State.
+
+5. **MATRIX-02 / FORX permanent-office integration**
+   - destination: **T-GOV**
+   - Owner appointment and activation are ACTIVE.
+   - remaining governance task: registry / credential / supersession reconciliation and routing of technical implementation consequences to T-COD.
+
+### P0 — SCOPED HOLD / PROVENANCE RECOVERY
+
+1. **RGR-03 — full 30-image capability-state reconstruction**
+   - dependency: authoritative full 30-image membership, provenance, chronology and semantics.
+   - owner: **FORX-W** for recovery; T-GOV/T-COD receive resulting bounded packets.
+   - return condition: full reconstructed manifest exists.
+
+2. **10-year-old resolution**
+   - state: **UNKNOWN**
+   - dependency: authoritative definition + acceptance criteria.
+   - owner: **FORX-W**
+   - return condition: source recovered and testable.
+
+3. **3-year-old resolution**
+   - state: **UNKNOWN**
+   - dependency: authoritative definition + acceptance criteria.
+   - owner: **FORX-W**
+   - return condition: source recovered and testable.
+
+4. **DR-0021 behavioral closure**
+   - dependency: source/runtime correction + capability-state reconstruction + repeated behavioral proof.
+   - owner: existing execution owners for correction; **FORX-V** for verification.
+   - return condition: repeated accepted behavior and retained state.
+
+### GOVERNANCE-READY LEGACY QUEUE
+
+1. **OCC-01 — Active Dependency Resurfacing**
+2. **OCC-04 — Reaper Final-Mile Completion Semantics**
+3. **CEBRC-A — truthful commercial identity/profile/KYC execution**
+4. **CEBRC-B — TinyFish continuity/resource conservation**
+5. **CARBON° Business Revitalization Commercial Directive — Dual Candidate**
+
+These remain pending their existing governance decisions and are not allowed to disappear behind the P0 forensic chain.
+
+### DISPOSITIONED / PROVENANCE ONLY — NOT PENDING
+
+- **OCC-02 — Mandate Liveness & Objective Enforcement** — ACCEPTED / MERGED.
+- **OCC-03 — Authorized Work Persistence & Intake Handoff** — ACCEPTED / MERGED.
+- **Adaptive Capability & Capacity Scaling** — ACCEPTED / MERGED.
+
+## FORX QUEUE RULE
+
+The section above is the **current operational queue view**. Older queue summaries below remain historical provenance and do not override this current FORX readback.
+
+A queue item leaves the active view only when:
+- explicitly dispositioned;
+- validly moved to scoped HOLD with owner + dependency + return condition; or
+- verified closed by FORX-V.
+
+### Dependency-aware ordering
+
+FORX-W assigns stable packet IDs and records `BLOCKED_BY` / `UNLOCKS` relationships for material fixes.
+
+If Fix B depends on Fix A, **Fix A inherits at least Fix B's effective priority** until A is verified complete. Dependent fixes remain WAITING rather than being allowed to deploy out of order.
+
+Independent fixes may proceed in parallel.
+
+Weighted continuation is a prioritization aid only; authority, safety, legal/rights, single-writer constraints, explicit Owner priority and other governing hard gates override numeric weighting.
+
+### Dependency failure fallback
+
+If the preferred fix cannot deploy because a dependency cannot be met, FORX must attempt an outcome-equivalent alternate before human gating:
+
+1. **Option A** — primary fix;
+2. **Option B** — materially equivalent alternate route;
+3. **Option C** — materially equivalent longer / less efficient workaround;
+4. **MASTER escalation** — if only a materially degraded result remains;
+5. **Human gate** — only for an irreducible human-only dependency or after lawful autonomous routes are exhausted.
+
+A dependency failure is treated as a routing/solution problem first. Existing AMX metrics govern materiality and visibility; FORX does not create a replacement KPI layer.
+
+---
+
 # AMX ROOT — AUTHORITATIVE INTAKE INDEX
 
 **Index status:** AUTHORITATIVE INTAKE CATALOG / ROUTING SURFACE  
