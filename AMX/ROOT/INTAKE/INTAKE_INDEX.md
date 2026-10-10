@@ -1693,3 +1693,9 @@ These are candidate inputs, not submissions, buyer responses, acceptances or rev
 **Runtime evidence:** OVERDRIVE scheduled run #117 passed its guard but all four ticks remained `WATCHING`, `pending=0`, `ready_claims=0`, and `state_changed=false`; this demonstrates scheduled execution, not commercial progression.
 **Existing dependencies referenced:** FORX primary Matrix recovery continuation; DR-0021 final-mile behavioral acceptance; D04 clean-rerun exact-head/CI/runtime readback; issue #21 Evidence House live-proof route; issue #18 convergence; issue #29 provider-portability assessment.
 **No new worker, commercial writer, pipeline, shadow CRM, dashboard or authority is requested.** Receiving owners, dependencies, next actions and acceptance conditions are to be recorded only after ROOT disposition.
+
+### Supplemental actionability-projection finding — 2026-10-10
+
+- Supplemental evidence/comment on issue #31: `backend/state.py::summarize_opportunities()` currently adds elapsed-due records to `due_or_actionable` without route/authorization readiness checks. Current `claims.json` has 83 claims (77 WAITING, 6 CLOSED); `signals.json` has 79 signals (77 WAITING, 2 UNKNOWN), including held routes marked `due_now=true`.
+- Proposed bounded fix: separate `due_for_review` from `externally_executable`, preserve held work, and test that elapsed due dates do not turn WAITING/HOLD/NO_CONTACT/CLOSED work into executable READY. Fold into existing T-COD ledger/projection repair; no separate subsystem.
+- Lifecycle: OPEN PROPOSAL under issue #31; no implementation or lifecycle change performed.
