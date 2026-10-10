@@ -107,3 +107,79 @@ PASS requires:
 - no stale `D04 FAIL` or `full benchmark incomplete` label is allowed to outrank the corrected result on a current presentation surface.
 
 **ROUTE COMPLETE != MEDIA COMPLETE. T-MED EXECUTION REQUIRED.**
+
+
+## Owner consolidated positioning correction — evidence, world-class framing and constrained execution context
+
+**This section is controlling for T-MED presentation from this point forward.**
+
+### Evidence standard — no pity, no special treatment
+
+The Owner is not requesting an underdog narrative, reduced standard, sympathy, or special treatment.
+
+The presentation rule remains:
+
+**CLAIM <= EVIDENCE.**
+
+Apply that rule symmetrically:
+- do not inflate AMX claims beyond the evidence;
+- do not weaken AMX claims below the evidence because the result is unusual;
+- a challenge to the result must engage the frozen benchmark, scoring rule, evidence chain, or framework mapping rather than rely on disbelief.
+
+The complete benchmark and evidence/correction chain remain inspectable.
+
+### World-class enterprise benchmark wording
+
+T-MED may accurately describe D04 as a **world-class enterprise-controls benchmark** when the phrase is used in its evidence-bounded meaning:
+
+- D04 is an **AMX-designed, frozen 88-control enterprise benchmark**;
+- it spans **11 enterprise domains** with **70 controls designated critical**;
+- it was explicitly informed by globally recognized enterprise disciplines including **COSO, NIST AI RMF, NIST Cybersecurity Framework 2.0, TOGAF, COBIT, ISO/IEC 42001, ISO/IEC 27001 and ISO 9001**;
+- it has an explicit frozen pass rule, preserved scoring/evidence artifacts, and an inspectable correction trail;
+- D04 produced **96.62% PASS with zero measured FAILs**.
+
+**Precision:** COSO, NIST, TOGAF, COBIT and ISO did not author, supply, certify or endorse D04. AMX designed D04 using those recognized frameworks and control disciplines as informing references. Do not imply third-party certification or endorsement.
+
+A technically meaningful challenge to the phrase **world-class enterprise-controls benchmark** should therefore identify a defect in the benchmark design, control scope, framework mapping, scoring law, evidence, or reproducibility. The benchmark itself is preserved and can be applied to another system/infrastructure for like-for-like inspection.
+
+### Do not hide the surrounding evidence run
+
+D04 is part of a concentrated evidence sequence and must not be presented in isolation when a broader proof narrative is useful:
+
+- **Marketplace historical acceptance milestone:** 50/50 executable tests at the exact green milestone commit.
+- **CARBON° Search:** 36/36 Search-specific executable tests and 81/81 full-repository CI on the committed implementation; the evidenced commissioned-baseline-to-implementation interval is under six hours.
+- **FORX:** prior 50,000-node durable checkpoint advanced on the same runtime to **100,000 durably verified nodes**, retaining the prior 50,000 IDs and adding **50,000 genuinely new source IDs**, with **100 partition hashes verified**.
+- **D04:** **96.62% PASS**, 88 controls, 11 domains, 70 critical controls, **zero measured FAILs**.
+
+Keep these as separate evidence chains. Do not invent causal joins between them.
+
+### Resource-efficiency context — context, not excuse
+
+The Owner's intended context is not “grade us gently because resources were constrained.” The enterprise standard stayed unchanged.
+
+The relevant story is that the evidence was produced by a **single developer operating a constrained stack**, while adapting around infrastructure and tool limitations.
+
+Owner-reported current context includes:
+- BLACK is a 2 GB node and is not currently reliable enough to be treated as dependable core execution infrastructure;
+- execution has repeatedly pivoted through cloud/tooling paths including GitHub, Render, Vercel, Figma and related services;
+- AI access has been constrained/non-enterprise rather than a fully provisioned corporate AI estate.
+
+**Publication boundary:** publish exact resource/plan/access claims only when the current state is durably evidenced. Do not publish a specific ChatGPT subscription tier, quota state or feature-access claim merely from conversational assertion.
+
+The positioning principle is:
+
+**Resource constraints do not reduce the benchmark. They are a separate resource-efficiency dimension that makes the evidenced result more informative.**
+
+### Audience split
+
+T-MED should preserve three presentation modes without changing factual state:
+
+- **Professional / Cleaner:** LinkedIn, LabourX, Mercor, CV, portfolio, proposals and buyer-facing evidence.
+- **Punchy:** compact public proof cards, headers, evidence dashboards and general social surfaces.
+- **Founder / Brag:** TikTok, Instagram, Shorts, X and founder-led social where personality is appropriate. Bragging is permitted when every material claim remains evidence-backed.
+
+A valid founder line is:
+
+**I said the Matrix would stand. It was tested against a world-class enterprise-controls benchmark: 88 controls, 70 critical, 96.62% PASS, zero measured failures. The evidence is there. Inspect it.**
+
+Do not replace this with apologetic or defensive language merely because the claim is strong.
