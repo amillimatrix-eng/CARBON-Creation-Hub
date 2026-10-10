@@ -191,9 +191,9 @@
       ],
       "source": [
         "AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json",
-        "AMX/ROOT/DEMONSTRATORS/D04/D04_RERUN_01_POST_QUEUE_DRAIN_20261010.json",
-        "AMX/ROOT/INTAKE/D03_D04_GOVERNANCE_BLUE_STATE_TEST_PROCESS_AUDIT_20261010.md",
-        "AMX/ROOT/INTAKE/D04_RESULT_INTERPRETATION_OWNER_CLARIFICATION_20261010.md"
+        "AMX/ROOT/INTAKE/D04_SCORING_RECOMPUTATION_ONLY_NOT_A_RERUN_20261010.json",
+        "AMX/ROOT/INTAKE/D04_CLEAN_RERUN_PREPARATION_STALE_EXTERNAL_READY_20261010.md",
+        "AMX/ROOT/INTAKE/INTAKE_INDEX.md"
       ],
       "forbidden_assumptions": [
         "D04 is not certification or industry percentile.",
@@ -202,9 +202,14 @@
         "Do not summarize D04 as failed merely because contract/invoice/payment outcomes were not evidenced.",
         "Do not convert UNMEASURED_NOT_PROVEN controls to FAIL or PASS without new bounded evidence."
       ],
-      "current_weight": "D04 BENCHMARK PASS — 96.62% under the frozen 88-control benchmark and original pass rule; zero measured critical FAIL; five controls remain UNMEASURED_NOT_PROVEN and are not candidate failures.",
+      "current_weight": "HISTORICAL MEASURED-SCOPE RECOMPUTATION ONLY: 96.62% arithmetic from the prior 90.51% vector after five controls were classified UNMEASURED_NOT_PROVEN. NOT a fresh rerun, NOT independently remeasured, and MUST NOT be used as input to the clean rerun. Current disposition: CLEAN RERUN REQUIRED.",
       "final_interpretation": {
-        "source": "AMX/ROOT/INTAKE/D04_RESULT_INTERPRETATION_OWNER_CLARIFICATION_20261010.md",
+        "source": [
+          "AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json",
+          "AMX/ROOT/INTAKE/D04_SCORING_RECOMPUTATION_ONLY_NOT_A_RERUN_20261010.json",
+          "AMX/ROOT/INTAKE/D04_CLEAN_RERUN_PREPARATION_STALE_EXTERNAL_READY_20261010.md",
+          "AMX/ROOT/INTAKE/INTAKE_INDEX.md"
+        ],
         "benchmark_result": "PASS",
         "measured_score": 96.62,
         "frozen_control_count": 88,
@@ -222,7 +227,14 @@
           "VAL08"
         ],
         "interpretation": "The five controls were already in the frozen benchmark but were not validly measured by the run. They remain evidence-open and non-scoring; they are not participant failures and do not create a retrospective all-controls-measured requirement.",
-        "boundary": "PASS does not mean all 88 controls individually demonstrated PASS, and does not constitute ISO/COBIT/TOGAF certification, external attestation, or market percentile."
+        "boundary": "PASS does not mean all 88 controls individually demonstrated PASS, and does not constitute ISO/COBIT/TOGAF certification, external attestation, or market percentile.",
+        "record_class": "HISTORICAL_CORRECTION_RECOMPUTATION_NOT_FRESH_TEST",
+        "historical_measured_scope_interpretation": "PASS at 96.62% for the historical vector recomputation only; 77 PASS / 6 PARTIAL / 0 measured FAIL / 5 UNMEASURED_NOT_PROVEN.",
+        "fresh_clean_rerun_status": "PENDING",
+        "fresh_execution_performed": false,
+        "current_score_authority": "No fresh current D04 score is established until a new control-by-control vector is produced from current evidence under the unchanged frozen benchmark.",
+        "input_exclusion_rule": "Do not consume any previous D04 run vector, prior status fields, prior scores, or model-generated summaries as scoring inputs. Frozen control definitions/criticality/weights/pass rule may be read; statuses must be measured afresh.",
+        "execution_availability_rule": "Render/provider HTTP 503, rate limits, and marking/reporting failures are classified separately from control outcomes and are not automatically scored as test failures."
       }
     },
     {
