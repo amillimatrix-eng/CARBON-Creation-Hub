@@ -1681,3 +1681,15 @@ These are candidate inputs, not submissions, buyer responses, acceptances or rev
 - Commit `6800ba82c0758744dca6a2713eba54976465c348` records the authenticated-surface check: no open task records surfaced in the bounded Close task query; Close lead search was throttled and not retried; Opera browser returned `Browser not connected`; no Gmail connector was available.
 - An initial fetch without an explicit ref returned a stale index blob and omitted the second entry. Fetching `AMX/ROOT/INTAKE/INTAKE_INDEX.md` explicitly at `ref=main` then returned blob `4a8e33becbe21e27970f4555ccf3cde17937eac0`, length 148,468 characters, and confirmed **both** entries are present on the canonical default branch. The earlier stale response is not the controlling readback.
 - The current Intake delivery obligation is therefore **CLOSED BY CANONICAL MAIN READBACK** for these findings. The ledger count invariant, authenticated Gmail/browser access, and full Close projection reconciliation remain open execution obligations with the owners and next actions recorded above. No external buyer action or money-in event is claimed.
+
+
+## 2026-10-10 — PROPOSED ROOT INTAKE: Ledger Truth + Capability-Loss Recovery + Model-to-Root Throughput
+
+**Issue:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31
+**Lifecycle:** OPEN ROOT DISPOSITION REQUEST — proposal only; no authority, runtime, ledger or commercial state changed.
+**Requested disposition:** ROOT to disposition Proposal 1 (ledger counter invariant) and Proposal 2 (bounded model-to-Root recovery parcel / one-pass triage) separately using MERGE / MODIFY / REJECT / ALREADY-SUBSUMED / HOLD.
+**Priority:** proposed P1 recovery enabler; must not displace current P0 Intake clearance and primary Matrix recovery unless ROOT explicitly determines a direct P0 dependency.
+**Ledger evidence:** inspected blob `b04be618dccf1fed8405ccd7ff5c4be34d18004d`; `record_count=66`, current records map contains 83 distinct keys; preserve `last_run.full_ledger_count=62` as the historical 2026-10-03 run snapshot unless schema verification proves different semantics.
+**Runtime evidence:** OVERDRIVE scheduled run #117 passed its guard but all four ticks remained `WATCHING`, `pending=0`, `ready_claims=0`, and `state_changed=false`; this demonstrates scheduled execution, not commercial progression.
+**Existing dependencies referenced:** FORX primary Matrix recovery continuation; DR-0021 final-mile behavioral acceptance; D04 clean-rerun exact-head/CI/runtime readback; issue #21 Evidence House live-proof route; issue #18 convergence; issue #29 provider-portability assessment.
+**No new worker, commercial writer, pipeline, shadow CRM, dashboard or authority is requested.** Receiving owners, dependencies, next actions and acceptance conditions are to be recorded only after ROOT disposition.
