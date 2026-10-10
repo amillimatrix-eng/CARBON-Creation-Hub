@@ -1,12 +1,14 @@
-# ROOT INTAKE — CATEGORY A — T-MED D04 PASS MEDIA / PUBLIC EVIDENCE HANDOFF
+# ROOT INTAKE — CATEGORY A — T-MED D04 HISTORICAL MEDIA DRAFT / CLEAN-RERUN HOLD
 
 **Date:** 2026-10-10  
 **Priority / Category:** **A**  
 **Execution owner:** **T-MED**  
 **Mandate:** `AMX-MANDATE-TMED-V1`  
 **Mandate SHA-256:** `3204cb5d8dfcfbc1e904a4a23f0077959bb9371152a2ef32be48e7e858d148f1`  
-**Status:** **EXECUTION OBLIGATION — START FROM CURRENT EVIDENCE**  
+**Status:** **PUBLICATION HOLD — DO NOT RELEASE UNTIL A FRESH CLEAN D04 RERUN IS PERSISTED AND READ BACK**  
 **Authority boundary:** presentation/media/public-profile execution only; T-MED does not become PRI, T-COD or governance.
+
+> **CLEAN-RUN CONTAMINATION GUARD — 2026-10-10:** This is a historical draft pack, not authorization to publish a current D04 result. The cited 96.62% is an arithmetic recomputation of an earlier vector; no fresh D04 rerun has yet been established. Do not copy, surface, or teach these score claims as the current result. Current disposition is at the beginning of `AMX/ROOT/INTAKE/INTAKE_INDEX.md`. Keep this handoff on HOLD until a new control-by-control vector, score, evidence hashes, and readback receipt exist.
 
 ## Owner intent
 
@@ -16,9 +18,9 @@ The corrected outcome must be converted immediately into professional/public med
 
 This is a Category A obligation.
 
-## Controlling D04 result
+## Historical corrected interpretation — NOT the current clean-run result
 
-**D04 ENTERPRISE-CONTROLS BENCHMARK — PASS — 96.62%.**
+**HISTORICAL RECOMPUTATION ONLY: 96.62% measured-scope PASS for the prior vector. NOT a fresh rerun; NOT cleared for current public use.**
 
 Frozen benchmark:
 - 88 controls;
@@ -27,7 +29,7 @@ Frozen benchmark:
 - original frozen pass rule:
   **PASS requires >=90 absolute score, zero critical FAIL, and no unresolved executable queue affecting a critical control.**
 
-Corrected result:
+Historical corrected arithmetic for the prior vector (not fresh-run results):
 - 77 measured PASS;
 - 6 measured PARTIAL;
 - 0 measured FAIL;
@@ -71,7 +73,7 @@ Required current derivatives:
 5. **Professional evidence-dashboard update** explaining:
    - what was tested;
    - 88-control / 11-domain / 70-critical structure;
-   - 96.62% PASS;
+   - Historical 96.62% measured-scope recomputation only; not a fresh-run result and not cleared for release;
    - zero measured FAIL;
    - five UNMEASURED_NOT_PROVEN controls;
    - exact frozen pass rule;
@@ -86,7 +88,7 @@ Do not inflate it beyond the evidence.
 
 Preferred leading public statement:
 
-**AMilliMATRiX passed its frozen 88-control enterprise-controls benchmark at 96.62%, with zero measured FAILs, across governance, architecture, security, AI management, operations, finance, commercial controls, quality and value-realization domains informed by COSO, NIST AI RMF, NIST CSF 2.0, TOGAF, COBIT and ISO control frameworks. The complete evidence and correction trail is available for scrutiny.**
+**HISTORICAL DRAFT — DO NOT RELEASE:** The previous D04 vector was assigned a corrected 96.62% measured-scope interpretation after five controls were classified UNMEASURED_NOT_PROVEN. This was arithmetic over a prior run, not a fresh rerun. Current D04 result is pending the clean rerun and readback.
 
 Then state the boundary:
 - the benchmark itself is a preserved, inspectable frozen test;
@@ -144,7 +146,7 @@ Evidence basis from the frozen test itself:
 - **all 88 controls carry one or more explicit framework/control-discipline references** in the frozen artifact;
 - the named globally recognized frameworks and control disciplines inform the actual control logic used by the test;
 - it has an explicit frozen pass rule, preserved scoring/evidence artifacts, and an inspectable correction trail;
-- D04 produced **96.62% PASS with zero measured FAILs**.
+- D04 historical vector: **96.62% measured-scope recomputation only**; current clean-run result has not yet been produced.
 
 **Precision:** do not claim that COSO, NIST, TOGAF, COBIT or ISO certified or endorsed the D04 result. The accurate claim is that the frozen D04 control set is explicitly informed by and mapped to those recognized frameworks/control disciplines.
 
@@ -157,7 +159,7 @@ D04 is part of a concentrated evidence sequence and must not be presented in iso
 - **Marketplace historical acceptance milestone:** 50/50 executable tests at the exact green milestone commit.
 - **CARBON° Search:** 36/36 Search-specific executable tests and 81/81 full-repository CI on the committed implementation; the evidenced commissioned-baseline-to-implementation interval is under six hours.
 - **FORX:** prior 50,000-node durable checkpoint advanced on the same runtime to **100,000 durably verified nodes**, retaining the prior 50,000 IDs and adding **50,000 genuinely new source IDs**, with **100 partition hashes verified**.
-- **D04:** **96.62% PASS**, 88 controls, 11 domains, 70 critical controls, **zero measured FAILs**.
+- **D04 historical correction:** 96.62% measured-scope recomputation from the prior vector; not a fresh test and not an approved current-result claim.
 
 Keep these as separate evidence chains. Do not invent causal joins between them.
 
@@ -188,7 +190,7 @@ T-MED should preserve three presentation modes without changing factual state:
 
 A valid founder line is:
 
-**I said the Matrix would stand. We ran a world-class enterprise-controls benchmark against it: 88 controls, 70 critical, 96.62% PASS, zero measured failures. The controls are mapped to COSO, NIST, NIST CSF 2.0, TOGAF, COBIT and ISO frameworks. The evidence is there. Inspect it.**
+**DRAFT ONLY — NOT FOR RELEASE:** The prior D04 vector was recalculated at 96.62% for the measured scope; five controls remained unmeasured, not failures. A fresh clean rerun is required before making a current D04 score claim.
 
 Do not replace this with apologetic or defensive language merely because the claim is strong.
 
