@@ -78,6 +78,35 @@ def write(path, value):
     tmp.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
     tmp.replace(path)
 
+VOLATILE_SCAN_KEYS = {"generated_at", "last_seen_at"}
+
+def semantic_projection(value):
+    """Remove scan-only timestamps before deciding whether tracked state changed."""
+    if isinstance(value, dict):
+        return {
+            key: semantic_projection(item)
+            for key, item in value.items()
+            if key not in VOLATILE_SCAN_KEYS
+        }
+    if isinstance(value, list):
+        return [semantic_projection(item) for item in value]
+    return value
+
+def semantically_equal_raw(raw_text, value):
+    if raw_text is None:
+        return False
+    try:
+        old = json.loads(raw_text)
+    except (TypeError, json.JSONDecodeError):
+        return False
+    return semantic_projection(old) == semantic_projection(value)
+
+def restore_raw(path, raw_text):
+    if raw_text is None:
+        path.unlink(missing_ok=True)
+    else:
+        path.write_text(raw_text)
+
 def claim_lock():
     if LOCK.exists() and time.time() - LOCK.stat().st_mtime < 110:
         return False
@@ -530,19 +559,51 @@ def tick():
         print(json.dumps({"status": "HOLD", "reason": "active_tick"}))
         return 0
     try:
+        raw_signals = SIGNALS.read_text() if SIGNALS.exists() else None
+        raw_claims = CLAIMS.read_text() if CLAIMS.exists() else None
         state = read(STATE)
         opportunities = read(OPPORTUNITIES)
         signals = detect_work(opportunities)
         claims = claim_work(signals, opportunities)
+        routing_changed = (
+            not semantically_equal_raw(raw_signals, signals)
+            or not semantically_equal_raw(raw_claims, claims)
+        )
+        pending = [task for task in state.get("queue", []) if task["status"] == "PENDING"]
+        if not pending and not routing_changed:
+            # A wake is not a commercial transition. Keep tracked state byte-identical
+            # when only scan timestamps moved; workflow logs remain the heartbeat.
+            restore_raw(SIGNALS, raw_signals)
+            restore_raw(CLAIMS, raw_claims)
+            counts = {"iSCOPE": len(signals["iSCOPE"]), "PRI": len(signals["PRI"])}
+            print(json.dumps({
+                "status": "WATCHING",
+                "pending": 0,
+                "signals": counts,
+                "ready_claims": claims["ready_count"],
+                "state_changed": False,
+            }, sort_keys=True))
+            return 0
+
         state["last_tick"] = utcnow()
         state["last_signal_count"] = {"iSCOPE": len(signals["iSCOPE"]), "PRI": len(signals["PRI"])}
         state["ready_claims"] = claims["ready_count"]
-        pending = [task for task in state.get("queue", []) if task["status"] == "PENDING"]
         if not pending:
             state["adapter_status"] = "OPERATIONAL"
-            state["last_tick_result"] = {"processed": [], "pending": 0, "signals": state["last_signal_count"]}
+            state["last_tick_result"] = {
+                "processed": [],
+                "pending": 0,
+                "signals": state["last_signal_count"],
+                "state_changed": True,
+            }
             write(STATE, state)
-            print(json.dumps({"status": "WATCHING", "pending": 0, "signals": state["last_signal_count"], "ready_claims": state["ready_claims"]}, sort_keys=True))
+            print(json.dumps({
+                "status": "WATCHING",
+                "pending": 0,
+                "signals": state["last_signal_count"],
+                "ready_claims": state["ready_claims"],
+                "state_changed": True,
+            }, sort_keys=True))
             return 0
         processed = []
         for task in state.get("queue", []):
