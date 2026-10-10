@@ -1,5 +1,7 @@
 # D04 RESULT INTERPRETATION — OWNER CLARIFICATION / NO-GOALPOST CORRECTION
 
+> **HISTORICAL USE BOUNDARY — 2026-10-10:** This record corrects interpretation of the specific prior D04 vector only. The 96.62% value is a measured-scope arithmetic recomputation, not a fresh execution or independent remeasurement. It is not the current clean-rerun result and must not be used as a scoring input for the next run. See the authoritative active pointer at the beginning of `AMX/ROOT/INTAKE/INTAKE_INDEX.md`.
+
 **Date:** 2026-10-10  
 **Scope:** Result interpretation only  
 **Change type:** APPEND-ONLY CLARIFICATION  
@@ -54,14 +56,16 @@ It records that the earlier FAIL / INCOMPLETE interpretation resulted from how t
 
 The benchmark, control set and pass rule remain exactly where they were.
 
-The result to present from the start of any future D04 review is:
+The corrected interpretation of that specific historical vector was:
 
 **D04 ENTERPRISE-CONTROLS BENCHMARK — PASS — 96.62% measured score under the frozen 88-control benchmark and original pass rule; zero measured critical FAIL. Five controls were not validly measured by the run and remain UNMEASURED_NOT_PROVEN.**
 
-## Public / professional wording boundary
+## Historical public / professional wording boundary
+
+The phrases below describe the prior measured-scope recomputation only. They are not authorized as claims about a new clean rerun unless a separately persisted fresh-run artifact establishes the result.
 
 Allowed:
-- **D04 enterprise-controls benchmark: PASS — 96.62%.**
+- For that historical measured-scope recomputation only: **D04 — 96.62% PASS** under the corrected unmeasured-control interpretation.
 - **88-control frozen benchmark; zero measured critical FAIL.**
 - **Five controls were unmeasured by the run and therefore not scored as failures.**
 
