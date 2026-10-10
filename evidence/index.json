@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-10-10T05:35:00Z",
+  "generated_at": "2026-10-10T05:46:00Z",
   "control": "T10: activity is not outcome; a remediation action is not a verified fix until the original condition is retested. UNKNOWN/HOLD over inference.",
   "records": [
     {
@@ -153,7 +153,7 @@
       "acceptance_test": "Two consecutive product builds reached 100% of their evidenced acceptance milestone in bounded sub-six-hour windows. Marketplace: 50/50 historical green milestone with repository-bounded implementation window 1h28m19s. CARBON° Search: 36/36 Search-specific executable tests plus 81/81 full-repository CI; commissioning-to-first implementation commit 4h16m56s, commissioning-to deployed-promotion commit 4h28m17s.",
       "durable_receipt": "AMX/ROOT/INTAKE/CARBON_INTENT_MARKETPLACE_FORENSIC_EVIDENCE_SUPPLEMENT_20261008.md + issue #16 promotion evidence + AMX Evidence Detailer",
       "status_freshness": "CURRENT / EVIDENCE-BOUND BENCHMARK",
-      "interview_safe_explanation": "On two consecutive days I took two separate AMX product builds to 100% of their evidenced acceptance milestone in under six hours each. The Marketplace reached 50/50 in a repository-bounded 1h28m19s implementation window. CARBON° Search reached 36/36 Search-specific tests and 81/81 full-repository CI; the first implementation commit landed 4h16m56s after commissioning, with deployed promotion at 4h28m17s.",
+      "interview_safe_explanation": "Built two separate AI/software products from scoped requirement to tested working implementation on consecutive days, each inside a bounded sub-six-hour delivery window. One reached 50/50 acceptance checks in 1h28m19s; the other reached 36/36 product-specific tests plus 81/81 full-repository CI, with its first implementation commit 4h16m56s after commissioning and deployed promotion at 4h28m17s.",
       "T10_JOB": "Prove delivery capacity from bounded scope through tested, inspectable implementation without relying on self-description.",
       "T10_ACTUAL": "Two consecutive builds reached their evidenced acceptance milestones with exact repository/CI/deployment receipts.",
       "T10_EVIDENCE": "Marketplace forensic supplement: merge-base 0e837bb4… at 18:02:13Z to verified head fd14ec87… at 19:30:32Z = 1h28m19s; 50/50 milestone. Search: commissioning a98afabb… 09:22:30Z to implementation 7ef32c8b… 13:39:26Z = 4h16m56s; 36/36 Search-specific tests + 81/81 full-repository CI; promotion/deployed commit 69834610… at 13:50:47Z = 4h28m17s.",
@@ -173,7 +173,28 @@
         "ci",
         "deployment",
         "evidence"
-      ]
+      ],
+      "market_translation": {
+        "rule": "Lead with externally legible business meaning. Internal AMX terms, governance names, gate IDs and protocol shorthand are supporting evidence only unless the audience already understands them.",
+        "recruiter_safe": "Built two separate AI/software products from scoped requirement to tested working implementation on consecutive days, each inside a bounded sub-six-hour delivery window. One reached 50/50 acceptance checks in 1h28m19s; the other reached 36/36 product-specific tests plus 81/81 full-repository CI, with its first implementation commit 4h16m56s after commissioning and deployed promotion at 4h28m17s.",
+        "buyer_safe": "Rapidly turns ambiguous commercial or product problems into working, test-backed systems with explicit acceptance criteria, deployment evidence and readback. Useful for fast prototypes, AI-enabled workflow systems, internal tools, GTM/ops automation and evidence-governed product delivery.",
+        "do_not_lead_with": [
+          "T10",
+          "Blue State",
+          "O1",
+          "mandate hashes",
+          "internal gate IDs",
+          "Matrix-native protocol names"
+        ],
+        "translation_order": [
+          "buyer/problem",
+          "working outcome",
+          "speed",
+          "test/acceptance proof",
+          "business relevance",
+          "internal evidence if requested"
+        ]
+      }
     },
     {
       "evidence_id": "EVID-DEMONSTRATOR-001",
