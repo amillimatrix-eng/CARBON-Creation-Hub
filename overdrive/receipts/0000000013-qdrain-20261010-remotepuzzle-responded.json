@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-10-10T06:20:59.005058+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "GMAIL_SENT",
+        "observed_at": "2026-10-08T11:44:58Z",
+        "source": "GMAIL",
+        "source_id": "1a11b54b561ebb5c"
+      },
+      {
+        "kind": "BUYER_RESPONSE",
+        "observed_at": "2026-10-09T20:23:52Z",
+        "source": "GMAIL",
+        "source_id": "1a12256578560597"
+      }
+    ],
+    "opportunity_key": "remotepuzzle.com|agentic-systems-engineer|2026-10-08",
+    "to": "RESPONDED"
+  },
+  "sequence": 13,
+  "sha256": "eada62921333e46ac42f46027b62d3fc4c3f083eff6458df5f37d958381bef59",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261010-remotepuzzle-responded"
+}

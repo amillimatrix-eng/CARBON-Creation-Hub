@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-10-10T06:20:59.007482+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "GMAIL_SENT",
+        "observed_at": "2026-10-07T19:13:37Z",
+        "source": "GMAIL",
+        "source_id": "1a117c9194098d85"
+      },
+      {
+        "kind": "WRONG_ROUTE_RESPONSE",
+        "observed_at": "2026-10-07T19:13:47Z",
+        "source": "GMAIL",
+        "source_id": "1a117c950871a70c"
+      }
+    ],
+    "opportunity_key": "mprtc.co.za|recruitment-conversion-intelligence-pilot|2026-10-07",
+    "to": "WRONG_ROUTE"
+  },
+  "sequence": 20,
+  "sha256": "2c2801931ddbdeaf71cadc61eb5e5f7387ab36da03f7e4096c36d932f9bd6c4f",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261010-mprtc-wrongroute"
+}

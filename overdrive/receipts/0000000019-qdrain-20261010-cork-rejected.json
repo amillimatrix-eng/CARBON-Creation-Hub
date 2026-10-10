@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-10-10T06:20:59.007165+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "GMAIL_SENT",
+        "observed_at": "2026-10-07T07:07:21Z",
+        "source": "GMAIL",
+        "source_id": "1a115302e8719783"
+      },
+      {
+        "kind": "BUYER_REJECTION",
+        "observed_at": "2026-10-07T07:32:51Z",
+        "source": "GMAIL",
+        "source_id": "1a115478ee90c3a9"
+      }
+    ],
+    "opportunity_key": "corkcitygaol.com|group-booking-flow|2026-10-07",
+    "to": "REJECTED"
+  },
+  "sequence": 19,
+  "sha256": "092d48741e2ff44a901ce9f044c9901d95af6fd7972c243df2dd102571e7a68d",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261010-cork-rejected"
+}

@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-10-10T06:20:59.005822+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "GMAIL_SENT",
+        "observed_at": "2026-10-07T19:40:42Z",
+        "source": "GMAIL",
+        "source_id": "1a117e1e2b753369"
+      },
+      {
+        "kind": "DELIVERY_DELAY",
+        "observed_at": "2026-10-09T22:39:03Z",
+        "source": "GMAIL",
+        "source_id": "1a122d1e69aebfac"
+      }
+    ],
+    "opportunity_key": "kjplumbing.co.za|quote-request-pilot|2026-10-07",
+    "to": "DELAYED"
+  },
+  "sequence": 15,
+  "sha256": "ccaa4e65805f2cb77b98dc95a848381b6009ff18f2282bace1fe1183d1fb25c0",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261010-kjplumbing-delayed"
+}

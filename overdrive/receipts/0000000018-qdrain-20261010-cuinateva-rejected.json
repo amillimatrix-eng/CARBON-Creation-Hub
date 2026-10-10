@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-10-10T06:20:59.006843+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "GMAIL_SENT",
+        "observed_at": "2026-10-07T21:41:04Z",
+        "source": "GMAIL",
+        "source_id": "1a1185016fd604aa"
+      },
+      {
+        "kind": "BUYER_REJECTION",
+        "observed_at": "2026-10-08T05:11:51Z",
+        "source": "GMAIL",
+        "source_id": "1a119ecf8e1a7297"
+      }
+    ],
+    "opportunity_key": "cuinatevabarcelona.com|website-trust-review|2026-10-07",
+    "to": "REJECTED"
+  },
+  "sequence": 18,
+  "sha256": "7de0a9f2b3405557884330d1495e7e60a096bf85b7dd1eba0be0a86758c4eb0b",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261010-cuinateva-rejected"
+}

@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-10-10T06:20:59.006485+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "GMAIL_SENT",
+        "observed_at": "2026-10-08T11:38:21Z",
+        "source": "GMAIL",
+        "source_id": "1a11b4ea7c16c32c"
+      },
+      {
+        "kind": "BUYER_REJECTION",
+        "observed_at": "2026-10-08T16:41:10Z",
+        "source": "GMAIL",
+        "source_id": "1a11c640dcda5d8f"
+      }
+    ],
+    "opportunity_key": "coloniaestudio.com|intake-conversion-pilot|2026-10-08",
+    "to": "REJECTED"
+  },
+  "sequence": 17,
+  "sha256": "941bfde744f433f53c684794aa070d44a0f414b5b6075fc7cabd007434efd246",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261010-colonia-rejected"
+}

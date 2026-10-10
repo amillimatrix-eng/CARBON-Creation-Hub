@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-10-10T06:20:59.006163+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "GMAIL_SENT",
+        "observed_at": "2026-10-07T19:02:27Z",
+        "source": "GMAIL",
+        "source_id": "1a117bedff2ec0bd"
+      },
+      {
+        "kind": "DELIVERY_DELAY",
+        "observed_at": "2026-10-09T21:14:01Z",
+        "source": "GMAIL",
+        "source_id": "1a122840c1ebf786"
+      }
+    ],
+    "opportunity_key": "jobnect.co.ke|trust-page-cleanup|2026-10-07",
+    "to": "DELAYED"
+  },
+  "sequence": 16,
+  "sha256": "c7e37ca9d9e1db0a4b59ed50ad27603cc2517c8827f12c39bded1b779019e701",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261010-jobnect-delayed"
+}

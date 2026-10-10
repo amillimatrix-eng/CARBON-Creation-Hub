@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-10-10T06:20:59.005455+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "GMAIL_SENT",
+        "observed_at": "2026-10-08T16:58:36Z",
+        "source": "GMAIL",
+        "source_id": "1a11c73d83090f13"
+      }
+    ],
+    "opportunity_key": "ontrackmulching.com|website-trust-cleanup|2026-10-08",
+    "to": "OFFERED"
+  },
+  "sequence": 14,
+  "sha256": "0209262c22c51fda3a30c6084328b048ffa2c7a7b7717265eb46b8c0a47cde31",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261010-ontrack-offered"
+}
