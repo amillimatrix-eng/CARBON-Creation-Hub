@@ -1,0 +1,225 @@
+{
+  "receipt_id": "D04-FORX-PATCH-APPLICATION-20261010-01",
+  "date": "2026-10-10",
+  "source_patch_set": "AMX/ROOT/INTAKE/D04_FORX_FORENSIC_PATCH_SET_20261010.json",
+  "executor_boundary": "Applied by the current chat runtime under verified role/build authorities. This is not evidence that the separate scheduled FORX automation executed.",
+  "statuses": [
+    {
+      "controls": [
+        "EA04",
+        "COM06",
+        "QMS07"
+      ],
+      "state": "APPLIED_VERIFIED",
+      "result": "PASS",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_CLOSE_PROJECTION_CONTRACT_V1.md",
+        "AMX/ROOT/RECEIPTS/D04_CLOSE_PROJECTION_BINDINGS_20261010.json",
+        "Close readback: exactly three active in-scope fixed-price pilots, canonical SUBMITTED/WAITING notes, exact $99/$49/$99 values, confidence=0"
+      ],
+      "residual": "None inside the explicitly bounded Close projection scope."
+    },
+    {
+      "controls": [
+        "CHG04",
+        "QMS04"
+      ],
+      "state": "APPLIED_VERIFIED",
+      "result": "PASS",
+      "evidence": [
+        "AMX/ROOT/RECEIPTS/D04_CHANGE_CORRECTIVE_ACTION_ACCEPTANCE_20261010.md",
+        "Issue #24 closed only after real ingest→persist→readback acceptance",
+        "PR #26 no-op acceptance produced four consecutive state_changed:false ticks"
+      ],
+      "residual": "None for the original failed conditions."
+    },
+    {
+      "controls": [
+        "CHG06"
+      ],
+      "state": "APPLIED_VERIFIED",
+      "result": "PASS",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_ROLLBACK_REVERSIBILITY_CONTROL_V1.md"
+      ],
+      "residual": "External sends/payments remain compensatable/irreversible by design and are never falsely called rolled back."
+    },
+    {
+      "controls": [
+        "CHG07"
+      ],
+      "state": "APPLIED_VERIFIED",
+      "result": "PASS",
+      "evidence": [
+        "AMX/ROOT/RECEIPTS/D04_DEPLOYMENT_PROVENANCE_20261010.json",
+        "Render deploy dep-db3uv4p42hec73f5l6c0 -> Marketplace commit fd14ec8733ae1c3652c8cc5ad8424a0fd6caaffc",
+        "Render deploy dep-db4f2tjtqb8s73f2eu00 -> Search commit 69834610dfb0945490b5d6f8047c8d99a0f83477"
+      ],
+      "residual": "None for tested-commit/deployment linkage of the two benchmark builds."
+    },
+    {
+      "controls": [
+        "OPS02"
+      ],
+      "state": "APPLIED_VERIFIED",
+      "result": "PASS",
+      "evidence": [
+        "AMX/ROOT/RECEIPTS/D04_RUN_CONSERVATION_ACCEPTANCE_20261010.md"
+      ],
+      "residual": "None for this run's work-conservation acceptance."
+    },
+    {
+      "controls": [
+        "VAL07"
+      ],
+      "state": "PARTIAL_TIME_DEPENDENT",
+      "result": "PARTIAL",
+      "evidence": [
+        "AMX/ROOT/RECEIPTS/D04_RUN_CONSERVATION_ACCEPTANCE_20261010.md",
+        "Commercial follow-ups and reconciliation occurred in the run"
+      ],
+      "residual": "Frozen control asks for sustained time-to-cash priority, which one repair runtime cannot truthfully prove across future operation."
+    },
+    {
+      "controls": [
+        "OPS08"
+      ],
+      "state": "PARTIAL_PROVIDER_OWNER_GATE",
+      "result": "PARTIAL",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_CRITICAL_ROUTE_FALLBACK_REGISTER_20261010.json"
+      ],
+      "residual": "Some critical authenticated external actions still lack a tested independent alternate; the register names explicit OWNER/EXTERNAL gates rather than inventing redundancy."
+    },
+    {
+      "controls": [
+        "RES06"
+      ],
+      "state": "APPLIED_VERIFIED",
+      "result": "PASS",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_CRITICAL_ROUTE_FALLBACK_REGISTER_20261010.json",
+        "Current operation uses multiple non-premium/free/constrained routes and records explicit fallback/gate boundaries"
+      ],
+      "residual": "Provider outages can still create local gates, but critical continuity is not dependent on one premium-only feature."
+    },
+    {
+      "controls": [
+        "SEC02"
+      ],
+      "state": "OWNER_SECURITY_GATE",
+      "result": "PARTIAL",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_CONNECTOR_LEAST_PRIVILEGE_REVIEW_20261010.md"
+      ],
+      "residual": "Final per-app allowlist and permission reduction require Owner/security approval; blind restriction could break critical continuity."
+    },
+    {
+      "controls": [
+        "SEC06"
+      ],
+      "state": "APPLIED_VERIFIED",
+      "result": "PASS",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_SUPPLIER_PROVIDER_RISK_REGISTER_20261010.json"
+      ],
+      "residual": "None for current provider-risk register coverage."
+    },
+    {
+      "controls": [
+        "SEC07"
+      ],
+      "state": "APPLIED_VERIFIED",
+      "result": "PASS",
+      "evidence": [
+        "AMX/ROOT/CONTROLS/D04_EVIDENCE_PII_RETENTION_ACCESS_POLICY_V1.md"
+      ],
+      "residual": "No fabricated statutory retention period was added."
+    },
+    {
+      "controls": [
+        "SEC08"
+      ],
+      "state": "APPLIED_VERIFIED",
+      "result": "PASS",
+      "evidence": [
+        "AMX/ROOT/RECEIPTS/D04_SECURITY_RECOVERY_TABLETOP_20261010.md"
+      ],
+      "residual": "Tabletop proves the required response exercise, not occurrence of a real breach."
+    },
+    {
+      "controls": [
+        "AI08"
+      ],
+      "state": "APPLIED_VERIFIED",
+      "result": "PASS",
+      "evidence": [
+        "PR #27 merged at da7a3486d004d4e75cfe342b370bb717d792395c",
+        "CI run 38033424691 PASS",
+        "overdrive/forensics/FORX-WEIGHTED-CONTINUITY-LATEST.json",
+        "overdrive/forx_weight_state.json"
+      ],
+      "causal_result": {
+        "buffer_candidates": 929,
+        "real_events_consumed": 8,
+        "before_next_selection": "FORX-PROSPECT-20261007-001",
+        "after_next_selection": "FORX-PROSPECT-20261007-005",
+        "outcome_classes": [
+          "RESPONDED",
+          "REJECTED",
+          "WRONG_ROUTE"
+        ]
+      },
+      "residual": "None for the frozen causal-learning control."
+    },
+    {
+      "controls": [
+        "FIN06"
+      ],
+      "state": "PARTIAL_EXTERNAL_OWNER_PROVIDER_GATE",
+      "result": "PARTIAL",
+      "evidence": [
+        "AMX Income Rails Registry Google Sheet",
+        "AMX/ROOT/RECEIPTS/D04_FIN06_RAIL_OBSERVATION_20261010.json"
+      ],
+      "residual": "Authoritative all-rail period close is impossible from current connected observation coverage; bank/PayPal/program-bound and several chain-specific rails remain unobserved/provider-limited."
+    },
+    {
+      "controls": [
+        "FIN08",
+        "VAL03",
+        "VAL04",
+        "VAL05",
+        "VAL06",
+        "VAL08"
+      ],
+      "state": "EXTERNAL_COMMERCIAL_OUTCOME_REQUIRED",
+      "result": "UNCHANGED",
+      "evidence": [
+        "Canonical commercial lifecycle remains below accepted scope/contract/invoice/settlement for current opportunities"
+      ],
+      "residual": "Requires a real buyer to accept scope/price and progress through commitment, receivable and verified settlement. Documentation/code cannot lawfully manufacture this."
+    },
+    {
+      "controls": [
+        "VAL02"
+      ],
+      "state": "EXTERNAL_COMMERCIAL_OUTCOME_REQUIRED",
+      "result": "PARTIAL",
+      "evidence": [
+        "RemotePuzzle substantive response and other bounded response evidence exist"
+      ],
+      "residual": "Reliable repeated response-to-next-step conversion is not yet proven."
+    }
+  ],
+  "conclusion": {
+    "internally_executable_forx_recommendations_remaining_now": 0,
+    "current_residual_classes": [
+      "OWNER_SECURITY_GATE",
+      "PROVIDER_OR_OBSERVABILITY_GATE",
+      "TIME_DEPENDENT_BEHAVIOR",
+      "EXTERNAL_COMMERCIAL_OUTCOME"
+    ],
+    "statement": "All FORX recommendations that were lawfully executable inside the current runtime were applied and independently read back. Remaining controls cannot be truthfully promoted without new external/Owner/time evidence."
+  }
+}
