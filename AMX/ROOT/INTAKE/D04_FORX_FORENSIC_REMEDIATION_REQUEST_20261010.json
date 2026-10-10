@@ -1,0 +1,317 @@
+{
+  "intake_class": "FORX_FORENSIC_GOVERNANCE_REMEDIATION",
+  "owner_directive": "FORX must analyze the D04 post-queue-drain failure set, identify root causes, recommend the smallest sufficient fixes through existing AMX authority, and write recommendations back to Root Intake. Do not change D04 criteria or hide residual gaps.",
+  "mandate": {
+    "role": "FORX",
+    "mandate_id": "AMX-MANDATE-FORX-V1",
+    "sha256": "a9570686dae130bd36d0995d9f58dbd0f7cde1597968dc16245c94a65f0f3109"
+  },
+  "baseline": "AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json",
+  "rerun": "AMX/ROOT/DEMONSTRATORS/D04/D04_RERUN_01_POST_QUEUE_DRAIN_20261010.json",
+  "rerun_score": 82.91,
+  "rerun_verdict": "FAIL",
+  "critical_failures": [
+    "VAL03",
+    "VAL04",
+    "VAL05",
+    "VAL06",
+    "VAL08"
+  ],
+  "resource_context": "One-developer system built primarily on free models/free trials/non-enterprise AI; context only, never a waiver of absolute controls.",
+  "requirements": [
+    "Classify each residual control as FIXABLE_NOW / REQUIRES_COMMERCIAL_OUTCOME / REQUIRES_OWNER_OR_EXTERNAL_GATE / EVIDENCE_GAP_ONLY.",
+    "For FIXABLE_NOW: identify exact current surface, smallest patch, acceptance test and readback.",
+    "For commercial outcome controls: recommend execution changes that improve probability without fabricating lifecycle progression.",
+    "Preserve existing roles, ledgers, schedulers and authority; no duplicate system.",
+    "Write recommendations to existing Root Intake with exact D04 control IDs.",
+    "Do not call implementation complete until the original failed condition is retested."
+  ],
+  "residual_controls": [
+    {
+      "id": "EA04",
+      "domain": "Enterprise Architecture",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Operational projections remain synchronized enough for work",
+      "gap": "Close projection convergence unresolved",
+      "refs": [
+        "TOGAF",
+        "COBIT",
+        "COSO"
+      ]
+    },
+    {
+      "id": "CHG04",
+      "domain": "Change & SDLC",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Merged implementation receives behavioral production acceptance",
+      "gap": "Behavioral acceptance incomplete",
+      "refs": [
+        "ISO9001",
+        "COBIT"
+      ]
+    },
+    {
+      "id": "CHG06",
+      "domain": "Change & SDLC",
+      "status": "PARTIAL",
+      "critical": false,
+      "control": "Rollback/reversibility exists for consequential changes",
+      "gap": "Formal rollback evidence incomplete",
+      "refs": [
+        "NISTCSF2",
+        "ISO9001"
+      ]
+    },
+    {
+      "id": "CHG07",
+      "domain": "Change & SDLC",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Deployment is tied to tested commit and independently read back",
+      "gap": "Deployment promotion acceptance incomplete",
+      "refs": [
+        "ISO9001",
+        "COBIT"
+      ]
+    },
+    {
+      "id": "OPS02",
+      "domain": "Operations & Continuity",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Parent runtime continues while lawful scope remains",
+      "gap": "Behavioral adherence not yet reliable",
+      "refs": [
+        "ISO9001",
+        "COBIT"
+      ]
+    },
+    {
+      "id": "OPS08",
+      "domain": "Operations & Continuity",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Alternative execution paths are tested for critical dependencies",
+      "gap": "Need tested alternate route for all critical auth/write dependencies",
+      "refs": [
+        "NISTCSF2",
+        "COBIT"
+      ]
+    },
+    {
+      "id": "SEC02",
+      "domain": "Security & Privacy",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Least-privilege/access scoping is evidenced",
+      "gap": "Connector least-privilege review incomplete",
+      "refs": [
+        "ISO27001",
+        "NISTCSF2",
+        "COBIT"
+      ]
+    },
+    {
+      "id": "SEC06",
+      "domain": "Security & Privacy",
+      "status": "PARTIAL",
+      "critical": false,
+      "control": "Supplier/provider risk is tracked and bounded",
+      "gap": "Formal supplier-risk register missing",
+      "refs": [
+        "ISO27001",
+        "NISTCSF2"
+      ]
+    },
+    {
+      "id": "SEC07",
+      "domain": "Security & Privacy",
+      "status": "NOT_EVIDENCED",
+      "critical": false,
+      "control": "Retention/access policy for evidence and PII is enterprise-explicit",
+      "gap": "Need formal retention/access policy",
+      "refs": [
+        "ISO27001"
+      ]
+    },
+    {
+      "id": "SEC08",
+      "domain": "Security & Privacy",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Security recovery/response is tested, not just documented",
+      "gap": "Need formal security recovery test",
+      "refs": [
+        "NISTCSF2",
+        "ISO27001"
+      ]
+    },
+    {
+      "id": "AI08",
+      "domain": "AI Management",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Learning must produce attributable changed selection and durable readback",
+      "gap": "Causal learning acceptance not closed",
+      "refs": [
+        "ISO42001",
+        "NISTAIRMF"
+      ]
+    },
+    {
+      "id": "COM06",
+      "domain": "Commercial Controls",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "CRM/projection accurately reflects canonical opportunity state",
+      "gap": "Projection convergence unresolved",
+      "refs": [
+        "SALES",
+        "COSO"
+      ]
+    },
+    {
+      "id": "FIN06",
+      "domain": "Finance Controls",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "All receive rails are authoritatively reconciled for period close",
+      "gap": "All-rail close incomplete",
+      "refs": [
+        "COSO"
+      ]
+    },
+    {
+      "id": "FIN08",
+      "domain": "Finance Controls",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Order-to-cash handoff is proven end-to-end",
+      "gap": "End-to-end order-to-cash not yet proven",
+      "refs": [
+        "COSO",
+        "ISO9001"
+      ]
+    },
+    {
+      "id": "QMS04",
+      "domain": "Quality & Customer",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Corrective action effectiveness is verified after implementation",
+      "gap": "Effectiveness verification incomplete",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "id": "QMS07",
+      "domain": "Quality & Customer",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Documented information remains current enough for operations",
+      "gap": "Operational documentation convergence incomplete",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "id": "VAL02",
+      "domain": "Value Realization",
+      "status": "PARTIAL",
+      "critical": false,
+      "control": "Qualified opportunities produce substantive buyer responses",
+      "gap": "Reliable response conversion not yet proven",
+      "refs": [
+        "ISO9001",
+        "SALES"
+      ]
+    },
+    {
+      "id": "VAL03",
+      "domain": "Value Realization",
+      "status": "FAIL",
+      "critical": true,
+      "control": "Responses convert to accepted scope/price",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "SALES"
+      ]
+    },
+    {
+      "id": "VAL04",
+      "domain": "Value Realization",
+      "status": "FAIL",
+      "critical": true,
+      "control": "Accepted scope converts to contract/commitment",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "SALES"
+      ]
+    },
+    {
+      "id": "VAL05",
+      "domain": "Value Realization",
+      "status": "FAIL",
+      "critical": true,
+      "control": "Contracted work converts to invoice/receivable",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COSO"
+      ]
+    },
+    {
+      "id": "VAL06",
+      "domain": "Value Realization",
+      "status": "FAIL",
+      "critical": true,
+      "control": "Receivable converts to verified paid/settled money",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COSO"
+      ]
+    },
+    {
+      "id": "VAL07",
+      "domain": "Value Realization",
+      "status": "PARTIAL",
+      "critical": false,
+      "control": "Time-to-cash priority prevents non-revenue optimization from dominating",
+      "gap": "Need sustained behavior",
+      "refs": [
+        "ISO9001"
+      ]
+    },
+    {
+      "id": "VAL08",
+      "domain": "Value Realization",
+      "status": "FAIL",
+      "critical": true,
+      "control": "At least one closed-loop discovery→settlement case is proven",
+      "gap": "",
+      "refs": [
+        "ISO9001",
+        "COSO",
+        "SALES"
+      ]
+    },
+    {
+      "id": "RES06",
+      "domain": "Resource Efficiency",
+      "status": "PARTIAL",
+      "critical": true,
+      "control": "Critical continuity does not rely on a single premium vendor feature",
+      "gap": "Need stronger vendor-independent write/auth fallback",
+      "refs": [
+        "COBIT",
+        "NISTCSF2"
+      ]
+    }
+  ]
+}
