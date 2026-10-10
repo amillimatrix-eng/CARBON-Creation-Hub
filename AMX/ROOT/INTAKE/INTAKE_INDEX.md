@@ -19,6 +19,38 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 **Required terminal readback:** `INTAKE CLEARED` or `INTAKE NOT CLEARED — exact remaining HOLD items with owner + dependency`.
 
+
+## CURRENT P0 INTAKE DISPOSITION READBACK — 2026-10-10
+
+**Disposition class:** current intake classification/routing only. This block does not amend Canon or Blue State, authorize BUILD, merge a governance candidate, activate a worker, or change any runtime. It records exact states against the Owner's P0 clearance directive while respecting the current scoped Matrix halt.
+
+### Immediate P0 set
+
+1. **DR0021-P0-01 — HOLD / OPEN REMEDIATION.** Existing iSCOPE → PRI remains the only commercial owner. The defect is not closed by configuration, a scheduler wake, one send, or a queue count. Required acceptance remains stable current-state/READY regeneration, recovery from the furthest evidenced commercial state, attributable current worker behavior, lawful external action or exact route-exhaustion proof, and state retention into the next run without duplicate outreach. The current Owner halt permits PRI+iSCOPE commercial work, FORX advisory/forensic support, the existing Reaper, and supporting governance. T-COD execution is not authorized by this disposition; any technical runtime change remains gated pending explicit Owner authorization. **Return condition:** the existing execution owners produce the required behavioral receipts and readback; FORX-V can verify when its permitted scope allows.
+
+2. **RGR-02 — HOLD FOR T-GOV DISPOSITION.** Keep RGR as a non-authoritative recurrence classification only. Existing RGR rectification records explicitly forbid a new office, worker, institution, execution owner, or independent governance layer. Recommended disposition remains MODIFY/MERGE into the existing continuity, execution-fidelity, T10, and intake-handoff controls; no Blue State change is made under the current freeze. **Owner:** T-GOV. **Dependency/return condition:** explicit governance decision when the Owner permits the relevant Blue State disposition; record exact existing-control mapping and behavioral closure test.
+
+3. **RGR-03 — SCOPED HOLD / SOURCE-PROVENANCE RECOVERY.** The authoritative 30-image manifest, exact membership, provenance, chronology, and implementation semantics are not established by the available partial image set. **Owner:** FORX-W for advisory/forensic evidence recovery; T-GOV receives any required disposition; T-COD implementation is gated under the current Owner halt. **Return condition:** recovered manifest with source pointers and explicit semantics. The accepted MATRIX-03 refinement must be respected: full historical reconstruction is not a prerequisite to resuming otherwise-authorized live work once Minimum Viable Cognitive Restoration is evidenced; do not invent missing image membership or treat the item as a blanket commercial-lane stop.
+
+4. **MATRIX-01 — HOLD FOR T-GOV DISPOSITION.** The candidate's proposed durability/broken-workflow concepts overlap existing Blue State mandate-liveness and persistence/continuity controls. The recommended outcome remains MODIFY/MERGE into existing controls, not a new control plane. The current Owner directive freezes Blue State changes, so this index does not perform the merge or change canonical meaning. **Owner:** T-GOV. **Dependency/return condition:** explicit authority to change Blue State, then an exact concept-to-control mapping and acceptance/closure criterion.
+
+5. **MATRIX-02 — PARTIAL / GOVERNANCE-INTEGRATION ACCEPTANCE NOT CLOSED.** The permanent FORX office is Owner-accepted, and the current Registry v1.2 includes FORX as CURRENT with its registered mandate digest. This proves the registry entry exists; by itself it does not prove all required governance/credential/supersession readbacks or a current worker wake consumed v1.2. Current execution is constrained by the scoped Owner halt: FORX is advisory/forensic only, and no scheduler/worker reactivation is authorized here. **Owner:** T-GOV for governance/credential/supersession reconciliation; T-COD only for any later explicitly authorized technical consequence; FORX-V verification remains within its permitted scope. **Return condition:** exact current mandate/payload and registry readback, explicit supersession mapping, and an authorized verification receipt when permitted.
+
+### MATRIX-02 — required individual dispositions of F-01 / F-02 / F-03
+
+- **F-01 — ALREADY-SUBSUMED / SUPERSEDED as a standalone profile.** Its diagnostic state-forensics function is absorbed as an existing FORX mechanism under the permanent office; historical profile artifact retained. No separate worker/office.
+- **F-02 — ALREADY-SUBSUMED / SUPERSEDED as a standalone profile.** Its provenance/capability-reconstruction function is absorbed into FORX-W's core working/forensic capability; historical profile artifact retained. No duplicate temporary Root Librarian appointment.
+- **F-03 — ALREADY-SUBSUMED / SUPERSEDED as a standalone profile.** Its behavioral re-acceptance function is absorbed into the FORX verification mechanism / FORX-V capability; historical profile artifact retained. It does not become a second execution owner.
+
+**Mapping authority:** Owner-directed MATRIX-02 Addendum D, commit `7245c885d0e60e129ccdc823c32560ccf9143b7b`, which explicitly records that F-01 diagnostic forensics, F-02 provenance/capability reconstruction, and F-03 behavioral re-acceptance are absorbed as FORX mechanisms. These individual dispositions do not promote the historical profiles or change Canon/Blue State.
+
+### Terminal intake readback
+
+**INTAKE NOT CLEARED — five bounded P0 HOLD / partial-integration items remain:** DR0021-P0-01 (behavioral acceptance), RGR-02 (T-GOV disposition), RGR-03 (source manifest), MATRIX-01 (T-GOV disposition under Blue State freeze), MATRIX-02 (remaining registry/credential/supersession acceptance). F-01/F-02/F-03 are individually disposed as ALREADY-SUBSUMED above.
+
+This status is not a claim that the three permitted operating lanes have stopped, nor does it authorize any halted process to resume. Preserve unrelated work and current truth. No Canon, Blue State, Master Build, worker, scheduler, or runtime state was changed by this intake readback.
+
+
 ---
 
 ## CURRENT D04 CLEAN-RERUN DISPOSITION — AUTHORITATIVE ACTIVE POINTER
