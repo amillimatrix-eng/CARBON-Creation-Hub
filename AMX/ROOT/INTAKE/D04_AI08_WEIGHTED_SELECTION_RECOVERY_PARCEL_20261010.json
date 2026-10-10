@@ -1,0 +1,22 @@
+{
+  "parcel_id": "D04-AI08-BLOCKED-RECOVERY-20261010",
+  "original_owner": "T-COD under Owner-authorized FORX D04 repair",
+  "mandate_id": "AMX-MANDATE-TCOD-V1",
+  "intended_action": "Extend the existing FORX selection path with scoped downstream-outcome weighting and prove EVENT -> WEIGHT/STATE CHANGE -> CHANGED NEXT SELECTION -> DURABLE READBACK using REJECTED, WRONG_ROUTE and RESPONDED outcomes.",
+  "furthest_evidenced_state": [
+    "Current FORX 100K selector in overdrive/forx_stage1_runtime/app.py was inspected.",
+    "Its choose_diverse() algorithm selects geographic/POI nodes by country/category round-robin.",
+    "Real downstream commercial outcomes recovered from overdrive/opportunities.json are organization/route/offer outcomes and do not carry a proven causal mapping to GeoNames/Audiala country/category selection dimensions.",
+    "Forcing these commercial outcomes into the geographic selector would create a synthetic causal join prohibited by current governance."
+  ],
+  "blocker": {
+    "class": "ARCHITECTURE_DIMENSION_MISMATCH",
+    "scope": "AI08 only",
+    "exact": "No existing proven common feature space links commercial outcome dimensions to the 100K geographic expansion selector. The raw forx_prospect_buffer is not an active demonstrated commercial selector surface in the current recovered code path."
+  },
+  "recovery_owner": "FORX + T-COD",
+  "next_lawful_action": "Identify the actual current FORX commercial candidate/handoff selector consumed by iSCOPE, or explicitly commission one bounded selector extension using a proven shared feature schema. Then apply three real outcome classes and require at least one actual next-selection change with anti-overfit/diversity preserved.",
+  "idempotency": "Do not modify choose_diverse() merely to satisfy the test. Reuse/extend the actual commercial selection path once evidenced.",
+  "acceptance": "Three real outcome classes survive continuation and at least one changes actual next candidate selection with a durable causal receipt.",
+  "status": "OPEN_BLOCKED_WITH_RECOVERY_OWNER"
+}
