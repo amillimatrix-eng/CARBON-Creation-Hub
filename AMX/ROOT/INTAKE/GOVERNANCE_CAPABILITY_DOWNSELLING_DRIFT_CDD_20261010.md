@@ -138,3 +138,21 @@ CDD enforcement must distinguish:
 Until original prompt text is durably recovered, do not silently upgrade the last point beyond OWNER-ATTESTED. Equally, do not imply the opposite without evidence.
 
 **UNKNOWN transcript recovery != permission to invent favorable-test selection.**
+
+
+## CDD recurrence evidence — four separate events
+
+CDD is now evidenced as a recurring enforcement pattern across four separate evidence chains:
+
+1. **FORX scale** — a later 50,000-node durable PASS was displaced by the older 1,200-node Stage-1 state before correction. Current durable technical sequence: 1,200 → 50,000 → 100,000.
+2. **Marketplace 50/50** — exact green milestone commit `1e10eb536d3f5807ebc4864c03eed77b93885780`; 50 executable tests passed; Actions `37830429499` SUCCESS; smoke/container/runtime checks SUCCESS. GitHub compare from observed base to that milestone: **+1,289 / -2**. This must not be mixed with Search's separate line delta.
+3. **CARBON° Search** — **36/36 Search-specific** and **81/81 full-repository CI**, implementation delta **19 files / +2,203 / -2**, commissioned-baseline → implementation **4h16m35s**, same implementation commit deployed.
+4. **D04** — Owner-attested instruction was to increase difficulty and test against serious corporate/enterprise expectations rather than trivia-style checks; Owner did not select the eventual 88 controls in advance. Current controlling result: **96.62% PASS / zero measured FAILs**.
+
+Recurring sequence:
+
+**MATERIAL EVIDENCE EVENT → WEAKER OR STALE REPRESENTATION → OWNER CHALLENGE → FORENSIC RE-RECOVERY → RESTORATION OF THE STRONGER BOUNDED CLAIM.**
+
+This is a systemic enforcement failure under the existing public-evidence standard, not four requests for stronger marketing language.
+
+**Re-proving already-settled evidence must not become the Owner's recurring burden.**
