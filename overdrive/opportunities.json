@@ -83,7 +83,7 @@
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
   "last_updated_at": "2026-10-09T13:05:00Z",
-  "last_updated_by": "Master/Librarian bounded reconciliation \u2014 MoboReels inbox-full delivery failure",
+  "last_updated_by": "Master/Librarian bounded reconciliation — MoboReels inbox-full delivery failure",
   "record_count": 66,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
@@ -168,7 +168,7 @@
       "message_id": "1a103d3f1631dffd",
       "next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
       "opportunity": "ai-engineer",
-      "organization": "Verder Group \u2014 Agent Factory",
+      "organization": "Verder Group — Agent Factory",
       "payment": "Employment compensation; exact payroll/settlement terms to verify if progressed",
       "proof_led_priority": {
         "basis": "Current official buyer route explicitly evaluates built/shipped work",
@@ -196,7 +196,7 @@
       "recipient": "agentfactory@verder.com",
       "reward": "Paid full-time role; compensation not published on current official role page",
       "state": "SUBMITTED",
-      "subject": "AI Engineer \u2014 shipped work",
+      "subject": "AI Engineer — shipped work",
       "thread_id": "1a103d3f1631dffd",
       "title": "AI Engineer"
     },
@@ -251,7 +251,7 @@
       },
       "recipient": "alakaiproductionsai@gmail.com",
       "state": "CLOSED_NO_FIT",
-      "subject": "AI-native vertical production collaboration \u2014 CARBON\u00b0",
+      "subject": "AI-native vertical production collaboration — CARBON°",
       "thread_id": "1a0f2ea80749ae37",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -274,14 +274,14 @@
           "kind": "CURRENT_PUBLIC_LISTING",
           "observed_at": "2026-10-02",
           "source": "LINKEDIN",
-          "summary": "Alignerr Search Quality Evaluator listed for South Africa; $40\u2013$120/hour; remote flexible contract.",
+          "summary": "Alignerr Search Quality Evaluator listed for South Africa; $40–$120/hour; remote flexible contract.",
           "url": "https://za.linkedin.com/jobs/view/search-quality-evaluator-at-alignerr-4467433062"
         },
         {
           "kind": "PRIMARY_ROLE_PAGE",
           "observed_at": "2026-10-02",
           "source": "WEB",
-          "summary": "Alignerr primary role page confirms remote Search Quality Evaluator scope and $40\u2013$120/hour.",
+          "summary": "Alignerr primary role page confirms remote Search Quality Evaluator scope and $40–$120/hour.",
           "url": "https://www.alignerr.com/jobs/cb54d2de-b3e9-4824-a1f9-a8d3d17179dd"
         },
         {
@@ -307,10 +307,10 @@
       "organization": "Alignerr",
       "payment": "Weekly payouts stated; exact settlement rail to verify",
       "qualified_at": "2026-10-02T15:55:00Z",
-      "reward": "$40\u2013$120/hour advertised",
+      "reward": "$40–$120/hour advertised",
       "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
       "state": "QUALIFIED",
-      "title": "Search Quality Evaluator / AI Training \u2014 South Africa"
+      "title": "Search Quality Evaluator / AI Training — South Africa"
     },
     "automationarchitects.ai|talent-tracker|cape-town-ai-automation": {
       "buyer_fit": "Cape Town AI automation/data consultancy explicitly invites profiles into its talent tracker; strong capability overlap, but no specific paid role was exposed in the recovered page.",
@@ -334,7 +334,7 @@
       "opportunity": "talent-tracker-ai-automation",
       "organization": "Automation Architects",
       "state": "DISCOVERED",
-      "title": "AI Automation / Data Engineering Talent Tracker \u2014 Cape Town"
+      "title": "AI Automation / Data Engineering Talent Tracker — Cape Town"
     },
     "blackbear.co.za|route-to-market-commercial-collaboration|2026-10-10": {
       "buyer_fit": "Direct adjacency to evidenced route-to-market, strategic-account, distribution and commercial optimisation experience. External message led with business outcomes and invited assessment on a bounded real problem.",
@@ -417,7 +417,7 @@
       "recipient": "charissa@callforce.co.za",
       "reward": "Market-related employment compensation; current careers page describes salary/performance incentives",
       "state": "SUBMITTED",
-      "subject": "Marketing Lead application \u2014 Ulrich du Plessis",
+      "subject": "Marketing Lead application — Ulrich du Plessis",
       "thread_id": "1a103d43041d248b",
       "title": "Marketing Lead"
     },
@@ -426,12 +426,12 @@
       "capital_direction": "INBOUND / REVENUE_SHARE",
       "commercial_role": "DISTRIBUTOR / CONTENT PARTNER",
       "constraints": [
-        "Exact rights/territory/package requirements require PRI review against current CARBON\u00b0 rights position before proposition."
+        "Exact rights/territory/package requirements require PRI review against current CARBON° rights position before proposition."
       ],
       "dedupe_result": "NO_EXISTING_RECORD_FOUND_IN_CURRENT_DURABLE_OPPORTUNITY_LEDGER",
       "discovered_by": "iSCOPE",
       "domain": "cherryone.ai",
-      "due_at": "2026-10-06T22:13:15Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "PUBLIC_OFFICIAL_COMMERCIAL_ROUTE",
@@ -457,20 +457,30 @@
           "source_id": "1a103d41e896b6d6",
           "summary": "PRI followed up once on the official content-partner route asking only for the minimum current review-package requirements; no licensing acceptance or commercial agreement is claimed.",
           "thread_id": "1a103d41e896b6d6"
+        },
+        {
+          "kind": "GMAIL_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "source_id": "thread:1a0fc58012594488:2026-10-10",
+          "observed_at": "2026-10-10T06:24:00Z",
+          "summary": "No substantive buyer reply found across current Gmail messages; one governed follow-up was already sent on 2026-10-03."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-03T22:13:15Z",
       "message_id": "1a0fc58012594488",
-      "next_action": "Wait for Cherry One response until the next due interval. On material response, answer in the current thread and provide only the minimum rights/technical/sample package requested; no duplicate follow-up before due.",
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity": "content-partner-distribution",
       "organization": "Cherry One",
       "qualified_at": "2026-09-30T19:50:00Z",
       "recipient": "contact@cherryone.ai",
       "state": "SUBMITTED",
-      "subject": "CARBON\u00b0 content partnership \u2014 submission requirements",
+      "subject": "CARBON° content partnership — submission requirements",
       "thread_id": "1a0fc58012594488",
-      "title": "CARBON\u00b0 \u2014 Degree of Business"
+      "title": "CARBON° — Degree of Business",
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_BUYER_OR_PROVIDER_RESPONSE",
+      "last_reconciled_at": "2026-10-10"
     },
     "coloniaestudio.com|intake-conversion-pilot|2026-10-08": {
       "canonical_ingest": {
@@ -594,7 +604,7 @@
       "reward": "$8.50 USD/hour",
       "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
       "state": "QUALIFIED",
-      "title": "Project Coffee \u2014 Data Labeling Specialist \u2014 South Africa"
+      "title": "Project Coffee — Data Labeling Specialist — South Africa"
     },
     "cuinatevabarcelona.com|website-trust-review|2026-10-07": {
       "canonical_ingest": {
@@ -680,7 +690,7 @@
       "opportunity": "asteroid-photo-collection",
       "organization": "DataForce by TransPerfect",
       "state": "CLOSED_NO_LONGER_AVAILABLE",
-      "title": "Project Asteroid \u2014 South Africa",
+      "title": "Project Asteroid — South Africa",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "dataforcecommunity.transperfect.com|mirabelle-transcription-qa|remote": {
@@ -727,7 +737,7 @@
       "organization": "DataForce by TransPerfect",
       "payer_path": "TransPerfect/DataForce accepted-asset compensation",
       "state": "HOLD",
-      "title": "Ronia RAW Photo Collection \u2014 South Africa",
+      "title": "Ronia RAW Photo Collection — South Africa",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "dataforcecommunity.transperfect.com|thyme-afrikaans-short-story-writer|south-africa": {
@@ -753,7 +763,7 @@
       "organization": "DataForce by TransPerfect",
       "payer_path": "TransPerfect/DataForce accepted-asset compensation",
       "state": "HOLD",
-      "title": "Thyme Freelance Writer \u2014 Afrikaans (South Africa)",
+      "title": "Thyme Freelance Writer — Afrikaans (South Africa)",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg": {
@@ -770,16 +780,16 @@
         }
       ],
       "execution_owner": "iSCOPE",
-      "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
+      "next_action": "No action; official page says the July–August study is completed and no longer accepting participants.",
       "opportunity": "viola-voice-collection",
       "organization": "DataForce by TransPerfect",
       "state": "CLOSED_NO_LONGER_AVAILABLE",
-      "title": "Viola Voice Collection \u2014 Johannesburg",
+      "title": "Viola Voice Collection — Johannesburg",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "dramabox.com",
-      "due_at": "2026-10-06T23:04:27Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "CURRENT_PRIMARY_COMMERCIAL_ROUTE",
@@ -803,25 +813,35 @@
           "source_id": "1a0fedcb0998221c",
           "summary": "DramaBox acknowledged receipt and said the team will respond; this is not external acceptance or commercial review.",
           "thread_id": "1a0fedca0c7c2f71"
+        },
+        {
+          "kind": "GMAIL_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "source_id": "thread:1a0fedca0c7c2f71:2026-10-10",
+          "observed_at": "2026-10-10T06:24:00Z",
+          "summary": "Only automated acknowledgement is evidenced; no substantive content/production reply found."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
       "last_action_at": "2026-10-02T23:04:27Z",
       "message_id": "1a0fedca0c7c2f71",
-      "next_action": "Monitor for the official content/production review route; provide only the controlled sample and accurate rights/technical summary on request.",
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity": "content-partnership",
       "organization": "DramaBox",
       "recipient": "feedback@dramabox.com",
       "state": "SUBMITTED",
       "thread_id": "1a0fedca0c7c2f71",
-      "title": "The Dragon Who Could Not Claim Me"
+      "title": "The Dragon Who Could Not Claim Me",
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_BUYER_OR_PROVIDER_RESPONSE",
+      "last_reconciled_at": "2026-10-10"
     },
     "dramaloft.com|creator-onboarding|vertical-drama-distribution": {
-      "buyer_fit": "Current global creator onboarding accepts fantasy/supernatural vertical drama and pays recurring performance earnings while creator retains IP; CARBON\u00b0 has relevant production evidence.",
+      "buyer_fit": "Current global creator onboarding accepts fantasy/supernatural vertical drama and pays recurring performance earnings while creator retains IP; CARBON° has relevant production evidence.",
       "capital_direction": "INBOUND PERFORMANCE REVENUE / NO SIGNUP FEE",
       "constraints": [
-        "Current CARBON\u00b0 evidence establishes rendered Episodes 06\u201307 and developed series material, not a complete upload-ready series; do not inflate completion."
+        "Current CARBON° evidence establishes rendered Episodes 06–07 and developed series material, not a complete upload-ready series; do not inflate completion."
       ],
       "discovered_by": "iSCOPE",
       "discovery_path": "MARKET SIGNAL -> REQUIRED OUTCOME -> CAPABILITY MATCH",
@@ -848,7 +868,7 @@
       "commercial_offer": {
         "amount": 1000,
         "currency": "USD",
-        "scope": "Bounded commissioned development sprint: two production-ready 60\u201390 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after brief.",
+        "scope": "Bounded commissioned development sprint: two production-ready 60–90 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after brief.",
         "source_id": "1a10da53d6a035a0",
         "status": "OFFER_PRESENTED_NOT_ACCEPTED"
       },
@@ -890,7 +910,7 @@
           "observed_at": "2026-10-05T19:58:14Z",
           "source": "GMAIL",
           "source_id": "1a10da53d6a035a0",
-          "summary": "PRI replied in-thread with current key art, Pitch Episodes 01\u201302 script master and Canonical Cast/visual continuity pack; explicitly preserved current-video truth and offered a bounded USD 1,000 commissioned development sprint subject to buyer acceptance.",
+          "summary": "PRI replied in-thread with current key art, Pitch Episodes 01–02 script master and Canonical Cast/visual continuity pack; explicitly preserved current-video truth and offered a bounded USD 1,000 commissioned development sprint subject to buyer acceptance.",
           "thread_id": "1a0f2ea3874d5fde"
         },
         {
@@ -928,7 +948,7 @@
       "recipient": "contact@faceproduction.net",
       "routing_reason": "OWNER_NO_CONTACT_2026_10_09",
       "state": "NO_CONTACT",
-      "subject": "Producer / catalogue partnership \u2014 CARBON\u00b0",
+      "subject": "Producer / catalogue partnership — CARBON°",
       "suppression": {
         "intake_id": "3f48f8b5-6cd7-8118-a45a-dc2c012c8001",
         "observed_at": "2026-10-09",
@@ -943,7 +963,7 @@
     "flextv.cc|content-partnership|the-dragon-who-could-not-claim-me": {
       "discovered_by": "iSCOPE",
       "domain": "flextv.cc",
-      "due_at": "2026-10-07T05:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OFFICIAL_CURRENT_CATALOGUE",
@@ -963,11 +983,18 @@
           "source": "GMAIL",
           "source_id": "1a1002313c6128a9",
           "thread_id": "1a1002313c6128a9"
+        },
+        {
+          "kind": "GMAIL_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "source_id": "thread:1a1002313c6128a9:2026-10-10",
+          "observed_at": "2026-10-10T06:24:00Z",
+          "summary": "No substantive buyer reply found."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-03T05:00:00Z",
-      "next_action": "Monitor the same business thread for a current intake route; do not duplicate outreach.",
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity": "content-partnership",
       "organization": "FlexTV",
       "package_version": "route-request-no-attachment/2026-10-03",
@@ -980,12 +1007,15 @@
       "recipient": "business@flextv.cc",
       "state": "SUBMITTED",
       "thread_id": "1a1002313c6128a9",
-      "title": "The Dragon Who Could Not Claim Me"
+      "title": "The Dragon Who Could Not Claim Me",
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_BUYER_OR_PROVIDER_RESPONSE",
+      "last_reconciled_at": "2026-10-10"
     },
     "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "discovered_by": "iSCOPE",
       "domain": "free-reels.com",
-      "due_at": "2026-10-07T09:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "CURRENT_OFFICIAL_APP_LISTING_AND_CONTACT",
@@ -1024,11 +1054,18 @@
           "source_id": "1a1010173460500e",
           "summary": "PRI reused the existing thread and sent the concise route request to the current official app-support address after the original address failed.",
           "thread_id": "1a100231af090dc1"
+        },
+        {
+          "kind": "GMAIL_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "source_id": "thread:1a100231af090dc1:2026-10-10",
+          "observed_at": "2026-10-10T06:24:00Z",
+          "summary": "Original bad address failed, corrected official support address was sent successfully; no substantive buyer reply found."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-03T09:00:05Z",
-      "next_action": "Monitor the same thread for delivery failure or a material response. Do not send another initial approach.",
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity": "content-partnership",
       "organization": "FreeReels",
       "package_version": "route-request-no-attachment/2026-10-03",
@@ -1045,7 +1082,10 @@
       ],
       "state": "SUBMITTED",
       "thread_id": "1a100231af090dc1",
-      "title": "The Dragon Who Could Not Claim Me"
+      "title": "The Dragon Who Could Not Claim Me",
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_BUYER_OR_PROVIDER_RESPONSE",
+      "last_reconciled_at": "2026-10-10"
     },
     "goodshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "goodshort.com",
@@ -1113,7 +1153,7 @@
       "title": "The Dragon Who Could Not Claim Me"
     },
     "humansignal.com|content-creator-flexible-gig|remote": {
-      "buyer_fit": "CARBON\u00b0 production and short-form content capability is relevant, but South Africa commercial terms are not explicit.",
+      "buyer_fit": "CARBON° production and short-form content capability is relevant, but South Africa commercial terms are not explicit.",
       "capital_direction": "INBOUND / NO APPLICATION FEE",
       "constraints": [
         "South Africa eligibility and rate are not explicit in the recovered primary listing."
@@ -1162,7 +1202,7 @@
       "opportunity": "data-annotation-contributor",
       "organization": "HumanSignal",
       "state": "CLOSED_NOT_ELIGIBLE",
-      "title": "Data Annotation Contributor \u2014 International"
+      "title": "Data Annotation Contributor — International"
     },
     "humansignal.com|data-collection-contributor|south-africa": {
       "active_dependencies": {
@@ -1266,7 +1306,7 @@
       "reward": "Up to USD $6.00/hour",
       "routing_reason": "ID_AND_PAYOUT_SETUP_COMPLETE_TRAINING_ASSESSMENT_NEXT",
       "state": "QUALIFIED",
-      "title": "Data Collection Contributor \u2014 South Africa"
+      "title": "Data Collection Contributor — South Africa"
     },
     "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me": {
       "constraints": [
@@ -1401,7 +1441,7 @@
       },
       "recipient": "hello@jukboxproductions.com",
       "state": "SUBMITTED",
-      "subject": "Vertical drama production partnership \u2014 CARBON\u00b0",
+      "subject": "Vertical drama production partnership — CARBON°",
       "thread_id": "1a0f2ea30b45baa0",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -1461,7 +1501,7 @@
       },
       "recipient": "made@k29studios.com",
       "state": "SUBMITTED",
-      "subject": "Vertical production collaboration \u2014 CARBON\u00b0",
+      "subject": "Vertical production collaboration — CARBON°",
       "thread_id": "1a0f2ea2a952c85d",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -1478,7 +1518,7 @@
       "current_route_confidence": "HIGH",
       "current_route_status": "CURRENT_CONTACT_ROUTE_VERIFIED",
       "domain": "kingstonstanley.com",
-      "due_at": "2026-10-08T00:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -1504,17 +1544,25 @@
           "result": "CURRENT_PERSON_ORG_AND_EXACT_EMAIL_PUBLICLY_EVIDENCED_PLUS_PRIOR_SEND_NO_BOUNCE",
           "route": "vanessa@kingstonstanley.com",
           "source": "PUBLIC_WEB_GMAIL"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a1243fc84b3cf60",
+          "thread_id": "1a115eaaa87931dd",
+          "observed_at": "2026-10-10T05:18:42Z",
+          "summary": "One governed in-thread follow-up sent after current-route and duplicate-history verification."
         }
       ],
       "execution_owner": "PRI",
-      "execution_readiness": "WAITING_RESPONSE_FOLLOWUP_DUE",
-      "last_action_at": "2026-10-07T10:31:02Z",
-      "last_reconciled_at": "2026-10-09",
-      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-10T05:18:42Z",
+      "last_reconciled_at": "2026-10-10",
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity": "sourcing-overflow-pilot",
       "organization": "Kingston Stanley",
       "recipient": "vanessa@kingstonstanley.com",
-      "routing_reason": "ORIGINAL_OFFER_SENT_NO_SUBSTANTIVE_REPLY_EVIDENCED",
+      "routing_reason": "INITIAL_PLUS_ONE_GOVERNED_FOLLOWUP_SENT_NO_INBOUND_YET",
       "state": "SUBMITTED",
       "title": "48-hour sourcing overflow pilot"
     },
@@ -1625,7 +1673,7 @@
       "recipient": "info@laverticaldramamarket.com",
       "routing_reason": "BUYER_OFFERED_ALTERNATE_ROUTE_BUT_NO_ROUTE_DELIVERED_AFTER_MULTIPLE_FOLLOWUPS",
       "state": "RESPONDED",
-      "subject": "VertIGo AI Vertical Drama \u2014 alternate submission route request",
+      "subject": "VertIGo AI Vertical Drama — alternate submission route request",
       "thread_id": "1a0f1fba9e5a5efb",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -1685,7 +1733,7 @@
       },
       "recipient": "hello@magicpictures.net",
       "state": "SUBMITTED",
-      "subject": "Vertical drama co-production \u2014 CARBON\u00b0",
+      "subject": "Vertical drama co-production — CARBON°",
       "thread_id": "1a0f2ea89285fcc3",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -1706,7 +1754,7 @@
           "kind": "CURRENT_PRIMARY_LISTING",
           "observed_at": "2026-10-10T05:31:00Z",
           "source": "WEB",
-          "summary": "Current listing: South Africa remote; inbound leads/no cold calling; USD 1,000\u20132,000 base; trial period; written-sales examples required.",
+          "summary": "Current listing: South Africa remote; inbound leads/no cold calling; USD 1,000–2,000 base; trial period; written-sales examples required.",
           "url": "https://virtualstaffsa.com/job/media-removal-full-time-remote-sales-closer-inbound-leads-no-cold-calling-south-africa/"
         },
         {
@@ -1736,11 +1784,11 @@
       "proof_of_work_route": "WORK_SAMPLE",
       "qualified_at": "2026-10-10T05:31:00Z",
       "recipient": "dhillon@mediaremoval.com",
-      "reward": "USD 1,000\u20132,000 monthly base in current listing, with commission/performance bonuses discussed after successful trial.",
+      "reward": "USD 1,000–2,000 monthly base in current listing, with commission/performance bonuses discussed after successful trial.",
       "state": "SUBMITTED",
-      "subject": "Inbound Sales \u2014 Cape Town \u2014 Ulrich du Plessis",
+      "subject": "Inbound Sales — Cape Town — Ulrich du Plessis",
       "thread_id": "1a1244c82b1b4abc",
-      "title": "Remote Sales Closer \u2014 Inbound Leads, No Cold Calling"
+      "title": "Remote Sales Closer — Inbound Leads, No Cold Calling"
     },
     "mercor.com|existing-profile-current-state|2026-10-02": {
       "buyer_fit": "Existing verified account and prior applications; continue only on materially new direct task/offer.",
@@ -1847,7 +1895,7 @@
       ],
       "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "Catalogue licensing / co-production enquiry \u2014 CARBON\u00b0 Production 001",
+      "subject": "Catalogue licensing / co-production enquiry — CARBON° Production 001",
       "thread_id": "1a0f25a83088e914",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -2082,7 +2130,7 @@
       "recipient": "mrf@mountainriverfilms.com",
       "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "Co-production / distribution \u2014 AI-native vertical fantasy series",
+      "subject": "Co-production / distribution — AI-native vertical fantasy series",
       "thread_id": "1a0f2e2af4f0d5cc",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -2131,7 +2179,7 @@
       "commercial_offer": {
         "amount": 1000,
         "currency": "USD",
-        "scope": "Bounded commissioned development sprint: two production-ready 60\u201390 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after receiving the brief.",
+        "scope": "Bounded commissioned development sprint: two production-ready 60–90 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after receiving the brief.",
         "source_id": "1a10da6be548ddfb",
         "status": "OFFER_PRESENTED_NOT_ACCEPTED"
       },
@@ -2166,7 +2214,7 @@
           "observed_at": "2026-10-05T19:59:53Z",
           "source": "GMAIL",
           "source_id": "1a10da6be548ddfb",
-          "summary": "PRI sent the current DRAGON review package (Ivory Eclipse key art, Pitch Episodes 01\u201302 script master, canonical cast/visual continuity pack) and presented a bounded USD 1,000 commissioned development sprint. Offer was presented, not accepted.",
+          "summary": "PRI sent the current DRAGON review package (Ivory Eclipse key art, Pitch Episodes 01–02 script master, canonical cast/visual continuity pack) and presented a bounded USD 1,000 commissioned development sprint. Offer was presented, not accepted.",
           "thread_id": "1a0fedc9bdd30527"
         },
         {
@@ -2195,7 +2243,7 @@
     "netshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "discovered_by": "iSCOPE",
       "domain": "netshort.com",
-      "due_at": "2026-10-07T05:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OFFICIAL_CURRENT_CATALOGUE_AND_BUSINESS_CONTACT",
@@ -2209,11 +2257,18 @@
           "source": "GMAIL",
           "source_id": "1a100230e2441107",
           "thread_id": "1a100230e2441107"
+        },
+        {
+          "kind": "GMAIL_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "source_id": "thread:1a100230e2441107:2026-10-10",
+          "observed_at": "2026-10-10T06:24:00Z",
+          "summary": "No substantive buyer reply found."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-03T05:00:00Z",
-      "next_action": "Monitor the same business thread for submission requirements; do not duplicate outreach.",
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity": "content-partnership",
       "organization": "NetShort",
       "package_version": "route-request-no-attachment/2026-10-03",
@@ -2226,7 +2281,10 @@
       "recipient": "business@netshort.com",
       "state": "SUBMITTED",
       "thread_id": "1a100230e2441107",
-      "title": "The Dragon Who Could Not Claim Me"
+      "title": "The Dragon Who Could Not Claim Me",
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_BUYER_OR_PROVIDER_RESPONSE",
+      "last_reconciled_at": "2026-10-10"
     },
     "oneforma.com|ai-ml-projects|south-africa": {
       "buyer_fit": "Current official projects surface shows AI/ML training, annotation, judging and LLM prompt authoring, with South Africa present as an available country filter.",
@@ -2237,7 +2295,7 @@
       ],
       "discovered_by": "iSCOPE",
       "domain": "oneforma.com",
-      "due_at": "2026-10-06T23:04:24Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "CURRENT_PRIMARY_SOURCE",
@@ -2269,12 +2327,19 @@
           "source_id": "1a0fede3d6e16c33",
           "summary": "OneForma acknowledged the qualification request and opened support case CAS-76245-N9W2F5; no project/rate/eligibility answer yet.",
           "thread_id": "1a0fedc966c2c687"
+        },
+        {
+          "kind": "GMAIL_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "source_id": "thread:1a0fedc966c2c687:2026-10-10",
+          "observed_at": "2026-10-10T06:24:00Z",
+          "summary": "Only support-case acknowledgement is evidenced; no substantive project/rate/eligibility answer found."
         }
       ],
       "execution_owner": "iSCOPE",
       "last_action_at": "2026-10-03T04:01:21Z",
       "message_id": "1a0fedc966c2c687",
-      "next_action": "Monitor support case CAS-76245-N9W2F5 for exact South Africa projects, rates and requirements; qualify only an executable paid match.",
+      "next_action": "WAIT for substantive OneForma support response on case CAS-76245-N9W2F5; qualify only a current executable paid South Africa match. Do not send duplicate support requests.",
       "opportunity": "ai-ml-projects-south-africa",
       "organization": "OneForma",
       "payment": "Project dependent; platform states hourly/per-completion/per-approved-asset models",
@@ -2283,7 +2348,10 @@
       "reward": "Project dependent",
       "state": "DISCOVERED",
       "thread_id": "1a0fedc966c2c687",
-      "title": "OneForma AI/ML projects \u2014 South Africa / Remote"
+      "title": "OneForma AI/ML projects — South Africa / Remote",
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_BUYER_OR_PROVIDER_RESPONSE",
+      "last_reconciled_at": "2026-10-10"
     },
     "ontrackmulching.com|website-trust-cleanup|2026-10-08": {
       "canonical_ingest": {
@@ -2328,7 +2396,7 @@
         {
           "kind": "OFFICIAL_CURRENT_ROLE",
           "observed_at": "2026-10-03T09:00:05Z",
-          "pay": "USD 20\u201370/hour",
+          "pay": "USD 20–70/hour",
           "posted_at": "2026-10-03",
           "source": "WEB",
           "south_africa_eligible": true,
@@ -2370,7 +2438,7 @@
       "opportunity": "ai-content-evaluation-editing",
       "organization": "OpenTrain AI",
       "qualification": {
-        "capital_direction": "OpenTrain/client pays contractor USD $20\u2013$70/hour; no applicant fee",
+        "capital_direction": "OpenTrain/client pays contractor USD $20–$70/hour; no applicant fee",
         "current_fit": "AMX evidences structured evaluation, editorial QA, rubric use, factual review and written feedback.",
         "friction": "free account; resume and downstream hiring-site application required",
         "geography": "South Africa explicitly listed among 230 eligible countries",
@@ -2494,7 +2562,7 @@
         {
           "kind": "OFFICIAL_CURRENT_ROLE",
           "observed_at": "2026-10-03T09:00:05Z",
-          "pay": "USD 30\u2013100/hour",
+          "pay": "USD 30–100/hour",
           "posted_at": "2026-10-03",
           "source": "WEB",
           "south_africa_eligible": true,
@@ -2543,7 +2611,7 @@
       "opportunity": "backend-coding-task-creator-ai-evaluator",
       "organization": "OpenTrain AI",
       "qualification": {
-        "capital_direction": "OpenTrain/client pays contractor USD $30\u2013$100/hour; no applicant fee",
+        "capital_direction": "OpenTrain/client pays contractor USD $30–$100/hour; no applicant fee",
         "current_fit": "AMX evidences backend/API implementation, deterministic verification, debugging, automated testing and code evaluation.",
         "friction": "free account; resume and downstream hiring-site application required",
         "geography": "South Africa explicitly listed among 230 eligible countries",
@@ -2754,7 +2822,7 @@
         {
           "kind": "OFFICIAL_CURRENT_ROLE",
           "observed_at": "2026-10-03T09:00:05Z",
-          "pay": "USD 50\u201390/hour",
+          "pay": "USD 50–90/hour",
           "posted_at": "2026-10-03",
           "source": "WEB",
           "south_africa_eligible": true,
@@ -2796,8 +2864,8 @@
       "opportunity": "video-annotation-editor",
       "organization": "OpenTrain AI",
       "qualification": {
-        "capital_direction": "OpenTrain/client pays contractor USD $50\u2013$90/hour; no applicant fee",
-        "current_fit": "CARBON\u00b0/AMX evidences video timing, pacing, scene/continuity inspection and production-quality review.",
+        "capital_direction": "OpenTrain/client pays contractor USD $50–$90/hour; no applicant fee",
+        "current_fit": "CARBON°/AMX evidences video timing, pacing, scene/continuity inspection and production-quality review.",
         "friction": "free account; resume and downstream hiring-site application required",
         "geography": "South Africa is listed among 230 eligible countries",
         "payout_path": "paid contractor work through OpenTrain/client flow"
@@ -2836,7 +2904,7 @@
           "kind": "CURRENT_PRIMARY_LISTING",
           "observed_at": "2026-10-02",
           "source": "WEB",
-          "summary": "Current Outlier application route for Coding Expertise for AI Training (English \u2014 South Africa).",
+          "summary": "Current Outlier application route for Coding Expertise for AI Training (English — South Africa).",
           "url": "https://app.outlier.ai/login?id=4476587005&job_post_id=4476587005"
         },
         {
@@ -2944,7 +3012,7 @@
       "routing_reason": "ACCOUNT_AND_DASHBOARD_EVIDENCED_SKILLS_SCREENING_REQUIRED",
       "state": "QUALIFIED",
       "thread_id": "1a0fedc93e232877",
-      "title": "Coding Expertise for AI Training \u2014 South Africa"
+      "title": "Coding Expertise for AI Training — South Africa"
     },
     "poursyrup.ai|senior-ai-delivery-engineer|cape-town": {
       "buyer_fit": "Current Cape Town hybrid senior AI delivery role explicitly values shipped production work, client-facing delivery, AI agents, GPT/Claude-class models, integrations and end-to-end ownership; strong match to current AMX software/AI systems plus B2B commercial delivery evidence.",
@@ -3023,7 +3091,7 @@
       "recipient": "hello@poursyrup.ai",
       "reward": "Paid full-time role; compensation not published on current official careers page",
       "state": "SUBMITTED",
-      "subject": "Senior AI delivery engineer \u2014 shipped work",
+      "subject": "Senior AI delivery engineer — shipped work",
       "thread_id": "1a103d3e49774780",
       "title": "Senior AI delivery engineer"
     },
@@ -3059,10 +3127,10 @@
       "payment": "Study dependent",
       "reward": "Study dependent",
       "state": "DEPRIORITIZED",
-      "title": "Prolific paid studies \u2014 South Africa"
+      "title": "Prolific paid studies — South Africa"
     },
     "redrama.ai|adaptation-distribution|the-dragon-who-could-not-claim-me": {
-      "buyer_fit": "Official licensing page accepts rights-controlled stories for adaptation and existing series for distribution; current CARBON\u00b0 property has developed series material and rendered samples but is not represented as a completed 50-episode series.",
+      "buyer_fit": "Official licensing page accepts rights-controlled stories for adaptation and existing series for distribution; current CARBON° property has developed series material and rendered samples but is not represented as a completed 50-episode series.",
       "capital_direction": "INBOUND / NON-EXCLUSIVE REVENUE_SHARE_OPTION",
       "commercial_role": "ADAPTATION / DISTRIBUTION / LICENSING",
       "constraints": [
@@ -3101,13 +3169,13 @@
       "reward": "Official page states non-exclusive distribution route with 70% to rights holder; adaptation/licensing terms require direct confirmation.",
       "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW",
       "state": "SUBMITTED",
-      "subject": "CARBON\u00b0 vertical drama \u2014 adaptation / distribution route",
+      "subject": "CARBON° vertical drama — adaptation / distribution route",
       "thread_id": "1a0fd2b475e05861",
       "title": "The Dragon Who Could Not Claim Me"
     },
     "reelshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "domain": "reelshort.com",
-      "due_at": "2026-10-06T23:05:20Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "CURRENT_PRIMARY_ROUTE",
@@ -3123,19 +3191,29 @@
           "source_id": "1a0fedd719d7bfdd",
           "summary": "PRI requested the correct current content submission/production-partnership route.",
           "thread_id": "1a0fedd719d7bfdd"
+        },
+        {
+          "kind": "GMAIL_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "source_id": "thread:1a0fedd719d7bfdd:2026-10-10",
+          "observed_at": "2026-10-10T06:24:00Z",
+          "summary": "No substantive buyer reply found."
         }
       ],
       "execution_owner": "PRI",
       "internal_tracking_id": "Production 001",
       "last_action_at": "2026-10-02T23:05:20Z",
       "message_id": "1a0fedd719d7bfdd",
-      "next_action": "Monitor for routing to independent submissions/production; use the controlled sample only through an authorized route.",
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity": "content-partnership",
       "organization": "ReelShort / Crazy Maple Studio",
       "recipient": "reelshort.support@crazymaplestudio.com",
       "state": "SUBMITTED",
       "thread_id": "1a0fedd719d7bfdd",
-      "title": "The Dragon Who Could Not Claim Me"
+      "title": "The Dragon Who Could Not Claim Me",
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_BUYER_OR_PROVIDER_RESPONSE",
+      "last_reconciled_at": "2026-10-10"
     },
     "remotepuzzle.com|agentic-systems-engineer|2026-10-08": {
       "canonical_ingest": {
@@ -3235,7 +3313,7 @@
       "recipient": "hello@sakubloom.com",
       "routing_reason": "BUYER_SELECTED_ANOTHER_DESIGNER_FOR_CURRENT_PROJECT",
       "state": "REJECTED",
-      "title": "Graphic Designer \u2014 SakuBloom"
+      "title": "Graphic Designer — SakuBloom"
     },
     "scalearmy.com|ai-implementation-specialist|remote-south-africa": {
       "capability_match": [
@@ -3278,7 +3356,7 @@
       "payer_path": "Scale Army employer/contractor hiring route",
       "routing_reason": "PROVIDER_OR_HUMAN_GATE_REMAINS",
       "state": "QUALIFIED",
-      "title": "AI Implementation Specialist \u2014 Remote South Africa",
+      "title": "AI Implementation Specialist — Remote South Africa",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me": {
@@ -3336,7 +3414,7 @@
       "recipient": "info@seastarfilm.com",
       "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "Vertical drama production & licensing partnership \u2014 CARBON\u00b0",
+      "subject": "Vertical drama production & licensing partnership — CARBON°",
       "thread_id": "1a0f2ea1c5a8c36a",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -3353,7 +3431,7 @@
       "current_route_confidence": "MEDIUM",
       "current_route_status": "CURRENT_PERSON_ORG_VERIFIED_EMAIL_UNPUBLISHED",
       "domain": "sinyc.com",
-      "due_at": "2026-10-08T00:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -3379,17 +3457,25 @@
           "result": "CURRENT_PERSON_ORG_VERIFIED; EXACT_MAILBOX_NOT_INDEPENDENTLY_PUBLISHED_IN_RECOVERED_SOURCE; PRIOR_SEND_NO_BOUNCE",
           "route": "blake@sinyc.com",
           "source": "PUBLIC_WEB_GMAIL"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a1243ff3e8d00f2",
+          "thread_id": "1a115eaa267e2344",
+          "observed_at": "2026-10-10T05:18:52Z",
+          "summary": "One governed in-thread follow-up sent after current-route and duplicate-history verification."
         }
       ],
       "execution_owner": "PRI",
-      "execution_readiness": "WAITING_RESPONSE_FOLLOWUP_DUE",
-      "last_action_at": "2026-10-07T10:31:00Z",
-      "last_reconciled_at": "2026-10-09",
-      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-10T05:18:52Z",
+      "last_reconciled_at": "2026-10-10",
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity": "candidate-sourcing-pilot",
       "organization": "Synergy Interactive",
       "recipient": "blake@sinyc.com",
-      "routing_reason": "ORIGINAL_OFFER_SENT_NO_SUBSTANTIVE_REPLY_EVIDENCED",
+      "routing_reason": "INITIAL_PLUS_ONE_GOVERNED_FOLLOWUP_SENT_NO_INBOUND_YET",
       "state": "SUBMITTED",
       "title": "24-hour candidate sourcing pilot"
     },
@@ -3433,7 +3519,7 @@
       "recipient": "mail@socialsgroup.com",
       "reward": "Current public role advertises warm pre-qualified leads and commission on cash collected; published OTE observed in current source.",
       "state": "OFFERED",
-      "subject": "High-Ticket Sales Closer \u2014 prove it on the work",
+      "subject": "High-Ticket Sales Closer — prove it on the work",
       "thread_id": "1a124443e231891a",
       "title": "High-Ticket Sales Closer"
     },
@@ -3493,7 +3579,7 @@
       "reward": "Project/rate not specified on careers page; request scope/rate/start date before acceptance",
       "routing_reason": "APPLICATION_ALREADY_SENT_MULTIPLE_TIMES_AWAITING_BUYER_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "South Africa \u2014 AI QA / Prompt Evaluation / Python",
+      "subject": "South Africa — AI QA / Prompt Evaluation / Python",
       "thread_id": "1a0fd28f0a697b2f",
       "title": "AI QA / Prompt Engineer / RLHF / Python-JS remote talent"
     },
@@ -3514,7 +3600,7 @@
           "kind": "CURRENT_PRIMARY_ROUTE",
           "observed_at": "2026-10-04T00:35:26.819Z",
           "source_url": "https://www.stage32.com/jobs/1180733/Call-for-Vertical-Drama-Story-Proposals",
-          "summary": "Direct email, 35\u201340 AI episodes, proposal stage unpaid; script fee USD1000\u20132000 if selected."
+          "summary": "Direct email, 35–40 AI episodes, proposal stage unpaid; script fee USD1000–2000 if selected."
         },
         {
           "kind": "QUALITY_REMEDIATION",
@@ -3575,7 +3661,7 @@
       "recipient_access_verified": false,
       "routing_reason": "FOLLOWUP_ALREADY_SENT_AWAITING_BUYER_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "Vertical Drama Proposal \u2013 Ulrich du Plessis \u2013 AI",
+      "subject": "Vertical Drama Proposal – Ulrich du Plessis – AI",
       "submission_channel": "GMAIL_ATTACHMENT",
       "thread_id": "1a0f1a3a7ad58e63",
       "title": "The Dragon Who Could Not Claim Me"
@@ -3595,7 +3681,7 @@
           "kind": "CURRENT_PRIMARY_LISTING",
           "observed_at": "2026-10-02",
           "source": "WEB",
-          "summary": "Official TELUS Digital listing: remote Online Data Analyst \u2014 South Africa; part-time; evaluation/research tasks; South Africa residence required.",
+          "summary": "Official TELUS Digital listing: remote Online Data Analyst — South Africa; part-time; evaluation/research tasks; South Africa residence required.",
           "url": "https://jobs.telusdigital.com/jobs/18301194-online-data-analyst-south-africa"
         },
         {
@@ -3632,7 +3718,7 @@
       "reward": "Freelance part-time; rate not stated on public listing",
       "routing_reason": "PROVIDER_OTP_IDENTITY_VERIFICATION_REQUIRED",
       "state": "QUALIFIED",
-      "title": "Online Data Analyst \u2014 South Africa"
+      "title": "Online Data Analyst — South Africa"
     },
     "toloka.ai|individual-task-marketplace|global": {
       "buyer_fit": "Official current route says individuals can join free, do tasks and get paid.",
@@ -3648,7 +3734,7 @@
           "kind": "CURRENT_PRIMARY_SOURCE",
           "observed_at": "2026-10-02",
           "source": "WEB",
-          "summary": "Official Toloka get-started page: Individuals \u2014 Earn money \u2014 Do tasks, get paid \u2014 Free to join.",
+          "summary": "Official Toloka get-started page: Individuals — Earn money — Do tasks, get paid — Free to join.",
           "url": "https://toloka.ai/get-started?from=pdd"
         }
       ],
@@ -3698,7 +3784,7 @@
       "recipient": "tolokercare@toloka.ai",
       "state": "HOLD",
       "thread_id": "1a0fedc94775d4ff",
-      "title": "Toloka paid task marketplace \u2014 South Africa eligibility"
+      "title": "Toloka paid task marketplace — South Africa eligibility"
     },
     "upwork.com|ai-automation-fix|022105205564933219360": {
       "buyer_fit": "Existing failing AI workflow needs API timeout/error-handling/retry/deduplication repair; closely matches current Matrix reliability and Python/agent debugging capability.",
@@ -3737,7 +3823,7 @@
       "reward": "$100 fixed price",
       "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
       "state": "QUALIFIED",
-      "title": "AI Automation Fix \u2014 Debug & Optimize Existing AI Agent Workflow"
+      "title": "AI Automation Fix — Debug & Optimize Existing AI Agent Workflow"
     },
     "upwork.com|python-django-api-backend-fixes|022102430880684043532": {
       "buyer_fit": "Debugging FastAPI/Django/API/data-processing and regression testing maps directly to current evidenced backend work.",
@@ -3776,12 +3862,12 @@
       "reward": "$50 fixed price",
       "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
       "state": "QUALIFIED",
-      "title": "Python / Django Developer \u2014 API, Automation & Backend Fixes"
+      "title": "Python / Django Developer — API, Automation & Backend Fixes"
     },
     "vigloo.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "discovered_by": "iSCOPE",
       "domain": "vigloo.com",
-      "due_at": "2026-10-07T05:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OFFICIAL_CURRENT_CATALOGUE_AND_CONTACT",
@@ -3795,11 +3881,18 @@
           "source": "GMAIL",
           "source_id": "1a100230dcc62423",
           "thread_id": "1a100230dcc62423"
+        },
+        {
+          "kind": "GMAIL_THREAD_RECONCILIATION",
+          "source": "GMAIL",
+          "source_id": "thread:1a100230dcc62423:2026-10-10",
+          "observed_at": "2026-10-10T06:24:00Z",
+          "summary": "No substantive buyer reply found."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-03T05:00:00Z",
-      "next_action": "Monitor the same thread for routing or review requirements; do not send a duplicate initial approach.",
+      "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity": "content-partnership",
       "organization": "Vigloo",
       "package_version": "route-request-no-attachment/2026-10-03",
@@ -3812,7 +3905,10 @@
       "recipient": "vgsns_kr@vigloo.com",
       "state": "SUBMITTED",
       "thread_id": "1a100230dcc62423",
-      "title": "The Dragon Who Could Not Claim Me"
+      "title": "The Dragon Who Could Not Claim Me",
+      "execution_readiness": "WAITING",
+      "routing_reason": "AWAITING_BUYER_OR_PROVIDER_RESPONSE",
+      "last_reconciled_at": "2026-10-10"
     },
     "welodata.com|ai-service-general-application|south-africa": {
       "capital_direction": "PAYER_TO_WORK",
@@ -3834,7 +3930,7 @@
       "organization": "Welo Data",
       "routing_reason": "QUALIFICATION_REQUIRED",
       "state": "DISCOVERED",
-      "title": "AI Service General Application \u2014 South Africa",
+      "title": "AI Service General Application — South Africa",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "welodata.com|ai-trainers-afrikaans|south-africa": {
@@ -3862,7 +3958,7 @@
       "payment": "Project dependent",
       "reward": "Not stated until matched project",
       "state": "DEPRIORITIZED",
-      "title": "AI Trainers Network \u2014 Afrikaans"
+      "title": "AI Trainers Network — Afrikaans"
     },
     "welodata.com|ai-trainers-zulu|south-africa": {
       "capital_direction": "PAYER_TO_WORK",
@@ -3873,7 +3969,7 @@
           "kind": "CURRENT_OFFICIAL_TALENT_NETWORK",
           "observed_at": "2026-10-03T10:02:00Z",
           "source": "OFFICIAL_PRIMARY_SOURCE",
-          "summary": "Official South Africa jobs page currently lists AI Trainers Network \u2014 Zulu; exact current project/rate and language fit remain unproven.",
+          "summary": "Official South Africa jobs page currently lists AI Trainers Network — Zulu; exact current project/rate and language fit remain unproven.",
           "url": "https://jobs.lever.co/weloglobal/?location=South+Africa"
         }
       ],
@@ -3882,7 +3978,7 @@
       "opportunity": "ai-trainers-zulu",
       "organization": "Welo Data",
       "state": "HOLD",
-      "title": "AI Trainers Network \u2014 Zulu",
+      "title": "AI Trainers Network — Zulu",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "welodata.com|hydrus-voice-contributor-english|south-africa": {
@@ -3917,7 +4013,7 @@
       "payment": "Freelance project",
       "reward": "$20 USD/hour",
       "state": "HOLD",
-      "title": "Hydrus Voice Contributor \u2014 English (South Africa)"
+      "title": "Hydrus Voice Contributor — English (South Africa)"
     },
     "xubio.com|onboarding-support-pilot|2026-10-07": {
       "commercial_offer": {
@@ -3930,7 +4026,7 @@
       "current_route_confidence": "MEDIUM",
       "current_route_status": "CURRENT_PERSON_ORG_VERIFIED_EMAIL_UNPUBLISHED",
       "domain": "xubio.com",
-      "due_at": "2026-10-08T00:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "GMAIL_SENT",
@@ -3956,17 +4052,25 @@
           "result": "CURRENT_PERSON_ORG_VERIFIED; EXACT_MAILBOX_NOT_INDEPENDENTLY_PUBLISHED_IN_RECOVERED_SOURCE; PRIOR_SEND_NO_BOUNCE",
           "route": "lnotrica@xubio.com",
           "source": "PUBLIC_WEB_GMAIL"
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a1243fde7688dc4",
+          "thread_id": "1a115eab0eca3203",
+          "observed_at": "2026-10-10T05:18:47Z",
+          "summary": "One governed in-thread follow-up sent after current-route and duplicate-history verification."
         }
       ],
       "execution_owner": "PRI",
-      "execution_readiness": "WAITING_RESPONSE_FOLLOWUP_DUE",
-      "last_action_at": "2026-10-07T10:31:04Z",
-      "last_reconciled_at": "2026-10-09",
-      "next_action": "PRI: one concise in-thread follow-up is due only after current-route and duplicate-history verification. If no response after the governed follow-up window, return to WAITING rather than treating silence as rejection.",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-10T05:18:47Z",
+      "last_reconciled_at": "2026-10-10",
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity": "onboarding-support-pilot",
       "organization": "Xubio",
       "recipient": "lnotrica@xubio.com",
-      "routing_reason": "ORIGINAL_OFFER_SENT_NO_SUBSTANTIVE_REPLY_EVIDENCED",
+      "routing_reason": "INITIAL_PLUS_ONE_GOVERNED_FOLLOWUP_SENT_NO_INBOUND_YET",
       "state": "SUBMITTED",
       "title": "48-hour onboarding-support pilot"
     },
@@ -4016,10 +4120,10 @@
       "payment": "PayPal, Wise, or bank transfer; no minimum payout",
       "qualified_at": "2026-10-02T11:20:20Z",
       "recipient": "contact@ypai.ai",
-      "reward": "Typical project rates ZAR 220\u2013340/hour",
+      "reward": "Typical project rates ZAR 220–340/hour",
       "state": "SUBMITTED",
       "thread_id": "1a0fcfea76c7355d",
-      "title": "QA Reviewer / Adjudicator \u2014 South Africa"
+      "title": "QA Reviewer / Adjudicator — South Africa"
     },
     "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me": {
       "domain": "yuientertainment.com",
@@ -4076,7 +4180,7 @@
       "recipient": "yuxin@yuientertainment.com",
       "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "Cross-border vertical production collaboration \u2014 CARBON\u00b0",
+      "subject": "Cross-border vertical production collaboration — CARBON°",
       "thread_id": "1a0f2eadceb4a96f",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
