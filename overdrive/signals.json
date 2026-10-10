@@ -303,6 +303,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Wait for a substantive response. If Black Bear identifies a project, qualify exact scope/economics and move directly to bounded delivery/paid project discussion.",
+      "opportunity_key": "blackbear.co.za|route-to-market-commercial-collaboration|2026-10-10",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a substantive response. If Black Bear identifies a project, qualify exact scope/economics and move directly to bounded delivery/paid project discussion.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "NO OUTBOUND. Preserve historical evidence for learning/provenance only. Do not follow up, resend, recover through another mailbox, contact another person at Face Production, or create a new offer unless Owner explicitly reverses the 2026-10-09 no-contact directive.",
       "opportunity_key": "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me",
       "priority": 8,
@@ -601,7 +613,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-10T05:36:50.638811+00:00",
+  "generated_at": "2026-10-10T05:38:32.100999+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-06T23:04:24Z",
@@ -878,6 +890,18 @@
       "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
       "smallest_next_action": "Monitor current roles and qualify only when a specific paid opening or direct buyer need produces a credible payer path.",
       "state": "DISCOVERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    "blackbear.co.za|route-to-market-commercial-collaboration|2026-10-10": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Wait for a substantive response. If Black Bear identifies a project, qualify exact scope/economics and move directly to bounded delivery/paid project discussion.",
+      "opportunity_key": "blackbear.co.za|route-to-market-commercial-collaboration|2026-10-10",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a substantive response. If Black Bear identifies a project, qualify exact scope/economics and move directly to bounded delivery/paid project discussion.",
+      "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": null
     },
