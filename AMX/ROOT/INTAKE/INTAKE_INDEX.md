@@ -1546,3 +1546,9 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - Direct D04 directory inventory recovered rerun sequence: 82.91 FAIL (`D04_RERUN_01_POST_QUEUE_DRAIN_20261010.json`); 89.24 FAIL (`D04_RERUN_02_POST_FORX_IMPLEMENTATION_20261010.json`); 90.19 FAIL (`D04_RERUN_03_RUN_CONSERVATION_20261010.json`); 90.51 FAIL (`D04_RERUN_02_FINAL_INTERNAL_SELF_REPAIR_20261010.json`).
 - The enumerated D04 directory did not expose a primary 96.62 artifact/raw vector. Preserve **CONFLICT / READBACK REQUIRED**; ROOT/T-GOV owns disposition. Do not present 96.62 as established from prose alone and do not overwrite the 90.51 artifact.
 - Supporting Notion Intake record `3f58f8b5-6cd7-8116-ba52-d5fcded88425` was updated with this primary-artifact inventory.
+## 2026-10-10 12:18 SAST — PULS3 / ROS3 admission hypothesis corrected
+- Library source `AMiLLiMATRiX_LORE_TO_FUNCTION_TRANSLATION_LEDGER_v1.0_2026-08-28.md`, line 516, describes PULS3 as a participation/check-in/streak/heartbeat utility; exact current scope is unresolved and it is not identity or currency by default.
+- The Root Bootstrap Reconstruction Receipt states PULSE/ROSE are reporting/evidence tools below the T-Librarian layer and do not authenticate Librarians or independently change authority/lifecycle.
+- Exact searches in the recovered sources found no ROS3 admission-gate text. These bounded no-match results do not prove that no other governing source exists.
+- **Correction:** absence of PULSE/ROSE scores alone does not prove a transcript/model admission bypass. The separate PULS3/ROS3 instance-admission requirement is **NOT ESTABLISHED FROM SOURCES RECOVERED**. Exact ingress timestamp remains UNKNOWN. ROOT should locate the actual controlling rule, if any, before classifying this as a bypass.
+- Supporting Notion Intake page: `3f48f8b5-6cd7-8149-9f30-eb391ef717e4`; its current-runtime model-identity correction is read back.
