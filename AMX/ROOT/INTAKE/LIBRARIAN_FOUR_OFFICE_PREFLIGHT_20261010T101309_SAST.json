@@ -1,0 +1,53 @@
+{
+  "receipt_id": "LIBRARIAN-FOUR-OFFICE-PREFLIGHT-20261010T101309-SAST",
+  "registry_version": "1.2",
+  "registry_root_sha256": "6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f",
+  "started_at": "2026-10-10T10:13:09+02:00",
+  "offices": [
+    {
+      "office": "MASTER-LIBRARIAN",
+      "mandate_id": "AMX-MANDATE-MASTER-LIBRARIAN-V1",
+      "sha256": "f127bec771d398c7c2c3a1e746734619568b5641c91d6f810514d08f7f76b4f8",
+      "status": "CURRENT",
+      "primary_librarian_existence_directive": "UNDERSTOOD_BOUND",
+      "income_brick_25": "UNDERSTOOD",
+      "existing_mandate_75": "UNDERSTOOD",
+      "runtime_open_rule": "UNDERSTOOD",
+      "authority_isolation": "UNDERSTOOD"
+    },
+    {
+      "office": "ROOT-TGOV",
+      "mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
+      "sha256": "d92852d15f66168990290aece801b8c8573d48037b88765a081a26d58e10b120",
+      "status": "CURRENT",
+      "primary_librarian_existence_directive": "UNDERSTOOD_BOUND",
+      "income_brick_25": "UNDERSTOOD",
+      "existing_mandate_75": "UNDERSTOOD",
+      "runtime_open_rule": "UNDERSTOOD",
+      "authority_isolation": "UNDERSTOOD"
+    },
+    {
+      "office": "T-COD",
+      "mandate_id": "AMX-MANDATE-TCOD-V1",
+      "sha256": "67a9fc18adc6323ea93f86bc70bb677b7e063b5f6f6a8218d1ec2713c4f0e9b3",
+      "status": "CURRENT",
+      "primary_librarian_existence_directive": "UNDERSTOOD_BOUND",
+      "income_brick_25": "UNDERSTOOD",
+      "existing_mandate_75": "UNDERSTOOD",
+      "runtime_open_rule": "UNDERSTOOD",
+      "authority_isolation": "UNDERSTOOD"
+    },
+    {
+      "office": "T-MED",
+      "mandate_id": "AMX-MANDATE-TMED-V1",
+      "sha256": "3204cb5d8dfcfbc1e904a4a23f0077959bb9371152a2ef32be48e7e858d148f1",
+      "status": "CURRENT",
+      "primary_librarian_existence_directive": "UNDERSTOOD_BOUND",
+      "income_brick_25": "UNDERSTOOD",
+      "existing_mandate_75": "UNDERSTOOD",
+      "runtime_open_rule": "UNDERSTOOD",
+      "authority_isolation": "UNDERSTOOD"
+    }
+  ],
+  "receipt_location": "AMX/ROOT/INTAKE/LIBRARIAN_FOUR_OFFICE_PREFLIGHT_20261010T101309_SAST.json"
+}
