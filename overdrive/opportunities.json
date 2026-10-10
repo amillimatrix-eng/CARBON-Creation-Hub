@@ -3647,6 +3647,49 @@
       "message_id": "1a1244c82b1b4abc",
       "subject": "Inbound Sales — Cape Town — Ulrich du Plessis",
       "execution_readiness": "WAITING"
+    },
+    "blackbear.co.za|route-to-market-commercial-collaboration|2026-10-10": {
+      "domain": "blackbear.co.za",
+      "organization": "Black Bear Strategy",
+      "opportunity": "route-to-market-commercial-collaboration",
+      "title": "Project / fractional route-to-market and commercial optimisation collaboration",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "OWNER_COMMERCIAL_HISTORY -> DIRECT_EXPERT_COLLABORATION -> OFFICIAL_FORM",
+      "execution_owner": "PRI",
+      "state": "SUBMITTED",
+      "qualified_at": "2026-10-10T05:40:00Z",
+      "due_at": null,
+      "capital_direction": "INBOUND / NO FEE",
+      "reward": "Project/fractional commercial work; exact economics not published and must be buyer-defined if progressed.",
+      "payment": "Unverified until buyer progression.",
+      "buyer_fit": "Direct adjacency to evidenced route-to-market, strategic-account, distribution and commercial optimisation experience. External message led with business outcomes and invited assessment on a bounded real problem.",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_SITE",
+          "source": "WEB",
+          "url": "https://www.blackbear.co.za/",
+          "observed_at": "2026-10-10T05:39:00Z",
+          "summary": "Current consultancy site verified; contact route available through official form."
+        },
+        {
+          "kind": "OFFICIAL_CONTACT_FORM_SUBMITTED",
+          "source": "WEB_BROWSER",
+          "source_id": "cc0ad526-3e17-468c-834d-9a6b9384d738",
+          "observed_at": "2026-10-10T05:42:00Z",
+          "summary": "Official contact form submitted successfully; page returned 'Thank you for your message!' confirmation. No account, subscription or unrelated action taken."
+        }
+      ],
+      "constraints": [
+        "No buyer response, scope, price, contract or payment yet."
+      ],
+      "next_action": "Wait for a substantive response. If Black Bear identifies a project, qualify exact scope/economics and move directly to bounded delivery/paid project discussion.",
+      "last_action_at": "2026-10-10T05:42:00Z",
+      "recipient": "OFFICIAL_CONTACT_FORM",
+      "thread_id": null,
+      "message_id": null,
+      "subject": "Route-to-market / commercial optimisation project collaboration",
+      "execution_readiness": "WAITING"
     }
   },
   "version": 1,
