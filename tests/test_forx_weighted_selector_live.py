@@ -6,7 +6,8 @@ from pathlib import Path
 from overdrive.forx_weighted_selector import run
 
 
-# Real-data acceptance is intentionally coupled to the current durable buffer and ledger.\nclass LiveWeightedContinuityAcceptance(unittest.TestCase):
+# Real-data acceptance is intentionally coupled to the current durable buffer and ledger.
+class LiveWeightedContinuityAcceptance(unittest.TestCase):
     def test_repository_real_outcomes_change_selection_and_persist(self):
         repo = Path(__file__).resolve().parents[1]
         buffer_path = repo / "overdrive" / "forx_prospect_buffer.json"
