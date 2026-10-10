@@ -81,3 +81,40 @@ This clarification supersedes only the **result label** `FULL BENCHMARK INCOMPLE
 It does not erase the five UNMEASURED_NOT_PROVEN evidence states and does not alter any control evidence.
 
 **NO RETROSPECTIVE TEST CHANGE. NO ERASED HISTORY. RESULT INTERPRETATION CORRECTED.**
+
+
+## Test-origin provenance — no favorable-control handpicking
+
+**Owner attestation — 2026-10-10:** the Owner did **not** handpick the D04 controls, select a known-easy test, or choose specific controls after inspecting where the Matrix was strong.
+
+The Owner states that the instruction preceding the enterprise benchmark was materially the opposite:
+
+- make the test difficult / hard;
+- find the difficult material;
+- stop testing the Matrix against trivial or trivia-like checks;
+- test it against corporate / enterprise infrastructure expectations;
+- do not make it a weak test.
+
+The Owner further attests that he did **not know the eventual control set in advance** and did not select the 88 controls individually.
+
+Durable benchmark creation evidence independently corroborates the enterprise-hardening direction:
+- initial frozen artifact commit: `133fdcc55ac5f8731bc49ae6d266011f94f2616d`;
+- frozen purpose: **“Assess the current live Matrix against enterprise architecture, AI management, internal control, security, quality, operations, commercial, finance and value-realization expectations.”**
+- frozen resource treatment: **“Resource constraint does NOT reduce absolute enterprise-control requirements.”**
+- frozen benchmark references globally recognized enterprise frameworks/control disciplines across all 88 controls.
+
+### Representation boundary
+
+Do **not** imply:
+- the Owner selected favorable controls;
+- the Owner knew which specific controls would be tested and tailored the infrastructure around them;
+- the 88-control set was chosen to avoid known weaknesses;
+- the benchmark was softened because the Matrix used constrained infrastructure.
+
+Allowed bounded wording:
+
+**The Owner explicitly requested a difficult corporate/enterprise benchmark rather than a trivia-style test. The resulting frozen 88-control D04 benchmark was then run against the live Matrix.**
+
+Where exact prompt provenance is required, label the challenge-selection instruction as **OWNER-ATTESTED** unless/until the original transcript is durably recovered.
+
+This provenance does not alter the frozen benchmark, score, pass rule or evidence. It corrects only the test-origin narrative and prevents retrospective implication of favorable-control selection.
