@@ -33,6 +33,22 @@ Required flow:
 
 The existing law remains controlling. CDD is a diagnostic/enforcement label.
 
+## Recurrence enforcement
+
+CDD is not treated as isolated after one occurrence. The current governance record now contains four separate recurrence events: FORX scale, Marketplace 50/50, CARBON° Search 36/36, and D04.
+
+For any new material capability/result representation, the representing office/model must perform an **EVIDENCE-FLOOR CHECK** before finalizing the wording:
+
+1. recover the newest controlling evidence;
+2. state the strongest commercially material bounded claim directly supported;
+3. compare the proposed representation to that evidence;
+4. check for stale checkpoint use, unnecessary discounting qualifiers, and cross-chain evidence contamination;
+5. if the representation is materially weaker, require the exact contrary evidence that justifies narrowing it.
+
+If no contrary evidence justifies the downgrade, classify **CDD** and repair before final publication or hand-off.
+
+**REPEATED OWNER RE-PROOF OF ALREADY-SETTLED EVIDENCE = ENFORCEMENT FAILURE.**
+
 ## D04 failure evidence
 
 The current D04 evidence supported:
