@@ -1479,3 +1479,10 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Current PR #14 head:** `249ec519b25526ed4336f82ecea6f51580898995`. Current-head workflow lookup returned none; current-head CI/deployment acceptance remains **UNPROVEN**.
 - **Do not conflate:** the historical 24-file forensic delta, the earlier 50/50 milestone, and the current PR head are separate evidence states. Later branch growth does not rewrite historical milestones or inherit PASS automatically.
 - **Tracking:** PR #14 / issue #18; existing T-COD ownership.
+
+
+## 2026-10-10 — FORX causal weighted-continuity and PRI behavioral gate supersession
+- **FORX causal weighted-continuity:** PASS / CLOSED for the bounded acceptance. PR #27 merged at `da7a3486d004d4e75cfe342b370bb717d792395c`; durable weight state commit `6333e611719c2b7f7a107e1283dc13a7e3283f1c`; receipt `e731b80592e756c716fbd536c01d137e8ac8eb68`; CI run `38033424691`. The receipt records outcome-derived weight changes and `changed_next_selection=true`, changing the next selection from `FORX-PROSPECT-20261007-001` to `FORX-PROSPECT-20261007-005`. Older statements that this specific causal acceptance remains open are superseded; do not reopen #12/#17.
+- **PRI behavioral gate:** CROSSED for the bounded cycle: route/thread reconciliation `247ae13526e9a44994d2a1310370174a6f0a134d`; canonical persistence `725594bd93dd5708db9a6908056f9055a00835fb`; current-main readback PASS; continued action Black Bear official form submission `f0e21cd591010756f3e8d836c725533e43b7df91`.
+- **PRI issue #3:** remains OPEN as standing commissioning control pending ROOT/T-GOV disposition. Do not close it by Master action. Older wake failure remains valid for that wake only, not current overall state.
+- **Registry cache:** canonical v1.2 root `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`; issue #3 preflight updated in place and read back. FORX scheduler prompt still needs the same in-place correction; existing T-COD handoff recorded in Notion scheduler-cache contradiction item.
