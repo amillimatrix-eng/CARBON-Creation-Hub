@@ -197,9 +197,30 @@
       "forbidden_assumptions": [
         "D04 is not certification or industry percentile.",
         "D04 later controls do not retroactively erase D01/D02/build achievements.",
-        "Original run may not be described as fully governance-clean at inception."
+        "Original run may not be described as fully governance-clean at inception.",
+        "Do not summarize D04 as failed merely because contract/invoice/payment outcomes were not evidenced.",
+        "Do not convert UNMEASURED_NOT_PROVEN controls to FAIL or PASS without new bounded evidence."
       ],
-      "current_weight": "PRESERVE AS INTERNAL BENCHMARK EVIDENCE; FINAL GOVERNANCE-CLEAN RERUN REQUIRED"
+      "current_weight": "PRESERVE AS INTERNAL BENCHMARK EVIDENCE; MEASURED SCOPE PASS 96.62%; FULL BENCHMARK INCOMPLETE / UNKNOWN-HOLD ON FIVE CRITICAL EXTERNAL-OUTCOME CONTROLS",
+      "final_interpretation": {
+        "source": "AMX/ROOT/INTAKE/D03_D04_MATRIX_CRITIC_CONFORMANCE_AUDIT_ADDENDUM_A_UNMEASURED_NOT_FAIL_20261010.md",
+        "measured_scope_score": 96.62,
+        "measured_scope_verdict": "PASS",
+        "full_benchmark_verdict": "INCOMPLETE_UNKNOWN_HOLD",
+        "measured_counts": {
+          "PASS": 77,
+          "PARTIAL": 6,
+          "FAIL": 0
+        },
+        "unmeasured_not_proven": [
+          "VAL03",
+          "VAL04",
+          "VAL05",
+          "VAL06",
+          "VAL08"
+        ],
+        "rule": "Absence of positive outcome evidence is not negative evidence unless the tested population is demonstrably closed/exhaustive."
+      }
     },
     {
       "id": "EV-ASSUMPTIONS",
