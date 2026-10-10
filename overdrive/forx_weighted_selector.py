@@ -4,7 +4,7 @@ import argparse, hashlib, json, re
 from copy import deepcopy
 from pathlib import Path
 
-SCHEMA_VERSION = "1.0"
+# State is persisted separately in overdrive/forx_weight_state.json.\nSCHEMA_VERSION = "1.0"
 OUTCOME_STATES = {"RESPONDED", "REJECTED", "WRONG_ROUTE"}
 FAMILY_DELTA = {"RESPONDED": 2.0, "REJECTED": -1.0}
 MAX_FAMILY_WEIGHT = 4.0
