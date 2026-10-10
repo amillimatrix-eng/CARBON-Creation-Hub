@@ -2961,7 +2961,7 @@
       "execution_owner": "PRI",
       "state": "SUBMITTED",
       "qualified_at": "2026-10-03T22:05:00Z",
-      "due_at": "2026-10-09T17:00:00Z",
+      "due_at": null,
       "capital_direction": "INBOUND / NO APPLICATION FEE",
       "reward": "Paid full-time role; compensation not published on current official careers page",
       "payment": "Employment compensation; exact payroll/settlement terms to verify if progressed",
@@ -2988,13 +2988,21 @@
           "observed_at": "2026-10-04T01:07:16.379675+00:00",
           "source_id": "overdrive/control_receipts/OUTBOUND_PROOF_LINK_REPAIR_20261004.json",
           "summary": "Exact URL in existing application returned404 at root while backend and /house were running. Existing root repaired; same emailed URL now redirects to /house and returns200. CSS, JavaScript, config, bootstrap and evidence search verified. Other supplied public repositories returned200. Existing application/thread retained; no duplicate send or buyer receipt/acceptance inferred."
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a1244a9b269015d",
+          "thread_id": "1a103d3e49774780",
+          "observed_at": "2026-10-10T05:30:31Z",
+          "summary": "One governed follow-up sent after the evidenced due/response window."
         }
       ],
       "constraints": [
         "Hybrid Cape Town availability and any employment-specific terms must be confirmed if the buyer progresses the application."
       ],
-      "next_action": "Monitor the existing Syrup thread for a response. If invited, answer the buyer's exact question and progress to interview/technical validation; do not send duplicate outreach before due.",
-      "last_action_at": "2026-10-03T22:13:00Z",
+      "next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
+      "last_action_at": "2026-10-10T05:30:31Z",
       "recipient": "hello@poursyrup.ai",
       "thread_id": "1a103d3e49774780",
       "message_id": "1a103d3e49774780",
@@ -3020,7 +3028,9 @@
         "preserve_due_at": "2026-10-09T17:00:00Z",
         "quality_receipt": "overdrive/control_receipts/PROOF_ASSET_ENHANCEMENTS_20261004.json",
         "next_material_action": "Monitor current thread; use improved buyer-relevant proof if requested or at the existing due follow-up. Do not duplicate the application."
-      }
+      },
+      "execution_readiness": "WAITING",
+      "last_reconciled_at": "2026-10-10"
     },
     "agentfactory.verder.com|ai-engineer|cape-town": {
       "domain": "agentfactory.verder.com",
@@ -3032,7 +3042,7 @@
       "execution_owner": "PRI",
       "state": "SUBMITTED",
       "qualified_at": "2026-10-03T22:06:00Z",
-      "due_at": "2026-10-09T17:00:00Z",
+      "due_at": null,
       "capital_direction": "INBOUND / NO APPLICATION FEE",
       "reward": "Paid full-time role; compensation not published on current official role page",
       "payment": "Employment compensation; exact payroll/settlement terms to verify if progressed",
@@ -3059,13 +3069,21 @@
           "observed_at": "2026-10-04T01:07:16.379675+00:00",
           "source_id": "overdrive/control_receipts/OUTBOUND_PROOF_LINK_REPAIR_20261004.json",
           "summary": "Exact URL in existing application returned404 at root while backend and /house were running. Existing root repaired; same emailed URL now redirects to /house and returns200. CSS, JavaScript, config, bootstrap and evidence search verified. Other supplied public repositories returned200. Existing application/thread retained; no duplicate send or buyer receipt/acceptance inferred."
+        },
+        {
+          "kind": "GMAIL_SENT_FOLLOWUP",
+          "source": "GMAIL",
+          "source_id": "1a1244a715bf054b",
+          "thread_id": "1a103d3f1631dffd",
+          "observed_at": "2026-10-10T05:30:20Z",
+          "summary": "One governed follow-up sent after the evidenced due/response window."
         }
       ],
       "constraints": [
         "Full-time Cape Town employment fit and start-date expectations must be confirmed if progressed."
       ],
-      "next_action": "Monitor the existing Agent Factory thread. Official page states a five-working-day response expectation; follow up only after that interval if no response.",
-      "last_action_at": "2026-10-03T22:13:03Z",
+      "next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
+      "last_action_at": "2026-10-10T05:30:20Z",
       "recipient": "agentfactory@verder.com",
       "thread_id": "1a103d3f1631dffd",
       "message_id": "1a103d3f1631dffd",
@@ -3091,7 +3109,9 @@
         "preserve_due_at": "2026-10-09T17:00:00Z",
         "quality_receipt": "overdrive/control_receipts/PROOF_ASSET_ENHANCEMENTS_20261004.json",
         "next_material_action": "Monitor current thread; use improved buyer-relevant proof if requested or at the existing due follow-up. Do not duplicate the application."
-      }
+      },
+      "execution_readiness": "WAITING",
+      "last_reconciled_at": "2026-10-10"
     },
     "callforceoutsourcing.com|marketing-lead|south-africa": {
       "domain": "callforceoutsourcing.com",
@@ -3532,6 +3552,101 @@
         }
       ],
       "last_reconciled_at": "2026-10-09"
+    },
+    "socialsgroup.com|high-ticket-sales-closer|2026-10-10": {
+      "domain": "socialsgroup.com",
+      "organization": "SocialsGroup",
+      "opportunity": "high-ticket-sales-closer",
+      "title": "High-Ticket Sales Closer",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "PROOF-OF-WORK-FIRST -> CURRENT ROLE -> DIRECT BUSINESS ROUTE",
+      "execution_owner": "PRI",
+      "state": "OFFERED",
+      "qualified_at": "2026-10-10T05:20:00Z",
+      "due_at": null,
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "Current public role advertises warm pre-qualified leads and commission on cash collected; published OTE observed in current source.",
+      "payment": "Employment/contract compensation; exact settlement terms require buyer progression.",
+      "buyer_fit": "Strong match to evidenced B2B sales, strategic-account and conversion experience. External message led with buyer-relevant commercial outcomes, not internal AMX terminology.",
+      "proof_of_work_route": "WORK_SAMPLE",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://internal.socialsgroup.com/careers/role-sales-closer",
+          "observed_at": "2026-10-10T05:20:00Z",
+          "summary": "Current closer role emphasizes warm inbound leads, high-ticket conversion and performance tied to collected cash."
+        },
+        {
+          "kind": "DIRECT_BUSINESS_OUTREACH_SENT",
+          "source": "GMAIL",
+          "source_id": "1a124443e231891a",
+          "thread_id": "1a124443e231891a",
+          "observed_at": "2026-10-10T05:23:34Z",
+          "summary": "Direct proof-of-work-first enquiry sent to the public business mailbox. This is not claimed as completion of the employer's form-based application route."
+        }
+      ],
+      "constraints": [
+        "Form-based hiring route was not executed; direct business enquiry remains distinct from formal application."
+      ],
+      "next_action": "Wait for a substantive response. If the buyer directs the formal application route, complete only the required current steps without duplicating the direct enquiry.",
+      "last_action_at": "2026-10-10T05:23:34Z",
+      "recipient": "mail@socialsgroup.com",
+      "thread_id": "1a124443e231891a",
+      "message_id": "1a124443e231891a",
+      "subject": "High-Ticket Sales Closer — prove it on the work",
+      "execution_readiness": "WAITING"
+    },
+    "mediaremoval.com|remote-sales-closer-inbound|2026-10-10": {
+      "domain": "mediaremoval.com",
+      "organization": "Media Removal",
+      "opportunity": "remote-sales-closer-inbound",
+      "title": "Remote Sales Closer — Inbound Leads, No Cold Calling",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "PROOF-OF-WORK-FIRST -> SOUTH_AFRICA -> CURRENT OFFICIAL APPLICATION",
+      "execution_owner": "PRI",
+      "state": "SUBMITTED",
+      "qualified_at": "2026-10-10T05:31:00Z",
+      "due_at": null,
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "reward": "USD 1,000–2,000 monthly base in current listing, with commission/performance bonuses discussed after successful trial.",
+      "payment": "Monthly USD employment compensation; exact commission/bonus terms require progression.",
+      "buyer_fit": "Direct fit to 10+ years B2B sales, written follow-up discipline, honest qualification and South Africa-only hiring. The application explicitly requested a real follow-up example instead of polished self-description.",
+      "proof_of_work_route": "WORK_SAMPLE",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "source": "WEB",
+          "url": "https://virtualstaffsa.com/job/media-removal-full-time-remote-sales-closer-inbound-leads-no-cold-calling-south-africa/",
+          "observed_at": "2026-10-10T05:31:00Z",
+          "summary": "Current listing: South Africa remote; inbound leads/no cold calling; USD 1,000–2,000 base; trial period; written-sales examples required."
+        },
+        {
+          "kind": "OFFICIAL_APPLICATION_ROUTE_RESOLVED",
+          "source": "WEB_BROWSER",
+          "source_id": "b4127f61-072b-420c-aaf1-1ea80a802142",
+          "observed_at": "2026-10-10T05:32:00Z",
+          "summary": "Cloudflare-protected official application mailbox decoded from the job page as dhillon@mediaremoval.com; subject format verified."
+        },
+        {
+          "kind": "APPLICATION_SENT",
+          "source": "GMAIL",
+          "source_id": "1a1244c82b1b4abc",
+          "thread_id": "1a1244c82b1b4abc",
+          "observed_at": "2026-10-10T05:32:35Z",
+          "summary": "Official-route application sent with current CV attached and a real follow-up/outcome example from the Alakai thread."
+        }
+      ],
+      "constraints": [
+        "Buyer response/acceptance, trial invitation, contract and payment remain unproven."
+      ],
+      "next_action": "Wait for buyer response. If invited, answer the exact next-step request and progress to trial/interview without rebuilding the evidence package.",
+      "last_action_at": "2026-10-10T05:32:35Z",
+      "recipient": "dhillon@mediaremoval.com",
+      "thread_id": "1a1244c82b1b4abc",
+      "message_id": "1a1244c82b1b4abc",
+      "subject": "Inbound Sales — Cape Town — Ulrich du Plessis",
+      "execution_readiness": "WAITING"
     }
   },
   "version": 1,
