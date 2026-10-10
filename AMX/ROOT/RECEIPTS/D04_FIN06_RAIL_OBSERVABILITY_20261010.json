@@ -1,0 +1,73 @@
+{
+  "artifact_id": "D04-FIN06-RAIL-OBSERVABILITY-20261010",
+  "control": "FIN06",
+  "period": "2026-10-01 through 2026-10-10",
+  "rule": "RAIL AVAILABLE != RAIL OBSERVABLE != PAYMENT RECEIVED. All-rail close requires authoritative evidence for every material receive rail.",
+  "rails": [
+    {
+      "provider": "GoTyme Bank",
+      "class": "UNKNOWN_UNOBSERVED",
+      "reason": "Rail is known available, but no authoritative bank-transaction connector/readback was executed in this runtime."
+    },
+    {
+      "provider": "PayPal",
+      "class": "UNKNOWN_UNOBSERVED",
+      "reason": "Rail is known available, but no authoritative PayPal transaction connector/readback was executed in this runtime."
+    },
+    {
+      "provider": "AMX EVM receive / Ethereum",
+      "network": "Ethereum",
+      "class": "DIRECTLY_OBSERVED",
+      "observation": "Blockscout chain 1 queried for native and ERC-20 transfers to 0x9b625e01ac2b172434559f365a4272e14fe2b301 for 2026-10-01..2026-10-10; zero native transactions and zero token transfers returned for that bounded query.",
+      "truth_boundary": "VERIFIED ZERO FOR OBSERVED ETHEREUM SCOPE ONLY; not evidence for other chains or unobserved rails."
+    },
+    {
+      "provider": "AMX Polygon receive",
+      "network": "Polygon",
+      "class": "PROVIDER_LIMITED",
+      "reason": "Polygon PoS chain 137 resolved, but transaction query could not complete because Blockscout PRO credits were exhausted after the Ethereum query."
+    },
+    {
+      "provider": "AMX BNB receive",
+      "network": "BNB Chain",
+      "class": "PROVIDER_LIMITED",
+      "reason": "Current Blockscout chain discovery did not return the expected BNB Chain surface in the bounded query; no authoritative transaction readback completed."
+    },
+    {
+      "provider": "AMX Avalanche receive",
+      "network": "Avalanche C-Chain",
+      "class": "PROVIDER_LIMITED",
+      "reason": "Current Blockscout chain discovery did not return Avalanche C-Chain in the bounded query; no authoritative transaction readback completed."
+    },
+    {
+      "provider": "AMX HyperEVM receive",
+      "network": "HyperEVM",
+      "class": "PROVIDER_LIMITED",
+      "reason": "Current Blockscout chain discovery returned no HyperEVM match; no authoritative transaction readback completed."
+    },
+    {
+      "provider": "AMX Bitcoin receive",
+      "network": "Bitcoin",
+      "class": "UNKNOWN_UNOBSERVED",
+      "reason": "No authoritative Bitcoin transaction connector was executed in this runtime."
+    },
+    {
+      "provider": "AMX Solana receive",
+      "network": "Solana",
+      "class": "UNKNOWN_UNOBSERVED",
+      "reason": "No authoritative Solana transaction connector was executed in this runtime."
+    },
+    {
+      "provider": "AMX Tron receive",
+      "network": "Tron",
+      "class": "UNKNOWN_UNOBSERVED",
+      "reason": "No authoritative Tron transaction connector was executed in this runtime."
+    },
+    {
+      "provider": "OKX / Agentic Wallet",
+      "class": "UNKNOWN_UNOBSERVED",
+      "reason": "Existing identity is evidenced but receiving details remain unrecovered; duplicate account prohibited."
+    }
+  ],
+  "conclusion": "FIN06 remains PARTIAL. One bounded Ethereum rail scope was directly observed; the Matrix cannot truthfully claim current all-rail zero or all-rail period close."
+}
