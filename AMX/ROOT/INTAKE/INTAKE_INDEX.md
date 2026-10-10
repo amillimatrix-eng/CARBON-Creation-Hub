@@ -1504,3 +1504,15 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Search anchors for future primary-history recovery:** `Make it difficult, make it hard, find the difficult stuff`; `Test it against corporates`.
 - **Current controlling result:** measured-scope D04 PASS 96.62%; 77 PASS / 6 PARTIAL / 0 measured FAIL; five VAL controls remain UNMEASURED_NOT_PROVEN, not FAIL.
 - **Disposition:** preserve the quoted recollection as attested, not raw proof. Do not rewrite frozen test or convert the absence of transcript retrieval into evidence of the opposite.
+
+
+## 2026-10-10 — MASTER CONTINUATION READBACK — 11:45 SAST
+- **Current Intake cleanliness:** NOT GLOBALLY CLEAN; specific open acceptance/disposition items remain assigned below. Closed bounded items must not be reopened from stale historical snapshots.
+- **Closed / evidenced:** Search #16 first cycle; proof-of-work prioritization #22; FORX #12/#17 staging/freshness repair; FORX PR #27 causal outcome→weight→changed-selection; commercial missing-record ingestion #24 behavioral cycle.
+- **#18 Marketplace/app convergence — OPEN / T-COD:** PR #14 remains DRAFT / OPEN / UNMERGED at head `249ec519b25526ed4336f82ecea6f51580898995`. Current-head workflow lookup returned no runs; CI is UNPROVEN. Existing preview deployment evidence is not the same SHA. Next: exact-head CI → repair observed failures only → same passing SHA deployment/readback.
+- **#21 Evidence House live-proof — OPEN / T-COD:** reuse existing evidence index, add public-safe commercial evidence class, preserve private-source controls, deployed-route readback.
+- **#3 PRI commissioning — OPEN / ROOT-T-GOV:** bounded behavioral gate crossed and #24 closed; ROOT/T-GOV must explicitly close/supersede or retain the standing control. MASTER must not self-close it.
+- **Notion Business trial agent activation — OPEN EXECUTION OBLIGATION:** CRM Intelligence exists, but connector invocation returned `FORBIDDEN / restricted_resource` and authenticated UI route remains unresolved. Continue other available trial capabilities and existing mandates in parallel.
+- **1M+ penetration / 500+ banked guarantees:** OWNER TARGETS, not achieved counts. Require attributable durable counters; no technical-scale conflation or invented baseline.
+- **Commercial truth:** iSCOPE→PRI owns external progression; preserve NO-CONTACT suppressions; no sent/response/acceptance/payment claim without its own evidence.
+- **Runtime law:** this reconciliation is a waypoint, not a stop. Continue independently executable mandate work; blocked items retain a recovery owner and next action.
