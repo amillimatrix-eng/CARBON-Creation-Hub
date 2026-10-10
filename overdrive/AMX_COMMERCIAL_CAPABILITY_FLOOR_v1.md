@@ -68,6 +68,12 @@ Current governed PRI profile evidence records a live verified LinkedIn headline 
 
 Evidence class: PROFILE-EVIDENCED CURRENT CLAIM / COMMERCIAL DISCOVERY INPUT. Before a buyer-facing technical claim becomes specific (technology, benchmark, implementation, client result, certification or quantified outcome), bind it to demonstrable evidence or preserve the unsupported portion as UNKNOWN/HOLD. Do not turn a profile headline into invented implementation evidence.
 
+### Proven rapid-delivery benchmark
+Current canonical evidence record `EVID-BUILD-DELIVERY-001` proves two consecutive 100% build milestones:
+- Marketplace 50/50 in a repository-bounded 1h28m19s window.
+- CARBON° Search 36/36 Search-specific tests + 81/81 full-repository CI; first implementation commit at 4h16m56s from commissioning, deployed promotion at 4h28m17s.
+Treat rapid scoped implementation, acceptance-driven engineering and CI-backed delivery as VERIFIED/CURRENT commercial capability. Use it to qualify buyers who need fast bounded product/system delivery. Do not re-open generic capability doubt when the buyer need matches this proven scope.
+
 ## Capability-to-market discovery duty
 iSCOPE MUST reason beyond named opportunity categories using both directions:
 1. CAPABILITY -> NEW APPLICATION -> POSSIBLE PAYER -> EVIDENCED DEMAND -> OPP-ID.
