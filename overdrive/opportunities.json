@@ -250,11 +250,84 @@
       "remains_unproven": "Buyer receipt/open/reply; whether each Close draft is a duplicate of the sent Outlook item or an additional unsent message; authorization/canonicality of sender identity; purchase, acceptance, contract, invoice, receivable, settlement.",
       "upgrade_action": "ROOT/T-GOV + PRI reconcile actual send history/sender identity and preserve no-further-contact state. Do not contact the three buyers again absent a material buyer-initiated reply or explicit newly governed route. Update each existing item only after direct evidence; no new opportunity record.",
       "safety": "No outbound action taken. No duplicate follow-up, public post, new sender/account, worker or scheduler. No revenue or payment claimed."
+    },
+    {
+      "observed_at": "2026-10-14T23:33:48Z",
+      "owner": "iSCOPE qualification; PRI sole external commercial writer",
+      "scope": "SCALE_ARMY_TRADE_GROWTH_MARKETING_ROLE_REQUALIFICATION_20261014",
+      "classification": "CURRENT_OFFICIAL_LISTING_REQUALIFIED; WORK_SAMPLE_ROUTE; ACCOUNT_HISTORY_DEDUPE_AND_APPLICATION_SUBMISSION_OPEN",
+      "expected": "Requalify the existing proof-first candidate without creating a duplicate opportunity or submitting a duplicate application. Keep lifecycle unchanged until account-history deduplication and material role-fit gates are resolved.",
+      "actual": "The current official Scale Army Ashby listing at the existing candidate URL is titled Trade & Growth Marketing Manager, superseding the previously recorded title. It lists South Africa as eligible, remote contract work, advertised compensation of US$2,500/month subject to experience and location, and 09:00–17:00 EST availability. Requirements include 4+ years in trade/growth/B2B retail or CPG marketing, hands-on paid-campaign and A/B-test experience, buyer-facing sales materials, and AI-supported workflows; application requires a form and skills video. Existing B2B/trade-marketing history is relevant, but paid-campaign fit and account/application history are not verified in this runtime. Official page search result is current; direct open exposes a JavaScript-only page. No application or external contact was made.",
+      "changed": "Source title, compensation/eligibility, role requirements, and application gate requalified from the current official listing. No new opportunity record created; no lifecycle, owner, or external-action state changed.",
+      "proof": [
+        "Official primary listing: https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07/",
+        "Existing application route: https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07/application",
+        "Official listing rechecked 2026-10-14: Trade & Growth Marketing Manager; South Africa eligible; remote contract; US$2.5K/month subject to experience/location; 9 AM–5 PM EST; form plus skills video."
+      ],
+      "remains_unproven": "Gmail/account-history deduplication and prior Scale Army application/contact state; demonstrated hands-on paid-campaign/A/B-test experience; completed application/video; buyer response, acceptance, contract, invoice, payment, or realized revenue.",
+      "upgrade_action": "ROOT/connector administrator restores the existing authorized Gmail/account-history read route. iSCOPE then deduplicates prior Scale Army contact/application and confirms fit against the paid-campaign requirement. If no prior submission exists and fit is supported, PRI submits once through the existing official route and persists the actual receipt/readback. Do not create a duplicate record or repeat external contact.",
+      "safety": "No external contact or application; no new opportunity record, worker, pipeline, sender, or account; no CV-polish cycle; no Owner interruption."
+    },
+    {
+      "observed_at": "2026-10-15T06:43:27.417Z",
+      "owner": "PRI records the existing commercial payment-rail readback; Banker retains terminal settlement verification; ROOT/T-GOV governs the existing sender/status contradiction.",
+      "scope": "STRIPE_LIVE_MONEY_IN_READBACK_20261015_WAKE_01",
+      "classification": "FRESH_LIVE_STRIPE_READBACK_NO_PAYMENT_OR_SETTLEMENT_EVIDENCED; PRIOR_SNAPSHOT_SUPERSEDED",
+      "expected": "Refresh the existing AMILLIMATRIX live Stripe payment-rail state, supersede stale provider counts only from direct source reads, and preserve buyer/contact and lifecycle controls.",
+      "actual": "During this wake, the existing AMILLIMATRIX Stripe account in livemode was read directly through GET /v1/checkout/sessions (limit=100; has_more=false): 42 Checkout Sessions, all unpaid; 12 status=open and 30 status=expired, 0 complete. All returned sessions have customer=null and no customer-detail email; PaymentIntents=0, Charges=0, Invoices=0, and Balance Transactions=0 (all five list reads completed with has_more=false).",
+      "changed": "Supersedes the last canonical Stripe snapshot recorded 2026-10-14T17:54:17.175Z (41 sessions: 14 open/unpaid, 27 expired/unpaid) with the fresh account-wide read (42: 12 open/unpaid, 30 expired/unpaid). No buyer identity, acceptance, contract, invoice, receivable, payment, or settlement is established by these session statuses. Existing no-further-outbound-contact restrictions remain unchanged.",
+      "proof": [
+        "Connected Stripe account list: AMILLIMATRIX, account acct_1UE0UBHyzt7gyqmn, livemode=true.",
+        "GET /v1/checkout/sessions?limit=100: 42 returned, has_more=false; statuses=open:12, expired:30; payment_status=unpaid:42.",
+        "GET /v1/payment_intents?limit=100: 0 returned, has_more=false.",
+        "GET /v1/charges?limit=100: 0 returned, has_more=false.",
+        "GET /v1/invoices?limit=100: 0 returned, has_more=false.",
+        "GET /v1/balance_transactions?limit=100: 0 returned, has_more=false."
+      ],
+      "remains_unproven": "Buyer receipt/open/reply and buyer intent; whether any non-Stripe rail carried funds; bank settlement outside these Stripe objects; causal meaning of session count/status changes. This is a live Stripe-object read, not a universal claim that no business income exists.",
+      "upgrade_action": "Do not resend or contact Kingston Stanley, Xubio or Synergy Interactive; continue preserving their existing no-further-outbound state until a material buyer-initiated reply or a new governed route. Banker independently verifies any settlement before PAID. ROOT/T-GOV + PRI reconcile sender identity and sent-vs-draft truth; iSCOPE/PRI continue other lawful eligible commercial routes without duplicate applications.",
+      "safety": "Read-only Stripe queries. No new payment links, sessions, products, invoices, customers, or buyer messages created. No lifecycle promotion or revenue attribution."
+    },
+    {
+      "observed_at": "2026-10-15T06:56:48.205Z",
+      "owner": "PRI records the existing payment-rail observation; Banker retains terminal settlement verification.",
+      "scope": "STRIPE_LIVE_BALANCE_AND_PAYOUT_READBACK_20261015_WAKE_01",
+      "classification": "FRESH_LIVE_STRIPE_BALANCE_ZERO_AND_NO_PAYOUT_OBJECTS; SUPPLEMENTAL_TO_CHECKOUT_READBACK",
+      "expected": "Complete the live Stripe settlement-side read by checking the current available/pending account balance and payout list in the existing account, without inferring settlement from Checkout Sessions.",
+      "actual": "Fresh live Stripe GET /v1/balance read for existing AMILLIMATRIX account returned USD available=0 and USD pending=0 (refund/dispute prefunding available/pending also 0; connect_reserved USD=0). GET /v1/payouts?limit=100 returned data=[] and has_more=false. These Stripe reads show no current USD Stripe balance or payout objects; they do not establish whether funds moved through any non-Stripe rail.",
+      "changed": "Supplemented STRIPE_LIVE_MONEY_IN_READBACK_20261015_WAKE_01 with direct balance and payout results. The existing 42 unpaid Checkout Sessions (12 open, 30 expired), zero PaymentIntents/Charges/Invoices/Balance Transactions remain as read in the immediately preceding provider call. No records or lifecycle states changed.",
+      "proof": [
+        "Connected Stripe account: AMILLIMATRIX, acct_1UE0UBHyzt7gyqmn, livemode=true.",
+        "GET /v1/balance: available USD 0; pending USD 0; refund/dispute prefunding USD 0; connect_reserved USD 0.",
+        "GET /v1/payouts?limit=100: data=[], has_more=false."
+      ],
+      "remains_unproven": "Any payments or settlement through a non-Stripe rail; historic cleared funds not represented by current balance or current payout list; buyer intent, acceptance, contract or receivable. No universal all-rail revenue-zero claim is made.",
+      "upgrade_action": "Banker independently verifies any cash receipt/settlement before PAID. Preserve the existing no-further-outbound restrictions on Kingston Stanley, Xubio and Synergy Interactive. ROOT/T-GOV retains the existing sender/status and PR-disposition gates.",
+      "safety": "Read-only Stripe API calls; no payment object, link, invoice, customer or external message created or changed."
+    },
+    {
+      "observed_at": "2026-10-15T07:16:06.636Z",
+      "owner": "iSCOPE qualification; PRI remains sole external commercial writer after qualified handoff; MASTER/LIBRARIAN independently verifies canonical readback; ROOT/T-GOV retains existing PR disposition.",
+      "scope": "ISCOPE_REQUALIFICATION_CLOSE_DRAFT_PROSPECTS_20261015_WAKE_01",
+      "classification": "THREE_EXISTING_CLOSE_DRAFTS_RECONCILED_AS_NOT_SENT; TWO_DISCOVERED_ON_HOLD; ONE_HOLD_OFFER_MODEL_FIT; ZERO_QUALIFIED; ZERO_EXTERNAL_ACTIONS",
+      "expected": "Deduplicate the three prospect drafts against the existing canonical ledger and visible account history, recheck current official business sources, and persist an explicit evidence-bound disposition without counting drafts as sent messages or creating a parallel writer.",
+      "actual": "The existing canonical branch ledger contains no record matching AHIT Recruitment/ahitrecruitment.com, Accurate Group/accurategroup.co.za or Naomii Talent Solutions/naomii.app. Existing Close lead and individual email reads confirm all three messages are status=draft, direction=outgoing, date_sent=null, has_reply=false; each thread contains one draft only. Existing account-history dedupe remains incomplete because the authorized Gmail read route is unavailable; connected Outlook zero-results are not treated as complete Gmail history. Current official-source requalification supports keeping Accurate Group and Naomii as DISCOVERED with buyer-need, sender and Gmail-dedupe holds. AHIT is HOLD because its official site emphasizes long-term partnerships rather than one-off transactions; no specific overflow need is evidenced.",
+      "changed": "Added three explicit disposition records to the records map and one control observation on the existing PR #40 recovery branch. record_count updated to actual records-map count 90. No lifecycle progressed to QUALIFIED/OFFERED/SUBMITTED; no sent message IDs assigned; no Close drafts modified; no contact made. Existing Kingston Stanley, Xubio and Synergy Interactive no-further-outbound restrictions preserved.",
+      "proof": [
+        "https://www.ahitrecruitment.com/ — official scope, end-to-end placement process and long-term partnership positioning.",
+        "https://www.accurategroup.io/ — official technology/SAP and mining specialisms; public contact domain cross-check.",
+        "https://www.naomii.app/jobs — current official open-positions surface; specific role content was not readable in this pass.",
+        "https://www.naomii.app/privacy-policy — candidate-profile presentation requires explicit consent according to the published policy.",
+        "Close existing lead/email/thread IDs and current status fields retained in each of the three new records; each direct email read returned draft/outgoing/date_sent=null/has_reply=false."
+      ],
+      "remains_unproven": "Complete Gmail/account-history dedupe; whether any prior or external contact exists outside connected surfaces; a specific buyer vacancy or demand for outsourcing; authorized commercial sender; buyer response/acceptance; contract, invoice, receivable, payment or settlement.",
+      "upgrade_action": "Keep all three existing Close drafts unsent. ROOT/connector administrator restores the existing authorized Gmail history/sender route; iSCOPE deduplicates and confirms buyer need, disposition and privacy gates; only after qualification and the current governed route is verified may PRI make one authorized external approach. MASTER/LIBRARIAN reads back accepted main state and checks record-count/key parity. No duplicate leads, new sender, worker, pipeline, checkout or follow-up.",
+      "safety": "No buyer contact, draft mutation, application, session/link mutation or lifecycle promotion. No identifiable candidate data collected/shared; no claim that email was sent. Single existing iSCOPE→PRI chain preserved."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T18:40:04.525Z",
-  "last_reconciled_reason": "Read-backed update to the three existing paid-pilot records after direct Outlook evidence showed 13-Oct checkout-link emails alongside separate Close draft status; preserved NO_FURTHER_CONTACT, sender-drift and no-payment truth. Existing keys/count unchanged.",
+  "last_reconciled_at": "2026-10-15T07:16:06.636Z",
+  "last_reconciled_reason": "Read-backed source and sent-state reconciliation for three existing Close prospects absent from the ledger; added two DISCOVERED records with explicit holds and one offer-model-fit HOLD while preserving unsent draft status and unresolved Gmail/account-history gate.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -317,9 +390,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-14T18:40:04.525Z",
-  "last_updated_by": "MASTER / COFFEE / LIBRARIAN",
-  "record_count": 87,
+  "last_updated_at": "2026-10-15T07:16:06.636Z",
+  "last_updated_by": "iSCOPE/PRI commercial wake reconciliation",
+  "record_count": 90,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
@@ -4890,8 +4963,170 @@
       },
       "source_verified_at": "2026-10-14T16:55:15Z",
       "current_route_status": "OFFICIAL_LISTING_DIRECT_FETCHED_2026-10-14; AUTHENTICATED_SUBMISSION_ROUTE_UNAVAILABLE"
+    },
+    "ahitrecruitment.com|one-role-sourcing-overflow|2026-10-15": {
+      "organization": "AHIT Recruitment",
+      "domain": "ahitrecruitment.com",
+      "opportunity": "one-role-sourcing-overflow",
+      "title": "One-role sourcing overflow pilot — IT / engineering",
+      "state": "HOLD",
+      "execution_owner": "iSCOPE",
+      "execution_readiness": "HOLD_OFFER_MODEL_FIT_AND_GMAIL_DEDUPE",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "buyer_fit": "Sector adjacency is real: the official site covers Engineering and IT & Technology and describes end-to-end sourcing, screening and placement. However, the site's partnership value explicitly emphasizes long-term relationships rather than one-off transactions. No specific overflow vacancy or buyer request for outsourced sourcing is evidenced; the existing US$99 one-off draft may not fit the stated model.",
+      "capital_direction": "PAID_FIXED_SCOPE_PILOT_PROPOSED_NOT_ACCEPTED",
+      "reward": "Existing unsent Close draft proposes US$99 for one role; no buyer acceptance or payment evidenced.",
+      "payment": "No checkout sent or payment link issued to this prospect.",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CURRENT_OFFICIAL_BUSINESS_SOURCE -> OFFER_MODEL_FIT_AND_BUYER_NEED_REVIEW",
+      "due_at": null,
+      "last_action_at": "2026-10-15T07:16:06.636Z",
+      "qualified_at": null,
+      "buyer_need": "UNKNOWN",
+      "recipient": "info@ahitrecruitment.com",
+      "close_draft_activity_id": "acti_j2vgnyLCbTsCFLPkj5oDGCmE0Ph8BlxP17l6gYwbgwv",
+      "close_draft_thread_id": "acti_r3TyMV9nP1MoRhzkvTTr90DW5VuDi7yX7fiqM3rPsSK",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_PRIMARY_SOURCE",
+          "observed_at": "2026-10-15T07:16:06.636Z",
+          "source": "OFFICIAL_WEBSITE",
+          "url": "https://www.ahitrecruitment.com/",
+          "summary": "The current official site confirms recruitment across Engineering and IT & Technology and describes role briefing, active search, shortlist presentation and placement support. It emphasizes discretion and long-term relationships rather than one-off transactions."
+        },
+        {
+          "kind": "CLOSE_DRAFT_STATUS_VERIFIED",
+          "observed_at": "2026-10-15T07:16:06.636Z",
+          "source": "CLOSE",
+          "source_id": "acti_j2vgnyLCbTsCFLPkj5oDGCmE0Ph8BlxP17l6gYwbgwv",
+          "thread_id": "acti_r3TyMV9nP1MoRhzkvTTr90DW5VuDi7yX7fiqM3rPsSK",
+          "summary": "Direct email fetch confirms status=draft, direction=outgoing, date_sent=null, has_reply=false. Draft proposes US$99 one-role sourcing pilot. This is not an offer sent or a buyer receipt."
+        }
+      ],
+      "constraints": [
+        "Do not send or schedule the existing draft.",
+        "Gmail/account-history dedupe is incomplete because the authorized Gmail read route is unavailable; connected Outlook zero-results do not establish a complete history.",
+        "No specific current vacancy or outsourced-sourcing need verified.",
+        "Reconsider only if evidence shows a suitable current need and an offer model consistent with the buyer's stated preference for long-term partnerships."
+      ],
+      "next_action": "HOLD. Keep the existing Close draft unsent. Revisit only if a current, evidence-backed overflow need and suitable engagement model are established; complete historical account/message dedupe and verify the authorized sender before any external action."
+    },
+    "accurategroup.co.za|one-role-sourcing-overflow|2026-10-15": {
+      "organization": "Accurate Group",
+      "domain": "accurategroup.co.za",
+      "opportunity": "one-role-sourcing-overflow",
+      "title": "One-role technology sourcing overflow pilot",
+      "state": "DISCOVERED",
+      "execution_owner": "iSCOPE",
+      "execution_readiness": "HOLD_BUYER_NEED_GMAIL_DEDUPE_AND_AUTHORIZED_SENDER",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "buyer_fit": "The current official company site identifies a Cape Town boutique recruitment/consulting business focused on Technology/SAP and Mining, including analytics, automation, cloud, digital, AI and development. This is a relevant sector fit only; no current specific vacancy or need to outsource candidate sourcing was established.",
+      "capital_direction": "PAID_FIXED_SCOPE_PILOT_PROPOSED_NOT_ACCEPTED",
+      "reward": "Existing unsent Close draft proposes US$99 for one technology role; no buyer acceptance or payment evidenced.",
+      "payment": "No checkout sent or payment link issued to this prospect.",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CURRENT_OFFICIAL_BUSINESS_SOURCE -> RELEVANT_SECTOR_SIGNAL -> BUYER_NEED_QUALIFICATION",
+      "due_at": null,
+      "last_action_at": "2026-10-15T07:16:06.636Z",
+      "qualified_at": null,
+      "buyer_need": "UNKNOWN",
+      "recipient": "contact@accurategroup.co.za",
+      "close_draft_activity_id": "acti_vSkgMZmymOF8VTStMzoEQGiz7HRHav1b1vdGbhbsS9p",
+      "close_draft_thread_id": "acti_h3hNya2ThvRSXagUYgEvg8elN1wiosxl5ilIypMY4Qg",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_PRIMARY_SOURCE",
+          "observed_at": "2026-10-15T07:16:06.636Z",
+          "source": "OFFICIAL_WEBSITE",
+          "url": "https://www.accurategroup.io/",
+          "summary": "The current official site confirms a Cape Town boutique recruiter focused on Technology/SAP and Mining and mentions AI/cloud talent acquisition technologies. Its Available Jobs link resolves to a generic recruitment software surface in this review; no specific open role or sourcing-overflow requirement was verified."
+        },
+        {
+          "kind": "CURRENT_DOMAIN_CONTACT_CROSSCHECK",
+          "observed_at": "2026-10-15T07:16:06.636Z",
+          "source": "OFFICIAL_WEBSITE",
+          "url": "https://www.accurategroup.io/",
+          "summary": "The official site lists contact@accurategroup.co.za alongside contact@accurategroup.io; the existing Close draft recipient uses the .co.za domain. This verifies a public contact detail, not permission to send."
+        },
+        {
+          "kind": "CLOSE_DRAFT_STATUS_VERIFIED",
+          "observed_at": "2026-10-15T07:16:06.636Z",
+          "source": "CLOSE",
+          "source_id": "acti_vSkgMZmymOF8VTStMzoEQGiz7HRHav1b1vdGbhbsS9p",
+          "thread_id": "acti_h3hNya2ThvRSXagUYgEvg8elN1wiosxl5ilIypMY4Qg",
+          "summary": "Direct email fetch confirms status=draft, direction=outgoing, date_sent=null, has_reply=false. Draft proposes a US$99 one-role sourcing pilot; it is not a sent offer."
+        }
+      ],
+      "constraints": [
+        "No specific buyer vacancy or outsourced-sourcing need verified; remain DISCOVERED, not QUALIFIED.",
+        "Do not send or schedule the existing draft.",
+        "Gmail/account-history dedupe incomplete; Outlook results are not full Gmail history.",
+        "Verify authorized sender and applicable candidate-data/privacy handling before any approach or fulfilment."
+      ],
+      "next_action": "iSCOPE: on restored authorized history access, deduplicate existing contacts/messages and verify a specific current hiring/sourcing need. Keep the Close draft unsent; no PRI handoff until qualification succeeds and the authorized sender route is confirmed."
+    },
+    "naomii.app|technology-candidate-sourcing-overflow|2026-10-15": {
+      "organization": "Naomii Talent Solutions",
+      "domain": "naomii.app",
+      "opportunity": "technology-candidate-sourcing-overflow",
+      "title": "Technology/data sourcing overflow pilot",
+      "state": "DISCOVERED",
+      "execution_owner": "iSCOPE",
+      "execution_readiness": "HOLD_BUYER_NEED_PRIVACY_GMAIL_DEDUPE_AND_AUTHORIZED_SENDER",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "buyer_fit": "The official site identifies Naomii as a specialist technology and data recruitment firm and has a current Open Positions page. The retrieved page does not expose the specific vacancy titles/requirements in text, so role-level demand and a need for outsourced candidate sourcing remain unverified.",
+      "capital_direction": "PAID_FIXED_SCOPE_PILOT_PROPOSED_NOT_ACCEPTED",
+      "reward": "Existing unsent Close draft proposes US$99 for one live role; no buyer acceptance or payment evidenced.",
+      "payment": "No checkout sent or payment link issued to this prospect.",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CURRENT_OFFICIAL_BUSINESS_SOURCE -> SPECIALIST_SCOPE_SIGNAL -> BUYER_NEED_AND_PRIVACY_QUALIFICATION",
+      "due_at": null,
+      "last_action_at": "2026-10-15T07:16:06.636Z",
+      "qualified_at": null,
+      "buyer_need": "UNKNOWN",
+      "recipient": "hello@naomii.app",
+      "close_draft_activity_id": "acti_nr1AyMxoaAH2jaus42SZQTKqzy7PR0TFuaoV8r44twL",
+      "close_draft_thread_id": "acti_ReMZChFsQgug04MnNMnmAOON4TWc7qqUl62t1n5Deaa",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_PRIMARY_SOURCE",
+          "observed_at": "2026-10-15T07:16:06.636Z",
+          "source": "OFFICIAL_WEBSITE",
+          "url": "https://www.naomii.app/",
+          "summary": "Official company surface identifies specialist tech/data recruitment. The linked Jobs page describes its open positions as roles currently being placed, but the current text read does not expose specific role titles/criteria; do not treat role-level demand as verified."
+        },
+        {
+          "kind": "CURRENT_OFFICIAL_JOBS_SURFACE",
+          "observed_at": "2026-10-15T07:16:06.636Z",
+          "source": "OFFICIAL_WEBSITE",
+          "url": "https://www.naomii.app/jobs",
+          "summary": "The current Jobs page says it lists all opportunities currently being placed and provides search/filter controls; no specific vacancy data was readable in this pass."
+        },
+        {
+          "kind": "CURRENT_PRIVACY_POLICY_GATE",
+          "observed_at": "2026-10-15T07:16:06.636Z",
+          "source": "OFFICIAL_WEBSITE",
+          "url": "https://www.naomii.app/privacy-policy",
+          "summary": "The published policy says presenting candidate profiles to prospective employers requires explicit consent. Do not share or process identifiable candidate profiles for a buyer without an appropriate lawful basis and explicit candidate consent."
+        },
+        {
+          "kind": "CLOSE_DRAFT_STATUS_VERIFIED",
+          "observed_at": "2026-10-15T07:16:06.636Z",
+          "source": "CLOSE",
+          "source_id": "acti_nr1AyMxoaAH2jaus42SZQTKqzy7PR0TFuaoV8r44twL",
+          "thread_id": "acti_ReMZChFsQgug04MnNMnmAOON4TWc7qqUl62t1n5Deaa",
+          "summary": "Direct email fetch confirms status=draft, direction=outgoing, date_sent=null, has_reply=false. Existing draft proposes a US$99 one-role sourcing pilot; it is not a sent offer or buyer response."
+        }
+      ],
+      "constraints": [
+        "No specific role or outsourced-sourcing need verified; remain DISCOVERED, not QUALIFIED.",
+        "Do not send or schedule the existing draft.",
+        "Gmail/account-history dedupe incomplete; connected Outlook zero-results do not establish complete prior contact history.",
+        "Candidate privacy: do not share or process identifiable candidate profiles for prospective employers without appropriate lawful basis and explicit candidate consent."
+      ],
+      "next_action": "iSCOPE: verify a specific live hiring need and deduplicate existing contacts/messages when authorized history access is available. Keep the draft unsent. Prior to any fulfilment involving candidate information, establish a privacy-safe scope and explicit consent path. No PRI handoff until qualification gates pass."
     }
   },
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-15T07:16:06.636Z",
   "version": 1
 }
