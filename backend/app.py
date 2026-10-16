@@ -398,6 +398,18 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             proposal_projection(portal_token)
             return FileResponse(house_dir / "proposal.html")
 
+        @app.get("/carbon", include_in_schema=False)
+        @app.get("/carbon/partner-tour", include_in_schema=False)
+        def carbon_partner_tour():
+            path = house_dir / "carbon-partner-tour.html"
+            if path.is_symlink() or not path.is_file():
+                raise HTTPException(status_code=503, detail="Carbon partner tour unavailable")
+            return FileResponse(
+                path,
+                media_type="text/html",
+                headers={"Cache-Control": "no-store"},
+            )
+
         @app.get("/house")
         @app.get("/house/")
         def house_index():

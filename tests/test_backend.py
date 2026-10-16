@@ -274,3 +274,27 @@ def test_root_reports_unavailable_house_without_false_success(tmp_path):
     entry = c.get("/", follow_redirects=False)
     assert entry.status_code == 503
     assert entry.json()["detail"] == "House interface unavailable"
+
+def test_carbon_partner_tour_serves_explicit_preview_state_without_caching(tmp_path):
+    c = client(tmp_path)
+    tour_path = tmp_path / "house/remediation/carbon-partner-tour.html"
+    tour_path.write_text(
+        "<!doctype html><title>CARBON Partner Tour</title>"
+        "<p>External listings are not connected.</p>"
+    )
+
+    for route in ("/carbon", "/carbon/partner-tour"):
+        response = c.get(route)
+        assert response.status_code == 200
+        assert response.headers["content-type"].startswith("text/html")
+        assert response.headers["cache-control"] == "no-store"
+        assert "CARBON Partner Tour" in response.text
+        assert "External listings are not connected." in response.text
+
+
+def test_carbon_partner_tour_fails_closed_when_page_is_missing(tmp_path):
+    c = client(tmp_path)
+    response = c.get("/carbon/partner-tour")
+    assert response.status_code == 503
+    assert response.json()["detail"] == "Carbon partner tour unavailable"
+

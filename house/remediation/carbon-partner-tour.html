@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>CARBON° | Partner Tour</title>
+<meta name="description" content="A partner-facing tour of CARBON° services, current availability, and the intended referral journey.">
+<style>
+:root{color-scheme:dark;--bg:#08090c;--panel:#111318;--panel2:#171a20;--text:#f2f2ef;--muted:#a5a8af;--line:#30343c;--gold:#cfb478;--good:#d9e2df;--warn:#e1c991;--radius:18px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(1100px 600px at 82% -8%,rgba(207,180,120,.10),transparent 60%),var(--bg);color:var(--text);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--gold);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1140px,calc(100% - 32px));margin:auto}
+.top{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding:18px 0}
+.brand{font-size:20px;letter-spacing:.24em;font-weight:800}
+.brand span{color:var(--gold)}
+.nav{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;letter-spacing:.06em}
+.nav a{color:var(--muted);text-decoration:none}
+.nav a:hover{color:var(--text)}
+.hero{padding:72px 0 38px;max-width:880px}
+.kicker{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.19em;text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,70px);letter-spacing:-.055em;line-height:1.02;margin:18px 0 20px;font-weight:650}
+h2{font-size:clamp(26px,4vw,42px);letter-spacing:-.04em;line-height:1.1;margin:0 0 14px}
+h3{font-size:19px;line-height:1.2;margin:0 0 10px}
+p{margin:0 0 14px}
+.lead{font-size:clamp(18px,2.2vw,23px);line-height:1.5;color:#d8d9d7;max-width:780px}
+.muted{color:var(--muted)}
+.small{font-size:13px;line-height:1.6}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:11px 17px;background:transparent;color:var(--text);text-decoration:none;font:600 13px/1.25 inherit;cursor:pointer;min-height:43px}
+.btn.primary{background:var(--text);border-color:var(--text);color:#0a0b0d}
+.btn:hover{border-color:var(--gold)}
+.btn.primary:hover{background:#ded0ae;border-color:#ded0ae}
+.state-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:16px 0 26px}
+.state{border:1px solid var(--line);border-radius:14px;background:rgba(17,19,24,.78);padding:15px;min-height:135px}
+.state b{display:block;font-size:13px;margin-bottom:8px}
+.tag{display:inline-block;border:1px solid #4a4e56;border-radius:999px;padding:3px 8px;color:var(--muted);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.tag.target{border-color:#736346;color:var(--warn)}
+.section{padding:54px 0;border-top:1px solid var(--line)}
+.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.7fr);gap:24px;align-items:end;margin-bottom:24px}
+.section-head p{max-width:540px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.card{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(140deg,rgba(255,255,255,.025),transparent 70%),var(--panel);padding:22px;min-height:205px;display:flex;flex-direction:column;align-items:flex-start}
+.card p{color:var(--muted);font-size:14px}
+.card .btn{margin-top:auto}
+.number{font-size:11px;color:var(--gold);letter-spacing:.13em;margin-bottom:16px}
+.rule{height:1px;background:var(--line);margin:17px 0}
+.preview-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.preview{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel)}
+.preview-art{height:150px;display:flex;align-items:end;padding:20px;background:linear-gradient(120deg,rgba(0,0,0,.06),rgba(0,0,0,.85)),radial-gradient(circle at 70% 20%,#b29c6c 0,#44423a 18%,#1a1e24 50%,#0b0d12 85%)}
+.preview-art.studio{background:linear-gradient(120deg,rgba(0,0,0,.1),rgba(0,0,0,.85)),radial-gradient(circle at 28% 40%,#8c7c64 0,#3a3130 20%,#211f2b 52%,#090a0e 90%)}
+.preview-art.search{background:linear-gradient(120deg,rgba(0,0,0,.1),rgba(0,0,0,.85)),radial-gradient(circle at 76% 28%,#a9a28f 0,#4c4e4d 16%,#1a2428 50%,#08090c 90%)}
+.preview-art h3{margin:0;font-size:23px;letter-spacing:-.03em}
+.preview-body{padding:20px}
+.preview-body p{color:var(--muted);font-size:14px}
+.statusline{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px}
+.dot{width:7px;height:7px;border-radius:50%;background:#888d96;display:inline-block}
+.dot.gold{background:var(--gold)}
+.notice{border:1px solid #514733;border-left:3px solid var(--gold);padding:16px 18px;border-radius:12px;background:rgba(207,180,120,.05);color:#dad4c5;margin-top:16px}
+.notice b{color:#f0e6ce}
+.path{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;counter-reset:path}
+.path article{counter-increment:path;border-top:2px solid #6a5b3d;padding:15px 0 0}
+.path article:before{content:"0" counter(path);display:block;color:var(--gold);font-size:11px;letter-spacing:.14em;margin-bottom:12px}
+.path h3{font-size:15px}
+.path p{font-size:13px;color:var(--muted)}
+.example{border:1px solid var(--line);border-radius:14px;background:#0d0f13;padding:18px;margin-top:18px}
+.example-top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.example-flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:8px}
+.flow-box{border:1px solid var(--line);border-radius:10px;padding:13px;font-size:13px;background:var(--panel);min-height:76px}
+.arrow{color:var(--gold);font-size:20px}
+.feedback{font-size:12px;min-height:20px;color:var(--muted);margin-top:8px}
+.partner-states{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.partner-state{padding:15px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.partner-state b{display:block;font-size:13px;margin-bottom:6px}
+footer{border-top:1px solid var(--line);padding:26px 0 42px;color:var(--muted);font-size:12px}
+@media(max-width:850px){.state-row{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{grid-template-columns:1fr}.path{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.nav{display:none}.hero{padding-top:48px}.grid,.preview-grid,.partner-states{grid-template-columns:1fr}.state-row{grid-template-columns:1fr 1fr}.state{min-height:unset}.section{padding:38px 0}.example-flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}.btn{width:100%}.path{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="wrap top">
+  <a href="/carbon/partner-tour" class="brand" aria-label="Carbon partner tour home" style="color:inherit;text-decoration:none">CARBON<span>°</span></a>
+  <nav class="nav" aria-label="Tour navigation">
+    <a href="#ecosystems">ECOSYSTEMS</a><a href="#services">SERVICES</a><a href="#referrals">REFERRALS</a><a href="#feedback">YOUR INPUT</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="kicker">Commercial Partner · Guided Tour</div>
+    <h1>One need.<br>One clear route<br>to a useful result.</h1>
+    <p class="lead">Welcome, Alfie. You are joining as a Commercial Partner focused on practical recommendations and referrals. The point is to make Carbon understandable and useful enough that you can confidently connect the right person to the right service.</p>
+    <p class="muted">And an apology for the delay in bringing you through properly. The system has been busy connecting and checking its existing pieces, but we should have closed the loop sooner.</p>
+    <div class="actions">
+      <a class="btn primary" href="#ecosystems">Start the tour <span aria-hidden="true">↘</span></a>
+      <a class="btn" href="https://t.me/millimatrix_bot/AmillimatriX" target="_blank" rel="noopener noreferrer">Open general Telegram entry ↗</a>
+    </div>
+    <div class="notice"><b>What this page is:</b> a partner-facing guide to what Carbon is meant to do, which example routes are actually open, and which integrations still need to be connected. It does not claim every planned capability is live.</div>
+  </section>
+
+  <section aria-label="Current availability">
+    <div class="kicker">Current state · checked 16 October 2026</div>
+    <div class="state-row">
+      <article class="state"><span class="tag target">Build target</span><b>Carbon Business</b><span class="small muted">The intended business front door and service directory. The complete published information hub has not yet been verified.</span></article>
+      <article class="state"><span class="tag target">Provider setup pending</span><b>Search / INTELLAGENT</b><span class="small muted">The intent-resolution core is documented. External search providers are not verified as connected; the public Search service failed its latest health check.</span></article>
+      <article class="state"><span class="tag target">External listings absent</span><b>Marketplace</b><span class="small muted">No connected Facebook Marketplace, Gumtree, eBay or Amazon listings were verified. As an aggregated listings marketplace, it is effectively empty today.</span></article>
+      <article class="state"><span class="tag target">Catalogue incomplete</span><b>Carbon Studios</b><span class="small muted">A visual catalogue is the intended browsing experience. A populated, searchable, buyer-ready catalogue has not been verified.</span></article>
+    </div>
+    <p class="small muted">The public Search and Marketplace preview URLs returned HTTP 503 in the latest check. Do not rely on those endpoints for a live customer search until the deployed runtime and results have passed a fresh readback. This status is deliberately explicit so you do not refer someone to a capability that is not working yet.</p>
+  </section>
+
+  <section class="section" id="ecosystems">
+    <div class="section-head">
+      <div><div class="kicker">01 · The ecosystem</div><h2>Different parts.<br>One connected journey.</h2></div>
+      <p>Carbon is a family of experiences. Each part has a specific job. The intended architecture connects them, so the person does not lose the original need while moving from discovery to creation and delivery.</p>
+    </div>
+    <div class="preview-grid">
+      <article class="preview" id="business">
+        <div class="preview-art"><h3>CARBON° Business</h3></div>
+        <div class="preview-body"><div class="statusline"><span class="dot gold"></span> Business-facing hub · not yet verified complete</div><p>Explains what Carbon can do, helps a business select a relevant service, and routes that person directly to it. It should say what is included, what input is needed, and what the next step will be.</p><a class="btn" href="#services">Explore service examples ↓</a></div>
+      </article>
+      <article class="preview" id="search">
+        <div class="preview-art search"><h3>Search / INTELLAGENT</h3></div>
+        <div class="preview-body"><div class="statusline"><span class="dot gold"></span> Core designed · provider connections pending</div><p>Interprets what the person is trying to achieve and resolves the best-supported next step. For “I need a hairdresser,” the intended result is relevant, current options based on the person's location and needs—not a random list of links.</p><button class="btn" type="button" onclick="showWalkthrough()">See the intended hairdresser-search flow ↗</button><div id="walkthrough" class="example" hidden><div class="example-top"><b>Illustrative journey — not live search results</b><span class="tag target">Not connected yet</span></div><div class="example-flow"><div class="flow-box"><b>1 · Understand</b><br><span class="muted">“Hairdresser near me” + permissioned location</span></div><div class="arrow">→</div><div class="flow-box"><b>2 · Compare</b><br><span class="muted">Current provider and listing sources, once connected</span></div><div class="arrow">→</div><div class="flow-box"><b>3 · Take action</b><br><span class="muted">Verified options, source and a direct next step</span></div></div><p class="small muted" style="margin-top:12px">Google, DuckDuckGo, Yandex and external marketplace sources are not verified as integrated. This walkthrough explains the intended behavior; it is not returning live providers.</p></div></div>
+      </article>
+      <article class="preview" id="marketplace">
+        <div class="preview-art"><h3>CARBON° Marketplace</h3></div>
+        <div class="preview-body"><div class="statusline"><span class="dot gold"></span> External listings not connected</div><p>Matches a need with relevant products, services and providers. The longer-term design is to include external listings where source access, terms and the actual retrieval connection allow it.</p><p class="small">Today, Facebook Marketplace, Gumtree, eBay and Amazon are not verified integrations. There are no external aggregated results to browse yet.</p><a class="btn" href="#referrals">See how a service referral should work ↓</a></div>
+      </article>
+      <article class="preview" id="studios">
+        <div class="preview-art studio"><h3>CARBON Studios</h3></div>
+        <div class="preview-body"><div class="statusline"><span class="dot gold"></span> Visual catalogue is the target</div><p>Turns an agreed brief into a deliverable: a website, brand asset, campaign package, image/media output or another scoped piece of work. The intended interface is a streaming-style collection of visual tiles you can browse by outcome.</p><p class="small">The tile layout is a design direction, not proof that every pictured creation engine is connected or that the catalogue is currently populated.</p><a class="btn" href="https://jgmi-by-carbon-demo.onrender.com" target="_blank" rel="noopener noreferrer">View a public Carbon website example ↗</a></div>
+      </article>
+    </div>
+    <div class="notice"><b>How the parts connect:</b> identify the need → resolve it → match the right service → preview the likely result → agree scope and terms → create/provision the result → deliver and learn. Not every request needs every step, and a business that already knows it needs a website should go directly to that service.</div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="section-head">
+      <div><div class="kicker">02 · What you can refer</div><h2>Services for real business needs.</h2></div>
+      <p>Carbon can discuss the services it can actually deliver or scope as a pilot. Each individual offer still needs an honest availability state, confirmed scope, price or quote path, and next action before a customer is promised a live workflow.</p>
+    </div>
+    <div class="grid">
+      <article class="card" id="website-service"><div class="number">SERVICE 01</div><h3>Website & digital presence</h3><p>For a business without a website, or one whose current site does not explain its services well. The intended flow is business details → visual mockup → agreed scope → build and launch.</p><span class="tag">Scoped by project</span><button class="btn" onclick="copyServiceLink('website-service')">Copy service-preview link</button><div class="feedback" id="feedback-website-service" aria-live="polite"></div></article>
+      <article class="card" id="brand-service"><div class="number">SERVICE 02</div><h3>Business positioning & branding</h3><p>Clarify the offer, audience and messages, then create or improve appropriate visual and written assets.</p><span class="tag">Scope to confirm</span><button class="btn" onclick="copyServiceLink('brand-service')">Copy service-preview link</button><div class="feedback" id="feedback-brand-service" aria-live="polite"></div></article>
+      <article class="card" id="digital-service"><div class="number">SERVICE 03</div><h3>Digital customer experience</h3><p>Landing page, catalogue, lightweight web app or customer portal where the route and requirements have been confirmed.</p><span class="tag">Scope to confirm</span><button class="btn" onclick="copyServiceLink('digital-service')">Copy service-preview link</button><div class="feedback" id="feedback-digital-service" aria-live="polite"></div></article>
+      <article class="card" id="workflow-service"><div class="number">SERVICE 04</div><h3>Workflow automation</h3><p>Identify repetitive work, define the intended outcome, and scope an automation with explicit inputs, outputs and ownership.</p><span class="tag">Discovery / scoped pilot</span><button class="btn" onclick="copyServiceLink('workflow-service')">Copy service-preview link</button><div class="feedback" id="feedback-workflow-service" aria-live="polite"></div></article>
+      <article class="card" id="creative-service"><div class="number">SERVICE 05</div><h3>Creative & campaign assets</h3><p>Agreed copy, images, promotional pieces and selected media where the relevant creation and delivery capability is available.</p><span class="tag">Availability per deliverable</span><button class="btn" onclick="copyServiceLink('creative-service')">Copy service-preview link</button><div class="feedback" id="feedback-creative-service" aria-live="polite"></div></article>
+      <article class="card" id="customer-service"><div class="number">SERVICE 06</div><h3>Sales & customer journey</h3><p>Improve enquiry, booking, ordering, follow-up or after-sales processes. Start with the actual business problem rather than forcing a standard package.</p><span class="tag">Discovery / scoped pilot</span><button class="btn" onclick="copyServiceLink('customer-service')">Copy service-preview link</button><div class="feedback" id="feedback-customer-service" aria-live="polite"></div></article>
+    </div>
+    <div class="notice"><b>What those buttons do today:</b> they copy a direct link to the relevant service section in this tour, for preview and discussion. They are <b>not yet personal referral links</b> and they do not track attribution or assign referral credit. Personal referral activation must bind to the existing identity system and pass a live readback first; we will not invent your identity or send a link that merely looks tracked.</div>
+  </section>
+
+  <section class="section" id="referrals">
+    <div class="section-head">
+      <div><div class="kicker">03 · The intended referral engine</div><h2>Refer the service, not a generic homepage.</h2></div>
+      <p>For example, you meet a business owner who needs a website. You should open the website service and select “Refer this service.” The resulting link should take that owner directly to the website offer, keeping your attribution attached.</p>
+    </div>
+    <div class="path">
+      <article><h3>Choose the service</h3><p>Open “Build a website,” not the generic front door.</p></article>
+      <article><h3>Create the link</h3><p>Bind a secure, opaque referral token to the service destination and your verified partner identity.</p></article>
+      <article><h3>Share it</h3><p>Copy the link or share through email, WhatsApp, Telegram or SMS where supported.</p></article>
+      <article><h3>Show the offer</h3><p>The recipient sees visuals, scope, inclusions, exclusions, price or quote path, and trial terms.</p></article>
+      <article><h3>Deliver & track</h3><p>Acceptance and any required payment lead to the agreed demo/build; progress and attribution are read back.</p></article>
+    </div>
+    <div class="notice"><b>Current implementation boundary:</b> the product-specific, personal referral-token issuance and end-to-end attribution path are not verified as live. The public Telegram URL above is only a general entry point. The direct section links on this page are previews, not tracked referrals. Once the current identity/referral route has been verified, this service page should connect to it—without creating a parallel identity database.</div>
+    <div class="preview-grid" style="margin-top:18px">
+      <article class="preview">
+        <div class="preview-art"><h3>Visual proposal → interactive demo</h3></div>
+        <div class="preview-body"><div class="statusline"><span class="dot gold"></span> Intended product flow</div><p>After a business shares its brief, the system should prepare a tailored mockup and proposal. The customer reviews the scope and terms, accepts, pays where required, then receives the permitted interactive demo and agreed edit path.</p><p class="small muted">Payment activation, time-limited demo provisioning, expiry/upgrade handling and the full customer journey have not passed end-to-end acceptance yet. A mockup or proposal is not itself an activated demo.</p></div>
+      </article>
+      <article class="preview">
+        <div class="preview-art studio"><h3>Examples that already exist</h3></div>
+        <div class="preview-body"><div class="statusline"><span class="dot"></span> Public examples, not the full catalogue</div><p>The JGMI by Carbon site is a public website example showing how a business can present its services, equipment and enquiry flow. It is a JGMI-specific site, not a general Carbon storefront.</p><div class="actions"><a class="btn" href="https://jgmi-by-carbon-demo.onrender.com" target="_blank" rel="noopener noreferrer">Open JGMI example ↗</a><a class="btn" href="https://hobo-unchained.amillimatrix.chatgpt.site/" target="_blank" rel="noopener noreferrer">Open H0B° sample ↗</a></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="feedback">
+    <div class="section-head">
+      <div><div class="kicker">04 · Your role</div><h2>Good ideas deserve a clear answer.</h2></div>
+      <p>You do not need to learn internal Matrix workings or read engineering metrics to contribute. Send a practical problem, recommendation, example or potential referral. The system's job is to assess it and give you a useful result back.</p>
+    </div>
+    <div class="partner-states">
+      <article class="partner-state"><span class="tag">Accepted</span><b>We'll take it forward</b><p class="small muted">A clear recommendation that becomes an owned next action.</p></article>
+      <article class="partner-state"><span class="tag">Adapted</span><b>Core idea retained</b><p class="small muted">The useful part is incorporated with a practical change.</p></article>
+      <article class="partner-state"><span class="tag">Already covered</span><b>Existing work identified</b><p class="small muted">We'll explain where it overlaps so effort is not duplicated.</p></article>
+      <article class="partner-state"><span class="tag">Pending</span><b>Specific test needed</b><p class="small muted">We'll say what evidence or check is still required.</p></article>
+      <article class="partner-state"><span class="tag">Declined</span><b>Reason provided</b><p class="small muted">We'll explain why it does not fit the current need or requirements.</p></article>
+      <article class="partner-state"><span class="tag">Referral state</span><b>Progress made visible</b><p class="small muted">Received, qualified, in discussion, converted or not proceeding—without exposing other people's private details.</p></article>
+    </div>
+    <div class="example">
+      <div class="example-top"><h3 style="margin:0">Copy a recommendation template</h3><span class="tag">For your notes</span></div>
+      <p class="muted small">A rough idea is fine. The minimum useful input is the problem, the proposed improvement and the benefit you expect.</p>
+      <div class="rule"></div>
+      <p id="templateText" class="small">Problem / opportunity:<br>My recommendation:<br>Who it helps and how:<br>Example or link (optional):</p>
+      <button class="btn" onclick="copyRecommendation()">Copy recommendation template</button><div class="feedback" id="recommendationFeedback" aria-live="polite"></div>
+    </div>
+    <p class="small muted" style="margin-top:18px">If you refer a person, share their contact details only with permission. While personal referral activation is being completed, do not treat a copied preview link as tracked or claim referral credit from it. The next partner hand-off should include a verified identity, a service-specific destination, a real shareable token and an end-to-end click/attribution receipt.</p>
+  </section>
+</main>
+<footer><div class="wrap"><div class="brand" style="font-size:14px;margin-bottom:8px">CARBON<span>°</span></div><p>Search = intent. Marketplace = match. Studios = creation and fulfilment.</p><p>This tour records intended architecture and the current known boundary. Availability can change; a service is represented as live only after its current route and outcome have been verified.</p><p><a href="https://t.me/millimatrix_bot/AmillimatriX" target="_blank" rel="noopener noreferrer">General Telegram entry</a> · Not a personal MTXID or referral link.</p></div></footer>
+<script>
+function showWalkthrough(){const el=document.getElementById('walkthrough');el.hidden=!el.hidden;}
+async function copyText(value){try{await navigator.clipboard.writeText(value);return true}catch(_){const area=document.createElement('textarea');area.value=value;area.style.position='fixed';area.style.opacity='0';document.body.appendChild(area);area.select();let ok=false;try{ok=document.execCommand('copy')}catch(__){}area.remove();return ok}}
+async function copyServiceLink(sectionId){const url=location.origin+'/carbon/partner-tour?service='+encodeURIComponent(sectionId)+'#'+encodeURIComponent(sectionId);const ok=await copyText(url);const target=document.getElementById('feedback-'+sectionId);if(target)target.textContent=ok?'Direct preview link copied. Not tracked as a referral.':'Copy failed. Open the section and copy the page address manually.';history.replaceState(null,'','#'+sectionId);}
+async function copyRecommendation(){const text='Problem / opportunity:\nMy recommendation:\nWho it helps and how:\nExample or link (optional):';const ok=await copyText(text);document.getElementById('recommendationFeedback').textContent=ok?'Template copied.':'Copy failed. Select the template text to copy it.';}
+(function(){const params=new URLSearchParams(location.search);const service=params.get('service');if(service&&document.getElementById(service)){setTimeout(()=>document.getElementById(service).scrollIntoView({behavior:'auto',block:'start'}),50)}})();
+</script>
+</body>
+</html>
