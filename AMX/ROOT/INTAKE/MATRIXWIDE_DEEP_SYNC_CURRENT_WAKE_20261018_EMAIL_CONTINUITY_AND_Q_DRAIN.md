@@ -203,3 +203,16 @@ Live AMILLIMATRIX Stripe source shows an existing OPEN/UNPAID Checkout Session f
 Outlook query for received messages since 2026-10-16 returned 31 items including Visym's reply; no other verifiable inbound commercial buyer reply surfaced in that result set. Gmail forward visibility remains unverified.
 
 **Required:** append/read back this delta in existing Root Intake and Index; Root must reconcile Segment 12 references; existing commercial owner must address the existing session's missing attribution before expiry; keep Visym read-only; full Matrix Q drain/root acknowledgement remains open. No new worker/queue/flight, no sensitive payment details, no external contact, no money-in claim.
+
+
+## CURRENT-WAKE — AUTHORIZED PRI FOLLOW-UP RECEIPT — 2026-10-19
+
+The existing Naomii one-role technology-sourcing pilot reached its recorded follow-up due time without a substantive buyer reply. Connected Outlook searches found no reply from the buyer and no matching delivery-failure notice. A single bounded follow-up was sent in the existing Outlook thread at `2026-10-19T14:26:38Z`; actual sent-message ID, subject and content summary are recorded in the existing `overdrive/opportunities.json` record `naomii.app|technology-sourcing-overflow-pilot|2026-10-15`.
+
+The follow-up requested only the role title and must-have criteria, and stated that scope/payment route would be agreed before work begins. No reply, acceptance, contract, receivable or money-in is claimed. The canonical opportunity ledger was read back at blob `bc972d3552c295c118718854d33af64283b5fa6d`; 108 records preserved. The record's next action is now WAIT for a substantive buyer reply; no further follow-up without a new evidence-based due date and route recheck.
+
+This action is a bounded PRI external-write event, **not** a new Overdrive tick. The `claims.json` / `state.json` snapshots still require an attributable refresh from the existing runtime. No new worker, queue, flight or scheduler was created.
+
+**Flight boundary unchanged:** `AMX-FLT-20261012-DSYNC-145440-9fb44f0c` still has its latest registered event as Segment 11 `LANDING / LANDED_PARTIAL / FAIL` on 2026-10-14. ROOT must reconcile old Segment 12 references before any new segment is registered.
+
+**Still open:** time-bound AMX checkout attribution before 2026-10-19 15:10Z / 17:10 SAST; Visym payout-run inclusion/payment; full Q drain; Gmail readability; current runtime receipts; ROOT acknowledgement. No guessed buyer contact, duplicate checkout or further Visym message.
