@@ -3350,3 +3350,21 @@ Latest receipt: [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND
 
 **Disposition:** claims generation/runtime reconciliation = **OPEN / REMEDIATE**; offer-version implementation/tests = **OPEN / ROUTE TO T-COD + OVERDRIVE OWNER**. Existing Segment 12 and whole Root Intake remain open; this does not authorize a landing or global Q-drain completion.
 
+## CURRENT-WAKE APPEND — THREE OFFER SENT-ITEMS / CUSTOMER-FACING ID GAP — 2026-10-19T17:47:22Z
+
+**Lifecycle:** EVIDENCE / ROUTING ONLY. No historical sent offers were altered.
+
+- The three current ledger-only PRI records each map to a real existing Outlook Sent Item (source item ID and metadata persisted in the opportunity record) sent on 2026-10-19:
+  - Goel Electrical, 16:42:57Z, R9,380 ZAR, subject “Fixed-scope quote-to-job control loop — R9,380”.
+  - Alpha Pest Controls, 16:43:00Z, R9,380 ZAR, subject “Fixed-scope site-report follow-through workflow — R9,380”.
+  - Sunlogic SA, 16:43:04Z, R9,380 ZAR, subject “Fixed-scope site-visit-to-install handoff — R9,380”.
+  Connected Outlook search matched sender `usduplessis@outlook.com`, recipients and send item IDs to the ledger records. Each remains OFFERED / OFFER_SENT_NOT_ACCEPTED and WAIT; no new customer action is authorized.
+- All three internal refs `AMX-LEGACY-OFR-20261019-0001/0002/0003` are classified `INTERNAL_LEGACY_RECONCILIATION_ONLY`; records explicitly state a customer-visible Offer ID was NOT included and a customer-visible pro-forma was NOT evidenced. This does not prove no private registry object exists; the private runtime registry was not available in this read.
+- Original offer amount is R9,380 at the recorded 67% factor against a R14,000 public comparator; same-scope comparability/tax and margin need revalidation. Current 50% SA factor yields only a potential R7,000 same-comparator scenario and R2,380 difference; all benefits remain NOT_EARNED_OR_ISSUED. No credit, reprice, or amendment has been sent.
+- The send dates and 50% factor's effective date are both 2026-10-19, but exact authorization-versus-send ordering was not conclusively established; mark chronology/pricing application REVIEW REQUIRED, not proven breach. Preserve historic offer terms and do not mass reissue/correct by email. Apply governed benefit only on customer re-engagement with approval.
+- No matching incoming messages from the three buyer addresses were found in the connected Outlook scope for 2026-10-19. This does not prove other channels are empty. Full-body fetch attempt returned HTTP 400, so the current receipt relies on Sent Item search metadata/previews and the ledger's linked source IDs.
+- Current enabled IDEAL Sales task run timestamp is `2026-10-19T17:37:23.117708Z`; no exact run-correlated output receipt found in bounded Notion/GitHub searches. Bounty Reaper timestamp is `2026-10-19T17:07:17.778546Z`, also without a current exact output receipt. Do not treat timestamps as output proof. Q1 remains UNKNOWN / NOT ZERO.
+- The prior Root receipt addendum containing the full source IDs, current review, and owner actions is in [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md).
+
+**Disposition:** offers sent / waiting; customer-facing Offer ID/pro-forma not evidenced in original message; chronology REVIEW REQUIRED; claims/signal synchronization OPEN/REMEDIATE; no message, offer, credit, worker, or schedule mutation by this Librarian continuation. Segment 12 and Root Intake remain OPEN.
+
