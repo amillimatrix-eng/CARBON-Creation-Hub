@@ -257,3 +257,16 @@ This action is a bounded PRI external-write event, **not** a new Overdrive tick.
 - **Banker:** preserve settlement truth. No payment, award, offer, session, or payout instruction is PAID/SETTLED without attributable payment evidence.
 
 **Standing truth:** enabled/woke != executing; checkout session != buyer; offer != receivable; receivable != PAID; deployment != runtime acceptance; no 50k durable readback -> no PASS.
+
+
+## CURRENT-WAKE RUNTIME LIVENESS DELTA — 2026-10-19
+
+This newer readback supersedes earlier task-liveness statements where timestamps differ; previous observations remain historical.
+
+- Master Librarian preflight receipt `MASTER-LIBRARIAN-PREFLIGHT-20261019T142500Z` was committed at `d1f1383315bc68b988945ccdbea3bbaa79825efe`. It recomputed and matched the current Registry v1.3 root SHA-256 and MASTER-LIBRARIAN mandate payload SHA-256. This verifies the preflight only, not whole-Matrix execution.
+- The current task-layer enabled trio is Bounty Reaper, IDEAL Sales Team, and Check Visym payout. IDEAL Sales `last_run_time` advanced to `2026-10-19T14:14:14Z`, but no attributable output receipt was located in the newest repository scan; productive execution remains UNKNOWN. Bounty Reaper last-run metadata remains `2026-10-16T07:39:24Z` without a fresh receipt. The Visym check remains a one-shot scheduled for 2026-10-20 18:00 SAST; its task timestamp does not establish payout inclusion.
+- Canonical Overdrive `state.json` remains sequence 23 / last tick `2026-10-16T08:40:31.786740Z`. `claims.json` and `signals.json` remain generated 2026-10-16 with ready=0, external-ready=0, executable order empty. No fresh Overdrive tick is proven.
+- One bounded Naomii follow-up was sent at `2026-10-19T14:26:38Z` under the existing PRI opportunity, and the canonical 108-record opportunities ledger was read back with the attributable Outlook send receipt. State remains OFFERED / not accepted; next action is WAIT for a substantive buyer reply. This outbound is not a new Overdrive tick or verified money-in.
+- Existing flight `AMX-FLT-20261012-DSYNC-145440-9fb44f0c` still has latest registered event Segment 11 LANDING / LANDED_PARTIAL / FAIL on 2026-10-14. ROOT must reconcile older Segment 12 references before registering a new segment.
+
+**Disposition remains INTAKE NOT CLEARED.** Full source-derived queue drain, cross-domain execution receipts and current Root acknowledgement remain outstanding.
