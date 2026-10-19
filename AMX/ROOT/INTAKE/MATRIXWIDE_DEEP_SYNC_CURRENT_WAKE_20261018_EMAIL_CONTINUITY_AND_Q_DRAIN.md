@@ -176,3 +176,30 @@ Owner previously reported that banking details were sent in the original Gmail t
 - Visym 2026-10-20 run inclusion: UNKNOWN; actual payout: NOT VERIFIED.
 
 **Disposition remains: INTAKE NOT CLEARED.** The new response advances payout-route knowledge; it is not payment and not whole-Matrix closure.
+
+
+## CURRENT-WAKE DRIFT / FLIGHT / RUNTIME / EXPIRING-CHECKOUT DELTA — 2026-10-19
+
+**Status: PARTIAL / OPEN / INTAKE NOT CLEARED.** The Owner said “Today”; this is today's source readback and recovery, not a plan for later.
+
+### Assistant drift / Visym preservation
+The assistant answered “Wtf” with an unrelated Stripe metrics dump instead of executing the Root/flight/runtime/value review. It also sent an unnecessary Visym process-query email after Owner reported the existing payout details had already been supplied via Gmail. Visym replied with a payout-provider instruction. Original Gmail detail submission remains Owner-reported and unreadable through the connected Outlook identity. No further Visym mail, repeated sensitive data, or payout-setting change will be made by this runtime. Payout-run inclusion and payment remain UNKNOWN.
+
+### Existing flight path — readback, no invented segment
+- Flight `AMX-FLT-20261012-DSYNC-145440-9fb44f0c`.
+- Register `AMX/ROOT/INTAKE/DYNAMIC_FLIGHT_PATH_REGISTER.jsonl`, blob `5ae14ab80ff4c1f3a46cb20b8b3bd6e1b5a3ac4d`.
+- Latest event: `LANDING:SEGMENT-11:FAIL-OUTPUT-RECEIPT-AND-CASH-IN-20261014T182754Z`, `LANDED_PARTIAL / FAIL`; no later flight event exists.
+- Last objective: recover attributable Sales/FORX outputs and advance a lawful no-human-gated money-in route without duplicate dispatch/contact.
+- Current Index requires ROOT to reconcile older Segment 12 references before registering another segment. No new segment or IN_FLIGHT state was fabricated.
+
+### Current scheduler readback
+- 25 task definitions; 46 paused; 3 completed; enabled trio: Bounty Reaper, FIRST BREATH — IDEAL SALES TEAM, Check Visym payout.
+- Reaper and Sales task last-run metadata remains 2026-10-16 with no next-run time. Visym payout watcher timestamp is 2026-10-19T13:39:11Z; one-shot schedule remains 2026-10-20 18:00 SAST with next_run_time null. Timestamp/enabled status is not proof of successful execution.
+- FORX and Operational Inbox Watch accepted one-off run requests but output receipts are not verified and tasks are returned disabled.
+- Librarians and Banker task activation returned “This task is no longer available”; their mandates remain registered. T-MED/T-COD/T-GOV activation is Owner-reported without correlated live receipts. The task scheduler cannot support hourly cadence. No schedule was altered by this reconciliation.
+
+### Time-bound commercial blocker identified
+Live AMILLIMATRIX Stripe source shows an existing OPEN/UNPAID Checkout Session for `corporate_presence_launch` / `JGMI by Carbon`, ZAR 7,963, created 2026-10-18 15:10Z and expiring **2026-10-19 15:10Z / 17:10 SAST today**. It has no customer, customer email, client reference or PaymentIntent. Current account counts: 51 sessions (1 open/unpaid, 50 expired), PaymentIntents 0, Charges 0, Payouts 0, Balance Transactions 0, Invoices 0, available/pending USD 0. These are AMX Stripe facts, not Visym payout facts. Existing commercial owner/ROOT must attribute the existing session from source before expiry; no guessed buyer contact or duplicate checkout.
+Outlook query for received messages since 2026-10-16 returned 31 items including Visym's reply; no other verifiable inbound commercial buyer reply surfaced in that result set. Gmail forward visibility remains unverified.
+
+**Required:** append/read back this delta in existing Root Intake and Index; Root must reconcile Segment 12 references; existing commercial owner must address the existing session's missing attribution before expiry; keep Visym read-only; full Matrix Q drain/root acknowledgement remains open. No new worker/queue/flight, no sensitive payment details, no external contact, no money-in claim.
