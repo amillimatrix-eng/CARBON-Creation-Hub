@@ -129,3 +129,16 @@ The ten overdue WAITING claims were grouped according to their existing next_act
 - Parent-root notification returned `NOT_FOUND` before dispatch. This addendum was written to this existing receipt, the canonical Intake Index, the existing Notion Root Intake, and Issue #31. No Root acknowledgement has been observed.
 
 **Disposition: INTAKE NOT CLEARED; MATRIX-WIDE STATE NOT FULLY ALIGNED.** This wake corrected a policy contradiction's routing and added current source evidence. It did not restore the hourly runtime, prove Gmail readability, close all source-derived queue items, prove Visym payout-run inclusion, or verify payment.
+
+
+## PLAN-CAPACITY LIVENESS FAULT — CURRENT WAKE 2026-10-19
+
+New linked Root Intake: [CHATGPT_AUTOMATION_PLAN_CAPACITY_LIVENESS_FAULT_20261019.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CHATGPT_AUTOMATION_PLAN_CAPACITY_LIVENESS_FAULT_20261019.md).
+
+The scheduled-task connector explicitly rejected activation of six existing core workers with `too_many_active_automations`, current_count=3, plan_limit=3. Existing Bounty Reaper was successfully re-enabled. Rejections affected FORX, IDEAL Sales Team, Librarians, Banker Cash Watch, Operational Inbox Watch and Commissioning Inspector. No duplicate tasks/workers were created. Three slots are currently consumed by Check Visym payout, Check DAOPEOPLE Reply, and Bounty Reaper.
+
+A first prompt for branch `root/matrix-recovery-drain-q-20261019` was created and read back at `AMX/ROOT/BRANCH_START/MATRIX_RECOVERY_DRAIN_Q_AND_PORTABILITY_FIRST_PROMPT_20261019.md`. Branch commit: `24e8d126ee40e1bdd087834d442bf6327fccd511`.
+
+Root Intake and the authoritative index now record the task-plan cap as a P0 liveness/portability issue. This does not prove the historical reason workers were disabled. It proves the current task layer cannot run every worker simultaneously under the current plan. Resolve through existing Issue #29 portability and Issue #31 model-to-Root throughput work plus existing external execution surfaces; do not create a parallel governance layer.
+
+**No whole-Matrix wake, full Q drain, provider-independent acceptance, Visym payout-run inclusion, or new money-in is claimed.** Intake remains NOT CLEARED; payment state remains unproven pending actual bank/settlement evidence.
