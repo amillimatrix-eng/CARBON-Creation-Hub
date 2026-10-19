@@ -801,7 +801,7 @@
         "observed_at": "2026-10-15T13:16:18Z"
       },
       "domain": "ahitrecruitment.com",
-      "due_at": "2026-10-19T08:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OUTBOUND_SEND",
@@ -810,11 +810,20 @@
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXggAAAA==",
           "subject": "A 24-hour sourcing pilot for one live IT or engineering vacancy",
           "summary": "Sent from usduplessis@outlook.com; fixed US$99 single-role pilot; no retainer; source-linked shortlist, fit notes and screening questions within 24 hours after receipt of role brief and must-have criteria."
+        },
+        {
+          "kind": "OUTBOUND_FOLLOW_UP",
+          "observed_at": "2026-10-19T15:40:42Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RrgAAAA==",
+          "subject": "Follow-up: fixed-fee IT / engineering sourcing pilot — US$99",
+          "summary": "One due follow-up sent from usduplessis@outlook.com to info@ahitrecruitment.com; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/eVq8wPgRP6n6aYhcqCaR20a (Payment Link plink_1USIeEHyzt7gyqmn57gr5qLk). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
+          "url": "https://buy.stripe.com/eVq8wPgRP6n6aYhcqCaR20a"
         }
       ],
       "execution_owner": "PRI",
-      "last_action_at": "2026-10-15T13:16:18Z",
-      "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "last_action_at": "2026-10-19T15:40:42Z",
+      "next_action": "WAIT for a substantive buyer reply. If the buyer responds, confirm the exact role/workflow brief, must-have criteria or redacted specification/sample inputs, scope, price and payment terms before beginning delivery. Do not send another follow-up without a new evidence-based due date. Only transition to PAID/SETTLED on verified receipt evidence.",
       "opportunity": "US$99 one-role IT and engineering sourcing pilot",
       "organization": "AHIT Recruitment",
       "recipient": "info@ahitrecruitment.com",
@@ -830,7 +839,7 @@
       },
       "capital_direction": "PAYER_TO_WORK",
       "proof_of_work_route": "FIXED_SCOPE",
-      "current_route_status": "OFFICIAL_CONTACT_ROUTE_VERIFIED",
+      "current_route_status": "OFFICIAL_CONTACT_ROUTE_VERIFIED; FOLLOW_UP_SENT_VERIFIED_IN_SENT_ITEMS; ACTIVE_PAYMENT_LINK_PROVIDED; WAITING_FOR_BUYER_RESPONSE",
       "current_route_confidence": "HIGH",
       "execution_readiness": "WAITING",
       "last_reconciled_at": "2026-10-15T13:27:41.769Z"
@@ -5403,10 +5412,10 @@
         "Do not repeat contact before the governed follow-up time."
       ],
       "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
-      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE; FOLLOW_UP_SENT_VERIFIED_IN_SENT_ITEMS; ACTIVE_PAYMENT_LINK_PROVIDED; WAITING_FOR_BUYER_RESPONSE",
       "discovered_by": "PRI",
       "domain": "techemulsion.com",
-      "due_at": "2026-10-19T08:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OUTBOUND_SEND",
@@ -5415,13 +5424,22 @@
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXigAAAA==",
           "subject": "Independent agent-workflow QA overflow, fixed US$99 pilot",
           "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to contact@techemulsion.com. Offer: Convert agreed behavior for one agent workflow into test cases; exercise supplied sample inputs; check retry/idempotency and human-approval boundaries; return an acceptance harness and evidence-backed findings. US$99 fixed fee; 48-hour turnaround begins after receipt of a redacted specification and sample inputs. No retainer or client production-environment access for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        },
+        {
+          "kind": "OUTBOUND_FOLLOW_UP",
+          "observed_at": "2026-10-19T15:40:36Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RqgAAAA==",
+          "subject": "Follow-up: independent agent-workflow QA pilot — US$99",
+          "summary": "One due follow-up sent from usduplessis@outlook.com to contact@techemulsion.com; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
+          "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
-      "last_action_at": "2026-10-15T16:36:53Z",
+      "last_action_at": "2026-10-19T15:40:36Z",
       "last_reconciled_at": "2026-10-16T07:58:21Z",
-      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "next_action": "WAIT for a substantive buyer reply. If the buyer responds, confirm the exact role/workflow brief, must-have criteria or redacted specification/sample inputs, scope, price and payment terms before beginning delivery. Do not send another follow-up without a new evidence-based due date. Only transition to PAID/SETTLED on verified receipt evidence.",
       "opportunity": "US$99 fixed-scope agent-workflow QA pilot",
       "organization": "TechEmulsion",
       "proof_of_work_route": "FIXED_SCOPE",
@@ -5465,10 +5483,10 @@
         "Do not repeat contact before the governed follow-up time."
       ],
       "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
-      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE; FOLLOW_UP_SENT_VERIFIED_IN_SENT_ITEMS; ACTIVE_PAYMENT_LINK_PROVIDED; WAITING_FOR_BUYER_RESPONSE",
       "discovered_by": "PRI",
       "domain": "hipagency.ai",
-      "due_at": "2026-10-19T08:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OUTBOUND_SEND",
@@ -5477,13 +5495,22 @@
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiQAAAA==",
           "subject": "One-workflow AI agent acceptance pilot — US$99 fixed",
           "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to info@hipagency.ai. Offer: For one defined workflow, return a runnable acceptance harness and findings covering expected outputs, missing inputs, failed-tool retries, duplicate actions and the human-handoff boundary. US$99 fixed fee; delivery within 48 hours after receipt of a redacted specification and sample inputs. No retainer or production access required for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        },
+        {
+          "kind": "OUTBOUND_FOLLOW_UP",
+          "observed_at": "2026-10-19T15:40:37Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RqwAAAA==",
+          "subject": "Follow-up: one-workflow AI acceptance pilot — US$99",
+          "summary": "One due follow-up sent from usduplessis@outlook.com to info@hipagency.ai; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
+          "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
-      "last_action_at": "2026-10-15T16:36:27Z",
+      "last_action_at": "2026-10-19T15:40:37Z",
       "last_reconciled_at": "2026-10-16T07:58:21Z",
-      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "next_action": "WAIT for a substantive buyer reply. If the buyer responds, confirm the exact role/workflow brief, must-have criteria or redacted specification/sample inputs, scope, price and payment terms before beginning delivery. Do not send another follow-up without a new evidence-based due date. Only transition to PAID/SETTLED on verified receipt evidence.",
       "opportunity": "US$99 fixed-scope AI-agent acceptance pilot",
       "organization": "HIP Agency",
       "proof_of_work_route": "FIXED_SCOPE",
@@ -5527,10 +5554,10 @@
         "Do not repeat contact before the governed follow-up time."
       ],
       "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
-      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE; FOLLOW_UP_SENT_VERIFIED_IN_SENT_ITEMS; ACTIVE_PAYMENT_LINK_PROVIDED; WAITING_FOR_BUYER_RESPONSE",
       "discovered_by": "PRI",
       "domain": "voiceagencyplatform.com",
-      "due_at": "2026-10-19T08:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OUTBOUND_SEND",
@@ -5539,13 +5566,22 @@
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiAAAAA==",
           "subject": "Paid acceptance test for one voice-agent handoff",
           "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to partners@voiceagencyplatform.com. Offer: Test one defined call workflow before rollout: agreed outcomes, tool-failure fallback, duplicate-booking prevention, escalation to a person and traceable results. US$99 fixed fee; runnable acceptance harness and findings within 48 hours after receipt of a redacted workflow specification and sample inputs. No retainer or production credentials required for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        },
+        {
+          "kind": "OUTBOUND_FOLLOW_UP",
+          "observed_at": "2026-10-19T15:40:38Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8wItQACLz9RrAAAAA==",
+          "subject": "Follow-up: voice-agent handoff acceptance test — US$99",
+          "summary": "One due follow-up sent from usduplessis@outlook.com to partners@voiceagencyplatform.com; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
+          "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
-      "last_action_at": "2026-10-15T16:36:11Z",
+      "last_action_at": "2026-10-19T15:40:38Z",
       "last_reconciled_at": "2026-10-16T07:58:21Z",
-      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "next_action": "WAIT for a substantive buyer reply. If the buyer responds, confirm the exact role/workflow brief, must-have criteria or redacted specification/sample inputs, scope, price and payment terms before beginning delivery. Do not send another follow-up without a new evidence-based due date. Only transition to PAID/SETTLED on verified receipt evidence.",
       "opportunity": "US$99 fixed-scope voice-agent handoff acceptance pilot",
       "organization": "Voice Agency Platform (recipient-domain label; legal entity not verified)",
       "proof_of_work_route": "FIXED_SCOPE",
@@ -5589,10 +5625,10 @@
         "Do not repeat contact before the governed follow-up time."
       ],
       "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
-      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE; FOLLOW_UP_SENT_VERIFIED_IN_SENT_ITEMS; ACTIVE_PAYMENT_LINK_PROVIDED; WAITING_FOR_BUYER_RESPONSE",
       "discovered_by": "PRI",
       "domain": "hugais.co.za",
-      "due_at": "2026-10-19T08:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OUTBOUND_SEND",
@@ -5601,13 +5637,22 @@
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhwAAAA==",
           "subject": "Paid micro-pilot: test one AI agent before handoff",
           "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to dionne@hugais.co.za. Offer: Test one AI-agent workflow before client handoff using agreed test cases, unsupported-answer checks, tool failure/retry behavior, duplicate-action checks and the point where a human must take over. US$99 fixed fee; runnable acceptance harness and findings within 48 hours after receipt of a redacted specification and sample inputs. No retainer or production credentials required for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        },
+        {
+          "kind": "OUTBOUND_FOLLOW_UP",
+          "observed_at": "2026-10-19T15:31:15Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RqQAAAA==",
+          "subject": "Follow-up: test one AI agent before handoff — US$99",
+          "summary": "One due follow-up sent from usduplessis@outlook.com to dionne@hugais.co.za; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
+          "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
-      "last_action_at": "2026-10-15T16:24:46Z",
+      "last_action_at": "2026-10-19T15:31:15Z",
       "last_reconciled_at": "2026-10-16T07:58:21Z",
-      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "next_action": "WAIT for a substantive buyer reply. If the buyer responds, confirm the exact role/workflow brief, must-have criteria or redacted specification/sample inputs, scope, price and payment terms before beginning delivery. Do not send another follow-up without a new evidence-based due date. Only transition to PAID/SETTLED on verified receipt evidence.",
       "opportunity": "US$99 fixed-scope AI-agent acceptance micro-pilot",
       "organization": "Hugais",
       "proof_of_work_route": "FIXED_SCOPE",
@@ -5651,10 +5696,10 @@
         "Do not repeat contact before the governed follow-up time."
       ],
       "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
-      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE; FOLLOW_UP_SENT_VERIFIED_IN_SENT_ITEMS; ACTIVE_PAYMENT_LINK_PROVIDED; WAITING_FOR_BUYER_RESPONSE",
       "discovered_by": "PRI",
       "domain": "aiadoption.co.za",
-      "due_at": "2026-10-19T08:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OUTBOUND_SEND",
@@ -5663,13 +5708,22 @@
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhgAAAA==",
           "subject": "A fixed-scope reliability test for one AI workflow",
           "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to darren@aiadoption.co.za. Offer: Independently test one defined AI workflow for expected outputs, missing information, failed-tool/retry behavior, duplicate actions and human-review boundaries. US$99 fixed fee; a runnable acceptance harness and concise evidence-backed findings within 48 hours after receipt of a redacted specification and sample inputs. No production credentials required for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        },
+        {
+          "kind": "OUTBOUND_FOLLOW_UP",
+          "observed_at": "2026-10-19T15:31:13Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RqAAAAA==",
+          "subject": "Follow-up: one-workflow reliability test — US$99",
+          "summary": "One due follow-up sent from usduplessis@outlook.com to darren@aiadoption.co.za; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
+          "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
-      "last_action_at": "2026-10-15T16:24:44Z",
+      "last_action_at": "2026-10-19T15:31:13Z",
       "last_reconciled_at": "2026-10-16T07:58:21Z",
-      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "next_action": "WAIT for a substantive buyer reply. If the buyer responds, confirm the exact role/workflow brief, must-have criteria or redacted specification/sample inputs, scope, price and payment terms before beginning delivery. Do not send another follow-up without a new evidence-based due date. Only transition to PAID/SETTLED on verified receipt evidence.",
       "opportunity": "US$99 fixed-scope AI-workflow reliability pilot",
       "organization": "AI Adoption Partners",
       "proof_of_work_route": "FIXED_SCOPE",
@@ -5713,10 +5767,10 @@
         "Do not repeat contact before the governed follow-up time."
       ],
       "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
-      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE; FOLLOW_UP_SENT_VERIFIED_IN_SENT_ITEMS; ACTIVE_PAYMENT_LINK_PROVIDED; WAITING_FOR_BUYER_RESPONSE",
       "discovered_by": "PRI",
       "domain": "agenticflow.co.za",
-      "due_at": "2026-10-19T08:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OUTBOUND_SEND",
@@ -5725,13 +5779,22 @@
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhQAAAA==",
           "subject": "White-label overflow: one agent workflow reliability pilot",
           "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to duane@agenticflow.co.za. Offer: Validate one defined agent workflow against agreed cases, including tool failure/retry behavior, duplicate-action prevention, human approval and traceable results. US$99 fixed fee; runnable acceptance harness and findings within 48 hours after receipt of a redacted workflow specification and sample inputs. This is a bounded test deliverable, not a claim of production deployment. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        },
+        {
+          "kind": "OUTBOUND_FOLLOW_UP",
+          "observed_at": "2026-10-19T15:31:05Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RpwAAAA==",
+          "subject": "Follow-up: one agent workflow reliability pilot — US$99",
+          "summary": "One due follow-up sent from usduplessis@outlook.com to duane@agenticflow.co.za; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
+          "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
-      "last_action_at": "2026-10-15T16:24:42Z",
+      "last_action_at": "2026-10-19T15:31:05Z",
       "last_reconciled_at": "2026-10-16T07:58:21Z",
-      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "next_action": "WAIT for a substantive buyer reply. If the buyer responds, confirm the exact role/workflow brief, must-have criteria or redacted specification/sample inputs, scope, price and payment terms before beginning delivery. Do not send another follow-up without a new evidence-based due date. Only transition to PAID/SETTLED on verified receipt evidence.",
       "opportunity": "US$99 fixed-scope white-label agent-workflow reliability pilot",
       "organization": "AgenticFlow",
       "proof_of_work_route": "FIXED_SCOPE",
@@ -5817,10 +5880,10 @@
         "Do not repeat contact before the governed review time."
       ],
       "current_route_confidence": "HIGH_FOR_OFFICIAL_CONTACT_ROUTE; BUYER_INTEREST_UNVERIFIED",
-      "current_route_status": "OFFICIAL_EMAIL_ROUTE_VERIFIED; OUTBOUND_SEND_VERIFIED; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OFFICIAL_EMAIL_ROUTE_VERIFIED; OUTBOUND_SEND_VERIFIED; WAITING_FOR_BUYER_RESPONSE; FOLLOW_UP_SENT_VERIFIED_IN_SENT_ITEMS; ACTIVE_PAYMENT_LINK_PROVIDED; WAITING_FOR_BUYER_RESPONSE",
       "discovered_by": "PRI",
       "domain": "wrightsai.com",
-      "due_at": "2026-10-19T08:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "CURRENT_OFFICIAL_CONTACT_ROUTE",
@@ -5836,13 +5899,22 @@
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjAAAAA==",
           "subject": "Independent pre-handoff QA for one AI workflow — US$99 pilot",
           "summary": "Sent from the existing Outlook account to the official published email. Fixed US$99 one-workflow acceptance-test offer. No buyer response or read receipt is evidenced."
+        },
+        {
+          "kind": "OUTBOUND_FOLLOW_UP",
+          "observed_at": "2026-10-19T15:40:40Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RrQAAAA==",
+          "subject": "Follow-up: independent pre-handoff QA for one AI workflow — US$99",
+          "summary": "One due follow-up sent from usduplessis@outlook.com to info@wrightsai.com; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
+          "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
-      "last_action_at": "2026-10-16T07:58:29Z",
+      "last_action_at": "2026-10-19T15:40:40Z",
       "last_reconciled_at": "2026-10-16T08:13:38Z",
-      "next_action": "Wait for a substantive buyer reply. If there is no response by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one concise follow-up. If buyer replies sooner, qualify workflow specification, sample inputs, scope and payment route. Do not send a second touch before due.",
+      "next_action": "WAIT for a substantive buyer reply. If the buyer responds, confirm the exact role/workflow brief, must-have criteria or redacted specification/sample inputs, scope, price and payment terms before beginning delivery. Do not send another follow-up without a new evidence-based due date. Only transition to PAID/SETTLED on verified receipt evidence.",
       "opportunity": "US$99 fixed-scope AI workflow acceptance pilot",
       "organization": "WRIGHTSAI",
       "proof_of_work_route": "FIXED_SCOPE",
