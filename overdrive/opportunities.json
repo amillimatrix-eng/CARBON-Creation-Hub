@@ -666,7 +666,11 @@
           "kind": "PROVIDER_ROUTE",
           "observed_at": "2026-10-19",
           "evidence": "Follow-up attempt produced no send receipt; no outbound message ID exists for the attempted touch.",
-          "next": "Existing continuity/Root Intake owner to resolve outbound route. Do not retry through another sender or channel. Keep unrelated executable commercial work moving."
+          "next": "Existing continuity/Root Intake owner to resolve outbound route. Do not retry through another sender or channel. Keep unrelated executable commercial work moving.",
+          "owner": "AMX Capability Continuity & Workflow Architect",
+          "report_to": "ROOT",
+          "remit": "Existing FORX capability-continuity/forensics remit; restore permitted outbound-action reach without altering the PRI mandate or creating a second writer.",
+          "acceptance_condition": "Authorized outbound route confirmed with an attributable send receipt, or dependency remains explicitly HOLD with this owner and next action."
         }
       }
     },
