@@ -3168,3 +3168,15 @@ Native Outlook connector profile readback is `usduplessis@outlook.com`. Search f
 Receipt: [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md).
 
 Status: **INTAKE NOT CLEARED; MATRIX-WIDE STATE NOT FULLY ALIGNED.** Current readback covers: Visym payment-run risk and mistaken duplicate outbound; Outlook/Gmail identity mismatch and failed Gmail readback due TinyFish wallet at -USD 1.051248; live Stripe settlement state; empty Close activity/needs-attention readbacks relative to Outlook outbound records; 65% owner KPI versus open 33% PR #51 conflict (comment #6267924009); current registry v1.3 versus stale v1.2 task/issue references; disabled core runtimes; and Overdrive snapshots last ticked 2026-10-16. Root/T-GOV and existing runtime owners must continue the full source-derived queue drain and authority reconciliation. Do not mark the Visym payment run included or PAID without independent evidence. No further Visym mail should be sent during the pending run absent an owner instruction or confirmed material error. Parent notification remains NOT_FOUND; no Root wake is claimed.
+
+
+---
+
+# X. P0 MATRIX LIVENESS — TASK-AUTOMATION PLAN CAPACITY
+
+**Status:** OPEN / P0 CONTINUITY REMEDIATION / INTAKE NOT CLEARED.  
+**Evidence:** `AMX/ROOT/INTAKE/CHATGPT_AUTOMATION_PLAN_CAPACITY_LIVENESS_FAULT_20261019.md`.  
+**Observed blocker:** connected automation service directly rejected six existing core-worker enable attempts with `too_many_active_automations`, `current_count=3`, `plan_limit=3`. Existing Bounty Reaper was successfully re-enabled; all attempted worker definitions remain existing IDs, not replacements.  
+**Required route:** extend existing Issue #29 provider-portability work and Issue #31 model-to-Root throughput recovery; use existing external runner capability for repository-scoped continuity and existing authorized routes for other actions. Do not let ChatGPT task-plan capacity become the sole Matrix liveness path.  
+**Authority boundary:** no new institution, worker, mandate or parallel queue; preserve mandate registry v1.3 and all role boundaries.  
+**Acceptance:** clean/replacement model and non-ChatGPT runner can recover current state, resolve an existing owner/next action, write and read back a durable receipt, and continue within authority. A prompt/branch or CI pass alone is not closure.
