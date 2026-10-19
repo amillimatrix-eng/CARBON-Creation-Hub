@@ -1365,3 +1365,77 @@ This clarification is additive to the existing AMX Public Evidence & Commercial 
 
 This rule does not change the Owner’s mission, vision, ambitions, or product plans. It governs audience-appropriate expression and internal commercial decision-making only.
 
+
+---
+
+# OWNER-DIRECTED COMMERCIAL INTENT / OFFER IDENTITY / MARKET SUCCESS LAW — 2026-10-19
+
+**Disposition:** OWNER-DIRECTED OPERATING LAW — APPLY THROUGH EXISTING ROUTES. This is an additive control under the existing Intention Algorithm, Matrix-Wide Commercial Performance / Pricing / CX / Scale Law, CARBON° Commercial Continuity and Pricing Rule, and existing iSCOPE → PRI → Banker chain. It creates no new worker, queue, CRM, ledger, authority, scheduler or payment rail. It does not modify any registered canonical mandate payload, mandate hash or registry root.
+
+## 1. Intent before outbound activity
+
+Use the existing intention method: recover the exact Owner outcome; retrieve current controlling law and prior corrections; separate observable signal from hypothesis; test fit and counter-evidence; select the smallest high-value action; execute through the existing owner; verify the receipt and downstream result; and feed actual outcomes into the existing weighted-selection path.
+
+For commercial work, **a visible business process is not automatically a pain point; a pain point is not purchase intent; a response is not authority; a pro-forma is not acceptance; acceptance is not payment; payment evidence is not settlement evidence; and none of these alone proves delivery acceptance.** Do not convert a capability description into an invented defect or imply a prospect admitted a need unless the prospect did.
+
+Select work where AMX has a demonstrable capability and the evidence suggests an actual buyer outcome: agentic/workflow architecture; bounded automation and integration; system/API implementation; reproducible testing and release evidence; evidence-backed AI/system evaluation; governed continuity/recovery; and product/listing/intent-conversion work where the customer evidence supports that fit. Present a useful paid output and its scope, not AMX's internal machinery. Use the existing FORX → iSCOPE → PRI → delivery owner → Banker sequence. Do not create a parallel sales function.
+
+## 2. Market selection — optimize for evidenced buyer propensity and AMX success
+
+Global discovery is the default; geography is a weighted selection variable, not a permanent local-only restriction. Rank target countries and buyer cohorts from current evidence for:
+- observable willingness to purchase comparable digital services online or cross-border;
+- relevant buyer signals, current need, monetization and decision authority;
+- match to AMX's evidenced services, delivery capacity and inspectable proof;
+- reachable authorized buyer/contact route and a lawful, supported payment path;
+- currency, transaction/tax burden, delivery risk, cost, time-to-cash and expected value.
+
+Initial research supports testing the **United Kingdom first** as a market-selection hypothesis: UK ONS reports that 61% of international spend was online in 2024 and 58% of international-merchant transactions were online in September 2025. OECD's 2026 release reports a 55.2% digitally traded share for the UK in 2023. Sources: https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/articles/consumercardspendingecommerceanddigitaltradeinsightsintheuk/2019to2025 and https://www.oecd.org/en/data/insights/statistical-releases/2026/07/digital-trade-accounted-for-one-quarter-of-total-trade-across-the-oecd-in-2023.html. These are macro digital-trade/consumer-payment signals, **not** proof that an individual UK business will buy AMX services; buyer-specific evidence remains mandatory. Continue weighted discovery across the United States, Ireland, Canada, Australia and other markets where service fit and current evidence warrant it. Refresh comparable pricing in the target market/currency; never use simple FX conversion as market calibration.
+
+The Owner's report that South African buyers in the tested cohort are more skeptical is a market hypothesis to account for in route/offer testing, not a universal claim about every South African buyer. South Africa remains eligible; it has a different price factor below. Neither South Africa nor any other country may be selected merely because its contacts are familiar/easy to find. Measure valid-contact → substantive reply → acceptance → paid/settled outcome by country/cohort/offer, and change only the relevant weights when a sourced result supports it. Preserve counter-evidence and diversify the candidate set. No country, sector or language is guaranteed to convert.
+
+## 3. Country-specific price factor — South Africa only
+
+For a **new South African offer**, the factor is **50% of the defensible, current comparable low-end benchmark for the exact scope**, replacing the former 67% factor for South Africa only, effective 2026-10-19. For other markets, retain the existing applicable 67% rule unless the Owner separately supersedes it. This does not override current scope, cost, delivery-risk, tax, provider-cost or margin validation; do not invent a benchmark where no comparable exists. If the factor produces an implausible delivery/margin result, scope a narrower valuable output or hold for a reviewed quote—never silently degrade quality.
+
+Record the benchmark source/URL, date, geography/currency, comparison scope and tax treatment with every new priced offer. The 50% factor is a price-setting rule, not a claim of market conversion, nor authority to change an already-issued proposal in place.
+
+## 4. Immutable offer / pro-forma / acceptance identity
+
+Use the existing customer proposal/quote and commercial-ledger substrates; do not create another ledger or writer. The existing `proposal_ref` (or its established equivalent) is the immutable primary Offer ID. Every new external offer must have one unique reference and explicit version, for example `AMX-OFR-YYYYMMDD-NNNN-V1`, tied to the existing opportunity key, customer/domain, originating signal/source, send/thread receipt, market/currency, benchmark/source date, price factor/rule version, exact scope, inclusions/exclusions, inputs/access, acceptance criteria, dependencies, IP/usage terms, validity, payment terms and next action. The format is a reference convention, not a claim that a customer-visible artifact exists until the artifact/send receipt has been verified. Where the existing proposal system requires `proposal_ref`, bind this reference there; do not build a separate ID service.
+
+Every new outgoing proposition must link to a customer-readable **pro-forma quote/order proposal** carrying the same reference/version and defined terms. An offer lacking a valid reference, versioned scope and supported payment path is not ready to send. The customer may request a demonstration or accept only a particular scope/version; bind the request/acceptance to that Offer ID instead of creating a duplicate opportunity or competing price record. If a new scope or price is later authorized, issue a new version/reference explicitly linked as a successor; retain the prior version and never rewrite its history.
+
+The seller-issued Offer ID/pro-forma reference is not the buyer's PO number. Capture a customer's own PO number only when the customer supplies it, then link it to the Offer ID, accepted version, contract/order and invoice. Never invent or imply customer issuance of a PO.
+
+A buyer's acceptance must resolve to the exact referenced offer version and stated acceptance mechanism. On valid acceptance, lock its accepted scope, price, currency, terms, validity/acceptance timestamp and source evidence as the governing commercial record, subject to the stated terms and applicable law. Do not silently change accepted terms; do not issue a second number for the same service merely to reset the price. A customer change or demo request is not acceptance unless the documented acceptance action says so. Customer acceptance, contract, pro-forma, invoice, payment, verified settlement, delivery and customer acceptance of delivery remain distinct states.
+
+## 5. Invoice and payment truth
+
+Before payment, use a clearly labelled pro-forma/quote/order proposal; do not mislabel it as a final invoice or tax invoice. After independently verified payment, convert the linked transaction through the existing authorized accounting process to the final invoice/tax-invoice and receipt state as applicable; do not mark paid from an email send, payment link, click, customer promise or open checkout session. Apply local tax and invoicing law where it requires an invoice/tax invoice earlier than the preferred prepaid workflow. In South Africa, SARS guidance states a tax invoice is generally due within 21 days from the time of supply and gives required invoice contents; VAT registration and time-of-supply state must be verified rather than assumed. Source: https://www.sars.gov.za/businesses-and-employers/government/tax-invoices/. Prices quoted by a VAT vendor must meet SARS VAT-price-disclosure requirements. If the relevant tax/accounting state is UNKNOWN, preserve it as UNKNOWN and route to Banker/the authorized accounting owner; never fabricate a VAT number, tax amount, invoice, or settlement.
+
+## 6. Existing South African offers — no mass reissue; preserve the customer's benefit
+
+Do not bulk-edit, resend, retract or reissue already-sent South African offers just because the factor changed. Their sent contents, exact original quote, price, validity and receipt remain historical evidence. Do not email a customer a “correction” unless the customer re-engages and an authorized response is due.
+
+When a customer returns to accept a still-valid prior South African offer issued at 67%, the existing record must identify the original reference/version and compare like-for-like scope using the same defensible benchmark and tax treatment under the current 50% factor. Do not silently rewrite the original offer or create a competing offer. Offer the customer an explicitly linked favourable adjustment:
+- if unpaid, present the option to apply the current lower amount due **or** preserve the original amount and provide equivalent approved account credit/upgrade value, according to the customer's choice and the applicable terms;
+- if already paid, preserve the original invoice; where accounting/tax rules permit, issue a linked credit note/account credit or provide the agreed scope-defined upgrade. No cash reimbursement is automatic; follow the customer's stated choice and authorized finance/legal controls.
+
+The candidate benefit is the difference between the original and current compliant price for the same scope, currency, comparable benchmark and tax basis. Do not assign a credit to an unaccepted offer or record it as issued until the customer's selection and required approval are evidenced. A credit/upgrade must retain a source Offer ID, amount/value, reason (South Africa factor supersession), date, expiration/usage rules and independent readback. For example, if an identical scope was offered at 67% of a verified R14,000 comparator (R9,380), its 50% recalculation is R7,000 and the potential difference is R2,380; use the example only if the benchmark/scope/tax basis remains valid. Never bulk message customers about the rule or make the customer redo the purchase to obtain the benefit.
+
+Expired quotes remain governed by the existing expiry/refresh law; do not silently revive an expired offer. If re-engaged, link a reviewed refresh to the original reference, preserving old history. No prior offer is retroactively represented as having included a pro-forma document or customer-visible Offer ID if the actual sent artifact did not.
+
+## 7. Evidence and acceptance — same route, no duplicate machinery
+
+PRI records the exact outgoing pro-forma/offer reference and sent receipt; iSCOPE supplies current buyer/authority/fit evidence before handoff; existing delivery owner validates feasibility and scope; Banker verifies pricing/cost/margin, invoice/tax boundaries and realized settlement; existing Librarian/ROOT routes contradictions and receipt gaps. The existing learning path must update only the relevant country/cohort/service/offer hypothesis from attributable outcomes, then read back a demonstrably changed next selection. Prompt presence, a sent offer or this document alone does not prove runtime adoption or algorithmic learning.
+
+**Acceptance checks:** unique Offer ID/version for every new external offer; no external send without a verified customer-readable pro-forma and reachable payment path; acceptance locks one exact version; no duplicate competing offer for the same purchase intent; legacy SA offers are not mass-reissued; a valid legacy-offer acceptance triggers the linked price comparison and customer-chosen credit/upgrade path; invoice/payment/settlement states remain distinct; old sent offers and no-contact controls are preserved; current registry root and all registered mandate payloads remain unchanged. Full open-transcript coverage and universal runtime behavior remain PARTIAL/OPEN until inaccessible sessions and per-runtime behavioral receipts are recovered.
+
+**Directive 23**
+- **Expected outcome:** fewer price/offer collisions; a stable customer-accepted commercial truth; customer-favourable SA price supersession without mass outreach; higher expected paid conversion by evidence-selected market and buyer fit.
+- **Owner:** existing FORX for discovery/source freshness; iSCOPE for buyer/problem/authority qualification; PRI as sole outgoing offer writer; Banker for pricing/invoice/settlement truth; existing delivery owner for feasibility/acceptance; MASTER/LIBRARIAN and ROOT/T-GOV for continuity and disposition.
+- **Dependencies:** the existing `proposal_ref`/proposal registry and commercial ledger; valid benchmark/tax basis; customer-readable pro-forma template; supported buyer payment route; acceptance and invoice readback.
+- **Readback:** fetch the updated Blue State and verify its new section; confirm registry version/root unchanged; preserve this same flight ID/segment in the existing append-only Dynamic Flight Path Register.
+- **Safety/preservation:** no mass reissue; no email to any of the four recipients already contacted in this run; no invented PO, tax invoice, customer intent, credit or payment; no new worker/ledger/scheduler/payment rail; no change inside registered mandate payload markers.
+- **Disposition:** Owner-directed additive Blue State rule, effective for future applicable actions; per-runtime behavior acceptance remains pending until verified.
+- **Remaining work:** propagate references through existing quote/offer producer and commercial ledger, test issuance/acceptance/legacy-benefit/invoice gating, run source-specific market selection, and verify runtime uptake through real readbacks.
