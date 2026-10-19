@@ -605,7 +605,7 @@
         "observed_at": "2026-10-15T13:16:37Z"
       },
       "domain": "accurategroup.co.za",
-      "due_at": "2026-10-19T08:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OUTBOUND_SEND",
@@ -614,11 +614,18 @@
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXgwAAAA==",
           "subject": "A fixed-fee sourcing test for one technology or AI vacancy",
           "summary": "Sent from usduplessis@outlook.com; fixed US$99 single-role pilot; no retainer; source links, fit rationale and pre-screen notes within 24 hours after receipt of brief and must-have criteria."
+        },
+        {
+          "kind": "OUTBOUND_SEND_BLOCKED",
+          "observed_at": "2026-10-19T14:27:46.705Z",
+          "source": "OUTLOOK_TOOL",
+          "summary": "One overdue follow-up was attempted for the existing US$99 single-role technology/AI sourcing pilot. The send action was blocked by OpenAI safety checks before send; no external message was sent and no buyer lifecycle state changed. Official site rechecked on 2026-10-19 and still lists contact@accurategroup.co.za.",
+          "url": "https://www.accurategroup.co.za/"
         }
       ],
       "execution_owner": "PRI",
-      "last_action_at": "2026-10-15T13:16:37Z",
-      "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "last_action_at": "2026-10-19T14:27:46.705Z",
+      "next_action": "OPEN OBLIGATION — route outbound send gate to existing Root Intake/continuity owner; preserve OFFERED state. Do not resend through another sender/channel. Continue other executable commercial items meanwhile; resume on a permitted route or substantive buyer response.",
       "opportunity": "US$99 one-role technology and AI sourcing pilot",
       "organization": "Accurate Group",
       "recipient": "contact@accurategroup.co.za",
@@ -636,8 +643,17 @@
       "proof_of_work_route": "FIXED_SCOPE",
       "current_route_status": "OFFICIAL_CONTACT_ROUTE_VERIFIED",
       "current_route_confidence": "HIGH",
-      "execution_readiness": "WAITING",
-      "last_reconciled_at": "2026-10-15T13:27:41.769Z"
+      "execution_readiness": "HOLD_OUTBOUND_SEND_GATE",
+      "last_reconciled_at": "2026-10-15T13:27:41.769Z",
+      "active_dependencies": {
+        "outbound_email_send_gate": {
+          "state": "ACTIVE",
+          "kind": "PROVIDER_ROUTE",
+          "observed_at": "2026-10-19T14:27:46.705Z",
+          "evidence": "Outlook send action blocked by OpenAI safety checks before sending; no send receipt exists.",
+          "next": "Route the exact outbound-action gate through existing Root Intake/continuity ownership. Do not retry the same blocked send or change sender/channel to bypass the gate. Keep the opportunity OFFERED and resume only if the route becomes permitted or the buyer responds."
+        }
+      }
     },
     "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
       "domain": "addictivedramas.com",
