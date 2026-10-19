@@ -96,3 +96,36 @@ The current canonical `AMX/ROOT/INTAKE/INTAKE_INDEX.md` was appended at commit `
 The ten overdue WAITING claims were grouped according to their existing next_action text; no state transitions were fabricated. The Outlook connector searches for Inkwave, Redrama, OpenTrain and CallForce returned no matches in `usduplessis@outlook.com`. The Gmail source thread remains unobserved through this connector, so absence of these matches is not treated as evidence that no Gmail update exists.
 
 **Status remains INTAKE NOT CLEARED.** Current claim/ledger reconciliation is persisted, but no new Overdrive tick, accepted external action, full queue drain, or Root disposition is evidenced.
+
+
+## CURRENT-WAKE MATRIX-WIDE RECONCILIATION ADDENDUM — 2026-10-19
+
+**Truth boundary:** this is a broader fresh source inspection; it is still not a full Matrix drain. It preserves both current observations and the remaining gaps. Nothing in this addendum should be read as proof that disabled routines have run or that payment arrived.
+
+### Payout / migration — protect Visym's 2026-10-20 run
+- Owner reports Visym requested bank payment and the banking details were sent in the original Gmail thread before the 2026-10-18 cutoff. Do not ask Owner to resend details. This remains OWNER-REPORTED because the current native Outlook connection is `usduplessis@outlook.com`, not `amillimatrix@gmail.com`, and Gmail inspection could not start with TinyFish wallet at -USD 1.051248.
+- A Visym email dated 2026-10-17 inside a forwarded Outlook item confirms the direct-bank-payment option exists. It does not prove that the details reply was received or that it qualified for the payout run.
+- **Mistaken duplicate outbound:** on 2026-10-19T12:53:47Z native Outlook sent `GeoSonics payout method and secure bank-detail submission` from `usduplessis@outlook.com` to `collector@visym.com`; body asks for the secure submission procedure and includes no bank details. This may duplicate Owner's completed Gmail reply. It is verified in Sent. Do not send any additional Visym email or alter the arrangement during the pending run unless Owner directs it or a material issue is evidenced.
+- No inbound Visym message is present in the connected Outlook search results. Inclusion in the Tuesday 2026-10-20 run and actual payout are UNKNOWN. Wait for real payment / bank-credit evidence before marking paid.
+
+### Revenue / settlement — live account readback, 2026-10-19
+- Stripe account `AMILLIMATRIX`, live mode, context `acct_1UE0UBHyzt7gyqmn`.
+- 51 Checkout Sessions: 1 OPEN/UNPAID and 50 EXPIRED. The current open session is a live ZAR 7,963 checkout for `corporate_presence_launch` / `JGMI by Carbon`, not an established customer payment.
+- PaymentIntents=0; Charges=0; Payouts=0; Balance Transactions=0; Invoices=0; available USD balance=0; pending USD balance=0.
+- These are verified Stripe-only facts. They do not describe Visym's separate payout rail and must not be conflated with the Owner's personal collector income.
+- Close CRM activity search for communications from 2026-10-16 through 2026-10-20 returned 0 activities; active opportunities marked needing attention returned 0. Those values do not reconcile with native Outlook, which contains sent commercial contacts and Visym correspondence. Therefore Close activity counts are not a trustworthy cross-channel contact metric until the mailbox/CRM continuity is repaired.
+
+### Commercial state / policy drift
+- Current controlling Owner KPI remains **65% money-in performance weighting**, as recorded in Issue #34; this is a performance weighting, not 65% wall-clock time or blanket sales quota.
+- Open PR #51 is still labelled 33%, says it closes Issue #34, and was updated on 2026-10-19. This is a direct policy contradiction. A governance comment was added to PR #51 as comment `6267924009`: do not merge/close #34 as-is; reconcile to 65% under Root authority. No code merge or production mutation was made.
+- Current Blue State mandate registry is v1.3 / effective 2026-10-16, root SHA-256 `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`. Some existing task prompts and Issue #4 still carry stale v1.2 / older root references. Preserve history; require Root/T-GOV and mandate owners to reconcile before material worker actions.
+- Other material open obligations remain: #31 Root truth/runtime throughput; #32 permanent Commercial Manager and Reaper final-mile; #40 reconcile commercial source/unsent prospects/Stripe truth; #18 Search→Marketplace→Media convergence; #21 Evidence House live proof; #37 FORX continuity/index repair; #47 offer-link recovery; #3 PRI and #4 iSCOPE continuous mandates. Open does not imply currently executing, and CI success alone does not prove deployment, buyer visibility or conversion.
+
+### Runtime liveness / full Matrix
+- Automation inventory: 25 tasks; only `Check DAOPEOPLE Reply` enabled. Core `Bounty Reaper`, `FIRST BREATH — FORX Continuous Play Sweep`, `FIRST BREATH — IDEAL SALES TEAM`, `FIRST BREATH — LIBRARIANS`, `AMX Banker Cash Watch`, and `AMX Operational Inbox Watch` remain disabled, with last runs dated 2026-10-08 through 2026-10-16 and no next-run time.
+- Available automation editor does not support hourly schedules; no disabled job was blindly re-enabled and no replacement cadence was represented as equivalent.
+- Overdrive current-main files remain 2026-10-16 snapshots: opportunities map/count 108; claims 108 (102 WAITING, 6 CLOSED), ready=0, external-ready=0, executable_order empty; ten past-due WAITING claims; state sequence 23 / last tick 2026-10-16T08:40:31.786740Z. No fresh tick was observed. Overdue is not permission to close or execute held items.
+- GitHub readback covered the 50 most-recent accessible issues/PRs and the named live obligations; it is a connected-repository census, not the authoritative multi-surface Matrix queue.
+- Parent-root notification returned `NOT_FOUND` before dispatch. This addendum was written to this existing receipt, the canonical Intake Index, the existing Notion Root Intake, and Issue #31. No Root acknowledgement has been observed.
+
+**Disposition: INTAKE NOT CLEARED; MATRIX-WIDE STATE NOT FULLY ALIGNED.** This wake corrected a policy contradiction's routing and added current source evidence. It did not restore the hourly runtime, prove Gmail readability, close all source-derived queue items, prove Visym payout-run inclusion, or verify payment.
