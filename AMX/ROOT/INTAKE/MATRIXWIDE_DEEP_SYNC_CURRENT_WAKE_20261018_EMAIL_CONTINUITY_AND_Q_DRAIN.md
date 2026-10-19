@@ -355,3 +355,11 @@ The current `overdrive/opportunities.json` source (blob `a3170aa88ad423315afaa07
 
 **Disposition:** outbound messages = VERIFIED SENT / WAITING; customer response in connected Outlook scope = NOT FOUND; customer-visible Offer ID/pro-forma = NOT EVIDENCED; legacy benefit = NOT EARNED/ISSUED; chronology/pricing application = REVIEW REQUIRED; ledger/claims sync = OPEN / REMEDIATE; full queue and flight = **OPEN / INTAKE NOT CLEARED**.
 
+## CLERICAL CORRECTION — ALPHA PEST CONTROLS SENT-ITEM SOURCE ID — 2026-10-19T17:49:07Z
+
+Append-only provenance correction to the Segment 12 JSONL checkpoint recorded at `2026-10-19T17:48:35Z`: the copied Alpha Pest Controls Outlook item ID in that checkpoint contains one mistyped character. The correct ID from the canonical opportunity record's `canonical_ingest.evidence_source_ids[0]` / `commercial_offer.source_id`, consistent with the connected Outlook search result, is:
+
+`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuAAAAA==`
+
+The earlier checkpoint remains unchanged as history; the correction event was appended separately in `AMX/ROOT/INTAKE/DYNAMIC_FLIGHT_PATH_REGISTER.jsonl` at event `AMX-FLT-20261012-DSYNC-145440-9fb44f0c:CORRECTION:SEGMENT-12:ALPHA-SENT-ITEM-ID-20261019T174907Z`, commit `315d960f8c9e95a262f37dc9db4ec3d69c07b31f`, blob `0c5bfe92c0c136ec31970ddf46980679ddd782f7`. No send facts, offer terms, queue state, or lifecycle disposition changed. This is provenance hygiene only.
+
