@@ -296,3 +296,33 @@ This newer readback supersedes earlier task-liveness statements where timestamps
 
 **Flight state:** `IN_FLIGHT` — this continuation records a narrow persistence/readback pass, not whole-matrix acceptance. Do not land Segment 12 until the remaining authorized checks are completed and read back. The full queue remains **OPEN / INTAKE NOT CLEARED**. Preserve prior flight events and historical Segment 11 failure; do not rewrite earlier status text.
 
+## CURRENT-WAKE — LEDGER/CLAIMS MISMATCH AND OFFER-VERSION IMPLEMENTATION GAP — 2026-10-19T17:40:36Z
+
+**Lifecycle:** EVIDENCE / ROUTING ONLY. This read reconciles current canonical execution surfaces; it does not authorize a state mutation to the generated claims/signal snapshots.
+
+### Current source reconciliation
+- `overdrive/opportunities.json`: blob `a3170aa88ad423315afaa07fb0620581be7f621f`; `record_count=111` and actual `records` keys = 111; `last_reconciled_at=2026-10-16T08:39:11Z`, `last_run.run_at=2026-10-03T17:42:00Z`, `updated_at=2026-10-19`.
+- `overdrive/claims.json`: blob `88b15824b892e38301829a95ee1ecf75e1221341`; 108 claims, generated `2026-10-16T08:40:31.783771Z`.
+- `overdrive/signals.json`: blob `5c69ea0be2aa4d0ee000310dbb6d5c7a474d7ef2`; generated `2026-10-16T08:40:31.781595Z`.
+- `overdrive/state.json`: blob `d117c948e0046b7d2fcacb0e2cbae6762335ac22`; sequence 23, last tick `2026-10-16T08:40:31.786740Z`, processed list empty. Therefore the ledger/claims mismatch is a live current-source integrity gap, not evidence of a fresh worker tick.
+- Exact three ledger records absent from claims (and not a duplicate of a claims key):
+  - `goelelectrical.co.za|quote-to-job-control-loop|2026-10-19` — PRI / OFFERED; next action WAIT.
+  - `alphapestcontrols.co.za|site-report-follow-through-loop|2026-10-19` — PRI / OFFERED; next action WAIT.
+  - `sunlogic.co.za|site-visit-to-install-handoff|2026-10-19` — PRI / OFFERED; next action WAIT.
+- The 108 existing claims map to 108 existing ledger keys; no current claim lacks a matching ledger record in this bounded comparison. Do **not** manually edit generated `claims.json` or `signals.json`, fabricate a tick, or promote timestamp metadata into proof of execution. The existing runner/control owner must reconcile the three ledger additions through its normal validated generation path.
+- All 111 records currently have no top-level `proposal_ref` / `offer_ref`, offer-version field or `commercial_acceptance` field in the sampled schema scan. This is a field-presence finding, not proof that no private proposal artifact exists.
+- Existing offer implementation surfaces reviewed:
+  - `backend/app.py` blob `61d8a19a08f9d20079eac2e6283e3460b1ad227b`: `proposal_projection()` public-field allowlist includes `proposal_ref` but not an explicit offer version/successor reference; the private `AMX_PROPOSAL_REGISTRY_PATH` is external to repository runtime and was not read in this pass. `request-change` receipts bind to `proposal_ref` but are explicitly non-binding.
+  - `overdrive/runner.py` blob `d71c75550c72daa80cc585c8fc93ee0a4ee0fcb9`: the `ACCEPTED` transition requires `accepted_scope` and `accepted_price`, with optional currency, but no required accepted offer-version/reference is visible in the inspected gate.
+  - `tests/test_customer_portal.py` blob `9473d6edc517d7c980e44f1ba6a9c8f8bcdf2310` tests draft validity and non-binding change requests, but the inspected test file has no offer-version-binding or acceptance/invoice gate test.
+- **Ownership:** these are implementation changes for the existing T-COD/code owner plus the existing OVERDRIVE runtime owner; ROOT/T-GOV controls cross-owner disposition. Librarian records and routes the finding but does not silently become a fourth builder. Use the existing proposal registry, `proposal_ref`, `overdrive/opportunities.json`, `claims.json`, and `runner.py`; do not create another ID service, ledger, claim writer or queue.
+- **Contact boundary:** the three new PRI records are explicitly WAIT states. No outbound communication, duplicate follow-up, quote, offer, or other buyer action was executed.
+
+### Required existing-owner acceptance
+1. Reconcile all 111 ledger records against a fresh, normally generated claims/signal snapshot; prove the three missing claim keys are incorporated or explicitly held with reason, then fetch back ledger, claims, signal and state with matching version/sequence evidence.
+2. Have the existing implementation owner bind every new proposal to immutable Offer ID/version (using the current proposal reference substrate), preserve buyer-supplied PO number as a separate field, and bind any accepted state to the exact accepted reference/version, scope, price and currency.
+3. Add regression tests for proposal projection metadata, non-binding change request, accepted-version mismatch rejection, invoice/payment-state separation, and no mutation of legacy offers; run existing mandatory CI and read back results before implementation PASS.
+4. Preserve the prior 67% SA offers; do not mass-reissue or send mail. Apply the SA-only 50% rule only to future applicable offers and legacy offers on evidenced customer re-engagement, with customer choice and authorized accounting/tax handling.
+
+**Disposition:** ledger/claims synchronization = **OPEN / REMEDIATE**; offer-version implementation acceptance = **OPEN / ROUTE TO T-COD + OVERDRIVE OWNER**. No claims/signal snapshot, worker, schedule, registry or mandate was changed in this reconciliation. Whole-Matrix DQ remains **OPEN / INTAKE NOT CLEARED**.
+
