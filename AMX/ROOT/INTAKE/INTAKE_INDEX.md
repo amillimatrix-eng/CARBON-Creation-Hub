@@ -3275,3 +3275,16 @@ Detailed receipt appended to [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_C
 Existing PRI opportunity `naomii.app|technology-sourcing-overflow-pilot|2026-10-15`: after due-time, reply and delivery-failure recheck, one bounded follow-up was sent through the existing Outlook thread at `2026-10-19T14:26:38Z`. The canonical `overdrive/opportunities.json` record now includes the attributable send receipt and has been fetched back (108 records preserved; blob `bc972d3552c295c118718854d33af64283b5fa6d`). The state remains OFFERED / not accepted, and the next action is WAIT for a substantive buyer reply. No work, contract, receivable or money-in is claimed.
 
 This is one authorized PRI outbound action, not a fresh Overdrive tick. Claims/state refresh remains open. Existing flight `AMX-FLT-20261012-DSYNC-145440-9fb44f0c` is still at Segment 11 LANDING / LANDED_PARTIAL / FAIL on 2026-10-14; ROOT must reconcile older Segment 12 references before registering a new segment. Full Q drain remains OPEN / NOT CLEARED.
+
+
+## CURRENT-WAKE — JGMI MAILBOX ATTRIBUTION CLOSEOUT — 2026-10-19
+
+**Lifecycle:** EVIDENCE / ROUTING ONLY. No payment or receivable is established.
+
+- Live Stripe read confirms the current `JGMI by Carbon — Corporate Presence & Launch` session remains OPEN/UNPAID for ZAR 7,963, expiring 2026-10-19 17:10 SAST; no customer, email, client reference, PaymentIntent, invoice, or source attribution is present.
+- The associated existing Payment Link is active and uses a hosted confirmation message; that is reusable offer infrastructure, not buyer identity or acceptance.
+- Read-only Outlook searches for `JGMI`, `corporate presence`, and `7963` returned zero matching messages. The 108-record opportunity ledger also has no matched JGMI/corporate-presence opportunity. No buyer has been contacted, and the link/session has not been mutated.
+- **Disposition:** keep the reusable Payment Link unchanged; allow the unidentified open session to expire unless authoritative existing-source attribution is found before cutoff. Do not guess a buyer, replace the checkout, or credit revenue.
+- Evidence/readback: [Root Issue #31 checkout attribution](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6269632138) and [mailbox/payment-link closeout](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6269761077); [existing Root Intake page](https://app.notion.com/p/3fd8f8b56cd7811aa576ee011647cc2e?pvs=204).
+
+**Disposition remains:** OPEN / INTAKE NOT CLEARED; Banker settlement truth unchanged.
