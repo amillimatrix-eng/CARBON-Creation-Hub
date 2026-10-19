@@ -122,3 +122,32 @@ These differences are not automatic refunds, credits, new invoices or proof that
 Every future outbound quote must use the existing `proposal_ref` / Offer ID and exact version, be linked to the existing commercial opportunity and sent-message receipt, and be represented in the existing customer-readable pro-forma/quote surface before dispatch. The customer's own PO number is captured only if issued by the customer. Pro-forma, acceptance, payment, final invoice/tax invoice, verified settlement and delivery acceptance are separate states; apply the authorized accounting/legal invoice timing rather than mislabelling a pro-forma as an invoice.
 
 **Disposition:** Owner-directed pricing supersession recorded. Old quote tables and offers remain preserved; current South African factor applies prospectively and through customer-chosen legacy adjustment on re-engagement. No outreach or offer resend performed in this update.
+
+## Additive control — South African price supersession and immutable offer lifecycle (effective 2026-10-19)
+
+**Lifecycle:** Additive execution control linked to current Blue State law; the earlier research and proposed entry anchors remain preserved. This file remains **research recommendations, not by itself a live catalogue or accepted tariff**.
+
+### Controlling price rule
+- For a **new South African offer**, calculate 50% of a defensible, current, comparable **low-end benchmark for the exact scope**, replacing the previous 67% factor for South Africa only, effective 2026-10-19.
+- For other markets, retain the existing applicable 67% rule unless the Owner separately supersedes it.
+- Record the benchmark source/URL, checked date, geography, currency, exact comparison scope, tax treatment, price-factor version, and cost/margin validation with the offer. Do not invent a comparator, assume VAT status, or apply an arbitrary FX conversion as local market calibration.
+- The entry anchors earlier in this research remain **proposed recommendations** until the existing CARBON° and Banker/commercial approval gates are satisfied. They must not be represented as automatically re-priced by this addendum or as a live tariff solely because this control is recorded.
+
+### Offer identity and acceptance
+- Reuse the existing opportunity, proposal and ledger substrates. The existing `proposal_ref` (or its established equivalent) is the immutable primary Offer ID. Every new offer uses one unique reference and explicit version linked to buyer/opportunity, market/currency, benchmark, price-rule version, exact scope, exclusions, dependencies, acceptance criteria, validity, payment terms, and source/send receipt.
+- Link the customer-readable pro-forma quote/order proposal to that same offer reference/version. The seller-issued Offer ID/pro-forma reference is not the buyer's PO number. Capture a buyer's PO number only when the buyer supplies it.
+- Acceptance must bind to the exact offer version and documented acceptance mechanism. A later approved scope or price change creates an explicitly linked successor version; never rewrite historical sent terms or issue a competing number to reset price.
+- Keep quote/pro-forma, buyer acceptance, contract/order, invoice/tax invoice, payment, verified settlement, delivery and delivery acceptance as separate states. Do not mark revenue paid from an email, link, click, promise or open checkout session. Apply the existing accounting/tax-owner gate to invoice timing and local requirements.
+
+### Existing South African offers — preserve customer benefit
+- Do not bulk-edit, retract, resend or mass-reissue offers already sent at 67%. Preserve their exact sent version, terms, validity and receipt.
+- If a customer returns to accept a still-valid older South African offer, compare like-for-like scope against the same defensible benchmark and tax basis under the current 50% rule. Do not silently rewrite the original.
+- For an unpaid offer, present the customer the compliant lower amount due **or** the original amount with equivalent approved account-credit/upgrade value, subject to customer choice and applicable terms. For a paid offer, preserve the original invoice and use a linked credit note/account credit or scope-defined upgrade only where the authorized accounting/tax rules permit. No automatic cash refund is implied.
+- Do not record a credit/upgrade as granted until the customer's choice and required approval are evidenced. Keep its source Offer ID, value, reason, date and any expiry/usage conditions traceable.
+
+**Owner and routing:** Existing FORX supplies sourced discovery; iSCOPE qualifies; PRI is the sole outgoing-offer writer; the existing delivery owner validates scope/feasibility; Banker owns pricing/cost/tax/invoice/settlement truth; MASTER/LIBRARIAN and ROOT/T-GOV own evidence continuity and disposition. Do not create another catalogue, ledger, writer, scheduler or workflow.
+
+**Acceptance:** current Blue State is read back with the corresponding controls; the registry root and registered mandate payloads remain unchanged; existing proposal/ledger integration and runtime behavioral acceptance remain open until their actual write/readback tests pass.
+
+**Governing reference:** [BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md](../BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md), sections “Country-specific price factor — South Africa only,” “Immutable offer / pro-forma / acceptance identity,” and “Existing South African offers — no mass reissue; preserve the customer's benefit.”
+
