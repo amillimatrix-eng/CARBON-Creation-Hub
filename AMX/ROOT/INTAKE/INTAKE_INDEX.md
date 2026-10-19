@@ -3336,3 +3336,17 @@ Latest receipt: [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND
 - Current flight: `AMX-FLT-20261012-DSYNC-145440-9fb44f0c`, Segment 12, IN_FLIGHT.
 
 **Next:** ROOT/FORX-V/T-COD resolve prompt adoption and behavioral acceptance; Reaper continues lawful queue drain / parcel advancement; restore canonical Tracker access.
+
+## CURRENT-WAKE APPEND — LEDGER/CLAIMS GAP / OFFER VERSION GATE — 2026-10-19T17:41:16Z
+
+**Lifecycle:** EVIDENCE / ROUTING ONLY. Current source reconciliation; no generated state or authority mutated.
+
+- **Opportunity ledger:** `overdrive/opportunities.json`, blob `a3170aa88ad423315afaa07fb0620581be7f621f` — 111 records and 111 actual keys, `updated_at=2026-10-19`; last recorded runner run is still `2026-10-03T17:42:00Z`.
+- **Claims/signal/state:** claims blob `88b15824b892e38301829a95ee1ecf75e1221341` has 108 claims (generated 2026-10-16); signals blob `5c69ea0be2aa4d0ee000310dbb6d5c7a474d7ef2` also generated 2026-10-16; state blob `d117c948e0046b7d2fcacb0e2cbae6762335ac22` remains sequence 23 with last tick `2026-10-16T08:40:31.786740Z`. This disproves current full-ledger/claims alignment. Do not edit generated claims/signals manually or fabricate a tick.
+- **Exact missing claim keys:** `goelelectrical.co.za|quote-to-job-control-loop|2026-10-19`, `alphapestcontrols.co.za|site-report-follow-through-loop|2026-10-19`, and `sunlogic.co.za|site-visit-to-install-handoff|2026-10-19`. All are PRI / OFFERED / WAIT; no additional buyer contact is authorized or was sent.
+- **Offer-version control gap:** bounded scan found no top-level `proposal_ref`, `offer_ref`, offer-version or `commercial_acceptance` fields across the 111 ledger record schema. Existing `backend/app.py` (blob `61d8a19a08f9d20079eac2e6283e3460b1ad227b`) allowlists `proposal_ref` but no explicit version/successor identity in the customer projection; existing `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc93ee0a4ee0fcb9`) requires accepted scope/price but no required accepted offer version was found in the inspected gate; `tests/test_customer_portal.py` blob `9473d6edc517d7c980e44f1ba6a9c8f8bcdf2310` has no inspected test for offer-version binding/acceptance/invoice gating.
+- **Owner route:** T-COD / existing OVERDRIVE runtime owner for implementation and normal regenerated claims; ROOT/T-GOV for disposition. Existing proposal registry, ledger, claims and runner must be reused; no new writer, queue, or ledger. Private `AMX_PROPOSAL_REGISTRY_PATH` was not accessible in this pass, so existence/content of actual runtime proposal entries remains unverified.
+- **Canonical authority:** registry v1.3 root remains `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`; no registered mandate payload changed. Current-wake same-run addendum: [receipt](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md) commit `f01efda6d9f7896ce28b51d849965d065041afd2`, blob `3930ab94adf787c70a535943e87f5f2caa12a81c`.
+
+**Disposition:** claims generation/runtime reconciliation = **OPEN / REMEDIATE**; offer-version implementation/tests = **OPEN / ROUTE TO T-COD + OVERDRIVE OWNER**. Existing Segment 12 and whole Root Intake remain open; this does not authorize a landing or global Q-drain completion.
+
