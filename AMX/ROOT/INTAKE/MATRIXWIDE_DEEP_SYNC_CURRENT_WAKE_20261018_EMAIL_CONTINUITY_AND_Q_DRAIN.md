@@ -142,3 +142,37 @@ A first prompt for branch `root/matrix-recovery-drain-q-20261019` was created an
 Root Intake and the authoritative index now record the task-plan cap as a P0 liveness/portability issue. This does not prove the historical reason workers were disabled. It proves the current task layer cannot run every worker simultaneously under the current plan. Resolve through existing Issue #29 portability and Issue #31 model-to-Root throughput work plus existing external execution surfaces; do not create a parallel governance layer.
 
 **No whole-Matrix wake, full Q drain, provider-independent acceptance, Visym payout-run inclusion, or new money-in is claimed.** Intake remains NOT CLEARED; payment state remains unproven pending actual bank/settlement evidence.
+
+
+## CURRENT-WAKE ADDENDUM — RUNTIME DISCOVERY + VISYM RESPONSE — 2026-10-19
+
+**Linked branch execution receipt:** `root/matrix-recovery-drain-q-20261019` / `AMX/ROOT/BRANCH_START/MATRIX_RECOVERY_RUNTIME_WAKE_RECEIPT_20261019.md` (commit `75679940a9cdb5c968ba93dd88f6d18dadede417`).
+
+### Runtime locations / current truth
+- Canonical mandate registry read: v1.3, effective 2026-10-16, root SHA-256 `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`.
+- Owner reports manually activating T-MED, T-COD and T-GOV; receipts not correlated to this task-automation inventory yet.
+- Current enabled task-layer set: `Bounty Reaper`, `Check Visym payout`, `FIRST BREATH — IDEAL SALES TEAM` (three-task limit).
+- `Check DAOPEOPLE Reply` was disabled to free a scarce slot; DAOPEOPLE remains non-blocking, not deleted.
+- FORX and Operational Inbox Watch each accepted a one-off run request via temporary slot rotation, then were returned disabled. Their runtime output/updated last-run receipts are not yet visible, so execution remains UNKNOWN.
+- Master/Librarian automation and Banker Cash Watch are listed historically but enabling returned `This task is no longer available.` Do not infer their mandates are retired; route exact runtime capability gaps to Root and recover an existing authorized executor.
+- The Commissioning Inspector remains `DORMANT_CAPACITY_MERGED`; it was not reactivated.
+- Continuity appears as an existing control/validation family under `CONTINUITY/`, not as a standalone scheduled worker in the current task inventory. “Master” is the registered `MASTER-LIBRARIAN` mandate; the former task-layer name was `FIRST BREATH — LIBRARIANS`.
+
+### New Visym response — direct Outlook readback
+At `2026-10-19T13:21:09Z`, `collector@visym.com` replied to the sent `GeoSonics payout method and secure bank-detail submission` thread. They confirm ZAR bank payment through Wise and instruct setting the Collector app's payment provider to Wise and payment email to `amillimatrix@gmail.com`; they ask for full bank-account name, date of birth, account number, bank name and SWIFT/BIC.
+
+Owner previously reported that banking details were sent in the original Gmail thread before the cutoff. The exact source Gmail thread is still not available through the connected native Outlook mailbox, which is `usduplessis@outlook.com`. No Gmail connector was exposed; Opera Browser Connector returned `Browser not connected`; TinyFish balance readback is `-1.051248 USD` with no automatic reload. No top-up was made and no sensitive details were sent.
+
+**Required handling:** this message proves Wise route instructions were received; it does not prove the Visym payout run included the work or that any payment occurred. Do not ask Owner to resend details or send duplicate personal/bank data without reconciling the original thread. Owner or an authorized signed-in Collector runtime must confirm/update the Wise payout setting and resolve whether the existing submission already satisfies the requirement. No further Visym outbound is warranted on current evidence. Keep payout-run inclusion UNKNOWN and PAID false until independent bank-credit proof.
+
+### T10 current-wake status
+- Branch first prompt and runtime map written/readback: YES.
+- Existing Reaper and iSCOPE→PRI tasks enabled: YES; one-off requests accepted for Reaper and sales; completed output not yet evidenced by this receipt.
+- Visym task last-run timestamp advanced to `2026-10-19T13:39:11Z`; a direct external response was read in Outlook.
+- FORX and Inbox Watch: immediate requests accepted; runtime receipts not yet observed.
+- Master/Librarians + Banker activation: connector says task no longer available.
+- Plus-cap independent execution path: not yet proven.
+- Whole Matrix wake/Q drain: not complete.
+- Visym 2026-10-20 run inclusion: UNKNOWN; actual payout: NOT VERIFIED.
+
+**Disposition remains: INTAKE NOT CLEARED.** The new response advances payout-route knowledge; it is not payment and not whole-Matrix closure.
