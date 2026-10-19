@@ -95,3 +95,30 @@ Do not randomly price a product at 129 instead of 131 merely to force a nine-end
 ## Sources
 
 All public pages above were checked on 14 October 2026 or show a September/October 2026 publication/check date on the source itself. Public asking prices are comparison evidence, not proof of what every competitor charges or what Carbon° can profitably deliver. Refresh benchmarks by target country/currency before a live catalogue is published.
+
+
+## Owner supersession — South Africa price factor and legacy-offer treatment (2026-10-19)
+
+**Controlling law:** apply the Owner-directed Blue State section `OWNER-DIRECTED COMMERCIAL INTENT / OFFER IDENTITY / MARKET SUCCESS LAW — 2026-10-19` and the in-place `overdrive/COMMERCIAL_ROUTING_CONTROL_v1.md` addendum. This section updates the pricing *rule*, not the historical benchmark research or any quote already sent.
+
+### Effective price factor
+- For new South African offers, calculate **50% of the current, defensible comparable low-end benchmark** for the exact same scope, geography, currency and tax treatment. Effective 2026-10-19.
+- The previously used 67% factor remains the applicable general rule for other markets until separately superseded by the Owner. Market-specific research is still required; no FX-only localization.
+- This report's original comparison tables and proposed entry anchors remain historical research snapshots. They are not silently rewritten to pretend prior offers were issued under this later rule, and they are not themselves an authorized invoice or universal tariff.
+- When no genuinely comparable low-end scope exists, or current evidence/cost/margin cannot support an honest price, do not manufacture a benchmark; route a bounded scope for review.
+
+### Existing South African offers — preserve, do not mass reissue
+Do not bulk-edit, retract, resend or correct the offers already sent on 2026-10-19. Preserve their issued contents, original amount, scope, validity and sent-message receipt. No email to those four recipients is authorized by this addendum.
+
+When a customer returns to accept a still-valid prior offer, keep acceptance attached to the exact original version and compute the current 50% price against the **same benchmark, scope and tax basis**. Do not create a second competing offer/reference or silently overwrite the original quote. The customer may choose a linked lower amount due, equivalent approved account credit, or a defined upgrade. If the order was already paid, preserve the original invoice and apply a legally correct credit note/account credit or an agreed upgrade. An unaccepted offer does not create a customer credit; a customer-friendly adjustment is recorded only after the customer accepts and selects the adjustment. Expired offers follow the existing expiry/refresh rule, not silent revival.
+
+### Illustrative arithmetic only — not reissued quotes
+- If a verified comparable low-end workflow-automation benchmark remains **R14,000** for the same scope, 67% yields **R9,380** and the current South African 50% calculation is **R7,000**; the potential customer-favourable difference is **R2,380**.
+- If a verified comparable low-end bounded-solution benchmark remains **R30,000** for the same scope, 67% yields **R20,100** and the current 50% calculation is **R15,000**; the potential difference is **R5,100**.
+
+These differences are not automatic refunds, credits, new invoices or proof that a benchmark remains valid. Before application, recheck scope comparability, source date, tax/VAT basis, offer validity, customer acceptance and the existing accounting route. The customer must receive the promised equivalent value, and the benefit must be linked to the original `proposal_ref`/Offer ID.
+
+### Required issuance link
+Every future outbound quote must use the existing `proposal_ref` / Offer ID and exact version, be linked to the existing commercial opportunity and sent-message receipt, and be represented in the existing customer-readable pro-forma/quote surface before dispatch. The customer's own PO number is captured only if issued by the customer. Pro-forma, acceptance, payment, final invoice/tax invoice, verified settlement and delivery acceptance are separate states; apply the authorized accounting/legal invoice timing rather than mislabelling a pro-forma as an invoice.
+
+**Disposition:** Owner-directed pricing supersession recorded. Old quote tables and offers remain preserved; current South African factor applies prospectively and through customer-chosen legacy adjustment on re-engagement. No outreach or offer resend performed in this update.
