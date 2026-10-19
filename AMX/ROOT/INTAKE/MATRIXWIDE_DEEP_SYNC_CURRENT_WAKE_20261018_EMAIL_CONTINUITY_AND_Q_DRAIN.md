@@ -270,3 +270,29 @@ This newer readback supersedes earlier task-liveness statements where timestamps
 - Existing flight `AMX-FLT-20261012-DSYNC-145440-9fb44f0c` still has latest registered event Segment 11 LANDING / LANDED_PARTIAL / FAIL on 2026-10-14. ROOT must reconcile older Segment 12 references before registering a new segment.
 
 **Disposition remains INTAKE NOT CLEARED.** Full source-derived queue drain, cross-domain execution receipts and current Root acknowledgement remain outstanding.
+
+## DQ SAME-RUN CONTINUATION — FLIGHT SEGMENT 12 / OFFER-LAW READBACK — 2026-10-19T17:34:53Z
+
+**Lifecycle:** EVIDENCE / ROUTING ONLY. Existing flight continues; this record is not Canon, not a new mandate, and not a declaration that Root Intake is cleared.
+
+### Same-run source readback
+- Current mandate registry was fetched from `AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json`: version 1.3, effective 2026-10-16, blob `bcfd1f422bd25ba852666a538712828d594759e8`, root SHA-256 `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`.
+- Current Blue State file was fetched at blob `213ce700c3f5b7e6fa96481436b956323d338ccb`. It already contains the South Africa-only 50% low-end comparable benchmark rule, immutable offer/pro-forma identity, legacy SA offer benefit, invoice/settlement separation, and acceptance checks in the existing additive sections. No duplicate section was added; registered mandate payloads and registry were not changed.
+- Existing price-detailer file `AMX/ROOT/INTAKE/CARBON_COMMERCIAL_PRICE_BENCHMARK_AND_ENTRY_POINT_RECOMMENDATIONS_20261014.md` received an additive control section in commit `8426be84a1a4f319c8fd945b02372b9754a2f134`, blob `7df88d7d299be09e685ad5640c25e8dee21dba93`. A fresh fetch/readback confirmed the new section exists and the previous file prefix is preserved. This remains a research/price recommendation artifact, not by itself a live catalogue or accepted tariff.
+- Current commercial route remains `FORX → iSCOPE → PRI → delivery owner → Banker`; PRI remains the sole outgoing-offer writer. No offer, buyer message, customer contact, payment, invoice, account credit or schedule mutation was performed in this continuation.
+- The live append-only register `AMX/ROOT/INTAKE/DYNAMIC_FLIGHT_PATH_REGISTER.jsonl` was fetched at blob `8f923b35a570ce3fa1c6b2cea3d62ebaf1e97656`. It records the existing flight `AMX-FLT-20261012-DSYNC-145440-9fb44f0c` resumed as Segment 12 at `2026-10-19T17:18:41.816Z`, followed by checkpoint `CHECKPOINT:SEGMENT-12:PRE-FLIGHT-DEEP-SYNC-AND-OFFER-LAW-20261019` at `2026-10-19T17:20:26.976Z`. Current status: `IN_FLIGHT`, not landed.
+- Current automation readback returned three enabled existing task definitions: IDEAL Sales Team (last-run metadata `2026-10-19T17:05:45.321163Z`), Bounty Reaper (`2026-10-19T17:07:17.778546Z`) and Check Visym payout (`2026-10-19T15:20:32.454481Z`); each reports `next_run_time=null`. These timestamps/flags alone do not establish successful output. Bounded current Root/Notion receipt review did not surface attributable latest-run output receipts for the Sales/Reaper tasks. Their results remain UNKNOWN pending run-correlated evidence; Q1 remains `UNKNOWN / NOT ZERO`. No worker was run or reactivated by this DQ continuation.
+- Native Outlook search confirms a routing parcel for the runtime-open correction, but the connected account is `usduplessis@outlook.com`, not `amillimatrix@gmail.com`. A real Gmail-originated message read back through Outlook remains unverified. The attempt to notify the parent Root target returned `NOT_FOUND` before dispatch; no Root acknowledgement is claimed.
+
+### Segment 12 disposition
+**PASS (bounded persistence/readback only)**
+- [x] Verify current registry version/root and read the existing Blue State price/offer law.
+- [x] Append the corresponding non-canonical additive control to the existing price detailer; fetch back and verify.
+- [x] Preserve existing commercial single-writer ownership; no duplicate outbound action.
+- [ ] Propagate the offer ID and legacy-benefit logic into the existing offer producer/ledger and test issuance, acceptance, invoice gating and customer-chosen benefit paths.
+- [ ] Obtain run-correlated IDEAL/Reaper output and route the specific receipt gap to the existing owner.
+- [ ] Verify Gmail-to-Outlook message continuity through a real source-message readback.
+- [ ] Root/T-GOV disposition and same-run Root acknowledgement.
+
+**Flight state:** `IN_FLIGHT` — this continuation records a narrow persistence/readback pass, not whole-matrix acceptance. Do not land Segment 12 until the remaining authorized checks are completed and read back. The full queue remains **OPEN / INTAKE NOT CLEARED**. Preserve prior flight events and historical Segment 11 failure; do not rewrite earlier status text.
+
