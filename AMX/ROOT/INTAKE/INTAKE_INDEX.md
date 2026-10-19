@@ -3368,3 +3368,7 @@ Latest receipt: [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND
 
 **Disposition:** offers sent / waiting; customer-facing Offer ID/pro-forma not evidenced in original message; chronology REVIEW REQUIRED; claims/signal synchronization OPEN/REMEDIATE; no message, offer, credit, worker, or schedule mutation by this Librarian continuation. Segment 12 and Root Intake remain OPEN.
 
+## CURRENT-WAKE CORRECTION — ALPHA SENT-ITEM ID — 2026-10-19T17:49:07Z
+
+Append-only clerical correction: the first Segment 12 sent-offer checkpoint contains a typo in the copied Alpha Pest Controls Outlook ID. Use the exact ID preserved in the canonical ledger and corrected by the subsequent register event: `...ItQACLz9RuAAAAA==` suffix, full value in the current-wake Root receipt. The prior event remains unchanged; this does not alter the offer, recipient, send timestamp, queue state, or lifecycle. Corrective register event: `AMX-FLT-20261012-DSYNC-145440-9fb44f0c:CORRECTION:SEGMENT-12:ALPHA-SENT-ITEM-ID-20261019T174907Z`, commit `315d960f8c9e95a262f37dc9db4ec3d69c07b31f`, blob `0c5bfe92c0c136ec31970ddf46980679ddd782f7`. Root correction receipt: commit `bebc0bf0efbc31588aae934c45d08f2981d94283`, blob `ba1f5af0961f866e6f0ad27baf604984cf90923d`.
+
