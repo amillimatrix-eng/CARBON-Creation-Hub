@@ -3372,3 +3372,15 @@ Latest receipt: [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND
 
 Append-only clerical correction: the first Segment 12 sent-offer checkpoint contains a typo in the copied Alpha Pest Controls Outlook ID. Use the exact ID preserved in the canonical ledger and corrected by the subsequent register event: `...ItQACLz9RuAAAAA==` suffix, full value in the current-wake Root receipt. The prior event remains unchanged; this does not alter the offer, recipient, send timestamp, queue state, or lifecycle. Corrective register event: `AMX-FLT-20261012-DSYNC-145440-9fb44f0c:CORRECTION:SEGMENT-12:ALPHA-SENT-ITEM-ID-20261019T174907Z`, commit `315d960f8c9e95a262f37dc9db4ec3d69c07b31f`, blob `0c5bfe92c0c136ec31970ddf46980679ddd782f7`. Root correction receipt: commit `bebc0bf0efbc31588aae934c45d08f2981d94283`, blob `ba1f5af0961f866e6f0ad27baf604984cf90923d`.
 
+## CURRENT-WAKE APPEND — Bounty Reaper write-route recurrence — 2026-10-19T19:46:04Z
+
+**Lifecycle:** EVIDENCE / ROUTING ONLY. This index entry does not confer acceptance, merge, consolidation, Canon, or V1 build authority.
+
+- **Root Intake record:** [CYAN] ADDENDUM B — Recurrent Bounty Reaper Write/Route/Execution Failure — 2026-10-19 ([readback-verified Notion record](https://app.notion.com/p/3fe8f8b56cd781fc9826e1096ecb2344?pvs=204)), child of the existing Bounty Reaper wake/persistence incident. Addendum A and the parent remain unchanged.
+- **Current automation readback:** existing Bounty Reaper task `6abf8e6d6a188191aee2b5d3fe24a9c9` is DISABLED; last_run_time `2026-10-19T18:53:47.604040Z`; record updated `2026-10-19T18:54:52.220972Z`; next_run_time null. Timestamp metadata is not proof of a successful output or a persisted run receipt.
+- **Canonical tracker:** AMX Bounty Reaper — Live Tracker remains the authorized destination. The current connected tool inventory exposes no direct Google Sheets/Drive read-write/readback action, so current Runs/Queue/Payouts and Q1 cannot be verified. Q1 remains UNKNOWN, NOT ZERO.
+- **Route distinction:** Root Intake write/readback was verified by the Librarian integration in this session. This does not establish the Bounty Reaper runtime has the same identity, permissions, connector, or independent readback. The worker-context write route remains NOT VERIFIED.
+- **Outcome truth:** No new submission, external report ID, award, or payment is verified. No automation or schedule mutation was made; no replacement worker/tracker was created.
+- **Recovery owner/action:** ROOT/T-GOV and the existing runtime/integration owner must prove an authorized writer plus independent reader inside the Bounty Reaper execution context against the existing tracker or Root Intake. Keep the task disabled until the route is deliberately restored and accepted. Do not infer queue emptiness from tracker inaccessibility.
+
+**Index disposition:** append-only provenance pointer; Intake remains open.
