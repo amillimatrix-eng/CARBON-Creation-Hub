@@ -216,3 +216,44 @@ This action is a bounded PRI external-write event, **not** a new Overdrive tick.
 **Flight boundary unchanged:** `AMX-FLT-20261012-DSYNC-145440-9fb44f0c` still has its latest registered event as Segment 11 `LANDING / LANDED_PARTIAL / FAIL` on 2026-10-14. ROOT must reconcile old Segment 12 references before any new segment is registered.
 
 **Still open:** time-bound AMX checkout attribution before 2026-10-19 15:10Z / 17:10 SAST; Visym payout-run inclusion/payment; full Q drain; Gmail readability; current runtime receipts; ROOT acknowledgement. No guessed buyer contact, duplicate checkout or further Visym message.
+
+## CURRENT-WAKE APPEND — MASTER-LIBRARIAN PREFLIGHT / MONEY-IN AND LIVENESS DELTA — 2026-10-19
+
+**Observed:** approximately 2026-10-19 14:25Z / 16:25 SAST.  
+**Lifecycle:** EVIDENCE / ROUTING ONLY. This append does not create Canon, change Blue State, transfer ownership, or authorize a second worker.
+
+### Mandate preflight — independently checked
+- Current registry: `AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json`, version 1.3, effective 2026-10-16, blob `bcfd1f422bd25ba852666a538712828d594759e8`.
+- Registry root recomputed from the sorted `ROLE_KEY=MANDATE_SHA256\n` lines: `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a` — matches declared root.
+- Current MASTER-LIBRARIAN canonical mandate payload recomputed from `BEGIN_CANONICAL_MANDATE` to `END_CANONICAL_MANDATE`, excluding marker lines and retaining the terminating newline: `f127bec771d398c7c2c3a1e746734619568b5641c91d6f810514d08f7f76b4f8` — matches registry and Blue State header.
+- Current role receipt: `AMX/ROOT/RECEIPTS/PRIMARY_LIBRARIAN_UNDERSTANDING_RECEIPT_20261019T142500Z_MASTER-LIBRARIAN.md`; blob `5438c0d3793ca2f3c5e2a8016893e7095555053e`.
+- Binding recorded: primary purpose; 65% money-in KPI as performance weighting rather than a resource quota; 35% mandate responsibilities; 60/20/20 sourcing rule kept distinct; runtime-open invariant; authority isolation. Receipt is session-scoped and does not claim the Matrix continued running in the background.
+
+### Time-bound Stripe item — current live readback
+- Current live AMILLIMATRIX Stripe query `GET /v1/checkout/sessions?status=open&limit=100` returned **one** open session: metadata offer `corporate_presence_launch`, project `JGMI by Carbon`, ZAR 7,963 (`amount_total=796300`), created `2026-10-18T15:10:00Z`, expires `2026-10-19T15:10:00Z` / **17:10 SAST today**.
+- Session state: `open` / `unpaid`; customer and customer details are null; client reference ID is null; PaymentIntent is null. The existing corresponding Payment Link remains active and its hosted completion message describes the JGMI launch.
+- Current search on the connected Outlook account for `JGMI`, `corporate presence launch`, `7,963/ZAR`, and `JGMI by Carbon` produced no attributable thread. Close CRM searches for JGMI/corporate-presence launch returned zero. The current 108-record canonical commercial ledger has no matching JGMI/launch record.
+- These negative searches are limited to the connected Outlook/Close surfaces and current ledger; they do not prove no email exists in Gmail or another mailbox. No buyer attribution is established. Session creation is not evidence that a buyer opened it, accepted, ordered, or intended to pay.
+- No buyer message, replacement checkout, invoice, price change or payment-setting change was made. If attribution cannot be established from source evidence before expiry, preserve the session as `UNATTRIBUTED / EXPIRED`, not as a lost buyer or revenue. Do not create a duplicate checkout.
+- Latest connected live Stripe balance and balance-transaction readbacks remained zero available/pending USD and zero balance transactions; the session is not money-in.
+
+### Runtime and execution liveness — current delta
+- Current task inventory exposes three enabled tasks: `FIRST BREATH — IDEAL SALES TEAM`, `Bounty Reaper`, and `Check Visym payout`.
+- IDEAL's `last_run_time` has advanced to `2026-10-19T14:14:14Z`; the latest GitHub commit snapshot and outward-mail evidence inspected in this wake did not produce a matching new durable execution receipt. Timestamp alone is not behavioral PASS.
+- Bounty Reaper remains at last actual `last_run_time=2026-10-16T07:39:24Z`, despite an accepted immediate-run request; latest task readback still lacks a post-request receipt. Reaper queue Q1 remains `UNKNOWN, NOT ZERO`.
+- Visym payout watcher last-run timestamp is `2026-10-19T13:39:11Z`; one-shot remains scheduled for `2026-10-20 18:00 SAST`, with `next_run_time=null`. Payout-run inclusion and actual payment remain UNKNOWN. No additional Visym message or duplicate bank data was sent.
+- `overdrive/state.json` still records last tick `2026-10-16T08:40:31Z`, with the last receipt from 2026-10-15 and no fresh tick proven. The existing Overdrive recovery workflow has no schedule trigger and its manual dispatch defaults to `run_worker=paused`; no new worker/workflow was created.
+
+### Existing technical / service corrections
+- FORX bounded-memory issue #11 was marked closed despite later `512Mi` OOM failures on `2026-10-16`. It has been reopened in place; the new current-wake comment is #6269433084. The 50k production/persist/readback acceptance remains unproven. Existing T-COD ownership remains controlling; no new service or graph was created.
+- ORACL3 root/docs responded and exposed version `0.1.1`; the same live fetch sequence received HTTP 503 from `/health`. Current source code says `/health` should report `x402_enabled` based on the existing environment configuration. The last successful health evidence previously showed `x402_enabled=false`, and the current x402 activation is not independently verified. Required existing seller configuration remains `PAY_TO_ADDRESS`, `OKX_API_KEY`, `OKX_SECRET_KEY`, and `OKX_PASSPHRASE`; no secret or wallet/network mapping was inferred.
+
+### Current disposition and owner routing
+- ROOT Intake remains `OPEN / NOT CLEARED`; no whole-Matrix Q-drain or autonomous runtime acceptance is claimed.
+- **PRI / existing commercial owner:** source-attribute JGMI only if a legitimate existing buyer thread or approved source is recovered before the session expires; no guessed contact, no duplicate checkout.
+- **T-COD:** continue the reopened issue #11 on the existing FORX service until post-fix OOM is eliminated and 50,000 durable records plus hashes/manifest/receipt independently read back.
+- **Existing scheduler/ROOT/T-GOV owners:** continue Issue #29 / #31 liveness recovery. Three task slots and stale run/receipt gaps remain a control-plane issue; do not create duplicate workers or silently change their default pause gates.
+- **ORACL3 owner:** recover exact current receiving-network/address and required seller credentials from authoritative custody, then verify `/health`, x402 activation, and a valid end-to-end paid request on the approved route. Configuration/docs are not paid execution.
+- **Banker:** preserve settlement truth. No payment, award, offer, session, or payout instruction is PAID/SETTLED without attributable payment evidence.
+
+**Standing truth:** enabled/woke != executing; checkout session != buyer; offer != receivable; receivable != PAID; deployment != runtime acceptance; no 50k durable readback -> no PASS.
