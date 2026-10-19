@@ -6584,6 +6584,49 @@
           "evidence": "No buyer acceptance or order-specific payment instruction has been issued.",
           "next": "Confirm permitted business payment method with buyer after interest; do not imply Stripe checkout is charge-enabled."
         }
+      },
+      "legacy_offer_reconciliation": {
+        "internal_reference": "AMX-LEGACY-OFR-20261019-0001",
+        "reference_type": "INTERNAL_LEGACY_RECONCILIATION_ONLY",
+        "issued_at": "2026-10-19T16:42:57Z",
+        "source_sent_item_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RtwAAAA==",
+        "source_sent_subject": "Fixed-scope quote-to-job control loop — R9,380",
+        "recipient": "info@goelelectrical.co.za",
+        "customer_visible_offer_id": "NOT_INCLUDED_IN_ORIGINAL_SENT_MESSAGE",
+        "customer_visible_pro_forma": "NOT_EVIDENCED_IN_ORIGINAL_SENT_MESSAGE",
+        "immutable_original_terms": {
+          "amount": 9380,
+          "currency": "ZAR",
+          "scope": "One quote intake source and one tracking destination: normalize each request into a structured record; flag missing details and duplicates; assign the next action; track quote follow-up; human approval before any outbound message. Includes bounded test cases, exception log and handover. Delivery target: 5 business days after access and agreed scope. Excludes hosting/API fees and multi-system replacement.",
+          "commercial_offer_source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RtwAAAA=="
+        },
+        "issued_price_factor": 0.67,
+        "new_south_africa_price_factor": 0.5,
+        "benchmark": {
+          "amount": 14000,
+          "currency": "ZAR",
+          "source_url": "https://www.sitect.co.za/services/ai-consultation",
+          "source_summary": "Public starting price for document/workflow automation; refresh and verify exact same-scope comparability and VAT treatment when the customer re-engages."
+        },
+        "current_same_benchmark_reference_amount": 7000,
+        "potential_customer_favourable_difference": 2380,
+        "benefit_status": "NOT_EARNED_OR_ISSUED",
+        "benefit_options": [
+          "REDUCE_AMOUNT_DUE",
+          "CUSTOMER_ACCOUNT_CREDIT",
+          "SCOPE_DEFINED_UPGRADE"
+        ],
+        "conditions": [
+          "Customer re-engages and accepts the original offer while valid or through the existing authorized refresh process.",
+          "Revalidate current benchmark, exact same scope, currency, tax treatment, offer validity and delivery feasibility.",
+          "Preserve original offer amount/version and record the accepted version.",
+          "Present transparent customer choice; do not silently amend terms.",
+          "If unpaid, apply agreed lower amount due or chosen credit/upgrade. If paid, preserve original invoice and use legally appropriate credit note/account credit or agreed upgrade.",
+          "No credit/refund/upgrade is booked or delivered until customer acceptance/selection and required approval are evidenced."
+        ],
+        "customer_not_contacted_for_price_change": true,
+        "mass_reissue": false,
+        "no_outbound_action_authorized_by_this_record": true
       }
     },
     "alphapestcontrols.co.za|site-report-follow-through-loop|2026-10-19": {
@@ -6666,6 +6709,49 @@
           "evidence": "No buyer acceptance or order-specific payment instruction has been issued.",
           "next": "Confirm permitted business payment method with buyer after interest; do not imply Stripe checkout is charge-enabled."
         }
+      },
+      "legacy_offer_reconciliation": {
+        "internal_reference": "AMX-LEGACY-OFR-20261019-0002",
+        "reference_type": "INTERNAL_LEGACY_RECONCILIATION_ONLY",
+        "issued_at": "2026-10-19T16:43:00Z",
+        "source_sent_item_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuAAAAA==",
+        "source_sent_subject": "Fixed-scope site-report follow-through workflow — R9,380",
+        "recipient": "info@alphapestcontrols.co.za",
+        "customer_visible_offer_id": "NOT_INCLUDED_IN_ORIGINAL_SENT_MESSAGE",
+        "customer_visible_pro_forma": "NOT_EVIDENCED_IN_ORIGINAL_SENT_MESSAGE",
+        "immutable_original_terms": {
+          "amount": 9380,
+          "currency": "ZAR",
+          "scope": "One existing job/visit record source and one report destination: create a report draft from approved visit fields; create an owned follow-up task; track next-service reminders and exceptions; require human approval before sending. Includes bounded test cases and handover. Delivery target: 5 business days after access and agreed scope. Excludes hosting/API fees and multi-system replacement.",
+          "commercial_offer_source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuAAAAA=="
+        },
+        "issued_price_factor": 0.67,
+        "new_south_africa_price_factor": 0.5,
+        "benchmark": {
+          "amount": 14000,
+          "currency": "ZAR",
+          "source_url": "https://www.sitect.co.za/services/ai-consultation",
+          "source_summary": "Public starting price for document/workflow automation; refresh and verify exact same-scope comparability and VAT treatment when the customer re-engages."
+        },
+        "current_same_benchmark_reference_amount": 7000,
+        "potential_customer_favourable_difference": 2380,
+        "benefit_status": "NOT_EARNED_OR_ISSUED",
+        "benefit_options": [
+          "REDUCE_AMOUNT_DUE",
+          "CUSTOMER_ACCOUNT_CREDIT",
+          "SCOPE_DEFINED_UPGRADE"
+        ],
+        "conditions": [
+          "Customer re-engages and accepts the original offer while valid or through the existing authorized refresh process.",
+          "Revalidate current benchmark, exact same scope, currency, tax treatment, offer validity and delivery feasibility.",
+          "Preserve original offer amount/version and record the accepted version.",
+          "Present transparent customer choice; do not silently amend terms.",
+          "If unpaid, apply agreed lower amount due or chosen credit/upgrade. If paid, preserve original invoice and use legally appropriate credit note/account credit or agreed upgrade.",
+          "No credit/refund/upgrade is booked or delivered until customer acceptance/selection and required approval are evidenced."
+        ],
+        "customer_not_contacted_for_price_change": true,
+        "mass_reissue": false,
+        "no_outbound_action_authorized_by_this_record": true
       }
     },
     "sunlogic.co.za|site-visit-to-install-handoff|2026-10-19": {
@@ -6748,6 +6834,49 @@
           "evidence": "No buyer acceptance or order-specific payment instruction has been issued.",
           "next": "Confirm permitted business payment method with buyer after interest; do not imply Stripe checkout is charge-enabled."
         }
+      },
+      "legacy_offer_reconciliation": {
+        "internal_reference": "AMX-LEGACY-OFR-20261019-0003",
+        "reference_type": "INTERNAL_LEGACY_RECONCILIATION_ONLY",
+        "issued_at": "2026-10-19T16:43:04Z",
+        "source_sent_item_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuQAAAA==",
+        "source_sent_subject": "Fixed-scope site-visit-to-install handoff — R9,380",
+        "recipient": "craig@sunlogic.co.za",
+        "customer_visible_offer_id": "NOT_INCLUDED_IN_ORIGINAL_SENT_MESSAGE",
+        "customer_visible_pro_forma": "NOT_EVIDENCED_IN_ORIGINAL_SENT_MESSAGE",
+        "immutable_original_terms": {
+          "amount": 9380,
+          "currency": "ZAR",
+          "scope": "One existing work source and one tracking destination: convert approved site-visit notes into a structured job record, next-action tasks, installation checklist and sign-off reminders. Includes bounded test cases and handover. Delivery target: 5 business days after access and agreed scope. Excludes hosting/API fees and multi-system replacement.",
+          "commercial_offer_source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuQAAAA=="
+        },
+        "issued_price_factor": 0.67,
+        "new_south_africa_price_factor": 0.5,
+        "benchmark": {
+          "amount": 14000,
+          "currency": "ZAR",
+          "source_url": "https://www.sitect.co.za/services/ai-consultation",
+          "source_summary": "Public starting price for document/workflow automation; refresh and verify exact same-scope comparability and VAT treatment when the customer re-engages."
+        },
+        "current_same_benchmark_reference_amount": 7000,
+        "potential_customer_favourable_difference": 2380,
+        "benefit_status": "NOT_EARNED_OR_ISSUED",
+        "benefit_options": [
+          "REDUCE_AMOUNT_DUE",
+          "CUSTOMER_ACCOUNT_CREDIT",
+          "SCOPE_DEFINED_UPGRADE"
+        ],
+        "conditions": [
+          "Customer re-engages and accepts the original offer while valid or through the existing authorized refresh process.",
+          "Revalidate current benchmark, exact same scope, currency, tax treatment, offer validity and delivery feasibility.",
+          "Preserve original offer amount/version and record the accepted version.",
+          "Present transparent customer choice; do not silently amend terms.",
+          "If unpaid, apply agreed lower amount due or chosen credit/upgrade. If paid, preserve original invoice and use legally appropriate credit note/account credit or agreed upgrade.",
+          "No credit/refund/upgrade is booked or delivered until customer acceptance/selection and required approval are evidenced."
+        ],
+        "customer_not_contacted_for_price_change": true,
+        "mass_reissue": false,
+        "no_outbound_action_authorized_by_this_record": true
       }
     }
   },
