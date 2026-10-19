@@ -3266,3 +3266,12 @@ Detailed receipt: [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_A
 - Evidence/readback: [Root Issue #31 session-attribution receipt](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6269632138); [existing Root Intake page, appended current-wake Stripe attribution check](https://app.notion.com/p/3fd8f8b56cd7811aa576ee011647cc2e?pvs=204).
 
 **Disposition:** existing PRI/ROOT may act only on verified buyer attribution; Banker retains settlement truth. No money-in is established.
+
+
+## CURRENT-WAKE PRI EXECUTION RECEIPT — NAOMII FOLLOW-UP — 2026-10-19
+
+Detailed receipt appended to [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md), commit `ab84dc9fcf31b9334b52e9a05c0734fb61e81820`.
+
+Existing PRI opportunity `naomii.app|technology-sourcing-overflow-pilot|2026-10-15`: after due-time, reply and delivery-failure recheck, one bounded follow-up was sent through the existing Outlook thread at `2026-10-19T14:26:38Z`. The canonical `overdrive/opportunities.json` record now includes the attributable send receipt and has been fetched back (108 records preserved; blob `bc972d3552c295c118718854d33af64283b5fa6d`). The state remains OFFERED / not accepted, and the next action is WAIT for a substantive buyer reply. No work, contract, receivable or money-in is claimed.
+
+This is one authorized PRI outbound action, not a fresh Overdrive tick. Claims/state refresh remains open. Existing flight `AMX-FLT-20261012-DSYNC-145440-9fb44f0c` is still at Segment 11 LANDING / LANDED_PARTIAL / FAIL on 2026-10-14; ROOT must reconcile older Segment 12 references before registering a new segment. Full Q drain remains OPEN / NOT CLEARED.
