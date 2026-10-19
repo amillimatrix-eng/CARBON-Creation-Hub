@@ -525,7 +525,7 @@
   },
   "last_updated_at": "2026-10-19T16:26:38+02:00",
   "last_updated_by": "PRI",
-  "record_count": 108,
+  "record_count": 111,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -6503,6 +6503,252 @@
       "title": "Sales Development Representative",
       "current_route_status": "PUBLIC_ROLE_EMAIL_USED_VIDEO_REQUIREMENT_PENDING",
       "current_route_confidence": "MEDIUM"
+    },
+    "goelelectrical.co.za|quote-to-job-control-loop|2026-10-19": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RtwAAAA==",
+          "https://goelelectrical.co.za/contact/",
+          "https://www.sitect.co.za/services/ai-consultation"
+        ],
+        "identity": {
+          "domain": "goelelectrical.co.za",
+          "opportunity": "AMX Quote-to-Job Control Loop",
+          "organization": "Goel Electrical"
+        },
+        "kind": "NEW_FIXED_SCOPE_OFFER_OUTREACH",
+        "observed_at": "2026-10-19T16:42:57Z"
+      },
+      "domain": "goelelectrical.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OFFICIAL_BUYER_ROUTE_AND_SERVICE_CONTEXT_VERIFIED",
+          "observed_at": "2026-10-19T16:40:00Z",
+          "source": "OFFICIAL_PUBLIC_WEBSITE",
+          "source_id": "https://goelelectrical.co.za/contact/",
+          "summary": "Official contact page offers same-working-day response for quote requests and publishes email/phone/WhatsApp routes. The page lists both a successful-submit confirmation and an error-fallback message in its extracted content; this has not been treated as proof that current live submissions fail. Offer is framed as a quote-intake control loop with duplicate/missing-data detection and accountable follow-up, not as a claim that the form is broken.",
+          "url": "https://goelelectrical.co.za/contact/"
+        },
+        {
+          "kind": "PRICE_BASIS_PUBLIC_COMPARATOR",
+          "observed_at": "2026-10-19T16:35:00Z",
+          "source": "SITEC_OFFICIAL_PRICING_PAGE",
+          "source_id": "https://www.sitect.co.za/services/ai-consultation",
+          "summary": "Published South African AI service menu lists document/workflow automation from R14,000. Proposed AMX fixed price R9,380 = 67% of R14,000. This is a transparent point comparator, not a national average or proof of margin.",
+          "url": "https://www.sitect.co.za/services/ai-consultation"
+        },
+        {
+          "kind": "NEW_FIXED_SCOPE_OFFER_SENT",
+          "observed_at": "2026-10-19T16:42:57Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RtwAAAA==",
+          "subject": "Fixed-scope quote-to-job control loop — R9,380",
+          "summary": "Sent from usduplessis@outlook.com to info@goelelectrical.co.za. New buyer-specific AMX implementation offer, not the earlier US$99 AI-agent QA or sourcing offer. Fixed price R9 380; waiting for buyer response. Sent Item independently read back. Message does not imply acceptance, invoice, payment, or delivery.",
+          "url": "https://goelelectrical.co.za/contact/"
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-19T16:42:57Z",
+      "next_action": "WAIT for a substantive buyer response. If interested, confirm current tools, integration permission, test data, acceptance criteria and supported payment route before work. Do not begin implementation before paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable receipt evidence.",
+      "opportunity": "AMX Quote-to-Job Control Loop",
+      "organization": "Goel Electrical",
+      "recipient": "info@goelelectrical.co.za",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 9380,
+        "currency": "ZAR",
+        "scope": "One quote intake source and one tracking destination: normalize each request into a structured record; flag missing details and duplicates; assign the next action; track quote follow-up; human approval before any outbound message. Includes bounded test cases, exception log and handover. Delivery target: 5 business days after access and agreed scope. Excludes hosting/API fees and multi-system replacement.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RtwAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_confidence": "HIGH",
+      "execution_readiness": "WAITING",
+      "last_reconciled_at": "2026-10-19T16:42:57Z",
+      "active_dependencies": {
+        "buyer_response": {
+          "state": "WAITING",
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "observed_at": "2026-10-19T16:42:57Z",
+          "next": "If buyer replies, confirm fit/scope and the one-source/one-destination boundary before payment and implementation."
+        },
+        "payment_route": {
+          "state": "UNCONFIRMED_FOR_THIS_ORDER",
+          "kind": "PAYMENT",
+          "observed_at": "2026-10-19T16:42:57Z",
+          "evidence": "No buyer acceptance or order-specific payment instruction has been issued.",
+          "next": "Confirm permitted business payment method with buyer after interest; do not imply Stripe checkout is charge-enabled."
+        }
+      }
+    },
+    "alphapestcontrols.co.za|site-report-follow-through-loop|2026-10-19": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuAAAAA==",
+          "https://www.alphapestcontrols.co.za/",
+          "https://www.sitect.co.za/services/ai-consultation"
+        ],
+        "identity": {
+          "domain": "alphapestcontrols.co.za",
+          "opportunity": "AMX Site-Report Follow-Through Workflow",
+          "organization": "Alpha Pest Controls"
+        },
+        "kind": "NEW_FIXED_SCOPE_OFFER_OUTREACH",
+        "observed_at": "2026-10-19T16:43:00Z"
+      },
+      "domain": "alphapestcontrols.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OFFICIAL_BUYER_ROUTE_AND_SERVICE_CONTEXT_VERIFIED",
+          "observed_at": "2026-10-19T16:40:00Z",
+          "source": "OFFICIAL_PUBLIC_WEBSITE",
+          "source_id": "https://www.alphapestcontrols.co.za/",
+          "summary": "Official website describes commercial/multi-site pest management, inspection-based service reporting, and scheduled follow-up. Those are observed service features; no claim that their existing process is defective was made.",
+          "url": "https://www.alphapestcontrols.co.za/"
+        },
+        {
+          "kind": "PRICE_BASIS_PUBLIC_COMPARATOR",
+          "observed_at": "2026-10-19T16:35:00Z",
+          "source": "SITEC_OFFICIAL_PRICING_PAGE",
+          "source_id": "https://www.sitect.co.za/services/ai-consultation",
+          "summary": "Published South African AI service menu lists document/workflow automation from R14,000. Proposed AMX fixed price R9,380 = 67% of R14,000. This is a transparent point comparator, not a national average or proof of margin.",
+          "url": "https://www.sitect.co.za/services/ai-consultation"
+        },
+        {
+          "kind": "NEW_FIXED_SCOPE_OFFER_SENT",
+          "observed_at": "2026-10-19T16:43:00Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuAAAAA==",
+          "subject": "Fixed-scope site-report follow-through workflow — R9,380",
+          "summary": "Sent from usduplessis@outlook.com to info@alphapestcontrols.co.za. New buyer-specific AMX implementation offer, not the earlier US$99 AI-agent QA or sourcing offer. Fixed price R9 380; waiting for buyer response. Sent Item independently read back. Message does not imply acceptance, invoice, payment, or delivery.",
+          "url": "https://www.alphapestcontrols.co.za/"
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-19T16:43:00Z",
+      "next_action": "WAIT for a substantive buyer response. If interested, confirm current tools, integration permission, test data, acceptance criteria and supported payment route before work. Do not begin implementation before paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable receipt evidence.",
+      "opportunity": "AMX Site-Report Follow-Through Workflow",
+      "organization": "Alpha Pest Controls",
+      "recipient": "info@alphapestcontrols.co.za",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 9380,
+        "currency": "ZAR",
+        "scope": "One existing job/visit record source and one report destination: create a report draft from approved visit fields; create an owned follow-up task; track next-service reminders and exceptions; require human approval before sending. Includes bounded test cases and handover. Delivery target: 5 business days after access and agreed scope. Excludes hosting/API fees and multi-system replacement.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuAAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_confidence": "HIGH",
+      "execution_readiness": "WAITING",
+      "last_reconciled_at": "2026-10-19T16:43:00Z",
+      "active_dependencies": {
+        "buyer_response": {
+          "state": "WAITING",
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "observed_at": "2026-10-19T16:43:00Z",
+          "next": "If buyer replies, confirm fit/scope and the one-source/one-destination boundary before payment and implementation."
+        },
+        "payment_route": {
+          "state": "UNCONFIRMED_FOR_THIS_ORDER",
+          "kind": "PAYMENT",
+          "observed_at": "2026-10-19T16:43:00Z",
+          "evidence": "No buyer acceptance or order-specific payment instruction has been issued.",
+          "next": "Confirm permitted business payment method with buyer after interest; do not imply Stripe checkout is charge-enabled."
+        }
+      }
+    },
+    "sunlogic.co.za|site-visit-to-install-handoff|2026-10-19": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuQAAAA==",
+          "https://sunlogic.co.za/",
+          "https://www.sitect.co.za/services/ai-consultation"
+        ],
+        "identity": {
+          "domain": "sunlogic.co.za",
+          "opportunity": "AMX Site-Visit-to-Install Handoff",
+          "organization": "Sunlogic SA"
+        },
+        "kind": "NEW_FIXED_SCOPE_OFFER_OUTREACH",
+        "observed_at": "2026-10-19T16:43:04Z"
+      },
+      "domain": "sunlogic.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OFFICIAL_BUYER_ROUTE_AND_SERVICE_CONTEXT_VERIFIED",
+          "observed_at": "2026-10-19T16:40:00Z",
+          "source": "OFFICIAL_PUBLIC_WEBSITE",
+          "source_id": "https://sunlogic.co.za/",
+          "summary": "Official website identifies Craig as the co-owner handling quotes/installs and describes owner-led responsibility through project sign-off. Offer preserves the team's quote/customer decisions; no claim of existing workflow failure was made.",
+          "url": "https://sunlogic.co.za/"
+        },
+        {
+          "kind": "PRICE_BASIS_PUBLIC_COMPARATOR",
+          "observed_at": "2026-10-19T16:35:00Z",
+          "source": "SITEC_OFFICIAL_PRICING_PAGE",
+          "source_id": "https://www.sitect.co.za/services/ai-consultation",
+          "summary": "Published South African AI service menu lists document/workflow automation from R14,000. Proposed AMX fixed price R9,380 = 67% of R14,000. This is a transparent point comparator, not a national average or proof of margin.",
+          "url": "https://www.sitect.co.za/services/ai-consultation"
+        },
+        {
+          "kind": "NEW_FIXED_SCOPE_OFFER_SENT",
+          "observed_at": "2026-10-19T16:43:04Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuQAAAA==",
+          "subject": "Fixed-scope site-visit-to-install handoff — R9,380",
+          "summary": "Sent from usduplessis@outlook.com to craig@sunlogic.co.za. New buyer-specific AMX implementation offer, not the earlier US$99 AI-agent QA or sourcing offer. Fixed price R9 380; waiting for buyer response. Sent Item independently read back. Message does not imply acceptance, invoice, payment, or delivery.",
+          "url": "https://sunlogic.co.za/"
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-19T16:43:04Z",
+      "next_action": "WAIT for a substantive buyer response. If interested, confirm current tools, integration permission, test data, acceptance criteria and supported payment route before work. Do not begin implementation before paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable receipt evidence.",
+      "opportunity": "AMX Site-Visit-to-Install Handoff",
+      "organization": "Sunlogic SA",
+      "recipient": "craig@sunlogic.co.za",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 9380,
+        "currency": "ZAR",
+        "scope": "One existing work source and one tracking destination: convert approved site-visit notes into a structured job record, next-action tasks, installation checklist and sign-off reminders. Includes bounded test cases and handover. Delivery target: 5 business days after access and agreed scope. Excludes hosting/API fees and multi-system replacement.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuQAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_confidence": "HIGH",
+      "execution_readiness": "WAITING",
+      "last_reconciled_at": "2026-10-19T16:43:04Z",
+      "active_dependencies": {
+        "buyer_response": {
+          "state": "WAITING",
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "observed_at": "2026-10-19T16:43:04Z",
+          "next": "If buyer replies, confirm fit/scope and the one-source/one-destination boundary before payment and implementation."
+        },
+        "payment_route": {
+          "state": "UNCONFIRMED_FOR_THIS_ORDER",
+          "kind": "PAYMENT",
+          "observed_at": "2026-10-19T16:43:04Z",
+          "evidence": "No buyer acceptance or order-specific payment instruction has been issued.",
+          "next": "Confirm permitted business payment method with buyer after interest; do not imply Stripe checkout is charge-enabled."
+        }
+      }
     }
   },
   "updated_at": "2026-10-19",
