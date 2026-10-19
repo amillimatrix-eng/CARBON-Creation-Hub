@@ -5571,7 +5571,7 @@
           "kind": "OUTBOUND_FOLLOW_UP",
           "observed_at": "2026-10-19T15:40:38Z",
           "source": "OUTLOOK_SENT_ITEMS",
-          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8wItQACLz9RrAAAAA==",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RrAAAAA==",
           "subject": "Follow-up: voice-agent handoff acceptance test — US$99",
           "summary": "One due follow-up sent from usduplessis@outlook.com to partners@voiceagencyplatform.com; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
           "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
