@@ -3180,3 +3180,17 @@ Status: **INTAKE NOT CLEARED; MATRIX-WIDE STATE NOT FULLY ALIGNED.** Current rea
 **Required route:** extend existing Issue #29 provider-portability work and Issue #31 model-to-Root throughput recovery; use existing external runner capability for repository-scoped continuity and existing authorized routes for other actions. Do not let ChatGPT task-plan capacity become the sole Matrix liveness path.  
 **Authority boundary:** no new institution, worker, mandate or parallel queue; preserve mandate registry v1.3 and all role boundaries.  
 **Acceptance:** clean/replacement model and non-ChatGPT runner can recover current state, resolve an existing owner/next action, write and read back a durable receipt, and continue within authority. A prompt/branch or CI pass alone is not closure.
+
+
+## CURRENT-WAKE APPEND — VISYM PAYOUT SETUP RESPONSE / MAILBOX + SCHEDULER READBACK — 2026-10-19
+
+**Lifecycle:** EVIDENCE / ROUTE-READBACK ONLY — ROOT INTAKE REMAINS OPEN. No Canon, Blue State, mandate, scheduler or payout state changed.
+
+- **Existing Root Intake child:** https://app.notion.com/p/3fd8f8b56cd7811aa576ee011647cc2e?pvs=204 — new Visym inbound response appended and fetched back; current scheduler/mailbox delta appended and fetched back.
+- **Existing Root route:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31 — current-wake Visym reply and scheduler/mailbox deltas were added as comments and fetched back.
+- **New external evidence:** connected Outlook full-body readback of the response from collector@visym.com, received 2026-10-19 13:21:09Z, subject “Re: GeoSonics payout method and secure bank-detail submission.” It confirms a Wise-based ZAR payout route and asks the Owner to select Wise in the official Collector app. The email requests registered bank-holder name, date of birth, account number, bank name and SWIFT/BIC by email but provides no dedicated secure submission route. This runtime did not transmit bank data or change payment settings.
+- **Payout truth:** prior Gmail bank-detail response remains unreadable through the connected Outlook identity; inclusion in the 2026-10-20 payout run and actual bank credit remain UNKNOWN. Do not claim accepted payout or money-in. Preserve the existing enabled one-shot “Check Visym payout” schedule for 2026-10-20 18:00 Africa/Johannesburg; next_run_time is null, so the scheduled execution is not presumed.
+- **Current automation inventory:** 25 returned; 46 paused; 3 completed. Enabled tasks in the returned snapshot: FIRST BREATH — IDEAL SALES TEAM (last run 2026-10-16, next_run_time null), Bounty Reaper (last run 2026-10-16, next_run_time null), and Check Visym payout (one-shot 2026-10-20 18:00 SAST, next_run_time null). FORX Continuous Play, LIBRARIANS, Banker Cash Watch, Operational Inbox Watch, and Check DAOPEOPLE Reply are returned disabled. No schedules were modified.
+- **Mailbox visibility:** connected Outlook profile is usduplessis@outlook.com. Searches for “Gmail forwarded” and “forwarded” received since 2026-10-18 returned no results. This does not prove the reported Gmail forwarding is broken or working; Gmail-originated forwarding/readability has no successful readback.
+- **Boundary:** no worker was created, no schedule was re-enabled, no external follow-up email was sent, and no queue item was falsely marked complete. Root/Owner gates and full Drain-Q remain open.
+
