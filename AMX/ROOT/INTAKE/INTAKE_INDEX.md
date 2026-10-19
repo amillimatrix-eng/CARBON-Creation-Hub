@@ -3217,3 +3217,14 @@ Status: **INTAKE NOT CLEARED; MATRIX-WIDE STATE NOT FULLY ALIGNED.** Current rea
 Direct Outlook readback at `2026-10-19T13:21:09Z` from `collector@visym.com` confirms ZAR bank payment through Wise and instructs changing the Collector payout provider to Wise with payment email `amillimatrix@gmail.com`. They request name as on bank account, date of birth, bank account number, bank name and SWIFT/BIC.
 
 Owner previously reported details sent in the original Gmail thread before the cutoff. That source thread remains unverified; native Outlook is `usduplessis@outlook.com`, Opera Browser Connector is disconnected, and TinyFish wallet was read as `-1.051248 USD`. No sensitive details were resent and no top-up was made. Resolve the existing submission before duplicating PII. Payout-run inclusion for 2026-10-20 remains UNKNOWN; actual payout remains NOT VERIFIED. No further Visym outbound is warranted absent a material evidenced issue or Owner instruction.
+
+
+## CURRENT-WAKE APPEND — PR #51 KPI REGRESSION REVIEW — 2026-10-19
+
+**Lifecycle:** REVIEW / GOVERNANCE-CONFLICT EVIDENCE. No merge, Canon, or Blue State change.
+
+- Existing PR: https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/51 — open, unmerged; one added file `fix.py`.
+- Current governing record: issue #34 states 65% Matrix-wide money-in / 35% existing mandate; 60/20/20 remains sourcing-only.
+- Conflict: PR #51 sets `money_in_focus` to 0.33 and claims to supersede 25%, so it would regress current authority and does not identify an existing canonical runtime/configuration surface.
+- Review action: formal GitHub review submitted with state `CHANGES_REQUESTED`; the exact reasons and correction requirements are on PR #51. Existing Root Issue #31 has been updated with the review receipt at comment #6268877020.
+- Current disposition: DO NOT MERGE AS-IS. PR is not changed/merged/closed by this review. Re-read current Blue State and issue #34; require a narrow existing-surface implementation with targeted tests and current-state readback before reassessment.
