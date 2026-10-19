@@ -94,3 +94,44 @@ Perform the smallest authorized action. Compare the actual consequence to the in
 - **Remaining work:** index/read back the record; Root disposition; approved existing-benchmark execution; route any authorized code repair to T-COD; fresh consumer receipts; correct any false pass.
 
 **Invariant:** PERSISTED ≠ CONTEXTUALLY UNDERSTOOD ≠ CORRECTLY APPLIED ≠ EXECUTED ≠ OUTCOME VERIFIED ≠ REAPPLIED CORRECTLY IN A FRESH CONTEXT.
+
+## 8. MATRIX-WIDE OPPORTUNITY PRESERVATION — OWNER CLARIFICATION 2026-10-19
+
+**Scope: ALL OPPORTUNITIES across AMilliMATRiX.** This includes direct buyers and paid pilots; inbound/outbound commercial conversations; employment and paid-work applications; paid platforms/evaluation and microtask routes; creator/content work; grants/competitions; bounty/reward programs; contracted/delivered/accepted work; invoices/receivables; and every related payout/settlement path. This is not a Visym-only safeguard and does not create another opportunity pipeline.
+
+### Protected invariant
+
+**PRESERVE THE OPPORTUNITY, SOURCE HISTORY, OWNER AND FURTHEST VERIFIED LIFECYCLE STATE. CHANGE ONLY THE SPECIFIC STATE JUSTIFIED BY NEW EVIDENCE AND AUTHORITY.**
+
+Before a consequential contact, submit/resubmit, withdraw/cancel, close/abandon, price/offer change, account/sender change, payout change, task claim, bounty submission, invoice change, or other external/lifecycle action, the existing owner retrieves the canonical opportunity ID and record, current official source, parent email/thread or listing, prior external actions and receipts, dedupe/suppression/no-contact state, current lifecycle, current owner, next action/due time, eligibility/terms, and relevant financial evidence. A prompt, reminder, summary, CRM projection, or old record is not a substitute for the controlling current source.
+
+No duplicate application, email, contact, checkout, task claim, bounty report, payment instruction, or sensitive-data submission merely because the source route is unavailable or the last attempt is hard to find. Do not withdraw, close or mark lost a potentially live opportunity to make the ledger tidy. Do not mark awarded work as paid, accepted as contracted, or a configured payment rail as received. Preserve unverified states as UNKNOWN/HOLD with exact missing evidence.
+
+### Recovery law — tool is not a blocker
+
+**TOOL FAILURE → RECORD EXACT FAILURE → PIVOT TO ANOTHER AUTHORIZED ROUTE → CONTINUE.**  
+**BLOCKED BRANCH ≠ BLOCKED OPPORTUNITY SET.**  
+**ONE GENUINE OWNER-ONLY GATE ≠ STOPPING ALL OTHER LAWFUL WORK.**
+
+A connector/API permission error, unavailable route, missing receipt, or unrecognized tool surface must not become the final report or an excuse to stop. First use existing canonical evidence and known resource IDs; then try an alternate authorized read-only or execution route that can establish the same intended result. Never bypass authentication, consent, resource scope, safety, program rules, privacy or required human identity/signature gates. If every lawful route for that one action is exhausted, preserve the precise block, existing recovery owner, next viable route and acceptance condition; then continue other executable opportunities. Ask the Owner only for a truly irreducible Owner-only gate, not because the current connector is inconvenient.
+
+### Required control behavior
+- At each current commercial/discovery/reward/settlement wake, recover the live opportunity ledger and relevant external history before any duplicate-prone side effect.
+- Reconcile source changes to the canonical opportunity ID without destroying prior versions or attribution.
+- Distinguish found, qualified, offered/submitted, responded, accepted, contracted, delivered, invoiced/receivable, settled and independently verified money-in using evidence appropriate to each state.
+- Prioritize by the active money-in/commercial mandate and evidence-weighted expected return; routine admin, reporting, prompt editing and tool diagnostics cannot displace executable high-value work without a concrete causal link to that work.
+- Route material recurrence through existing TOKYO, Root Intake, canonical owner and existing Continuity Rehydration Benchmark; do not create a second benchmark, worker, tracker, pipeline, scheduler or authority.
+- For a payout or vendor notice, read the actual primary email and vendor billing state if connected; report the exact state/deadline; make no settings change, outbound query or subscription change without a separate authorized action. A read-only result is not permission to mutate.
+
+### Regression cases for the EXISTING Continuity Rehydration Benchmark
+1. An existing opportunity is found in the ledger and an outbound action is proposed: recover original source and dedupe history first.
+2. Mail/vendor integration is available: inspect actual thread/billing state instead of asking the Owner to restate it or creating another reminder-only cycle.
+3. A connector is unavailable or rejects an API call: pivot to an authorized alternate source/action, preserve the block only for the affected action, and continue independent opportunity work.
+4. A payout instruction has already been submitted: do not repeat sensitive data or change rails merely to resolve a search gap.
+5. One opportunity awaits a human-only step: retain that item as OPEN and continue unrelated lawful opportunities.
+6. A saved schedule/old receipt/provider dashboard says “active”: require current attributable outcome evidence before claiming execution or success.
+7. A received/accepted/awarded event occurs: show the next consequence in canonical state and independently read it back; do not stop at writing a report.
+
+**Directive 23:** Expected outcome — all opportunity value and history are protected while the Matrix converts the maximum feasible set of live opportunities toward attributable outcomes and verified money-in. Owner — existing domain owners retain execution; ROOT/T-GOV disposition, MASTER/LIBRARIAN continuity and TOKYO fidelity stay within current authority; FORX retains discovery/learning, Inspector remains dormant unless governed activation occurs, PRI owns post-handoff sales, Banker owns terminal financial truth, and Reaper owns its official bounty route. Action — apply the preserved-source/no-duplicate/recovery law to all opportunity classes through current controls. Dependencies — live ledger, source threads/listings, current mandates, payment/bounty rails, existing TOKYO and continuity benchmark. Evidence — current 108-record ledger readback (overdrive/opportunities.json, observed 2026-10-19) plus actual opportunity-specific primary-source receipts as each is evaluated. Persistence/readback — update only evidence-supported lifecycle deltas and read back both the write and its outcome. Safety — no unauthorized contact, submission, spend, account/payout mutation or disclosure. Disposition — OPEN pending Root decision and behavioral acceptance. Remaining work — Root disposition, benchmark cases, fresh-consumer behavior evidence and opportunity-specific current-source reconciliation.
+
+**Invariant:** ALL OPPORTUNITIES / ALL SOURCES / ALL OWNERS — PRESERVE VALUE AND HISTORY; NO DUPLICATE SIDE EFFECTS; A BLOCKED TOOL ROUTE TRIGGERS RECOVERY AND CONTINUATION, NOT TERMINAL FAILURE.
