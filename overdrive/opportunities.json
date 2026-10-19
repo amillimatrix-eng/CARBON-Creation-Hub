@@ -523,7 +523,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-16T10:39:11+02:00",
+  "last_updated_at": "2026-10-19T16:26:38+02:00",
   "last_updated_by": "PRI",
   "record_count": 108,
   "record_key": "normalized organization/domain + opportunity + title",
@@ -3027,7 +3027,7 @@
         "observed_at": "2026-10-15T13:16:56Z"
       },
       "domain": "naomii.app",
-      "due_at": "2026-10-19T08:00:00Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "OUTBOUND_SEND",
@@ -3036,11 +3036,19 @@
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhAAAAA==",
           "subject": "A 24-hour sourcing overflow test against one live tech role",
           "summary": "Sent from usduplessis@outlook.com; fixed US$99 single-role pilot; no retainer; source-linked shortlist, fit rationale and pre-screen notes within 24 hours after receipt of role brief and must-have criteria."
+        },
+        {
+          "kind": "OUTBOUND_FOLLOW_UP",
+          "observed_at": "2026-10-19T14:26:38Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RowAAAA==",
+          "subject": "RE: A 24-hour sourcing overflow test against one live tech role",
+          "summary": "One authorized follow-up after the recorded 2026-10-19T08:00Z due time; reiterates the existing fixed US$99 one-role pilot, asks only for role title and must-have criteria, and confirms no work begins before scope/payment route are agreed."
         }
       ],
       "execution_owner": "PRI",
-      "last_action_at": "2026-10-15T13:16:56Z",
-      "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "last_action_at": "2026-10-19T14:26:38Z",
+      "next_action": "WAIT for a substantive buyer reply. If the buyer replies, confirm the role title and must-have criteria, then provide the exact bounded scope and checkout details. No further follow-up without a new evidence-based due date and route recheck.",
       "opportunity": "US$99 one-role technology sourcing overflow pilot",
       "organization": "Naomii Talent Solutions",
       "recipient": "hello@naomii.app",
@@ -3059,7 +3067,7 @@
       "current_route_status": "OFFICIAL_CONTACT_ROUTE_VERIFIED",
       "current_route_confidence": "HIGH",
       "execution_readiness": "WAITING",
-      "last_reconciled_at": "2026-10-15T13:27:41.769Z"
+      "last_reconciled_at": "2026-10-19T14:26:38Z"
     },
     "netshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "discovered_by": "iSCOPE",
@@ -6334,6 +6342,6 @@
       "current_route_confidence": "MEDIUM"
     }
   },
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-19",
   "version": 1
 }
