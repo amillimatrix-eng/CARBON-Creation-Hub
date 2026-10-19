@@ -3288,3 +3288,11 @@ This is one authorized PRI outbound action, not a fresh Overdrive tick. Claims/s
 - Evidence/readback: [Root Issue #31 checkout attribution](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6269632138) and [mailbox/payment-link closeout](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6269761077); [existing Root Intake page](https://app.notion.com/p/3fd8f8b56cd7811aa576ee011647cc2e?pvs=204).
 
 **Disposition remains:** OPEN / INTAKE NOT CLEARED; Banker settlement truth unchanged.
+
+## CURRENT-WAKE APPEND — JGMI UNATTRIBUTED CHECKOUT / REOPENED FORX / LIBRARIAN PREFLIGHT — 2026-10-19
+
+**Lifecycle:** EVIDENCE / ROUTING ONLY — no Canon, Blue State or mandate change.
+**Current-wake source:** [Matrix-wide deep-sync addendum](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md) — current commit contains the exact live Stripe session state, no-match attribution checks, task-run receipt discrepancies, ORACL3 route evidence and reopened FORX issue #11.
+**Librarian receipt:** [PRIMARY_LIBRARIAN_UNDERSTANDING_RECEIPT_20261019T142500Z_MASTER-LIBRARIAN.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/RECEIPTS/PRIMARY_LIBRARIAN_UNDERSTANDING_RECEIPT_20261019T142500Z_MASTER-LIBRARIAN.md) — registry v1.3 root and MASTER-LIBRARIAN mandate hash independently recomputed and matched.
+**Current material delta:** one open/unpaid ZAR 7,963 JGMI session expires 2026-10-19 17:10 SAST and is un-attributed across current Outlook/Close/ledger. No buyer action may be guessed. IDEAL has a current task timestamp but no matching durable receipt; Reaper's last actual run remains 2026-10-16. FORX issue #11 reopened after post-fix OOM evidence; 50k acceptance remains unproven. ORACL3 docs respond but current /health/x402 activation remains unverified.
+**Owner routes:** PRI/source owner for JGMI attribution; T-COD via issue #11 for FORX; existing ROOT/T-GOV and Issue #29/#31 for liveness; ORACL3 existing implementation owner for seller/network binding; Banker for settlement truth.
