@@ -3194,3 +3194,26 @@ Status: **INTAKE NOT CLEARED; MATRIX-WIDE STATE NOT FULLY ALIGNED.** Current rea
 - **Mailbox visibility:** connected Outlook profile is usduplessis@outlook.com. Searches for “Gmail forwarded” and “forwarded” received since 2026-10-18 returned no results. This does not prove the reported Gmail forwarding is broken or working; Gmail-originated forwarding/readability has no successful readback.
 - **Boundary:** no worker was created, no schedule was re-enabled, no external follow-up email was sent, and no queue item was falsely marked complete. Root/Owner gates and full Drain-Q remain open.
 
+
+
+---
+
+# XI. CURRENT RUNTIME DISCOVERY + VISYM PAYOUT ROUTE — 2026-10-19
+
+**Status:** PARTIAL / OPEN / INTAKE NOT CLEARED.  
+**Authoritative current-wake detail:** `AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md` (latest addendum commit `a5cc16293e881b39e822b61cb13b13862cace6cf`).  
+**Branch execution receipt:** `root/matrix-recovery-drain-q-20261019` / `AMX/ROOT/BRANCH_START/MATRIX_RECOVERY_RUNTIME_WAKE_RECEIPT_20261019.md` commit `75679940a9cdb5c968ba93dd88f6d18dadede417`.
+
+## Runtime truth
+- Current mandate registry: v1.3, effective 2026-10-16, root SHA-256 `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`.
+- Owner reports T-MED, T-COD and T-GOV manually activated; live execution receipts remain uncorrelated.
+- Current enabled task-layer trio after slot rotation: Bounty Reaper, Check Visym payout, FIRST BREATH — IDEAL SALES TEAM.
+- FORX and Operational Inbox Watch accepted one-off run requests; their execution receipts are not yet proven.
+- FIRST BREATH — LIBRARIANS and Banker Cash Watch activation returned `This task is no longer available`; mandate authority remains from the registry unless separately superseded. Recover alternate authorized executor rather than infer retirement.
+- Continuity is a control/validation family, not a standalone scheduled-worker name in the exposed task inventory. Master maps to the MASTER-LIBRARIAN mandate; a separate current “Master” task was not found.
+- Three-task plan cap still prevents keeping every existing worker on the ChatGPT automation schedule. Subscription-independent runner acceptance remains open.
+
+## Visym response event
+Direct Outlook readback at `2026-10-19T13:21:09Z` from `collector@visym.com` confirms ZAR bank payment through Wise and instructs changing the Collector payout provider to Wise with payment email `amillimatrix@gmail.com`. They request name as on bank account, date of birth, bank account number, bank name and SWIFT/BIC.
+
+Owner previously reported details sent in the original Gmail thread before the cutoff. That source thread remains unverified; native Outlook is `usduplessis@outlook.com`, Opera Browser Connector is disconnected, and TinyFish wallet was read as `-1.051248 USD`. No sensitive details were resent and no top-up was made. Resolve the existing submission before duplicating PII. Payout-run inclusion for 2026-10-20 remains UNKNOWN; actual payout remains NOT VERIFIED. No further Visym outbound is warranted absent a material evidenced issue or Owner instruction.
