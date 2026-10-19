@@ -3321,3 +3321,18 @@ Latest receipt: [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND
 - **Open work:** integrate Offer ID/legacy-benefit handling into existing offer-producer and ledger paths; verify actual issue/acceptance/invoice gates; retrieve run-correlated Sales/Reaper outputs (current task timestamps are metadata, not outcome receipts; Bounty Q1 remains `UNKNOWN / NOT ZERO`); verify a real Gmail-originated message through the connected Outlook path; obtain Root/T-GOV disposition/acknowledgement. Parent notification attempt returned `NOT_FOUND` before dispatch, so it is not counted as delivered.
 - **Execution boundary:** no worker, schedule, buyer contact, offer, invoice, credit, payment or duplicate queue was created or changed by this continuation. Current result is **PARTIAL / IN FLIGHT / INTAKE NOT CLEARED**.
 
+
+
+## CURRENT FLIGHT SEGMENT 12 — REAPER 13-HEAD ADOPTION / RGR — 2026-10-19
+
+**Lifecycle:** CATEGORY B routed to the existing ROOT issue #31. Existing flight remains open; no new worker or flight created.
+
+- Reaper 13-head rule/specification: persisted, but runtime adoption is **NOT VERIFIED**. The existing task prompt is still on the cached registry v1.2 and does not include explicit 13-head/every-flight PASS-FAIL instructions; FORX-VFY remains READY/ACTIVE and the transfer packet WAITING.
+- Bounty outcome truth: 0 verified submissions/report IDs/awards/payments in accessible durable Reaper receipts; lifetime queue total remains UNKNOWN because the canonical Tracker is inaccessible. `TRACKER_WRITE_BLOCKED`; Q1 UNKNOWN, NOT ZERO.
+- Current commercial-law readback: South Africa uses the current 50% low-end-comparable benchmark factor for new offers; the old general 67% factor remains for other markets unless superseded. Preserve historic offers and customer-chosen legacy adjustment.
+- CDD/RGR: RGR recurrence supported; CDD sent for ROOT assessment under the existing standard. Owner's “sabotage” wording remains an allegation, not a finding of intent.
+- Root Intake record: [CATEGORY_B_SEGMENT12_REAPER_13HEAD_RGR_ADOPTION_GAP_20261019.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CATEGORY_B_SEGMENT12_REAPER_13HEAD_RGR_ADOPTION_GAP_20261019.md)
+- Existing governance route: https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6273327594
+- Current flight: `AMX-FLT-20261012-DSYNC-145440-9fb44f0c`, Segment 12, IN_FLIGHT.
+
+**Next:** ROOT/FORX-V/T-COD resolve prompt adoption and behavioral acceptance; Reaper continues lawful queue drain / parcel advancement; restore canonical Tracker access.
