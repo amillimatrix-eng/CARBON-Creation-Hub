@@ -3384,3 +3384,33 @@ Append-only clerical correction: the first Segment 12 sent-offer checkpoint cont
 - **Recovery owner/action:** ROOT/T-GOV and the existing runtime/integration owner must prove an authorized writer plus independent reader inside the Bounty Reaper execution context against the existing tracker or Root Intake. Keep the task disabled until the route is deliberately restored and accepted. Do not infer queue emptiness from tracker inaccessibility.
 
 **Index disposition:** append-only provenance pointer; Intake remains open.
+
+
+## MASTER LIBRARIAN SOURCE-RECONCILIATION — BLUE STATE V1.3 + H0B STORAGE / RETRIEVAL — 2026-10-19
+**Lifecycle:** evidence/index pointer only; Root disposition, Blue State edit, asset recovery and DRAIN Q closure are NOT claimed.
+
+### Blue State source mismatch
+- Canonical registry: AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json; current v1.3 effective 2026-10-16; registry blob bcfd1f422bd25ba852666a538712828d594759e8; root 96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a.
+- BANKER and FORX are CURRENT in that registry under their existing mandate IDs/digests.
+- Linked Blue State binding blob 213ce700c3f5b7e6fa96481436b956323d338ccb still embeds v1.2 root 6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f. No v1.3 root is present in the fetched binding text.
+- Classification: registry-to-binding propagation mismatch, not missing/invalid Banker or FORX mandate. Route correction to ROOT/T-GOV; MASTER verifies readback. No Blue State mutation by this Librarian.
+- Detailed readback: existing Root Intake “Process Topology / Slot Conservation / Product–Process Separation” (Notion page 3f48f8b5-6cd7-81e5-b33a-e0658bdecaf2), append section “CURRENT SOURCE RECONCILIATION — REGISTRY V1.3 / PREFLIGHT BINDING STALE — 2026-10-19”.
+
+### H0B° storage / retrieval triage
+- Existing Notion records recovered: CARBON° — H0B° Dumpster Benchmark (3ee8f8b5-6cd7-81b9-ad8f-ca8a2fb094d3); EVIDENCE DETAILER — H0B° unchAIned (3f48f8b5-6cd7-8126-af0e-ca540fd406b3); H0B°/JAMES–JAM3S/IRIS Canon Alignment (3f78f8b5-6cd7-8169-bff6-d879c88601da).
+- Recursive tree readback completed, no truncation, across CARBON-Creation-Hub main (817 paths), AMB-HOBO-AI- (44), Unchained_AmillimatriX- (39), AmillimatriX-TH3-ONE (12), James-Bot (29), JAM3S_BOT (35), TH3_WON (25), IRIS-AMX- (2). Only H0B-related CARBON paths returned in the exact tree-name scan: CATEGORY_B_IRIS_HOBO_JAM3S_CONVERGENCE_20261012.md; H0B_JAM3S_ONE_STREAMLINED_WHOLE_2026-10-04.md; customer-directory/work/h0b.html.
+- customer-directory/work/h0b.html (blob d6cf21cd8458931ec1ddb505f74e9b4d75f5b647) is a noindex/nofollow CARBON° showcase detail page, not canonical character Canon.
+- Whole-streamlined intake file (blob ac0d4173365044568de0d479749cecdb951f472b) references H0B-CANONICAL-FILE-v1.html, H0B-QUOTE-VAULT-v1.html, H0B_UNCHAINED_GEMINI_HANDOFF_FLAT_v1.md, and two Root rolling-consensus/deployment addenda; it says the 47-line quote vault is locked seed, not the wider corpus ceiling.
+- Exact canonical HTML, quote vault, Gemini handoff and production-brief names were not present in these defined recursive GitHub tree scopes. Exact-name Dropbox searches and broader H0B/Hobo/JAM3S searches returned zero; Dropbox root listing in this connector scope returned empty. This establishes only NO HIT IN THE DEFINED GITHUB TREES and NO HIT IN THE SEARCHED DROPBOX SCOPE, not global absence.
+- Evidence state: source references found; underlying named assets not retrieved; complete H0B Season One inventory NOT VERIFIED. No MISSING/LOST claim supported.
+- Detailed readback is appended in existing Notion storage/retrieval drift report (page 3fe8f8b5-6cd7-81f9-bd0c-dea83b4aa872), under “MASTER LIBRARIAN SOURCE-RECONCILIATION PASS” and “ADDITIONAL SOURCE PASS — RECURSIVE GITHUB TREE READBACK”.
+- The two 2026-10-19 storage reports are related incidents with different scopes; preserve both, do not merge or create another registry. DRAIN Q remains OPEN / NOT CLEARED.
+
+### Email continuity
+Native Outlook search is working and surfaced some forwarded Gmail-origin messages dated 16–17 October. Constrained queries for 18–19 October did not find matching Gmail-origin/forwarded mail. This does not prove automatic Gmail-to-Outlook forwarding is broken; a new harmless source-side test plus independent Outlook readback remains OPEN. Existing Root Intake email-continuity record holds the accepted decision and the bounded search result.
+
+### Owner / next action
+ROOT/T-GOV: reconcile the current linked Blue State binding against registry v1.3 through its existing governed route.
+Existing forensics/storage owner assigned by Root: enumerate and retrieve H0B assets from exact existing Library/Drive/Dropbox/attachment/source locations before any recovery or loss claim.
+Existing mailbox owner: perform/authorize a harmless Gmail-originated forwarding test and read back through the native Outlook connector.
+This index entry does not itself grant authority, prove assets absent/recovered, prove a post-repair worker run, or close Root Intake.
