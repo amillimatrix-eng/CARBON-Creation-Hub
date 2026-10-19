@@ -3254,3 +3254,15 @@ Detailed receipt: [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_A
 - Runtime layer: 25 task definitions, 46 paused, 3 completed, 3 enabled slots (Bounty Reaper, IDEAL Sales Team, Check Visym payout). Sales/Reaper last-run metadata stays 2026-10-16; FORX/Inbox Watch accepted run requests but output receipts are unverified; Librarians/Banker task activation returns “This task is no longer available”. Enabled/accepted request is not proof of execution.
 - Time-sensitive finding: existing AMILLIMATRIX Stripe checkout `corporate_presence_launch / JGMI by Carbon` is OPEN/UNPAID at ZAR 7,963 and expires 2026-10-19 15:10Z / 17:10 SAST today. No customer/email/client reference/PaymentIntent attribution. Existing commercial owner/ROOT must establish legitimate attribution before expiry; no guessed contact or duplicate checkout.
 - Current result remains PARTIAL / OPEN / INTAKE NOT CLEARED. Visym payout inclusion/payment, whole-Matrix execution, full Q drain, Gmail readability and Root acknowledgement remain unverified.
+
+
+## CURRENT-WAKE — JGMI OPEN CHECKOUT ATTRIBUTION RESULT — 2026-10-19
+
+**Lifecycle:** EVIDENCE / ROUTING ONLY. Current Root Intake remains OPEN; this is not a payment or receivable.
+
+- Fresh live Stripe retrieval confirms one open/unpaid ZAR 7,963 Checkout Session for `JGMI by Carbon — Corporate Presence & Launch`, expiring 2026-10-19 17:10 SAST. There is no customer, customer email/details, client reference, PaymentIntent, invoice, or source attribution; success/cancel URLs are generic.
+- Current 108-record opportunity ledger has no matching JGMI/corporate-presence entry. Repository and Notion searches returned prior Root/Stripe readbacks, not a buyer or accepted scope. The existing session is therefore UNATTRIBUTED / NOT A RECEIVABLE / NOT PAID.
+- Do not contact a guessed buyer, mutate the session, or create a replacement checkout. Leave it unchanged and allow expiry unless authoritative existing-source attribution is recovered before the cutoff. Stripe has no PaymentIntents, charges, balance transactions or invoices, with USD available/pending balance zero; this is Stripe-only evidence.
+- Evidence/readback: [Root Issue #31 session-attribution receipt](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6269632138); [existing Root Intake page, appended current-wake Stripe attribution check](https://app.notion.com/p/3fd8f8b56cd7811aa576ee011647cc2e?pvs=204).
+
+**Disposition:** existing PRI/ROOT may act only on verified buyer attribution; Banker retains settlement truth. No money-in is established.
