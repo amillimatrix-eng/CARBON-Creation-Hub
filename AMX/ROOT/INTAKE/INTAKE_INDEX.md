@@ -3228,3 +3228,18 @@ Owner previously reported details sent in the original Gmail thread before the c
 - Conflict: PR #51 sets `money_in_focus` to 0.33 and claims to supersede 25%, so it would regress current authority and does not identify an existing canonical runtime/configuration surface.
 - Review action: formal GitHub review submitted with state `CHANGES_REQUESTED`; the exact reasons and correction requirements are on PR #51. Existing Root Issue #31 has been updated with the review receipt at comment #6268877020.
 - Current disposition: DO NOT MERGE AS-IS. PR is not changed/merged/closed by this review. Re-read current Blue State and issue #34; require a narrow existing-surface implementation with targeted tests and current-state readback before reassessment.
+
+
+## CURRENT-WAKE LIBRARIAN RUNTIME CONTINUITY INDEX ENTRY — 2026-10-19
+
+**Lifecycle:** EVIDENCE / ROUTING ONLY. This entry adds navigation and provenance; it does not change Canon, Blue State, lifecycle authority, ownership, or V1 build scope. Root Intake remains **OPEN / INTAKE NOT CLEARED**.
+
+**Current-wake source receipts (existing Issue #31):**
+- [Runtime / commercial continuity readback](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6269073138) — three-slot task inventory; accepted run requests still without new task receipts; current ledger count/state; Stripe-specific zero balance; public runtime 503 observations.
+- [FORX technical evidence](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6269268351) — current app source, restart/cursor semantics, 512 MiB OOM evidence, and existing 50k persistence workflow acceptance conditions.
+- [Portable runner liveness recheck](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6269347523) — current Overdrive workflow has no schedule trigger and defaults manual dispatch to paused; historical run success does not prove current autonomy.
+- [Bounty Reaper continuity](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6269392851) — last recoverable receipt 2026-10-16; Q1 remains UNKNOWN, NOT ZERO; old receipt used registry v1.2, which cannot replace current registry v1.3 authority.
+
+**Current authority:** mandate registry v1.3, effective 2026-10-16; root SHA-256 `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`. Three currently enabled task-layer routines remain FIRST BREATH — IDEAL SALES TEAM, Bounty Reaper, and Check Visym payout. The latest readback after immediate-run requests still showed the commercial and Reaper last-run timestamps at 2026-10-16; no new completion receipt was observed. No duplicate worker/runtime was created.
+
+**Outstanding disposition:** Full Matrix wake and queue drain are NOT PROVEN. Visym 2026-10-20 payout-run inclusion remains UNKNOWN; payment remains unverified. FORX production-scale persist/readback remains UNPROVEN / REMEDIATE. ORACL3 x402 activation remains disabled and the existing OKX network/address binding remains HOLD pending authoritative recovery. Bounty Q1 remains UNKNOWN, NOT ZERO. Keep historical evidence, route to existing owners, and do not promote any item without the required readback/receipt.
