@@ -3296,3 +3296,16 @@ This is one authorized PRI outbound action, not a fresh Overdrive tick. Claims/s
 **Librarian receipt:** [PRIMARY_LIBRARIAN_UNDERSTANDING_RECEIPT_20261019T142500Z_MASTER-LIBRARIAN.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/RECEIPTS/PRIMARY_LIBRARIAN_UNDERSTANDING_RECEIPT_20261019T142500Z_MASTER-LIBRARIAN.md) — registry v1.3 root and MASTER-LIBRARIAN mandate hash independently recomputed and matched.
 **Current material delta:** one open/unpaid ZAR 7,963 JGMI session expires 2026-10-19 17:10 SAST and is un-attributed across current Outlook/Close/ledger. No buyer action may be guessed. IDEAL has a current task timestamp but no matching durable receipt; Reaper's last actual run remains 2026-10-16. FORX issue #11 reopened after post-fix OOM evidence; 50k acceptance remains unproven. ORACL3 docs respond but current /health/x402 activation remains unverified.
 **Owner routes:** PRI/source owner for JGMI attribution; T-COD via issue #11 for FORX; existing ROOT/T-GOV and Issue #29/#31 for liveness; ORACL3 existing implementation owner for seller/network binding; Banker for settlement truth.
+
+
+## CURRENT-WAKE RUNTIME LIVENESS / PRI EXECUTION DELTA — 2026-10-19
+
+Latest receipt: [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md), appended at commit `de9015da13a18c2432e096645d52835a3f390a11`.
+
+- Master Librarian current-v1.3 preflight receipt `MASTER-LIBRARIAN-PREFLIGHT-20261019T142500Z` is committed at `d1f1383315bc68b988945ccdbea3bbaa79825efe`; registry root and Master mandate hash recomputation matched. This proves preflight only.
+- IDEAL Sales last-run metadata advanced to `2026-10-19T14:14:14Z`, but no attributable task output receipt was located; productive execution remains UNKNOWN. Bounty Reaper remains at its 2026-10-16 last-run timestamp with no fresh receipt. Visym payout check remains scheduled one-shot for 2026-10-20 18:00 SAST; the timestamp is not payout confirmation.
+- Overdrive state remains sequence 23 / last tick `2026-10-16T08:40:31.786740Z`; claims/signals are still from 2026-10-16 with no READY or external-ready items. No current tick is proven.
+- One existing PRI follow-up for the Naomii pilot was sent at `2026-10-19T14:26:38Z` and the canonical 108-record opportunity ledger now contains the attributable receipt. State remains OFFERED / not accepted; next action is WAIT for a buyer reply, with no further follow-up absent a new evidenced due date.
+- Flight `AMX-FLT-20261012-DSYNC-145440-9fb44f0c` remains at latest registered Segment 11 LANDING / LANDED_PARTIAL / FAIL on 2026-10-14. ROOT must resolve old Segment 12 references before any new segment is registered.
+
+**Status remains PARTIAL / OPEN / INTAKE NOT CLEARED.** Existing source-derived queue drain and current Root acknowledgement are outstanding.
