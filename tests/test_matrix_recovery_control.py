@@ -9,6 +9,7 @@ import pytest
 from scripts.matrix_recovery_control import (
     ControlError,
     build_manifest,
+    latest_successful_schedule_timestamp,
     registry_root,
     select_plan,
 )
@@ -187,3 +188,27 @@ def test_manifest_marks_future_dated_runtime_tick_as_clock_skew(tmp_path: Path) 
 
     assert manifest["overdrive_projection"]["last_tick_age_minutes"] < 0
     assert manifest["overdrive_projection"]["freshness"] == "CLOCK_SKEW"
+
+
+def test_plan_b_uses_latest_successful_schedule_not_newer_failed_or_push_runs() -> None:
+    payload = {
+        "workflow_runs": [
+            {"event": "schedule", "status": "completed", "conclusion": "failure", "updated_at": "2026-10-20T14:58:00Z"},
+            {"event": "push", "status": "completed", "conclusion": "success", "updated_at": "2026-10-20T14:57:00Z"},
+            {"event": "schedule", "status": "completed", "conclusion": "success", "updated_at": "2026-10-20T14:00:00Z"},
+            {"event": "schedule", "status": "completed", "conclusion": "success", "updated_at": "2026-10-20T14:45:00Z"},
+        ]
+    }
+    assert latest_successful_schedule_timestamp(payload) == "2026-10-20T14:45:00Z"
+
+
+def test_plan_b_treats_no_successful_schedule_run_as_absent() -> None:
+    assert latest_successful_schedule_timestamp({"workflow_runs": [
+        {"event": "schedule", "status": "completed", "conclusion": "failure", "updated_at": "2026-10-20T14:58:00Z"},
+        {"event": "push", "status": "completed", "conclusion": "success", "updated_at": "2026-10-20T14:57:00Z"},
+    ]}) is None
+
+
+def test_plan_b_fails_closed_on_malformed_actions_runs_response() -> None:
+    with pytest.raises(ControlError, match="workflow_runs"):
+        latest_successful_schedule_timestamp({"runs": []})
