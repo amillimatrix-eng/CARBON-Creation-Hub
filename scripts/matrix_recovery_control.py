@@ -190,7 +190,12 @@ def build_manifest(
         "overdrive_projection": {
             "state_path": "overdrive/state.json", "adapter_status": state.get("adapter_status", "UNKNOWN"),
             "last_tick": last_tick, "last_tick_age_minutes": tick_age,
-            "freshness": "UNKNOWN" if tick_age is None else "FRESH" if tick_age <= PLAN_A_MAX_AGE_MINUTES else "STALE",
+            "freshness": (
+                "UNKNOWN" if tick_age is None
+                else "CLOCK_SKEW" if tick_age < 0
+                else "FRESH" if tick_age <= PLAN_A_MAX_AGE_MINUTES
+                else "STALE"
+            ),
             "opportunities_path": "overdrive/opportunities.json",
             "record_count_declared": declared_record_count, "record_count_actual": actual_record_count,
             "record_count_status": "PASS", "claims_path": "overdrive/claims.json",
