@@ -3,7 +3,7 @@
 
 **Packet type:** FORX VERIFICATION PACKET  
 **Priority:** P0  
-**State:** READY / ACTIVE  
+**State:** CLOSED_VERIFIED / PASS  
 **Source:** MATRIX-02 Addendum I  
 **Primary owner:** FORX-V  
 **SUPERSEDES:** FORX-VFY-20261006-001  
@@ -39,3 +39,17 @@ CLOSED_VERIFIED only when the mechanism demonstrates material benefit on real FO
 ### Downstream effect
 
 PASS releases FORX-RP-20261006-002 for bounded Bounty Reaper transfer review.
+
+## Closure evidence — 2026-10-20
+
+The real-work protocol acceptance was executed and its receipt independently fetched/read back:
+
+- Receipt: [FORX-VFY real-work acceptance receipt](../FORX_PACKETS/FORX-VFY-REAL-WORK-RECEIPT_20261020_0937_SAST.md)
+- Receipt blob SHA-1: `ea2a3cfe0205b4122c29807398bd23a21b3ddf21`
+- Stable interrogation ID: `AMX-FORX-VFY-20261020-LZ-VARIATIONAL-REENTRY-01`
+- Protocol test verdict: **PASS** for real-work contradiction/eligibility narrowing, bounded Instigator re-entry, preservation of prior dispositions, correct continuation, and handoff/readback.
+- The recorded receipt contains all thirteen ordered heads, the material eligibility pivot, the re-entry identity, the explicit UNKNOWN/WAITING continuation boundaries, and the source-verification limitations.
+
+**Closure boundary:** This closes FORX-VFY-20261006-002's protocol acceptance test only. It does not prove effective live 13-head adoption by Bounty Reaper, accept the conditional transfer, change the scheduler prompt, enable the automation, reconcile the inaccessible tracker, or claim bounty submission/payment. Those remain separate gates.
+
+**Downstream effect:** FORX-RP-20261006-002 is released for bounded transfer review by its specified destination, T-COD. T-COD must record its own accept/reject result before any existing Reaper automation prompt/schedule change.
