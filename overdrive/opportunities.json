@@ -459,8 +459,8 @@
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-16T08:39:11Z",
-  "last_reconciled_reason": "Added one Talent Advantage application email with CV attached after zero-match history check and exact Outlook Sent Item readback. Current listing requires an introduction video; the application email disclosed it was not attached and asked for the approved route. Preserved state as incomplete-media wait, not complete submission or income. No new account or duplicate pipeline created.",
+  "last_reconciled_at": "2026-10-20T06:37:13Z",
+  "last_reconciled_reason": "PARTIAL SOURCE REQUALIFICATION ONLY: Scale Army's official listing was rechecked and persisted with readback planned; lifecycle remains QUALIFIED and NOT SUBMITTED. Current Gmail/Outlook buyer threads and Close projection were not exposed in this runtime, so full commercial reconciliation and payment-state verification remain open. No buyer reply, acceptance, contract, invoice, receivable or payment is inferred.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -523,7 +523,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-19T16:26:38+02:00",
+  "last_updated_at": "2026-10-20T08:37:13+02:00",
   "last_updated_by": "PRI",
   "record_count": 111,
   "record_key": "normalized organization/domain + opportunity + title",
@@ -4212,7 +4212,7 @@
         "client-facing project delivery"
       ],
       "capital_direction": "PAYER_TO_WORK",
-      "current_route_status": "OFFICIAL_LISTING_SEARCH_RESULT_RECONFIRMED_20261015; PRIOR_DIRECT_RECHECK_20261014; CANDIDATE_RECORDED_VIDEO_REQUIRED; AUTHENTICATED_SUBMISSION_ROUTE_UNAVAILABLE",
+      "current_route_status": "OFFICIAL_LISTING_RECONFIRMED_20261020; CANDIDATE_VIDEO_AND_SCHEDULE_CONFIRMATION_REQUIRED; AUTHENTICATED_SUBMISSION_READBACK_UNAVAILABLE",
       "domain": "scalearmy.com",
       "due_at": null,
       "evidence": [
@@ -4262,12 +4262,19 @@
           "observed_at": "2026-10-15T17:35:58Z",
           "source": "CURRENT_AUTOMATION_RUN",
           "summary": "Prepared a candidate-recorded 45–60 second script anchored to bounded build evidence: 36/36 feature tests + 81/81 CI checks on one build, and 50/50 acceptance cases on a separate build. Script avoids claiming ERP/SQL production experience or U.S.-hours availability. It is a draft for the candidate to record, not a recording, application submission, acceptance or income."
+        },
+        {
+          "kind": "CURRENT_OFFICIAL_ROLE_REVERIFIED_20261020",
+          "observed_at": "2026-10-20T06:37:13Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE_SEARCH",
+          "url": "https://jobs.ashbyhq.com/scale%20army%20careers/3e49f332-28b9-400c-a146-f1682ce962da",
+          "summary": "Fresh search on 2026-10-20 returned the official Ashby listing for Workflow Automation Specialist. The listing still shows South Africa eligibility, remote contract, USD $2,300/month advertised (final compensation depends on experience/location), U.S. business-hours coverage, practical systems/reporting automation, and a required candidate-recorded skills video. This revalidates the public listing only; no authenticated application state, submission receipt, applicant video, schedule confirmation, acceptance or income is evidenced."
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
       "last_action_at": "2026-10-03T14:00:00Z",
-      "last_reconciled_at": "2026-10-14T18:27:00Z",
+      "last_reconciled_at": "2026-10-20T06:37:13Z",
       "next_action": "Candidate must personally record the prepared skills-video script, confirm availability for the required U.S. business hours, then submit through the existing authorized application route. Do not create a duplicate application or polish the current CV. This runtime has no authenticated Ashby/browser submission action; until the existing authorized route is exposed, keep the application NOT SUBMITTED. Persist the genuine submission receipt and read it back before changing lifecycle.",
       "opportunity": "ai-implementation-specialist",
       "organization": "Scale Army",
@@ -6880,6 +6887,6 @@
       }
     }
   },
-  "updated_at": "2026-10-19",
+  "updated_at": "2026-10-20",
   "version": 1
 }
