@@ -3,7 +3,7 @@
   "logical_store": "overdrive/forx_prospect_buffer.json",
   "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
   "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
-  "manifest_version": 10,
+  "manifest_version": 11,
   "base_snapshot": {
     "path": "overdrive/forx_prospect_buffer.json",
     "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
@@ -132,6 +132,19 @@
       "segment_sequence": 6
     },
     {
+      "path": "overdrive/forx_staging/delta-0007-forx-20261014-undp-zaf-enterprise-mobilisation.json",
+      "git_blob_sha": "ea04870fb01325fa1a8774d0c3365283378ed372",
+      "count": 1,
+      "batch_id": "forx-20261014-undp-zaf-enterprise-mobilisation-01",
+      "source_keys": [
+        "url:https://www.ungm.org/Public/Notice/317536"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261014-PROC-002"
+      ],
+      "segment_sequence": 7
+    },
+    {
       "path": "overdrive/forx_staging/delta-0008-forx-20261015-undp-indonesia-webgis-specialist.json",
       "git_blob_sha": "577d41801a589edf348a707315f503e35c8615a3",
       "count": 1,
@@ -185,12 +198,12 @@
       "segment_sequence": 10
     }
   ],
-  "current_unique_source_keys": 954,
-  "gross_observation_versions": 961,
+  "current_unique_source_keys": 955,
+  "gross_observation_versions": 962,
   "current_normalized_missing_explicit_freshness": 0,
   "historical_exact_source_duplicate_versions_preserved": 1,
   "next_segment_sequence": 11,
-  "last_updated": "2026-10-20T12:09:30Z",
+  "last_updated": "2026-10-20T13:52:00Z",
   "concurrency_contract": {
     "immutable_base": true,
     "immutable_deltas": true,
