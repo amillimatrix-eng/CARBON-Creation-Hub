@@ -1,0 +1,58 @@
+{
+  "schema": "AMX_RUNTIME_CADENCE_CONTROL_V1",
+  "version": 1,
+  "phase": "PAUSED_INFRASTRUCTURE",
+  "current_mode": "PLAN_A",
+  "owner_pause": {
+    "active": true,
+    "reason": "Owner-directed pause of scheduled commercial/librarian automation while infrastructure and slot consolidation are in progress."
+  },
+  "plan_a": {
+    "name": "hourly continuous execution window",
+    "cron": "7 * * * *",
+    "timezone": "UTC",
+    "window_ticks": 50,
+    "tick_seconds": 60,
+    "purpose": "Remain work-conserving for a bounded near-hourly window; each runner tick processes all pending adapter work, not one arbitrary item."
+  },
+  "plan_b": {
+    "name": "supported-interval recovery tick",
+    "cron": "*/5 * * * *",
+    "stale_after_minutes": 70,
+    "purpose": "When the last accepted Plan A window is stale or absent, execute one bounded existing-runner tick on the next watchdog interval."
+  },
+  "last_plan_a_success_at": null,
+  "last_plan_b_entered_at": null,
+  "last_manual_success_at": null,
+  "resume_gates": {
+    "roi_registry_integrity_verified": {
+      "pass": true,
+      "evidence": "Registry v1.3 and FORKS-ROI mandate independently read back; mandate SHA-256 and registry root validated."
+    },
+    "carbon_partner_routes_verified": {
+      "pass": true,
+      "evidence": "Public partner, website-service, and Quick Technical Review routes returned content from the deployed merge commit."
+    },
+    "cadence_controller_tests_passed": {
+      "pass": false,
+      "evidence": null
+    },
+    "three_slot_consolidation_and_prompt_readback": {
+      "pass": false,
+      "evidence": null
+    },
+    "root_intake_item_level_reconciliation": {
+      "pass": false,
+      "evidence": null
+    }
+  },
+  "transition_log": [],
+  "rules": {
+    "no_plan_c": true,
+    "do_not_treat_trigger_as_execution": true,
+    "do_not_treat_enabled_as_next_run": true,
+    "automatic_return_to_plan_a": "The next successful Plan A window writes a fresh accepted timestamp and changes PLAN_B back to PLAN_A.",
+    "fallback_scope": "Existing overdrive runner only; it does not claim that the three LLM worker automations have been awakened.",
+    "pause_wins": true
+  }
+}
