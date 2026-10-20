@@ -474,11 +474,28 @@
       "remains_unproven": "Buyer receipt/read, substantive reply, acceptance of scope and price, contract, invoice/receivable, accessible authorized payment route, delivery, or settled payment.",
       "scope": "2026-10-20 three direct fixed-scope operational workflow pilots",
       "upgrade_action": "Wait for buyer-initiated substantive replies and reconcile mail/payment events without duplicate outreach. If a buyer replies, qualify their problem, tools, scope, integration permissions, test data, acceptance criteria and payment route before work. Do not follow up again without a new evidence-based due date."
+    },
+    {
+      "actual": "Live-mode Stripe account retrieve for AMILLIMATRIX returned charges_enabled=false, payouts_enabled=false, details_submitted=false, card_payments inactive, and requirements.disabled_reason=requirements.past_due. Stripe lists current/past-due onboarding requirements. No account fields were changed.",
+      "changed": "Confirmed the previously reported merchant-activation/payment-acceptance blocker is still active on the single connected AMILLIMATRIX live-mode account. Checkout links must not be treated as ready to charge. Existing offers remain at their prior lifecycle stage; this readback does not infer payment, buyer acceptance, or failed payment.",
+      "classification": "STRIPE_LIVE_ACCOUNT_STATUS_READBACK",
+      "observed_at": "2026-10-20T11:37:24Z",
+      "owner": "ROOT / PRI / Banker",
+      "proof": [
+        "Stripe API read GetAccountsAccount, account acct_1UE0UBHyzt7gyqmn, livemode=true",
+        "charges_enabled=false",
+        "payouts_enabled=false",
+        "details_submitted=false",
+        "requirements.disabled_reason=requirements.past_due"
+      ],
+      "remains_unproven": "Any live charge, buyer payment, receivable, or settlement; readiness of a separate non-Stripe payment rail for every current offer.",
+      "scope": "AMILLIMATRIX Stripe live account capability and onboarding state",
+      "upgrade_action": "Owner completes any required merchant onboarding only through the official Stripe dashboard. Then re-read this same account and require charges_enabled=true (and the intended payout capability) before circulating Stripe checkout links. Meanwhile preserve existing offer states, use only already-authorized functioning payment rails when a buyer responds, and continue unrelated money-in routes."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-20T11:29:58Z",
-  "last_reconciled_reason": "CURRENT-TURN OUTLOOK SENT-ITEM + OFFICIAL-CONTACT RECONCILIATION: three 2026-10-20 fixed-scope R9,380 offers to Verminator, Treetops Solar, and Mendaz Solar added as unique OFFERED records after exact Sent Item readback and public official contact verification. Buyer response, acceptance, invoice, receivable, and payment remain unproven; unrelated inboxes/payment surfaces were not treated as fully reconciled.",
+  "last_reconciled_at": "2026-10-20T11:37:24Z",
+  "last_reconciled_reason": "CURRENT-TURN RECONCILIATION: three 2026-10-20 fixed-scope R9,380 offers are persisted with Sent Item and official-contact evidence; live Stripe readback confirms AMILLIMATRIX remains charges_enabled=false and payouts_enabled=false with onboarding requirements past_due. Buyer outcomes remain unproven; unrelated inboxes/payment surfaces are not represented as fully reconciled.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -541,7 +558,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-20T13:29:58+02:00",
+  "last_updated_at": "2026-10-20T13:37:24+02:00",
   "last_updated_by": "PRI",
   "record_count": 117,
   "record_key": "normalized organization/domain + opportunity + title",
