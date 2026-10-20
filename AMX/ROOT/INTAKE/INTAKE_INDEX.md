@@ -1,5 +1,29 @@
 # OWNER DIRECTIVE — P0 / HIGHEST EXISTING PRIORITY — CLEAR ROOT INTAKE NOW
 
+## CURRENT OWNER SUPERSESSION — MATRIX-WIDE MANDATES / TEMPORARY AUTOMATION QUIET MODE — 2026-10-20
+
+**Current first-order rule:** mandates are binding. Every AI/worker must read current Blue State and Registry from `main`, bind its registered mandate and current matrix rules before acting, stay within its role, preserve continuity, and return a durable item-level receipt plus readback. Wake timestamp, stored prompt, enabled flag, and run request do not prove mandate uptake or an intended outcome.
+
+**Canonical authority readback:**
+- Registry: v1.3, blob `bcfd1f422bd25ba852666a538712828d594759e8`, 13 roles.
+- Registry root SHA-256 independently recomputed: `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a` (matches stored value).
+- `FORKS-ROI` / `AMX-MANDATE-FORKS-ROI-V1` is `CURRENT`, Owner-appointed active with no probation. Mandate SHA-256 `a61aa5c535aa33be5639850590cdb911b583f8f02e6a23f4e5e6669850bf6ab9` independently recomputes to the exact registered digest. Main-branch mandate blob `2c21cb1f19eb4e64285df6b33ff606c92e6ce144`.
+- Current Blue State blob after append-only Owner supersession: `73d8131032a36757acfbd2762861b52c73eb6b3f`. This supersession is an additive current instruction, not deletion of prior policy history.
+
+**Owner’s later temporary pause supersedes earlier “keep three slots active” wording during the infrastructure/convergence window.** Live scheduler readback after individual update and second inventory read:
+- 25 saved automation tasks; **0 enabled**.
+- FORX `6ac6a4081dd48191967a0182fca2eba7`: disabled; last run `2026-10-20T14:05:07.103940Z`; next run `null`.
+- Bounty Reaper `6abf8e6d6a188191aee2b5d3fe24a9c9`: disabled; last run `2026-10-20T12:47:44.117841Z`; next run `null`.
+- IDEAL Sales Team / iSCOPE → PRI `6ac17e8999648191ba125236de46f012`: disabled; last run `2026-10-20T14:06:06.993205Z`; next run `null`.
+- FIRST BREATH — LIBRARIANS `6ac7c95aa91c819182be1e98e1404b95`: disabled; last run `2026-10-15T03:15:51.978721Z`; next run `null`.
+- These are temporary pauses of schedules, not cancellation of mandates, open work, or stored schedule intent.
+
+**Known scheduler capability fault:** attempts to update the existing hourly Librarian prompt in place were rejected before persistence with `automation_schedule_not_available` / “Your current plan does not support hourly schedules.” Its prompt therefore remains unchanged with cached Registry v1.2 metadata, although its current preflight already requires a fresh canonical Registry/Blue State read and states that cached prompt values are non-authoritative. Do not claim the live prompt text is updated or that automatic hourly liveness is working. Plan A remains hourly; a supported fallback is temporary Plan B only, with an owned automatic return-to-A condition. No undefined Plan C.
+
+**Queue status:** ROOT INTAKE remains **OPEN / NOT CLEARED**. The complete cross-surface item-level queue census, live worker acknowledgment/behavioral receipts, consolidated three-slot design, Plan A/Plan B cadence switch, identity/referral build, and broader matrix convergence remain open. This entry is a current-state supersession/readback, not a completion claim. Apply the current rules to all active queue items regardless of when they were created; historic snapshots are provenance and do not grandfather stale operating rules. Continue the same flight from the furthest evidence.
+
+Existing Root execution trail: [Issue #31 — Root Intake / continuity and model-to-Root throughput](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31).
+
 ## 2026-10-20 — MATRIX-WIDE CONTINUITY / CAPABILITY PROPAGATION AUDIT
 
 **Disposition:** CATEGORY B / OPEN — bounded audit persisted; Root Intake remains **NOT CLEARED**. This entry supplements existing authority; it creates no new worker, queue, scoring authority, or parallel governance plane.
