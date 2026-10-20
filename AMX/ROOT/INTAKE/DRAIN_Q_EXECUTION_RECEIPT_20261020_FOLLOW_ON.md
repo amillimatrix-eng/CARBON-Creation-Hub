@@ -122,3 +122,32 @@ The branch adds a read-only repository recovery controller and tests; it modifie
 - **Safety/preservation:** no merge, no commercial execution, no external read/write, no buyer contact, no payment change, no new worker/task/queue, no production change; old prompts/schedules preserved.
 - **Disposition:** repository preflight PASS on PR event; scheduled Plan A liveness, end-to-end Plan B execution, commercial behavior and Root queue clearance remain OPEN.
 - **Remaining work:** obtain Root/T-COD disposition; preserve paused state; after approved merge, verify a real scheduled event and artifact/readback, then separately test Plan B only under the 75-minute gate. Resume consolidated outcome lanes only after their prompts and actual behavior pass readback.
+
+
+## ADDENDUM — PLAN-A/B EDGE-FIX + LATEST PAUSE READBACK — 2026-10-20
+
+### Current Owner-directed pause restored
+- The most specific current Root/Index instruction is the temporary three-slot pause, not the earlier individual task's enabled label or run request.
+- Re-applied `is_enabled=false` to the existing FORX and IDEAL tasks after confirming they had remained enabled from the earlier mistaken retry. Both updates succeeded. Bounty Reaper was already disabled. A subsequent roster readback confirmed **all three disabled**, with their stored hourly schedules and prompts unchanged.
+- Last-run timestamps advanced during the earlier enabled interval (FORX `2026-10-20T15:06:08.435806Z`, IDEAL `2026-10-20T15:27:10.213087Z`, Reaper `2026-10-20T15:02:30.016586Z`), but no task-output body or accepted item-level receipt was exposed from those timestamps. No productive work outcome is claimed from them. Do not re-enable these individual tasks again until Root changes the pause disposition.
+
+### Plan-B query correctness fixes
+The existing draft PR #57 was amended on the same authorized branch:
+- The Plan-B lookup queries **completed** workflow runs, then the tested selector filters `event=schedule` + `status=completed` + `conclusion=success`, choosing the latest successful scheduled completion timestamp. Newer failed schedules and successful push/PR checks do not count as a healthy Plan A.
+- If the Actions API read fails or returns malformed successful-run data, the gate fails closed rather than interpreting the result as “Plan A never ran”.
+- A Plan-B fallback request cannot concurrently satisfy the commercial worker's manual-run condition; the worker remains paused/default and is excluded whenever `recovery_fallback=hourly_dependency_unmet`.
+- Regression tests for successful-schedule selection, no-successful-run behavior, malformed API response, and the recent/future time boundaries were pushed on the designated branch.
+
+### Newest evidence/readback
+- Evidence House Backend Tests run [39448121971](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/39448121971): SUCCESS, including pytest, smoke, provider-neutral Docker build and container runtime checks.
+- Existing workflow's PR control run [39448200555](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/39448200555): SUCCESS; recovery-control job succeeded and worker job was skipped. Artifact ID `12276403771` was downloaded and inspected. Current PR synthetic-merge receipt reports Registry v1.3 root hash PASS, ledger count 121/121, 108 claim rows / 0 READY claims, stale Overdrive tick, `VALIDATION_ONLY`, external operations not attempted, Root issue #31 OPEN / NOT CLEARED.
+- Draft PR: [#57 — P0 continuity: add guarded hourly recovery control](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/57), open/not merged. GitHub currently reports mergeable=true; it remains draft pending Root/T-COD review.
+- **Not yet accepted:** no real hourly `schedule` event has run because the PR has not been merged; Plan B has not been invoked end-to-end; neither test nor preflight is commercial execution. Current code is a repository-only preflight, not proof of whole-Matrix liveness or work-conserving commercial progression.
+
+### Directive 23 current disposition
+- **Expected outcome:** an evidence-backed hourly control path that bypasses the ChatGPT task-slot dependency for repository continuity, and a gated fallback that returns to Plan A.
+- **Action complete:** repository-only control code + tests + guarded workflow changes exist on the designated branch; latest test and PR-preflight receipts are read back; old workers restored to the explicit paused state.
+- **Existing owner:** ROOT/T-GOV for disposition; T-COD/provider-portability owner for code/control review; existing commercial/forensics lanes remain paused until that current disposition and prompt-readback gate passes.
+- **Dependencies/remaining work:** Root/T-COD review of PR #57; after authorized merge, read back an actual scheduled trigger plus artifact and missed-tick behaviour; separately invoke/test Plan B only when the 75-minute dependency gate is met; then reconcile the consolidated work-conservation lane before reactivation.
+- **Safety/preservation:** no merge, no production mutation, no external write, no buyer/payment action, no task schedule/prompt changed, and no duplicate worker or queue. The earlier accidental individual re-enable was reversed and explicitly recorded.
+- **Disposition:** TESTED / REPOSITORY PREFLIGHT PASS; SCHEDULED PLAN A LIVENESS NOT YET VERIFIED; PLAN B END-TO-END NOT YET VERIFIED; CONSOLIDATED COMMERCIAL EXECUTION NOT AUTHORIZED UNDER THE CURRENT PAUSE; DRAIN Q OPEN / NOT CLEARED.
