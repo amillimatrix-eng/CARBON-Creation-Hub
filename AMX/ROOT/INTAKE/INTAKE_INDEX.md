@@ -1,5 +1,23 @@
 # OWNER DIRECTIVE — P0 / HIGHEST EXISTING PRIORITY — CLEAR ROOT INTAKE NOW
 
+## 2026-10-20 — MATRIX-WIDE CONTINUITY / CAPABILITY PROPAGATION AUDIT
+
+**Disposition:** CATEGORY B / OPEN — bounded audit persisted; Root Intake remains **NOT CLEARED**. This entry supplements existing authority; it creates no new worker, queue, scoring authority, or parallel governance plane.
+
+- **Canonical audit:** [MATRIXWIDE_CONTINUITY_PROPAGATION_AUDIT_20261020.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_CONTINUITY_PROPAGATION_AUDIT_20261020.md) — direct readback blob `acf8ed1aedea4dc102adaeda516b509d43fe64ff`.
+- **Current authority anchors:** Registry v1.3 root `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`; current Blue State blob `98d99bf3d954c866f1a897e2ac73dd24ed315aae`; existing Root runtime `ROOT-GPT56SOL-20260930-01`.
+- **13-head:** FORX real-work acceptance is CLOSED_VERIFIED/PASS for its bounded test; effective Bounty Reaper adoption is NOT PROVEN and the current saved automation was read back disabled with stale prompt metadata.
+- **Experiment:** the existing 13-head re-entrant versus strict-waterfall test has an Owner-accepted `HYBRIDIZE` disposition; the fixed-case benchmark is not exhaustively scored.
+- **FORX scale:** historical 100K durable PASS is preserved. Current 200K/250K accepted output is NOT VERIFIED; the latest accessible runtime evidence includes OOM/502/425 and no accepted current manifest/receipt.
+- **Worker continuity:** the latest automation readback returned 25 tasks, 3 enabled. Several mandate-bearing worker tasks are disabled; a wake, schedule, or timestamp is not behavioral proof.
+- **Agent market breadth:** preserve OKX AI/Agentic, Superteam Earn, WorkProtocol, Algora, MoltJobs, Molt Market, AgentBounties, security programs, direct paid pilots and procurement. No single marketplace resolves the existing OKX seller/x402 binding or payment-route blocker.
+- **Commercial/payment truth:** current Stripe route is not charge/payout enabled; three R9,380 workflow-pilot offers are SENT only. No acceptance, award or payment is inferred. Current money-in remains unverified.
+- **Source coverage:** accessible repo/Library/Notion page search and current automation state were inspected. Notion session enumeration returned `FORBIDDEN: restricted_resource`; literal exhaustive open-transcript coverage remains incomplete.
+- **Required remaining state:** ROOT/T-GOV disposition; supported in-place Reaper prompt/behavior repair; worker-by-worker adoption receipts; current FORX manifest/exact count/readback; fresh outcome→weight→changed-selection proof; full item-level Root Intake drain and a verified money-in event.
+
+This entry supersedes no unrelated history and does not close Issue #31 or Root Intake.
+
+
 ## CURRENT-MATRIX RULES / STALE-RULE REVERSION — 2026-10-16
 **New governing Intake delta:** [CURRENT MATRIX RULES APPLY TO EVERY OPEN QUEUE ITEM](CURRENT_MATRIX_QUEUE_RULES_SUPERSESSION_20261016.md). Owner correction: open work does not retain superseded instructions merely because it entered under earlier rules. Apply current Blue State/mandates at the next safe action; preserve historical provenance; require item-level owner, intent, anchors/weights, receipt, dependency, next action and acceptance/readback. Current status remains **INTAKE NOT CLEARED** until live item census and item-level outcomes prove otherwise. This pointer does not promote policy into Blue State; ROOT/T-GOV owns governance integration.
 
