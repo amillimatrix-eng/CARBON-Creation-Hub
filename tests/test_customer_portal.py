@@ -52,7 +52,20 @@ def test_customer_portal_route_and_unknown_token(tmp_path, monkeypatch):
     r = c.get("/proposal/test-token")
     assert r.status_code == 200
     assert "proposal" in r.text
-    assert c.get("/proposal/nope").status_code == 404
+    # Unknown links get the neutral HTML shell, but never get proposal data.
+    assert c.get("/proposal/nope").status_code == 200
+    assert c.get("/api/proposals/nope").status_code == 404
+
+
+def test_revoked_proposal_serves_recovery_shell_but_hides_proposal_data(tmp_path, monkeypatch):
+    c = portal_client(tmp_path, monkeypatch)
+    private_registry = tmp_path.parent / (tmp_path.name + "-private-proposals.json")
+    registry = json.loads(private_registry.read_text(encoding="utf-8"))
+    registry["proposals"]["test-token"]["status"] = "REVOKED"
+    private_registry.write_text(json.dumps(registry), encoding="utf-8")
+
+    assert c.get("/proposal/test-token").status_code == 200
+    assert c.get("/api/proposals/test-token").status_code == 404
 
 
 def test_change_request_is_non_binding_and_filters_unknown_modules(tmp_path, monkeypatch):
