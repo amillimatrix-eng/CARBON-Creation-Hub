@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 12,
+  "batch_id": "forx-20261020-direct-buyer-browser-agent-01",
+  "created_at": "2026-10-20T14:24:44Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261020-UPWORK-001",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Upwork client — United States (client name not exposed in returned listing excerpt)",
+      "surface": "AI agent for browser automation and marketing tasks; 1–3 month hourly contract; listed rate US$30–50/hour; under 30 hours/week; worldwide remote eligibility indicated.",
+      "observed_need": "The listing seeks a lightweight local AI agent able to interact with websites across multiple tabs, support browser-based workflows, social media management, content generation and brainstorming through visual interaction. It names Playwright, Browser Use or similar browser automation tools and asks for relevant experience/examples.",
+      "outcome_space": [
+        "browser automation",
+        "local agent execution",
+        "AI workflow automation",
+        "social media operations",
+        "content workflow",
+        "Playwright / Browser Use",
+        "United States",
+        "hourly paid pilot"
+      ],
+      "source": "https://www.upwork.com/freelance-jobs/apply/Agent-for-Browser-Automation-and-Marketing-Tasks_~022109803271780351062/",
+      "source_key": "url:https://www.upwork.com/freelance-jobs/apply/Agent-for-Browser-Automation-and-Marketing-Tasks_~022109803271780351062/",
+      "source_observed_at": "2026-10-20T14:24:44Z",
+      "geography": {
+        "country": "United States",
+        "work_mode": "Remote; listing says worldwide.",
+        "locality": "Client time zone and any collaboration window UNKNOWN."
+      },
+      "contract_duration": "1–3 months listed; expected hours, deliverable acceptance and extension conditions UNKNOWN.",
+      "public_route": {
+        "type": "Upwork marketplace listing",
+        "listing_url": "https://www.upwork.com/freelance-jobs/apply/Agent-for-Browser-Automation-and-Marketing-Tasks_~022109803271780351062/",
+        "submission_mode": "Authenticated Upwork application route; account eligibility and Connects cost UNKNOWN."
+      },
+      "contactability": "Listing was reported posted 17 hours before observation, last viewed by client 46 minutes before observation, with 50+ proposals and 1 interview. Public listing exists; direct client contact is not a FORX route.",
+      "payer_hypothesis": "Client through Upwork if selected; listed range US$30–50/hour. Hours, milestone scope, fee/tax treatment, funded contract and settlement remain unverified.",
+      "fit_note": "Potential match to AMX's existing agent/workflow and browser-task direction, but the listing asks for expert-level delivery. Evidence of a working local multi-tab browser agent, OS/runtime compatibility, test coverage and client-specific examples must be checked before qualification. The 50+ proposal count indicates competition and does not support high conversion assumptions.",
+      "source_rights": "Public listing metadata and factual summary only; observe Upwork terms and do not reuse restricted content.",
+      "execution_readiness": "RAW_SIGNAL_PLATFORM_APPLICATION_ROUTE_AND_EXPERIENCE_PROOF_REQUIRED",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE verify the listing is still accepting proposals, authorized account/profile and Connects cost, hands-on working demo proof, local execution constraints, realistic time-to-revenue and client requirements. Qualify only if evidence supports a credible application; otherwise hold due competition. FORX does not apply, pitch or contact the buyer.",
+      "intake_custody": "Existing Root Intake issue #31 and iSCOPE issue #4; FORX flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "PUBLIC PAID-WORK SIGNAL ONLY. Listing != live verified availability at application time, qualification, application, interview, contract, invoice or payment."
+    }
+  ]
+}
