@@ -68,3 +68,24 @@ RGR itself supplies no authority and is not closed merely because this report wa
 - **Safety/preservation:** no new identity, duplicate profile, new worker, new pipeline, metered attempt against the wrong profile, duplicate Visym message, or unsupported claim of configuration/payment.
 - **Disposition:** **OPEN — RGR EVIDENCE PERSISTED; UNDERLYING VISYM OBJECTIVE NOT COMPLETED.**
 - **Remaining work:** correct binding recovery; setting mutation and readback; payout-run inclusion and bank-credit evidence if available.
+
+
+## Owner-directed supersession — Visym set to WAIT; pivot to other money-in work — 2026-10-20
+
+This addendum supersedes the earlier §5 action that called for the assistant to continue changing the Collector settings. It does not erase the historical fact that the previous assistant stopped before action; it corrects the current next action.
+
+The Owner's subsequent direction is to stop checking Visym balances, stop repetitive Visym reporting, wait for Visym, and pursue other revenue. The existing saved `Check Visym payout` task's latest prompt readback says:
+- Owner reports Wise is already selected in Collector.
+- Owner reports `amillimatrix@gmail.com` is already configured as payment email.
+- Do not change Collector settings.
+- Payout-run inclusion and independent bank-credit receipt are separate states.
+- Scheduled one-shot check is set for 2026-10-20 18:00 SAST; its next action is to inspect new correspondence / actual bank-credit evidence only, not to change settings.
+
+Accordingly:
+- **No Collector setting mutation is now required or authorized by the current task state.** Preserve Owner-reported configuration; independent UI readback remains UNVERIFIED. Do not infer the app setting is wrong merely because the former runtime did not read it.
+- Do not check account balances or initiate another unscheduled Visym review. Preserve the existing one-shot settlement-evidence check only as already governed; do not re-enable, duplicate, or reschedule it.
+- The current assistant's next work is elsewhere: find actionable money-in work and inspect the existing connected email/CRM/pipeline evidence. No outbound message is to be sent to a guessed or unverified Alfie identity.
+
+The current execution searched Outlook with exact/free-text `Alfie`, `subject:Alfie`, `from:alfie`, and `to:alfie`; none matched in the connected `usduplessis@outlook.com` mailbox. Close lead search and inbound email/email-thread activity search for 2026-10-01 through 2026-10-21 also returned zero. This is scoped evidence about these connectors, **not** proof that the separate Gmail / Outlook-associated TinyFish identity or other mailbox contains no Alfie message. The assistant must not fabricate the intended email address/thread or claim a reply was sent. Continue non-Visym revenue work while a legitimate source route is recovered.
+
+**Correct current disposition:** Visym = WAITING FOR PROVIDER / SETTLEMENT EVIDENCE; setting state OWNER-REPORTED CONFIGURED, NOT INDEPENDENTLY READ BACK; payout inclusion and bank credit UNKNOWN. No balance check was run during this correction.
