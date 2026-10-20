@@ -144,3 +144,63 @@ The Vercel authenticated-fetch attempt returned HTTP 403 because this connection
 - Public CARBON Dragon player: absent from checked main-branch source; live deployment state UNKNOWN because access is denied.
 - Search Shorts correction/takedown: OPEN / NOT EXECUTED. No authenticated native publishing session or working browser automation route in this execution. Existing Owner direction remains active.
 
+
+
+---
+
+## CURRENT ROUTE RECHECK — 2026-10-20 (APPEND-ONLY)
+
+### Confirmed change in best candidate
+Google Flow is the strongest documented zero-cash first route found in this recheck. Its current public product page explicitly shows a Free of Charge tier without Google AI subscription, with 50 daily Flow credits and text-to-video, Frames-to-Video, Ingredients-to-Video, video extension and Scenebuilder. Official help confirms:
+- South Africa is on the supported-country list.
+- Free/non-subscriber credits: 50 daily; unused daily credits do not roll over.
+- Gemini Omni Flash 720p: 4s=7 credits, 6s=10, 8s=12, 10s=15; 360p costs 4/5/6/7.
+- For a 70-second Dragon episode, nine 8-second 720p clips would be 108 credits, around three daily 50-credit allowance windows before retries. This is a production budget estimate, not an invocation result.
+- Non-subscriber video generation may be blocked at roughly 14:00–17:00 UTC. Outside that window, actual account UI still decides availability.
+- Ingredients/character references are designed for reusing the same images across clips. Google Labs FX privacy controls warn that interactions may be reviewed/used to improve models; the history setting can opt future interactions out of human review/model improvement. Do not upload proprietary canon until the current account's privacy setting is deliberately checked.
+
+Official sources:
+- https://labs.google/fx/tools/flow
+- https://support.google.com/flow/answer/16526234
+- https://support.google.com/flow/answer/16353334
+- https://support.google.com/flow/answer/16353544
+- https://support.google.com/flow/answer/16935308
+- https://labs.google/fx/en-gb/faq
+
+### New provider distinctions
+- Vidu advertises 40 monthly free credits, 4/8-second generation, reference-to-video and downloads. However its terms dated 2026-07-03 limit free-user service rights to personal/non-commercial use and grant Vidu a worldwide, royalty-free, sublicensable, transferable, perpetual and irrevocable license over submitted User Content, including AI training/product improvement. **Do not upload canonical CARBON° reference assets or use Vidu free outputs in a commercial catalogue final.**
+  - https://go.vidu.com/ai-video-generator
+  - https://www.vidu.com/terms
+- VEED states free AI video credits are only available in some regions and support up to 12-second generations when present; free-account exports carry a VEED watermark, and watermark-free export requires payment. This can be an internal trial route only, not the clean final master route.
+  - https://support.veed.io/en/articles/11712887-how-to-use-veed-s-ai-playground
+  - https://support.veed.io/en/articles/7056370-will-the-videos-i-created-have-a-veed-watermark-on-them
+- invideo Help says its free quota is limited and resets weekly, and describes an image-to-video route in Agents & Models; another official pricing surface continues to say the Free plan has no generative features. Treat entitlement and model/output rights as UNKNOWN until the exact existing account's live UI resolves the discrepancy.
+  - https://help.invideo.io/en/articles/9380226-can-i-use-invideo-ai-for-free
+  - https://invideo.io/faq/is-invideo-editor-free-when-i-use-an-ai-editing-agent/
+- Pika's current official pricing page says Free = 0 credits/month (credit packs only), no commercial license. Do not use old affiliate/legacy price tables as current allowance evidence.
+  - https://pika.art/pricing?interval=month
+- YouTube Shorts's official AI feature supports standalone clips up to 10 seconds and up to three reference photos, but its help page does not state a guaranteed account-specific zero-cost allowance. Actual feature/limit in Owner's account and off-platform commercial use remain unverified. YouTube Create Gemini Omni is a separate product and must not be conflated with native Shorts AI.
+  - https://support.google.com/youtube/answer/15260303
+  - https://support.google.com/youtube/answer/56100
+
+### Persisted implementation-ready production input
+Canonical Dragon EP01 Flow shot graph is now preserved:
+- https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/overdrive/production/DRAGON_EP01_FLOW_ZERO_CREDIT_SHOT_GRAPH_V1.md
+- Nine reference-conditioned clips, requested at 8 seconds each and trimmed to the existing 70-second accepted timeline.
+- Existing canon/cast hashes, shot prompts, reference policy, credit estimate, caption timing, internal voice-rights hold, Critic gates and delivery-state distinctions included.
+- This is a production input, not rendered media and not a factory PASS.
+
+Updated route-sweep receipt:
+- https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/overdrive/receipts/CARBON_FREE_VIDEO_ROUTE_SWEEP_20261020.json
+- Seventeen route entries and current official-source links; previous 2026-10-15 receipt is retained.
+
+### Exact execution blocker and disposition
+The browser-connector recheck still fails because Opera is not connected and requires “Allow AI connection” plus an authenticated Opera session. TinyFish wallet recheck at 2026-10-20 21:35:32 UTC returned -US$1.051248. No top-up was requested, no metered browser automation was submitted and no generation was attempted in any provider UI. Google Flow remains MANUAL_BRIDGE_CANDIDATE until output is actually generated, exported/downloaded and independently read back.
+
+### T10 readback
+- **Intended outcome:** Make a lawful free generation route usable, create/read back multiple coherent Dragon EP01 clips, stitch/mix/caption, run Critic and persist a new controlled playable master.
+- **Actual outcome:** Route discovery is stronger and shot-specific production input is persisted. No new clip or episode rendered in this runtime.
+- **Change:** Google Flow is now the best documented first route instead of treating PixVerse as the only practical manual candidate; Vidu is explicitly excluded for commercial use and sensitive-canon upload due its free terms.
+- **Remaining gap:** An authenticated browser/UI session must be made available for the real generation/download. This gate affects execution only; it does not authorize stopping independent production preparation or calling the factory done.
+- **Disposition:** RGR/CDD incident remains OPEN; no claim of malicious intent. Do not close on research or a shot plan. Close only after actual output and independent readback plus Dragon full-episode acceptance.
+
