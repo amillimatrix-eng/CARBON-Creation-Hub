@@ -276,3 +276,105 @@ Current DRAIN-Q records still say:
 - **Remaining work:** Root disposition; existing Bounty Reaper prompt/runtime repair and proof; worker-by-worker 13-head/KPI adoption receipts; current graph-count acceptance; fixed-case waterfall scoring; fresh outcome-weight continuation proof; complete item-level Intake drain; actual market/offer submission and payment progression.
 
 **No prompt edit, audit, or scheduler acknowledgement counts as closure. No revenue is claimed by this artifact.**
+
+
+---
+
+# ADDENDUM B — ADDITIONAL MATERIAL FINDINGS RECOVERED FROM THE SEPTEMBER 20–OCTOBER 20 SOURCE CORPUS
+
+**Why appended:** Further Notion page search/fetch and current Root Intake sweep exposed material commercial, provider, positioning, and continuity laws beyond the first audit tranche. This is an append-only supplement to the same Category B artifact, not a replacement policy or a new queue.
+
+## B1. Intention-before-literalism is a current operating rule, not permission to ask endless questions
+
+The existing AMilliMATRiX Intention Algorithm says to identify the requested action and intended outcome, use the full authorized context, distinguish fact from hypothesis, and resolve meaningful ambiguity from available evidence. Ask the Owner only if the decision is consequential and cannot be resolved from authorized sources; do not ask for settled facts again. If the Owner's instruction is actionable, do the work using a defensible default and keep independent work moving. “Practice what you preach” therefore means a model must demonstrate a concrete output and test, not repeatedly ask the Owner to design the implementation.
+
+Source: [AMilliMATRiX Intention Algorithm — Intent Before Literalism](https://app.notion.com/p/3fb8f8b56cd781e4b12ef13b0576dae6?pvs=204).
+
+## B2. Commercial failures must retain their causal class
+
+The existing Priority A offer-quality record separates at least four failure classes:
+
+1. **Contact / route failure:** the intended buyer never received a valid offer.
+2. **Qualification failure:** the observed process difference was not a problem that buyer wanted solved.
+3. **Offer-construction failure:** the first touch was too long, too abstract, too solution-first, too internally phrased, or sold a weak paid object.
+4. **Competitive / selection loss:** the buyer chose another provider; the cause is UNKNOWN unless the buyer or other reliable evidence establishes it.
+
+The October 16 source snapshot recorded 67 DELIVERY-FAILED messages across 33 threads. That is dated evidence, not a current mailbox total. It does establish why route failures must not be scored as persuasion failures. Explicit rejection without a stated reason should suppress the exact buyer/proposition and produce only a bounded negative fit signal; it does not establish that price, copy, geography, or an entire sector caused the loss. A low-ticket offer should sell a **finished micro-outcome**, not give away the diagnosis and then ask for money for more diagnosis. `LOW PRICE != HIGH VALUE`.
+
+Acceptance for this learning is not fewer words or a prompt edit. It is correct attribution plus post-change buyer outcomes.
+
+Source: [Priority A — Offer Quality / Qualification / Outcome-Attribution Repair](https://app.notion.com/p/3f48f8b56cd78118b2bbca8e9020e62f?pvs=204).
+
+## B3. Payment and commercial readiness are duties across the whole system
+
+The existing matrix-wide commercial performance doctrine explicitly includes Banker and Librarians inside the money-in chain:
+`DISCOVERY → QUALIFICATION → OFFER → ACCESS → DELIVERY → SUPPORT → ACCEPTANCE → PAYMENT`.
+
+- Banker must help resolve real price/cost/margin and receiving/settlement blockers; it cannot merely report zero after the rest of the chain fails.
+- Librarians/governance must detect orphaned/stagnant obligations, preserve state, clear Intake, and route live fixes; reporting volume is not successful execution.
+- Larger offers remain valid. Small USD 10-class offers are a deliberately useful low-friction lane when a finished output is truly worth buying, not a mandate to choose low ticket over a stronger deal.
+- Price scope from valid current comparable evidence, delivery cost, risk and margin. The distinct 67%-of-defensible-low-end anchor must not become an invented benchmark or override deliverability.
+- Mail/storage hygiene is non-destructive: no deletion of commercial evidence or thread history without authority; prefer links, dedupe and correct storage surfaces.
+
+Source: [Matrix-Wide Commercial Performance / Pricing / CX / Scale Law](https://app.notion.com/p/3f48f8b56cd7810d984ad8eee641b7ed?pvs=204).
+
+## B4. GrapeData is a preserved learning about invitation intent, not an autonomous agent market
+
+An October 13 incident record says an invitation phrase could have meant either “recruit other people” or “you personally are allocated paid interviews.” The Owner reports the link opened the Owner's own profile and believes three interviews with a total allocation in the USD 60 range may have been intended, but the exact original email, allocation and response were **not email-verified** in the connected context. A zero-result search of the Outlook mailbox did not establish absence because the cited source was Gmail, whose connector was reported `DISABLED_BY_ADMIN`.
+
+The correct reusable procedure is to resolve sender/recipient/thread, which account the unique URL opens, whether the recipient is participant or recruiter/referrer, exact count/reward/expiry/quality conditions, and payout path before rejecting or deprioritizing a time-limited invitation. Inspect the existing sent response before any follow-up; avoid duplicate outreach. Separately, the official GrapeData terms were found to prohibit automated/non-human access, so this is **not an approved autonomous AI earnings route** under the terms captured in the existing Intake record. The distinction is not “missed market research”; it is better invite interpretation plus respecting genuine human participation rules.
+
+Source: [Root Intake — Matrix-Wide Deep Sweep / Intake Drain](https://app.notion.com/p/3f48f8b56cd781a0964ccc894000a8f5?pvs=204).
+
+## B5. Multi-provider capability belongs to the correct product boundary
+
+The October 16 provider-layer record is explicitly a **CARBON° Creation Hub feature proposal**, not an AMilliMATRiX-owned provider integration. Claude, Gemini, Copilot and Android Studio / Google APIs are candidate capabilities until their actual account/project, enabled state, model/service version, auth path, permissions, quota/cost and permitted operations are inventoried. Do not assume every encountered API is live or authorized; do not enable all APIs, create subscriptions, widen permissions, or spend merely because they exist. Reuse the existing CARBON° implementation, add a thin adapter only when inspection shows a real gap, compare providers on representative tasks, and preserve normalized output/error/cost/evidence with secret boundaries.
+
+AMX may request or consume a CARBON service through an explicit service contract; this does not transfer ownership of the CARBON provider layer to AMX. This product/process boundary protects capability reuse without blurring mandate or identity.
+
+Source: [CARBON° Multi-Provider Capability Layer — 2026-10-16](https://app.notion.com/p/3fb8f8b56cd781cf91c2f6475d7819a1?pvs=204).
+
+## B6. Public expression: remove defensive boilerplate, not factual precision
+
+The October 12 social-copy drift record documents that internal limitations had been copied into a public caption as a generic disclaimer even though the narrow claim did not need it. The Owner rejected that leakage. The correct rule is:
+
+- Lead with the strongest truthful, bounded result and its human meaning.
+- Keep detailed claim/evidence limitations in the internal evidence layer.
+- Add a public caveat only when a specific inference would otherwise be materially misleading; make it targeted, brief and natural.
+- Never invent health, novelty, speed, current deployment, buyer acceptance, payment or market status.
+- Treat copy, render, QA, approval, publication and live readback as separate lifecycle states.
+
+The existing record reports some targeted concepts/captions corrected and read back, but broader Root classification and propagation to every applicable live surface were still open at the latest source read. A script or kit is not a published asset; a caption correction is not proof that all social profiles or agents now follow the standard.
+
+Source: [Public Social Copy Drift — Boilerplate Disclaimer Leakage + Execution Follow-through](https://app.notion.com/p/3f78f8b56cd781ddba03c88db78343a8?pvs=204).
+
+## B7. Preserve the substantiated build benchmark without downselling or exaggeration
+
+The current evidence-bound build benchmark records two different production-grade product builds on consecutive days, each reaching 100% of its own evidenced commissioned acceptance milestone in under six hours: the intent-weighted Marketplace reached **50/50 executable tests** at its historical green milestone; CARBON° Search reached **36/36 Search-specific tests** and **81/81 full-repository tests** on the clean committed implementation. The source explicitly forbids turning this into “fastest in the world” without a separate comparative evidence pack and also says not to dilute the achievement to merely “worked quickly.”
+
+This is a separate, strongly evidenced build benchmark. It must **not** be conflated with the Owner-reported approximately 2× speed result for the 13-head method: that method-comparison artifact is still not located in the accessible record pass.
+
+Source: [AMX Evidenced Build Benchmark — Consecutive 100% Delivery V1](https://app.notion.com/p/3f48f8b56cd781e0a79bcd3a4d91d7ca?pvs=204).
+
+## B8. Commercial ledger counts and historic run artifacts must be reconciled by version
+
+The existing Matrix-wide sweep records historical count mismatches such as `record_count=66` versus 83 distinct keys, with a later source snapshot reporting 91 opportunity records. Those values refer to different snapshots; they are not a current exact count and must not be overwritten or compared without their source revision/run identity. The full `overdrive/opportunities.json` remains the commercial inventory; `signals.json` and `claims.json` are routing subsets, not an inventory ceiling. The next current read must recompute exact distinct keys and count semantics from the source, preserve historical versions, resolve the staging/sequence discrepancy if still present, and independently read back. No duplicate outreach is created merely to equalize figures.
+
+This complements the FORX rule: source/provider rows, staging rows, declared counters, retries, heartbeat commits and receipts are not productive graph or commercial state by themselves.
+
+## B9. Work-conservation law: completion of one unit starts the next decision
+
+The existing continuous-runtime directive already says:
+`QUICK QUEST COMPLETE → PERSIST EVIDENCE → PIVOT → CONTINUE` and `TOOL FAILURE → RECORD FAILURE → ROUTE AROUND → CONTINUE`.
+
+A bounded patch, report, Root Intake submission, public render, or successful test is a state transition—not automatic termination. On completion, the existing runtime chooses the highest-weight lawful executable next action, first from money nearest terminal state (buyer reply, contract, invoice, receivable, payment verification), then removal of a real revenue blocker, then ready submissions/accepted delivery, then new qualified demand, global penetration and other strategically valuable work. Stop only on forced runtime/tool termination, a governed terminal condition, a hard authority/safety boundary, or genuine exhaustion after the appropriate pivot. At actual termination, persist a post-run receipt to existing Root/Route Intake with exact source, current state, actions/receipts, unresolved blockers, owner, next weighted action and resumption pointers.
+
+Sources:
+- [Continuous Runtime + Post-Run Submission Discipline](https://app.notion.com/p/3f48f8b56cd7818aa0e7cd336f6b13b8?pvs=204)
+- [Micro-Matrix Librarian — Global Weighted Continuity and Verified Money-In](https://app.notion.com/p/3f68f8b56cd7817e974edbf37e9460cb?pvs=204)
+
+## B10. Effect on current disposition
+
+These records mean the failure is not merely “not enough instructions”. Several of the principles and implementation artifacts already exist. The recurrence is **accepted learning → incomplete propagation → no worker-specific behavioral receipt → repeat Owner correction**. That requires a bounded repair and adoption test on each affected existing owner surface; it does not require another universal mega-prompt.
+
+The overall verdict stays **FAIL / OPEN** until Root disposition and the residual behavioral/execution receipts listed in the main report are complete.
