@@ -456,11 +456,29 @@
       "remains_unproven": "Delivery/reading, video waiver/route, completed application, buyer response, offer, contract, invoice, receivable or payment.",
       "scope": "talentadvantage.ca|sales-development-representative|2026-10-16",
       "upgrade_action": "Await the recruiter’s routing response; if required, the applicant must record the genuine intro. Continue other roles where the existing evidence is enough to submit."
+    },
+    {
+      "actual": "Three distinct 2026-10-20 outbound fixed-scope pilot emails were present in Outlook Sent Items to Verminator, Treetops Solar, and Mendaz Solar; their normalized records were absent from the canonical opportunity ledger at the latest ledger read.",
+      "changed": "Added three unique OFFERED records with exact Outlook message IDs, recipients, timestamps, fixed ZAR 9,380 scope, official public contact URLs, and buyer-response/payout gates. record_count reconciles from 111 to 114 and matches Object.keys(records).length.",
+      "classification": "THREE_OUTBOUND_PILOTS_LEDGER_INGESTED; BUYER_OUTCOMES_PENDING",
+      "observed_at": "2026-10-20T11:29:58Z",
+      "owner": "PRI",
+      "proof": [
+        "https://verminator.co.za/contact",
+        "https://treetopssolar.co.za/contact/",
+        "https://mendazsolar.co.za/",
+        "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvwAAAA==",
+        "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvgAAAA==",
+        "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA=="
+      ],
+      "remains_unproven": "Buyer receipt/read, substantive reply, acceptance of scope and price, contract, invoice/receivable, accessible authorized payment route, delivery, or settled payment.",
+      "scope": "2026-10-20 three direct fixed-scope operational workflow pilots",
+      "upgrade_action": "Wait for buyer-initiated substantive replies and reconcile mail/payment events without duplicate outreach. If a buyer replies, qualify their problem, tools, scope, integration permissions, test data, acceptance criteria and payment route before work. Do not follow up again without a new evidence-based due date."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-20T06:37:13Z",
-  "last_reconciled_reason": "PARTIAL SOURCE REQUALIFICATION ONLY: Scale Army's official listing was rechecked and persisted with readback planned; lifecycle remains QUALIFIED and NOT SUBMITTED. Current Gmail/Outlook buyer threads and Close projection were not exposed in this runtime, so full commercial reconciliation and payment-state verification remain open. No buyer reply, acceptance, contract, invoice, receivable or payment is inferred.",
+  "last_reconciled_at": "2026-10-20T11:29:58Z",
+  "last_reconciled_reason": "CURRENT-TURN OUTLOOK SENT-ITEM + OFFICIAL-CONTACT RECONCILIATION: three 2026-10-20 fixed-scope R9,380 offers to Verminator, Treetops Solar, and Mendaz Solar added as unique OFFERED records after exact Sent Item readback and public official contact verification. Buyer response, acceptance, invoice, receivable, and payment remain unproven; unrelated inboxes/payment surfaces were not treated as fully reconciled.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -523,9 +541,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-20T08:37:13+02:00",
+  "last_updated_at": "2026-10-20T13:29:58+02:00",
   "last_updated_by": "PRI",
-  "record_count": 111,
+  "record_count": 114,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -6884,6 +6902,138 @@
         "customer_not_contacted_for_price_change": true,
         "mass_reissue": false,
         "no_outbound_action_authorized_by_this_record": true
+      }
+    },
+    "verminator.co.za|site-visit-to-follow-up-workflow-pilot|2026-10-20": {
+      "domain": "verminator.co.za",
+      "organization": "Verminator Pest Control",
+      "opportunity": "site-visit-to-follow-up-workflow-pilot",
+      "title": "AMX Site-Visit-to-Follow-Up Workflow",
+      "recipient": "quality@verminator.co.za",
+      "state": "OFFERED",
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_confidence": "HIGH",
+      "execution_readiness": "WAITING",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-20T07:48:26Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvwAAAA==",
+          "subject": "One site-visit-to-follow-up workflow pilot",
+          "summary": "Sent from usduplessis@outlook.com to quality@verminator.co.za. Fixed-fee R9,380 once-off; one bounded site-visit/report/follow-up workflow. Buyer has not accepted the scope or price in evidence available to this reconciliation.",
+          "url": "https://verminator.co.za/contact"
+        },
+        {
+          "kind": "OFFICIAL_PUBLIC_CONTACT_VERIFIED",
+          "observed_at": "2026-10-20T11:29:58Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "summary": "Official contact page lists quality@verminator.co.za. Official service pages describe pest-control visits, programmes and follow-up service across Cape Town/Western Cape.",
+          "url": "https://verminator.co.za/contact"
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-20T07:48:26Z",
+      "last_reconciled_at": "2026-10-20T11:29:58Z",
+      "next_action": "WAIT for a substantive buyer response. If interested, confirm the current tools, integration permission, required test data, acceptance criteria and supported payment route before work. Do not begin implementation before attributable paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable settlement evidence.",
+      "commercial_offer": {
+        "amount": 9380,
+        "currency": "ZAR",
+        "scope": "One existing visit-record source and one report/tracking destination: generate a report draft from approved visit fields, create an assigned follow-up task and next-service reminder, log exceptions, and require human approval before customer communication. Fixed fee R9,380 once-off; target handover within 5 business days after scope and access are accepted. Hosting/API fees excluded.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvwAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      }
+    },
+    "treetopssolar.co.za|maintenance-callout-handoff-pilot|2026-10-20": {
+      "domain": "treetopssolar.co.za",
+      "organization": "Treetops Solar",
+      "opportunity": "maintenance-callout-handoff-pilot",
+      "title": "AMX Maintenance-Callout Handoff Workflow",
+      "recipient": "info@treetopssolar.co.za",
+      "state": "OFFERED",
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_confidence": "HIGH",
+      "execution_readiness": "WAITING",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-20T07:48:04Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvgAAAA==",
+          "subject": "One maintenance-callout handoff pilot",
+          "summary": "Sent from usduplessis@outlook.com to info@treetopssolar.co.za. Fixed-fee R9,380 once-off; one bounded maintenance-callout handoff. Buyer has not accepted the scope or price in evidence available to this reconciliation.",
+          "url": "https://treetopssolar.co.za/contact/"
+        },
+        {
+          "kind": "OFFICIAL_PUBLIC_CONTACT_VERIFIED",
+          "observed_at": "2026-10-20T11:29:58Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "summary": "Official Treetops Solar contact page lists info@treetopssolar.co.za and describes solar and battery systems with ongoing support.",
+          "url": "https://treetopssolar.co.za/contact/"
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-20T07:48:04Z",
+      "last_reconciled_at": "2026-10-20T11:29:58Z",
+      "next_action": "WAIT for a substantive buyer response. If interested, confirm the current tools, integration permission, required test data, acceptance criteria and supported payment route before work. Do not begin implementation before attributable paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable settlement evidence.",
+      "commercial_offer": {
+        "amount": 9380,
+        "currency": "ZAR",
+        "scope": "One existing maintenance-request source and one tracking destination: capture the callout, make required details visible, assign the next action, track the job through close-out, and prepare a customer update for human approval. Use existing tools; no autonomous technical decisions or customer messages. Fixed fee R9,380 once-off; target handover within 5 business days after scope and access are accepted. Hosting/API fees excluded.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvgAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      }
+    },
+    "mendazsolar.co.za|solar-service-follow-through-pilot|2026-10-20": {
+      "domain": "mendazsolar.co.za",
+      "organization": "Mendaz Solar",
+      "opportunity": "solar-service-follow-through-pilot",
+      "title": "AMX Solar Service Follow-Through Workflow",
+      "recipient": "info@mendazsolar.co.za",
+      "state": "OFFERED",
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_confidence": "HIGH",
+      "execution_readiness": "WAITING",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-20T07:47:43Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+          "subject": "One bounded pilot for solar service follow-through",
+          "summary": "Sent from usduplessis@outlook.com to info@mendazsolar.co.za. Fixed-fee R9,380 once-off; one bounded solar service follow-through workflow. Buyer has not accepted the scope or price in evidence available to this reconciliation.",
+          "url": "https://mendazsolar.co.za/"
+        },
+        {
+          "kind": "OFFICIAL_PUBLIC_CONTACT_VERIFIED",
+          "observed_at": "2026-10-20T11:29:58Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "summary": "Official Mendaz Solar site lists info@mendazsolar.co.za and describes technical support, diagnostics, servicing and maintenance.",
+          "url": "https://mendazsolar.co.za/"
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-20T07:47:43Z",
+      "last_reconciled_at": "2026-10-20T11:29:58Z",
+      "next_action": "WAIT for a substantive buyer response. If interested, confirm the current tools, integration permission, required test data, acceptance criteria and supported payment route before work. Do not begin implementation before attributable paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable settlement evidence.",
+      "commercial_offer": {
+        "amount": 9380,
+        "currency": "ZAR",
+        "scope": "One existing service-request source and one tracking destination: capture a selected request into a structured job record, flag missing information, assign the next action, prepare a customer update for human review, and track close-out. Use existing tools; no autonomous technical decisions or customer messages. Fixed fee R9,380 once-off; target handover within 5 business days after scope and access are accepted. Hosting/API fees excluded.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
       }
     }
   },
