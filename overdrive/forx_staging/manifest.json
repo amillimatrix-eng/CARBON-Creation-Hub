@@ -3,7 +3,7 @@
   "logical_store": "overdrive/forx_prospect_buffer.json",
   "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
   "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
-  "manifest_version": 14,
+  "manifest_version": 15,
   "base_snapshot": {
     "path": "overdrive/forx_prospect_buffer.json",
     "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
@@ -237,14 +237,27 @@
         "FORX-PROSPECT-20261020-UNGM-009"
       ],
       "segment_sequence": 13
+    },
+    {
+      "path": "overdrive/forx_staging/delta-0014-forx-20261020-upwork-simple-ai-workflow.json",
+      "git_blob_sha": "ae520d27d2d75a096c4ea60af24364d4aaeb3d9f",
+      "count": 1,
+      "batch_id": "forx-20261020-upwork-simple-ai-workflow-01",
+      "source_keys": [
+        "url:https://www.upwork.com/freelance-jobs/apply/Workflow-API-Integration-Assistant_~022112206922748303912/"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261020-UPWORK-002"
+      ],
+      "segment_sequence": 14
     }
   ],
-  "current_unique_source_keys": 959,
-  "gross_observation_versions": 966,
+  "current_unique_source_keys": 960,
+  "gross_observation_versions": 967,
   "current_normalized_missing_explicit_freshness": 0,
   "historical_exact_source_duplicate_versions_preserved": 1,
-  "next_segment_sequence": 14,
-  "last_updated": "2026-10-20T14:32:58Z",
+  "next_segment_sequence": 15,
+  "last_updated": "2026-10-20T14:54:54Z",
   "concurrency_contract": {
     "immutable_base": true,
     "immutable_deltas": true,
