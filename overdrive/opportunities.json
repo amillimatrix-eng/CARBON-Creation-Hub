@@ -491,11 +491,29 @@
       "remains_unproven": "Any live charge, buyer payment, receivable, or settlement; readiness of a separate non-Stripe payment rail for every current offer.",
       "scope": "AMILLIMATRIX Stripe live account capability and onboarding state",
       "upgrade_action": "Owner completes any required merchant onboarding only through the official Stripe dashboard. Then re-read this same account and require charges_enabled=true (and the intended payout capability) before circulating Stripe checkout links. Meanwhile preserve existing offer states, use only already-authorized functioning payment rails when a buyer responds, and continue unrelated money-in routes."
+    },
+    {
+      "actual": "A recipient-specific Outlook search returned exact Sent Item IDs for the 2026-10-20 offers to SA Rental Management, Liane, and Louis Kruger Property Management. The three matching IDs previously stored in overdrive/opportunities.json contained a malformed character. Buyer-response searches for the three recipients returned no messages in the connected Outlook mailbox.",
+      "changed": "Replaced malformed Outlook source_id values in both commercial_offer.source_id and the first evidence source_id for the three existing records; added official public contact-route evidence. Preserved all record keys and OFFERED/WAITING states; record_count remains 117 and matches object-key count.",
+      "classification": "THREE_OUTBOUND_SOURCE_ID_CORRECTIONS; BUYER_OUTCOMES_PENDING",
+      "observed_at": "2026-10-20T11:43:01Z",
+      "owner": "PRI",
+      "proof": [
+        "Outlook recipient search: to:dantedw@sa-rentals.co.za received>=2026-10-20; reply search returned no results",
+        "Outlook recipient search: to:home@liane.co.za received>=2026-10-20; reply search returned no results",
+        "Outlook recipient search: to:property@lkpm.co.za received>=2026-10-20; reply search returned no results",
+        "https://www.sa-rentals.co.za/contact-us",
+        "https://www.liane.co.za/home",
+        "https://www.lkpm.co.za/template/ContactUs.vm"
+      ],
+      "remains_unproven": "Recipient delivery/read, buyer interest or acceptance, invoice/receivable, valid payment route, project delivery, or settled payment.",
+      "scope": "Three existing 2026-10-20 ZAR 3,685 maintenance-follow-through pilot records",
+      "upgrade_action": "Wait for a substantive buyer-initiated response and update the existing record from source evidence. Do not send duplicate follow-ups without a new evidence-based due date. Validate every persisted mail source ID against the original provider result before using it for body retrieval."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-20T11:37:24Z",
-  "last_reconciled_reason": "CURRENT-TURN RECONCILIATION: three 2026-10-20 fixed-scope R9,380 offers are persisted with Sent Item and official-contact evidence; live Stripe readback confirms AMILLIMATRIX remains charges_enabled=false and payouts_enabled=false with onboarding requirements past_due. Buyer outcomes remain unproven; unrelated inboxes/payment surfaces are not represented as fully reconciled.",
+  "last_reconciled_at": "2026-10-20T11:43:01Z",
+  "last_reconciled_reason": "SOURCE-REFERENCE REPAIR: three same-day outbound pilot offers already present in the canonical ledger had a malformed character in both recorded Outlook source IDs. Corrected each field to the exact ID returned by Outlook's recipient-specific Sent Item search and appended official public contact-route evidence. Opportunity keys, OFFERED lifecycle, amounts, scope, recipient, next action, and the reconciled 117-record inventory are preserved. No buyer reply/acceptance/payment is inferred.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -558,7 +576,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-20T13:37:24+02:00",
+  "last_updated_at": "2026-10-20T13:43:01+02:00",
   "last_updated_by": "PRI",
   "record_count": 117,
   "record_key": "normalized organization/domain + opportunity + title",
@@ -7073,9 +7091,16 @@
           "kind": "NEW_FIXED_SCOPE_OFFER_SENT",
           "observed_at": "2026-10-20T11:15:15Z",
           "source": "OUTLOOK_SENT_ITEMS",
-          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwgAAAA==",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwgAAAA==",
           "subject": "One rental-maintenance follow-through pilot",
           "summary": "Fixed ZAR 3,685 once-off pilot offer sent from usduplessis@outlook.com. Message proposes one maintenance-request source plus one tracking destination, human-approved updates, and a five-business-day target after scope/access/payment agreement. Offer sent; no acceptance, invoice or payment evidenced."
+        },
+        {
+          "kind": "OFFICIAL_PUBLIC_CONTACT_VERIFIED",
+          "observed_at": "2026-10-20T11:43:01Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "summary": "Official contact page lists dantedw@sa-rentals.co.za and describes property management/maintenance services relevant to the bounded rental-maintenance follow-through offer.",
+          "url": "https://www.sa-rentals.co.za/contact-us"
         }
       ],
       "execution_owner": "PRI",
@@ -7090,7 +7115,7 @@
         "amount": 3685,
         "currency": "ZAR",
         "scope": "One existing maintenance-request source and one existing tracking destination: structure requests, flag missing information, record responsible next action, track quote/status/close-out, and prepare landlord or tenant updates for human approval. No autonomous messages or authorization of work/spend. Includes acceptance tests and handover. Delivery target five business days after written scope, access and payment terms are accepted. Hosting, paid API usage and integrations outside the agreed source/destination excluded.",
-        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwgAAAA==",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwgAAAA==",
         "status": "OFFER_SENT_NOT_ACCEPTED",
         "type": "FIXED_SCOPE"
       },
@@ -7099,7 +7124,7 @@
       "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
       "current_route_confidence": "MEDIUM",
       "execution_readiness": "WAITING",
-      "last_reconciled_at": "2026-10-20T11:15:15Z",
+      "last_reconciled_at": "2026-10-20T11:43:01Z",
       "active_dependencies": {
         "buyer_response": {
           "state": "WAITING",
@@ -7136,9 +7161,16 @@
           "kind": "NEW_FIXED_SCOPE_OFFER_SENT",
           "observed_at": "2026-10-20T11:15:10Z",
           "source": "OUTLOOK_SENT_ITEMS",
-          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwQAAAA==",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwQAAAA==",
           "subject": "A bounded maintenance-follow-through pilot for home administration",
           "summary": "Fixed ZAR 3,685 once-off pilot offer sent from usduplessis@outlook.com. Message offers a bounded maintenance handoff with human review and no autonomous customer messaging or cost/contractor decisions. Offer sent; no acceptance, invoice or payment evidenced."
+        },
+        {
+          "kind": "OFFICIAL_PUBLIC_CONTACT_VERIFIED",
+          "observed_at": "2026-10-20T11:43:01Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "summary": "Official Liane home-administration page lists home@liane.co.za and describes maintenance/repair coordination services relevant to the bounded offer; legal entity identity remains unverified.",
+          "url": "https://www.liane.co.za/home"
         }
       ],
       "execution_owner": "PRI",
@@ -7153,7 +7185,7 @@
         "amount": 3685,
         "currency": "ZAR",
         "scope": "One existing maintenance-request source and one tracking destination: capture requests, flag missing location/job details, track quote/approval/next action and prepare an owner update for human review. No autonomous owner messages or contractor/cost decisions. Includes acceptance checks and handover. Delivery target five business days after written scope, access and payment terms are accepted. Hosting, paid API usage and out-of-scope integrations excluded.",
-        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwQAAAA==",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwQAAAA==",
         "status": "OFFER_SENT_NOT_ACCEPTED",
         "type": "FIXED_SCOPE"
       },
@@ -7162,7 +7194,7 @@
       "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
       "current_route_confidence": "MEDIUM",
       "execution_readiness": "WAITING",
-      "last_reconciled_at": "2026-10-20T11:15:10Z",
+      "last_reconciled_at": "2026-10-20T11:43:01Z",
       "active_dependencies": {
         "buyer_response": {
           "state": "WAITING",
@@ -7199,9 +7231,16 @@
           "kind": "NEW_FIXED_SCOPE_OFFER_SENT",
           "observed_at": "2026-10-20T11:15:09Z",
           "source": "OUTLOOK_SENT_ITEMS",
-          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwAAAAA==",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwAAAAA==",
           "subject": "One property-maintenance handoff pilot",
           "summary": "Fixed ZAR 3,685 once-off pilot offer sent from usduplessis@outlook.com. Message proposes one property-maintenance handoff, bounded to one request source and one tracking destination with human approval and no autonomous decisions. Offer sent; no acceptance, invoice or payment evidenced."
+        },
+        {
+          "kind": "OFFICIAL_PUBLIC_CONTACT_VERIFIED",
+          "observed_at": "2026-10-20T11:43:01Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "summary": "Official contact page lists property@lkpm.co.za and provides the public maintenance/property-management contact route.",
+          "url": "https://www.lkpm.co.za/template/ContactUs.vm"
         }
       ],
       "execution_owner": "PRI",
@@ -7216,7 +7255,7 @@
         "amount": 3685,
         "currency": "ZAR",
         "scope": "One existing maintenance-request source and one tracking destination: capture requests, flag missing details, assign next action, track vendor/quote/status and prepare owner/tenant updates for human approval. No autonomous customer messaging or maintenance decisions. Includes pass/fail checks and handover. Delivery target five business days after written scope, access and payment terms are accepted. Hosting, paid API usage and out-of-scope integrations excluded.",
-        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwAAAAA==",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwAAAAA==",
         "status": "OFFER_SENT_NOT_ACCEPTED",
         "type": "FIXED_SCOPE"
       },
@@ -7225,7 +7264,7 @@
       "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
       "current_route_confidence": "MEDIUM",
       "execution_readiness": "WAITING",
-      "last_reconciled_at": "2026-10-20T11:15:09Z",
+      "last_reconciled_at": "2026-10-20T11:43:01Z",
       "active_dependencies": {
         "buyer_response": {
           "state": "WAITING",
