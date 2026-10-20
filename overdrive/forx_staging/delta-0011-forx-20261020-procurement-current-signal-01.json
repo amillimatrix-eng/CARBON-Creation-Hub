@@ -1,0 +1,97 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 11,
+  "batch_id": "forx-20261020-procurement-current-signal-01",
+  "created_at": "2026-10-20T14:12:23.406Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-007",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP South Africa — Procurement Unit",
+      "surface": "Development and Deployment of the DIME-SCALE — Business Intelligence Infrastructure; reference UNDP-ZAF-00249.",
+      "observed_need": "The public notice describes an end-to-end system for spaza/micro-retailer transaction data and finance readiness: co-design and market-failure analysis; integration or development of a business transaction / smart POS layer; Android compatibility, offline storage and synchronisation; secure cloud data platform; portable consent-governed machine-readable Business Passport; explicit data-confidence measure; cash-flow and capital-needs diagnostics; instrument matching; finance-readiness path; secure APIs; responsive UX; data governance, consent, role-based access and cybersecurity. The reference group must include UNDP, a commercial lender, DFI, guarantee facility, wholesaler, spaza owners and technical partner.",
+      "outcome_space": [
+        "business intelligence infrastructure",
+        "spaza / micro-retailer digitisation",
+        "offline Android data capture",
+        "consent-governed enterprise data",
+        "secure APIs and cloud platform",
+        "finance-readiness analytics",
+        "South Africa",
+        "fintech / lender integration"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/318442",
+      "source_key": "url:https://www.ungm.org/Public/Notice/318442",
+      "source_observed_at": "2026-10-20T14:12:23.406Z",
+      "published": "2026-10-15",
+      "deadline_at": "2026-10-26T13:00:00Z",
+      "deadline_local_sast": "2026-10-26T15:00:00+02:00",
+      "geography": {
+        "country": "South Africa",
+        "locality": "Spaza and micro-retailer ecosystem; precise deployment geography, travel and fieldwork requirements UNKNOWN pending full solicitation."
+      },
+      "contract_duration": "UNKNOWN — full solicitation terms, period and milestones not verified.",
+      "public_route": {
+        "type": "Official UNDP Quantum procurement route",
+        "notice_url": "https://www.ungm.org/Public/Notice/318442",
+        "procurement_reference": "UNDP-ZAF-00249",
+        "submission_portal": "https://supplier.quantum.partneragencies.org",
+        "existing_profile_rule": "Use existing supplier profile if one exists; do not create a duplicate. Full negotiation documents are linked through the notice/portal.",
+        "official_contact": "procurement.enquiries.za@undp.org"
+      },
+      "contactability": "CURRENT OFFICIAL NOTICE AND PROCUREMENT ROUTE PUBLISHED; bidder eligibility, supplier profile/access, full TOR, contract economics and decision authority UNKNOWN.",
+      "payer_hypothesis": "UNDP if selected; contract price, payment schedule, delivery costs and margin UNKNOWN.",
+      "fit_note": "High-level overlap with AMX's evidenced systems, data and automation direction, but the scope is a substantial multi-stakeholder product/infrastructure deployment. Required lender/DFI/guarantee/wholesaler/spaza-owner network, firm eligibility, relevant references, security/privacy capability, mobile/offline delivery, staffing and device economics are unverified. Do not imply AMX can independently deliver the complete system or that the aggregate programme is an AMX award.",
+      "source_rights": "Public procurement metadata and factual summary only; observe the solicitation's own terms and use attribution URL. Do not copy restricted attachment content.",
+      "execution_readiness": "TIME_CRITICAL_HOLD_FULL_TOR_FIRM_ELIGIBILITY_PARTNER_NETWORK_REFERENCES_AND_DELIVERY_CAPACITY",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE triage immediately before 26-Oct deadline: retrieve the controlling TOR/amendments from the existing Quantum route; verify bidder and consortium/subcontract eligibility, required references, mandatory partner network, mobile/offline/security scope, staffing, device costs for 200/500/1000 businesses, price/payment terms and net delivery feasibility. If any hard gate fails, HOLD/KILL. No submission without PRI authorization and proven capacity.",
+      "intake_custody": "Existing Root Intake issue #31; route to existing iSCOPE issue #4; FORX flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. Public notice != eligibility, partner network, capability, bid, award, contract, invoice, payment or revenue."
+    },
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-008",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "International Labour Organization (ILO) — Procurement",
+      "surface": "RELMEETINGS_Pilot — AI-powered Live Speech-to-Speech Translation in ILO Meeting Rooms; reference rfx_12310_HQ.",
+      "observed_need": "The official notice invites offers for an AI-powered live speech-to-speech translation pilot in ILO meeting rooms. Public notice classification includes audio interpretation systems. The substantive technical annexes, supported languages, acoustic hardware, latency/quality thresholds, privacy/security requirements, integration boundary, acceptance criteria and budget were not visible in the public page readback.",
+      "outcome_space": [
+        "AI speech-to-speech translation",
+        "real-time language systems",
+        "meeting-room interpretation integration",
+        "audio / AV integration",
+        "Switzerland",
+        "international procurement"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/318344",
+      "source_key": "url:https://www.ungm.org/Public/Notice/318344",
+      "source_observed_at": "2026-10-20T14:12:23.406Z",
+      "published": "2026-10-15",
+      "deadline_at": "2026-10-28T18:00:00Z",
+      "deadline_local_sast": "2026-10-28T20:00:00+02:00",
+      "geography": {
+        "country": "Switzerland",
+        "locality": "ILO meeting rooms; exact locations and onsite requirements UNKNOWN until RFQ annexes are reviewed."
+      },
+      "contract_duration": "UNKNOWN — technical and contractual annexes not fully inspected.",
+      "public_route": {
+        "type": "Official ILO e-Sourcing (Jaggaer) procurement route",
+        "notice_url": "https://www.ungm.org/Public/Notice/318344",
+        "reference": "rfx_12310_HQ",
+        "submission_mode": "Authenticated e-Sourcing portal; supplier eligibility and access UNKNOWN.",
+        "platform_support_email": "SERV-INTERPRETATION@ilo.org (notice limits this to cases where the e-Sourcing platform cannot be used)."
+      },
+      "contactability": "CURRENT OFFICIAL NOTICE AND SUBMISSION PORTAL REQUIREMENT PUBLISHED; buyer contact/technical annexes and supplier readiness UNKNOWN.",
+      "payer_hypothesis": "ILO if selected; contract value, payment milestones and acceptance terms UNKNOWN.",
+      "fit_note": "Potential AI integration surface, but this notice is not proof of AMX having a qualified live translation product or meeting-room AV system. End-to-end real-time quality, supported-language coverage, privacy, latency, hardware integration and supplier eligibility are all unknown. Deadline is near; do not pursue absent hard evidence of end-to-end capability or a credible authorized integration partner.",
+      "source_rights": "Public procurement metadata and factual summary only; observe the solicitation's own terms and use attribution URL. Do not copy restricted attachment content.",
+      "execution_readiness": "HOLD_TECHNICAL_ANNEXES_REALTIME_QUALITY_AUDIO_HARDWARE_PRIVACY_AND_SUPPLIER_ELIGIBILITY",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE review the full RFQ annexes using the existing authorized supplier route; test supplier/partner eligibility, language coverage, latency/accuracy, meeting-room integration, privacy/security, acceptance criteria, delivery capacity and price before any PRI bid decision. If end-to-end fit cannot be demonstrated in time, HOLD/KILL. Do not use the platform-support email as a buyer-pitch route.",
+      "intake_custody": "Existing Root Intake issue #31; route to existing iSCOPE issue #4; FORX flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. Published RFQ != AMX product capability, eligibility, offer, award, contract, invoice, payment or income."
+    }
+  ]
+}
