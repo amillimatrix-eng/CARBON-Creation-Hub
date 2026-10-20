@@ -363,3 +363,18 @@ Append-only provenance correction to the Segment 12 JSONL checkpoint recorded at
 
 The earlier checkpoint remains unchanged as history; the correction event was appended separately in `AMX/ROOT/INTAKE/DYNAMIC_FLIGHT_PATH_REGISTER.jsonl` at event `AMX-FLT-20261012-DSYNC-145440-9fb44f0c:CORRECTION:SEGMENT-12:ALPHA-SENT-ITEM-ID-20261019T174907Z`, commit `315d960f8c9e95a262f37dc9db4ec3d69c07b31f`, blob `0c5bfe92c0c136ec31970ddf46980679ddd782f7`. No send facts, offer terms, queue state, or lifecycle disposition changed. This is provenance hygiene only.
 
+
+
+## CURRENT-WAKE VISYM PAYOUT CORRECTION — RECEIPT ACKNOWLEDGED — 2026-10-20
+
+**Supersedes prior wording that treated bank-proof receipt as unresolved.**
+
+- Connected Outlook full-body readback shows an outbound email from the Owner at `2026-10-19T20:39:34Z` to `collector@visym.com`, subject `Re: GeoSonics payout method and secure bank-detail submission`, with the GoTyme Bank Proof of Account attached. The body says the document confirms account details, and asks whether DOB/SWIFT is required. The attachment contents are not copied into this Intake.
+- Visym replied at `2026-10-19T20:47:54Z` (2026-10-20 06:47:54 SAST), same subject, with **“Received, thank you.”** Their reply states GoTyme e-wallet payments are simpler and do not require DOB or SWIFT/BIC, but still instructs the collector to set the app payment provider to **Wise** and payment email to `amillimatrix@gmail.com`.
+- This is direct evidence that Visym received the proof-of-account attachment. It does NOT prove that the Wise setting is already selected, that the payout run included the account, or that funds were released. **Payout inclusion and payment remain UNKNOWN.**
+- No additional Visym email has been sent by this runtime. Do not resend proof/details or send another process query.
+- Current app-access limitation: Opera Browser Connector returns “Browser not connected”; TinyFish wallet readback is negative USD 1.051248 and no browser run can start. This runtime cannot independently change or verify the Collector app setting. Do not claim the setting was changed.
+- Immediate operational status: Owner/authorized Collector-app session must verify/set payment provider Wise and email `amillimatrix@gmail.com` if that is not already set. Do not change other payout fields. Then monitor for payout confirmation and independently verify actual bank credit.
+- The existing “Check Visym payout” one-shot remains set for 2026-10-20 18:00 Africa/Johannesburg; this is a check reminder, not proof of the payout run or of an automatic future run.
+
+**Disposition:** proof-of-account receipt PASS; Wise app setting UNKNOWN; run inclusion UNKNOWN; cash-in NOT VERIFIED. Preserve original thread and avoid duplicate PII.
