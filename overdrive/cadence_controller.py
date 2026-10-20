@@ -128,6 +128,7 @@ def record_success(control: dict[str, Any], mode: str, now: datetime | None = No
             control["current_mode"] = "PLAN_A"
         changed = True
     elif mode == "plan_b":
+        control["last_plan_b_success_at"] = stamp
         if old_mode != "PLAN_B":
             control["current_mode"] = "PLAN_B"
             control["last_plan_b_entered_at"] = stamp
@@ -135,7 +136,7 @@ def record_success(control: dict[str, Any], mode: str, now: datetime | None = No
                 "at": stamp, "from": old_mode, "to": "PLAN_B",
                 "reason": "PLAN_A_MISSED_OR_STALE; BOUNDED_EXISTING-RUNNER_RECOVERY",
             })
-            changed = True
+        changed = True
     elif mode == "manual_tick":
         control["last_manual_success_at"] = stamp
         changed = True
