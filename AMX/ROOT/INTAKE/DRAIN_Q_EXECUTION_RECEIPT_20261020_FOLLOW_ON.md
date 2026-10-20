@@ -85,3 +85,40 @@ The existing Render service record for `amx-evidence-house` shows automatic depl
 - **Readback boundary:** the update returned prior `last_run_time=2026-10-20T14:06:06.993205Z`; no new run output was returned at request time. The task's actual execution, buyer response, invoice, or money-in is not verified by this acknowledgement.
 - **Disposition:** request route recovered; execution/outcome NOT VERIFIED. Existing commercial route remains active under its current mandate; no direct buyer contact was sent by this action.
 - **Next:** recover attributable run output and canonical opportunity transitions from the existing task/ledger; continue to distinguish send, reply, acceptance, invoice and settled payment.
+
+
+## ROOT-DIRECTIVE CORRECTION + PLAN-A/B CONTROL READBACK — 2026-10-20
+
+### Pause correction — current Owner instruction takes precedence
+After the earlier run-request retries, the current `AMX/ROOT/INTAKE/INTAKE_INDEX.md` and Issue #31 comment [6293630675](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6293630675) were re-read. They establish an Owner-directed temporary pause: the three separate old tasks must remain paused while the consolidated execution/control is repaired. The earlier re-enable attempts for FORX and IDEAL were contrary to that more specific current instruction; this is recorded as a correction, not presented as accepted execution.
+
+**Restoration action:** re-applied `is_enabled=false` to the existing FORX task `6ac6a4081dd48191967a0182fca2eba7` and IDEAL SALES TEAM task `6ac17e8999648191ba125236de46f012`. Both update calls returned success; their saved hourly schedules and prompts were unchanged. A subsequent roster readback shows all three paused tasks disabled:
+- FORX: disabled; last-run timestamp `2026-10-20T15:06:08.435806Z`; updated `2026-10-20T15:29:29.937193Z`.
+- IDEAL SALES TEAM: disabled; last-run timestamp `2026-10-20T15:27:10.213087Z`; updated `2026-10-20T15:29:32.235089Z`.
+- Bounty Reaper: disabled; last-run timestamp `2026-10-20T15:02:30.016586Z`; it was already disabled at this readback.
+The advanced timestamps do not expose a corresponding attributable run output or accepted task result. No task is claimed to have completed useful work on the basis of those timestamps. No further re-enable/run requests will be made against these three separate tasks while the current pause stands.
+
+### Existing branch / draft control PR
+Existing designated branch: `root/matrix-recovery-drain-q-20261019`. Draft PR [#57 — P0 continuity: add guarded hourly recovery control](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/57) is open and not merged.
+
+The branch adds a read-only repository recovery controller and tests; it modifies the existing `.github/workflows/overdrive-recovery.yml` rather than adding a parallel workflow. Current design:
+- **Plan A:** hourly GitHub Actions trigger invokes repository-only source/hash/ledger preflight and writes an artifact.
+- **Plan B:** explicit manual dispatch only while the commercial worker remains paused and the last successful scheduled Plan A run is absent or at least 75 minutes old; it queries completed workflow runs and selects the latest successful `event=schedule` only. Failed scheduled runs and successful push/PR runs do not satisfy Plan A. API lookup failure fails closed. Plan B is not sticky; the next successful schedule event selects A. Fallback dispatch explicitly excludes the commercial worker to avoid overlap.
+- New regression coverage includes source/root/ledger integrity, Plan A/Plan B selection, successful-schedule selection, malformed Actions response, non-mutating receipt generation and future-dated runtime clock-skew detection.
+
+### Attributable validation and artifact readback
+- **Evidence House Backend Tests** run [39448121971](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/39448121971) completed SUCCESS. Its readback includes pytest, smoke, Docker build and container health/bootstrap stages. This run exercised the controller/test source introduced immediately before the workflow-only follow-up commit.
+- **Pull-request recovery-control run** [39448200555](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/39448200555) completed SUCCESS. The `recovery_control` job succeeded and the commercial `worker` job was skipped, as intended for a PR preflight. Artifact `amx-recovery-control-39448200555-1` (ID `12276403771`) was downloaded and inspected.
+- That artifact reads Registry v1.3, 13 entries, computed root `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a` matching the declared root; opportunity ledger count 121/121; 108 total claim rows; 0 READY and 0 externally READY in this repository projection; Overdrive's recorded tick `2026-10-16T08:40:31.786740Z` was correctly classified STALE. The receipt selected `VALIDATION_ONLY` because the event was a pull request, recorded external reads/writes and commercial worker run as false, and retained Root disposition `OPEN_NOT_CLEARED`.
+- **No real scheduled Plan A run has yet been observed**: the PR is not merged, so this is not proof of hourly production liveness. Plan B has not been invoked end-to-end; only its policy logic/tests and read-only PR control are verified. The separate commercial writer remains paused.
+- GitHub currently reports PR #57 open/draft and mergeable, but Root disposition and scheduled/fallback behavior acceptance are not complete; do not merge automatically.
+
+### Directive 23
+- **Expected outcome:** independent repo-side continuity/preflight evidence without using a ChatGPT task slot, while preserving the Owner's pause and single commercial writer.
+- **Existing owners:** ROOT/T-GOV for disposition; T-COD / provider-portability owner for control review; established execution owners retain their registered mandates.
+- **Action completed:** restore the temporary task pause after the mistaken enable retry; add/test/read back Plan A/B controller code on the authorized existing branch; open the draft PR for review.
+- **Dependencies:** Root/T-COD review, any necessary branch/base reconciliation, a successful hourly schedule-run readback after approved merge, and later consolidated-lane prompt/behavior acceptance.
+- **Acceptance evidence:** disabled-state readback for the three old tasks; test run 39448121971; PR preflight run 39448200555; artifact ID 12276403771 downloaded and inspected; current Registry root and ledger counts in the artifact.
+- **Safety/preservation:** no merge, no commercial execution, no external read/write, no buyer contact, no payment change, no new worker/task/queue, no production change; old prompts/schedules preserved.
+- **Disposition:** repository preflight PASS on PR event; scheduled Plan A liveness, end-to-end Plan B execution, commercial behavior and Root queue clearance remain OPEN.
+- **Remaining work:** obtain Root/T-COD disposition; preserve paused state; after approved merge, verify a real scheduled event and artifact/readback, then separately test Plan B only under the 75-minute gate. Resume consolidated outcome lanes only after their prompts and actual behavior pass readback.
