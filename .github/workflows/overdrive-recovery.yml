@@ -1,6 +1,26 @@
 name: AMX OVERDRIVE Worker
+
 on:
   push:
+    branches:
+      - main
+      - root/matrix-recovery-drain-q-20261019
+    paths:
+      - 'overdrive/runner.py'
+      - 'overdrive/payment_truth.py'
+      - 'overdrive/payment_verifier.py'
+      - 'overdrive/state.json'
+      - 'overdrive/opportunities.json'
+      - 'overdrive/claims.json'
+      - 'overdrive/payment_rails.json'
+      - 'AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json'
+      - 'AMX/ROOT/INTAKE/INTAKE_INDEX.md'
+      - 'CONTINUITY.md'
+      - 'ACCESS_CONTINUITY.md'
+      - 'scripts/matrix_recovery_control.py'
+      - 'tests/test_matrix_recovery_control.py'
+      - '.github/workflows/overdrive-recovery.yml'
+  pull_request:
     branches: [main]
     paths:
       - 'overdrive/runner.py'
@@ -8,23 +28,46 @@ on:
       - 'overdrive/payment_verifier.py'
       - 'overdrive/state.json'
       - 'overdrive/opportunities.json'
+      - 'overdrive/claims.json'
+      - 'overdrive/payment_rails.json'
+      - 'AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json'
+      - 'AMX/ROOT/INTAKE/INTAKE_INDEX.md'
+      - 'CONTINUITY.md'
+      - 'ACCESS_CONTINUITY.md'
+      - 'scripts/matrix_recovery_control.py'
+      - 'tests/test_matrix_recovery_control.py'
       - '.github/workflows/overdrive-recovery.yml'
+  schedule:
+    - cron: '0 * * * *'
   workflow_dispatch:
     inputs:
       run_worker:
-        description: "Keep the commercial worker paused during infrastructure work; choose run only for an explicitly authorized manual execution."
+        description: "Commercial writer stays paused during recovery work. Select run only for separately authorized manual execution."
         required: true
         type: choice
         options:
           - paused
           - run
         default: paused
+      recovery_fallback:
+        description: "Plan B repo-only fallback; select only if no successful hourly Plan A receipt exists within 75 minutes."
+        required: true
+        type: choice
+        options:
+          - not_requested
+          - hourly_dependency_unmet
+        default: not_requested
+
 permissions:
   contents: write
+
 concurrency:
   group: amx-overdrive-main
   cancel-in-progress: false
+
 jobs:
+  # The commercial worker remains explicitly manual-only. The hourly event
+  # below is a read-only control/preflight, not a hidden commercial reactivation.
   worker:
     if: github.event_name == 'workflow_dispatch' && inputs.run_worker == 'run'
     runs-on: ubuntu-latest
@@ -39,10 +82,8 @@ jobs:
           git config user.name "AMX OVERDRIVE"
           git config user.email "amillimatrix@gmail.com"
 
-          # GitHub schedule is the transport trigger (5-minute minimum).
-          # Once awake, OVERDRIVE keeps a bounded minute watch until the next transport wake.
-          # Each tick re-syncs durable state first so new opportunities/responses
-          # do not wait for the next hourly control run.
+          # Explicitly authorized manual execution only. This bounded window
+          # does not run for scheduled preflight, pushes, or pull requests.
           for tick in $(seq 1 4); do
             echo "AMX minute tick $tick/4"
             git pull --rebase origin main
@@ -87,3 +128,73 @@ jobs:
               assert readiness not in readiness_gates, f"gated readiness routed READY: {readiness} {claim.get('opportunity_key')}"
           print("OVERDRIVE minute execution window PASS", len(receipts), "claims", claims.get("ready_count",0))
           PY
+
+  recovery_control:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read last scheduled Plan A completion for a requested fallback
+        id: plan_a
+        if: github.event_name == 'workflow_dispatch' && inputs.recovery_fallback == 'hourly_dependency_unmet'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REQUESTED_WORKER: ${{ inputs.run_worker }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$REQUESTED_WORKER" != "paused" ]]; then
+            echo "last_success_at=" >> "$GITHUB_OUTPUT"
+            echo "The Plan B control cannot resume the commercial worker." >&2
+            exit 0
+          fi
+          endpoint="${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/actions/workflows/overdrive-recovery.yml/runs?event=schedule&status=success&per_page=1"
+          if ! response="$(curl -fsSL -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$endpoint")"; then
+            # Sentinel intentionally fails closed in the controller; an API
+            # lookup failure must not be mistaken for "Plan A never ran".
+            echo "last_success_at=PLAN_A_LOOKUP_FAILED" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          last_success="$(python3 -c 'import json,sys; x=json.load(sys.stdin).get("workflow_runs",[]); print(x[0].get("updated_at","") if x else "")' <<< "$response")"
+          echo "last_success_at=$last_success" >> "$GITHUB_OUTPUT"
+
+      - name: Run repository-only recovery control
+        env:
+          FALLBACK_REQUESTED: ${{ github.event_name == 'workflow_dispatch' && inputs.recovery_fallback == 'hourly_dependency_unmet' }}
+          WORKER_REQUEST: ${{ inputs.run_worker || 'paused' }}
+          PLAN_A_LAST_SUCCESS_AT: ${{ steps.plan_a.outputs.last_success_at }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(
+            --event "$GITHUB_EVENT_NAME"
+            --run-id "$GITHUB_RUN_ID"
+            --run-attempt "$GITHUB_RUN_ATTEMPT"
+            --run-number "$GITHUB_RUN_NUMBER"
+            --ref "$GITHUB_REF"
+            --commit-sha "$GITHUB_SHA"
+            --actor "$GITHUB_ACTOR"
+            --run-worker "$WORKER_REQUEST"
+          )
+          if [[ "$FALLBACK_REQUESTED" == "true" ]]; then
+            args+=(--fallback-requested)
+          fi
+          if [[ -n "$PLAN_A_LAST_SUCCESS_AT" ]]; then
+            args+=(--last-plan-a-success-at "$PLAN_A_LAST_SUCCESS_AT")
+          fi
+          python3 scripts/matrix_recovery_control.py "${args[@]}"
+
+      - name: Persist run receipt artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: amx-recovery-control-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/matrix-recovery-control/receipt.json
+          retention-days: 90
+          if-no-files-found: warn
