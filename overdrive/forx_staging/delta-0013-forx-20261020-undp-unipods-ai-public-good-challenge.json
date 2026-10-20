@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 13,
+  "batch_id": "forx-20261020-undp-unipods-ai-challenge-01",
+  "created_at": "2026-10-20T14:32:58Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-009",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP South Africa — UniPods AI for Public Good Challenge",
+      "surface": "UNDP-ZAF-00250 — National Service Provider for the UniPods AI for Public Good Challenge, South Africa.",
+      "observed_need": "The current UNDP notice seeks a primary delivery organisation for the South African AI for Public Good Challenge in coordination with the University of Johannesburg, which provides the UniPod venue, GPU compute infrastructure and faculty mentors. Public scope includes programme setup, government coordination, use-case mapping and challenge-brief approval, recruiting/onboarding 4–5 multidisciplinary student teams, training coordination, event/programme delivery and reporting. A secondary scope extract also indicates the provider handles team stipend disbursement from programme funds and an end-of-programme/close-out pack; those exact obligations and budget must be checked in the controlling TOR.",
+      "outcome_space": [
+        "AI for public good",
+        "student innovation programme",
+        "government use-case mapping",
+        "participant recruitment",
+        "AI training coordination",
+        "programme delivery",
+        "South Africa",
+        "university and government delivery network"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/318800",
+      "source_key": "url:https://www.ungm.org/Public/Notice/318800",
+      "source_observed_at": "2026-10-20T14:32:58Z",
+      "published": "2026-10-19",
+      "deadline_at": "2026-10-30T11:00:00Z",
+      "deadline_local_sast": "2026-10-30T13:00:00+02:00",
+      "geography": {
+        "country": "South Africa",
+        "locality": "University of Johannesburg / UniPod coordination; exact venue travel and staffing coverage must be confirmed in TOR."
+      },
+      "contract_duration": "Eight-month programme structure indicated by public excerpt; start date, milestones, value, payment schedule and full close-out terms must be verified from TOR.",
+      "public_route": {
+        "type": "Official UNDP Quantum procurement route",
+        "notice_url": "https://www.ungm.org/Public/Notice/318800",
+        "procurement_reference": "UNDP-ZAF-00250",
+        "portal": "https://supplier.quantum.partneragencies.org",
+        "negotiation_documents": "https://procurement-notices.undp.org/view_negotiation.cfm?nego_id=50854",
+        "existing_profile_rule": "Use current supplier profile if already registered; do not create a duplicate."
+      },
+      "contactability": "Official RFP is currently listed with 30-Oct deadline; full TOR access, supplier eligibility/profile status and proposal route remain unverified.",
+      "payer_hypothesis": "UNDP if selected; amount, stipend budget, payment terms, working-capital need and margin UNKNOWN.",
+      "fit_note": "Potential adjacency to programme coordination, evidence-backed AI/system design and event-delivery capability. Hard gaps remain: comparable formal programme-management references, ability to coordinate government focal points, student recruitment/selection capacity, trainer and faculty workflow, data/IP safeguards, stipend administration, entity eligibility and working capital. UJ provision of venue/compute/mentors reduces some infrastructure needs but does not establish AMX delivery capacity or eligibility.",
+      "source_rights": "Public procurement metadata and factual summary only; use the official solicitation and observe its access, confidentiality and submission requirements.",
+      "execution_readiness": "TIME_CRITICAL_HOLD_FULL_TOR_ELIGIBILITY_REFERENCES_GOVERNMENT_COORDINATION_STIPEND_CASHFLOW",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE to retrieve the controlling TOR/amendments using an authorized existing Quantum profile, then verify legal entity and mandatory supplier criteria, comparable programme references, government coordination, university/trainer/staff capacity, team recruitment, 8-month workload, stipend handling, cash-flow and payment terms, privacy/IP requirements, bid-preparation cost and margin. Qualify only if every mandatory gate is evidenced; otherwise HOLD/KILL before the deadline. FORX does not contact UNDP or submit a bid.",
+      "intake_custody": "Existing Root Intake issue #31 and iSCOPE issue #4; existing flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW RFP SIGNAL ONLY. Public notice != eligible supplier, complete TOR review, partner agreement, submitted bid, award, contract, invoice or payment."
+    }
+  ]
+}
