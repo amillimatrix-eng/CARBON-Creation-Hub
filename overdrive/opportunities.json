@@ -543,7 +543,7 @@
   },
   "last_updated_at": "2026-10-20T13:29:58+02:00",
   "last_updated_by": "PRI",
-  "record_count": 114,
+  "record_count": 117,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -7034,6 +7034,195 @@
         "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
         "status": "OFFER_SENT_NOT_ACCEPTED",
         "type": "FIXED_SCOPE"
+      }
+    },
+    "sa-rentals.co.za|rental-maintenance-follow-through-pilot|2026-10-20": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwgAAAA=="
+        ],
+        "identity": {
+          "domain": "sa-rentals.co.za",
+          "opportunity": "AMX Rental-Maintenance Follow-Through Pilot",
+          "organization": "SA Rental Management"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-20T11:15:15Z"
+      },
+      "domain": "sa-rentals.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "NEW_FIXED_SCOPE_OFFER_SENT",
+          "observed_at": "2026-10-20T11:15:15Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwgAAAA==",
+          "subject": "One rental-maintenance follow-through pilot",
+          "summary": "Fixed ZAR 3,685 once-off pilot offer sent from usduplessis@outlook.com. Message proposes one maintenance-request source plus one tracking destination, human-approved updates, and a five-business-day target after scope/access/payment agreement. Offer sent; no acceptance, invoice or payment evidenced."
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-20T11:15:15Z",
+      "next_action": "WAIT for a substantive buyer response. If interested, confirm the exact current tools, source/destination, access permissions, acceptance criteria, and a working payment route before accepting or starting work. Do not follow up again without a new evidence-based due date. Record acceptance, invoice/receivable and payment only from attributable source evidence.",
+      "opportunity": "AMX Rental-Maintenance Follow-Through Pilot",
+      "organization": "SA Rental Management",
+      "recipient": "dantedw@sa-rentals.co.za",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 3685,
+        "currency": "ZAR",
+        "scope": "One existing maintenance-request source and one existing tracking destination: structure requests, flag missing information, record responsible next action, track quote/status/close-out, and prepare landlord or tenant updates for human approval. No autonomous messages or authorization of work/spend. Includes acceptance tests and handover. Delivery target five business days after written scope, access and payment terms are accepted. Hosting, paid API usage and integrations outside the agreed source/destination excluded.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwgAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
+      "current_route_confidence": "MEDIUM",
+      "execution_readiness": "WAITING",
+      "last_reconciled_at": "2026-10-20T11:15:15Z",
+      "active_dependencies": {
+        "buyer_response": {
+          "state": "WAITING",
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "observed_at": "2026-10-20T11:15:15Z",
+          "next": "On a substantive buyer response, qualify actual need and confirm the bounded one-source/one-destination scope and acceptance criteria."
+        },
+        "payment_route": {
+          "state": "UNCONFIRMED_FOR_THIS_ORDER",
+          "kind": "PAYMENT",
+          "observed_at": "2026-10-20T11:15:15Z",
+          "evidence": "No buyer acceptance or order-specific payment instruction is evidenced; the offer itself promises payment-route confirmation before acceptance/work.",
+          "next": "Agree an executable payment route after buyer interest and before starting work; do not claim payment or issue an invoice absent acceptance."
+        }
+      }
+    },
+    "liane.co.za|home-administration-maintenance-follow-through-pilot|2026-10-20": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwQAAAA=="
+        ],
+        "identity": {
+          "domain": "liane.co.za",
+          "opportunity": "AMX Home-Administration Maintenance Follow-Through Pilot",
+          "organization": "Liane (home-administration service; legal entity not verified)"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-20T11:15:10Z"
+      },
+      "domain": "liane.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "NEW_FIXED_SCOPE_OFFER_SENT",
+          "observed_at": "2026-10-20T11:15:10Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwQAAAA==",
+          "subject": "A bounded maintenance-follow-through pilot for home administration",
+          "summary": "Fixed ZAR 3,685 once-off pilot offer sent from usduplessis@outlook.com. Message offers a bounded maintenance handoff with human review and no autonomous customer messaging or cost/contractor decisions. Offer sent; no acceptance, invoice or payment evidenced."
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-20T11:15:10Z",
+      "next_action": "WAIT for a substantive buyer response. If interested, confirm the exact current tools, source/destination, access permissions, acceptance criteria, and a working payment route before accepting or starting work. Do not follow up again without a new evidence-based due date. Record acceptance, invoice/receivable and payment only from attributable source evidence.",
+      "opportunity": "AMX Home-Administration Maintenance Follow-Through Pilot",
+      "organization": "Liane (home-administration service; legal entity not verified)",
+      "recipient": "home@liane.co.za",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 3685,
+        "currency": "ZAR",
+        "scope": "One existing maintenance-request source and one tracking destination: capture requests, flag missing location/job details, track quote/approval/next action and prepare an owner update for human review. No autonomous owner messages or contractor/cost decisions. Includes acceptance checks and handover. Delivery target five business days after written scope, access and payment terms are accepted. Hosting, paid API usage and out-of-scope integrations excluded.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwQAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
+      "current_route_confidence": "MEDIUM",
+      "execution_readiness": "WAITING",
+      "last_reconciled_at": "2026-10-20T11:15:10Z",
+      "active_dependencies": {
+        "buyer_response": {
+          "state": "WAITING",
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "observed_at": "2026-10-20T11:15:10Z",
+          "next": "On a substantive buyer response, qualify actual need and confirm the bounded one-source/one-destination scope and acceptance criteria."
+        },
+        "payment_route": {
+          "state": "UNCONFIRMED_FOR_THIS_ORDER",
+          "kind": "PAYMENT",
+          "observed_at": "2026-10-20T11:15:10Z",
+          "evidence": "No buyer acceptance or order-specific payment instruction is evidenced; the offer itself promises payment-route confirmation before acceptance/work.",
+          "next": "Agree an executable payment route after buyer interest and before starting work; do not claim payment or issue an invoice absent acceptance."
+        }
+      }
+    },
+    "lkpm.co.za|property-maintenance-handoff-pilot|2026-10-20": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwAAAAA=="
+        ],
+        "identity": {
+          "domain": "lkpm.co.za",
+          "opportunity": "AMX Property-Maintenance Handoff Pilot",
+          "organization": "Louis Kruger Property Management"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-20T11:15:09Z"
+      },
+      "domain": "lkpm.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "NEW_FIXED_SCOPE_OFFER_SENT",
+          "observed_at": "2026-10-20T11:15:09Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwAAAAA==",
+          "subject": "One property-maintenance handoff pilot",
+          "summary": "Fixed ZAR 3,685 once-off pilot offer sent from usduplessis@outlook.com. Message proposes one property-maintenance handoff, bounded to one request source and one tracking destination with human approval and no autonomous decisions. Offer sent; no acceptance, invoice or payment evidenced."
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-20T11:15:09Z",
+      "next_action": "WAIT for a substantive buyer response. If interested, confirm the exact current tools, source/destination, access permissions, acceptance criteria, and a working payment route before accepting or starting work. Do not follow up again without a new evidence-based due date. Record acceptance, invoice/receivable and payment only from attributable source evidence.",
+      "opportunity": "AMX Property-Maintenance Handoff Pilot",
+      "organization": "Louis Kruger Property Management",
+      "recipient": "property@lkpm.co.za",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 3685,
+        "currency": "ZAR",
+        "scope": "One existing maintenance-request source and one tracking destination: capture requests, flag missing details, assign next action, track vendor/quote/status and prepare owner/tenant updates for human approval. No autonomous customer messaging or maintenance decisions. Includes pass/fail checks and handover. Delivery target five business days after written scope, access and payment terms are accepted. Hosting, paid API usage and out-of-scope integrations excluded.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RwAAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
+      "current_route_confidence": "MEDIUM",
+      "execution_readiness": "WAITING",
+      "last_reconciled_at": "2026-10-20T11:15:09Z",
+      "active_dependencies": {
+        "buyer_response": {
+          "state": "WAITING",
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "observed_at": "2026-10-20T11:15:09Z",
+          "next": "On a substantive buyer response, qualify actual need and confirm the bounded one-source/one-destination scope and acceptance criteria."
+        },
+        "payment_route": {
+          "state": "UNCONFIRMED_FOR_THIS_ORDER",
+          "kind": "PAYMENT",
+          "observed_at": "2026-10-20T11:15:09Z",
+          "evidence": "No buyer acceptance or order-specific payment instruction is evidenced; the offer itself promises payment-route confirmation before acceptance/work.",
+          "next": "Agree an executable payment route after buyer interest and before starting work; do not claim payment or issue an invoice absent acceptance."
+        }
       }
     }
   },
