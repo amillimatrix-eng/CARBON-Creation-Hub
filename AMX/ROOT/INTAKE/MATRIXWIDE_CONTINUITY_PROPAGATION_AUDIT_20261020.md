@@ -378,3 +378,30 @@ Sources:
 These records mean the failure is not merely “not enough instructions”. Several of the principles and implementation artifacts already exist. The recurrence is **accepted learning → incomplete propagation → no worker-specific behavioral receipt → repeat Owner correction**. That requires a bounded repair and adoption test on each affected existing owner surface; it does not require another universal mega-prompt.
 
 The overall verdict stays **FAIL / OPEN** until Root disposition and the residual behavioral/execution receipts listed in the main report are complete.
+
+## Bounded session-loss control recovered — exact source and live acceptance boundary (2026-10-20)
+
+### Existing fix recovered
+
+Current `main` already contains a durable, transcript-independent handoff path. This is the bounded fix for preserving/recovering work after loss of a chat/workspace; it is not a guarantee that a particular model session remains alive.
+
+- `CONTINUITY.md` blob `0bef287c3bd0ceb687116e46a501d82d5fb10c89` (commit `78cdbb74a234cc7750fd502eb81978654136c087`): recover from current durable state; inspect state/ledger, newest receipts, open issues and workflow runs; resume from furthest evidenced state; persist material transitions; require a subsequent real receipt/readback.
+- `ACCESS_CONTINUITY.md` blob `7498563c9f86fed54eb605db8b9fb90a5311eeec` (commit `ba2f48fab5c18926354a59c0327e1adc77743108`): no necessary state may exist only inside one ChatGPT Work/workspace/session; loss of that surface does not close work; an independent recovery readback is mandatory.
+- `CONTINUITY/AMX_COMMERCIAL_AUTONOMY_CONTINUITY_CONTROL_v1.md` blob `e2c194929d9e16e30aa5b89423c7bd6163763149` (initial commit `478c66115d6a00a3e3b9e15515b94aece9a6f2da`): if the reasoning executor is unavailable or stops producing attributable evidence, classify it UNAVAILABLE, substitute/reassign an authorized executor and continue from durable state without requiring the Owner to restate the objective.
+- `CONTINUITY/COFFEE_FULL_CONTINUATION_HANDOFF_2026-09-30.md` blob `d094b6b86b37506064ebd9c15ba37765fcdffc26`: explicit transcript-loss handoff and recovery from furthest evidence.
+- `CONTINUITY/validate_matrix_recovery.py` blob `f464239feaa9d5a7b85c14602fa34a2f6aa86398` and `CONTINUITY/AMX_MATRIX_RECONSTRUCTION_RECEIPT_2026-10-01.json` blob `7271e801ce9fe331c3316c04c4268c6fa3cd8951` show a bounded semantic-reconstruction pass for its stated scope. They do not prove a fresh reasoning runtime or automatic successor has passed today.
+
+### Current live-path test
+
+- Current `overdrive/state.json` blob `0f9c262cea92fb1e5ef97b19129c8e73c143f4cb` records last tick `2026-10-16T08:40:31.786740+00:00`, `processed=[]`, and a historical receipt pointer; it is not a current material execution receipt.
+- Current `overdrive/worker_contract.json` blob `598d89c7fb0b691c7007f4647afa3226759a3951` explicitly retains post-merge execution proof as pending and requires exactly one authorized successor transfer if the sole writer becomes unavailable.
+- Existing `.github/workflows/overdrive-recovery.yml` is blob `da0353f7df640ee13b52f4d1cef6427ab16ed71d`; commit `7ef98db0acbbf105389332d3d0ad07a6567c422b` paused its scheduled worker pending infrastructure convergence. Current workflow has push/manual triggers, no schedule; recent main `AMX OVERDRIVE Worker` runs are `skipped`. This is the commercial transport lane, not proof of a successor reasoning runtime.
+- PR #7 remains open/draft/unmerged and far behind main; PR #37 is an unmerged flight-register integrity proposal. Neither is acceptance of automatic chat/session replacement.
+- Notion session/transcript discovery is still `FORBIDDEN: restricted_resource`; the exact prior transcript remembered by the Owner cannot yet be authenticated from this runtime.
+
+### Disposition and next gate
+
+**DURABLE RECOVERY CONTROL: RECOVERED. AUTOMATIC EXECUTOR-LOSS / FRESH-REASONING ACCEPTANCE: OPEN.** Reuse the existing Continuity Rehydration Benchmark / DR-0022. Require a fresh/replacement reasoning surface to recover the current Registry v1.3, furthest flight evidence, exact next action and UNKNOWN/HOLD states, then use an authorized non-ChatGPT-plan-dependent executor to perform a real bounded action and independently read back its correlated receipt. Do not create another benchmark or worker, merge stale/broad code, or claim that source persistence proves live successor behavior.
+
+Existing Root Intake issue #31 contains the two append-only source/readback entries: comments `6292956077` and `6293315301`. Parent flight remains `AMX-FLT-20261012-DSYNC-145440-9fb44f0c`, Segment 14, `IN_FLIGHT`; Root Intake remains OPEN / NOT CLEARED.
+
