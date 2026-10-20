@@ -9,7 +9,10 @@ import pytest
 from scripts.matrix_recovery_control import (
     ControlError,
     build_manifest,
-    latest_successful_schedule_timestamp,
+    PLAN_A_SCHEDULE_CRON,
+    PLAN_B_WATCHDOG_CRON,
+    PLAN_A_ANCHOR_SCHEMA,
+    read_plan_a_anchor,
     registry_root,
     select_plan,
 )
@@ -83,14 +86,26 @@ def test_registry_root_rejects_duplicate_role_keys() -> None:
 
 
 def test_plan_a_selected_only_for_actual_schedule_event() -> None:
-    assert select_plan(
+    hourly = select_plan(
+        event="schedule", fallback_requested=False, run_worker="paused",
+        last_plan_a_success_at=None, schedule_expression=PLAN_A_SCHEDULE_CRON, now=NOW,
+    )
+    legacy_local = select_plan(
         event="schedule", fallback_requested=False, run_worker="paused",
         last_plan_a_success_at=None, now=NOW,
-    ) == ("A", "SCHEDULE_EVENT_SELECTED_PLAN_A")
-    assert select_plan(
+    )
+    push = select_plan(
         event="push", fallback_requested=True, run_worker="paused",
         last_plan_a_success_at=None, now=NOW,
-    )[0] == "VALIDATION_ONLY"
+    )
+    assert hourly == ("A", "HOURLY_PLAN_A_SCHEDULE_SELECTED")
+    assert legacy_local[0] == "A"
+    assert push[0] == "VALIDATION_ONLY"
+    with pytest.raises(ControlError, match="unrecognized or inconsistent scheduled trigger"):
+        select_plan(
+            event="schedule", fallback_requested=False, run_worker="paused",
+            schedule_expression="*/5 * * * *", now=NOW,
+        )
 
 
 def test_plan_b_requires_explicit_request_and_paused_worker() -> None:
@@ -109,19 +124,26 @@ def test_plan_b_requires_explicit_request_and_paused_worker() -> None:
 def test_plan_b_is_denied_when_plan_a_is_recent_and_allowed_when_stale() -> None:
     recent = select_plan(
         event="workflow_dispatch", fallback_requested=True, run_worker="paused",
-        last_plan_a_success_at="2026-10-20T14:20:00Z", now=NOW,
+        last_plan_a_success_at="2026-10-20T14:20:00Z",
+        activation_started_at="2026-10-20T13:00:00Z", now=NOW,
     )
     stale = select_plan(
         event="workflow_dispatch", fallback_requested=True, run_worker="paused",
-        last_plan_a_success_at="2026-10-20T13:40:00Z", now=NOW,
+        last_plan_a_success_at="2026-10-20T13:40:00Z",
+        activation_started_at="2026-10-20T13:00:00Z", now=NOW,
     )
     never_ran = select_plan(
         event="workflow_dispatch", fallback_requested=True, run_worker="paused",
-        last_plan_a_success_at=None, now=NOW,
+        last_plan_a_success_at=None, activation_started_at="2026-10-20T13:40:00Z", now=NOW,
+    )
+    startup_grace = select_plan(
+        event="workflow_dispatch", fallback_requested=True, run_worker="paused",
+        last_plan_a_success_at=None, activation_started_at="2026-10-20T14:20:00Z", now=NOW,
     )
     assert recent == ("VALIDATION_ONLY", "PLAN_B_REJECTED_PLAN_A_RECENT")
     assert stale == ("B", "PLAN_B_ALLOWED_PLAN_A_STALE")
     assert never_ran == ("B", "PLAN_B_ALLOWED_NO_SUCCESSFUL_PLAN_A_RUN")
+    assert startup_grace == ("VALIDATION_ONLY", "PLAN_B_REJECTED_STARTUP_WINDOW")
 
 
 def test_manifest_projects_state_without_claiming_external_execution(tmp_path: Path) -> None:
@@ -190,25 +212,91 @@ def test_manifest_marks_future_dated_runtime_tick_as_clock_skew(tmp_path: Path) 
     assert manifest["overdrive_projection"]["freshness"] == "CLOCK_SKEW"
 
 
-def test_plan_b_uses_latest_successful_schedule_not_newer_failed_or_push_runs() -> None:
-    payload = {
-        "workflow_runs": [
-            {"event": "schedule", "status": "completed", "conclusion": "failure", "updated_at": "2026-10-20T14:58:00Z"},
-            {"event": "push", "status": "completed", "conclusion": "success", "updated_at": "2026-10-20T14:57:00Z"},
-            {"event": "schedule", "status": "completed", "conclusion": "success", "updated_at": "2026-10-20T14:00:00Z"},
-            {"event": "schedule", "status": "completed", "conclusion": "success", "updated_at": "2026-10-20T14:45:00Z"},
-        ]
-    }
-    assert latest_successful_schedule_timestamp(payload) == "2026-10-20T14:45:00Z"
+def test_automatic_watchdog_selects_plan_a_or_plan_b_from_durable_freshness() -> None:
+    recent = select_plan(
+        event="schedule", fallback_requested=True, run_worker="paused",
+        schedule_expression=PLAN_B_WATCHDOG_CRON,
+        last_plan_a_success_at="2026-10-20T14:20:00Z",
+        activation_started_at="2026-10-20T13:00:00Z", now=NOW,
+    )
+    stale = select_plan(
+        event="schedule", fallback_requested=True, run_worker="paused",
+        schedule_expression=PLAN_B_WATCHDOG_CRON,
+        last_plan_a_success_at="2026-10-20T13:40:00Z",
+        activation_started_at="2026-10-20T13:00:00Z", now=NOW,
+    )
+    no_success_stale_activation = select_plan(
+        event="schedule", fallback_requested=True, run_worker="paused",
+        schedule_expression=PLAN_B_WATCHDOG_CRON,
+        last_plan_a_success_at=None,
+        activation_started_at="2026-10-20T13:40:00Z", now=NOW,
+    )
+    first_watchdog = select_plan(
+        event="schedule", fallback_requested=True, run_worker="paused",
+        schedule_expression=PLAN_B_WATCHDOG_CRON,
+        last_plan_a_success_at=None,
+        activation_started_at="2026-10-20T14:20:00Z", now=NOW,
+    )
+    assert recent == ("A", "PLAN_A_RECENT_WATCHDOG_NO_FALLBACK")
+    assert stale == ("B", "PLAN_B_AUTOMATIC_WATCHDOG_PLAN_A_STALE")
+    assert no_success_stale_activation == ("B", "PLAN_B_AUTOMATIC_WATCHDOG_NO_SUCCESSFUL_PLAN_A")
+    assert first_watchdog == ("A", "PLAN_A_STARTUP_WINDOW_WATCHDOG_NO_FALLBACK")
 
 
-def test_plan_b_treats_no_successful_schedule_run_as_absent() -> None:
-    assert latest_successful_schedule_timestamp({"workflow_runs": [
-        {"event": "schedule", "status": "completed", "conclusion": "failure", "updated_at": "2026-10-20T14:58:00Z"},
-        {"event": "push", "status": "completed", "conclusion": "success", "updated_at": "2026-10-20T14:57:00Z"},
-    ]}) is None
+def test_automatic_watchdog_requires_paused_worker_and_fails_closed_on_clock_skew() -> None:
+    not_paused = select_plan(
+        event="schedule", fallback_requested=True, run_worker="run",
+        schedule_expression=PLAN_B_WATCHDOG_CRON,
+        last_plan_a_success_at="2026-10-20T13:00:00Z",
+        activation_started_at="2026-10-20T12:00:00Z", now=NOW,
+    )
+    assert not_paused == ("VALIDATION_ONLY", "PLAN_B_REJECTED_WORKER_MUST_REMAIN_PAUSED")
+    with pytest.raises(ControlError, match="future"):
+        select_plan(
+            event="schedule", fallback_requested=True, run_worker="paused",
+            schedule_expression=PLAN_B_WATCHDOG_CRON,
+            last_plan_a_success_at="2026-10-20T15:20:00Z",
+            activation_started_at="2026-10-20T12:00:00Z", now=NOW,
+        )
+    with pytest.raises(ControlError, match="activation timestamp"):
+        select_plan(
+            event="schedule", fallback_requested=True, run_worker="paused",
+            schedule_expression=PLAN_B_WATCHDOG_CRON,
+            last_plan_a_success_at=None, activation_started_at=None, now=NOW,
+        )
 
 
-def test_plan_b_fails_closed_on_malformed_actions_runs_response() -> None:
-    with pytest.raises(ControlError, match="workflow_runs"):
-        latest_successful_schedule_timestamp({"runs": []})
+def test_plan_a_anchor_validates_source_and_preserves_activation(tmp_path: Path) -> None:
+    path = tmp_path / "overdrive/recovery-control/plan-a-anchor.json"
+    path.parent.mkdir(parents=True)
+    path.write_text(json.dumps({
+        "schema": PLAN_A_ANCHOR_SCHEMA,
+        "activated_at": "2026-10-20T13:00:00Z",
+        "last_successful_plan_a": {
+            "completed_at": "2026-10-20T14:00:00Z",
+            "run_id": "1234",
+            "commit_sha": "abc123",
+        },
+    }), encoding="utf-8")
+    anchor = read_plan_a_anchor(path)
+    assert anchor is not None
+    assert anchor["activated_at"] == "2026-10-20T13:00:00Z"
+    assert anchor["last_successful_plan_a"]["completed_at"] == "2026-10-20T14:00:00Z"
+
+
+def test_plan_a_anchor_fails_closed_when_malformed(tmp_path: Path) -> None:
+    path = tmp_path / "plan-a-anchor.json"
+    path.write_text('{"schema":"wrong"}', encoding="utf-8")
+    with pytest.raises(ControlError, match="schema"):
+        read_plan_a_anchor(path)
+
+
+def test_first_watchdog_build_manifest_starts_a_grace_window(tmp_path: Path) -> None:
+    root = make_repo(tmp_path)
+    manifest = build_manifest(
+        repo_root=root, event="schedule", schedule_expression=PLAN_B_WATCHDOG_CRON,
+        fallback_requested=True, run_worker="paused", now=NOW,
+    )
+    assert manifest["control"]["selected_plan"] == "A"
+    assert manifest["control"]["liveness_anchor_status"] == "INITIALIZE_AFTER_SUCCESSFUL_WATCHDOG"
+    assert manifest["control"]["plan_b_automatic_watchdog_enabled"] is True
