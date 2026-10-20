@@ -1,0 +1,244 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 9,
+  "batch_id": "forx-20261020-open-procurement-systems-01",
+  "created_at": "2026-10-20T11:54:25Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-001",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP Sierra Leone — Procurement Unit",
+      "surface": "RFP-019/26 — firm to develop and deploy a real-time data monitoring platform for trade between Sierra Leone and Japan; reference UNDP-SLE-00334.",
+      "observed_need": "The official notice describes a centralized platform for trade-data collection, validation, updating and reporting; data governance and APIs; cybersecurity and backup; interactive trade analytics/dashboards; market intelligence and export-promotion data; and market-entry information on tariffs, customs, standards and rules of origin, followed by testing, training and handover.",
+      "outcome_space": [
+        "trade data platform",
+        "data integration and validation",
+        "APIs and data governance",
+        "analytics dashboards",
+        "market intelligence",
+        "trade/export data",
+        "Sierra Leone–Japan"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/317127",
+      "source_key": "url:https://www.ungm.org/Public/Notice/317127",
+      "source_observed_at": "2026-10-20T11:26:04Z",
+      "published": "2026-10-06",
+      "deadline_at": "2026-10-23T03:59:00Z",
+      "deadline_local_sast": "2026-10-23T05:59:00+02:00",
+      "geography": {
+        "country": "Sierra Leone",
+        "locality": "Trade-data scope spans Sierra Leone and Japan; location, travel and remote-work eligibility UNKNOWN."
+      },
+      "contract_duration": "UNKNOWN — solicitation document not yet reviewed.",
+      "public_route": {
+        "type": "official UNDP Quantum procurement route",
+        "url": "https://supplier.quantum.partneragencies.org",
+        "submission_mode": "Authenticated supplier portal; existing profile/access and full TOR requirements UNKNOWN."
+      },
+      "contactability": "OFFICIAL PROCUREMENT ROUTE PUBLISHED; bidder eligibility, account access and submission readiness UNKNOWN.",
+      "payer_hypothesis": "UNDP if selected; total contract value, payment milestones and acceptance terms UNKNOWN.",
+      "fit_note": "The described data-platform, APIs, analytics and market-intelligence problem has high-level overlap with systems/data capability. A public notice does not prove a qualified firm, trade-data domain experience, delivery team, required references or bid readiness.",
+      "source_rights": "Public procurement metadata and factual summary only; use the solicitation documents according to their terms.",
+      "execution_readiness": "TIME_CRITICAL_HOLD_TOR_FIRM_QUALIFICATION_REFERENCES_AND_QUANTUM_ACCESS",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "Urgent iSCOPE triage before the published deadline: retrieve the full TOR and amendments; verify firm eligibility, mandatory references, trade-data/domain experience, staffing/capacity, geography, contract economics and existing Quantum access. Hold or kill quickly if a hard gate fails. Only if every gate passes should PRI make the bid decision and perform any authorized external submission. FORX does not contact or submit.",
+      "intake_custody": "Root Intake issue #31; iSCOPE issue #4 comment 6290065333; FORX flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. No qualification, bid, buyer contact, proposal submission, award, contract, invoice or revenue evidenced."
+    },
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-002",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNICEF — Procurement",
+      "surface": "RFPS 503950 — hosting administration, maintenance and custom development of UNICEF’s Moodle Workplace Learning Management System.",
+      "observed_need": "The official notice describes hosting/administration, maintenance and custom development for Moodle Workplace LMS and links terms, TOR, pricing schedules, amendments, data-processing documents and plugin attachments.",
+      "outcome_space": [
+        "Moodle Workplace LMS",
+        "hosting and operations",
+        "software maintenance",
+        "custom development",
+        "service levels",
+        "data processing"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/311133",
+      "source_key": "url:https://www.ungm.org/Public/Notice/311133",
+      "source_observed_at": "2026-10-20T11:26:04Z",
+      "published": "2026-08-14",
+      "deadline_at": "2026-10-25T22:59:00Z",
+      "deadline_local_sast": "2026-10-26T00:59:00+02:00",
+      "geography": {
+        "country": "Multiple destinations listed on the official notice",
+        "locality": "Delivery geography, hosting location and support coverage must be verified from the TOR."
+      },
+      "contract_duration": "UNKNOWN — solicitation documents not yet reviewed.",
+      "public_route": {
+        "type": "UNICEF RFPS official submission route",
+        "url": "https://www.ungm.org/Public/Notice/311133",
+        "submission_mode": "The notice references separate technical and commercial proposal emails and multiple amendments; verify the latest amendment’s controlling method before any external action."
+      },
+      "contactability": "OFFICIAL PROCUREMENT ROUTE PUBLISHED; Moodle-specific eligibility, service capacity and submission requirements UNKNOWN.",
+      "payer_hypothesis": "UNICEF if selected; contract value and payment milestones UNKNOWN.",
+      "fit_note": "This is a specialized operating/hosting service, not a generic software build. No comparable Moodle Workplace hosting references, support SLAs, hosting architecture or data-processing compliance evidence is established by this notice alone.",
+      "source_rights": "Public procurement metadata and factual summary only; observe data-processing, confidentiality, licensing and solicitation conditions.",
+      "execution_readiness": "HOLD_MOODLE_EXPERIENCE_HOSTING_SUPPORT_REFERENCES_AND_DPA",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE to inspect the TOR, amendment history and required proposal route; require evidence of Moodle Workplace experience, support/hosting capacity, service levels, references, security/data-processing controls and feasible margins. Hold or reject if hard gates are not evidenced; PRI alone owns any authorized submission.",
+      "intake_custody": "Root Intake issue #31; iSCOPE issue #4 comment 6290065333; FORX flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. No eligibility, bid, submission, award, contract, invoice or income evidenced."
+    },
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-003",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP Philippines — Procurement Unit",
+      "surface": "Firm for the development, deployment and initial operation of a circular-economy platform and solid-waste information-management system for local government units; reference UNDP-PHL-00981.",
+      "observed_need": "The official notice seeks a platform and data-management application supporting local-government circular-economy and solid-waste information management.",
+      "outcome_space": [
+        "circular economy platform",
+        "solid-waste data management",
+        "local-government information systems",
+        "data collection and reporting",
+        "Philippines"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/318058",
+      "source_key": "url:https://www.ungm.org/Public/Notice/318058",
+      "source_observed_at": "2026-10-20T11:26:04Z",
+      "published": "2026-10-14",
+      "deadline_at": "2026-10-28T09:00:00Z",
+      "deadline_local_sast": "2026-10-28T11:00:00+02:00",
+      "geography": {
+        "country": "Philippines",
+        "locality": "Local government unit deployment; remote delivery, local presence and partner requirements UNKNOWN."
+      },
+      "contract_duration": "UNKNOWN — full TOR not yet reviewed.",
+      "public_route": {
+        "type": "official UNDP Quantum supplier portal",
+        "url": "https://supplier.quantum.partneragencies.org",
+        "submission_mode": "Authenticated supplier route; pre-bid attendance requirements and existing account state UNKNOWN."
+      },
+      "contactability": "OFFICIAL PROCUREMENT ROUTE PUBLISHED; sector eligibility, local requirements and bid readiness UNKNOWN.",
+      "payer_hypothesis": "UNDP if selected; budget and milestone terms UNKNOWN.",
+      "fit_note": "The notice is relevant as a data-application requirement, but sector knowledge, local-government deployment, integration, maintenance, partner and experience gates have not been proved.",
+      "source_rights": "Public procurement metadata and factual summary only.",
+      "execution_readiness": "HOLD_TOR_SECTOR_REFERENCES_LOCAL_AND_PREBID_REQUIREMENTS",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE to retrieve TOR and amendments; confirm whether the 19-Oct pre-bid session was mandatory, local/partner criteria, required references, full implementation/support scope, pricing and payment terms. Do not proceed on general software capability alone.",
+      "intake_custody": "Root Intake issue #31; iSCOPE issue #4 comment 6290065333; FORX flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. No qualification, submission, award or revenue evidenced."
+    },
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-004",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP Bosnia and Herzegovina — Procurement Unit",
+      "surface": "SDG-RfQ — development of a programme-budgeting software solution; reference UNDP-BIH-01681.",
+      "observed_need": "The official RFQ requests a programme-budgeting software solution. Details of workflows, integrations, deployment, acceptance and financial terms require review of the solicitation package.",
+      "outcome_space": [
+        "programme budgeting software",
+        "public-sector finance workflows",
+        "software implementation",
+        "Bosnia and Herzegovina"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/318176",
+      "source_key": "url:https://www.ungm.org/Public/Notice/318176",
+      "source_observed_at": "2026-10-20T11:26:04Z",
+      "published": "2026-10-14",
+      "deadline_at": "2026-10-29T14:00:00Z",
+      "deadline_local_sast": "2026-10-29T16:00:00+02:00",
+      "geography": {
+        "country": "Bosnia and Herzegovina",
+        "locality": "Remote/local delivery and localization requirements UNKNOWN."
+      },
+      "contract_duration": "UNKNOWN — solicitation documents not yet reviewed.",
+      "public_route": {
+        "type": "official UNDP Quantum supplier portal",
+        "url": "https://supplier.quantum.partneragencies.org",
+        "submission_mode": "Authenticated supplier route; account access and full RFQ criteria UNKNOWN."
+      },
+      "contactability": "OFFICIAL RFQ ROUTE PUBLISHED; domain eligibility and submission readiness UNKNOWN.",
+      "payer_hypothesis": "UNDP if selected; total value, payment schedule and acceptance milestones UNKNOWN.",
+      "fit_note": "Potential software delivery demand, but budgeting/finance domain requirements, integrations, data security, references and local requirements have not been checked.",
+      "source_rights": "Public procurement metadata and factual summary only.",
+      "execution_readiness": "HOLD_SCOPE_DOMAIN_REFERENCES_AND_QUANTUM_ACCESS",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE to retrieve the RFQ and qualification criteria; verify budgetary workflow fit, integrations, delivered references, delivery effort and net economics. If gates pass, PRI alone decides on external bid/submission.",
+      "intake_custody": "Root Intake issue #31; iSCOPE issue #4 comment 6290065333; FORX flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. No qualification, bid, submission, award, contract, invoice or income evidenced."
+    },
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-005",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "World Trade Organization — Procurement Section",
+      "surface": "RFP-2026-238-WTO OSH Management Software.",
+      "observed_need": "The official notice seeks a well-established firm for occupational health and safety management software. Full technical, security, integration, licensing and implementation criteria require reviewing the solicitation package.",
+      "outcome_space": [
+        "occupational health and safety software",
+        "enterprise workflow management",
+        "software licensing and implementation",
+        "Switzerland"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/315503",
+      "source_key": "url:https://www.ungm.org/Public/Notice/315503",
+      "source_observed_at": "2026-10-20T11:26:04Z",
+      "published": "2026-10-13",
+      "deadline_at": "2026-10-28T12:00:00Z",
+      "deadline_local_sast": "2026-10-28T14:00:00+02:00",
+      "geography": {
+        "country": "Switzerland",
+        "locality": "Delivery location, hosting model, deployment constraints and remote eligibility UNKNOWN."
+      },
+      "contract_duration": "UNKNOWN — solicitation documents not yet reviewed.",
+      "public_route": {
+        "type": "official WTO RFP notice",
+        "url": "https://www.ungm.org/Public/Notice/315503",
+        "submission_mode": "Must confirm the prescribed response system, mandatory vendor conditions and final bid requirements from the tender documents."
+      },
+      "contactability": "OFFICIAL RFP PUBLISHED; ‘well-established firm’ qualification remains a hard gate.",
+      "payer_hypothesis": "WTO if selected; value and payment terms UNKNOWN.",
+      "fit_note": "Specific OSH domain and established-firm requirements may exceed the evidenced current product surface. Do not infer fit without references and compliance evidence.",
+      "source_rights": "Public notice metadata and factual summary only.",
+      "execution_readiness": "HARD_FIT_HOLD_ESTABLISHED_FIRM_OSH_PRODUCT_AND_REFERENCES",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE to obtain the TOR and test established-firm eligibility, OSH functionality, references, deployment/security requirements, budget and delivery margins. Fail closed if a hard gate is not evidenced.",
+      "intake_custody": "Root Intake issue #31; iSCOPE issue #4 comment 6290065333; FORX flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. No qualification, bid, submission, award, contract, invoice or revenue evidenced."
+    },
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-006",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNESCO — Procurement",
+      "surface": "Extended RFI — correspondence management platform; reference 2026-RFI-Correspondence.",
+      "observed_need": "UNESCO requests information about available correspondence-management platforms, implementation/migration approaches, deployment options, licensing, company profile, references, roadmap, support/SLA and indicative 3-/5-year total cost of ownership.",
+      "outcome_space": [
+        "correspondence management platform",
+        "enterprise records and workflow",
+        "migration/implementation approaches",
+        "market-intelligence-only"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/309729",
+      "source_key": "url:https://www.ungm.org/Public/Notice/309729",
+      "source_observed_at": "2026-10-20T11:26:04Z",
+      "published": "2026-08-04",
+      "deadline_at": "2026-10-30T16:00:00Z",
+      "deadline_local_sast": "2026-10-30T18:00:00+02:00",
+      "geography": {
+        "country": "France",
+        "locality": "UNESCO correspondence-management initiative; vendor location and deployment constraints UNKNOWN."
+      },
+      "contract_duration": "Not applicable to the RFI itself; any later procurement or award is UNKNOWN.",
+      "public_route": {
+        "type": "official UNESCO RFI notice",
+        "url": "https://www.ungm.org/Public/Notice/309729",
+        "submission_mode": "RFI response path and exact form requirements must be confirmed in the attached official RFI documents."
+      },
+      "contactability": "OFFICIAL RFI ROUTE PUBLISHED; response readiness UNKNOWN.",
+      "payer_hypothesis": "No payment is implied by an RFI. Any later funded procurement is hypothetical and unverified.",
+      "fit_note": "Useful market-intelligence signal only unless AMX can provide credible product/partner fit and there is a concrete reason to invest in the response. It is not a paid award or confirmed budget.",
+      "source_rights": "Public procurement metadata and factual summary only; full RFI terms govern response and any reuse.",
+      "execution_readiness": "MARKET_INTELLIGENCE_ONLY_NOT_PAID_DEMAND",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "Rank below executable paid routes. iSCOPE may review only if evidence-backed product/partner fit and strategic value justify the effort; do not count it as revenue or a buyer commitment.",
+      "intake_custody": "Root Intake issue #31; iSCOPE issue #4 comment 6290065333; FORX flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RFI MARKET-INTELLIGENCE SIGNAL ONLY. No awarded contract, payable amount, submission, acceptance or income evidenced."
+    }
+  ]
+}
