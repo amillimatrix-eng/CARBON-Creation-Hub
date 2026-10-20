@@ -8,6 +8,7 @@ ledgers. Plan A is the hourly GitHub Actions trigger. An independent, offset
 receipt has been read for 75 minutes. A new successful Plan A receipt returns
 the selector to A; fallback does not become sticky. The commercial writer
 remains separately paused/manual-only.
+"""
 from __future__ import annotations
 
 import argparse
@@ -103,8 +104,8 @@ def read_plan_a_anchor(path: Path) -> dict[str, Any] | None:
 
 def select_plan(
     *, event: str, fallback_requested: bool, run_worker: str,
-    last_plan_a_success_at: str | None, activation_started_at: str | None,
-    schedule_expression: str, now: datetime,
+    last_plan_a_success_at: str | None = None, activation_started_at: str | None = None,
+    schedule_expression: str = "", now: datetime,
 ) -> tuple[str, str]:
     """Return plan + reason; a scheduled watchdog may automatically select B."""
     def fallback_decision(*, automatic_watchdog: bool) -> tuple[str, str]:
