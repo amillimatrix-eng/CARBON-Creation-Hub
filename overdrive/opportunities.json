@@ -494,7 +494,7 @@
     },
     {
       "actual": "A recipient-specific Outlook search returned exact Sent Item IDs for the 2026-10-20 offers to SA Rental Management, Liane, and Louis Kruger Property Management. The three matching IDs previously stored in overdrive/opportunities.json contained a malformed character. Buyer-response searches for the three recipients returned no messages in the connected Outlook mailbox.",
-      "changed": "Replaced malformed Outlook source_id values in both commercial_offer.source_id and the first evidence source_id for the three existing records; added official public contact-route evidence. Preserved all record keys and OFFERED/WAITING states; record_count remains 117 and matches object-key count.",
+      "changed": "Replaced malformed Outlook source_id values in both commercial_offer.source_id and the first evidence source_id for the three existing records; added official public contact-route evidence. The write committed when the ledger had 117 records. A subsequent fresh readback includes a separately added ProFix Coastal offer, so the current ledger has 118 records and the count matches Object.keys(records).length.",
       "classification": "THREE_OUTBOUND_SOURCE_ID_CORRECTIONS; BUYER_OUTCOMES_PENDING",
       "observed_at": "2026-10-20T11:43:01Z",
       "owner": "PRI",
@@ -509,11 +509,26 @@
       "remains_unproven": "Recipient delivery/read, buyer interest or acceptance, invoice/receivable, valid payment route, project delivery, or settled payment.",
       "scope": "Three existing 2026-10-20 ZAR 3,685 maintenance-follow-through pilot records",
       "upgrade_action": "Wait for a substantive buyer-initiated response and update the existing record from source evidence. Do not send duplicate follow-ups without a new evidence-based due date. Validate every persisted mail source ID against the original provider result before using it for body retrieval."
+    },
+    {
+      "actual": "The post-correction fetch returned record_count=118 and 118 actual record keys, including a distinct ProFix Coastal Services & Solutions inspection-to-repair pilot at ZAR 9,380, with exact Outlook Sent Item ID; sent item was independently retrieved by recipient search and no reply was found in the connected Outlook mailbox search.",
+      "changed": "Recorded the current 118/118 ledger baseline after the preceding source-ID repair. No record was created or removed by this readback; the ProFix offer is treated as a separately persisted OFFERED item, not as evidence that an automation run completed.",
+      "classification": "POST-CORRECTION_LEDGER_READBACK_118; PROFIX_OFFER_SOURCE_VERIFIED",
+      "observed_at": "2026-10-20T11:46:32Z",
+      "owner": "PRI",
+      "proof": [
+        "GitHub fetch overdrive/opportunities.json, blob 374a5460c5e1e377df12e1f58608eac7a6bce746, record_count=118, actual keys=118",
+        "Outlook Sent Item: AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxwAAAA==",
+        "https://www.profixcoastal.com/"
+      ],
+      "remains_unproven": "Buyer response/acceptance, invoice/receivable, payment, delivery, or causal linkage between this message and an automation run.",
+      "scope": "Current canonical commercial-ledger record count and latest independently evidenced direct offer",
+      "upgrade_action": "Preserve ProFix as OFFERED / WAITING; no duplicate follow-up. Continue checking for buyer-initiated messages and valid payment paths while respecting Stripe's live disabled-charge state."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-20T11:43:01Z",
-  "last_reconciled_reason": "SOURCE-REFERENCE REPAIR: three same-day outbound pilot offers already present in the canonical ledger had a malformed character in both recorded Outlook source IDs. Corrected each field to the exact ID returned by Outlook's recipient-specific Sent Item search and appended official public contact-route evidence. Opportunity keys, OFFERED lifecycle, amounts, scope, recipient, next action, and the reconciled 117-record inventory are preserved. No buyer reply/acceptance/payment is inferred.",
+  "last_reconciled_at": "2026-10-20T11:46:32Z",
+  "last_reconciled_reason": "CURRENT-TURN TRUTH RECONCILIATION: three same-day ZAR 3,685 offer records had malformed stored Outlook IDs repaired and official contact evidence added. Subsequent readback shows a separately persisted ProFix Coastal ZAR 9,380 pilot and 118 total records (count matches object keys). Stripe live account remains charges_enabled=false / payouts_enabled=false with onboarding requirements past_due. Buyer replies, acceptances, invoices, and received payments are not inferred.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -576,7 +591,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-20T13:43:01+02:00",
+  "last_updated_at": "2026-10-20T13:46:32+02:00",
   "last_updated_by": "PRI",
   "record_count": 118,
   "record_key": "normalized organization/domain + opportunity + title",
