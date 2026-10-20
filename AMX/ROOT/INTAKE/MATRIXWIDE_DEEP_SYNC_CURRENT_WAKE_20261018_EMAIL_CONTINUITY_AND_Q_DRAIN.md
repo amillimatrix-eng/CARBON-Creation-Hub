@@ -452,3 +452,45 @@ The existing ROOT reports identify a specific context-selection defect: the runt
 - Current opportunity ledger remains **111 records / 111 keys**; claims snapshot remains **108 claims** (102 WAITING, 6 CLOSED, 0 READY, 0 external-ready), generated 16 October. Do not edit generated claims/signals directly; reconcile via the existing runner and persist/read back a fresh receipt.
 - The 23 persisted adapter queue entries are all `COMPLETED`, but this does not clear the separate ROOT/INTAKE queue.
 - **Disposition remains OPEN / INTAKE NOT CLEARED.** Worker output matching, the ledger/claims regeneration, the current flight’s final-sync gate and full source-derived item-level disposition remain outstanding. Continue the existing route; no new worker, queue, tracker or scheduler was created.
+
+
+## CURRENT WAKE DELTA — BLUE STATE / COMMERCIAL CONTINUITY — 2026-10-20
+
+**Disposition: OPEN / PARTIAL.** This append records readbacks and a concrete existing-runner mismatch. It does not claim a buyer response, application submission, contract, invoice, payment, queue clearance, or successful worker execution.
+
+### Mandatory mandate preflight
+- Directly fetched `AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json`: current version **1.3**, effective 2026-10-16, state `OWNER_ACCEPTED_MERGED_BLUE_STATE`, blob `bcfd1f422bd25ba852666a538712828d594759e8`.
+- Declared registry root SHA-256: `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`.
+- Registered iSCOPE and PRI are both CURRENT and their mandate SHA-256 values match the owner-supplied values. The supplied v1.2 registry digest is superseded.
+- Blue State binding fetched directly. No role, writer, worker, or ownership-chain change made.
+
+### Exact current commercial readback
+- `overdrive/opportunities.json`: blob `5a937bb0c9c2f796ac9af6b784a6e26e4879d06d`; `record_count=121`, 121 keys; `last_updated_at=2026-10-20T14:08:34.815+02:00`.
+- `overdrive/state.json`: blob `0f9c262cea92fb1e5ef97b19129c8e73c143f4cb`; sequence 23; queue length 26; last tick `2026-10-16T08:40:31.786740Z`.
+- `overdrive/claims.json`: blob `88b15824b892e38301829a95ee1ecf75e1221341`; 108 claims; 0 external-ready; 20 past-due timestamps. Past-due does not grant external-action authorization.
+- Three PENDING events (`qdrain-20261020-mendazsolar-offered`, `qdrain-20261020-treetopssolar-offered`, `qdrain-20261020-verminator-offered`) contain attributable Outlook outbound-send evidence for existing offers. Their exact opportunity keys already exist in the current canonical ledger. No duplicate outreach was performed.
+- No new acceptance, contract, invoice/receivable, or settlement is proven by these files. Authenticated current Gmail/Close/payment-provider readback is unavailable in this runtime.
+
+### Existing OVERDRIVE execution-path contradiction
+- Current `overdrive/runner.py` blob: `d71c75550c72daa80cc585c8fc93ee0a4ee0fcb9`. Its `missing_record_upsert()` explicitly rejects an opportunity key already present in `opportunities.json` with `opportunity already exists; use EVIDENCE_TRANSITION`.
+- The three pending MISSING_RECORD_UPSERT tasks above target keys that already exist. If consumed unchanged by the current adapter, they will generate FAILED receipts rather than reconcile the already-existing OFFERED records. Do not manually mark them complete or delete their source evidence. Existing OVERDRIVE/T-COD must repair the task/record mismatch through the established adapter and preserve attributable receipts.
+- Current `.github/workflows/overdrive-recovery.yml` blob: `da0353f7df640ee13b52f4d1cef6427ab16ed71d`. It declares `push` and `workflow_dispatch` triggers, but the worker job condition permits execution only for `workflow_dispatch` with `run_worker=run`; there is no `schedule` trigger in the current file.
+- GitHub Actions readback: latest OVERDRIVE run #202 (ID `39420040959`, 2026-10-20T12:08:39Z) was push-triggered and **SKIPPED**. Latest scheduled success is run #181 (ID `38905426388`, 2026-10-16T13:07:14Z). No workflow_dispatch runs are present. Current GitHub tool actions expose no workflow-dispatch operation; no workflow, schedule, prompt, or source file was changed to simulate execution.
+
+### Current primary-source requalification
+- [UNDP Sierra Leone — real-time trade monitoring platform RFP](https://www.ungm.org/Public/Notice/317127): notice shows deadline 22-Oct-2026 23:59 GMT-4. Public scope includes data integration, dashboards, market intelligence, market-entry information, deployment, training and handover. Full solicitation documents, firm eligibility, budget and mandatory qualifications remain unverified. **HOLD; no bid or contact.**
+- [UNICEF — Moodle Workplace hosting/custom development RFPS](https://www.ungm.org/Public/Notice/311133): current notice extends the deadline to 25-Oct-2026 23:59 CEST. Required hosting references, security/DPA, technical scope and complete pricing/delivery gates remain unverified. **HOLD; no bid or contact.**
+- [UNDP Philippines — circular-economy/solid-waste information system RFP](https://www.ungm.org/Public/Notice/318058): deadline 28-Oct-2026; pre-bid conference was 19-Oct and confirmation deadline 16-Oct. Attendance/eligibility are unknown. **HOLD; no bid or contact.**
+- Existing Black Bear Strategy and SocialsGroup records remain SUBMITTED/OFFERED and are not to be contacted again without new buyer evidence or a due route recheck.
+- Existing Scale Army record remains QUALIFIED / NOT SUBMITTED. Owner-only gate remains: applicant must truthfully confirm U.S.-business-hours availability and personally record the required skills video. This gate does not stop unrelated authorized work.
+
+### Directive 23 — next action and acceptance
+- **Expected outcome:** repair the existing adapter/record mismatch; restore a valid authorized OVERDRIVE execution route; continue money-first work without fabricating readiness.
+- **Owners:** existing OVERDRIVE/T-COD for adapter/runtime repair; iSCOPE for qualification; PRI for post-handoff commercial progression; Owner only for the personal Scale Army availability/video gate.
+- **Action:** preserve the three outbound evidence records; reconcile each pending task through the existing adapter with a valid receipt and independent readback; resume the highest-value lawful executable commercial item and continue across independent items.
+- **Dependencies:** valid adapter semantics for already-existing records; authorized workflow-dispatch or existing runtime execution path; authenticated buyer-thread access when a due follow-up depends on current correspondence.
+- **Evidence:** direct registry/Blue State/ledger/state/claims/runner/workflow fetches; GitHub Actions run readback; official UNGM notices linked above.
+- **Persistence/readback:** this is an append to the existing Root Intake wake record. It is not evidence that the three queue tasks have been repaired or that a new OVERDRIVE tick completed.
+- **Safety/preservation:** no duplicate worker, pipeline, CRM, or authority; no duplicate outreach; no bid before hard gates pass; no false PAID/SETTLED status; preserve No-Contact and assessment-integrity rules.
+- **Disposition:** **OPEN / NOT CLEARED.**
+- **Remaining work:** existing OVERDRIVE/T-COD must resolve the pending-task mismatch and execute/read back a fresh run; commercial owners must continue lawful work that is executable without those specific gates.
