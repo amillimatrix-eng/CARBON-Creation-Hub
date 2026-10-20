@@ -132,7 +132,7 @@ The existing weighted source sequence remains: complete/reconcile the current Ge
 
 Sources:
 - [FORX 100K durable repair evidence](https://app.notion.com/p/3f48f8b56cd781efa098cd232041c141?pvs=204)
-- [FORX global penetration weighting/source sequence](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/AMX_FORX_GLOBAL_PENETRATION_SCALE_SUPPLEMENT_20261007.md)
+- [current FORX global scale/runtime readback delta](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SWEEP_RUNTIME_DELTA_20261014_2027SAST.md)
 - [Current runtime failure delta](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SWEEP_RUNTIME_DELTA_20261014_2027SAST.md)
 
 ### 4.5 Outcome → weight → next selection — the learning must change future behavior
