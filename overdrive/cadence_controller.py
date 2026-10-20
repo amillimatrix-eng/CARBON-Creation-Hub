@@ -173,9 +173,11 @@ def main() -> int:
     changed = False
     if args.command == "select":
         when = parse_time(args.now) if args.now else utcnow()
+        phase_before = control["phase"]
+        pause_before = control.get("owner_pause", {}).get("active", False)
         result = select_action(control, args.event_name, args.schedule, args.manual_input, when)
-        # Persist phase transitions even though that same trigger does no worker work.
-        changed = control["phase"] == "ACTIVE" and not control.get("owner_pause", {}).get("active", False)
+        # Persist only a real transition; do not rewrite the control file on every trigger.
+        changed = phase_before != control["phase"] or pause_before != control.get("owner_pause", {}).get("active", False)
         if changed:
             write_control(control)
         values = {
