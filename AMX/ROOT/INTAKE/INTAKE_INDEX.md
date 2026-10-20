@@ -3414,3 +3414,8 @@ ROOT/T-GOV: reconcile the current linked Blue State binding against registry v1.
 Existing forensics/storage owner assigned by Root: enumerate and retrieve H0B assets from exact existing Library/Drive/Dropbox/attachment/source locations before any recovery or loss claim.
 Existing mailbox owner: perform/authorize a harmless Gmail-originated forwarding test and read back through the native Outlook connector.
 This index entry does not itself grant authority, prove assets absent/recovered, prove a post-repair worker run, or close Root Intake.
+
+
+## CURRENT-WAKE — VISYM ACKNOWLEDGEMENT CORRECTION — 2026-10-20
+
+Latest full-body Outlook readback supersedes prior wording that treated receipt of the bank proof as unverified. Owner sent the GoTyme Bank Proof of Account attachment on 2026-10-19 at 20:39:34Z; Visym replied at 20:47:54Z (“Received, thank you”). Visym says GoTyme e-wallet payments do not require DOB or SWIFT/BIC and instructs selecting Wise in the Collector app with payment email `amillimatrix@gmail.com`. Do not resend the proof or bank details. The Wise app setting, Tuesday payout-run inclusion, and actual bank credit remain UNKNOWN. Opera browser is not connected and TinyFish wallet is -USD 1.051248; this runtime has not changed or verified the app setting. Existing payout-check reminder remains 2026-10-20 18:00 SAST. Full supporting receipt appended to current-wake deep-sync file at commit `be6ef922ce6925c3071894f681f46c7e7da834ab`; Root Intake remains OPEN / NOT CLEARED.
