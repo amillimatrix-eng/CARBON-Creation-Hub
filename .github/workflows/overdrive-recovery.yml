@@ -38,7 +38,8 @@ on:
       - 'tests/test_matrix_recovery_control.py'
       - '.github/workflows/overdrive-recovery.yml'
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 * * * *' # Plan A: intended hourly control
+    - cron: '5,20,35,50 * * * *' # Plan B watchdog: offset 15-minute freshness checks
   workflow_dispatch:
     inputs:
       run_worker:
@@ -133,42 +134,30 @@ jobs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       actions: read
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Read last scheduled Plan A completion for a requested fallback
-        id: plan_a
-        if: github.event_name == 'workflow_dispatch' && inputs.recovery_fallback == 'hourly_dependency_unmet'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REQUESTED_WORKER: ${{ inputs.run_worker }}
+      - name: Check Plan A anchor presence for first-watchdog bootstrap
+        id: anchor_state
+        if: github.event_name == 'schedule' && github.event.schedule == '5,20,35,50 * * * *'
         shell: bash
         run: |
           set -euo pipefail
-          if [[ "$REQUESTED_WORKER" != "paused" ]]; then
-            echo "last_success_at=" >> "$GITHUB_OUTPUT"
-            echo "The Plan B control cannot resume the commercial worker." >&2
-            exit 0
+          if [[ -f "overdrive/recovery-control/plan-a-anchor.json" ]]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
           fi
-          endpoint="${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/actions/workflows/overdrive-recovery.yml/runs?event=schedule&status=completed&per_page=100"
-          if ! response="$(curl -fsSL -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$endpoint")"; then
-            # Sentinel intentionally fails closed in the controller; an API
-            # lookup failure must not be mistaken for "Plan A never ran".
-            echo "last_success_at=PLAN_A_LOOKUP_FAILED" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          last_success="$(python3 -c 'import json,sys; from scripts.matrix_recovery_control import latest_successful_schedule_timestamp; print(latest_successful_schedule_timestamp(json.load(sys.stdin)) or "")' <<< "$response")"
-          echo "last_success_at=$last_success" >> "$GITHUB_OUTPUT"
 
       - name: Run repository-only recovery control
         env:
-          FALLBACK_REQUESTED: ${{ github.event_name == 'workflow_dispatch' && inputs.recovery_fallback == 'hourly_dependency_unmet' }}
+          FALLBACK_REQUESTED: ${{ (github.event_name == 'schedule' && github.event.schedule == '5,20,35,50 * * * *') || (github.event_name == 'workflow_dispatch' && inputs.recovery_fallback == 'hourly_dependency_unmet') }}
           WORKER_REQUEST: ${{ inputs.run_worker || 'paused' }}
-          PLAN_A_LAST_SUCCESS_AT: ${{ steps.plan_a.outputs.last_success_at }}
+          SCHEDULE_EXPRESSION: ${{ github.event.schedule || '' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -185,8 +174,8 @@ jobs:
           if [[ "$FALLBACK_REQUESTED" == "true" ]]; then
             args+=(--fallback-requested)
           fi
-          if [[ -n "$PLAN_A_LAST_SUCCESS_AT" ]]; then
-            args+=(--last-plan-a-success-at "$PLAN_A_LAST_SUCCESS_AT")
+          if [[ -n "$SCHEDULE_EXPRESSION" ]]; then
+            args+=(--schedule-expression "$SCHEDULE_EXPRESSION")
           fi
           python3 scripts/matrix_recovery_control.py "${args[@]}"
 
@@ -198,3 +187,77 @@ jobs:
           path: artifacts/matrix-recovery-control/receipt.json
           retention-days: 90
           if-no-files-found: warn
+
+      - name: Persist Plan A success or bootstrap the first watchdog anchor
+        if: success() && ((github.event_name == 'schedule' && github.event.schedule == '0 * * * *') || (github.event_name == 'schedule' && github.event.schedule == '5,20,35,50 * * * *' && steps.anchor_state.outputs.exists == 'false'))
+        env:
+          SCHEDULE_EXPRESSION: ${{ github.event.schedule || '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          from scripts.matrix_recovery_control import (
+              PLAN_A_ANCHOR_PATH, PLAN_A_ANCHOR_SCHEMA, PLAN_A_SCHEDULE_CRON,
+              PLAN_B_WATCHDOG_CRON, read_plan_a_anchor,
+          )
+
+          receipt_path = Path("artifacts/matrix-recovery-control/receipt.json")
+          receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+          schedule = os.environ.get("SCHEDULE_EXPRESSION", "")
+          path = Path(PLAN_A_ANCHOR_PATH)
+          existing = read_plan_a_anchor(path)
+          now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+          if schedule == PLAN_A_SCHEDULE_CRON:
+              if receipt.get("control", {}).get("selected_plan") != "A":
+                  raise SystemExit("hourly Plan A did not pass its selector; anchor not advanced")
+              activated_at = str(existing["activated_at"]) if existing else str(receipt["generated_at"])
+              anchor = {
+                  "schema": PLAN_A_ANCHOR_SCHEMA,
+                  "activated_at": activated_at,
+                  "last_successful_plan_a": {
+                      "completed_at": now,
+                      "run_id": str(os.environ["GITHUB_RUN_ID"]),
+                      "run_attempt": str(os.environ["GITHUB_RUN_ATTEMPT"]),
+                      "commit_sha": str(os.environ["GITHUB_SHA"]),
+                      "receipt_sha256": hashlib.sha256(receipt_path.read_bytes()).hexdigest(),
+                      "registry_root_sha256": receipt["canonical_registry"]["computed_root_sha256"],
+                      "schedule_expression": schedule,
+                  },
+              }
+          elif schedule == PLAN_B_WATCHDOG_CRON and existing is None:
+              # The first watchdog creates the grace-window anchor only after
+              # its control receipt and artifact step succeeded. It does not
+              # execute Plan B immediately merely because the anchor was absent.
+              if receipt.get("control", {}).get("selected_plan") != "A":
+                  raise SystemExit("first watchdog must establish Plan A grace window before fallback")
+              anchor = {
+                  "schema": PLAN_A_ANCHOR_SCHEMA,
+                  "activated_at": str(receipt["generated_at"]),
+                  "last_successful_plan_a": None,
+              }
+          else:
+              raise SystemExit("anchor update requested for an unrecognized trigger/state")
+
+          path.parent.mkdir(parents=True, exist_ok=True)
+          path.write_text(json.dumps(anchor, indent=2, sort_keys=True) + "\\n", encoding="utf-8")
+          PY
+          git config user.name "AMX OVERDRIVE"
+          git config user.email "amillimatrix@gmail.com"
+          git add -- overdrive/recovery-control/plan-a-anchor.json
+          if git diff --cached --quiet; then
+            echo "Plan A anchor unchanged; no write needed."
+            exit 0
+          fi
+          git commit -m "runtime: persist Plan A liveness anchor"
+          if ! git push origin HEAD:main; then
+            echo "Concurrent main update detected; rebasing the liveness anchor and retrying once."
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
