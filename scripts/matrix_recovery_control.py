@@ -28,7 +28,6 @@ REQUIRED_PATHS = (
     Path("overdrive/opportunities.json"),
     Path("overdrive/claims.json"),
     Path("overdrive/payment_rails.json"),
-    Path("AMX/ROOT/INTAKE/CHATGPT_AUTOMATION_PLAN_CAPACITY_LIVENESS_FAULT_20261019.md"),
 )
 PLAN_A_MAX_AGE_MINUTES = 75
 SCHEMA = "AMX_MATRIX_RECOVERY_CONTROL_RECEIPT_V1"
