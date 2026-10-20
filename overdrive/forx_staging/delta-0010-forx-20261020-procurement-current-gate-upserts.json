@@ -1,0 +1,193 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 10,
+  "batch_id": "forx-20261020-procurement-current-gate-upserts-01",
+  "created_at": "2026-10-20T12:09:30Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-001",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP Sierra Leone — Procurement Unit",
+      "surface": "RFP-019/26 — firm to develop and deploy a real-time data monitoring platform for trade between Sierra Leone and Japan; reference UNDP-SLE-00334.",
+      "observed_need": "Official notice says UNDP seeks a qualified and experienced firm to design, develop and operationalize a platform consolidating trade-data collection, validation, updating, visualization and reporting; APIs/data governance; interactive analytics/dashboards; trade/market intelligence; and market-entry information on tariffs, customs, standards, certification and rules of origin, with testing, training and handover.",
+      "outcome_space": [
+        "trade data platform",
+        "data integration and validation",
+        "APIs and data governance",
+        "analytics dashboards",
+        "market intelligence",
+        "trade/export data",
+        "Sierra Leone–Japan"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/317127",
+      "source_key": "url:https://www.ungm.org/Public/Notice/317127",
+      "source_observed_at": "2026-10-20T12:09:30Z",
+      "published": "2026-10-06",
+      "deadline_at": "2026-10-23T03:59:00Z",
+      "deadline_local_sast": "2026-10-23T05:59:00+02:00",
+      "geography": {
+        "country": "Sierra Leone",
+        "locality": "Trade-data scope spans Sierra Leone and Japan; remote/location and travel conditions require TOR review."
+      },
+      "contract_duration": "UNKNOWN — solicitation package not accessible through current read route.",
+      "public_route": {
+        "type": "official UNDP Quantum procurement route",
+        "url": "https://supplier.quantum.partneragencies.org",
+        "portal_reference": "UNDP-SLE-00334",
+        "submission_mode": "Authenticated supplier portal; do not create a duplicate supplier profile; use an existing profile or password recovery."
+      },
+      "solicitation_document_access": {
+        "official_negotiation_url": "https://procurement-notices.undp.org/view_negotiation.cfm?nego_id=50409",
+        "official_sharepoint_folder": "https://undp.sharepoint.com/:f:/s/Docs-Public/Ej0xTIhAuoZGr2MQnl3LcVMBYpIajxUk8mAyieFewxB7nQ?e=oK2ob7",
+        "access_result": "The official SharePoint folder redirected to a Security page with only Microsoft 365 sign-in content. Full TOR, firm experience thresholds, evaluation criteria, budget/payment milestones and mandatory legal-registration gates remain uninspected."
+      },
+      "contactability": "OFFICIAL PROCUREMENT ROUTE PUBLISHED; qualification and submission readiness UNKNOWN.",
+      "payer_hypothesis": "UNDP if selected; budget, payment milestones and acceptance conditions UNKNOWN.",
+      "fit_note": "There is plausible high-level overlap with system/data/dashboard work, but general software capability does not prove trade-domain experience, company eligibility, comparable references, team capacity or bid readiness.",
+      "source_rights": "Public procurement metadata and factual summary only; follow the tender terms for all bid material.",
+      "execution_readiness": "URGENT_HOLD_FULL_TOR_AND_FIRM_ELIGIBILITY_UNVERIFIED",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "Urgent iSCOPE check before deadline: establish that the actual bidding entity and team can meet every mandatory legal-registration, similar-firm/project-reference, trade-domain, staffing, geography and turnover gate from the full TOR. The TOR was not accessible in the connected read route. If any hard gate is not evidenced before deadline, hold/kill the bid. If all gates pass, PRI alone decides on any bid and performs a separately authorized portal submission. FORX does not contact or submit.",
+      "intake_custody": "Root Intake issue #31; iSCOPE issue #4 comment 6290394415; flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. No eligibility, bid, contact, award, contract, invoice or revenue evidenced.",
+      "source_recheck": {
+        "observed_at_utc": "2026-10-20T12:09:30Z",
+        "observed_local": "2026-10-20T14:09:30+02:00",
+        "finding": "Current UNGM notice and linked procurement-notices page confirm deadline 22-Oct-2026 23:59 New York time (2026-10-23 03:59Z). Full qualification documents require a signed-in SharePoint/Quantum access path."
+      },
+      "record_reconciliation": {
+        "update_type": "SAME_SOURCE_KEY_UPSERT",
+        "new_revenue_weight": 0,
+        "unique_source_key_growth": 0
+      }
+    },
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-002",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNICEF — Procurement",
+      "surface": "RFPS 503950 — hosting administration, maintenance and custom development of UNICEF’s Moodle Workplace Learning Management System.",
+      "observed_need": "Official RFPS for Moodle Workplace LMS hosting, administration, maintenance and custom development. The procurement page lists the RFPS, TOR, pricing schedules, two amendments, questions/clarifications, a Data Processing Agreement and Agora plugin documentation.",
+      "outcome_space": [
+        "Moodle Workplace LMS",
+        "hosting and operations",
+        "software maintenance",
+        "custom development",
+        "service levels",
+        "data processing"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/311133",
+      "source_key": "url:https://www.ungm.org/Public/Notice/311133",
+      "source_observed_at": "2026-10-20T12:09:30Z",
+      "published": "2026-08-14",
+      "deadline_at": "2026-10-25T21:59:00Z",
+      "deadline_local_sast": "2026-10-25T23:59:00+02:00",
+      "deadline_conflict": {
+        "official_notice_header": "25-Oct-2026 23:59 (GMT+1), corresponding to 2026-10-25 22:59Z.",
+        "amendment_no_2_text": "States the submission deadline is extended to 25 October 2026 23:59 hours CEST, which would correspond to 2026-10-25 21:59Z.",
+        "handling": "ONE-HOUR TIMEZONE CONFLICT. Use 21:59Z / 23:59 SAST as a conservative internal cut-off until iSCOPE verifies the controlling amendment/system timestamp. Do not silently resolve by assumption."
+      },
+      "geography": {
+        "country": "Multiple listed destination countries, including South Africa.",
+        "locality": "Hosting location, support coverage and delivery geography require TOR review."
+      },
+      "contract_duration": "UNKNOWN — TOR not fully reviewed.",
+      "public_route": {
+        "type": "UNICEF RFPS 503950 email submission per published notice",
+        "technical_submission_to": "supplybid@unicef.org",
+        "commercial_submission_to": "supplybid@unicef.org",
+        "instructions": "Separate Technical and Commercial Proposal emails; each email including attachments must be at most 25 MB, with multiple batches permitted. Proposal validity at least 180 days. No submission made.",
+        "submission_mode": "Verify Amendment No.2 and the controlling time before any authorized bid."
+      },
+      "solicitation_document_access": {
+        "official_notice": "https://www.ungm.org/Public/Notice/311133",
+        "documents_listed": [
+          "RFPS document",
+          "Terms of Reference Annex B and appendices B1-B7",
+          "Pricing schedules Annex C",
+          "Amendment No.1",
+          "Amendment No.2",
+          "Questions and Clarifications No.1",
+          "Data Processing Agreement materials",
+          "Agora plugin attachment"
+        ],
+        "access_result": "Direct download of Amendment No.2 returned 403 through the source connector; full TOR/qualification criteria and DPA details not inspected."
+      },
+      "contactability": "OFFICIAL RFPS PUBLISHED; Moodle-specific eligibility, hosting and support capacity, and submission time require verification.",
+      "payer_hypothesis": "UNICEF if selected; value, service levels and payment milestones require TOR review.",
+      "fit_note": "A specialized operating/hosting service, not just a software build. No comparable Moodle Workplace operational references, hosting architecture, support SLA, or DPA/security compliance is established by the public notice alone.",
+      "source_rights": "Public notice metadata and factual summary only; data-processing, confidentiality and licensing terms govern any proposal.",
+      "execution_readiness": "HOLD_MOODLE_REFERENCES_DPA_AND_CUTOFF_CONFLICT",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE to confirm the controlling submission timestamp (use 2026-10-25 21:59Z as the conservative internal cutoff until resolved), then test mandatory Moodle Workplace delivery/hosting experience, support SLAs, references, data-processing/security controls, capacity and net margin. No email/bid is authorized by this staging record; PRI retains any external submission.",
+      "intake_custody": "Root Intake issue #31; iSCOPE issue #4 comment 6290394415; flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. Deadline conflict and hard qualification gates remain open. No submission, acceptance, contract, award, invoice or income evidenced.",
+      "source_recheck": {
+        "observed_at_utc": "2026-10-20T12:09:30Z",
+        "observed_local": "2026-10-20T14:09:30+02:00",
+        "finding": "Current official page header gives 25-Oct-2026 23:59 GMT+1; Amendment No.2 text says 23:59 CEST. Treat as unresolved one-hour timezone conflict and use earlier cut-off for internal planning."
+      },
+      "record_reconciliation": {
+        "update_type": "SAME_SOURCE_KEY_UPSERT",
+        "new_revenue_weight": 0,
+        "unique_source_key_growth": 0
+      }
+    },
+    {
+      "id": "FORX-PROSPECT-20261020-UNGM-003",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP Philippines — Procurement Unit",
+      "surface": "Development, deployment and initial operation of a circular-economy platform and solid-waste information-management system for local government units; reference UNDP-PHL-00981.",
+      "observed_need": "The official RFP calls for a circular-economy platform and solid-waste data-management application for local government units.",
+      "outcome_space": [
+        "circular economy platform",
+        "solid-waste data management",
+        "local-government information systems",
+        "data collection and reporting",
+        "Philippines"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/318058",
+      "source_key": "url:https://www.ungm.org/Public/Notice/318058",
+      "source_observed_at": "2026-10-20T12:09:30Z",
+      "published": "2026-10-14",
+      "deadline_at": "2026-10-28T09:00:00Z",
+      "deadline_local_sast": "2026-10-28T11:00:00+02:00",
+      "geography": {
+        "country": "Philippines",
+        "locality": "Local government deployment; remote/local delivery and partner requirements UNKNOWN."
+      },
+      "contract_duration": "UNKNOWN — TOR not fully reviewed.",
+      "public_route": {
+        "type": "official UNDP Quantum supplier portal",
+        "url": "https://supplier.quantum.partneragencies.org",
+        "submission_mode": "Authenticated procurement route; no draft response or bid made."
+      },
+      "contactability": "OFFICIAL PROCUREMENT ROUTE PUBLISHED; full qualifications and submission readiness UNKNOWN.",
+      "payer_hypothesis": "UNDP if selected; contract value and milestones unknown.",
+      "fit_note": "Data application may overlap with broad software capability, but local government deployment, solid-waste domain expertise, integration, maintenance and partner criteria are unverified.",
+      "source_rights": "Public notice metadata and factual summary only.",
+      "execution_readiness": "HOLD_TOR_LOCAL_PARTNER_AND_PREBID_GATE",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "prebid_status": {
+        "source": "https://www.ungm.org/Public/Notice/318058",
+        "session": "19-Oct-2026, online via Zoom, Philippine Time",
+        "confirmation_deadline": "16-Oct-2026 Philippine Time — elapsed as of 20-Oct",
+        "status": "Pre-bid session and confirmation window have passed. The notice does not make it clear whether attendance is a mandatory bid gate; do not assume either way."
+      },
+      "consumer_action": "iSCOPE to verify whether pre-bid attendance/confirmation was mandatory, then inspect full TOR, local/partner requirements, relevant references and payment terms. If the missed session creates ineligibility, kill promptly. Do not claim attendance or bid readiness.",
+      "intake_custody": "Root Intake issue #31; iSCOPE issue #4 comment 6290394415; flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. Pre-bid requirement remains unresolved. No qualification, contact, submission, award or revenue evidenced.",
+      "source_recheck": {
+        "observed_at_utc": "2026-10-20T12:09:30Z",
+        "observed_local": "2026-10-20T14:09:30+02:00",
+        "finding": "Official notice states a pre-bid session on 19-Oct and a confirmation deadline of 16-Oct; both dates have passed."
+      },
+      "record_reconciliation": {
+        "update_type": "SAME_SOURCE_KEY_UPSERT",
+        "new_revenue_weight": 0,
+        "unique_source_key_growth": 0
+      }
+    }
+  ]
+}
