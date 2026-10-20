@@ -712,6 +712,93 @@
       "receipt": "receipts/0000000023-qdrain-20261015-naomii-offered.json",
       "receipt_sha256": "5fe7015cbaf90c7aa322052cb173dbe844bbc743252278b189c46fa74b365968",
       "status": "COMPLETED"
+    },
+    {
+      "id": "qdrain-20261020-mendazsolar-offered",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "due_at": null,
+        "evidence": [
+          {
+            "kind": "OUTBOUND_SEND",
+            "observed_at": "2026-10-20T07:47:43Z",
+            "source": "OUTLOOK",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+            "subject": "One bounded pilot for solar service follow-through",
+            "summary": "Sent from usduplessis@outlook.com; fixed fee R9,380 once-off; one existing service-request source and one tracking destination; 5-business-day test/handover after scope and access accepted; hosting/API fees excluded."
+          }
+        ],
+        "execution_owner": "PRI",
+        "identity": {
+          "domain": "mendazsolar.co.za",
+          "opportunity": "Solar service follow-through pilot",
+          "organization": "Mendaz Solar"
+        },
+        "next_action": "WAIT for a substantive buyer reply. If interested, confirm the current service/request tools, integration permission, test case, acceptance criteria and supported payment route before work. Do not send duplicate initial outreach or follow up without a new evidence-based due date and route recheck. Do not begin implementation before paid receipt and access are verified.",
+        "observed_at": "2026-10-20T07:47:43Z",
+        "opportunity_key": "mendazsolar.co.za|solar-service-follow-through-pilot|2026-10-20",
+        "recipient": "info@mendazsolar.co.za",
+        "to": "OFFERED"
+      }
+    },
+    {
+      "id": "qdrain-20261020-treetopssolar-offered",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "due_at": null,
+        "evidence": [
+          {
+            "kind": "OUTBOUND_SEND",
+            "observed_at": "2026-10-20T07:48:04Z",
+            "source": "OUTLOOK",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvgAAAA==",
+            "subject": "One maintenance-callout handoff pilot",
+            "summary": "Sent from usduplessis@outlook.com; fixed fee R9,380 once-off; one existing request source and one tracking destination; 5-business-day test/handover after scope and access accepted; hosting/API fees excluded."
+          }
+        ],
+        "execution_owner": "PRI",
+        "identity": {
+          "domain": "treetopssolar.co.za",
+          "opportunity": "Maintenance-callout handoff pilot",
+          "organization": "Treetops Solar"
+        },
+        "next_action": "WAIT for a substantive buyer reply. If interested, confirm the current maintenance-callout tools, integration permission, test case, acceptance criteria and supported payment route before work. Do not send duplicate initial outreach or follow up without a new evidence-based due date and route recheck. Do not begin implementation before paid receipt and access are verified.",
+        "observed_at": "2026-10-20T07:48:04Z",
+        "opportunity_key": "treetopssolar.co.za|maintenance-callout-handoff-pilot|2026-10-20",
+        "recipient": "info@treetopssolar.co.za",
+        "to": "OFFERED"
+      }
+    },
+    {
+      "id": "qdrain-20261020-verminator-offered",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "due_at": null,
+        "evidence": [
+          {
+            "kind": "OUTBOUND_SEND",
+            "observed_at": "2026-10-20T07:48:26Z",
+            "source": "OUTLOOK",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvwAAAA==",
+            "subject": "One site-visit-to-follow-up workflow pilot",
+            "summary": "Sent from usduplessis@outlook.com; fixed fee R9,380 once-off; one existing visit-record source and one report/tracking destination; 5-business-day test/handover after scope and access accepted; hosting/API fees excluded."
+          }
+        ],
+        "execution_owner": "PRI",
+        "identity": {
+          "domain": "verminator.co.za",
+          "opportunity": "Site-visit-to-follow-up workflow pilot",
+          "organization": "Verminator"
+        },
+        "next_action": "WAIT for a substantive buyer reply. If interested, confirm the current visit-record/reporting tools, integration permission, test case, acceptance criteria and supported payment route before work. Do not send duplicate initial outreach or follow up without a new evidence-based due date and route recheck. Do not begin implementation before paid receipt and access are verified.",
+        "observed_at": "2026-10-20T07:48:26Z",
+        "opportunity_key": "verminator.co.za|site-visit-to-follow-up-workflow-pilot|2026-10-20",
+        "recipient": "quality@verminator.co.za",
+        "to": "OFFERED"
+      }
     }
   ],
   "ready_claims": 0,
