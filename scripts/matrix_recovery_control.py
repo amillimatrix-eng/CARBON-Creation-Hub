@@ -97,6 +97,36 @@ def select_plan(
     return "B", "PLAN_B_ALLOWED_NO_SUCCESSFUL_PLAN_A_RUN"
 
 
+def latest_successful_schedule_timestamp(payload: dict[str, Any]) -> str | None:
+    """Return the latest successful scheduled-run completion time.
+
+    This consumes the GitHub Actions workflow-runs response. A failed/malformed
+    API response must not be treated as "Plan A never ran"; the caller handles
+    HTTP/API errors separately, while this function validates the payload.
+    """
+    runs = payload.get("workflow_runs")
+    if not isinstance(runs, list):
+        raise ControlError("Actions API response missing workflow_runs list")
+    successes: list[tuple[datetime, str]] = []
+    for run in runs:
+        if not isinstance(run, dict):
+            raise ControlError("Actions API workflow run is not an object")
+        if (
+            run.get("event") != "schedule"
+            or run.get("status") != "completed"
+            or run.get("conclusion") != "success"
+        ):
+            continue
+        updated = run.get("updated_at")
+        parsed = parse_time(updated if isinstance(updated, str) else None)
+        if parsed is None:
+            raise ControlError("successful scheduled run is missing a valid updated_at timestamp")
+        successes.append((parsed, parsed.isoformat().replace("+00:00", "Z")))
+    if not successes:
+        return None
+    return max(successes, key=lambda item: item[0])[1]
+
+
 def read_json(path: Path) -> dict[str, Any]:
     try:
         value = json.loads(path.read_text(encoding="utf-8"))
