@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Read-only AMX recovery-control preflight.
 
-Projects canonical repository state into one receipt. It is not the commercial
-worker, does not call external providers, and never mutates source ledgers.
-Plan A is the scheduled GitHub Actions trigger. Plan B is a manual, repo-only
-fallback allowed only when the latest successful Plan A run is at least 75
-minutes old and the commercial worker remains paused. A future scheduled
-trigger always selects Plan A; fallback mode is never sticky.
-"""
+Projects canonical repository state into an attributable receipt. It is not the
+commercial worker, does not call external providers, and never mutates source
+ledgers. Plan A is the hourly GitHub Actions trigger. An independent, offset
+15-minute watchdog selects repository-only Plan B if no successful Plan A
+receipt has been read for 75 minutes. A new successful Plan A receipt returns
+the selector to A; fallback does not become sticky. The commercial writer
+remains separately paused/manual-only.
 from __future__ import annotations
 
 import argparse
@@ -30,6 +30,10 @@ REQUIRED_PATHS = (
     Path("overdrive/payment_rails.json"),
 )
 PLAN_A_MAX_AGE_MINUTES = 75
+PLAN_A_SCHEDULE_CRON = "0 * * * *"
+PLAN_B_WATCHDOG_CRON = "5,20,35,50 * * * *"
+PLAN_A_ANCHOR_PATH = Path("overdrive/recovery-control/plan-a-anchor.json")
+PLAN_A_ANCHOR_SCHEMA = "AMX_PLAN_A_LIVENESS_ANCHOR_V1"
 SCHEMA = "AMX_MATRIX_RECOVERY_CONTROL_RECEIPT_V1"
 
 
@@ -72,59 +76,81 @@ def registry_root(registry: dict[str, Any]) -> str:
     return sha256_text("".join(line + "\n" for line in sorted(lines)))
 
 
+def read_plan_a_anchor(path: Path) -> dict[str, Any] | None:
+    """Read the durable Plan-A liveness anchor; malformed state fails closed."""
+    if not path.is_file():
+        return None
+    try:
+        anchor = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ControlError(f"cannot read valid Plan A anchor {path}") from exc
+    if not isinstance(anchor, dict) or anchor.get("schema") != PLAN_A_ANCHOR_SCHEMA:
+        raise ControlError("Plan A anchor schema missing or invalid")
+    activated = anchor.get("activated_at")
+    if not isinstance(activated, str) or parse_time(activated) is None:
+        raise ControlError("Plan A anchor activation timestamp missing or invalid")
+    success = anchor.get("last_successful_plan_a")
+    if success is not None:
+        if not isinstance(success, dict):
+            raise ControlError("Plan A success anchor must be an object or null")
+        completed = success.get("completed_at")
+        if not isinstance(completed, str) or parse_time(completed) is None:
+            raise ControlError("Plan A success anchor timestamp missing or invalid")
+        if success.get("run_id") in (None, "") or success.get("commit_sha") in (None, ""):
+            raise ControlError("Plan A success anchor run identity missing")
+    return anchor
+
+
 def select_plan(
     *, event: str, fallback_requested: bool, run_worker: str,
-    last_plan_a_success_at: str | None, now: datetime,
+    last_plan_a_success_at: str | None, activation_started_at: str | None,
+    schedule_expression: str, now: datetime,
 ) -> tuple[str, str]:
-    """Return plan + reason; never starts the commercial worker."""
+    """Return plan + reason; a scheduled watchdog may automatically select B."""
+    def fallback_decision(*, automatic_watchdog: bool) -> tuple[str, str]:
+        if run_worker != "paused":
+            return "VALIDATION_ONLY", "PLAN_B_REJECTED_WORKER_MUST_REMAIN_PAUSED"
+
+        if last_plan_a_success_at:
+            last_success = parse_time(last_plan_a_success_at)
+            if last_success is None:
+                raise ControlError("Plan A success timestamp cannot be empty")
+            age = now.astimezone(timezone.utc) - last_success
+            if age < timedelta(0):
+                raise ControlError("Plan A success timestamp is in the future; refusing fallback on clock skew")
+            if age < timedelta(minutes=PLAN_A_MAX_AGE_MINUTES):
+                if automatic_watchdog:
+                    return "A", "PLAN_A_RECENT_WATCHDOG_NO_FALLBACK"
+                return "VALIDATION_ONLY", "PLAN_B_REJECTED_PLAN_A_RECENT"
+            return "B", "PLAN_B_AUTOMATIC_WATCHDOG_PLAN_A_STALE" if automatic_watchdog else "PLAN_B_ALLOWED_PLAN_A_STALE"
+
+        if not activation_started_at:
+            raise ControlError("no Plan A success exists and activation timestamp is missing")
+        activation = parse_time(activation_started_at)
+        if activation is None:
+            raise ControlError("Plan A activation timestamp cannot be empty")
+        age = now.astimezone(timezone.utc) - activation
+        if age < timedelta(0):
+            raise ControlError("Plan A activation timestamp is in the future; refusing fallback on clock skew")
+        if age < timedelta(minutes=PLAN_A_MAX_AGE_MINUTES):
+            if automatic_watchdog:
+                return "A", "PLAN_A_STARTUP_WINDOW_WATCHDOG_NO_FALLBACK"
+            return "VALIDATION_ONLY", "PLAN_B_REJECTED_STARTUP_WINDOW"
+        return "B", "PLAN_B_AUTOMATIC_WATCHDOG_NO_SUCCESSFUL_PLAN_A" if automatic_watchdog else "PLAN_B_ALLOWED_NO_SUCCESSFUL_PLAN_A_RUN"
+
     if event == "schedule":
-        return "A", "SCHEDULE_EVENT_SELECTED_PLAN_A"
+        if schedule_expression == PLAN_A_SCHEDULE_CRON and not fallback_requested:
+            return "A", "HOURLY_PLAN_A_SCHEDULE_SELECTED"
+        # Preserve local/unit preflights that omit GitHub's schedule expression.
+        if not schedule_expression and not fallback_requested:
+            return "A", "SCHEDULE_EVENT_SELECTED_PLAN_A"
+        if schedule_expression == PLAN_B_WATCHDOG_CRON and fallback_requested:
+            return fallback_decision(automatic_watchdog=True)
+        raise ControlError(f"unrecognized or inconsistent scheduled trigger: {schedule_expression!r}")
+
     if event != "workflow_dispatch" or not fallback_requested:
         return "VALIDATION_ONLY", "NO_AUTHORIZED_RUNTIME_PLAN_REQUESTED"
-    if run_worker != "paused":
-        return "VALIDATION_ONLY", "PLAN_B_REJECTED_WORKER_MUST_REMAIN_PAUSED"
-
-    if last_plan_a_success_at:
-        last_success = parse_time(last_plan_a_success_at)
-        assert last_success is not None
-        age = now.astimezone(timezone.utc) - last_success
-        if age < timedelta(minutes=PLAN_A_MAX_AGE_MINUTES):
-            return "VALIDATION_ONLY", "PLAN_B_REJECTED_PLAN_A_RECENT"
-        return "B", "PLAN_B_ALLOWED_PLAN_A_STALE"
-    # None is permitted only after the caller successfully queried the Actions
-    # API and established that there is no successful schedule run. API errors
-    # must fail the workflow step rather than being translated to None.
-    return "B", "PLAN_B_ALLOWED_NO_SUCCESSFUL_PLAN_A_RUN"
-
-
-def latest_successful_schedule_timestamp(payload: dict[str, Any]) -> str | None:
-    """Return the latest successful scheduled-run completion time.
-
-    This consumes the GitHub Actions workflow-runs response. A failed/malformed
-    API response must not be treated as "Plan A never ran"; the caller handles
-    HTTP/API errors separately, while this function validates the payload.
-    """
-    runs = payload.get("workflow_runs")
-    if not isinstance(runs, list):
-        raise ControlError("Actions API response missing workflow_runs list")
-    successes: list[tuple[datetime, str]] = []
-    for run in runs:
-        if not isinstance(run, dict):
-            raise ControlError("Actions API workflow run is not an object")
-        if (
-            run.get("event") != "schedule"
-            or run.get("status") != "completed"
-            or run.get("conclusion") != "success"
-        ):
-            continue
-        updated = run.get("updated_at")
-        parsed = parse_time(updated if isinstance(updated, str) else None)
-        if parsed is None:
-            raise ControlError("successful scheduled run is missing a valid updated_at timestamp")
-        successes.append((parsed, parsed.isoformat().replace("+00:00", "Z")))
-    if not successes:
-        return None
-    return max(successes, key=lambda item: item[0])[1]
+    return fallback_decision(automatic_watchdog=False)
 
 
 def read_json(path: Path) -> dict[str, Any]:
@@ -142,7 +168,8 @@ def build_manifest(
     run_id: str = "", run_attempt: str = "", run_number: str = "",
     ref: str = "", commit_sha: str = "", actor: str = "",
     fallback_requested: bool = False, run_worker: str = "paused",
-    last_plan_a_success_at: str | None = None,
+    last_plan_a_success_at: str | None = None, activation_started_at: str | None = None,
+    schedule_expression: str = "",
 ) -> dict[str, Any]:
     root = repo_root.resolve()
     required = [root / path for path in REQUIRED_PATHS] + [root / REGISTRY_PATH]
@@ -183,14 +210,31 @@ def build_manifest(
     now_utc = now.astimezone(timezone.utc)
     tick_age = round((now_utc - last_tick_at).total_seconds() / 60, 2) if last_tick_at else None
 
+    anchor_path = root / PLAN_A_ANCHOR_PATH
+    anchor = read_plan_a_anchor(anchor_path)
+    anchor_status = "PRESENT" if anchor else "MISSING"
+    if anchor:
+        activation_started_at = activation_started_at or str(anchor.get("activated_at"))
+        last_success = anchor.get("last_successful_plan_a")
+        if last_plan_a_success_at is None and isinstance(last_success, dict):
+            last_plan_a_success_at = str(last_success.get("completed_at"))
+    elif event == "schedule" and schedule_expression == PLAN_B_WATCHDOG_CRON:
+        # First watchdog after installation starts the recovery grace window; it
+        # must not invoke fallback immediately merely because no anchor exists.
+        activation_started_at = activation_started_at or now_utc.isoformat().replace("+00:00", "Z")
+        anchor_status = "INITIALIZE_AFTER_SUCCESSFUL_WATCHDOG"
+
     selected_plan, plan_reason = select_plan(
         event=event, fallback_requested=fallback_requested, run_worker=run_worker,
-        last_plan_a_success_at=last_plan_a_success_at, now=now_utc,
+        last_plan_a_success_at=last_plan_a_success_at, activation_started_at=activation_started_at,
+        schedule_expression=schedule_expression, now=now_utc,
     )
     source_hashes = {
         str(path.relative_to(root)): sha256_text(path.read_text(encoding="utf-8"))
         for path in required
     }
+    if anchor_path.is_file():
+        source_hashes[str(PLAN_A_ANCHOR_PATH)] = sha256_text(anchor_path.read_text(encoding="utf-8"))
     return {
         "schema": SCHEMA,
         "receipt_type": "REPOSITORY_RECOVERY_CONTROL_PREFLIGHT",
@@ -199,10 +243,22 @@ def build_manifest(
             "workflow": "AMX OVERDRIVE Worker", "event": event,
             "run_id": run_id, "run_attempt": run_attempt, "run_number": run_number,
             "ref": ref, "commit_sha": commit_sha, "actor": actor,
+            "schedule_expression": schedule_expression,
         },
         "control": {
             "selected_plan": selected_plan, "selection_reason": plan_reason,
-            "plan_a_cadence_minutes": 60, "plan_b_max_plan_a_age_minutes": PLAN_A_MAX_AGE_MINUTES,
+            "trigger_role": (
+                "PLAN_A_HOURLY" if event == "schedule" and schedule_expression == PLAN_A_SCHEDULE_CRON
+                else "PLAN_B_AUTOMATIC_WATCHDOG" if event == "schedule" and schedule_expression == PLAN_B_WATCHDOG_CRON
+                else "PLAN_B_MANUAL_GUARDED" if event == "workflow_dispatch" and fallback_requested
+                else "VALIDATION_ONLY_OR_MANUAL"
+            ),
+            "liveness_anchor_path": str(PLAN_A_ANCHOR_PATH), "liveness_anchor_status": anchor_status,
+            "plan_a_last_success_at": last_plan_a_success_at,
+            "plan_a_activation_started_at": activation_started_at,
+            "plan_a_cadence_minutes": 60, "plan_b_watchdog_cadence_minutes": 15,
+            "plan_b_max_plan_a_age_minutes": PLAN_A_MAX_AGE_MINUTES,
+            "plan_b_automatic_watchdog_enabled": True,
             "plan_b_is_sticky": False, "next_successful_schedule_selects": "A",
             "commercial_worker_run": False, "external_reads_attempted": False,
             "external_writes_attempted": False, "scope": "REPOSITORY_READ_ONLY_CONTINUITY_CONTROL",
@@ -273,7 +329,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--now", default=None)
     parser.add_argument("--fallback-requested", action="store_true")
     parser.add_argument("--run-worker", default=os.environ.get("AMX_RUN_WORKER", "paused"))
+    parser.add_argument("--schedule-expression", default=os.environ.get("GITHUB_EVENT_SCHEDULE", ""))
     parser.add_argument("--last-plan-a-success-at", default=os.environ.get("PLAN_A_LAST_SUCCESS_AT") or None)
+    parser.add_argument("--activation-started-at", default=os.environ.get("PLAN_A_ACTIVATION_STARTED_AT") or None)
     args = parser.parse_args(argv)
     now = parse_time(args.now) if args.now else datetime.now(timezone.utc)
     assert now is not None
@@ -281,6 +339,7 @@ def main(argv: list[str] | None = None) -> int:
     metadata = {key: value for key, value in {
         "event": args.event, "run_id": args.run_id, "run_attempt": args.run_attempt,
         "run_number": args.run_number, "ref": args.ref, "commit_sha": args.commit_sha, "actor": args.actor,
+        "schedule_expression": args.schedule_expression,
     }.items()}
     try:
         receipt = build_manifest(
@@ -288,6 +347,7 @@ def main(argv: list[str] | None = None) -> int:
             run_attempt=args.run_attempt, run_number=args.run_number, ref=args.ref,
             commit_sha=args.commit_sha, actor=args.actor, fallback_requested=args.fallback_requested,
             run_worker=args.run_worker, last_plan_a_success_at=args.last_plan_a_success_at,
+            activation_started_at=args.activation_started_at, schedule_expression=args.schedule_expression,
         )
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
