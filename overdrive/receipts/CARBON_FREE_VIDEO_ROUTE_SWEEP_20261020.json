@@ -1,0 +1,387 @@
+{
+  "schema": "CARBON_FREE_VIDEO_ROUTE_SWEEP_RECEIPT_v1",
+  "receipt_id": "CARBON-FREE-VIDEO-ROUTE-SWEEP-2026-10-20",
+  "date": "2026-10-20",
+  "worker": "CARBON° Production Studio",
+  "priority": "P0_DRAGON_EP01_FACTORY_PROOF_AND_CATALOGUE_SCALE",
+  "normalization_contract": {
+    "name": "CARBON_Provider_Integration_Intake_v2",
+    "sha256": "50959132fca29f775c1f59839f822b3a7121f487dfb0d1952e604065fd138e7a",
+    "states": [
+      "VERIFIED",
+      "MANUAL_BRIDGE",
+      "CONNECT",
+      "UNKNOWN",
+      "UNAVAILABLE"
+    ]
+  },
+  "t10": {
+    "intended_outcome": "Discover and execute lawful no-cash video generation route, preserve exact outputs and rights, and prove multi-clip motion factory with new Dragon EP01 review master.",
+    "actual_outcome": "Fresh current official research reconfirmed Google Flow's 50 daily credits with a viable 720p/360p clip budget and confirmed South Africa support; the native YouTube Shorts AI surface remains a user-account candidate. Added VEED and Invideo route-specific free/credit/export caveats. Vidu is excluded from commercial-catalogue use and must not receive private canon on its free terms.",
+    "evidence": [
+      "Google Flow Help: 50 credits daily without subscription; Omni Flash costs; South Africa availability; ingredients/frames/clip construction.",
+      "Google Labs FX privacy notice: interaction review/history control.",
+      "YouTube Shorts official generation steps: clips up to 10 seconds with reference photos; actual zero-cost entitlement still account-specific.",
+      "Vidu current official terms: free tier is non-commercial and grants broad submitted-content license.",
+      "VEED official help: free AI generation credits regional; max 12 seconds; watermark on free export.",
+      "invideo official free plan help: limited weekly credits, image-to-video route, plan-page inconsistency.",
+      "Current HeyGen Free account readback and existing 3.55265s motion clip; OpenArt account readback remains Free with 10 credits."
+    ],
+    "change": "Updated Google Flow from generic candidate to highest-priority manual route, exposed the actual per-clip/daily budget, surfaced proprietary-data/privacy caveat, and classified additional current providers by the real rights/export tradeoff.",
+    "remaining_gap": "No browser is connected in this runtime and TinyFish metered wallet remains negative, so no web UI generation could be invoked. Run the new preserved Flow shot graph through an authorized account session; record every clip and run a full Critic/readback after assembly."
+  },
+  "existing_evidence": {
+    "dragon_ep01_review_master": {
+      "filename": "DRAGON_EP01_IT_CHOSE_HER_review_v1.mp4",
+      "sha256": "82a072ae05a3aa1c2ca98a10eda55e7305c8ecfea7c8297dd8ee245dda9c500c",
+      "duration_seconds": 70,
+      "format": "H.264 720x1280 30fps; AAC mono; English burned-in captions",
+      "state": [
+        "EPISODE_RENDERED",
+        "STITCH_MIX_VERIFIED",
+        "REVIEW_ACCESS_VERIFIED"
+      ],
+      "limit": "Editorial camera motion over canonical still panels; not a multi-provider generated-subject-motion episode. Voice commercial clearance remains pending."
+    },
+    "heygen_motion_proof": {
+      "video_id": "8ac4863acd85f92292e39c2a15dd8001",
+      "status": "completed",
+      "duration_seconds": 3.55265,
+      "state": "VIDEO_CLIP_VERIFIED_FOR_INTERNAL_MOTION_PROOF_ONLY",
+      "limit": "Heavy watermark and non-commercial/internal-evaluation restrictions; not catalogue final."
+    },
+    "openart_account": {
+      "plan": "Free",
+      "credits": 10,
+      "cheapest_listed_video_mode": {
+        "model": "pixverseV6",
+        "credits": 50,
+        "affordable": false
+      },
+      "video_job_submitted": false
+    },
+    "descript": "Connected project-read access verified; existing Dragon trailer composition 39.018s; no new Dragon EP01 sequence created in this sweep."
+  },
+  "routes": [
+    {
+      "provider": "Google Flow consumer UI",
+      "state": "MANUAL_BRIDGE_CANDIDATE_PRIORITY_1",
+      "priority": 1,
+      "evidence": "Official credits page says non-subscribers receive 50 daily credits. Listed costs include Veo 3.1 Lite at 10 credits for 4/6/8s and Gemini Omni Flash 720p at 7/10/12/15 credits for 4/6/8/10s. South Africa is listed as supported. A different Flow getting-started page says subscription is generally required; credit help says non-subscribers may be blocked during peak hours. Resolve with the actual account UI.",
+      "rights": "Visible watermark is configurable except some regions; invisible SynthID remains. Review current Google terms. No output rights or current account eligibility verified.",
+      "invoke": "NOT_EXECUTED",
+      "official_sources": [
+        "https://labs.google/fx/tools/flow",
+        "https://support.google.com/flow/answer/16526234",
+        "https://support.google.com/flow/answer/16353334",
+        "https://support.google.com/flow/answer/16353544",
+        "https://support.google.com/flow/answer/16935308",
+        "https://support.google.com/flow/answer/17571126",
+        "https://labs.google/fx/en-gb/faq"
+      ],
+      "cost_evidence": "Official current Flow Help says 50 daily credits without a subscription. Gemini Omni Flash: 720p 4s=7, 6s=10, 8s=12, 10s=15 credits; 360p 4s=4, 6s=5, 8s=6, 10s=7. Veo 3.1 Lite is shown at 10 credits for non-Ultra subscribers in the current table, but a separately listed lower-priority Lite mode is unavailable to non-Ultra users. For a 70s episode, nine 8s Omni Flash 720p clips =108 credits / about three daily free allowances, before retries.",
+      "eligibility_conflict": "Current public Flow product page explicitly lists a no-subscription, free tier with 50 daily credits and video/ingredients/frames/scenebuilder tools. Help page warns non-subscriber video generation may be blocked during peak hours (roughly 14:00–17:00 UTC). Account eligibility and exact live cost still require a UI readback.",
+      "rights_and_watermark": "Google Labs FX FAQ says Google does not claim ownership over some generated content, but the Google Terms govern use. Flow/Labs interactions may be processed for service improvement and human review (up to 18 months); the Lab history setting can opt future interactions out of human review/model improvement. Treat account-level terms, watermark/SynthID status and history setting as per-run provenance. Do not submit confidential canon without appropriate settings/authorization.",
+      "next_test": "Open Flow on the normal existing Owner Google account outside the non-subscriber peak window. Confirm 50 daily credits, current model menu, exact visible cost, video export/download and history control; then make one 8s 9:16 Ingredients-to-Video test using approved canonical inputs. No UI job has been submitted here."
+    },
+    {
+      "provider": "YouTube Shorts native AI generation",
+      "state": "MANUAL_BRIDGE_CANDIDATE",
+      "priority": 1,
+      "evidence": "Official YouTube Help documents standalone generated clips up to 10 seconds using text prompts and up to three reference photos, available in most countries with device language English, subject to rollout limits.",
+      "artifact_route": "Creator flow publishes the Short. Official Help allows downloading your own upload as MP4 720p/360p, subject to restrictions including copyright strikes, preapproved audio and a five-download-per-video-per-day limit.",
+      "rights": "Auto-disclosure of AI generation is documented. Platform upload and off-platform commercial-use rights are separate; download and preserve only an Owner-controlled upload through the official route. Do not include third-party music unless separately cleared.",
+      "invoke": "NOT_EXECUTED",
+      "official_sources": [
+        "https://support.google.com/youtube/answer/15260303",
+        "https://support.google.com/youtube/answer/56100",
+        "https://support.google.com/youtube/answer/16631240",
+        "https://uk.youtube.com/t/terms"
+      ],
+      "cost_evidence": "Official YouTube Help documents prompt/reference-based standalone generated clips up to 10 seconds and does not state a usage fee on that page. This is not proof of this account's access or unlimited zero-cost allowance; verify feature availability, any credit/limit indicator, privacy setting and downloadable MP4 in the existing account before classifying ZERO_COST."
+    },
+    {
+      "provider": "Hugging Face ZeroGPU / Wan2.2",
+      "state": "MANUAL_BRIDGE_CANDIDATE",
+      "priority": 2,
+      "evidence": "Public Wan2.2 I2V ZeroGPU demo discovered; base Wan-AI/Wan2.2-I2V-A14B model metadata lists Apache-2.0. Additional public Gradio Spaces discovered: Pepe104/MiniMax-H3-Turbo-Lora-UNCENSORED and vamo455/Omni-videos-custom-auto_prompt_high-quality. wavespeed/wan2.2 is a public Space tagged text-to-video/image-to-video, but is not presumed free.",
+      "rights": "Base model license does not establish the hosted Space's terms, output-rights status, privacy, queue limits or download success. Must inspect exact Space and output.",
+      "invoke": "NOT_EXECUTED",
+      "official_sources": [
+        "https://huggingface.co/spaces?hardware=zerogpu",
+        "https://huggingface.co/spaces?category=video-generation",
+        "https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+        "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B",
+        "https://huggingface.co/spaces/Pepe104/MiniMax-H3-Turbo-Lora-UNCENSORED",
+        "https://huggingface.co/spaces/vamo455/Omni-videos-custom-auto_prompt_high-quality",
+        "https://huggingface.co/spaces/wavespeed/wan2.2"
+      ],
+      "space_candidates_discovered": [
+        {
+          "name": "Wan2.2 14B Fast",
+          "url": "https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+          "space_metadata": "Gradio; MCP-server tag; last updated 2026-08-25; no rights/readback test in this run."
+        },
+        {
+          "name": "MiniMax-H3-Turbo-LoRA",
+          "url": "https://huggingface.co/spaces/Pepe104/MiniMax-H3-Turbo-Lora-UNCENSORED",
+          "space_metadata": "Gradio; last updated 2026-08-16; model/output license, availability and download not verified."
+        },
+        {
+          "name": "Omni videos custom auto-prompt high-quality",
+          "url": "https://huggingface.co/spaces/vamo455/Omni-videos-custom-auto_prompt_high-quality",
+          "space_metadata": "Gradio; last updated 2026-08-30; license, costs, queue and output retrieval not verified."
+        },
+        {
+          "name": "WaveSpeed Wan2.2",
+          "url": "https://huggingface.co/spaces/wavespeed/wan2.2",
+          "space_metadata": "Public Space advertises text-to-video/image-to-video; pricing/free entitlement not established, do not treat as free."
+        }
+      ]
+    },
+    {
+      "provider": "Adobe Firefly Video",
+      "state": "MANUAL_BRIDGE_CANDIDATE",
+      "priority": 2,
+      "evidence": "Official text/image-to-video surface exists; current free account video quota and export entitlement not read back.",
+      "rights": "Prefer Adobe Firefly model for candidate commercial outputs; partner-model rights differ. Confirm zero-cost UI quota and terms before generating.",
+      "invoke": "NOT_EXECUTED",
+      "official_sources": [
+        "https://www.adobe.com/products/firefly/features/ai-video-generator.html",
+        "https://helpx.adobe.com/firefly/web/get-started/learn-the-basics/generative-credits-overview.html"
+      ]
+    },
+    {
+      "provider": "CapCut AI Video and Editor",
+      "state": "MANUAL_BRIDGE_CANDIDATE",
+      "priority": 2,
+      "evidence": "Official site markets free text-to-video and an editor that can support timing, captions, audio and export; exact account entitlement and generated-motion behaviour are unverified.",
+      "rights": "Distinguish real generated motion from stock montage. CapCut commercial-use terms are content-specific; use only assets labelled for commercial use and validate watermark/export.",
+      "invoke": "NOT_EXECUTED",
+      "official_sources": [
+        "https://www.capcut.com/tools/free-ai-video-generator",
+        "https://www.capcut.com/trust/legal",
+        "https://www.capcut.com/clause/terms-of-service"
+      ]
+    },
+    {
+      "provider": "PixVerse consumer web/app",
+      "state": "MANUAL_BRIDGE",
+      "evidence": "Owner-reported useful manual route and free/ad-credit allowance.",
+      "rights": "Consumer terms limit output use to non-commercial unless separate commercial authorization/license is obtained; separate API terms do not clear consumer free output. Internal test only until exact rights verified.",
+      "invoke": "NOT_EXECUTED",
+      "restrictions": "No automated ad watching, quota evasion or duplicate accounts.",
+      "official_sources": [
+        "https://pixverse.ai/en/terms-of-service",
+        "https://pixverse.ai/en/pixverse-platform-terms-of-service"
+      ]
+    },
+    {
+      "provider": "HeyGen Free Web",
+      "state": "VERIFIED_FOR_BOUNDED_INTERNAL_MOTION_PROOF_ONLY",
+      "evidence": "Existing 3.55265-second image-to-video clip completed and was read back.",
+      "rights": "Free output is watermarked and restricted to non-commercial/internal evaluation under current terms; API credits are separate from normal web allowance.",
+      "official_sources": [
+        "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-subscriptions-explained",
+        "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen",
+        "https://help.heygen.com/en/articles/11057301-how-to-remove-the-heygen-watermark",
+        "https://www.heygen.com/terms"
+      ]
+    },
+    {
+      "provider": "OpenArt video via connected account",
+      "state": "UNAVAILABLE_FOR_CURRENT_ZERO_SPEND",
+      "evidence": "Account has 10 credits; cheapest listed video mode costs 50 credits; no job submitted.",
+      "official_sources": [
+        "https://openart.ai/pricing"
+      ]
+    },
+    {
+      "provider": "Runway Free",
+      "state": "MANUAL_BRIDGE_INTERNAL_TRIAL_ONLY",
+      "evidence": "Official Free plan has 125 one-time credits that do not renew; all free videos are watermarked. Official usage-rights support says generations can be commercially used, but one-time credit pool and watermark fail ongoing clean output needs.",
+      "official_sources": [
+        "https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details",
+        "https://help.runwayml.com/hc/en-us/articles/18927776141715-Usage-rights"
+      ]
+    },
+    {
+      "provider": "Pika Free",
+      "state": "UNAVAILABLE_AS_RELIABLE_FREE_COMMERCIAL_ROUTE",
+      "evidence": "Current official Pika pricing page accessed 2026-10-20 says Free is 0 credits/month and credit packs only, no commercial license; no-watermark output is listed but there is no monthly generation allowance. Do not infer credits from older/affiliate pricing pages.",
+      "official_sources": [
+        "https://pika.art/pricing?interval=month",
+        "https://pika.art/terms-of-service"
+      ]
+    },
+    {
+      "provider": "Luma Dream Machine Free",
+      "state": "UNAVAILABLE_FOR_COMMERCIAL_CATALOGUE_FINAL",
+      "evidence": "Current terms grant Luma a broad licence to free outputs including public display/distribution/training; free-use output is personal-use only/watermarked under current plan constraints.",
+      "official_sources": [
+        "https://lumalabs.ai/legal/terms-of-service"
+      ]
+    },
+    {
+      "provider": "YouTube Create Gemini Omni",
+      "state": "UNAVAILABLE_FOR_ASSUMED_SOUTH_AFRICAN_ACCESS",
+      "evidence": "Official help describes up-to-10s vertical clips with three references but currently lists only Australia, Canada, India, New Zealand and the US.",
+      "official_sources": [
+        "https://support.google.com/youtube/answer/16631240"
+      ]
+    },
+    {
+      "provider": "Gemini API / Veo API",
+      "state": "UNAVAILABLE_FOR_FREE_API_PRODUCTION",
+      "evidence": "Official API price page says video generation has no free tier. Consumer Google Flow credits are separate.",
+      "official_sources": [
+        "https://ai.google.dev/gemini-api/docs/video",
+        "https://ai.google.dev/gemini-api/docs/pricing"
+      ]
+    },
+    {
+      "provider": "Leonardo AI video",
+      "state": "UNKNOWN",
+      "evidence": "No current evidence in this run establishes a free video-generation allowance usable by this account.",
+      "official_sources": [
+        "https://leonardo.ai/pricing/"
+      ]
+    },
+    {
+      "provider": "Vidu web/app",
+      "state": "UNAVAILABLE_FOR_COMMERCIAL_CATALOGUE_AND_RESTRICTED_INPUTS",
+      "priority": 3,
+      "evidence": "Official Vidu page says free text/image/reference-to-video; 40 credits/month; 4s/8s options; download is offered. Actual account allowance and watermark were not read back.",
+      "rights": "Terms last updated 2026-07-03 license use to free users is personal/non-commercial; only paid users get commercial-use license. Terms also grant Vidu a worldwide royalty-free sublicensable transferable perpetual irrevocable license to submitted User Content, including product improvement and AI training. Do not upload canonical proprietary CARBON° assets or use free outputs in the commercial catalogue.",
+      "invocation_this_run": "NOT_EXECUTED",
+      "official_sources": [
+        "https://go.vidu.com/ai-video-generator",
+        "https://www.vidu.com/terms"
+      ]
+    },
+    {
+      "provider": "VEED AI Playground / AI Video Generator",
+      "state": "MANUAL_BRIDGE_INTERNAL_TEST_CANDIDATE",
+      "priority": 3,
+      "evidence": "Official VEED help updated 2026-08-21 says text/image-to-video is available across plans, but free-plan AI credits exist only in some regions; where provided, clips can be up to 12 seconds. Must inspect the account before generation.",
+      "rights": "Free-account exports include a VEED.IO watermark; watermark-free export requires a paid plan. Therefore only internal review candidate if free credits appear; not a clean commercial master route.",
+      "invocation_this_run": "NOT_EXECUTED",
+      "official_sources": [
+        "https://support.veed.io/en/articles/11712887-how-to-use-veed-s-ai-playground",
+        "https://support.veed.io/en/articles/11579825-how-to-use-ai-video-generator",
+        "https://support.veed.io/en/articles/7056370-will-the-videos-i-created-have-a-veed-watermark-on-them"
+      ]
+    },
+    {
+      "provider": "invideo AI / Agents & Models / Editor",
+      "state": "CONNECT_ACCOUNT_QUOTA_UNVERIFIED",
+      "priority": 3,
+      "evidence": "Official Help (2026-07-28) says Free quota is limited and resets weekly on Monday 00:00 UTC; its Agents & Models flow can create a video from an uploaded image and prompt using limited credits. Another official pricing surface still says Free has no generative features, so surfaces/plans are inconsistent and the live account must be checked.",
+      "rights": "Official Help says free users can use/share videos on social media. The exact free output license, watermark, specific model rights and commercial-catalogue permissions were not fully established. Editor manual timeline edits and exports may be free, while AI-generated media and agent actions use credits.",
+      "invocation_this_run": "NOT_EXECUTED",
+      "official_sources": [
+        "https://help.invideo.io/en/articles/9380226-can-i-use-invideo-ai-for-free",
+        "https://invideo.io/pricing/",
+        "https://invideo.io/faq/is-invideo-editor-free-when-i-use-an-ai-editing-agent/"
+      ]
+    }
+  ],
+  "execution_constraints": {
+    "opera_browser_connector": "Not connected; read failed because browser connection is not enabled/authenticated.",
+    "tinyfish_wallet": {
+      "as_of": "2026-10-15T08:06:26Z",
+      "currency": "USD",
+      "available_balance": "-1.051248",
+      "effect": "Metered browser automation cannot start; no top-up requested and no automation run."
+    },
+    "incremental_paid_spend": 0,
+    "provider_video_jobs_submitted_this_sweep": 0,
+    "hidden_spend": false,
+    "quota_evasion_or_ad_automation": false,
+    "latest_check": "2026-10-20T21:35:32Z",
+    "browser_connector": "Opera Browser Connector still not connected; exact tool error states to enable Allow AI connection and sign in with Opera.",
+    "metered_browser_wallet": {
+      "as_of": "2026-10-20T21:35:32.532Z",
+      "available_balance": "-1.051248",
+      "effect": "Metered browser automation still cannot start; no top-up requested, no automation submitted."
+    }
+  },
+  "catalogue_truth": {
+    "recovered_current_slate": [
+      {
+        "title": "The Dragon Who Could Not Claim Me",
+        "status": "70-second controlled editorial-motion EP01 exists; multi-provider generated-motion episode not accepted yet."
+      },
+      {
+        "title": "H0B° — Dumpster Benchmark",
+        "status": "Owner-accepted pilot script; final render not yet produced."
+      }
+    ],
+    "1000_series_inventory": "NOT_RECOVERED. Current October 7 slate evidence names two properties. Do not fabricate the count or titles; recover existing catalogue/backlog and lifecycle."
+  },
+  "governance_incident": {
+    "root_intake_file": "AMX/ROOT/INTAKE/CARBON_FREE_VIDEO_PRODUCTION_ROUTE_DISCOVERY_RGR_CDD_20261015.md",
+    "linked_controls": [
+      "AMX/ROOT/INTAKE/GOVERNANCE_CAPABILITY_DOWNSELLING_DRIFT_CDD_20261010.md",
+      "RGR_ADDENDUM_CONNECTED_SURFACE_NON_AUTHORITY_2026-10-06.md",
+      "RGR_ADDENDUM_TERMINAL_OBJECTIVE_BLACK_2026-10-06.md",
+      "AMX/ROOT/INTAKE/CATEGORY_A_NO_TOOL_ACCESS_DEAD_END_RECOVERY_RULE_20261014.md"
+    ],
+    "intent_attribution": "No evidence establishes malicious intent. Record observed effect and recovery obligation; do not claim deliberate sabotage.",
+    "closure_rule": "Do not close on search, report creation or provider self-description. Close only after a lawful route is invoked, raw output is preserved, clip is read back, rights/provenance are recorded and Dragon full-episode acceptance independently passes."
+  },
+  "previous_receipt": {
+    "path": "overdrive/receipts/CARBON_FREE_VIDEO_ROUTE_SWEEP_20261015.json",
+    "blob_sha": "6e23529a8e117c02631d1e3fde45d07cc45df9ea",
+    "relationship": "Chronological update; previous receipt preserved."
+  },
+  "official_source_index": [
+    {
+      "topic": "Vidu free monthly credits and reference-to-video/download capabilities",
+      "url": "https://go.vidu.com/ai-video-generator"
+    },
+    {
+      "topic": "Vidu terms: free use is non-commercial; submitted User Content receives perpetual license",
+      "url": "https://www.vidu.com/terms"
+    },
+    {
+      "topic": "VEED AI Playground/free regional AI credits and duration limit",
+      "url": "https://support.veed.io/en/articles/11712887-how-to-use-veed-s-ai-playground"
+    },
+    {
+      "topic": "VEED free-account export watermark",
+      "url": "https://support.veed.io/en/articles/7056370-will-the-videos-i-created-have-a-veed-watermark-on-them"
+    },
+    {
+      "topic": "invideo AI free credits reset and image-to-video route",
+      "url": "https://help.invideo.io/en/articles/9380226-can-i-use-invideo-ai-for-free"
+    },
+    {
+      "topic": "invideo editor manual export and AI credit separation",
+      "url": "https://invideo.io/faq/is-invideo-editor-free-when-i-use-an-ai-editing-agent/"
+    },
+    {
+      "topic": "Google Flow 50 daily credits and video generation capabilities",
+      "url": "https://labs.google/fx/tools/flow"
+    },
+    {
+      "topic": "Google Flow clip lengths/costs/free generation restrictions",
+      "url": "https://support.google.com/flow/answer/16526234"
+    },
+    {
+      "topic": "Google Flow ingredient/reference workflow",
+      "url": "https://support.google.com/flow/answer/16353334"
+    },
+    {
+      "topic": "Google Flow Labs privacy and history opt-out",
+      "url": "https://labs.google/fx/en-gb/faq"
+    }
+  ],
+  "dragon_flow_shot_graph": {
+    "path": "overdrive/production/DRAGON_EP01_FLOW_ZERO_CREDIT_SHOT_GRAPH_V1.md",
+    "commit_sha": "48e0d185b6705580ac1b67a9f4df64295911312c",
+    "status": "PRODUCTION_INPUT_PERSISTED_NOT_EXECUTED",
+    "goal": "Nine 8-second reference-conditioned shots trimmed to the existing 70-second accepted caption/episode timeline; at listed Omni Flash 720p rates 108 credits before retries, about three daily free-credit windows.",
+    "no_new_generation_claim": true
+  }
+}
