@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 14,
+  "batch_id": "forx-20261020-upwork-simple-ai-workflow-01",
+  "created_at": "2026-10-20T14:54:54Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261020-UPWORK-002",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Upwork client — United States (client name not exposed in public excerpt)",
+      "surface": "One simple AI-powered workflow setup/troubleshooting task; API connection, webhook or basic data processing using n8n, Make.com or Zapier.",
+      "observed_need": "Public listing asks for help setting up or troubleshooting one simple AI-powered workflow. Possible scope includes connecting an AI service through an API, configuring a webhook, or automating a basic data-processing step. The buyer asks for relevant experience and estimated completion time.",
+      "outcome_space": [
+        "API integration",
+        "webhooks",
+        "AI workflow automation",
+        "n8n",
+        "Make.com",
+        "Zapier",
+        "basic data processing",
+        "micro-pilot"
+      ],
+      "source": "https://www.upwork.com/freelance-jobs/apply/Workflow-API-Integration-Assistant_~022112206922748303912/",
+      "source_key": "url:https://www.upwork.com/freelance-jobs/apply/Workflow-API-Integration-Assistant_~022112206922748303912/",
+      "source_observed_at": "2026-10-20T14:54:54Z",
+      "published": "2026-10-20",
+      "geography": {
+        "country": "United States",
+        "work_mode": "Remote; listing says worldwide."
+      },
+      "contract_duration": "One-time task; estimated time and acceptance boundary are not specified beyond the phrase 'one simple workflow'.",
+      "public_route": {
+        "type": "Upwork marketplace listing",
+        "listing_url": "https://www.upwork.com/freelance-jobs/apply/Workflow-API-Integration-Assistant_~022112206922748303912/",
+        "submission_mode": "Authenticated Upwork proposal route; account eligibility and Connects cost UNKNOWN."
+      },
+      "contactability": "Public listing current at observation; posted approximately 4 hours before result capture, client last viewed approximately 4 hours before result capture, 20–50 proposals, one interview and one invite reported.",
+      "payer_hypothesis": "Buyer through Upwork if selected; listed fixed price US$5. Client account history reported US$1.2K total spend, 45 hires, 4 active. Funded contract, platform fees, scope, quality acceptance and settlement unverified.",
+      "fit_note": "Tightly bounded and adjacent to AMX's API/webhook/automation work, with a potentially fast payment cycle, but the $5 listing price can be uneconomic if requirements expand. The listing already has 20–50 proposals and one interview; availability and probability of hire should not be assumed. Scope must stay within the stated one simple workflow.",
+      "source_rights": "Public listing metadata and factual summary only; obey Upwork terms and do not reuse restricted page content.",
+      "execution_readiness": "RAW_SIGNAL_MICRO_PILOT_SCOPE_AND_ACCOUNT_ROUTE_GATE",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE verify it remains open, confirm account/Connects eligibility, inspect the exact task in the authorized platform route, bound deliverables to one simple workflow, calculate net proceeds after fees/time, and assess whether a credible proof-of-work exists. Apply only if net value and scope are acceptable and PRI-authorized workflow permits; otherwise HOLD/skip. FORX does not apply or message.",
+      "intake_custody": "Existing Root Intake issue #31 and iSCOPE issue #4; existing flight AMX-FLT-20261020-FORX-112604-e36918bb.",
+      "truth_boundary": "RAW PUBLIC PAID-WORK SIGNAL ONLY. Listing != verified open slot at application time, qualification, application, contract, accepted deliverable, invoice or payment."
+    }
+  ]
+}
