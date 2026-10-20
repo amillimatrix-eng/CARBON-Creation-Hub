@@ -1439,3 +1439,35 @@ PRI records the exact outgoing pro-forma/offer reference and sent receipt; iSCOP
 - **Safety/preservation:** no mass reissue; no email to any of the four recipients already contacted in this run; no invented PO, tax invoice, customer intent, credit or payment; no new worker/ledger/scheduler/payment rail; no change inside registered mandate payload markers.
 - **Disposition:** Owner-directed additive Blue State rule, effective for future applicable actions; per-runtime behavior acceptance remains pending until verified.
 - **Remaining work:** propagate references through existing quote/offer producer and commercial ledger, test issuance/acceptance/legacy-benefit/invoice gating, run source-specific market selection, and verify runtime uptake through real readbacks.
+
+
+## OWNER SUPERSESSION — TEMPORARY AUTOMATION QUIET MODE FOR INFRASTRUCTURE CONVERGENCE — 2026-10-20
+
+**Direct Owner instruction:** the existing automated PLIs/scopes and other scheduled lanes are to rest while the current infrastructure/convergence tranche is being completed. Re-enable the consolidated automation lanes after the infrastructure gates below are accepted. This instruction supersedes only the earlier instruction to keep three automated tasks enabled during this bounded convergence interval; it does not cancel any worker's mandate, delete any queue, abandon any claim, or erase the stored schedules. Historical prior slot assignments remain provenance, not permission to restart work before the resume gate.
+
+### Current live scheduler readback
+- Automation inventory: 25 saved tasks.
+- After Owner-directed pause, enabled scheduled tasks: 0.
+- Existing FORX Continuous Play Sweep `6ac6a4081dd48191967a0182fca2eba7`: disabled; last run timestamp `2026-10-20T14:05:07.103940Z`; `next_run_time=null`.
+- Existing Bounty Reaper `6abf8e6d6a188191aee2b5d3fe24a9c9`: disabled; last run timestamp `2026-10-20T12:47:44.117841Z`; `next_run_time=null`.
+- Existing IDEAL Sales Team — iSCOPE → PRI `6ac17e8999648191ba125236de46f012`: disabled; last run timestamp `2026-10-20T14:06:06.993205Z`; `next_run_time=null`.
+- Existing FIRST BREATH — LIBRARIANS `6ac7c95aa91c819182be1e98e1404b95`: disabled; last run timestamp `2026-10-15T03:15:51.978721Z`; `next_run_time=null`.
+- This state does not prove all 25 had no prior execution; it is the post-pause current readback. It also does not prove any task completed the intended outcome.
+
+### Resume architecture — keep Plan A; do not normalize the fallback
+- **Plan A:** intended hourly execution for applicable continuing workers, supported by a verified trigger/heartbeat, missed-tick recovery, attributable output, continuity, durable receipt and readback.
+- **Plan B:** a supported reversible fallback is allowed only while a named Plan-A dependency is unmet. The currently connected automation tool rejects hourly prompt-only updates with `automation_schedule_not_available` and returns `next_run_time=null` for the stored hourly schedule. This proves a capability boundary of this adapter, not that daily is the intended architecture.
+- No schedule is to be silently changed to daily as a permanent replacement. Do not claim the Plan-A/Plan-B automatic selector exists until it is implemented on an existing authorized runtime/control surface and tested for dependency-available, dependency-lost, expiry, restoration, missed tick and flapping cases.
+- Existing worker prompts contain cached Registry v1.2/root values. Each prompt that already mandates a live Registry/Blue State fetch must treat those values as cache only and rebind to current Registry v1.3 on wake. A prompt-only change to the existing hourly Librarian task was tried and rejected before persistence with `automation_schedule_not_available`; its saved prompt therefore remains unchanged. No claim of universal worker acknowledgment or behavioral uptake is made.
+- Three slots remain a hard cap, not a mandate for three isolated specialist schedules to occupy them forever. Resume design must consolidate by intended outcomes while retaining the registered authority boundaries and independent state of iSCOPE, PRI, Bounty Reaper, Librarian/Root continuity and CARBON/T-COD work. No fourth scheduled task or duplicate worker is authorized.
+
+### Resume gates
+Keep scheduled work paused until the relevant infrastructure segment is accepted and read back:
+1. Current Registry v1.3/Blue State and the active FORKS-ROI mandate are bound into the existing Root continuity trail; each task/worker receives current state at its next authorized wake.
+2. The public CARBON partner tour/direct-service pages remain deployed and the next CARBON convergence slice has an exact owner, dependency, acceptance tests and readback.
+3. The current 25-task inventory is reconciled with registered mandates, actual run receipts and current queue items; no stale task state is treated as current.
+4. The three-slot consolidated lane design is persisted through the existing governed route without cancelling or duplicating specialist mandates.
+5. Plan A hourly trigger and automatic Plan B fallback/return architecture is verified, or its precise unresolved external capability is bound to a named recovery owner and acceptance condition. Do not assert hourly liveness while `next_run_time=null`.
+6. Root Intake has source-derived counts and item-level dispositions; any remainder is an explicitly owned dependency with a next action and readback.
+
+**Current disposition: TEMPORARILY PAUSED BY OWNER — INFRASTRUCTURE WORK REMAINS OPEN.** A task being paused is not its work being completed. Resume the consolidated lanes only after the acceptance gates; keep continuing this live infrastructure/queue flight through direct source work rather than treating this note as a terminal completion.
