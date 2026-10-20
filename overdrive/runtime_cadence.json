@@ -11,15 +11,15 @@
     "name": "hourly continuous execution window",
     "cron": "7 * * * *",
     "timezone": "UTC",
-    "window_ticks": 50,
+    "window_ticks": 56,
     "tick_seconds": 60,
     "purpose": "Remain work-conserving for a bounded near-hourly window; each runner tick processes all pending adapter work, not one arbitrary item."
   },
   "plan_b": {
     "name": "supported-interval recovery tick",
     "cron": "*/5 * * * *",
-    "stale_after_minutes": 70,
-    "purpose": "When the last accepted Plan A window is stale or absent, execute one bounded existing-runner tick on the next watchdog interval."
+    "stale_after_minutes": 10,
+    "purpose": "Five-minute watchdog enters fallback after two missed checks or an absent Plan-A receipt; one bounded existing-runner tick, then return to hourly Plan A automatically when it passes."
   },
   "last_plan_a_success_at": null,
   "last_plan_b_entered_at": null,
