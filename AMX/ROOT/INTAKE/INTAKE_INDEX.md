@@ -3467,3 +3467,39 @@ Latest full-body Outlook readback supersedes prior wording that treated receipt 
 - Correct state: setting **OWNER-REPORTED CONFIGURED / UI READBACK UNVERIFIED**; payout-run inclusion and actual bank credit **UNKNOWN**. No balance check or setting mutation was performed in this wake.
 - **Other-revenue/email lookup:** exact/free-text Alfie searches returned zero in the connected `usduplessis@outlook.com` mailbox; current Close lead search and inbound email/email-thread search also returned zero. This result is bounded to those connected scopes; it does not establish global absence in Gmail or the separate Outlook-associated TinyFish context. Do not invent Alfie's address or send a reply against an unverified thread. Continue other executable revenue work in parallel; route recovery of the correct mailbox/TinyFish context through the existing connector owner, not a new profile or pipeline.
 - **Disposition:** append-only correction / continuity. No mandate or scheduling change. This correction preserves the historical premature stop while superseding the now-stale setting-change next action.
+
+## CURRENT-WAKE — BAZOOKA DRAIN-Q SOURCE/CLAIMS/WORKER LIVENESS CORRECTION — 2026-10-20
+
+**Lifecycle:** EVIDENCE / ROUTING ONLY — INDEXED. Root Intake remains OPEN / NOT CLEARED. This entry preserves the historical records below; it does not promote Evidence to Merge, Consolidation, Canon, or V1 build authority.
+
+### Authoritative current-source readback
+- Mandate Registry remains v1.3, root SHA-256 `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`.
+- Current `overdrive/opportunities.json` blob `490500d292a464eda827f46ed6619a801ebe19b8`: `record_count=111`, actual record keys = 111; last updated 2026-10-20 08:37:13 SAST. The older 66/83 count mismatch is historical, not the current ledger defect. Preserve its older `last_run.full_ledger_count=62` dated 2026-10-03 as historical.
+- Current `overdrive/claims.json` blob `88b15824b892e38301829a95ee1ecf75e1221341`: generated 2026-10-16 08:40:31Z; 108 claim keys, 102 WAITING, 6 CLOSED, 0 READY, 0 external-ready. The snapshot is stale versus the 111-key ledger.
+- Joined source check: 3 current opportunity keys have no generated claim; 0 orphan claims; 0 lifecycle-state mismatches across the 108 joined records. The three missing keys are:
+  - `goelelectrical.co.za|quote-to-job-control-loop|2026-10-19`
+  - `alphapestcontrols.co.za|site-report-follow-through-loop|2026-10-19`
+  - `sunlogic.co.za|site-visit-to-install-handoff|2026-10-19`
+  All three are OFFERED / WAITING, instruct waiting for substantive buyer response, no follow-up without new evidence-based due date, and no implementation before paid receipt and access verification. Do not send another offer to repair projection state.
+- Current `overdrive/state.json` blob `0f9c262cea92fb1e5ef97b19129c8e73c143f4cb`: sequence 23, last tick 2026-10-16 08:40:31Z; 26 queue entries (23 COMPLETED / 3 PENDING), while its last-tick result records pending=0 / processed=[]. Fresh reconcile → persist → independent readback remains required.
+- Existing `.github/workflows/overdrive-recovery.yml` blob `da0353f7df640ee13b52f4d1cef6427ab16ed71d` contains `push` and `workflow_dispatch` triggers but no `schedule:` trigger; the worker job runs only on dispatch with `run_worker=run`, although a code comment describes GitHub Schedule as the transport trigger. This config/description mismatch is routed to existing T-COD/Overdrive owner and ROOT/T-GOV; no scheduler behavior or job guard was changed here.
+- Existing recovery branch `root/matrix-recovery-drain-q-20261019` points to `75679940a9cdb5c968ba93dd88f6d18dadede417`, 2 commits ahead / 91 behind main; no linked PR was found. Do not merge without fresh source reconciliation and review.
+
+### Worker/scheduler state and execution-control correction
+- Task automation inventory: 25 definitions, 3 enabled, plan cap 3. Enabled at latest peek: Hash Calibration Manager, Check Visym payout, IDEAL Sales Team; all report next_run_time=null. Existing Librarian, FORX, Banker, Bounty Reaper and Operational Inbox Watch definitions are disabled. Earlier enable calls for core workers were rejected with `too_many_active_automations`; no enable or cadence mutation occurred.
+- Immediate-run requests were made for Hash Calibration Manager and IDEAL Sales Team; a request acknowledgement is not execution evidence. No fresh IDEAL output receipt was surfaced; its last_run_time remained 2026-10-20 08:35:15Z at the latest readback.
+- **Visym correction:** the existing `Check Visym payout` task was incorrectly triggered early during the 2026-10-20 wake, despite the controlling instruction to preserve its 18:00 SAST one-shot. A later task inventory showed last_run_time `2026-10-20T09:40:06.259948Z`; no task output was exposed. Actual execution result/effect remains UNKNOWN. Do not trigger it again, alter settings, reschedule, or infer payout. Preserve the original 18:00 SAST check.
+- Root Issue #31 append-only evidence:
+  - [Early Visym-trigger correction](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6288181251)
+  - [Live source correction and executor handoff](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6288427127)
+  - [[CYAN] Addendum A — precise opportunity-to-claims gap](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6288508118)
+
+### Existing owner and next action
+- **T-COD / current Overdrive owner:** invoke the existing reconcile/worker through an authorized runtime route; regenerate existing claims/state from the 111-key source; independently read back sequence, receipt, pending/processed IDs, projection keys/counts and next selection. Resolve the workflow trigger discrepancy through the existing review path; no direct schedule/job change is authorized by this evidence record.
+- **ROOT/T-GOV + authorized scheduler owner:** resolve the 3-slot capacity/liveness fault through existing portability/continuity routes, preserving existing task identity and recurrence; do not create a fourth automation or downgrade hourly cadence.
+- **iSCOPE → PRI:** the 3 unclaimed offers remain WAITING; recheck only when new buyer evidence or a lawful due-date review exists, preserve the sole external writer, and advance only source-verified commercial states.
+- **Bounty Reaper / Banker:** canonical tracker access/readback remains blocked; bounty Q1 is UNKNOWN, NOT ZERO; no submission, award, payout, or payment is claimed.
+- **MASTER/LIBRARIAN / existing flight operator:** continue item-level reconciliation in existing root/owner-specific ledgers and preserve cross-source UNKNOWNs. The open GitHub issue count, Overdrive queue, and stale claims projection do not define total Matrix Q.
+
+**Acceptance boundary:** the current ledger count is reconciled (111/111), but generated claims and runtime state remain stale, three claim keys are missing, the full cross-source Matrix queue census is still UNKNOWN, and DRAIN Q is **OPEN / NOT CLEARED**. Earlier statements that no Visym task was triggered in this current wake are superseded by the correction above; this does not claim that the saved task completed or altered any payout setting.
+
