@@ -423,3 +423,32 @@ For previously disabled workers, the existing task was temporarily enabled, the 
 5. **MASTER/LIBRARIAN + ROOT/T-GOV:** continue the source-derived census and item-level dispositions across the existing ROOT/INTAKE surfaces. The current 15-issue GitHub search is only an issue census, not the complete Matrix queue. Keep every unverified or unassigned live item open with owner, concrete next action, acceptance signal and recheck condition.
 
 **Final status:** wake requests issued to all listed existing operational workers; current output receipts not yet independently proven for each request; OVERDRIVE runtime receipt stale; opportunity/claim snapshot reconciliation open; full ROOT/INTAKE queue **OPEN / INTAKE NOT CLEARED**. Continue the existing drain without adding a worker, queue, scheduler, or governance layer.
+
+
+## CYAN ADDENDUM — WORKER STATE CORRECTION + CURRENT PAYOUT ROUTE READBACK — 2026-10-20T08:05:22.056Z
+
+**Receipt ID:** `AMX-WAKE-CORRECTION-20261020-0810Z`  
+**Parent:** `AMX-WAKE-20261020-LIBRARIAN-0748Z`  
+**Lifecycle:** EVIDENCE / OPERATIONAL CORRECTION; no Canon, mandate, owner, Master Build, schedule or architecture change.
+
+### Correction to the prior worker-state wording
+The initial post-run inventory around 2026-10-20T07:53Z showed `Bounty Reaper` **disabled**, contrary to the earlier phrase “was left enabled.” It was then re-enabled successfully via its existing task ID `6abf8e6d6a188191aee2b5d3fe24a9c9`; current automation readback confirms it is enabled. Its current latest task `last_run_time` is `2026-10-20T07:48:58.961426Z`. This corrects state history without replacing the earlier receipt. Enabled state and task run metadata do not prove a productive bounty action or a durable Live Tracker receipt.
+
+### Current scheduler readback
+The current enabled set is:
+- `Bounty Reaper` — enabled; latest task timestamp above; output/Live Tracker readback still required.
+- `FIRST BREATH — IDEAL SALES TEAM` — enabled; `last_run_time=2026-10-20T07:52:26.587129Z`; its exact new productive result is not yet matched to an independently read-back worker receipt.
+- `Check Visym payout` — enabled on its original one-shot schedule `2026-10-20 18:00 Africa/Johannesburg`; an immediate-run request was also accepted; no fresh task-correlated result is yet verified.
+
+Immediate-run requests for the seven other existing tasks remain request acknowledgements only. Their prior disabled/halted/capacity-merged states were restored rather than treated as permanent wake completion. Do not infer that a worker has passed merely because its run request was accepted.
+
+### Visym payout-setting recovery — current disposition
+The original Visym Outlook thread remains authoritative evidence that proof-of-account was received and that the Collector app should use provider `Wise` and payout email `amillimatrix@gmail.com`. The latest available Collector setting readback in this runtime is still **NOT CHANGED / NOT VERIFIED**; payout-run inclusion and bank credit are separately **UNKNOWN**.
+
+The existing ROOT reports identify a specific context-selection defect: the runtime exposes the Gmail-associated TinyFish binding and its profile list, while the Owner-identified Outlook-associated TinyFish binding is not selectable in this tool namespace; the Opera browser connector also currently returns `Browser not connected`. The wrong TinyFish context was not used to modify a payment setting. Route this one recovery to the existing connector/runtime owner via Issue #31: select the already-authorized Outlook-associated binding, verify existing Collector account identity, set Wise and the exact payout email if needed, save, then independently read both persisted fields back. Do not ask the Owner to authenticate again, create a new profile, fund the wrong wallet, send another Visym email, or claim payment from configuration evidence.
+
+### Current DRAIN-Q disposition
+- The existing OVERDRIVE state remains sequence **23**, last tick `2026-10-16T08:40:31.786740Z`; latest workflow run #193 was a push-triggered `skipped` result, not an execution tick.
+- Current opportunity ledger remains **111 records / 111 keys**; claims snapshot remains **108 claims** (102 WAITING, 6 CLOSED, 0 READY, 0 external-ready), generated 16 October. Do not edit generated claims/signals directly; reconcile via the existing runner and persist/read back a fresh receipt.
+- The 23 persisted adapter queue entries are all `COMPLETED`, but this does not clear the separate ROOT/INTAKE queue.
+- **Disposition remains OPEN / INTAKE NOT CLEARED.** Worker output matching, the ledger/claims regeneration, the current flight’s final-sync gate and full source-derived item-level disposition remain outstanding. Continue the existing route; no new worker, queue, tracker or scheduler was created.
