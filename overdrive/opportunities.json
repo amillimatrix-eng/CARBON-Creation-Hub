@@ -524,11 +524,29 @@
       "remains_unproven": "Buyer response/acceptance, invoice/receivable, payment, delivery, or causal linkage between this message and an automation run.",
       "scope": "Current canonical commercial-ledger record count and latest independently evidenced direct offer",
       "upgrade_action": "Preserve ProFix as OFFERED / WAITING; no duplicate follow-up. Continue checking for buyer-initiated messages and valid payment paths while respecting Stripe's live disabled-charge state."
+    },
+    {
+      "actual": "Native Outlook and attachment readbacks verified one new fixed-scope offer to IRNA Tax & Accounting Services and a reply to an inbound Close Account Executive question.",
+      "changed": "Added two distinct, source-linked canonical records: IRNA is OFFERED / NOT ACCEPTED; Close is RESPONDED_TO_INBOUND / partner discovery only. Existing opportunities were preserved and duplicate-key guard passed.",
+      "classification": "CURRENT_TURN_OUTLOOK_ACTIVITY_RECONCILED; NO_PAYMENT",
+      "expected": "Record count matches record keys; material external actions have exact source IDs, artifact hashes, lifecycle state, next action and honest revenue boundaries.",
+      "observed_at": "2026-10-20T12:08:34.815Z",
+      "owner": "PRI",
+      "proof": [
+        "OUTLOOK_SENT_ITEM:AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxgAAAA==",
+        "ATTACHMENT_SHA256:e1ed4cbbcfdf422812400ee3286e8d532c58db7dd84ca5f688f2b97fd5452564",
+        "OUTLOOK_SENT_ITEM:AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RyAAAAA==",
+        "ATTACHMENT_SHA256:f10899d342c7127f9535dfa20e64078ab635c59dfaa0d4c6733a9df97da07c56",
+        "Live Stripe account readback: charges_enabled=false; payouts_enabled=false"
+      ],
+      "remains_unproven": "IRNA buyer response, acceptance, contract, invoice, delivery or payment; Close response, partnership or revenue; actual execution outcomes from the asynchronous sales runtime; receipt of any funds.",
+      "scope": "Canonical commercial ledger reconciliation of current-turn sent offer and inbound partner response",
+      "upgrade_action": "On any substantive external reply, reconcile the exact source event into the same record; follow current no-duplicate/no-contact constraints; use a verified payment route only after account capability readback; count PAID only on attributable settlement evidence."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-20T11:46:32Z",
-  "last_reconciled_reason": "CURRENT-TURN TRUTH RECONCILIATION: three same-day ZAR 3,685 offer records had malformed stored Outlook IDs repaired and official contact evidence added. Subsequent readback shows a separately persisted ProFix Coastal ZAR 9,380 pilot and 118 total records (count matches object keys). Stripe live account remains charges_enabled=false / payouts_enabled=false with onboarding requirements past_due. Buyer replies, acceptances, invoices, and received payments are not inferred.",
+  "last_reconciled_at": "2026-10-20T12:08:34.815Z",
+  "last_reconciled_reason": "CURRENT-TURN EVIDENCE RECONCILIATION: added source-linked IRNA fixed-scope offer and separate Close inbound/response conversation after checking for duplicate record keys. The offer is OFFERED/NOT ACCEPTED with verified Outlook message/PDF hash; Close is partner discovery only, not revenue. Stripe charges/payouts remain disabled; no payment or conversion inferred. Record count updated to match records object.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -591,9 +609,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-20T13:46:32+02:00",
-  "last_updated_by": "PRI",
-  "record_count": 119,
+  "last_updated_at": "2026-10-20T14:08:34.815+02:00",
+  "last_updated_by": "PRI — current-turn evidence reconciliation",
+  "record_count": 121,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -7477,6 +7495,122 @@
           "next": "After setup, read the existing Collector dashboard for accepted-video count, planned payout and receipt; do not infer earnings from submission count or hourly estimate."
         }
       }
+    },
+    "irnatax.co.za|client-document-follow-through-pilot|2026-10-20": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxgAAAA==",
+          "SHA256:e1ed4cbbcfdf422812400ee3286e8d532c58db7dd84ca5f688f2b97fd5452564"
+        ],
+        "identity": {
+          "domain": "irnatax.co.za",
+          "opportunity": "AMX Client Document Follow-Through Pilot",
+          "organization": "IRNA Tax & Accounting Services"
+        },
+        "kind": "NEW_FIXED_SCOPE_OFFER_OUTREACH",
+        "observed_at": "2026-10-20T11:37:14Z"
+      },
+      "domain": "irnatax.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-20T11:37:14Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxgAAAA==",
+          "subject": "One client-document follow-through pilot for IRNA",
+          "summary": "Sent from verified native Outlook profile usduplessis@outlook.com to amirznz2021@gmail.com. Fixed ZAR 3,685 offer for one intake source and one tracking destination, checklist/status, reminder drafts for staff approval, ready/overdue view/export, and five-business-day target after scope/access acceptance. Hosting/API costs excluded. No automated client messages or tax decisions; no real client records requested. Sent-state readback verified; no acceptance, invoice, payment or delivery evidenced.",
+          "url": "https://www.irnatax.co.za/"
+        },
+        {
+          "kind": "ATTACHMENT_VERIFIED",
+          "observed_at": "2026-10-20T11:37:14Z",
+          "source": "OUTLOOK_ATTACHMENT_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxgAAAA==",
+          "summary": "AMX_Client_Document_Follow_Through_Pilot_Demo.pdf; application/pdf; 31,257 bytes; attached, not inline; SHA-256 e1ed4cbbcfdf422812400ee3286e8d532c58db7dd84ca5f688f2b97fd5452564. Synthetic data only; demo is not connected to a live system."
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-20T11:37:14Z",
+      "last_reconciled_at": "2026-10-20T12:08:34.815Z",
+      "next_action": "WAIT for a substantive buyer reply. If interested, qualify whether the document-follow-up problem is real and confirm exact intake source, tracking destination, acceptance tests, and a working payment route before accepting scope or accessing data. Do not begin work before written scope, valid payment terms, and attributable paid receipt. No follow-up without a new evidence-based due date.",
+      "opportunity": "AMX Client Document Follow-Through Pilot",
+      "organization": "IRNA Tax & Accounting Services",
+      "recipient": "amirznz2021@gmail.com",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 3685,
+        "currency": "ZAR",
+        "scope": "One existing intake source and one tracking destination; document checklist/status, staff-review-only reminder drafts, ready/overdue view and export; target handover within 5 business days after scope and access are accepted; hosting/API excluded; no automated customer messages or tax decisions.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxgAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
+      "current_route_confidence": "MEDIUM",
+      "execution_readiness": "WAITING",
+      "last_reconciled_reason": "Native Outlook sent-item and attachment-metadata readback; no buyer response/acceptance/payment evidenced."
+    },
+    "close.com|ai-mcp-use-case-discussion|2026-10-20": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RyAAAAA==",
+          "Message-ID:<179216611448.7.2641584056889592634@smtpgw.close.com>",
+          "SHA256:f10899d342c7127f9535dfa20e64078ab635c59dfaa0d4c6733a9df97da07c56"
+        ],
+        "identity": {
+          "domain": "close.com",
+          "opportunity": "Close AI/MCP use-case discussion",
+          "organization": "Close"
+        },
+        "kind": "INBOUND_COMMERCIAL_CONVERSATION_RECONCILIATION",
+        "observed_at": "2026-10-20T11:55:31Z"
+      },
+      "domain": "close.com",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "INBOUND_QUESTION",
+          "observed_at": "2026-10-16T16:00:55Z",
+          "source": "FORWARDED_EML_ATTACHMENT",
+          "source_id": "Outlook wrapper message AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEeAAAACcuKl8g3RkyfBaEy7toItQACLJqMegAAAA==",
+          "subject": "Quick question about AI",
+          "summary": "Original sender Tamina Sabnani, Close Account Executive. Asked how AMX is using AI/MCP and what it hopes to accomplish; indicated Close might be able to help. Original RFC Message-ID <179216611448.7.2641584056889592634@smtpgw.close.com>. This is partner/vendor discovery, not a customer offer, acceptance, or revenue.",
+          "url": "https://www.close.com/"
+        },
+        {
+          "kind": "OUTBOUND_REPLY",
+          "observed_at": "2026-10-20T11:55:31Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RyAAAAA==",
+          "subject": "Re: Quick question about AI",
+          "summary": "Sent from verified native Outlook profile usduplessis@outlook.com to tamina.sabnani@close.com. Explained the AMX mission and accountable, affordable AI approach; described the intended Close/MCP business-coordination use case and asked for a supported next step. Sent-state readback verified; no response or partnership evidenced.",
+          "url": "https://outlook.live.com/owa/?ItemID=AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RyAAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem"
+        },
+        {
+          "kind": "ATTACHMENT_VERIFIED",
+          "observed_at": "2026-10-20T11:55:31Z",
+          "source": "OUTLOOK_ATTACHMENT_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RyAAAAA==",
+          "summary": "AMX_Close_Evidence_to_Next_Action_Demo.pdf; application/pdf; 6,336 bytes; not inline; SHA-256 f10899d342c7127f9535dfa20e64078ab635c59dfaa0d4c6733a9df97da07c56. Illustrative workflow with fictional data, explicitly not a live/hardened integration."
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-20T11:55:31Z",
+      "last_reconciled_at": "2026-10-20T12:08:34.815Z",
+      "next_action": "WAIT for a substantive reply from Close. If replied, qualify the actual available support, feedback or partner route; do not imply endorsement or a sales opportunity before evidence. No follow-up without a substantive event or evidence-based due date.",
+      "opportunity": "Close AI/MCP use-case discussion",
+      "organization": "Close",
+      "recipient": "tamina.sabnani@close.com",
+      "state": "RESPONDED_TO_INBOUND",
+      "thread_id": null,
+      "current_route_status": "INBOUND_QUESTION_ANSWERED; WAITING_FOR_REPLY; PARTNER_DISCOVERY_ONLY; NO_REVENUE_CLAIM",
+      "current_route_confidence": "MEDIUM",
+      "execution_readiness": "WAITING",
+      "last_reconciled_reason": "Original Close Account Executive message recovered from forwarded .eml attachment; reply and illustrative PDF attachment verified in connected Outlook. No reply/partnership/revenue evidenced. Not a paid offer."
     }
   },
   "updated_at": "2026-10-20",
