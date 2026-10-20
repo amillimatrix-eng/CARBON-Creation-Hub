@@ -54,5 +54,6 @@
     "automatic_return_to_plan_a": "The next successful Plan A window writes a fresh accepted timestamp and changes PLAN_B back to PLAN_A.",
     "fallback_scope": "Existing overdrive runner only; it does not claim that the three LLM worker automations have been awakened.",
     "pause_wins": true
-  }
+  },
+  "last_plan_b_success_at": null
 }
