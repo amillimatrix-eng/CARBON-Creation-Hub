@@ -65,6 +65,8 @@ permissions:
 concurrency:
   group: amx-overdrive-main
   cancel-in-progress: false
+  # Preserve every accepted wake; default single-pending behavior replaces older pending runs.
+  queue: max
 
 jobs:
   # The commercial worker remains explicitly manual-only. The hourly event
