@@ -315,7 +315,7 @@ sorted lexicographically by ROLE_KEY.
 
 **REGISTRY_ROOT_SHA256:** `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`  
 **REGISTRY VERSION:** `1.3` (effective 2026-10-16)  
-**SUPERSESSION / HISTORY:** Registry v1.3 is the current controlling registry. The prior v1.2 root `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f` and earlier prompt-cached root `a9e7b787b454ee6422c8f4b2d55a9253fc5ccb47ac65002a49f51f6140d21` are historical snapshots; preserve them as provenance, but do not treat either as the current expected root.
+**SUPERSESSION / HISTORY:** Registry v1.3 is the current controlling registry. The prior v1.2 root `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f` and earlier prompt-cached root `a9e7b787b454ee6422c8f4b2d55a9253fc5ccb47ac65019002a49f51f6140d21` are historical snapshots; preserve them as provenance, but do not treat either as the current expected root.
 
 ---
 
