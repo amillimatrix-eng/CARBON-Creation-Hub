@@ -43,12 +43,19 @@ class CadenceControllerTests(unittest.TestCase):
         c = control_fixture()
         self.assertEqual(select_action(c, "schedule", PLAN_B_CRON, now=NOW)["action"], "skip")
 
-    def test_plan_b_recovers_when_plan_a_is_stale(self):
+    def test_plan_b_recovers_after_two_missed_watchdog_checks(self):
         c = control_fixture()
-        c["last_plan_a_success_at"] = "2026-10-20T12:45:00Z"
+        c["last_plan_a_success_at"] = "2026-10-20T13:45:00Z"
         result = select_action(c, "schedule", PLAN_B_CRON, now=NOW)
         self.assertEqual(result["action"], "plan_b")
         self.assertIn("STALE", result["reason"])
+
+    def test_plan_b_skips_if_plan_a_completed_recently(self):
+        c = control_fixture()
+        c["last_plan_a_success_at"] = "2026-10-20T13:55:00Z"
+        result = select_action(c, "schedule", PLAN_B_CRON, now=NOW)
+        self.assertEqual(result["action"], "skip")
+        self.assertIn("FRESH", result["reason"])
 
     def test_plan_b_recovers_when_no_plan_a_receipt_exists(self):
         c = control_fixture()
