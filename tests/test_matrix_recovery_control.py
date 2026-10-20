@@ -174,3 +174,16 @@ def test_manifest_fails_closed_on_ledger_count_mismatch(tmp_path: Path) -> None:
     write_json(path, ledger)
     with pytest.raises(ControlError, match="opportunities ledger count mismatch"):
         build_manifest(repo_root=root, event="schedule", now=NOW)
+
+
+def test_manifest_marks_future_dated_runtime_tick_as_clock_skew(tmp_path: Path) -> None:
+    root = make_repo(tmp_path)
+    state_path = root / "overdrive/state.json"
+    state = json.loads(state_path.read_text())
+    state["last_tick"] = "2026-10-20T15:20:00Z"
+    write_json(state_path, state)
+
+    manifest = build_manifest(repo_root=root, event="schedule", now=NOW)
+
+    assert manifest["overdrive_projection"]["last_tick_age_minutes"] < 0
+    assert manifest["overdrive_projection"]["freshness"] == "CLOCK_SKEW"
