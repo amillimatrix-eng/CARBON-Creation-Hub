@@ -3514,3 +3514,11 @@ Latest full-body Outlook readback supersedes prior wording that treated receipt 
 - **Acceptance to close:** capture each original file's exact bytes through an authorized existing source, compute SHA-256 over those bytes, persist the source and digest in the existing queue, and independently read back each row. Keep an item PENDING until its own exact-byte receipt verifies.
 - **Authority/build effect:** evidence-only operational receipt. No Canon, mandate, worker ownership, or Master Build state changed.
 
+## 2026-10-20 — HASH DQ reconciliation against current-wake receipt
+
+- **Newer evidence source:** [HASH Calibration Current-Wake Recheck — 2026-10-20 12:14 SAST](https://app.notion.com/p/3ff8f8b56cd78116b5e9d42e04f6d6f4?pvs=204), fetched at `2026-10-20T10:17:32Z`. The source classifies itself as ROOT INTAKE EVIDENCE ONLY and explicitly says the worker outcome and current queue count are not verified.
+- **Count correction with provenance preserved:** the preceding DQ note's `OPEN = 4` is the **last evidenced OPEN count**, not a fresh current count. Current `OPEN = UNKNOWN` pending a complete live STATUS readback. The four named files remain known PENDING EXACT CAPTURE obligations unless newer exact STATUS/source evidence proves a change. Queue remains `OPEN / NOT CLEARED`; verified closures remain `0`.
+- **Additional access evidence:** the current-wake receipt confirms the local `C:\\LIB\\AMX\\evidence` path is not mounted, Opera Browser Connector is disconnected, Google Drive is `DISABLED_BY_ADMIN`, and no authorized Sheets/Drive read/write/readback tool is available in this session. This prevents exact-byte capture and a complete STATUS recount; it does not prove the files or queue are absent.
+- **Recovery owner/action:** the current receipt assigns source-byte and existing STATUS/dashboard route recovery to **T-LIB / the authorized runtime owner**, with each of the four exact files captured from an authorized source, hashed from exact bytes, persisted to the existing rows, and independently read back. Calibration-manager tooling remains subject to the existing FORX mechanism ownership; no peer role or new system is created.
+- **No authority change:** this is a source-order/status reconciliation. Prior evidence remains intact. No Canon or Master Build changes; no queue row is represented as closed.
+
