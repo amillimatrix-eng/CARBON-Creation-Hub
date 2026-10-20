@@ -1,4 +1,5 @@
-name: AMX OVERDRIVE Worker
+name: AMX OVERDRIVE Worker — Plan A / Plan B
+
 on:
   push:
     branches: [main]
@@ -8,82 +9,195 @@ on:
       - 'overdrive/payment_verifier.py'
       - 'overdrive/state.json'
       - 'overdrive/opportunities.json'
+      - 'overdrive/runtime_cadence.json'
+      - 'overdrive/cadence_controller.py'
+      - 'tests/test_cadence_controller.py'
       - '.github/workflows/overdrive-recovery.yml'
+  schedule:
+    # Plan A: intended hourly work window, not aligned to the top of the hour.
+    - cron: '7 * * * *'
+    # Plan B: watchdog only. Controller decides whether A is genuinely stale.
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     inputs:
       run_worker:
-        description: "Keep the commercial worker paused during infrastructure work; choose run only for an explicitly authorized manual execution."
+        description: "Explicitly run one bounded existing-runner tick; the persisted infrastructure pause still takes precedence."
         required: true
         type: choice
         options:
           - paused
           - run
         default: paused
+
 permissions:
   contents: write
+
 concurrency:
   group: amx-overdrive-main
   cancel-in-progress: false
+
 jobs:
-  worker:
-    if: github.event_name == 'workflow_dispatch' && inputs.run_worker == 'run'
+  validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Minute execution window — iSCOPE and PRI
-        shell: bash
+      - name: Test deterministic Plan A / Plan B selector
+        run: python3 -m unittest discover -s tests -p 'test_cadence_controller.py' -v
+
+  worker:
+    needs: validate
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.run_worker == 'run')
+    runs-on: ubuntu-latest
+    timeout-minutes: 59
+    env:
+      EVENT_NAME: ${{ github.event_name }}
+      SCHEDULE: ${{ github.event.schedule || '' }}
+      MANUAL_INPUT: ${{ inputs.run_worker || 'paused' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure durable single-writer identity
         run: |
-          set -euo pipefail
           git config user.name "AMX OVERDRIVE"
           git config user.email "amillimatrix@gmail.com"
 
-          # GitHub schedule is the transport trigger (5-minute minimum).
-          # Once awake, OVERDRIVE keeps a bounded minute watch until the next transport wake.
-          # Each tick re-syncs durable state first so new opportunities/responses
-          # do not wait for the next hourly control run.
-          for tick in $(seq 1 4); do
-            echo "AMX minute tick $tick/4"
+      - name: Bind the passed test gate to the actual controller source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git pull --rebase origin main
+          TEST_BLOB="$(git rev-parse HEAD:tests/test_cadence_controller.py)"
+          CONTROLLER_BLOB="$(git rev-parse HEAD:overdrive/cadence_controller.py)"
+          EVIDENCE="python unittest passed; tests_blob=${TEST_BLOB}; controller_blob=${CONTROLLER_BLOB}"
+          python3 overdrive/cadence_controller.py mark-gate \
+            --name cadence_controller_tests_passed \
+            --evidence "$EVIDENCE"
+          git add overdrive/runtime_cadence.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Bind cadence test acceptance to exact source blobs"
+            if ! git push origin HEAD:main; then
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
+
+      - name: Select exactly one defined route
+        id: route
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 overdrive/cadence_controller.py select \
+            --event-name "$EVENT_NAME" \
+            --schedule "$SCHEDULE" \
+            --manual-input "$MANUAL_INPUT" >> "$GITHUB_OUTPUT"
+          echo "Cadence decision: $(grep '^action=' "$GITHUB_OUTPUT" | tail -1)"
+          echo "Decision reason: $(grep '^reason=' "$GITHUB_OUTPUT" | tail -1)"
+          git add overdrive/runtime_cadence.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Persist cadence phase transition"
+            if ! git push origin HEAD:main; then
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
+
+      - name: Respect owner pause / wait for every persisted resume gate
+        if: steps.route.outputs.action == 'pause' || steps.route.outputs.action == 'skip'
+        run: |
+          echo "No worker execution requested by cadence control."
+          echo "Action=${{ steps.route.outputs.action }}"
+          echo "Reason=${{ steps.route.outputs.reason }}"
+          echo "This is a policy/configuration decision, not a work or outcome receipt."
+
+      - name: Plan A — hourly work-conserving execution window
+        if: steps.route.outputs.action == 'plan_a'
+        shell: bash
+        run: |
+          set -euo pipefail
+          for tick in $(seq 1 50); do
+            echo "AMX Plan A tick $tick/50"
             git pull --rebase origin main
             python3 overdrive/runner.py
-
             git add overdrive/state.json overdrive/opportunities.json overdrive/signals.json overdrive/claims.json overdrive/receipts
             if ! git diff --cached --quiet; then
-              git commit -m "OVERDRIVE receipt: minute tick $tick persist transitions"
+              git commit -m "OVERDRIVE Plan A hourly receipt tick $tick"
               if ! git push origin HEAD:main; then
-                echo "Concurrent main update detected; rebasing persisted tick and retrying once."
+                echo "Concurrent main update detected; rebase and retry once."
                 git pull --rebase origin main
                 git push origin HEAD:main
               fi
             fi
-
-            if [ "$tick" -lt 4 ]; then
-              sleep 60
-            fi
+            if [ "$tick" -lt 50 ]; then sleep 60; fi
           done
-      - name: Verify durable state
+
+      - name: Plan B — bounded recovery tick only when Plan A is stale
+        if: steps.route.outputs.action == 'plan_b' || steps.route.outputs.action == 'manual_tick'
+        shell: bash
         run: |
+          set -euo pipefail
+          git pull --rebase origin main
+          python3 overdrive/runner.py
+          git add overdrive/state.json overdrive/opportunities.json overdrive/signals.json overdrive/claims.json overdrive/receipts
+          if ! git diff --cached --quiet; then
+            git commit -m "OVERDRIVE bounded Plan B recovery tick"
+            if ! git push origin HEAD:main; then
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
+
+      - name: Verify persisted runner state and fail-safe claim routing
+        if: steps.route.outputs.action == 'plan_a' || steps.route.outputs.action == 'plan_b' || steps.route.outputs.action == 'manual_tick'
+        shell: bash
+        run: |
+          set -euo pipefail
           python3 - <<'PY'
           import json
           from pathlib import Path
-          state=json.load(open("overdrive/state.json"))
-          assert state["adapter_status"]=="OPERATIONAL"
+          state=json.load(open("overdrive/state.json", encoding="utf-8"))
+          assert state["adapter_status"] == "OPERATIONAL", state.get("adapter_status")
           receipts=list(Path("overdrive/receipts").glob("*.json"))
           assert receipts, "no durable receipts"
-          claims=json.load(open("overdrive/claims.json"))
+          claims=json.load(open("overdrive/claims.json", encoding="utf-8"))
           assert "claims" in claims
-          opportunities=json.load(open("overdrive/opportunities.json"))
+          opportunities=json.load(open("overdrive/opportunities.json", encoding="utf-8"))
           gated={"NO_CONTACT","REJECTED"}
           readiness_gates={"WAITING","BLOCKED","HUMAN_PROVIDER_GATE","HUMAN_ONLY_GATE","OWNER_GATE","PROVIDER_GATE"}
           for claim in claims["claims"].values():
               if claim.get("status") != "READY":
                   continue
               record=opportunities.get("records",{}).get(claim.get("opportunity_key"),{})
-              state=str(record.get("state","")).upper()
+              state_name=str(record.get("state","")).upper()
               readiness=str(record.get("execution_readiness") or record.get("readiness") or "").upper()
-              assert state not in gated, f"suppressed state routed READY: {state} {claim.get('opportunity_key')}"
+              assert state_name not in gated, f"suppressed state routed READY: {state_name} {claim.get('opportunity_key')}"
               assert not readiness.startswith(("HOLD","SUPPRESSED")), f"held/suppressed readiness routed READY: {readiness} {claim.get('opportunity_key')}"
               assert readiness not in readiness_gates, f"gated readiness routed READY: {readiness} {claim.get('opportunity_key')}"
-          print("OVERDRIVE minute execution window PASS", len(receipts), "claims", claims.get("ready_count",0))
+          print("OVERDRIVE runner acceptance PASS", len(receipts), "receipts", claims.get("ready_count",0), "READY claims")
           PY
+
+      - name: Record accepted completion and return to Plan A automatically
+        if: steps.route.outputs.action == 'plan_a' || steps.route.outputs.action == 'plan_b' || steps.route.outputs.action == 'manual_tick'
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ steps.route.outputs.action }}" = "plan_a" ]; then
+            MODE="plan_a"
+          elif [ "${{ steps.route.outputs.action }}" = "plan_b" ]; then
+            MODE="plan_b"
+          else
+            MODE="manual_tick"
+          fi
+          python3 overdrive/cadence_controller.py record-success --mode "$MODE"
+          git add overdrive/runtime_cadence.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Persist accepted cadence execution receipt: $MODE"
+            if ! git push origin HEAD:main; then
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
