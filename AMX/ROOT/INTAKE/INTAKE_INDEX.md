@@ -3432,3 +3432,14 @@ Latest full-body Outlook readback supersedes prior wording that treated receipt 
 - **Incident report:** [MPOSTER_DRIFT_DETECTED_WRONG_TINYFISH_CONTEXT_20261020.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MPOSTER_DRIFT_DETECTED_WRONG_TINYFISH_CONTEXT_20261020.md), readback blob `dda80c54da55caa8c3977df55065371aac4b852e`, commit `f1debb594a6a1bbb977627d9c1ca1a9ffbf2ead1`.
 - **Recovery:** acting runtime / existing connector owner selects or restores the already-authorised Outlook-associated TinyFish binding, executes the existing Collector setting change and reads the saved values back. Do not request fresh Owner authentication, create a profile, fund the wrong wallet, or claim the payout was configured. If this execution binding cannot select the existing profile, route the precise connector-selection defect to ROOT and keep the recovery obligation OPEN.
 - **Disposition:** **OPEN — wrong-context execution drift verified; correct context not yet exercised.** Existing Root issue #31 is the governance route. No mandate change, new worker, new pipeline, external email, or app setting mutation was made by this receipt.
+
+
+## CURRENT-WAKE — RGR: VISYM PAYOUT-SETTING OBJECTIVE NOT EXECUTED BEFORE DRIFT REPORT — 2026-10-20
+
+**Lifecycle:** append-only RGR evidence pointer; not authority and not a completion claim.
+
+- **Direct answer:** the assistant did not complete the requested Collector setting before reporting MPOSTER drift. The Wise provider and payout email remain NOT CHANGED / NOT VERIFIED by this execution; payout-run inclusion and bank credit remain UNKNOWN.
+- **Governing controls:** `CATEGORY_A_NO_TOOL_ACCESS_DEAD_END_RECOVERY_RULE_20261014.md` (blob `4e510c867d17b4761e9685f1376450c614c935c6`) and `RGR_EXECUTION_CONTINUITY_PREMATURE_STOP_20261016.md` (blob `684fa4e27031d051df91ff027aeca89c55646686`) already require recovery/continuation rather than report-only termination.
+- **New RGR report:** [RGR_EXECUTION_DRIFT_VISYM_PAYOUT_SETTING_NOT_COMPLETED_20261020.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/RGR_EXECUTION_DRIFT_VISYM_PAYOUT_SETTING_NOT_COMPLETED_20261020.md); commit `9b155456687c338fa1f6922430fe81d464ccbe48`; independently fetched blob `9bacadec1817095b0c697566ddda791db96bd8e8`.
+- **Recovery owner/action:** ROOT/T-GOV and the existing connector/runtime owner must make the Owner-identified, already-authorized Outlook-associated TinyFish binding selectable to the existing payout executor. Then set and read back Wise + `amillimatrix@gmail.com`. Do not request fresh Owner authentication, create a duplicate profile, fund the wrong wallet, or assert payout without evidence.
+- **Disposition:** **OPEN — RGR persisted; underlying Visym setting task not completed.** No authority/mandate change, new worker, queue, or scheduler is created by this record.
