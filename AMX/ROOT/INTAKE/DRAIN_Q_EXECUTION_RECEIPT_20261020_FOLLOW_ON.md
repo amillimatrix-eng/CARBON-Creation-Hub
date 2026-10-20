@@ -35,3 +35,32 @@ Following the requests, the automation roster showed:
 - **Safety/preservation:** existing schedules preserved; no duplicate outreach or shadow tracker; Q1 not inferred empty.
 - **Disposition:** WAKE REQUESTED / PARTIAL READBACK / DRAIN Q OPEN.
 - **Remaining work:** retrieve and inspect attributable run outputs; reconcile item-level queue transitions; restore authorized tracker access and independently read back Q1; continue executable work while lawful tasks remain.
+
+
+## SAME-RUN CONTINUATION — PR #47 AND LIVE RUNTIME GATE — 2026-10-20
+
+### Merge / deployment readback
+- Existing [PR #47](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/47) currently reads closed/merged. Merge commit: `191d576c9cb246fe558547d988a5e7a42f6a8d01`; PR head: `beeb12d6e528c9ca38515f3bfe02d2d83761c236`.
+- GitHub combined status on the merge commit: Vercel = SUCCESS.
+- Vercel deployment metadata: `dpl_6cyFuWGe7HSMzk8j1UddNmhe6XhP`, READY, production target, commit matches the merge commit.
+- Time-source inconsistency: GitHub reports the merge at 14:06:54Z and Vercel reports deployment ready at 14:07:05Z, later than this run's declared time of 13:52Z. Preserve the current state readback, but leave event chronology unreconciled.
+
+### Live route attempt
+The existing Render service record for `amx-evidence-house` shows automatic deploy from `main`, service not suspended, and the latest live deploy on older commit `5ad5f4f6be12c12df36ba29a633c5081e365c908` (17 October). Read-only requests to the public host returned HTTP 503 for `/api/health`, `/house/assets/proposal.js`, `/house/assets/proposal.css`, `/house`, `/carbon/partner`, and `/proposal/AMX-QDRAIN-INVALID-TOKEN`. The last uses an invented invalid token only and did not touch customer data.
+
+**Acceptance:** merged code and Vercel deployment metadata are observed; live customer behavior is NOT VERIFIED because the current Render route returned 503. A 503 observation is not proof of permanent failure. Do not mark the behavior gate passed from merge/deploy metadata alone.
+
+### Execution route-around
+- The immediate-run calls for existing Bounty Reaper and FORX were rejected with “Resume this task before running it now”; neither call produced an execution receipt.
+- The current automation roster lists these tasks as enabled, but this flag alone did not make `run_now` succeed. No schedule or task setting was changed in this receipt.
+- Render log access reported that no workspace was selected. No workspace selection or service mutation was made in this pass.
+- The Notion append attempt and secondary comment attempts returned tool safety/action errors and were not counted as successful writes. This addendum instead uses the existing canonical GitHub DRAIN-Q receipt, updated sequentially using its fetched current blob SHA.
+
+### Directive 23
+- **Expected outcome:** Root can reconcile source chronology, preserve the current production state truth, and progress the existing runtime/task gates without duplicating infrastructure.
+- **Owner:** ROOT/T-GOV for chronology/queue disposition; existing deployment owner for Render and proposal route; the already-assigned FORX and Bounty Reaper owners for their current mandates.
+- **Next action:** obtain run output through the existing automation task record or approved recovery path; inspect the current Render event/log evidence through the confirmed existing workspace; then repeat read-only health and invalid/unavailable quote-route checks against the exact active source.
+- **Dependencies:** attributable automation output; authorized Render workspace-scoped logs/events; working runtime route.
+- **Safety/preservation:** no customer token used, no production data changed, no message/payment/submission sent, no schedule changed, and no new issue, worker, queue, service, or tracker created.
+- **Disposition:** PARTIAL. Deployment metadata is not runtime acceptance; worker run requests are not run receipts. DRAIN Q remains OPEN / NOT CLEARED.
+- **Remaining work:** retrieve attributable run output, reconcile the timestamp anomaly, restore/verify the existing Render runtime if evidence supports it, and get behavior-level readback.
