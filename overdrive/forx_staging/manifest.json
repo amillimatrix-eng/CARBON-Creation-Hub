@@ -3,7 +3,7 @@
   "logical_store": "overdrive/forx_prospect_buffer.json",
   "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
   "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
-  "manifest_version": 8,
+  "manifest_version": 9,
   "base_snapshot": {
     "path": "overdrive/forx_prospect_buffer.json",
     "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
@@ -141,15 +141,39 @@
       ],
       "record_ids": [
         "FORX-PROSPECT-20261015-PROC-001"
-      ]
+      ],
+      "segment_sequence": 8
+    },
+    {
+      "path": "overdrive/forx_staging/delta-0009-forx-20261020-open-procurement-systems.json",
+      "git_blob_sha": "01107aafd408b230097eae6d882e94fa9d25a64d",
+      "count": 6,
+      "batch_id": "forx-20261020-open-procurement-systems-01",
+      "source_keys": [
+        "url:https://www.ungm.org/Public/Notice/317127",
+        "url:https://www.ungm.org/Public/Notice/311133",
+        "url:https://www.ungm.org/Public/Notice/318058",
+        "url:https://www.ungm.org/Public/Notice/318176",
+        "url:https://www.ungm.org/Public/Notice/315503",
+        "url:https://www.ungm.org/Public/Notice/309729"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261020-UNGM-001",
+        "FORX-PROSPECT-20261020-UNGM-002",
+        "FORX-PROSPECT-20261020-UNGM-003",
+        "FORX-PROSPECT-20261020-UNGM-004",
+        "FORX-PROSPECT-20261020-UNGM-005",
+        "FORX-PROSPECT-20261020-UNGM-006"
+      ],
+      "segment_sequence": 9
     }
   ],
-  "current_unique_source_keys": 948,
-  "gross_observation_versions": 952,
+  "current_unique_source_keys": 954,
+  "gross_observation_versions": 958,
   "current_normalized_missing_explicit_freshness": 0,
   "historical_exact_source_duplicate_versions_preserved": 1,
-  "next_segment_sequence": 7,
-  "last_updated": "2026-10-16T10:51:02.321Z",
+  "next_segment_sequence": 10,
+  "last_updated": "2026-10-20T11:54:25Z",
   "concurrency_contract": {
     "immutable_base": true,
     "immutable_deltas": true,
