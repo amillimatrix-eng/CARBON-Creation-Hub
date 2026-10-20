@@ -378,3 +378,48 @@ The earlier checkpoint remains unchanged as history; the correction event was ap
 - The existing “Check Visym payout” one-shot remains set for 2026-10-20 18:00 Africa/Johannesburg; this is a check reminder, not proof of the payout run or of an automatic future run.
 
 **Disposition:** proof-of-account receipt PASS; Wise app setting UNKNOWN; run inclusion UNKNOWN; cash-in NOT VERIFIED. Preserve original thread and avoid duplicate PII.
+
+
+## CURRENT-WAKE — LIBRARIAN WORKER WAKE + DRAIN-Q READBACK — 2026-10-20T07:53:12.834Z
+
+**Receipt ID:** `AMX-WAKE-20261020-LIBRARIAN-0748Z`  
+**Authority:** Owner directive “Wake AMX — every worker and drain Q”; current Mandate Registry v1.3 remains controlling.  
+**Registry root SHA-256:** `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`  
+**Disposition:** **OPEN / INTAKE NOT CLEARED.** This receipt records actual requests and readbacks; it does not equate task scheduling with worker completion.
+
+### 1. Existing worker wake actions
+
+The existing task layer acknowledged immediate-run requests for:
+- `FIRST BREATH — IDEAL SALES TEAM` (existing iSCOPE → PRI commercial field force);
+- `Bounty Reaper`;
+- `FIRST BREATH — FORX Continuous Play Sweep`;
+- `FIRST BREATH — LIBRARIANS`;
+- `FIRST BREATH — AMX Banker Cash Watch`;
+- `AMX Operational Inbox Watch`;
+- `HALTED — CARBON° Production Studio` (one-shot request only; previous disabled state restored, and no customer-facing action is presumed);
+- `CAPACITY-MERGED — Matrix Commissioning Inspector`;
+- `Hash Calibration Manager`;
+- `Check Visym payout`.
+
+For previously disabled workers, the existing task was temporarily enabled, the immediate-run request was accepted, and its previous disabled state was restored. `Bounty Reaper` was left enabled after its wake; `FIRST BREATH — IDEAL SALES TEAM` remained enabled. The Visym one-shot was restored enabled with its original 20 October 18:00 Africa/Johannesburg schedule.
+
+**Execution truth:** “Immediate run requested” is not a worker PASS. At this readback, no fresh task-correlated durable receipt has been independently matched to all these run requests. No claim is made that every worker finished its action or adopted the current mandate. The existing `PRI Immediate Wake` one-shot was not changed: its DTSTART is historical and the scheduler rejected enabling it because the start time must be in the future; the existing hourly commercial field force already received its own run request. No duplicate commercial writer was invoked.
+
+### 2. Current durable queue/runtime readback
+
+- `overdrive/state.json` — blob `d117c948e0046b7d2fcacb0e2cbae6762335ac22`; sequence **23**; last tick `2026-10-16T08:40:31.786740Z`; last durable receipt `receipts/0000000023-qdrain-20261015-naomii-offered.json`. All **23/23** persisted adapter queue entries currently read back as `COMPLETED`; there are no nonterminal entries in that adapter queue. This is not proof the separate ROOT/INTAKE queue is drained.
+- `overdrive/opportunities.json` — blob `490500d292a464eda827f46ed6619a801ebe19b8`; `record_count=111` and actual record keys = **111**; the ledger was updated on 20 October. Historical `last_run.run_at=2026-10-03T17:42:00Z` remains historical and is not rewritten.
+- `overdrive/claims.json` — blob `88b15824b892e38301829a95ee1ecf75e1221341`; generated `2026-10-16T08:40:31.783771Z`; **108** claims; **102 WAITING / 6 CLOSED / 0 READY / 0 external-ready**; `executable_order=[]`. The 111-record opportunity ledger and 108-claim snapshot remain unsynchronized; current runner reconciliation and exact-key readback are still required.
+- Latest listed GitHub Actions OVERDRIVE run (#193) was a 20 October `push` event with conclusion `skipped`, not a worker tick. No fresh OVERDRIVE state sequence or receipt newer than 16 October was found in the direct readback.
+- Connected live Stripe `GET /v1/payouts?limit=100` returned **0 payout records**; `GET /v1/payment_intents?limit=100` returned **0 records**. This is a scoped Stripe result only, not a claim that all AMX revenue across every rail is zero.
+- Outlook readback reconfirmed Visym's “Received, thank you” acknowledgement to the proof-of-account email. It does not prove payout-run inclusion or cash credit. No DAOPEOPLE reply was found in the connected Outlook search.
+
+### 3. Continued execution and ownership
+
+1. **OVERDRIVE owner / T-COD:** invoke the existing `.github/workflows/overdrive-recovery.yml` via its authorized `workflow_dispatch` input `run_worker=run` (or an already-authorized equivalent runtime); reconcile the current ledger into generated claims/signals through `overdrive/runner.py`; preserve historical `last_run`; independently read back a fresh state sequence, receipts, `record_count`, and claim keys/counts. A source edit, push-triggered skipped run, or task request is not acceptance.
+2. **iSCOPE → PRI:** continue the existing commercial field force under current registry/Blue State; work actionable revenue progress first, respect the single external writer, and recheck each due follow-up against the original thread/contact gate before sending. Do not repeat buyer contacts for the three 19 October South African offers without new evidence or a valid due review.
+3. **Bounty Reaper:** drain its registered Q1/Q2/Q3 work under its mandate and persist/read back the existing `AMX Bounty Reaper — Live Tracker` Runs receipt. The accepted run request alone is not proof of bounty submission or payment.
+4. **Banker:** retain independent settlement truth. Do not mark payout/revenue PAID until a real processor or bank settlement is independently attributable and read back.
+5. **MASTER/LIBRARIAN + ROOT/T-GOV:** continue the source-derived census and item-level dispositions across the existing ROOT/INTAKE surfaces. The current 15-issue GitHub search is only an issue census, not the complete Matrix queue. Keep every unverified or unassigned live item open with owner, concrete next action, acceptance signal and recheck condition.
+
+**Final status:** wake requests issued to all listed existing operational workers; current output receipts not yet independently proven for each request; OVERDRIVE runtime receipt stale; opportunity/claim snapshot reconciliation open; full ROOT/INTAKE queue **OPEN / INTAKE NOT CLEARED**. Continue the existing drain without adding a worker, queue, scheduler, or governance layer.
