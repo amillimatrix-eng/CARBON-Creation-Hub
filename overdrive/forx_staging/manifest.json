@@ -3,7 +3,7 @@
   "logical_store": "overdrive/forx_prospect_buffer.json",
   "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
   "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
-  "manifest_version": 13,
+  "manifest_version": 14,
   "base_snapshot": {
     "path": "overdrive/forx_prospect_buffer.json",
     "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
@@ -224,14 +224,27 @@
         "FORX-PROSPECT-20261020-UPWORK-001"
       ],
       "segment_sequence": 12
+    },
+    {
+      "path": "overdrive/forx_staging/delta-0013-forx-20261020-undp-unipods-ai-public-good-challenge.json",
+      "git_blob_sha": "250a6325d2c7410df57993b88c5473e666d7281c",
+      "count": 1,
+      "batch_id": "forx-20261020-undp-unipods-ai-challenge-01",
+      "source_keys": [
+        "url:https://www.ungm.org/Public/Notice/318800"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261020-UNGM-009"
+      ],
+      "segment_sequence": 13
     }
   ],
-  "current_unique_source_keys": 958,
-  "gross_observation_versions": 965,
+  "current_unique_source_keys": 959,
+  "gross_observation_versions": 966,
   "current_normalized_missing_explicit_freshness": 0,
   "historical_exact_source_duplicate_versions_preserved": 1,
-  "next_segment_sequence": 13,
-  "last_updated": "2026-10-20T14:24:44Z",
+  "next_segment_sequence": 14,
+  "last_updated": "2026-10-20T14:32:58Z",
   "concurrency_contract": {
     "immutable_base": true,
     "immutable_deltas": true,
