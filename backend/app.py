@@ -395,7 +395,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         @app.get("/proposal/{portal_token}")
         @app.get("/proposal/{portal_token}/")
         def customer_proposal_page(portal_token: str):
-            proposal_projection(portal_token)
+            # Serve only the data-free recovery shell for every token. The API remains fail-closed.
             return FileResponse(house_dir / "proposal.html")
 
         @app.get("/house")
