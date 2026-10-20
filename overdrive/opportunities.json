@@ -578,7 +578,7 @@
   },
   "last_updated_at": "2026-10-20T13:43:01+02:00",
   "last_updated_by": "PRI",
-  "record_count": 117,
+  "record_count": 118,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -7278,6 +7278,88 @@
           "observed_at": "2026-10-20T11:15:09Z",
           "evidence": "No buyer acceptance or order-specific payment instruction is evidenced; the offer itself promises payment-route confirmation before acceptance/work.",
           "next": "Agree an executable payment route after buyer interest and before starting work; do not claim payment or issue an invoice absent acceptance."
+        }
+      }
+    },
+    "profixcoastal.com|inspection-to-repair-follow-through-pilot|2026-10-20": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RxwAAAA==",
+          "https://www.profixcoastal.com/",
+          "https://www.sitect.co.za/services/ai-consultation"
+        ],
+        "identity": {
+          "domain": "profixcoastal.com",
+          "opportunity": "AMX Inspection-to-Repair Follow-Through Pilot",
+          "organization": "ProFix Coastal Services & Solutions"
+        },
+        "kind": "NEW_FIXED_SCOPE_OFFER_OUTREACH",
+        "observed_at": "2026-10-20T11:42:54Z"
+      },
+      "domain": "profixcoastal.com",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OFFICIAL_BUYER_ROUTE_AND_SERVICE_CONTEXT_VERIFIED",
+          "observed_at": "2026-10-20T13:25:00+02:00",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "source_id": "https://www.profixcoastal.com/",
+          "summary": "Official site identifies ProFix Coastal as a Western Cape/Namibia facilities coordination and operations partner, with CMMS-driven inspection reporting, contractor oversight, preventative maintenance and work verification. Official contact page lists admin@profixcoastal.com as Operations & Maintenance. The offer does not assert the current process is defective.",
+          "url": "https://www.profixcoastal.com/"
+        },
+        {
+          "kind": "PRICE_BASIS_PUBLIC_COMPARATOR",
+          "observed_at": "2026-10-19T16:35:00Z",
+          "source": "SITEC_OFFICIAL_PRICING_PAGE",
+          "source_id": "https://www.sitect.co.za/services/ai-consultation",
+          "summary": "Existing canonical comparator records a published South African AI service menu starting at ZAR 14,000 for document/workflow automation. R9,380 is 67% of that single point comparator; this is not claimed as a national average or proof of margin.",
+          "url": "https://www.sitect.co.za/services/ai-consultation"
+        },
+        {
+          "kind": "NEW_FIXED_SCOPE_OFFER_SENT",
+          "observed_at": "2026-10-20T11:42:54Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RxwAAAA==",
+          "subject": "One inspection-to-repair follow-through pilot",
+          "summary": "Sent from usduplessis@outlook.com to official Operations & Maintenance contact admin@profixcoastal.com. Fixed ZAR 9,380 once-off. One existing inspection/report source and one existing tracking destination: convert approved findings into owned corrective-action tasks, track repair/quote status and close-out evidence, and prepare a status report for human review. CMMS remains the source of truth; no autonomous maintenance decisions or messaging. Includes acceptance tests and handover; five-business-day target after written scope, access and payment terms are accepted. Hosting, paid API usage and out-of-scope work excluded. Offer sent; no acceptance, invoice, payment or delivery evidenced.",
+          "url": "https://www.profixcoastal.com/"
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-20T11:42:54Z",
+      "next_action": "WAIT for a substantive buyer response. If interested, qualify the current CMMS/source and target destination, access permissions, acceptance criteria, and a working payment route before accepting work. Do not start implementation before written scope and payment are confirmed. No follow-up without a new evidence-based due date; only promote to ACCEPTED/CONTRACTED/INVOICED/PAID on attributable source evidence.",
+      "opportunity": "AMX Inspection-to-Repair Follow-Through Pilot",
+      "organization": "ProFix Coastal Services & Solutions",
+      "recipient": "admin@profixcoastal.com",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 9380,
+        "currency": "ZAR",
+        "scope": "One existing inspection/report source and one existing tracking destination: convert approved findings into owned corrective-action tasks, track repair/quote status and close-out evidence, and prepare a status report for human review. CMMS remains the source of truth; no autonomous maintenance decisions or messaging. Includes acceptance tests and handover. Delivery target five business days after written scope, access and payment terms are accepted. Hosting, paid API usage and out-of-scope work excluded.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RxwAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_confidence": "HIGH",
+      "execution_readiness": "WAITING",
+      "last_reconciled_at": "2026-10-20T11:42:54Z",
+      "active_dependencies": {
+        "buyer_response": {
+          "state": "WAITING",
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "observed_at": "2026-10-20T11:42:54Z",
+          "next": "If buyer replies, qualify whether the CMMS-to-repair handoff is a real need and confirm exact source/destination scope and acceptance criteria."
+        },
+        "payment_route": {
+          "state": "UNCONFIRMED_FOR_THIS_ORDER",
+          "kind": "PAYMENT",
+          "observed_at": "2026-10-20T11:42:54Z",
+          "evidence": "No acceptance or order-specific payment instruction has been issued; the email says AMX will confirm a working route before accepting work.",
+          "next": "Agree an executable payment route after buyer interest, before implementation; do not rely on the disabled Stripe account."
         }
       }
     }
