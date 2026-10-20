@@ -3,7 +3,7 @@
   "logical_store": "overdrive/forx_prospect_buffer.json",
   "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
   "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
-  "manifest_version": 9,
+  "manifest_version": 10,
   "base_snapshot": {
     "path": "overdrive/forx_prospect_buffer.json",
     "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
@@ -166,14 +166,31 @@
         "FORX-PROSPECT-20261020-UNGM-006"
       ],
       "segment_sequence": 9
+    },
+    {
+      "path": "overdrive/forx_staging/delta-0010-forx-20261020-procurement-current-gate-upserts.json",
+      "git_blob_sha": "3395f685cd3b63846941296fa6eecd375a72a138",
+      "count": 3,
+      "batch_id": "forx-20261020-procurement-current-gate-upserts-01",
+      "source_keys": [
+        "url:https://www.ungm.org/Public/Notice/317127",
+        "url:https://www.ungm.org/Public/Notice/311133",
+        "url:https://www.ungm.org/Public/Notice/318058"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261020-UNGM-001",
+        "FORX-PROSPECT-20261020-UNGM-002",
+        "FORX-PROSPECT-20261020-UNGM-003"
+      ],
+      "segment_sequence": 10
     }
   ],
   "current_unique_source_keys": 954,
-  "gross_observation_versions": 958,
+  "gross_observation_versions": 961,
   "current_normalized_missing_explicit_freshness": 0,
   "historical_exact_source_duplicate_versions_preserved": 1,
-  "next_segment_sequence": 10,
-  "last_updated": "2026-10-20T11:54:25Z",
+  "next_segment_sequence": 11,
+  "last_updated": "2026-10-20T12:09:30Z",
   "concurrency_contract": {
     "immutable_base": true,
     "immutable_deltas": true,
