@@ -593,7 +593,7 @@
   },
   "last_updated_at": "2026-10-20T13:46:32+02:00",
   "last_updated_by": "PRI",
-  "record_count": 118,
+  "record_count": 119,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -7375,6 +7375,106 @@
           "observed_at": "2026-10-20T11:42:54Z",
           "evidence": "No acceptance or order-specific payment instruction has been issued; the email says AMX will confirm a working route before accepting work.",
           "next": "Agree an executable payment route after buyer interest, before implementation; do not rely on the disabled Stripe account."
+        }
+      }
+    },
+    "visym.com|geosonics-collection-campaign|south-africa": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEeAAAACcuKl8g3RkyfBaEy7toItQACLkphawAAAA==",
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLkp0_QAAAA==",
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLz9hSgAAAA==",
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvAAAAA=="
+        ],
+        "identity": {
+          "domain": "visym.com",
+          "opportunity": "GeoSonics accepted-video collection and payout setup",
+          "organization": "Visym Collector / GeoSonics"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-20T11:59:03.891Z"
+      },
+      "domain": "visym.com",
+      "due_at": "2026-10-20T12:00:00Z",
+      "evidence": [
+        {
+          "kind": "PROVIDER_CAMPAIGN_INVITATION",
+          "observed_at": "2026-10-17T16:50:59Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEeAAAACcuKl8g3RkyfBaEy7toItQACLkphawAAAA==",
+          "summary": "Visym invited the Owner to the GeoSonics campaign. Provider said payment is per accepted video and initially requested city/country and interest confirmation."
+        },
+        {
+          "kind": "OWNER_ACCEPTED_PROVIDER_RATE",
+          "observed_at": "2026-10-17T19:39:49Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLkp0_QAAAA==",
+          "summary": "Owner accepted the proposed USD 0.50–0.75 per accepted video; not all submissions are proven accepted, payable or settled."
+        },
+        {
+          "kind": "PAYOUT_ROUTE_INSTRUCTIONS",
+          "observed_at": "2026-10-19T13:21:09Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLz9hRAAAAA==",
+          "summary": "Visym confirmed ZAR bank payout through Wise is supported and instructed setting Wise plus payment email amillimatrix@gmail.com in the existing app/dashboard."
+        },
+        {
+          "kind": "OWNER_BANK_PROOF_SENT",
+          "observed_at": "2026-10-19T20:39:34Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvAAAAA==",
+          "summary": "Owner sent the existing GoTyme bank proof-of-account document to Visym; the attachment is not copied into the ledger."
+        },
+        {
+          "kind": "PROVIDER_CONFIRMED_BANK_PROOF_RECEIPT",
+          "observed_at": "2026-10-19T20:47:54Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLz9hSgAAAA==",
+          "summary": "Visym replied that the GoTyme proof was received, that DOB/SWIFT were unnecessary for this route, and again instructed setting Wise plus payment email amillimatrix@gmail.com. No further bank identifiers requested."
+        },
+        {
+          "kind": "OWNER_SETUP_GATE_RECONFIRMED_20261020",
+          "observed_at": "2026-10-20T11:59:03.891Z",
+          "source": "OUTLOOK_AND_TINYFISH",
+          "summary": "Current payout setup still not saved. Existing usduplessis@outlook.com browser profile has no recorded Visym sign-in; a manual profile setup handoff was generated but not completed. No app setting change, payment-run inclusion or actual payment is verified."
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-19T20:47:54Z",
+      "next_action": "OWNER-ONLY PAYOUT SETUP GATE — open the provided TinyFish profile-setup handoff, sign in to https://collector.visym.com with the existing Collector account and click Save profile. Once the sign-in is saved, run the existing Outlook-profile route, open Payments/Profile, set provider Wise and payment email amillimatrix@gmail.com, save, and read back the saved setting. Cutoff per Visym's published guide: 2026-10-20T12:00:00Z (08:00 ET). Never send bank/DOB/SWIFT details again unless Visym explicitly requests a secure approved route. Do not claim inclusion or payment without dashboard or settlement receipt.",
+      "opportunity": "GeoSonics accepted-video collection and payout setup",
+      "organization": "Visym Collector / GeoSonics",
+      "recipient": "collector@visym.com",
+      "state": "SUBMITTED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 0.5,
+        "currency": "USD",
+        "scope": "Payment per accepted GeoSonics video at the provider-proposed USD 0.50–0.75 range. Provider's hourly estimate is indicative, not guaranteed; only accepted videos are payable.",
+        "status": "PROVIDER_RATE_ACCEPTED; WORK/SUBMISSION CONTINUES",
+        "type": "TASK_BASED"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "TASK_BASED",
+      "current_route_status": "CAMPAIGN_ACCEPTED; VIDEO_SUBMISSIONS_EXIST; PAYOUT_SETUP_PENDING; PAYMENT_UNVERIFIED",
+      "current_route_confidence": "HIGH",
+      "execution_readiness": "OWNER_ONLY_PROVIDER_SETUP_GATE",
+      "last_reconciled_at": "2026-10-20T11:59:03.891Z",
+      "active_dependencies": {
+        "payout_setup": {
+          "state": "ACTIVE",
+          "kind": "OWNER_ONLY_PROVIDER_SETUP",
+          "owner": "Owner",
+          "observed_at": "2026-10-20T11:59:03.891Z",
+          "evidence": "Provider email at 2026-10-19T20:47:54Z confirms GoTyme proof received and instructs setting Wise plus amillimatrix@gmail.com; no app setting readback exists.",
+          "next": "Owner signs in to the existing Collector dashboard through the setup handoff; runtime then sets Wise and payment email, reads back the setting and checks payout status."
+        },
+        "video_acceptance": {
+          "state": "WAITING",
+          "kind": "PROVIDER_ACCEPTANCE",
+          "observed_at": "2026-10-20T11:59:03.891Z",
+          "evidence": "The provider pays only accepted videos; current accepted count and receivable amount are not verified in this mailbox readback.",
+          "next": "After setup, read the existing Collector dashboard for accepted-video count, planned payout and receipt; do not infer earnings from submission count or hourly estimate."
         }
       }
     }
