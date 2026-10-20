@@ -4,7 +4,7 @@
 
 **Disposition:** CATEGORY B / OPEN — bounded audit persisted; Root Intake remains **NOT CLEARED**. This entry supplements existing authority; it creates no new worker, queue, scoring authority, or parallel governance plane.
 
-- **Canonical audit:** [MATRIXWIDE_CONTINUITY_PROPAGATION_AUDIT_20261020.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_CONTINUITY_PROPAGATION_AUDIT_20261020.md) — direct readback blob `acf8ed1aedea4dc102adaeda516b509d43fe64ff`.
+- **Canonical audit:** [MATRIXWIDE_CONTINUITY_PROPAGATION_AUDIT_20261020.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_CONTINUITY_PROPAGATION_AUDIT_20261020.md) — direct readback blob `e56b688e81eee3ce913e3ed772849adbe2ffdf9c`.
 - **Current authority anchors:** Registry v1.3 root `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`; current Blue State blob `98d99bf3d954c866f1a897e2ac73dd24ed315aae`; existing Root runtime `ROOT-GPT56SOL-20260930-01`.
 - **13-head:** FORX real-work acceptance is CLOSED_VERIFIED/PASS for its bounded test; effective Bounty Reaper adoption is NOT PROVEN and the current saved automation was read back disabled with stale prompt metadata.
 - **Experiment:** the existing 13-head re-entrant versus strict-waterfall test has an Owner-accepted `HYBRIDIZE` disposition; the fixed-case benchmark is not exhaustively scored.
