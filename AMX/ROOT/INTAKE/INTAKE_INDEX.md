@@ -13,7 +13,7 @@
 - **Agent market breadth:** preserve OKX AI/Agentic, Superteam Earn, WorkProtocol, Algora, MoltJobs, Molt Market, AgentBounties, security programs, direct paid pilots and procurement. No single marketplace resolves the existing OKX seller/x402 binding or payment-route blocker.
 - **Commercial/payment truth:** current Stripe route is not charge/payout enabled; three R9,380 workflow-pilot offers are SENT only. No acceptance, award or payment is inferred. Current money-in remains unverified.
 - **Addendum B added:** preserves the intention-before-literalism operating rule, differentiated contact/qualification/offer/competitive-loss attribution, GrapeData participant-vs-referrer lesson and human-only terms boundary, CARBON-owned multi-provider boundary, no-boilerplate public-copy standard, two-build acceptance benchmark, versioned commercial-ledger-count reconciliation, and work-conservation law.
-- **Latest audit blob:** `${newAuditSha}`.
+- **Latest audit blob:** `e56b688e81eee3ce913e3ed772849adbe2ffdf9c`.
 - **Source coverage:** accessible repo/Library/Notion page search and current automation state were inspected. Notion session enumeration returned `FORBIDDEN: restricted_resource`; literal exhaustive open-transcript coverage remains incomplete.
 - **Required remaining state:** ROOT/T-GOV disposition; supported in-place Reaper prompt/behavior repair; worker-by-worker adoption receipts; current FORX manifest/exact count/readback; fresh outcome→weight→changed-selection proof; full item-level Root Intake drain and a verified money-in event.
 
