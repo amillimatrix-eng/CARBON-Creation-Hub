@@ -151,3 +151,27 @@ The existing draft PR #57 was amended on the same authorized branch:
 - **Dependencies/remaining work:** Root/T-COD review of PR #57; after authorized merge, read back an actual scheduled trigger plus artifact and missed-tick behaviour; separately invoke/test Plan B only when the 75-minute dependency gate is met; then reconcile the consolidated work-conservation lane before reactivation.
 - **Safety/preservation:** no merge, no production mutation, no external write, no buyer/payment action, no task schedule/prompt changed, and no duplicate worker or queue. The earlier accidental individual re-enable was reversed and explicitly recorded.
 - **Disposition:** TESTED / REPOSITORY PREFLIGHT PASS; SCHEDULED PLAN A LIVENESS NOT YET VERIFIED; PLAN B END-TO-END NOT YET VERIFIED; CONSOLIDATED COMMERCIAL EXECUTION NOT AUTHORIZED UNDER THE CURRENT PAUSE; DRAIN Q OPEN / NOT CLEARED.
+
+
+## SAME-RUN CONTINUATION — MERGED PLAN-A/B CONTROL / SCHEDULE ACCEPTANCE STILL OPEN — 2026-10-21
+
+### Canonical state correction
+- PR #57 is **CLOSED / MERGED**, not draft/open. Merge commit: `ab3f31b000fc88ed401431e0b8ba8bb523adf36f`.
+- The PR body was corrected after merge to remove its stale draft/unmerged status. The current main workflow blob is `3e555bc3ce09cac6e32f39665c982e7391b2796a`; it includes hourly Plan A (`0 * * * *`) plus the offset 15-minute Plan-B watchdog (`5,20,35,50 * * * *`).
+- The existing workflow remains a **repository-only continuity/preflight control** on scheduled, push and PR events. The commercial worker stays paused/manual-only unless separately authorized. No external commercial actions are performed by the scheduled control.
+
+### Fresh readback — distinguish merged code from real liveness
+- Merge push run [39534817326](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/39534817326) completed SUCCESS on the merge commit. This is a **push event**, not a scheduled event.
+- Backend tests on merge push [39534817316](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/39534817316) completed SUCCESS.
+- The actual Actions API query `/actions/runs?per_page=100&event=schedule` returned the latest scheduled event as run [38905426388](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/38905426388), created 2026-10-16T13:07:14Z on the pre-control revision `c5353374dde2011c746fc88a7da99669808f5b25`. No scheduled run for the newly merged control was present in the fetched result.
+- Direct GET of `overdrive/recovery-control/plan-a-anchor.json?ref=main` returned 404: no durable successful Plan-A anchor is currently available to read back.
+- Therefore **Plan A hourly implementation = MERGED; first post-merge scheduled execution/anchor = NOT YET VERIFIED**. PR-event tests selecting `VALIDATION_ONLY` cannot substitute for a scheduled receipt. Plan B end-to-end and automatic return-to-A are also NOT YET VERIFIED.
+- Current connected ChatGPT automation inventory was re-read: 25 definitions; enabled list empty; scheduler reports 49 paused. This remains the Owner-directed quiet-mode state. It does not delete mandates or clear their queues.
+
+### Required next action
+1. Recover the first actual successful scheduled event with `event=schedule`, `schedule_expression=0 * * * *`, matching current/main commit and its upload artifact.
+2. Independently read back the committed `plan-a-anchor.json` with current registry root, run ID, exact commit and receipt hash.
+3. Validate the B selector on fixtures for fresh Plan A, stale Plan A, missing Plan A past the 75-minute grace, failed schedule, malformed source, clock skew and next successful Plan-A return. Do not force production Plan B or invoke the commercial writer merely to test it.
+4. Preserve the task quiet mode until separately authorized consolidated-lane acceptance passes. Root Intake remains OPEN / NOT CLEARED.
+
+**Directive 23:** Outcome = actual schedule-based liveness and reversible A/B behavior, not merely code presence. Owners = ROOT/T-GOV for governing disposition; existing T-COD/runtime owner for scheduled-run and selector proof; RoI for source/intent reconciliation. Evidence = merged commit, two merge push CI outcomes, actual Actions API schedule query and absent anchor. Remaining work = fresh schedule receipt, anchor readback, guarded B/return validation, then item-level Q drain.
