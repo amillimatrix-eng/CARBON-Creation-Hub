@@ -56,7 +56,7 @@ def test_disk_backed_selector_and_streamed_partition_hashes(tmp_path):
             assert len(body["nodes"]) == part["count"] <= 2
             assert body["run_id"] == "run-test"
             emitted.extend(node["source_record_id"] for node in body["nodes"])
-        assert emitted == ["a", "b", "c", "e", "f"]
+        assert emitted == ["c", "a", "b", "d", "e"]
         assert result["selection_sha256"] == hashlib.sha256("\n".join(emitted).encode()).hexdigest()
     finally:
         runtime.remove_sqlite(store)
