@@ -3844,3 +3844,37 @@ This append records the code proposal and test evidence after the accepted 200K 
 - PR #64 remains closed as superseded by the then-newer #65; neither PR merged. Do not describe #65 as open/draft and do not reopen it without an authorized disposition.
 - Current production service remains unchanged. FORX acceptance remains bounded: durable output PASS; restart/restore acceptance OPEN. Next step is an authorized code-integration/review decision followed, if approved, by deployment and live restore/readback. No current production restart, schedule activation, or environment mutation occurred.
 - Directive 23: expected outcome = accurate lifecycle and no false runtime acceptance; owner = existing T-COD/FORX implementation owner + ROOT/T-GOV; dependency = authorized integration decision; evidence = current PR state, issue #11 comment 6308815559, workflow run/job and preserved branch; safety = preserve completed test evidence without claiming deploy/merge; disposition = PROPOSAL CLOSED UNMERGED / LIVE RESTORE OPEN / ROOT INTAKE OPEN; remaining work = authorized implementation decision and live acceptance, alongside the matrix-wide residual queue.
+
+## 2026-10-21 — FORX CHECKPOINT RESTORE LIVE ACCEPTANCE — FINAL CORRECTION
+
+This entry supersedes prior current-state text that still described restart/restore as open. PR #65 is MERGED, the existing service redeployed it, and the runtime restore was independently read back.
+
+- PR #65 “FORX: restore exact verified durable checkpoint after restart” is CLOSED / MERGED at merge commit d24a723ed198bd2e0d0e63f62fcb38a77ba547bb (merge time 2026-10-21T05:26:56Z). The earlier comment saying “closed / not merged” was stale; keep the comment as history, not current truth.
+- Existing Render service amx-forx-stage1-proof (srv-db2udid9fdbs739b5ru0) is LIVE on deployment dep-dbc4qheq1p3s73ca8450, app commit d24a723ed198bd2e0d0e63f62fcb38a77ba547bb; build/deploy succeeded at 2026-10-21T05:28:28Z.
+- Current live GET /status: status COMPLETE; phase DURABLE_CHECKPOINT_RESTORED; run/checkpoint forx-20261010-200k-01; target/node_count 200,000; 200 partitions x 1,000; errors=[]; restored_from_checkpoint=true.
+- Current live GET /runtime-receipt: status PRODUCTION_RUNTIME_RESTORED_FROM_DURABLE_CHECKPOINT; restored_from_durable_checkpoint=true; durable_readback_receipt_status=PASS_DURABLE_PARTITIONS_VERIFIED; source SHA-256 f1cc7e34c7a3a65195a545221521b8e11c63b2c473d6d01c72158ce33a9611e6; selection SHA-256 ee3459b9c30e2aceafa9d40d35648ba33a8a50fd26f6a8efd65ec98555348137; 200 partition hashes present; no runtime errors.
+- Attributable Render log b212063e-e5be-42f2-b16e-73b5588ba2ee at 2026-10-21T05:28:36.383296172Z: FORX_CHECKPOINT_RESTORE {checkpoint_id=forx-20261010-200k-01, partition_count=200, restored_nodes=200000, run_id=forx-20261010-200k-01, source=repository-persisted durable checkpoint, status=COMPLETE}. Render deployment events show build and deploy success, no OOM/server-failure event in the queried post-deploy window. First/last live partition endpoints return the matching run ID and indices 1/200 with 1,000 nodes each.
+- The prior durable receipt remains the exact-byte hash verification: overdrive/forx_50k_proof/forx-20261010-200k-01/durable-readback-receipt.json blob 23c11566645475d8feb329c36ad654b422439625; PASS_DURABLE_PARTITIONS_VERIFIED, 200/200 exact-byte partition hashes, 200,000 unique source IDs.
+- Issue #11 was closed as completed at 2026-10-21T05:32:24Z; that state is consistent with the now-merged patch and live completed-checkpoint restore. Do not reopen it merely because older comments or this Index section were not yet reconciled.
+
+### FORX disposition corrected
+- Bounded-memory 200K production execution: PASS.
+- Durable partition persistence, exact-byte integrity and 200K unique-ID readback: PASS.
+- Restore of that completed durable checkpoint after service restart: PASS, observed in current live status, runtime receipt, Render log and deployment state.
+- Mid-ingestion source-cursor continuation: NOT CLAIMED and not part of the merged PR #65 acceptance boundary.
+- Therefore the FORX checkpoint-restore gate is CLOSED_VERIFIED for the accepted existing 200K checkpoint, rather than OPEN. Preserve earlier OOM and earlier checkpoint history as provenance.
+
+### Root-wide state remains distinct
+- Overdrive event queue remains sequence 27: 27 COMPLETED / 0 PENDING / 0 FAILED.
+- Opportunity/claims/signals remain 125/125/125 with zero key mismatches; claims 119 WAITING / 6 CLOSED / 0 READY / 0 external-ready. The WAITING states stay open.
+- Active governance-disposition bucket is zero untriaged after recorded explicit dispositions.
+- Full Root Intake remains OPEN / NOT CLEARED due the separate scheduled Plan A/Plan B liveness and anchor, Reaper prompt-write and tracker, HASH exact capture/custody, D04 distinct primary vector, Commercial Manager mandate/holder/reporting, Abacus source/authority, RGR-03 image semantics, DR-0021/FORX-VFY-004 behavior, the dynamic flight pointer mismatch, the user-authorized Render database preservation gate, provider identity/UI, and complete source-derived cross-surface census.
+
+### Directive 23
+- Expected outcomes: current FORX acceptance scope matches the live receipt and merged source; no completed 200K restore remains falsely pending.
+- Owner: existing T-COD/FORX runtime owner; ROOT/Intake for state propagation and remaining census.
+- Evidence: PR #65 merge commit d24a723ed198bd2e0d0e63f62fcb38a77ba547bb, deployment dep-dbc4qheq1p3s73ca8450, current live status/manifest/runtime-receipt and representative partitions, Render restore log b212063e-e5be-42f2-b16e-73b5588ba2ee, previously accepted durable receipt blob 23c11566645475d8feb329c36ad654b422439625.
+- Persistence/readback: append to the canonical Index and update Root issue #31/Notion status; refetch after each write.
+- Safety: no new source ingestion or duplicated 200K dataset; current acceptance proves restoration from the existing verified checkpoint only.
+- Disposition: FORX CHECKPOINT RESTORE = CLOSED_VERIFIED; OVERDRIVE QUEUE = ZERO PENDING; FULL ROOT INTAKE = OPEN / NOT CLEARED.
+- Remaining work: the independent Root gates listed above and full item-level census, not the now-completed FORX restore.
