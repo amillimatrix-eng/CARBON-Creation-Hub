@@ -175,3 +175,32 @@ The existing draft PR #57 was amended on the same authorized branch:
 4. Preserve the task quiet mode until separately authorized consolidated-lane acceptance passes. Root Intake remains OPEN / NOT CLEARED.
 
 **Directive 23:** Outcome = actual schedule-based liveness and reversible A/B behavior, not merely code presence. Owners = ROOT/T-GOV for governing disposition; existing T-COD/runtime owner for scheduled-run and selector proof; RoI for source/intent reconciliation. Evidence = merged commit, two merge push CI outcomes, actual Actions API schedule query and absent anchor. Remaining work = fresh schedule receipt, anchor readback, guarded B/return validation, then item-level Q drain.
+
+
+## SAME-RUN CONTINUATION — MENDaz SENT-ITEM SOURCE-ID DIVERGENCE — 2026-10-21
+
+### Independent Sent Items route-around and exact readback
+- The pending Mendaz event is `qdrain-20261020-mendazsolar-offered`; canonical key `mendazsolar.co.za|solar-service-follow-through-pilot|2026-10-20`; target state remains `OFFERED`.
+- `MISSING_RECORD_UPSERT` in the existing worker contract rejects an existing key. The proposed safe replay path intentionally demands exact source-evidence identity and fails closed when the IDs differ.
+- The original lookup via mailbox search returned no messages, and direct `fetch_message` attempts for both IDs returned Graph `Id is malformed`. We did **not** treat either response as proof the email was absent.
+- Route-around used the already-connected Outlook `Sent Items` folder: exact folder resolved by `find_mail_folder("Sent Items")`; `list_messages` scoped to that folder and `sentDateTime ge 2026-10-20T00:00:00Z`, then matched the exact subject and recipient. Readback returned 13 items in the scope, including **“One bounded pilot for solar service follow-through” to `info@mendazsolar.co.za`**. The returned Outlook item `id` is exactly the 140-character `source_id` in the pending queue event. This is current primary-source evidence for the item ID, subject, recipient and Sent Items presence.
+- The canonical ledger's corresponding `OUTBOUND_SEND` source ID differs: its string length is 135, with a divergence beginning at character offset 83. The same ledger also carries a `POST_SEND_OFFER_CONTROL_REVIEW` using that shorter ID. The queue and ledger otherwise align on canonical key/domain, current `OFFERED` state, owner, recipient, send time and subject.
+- **Disposition:** source-ID discrepancy confirmed. The pending queue's item ID is independently matched to Sent Items, while the corresponding ledger evidence ID does not match the actual item ID. We do not overwrite or silently equate the IDs in this report. Correct the existing record through the established OVERDRIVE writer, preserving both the original erroneous value and the verified correction provenance.
+
+### Other two pending exact-replay checks
+- Treetops Solar: canonical key, domain, slug, state, owner, recipient and the full source-ID/kind/time/source tuple all match between queue item and existing ledger row.
+- Verminator: same exact identity and evidence checks pass; its organization label varies (“Verminator” versus “Verminator Pest Control”), but the canonical key/domain/slug and actual source evidence match, so the existing row can be preserved without overwriting its label.
+
+### Current implementation/acceptance state
+- PR [#61 — DRAIN-Q: make exact existing upsert replays idempotent](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/61) remains OPEN for the current T-COD review. It requires exact key/domain/slug, state, owner, recipient/thread and source-evidence match. Conflicting source IDs explicitly fail closed.
+- Current head is `5681f37fd78ec3bbdf4a278ef39b474f8cc39794`; current-head Evidence House tests are running. Prior head `a088f09c50a681f35bdcfff85a03386ccd6027d2` passed the full Evidence House suite; it did not yet contain the new mismatched-source-ID regression test.
+- The direct live queue has **3 pending items**, state sequence **23**, and stale last tick `2026-10-16T08:40:31.786740Z`. No queue item has been completed or removed by this reconciliation; no buyer message/payment was sent; no commercial worker was re-enabled.
+- The merged repository-only hourly Plan A/15-minute Plan B control still lacks a post-merge successful scheduled receipt and durable anchor; this is a separate outstanding liveness gate.
+
+### Directive 23
+- **Expected outcome:** reconcile all three existing queue events without duplicate outreach, false evidence, or lifecycle promotion.
+- **Owners:** existing OVERDRIVE/T-COD writer for source-ID reconciliation and replay receipt; ROOT/T-GOV for disposition; RoI for source/intent consistency.
+- **Dependencies:** exact current-head tests, review of PR #61, a source-correction operation through the single canonical writer, and a separately authorized runtime wake.
+- **Readback:** the Sent Items query used the existing Outlook connector and returned the real item ID. The GitHub ledger/state records remain unchanged by this source investigation.
+- **Disposition:** Treetops and Verminator are *exact replay candidates*; Mendaz requires **source-ID correction first**. Root Intake / DRAIN Q remains OPEN / NOT CLEARED until sequence-correlated receipts and the full item-level census are read back.
+- **Remaining work:** finish PR #61 test/readback, route Mendaz correction through the existing writer while preserving provenance, obtain authorized run/receipt/readback, and continue the wider Root Intake census.
