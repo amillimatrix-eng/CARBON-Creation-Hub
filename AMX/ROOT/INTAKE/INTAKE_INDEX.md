@@ -3835,3 +3835,12 @@ This append records the code proposal and test evidence after the accepted 200K 
 - Disposition: 200K DURABLE OUTPUT PASS / CHECKPOINT RESTORE CODE PROPOSAL TESTS PASS / LIVE RESTORE NOT YET ACCEPTED / ROOT INTAKE OPEN.
 - Remaining work: mergeability/current-main reconciliation and authorized review; deploy only after acceptance; perform live restore/readback; complete Reaper Tracker and prompt-write gates, real scheduled Plan A/Plan B receipts/anchor, DR-0021 and FORX-VFY-004, RGR-03 30-image recovery, separate D04 primary-evidence disposition, formal role/mandate readback, exact HASH captures/status rows, Abacus rolling-consensus source recovery, and full item-level cross-surface census.
 
+
+
+## 2026-10-21 — PR #65 closure readback — checkpoint-restore proposal disposition
+
+- A fresh GitHub current-state read of PR #65 (https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/65) reports CLOSED / NOT MERGED, updated/closed at 2026-10-21T05:26:56Z. The visible PR comment is Vercel's deployment-rate-limit notice; the available readback does not identify the actor/cause of closure, so no cause is inferred.
+- Preserve the tested branch head a54c6fcd159d97ce85ca62475ce4880b21f13b5f and Actions run 39549287483 / job 119054532365 as historical proposal/test evidence: the job completed successfully with 103 passed, 3 warnings, plus smoke and container build/runtime steps. This is not merged or deployed implementation.
+- PR #64 remains closed as superseded by the then-newer #65; neither PR merged. Do not describe #65 as open/draft and do not reopen it without an authorized disposition.
+- Current production service remains unchanged. FORX acceptance remains bounded: durable output PASS; restart/restore acceptance OPEN. Next step is an authorized code-integration/review decision followed, if approved, by deployment and live restore/readback. No current production restart, schedule activation, or environment mutation occurred.
+- Directive 23: expected outcome = accurate lifecycle and no false runtime acceptance; owner = existing T-COD/FORX implementation owner + ROOT/T-GOV; dependency = authorized integration decision; evidence = current PR state, issue #11 comment 6308815559, workflow run/job and preserved branch; safety = preserve completed test evidence without claiming deploy/merge; disposition = PROPOSAL CLOSED UNMERGED / LIVE RESTORE OPEN / ROOT INTAKE OPEN; remaining work = authorized implementation decision and live acceptance, alongside the matrix-wide residual queue.
