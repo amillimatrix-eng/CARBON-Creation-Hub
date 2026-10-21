@@ -216,12 +216,64 @@ UPSERT_EVIDENCE_GATES = {
 def _identity_token(value):
     return " ".join(str(value or "").strip().lower().split())
 
+
+def _same_upsert_evidence_replay(
+    existing, *, organization, opportunity, domain, owner, target, recipient, thread_id, evidence
+):
+    """Return True only for an exact replay of already-persisted source evidence.
+
+    Do not use a repeated MISSING_RECORD_UPSERT to overwrite an existing record.
+    An exact, identity-matched evidence replay is a safe idempotent no-op; any
+    identity, lifecycle, or source-evidence mismatch must still fail closed.
+    """
+    if str(existing.get("state") or "").upper() != target:
+        return False
+    if _identity_token(existing.get("organization") or existing.get("buyer") or existing.get("company")) != _identity_token(organization):
+        return False
+    if _identity_token(existing.get("opportunity") or existing.get("title") or existing.get("name")) != _identity_token(opportunity):
+        return False
+    if domain and _identity_token(existing.get("domain")) != _identity_token(domain):
+        return False
+    if _identity_token(existing.get("execution_owner")) != _identity_token(owner):
+        return False
+    if recipient and _identity_token(existing.get("recipient")) != _identity_token(recipient):
+        return False
+    if thread_id and _identity_token(existing.get("thread_id")) != _identity_token(thread_id):
+        return False
+
+    prior_evidence = existing.get("evidence", [])
+    for incoming in evidence:
+        incoming_kind = str(incoming.get("kind") or "").upper()
+        incoming_source_id = str(incoming.get("source_id") or "").strip()
+        if not incoming_kind or not incoming_source_id:
+            return False
+        matching = [
+            prior for prior in prior_evidence
+            if str(prior.get("kind") or "").upper() == incoming_kind
+            and str(prior.get("source_id") or "").strip() == incoming_source_id
+        ]
+        if not matching:
+            return False
+        # If supplied, these fields must match too. A reused source ID with
+        # different provenance is a conflict, not an idempotent replay.
+        for field in ("source", "observed_at"):
+            expected = incoming.get(field)
+            if expected not in (None, "") and not any(
+                str(prior.get(field) or "") == str(expected)
+                for prior in matching
+            ):
+                return False
+    return True
+
+
 def missing_record_upsert(task, opportunities):
     """Create one missing canonical commercial record from attributable external evidence.
 
     This is deliberately narrower than generic CRM creation. It only repairs an
     external-execution-without-record gap under existing iSCOPE/PRI identity rules.
-    Existing records must use EVIDENCE_TRANSITION instead.
+    Existing records are left unchanged unless the exact same identity, state, and
+    source evidence can be proven; that exact replay is an idempotent no-op receipt.
+    New evidence or mismatched state must use EVIDENCE_TRANSITION instead.
     """
     payload = task["payload"]
     records = opportunities.setdefault("records", {})
@@ -252,6 +304,41 @@ def missing_record_upsert(task, opportunities):
     required = UPSERT_EVIDENCE_GATES[target]
     if not any(str(e.get("kind", "")).upper() in required for e in evidence):
         raise ValueError(f"{target} requires attributable evidence for missing-record ingestion")
+
+    observed_at = payload.get("observed_at")
+    next_action = str(payload.get("next_action") or "").strip()
+    if not observed_at or not next_action:
+        raise ValueError("observed_at and next_action are required")
+
+    if key in records:
+        existing = records[key]
+        if _same_upsert_evidence_replay(
+            existing,
+            organization=organization,
+            opportunity=opportunity,
+            domain=domain,
+            owner=owner,
+            target=target,
+            recipient=payload.get("recipient"),
+            thread_id=payload.get("thread_id"),
+            evidence=evidence,
+        ):
+            return {
+                "adapter": "MISSING_RECORD_UPSERT",
+                "opportunity_key": key,
+                "to": target,
+                "created": False,
+                "idempotent": True,
+                "disposition": "ALREADY_RECORDED_EXACT_EVIDENCE_REPLAY",
+                "evidence": evidence,
+                "critic": {
+                    "factual_claims": "PASS_EXISTING_SOURCE_EVIDENCE_READBACK",
+                    "duplicate_identity": "PASS_IDEMPOTENT_EXACT_SOURCE_REPLAY",
+                    "commercial_state": "PASS_NO_LIFECYCLE_CHANGE",
+                    "external_action": "NOT_PERFORMED_BY_ADAPTER",
+                },
+            }
+        raise ValueError("opportunity already exists; exact evidence replay not proven; use EVIDENCE_TRANSITION")
 
     org_token = _identity_token(organization)
     opp_token = _identity_token(opportunity)
