@@ -217,22 +217,40 @@ def _identity_token(value):
     return " ".join(str(value or "").strip().lower().split())
 
 
-def _same_upsert_evidence_replay(
-    existing, *, organization, opportunity, domain, owner, target, recipient, thread_id, evidence
-):
-    """Return True only for an exact replay of already-persisted source evidence.
+def _identity_slug(value):
+    """Normalize a human title or stored slug to a canonical key slug."""
+    return "-".join(
+        "".join(char.lower() if char.isalnum() else " " for char in str(value or "")).split()
+    )
 
-    Do not use a repeated MISSING_RECORD_UPSERT to overwrite an existing record.
-    An exact, identity-matched evidence replay is a safe idempotent no-op; any
-    identity, lifecycle, or source-evidence mismatch must still fail closed.
+
+def _same_upsert_evidence_replay(
+    existing, *, key, organization, opportunity, domain, owner, target, recipient, thread_id, evidence
+):
+    """Return True only for the same canonical key, lifecycle and persisted source evidence.
+
+    The canonical opportunity key/domain/title slug are the identity anchors. Organization
+    labels may legitimately differ (for example, a brand name versus its longer legal or
+    service label); they must not overwrite the existing canonical record on a replay.
+    A key/state/recipient/evidence conflict still fails closed.
     """
+    key_parts = str(key or "").split("|")
+    if len(key_parts) < 2:
+        return False
+    key_domain = _identity_token(key_parts[0])
+    key_slug = _identity_slug(key_parts[1])
+    if not key_domain or not key_slug:
+        return False
     if str(existing.get("state") or "").upper() != target:
         return False
-    if _identity_token(existing.get("organization") or existing.get("buyer") or existing.get("company")) != _identity_token(organization):
+    existing_domain = _identity_token(existing.get("domain"))
+    incoming_domain = _identity_token(domain)
+    if not incoming_domain or incoming_domain != key_domain or existing_domain != key_domain:
         return False
-    if _identity_token(existing.get("opportunity") or existing.get("title") or existing.get("name")) != _identity_token(opportunity):
+    existing_opportunity = existing.get("opportunity") or existing.get("title") or existing.get("name")
+    if _identity_slug(opportunity) != key_slug or _identity_slug(existing_opportunity) != key_slug:
         return False
-    if domain and _identity_token(existing.get("domain")) != _identity_token(domain):
+    if not _identity_token(organization) or not _identity_token(existing.get("organization") or existing.get("buyer") or existing.get("company")):
         return False
     if _identity_token(existing.get("execution_owner")) != _identity_token(owner):
         return False
@@ -312,6 +330,7 @@ def missing_record_upsert(task, opportunities):
         existing = records[key]
         if _same_upsert_evidence_replay(
             existing,
+            key=key,
             organization=organization,
             opportunity=opportunity,
             domain=domain,
