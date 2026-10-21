@@ -3735,3 +3735,46 @@ This near-identical copy repeats the canonical zero-pending writer receipt immed
 - **Safety/preservation:** prior 50K/100K and OOM evidence retained; no unsupported business qualification or money-in claim from GeoNames populated-place nodes.
 - **Disposition:** current 200K production durable output PASS; restart/resume behavior OPEN; overall Root Intake OPEN / NOT CLEARED.
 - **Remaining:** prove restart/resume from an existing durable checkpoint and finish the other active cross-surface items listed above.
+
+
+## 2026-10-21 — DRAIN-Q CONTINUATION / SCHEDULER, REAPER, HASH, D04 SOURCE-SEARCH DELTA
+
+This addendum records the latest source-backed deltas after the 200K FORX proof. It does not relax the Owner-directed quiet-mode rule and does not classify the broader Intake as clear.
+
+### 1. Queue and current accepted FORX state
+- Overdrive queue: state blob 69767e11f945e1040028a5972fbe5209d4cba658, sequence 26, 26 COMPLETED / 0 PENDING / 0 FAILED.
+- Opportunities/claims: 124 records / 124 claims; key join 124/124; 118 WAITING / 6 CLOSED / 0 READY / 0 external-ready. WAITING claims remain buyer/provider waits and are not closed.
+- FORX run forx-20261010-200k-01: 200,000 selected coordinate-backed nodes, 200 partitions; durable main receipt blob 23c11566645475d8feb329c36ad654b422439625 = PASS_DURABLE_PARTITIONS_VERIFIED, 200/200 exact-byte partition hashes and 200,000 unique IDs. Issue #11 now remains open for checkpoint restart/resume acceptance only, not for the already-passed single-run output/durable-readback criteria. The Index’s prior 200K delta remains controlling.
+
+### 2. Scheduled Plan A / Plan B — discrepancy confirmed, not cleared
+- Current main file .github/workflows/overdrive-recovery.yml (blob 30c04db35ee44cb47538d7c073b93354bbc8fe3d) declares Plan A hourly cron 0 * * * * and Plan B 5,20,35,50 * * * *.
+- Repository API readback: default branch main; repository not archived/disabled; workflow ID 371317020 is state active.
+- Actual schedule-event readback for the existing workflow returns latest scheduled run ID 38905426388, created 2026-10-16T13:07:14Z, completed successfully at 13:10:23Z; no scheduled event later than 16 October appears in the latest returned schedule history, despite current successful push-triggered runs.
+- Existing anchor overdrive/recovery-control/plan-a-anchor.json still returns 404. A push run or manual dispatch is not a scheduled receipt and must not be relabeled as one.
+- **Disposition:** current cron declaration/configuration = PRESENT; scheduler liveness/post-merge Plan-A/Plan-B execution = NOT VERIFIED / OPEN. Cause of the missing newer scheduled events is not established. Do not edit schedule settings or dispatch a surrogate event under this receipt. Existing authorized workflow/admin owner must inspect scheduler delivery/default-branch/action event suppression and persist a real scheduled receipt plus anchor, then exercise Plan B fallback and return-to-A in the existing safe fixture.
+
+### 3. Bounty Reaper — prompt-only write rejected; paused state preserved
+- Existing automation ID 6abf8e6d6a188191aee2b5d3fe24a9c9 remains disabled with its existing hourly exact schedule unchanged.
+- The T-COD-accepted prompt-only transfer was attempted using only the prompt field (canonical Registry v1.3/root + accepted 13-head re-entrant Instigator contract); provider rejected the write with automation_schedule_not_available because hourly frequency is not supported by the current plan. The saved prompt therefore remains stale; this is a provider write-path/plan gate, not successful adoption.
+- **No** schedule change, enable-state change, alternate task, bounty submission, Tracker write, or payment action occurred. Canonical tracker remains TRACKER_WRITE_BLOCKED; Q1 remains UNKNOWN, NOT ZERO.
+- **Disposition:** OPEN / PROVIDER PROMPT-WRITE GATE / RUNTIME ADOPTION NOT VERIFIED. Existing scheduler/provider owner must make a supported in-place prompt update possible without changing the current schedule or disabled state, or ROOT/T-GOV must issue an explicit authorized disposition. After saving, independently read back the saved prompt and then obtain a separately authorized attributable runtime result. Do not workaround by switching cadence or enabling Reaper.
+
+### 4. HASH exact-capture queue — source searched; still pending
+- Connected Dropbox exact queries for builder-agent-loop-gate.txt, local-inference-gate.txt, packaging-restore-gate.txt, and security-gate.txt returned 0 results each. Connected GitHub/Notion/Files results surfaced existing pointers and receipts, not the four original byte payloads.
+- Last evidenced OPEN=4; current OPEN=UNKNOWN until the complete live STATUS register is read. Four exact-capture obligations remain PENDING; verified closures=0. No digest guessed; no STATUS row or dashboard counter changed. The manager's state was not changed by this search.
+- **Next action:** ROOT/T-GOV + MASTER/LIBRARIAN recover the authorized existing T-LIB/runtime custodian for C:\LIB\AMX\evidence and authorized STATUS/dashboard access; then capture exact bytes, compute SHA-256, reconcile all live STATUS rows, update supported fields only, and independently read back every row and dashboard. Until then: OPEN / PENDING EXACT CAPTURE.
+
+### 5. D04 evidence source recovery — bounded pass, no new run
+- Connected Dropbox, current-main GitHub, connected Notion and Files/Library searches did not surface the separate Owner-reported 143/148 clean execution’s own primary vector/run receipt.
+- Preserve the accepted historic frozen-vector interpretation: 96.62% measured score, 77 PASS / 6 PARTIAL / 0 measured FAIL, five controls UNMEASURED_NOT_PROVEN and excluded from the denominator. This is not 88/88 pass or third-party certification.
+- Separate Owner-reported execution remains OWNER-REPORTED / PRIMARY VECTOR NOT FOUND IN THE SOURCES SEARCHED. Do not deny that the run happened, substitute the historical vector, or ask for another run. Public/release use of that separate run remains HOLD pending its own primary evidence or a formal ROOT/T-GOV evidence disposition.
+- **Next action:** MASTER/LIBRARIAN continues authorized retained-source recovery; ROOT/T-GOV records explicit evidence disposition; T-MED keeps the separate claim out of public copy until then.
+
+### Directive 23 — current disposition
+- **Expected outcomes:** maintain truthful queue parity; keep completed runtime acceptance closed at the correct scope; avoid false closure for the actual scheduled trigger, prompt-write, tracker/source custody, and D04 gates.
+- **Owner:** ROOT/Intake + ROOT/T-GOV for full census and authority; T-COD/Overdrive for queue continuity and restart/resume; existing workflow owner for scheduled liveness; existing scheduler/provider owner for Reaper; T-LIB/HASH custodian for exact capture; MASTER/LIBRARIAN + ROOT/T-GOV for D04 source disposition.
+- **Action/evidence:** current-main blobs above; 200K durable receipt; GitHub API workflow/schedule-history readback; exact Reaper provider rejection; connected Dropbox/Notion/Files source search results.
+- **Readback/persistence:** this current-state delta appended to the canonical Index; issue #31 to hold the same state summary. Check the new blob after write.
+- **Safety/preservation:** no queued claim force-closed; no scheduler reactivation/dispatch; no cadence change to bypass the prompt writer; no guessed hash; no D04 rerun/vector substitution; all existing histories remain preserved.
+- **Disposition:** OVERDRIVE EVENT QUEUE ZERO PENDING; GOVERNANCE DISPOSITION BUCKET ZERO UNTRIAGED; FORX 200K DURABLE OUTPUT PASS / RESTART-RESUME OPEN; FULL ROOT INTAKE OPEN / NOT CLEARED.
+- **Remaining:** full source-derived cross-surface item census and the specific behavioral, scheduler liveness, source-custody, provider prompt-write, Tracker, authority/role-binding, and release-evidence gates above.
