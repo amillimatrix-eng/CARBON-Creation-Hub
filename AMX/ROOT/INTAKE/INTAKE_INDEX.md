@@ -3967,3 +3967,17 @@ The latest GitHub API open-item census returns **24 records: 15 issues + 9 pull 
 - **Safety/preservation:** no manual ledger/count edit; no rewrite of historical run fields; no duplicate outreach; no scheduler activation; no false money-in claim.
 - **Disposition:** **OVERDRIVE EVENT QUEUE ZERO PENDING / CLAIMS 119 WAITING AND 6 CLOSED / RECORD-COUNT INVARIANT OPEN / FORX COMPLETED-CHECKPOINT RESTORE CLOSED_VERIFIED / FULL ROOT INTAKE OPEN—NOT CLEARED.**
 - **Remaining work:** review/authorize count-invariant repair and obtain post-write exact blob readback; resolve scheduled Plan A/Plan B receipts/anchor, Reaper Tracker/prompt writes, four HASH source captures, distinct D04 clean-run primary vector, formal Commercial Manager authority, Abacus canonical source, RGR-03 30-image semantics, DR-0021/FORX-VFY-004 behavior, flight pointer mismatch, Render database preservation, provider identity/UI, and full source-derived cross-surface census.
+
+## 2026-10-21 — ADDITIONAL OUTLOOK SOURCE SEARCH / D04 + HASH + RGR-03
+
+An additional native Outlook search pass was performed for the separate D04 primary vector, HASH source files, and RGR-03 image membership. Each of the following queries returned zero messages in the connected Outlook mailbox search:
+- `143/148`
+- `"96.62"`
+- `D04 primary vector`
+- `security-gate.txt`
+- `builder-agent-loop-gate.txt`
+- `30-image RGR-03`
+
+This is a scoped mailbox search result, not proof that material does not exist elsewhere. The D04 separate clean-run primary vector remains not found in sources searched; no rerun or vector substitution is authorized. HASH original bytes remain pending exact capture; this does not update the canonical STATUS register. RGR-03 membership/semantics remains unknown; no replacement list is fabricated.
+
+Current issue/PR census after current GitHub readback remains 24 open records (15 issues + 9 PRs). PR #66 is ready for review but not mergeable against current main, not merged/deployed, with backend tests green and Vercel preview blocked by daily quota. PR #11 is closed after verified FORX checkpoint-restore PASS. The full Root Intake remains OPEN / NOT CLEARED.
