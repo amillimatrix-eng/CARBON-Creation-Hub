@@ -4162,3 +4162,11 @@ A further read-only Dropbox search of `colour registry`, `BUILD CANON GOVERNANCE
 - Shared Root Intake / receiver-specific dispatch: [existing page](https://app.notion.com/p/3f48f8b56cd781a0964ccc894000a8f5?pvs=204)
 
 **Status:** instruction and assignment metadata have persisted/readback. These are not recipient acknowledgements, implementation acceptance or proof of all-librarian behavior. Root Intake remains OPEN / NOT CLEARED.
+
+
+## 2026-10-21 — OPEN PR HEAD-SHA READBACK FOR OWNER ROUTING
+
+- Current owner routing snapshot: [CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md](CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md), current blob `ea516a6d7f276f0b34fd70fa02892034676a947b`, updated by source readback.
+- Exact current PR head and base SHA values for all 11 open PRs were fetched from GitHub and recorded under “Exact PR source identities” in that addendum. Each entry remains OPEN/UNMERGED; head SHAs do not replace changed-file blob SHAs, testing, or runtime acceptance.
+- Current PR #68 head is `c9e60ff2e84e6bf5752046c0f28d0d0fe0781555`, base `e4f1a697f669453777bec45976fd7111c5707042`. It is included because the earlier 24-record index snapshot predates it.
+- The current PR head register is a source-bound snapshot; refresh before any consequential action and preserve prior values as historical provenance.
