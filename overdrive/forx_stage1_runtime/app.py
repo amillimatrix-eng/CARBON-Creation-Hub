@@ -1,4 +1,5 @@
-import csv, hashlib, io, json, os, shutil, sqlite3, tempfile, threading, zipfile
+import csv, hashlib, io, json, os, re, shutil, sqlite3, tempfile, threading, zipfile
+from pathlib import Path
 from datetime import datetime, timezone
 from urllib.parse import urlparse
 
@@ -45,6 +46,7 @@ state = {
     "manifest": None,
     "receipt": None,
     "errors": [],
+    "restored_from_checkpoint": False,
 }
 lock = threading.Lock()
 
@@ -583,6 +585,203 @@ def combine_source_stores(a, g, target):
         conn.close()
 
 
+
+def restore_durable_checkpoint(
+    run_id, checkpoint_id, target, partition_size, source_adapter, project_root=None
+):
+    """Restore a previously accepted repository-persisted checkpoint after process restart.
+
+    The checkpoint is trusted only after validating its durable receipt, manifest, exact
+    partition bytes, per-partition hashes, globally unique source IDs, coordinates, and
+    selection digest. A missing checkpoint means this is a new run; a present but invalid
+    checkpoint fails closed instead of silently overwriting its evidence.
+    """
+    if not re.fullmatch(r"[A-Za-z0-9_-]{1,100}", str(checkpoint_id or "")):
+        raise ValueError("invalid checkpoint_id; expected a safe repository path token")
+
+    base = Path(project_root) if project_root is not None else Path(__file__).resolve().parents[2]
+    proof_dir = base / "overdrive" / "forx_50k_proof" / checkpoint_id
+    if not proof_dir.exists():
+        return None
+    if not proof_dir.is_dir():
+        raise ValueError(f"durable checkpoint path is not a directory: {proof_dir}")
+
+    required = ("status.json", "manifest.json", "durable-readback-receipt.json")
+    missing = [name for name in required if not (proof_dir / name).is_file()]
+    if missing:
+        raise ValueError(f"incomplete durable checkpoint; missing {missing}")
+
+    try:
+        status_doc = json.loads((proof_dir / "status.json").read_text(encoding="utf-8"))
+        manifest = json.loads((proof_dir / "manifest.json").read_text(encoding="utf-8"))
+        durable_receipt = json.loads(
+            (proof_dir / "durable-readback-receipt.json").read_text(encoding="utf-8")
+        )
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise ValueError(f"cannot read durable checkpoint metadata: {exc}") from exc
+
+    def require(condition, message):
+        if not condition:
+            raise ValueError(f"durable checkpoint validation failed: {message}")
+
+    def exact_int(doc, key, expected):
+        value = doc.get(key)
+        return type(value) is int and value == expected
+
+    require(status_doc.get("status") == "COMPLETE", "status is not COMPLETE")
+    require(status_doc.get("mode") == "production", "status mode is not production")
+    require(status_doc.get("run_id") == run_id, "status run_id mismatch")
+    require(manifest.get("manifest_type") == "FORX_PRODUCTION_MANIFEST", "wrong manifest type")
+    require(manifest.get("mode") == "production", "manifest mode is not production")
+    require(manifest.get("run_id") == run_id, "manifest run_id mismatch")
+    require(manifest.get("checkpoint_id") == checkpoint_id, "manifest checkpoint_id mismatch")
+    require(manifest.get("source_adapter") == source_adapter, "source adapter mismatch")
+    require(exact_int(status_doc, "node_count", target), "status node_count mismatch")
+    require(exact_int(status_doc, "target", target), "status target mismatch")
+    require(exact_int(status_doc, "partition_size", partition_size), "status partition_size mismatch")
+    require(exact_int(manifest, "selected_count", target), "manifest selected_count mismatch")
+    require(exact_int(manifest, "target", target), "manifest target mismatch")
+    require(exact_int(manifest, "partition_size", partition_size), "manifest partition_size mismatch")
+    require(exact_int(durable_receipt, "exact_node_count_readback", target), "receipt node count mismatch")
+    require(exact_int(durable_receipt, "unique_source_record_id_count", target), "receipt unique ID count mismatch")
+    require(exact_int(durable_receipt, "coordinate_backed_count", target), "receipt coordinate count mismatch")
+    require(durable_receipt.get("status") == "PASS_DURABLE_PARTITIONS_VERIFIED", "durable receipt is not PASS")
+    require(durable_receipt.get("run_id") == run_id, "receipt run_id mismatch")
+    require(durable_receipt.get("partition_hashes_verified") is True, "receipt hash verification flag is not true")
+    require(durable_receipt.get("source_file_sha256") == manifest.get("source_file_sha256"), "source-file hash mismatch")
+    require(durable_receipt.get("selection_sha256") == manifest.get("selection_sha256"), "selection hash mismatch")
+    require(not status_doc.get("errors"), "status contains runtime errors")
+
+    expected_partitions = (target + partition_size - 1) // partition_size
+    require(exact_int(status_doc, "partition_count", expected_partitions), "status partition_count mismatch")
+    require(exact_int(manifest, "partition_count", expected_partitions), "manifest partition_count mismatch")
+    require(exact_int(durable_receipt, "partition_count", expected_partitions), "receipt partition_count mismatch")
+    require(exact_int(durable_receipt, "partition_size", partition_size), "receipt partition_size mismatch")
+
+    hashes = manifest.get("partition_hashes")
+    receipt_hashes = durable_receipt.get("all_partition_hashes")
+    expected_keys = {str(i) for i in range(1, expected_partitions + 1)}
+    require(isinstance(hashes, dict) and set(hashes) == expected_keys, "manifest partition hash index mismatch")
+    require(receipt_hashes == hashes, "durable receipt partition hashes differ from manifest")
+    require(
+        all(isinstance(value, str) and re.fullmatch(r"[0-9a-f]{64}", value) for value in hashes.values()),
+        "manifest contains malformed SHA-256 values",
+    )
+
+    source_hash = manifest.get("source_file_sha256")
+    selection_hash = manifest.get("selection_sha256")
+    require(isinstance(source_hash, str) and re.fullmatch(r"[0-9a-f]{64}", source_hash), "malformed source-file SHA-256")
+    require(isinstance(selection_hash, str) and re.fullmatch(r"[0-9a-f]{64}", selection_hash), "malformed selection SHA-256")
+
+    parts = []
+    seen_ids = set()
+    selection_digest = hashlib.sha256()
+    node_total = 0
+
+    for index in range(1, expected_partitions + 1):
+        part_path = proof_dir / f"partition-{index:03d}.json"
+        require(part_path.is_file(), f"partition {index} is missing")
+        try:
+            raw = part_path.read_bytes()
+            body = json.loads(raw)
+        except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+            raise ValueError(f"cannot read durable checkpoint partition {index}: {exc}") from exc
+
+        actual_hash = hashlib.sha256(raw).hexdigest()
+        require(actual_hash == hashes[str(index)], f"partition {index} SHA-256 mismatch")
+        require(body.get("run_id") == run_id, f"partition {index} run_id mismatch")
+        require(body.get("checkpoint_id") == checkpoint_id, f"partition {index} checkpoint_id mismatch")
+        require(body.get("partition_index") == index, f"partition {index} index mismatch")
+        require(body.get("schema_version") == manifest.get("schema_version"), f"partition {index} schema mismatch")
+        nodes = body.get("nodes")
+        require(isinstance(nodes, list) and len(nodes) > 0, f"partition {index} has no nodes")
+        require(len(nodes) <= partition_size, f"partition {index} exceeds partition_size")
+
+        for node in nodes:
+            require(isinstance(node, dict), f"partition {index} contains a non-object node")
+            record_id = node.get("source_record_id")
+            require(isinstance(record_id, str) and bool(record_id), f"partition {index} has a missing source_record_id")
+            require(record_id not in seen_ids, f"duplicate source_record_id: {record_id}")
+            seen_ids.add(record_id)
+            latitude = node.get("latitude")
+            longitude = node.get("longitude")
+            require(type(latitude) in (int, float), f"node {record_id} has no numeric latitude")
+            require(type(longitude) in (int, float), f"node {record_id} has no numeric longitude")
+            require(-90 <= latitude <= 90, f"node {record_id} latitude is out of range")
+            require(-180 <= longitude <= 180, f"node {record_id} longitude is out of range")
+            if node_total:
+                selection_digest.update(b"\n")
+            selection_digest.update(record_id.encode("utf-8"))
+            node_total += 1
+
+        parts.append({
+            "partition_index": index,
+            "count": len(nodes),
+            "sha256": actual_hash,
+            "path": str(part_path),
+        })
+
+    require(node_total == target, f"partition node total {node_total} does not equal target {target}")
+    require(len(seen_ids) == target, f"unique source ID total {len(seen_ids)} does not equal target {target}")
+    require(selection_digest.hexdigest() == selection_hash, "selection SHA-256 mismatch")
+
+    restored_receipt = {
+        "schema_version": manifest.get("schema_version", "2.2"),
+        "receipt_type": "FORX_PRODUCTION_RUNTIME_OUTPUT",
+        "status": "PRODUCTION_RUNTIME_RESTORED_FROM_DURABLE_CHECKPOINT",
+        "mode": "production",
+        "run_id": run_id,
+        "checkpoint_id": checkpoint_id,
+        "source_adapter": manifest.get("source_adapter"),
+        "source": manifest.get("source"),
+        "source_url": manifest.get("source_url"),
+        "source_license": manifest.get("source_license"),
+        "source_revision": manifest.get("source_revision"),
+        "source_file_sha256_observed": source_hash,
+        "raw_rows_ingested": manifest.get("raw_rows_ingested"),
+        "rows_rejected": manifest.get("rows_rejected"),
+        "duplicates_removed": manifest.get("duplicates_removed"),
+        "normalized_selected_nodes": node_total,
+        "coordinate_backed_count": node_total,
+        "country_count": manifest.get("country_count"),
+        "category_count": manifest.get("category_count"),
+        "source_distribution": manifest.get("source_distribution", {}),
+        "website_domain_bearing_count": manifest.get("website_domain_bearing_count"),
+        "target": target,
+        "partition_count": expected_partitions,
+        "partition_size": partition_size,
+        "partition_hashes": hashes,
+        "selection_sha256": selection_hash,
+        "source_cursor_start": manifest.get("source_cursor_start", 0),
+        "source_cursor_next": node_total,
+        "cumulative_unique_count_snapshot": node_total,
+        "started_at": manifest.get("started_at"),
+        "completed_at": manifest.get("completed_at"),
+        "errors": [],
+        "restored_from_durable_checkpoint": True,
+        "durable_readback_receipt_status": durable_receipt.get("status"),
+        "uncertainty_notes": [
+            "The process restored exact partition bytes from the repository-persisted checkpoint.",
+            "The retained receipt proves durable output integrity; this restore does not prove continuous peak-memory telemetry or a resumable in-progress source cursor.",
+            "GeoNames populated-place nodes are not a business registry and must be qualified before commercial use.",
+        ],
+    }
+
+    return {
+        "status": "COMPLETE",
+        "phase": "DURABLE_CHECKPOINT_RESTORED",
+        "started_at": manifest.get("started_at"),
+        "completed_at": manifest.get("completed_at"),
+        "node_count": node_total,
+        "partitions": parts,
+        "partition_dir": str(proof_dir),
+        "manifest": manifest,
+        "receipt": restored_receipt,
+        "errors": [],
+        "restored_from_checkpoint": True,
+    }
+
+
 def build():
     with lock:
         state["status"] = "RUNNING"
@@ -593,6 +792,29 @@ def build():
     source_store_paths = set()
     partition_dir = None
     try:
+        if MODE != "stage1-proof":
+            restored = restore_durable_checkpoint(
+                RUN_ID, CHECKPOINT_ID, TARGET, PARTITION_SIZE, SOURCE_ADAPTER
+            )
+            if restored is not None:
+                with lock:
+                    state.update(restored)
+                print(
+                    "FORX_CHECKPOINT_RESTORE " + json.dumps(
+                        {
+                            "run_id": RUN_ID,
+                            "checkpoint_id": CHECKPOINT_ID,
+                            "status": state["status"],
+                            "restored_nodes": state["node_count"],
+                            "partition_count": len(state["partitions"]),
+                            "source": "repository-persisted durable checkpoint",
+                        },
+                        separators=(",", ":"), sort_keys=True,
+                    ),
+                    flush=True,
+                )
+                return
+
         if MODE == "stage1-proof" or SOURCE_ADAPTER == "audiala-stage1":
             source_result = load_audiala()
             source_store_paths.add(source_result["node_store_path"])
@@ -779,6 +1001,8 @@ def root():
         "target": TARGET,
         "partition_size": PARTITION_SIZE,
         "source_adapter": SOURCE_ADAPTER,
+        "checkpoint_id": CHECKPOINT_ID,
+        "restored_from_checkpoint": state.get("restored_from_checkpoint", False),
     }
 
 
@@ -798,6 +1022,8 @@ def status():
         "country_count": r.get("country_count"),
         "category_count": r.get("category_count"),
         "errors": state.get("errors"),
+        "checkpoint_id": CHECKPOINT_ID,
+        "restored_from_checkpoint": state.get("restored_from_checkpoint", False),
     }
 
 
