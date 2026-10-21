@@ -874,6 +874,16 @@ def detect_work(opportunities):
     write(SIGNALS, signals)
     return signals
 
+def reconcile_opportunity_count(opportunities):
+    """Derive the current map count; never rewrite historical run snapshots."""
+    records = opportunities.get("records")
+    if not isinstance(records, dict):
+        raise ValueError("opportunities.records must be an object")
+    count = len(records)
+    opportunities["record_count"] = count
+    return count
+
+
 def tick():
     if not claim_lock():
         print(json.dumps({"status": "HOLD", "reason": "active_tick"}))
@@ -965,6 +975,7 @@ def tick():
             "processed": processed,
             "pending": sum(t["status"] == "PENDING" for t in state.get("queue", [])),
         }
+        reconcile_opportunity_count(opportunities)
         write(OPPORTUNITIES, opportunities)
         write(STATE, state)
         print(json.dumps(state["last_tick_result"], sort_keys=True))
