@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-21T04:36:24.564704+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": false,
+    "critic": {
+      "commercial_state": "PASS_NO_LIFECYCLE_CHANGE",
+      "duplicate_identity": "PASS_IDEMPOTENT_EXACT_SOURCE_REPLAY",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EXISTING_SOURCE_EVIDENCE_READBACK"
+    },
+    "disposition": "ALREADY_RECORDED_EXACT_EVIDENCE_REPLAY",
+    "evidence": [
+      {
+        "kind": "OUTBOUND_SEND",
+        "observed_at": "2026-10-20T07:48:04Z",
+        "source": "OUTLOOK",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvgAAAA==",
+        "subject": "One maintenance-callout handoff pilot",
+        "summary": "Sent from usduplessis@outlook.com; fixed fee R9,380 once-off; one existing request source and one tracking destination; 5-business-day test/handover after scope and access accepted; hosting/API fees excluded."
+      }
+    ],
+    "idempotent": true,
+    "opportunity_key": "treetopssolar.co.za|maintenance-callout-handoff-pilot|2026-10-20",
+    "to": "OFFERED"
+  },
+  "sequence": 25,
+  "sha256": "76f54070226ed32d391d2bd1f6a9466f393a86e5ec13a94e407c746b480d0aaa",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261020-treetopssolar-offered"
+}

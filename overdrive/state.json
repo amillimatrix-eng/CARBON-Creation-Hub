@@ -23,20 +23,19 @@
       "state": "ACTIVE"
     }
   },
-  "last_receipt": "receipts/0000000023-qdrain-20261015-naomii-offered.json",
+  "last_receipt": "receipts/0000000026-qdrain-20261020-verminator-offered.json",
   "last_signal_count": {
-    "PRI": 80,
+    "PRI": 96,
     "iSCOPE": 22
   },
-  "last_tick": "2026-10-16T08:40:31.786740+00:00",
+  "last_tick": "2026-10-21T04:36:24.565084+00:00",
   "last_tick_result": {
     "pending": 0,
-    "processed": [],
-    "signals": {
-      "PRI": 80,
-      "iSCOPE": 22
-    },
-    "state_changed": true
+    "processed": [
+      "qdrain-20261020-mendazsolar-offered",
+      "qdrain-20261020-treetopssolar-offered",
+      "qdrain-20261020-verminator-offered"
+    ]
   },
   "queue": [
     {
@@ -714,9 +713,9 @@
       "status": "COMPLETED"
     },
     {
-      "id": "qdrain-20261020-mendazsolar-offered",
       "adapter": "MISSING_RECORD_UPSERT",
-      "status": "PENDING",
+      "completed_at": "2026-10-21T04:36:24.564667+00:00",
+      "id": "qdrain-20261020-mendazsolar-offered",
       "payload": {
         "due_at": null,
         "evidence": [
@@ -729,14 +728,14 @@
             "summary": "Sent from usduplessis@outlook.com; fixed fee R9,380 once-off; one existing service-request source and one tracking destination; 5-business-day test/handover after scope and access accepted; hosting/API fees excluded."
           },
           {
-            "kind": "OUTLOOK_SENT_ITEM_ID_READBACK",
-            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
-            "source": "OUTLOOK_SENT_ITEMS_READBACK",
             "folder": "Sent Items",
-            "subject": "One bounded pilot for solar service follow-through",
-            "recipient": "info@mendazsolar.co.za",
+            "kind": "OUTLOOK_SENT_ITEM_ID_READBACK",
             "query_filter": "sentDateTime ge 2026-10-20T00:00:00Z",
             "receipt_path": "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md",
+            "recipient": "info@mendazsolar.co.za",
+            "source": "OUTLOOK_SENT_ITEMS_READBACK",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+            "subject": "One bounded pilot for solar service follow-through",
             "verification_receipt_commit": "5ba77e811c435e362566d97c2d5a954d44ef9bc9"
           }
         ],
@@ -751,12 +750,15 @@
         "opportunity_key": "mendazsolar.co.za|solar-service-follow-through-pilot|2026-10-20",
         "recipient": "info@mendazsolar.co.za",
         "to": "OFFERED"
-      }
+      },
+      "receipt": "receipts/0000000024-qdrain-20261020-mendazsolar-offered.json",
+      "receipt_sha256": "2bc858095dbd10e908bfd58ee98923bb86ef684f7f07ea7a71bd50edcc3766aa",
+      "status": "COMPLETED"
     },
     {
-      "id": "qdrain-20261020-treetopssolar-offered",
       "adapter": "MISSING_RECORD_UPSERT",
-      "status": "PENDING",
+      "completed_at": "2026-10-21T04:36:24.564886+00:00",
+      "id": "qdrain-20261020-treetopssolar-offered",
       "payload": {
         "due_at": null,
         "evidence": [
@@ -780,12 +782,15 @@
         "opportunity_key": "treetopssolar.co.za|maintenance-callout-handoff-pilot|2026-10-20",
         "recipient": "info@treetopssolar.co.za",
         "to": "OFFERED"
-      }
+      },
+      "receipt": "receipts/0000000025-qdrain-20261020-treetopssolar-offered.json",
+      "receipt_sha256": "76f54070226ed32d391d2bd1f6a9466f393a86e5ec13a94e407c746b480d0aaa",
+      "status": "COMPLETED"
     },
     {
-      "id": "qdrain-20261020-verminator-offered",
       "adapter": "MISSING_RECORD_UPSERT",
-      "status": "PENDING",
+      "completed_at": "2026-10-21T04:36:24.565080+00:00",
+      "id": "qdrain-20261020-verminator-offered",
       "payload": {
         "due_at": null,
         "evidence": [
@@ -809,10 +814,13 @@
         "opportunity_key": "verminator.co.za|site-visit-to-follow-up-workflow-pilot|2026-10-20",
         "recipient": "quality@verminator.co.za",
         "to": "OFFERED"
-      }
+      },
+      "receipt": "receipts/0000000026-qdrain-20261020-verminator-offered.json",
+      "receipt_sha256": "b4d3e36a99fe860a00ae243ef3444570bd7f9661854bc178287eff712df006f2",
+      "status": "COMPLETED"
     }
   ],
   "ready_claims": 0,
-  "sequence": 23,
+  "sequence": 26,
   "version": 2
 }

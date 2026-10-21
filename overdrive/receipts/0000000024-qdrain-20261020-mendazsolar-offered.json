@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-10-21T04:36:24.564368+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": false,
+    "critic": {
+      "commercial_state": "PASS_NO_LIFECYCLE_CHANGE",
+      "duplicate_identity": "PASS_CANONICAL_KEY_DOMAIN_AND_SLUG",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_LINKED_SENT_ITEMS_READBACK"
+    },
+    "evidence": [
+      {
+        "kind": "OUTBOUND_SEND",
+        "observed_at": "2026-10-20T07:47:43Z",
+        "source": "OUTLOOK",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+        "subject": "One bounded pilot for solar service follow-through",
+        "summary": "Sent from usduplessis@outlook.com; fixed fee R9,380 once-off; one existing service-request source and one tracking destination; 5-business-day test/handover after scope and access accepted; hosting/API fees excluded."
+      },
+      {
+        "folder": "Sent Items",
+        "kind": "OUTLOOK_SENT_ITEM_ID_READBACK",
+        "query_filter": "sentDateTime ge 2026-10-20T00:00:00Z",
+        "receipt_path": "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md",
+        "recipient": "info@mendazsolar.co.za",
+        "source": "OUTLOOK_SENT_ITEMS_READBACK",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+        "subject": "One bounded pilot for solar service follow-through",
+        "verification_receipt_commit": "5ba77e811c435e362566d97c2d5a954d44ef9bc9"
+      }
+    ],
+    "idempotent": false,
+    "lifecycle_changed": false,
+    "opportunity_key": "mendazsolar.co.za|solar-service-follow-through-pilot|2026-10-20",
+    "source_id_corrected": true,
+    "source_id_correction": {
+      "affected_evidence_rows": [
+        {
+          "corrected_source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-20T07:47:43Z",
+          "previous_source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+          "source": "OUTLOOK"
+        }
+      ],
+      "corrected_source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+      "evidence_kind": "OUTBOUND_SEND",
+      "field": "evidence.source_id",
+      "kind": "SOURCE_ID_CORRECTION",
+      "previous_source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+      "query_filter": "sentDateTime ge 2026-10-20T00:00:00Z",
+      "recipient": "info@mendazsolar.co.za",
+      "source": "OUTLOOK",
+      "subject": "One bounded pilot for solar service follow-through",
+      "verification_folder": "Sent Items",
+      "verification_method": "OUTLOOK_SENT_ITEMS_LIST_READBACK",
+      "verification_receipt_commit": "5ba77e811c435e362566d97c2d5a954d44ef9bc9",
+      "verification_receipt_path": "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md",
+      "verification_source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA=="
+    },
+    "to": "OFFERED"
+  },
+  "sequence": 24,
+  "sha256": "2bc858095dbd10e908bfd58ee98923bb86ef684f7f07ea7a71bd50edcc3766aa",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261020-mendazsolar-offered"
+}
