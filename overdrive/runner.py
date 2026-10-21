@@ -284,6 +284,146 @@ def _same_upsert_evidence_replay(
     return True
 
 
+
+def _reconcile_verified_source_id(
+    existing, *, key, organization, opportunity, domain, owner, target, recipient, thread_id, evidence
+):
+    """Correct a source-ID typo only with a linked independent Sent Items readback.
+
+    The old value is retained in both per-field provenance and a record-level correction
+    history. This path does not change commercial lifecycle or imply an external action.
+    """
+    key_parts = str(key or "").split("|")
+    if len(key_parts) < 2:
+        return None
+    key_domain = _identity_token(key_parts[0])
+    key_slug = _identity_slug(key_parts[1])
+    existing_opportunity = existing.get("opportunity") or existing.get("title") or existing.get("name")
+    if (
+        not key_domain or not key_slug
+        or _identity_token(domain) != key_domain
+        or _identity_token(existing.get("domain")) != key_domain
+        or _identity_slug(opportunity) != key_slug
+        or _identity_slug(existing_opportunity) != key_slug
+        or str(existing.get("state") or "").upper() != target
+        or _identity_token(existing.get("execution_owner")) != _identity_token(owner)
+        or not _identity_token(organization)
+        or not _identity_token(existing.get("organization") or existing.get("buyer") or existing.get("company"))
+        or (recipient and _identity_token(existing.get("recipient")) != _identity_token(recipient))
+        or (thread_id and _identity_token(existing.get("thread_id")) != _identity_token(thread_id))
+    ):
+        return None
+
+    outbound = [e for e in evidence if str(e.get("kind") or "").upper() == "OUTBOUND_SEND"]
+    readbacks = [e for e in evidence if str(e.get("kind") or "").upper() == "OUTLOOK_SENT_ITEM_ID_READBACK"]
+    if len(outbound) != 1 or len(readbacks) != 1:
+        return None
+    sent = outbound[0]
+    readback = readbacks[0]
+    current_id = str(sent.get("source_id") or "").strip()
+    verified_id = str(readback.get("source_id") or "").strip()
+    subject = str(sent.get("subject") or "").strip()
+    recipient_token = _identity_token(recipient)
+    commit = str(readback.get("verification_receipt_commit") or "").strip()
+    if (
+        not current_id or verified_id != current_id or not subject
+        or str(sent.get("source") or "").upper() != "OUTLOOK"
+        or str(readback.get("source") or "") != "OUTLOOK_SENT_ITEMS_READBACK"
+        or str(readback.get("folder") or "") != "Sent Items"
+        or str(readback.get("subject") or "").strip() != subject
+        or _identity_token(readback.get("recipient")) != recipient_token
+        or recipient_token != _identity_token(existing.get("recipient"))
+        or str(readback.get("query_filter") or "") != "sentDateTime ge 2026-10-20T00:00:00Z"
+        or str(readback.get("receipt_path") or "") != "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md"
+        or len(commit) != 40
+        or any(ch not in "0123456789abcdef" for ch in commit.lower())
+        or not sent.get("observed_at")
+    ):
+        return None
+
+    prior_evidence = existing.get("evidence", [])
+    candidates = [
+        row for row in prior_evidence
+        if str(row.get("kind") or "").upper() == "OUTBOUND_SEND"
+        and str(row.get("source") or "").upper() == "OUTLOOK"
+        and str(row.get("observed_at") or "") == str(sent.get("observed_at") or "")
+        and str(row.get("subject") or "").strip() == subject
+        and str(row.get("source_id") or "").strip()
+        and str(row.get("source_id") or "").strip() != current_id
+    ]
+    if len(candidates) != 1:
+        return None
+    target_row = candidates[0]
+    previous_id = str(target_row["source_id"]).strip()
+    matching_rows = [
+        row for row in prior_evidence
+        if str(row.get("source_id") or "").strip() == previous_id
+        and str(row.get("subject") or "").strip() == subject
+        and str(row.get("kind") or "").upper() in {"OUTBOUND_SEND", "POST_SEND_OFFER_CONTROL_REVIEW"}
+    ]
+    if target_row not in matching_rows:
+        return None
+
+    correction = {
+        "kind": "SOURCE_ID_CORRECTION",
+        "field": "evidence.source_id",
+        "evidence_kind": "OUTBOUND_SEND",
+        "previous_source_id": previous_id,
+        "corrected_source_id": current_id,
+        "subject": subject,
+        "recipient": recipient,
+        "source": "OUTLOOK",
+        "verification_method": "OUTLOOK_SENT_ITEMS_LIST_READBACK",
+        "verification_folder": "Sent Items",
+        "verification_source_id": verified_id,
+        "verification_receipt_path": readback["receipt_path"],
+        "verification_receipt_commit": commit,
+        "query_filter": readback["query_filter"],
+        "affected_evidence_rows": [
+            {
+                "kind": str(row.get("kind") or ""),
+                "source": str(row.get("source") or ""),
+                "observed_at": str(row.get("observed_at") or ""),
+                "previous_source_id": previous_id,
+                "corrected_source_id": current_id,
+            }
+            for row in matching_rows
+        ],
+    }
+    for row in matching_rows:
+        row["source_id"] = current_id
+        row["source_id_correction"] = {
+            "previous_source_id": previous_id,
+            "corrected_source_id": current_id,
+            "verification_receipt_commit": commit,
+        }
+    existing.setdefault("source_id_corrections", []).append(correction)
+    if not any(
+        str(row.get("kind") or "").upper() == "OUTLOOK_SENT_ITEM_ID_READBACK"
+        and str(row.get("source_id") or "").strip() == verified_id
+        and str(row.get("verification_receipt_commit") or "").strip() == commit
+        for row in prior_evidence
+    ):
+        existing.setdefault("evidence", []).append(dict(readback))
+    return {
+        "adapter": "MISSING_RECORD_UPSERT",
+        "opportunity_key": key,
+        "to": target,
+        "created": False,
+        "idempotent": False,
+        "source_id_corrected": True,
+        "lifecycle_changed": False,
+        "source_id_correction": correction,
+        "evidence": [sent, readback],
+        "critic": {
+            "factual_claims": "PASS_LINKED_SENT_ITEMS_READBACK",
+            "duplicate_identity": "PASS_CANONICAL_KEY_DOMAIN_AND_SLUG",
+            "commercial_state": "PASS_NO_LIFECYCLE_CHANGE",
+            "external_action": "NOT_PERFORMED_BY_ADAPTER",
+        },
+    }
+
+
 def missing_record_upsert(task, opportunities):
     """Create one missing canonical commercial record from attributable external evidence.
 
@@ -355,6 +495,20 @@ def missing_record_upsert(task, opportunities):
                     "external_action": "NOT_PERFORMED_BY_ADAPTER",
                 },
             }
+        correction = _reconcile_verified_source_id(
+            existing,
+            key=key,
+            organization=organization,
+            opportunity=opportunity,
+            domain=domain,
+            owner=owner,
+            target=target,
+            recipient=payload.get("recipient"),
+            thread_id=payload.get("thread_id"),
+            evidence=evidence,
+        )
+        if correction is not None:
+            return correction
         raise ValueError("opportunity already exists; exact evidence replay not proven; use EVIDENCE_TRANSITION")
 
     org_token = _identity_token(organization)
