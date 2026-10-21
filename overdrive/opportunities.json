@@ -29,7 +29,7 @@
       ],
       "remains_unproven": "At least two years of phone-based cold-calling experience, US-hours availability, Gmail/account-history dedupe, exact base salary, and any application/acceptance/income.",
       "scope": "Canonical commercial ledger count and new BDR discovery",
-      "upgrade_action": "Resolve the exact applicant eligibility gates and authorized Gmail dedupe before qualification/handoff; then continue the existing iSCOPE\u2192PRI chain."
+      "upgrade_action": "Resolve the exact applicant eligibility gates and authorized Gmail dedupe before qualification/handoff; then continue the existing iSCOPE→PRI chain."
     },
     {
       "actual": "Current public listings identify a US$700 RAG/CRM assistant build and a US$1,000 WhatsApp sales/partner-onboarding agent build.",
@@ -44,7 +44,7 @@
         "Canonical ledger prior blob: 85c769241258cc4ed774a6a0c5f7420323cf3096"
       ],
       "remains_unproven": "Live runtime/source SHA for relevant Matrix capabilities; current Upwork authenticated application route; actual working WhatsApp/GHL demo; final affordability and acceptance/milestone details. No proposal, buyer response, contract, invoice or payment is proven.",
-      "scope": "Evidence-led buyer discovery \u2014 AI workflow builds",
+      "scope": "Evidence-led buyer discovery — AI workflow builds",
       "upgrade_action": "Verify current proof and the authorized platform route; if credible, send the scoped opportunity to PRI for review. Do not mark either candidate QUALIFIED until the proof and route gates pass."
     },
     {
@@ -56,14 +56,14 @@
       "owner": "PRI with Banker retaining settlement truth",
       "proof": [
         "Stripe live account acct_1UE0UBHyzt7gyqmn",
-        "GET /v1/payment_links?active=true \u2014 5 active links",
-        "GET /v1/checkout/sessions?limit=100 \u2014 30/30 open/unpaid, has_more=false",
-        "GET /v1/payment_intents?limit=100 \u2014 0 records",
-        "GET /v1/payment_intents/search status:succeeded \u2014 0 records",
-        "GET /v1/charges?limit=100 \u2014 0 records",
-        "GET /v1/charges/search status:succeeded \u2014 0 records",
-        "GET /v1/invoices/search status:paid \u2014 0 records",
-        "GET /v1/balance_transactions?type=charge \u2014 0 records"
+        "GET /v1/payment_links?active=true — 5 active links",
+        "GET /v1/checkout/sessions?limit=100 — 30/30 open/unpaid, has_more=false",
+        "GET /v1/payment_intents?limit=100 — 0 records",
+        "GET /v1/payment_intents/search status:succeeded — 0 records",
+        "GET /v1/charges?limit=100 — 0 records",
+        "GET /v1/charges/search status:succeeded — 0 records",
+        "GET /v1/invoices/search status:paid — 0 records",
+        "GET /v1/balance_transactions?type=charge — 0 records"
       ],
       "remains_unproven": "Whether any open session was created by a buyer, as customer_email is null and no buyer event has been matched; payments received through non-Stripe rails; payout/settlement through bank; total business revenue outside this connected Stripe account.",
       "scope": "STRIPE_LIVE_MONEY_IN_READBACK_20261014",
@@ -83,9 +83,9 @@
         "GET /v1/checkout/sessions?payment_link=plink_1UQ6bVHyzt7gyqmnYyOR6FwW returned 9/9 open-unpaid, 0 customer-attributed",
         "GET /v1/checkout/sessions?payment_link=plink_1UQ8YsHyzt7gyqmnXxlxe0S0 returned 3/3 open-unpaid, 0 customer-attributed",
         "GET /v1/checkout/sessions?payment_link=plink_1UQ5O5Hyzt7gyqmnpy8tS7DA returned 11/11 open-unpaid, 0 customer-attributed",
-        "GET /v1/charges?limit=100 \u2014 0 records, has_more=false",
-        "GET /v1/payment_intents?limit=100 \u2014 0 records, has_more=false",
-        "GET /v1/balance_transactions?type=charge&limit=100 \u2014 0 records, has_more=false",
+        "GET /v1/charges?limit=100 — 0 records, has_more=false",
+        "GET /v1/payment_intents?limit=100 — 0 records, has_more=false",
+        "GET /v1/balance_transactions?type=charge&limit=100 — 0 records, has_more=false",
         "Public page readback: https://amx-evidence-house.onrender.com/house; existing CTA points to https://buy.stripe.com/9B6eVd7hfeTCaYh62eaR200."
       ],
       "remains_unproven": "Whether any open Checkout Session was created by a prospective buyer, given no customer attribution; whether any payment occurred outside this Stripe account; bank payout/settlement; total company revenue outside the read account.",
@@ -94,7 +94,7 @@
     },
     {
       "actual": "Existing Micro-Matrix Quick Technical Review Payment Link was updated in place (same ID plink_1UQ5O5Hyzt7gyqmnpy8tS7DA, same active URL, same existing product and US$4.99 one-time price). Stripe now shows two optional text fields at checkout: public repository URL (max 255 characters) and main review question (max 255 characters). Hosted confirmation states how to provide a non-sensitive excerpt and reiterates scope/safety. Independent GET Payment Link readback confirmed active=true and both fields/confirmation. Latest exact-link Checkout Session read at 2026-10-14T11:58:29.215Z returned 12 sessions, all open/unpaid, customer_email=null and payment_intent=null; has_more=false. Charges=0, PaymentIntents=0, charge-type balance transactions=0, all has_more=false.",
-      "changed": "Improved the existing offer\u2019s delivery handoff without creating a new product, price, checkout link, sender, or pipeline. Standard paid buyers can optionally provide a public repo URL and question at checkout; excerpt-only requests still use the existing email route. Fresh session count supersedes the prior count of 11; no buyer identity or purchase inferred.",
+      "changed": "Improved the existing offer’s delivery handoff without creating a new product, price, checkout link, sender, or pipeline. Standard paid buyers can optionally provide a public repo URL and question at checkout; excerpt-only requests still use the existing email route. Fresh session count supersedes the prior count of 11; no buyer identity or purchase inferred.",
       "classification": "VERIFIED_IN_PLACE_CHECKOUT_INTAKE_IMPROVEMENT_NO_PAYMENT_EVIDENCED",
       "expected": "A genuine paid buyer can submit enough context at checkout to begin a bounded review; buyer-provided content remains untrusted input and secret/private-data restrictions remain clear; actual cash-in only counts after paid/settlement evidence.",
       "observed_at": "2026-10-14T11:58:29.215Z",
@@ -111,7 +111,7 @@
       "upgrade_action": "Keep the same public offer and checkout link; continue lawful distribution of the existing offer. Do not use social publication while issue #30's draft-only mandate controls. ROOT/connector administrator must restore the existing sender's authenticated read/send capability or provide an already-authorized alternative without changing sender identity. On any completed checkout, read custom_fields/payment_status directly, deliver only the bounded safe scope, and ask Banker to verify settlement before PAID."
     },
     {
-      "actual": "Live Stripe readback in the existing AMILLIMATRIX account at 2026-10-14T14:23:36.631Z: 5 active payment links; 36 total Checkout Sessions across the five links, of which 30 are open/unpaid and 6 are expired/unpaid; 0 complete sessions, no customer/customer_email attribution in any session; charges=0, PaymentIntents=0, paid invoices=0, charge-type balance transactions=0. Per-link open counts: Kingston Stanley 6, Xubio 6, Synergy Interactive 9, JGMI by Carbon 3, Micro-Matrix Quick Technical Review 6 open + 6 expired. Close thread readback confirms 13 Oct checkout-link messages for Kingston Stanley, Xubio and Synergy Interactive remain outgoing drafts, not sent. Close inbound Email/EmailThread search 10\u201314 Oct returned 0, which does not establish absence of mail replies in Gmail.",
+      "actual": "Live Stripe readback in the existing AMILLIMATRIX account at 2026-10-14T14:23:36.631Z: 5 active payment links; 36 total Checkout Sessions across the five links, of which 30 are open/unpaid and 6 are expired/unpaid; 0 complete sessions, no customer/customer_email attribution in any session; charges=0, PaymentIntents=0, paid invoices=0, charge-type balance transactions=0. Per-link open counts: Kingston Stanley 6, Xubio 6, Synergy Interactive 9, JGMI by Carbon 3, Micro-Matrix Quick Technical Review 6 open + 6 expired. Close thread readback confirms 13 Oct checkout-link messages for Kingston Stanley, Xubio and Synergy Interactive remain outgoing drafts, not sent. Close inbound Email/EmailThread search 10–14 Oct returned 0, which does not establish absence of mail replies in Gmail.",
       "changed": "Current totals supersede previous provider snapshots: 36 sessions, not 35; the Micro-Matrix link has 12 total sessions, now 6 open and 6 expired, all unpaid. Current account-wide payment objects remain zero. Three checkout-link emails were verified as drafts, not sends. No lifecycle upgrade, buyer identity, purchase or revenue inferred.",
       "classification": "VERIFIED_CURRENT_STRIPE_AND_CLOSE_READBACK_NO_PAYMENT_EVIDENCED; GMAIL_READ_PATH_RECOVERY_OPEN",
       "expected": "Canonical state reflects current provider evidence while preserving distinctions between session, buyer response, acceptance, contract, invoice, payment and settlement. Existing draft messages remain drafts and no third unsolicited follow-up is sent.",
@@ -149,11 +149,11 @@
       "upgrade_action": "Do not contact the three existing waiting micro-offer leads again without buyer response/new official route. Continue lawful conversion work only on verified route. Banker must independently verify any settlement before PAID is recorded."
     },
     {
-      "actual": "Requalified existing proof-first candidate inputs against current official sources without creating new opportunity records or contacting anyone. SocialsGroup's official Marketing Operations Executive page is live: remote anywhere subject to at least four hours/day overlapping UK hours; contract rate agreed on experience and work-sample performance; application ~20 minutes, then a short call and a paid 1\u20132 week real-client-work trial if advanced. Scale Army's official application page currently titles the role Brand & Category Growth Manager, remote contract, South Africa listed, advertises US$2.5K/month subject to experience/location adjustment, requires 9 AM\u20135 PM EST availability, a PDF CV, video and a personally contributed marketing work sample. These are source requalification signals only; do not create/qualify duplicate records until existing account/contact history is reconciled.",
+      "actual": "Requalified existing proof-first candidate inputs against current official sources without creating new opportunity records or contacting anyone. SocialsGroup's official Marketing Operations Executive page is live: remote anywhere subject to at least four hours/day overlapping UK hours; contract rate agreed on experience and work-sample performance; application ~20 minutes, then a short call and a paid 1–2 week real-client-work trial if advanced. Scale Army's official application page currently titles the role Brand & Category Growth Manager, remote contract, South Africa listed, advertises US$2.5K/month subject to experience/location adjustment, requires 9 AM–5 PM EST availability, a PDF CV, video and a personally contributed marketing work sample. These are source requalification signals only; do not create/qualify duplicate records until existing account/contact history is reconciled.",
       "changed": "The direct Scale Army application route clarifies the current title and pay fields; stale search-index title alone is not controlling. The SocialsGroup role-specific page directly confirms the paid-trial process omitted from its homepage. Full Gmail/account-history dedupe cannot be completed because the designated Gmail reader is not available in this runtime; no application/contact/offer lifecycle state was changed.",
       "classification": "CURRENT_PRIMARY_SOURCE_REQUALIFICATION; ACCOUNT_HISTORY_DEDUPE_OPEN; NO_EXTERNAL_ACTION",
       "observed_at": "2026-10-14T16:55:15Z",
-      "owner": "iSCOPE qualification \u2192 PRI sole external commercial writer",
+      "owner": "iSCOPE qualification → PRI sole external commercial writer",
       "proof": [
         "SocialsGroup official job page: https://internal.socialsgroup.com/careers/role-marketing-ops-executive",
         "Scale Army official job page: https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07",
@@ -184,7 +184,7 @@
       "upgrade_action": "No duplicate contact to Kingston Stanley, Xubio or Synergy Interactive without buyer response or a new verified official route. Keep the existing offer/link and await attributable evidence. Banker must verify settlement before any PAID lifecycle transition."
     },
     {
-      "actual": "Fresh official-source recheck in the current wake: (1) Upwork AI Automation for Carpentry Inquiries remains listed at US$400 fixed price; official page displays 50+ proposals, 1 interview, 0 invites and client last viewed yesterday. Proposal/package remain prepared/not submitted. (2) SocialsGroup Marketing Operations Executive official role page remains open; remote contract anywhere with at least four hours/day UK overlap, rate negotiated on experience/work sample, approximately 20-minute application, one short call and a paid 1\u20132 week trial if advanced. (3) Scale Army official Brand & Category Growth Manager application remains open; South Africa eligible, remote contract, advertised US$2.5K/month subject to experience/location, PDF CV, applicant-recorded video and work sample required. (4) Black Bear Strategy official site continues to invite expert/collaboration enquiries; the existing contact was already submitted, so it remains WAITING and no duplicate contact was made.",
+      "actual": "Fresh official-source recheck in the current wake: (1) Upwork AI Automation for Carpentry Inquiries remains listed at US$400 fixed price; official page displays 50+ proposals, 1 interview, 0 invites and client last viewed yesterday. Proposal/package remain prepared/not submitted. (2) SocialsGroup Marketing Operations Executive official role page remains open; remote contract anywhere with at least four hours/day UK overlap, rate negotiated on experience/work sample, approximately 20-minute application, one short call and a paid 1–2 week trial if advanced. (3) Scale Army official Brand & Category Growth Manager application remains open; South Africa eligible, remote contract, advertised US$2.5K/month subject to experience/location, PDF CV, applicant-recorded video and work sample required. (4) Black Bear Strategy official site continues to invite expert/collaboration enquiries; the existing contact was already submitted, so it remains WAITING and no duplicate contact was made.",
       "changed": "Same current primary-source routes were re-read; there is no source evidence authorizing any lifecycle upgrade. Exact existing-account/Gmail deduplication and applicant-provided constraints remain unavailable. No new opportunity record, application, message or offer was created/sent.",
       "classification": "CURRENT_PRIMARY_SOURCE_RECHECK; EXISTING_ROUTE_AND_ACCOUNT_DEDUPE_GATES_OPEN",
       "observed_at": "2026-10-14T17:57:10.067Z",
@@ -195,7 +195,7 @@
         "https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07/application",
         "https://www.blackbear.co.za/"
       ],
-      "remains_unproven": "Account-level prior submission/contact dedupe for new SocialsGroup role and current Scale Army role; owner\u2019s exact UK-hour overlap, acceptable rate and full application facts; buyer acceptance, contract, invoice or payment.",
+      "remains_unproven": "Account-level prior submission/contact dedupe for new SocialsGroup role and current Scale Army role; owner’s exact UK-hour overlap, acceptable rate and full application facts; buyer acceptance, contract, invoice or payment.",
       "scope": "ISCOPE_PRI_EXISTING_PRIMARY_ROUTE_RECHECK_20261014_WAKE_03",
       "upgrade_action": "Do not submit or contact until the existing authenticated account/thread route is restored and duplicate application/contact status plus required owner facts are established. The prepared US$400 proposal remains the immediate fixed-scope candidate if its authenticated Upwork gate passes; SocialsGroup is the higher-fit confirmed paid-trial path if the dedupe/availability/rate gates pass. Continue waiting on already-sent Black Bear and existing Sales Closer offers; no duplicate follow-up."
     },
@@ -232,7 +232,7 @@
       "upgrade_action": "Do not send a third or corrective follow-up blindly. ROOT/connector administrator must restore the existing authorized Gmail read path or provide an already-approved same-identity route. PRI then reads thread 1a103d43041d248b, reconciles lifecycle/NEXT_ACTION/DUE and independently reads the canonical record back."
     },
     {
-      "actual": "Outlook returned three 13-Oct messages with exact current recipients/offer contents at 20:58:31Z\u201320:58:34Z. Existing Root sender-drift mail says the three messages were sent using usduplessis@outlook.com rather than a separately verified Matrix business sender. The existing CRM/opportunity evidence still contains Close checkout-link records marked draft. This wake's connected Outlook searches by the three recipient addresses/domains from 2026-10-13 onward returned zero buyer replies; this is Outlook-only and does not prove no replies exist in Gmail. Current Stripe readback remains 14 open/unpaid, 27 expired/unpaid, 0 complete, 0 charges, 0 PaymentIntents and 0 paid invoices.",
+      "actual": "Outlook returned three 13-Oct messages with exact current recipients/offer contents at 20:58:31Z–20:58:34Z. Existing Root sender-drift mail says the three messages were sent using usduplessis@outlook.com rather than a separately verified Matrix business sender. The existing CRM/opportunity evidence still contains Close checkout-link records marked draft. This wake's connected Outlook searches by the three recipient addresses/domains from 2026-10-13 onward returned zero buyer replies; this is Outlook-only and does not prove no replies exist in Gmail. Current Stripe readback remains 14 open/unpaid, 27 expired/unpaid, 0 complete, 0 charges, 0 PaymentIntents and 0 paid invoices.",
       "changed": "Three previously draft-described checkout-link messages are now evidenced as Outlook items; do not resend, and freeze further outbound contact pending route/sender reconciliation.",
       "classification": "SENDER_DRIFT_AND_OUTBOUND_STATUS_CONTRADICTION; NO_BUYER_REPLY_OR_PAYMENT_EVIDENCED",
       "expected": "Existing buyer lifecycle truth records each actual outbound message and sender accurately; conflicting draft/sent states and sender identity are reconciled before any new outbound action.",
@@ -282,15 +282,15 @@
       "upgrade_action": "Use the existing authorized Outlook/TinyFish route for account-history dedupe and application only if the route is available and the role-specific schedule is workable. Continue monitoring the three already-offered fixed-fee pilots; no second touch before their recorded due time."
     },
     {
-      "actual": "Direct Outlook Sent Items readback found six US$99 fixed-scope agent-workflow pilot messages dated 2026-10-15 16:24:42Z\u201316:36:53Z to TechEmulsion, HIP Agency, the voiceagencyplatform.com recipient, Hugais, AI Adoption Partners and AgenticFlow. Exact message IDs and recipients are persisted on six new records. Prior canonical ledger had none of these keys.",
+      "actual": "Direct Outlook Sent Items readback found six US$99 fixed-scope agent-workflow pilot messages dated 2026-10-15 16:24:42Z–16:36:53Z to TechEmulsion, HIP Agency, the voiceagencyplatform.com recipient, Hugais, AI Adoption Partners and AgenticFlow. Exact message IDs and recipients are persisted on six new records. Prior canonical ledger had none of these keys.",
       "changed": "Recovered six already-sent offers into the existing overdrive/opportunities.json. Added six unique records at state=OFFERED with their original source IDs, precise scope, recipient, sender evidence, and the governed 2026-10-19T08:00:00Z review. No external message was sent during this reconciliation.",
       "classification": "OUTLOOK_SENT_ITEMS_RECONCILED_INTO_CANONICAL_LEDGER; SIX_MISSING_OUTBOUND_RECORDS_RECOVERED",
       "expected": "Every existing external commercial action has a canonical record; sent != responded != accepted != contracted != invoiced != paid. The single PRI writer and existing ledger remain the sole commercial truth.",
       "observed_at": "2026-10-16T07:58:21Z",
-      "owner": "PRI \u2014 sole external commercial writer; iSCOPE discovery ownership preserved.",
+      "owner": "PRI — sole external commercial writer; iSCOPE discovery ownership preserved.",
       "proof": [
         "2026-10-15T16:36:53Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXigAAAA== | contact@techemulsion.com | Independent agent-workflow QA overflow, fixed US$99 pilot",
-        "2026-10-15T16:36:27Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiQAAAA== | info@hipagency.ai | One-workflow AI agent acceptance pilot \u2014 US$99 fixed",
+        "2026-10-15T16:36:27Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiQAAAA== | info@hipagency.ai | One-workflow AI agent acceptance pilot — US$99 fixed",
         "2026-10-15T16:36:11Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiAAAAA== | partners@voiceagencyplatform.com | Paid acceptance test for one voice-agent handoff",
         "2026-10-15T16:24:46Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhwAAAA== | dionne@hugais.co.za | Paid micro-pilot: test one AI agent before handoff",
         "2026-10-15T16:24:44Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhgAAAA== | darren@aiadoption.co.za | A fixed-scope reliability test for one AI workflow",
@@ -313,7 +313,7 @@
         "GET /v1/payment_intents?limit=100: 0 records; has_more=false",
         "GET /v1/charges?limit=100: 0 records; has_more=false",
         "GET /v1/invoices?limit=100: 0 records; has_more=false",
-        "Outlook: Sent Items verified six additional US$99 fixed-scope pilot messages dated 2026-10-15 16:24:42Z\u201316:36:53Z; no result for received>=2026-10-16.",
+        "Outlook: Sent Items verified six additional US$99 fixed-scope pilot messages dated 2026-10-15 16:24:42Z–16:36:53Z; no result for received>=2026-10-16.",
         "Close activity_search: inbound Email/EmailThread from 2026-10-15T00:00:00Z through 2026-10-17T00:00:00Z returned 0."
       ],
       "remains_unproven": "Buyer receipt/open/reply, acceptance of any of the six pilots, invoice/receivable, successful payment or settlement, revenue through non-Stripe rails, and mailbox replies outside the connected Outlook/Close scope.",
@@ -357,7 +357,7 @@
       "changed": "Added the already-sent message to the canonical ledger as OFFERED/WAITING, preserving the original message ID, scope, recipient and governed due time. No new external message was sent during this reconciliation.",
       "classification": "WRIGHTSAI_OUTBOUND_SEND_RECONCILED; WAITING_FOR_BUYER",
       "observed_at": "2026-10-16T08:13:38Z",
-      "owner": "PRI \u2014 existing commercial writer",
+      "owner": "PRI — existing commercial writer",
       "proof": [
         "Official contact page https://www.wrightsai.com/contact.html",
         "Outlook Sent Items ID AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjAAAAA=="
@@ -388,7 +388,7 @@
       "classification": "KODAH_BDR_APPLICATION_SUBMITTED; EMPLOYER_OUTCOME_PENDING",
       "expected": "Application remains SUBMITTED until buyer response; no inference of interview, offer, contract, invoice or income.",
       "observed_at": "2026-10-16T08:26:01Z",
-      "owner": "PRI \u2014 existing commercial writer; iSCOPE discovery/qualification",
+      "owner": "PRI — existing commercial writer; iSCOPE discovery/qualification",
       "proof": [
         "Official careers page: https://kodah.ai/careers",
         "Outlook Sent Items ID: AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkgAAAA==",
@@ -444,7 +444,7 @@
       "upgrade_action": "Wait for response on the media requirement; if mandatory, request a genuine applicant-provided photo/video rather than manufacture it. Continue other paid-work routes."
     },
     {
-      "actual": "Sent current Talent Advantage SDR application email to the public contact with CV attached; explicitly flagged the 60\u201390 second intro video requirement as pending. Exact Sent Item read back.",
+      "actual": "Sent current Talent Advantage SDR application email to the public contact with CV attached; explicitly flagged the 60–90 second intro video requirement as pending. Exact Sent Item read back.",
       "changed": "Added one SUBMITTED record with route/media condition; no response, complete application, offer, or income inferred.",
       "classification": "APPLICATION_EMAIL_SENT; REQUIRED_INTRO_VIDEO_PENDING",
       "observed_at": "2026-10-16T08:39:11Z",
@@ -455,7 +455,7 @@
       ],
       "remains_unproven": "Delivery/reading, video waiver/route, completed application, buyer response, offer, contract, invoice, receivable or payment.",
       "scope": "talentadvantage.ca|sales-development-representative|2026-10-16",
-      "upgrade_action": "Await the recruiter\u2019s routing response; if required, the applicant must record the genuine intro. Continue other roles where the existing evidence is enough to submit."
+      "upgrade_action": "Await the recruiter’s routing response; if required, the applicant must record the genuine intro. Continue other roles where the existing evidence is enough to submit."
     },
     {
       "actual": "Three distinct 2026-10-20 outbound fixed-scope pilot emails were present in Outlook Sent Items to Verminator, Treetops Solar, and Mendaz Solar; their normalized records were absent from the canonical opportunity ledger at the latest ledger read.",
@@ -542,11 +542,65 @@
       "remains_unproven": "IRNA buyer response, acceptance, contract, invoice, delivery or payment; Close response, partnership or revenue; actual execution outcomes from the asynchronous sales runtime; receipt of any funds.",
       "scope": "Canonical commercial ledger reconciliation of current-turn sent offer and inbound partner response",
       "upgrade_action": "On any substantive external reply, reconcile the exact source event into the same record; follow current no-duplicate/no-contact constraints; use a verified payment route only after account capability readback; count PAID only on attributable settlement evidence."
+    },
+    {
+      "observed_at": "2026-10-21T04:52:34.072Z",
+      "owner": "PRI records live payment rail; Banker retains terminal settlement truth; ROOT reviews blocker",
+      "scope": "STRIPE_LIVE_MONEY_IN_AND_MERCHANT_CAPABILITY_READBACK_20261021",
+      "classification": "NO_STRIPE_PAYMENT_OR_SETTLEMENT_OBJECTS_EVIDENCED; MERCHANT_CHARGING_DISABLED; NON_STRIPE_RAILS_NOT_CHECKED",
+      "expected": "Refresh live provider state and the exact payment-capability blocker without promoting Checkout Session activity to buyer acceptance, payment, or realized revenue.",
+      "actual": "Read-only AMILLIMATRIX live Stripe account acct_1UE0UBHyzt7gyqmn reports charges_enabled=false, payouts_enabled=false, details_submitted=false, requirements.disabled_reason=requirements.past_due. GET /v1/checkout/sessions by status returned 2 open/unpaid sessions ($4.99 USD each), 51 expired/unpaid and 0 complete. Account-wide list reads returned PaymentIntents=0, Charges=0, Invoices=0 and Balance Transactions=0; each used limit=100 and has_more=false. GET /v1/balance returned USD available=0 and pending=0; GET /v1/payouts and /v1/transfers each returned 0 records, has_more=false.",
+      "changed": "No Stripe setting or object changed. This readback supersedes prior older session counts for current Stripe-object state only; it does not establish all-rail revenue zero, buyer intent, acceptance, or settlement.",
+      "proof": [
+        "Stripe GET /v1/accounts/acct_1UE0UBHyzt7gyqmn (livemode=true): charges_enabled=false; payouts_enabled=false; details_submitted=false; requirements.disabled_reason=requirements.past_due.",
+        "GET /v1/checkout/sessions?status=open&limit=100: 2 unpaid; cs_live_a1l6mXHILeGBi9L8LCGD5BIi2iwUaVVwVX9w4vW2BkbqfCeINDsFiBnlu3 created 2026-10-21T02:07:52Z, amount_total=499 USD; cs_live_a1x4ux7yH2pNKXfKnpe4JeHTw90Ta6ohidbJiQzXZLsBaorUinTuKTfuFV created 2026-10-20T09:08:47Z, amount_total=499 USD; both unpaid, channel=MICRO_MATRIX.",
+        "GET /v1/checkout/sessions?status=expired&limit=100: 51 unpaid; GET /v1/checkout/sessions?status=complete&limit=100: 0.",
+        "GET /v1/payment_intents?limit=100: 0, has_more=false; GET /v1/charges?limit=100: 0, has_more=false; GET /v1/invoices?limit=100: 0, has_more=false; GET /v1/balance_transactions?limit=100: 0, has_more=false.",
+        "GET /v1/balance: USD available=0, pending=0; GET /v1/payouts?limit=100: 0, has_more=false; GET /v1/transfers?limit=100: 0, has_more=false."
+      ],
+      "remains_unproven": "Any non-Stripe receipt, bank cash-in, historic settlement not represented in current objects, attribution or intent of open sessions, buyer acceptance, invoice/receivable, or global realized revenue.",
+      "upgrade_action": "Owner completes required merchant onboarding only through official Stripe UI, then Banker re-reads this same account and confirms charges_enabled=true and intended payout capability. Do not create new Stripe sessions or resend checkout links while charging is disabled; preserve existing buyer no-contact/wait states. Continue unrelated lawful offers and only record PAID from attributable paid/settlement evidence.",
+      "safety": "Read-only Stripe GET calls only. No account fields, products, payment links, sessions, invoices, messages or commercial lifecycle changed."
+    },
+    {
+      "observed_at": "2026-10-21T04:52:34.072Z",
+      "owner": "iSCOPE qualifies source and role-fit; PRI owns any authorized submission; ROOT/LIBRARIAN preserves cross-source evidence",
+      "scope": "SCALE_ARMY_TRADE_AND_GROWTH_MARKETING_MANAGER_OFFICIAL_LISTING_REQUALIFICATION_20261021",
+      "classification": "OFFICIAL_ROLE_CURRENT; ACCOUNT_DEDUPE_AND_REQUIRED_APPLICANT_EVIDENCE_OPEN; NOT_SUBMITTED",
+      "expected": "Requalify current official role details and preserve a single application record without treating an older distinct role or prepared CV/video as a new application.",
+      "actual": "The current official Scale Army Ashby listing is Trade & Growth Marketing Manager, remote contract, South Africa eligible, compensation $2,500/month subject to experience/location, and requires availability for 09:00–17:00 EST. Requirements include 4+ years in relevant trade/growth/B2B retail/CPG marketing, hands-on paid campaigns and A/B testing, buyer-facing sales collateral, and AI-supported marketing workflows. Applicant-side hands-on paid-campaign/A-B-test evidence, required video and duplicate-application/account-history status are not verified in this wake.",
+      "changed": "Current primary-source title, location, compensation and applicant gates are recorded. No new opportunity row, application, video, email or external action created; the older Scale Army automation-role row is not silently repurposed as this distinct job.",
+      "proof": [
+        "Official current listing: https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07/ (read 2026-10-21)",
+        "Official application route: https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07/application",
+        "Official listing specifies South Africa; remote contract; $2.5K/month subject to experience/location; 09:00–17:00 EST; application form plus recorded skill-set video; paid-campaign and A/B-testing experience."
+      ],
+      "remains_unproven": "Prior application/history dedupe across existing authorized account, demonstrated paid-campaign/A-B-test experience, owner availability for EST hours, recorded video, submission receipt, buyer response, contract, invoice or payment.",
+      "upgrade_action": "iSCOPE/authorized account reader first reconciles existing account/application history and factual role-fit evidence. If role fit is genuinely supported, the candidate must provide/record required video and confirm U.S.-hours availability; PRI submits once through the existing authorized official route and persists genuine receipt. If a mandatory fit fact is absent, retain HOLD rather than guessing.",
+      "safety": "No application or external contact; no duplicate opportunity row or CV-polish loop; no personal skill/availability fact fabricated."
+    },
+    {
+      "observed_at": "2026-10-21T04:52:34.072Z",
+      "owner": "iSCOPE disposition; PRI sole external commercial writer; ROOT/LIBRARIAN maintains canonical opportunity truth",
+      "scope": "UNSENT_CLOSE_PROSPECT_DRAFTS_CROSSWALKED_TO_CURRENT_MAIN_20261021",
+      "classification": "THREE_HISTORICAL_UNSENT_DRAFTS_PRESERVED_AS_PROVENANCE; CURRENT_MAIN_BUYER_RECORDS_ALREADY_EXIST; DO_NOT_DUPLICATE_OR_CONTACT",
+      "expected": "Preserve historical Close draft status without converting drafts to sent events or maintaining duplicate opportunities after later, separate provider-sourced records entered the canonical ledger.",
+      "actual": "The 2026-10-15 audit branch held three Close drafts, each directly read at that time as outgoing draft/date_sent=null/has_reply=false: AHIT activity acti_j2vgnyLCbTsCFLPkj5oDGCmE0Ph8BlxP17l6gYwbgwv (thread acti_r3TyMV9nP1MoRhzkvTTr90DW5VuDi7yX7fiqM3rPsSK), Accurate Group activity acti_vSkgMZmymOF8VTStMzoEQGiz7HRHav1b1vdGbhbsS9p (thread acti_h3hNya2ThvRSXagUYgEvg8elN1wiosxl5ilIypMY4Qg), and Naomii activity acti_nr1AyMxoaAH2jaus42SZQTKqzy7PR0TFuaoV8r44twL (thread acti_ReMZChFsQgug04MnNMnmAOON4TWc7qqUl62t1n5Deaa). Current main already contains different, later Outlook-sourced records: AHIT Recruitment is OFFERED and waiting for substantive reply/payment; Accurate Group is OFFERED with HOLD_OUTBOUND_ROUTE after a blocked follow-up; Naomii is OFFERED and waiting for buyer reply. The historical drafts cannot be treated as the same messages as those sent items or as authorization to send.",
+      "changed": "Rebuilding the proposal from current main means the three draft-stage rows are not carried forward as separate opportunity records; their identities and earlier statuses are preserved in this crosswalk observation. Canonical current records are not deleted or demoted; no duplicate prospect rows added.",
+      "proof": [
+        "Historical PR #40 source branch contained discovery-stage keys: ahitrecruitment.com|one-role-sourcing-overflow|2026-10-15; accurategroup.co.za|one-role-sourcing-overflow|2026-10-15; naomii.app|technology-candidate-sourcing-overflow|2026-10-15.",
+        "Current main records: ahitrecruitment.com|sourcing-overflow-pilot|2026-10-15 (OFFERED); accurategroup.co.za|technology-sourcing-pilot|2026-10-15 (OFFERED / HOLD_OUTBOUND_ROUTE); naomii.app|technology-sourcing-overflow-pilot|2026-10-15 (OFFERED).",
+        "The current main rows have distinct Outlook sent-item source IDs. They do not establish that an earlier Close draft itself was sent.",
+        "Gmail/account-history deduplication remains incomplete; connected Outlook-only reads are not treated as full mailbox history."
+      ],
+      "remains_unproven": "Whether each Close draft was later independently sent or remains a draft in Close today, any buyer receipt/read/reply, or any purchase or cash-in.",
+      "upgrade_action": "Keep current main lifecycle and no-contact/hold rules unchanged. Do not send, schedule or mutate the three Close drafts based on this crosswalk. ROOT/authorized connector owner restores the existing full account-history reader; subsequent changes require fresh source read and existing record-key reconciliation.",
+      "safety": "No customer contacted, no draft mutated, no lifecycle promotion, no opportunity duplication, no payment/revenue claim."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-20T12:08:34.815Z",
-  "last_reconciled_reason": "CURRENT-TURN EVIDENCE RECONCILIATION: added source-linked IRNA fixed-scope offer and separate Close inbound/response conversation after checking for duplicate record keys. The offer is OFFERED/NOT ACCEPTED with verified Outlook message/PDF hash; Close is partner discovery only, not revenue. Stripe charges/payouts remain disabled; no payment or conversion inferred. Record count updated to match records object.",
+  "last_reconciled_at": "2026-10-21T04:55:23.053Z",
+  "last_reconciled_reason": "Reconciled verified 2026-10-21 Forest Energy introductory outreach and automatic out-of-office reply into one canonical SUBMITTED record; no price/offer acceptance/payment or substantive buyer response inferred. Existing 124 record keys and 34 control observations preserved.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -609,9 +663,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-20T14:08:34.815+02:00",
-  "last_updated_by": "PRI \u2014 current-turn evidence reconciliation",
-  "record_count": 124,
+  "last_updated_at": "2026-10-21T04:55:23.053Z",
+  "last_updated_by": "AMX ROOT/INTAKE — Outlook source reconciliation",
+  "record_count": 125,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -674,7 +728,7 @@
       "reward": "Guaranteed monthly base (exact amount not published) plus uncapped commission on qualified meetings held and downstream closed business. The page cites R30,000+/month at the top of the floor; this is not a guaranteed outcome.",
       "routing_reason": "ELIGIBILITY_OWNER_CONFIRMED_PRIOR_CONTACT_DEDUPE_UNAVAILABLE",
       "state": "QUALIFIED",
-      "title": "Business Development Representative \u2014 Cold Outreach and Warm Inbound (Remote, South Africa)",
+      "title": "Business Development Representative — Cold Outreach and Warm Inbound (Remote, South Africa)",
       "upfront_cost": "NO_APPLICATION_FEE_STATED"
     },
     "accurategroup.co.za|technology-sourcing-pilot|2026-10-15": {
@@ -752,7 +806,7 @@
       "execution_readiness": "HOLD_OUTBOUND_ROUTE",
       "last_action_at": "2026-10-19T14:27:46.705Z",
       "last_reconciled_at": "2026-10-15T13:27:41.769Z",
-      "next_action": "OPEN RECOVERY OBLIGATION \u2014 AMX Capability Continuity & Workflow Architect (direct to ROOT, within existing FORX continuity/forensics remit) resolves the permitted outbound route. Do not retry the blocked touch through another sender/channel. PRI retains the existing OFFERED state; continue unrelated lawful commercial work and resume this offer only when a permitted route or buyer response exists.",
+      "next_action": "OPEN RECOVERY OBLIGATION — AMX Capability Continuity & Workflow Architect (direct to ROOT, within existing FORX continuity/forensics remit) resolves the permitted outbound route. Do not retry the blocked touch through another sender/channel. PRI retains the existing OFFERED state; continue unrelated lawful commercial work and resume this offer only when a permitted route or buyer response exists.",
       "opportunity": "US$99 one-role technology and AI sourcing pilot",
       "organization": "Accurate Group",
       "proof_of_work_route": "FIXED_SCOPE",
@@ -841,7 +895,7 @@
       "message_id": "1a103d3f1631dffd",
       "next_action": "Wait for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up without new evidence or an explicit buyer instruction.",
       "opportunity": "ai-engineer",
-      "organization": "Verder Group \u2014 Agent Factory",
+      "organization": "Verder Group — Agent Factory",
       "payment": "Employment compensation; exact payroll/settlement terms to verify if progressed",
       "proof_led_priority": {
         "basis": "Current official buyer route explicitly evaluates built/shipped work",
@@ -869,7 +923,7 @@
       "recipient": "agentfactory@verder.com",
       "reward": "Paid full-time role; compensation not published on current official role page",
       "state": "SUBMITTED",
-      "subject": "AI Engineer \u2014 shipped work",
+      "subject": "AI Engineer — shipped work",
       "thread_id": "1a103d3f1631dffd",
       "title": "AI Engineer"
     },
@@ -922,7 +976,7 @@
           "observed_at": "2026-10-19T15:31:05Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RpwAAAA==",
-          "subject": "Follow-up: one agent workflow reliability pilot \u2014 US$99",
+          "subject": "Follow-up: one agent workflow reliability pilot — US$99",
           "summary": "One due follow-up sent from usduplessis@outlook.com to duane@agenticflow.co.za; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
           "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         },
@@ -993,7 +1047,7 @@
           "observed_at": "2026-10-19T15:40:42Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RrgAAAA==",
-          "subject": "Follow-up: fixed-fee IT / engineering sourcing pilot \u2014 US$99",
+          "subject": "Follow-up: fixed-fee IT / engineering sourcing pilot — US$99",
           "summary": "One due follow-up sent from usduplessis@outlook.com to info@ahitrecruitment.com; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/eVq8wPgRP6n6aYhcqCaR20a (Payment Link plink_1USIeEHyzt7gyqmn57gr5qLk). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
           "url": "https://buy.stripe.com/eVq8wPgRP6n6aYhcqCaR20a"
         },
@@ -1068,7 +1122,7 @@
           "observed_at": "2026-10-19T15:31:13Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RqAAAAA==",
-          "subject": "Follow-up: one-workflow reliability test \u2014 US$99",
+          "subject": "Follow-up: one-workflow reliability test — US$99",
           "summary": "One due follow-up sent from usduplessis@outlook.com to darren@aiadoption.co.za; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
           "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         },
@@ -1150,7 +1204,7 @@
       },
       "recipient": "alakaiproductionsai@gmail.com",
       "state": "CLOSED_NO_FIT",
-      "subject": "AI-native vertical production collaboration \u2014 CARBON\u00b0",
+      "subject": "AI-native vertical production collaboration — CARBON°",
       "thread_id": "1a0f2ea80749ae37",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -1173,14 +1227,14 @@
           "kind": "CURRENT_PUBLIC_LISTING",
           "observed_at": "2026-10-02",
           "source": "LINKEDIN",
-          "summary": "Alignerr Search Quality Evaluator listed for South Africa; $40\u2013$120/hour; remote flexible contract.",
+          "summary": "Alignerr Search Quality Evaluator listed for South Africa; $40–$120/hour; remote flexible contract.",
           "url": "https://za.linkedin.com/jobs/view/search-quality-evaluator-at-alignerr-4467433062"
         },
         {
           "kind": "PRIMARY_ROLE_PAGE",
           "observed_at": "2026-10-02",
           "source": "WEB",
-          "summary": "Alignerr primary role page confirms remote Search Quality Evaluator scope and $40\u2013$120/hour.",
+          "summary": "Alignerr primary role page confirms remote Search Quality Evaluator scope and $40–$120/hour.",
           "url": "https://www.alignerr.com/jobs/cb54d2de-b3e9-4824-a1f9-a8d3d17179dd"
         },
         {
@@ -1206,10 +1260,10 @@
       "organization": "Alignerr",
       "payment": "Weekly payouts stated; exact settlement rail to verify",
       "qualified_at": "2026-10-02T15:55:00Z",
-      "reward": "$40\u2013$120/hour advertised",
+      "reward": "$40–$120/hour advertised",
       "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
       "state": "QUALIFIED",
-      "title": "Search Quality Evaluator / AI Training \u2014 South Africa"
+      "title": "Search Quality Evaluator / AI Training — South Africa"
     },
     "alphapestcontrols.co.za|site-report-follow-through-loop|2026-10-19": {
       "active_dependencies": {
@@ -1276,8 +1330,8 @@
           "observed_at": "2026-10-19T16:43:00Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuAAAAA==",
-          "subject": "Fixed-scope site-report follow-through workflow \u2014 R9,380",
-          "summary": "Sent from usduplessis@outlook.com to info@alphapestcontrols.co.za. New buyer-specific AMX implementation offer, not the earlier US$99 AI-agent QA or sourcing offer. Fixed price R9\u00a0380; waiting for buyer response. Sent Item independently read back. Message does not imply acceptance, invoice, payment, or delivery.",
+          "subject": "Fixed-scope site-report follow-through workflow — R9,380",
+          "summary": "Sent from usduplessis@outlook.com to info@alphapestcontrols.co.za. New buyer-specific AMX implementation offer, not the earlier US$99 AI-agent QA or sourcing offer. Fixed price R9 380; waiting for buyer response. Sent Item independently read back. Message does not imply acceptance, invoice, payment, or delivery.",
           "url": "https://www.alphapestcontrols.co.za/"
         }
       ],
@@ -1326,7 +1380,7 @@
         "recipient": "info@alphapestcontrols.co.za",
         "reference_type": "INTERNAL_LEGACY_RECONCILIATION_ONLY",
         "source_sent_item_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuAAAAA==",
-        "source_sent_subject": "Fixed-scope site-report follow-through workflow \u2014 R9,380"
+        "source_sent_subject": "Fixed-scope site-report follow-through workflow — R9,380"
       },
       "next_action": "WAIT for a substantive buyer response. If interested, confirm current tools, integration permission, test data, acceptance criteria and supported payment route before work. Do not begin implementation before paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable receipt evidence.",
       "opportunity": "AMX Site-Report Follow-Through Workflow",
@@ -1358,7 +1412,7 @@
       "opportunity": "talent-tracker-ai-automation",
       "organization": "Automation Architects",
       "state": "DISCOVERED",
-      "title": "AI Automation / Data Engineering Talent Tracker \u2014 Cape Town"
+      "title": "AI Automation / Data Engineering Talent Tracker — Cape Town"
     },
     "blackbear.co.za|route-to-market-commercial-collaboration|2026-10-10": {
       "buyer_fit": "Direct adjacency to evidenced route-to-market, strategic-account, distribution and commercial optimisation experience. External message led with business outcomes and invited assessment on a bounded real problem.",
@@ -1490,7 +1544,7 @@
       "reward": "Market-related employment compensation; current careers page describes salary/performance incentives",
       "routing_reason": "EXISTING_THREAD_READ_ACCESS_UNAVAILABLE",
       "state": "SUBMITTED",
-      "subject": "Marketing Lead application \u2014 Ulrich du Plessis",
+      "subject": "Marketing Lead application — Ulrich du Plessis",
       "thread_id": "1a103d43041d248b",
       "title": "Marketing Lead"
     },
@@ -1583,7 +1637,7 @@
       "capital_direction": "INBOUND / REVENUE_SHARE",
       "commercial_role": "DISTRIBUTOR / CONTENT PARTNER",
       "constraints": [
-        "Exact rights/territory/package requirements require PRI review against current CARBON\u00b0 rights position before proposition."
+        "Exact rights/territory/package requirements require PRI review against current CARBON° rights position before proposition."
       ],
       "dedupe_result": "NO_EXISTING_RECORD_FOUND_IN_CURRENT_DURABLE_OPPORTUNITY_LEDGER",
       "discovered_by": "iSCOPE",
@@ -1635,9 +1689,9 @@
       "recipient": "contact@cherryone.ai",
       "routing_reason": "AWAITING_BUYER_OR_PROVIDER_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "CARBON\u00b0 content partnership \u2014 submission requirements",
+      "subject": "CARBON° content partnership — submission requirements",
       "thread_id": "1a0fc58012594488",
-      "title": "CARBON\u00b0 \u2014 Degree of Business"
+      "title": "CARBON° — Degree of Business"
     },
     "close.com|ai-mcp-use-case-discussion|2026-10-20": {
       "canonical_ingest": {
@@ -1787,7 +1841,7 @@
       "commercial_role": "B2B SALES / PROPERTY PARTNERSHIPS / RESERVATION CONVERSION",
       "constraints": [
         "South Africa eligibility and the advertised base are explicitly stated on the official role page; final compensation depends on experience.",
-        "The role requires weekday core hours 15:00\u201300:00 SAST. Prior Owner attestation for U.S.-hours phone sales exists for the current 2CT route, but this exact Corzly schedule has not been separately verified.",
+        "The role requires weekday core hours 15:00–00:00 SAST. Prior Owner attestation for U.S.-hours phone sales exists for the current 2CT route, but this exact Corzly schedule has not been separately verified.",
         "Direct short-term-rental experience is not required if strong sales ability is present; do not claim luxury-hospitality experience without evidence.",
         "Selection is interview-heavy rather than a paid trial: one-way video, live interview, live sales role-play, written follow-up exercise and references.",
         "Prior Corzly contact/application history has not been read in the existing Outlook/TinyFish account."
@@ -1801,7 +1855,7 @@
           "kind": "CURRENT_OFFICIAL_ROLE_PAGE",
           "observed_at": "2026-10-15T13:33:30Z",
           "source": "OFFICIAL_PRIMARY_SOURCE",
-          "summary": "Official Corzly role page remains active and explicitly lists Remote \u2014 South Africa, fully remote, full-time, USD $2,500/month base plus uncapped commission. The role combines reservation sales for an existing luxury portfolio with prospecting and closing new property-management partners. Core hours are Monday\u2013Friday, 08:00\u201317:00 U.S. Central (15:00\u201300:00 SAST). Application begins with role-specific questions and a resume; shortlisted candidates face a one-way video interview, live interview, sales role-play, written follow-up exercise and reference check. Page displays posted date 2026-08-23.",
+          "summary": "Official Corzly role page remains active and explicitly lists Remote — South Africa, fully remote, full-time, USD $2,500/month base plus uncapped commission. The role combines reservation sales for an existing luxury portfolio with prospecting and closing new property-management partners. Core hours are Monday–Friday, 08:00–17:00 U.S. Central (15:00–00:00 SAST). Application begins with role-specific questions and a resume; shortlisted candidates face a one-way video interview, live interview, sales role-play, written follow-up exercise and reference check. Page displays posted date 2026-08-23.",
           "url": "https://careers.corzly.com/careers/account-executive"
         },
         {
@@ -1820,7 +1874,7 @@
       "execution_owner": "PRI",
       "execution_readiness": "HOLD_ACCOUNT_HISTORY_DEDUPE",
       "last_reconciled_at": "2026-10-15T13:33:30Z",
-      "next_action": "Before submission, use the existing authorized Outlook/TinyFish route to inspect prior Corzly mail and any existing application/account history; do not create a duplicate application. Verify that the 15:00\u201300:00 SAST core-hours schedule is workable. If the route and facts pass, apply through the official Corzly role form using the current CV as-is (sufficient-to-test), answer role-specific questions truthfully, and complete any required assessment personally. Persist the actual submission receipt and read it back; do not claim application, buyer response, offer, contract, invoice or payment before evidence.",
+      "next_action": "Before submission, use the existing authorized Outlook/TinyFish route to inspect prior Corzly mail and any existing application/account history; do not create a duplicate application. Verify that the 15:00–00:00 SAST core-hours schedule is workable. If the route and facts pass, apply through the official Corzly role form using the current CV as-is (sufficient-to-test), answer role-specific questions truthfully, and complete any required assessment personally. Persist the actual submission receipt and read it back; do not claim application, buyer response, offer, contract, invoice or payment before evidence.",
       "opportunity": "account-executive-property-partnerships",
       "organization": "Corzly",
       "payer_path": "Corzly employer payroll for base salary; property-partner commission under the employer's published terms.",
@@ -1876,7 +1930,7 @@
       "reward": "$8.50 USD/hour",
       "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
       "state": "QUALIFIED",
-      "title": "Project Coffee \u2014 Data Labeling Specialist \u2014 South Africa"
+      "title": "Project Coffee — Data Labeling Specialist — South Africa"
     },
     "cuinatevabarcelona.com|website-trust-review|2026-10-07": {
       "canonical_ingest": {
@@ -1962,7 +2016,7 @@
       "opportunity": "asteroid-photo-collection",
       "organization": "DataForce by TransPerfect",
       "state": "CLOSED_NO_LONGER_AVAILABLE",
-      "title": "Project Asteroid \u2014 South Africa",
+      "title": "Project Asteroid — South Africa",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "dataforcecommunity.transperfect.com|mirabelle-transcription-qa|remote": {
@@ -2009,7 +2063,7 @@
       "organization": "DataForce by TransPerfect",
       "payer_path": "TransPerfect/DataForce accepted-asset compensation",
       "state": "HOLD",
-      "title": "Ronia RAW Photo Collection \u2014 South Africa",
+      "title": "Ronia RAW Photo Collection — South Africa",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "dataforcecommunity.transperfect.com|thyme-afrikaans-short-story-writer|south-africa": {
@@ -2035,7 +2089,7 @@
       "organization": "DataForce by TransPerfect",
       "payer_path": "TransPerfect/DataForce accepted-asset compensation",
       "state": "HOLD",
-      "title": "Thyme Freelance Writer \u2014 Afrikaans (South Africa)",
+      "title": "Thyme Freelance Writer — Afrikaans (South Africa)",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "dataforcecommunity.transperfect.com|viola-voice-collection|johannesburg": {
@@ -2052,11 +2106,11 @@
         }
       ],
       "execution_owner": "iSCOPE",
-      "next_action": "No action; official page says the July\u2013August study is completed and no longer accepting participants.",
+      "next_action": "No action; official page says the July–August study is completed and no longer accepting participants.",
       "opportunity": "viola-voice-collection",
       "organization": "DataForce by TransPerfect",
       "state": "CLOSED_NO_LONGER_AVAILABLE",
-      "title": "Viola Voice Collection \u2014 Johannesburg",
+      "title": "Viola Voice Collection — Johannesburg",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "dramabox.com|content-partnership|the-dragon-who-could-not-claim-me": {
@@ -2110,10 +2164,10 @@
       "title": "The Dragon Who Could Not Claim Me"
     },
     "dramaloft.com|creator-onboarding|vertical-drama-distribution": {
-      "buyer_fit": "Current global creator onboarding accepts fantasy/supernatural vertical drama and pays recurring performance earnings while creator retains IP; CARBON\u00b0 has relevant production evidence.",
+      "buyer_fit": "Current global creator onboarding accepts fantasy/supernatural vertical drama and pays recurring performance earnings while creator retains IP; CARBON° has relevant production evidence.",
       "capital_direction": "INBOUND PERFORMANCE REVENUE / NO SIGNUP FEE",
       "constraints": [
-        "Current CARBON\u00b0 evidence establishes rendered Episodes 06\u201307 and developed series material, not a complete upload-ready series; do not inflate completion."
+        "Current CARBON° evidence establishes rendered Episodes 06–07 and developed series material, not a complete upload-ready series; do not inflate completion."
       ],
       "discovered_by": "iSCOPE",
       "discovery_path": "MARKET SIGNAL -> REQUIRED OUTCOME -> CAPABILITY MATCH",
@@ -2170,7 +2224,7 @@
           "observed_at": "2026-10-16T08:19:16Z",
           "source": "OUTLOOK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjgAAAA==",
-          "subject": "Application \u2014 Sales Development Representative",
+          "subject": "Application — Sales Development Representative",
           "summary": "Official careers email route used with CV attached. Sent item independently read back. Asked recruiter to confirm South Africa remote eligibility and compensation. No reply or offer inferred."
         }
       ],
@@ -2187,7 +2241,7 @@
       "recipient": "careers@edgefolio.com",
       "reward": "Not published",
       "state": "SUBMITTED",
-      "subject": "Application \u2014 Sales Development Representative",
+      "subject": "Application — Sales Development Representative",
       "thread_id": null,
       "title": "Sales Development Representative"
     },
@@ -2195,7 +2249,7 @@
       "commercial_offer": {
         "amount": 1000,
         "currency": "USD",
-        "scope": "Bounded commissioned development sprint: two production-ready 60\u201390 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after brief.",
+        "scope": "Bounded commissioned development sprint: two production-ready 60–90 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after brief.",
         "source_id": "1a10da53d6a035a0",
         "status": "OFFER_PRESENTED_NOT_ACCEPTED"
       },
@@ -2237,7 +2291,7 @@
           "observed_at": "2026-10-05T19:58:14Z",
           "source": "GMAIL",
           "source_id": "1a10da53d6a035a0",
-          "summary": "PRI replied in-thread with current key art, Pitch Episodes 01\u201302 script master and Canonical Cast/visual continuity pack; explicitly preserved current-video truth and offered a bounded USD 1,000 commissioned development sprint subject to buyer acceptance.",
+          "summary": "PRI replied in-thread with current key art, Pitch Episodes 01–02 script master and Canonical Cast/visual continuity pack; explicitly preserved current-video truth and offered a bounded USD 1,000 commissioned development sprint subject to buyer acceptance.",
           "thread_id": "1a0f2ea3874d5fde"
         },
         {
@@ -2275,7 +2329,7 @@
       "recipient": "contact@faceproduction.net",
       "routing_reason": "OWNER_NO_CONTACT_2026_10_09",
       "state": "NO_CONTACT",
-      "subject": "Producer / catalogue partnership \u2014 CARBON\u00b0",
+      "subject": "Producer / catalogue partnership — CARBON°",
       "suppression": {
         "intake_id": "3f48f8b5-6cd7-8118-a45a-dc2c012c8001",
         "observed_at": "2026-10-09",
@@ -2504,7 +2558,7 @@
           "observed_at": "2026-10-16T08:20:59Z",
           "source": "OUTLOOK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkAAAAA==",
-          "subject": "SDR Application \u2014 Ulrich du Plessis",
+          "subject": "SDR Application — Ulrich du Plessis",
           "summary": "Application email and CV attachment sent to cvs@geestalent.com; exact Sent Item read back. The email provides a truthful commercial summary and public proof links. No recipient response or offer inferred."
         }
       ],
@@ -2513,7 +2567,7 @@
       "last_action_at": "2026-10-16T08:20:59Z",
       "last_reconciled_at": "2026-10-16T08:20:59Z",
       "next_action": "Wait for recruiter response. By 2026-10-23, verify response and whether an ATS submission is required; complete any required next step through the existing application history without duplicate registration.",
-      "opportunity": "Sales Development Representative \u2014 Beeline",
+      "opportunity": "Sales Development Representative — Beeline",
       "organization": "Gees Talent / Beeline",
       "payment": "Employment compensation; current listing does not publish a salary amount.",
       "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL",
@@ -2521,9 +2575,9 @@
       "recipient": "cvs@geestalent.com",
       "reward": "Not published",
       "state": "SUBMITTED",
-      "subject": "SDR Application \u2014 Ulrich du Plessis",
+      "subject": "SDR Application — Ulrich du Plessis",
       "thread_id": null,
-      "title": "Sales Development Representative \u2014 Beeline"
+      "title": "Sales Development Representative — Beeline"
     },
     "goelelectrical.co.za|quote-to-job-control-loop|2026-10-19": {
       "active_dependencies": {
@@ -2590,8 +2644,8 @@
           "observed_at": "2026-10-19T16:42:57Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RtwAAAA==",
-          "subject": "Fixed-scope quote-to-job control loop \u2014 R9,380",
-          "summary": "Sent from usduplessis@outlook.com to info@goelelectrical.co.za. New buyer-specific AMX implementation offer, not the earlier US$99 AI-agent QA or sourcing offer. Fixed price R9\u00a0380; waiting for buyer response. Sent Item independently read back. Message does not imply acceptance, invoice, payment, or delivery.",
+          "subject": "Fixed-scope quote-to-job control loop — R9,380",
+          "summary": "Sent from usduplessis@outlook.com to info@goelelectrical.co.za. New buyer-specific AMX implementation offer, not the earlier US$99 AI-agent QA or sourcing offer. Fixed price R9 380; waiting for buyer response. Sent Item independently read back. Message does not imply acceptance, invoice, payment, or delivery.",
           "url": "https://goelelectrical.co.za/contact/"
         }
       ],
@@ -2640,7 +2694,7 @@
         "recipient": "info@goelelectrical.co.za",
         "reference_type": "INTERNAL_LEGACY_RECONCILIATION_ONLY",
         "source_sent_item_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RtwAAAA==",
-        "source_sent_subject": "Fixed-scope quote-to-job control loop \u2014 R9,380"
+        "source_sent_subject": "Fixed-scope quote-to-job control loop — R9,380"
       },
       "next_action": "WAIT for a substantive buyer response. If interested, confirm current tools, integration permission, test data, acceptance criteria and supported payment route before work. Do not begin implementation before paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable receipt evidence.",
       "opportunity": "AMX Quote-to-Job Control Loop",
@@ -2720,7 +2774,7 @@
       "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
       "constraints": [
         "Public listing is indexed as about two months old; vacancy still open is unconfirmed. Email explicitly asks recruiter to confirm availability.",
-        "Advertised realistic OTE R15,500\u2013R25,500/month is variable and not guaranteed; offer terms remain unknown.",
+        "Advertised realistic OTE R15,500–R25,500/month is variable and not guaranteed; offer terms remain unknown.",
         "No recipient reply or application receipt beyond the Outlook Sent Item is established."
       ],
       "current_route_confidence": "MEDIUM",
@@ -2734,7 +2788,7 @@
           "kind": "PUBLIC_ROLE_LISTING",
           "observed_at": "2026-10-16T08:25:00Z",
           "source": "WEB",
-          "summary": "Full-cycle BDR role in Cape Town, listed basic salary plus per signed business fibre link and 10% commission on gross profit; stated realistic OTE R15,500\u2013R25,500/month; official listing asks CV and cover letter emailed to erin@heldertech.co.za.",
+          "summary": "Full-cycle BDR role in Cape Town, listed basic salary plus per signed business fibre link and 10% commission on gross profit; stated realistic OTE R15,500–R25,500/month; official listing asks CV and cover letter emailed to erin@heldertech.co.za.",
           "url": "https://za.linkedin.com/jobs/view/business-development-representative-at-heldertech-4450469439"
         },
         {
@@ -2749,7 +2803,7 @@
           "observed_at": "2026-10-16T08:30:53Z",
           "source": "OUTLOOK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkwAAAA==",
-          "subject": "BDR Application \u2014 Ulrich du Plessis",
+          "subject": "BDR Application — Ulrich du Plessis",
           "summary": "CV attached; body notes transferable B2B/telecoms experience without claiming specialist fibre-link history, and asks whether vacancy remains open. Outlook Sent Item independently read back. No recruiter response found in the current search."
         }
       ],
@@ -2760,13 +2814,13 @@
       "next_action": "Await recruiter response on whether the vacancy remains open. If none by 2026-10-23, recheck the role and mailbox before one short follow-up. If active, qualify target region, product training, pay structure, lead/client support, working arrangement and start date. No duplicate application.",
       "opportunity": "Business Development Representative",
       "organization": "Heldertech",
-      "payment": "Basic salary plus once-off per signed business fibre link and 10% commission on generated gross profit. Public stated realistic OTE R15,500\u2013R25,500/month, not guaranteed.",
+      "payment": "Basic salary plus once-off per signed business fibre link and 10% commission on generated gross profit. Public stated realistic OTE R15,500–R25,500/month, not guaranteed.",
       "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL",
       "qualified_at": "2026-10-16T08:25:00Z",
       "recipient": "erin@heldertech.co.za",
-      "reward": "Advertised realistic OTE R15,500\u2013R25,500/month; actual base and variable terms to be confirmed.",
+      "reward": "Advertised realistic OTE R15,500–R25,500/month; actual base and variable terms to be confirmed.",
       "state": "SUBMITTED",
-      "subject": "BDR Application \u2014 Ulrich du Plessis",
+      "subject": "BDR Application — Ulrich du Plessis",
       "thread_id": null,
       "title": "Business Development Representative"
     },
@@ -2811,7 +2865,7 @@
           "observed_at": "2026-10-15T16:36:27Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiQAAAA==",
-          "subject": "One-workflow AI agent acceptance pilot \u2014 US$99 fixed",
+          "subject": "One-workflow AI agent acceptance pilot — US$99 fixed",
           "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to info@hipagency.ai. Offer: For one defined workflow, return a runnable acceptance harness and findings covering expected outputs, missing inputs, failed-tool retries, duplicate actions and the human-handoff boundary. US$99 fixed fee; delivery within 48 hours after receipt of a redacted specification and sample inputs. No retainer or production access required for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
         },
         {
@@ -2819,7 +2873,7 @@
           "observed_at": "2026-10-19T15:40:37Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RqwAAAA==",
-          "subject": "Follow-up: one-workflow AI acceptance pilot \u2014 US$99",
+          "subject": "Follow-up: one-workflow AI acceptance pilot — US$99",
           "summary": "One due follow-up sent from usduplessis@outlook.com to info@hipagency.ai; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
           "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         },
@@ -2847,7 +2901,7 @@
       "routing_reason": "Existing outbound offer is a bounded fixed-fee proof-of-work route. This write reconciles a verified existing send only; it sends no new message and does not promote the buyer to RESPONDED or ACCEPTED.",
       "state": "OFFERED",
       "thread_id": null,
-      "title": "One-workflow AI agent acceptance pilot \u2014 US$99 fixed",
+      "title": "One-workflow AI agent acceptance pilot — US$99 fixed",
       "upfront_cost": 0
     },
     "hotsourced.io|legaltech-sdr|2026-10-16": {
@@ -2855,7 +2909,7 @@
       "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
       "constraints": [
         "Current role's official LinkedIn application button could not be used through the unconnected browser; recruitment@hotsourced.io is a published company recruitment inbox from a prior Hotsourced job post, but it is not verified as the exact ATS route for this requisition.",
-        "Current role advertised base R220,000\u2013R286,000/year and OTE R374,000\u2013R462,000/year; variable/OTE depends on performance.",
+        "Current role advertised base R220,000–R286,000/year and OTE R374,000–R462,000/year; variable/OTE depends on performance.",
         "No delivery to recruiter, buyer response, interview, offer or payment established."
       ],
       "current_route_confidence": "MEDIUM",
@@ -2869,7 +2923,7 @@
           "kind": "CURRENT_PRIMARY_ROLE_LISTING",
           "observed_at": "2026-10-16T07:40:00Z",
           "source": "WEB",
-          "summary": "Current remote South Africa LegalTech SDR listing; base R220,000\u2013R286,000/year, OTE R374,000\u2013R462,000/year; UK hours translate to 11:00\u201319:00 SAST; founder/SME outbound and meeting generation.",
+          "summary": "Current remote South Africa LegalTech SDR listing; base R220,000–R286,000/year, OTE R374,000–R462,000/year; UK hours translate to 11:00–19:00 SAST; founder/SME outbound and meeting generation.",
           "url": "https://za.linkedin.com/jobs/view/sales-development-representative-remote-south-africa-at-hotsourced-4479869590"
         },
         {
@@ -2891,7 +2945,7 @@
           "observed_at": "2026-10-16T08:23:54Z",
           "source": "OUTLOOK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkQAAAA==",
-          "subject": "Application \u2014 Remote Sales Development Representative (South Africa)",
+          "subject": "Application — Remote Sales Development Representative (South Africa)",
           "summary": "CV attached. Asked recruiter to consider the application or route it to the relevant recruiter/ATS if another route is mandatory. Sent Item read back independently; no delivery, application acceptance or recruiter reply inferred."
         }
       ],
@@ -2900,17 +2954,17 @@
       "last_action_at": "2026-10-16T08:23:54Z",
       "last_reconciled_at": "2026-10-16T08:23:54Z",
       "next_action": "Await recruiter reply or routing instructions. If none by 2026-10-23, verify the exact active application route via current public posting, then use that route without creating a duplicate candidate record.",
-      "opportunity": "Sales Development Representative \u2014 LegalTech",
+      "opportunity": "Sales Development Representative — LegalTech",
       "organization": "Hotsourced / confidential UK LegalTech client",
-      "payment": "Advertised base R220,000\u2013R286,000/year plus performance commission; OTE R374,000\u2013R462,000/year. OTE is not guaranteed.",
+      "payment": "Advertised base R220,000–R286,000/year plus performance commission; OTE R374,000–R462,000/year. OTE is not guaranteed.",
       "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL_ROUTE_CONFIRMATION",
       "qualified_at": "2026-10-16T07:40:00Z",
       "recipient": "recruitment@hotsourced.io",
-      "reward": "Base ZAR 220,000\u2013286,000/year; stated OTE ZAR 374,000\u2013462,000/year",
+      "reward": "Base ZAR 220,000–286,000/year; stated OTE ZAR 374,000–462,000/year",
       "state": "SUBMITTED",
-      "subject": "Application \u2014 Remote Sales Development Representative (South Africa)",
+      "subject": "Application — Remote Sales Development Representative (South Africa)",
       "thread_id": null,
-      "title": "Sales Development Representative \u2014 LegalTech"
+      "title": "Sales Development Representative — LegalTech"
     },
     "hugais.co.za|agent-acceptance-micro-pilot|2026-10-15": {
       "buyer_fit": "A fixed-scope workflow reliability/acceptance offer was sent based on the prior discovery sweep. Current buyer interest, receipt/open, and present-day qualification have not been established by a buyer response.",
@@ -2961,7 +3015,7 @@
           "observed_at": "2026-10-19T15:31:15Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RqQAAAA==",
-          "subject": "Follow-up: test one AI agent before handoff \u2014 US$99",
+          "subject": "Follow-up: test one AI agent before handoff — US$99",
           "summary": "One due follow-up sent from usduplessis@outlook.com to dionne@hugais.co.za; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
           "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         },
@@ -2993,7 +3047,7 @@
       "upfront_cost": 0
     },
     "humansignal.com|content-creator-flexible-gig|remote": {
-      "buyer_fit": "CARBON\u00b0 production and short-form content capability is relevant, but South Africa commercial terms are not explicit.",
+      "buyer_fit": "CARBON° production and short-form content capability is relevant, but South Africa commercial terms are not explicit.",
       "capital_direction": "INBOUND / NO APPLICATION FEE",
       "constraints": [
         "South Africa eligibility and rate are not explicit in the recovered primary listing."
@@ -3042,7 +3096,7 @@
       "opportunity": "data-annotation-contributor",
       "organization": "HumanSignal",
       "state": "CLOSED_NOT_ELIGIBLE",
-      "title": "Data Annotation Contributor \u2014 International"
+      "title": "Data Annotation Contributor — International"
     },
     "humansignal.com|data-collection-contributor|south-africa": {
       "active_dependencies": {
@@ -3146,7 +3200,7 @@
       "reward": "Up to USD $6.00/hour",
       "routing_reason": "ID_AND_PAYOUT_SETUP_COMPLETE_TRAINING_ASSESSMENT_NEXT",
       "state": "QUALIFIED",
-      "title": "Data Collection Contributor \u2014 South Africa"
+      "title": "Data Collection Contributor — South Africa"
     },
     "inkwavestudios.uk|production-partnership|the-dragon-who-could-not-claim-me": {
       "constraints": [
@@ -3373,7 +3427,7 @@
       },
       "recipient": "hello@jukboxproductions.com",
       "state": "SUBMITTED",
-      "subject": "Vertical drama production partnership \u2014 CARBON\u00b0",
+      "subject": "Vertical drama production partnership — CARBON°",
       "thread_id": "1a0f2ea30b45baa0",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -3433,7 +3487,7 @@
       },
       "recipient": "made@k29studios.com",
       "state": "SUBMITTED",
-      "subject": "Vertical production collaboration \u2014 CARBON\u00b0",
+      "subject": "Vertical production collaboration — CARBON°",
       "thread_id": "1a0f2ea2a952c85d",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -3521,7 +3575,7 @@
           "observed_at": "2026-10-13T20:58:34Z",
           "source": "OUTLOOK_SENT_ITEMS_READBACK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACKnbyNgAAAA==",
-          "summary": "Outlook record retrieved for subject \"AMX sourcing-overflow pilot \u2014 USD 99 checkout\", recipient Vanessa Placido <vanessa@kingstonstanley.com>, offer USD 99. Connected ROOT sender-drift evidence reports the three 13-Oct outbound emails were sent from usduplessis@outlook.com rather than a separately verified canonical Matrix business sender. The message is additional to the existing 7-Oct initial offer and 10-Oct follow-up recorded here. A separate Close checkout-link message is still marked draft, so the exact sent-message/draft relationship must be reconciled. No buyer receipt, response, acceptance, purchase or payment is inferred.",
+          "summary": "Outlook record retrieved for subject \"AMX sourcing-overflow pilot — USD 99 checkout\", recipient Vanessa Placido <vanessa@kingstonstanley.com>, offer USD 99. Connected ROOT sender-drift evidence reports the three 13-Oct outbound emails were sent from usduplessis@outlook.com rather than a separately verified canonical Matrix business sender. The message is additional to the existing 7-Oct initial offer and 10-Oct follow-up recorded here. A separate Close checkout-link message is still marked draft, so the exact sent-message/draft relationship must be reconciled. No buyer receipt, response, acceptance, purchase or payment is inferred.",
           "url": "https://buy.stripe.com/28EeVd597dPy9UdaiuaR203"
         }
       ],
@@ -3615,7 +3669,7 @@
           "observed_at": "2026-10-16T08:25:19Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkgAAAA==",
-          "subject": "Application \u2014 Business Development Representative (Remote / EMEA)",
+          "subject": "Application — Business Development Representative (Remote / EMEA)",
           "summary": "Sent from usduplessis@outlook.com to the official careers@kodah.ai address. Application led with 10+ years of EMEA B2B sales/strategic-account experience and concise, bounded evidence of AI-assisted product builds. No employer receipt or response inferred."
         },
         {
@@ -3639,7 +3693,7 @@
       "recipient": "careers@kodah.ai",
       "reward": "Full-time employment; compensation not published and not yet agreed.",
       "state": "SUBMITTED",
-      "subject": "Application \u2014 Business Development Representative (Remote / EMEA)",
+      "subject": "Application — Business Development Representative (Remote / EMEA)",
       "thread_id": null,
       "title": "Business Development Representative"
     },
@@ -3711,7 +3765,7 @@
       "recipient": "info@laverticaldramamarket.com",
       "routing_reason": "BUYER_OFFERED_ALTERNATE_ROUTE_BUT_NO_ROUTE_DELIVERED_AFTER_MULTIPLE_FOLLOWUPS",
       "state": "RESPONDED",
-      "subject": "VertIGo AI Vertical Drama \u2014 alternate submission route request",
+      "subject": "VertIGo AI Vertical Drama — alternate submission route request",
       "thread_id": "1a0f1fba9e5a5efb",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -3977,7 +4031,7 @@
       },
       "recipient": "hello@magicpictures.net",
       "state": "SUBMITTED",
-      "subject": "Vertical drama co-production \u2014 CARBON\u00b0",
+      "subject": "Vertical drama co-production — CARBON°",
       "thread_id": "1a0f2ea89285fcc3",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -3998,7 +4052,7 @@
           "kind": "CURRENT_PRIMARY_LISTING",
           "observed_at": "2026-10-10T05:31:00Z",
           "source": "WEB",
-          "summary": "Current listing: South Africa remote; inbound leads/no cold calling; USD 1,000\u20132,000 base; trial period; written-sales examples required.",
+          "summary": "Current listing: South Africa remote; inbound leads/no cold calling; USD 1,000–2,000 base; trial period; written-sales examples required.",
           "url": "https://virtualstaffsa.com/job/media-removal-full-time-remote-sales-closer-inbound-leads-no-cold-calling-south-africa/"
         },
         {
@@ -4028,11 +4082,11 @@
       "proof_of_work_route": "WORK_SAMPLE",
       "qualified_at": "2026-10-10T05:31:00Z",
       "recipient": "dhillon@mediaremoval.com",
-      "reward": "USD 1,000\u20132,000 monthly base in current listing, with commission/performance bonuses discussed after successful trial.",
+      "reward": "USD 1,000–2,000 monthly base in current listing, with commission/performance bonuses discussed after successful trial.",
       "state": "SUBMITTED",
-      "subject": "Inbound Sales \u2014 Cape Town \u2014 Ulrich du Plessis",
+      "subject": "Inbound Sales — Cape Town — Ulrich du Plessis",
       "thread_id": "1a1244c82b1b4abc",
-      "title": "Remote Sales Closer \u2014 Inbound Leads, No Cold Calling"
+      "title": "Remote Sales Closer — Inbound Leads, No Cold Calling"
     },
     "mendazsolar.co.za|solar-service-follow-through-pilot|2026-10-20": {
       "active_dependencies": {
@@ -4261,7 +4315,7 @@
       ],
       "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "Catalogue licensing / co-production enquiry \u2014 CARBON\u00b0 Production 001",
+      "subject": "Catalogue licensing / co-production enquiry — CARBON° Production 001",
       "thread_id": "1a0f25a83088e914",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -4496,7 +4550,7 @@
       "recipient": "mrf@mountainriverfilms.com",
       "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "Co-production / distribution \u2014 AI-native vertical fantasy series",
+      "subject": "Co-production / distribution — AI-native vertical fantasy series",
       "thread_id": "1a0f2e2af4f0d5cc",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -4545,7 +4599,7 @@
       "commercial_offer": {
         "amount": 1000,
         "currency": "USD",
-        "scope": "Bounded commissioned development sprint: two production-ready 60\u201390 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after receiving the brief.",
+        "scope": "Bounded commissioned development sprint: two production-ready 60–90 second episodes, serial/character engine, shot plan, visual continuity direction and audio/edit brief; delivery target 48 hours after receiving the brief.",
         "source_id": "1a10da6be548ddfb",
         "status": "OFFER_PRESENTED_NOT_ACCEPTED"
       },
@@ -4580,7 +4634,7 @@
           "observed_at": "2026-10-05T19:59:53Z",
           "source": "GMAIL",
           "source_id": "1a10da6be548ddfb",
-          "summary": "PRI sent the current DRAGON review package (Ivory Eclipse key art, Pitch Episodes 01\u201302 script master, canonical cast/visual continuity pack) and presented a bounded USD 1,000 commissioned development sprint. Offer was presented, not accepted.",
+          "summary": "PRI sent the current DRAGON review package (Ivory Eclipse key art, Pitch Episodes 01–02 script master, canonical cast/visual continuity pack) and presented a bounded USD 1,000 commissioned development sprint. Offer was presented, not accepted.",
           "thread_id": "1a0fedc9bdd30527"
         },
         {
@@ -4773,7 +4827,7 @@
       "routing_reason": "AWAITING_BUYER_OR_PROVIDER_RESPONSE",
       "state": "DISCOVERED",
       "thread_id": "1a0fedc966c2c687",
-      "title": "OneForma AI/ML projects \u2014 South Africa / Remote"
+      "title": "OneForma AI/ML projects — South Africa / Remote"
     },
     "ontrackmulching.com|website-trust-cleanup|2026-10-08": {
       "canonical_ingest": {
@@ -4818,7 +4872,7 @@
         {
           "kind": "OFFICIAL_CURRENT_ROLE",
           "observed_at": "2026-10-03T09:00:05Z",
-          "pay": "USD 20\u201370/hour",
+          "pay": "USD 20–70/hour",
           "posted_at": "2026-10-03",
           "source": "WEB",
           "south_africa_eligible": true,
@@ -4860,7 +4914,7 @@
       "opportunity": "ai-content-evaluation-editing",
       "organization": "OpenTrain AI",
       "qualification": {
-        "capital_direction": "OpenTrain/client pays contractor USD $20\u2013$70/hour; no applicant fee",
+        "capital_direction": "OpenTrain/client pays contractor USD $20–$70/hour; no applicant fee",
         "current_fit": "AMX evidences structured evaluation, editorial QA, rubric use, factual review and written feedback.",
         "friction": "free account; resume and downstream hiring-site application required",
         "geography": "South Africa explicitly listed among 230 eligible countries",
@@ -4984,7 +5038,7 @@
         {
           "kind": "OFFICIAL_CURRENT_ROLE",
           "observed_at": "2026-10-03T09:00:05Z",
-          "pay": "USD 30\u2013100/hour",
+          "pay": "USD 30–100/hour",
           "posted_at": "2026-10-03",
           "source": "WEB",
           "south_africa_eligible": true,
@@ -5027,7 +5081,7 @@
         {
           "kind": "CURRENT_OFFICIAL_ROLE_RELISTED_AND_REQUALIFIED",
           "observed_at": "2026-10-11T18:37:01.232Z",
-          "pay": "USD 30\u2013100/hour equivalent per accepted task",
+          "pay": "USD 30–100/hour equivalent per accepted task",
           "posted_at": "2026-10-06",
           "source": "OFFICIAL_PRIMARY_SOURCE",
           "south_africa_eligible": true,
@@ -5040,12 +5094,12 @@
       "execution_readiness": "HOLD_ACCOUNT_RECOVERY",
       "last_action_at": "2026-10-11T18:37:01.232Z",
       "last_reconciled_at": "2026-10-11",
-      "next_action": "Use the current official Backend AI Coding Task Creator listing as the current/relisted route for this existing OpenTrain task-creator opportunity. Restore the existing account/session and confirm the required mid-senior backend engineering fit truthfully before applying. Current listing: South Africa eligible, about 15 flexible hours/week, USD 30\u2013100/hour equivalent per accepted task. Do not create a second account. If existing-account access remains unavailable, obtain a fresh secure recovery route.",
+      "next_action": "Use the current official Backend AI Coding Task Creator listing as the current/relisted route for this existing OpenTrain task-creator opportunity. Restore the existing account/session and confirm the required mid-senior backend engineering fit truthfully before applying. Current listing: South Africa eligible, about 15 flexible hours/week, USD 30–100/hour equivalent per accepted task. Do not create a second account. If existing-account access remains unavailable, obtain a fresh secure recovery route.",
       "opportunity": "backend-coding-task-creator-ai-evaluator",
       "organization": "OpenTrain AI",
       "proof_of_work_route": "TASK_BASED",
       "qualification": {
-        "capital_direction": "OpenTrain/client pays contractor USD $30\u2013$100/hour equivalent per accepted task; no applicant fee",
+        "capital_direction": "OpenTrain/client pays contractor USD $30–$100/hour equivalent per accepted task; no applicant fee",
         "current_fit": "Existing evidence-bound CV supports Python/FastAPI, backend APIs, full-stack implementation, tests/CI, deterministic verification and code-review capability. The current listing is marked mid-senior; actual fit must be demonstrated truthfully in the provider assessment.",
         "friction": "Free account; existing account recovery and downstream hiring-platform application required",
         "geography": "South Africa explicitly listed on the current official listing",
@@ -5266,7 +5320,7 @@
         {
           "kind": "OFFICIAL_CURRENT_ROLE",
           "observed_at": "2026-10-03T09:00:05Z",
-          "pay": "USD 50\u201390/hour",
+          "pay": "USD 50–90/hour",
           "posted_at": "2026-10-03",
           "source": "WEB",
           "south_africa_eligible": true,
@@ -5308,8 +5362,8 @@
       "opportunity": "video-annotation-editor",
       "organization": "OpenTrain AI",
       "qualification": {
-        "capital_direction": "OpenTrain/client pays contractor USD $50\u2013$90/hour; no applicant fee",
-        "current_fit": "CARBON\u00b0/AMX evidences video timing, pacing, scene/continuity inspection and production-quality review.",
+        "capital_direction": "OpenTrain/client pays contractor USD $50–$90/hour; no applicant fee",
+        "current_fit": "CARBON°/AMX evidences video timing, pacing, scene/continuity inspection and production-quality review.",
         "friction": "free account; resume and downstream hiring-site application required",
         "geography": "South Africa is listed among 230 eligible countries",
         "payout_path": "paid contractor work through OpenTrain/client flow"
@@ -5348,7 +5402,7 @@
           "kind": "CURRENT_PRIMARY_LISTING",
           "observed_at": "2026-10-02",
           "source": "WEB",
-          "summary": "Current Outlier application route for Coding Expertise for AI Training (English \u2014 South Africa).",
+          "summary": "Current Outlier application route for Coding Expertise for AI Training (English — South Africa).",
           "url": "https://app.outlier.ai/login?id=4476587005&job_post_id=4476587005"
         },
         {
@@ -5457,7 +5511,7 @@
       "routing_reason": "ACCOUNT_AND_DASHBOARD_EVIDENCED_SKILLS_SCREENING_REQUIRED",
       "state": "QUALIFIED",
       "thread_id": "1a0fedc93e232877",
-      "title": "Coding Expertise for AI Training \u2014 South Africa"
+      "title": "Coding Expertise for AI Training — South Africa"
     },
     "pestmanagers.co.za|service-follow-through-pilot|2026-10-20": {
       "active_dependencies": {
@@ -5577,7 +5631,7 @@
           "observed_at": "2026-10-16T08:20:22Z",
           "source": "OUTLOOK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjwAAAA==",
-          "subject": "Application \u2014 Sales Development Representative",
+          "subject": "Application — Sales Development Representative",
           "summary": "Sent to the public job-listing contact with CV attached. Exact sent item read back in Outlook. No buyer reply or offer established."
         }
       ],
@@ -5594,7 +5648,7 @@
       "recipient": "tim@ploy.club",
       "reward": "Not published",
       "state": "SUBMITTED",
-      "subject": "Application \u2014 Sales Development Representative",
+      "subject": "Application — Sales Development Representative",
       "thread_id": null,
       "title": "Sales Development Representative"
     },
@@ -5675,7 +5729,7 @@
       "recipient": "hello@poursyrup.ai",
       "reward": "Paid full-time role; compensation not published on current official careers page",
       "state": "SUBMITTED",
-      "subject": "Senior AI delivery engineer \u2014 shipped work",
+      "subject": "Senior AI delivery engineer — shipped work",
       "thread_id": "1a103d3e49774780",
       "title": "Senior AI delivery engineer"
     },
@@ -5826,10 +5880,10 @@
       "payment": "Study dependent",
       "reward": "Study dependent",
       "state": "DEPRIORITIZED",
-      "title": "Prolific paid studies \u2014 South Africa"
+      "title": "Prolific paid studies — South Africa"
     },
     "redrama.ai|adaptation-distribution|the-dragon-who-could-not-claim-me": {
-      "buyer_fit": "Official licensing page accepts rights-controlled stories for adaptation and existing series for distribution; current CARBON\u00b0 property has developed series material and rendered samples but is not represented as a completed 50-episode series.",
+      "buyer_fit": "Official licensing page accepts rights-controlled stories for adaptation and existing series for distribution; current CARBON° property has developed series material and rendered samples but is not represented as a completed 50-episode series.",
       "capital_direction": "INBOUND / NON-EXCLUSIVE REVENUE_SHARE_OPTION",
       "commercial_role": "ADAPTATION / DISTRIBUTION / LICENSING",
       "constraints": [
@@ -5868,7 +5922,7 @@
       "reward": "Official page states non-exclusive distribution route with 70% to rights holder; adaptation/licensing terms require direct confirmation.",
       "routing_reason": "AWAITING_REPLY_OR_DUE_REVIEW",
       "state": "SUBMITTED",
-      "subject": "CARBON\u00b0 vertical drama \u2014 adaptation / distribution route",
+      "subject": "CARBON° vertical drama — adaptation / distribution route",
       "thread_id": "1a0fd2b475e05861",
       "title": "The Dragon Who Could Not Claim Me"
     },
@@ -6115,7 +6169,7 @@
       "recipient": "hello@sakubloom.com",
       "routing_reason": "BUYER_SELECTED_ANOTHER_DESIGNER_FOR_CURRENT_PROJECT",
       "state": "REJECTED",
-      "title": "Graphic Designer \u2014 SakuBloom"
+      "title": "Graphic Designer — SakuBloom"
     },
     "scalearmy.com|ai-implementation-specialist|remote-south-africa": {
       "candidate_video_script": "I'm based in South Africa and I build practical AI-enabled workflows that make systems easier to operate and outcomes easier to verify. In one bounded product build, the feature suite passed 36 out of 36 tests and CI passed 81 out of 81 checks; a separate build passed 50 out of 50 acceptance cases. Those are results for defined test sets, and I can show the underlying work. My approach is to map one manual reporting process end to end, identify the source systems and data boundaries, automate the smallest useful path, and test normal, duplicate, missing-data and failure cases before measuring the time and manual effort saved. I'd start by understanding your ERP, database and reporting stack and the reporting bottleneck with the clearest measurable payoff. I can confirm schedule fit for the required U.S. business hours.",
@@ -6155,7 +6209,7 @@
           "kind": "CURRENT_OFFICIAL_ROLE_REVERIFIED",
           "observed_at": "2026-10-13T14:27:21Z",
           "source": "OFFICIAL_PRIMARY_SOURCE",
-          "summary": "The same canonical listing URL currently displays the title Workflow Automation Specialist, remote contract, South Africa eligible, USD $2,300/month, and U.S. business hours (9 AM\u20135 PM EST). It describes connecting existing systems and automating manual data/reporting processes. The application page requires a form plus a recorded skills video. This current title/compensation supersedes the stale title in the prior ledger projection; no application was submitted.",
+          "summary": "The same canonical listing URL currently displays the title Workflow Automation Specialist, remote contract, South Africa eligible, USD $2,300/month, and U.S. business hours (9 AM–5 PM EST). It describes connecting existing systems and automating manual data/reporting processes. The application page requires a form plus a recorded skills video. This current title/compensation supersedes the stale title in the prior ledger projection; no application was submitted.",
           "url": "https://jobs.ashbyhq.com/scale%20army%20careers/3e49f332-28b9-400c-a146-f1682ce962da"
         },
         {
@@ -6176,7 +6230,7 @@
           "kind": "BOUNDED_REQUIRED_VIDEO_SCRIPT_PREPARED",
           "observed_at": "2026-10-15T17:35:58Z",
           "source": "CURRENT_AUTOMATION_RUN",
-          "summary": "Prepared a candidate-recorded 45\u201360 second script anchored to bounded build evidence: 36/36 feature tests + 81/81 CI checks on one build, and 50/50 acceptance cases on a separate build. Script avoids claiming ERP/SQL production experience or U.S.-hours availability. It is a draft for the candidate to record, not a recording, application submission, acceptance or income."
+          "summary": "Prepared a candidate-recorded 45–60 second script anchored to bounded build evidence: 36/36 feature tests + 81/81 CI checks on one build, and 50/50 acceptance cases on a separate build. Script avoids claiming ERP/SQL production experience or U.S.-hours availability. It is a draft for the candidate to record, not a recording, application submission, acceptance or income."
         },
         {
           "kind": "CURRENT_OFFICIAL_ROLE_REVERIFIED_20261020",
@@ -6197,7 +6251,7 @@
       "reward": "USD $2,300/month advertised; final compensation set after evaluating experience and location.",
       "routing_reason": "PROVIDER_OR_HUMAN_GATE_REMAINS",
       "state": "QUALIFIED",
-      "title": "Workflow Automation Specialist \u2014 Remote South Africa",
+      "title": "Workflow Automation Specialist — Remote South Africa",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "schmidhauser.co.za|service-handoff-pilot|2026-10-20": {
@@ -6339,7 +6393,7 @@
       "recipient": "info@seastarfilm.com",
       "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "Vertical drama production & licensing partnership \u2014 CARBON\u00b0",
+      "subject": "Vertical drama production & licensing partnership — CARBON°",
       "thread_id": "1a0f2ea1c5a8c36a",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -6427,7 +6481,7 @@
           "observed_at": "2026-10-13T20:58:31Z",
           "source": "OUTLOOK_SENT_ITEMS_READBACK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACKnbyNAAAAA==",
-          "summary": "Outlook record retrieved for subject \"AMX candidate-sourcing pilot \u2014 USD 99 checkout\", recipient Blake Bhatia <blake@sinyc.com>, offer USD 99. Connected ROOT sender-drift evidence reports the three 13-Oct outbound emails were sent from usduplessis@outlook.com rather than a separately verified canonical Matrix business sender. The message is additional to the existing 7-Oct initial offer and 10-Oct follow-up recorded here. A separate Close checkout-link message is still marked draft, so the exact sent-message/draft relationship must be reconciled. No buyer receipt, response, acceptance, purchase or payment is inferred.",
+          "summary": "Outlook record retrieved for subject \"AMX candidate-sourcing pilot — USD 99 checkout\", recipient Blake Bhatia <blake@sinyc.com>, offer USD 99. Connected ROOT sender-drift evidence reports the three 13-Oct outbound emails were sent from usduplessis@outlook.com rather than a separately verified canonical Matrix business sender. The message is additional to the existing 7-Oct initial offer and 10-Oct follow-up recorded here. A separate Close checkout-link message is still marked draft, so the exact sent-message/draft relationship must be reconciled. No buyer receipt, response, acceptance, purchase or payment is inferred.",
           "url": "https://buy.stripe.com/eVq5kD30ZeTCfex0HUaR201"
         }
       ],
@@ -6495,7 +6549,7 @@
       "recipient": "mail@socialsgroup.com",
       "reward": "Current public role advertises warm pre-qualified leads and commission on cash collected; published OTE observed in current source.",
       "state": "OFFERED",
-      "subject": "High-Ticket Sales Closer \u2014 prove it on the work",
+      "subject": "High-Ticket Sales Closer — prove it on the work",
       "thread_id": "1a124443e231891a",
       "title": "High-Ticket Sales Closer"
     },
@@ -6555,7 +6609,7 @@
       "reward": "Project/rate not specified on careers page; request scope/rate/start date before acceptance",
       "routing_reason": "APPLICATION_ALREADY_SENT_MULTIPLE_TIMES_AWAITING_BUYER_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "South Africa \u2014 AI QA / Prompt Evaluation / Python",
+      "subject": "South Africa — AI QA / Prompt Evaluation / Python",
       "thread_id": "1a0fd28f0a697b2f",
       "title": "AI QA / Prompt Engineer / RLHF / Python-JS remote talent"
     },
@@ -6576,7 +6630,7 @@
           "kind": "CURRENT_PRIMARY_ROUTE",
           "observed_at": "2026-10-04T00:35:26.819Z",
           "source_url": "https://www.stage32.com/jobs/1180733/Call-for-Vertical-Drama-Story-Proposals",
-          "summary": "Direct email, 35\u201340 AI episodes, proposal stage unpaid; script fee USD1000\u20132000 if selected."
+          "summary": "Direct email, 35–40 AI episodes, proposal stage unpaid; script fee USD1000–2000 if selected."
         },
         {
           "kind": "QUALITY_REMEDIATION",
@@ -6637,7 +6691,7 @@
       "recipient_access_verified": false,
       "routing_reason": "FOLLOWUP_ALREADY_SENT_AWAITING_BUYER_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "Vertical Drama Proposal \u2013 Ulrich du Plessis \u2013 AI",
+      "subject": "Vertical Drama Proposal – Ulrich du Plessis – AI",
       "submission_channel": "GMAIL_ATTACHMENT",
       "thread_id": "1a0f1a3a7ad58e63",
       "title": "The Dragon Who Could Not Claim Me"
@@ -6707,8 +6761,8 @@
           "observed_at": "2026-10-19T16:43:04Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuQAAAA==",
-          "subject": "Fixed-scope site-visit-to-install handoff \u2014 R9,380",
-          "summary": "Sent from usduplessis@outlook.com to craig@sunlogic.co.za. New buyer-specific AMX implementation offer, not the earlier US$99 AI-agent QA or sourcing offer. Fixed price R9\u00a0380; waiting for buyer response. Sent Item independently read back. Message does not imply acceptance, invoice, payment, or delivery.",
+          "subject": "Fixed-scope site-visit-to-install handoff — R9,380",
+          "summary": "Sent from usduplessis@outlook.com to craig@sunlogic.co.za. New buyer-specific AMX implementation offer, not the earlier US$99 AI-agent QA or sourcing offer. Fixed price R9 380; waiting for buyer response. Sent Item independently read back. Message does not imply acceptance, invoice, payment, or delivery.",
           "url": "https://sunlogic.co.za/"
         }
       ],
@@ -6757,7 +6811,7 @@
         "recipient": "craig@sunlogic.co.za",
         "reference_type": "INTERNAL_LEGACY_RECONCILIATION_ONLY",
         "source_sent_item_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RuQAAAA==",
-        "source_sent_subject": "Fixed-scope site-visit-to-install handoff \u2014 R9,380"
+        "source_sent_subject": "Fixed-scope site-visit-to-install handoff — R9,380"
       },
       "next_action": "WAIT for a substantive buyer response. If interested, confirm current tools, integration permission, test data, acceptance criteria and supported payment route before work. Do not begin implementation before paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable receipt evidence.",
       "opportunity": "AMX Site-Visit-to-Install Handoff",
@@ -6771,8 +6825,8 @@
       "buyer_fit": "Strong fit to 10+ years of EMEA B2B sales, strategic-account development, route-to-market, negotiation and commercial execution. AI product-building gives adjacent technology fluency. Direct SaaS SDR quota and named outreach/CRM-tool proficiency are not evidenced; not claimed.",
       "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
       "constraints": [
-        "Current public posting states US$1,000\u20131,250/month base plus commission, depending on experience.",
-        "Listing requests a 60\u201390 second Loom/selfie introduction; the first email did not include video and explicitly asks for the preferred route. Application is incomplete pending recruiter direction and genuine applicant-provided video.",
+        "Current public posting states US$1,000–1,250/month base plus commission, depending on experience.",
+        "Listing requests a 60–90 second Loom/selfie introduction; the first email did not include video and explicitly asks for the preferred route. Application is incomplete pending recruiter direction and genuine applicant-provided video.",
         "No reply, offer, contract, invoice, or payment is evidenced."
       ],
       "current_route_confidence": "MEDIUM",
@@ -6786,7 +6840,7 @@
           "kind": "CURRENT_ROLE_LISTING",
           "observed_at": "2026-10-16T08:37:00Z",
           "source": "WEB",
-          "summary": "Current South Africa remote SDR posting; base US$1,000\u20131,250/month plus uncapped commission, full-time; requires sending CV and a 60\u201390 second Loom/selfie video to info@talentadvantage.ca; video applications reviewed first.",
+          "summary": "Current South Africa remote SDR posting; base US$1,000–1,250/month plus uncapped commission, full-time; requires sending CV and a 60–90 second Loom/selfie video to info@talentadvantage.ca; video applications reviewed first.",
           "url": "https://za.linkedin.com/jobs/view/sales-development-representative-at-talent-advantage-4471665103"
         },
         {
@@ -6801,7 +6855,7 @@
           "observed_at": "2026-10-16T08:39:11Z",
           "source": "OUTLOOK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXlQAAAA==",
-          "subject": "Application \u2014 Sales Development Representative",
+          "subject": "Application — Sales Development Representative",
           "summary": "CV attached. The message transparently notes the required video was not attached and asks for the approved video submission route and whether CV can be routed for initial screening. Outlook Sent Item read back. Not represented as a complete application."
         }
       ],
@@ -6809,16 +6863,16 @@
       "execution_readiness": "WAITING_REQUIRED_INTRO_VIDEO",
       "last_action_at": "2026-10-16T08:39:11Z",
       "last_reconciled_at": "2026-10-16T08:39:11Z",
-      "next_action": "Await recruiter response on the required video route and initial-screening eligibility. If they require the video, the applicant must record a genuine 60\u201390 second introduction and provide it through the requested route; do not generate a surrogate applicant recording. Continue other live roles meanwhile.",
+      "next_action": "Await recruiter response on the required video route and initial-screening eligibility. If they require the video, the applicant must record a genuine 60–90 second introduction and provide it through the requested route; do not generate a surrogate applicant recording. Continue other live roles meanwhile.",
       "opportunity": "Sales Development Representative",
       "organization": "Talent Advantage",
-      "payment": "Advertised base US$1,000\u20131,250 per month plus commission; amounts are subject to eligibility, contract terms, and performance.",
+      "payment": "Advertised base US$1,000–1,250 per month plus commission; amounts are subject to eligibility, contract terms, and performance.",
       "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL_INCOMPLETE_VIDEO",
       "qualified_at": "2026-10-16T08:37:00Z",
       "recipient": "info@talentadvantage.ca",
-      "reward": "US$1,000\u20131,250/month base plus uncapped commission (advertised)",
+      "reward": "US$1,000–1,250/month base plus uncapped commission (advertised)",
       "state": "SUBMITTED",
-      "subject": "Application \u2014 Sales Development Representative",
+      "subject": "Application — Sales Development Representative",
       "thread_id": null,
       "title": "Sales Development Representative"
     },
@@ -6871,7 +6925,7 @@
           "observed_at": "2026-10-19T15:40:36Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RqgAAAA==",
-          "subject": "Follow-up: independent agent-workflow QA pilot \u2014 US$99",
+          "subject": "Follow-up: independent agent-workflow QA pilot — US$99",
           "summary": "One due follow-up sent from usduplessis@outlook.com to contact@techemulsion.com; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
           "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         },
@@ -6899,7 +6953,7 @@
       "routing_reason": "Existing outbound offer is a bounded fixed-fee proof-of-work route. This write reconciles a verified existing send only; it sends no new message and does not promote the buyer to RESPONDED or ACCEPTED.",
       "state": "OFFERED",
       "thread_id": null,
-      "title": "Independent agent-workflow QA overflow \u2014 fixed US$99 pilot",
+      "title": "Independent agent-workflow QA overflow — fixed US$99 pilot",
       "upfront_cost": 0
     },
     "telusdigital.com|online-data-analyst|south-africa": {
@@ -6917,7 +6971,7 @@
           "kind": "CURRENT_PRIMARY_LISTING",
           "observed_at": "2026-10-02",
           "source": "WEB",
-          "summary": "Official TELUS Digital listing: remote Online Data Analyst \u2014 South Africa; part-time; evaluation/research tasks; South Africa residence required.",
+          "summary": "Official TELUS Digital listing: remote Online Data Analyst — South Africa; part-time; evaluation/research tasks; South Africa residence required.",
           "url": "https://jobs.telusdigital.com/jobs/18301194-online-data-analyst-south-africa"
         },
         {
@@ -6954,7 +7008,7 @@
       "reward": "Freelance part-time; rate not stated on public listing",
       "routing_reason": "PROVIDER_OTP_IDENTITY_VERIFICATION_REQUIRED",
       "state": "QUALIFIED",
-      "title": "Online Data Analyst \u2014 South Africa"
+      "title": "Online Data Analyst — South Africa"
     },
     "thesurgeapp.com|part-time-telesales-consultant|2026-10-16": {
       "buyer_fit": "Strong fit to 10+ years of B2B sales, account management, route-to-market, negotiation and commercial follow-through. The listing says sales experience is an advantage and focuses on selling advertising placements to local businesses. No claim of prior ad-sales platform experience.",
@@ -6990,7 +7044,7 @@
           "observed_at": "2026-10-16T08:35:56Z",
           "source": "OUTLOOK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXlAAAAA==",
-          "subject": "Application \u2014 Part-Time Telesales Consultant, Cape Town",
+          "subject": "Application — Part-Time Telesales Consultant, Cape Town",
           "summary": "CV attached; note explicitly says photo/intro video was not attached and asks whether the media is mandatory before initial review. Outlook Sent Item read back. Not represented as complete."
         }
       ],
@@ -7007,7 +7061,7 @@
       "recipient": "recruitment@thesurgeapp.com",
       "reward": "R530/day starting rate; up to R950+/day after 3 months if performance conditions are met; monthly bonuses",
       "state": "SUBMITTED",
-      "subject": "Application \u2014 Part-Time Telesales Consultant, Cape Town",
+      "subject": "Application — Part-Time Telesales Consultant, Cape Town",
       "thread_id": null,
       "title": "Part-Time Telesales Consultant"
     },
@@ -7025,7 +7079,7 @@
           "kind": "CURRENT_PRIMARY_SOURCE",
           "observed_at": "2026-10-02",
           "source": "WEB",
-          "summary": "Official Toloka get-started page: Individuals \u2014 Earn money \u2014 Do tasks, get paid \u2014 Free to join.",
+          "summary": "Official Toloka get-started page: Individuals — Earn money — Do tasks, get paid — Free to join.",
           "url": "https://toloka.ai/get-started?from=pdd"
         }
       ],
@@ -7075,7 +7129,7 @@
       "recipient": "tolokercare@toloka.ai",
       "state": "HOLD",
       "thread_id": "1a0fedc94775d4ff",
-      "title": "Toloka paid task marketplace \u2014 South Africa eligibility"
+      "title": "Toloka paid task marketplace — South Africa eligibility"
     },
     "treetopssolar.co.za|maintenance-callout-handoff-pilot|2026-10-20": {
       "active_dependencies": {
@@ -7193,7 +7247,7 @@
       "reward": "$100 fixed price",
       "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
       "state": "QUALIFIED",
-      "title": "AI Automation Fix \u2014 Debug & Optimize Existing AI Agent Workflow"
+      "title": "AI Automation Fix — Debug & Optimize Existing AI Agent Workflow"
     },
     "upwork.com|carpentry-inquiry-automation|022109970451600320481": {
       "capital_direction": "INBOUND / FIXED_PRICE",
@@ -7248,7 +7302,7 @@
           "kind": "CURRENT_PRIMARY_LISTING_REVERIFIED_DIRECT_FETCH",
           "observed_at": "2026-10-14T16:55:15Z",
           "source": "UPWORK_OFFICIAL_LISTING_DIRECT_FETCH",
-          "summary": "Direct fetch of the official listing in this wake confirms US$400 fixed-price; requested scope remains one-channel carpentry/joinery inquiry intake, AI summary/extraction with missing-information flags, Google Sheets reference/status, email notification, error handling, duplicate prevention, ten fictional tests, documentation and commercial reuse rights. Listing activity displayed 50+ proposals, 1 interview, 0 invites, and client last viewed yesterday; the listing shows client member since Oct 12, 2026. This direct primary-page snapshot supersedes a conflicting public search-index snapshot (20\u201350 proposals / 0 interviews); do not infer buyer quality or acceptance from activity indicators.",
+          "summary": "Direct fetch of the official listing in this wake confirms US$400 fixed-price; requested scope remains one-channel carpentry/joinery inquiry intake, AI summary/extraction with missing-information flags, Google Sheets reference/status, email notification, error handling, duplicate prevention, ten fictional tests, documentation and commercial reuse rights. Listing activity displayed 50+ proposals, 1 interview, 0 invites, and client last viewed yesterday; the listing shows client member since Oct 12, 2026. This direct primary-page snapshot supersedes a conflicting public search-index snapshot (20–50 proposals / 0 interviews); do not infer buyer quality or acceptance from activity indicators.",
           "url": "https://www.upwork.com/freelance-jobs/apply/Automation-for-Carpentry-Inquiries_~022109970451600320481/"
         },
         {
@@ -7266,7 +7320,7 @@
       "last_reconciled_at": "2026-10-16T07:58:21Z",
       "next_action": "Do not retry the TinyFish browser run until its wallet condition is resolved. Continue the existing commercial work using available mailbox, repository and payment sources. For this proposal, resume the existing Google sign-in/setup route when the profile is saved and an authenticated session is available; then verify account/application history, live listing acceptance and milestone terms before submitting the prepared proposal once. Do not create a duplicate account or application.",
       "opportunity": "carpentry-inquiry-automation",
-      "organization": "Upwork client \u2014 name not published in accessible listing",
+      "organization": "Upwork client — name not published in accessible listing",
       "payment": "US$400 fixed price through Upwork; milestone funding/escrow and net payout terms unverified.",
       "proof_asset": {
         "artifact": "sandbox:/mnt/data/carpentry-inquiry-automation-pilot.zip",
@@ -7330,7 +7384,7 @@
       "reward": "$50 fixed price",
       "routing_reason": "AUTHENTICATED_BROWSER_ROUTE_UNAVAILABLE_IN_CURRENT_AUTOMATION",
       "state": "QUALIFIED",
-      "title": "Python / Django Developer \u2014 API, Automation & Backend Fixes"
+      "title": "Python / Django Developer — API, Automation & Backend Fixes"
     },
     "upwork.com|rag-crm-internal-assistant|022107920443968482841": {
       "buyer_fit": "Specific buyer need for a bounded internal AI assistant: document-grounded answers with citations, five-category request classification, validated structured output, human review for ambiguity, one read-only CRM lookup, one approval-gated/write endpoint with duplicate prevention, and one n8n routing workflow. Fit is at the workflow/agent-safety design level only; no current source-bound proof of an equivalent deployed RAG+CRM flow has been verified.",
@@ -7366,7 +7420,7 @@
       "last_reconciled_at": "2026-10-12",
       "next_action": "iSCOPE: verify the listing still accepts proposals through the authorized Upwork account; verify exact live-source proof/claims and whether a truthful relevant example exists; determine whether the $700 scope and separate hosting/API costs are viable. If the evidence gates pass, route the bounded proposal to PRI for review and external progression. Do not submit or imply qualification while these remain unresolved.",
       "opportunity": "rag-crm-internal-assistant",
-      "organization": "Upwork client \u2014 Atlanta, US (name not published in accessible listing)",
+      "organization": "Upwork client — Atlanta, US (name not published in accessible listing)",
       "payment": "US$700 fixed price through Upwork; milestone funding/escrow terms not yet verified.",
       "reward": "US$700 fixed price",
       "routing_reason": "CURRENT_BUYER_NEED_MATCHED; HIGH_COMPETITION_AND_LIVE_PROOF_GAP",
@@ -7381,7 +7435,7 @@
         "Buyer explicitly demands actual working WhatsApp agent(s) they can test; states that Loom-only evidence is not acceptable.",
         "Public fixed budget is US$1,000 for two separate functions plus website and GoHighLevel integration; third-party costs require approval. Scope-to-budget feasibility must be checked before any commitment.",
         "Current live-runtime-to-source SHA binding is not available in this session; out-of-canon repository snapshots and the draft James-Bot recovery PR cannot be represented as deployed proof.",
-        "Listing displays 15\u201320 proposals, 2 interviewing, buyer location Singapore and US$140 total spend; qualify payment/milestone and platform route before committing.",
+        "Listing displays 15–20 proposals, 2 interviewing, buyer location Singapore and US$140 total spend; qualify payment/milestone and platform route before committing.",
         "The older, similar WhatsApp listing is not separately tracked here; this record uses the newest listing ID and must not be duplicated under the previous posting."
       ],
       "current_route_status": "PUBLIC_LISTING_READABLE_2026-10-12",
@@ -7393,7 +7447,7 @@
           "kind": "CURRENT_PUBLIC_LISTING",
           "observed_at": "2026-10-12",
           "source": "WEB",
-          "summary": "WhatsApp Agent AI \u2014 Show Working Agent & Proof You Built It; posted 2026-10-04; US$1,000 fixed-price. Requires conversational AI for prospect qualification/sales and service-provider onboarding, company details, case studies, project sizes/pricing, GHL pipeline updates, website connection, qualification and safe human handoff. Listing displays 15\u201320 proposals, 2 interviewing, last viewed by client 38 minutes ago at read time; client joined 2026-06-25, Singapore, US$140 total spent, 8 hires, 2 active.",
+          "summary": "WhatsApp Agent AI — Show Working Agent & Proof You Built It; posted 2026-10-04; US$1,000 fixed-price. Requires conversational AI for prospect qualification/sales and service-provider onboarding, company details, case studies, project sizes/pricing, GHL pipeline updates, website connection, qualification and safe human handoff. Listing displays 15–20 proposals, 2 interviewing, last viewed by client 38 minutes ago at read time; client joined 2026-06-25, Singapore, US$140 total spent, 8 hires, 2 active.",
           "url": "https://www.upwork.com/freelance-jobs/apply/WhatsApp-Agent-Show-Working-Agent-Proof-You-Built_~022106762606906386464/"
         },
         {
@@ -7408,12 +7462,12 @@
       "last_reconciled_at": "2026-10-12",
       "next_action": "iSCOPE: only advance if an actual testable WhatsApp/GHL agent can be demonstrated from an authorized, source-bound runtime and the proposed scope can be delivered for the published budget without unsupported promises. Re-verify the live listing and authorized Upwork route; then seek PRI review. No external contact or application until those gates pass.",
       "opportunity": "whatsapp-agent-sales-onboarding",
-      "organization": "Upwork client \u2014 Singapore (name not published in accessible listing)",
+      "organization": "Upwork client — Singapore (name not published in accessible listing)",
       "payment": "US$1,000 fixed price through Upwork; milestone funding/escrow terms not yet verified.",
       "reward": "US$1,000 fixed price",
       "routing_reason": "CURRENT_BUYER_NEED_MATCHED; LIVE_DEMO_GATE_AND_SCOPE_RISK",
       "state": "DISCOVERED",
-      "title": "WhatsApp Agent AI \u2014 Show Working Agent & Proof You Built It"
+      "title": "WhatsApp Agent AI — Show Working Agent & Proof You Built It"
     },
     "verminator.co.za|site-visit-to-follow-up-workflow-pilot|2026-10-20": {
       "active_dependencies": {
@@ -7577,7 +7631,7 @@
       "commercial_offer": {
         "amount": 0.5,
         "currency": "USD",
-        "scope": "Payment per accepted GeoSonics video at the provider-proposed USD 0.50\u20130.75 range. Provider's hourly estimate is indicative, not guaranteed; only accepted videos are payable.",
+        "scope": "Payment per accepted GeoSonics video at the provider-proposed USD 0.50–0.75 range. Provider's hourly estimate is indicative, not guaranteed; only accepted videos are payable.",
         "status": "PROVIDER_RATE_ACCEPTED; WORK/SUBMISSION CONTINUES",
         "type": "TASK_BASED"
       },
@@ -7598,7 +7652,7 @@
           "observed_at": "2026-10-17T19:39:49Z",
           "source": "OUTLOOK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLkp0_QAAAA==",
-          "summary": "Owner accepted the proposed USD 0.50\u20130.75 per accepted video; not all submissions are proven accepted, payable or settled."
+          "summary": "Owner accepted the proposed USD 0.50–0.75 per accepted video; not all submissions are proven accepted, payable or settled."
         },
         {
           "kind": "PAYOUT_ROUTE_INSTRUCTIONS",
@@ -7632,7 +7686,7 @@
       "execution_readiness": "OWNER_ONLY_PROVIDER_SETUP_GATE",
       "last_action_at": "2026-10-19T20:47:54Z",
       "last_reconciled_at": "2026-10-20T11:59:03.891Z",
-      "next_action": "OWNER-ONLY PAYOUT SETUP GATE \u2014 open the provided TinyFish profile-setup handoff, sign in to https://collector.visym.com with the existing Collector account and click Save profile. Once the sign-in is saved, run the existing Outlook-profile route, open Payments/Profile, set provider Wise and payment email amillimatrix@gmail.com, save, and read back the saved setting. Cutoff per Visym's published guide: 2026-10-20T12:00:00Z (08:00 ET). Never send bank/DOB/SWIFT details again unless Visym explicitly requests a secure approved route. Do not claim inclusion or payment without dashboard or settlement receipt.",
+      "next_action": "OWNER-ONLY PAYOUT SETUP GATE — open the provided TinyFish profile-setup handoff, sign in to https://collector.visym.com with the existing Collector account and click Save profile. Once the sign-in is saved, run the existing Outlook-profile route, open Payments/Profile, set provider Wise and payment email amillimatrix@gmail.com, save, and read back the saved setting. Cutoff per Visym's published guide: 2026-10-20T12:00:00Z (08:00 ET). Never send bank/DOB/SWIFT details again unless Visym explicitly requests a secure approved route. Do not claim inclusion or payment without dashboard or settlement receipt.",
       "opportunity": "GeoSonics accepted-video collection and payout setup",
       "organization": "Visym Collector / GeoSonics",
       "proof_of_work_route": "TASK_BASED",
@@ -7689,7 +7743,7 @@
           "observed_at": "2026-10-19T15:40:38Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RrAAAAA==",
-          "subject": "Follow-up: voice-agent handoff acceptance test \u2014 US$99",
+          "subject": "Follow-up: voice-agent handoff acceptance test — US$99",
           "summary": "One due follow-up sent from usduplessis@outlook.com to partners@voiceagencyplatform.com; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
           "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         },
@@ -7721,7 +7775,7 @@
       "upfront_cost": 0
     },
     "voor.sport|sales-business-development-associate|2026-10-16": {
-      "buyer_fit": "Direct fit to 10+ years of EMEA B2B sales, strategic-account management, route-to-market, negotiation and commercial follow-through. Current AI-assisted product-building adds practical systems thinking relevant to CRM accuracy, sales materials and operational reporting. The owner\u2019s record does not establish prior Pipedrive-specific experience; not claimed.",
+      "buyer_fit": "Direct fit to 10+ years of EMEA B2B sales, strategic-account management, route-to-market, negotiation and commercial follow-through. Current AI-assisted product-building adds practical systems thinking relevant to CRM accuracy, sales materials and operational reporting. The owner’s record does not establish prior Pipedrive-specific experience; not claimed.",
       "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
       "constraints": [
         "Official page does not publish compensation; verify salary and employment terms if progressed.",
@@ -7754,7 +7808,7 @@
           "observed_at": "2026-10-16T08:08:55Z",
           "source": "OUTLOOK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjQAAAA==",
-          "subject": "Application \u2014 Sales & Business Development Associate",
+          "subject": "Application — Sales & Business Development Associate",
           "summary": "Sent from existing mailbox usduplessis@outlook.com to the official advertised hiring address jobs@voor.sport with Ulrich_Du_Plessis_Professional_Resume.pdf attached (SHA-256 117fbba641d541cdb5a77c887268fca1d8e045c5e9bdeac3525047c7ef52248e). Outlook Sent Items independently read back the exact recipient, subject, timestamp and attachment flag. This proves the send item, not delivery or buyer receipt."
         }
       ],
@@ -7771,7 +7825,7 @@
       "recipient": "jobs@voor.sport",
       "reward": "Not published",
       "state": "SUBMITTED",
-      "subject": "Application \u2014 Sales & Business Development Associate",
+      "subject": "Application — Sales & Business Development Associate",
       "thread_id": null,
       "title": "Sales & Business Development Associate"
     },
@@ -7795,7 +7849,7 @@
       "organization": "Welo Data",
       "routing_reason": "QUALIFICATION_REQUIRED",
       "state": "DISCOVERED",
-      "title": "AI Service General Application \u2014 South Africa",
+      "title": "AI Service General Application — South Africa",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "welodata.com|ai-trainers-afrikaans|south-africa": {
@@ -7823,7 +7877,7 @@
       "payment": "Project dependent",
       "reward": "Not stated until matched project",
       "state": "DEPRIORITIZED",
-      "title": "AI Trainers Network \u2014 Afrikaans"
+      "title": "AI Trainers Network — Afrikaans"
     },
     "welodata.com|ai-trainers-zulu|south-africa": {
       "capital_direction": "PAYER_TO_WORK",
@@ -7834,7 +7888,7 @@
           "kind": "CURRENT_OFFICIAL_TALENT_NETWORK",
           "observed_at": "2026-10-03T10:02:00Z",
           "source": "OFFICIAL_PRIMARY_SOURCE",
-          "summary": "Official South Africa jobs page currently lists AI Trainers Network \u2014 Zulu; exact current project/rate and language fit remain unproven.",
+          "summary": "Official South Africa jobs page currently lists AI Trainers Network — Zulu; exact current project/rate and language fit remain unproven.",
           "url": "https://jobs.lever.co/weloglobal/?location=South+Africa"
         }
       ],
@@ -7843,7 +7897,7 @@
       "opportunity": "ai-trainers-zulu",
       "organization": "Welo Data",
       "state": "HOLD",
-      "title": "AI Trainers Network \u2014 Zulu",
+      "title": "AI Trainers Network — Zulu",
       "upfront_cost": "NONE_EVIDENCED"
     },
     "welodata.com|hydrus-voice-contributor-english|south-africa": {
@@ -7878,7 +7932,7 @@
       "payment": "Freelance project",
       "reward": "$20 USD/hour",
       "state": "HOLD",
-      "title": "Hydrus Voice Contributor \u2014 English (South Africa)"
+      "title": "Hydrus Voice Contributor — English (South Africa)"
     },
     "wrightsai.com|independent-prehandoff-ai-workflow-qa-pilot|2026-10-16": {
       "buyer_fit": "Official site offers practical AI automation implementation. An independent pre-handoff acceptance pass is a complementary, bounded QA service; no buyer interest is inferred.",
@@ -7915,7 +7969,7 @@
           "observed_at": "2026-10-16T07:58:29Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjAAAAA==",
-          "subject": "Independent pre-handoff QA for one AI workflow \u2014 US$99 pilot",
+          "subject": "Independent pre-handoff QA for one AI workflow — US$99 pilot",
           "summary": "Sent from the existing Outlook account to the official published email. Fixed US$99 one-workflow acceptance-test offer. No buyer response or read receipt is evidenced."
         },
         {
@@ -7923,7 +7977,7 @@
           "observed_at": "2026-10-19T15:40:40Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACuKl8g3RkyfBaEy7toItQACLz9RrQAAAA==",
-          "subject": "Follow-up: independent pre-handoff QA for one AI workflow \u2014 US$99",
+          "subject": "Follow-up: independent pre-handoff QA for one AI workflow — US$99",
           "summary": "One due follow-up sent from usduplessis@outlook.com to info@wrightsai.com; recipient and sent item independently read back. Matching active live Stripe checkout provided: https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209 (Payment Link plink_1USIR3Hyzt7gyqmnHWw65pJe). Offer remains OFFERED; no buyer acceptance, contract, invoice, receivable, or payment is evidenced by this send.",
           "url": "https://buy.stripe.com/28E8wP8lj12M2rLgGSaR209"
         },
@@ -7948,7 +8002,7 @@
       "recipient": "info@wrightsai.com",
       "reward": "US$99 fixed fee, not accepted or paid.",
       "state": "OFFERED",
-      "subject": "Independent pre-handoff QA for one AI workflow \u2014 US$99 pilot",
+      "subject": "Independent pre-handoff QA for one AI workflow — US$99 pilot",
       "thread_id": null,
       "title": "Independent pre-handoff QA for one AI workflow"
     },
@@ -8034,7 +8088,7 @@
           "observed_at": "2026-10-13T20:58:32Z",
           "source": "OUTLOOK_SENT_ITEMS_READBACK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACKnbyNQAAAA==",
-          "summary": "Outlook record retrieved for subject \"AMX onboarding-support pilot \u2014 USD 49 checkout\", recipient Lucila Notrica <lnotrica@xubio.com>, offer USD 49. Connected ROOT sender-drift evidence reports the three 13-Oct outbound emails were sent from usduplessis@outlook.com rather than a separately verified canonical Matrix business sender. The message is additional to the existing 7-Oct initial offer and 10-Oct follow-up recorded here. A separate Close checkout-link message is still marked draft, so the exact sent-message/draft relationship must be reconciled. No buyer receipt, response, acceptance, purchase or payment is inferred.",
+          "summary": "Outlook record retrieved for subject \"AMX onboarding-support pilot — USD 49 checkout\", recipient Lucila Notrica <lnotrica@xubio.com>, offer USD 49. Connected ROOT sender-drift evidence reports the three 13-Oct outbound emails were sent from usduplessis@outlook.com rather than a separately verified canonical Matrix business sender. The message is additional to the existing 7-Oct initial offer and 10-Oct follow-up recorded here. A separate Close checkout-link message is still marked draft, so the exact sent-message/draft relationship must be reconciled. No buyer receipt, response, acceptance, purchase or payment is inferred.",
           "url": "https://buy.stripe.com/eVqbJ1gRPeTCd6p76iaR202"
         }
       ],
@@ -8108,10 +8162,10 @@
       "payment": "PayPal, Wise, or bank transfer; no minimum payout",
       "qualified_at": "2026-10-02T11:20:20Z",
       "recipient": "contact@ypai.ai",
-      "reward": "Typical project rates ZAR 220\u2013340/hour",
+      "reward": "Typical project rates ZAR 220–340/hour",
       "state": "SUBMITTED",
       "thread_id": "1a0fcfea76c7355d",
-      "title": "QA Reviewer / Adjudicator \u2014 South Africa"
+      "title": "QA Reviewer / Adjudicator — South Africa"
     },
     "yuientertainment.com|cross-border-production|the-dragon-who-could-not-claim-me": {
       "domain": "yuientertainment.com",
@@ -8168,7 +8222,7 @@
       "recipient": "yuxin@yuientertainment.com",
       "routing_reason": "FOLLOWUP_ALREADY_SENT_NO_INBOUND_RESPONSE",
       "state": "SUBMITTED",
-      "subject": "Cross-border vertical production collaboration \u2014 CARBON\u00b0",
+      "subject": "Cross-border vertical production collaboration — CARBON°",
       "thread_id": "1a0f2eadceb4a96f",
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
@@ -8208,7 +8262,7 @@
           "observed_at": "2026-10-16T07:57:36Z",
           "source": "OUTLOOK_SENT_ITEMS",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiwAAAA==",
-          "subject": "Independent pre-handoff QA for one AI workflow \u2014 US$99 pilot",
+          "subject": "Independent pre-handoff QA for one AI workflow — US$99 pilot",
           "summary": "Sent to the published address zakaria@zakariabarjac.com. This does not establish successful delivery."
         },
         {
@@ -8230,9 +8284,100 @@
       "recipient": "zakaria@zakariabarjac.com",
       "reward": "US$99 fixed fee, not accepted or paid.",
       "state": "DELIVERY_FAILED",
-      "subject": "Independent pre-handoff QA for one AI workflow \u2014 US$99 pilot",
+      "subject": "Independent pre-handoff QA for one AI workflow — US$99 pilot",
       "thread_id": null,
       "title": "Independent pre-handoff QA for one AI workflow"
+    },
+    "forestenergy.co.za|om-alert-to-closeout-handoff-pilot|2026-10-21": {
+      "active_dependencies": {
+        "buyer_response": {
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "next": "Wait for a substantive human response in the existing conversation. The received message is an automatic out-of-office reply only.",
+          "observed_at": "2026-10-21T04:55:23.053Z",
+          "state": "WAITING"
+        },
+        "commercial_scope": {
+          "kind": "SCOPE_QUALIFICATION",
+          "next": "If the buyer engages, confirm whether any operational gap exists, define one alert/inspection finding through assignment, closeout evidence and a human-approved customer update, and issue a versioned fixed-price scope only after the buyer agrees that a scope check is useful.",
+          "observed_at": "2026-10-21T04:55:23.053Z",
+          "state": "NOT_CONFIRMED"
+        },
+        "payment_route": {
+          "kind": "PAYMENT",
+          "next": "No price, checkout or order-specific payment instruction has been issued. Confirm a supported route only after buyer interest; do not imply Stripe is charge-enabled.",
+          "observed_at": "2026-10-21T04:55:23.053Z",
+          "state": "NOT_ISSUED"
+        }
+      },
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RygAAAA==",
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLz9hTgAAAA==",
+          "https://www.forestenergy.co.za/energy-solutions/operations-maintenance",
+          "https://www.forestenergy.co.za/contact-us"
+        ],
+        "identity": {
+          "domain": "forestenergy.co.za",
+          "opportunity": "AMX O&M Alert-to-Closeout Handoff Pilot",
+          "organization": "Forest Energy"
+        },
+        "kind": "INTRODUCTORY_PAID_PILOT_OUTREACH_AUTO_REPLY_RECONCILED",
+        "observed_at": "2026-10-21T04:55:23.053Z"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "current_route_confidence": "HIGH",
+      "current_route_status": "OFFICIAL_O&M_AND_CONTACT_ROUTE_VERIFIED; INTRODUCTORY_OUTREACH_SENT; AUTOMATIC_REPLY_ONLY; WAITING_FOR_SUBSTANTIVE_BUYER_RESPONSE; NO_PRICE_OR_PAYMENT_ROUTE_ISSUED",
+      "domain": "forestenergy.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OFFICIAL_BUYER_ROUTE_AND_SERVICE_CONTEXT_VERIFIED",
+          "observed_at": "2026-10-21T04:55:23.053Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "source_id": "https://www.forestenergy.co.za/energy-solutions/operations-maintenance",
+          "summary": "The official O&M page describes continuous remote monitoring, automated anomaly alerts, scheduled inspections/service, fault response, and performance reporting. This is context for a possible bounded handoff pilot only; it does not establish a defect or unmet need in Forest Energy's current systems.",
+          "url": "https://www.forestenergy.co.za/energy-solutions/operations-maintenance"
+        },
+        {
+          "kind": "OFFICIAL_CONTACT_ROUTE_VERIFIED",
+          "observed_at": "2026-10-21T04:55:23.053Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "source_id": "https://www.forestenergy.co.za/contact-us",
+          "summary": "The official contact page publishes sales@forestenergy.co.za and directs enquiries to its O&M team. The email address matches the sent item's recipient; this validates the public route but does not imply buyer authorization or interest.",
+          "url": "https://www.forestenergy.co.za/contact-us"
+        },
+        {
+          "kind": "OUTBOUND_INTRODUCTORY_PILOT_MESSAGE",
+          "observed_at": "2026-10-21T04:49:22Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RygAAAA==",
+          "subject": "A bounded paid pilot for O&M alert-to-closeout handoff",
+          "summary": "Sent from usduplessis@outlook.com to sales@forestenergy.co.za. Message suggests a narrowly bounded pilot to test one approved alert or inspection finding through assignment, service-closeout evidence and a customer-status update, using synthetic/redacted examples or one approved non-sensitive case and human approval before sending. It asks whether a short scope check would be useful and says fixed pricing/costs would follow; no actual price, quote, acceptance, contract, invoice or payment route is issued.",
+          "url": "https://www.forestenergy.co.za/energy-solutions/operations-maintenance"
+        },
+        {
+          "kind": "AUTOMATIC_REPLY_ONLY_NOT_SUBSTANTIVE_BUYER_RESPONSE",
+          "observed_at": "2026-10-21T04:49:36Z",
+          "source": "OUTLOOK_INBOX",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLz9hTgAAAA==",
+          "subject": "Automatic reply: A bounded paid pilot for O&M alert-to-closeout handoff",
+          "summary": "Automated out-of-office reply from ruan@forestenergy.co.za says the recipient is away with limited email access and will respond later. This is not substantive buyer interest, permission to proceed, acceptance, contract or payment."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING_FOR_SUBSTANTIVE_BUYER_RESPONSE; INTRODUCTORY_OUTREACH_ONLY; AUTO_REPLY_ONLY",
+      "last_action_at": "2026-10-21T04:49:22Z",
+      "last_reconciled_at": "2026-10-21T04:55:23.053Z",
+      "last_reconciled_reason": "New sent-item source ID and immediate external automatic reply independently read back. Classified as introductory outreach plus automatic out-of-office only; no buyer interest or payment inferred.",
+      "next_action": "Wait for a substantive human response in the existing conversation. The 2026-10-21 04:49:36Z message is an out-of-office automatic reply only. No follow-up without a new evidence-based due date or direct buyer message. If the buyer engages, confirm whether a real handoff gap exists, then agree a bounded scope and acceptance criteria; issue an immutable/versioned fixed-price quote and supported payment terms only after qualification. Do not access the customer's systems or begin delivery without explicit agreement, approved access and payment gates. Mark PAID only on attributable settlement evidence.",
+      "opportunity": "om-alert-to-closeout-handoff-pilot",
+      "organization": "Forest Energy",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "recipient": "sales@forestenergy.co.za",
+      "state": "SUBMITTED",
+      "thread_id": null,
+      "title": "AMX O&M Alert-to-Closeout Handoff Pilot",
+      "buyer_need": "UNKNOWN"
     }
   },
   "updated_at": "2026-10-21",
