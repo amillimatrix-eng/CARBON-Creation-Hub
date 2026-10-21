@@ -4197,3 +4197,30 @@ The current DYNAMIC_FLIGHT_PATH_REGISTER does not yet link these three task/run 
 
 ### Shared Master Index / colour registry limitation
 The existing Three-Root Library Split Register confirms the authoritative shared surface is `AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1`, but its live rows are not available through the connected current tools. The authoritative unique BUILD/CANON/GOVERNANCE marker mapping remains not located after current GitHub-account, current-repository, Notion and Dropbox queries and examination of the uploaded Canon/build/governance files. Do not infer global absence, invent new colours or allocate a colour without a source-backed collision check. Textual domain classifications are visible in this Index now; exact registered colour implementation is a bounded T-GOV-owned HOLD with MASTER provenance support and T-COD/T-MED implementation after the mapping is found/dispositioned.
+
+
+## 2026-10-21 — BAZOOKA THREE-STREAM RESPONSIBILITY SURFACE
+
+**BAZOOKA identity:** LIBRARIAN DIRECTIVE — administrative control/provenance mechanism; not a fourth stream, architectural layer, Canon artifact or builder colour. Source: uploaded `Master Build File Update.txt`, SHA-256 `1d8a67e05b34baf7da9ce7935eac6fa74eaa94873c84f09d3ff23a22e866478e`.
+
+**BAZOOKA / CATEGORY A / SECTION 04 — RESPONSIBILITY + HASH ALLOCATION**
+
+| Visible BAZOOKA field | Implemented value now | Accountable owner / proof boundary |
+|---|---|---|
+| BUILD → Directive | ROUTING ACTIVE / CODE ITEMS IDENTIFIED | T-COD owns code/runtime/repository/CI/deployment work in scope; this instruction is not implementation acceptance. |
+| CANON → Verification | LIFECYCLE / SOURCE AUTHORITY CHECK | ROOT/T-GOV owns any governance/Canon disposition; this routing correction does not promote anything to Canon. |
+| GOVERNANCE → Compliance | OWNERSHIP / MANDATE / COLOUR REGISTRY HOLD | ROOT/T-GOV owns authority and marker-registry decision; no unregistered colour assigned. |
+| INTEGRATION → status | PARTIAL — ITEM MAP READ BACK / RECEIVER EXECUTION OPEN | ROOT + MASTER reconcile; FORX verifies downstream result; no role is credited from the roster alone. |
+| LIBRARIAN → status | PARTIAL — ROOT INTAKE + INDEX UPDATED | Source-linked assignments are persisted/read back; receiving-office acknowledgements and remediation receipts remain required. |
+| VISUAL MARKER → status | HOLD — AUTHORITATIVE UNIQUE BUILD/CANON/GOVERNANCE COLOUR MAP NOT LOCATED | Do not guess colours. ROOT/T-GOV + MASTER must read authoritative registry and collision-check; T-COD/T-MED apply only after approved mapping. |
+
+**Current source anchors:**  
+- Registry v1.3 root SHA-256: `96c0beb3328ebefc16286d93f0e5f919dcdb004520d6a0acd455281841a1d7912f`; registered FORKS-ROI mandate SHA-256: `a61aa5c535aa33be5639850590cdb911b583f8f02e6a23f4e5e6669850bf6ab9`.  
+- Responsibility/Hash Addendum A blob: `30ca1dcc82a7dda07cea46df27f568f4e8df805d`.  
+- Colour Registry Search Addendum B blob: `0e1dc6339e74f9c4478d1f332499e33dec9e7b09`.  
+- Colour Semantic Context Addendum C blob: `f1601259aff0f124d7cc340a53751eb7dda06d3e`.  
+- Current 26-item open GitHub map Addendum D blob: `ea516a6d7f276f0b34fd70fa02892034676a947b`.
+
+**Backend boundary:** The inspected `backend/app.py` / `house/remediation/house.js` is the public-facing CARBON° Evidence House API/UI, not a confirmed canonical Matrix control-panel renderer. Its visible evidence endpoints currently expose record projections; PR #66 already covers public-field allow-list security and is not merged/deployed. Do not inject internal Matrix owner/run/authority metadata or guess marker colours into that public interface. T-COD must identify the actual authorized internal metadata/marker consumer before implementation; keep the public surface public-safe.
+
+**Acceptance:** this BAZOOKA status block is visible in the existing Index. Actual stream-color implementation remains HOLD pending registry collision readback. Root Intake remains OPEN / NOT CLEARED until every item and receiving owner passes acceptance/readback.
