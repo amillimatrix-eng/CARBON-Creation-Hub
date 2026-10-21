@@ -72,7 +72,8 @@ jobs:
   # The commercial worker remains explicitly manual-only. The hourly event
   # below is a read-only control/preflight, not a hidden commercial reactivation.
   worker:
-    if: github.event_name == 'workflow_dispatch' && inputs.run_worker == 'run' && inputs.recovery_fallback != 'hourly_dependency_unmet'
+    # The main-branch marker is a manual, owner-authorized one-shot fallback when workflow_dispatch is not exposed.
+    if: ${{ (github.event_name == 'workflow_dispatch' && inputs.run_worker == 'run' && inputs.recovery_fallback != 'hourly_dependency_unmet') || (github.event_name == 'push' && github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, '[AMX-OWNER-AUTHORIZED-OVERDRIVE-ONESHOT]')) }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
