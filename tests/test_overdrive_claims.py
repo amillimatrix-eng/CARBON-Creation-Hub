@@ -360,6 +360,91 @@ class MissingRecordUpsertTest(unittest.TestCase):
         self.assertEqual(result["critic"]["commercial_state"], "PASS_NO_LIFECYCLE_CHANGE")
         self.assertEqual(opportunities, before)
 
+    def test_verified_source_id_correction_preserves_old_value_and_lifecycle(self):
+        canonical_key = "example.com|bounded-pilot|2026-10-10"
+        actual_id = "outlook-item-correct"
+        old_id = "outlook-item-old"
+        subject = "Bounded pilot offer"
+        observed_at = "2026-10-10T04:45:00Z"
+        sent = {
+            "kind": "OUTBOUND_SEND",
+            "source_id": actual_id,
+            "source": "OUTLOOK",
+            "observed_at": observed_at,
+            "subject": subject,
+        }
+        readback = {
+            "kind": "OUTLOOK_SENT_ITEM_ID_READBACK",
+            "source_id": actual_id,
+            "source": "OUTLOOK_SENT_ITEMS_READBACK",
+            "folder": "Sent Items",
+            "subject": subject,
+            "recipient": "buyer@example.com",
+            "query_filter": "sentDateTime ge 2026-10-20T00:00:00Z",
+            "receipt_path": "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md",
+            "verification_receipt_commit": "a" * 40,
+        }
+        record = {
+            "state": "OFFERED",
+            "execution_owner": "PRI",
+            "organization": "Example Buyer",
+            "opportunity": "bounded-pilot",
+            "domain": "example.com",
+            "recipient": "buyer@example.com",
+            "thread_id": None,
+            "last_action_at": observed_at,
+            "next_action": "Wait for a substantive buyer response.",
+            "evidence": [
+                {
+                    "kind": "OUTBOUND_SEND",
+                    "source_id": old_id,
+                    "source": "OUTLOOK",
+                    "observed_at": observed_at,
+                    "subject": subject,
+                },
+                {
+                    "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+                    "source_id": old_id,
+                    "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+                    "observed_at": "2026-10-10T05:00:00Z",
+                    "subject": subject,
+                },
+            ],
+        }
+        opportunities = {"records": {canonical_key: record}}
+        task = self.task(
+            key=canonical_key,
+            target="OFFERED",
+            kind="OUTBOUND_SEND",
+            identity={
+                "organization": "Example Buyer",
+                "opportunity": "Bounded pilot",
+                "domain": "example.com",
+            },
+            evidence=[sent, readback],
+            recipient="buyer@example.com",
+            thread_id=None,
+            observed_at=observed_at,
+            next_action="Wait for a substantive buyer response.",
+        )
+
+        result = runner.missing_record_upsert(task, opportunities)
+        corrected = opportunities["records"][canonical_key]
+        self.assertTrue(result["source_id_corrected"])
+        self.assertFalse(result["lifecycle_changed"])
+        self.assertEqual(corrected["state"], "OFFERED")
+        self.assertEqual(corrected["evidence"][0]["source_id"], actual_id)
+        self.assertEqual(corrected["evidence"][1]["source_id"], actual_id)
+        self.assertEqual(corrected["source_id_corrections"][0]["previous_source_id"], old_id)
+        self.assertEqual(corrected["source_id_corrections"][0]["corrected_source_id"], actual_id)
+        self.assertIn(readback, corrected["evidence"])
+
+        # The next wake is an exact replay, not another correction or external action.
+        result_again = runner.missing_record_upsert(task, opportunities)
+        self.assertTrue(result_again["idempotent"])
+        self.assertEqual(len(corrected["source_id_corrections"]), 1)
+        self.assertEqual(corrected["state"], "OFFERED")
+
     def test_missing_record_upsert_refuses_same_action_with_conflicting_source_id(self):
         canonical_key = "example.com|bounded-pilot|2026-10-10"
         evidence = {
