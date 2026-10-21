@@ -3981,3 +3981,49 @@ An additional native Outlook search pass was performed for the separate D04 prim
 This is a scoped mailbox search result, not proof that material does not exist elsewhere. The D04 separate clean-run primary vector remains not found in sources searched; no rerun or vector substitution is authorized. HASH original bytes remain pending exact capture; this does not update the canonical STATUS register. RGR-03 membership/semantics remains unknown; no replacement list is fabricated.
 
 Current issue/PR census after current GitHub readback remains 24 open records (15 issues + 9 PRs). PR #66 is ready for review but not mergeable against current main, not merged/deployed, with backend tests green and Vercel preview blocked by daily quota. PR #11 is closed after verified FORX checkpoint-restore PASS. The full Root Intake remains OPEN / NOT CLEARED.
+
+## 2026-10-21 — GITHUB OPEN-ITEM DISPOSITION MAP (24 RECORDS)
+
+This maps the current open GitHub records into operational dispositions. It is not the full Matrix census, since Notion, provider, account, source-custody, runtime and external acceptance records exist outside GitHub.
+
+| Open record | Current disposition | Next required action / gate |
+|---|---|---|
+| Issue #53 — Superteam Earn profile/account | OWNER UI / connected-account gate | After authorized TinyFish relink, verify account identity and wallet; then continue profile only in the authenticated interface. No credential or profile mutation yet. |
+| Issue #50 — DAOPEOPLE | NON-BLOCKING / NO PUBLIC-SIDE-EFFECT AUTHORITY | Preserve as future opportunity; do not post, send, schedule, or claim completion without explicit Owner authorization. |
+| Issue #34 — 65% money-in KPI | OPEN / MEASURED CASH-IN REQUIRED | Count only independently verified money received; do not count offers, views, waiting claims or unpaid invoices. |
+| Issue #33 — T-MED mandate/reporting | ROOT GOVERNANCE GATE | ROOT/T-GOV reconcile mandate registry and reporting boundary without duplicate role creation. |
+| Issue #32 — Commercial Manager | OWNER-ACCEPTED ROLE, FORMAL BINDING OPEN | Record exact holder, mandate, reporting line and effective scope in the existing registry after authorized placement. |
+| Issue #31 — Root Intake | OPEN / NOT CLEARED | Continue cross-surface census; update exact state after each receipt; do not close on event-queue parity alone. |
+| Issue #30 — public media/content | PUBLICATION HOLD | Preserve clean-media/source approvals and prior publishing-failure history; no publish/schedule while live acceptance or Owner release is absent. |
+| Issue #29 — provider freeze/portability | OWNER APPROVAL GATE | No provider/account transfer or freeze-lift action without explicit Owner approval and supported route. |
+| Issue #21 — Evidence House live proof | OPEN / PRIVACY + DEPLOY + COMMERCIAL EVIDENCE | PR #66 ready-for-review; reconcile stale base, independent review, authorized preview/live deploy, and public-route readback; public-safe commercial-history evidence still needed. |
+| Issue #18 — CARBON convergence | OPEN / INTEGRATION ACCEPTANCE | Reconcile existing main vs proposal, run current-head tests, and verify the authorized preview/deployment before go-live; no public launch inferred. |
+| Issue #8 — revenue lifecycle / Stripe attribution | OPEN / SOURCE + PRIVACY + PAYMENT TRUTH | Keep sole-writer model; independently prove intent, issued offer version, acceptance, invoice/receivable and actual credit in the correct lifecycle; PR #66 is only a privacy mitigation. |
+| Issue #4 — iSCOPE mandate prompt liveness | PROVIDER HOURLY-PROMPT-WRITE GATE | Existing disabled hourly task caches Registry v1.2; no schedule/enable changes. Obtain supported prompt-write or authorized Owner cadence/plan disposition, then prompt/readback/runtime proof. |
+| Issue #3 — PRI mandate behavior | PROVIDER HOURLY-PROMPT-WRITE GATE / BEHAVIOR OPEN | Same scheduler limitation; no false prompt adoption. Verify commercial lifecycle behavior after supported readback. |
+| Issue #2 — Evidence House assets/access | SOURCE + PERMISSION GATE | Identify authorized route for underlying evidence assets and public-safe evidence class; no guessed source or broadened ACL. |
+| Issue #1 — Overdrive build/release trail | RELEASE EVIDENCE OPEN | Keep queue/ledger receipts current; verify intended accepted visible asset/deployment independently. No production release based only on queue drain. |
+| PR #66 — public evidence allow-list | READY FOR REVIEW / NOT MERGED / NOT DEPLOYED | CI passed; mergeability false after main advanced; Vercel preview daily quota blocked. Reconcile base, obtain independent review, deploy and read back public-route sentinel non-leak. |
+| PR #60 — Matrix Critic gate | CI/REVIEWER CONFIG GATE | Required `MATRIX_CRITIC_REVIEWER` environment/config gate absent; do not bypass the quality gate. Authorized maintainer configures reviewer and reruns exact-head checks. |
+| PR #59 — public positioning/routes | OPEN / BASE + LIVE-ROUTE GATE | Reconcile against current main, verify public routes/content and consent/release boundary, then review. Vercel preview quota is a blocker; no public launch inferred. |
+| PR #52 — offer-version binding | OPEN / SECURITY + COMMERCIAL REVIEW | Reconcile current base, independent review and current-head CI; acceptance must remain bound to the exact offer version. No merge or payment inference from historical checks. |
+| PR #40 — revenue/Stripe source reconciliation | OPEN / AUTHORITY + FINANCIAL SOURCE GATE | Verify official source receipts, idempotency and lifecycle invariants; no direct money-in or ledger mutation lacking provider/bank evidence. |
+| PR #37 — DFP continuity guard | OPEN / ROOT/T-GOV DISPOSITION | Exact defect is prior-event string mismatch: existing RESUME exists, checkpoint adds `-20261013`; keep main JSONL unchanged until append-only correction is explicitly authorized. |
+| PR #35 — Evidence House public-safe proof mode | DRAFT / LIVE RELEASE GATE | Preserve branch/provenance; reconcile overlapping public-route changes with PR #66, current-head tests/review and deploy/readback before combining or disposition. |
+| PR #14 — marketplace/intent POC | DRAFT / 135-COMMIT RECONCILIATION | Retain as provenance; compare its changed surfaces against current CARBON main, enumerate unique feature/evidence not carried forward, and then propose merge/modify/supersede. Do not close solely because the base is stale. |
+| PR #7 — continuity/security POC | DRAFT / BROAD RECONCILIATION | Retain as provenance; compare its continuity/capability controls and receipts to Registry v1.3/current main and PR #37; keep unique security value before any supersession or closure. |
+
+### Count reconciliation and disposition
+- Current GitHub open census: **24 records = 15 issues + 9 PRs**. This count was refreshed after #11 closed and PR #66 entered review. Verify again before using as a later-current count.
+- Closed/merged proof items not in this open count: FORX issue #11, PR #65 checkpoint restore, PR #63 bounded-memory runtime, PR #62, PR #57.
+- The Overdrive event queue is a separate state: sequence 27; 27 COMPLETED / 0 PENDING / 0 FAILED. Ledger/claims/signals: 125/125/125, zero key mismatch; claims 119 WAITING / 6 CLOSED / 0 READY / 0 external-ready.
+- The active *governance-decision* bucket is zero untriaged after explicit merges/subsumptions, but the Matrix-wide *work* queue is not zero. Keep each remaining item open or held with its actual next action; do not manufacture zero by force-closing holds, proposals, claims or owner-only gates.
+- Root-wide additional gates outside these 24 records: Plan A/B actual scheduled-run/anchor liveness; Reaper/hourly-prompt provider gate and Tracker; four HASH exact captures and current STATUS; distinct D04 primary vector search/release evidence; Abacus rolling-consensus source; RGR-03 image membership/semantics; Commercial Manager and T-MED formal binding; DR-0021/FORX-VFY-004 real behavior; user-authorized Render Postgres preservation; TinyFish owner UI relink; Visym in-app Wise setting/bank-credit readback; full source-derived Notion/provider/runtime census.
+
+### Directive 23
+- **Expected outcome:** all currently open GitHub records have a visible disposition and exact next gate; no stale pre-closure count or unverified state is presented as current.
+- **Owner:** ROOT/Intake + ROOT/T-GOV coordinate; each existing operational/technical/finance/privacy owner executes only within its current mandate.
+- **Action:** reconcile each row when its evidence/gate changes; preserve proposal history; close only after acceptance or explicit authorized supersession.
+- **Evidence:** live open issues/PR API, current-main workflow and deployment checks, Overdrive seq-27 receipt/parity, PR #66 CI, PR #37 exact register pointer readback, and the source-specific receipts linked above.
+- **Disposition:** GITHUB ACTIVE CENSUS MAPPED (24); OVERDRIVE EVENT QUEUE ZERO PENDING; FULL ROOT INTAKE OPEN / NOT CLEARED.
+- **Remaining:** complete the external-source and Notion/provider census, remove actual execution blockers where supported, and obtain only the specific owner/reviewer/credential actions listed above.
