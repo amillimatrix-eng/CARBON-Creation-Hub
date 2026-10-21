@@ -4041,3 +4041,12 @@ Shared wake ID `AMX-MATRIX-WAKE-20261021-0534Z`; Registry v1.3 root `96c0beb3328
 All three preserve the same shared Matrix-wide prompt/ID. Other specialist lanes remain disabled under the quiet-mode boundary; no task was toggled or dispatched during this read. Because every saved task reports `next_run_time=null`, enabled state does not prove recurring scheduling. Continue to use the same shared wake until the three existing runs yield terminal, attributable per-slot receipts. Do not mint a duplicate wake or stop/close any active run by inference.
 
 Directive 23: outcome = correct scheduler census and avoid false runtime completion; owner = ROOT/T-GOV + existing shared-flight tasks; action = persist and read back terminal receipts, then verify next-run delivery; dependency = current runs completing and supported scheduler recurrence; evidence = fresh task peeks and shared manifest addendum; safety = no dispatch/toggle, no new task, no duplicate wake, no commercial state mutation; disposition = 3 SHARED RUNS IN PROGRESS / 0 NEXT-RUN TIMES / ROOT INTAKE OPEN; remaining = terminal receipts, recurrence evidence, item-level cross-surface census.
+
+
+## 2026-10-21 — CATEGORY A LIBRARIAN RESPONSIBILITY / HASH ROUTING ALIGNMENT
+- Addendum: [CATEGORY_A_LIBRARIAN_RESPONSIBILITY_ALIGNMENT_AND_HASH_ROUTING_20261021.md](CATEGORY_A_LIBRARIAN_RESPONSIBILITY_ALIGNMENT_AND_HASH_ROUTING_20261021.md)
+- Parent: `CURRENT_MATRIX_QUEUE_RULES_SUPERSESSION_20261016.md`; [CYAN] ADDENDUM A. This is INDEXED operational routing evidence, not Canon or a mandate-payload change.
+- Source blob SHA (exact file content): `30ca1dcc82a7dda07cea46df27f568f4e8df805d`; commit: `3383c672824b759e85f512abb1defbfa78685712`.
+- Scope: item-level hash/authority classification; correct T-GOV / T-COD / T-MED routing; reasoned misroute-return and Root reassignment; MASTER provenance/index/readback; existing TOKYO pre-/post-output fidelity; no physical file movement required.
+- Colour status: existing Master WHITE / Root RED and GOLD/WHITE/BLACK distinctions preserved. Dedicated BUILD/CANON/GOVERNANCE stream-colour registry not located in scoped current sources; no new stream colours assigned pending authoritative registry lookup and collision check.
+- Disposition: instruction indexed; full artifact-by-artifact allocation, colour marker implementation, individual acknowledgements, and behavioral acceptance remain OPEN. Root Intake is not cleared.
