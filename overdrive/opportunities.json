@@ -2339,6 +2339,62 @@
       "thread_id": "1a1002313c6128a9",
       "title": "The Dragon Who Could Not Claim Me"
     },
+    "forestenergy.co.za|o-m-alert-to-closeout-handoff-pilot|2026-10-21": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RygAAAA==",
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RygAAAA==",
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLz9hTgAAAA=="
+        ],
+        "identity": {
+          "domain": "forestenergy.co.za",
+          "opportunity": "O&M alert-to-closeout handoff pilot",
+          "organization": "Forest Energy"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-21T04:49:22Z"
+      },
+      "domain": "forestenergy.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-21T04:49:22Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RygAAAA==",
+          "subject": "A bounded paid pilot for O&M alert-to-closeout handoff",
+          "summary": "Initial, non-priced scope-check email sent from usduplessis@outlook.com to sales@forestenergy.co.za. The email did not assume a handoff gap, production access, accepted scope, or payment."
+        },
+        {
+          "folder": "Sent Items",
+          "kind": "OUTLOOK_SENT_ITEM_ID_READBACK",
+          "observed_at": "2026-10-21T04:49:22Z",
+          "receipt_path": "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261021_FOREST_ENERGY_OUTBOUND_AND_AUTO_REPLY.md",
+          "recipient": "sales@forestenergy.co.za",
+          "source": "OUTLOOK_SENT_ITEMS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RygAAAA==",
+          "subject": "A bounded paid pilot for O&M alert-to-closeout handoff",
+          "verification_receipt_commit": "30af39ead120d8941c7bed8a23ee113a0d70a1c9"
+        },
+        {
+          "folder": "Inbox",
+          "kind": "AUTO_REPLY_NON_SUBSTANTIVE",
+          "observed_at": "2026-10-21T04:49:36Z",
+          "source": "OUTLOOK_INBOX",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLz9hTgAAAA==",
+          "subject": "Automatic reply: A bounded paid pilot for O&M alert-to-closeout handoff",
+          "summary": "Automatic out-of-office response says recipient has limited access and will respond when available. It is not a substantive buyer response, acceptance, or request for work."
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_action_at": "2026-10-21T04:49:22Z",
+      "next_action": "WAIT for a material, non-automated buyer reply in the existing Outlook thread. Do not send duplicate outreach. If the buyer identifies the workflow owner or expresses interest, confirm exact scope, acceptance criteria, supported collection route and authorized access boundaries before any work; do not begin before paid receipt and authorized access are verified.",
+      "opportunity": "O&M alert-to-closeout handoff pilot",
+      "organization": "Forest Energy",
+      "recipient": "sales@forestenergy.co.za",
+      "state": "SUBMITTED",
+      "thread_id": null
+    },
     "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "discovered_by": "iSCOPE",
       "domain": "free-reels.com",
