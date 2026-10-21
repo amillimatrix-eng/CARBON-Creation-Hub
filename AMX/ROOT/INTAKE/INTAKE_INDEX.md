@@ -3804,3 +3804,34 @@ This current-main state supersedes the preceding sequence-26/124-row queue snaps
 - Safety: no re-sends, no claim force-close, no payment or acceptance inference, no worker/task duplicate and no authorized-state bypass.
 - Disposition: OVERDRIVE QUEUE ZERO PENDING; 125/125 projection parity; full Root Intake OPEN / NOT CLEARED.
 - Remaining: full source-derived Intake census; scheduler liveness and Plan A/B receipts; Reaper prompt/tracker; restart/resume FORX acceptance; D04 separate primary vector; HASH exact captures; Commercial Manager holder/reporting binding; Abacus source authority; DR-0021/FORX-VFY-004 behavioral acceptance; RGR-03 source semantics; remaining open GitHub items and user-only provider/UI gates.
+
+
+## 2026-10-21 — DRAIN-Q CODE-REMEDIATION DELTA — FORX durable checkpoint restore
+
+This append records the code proposal and test evidence after the accepted 200K durable-output proof. It does not change the output PASS boundary, authorize a production restart, or clear Root Intake.
+
+### FORX code-level continuation
+- Existing accepted run forx-20261010-200k-01: status blob 00135bc7d9d7edec65b562c3a2eacce7e2c82135, manifest blob 3427da4c65636a61897ae2f947ffce0e126fd8b2, durable-readback receipt blob 23c11566645475d8feb329c36ad654b422439625.
+- Receipt remains PASS_DURABLE_PARTITIONS_VERIFIED: 200,000 exact readback nodes, 200,000 unique source IDs, coordinate-backed count 200,000, 200 partitions of 1,000, all 200 raw-byte hashes verified, no captured runtime errors; source and selection hashes remain in the preserved manifest. Sampled memory telemetry remains sampled, not continuous.
+- Current main source overdrive/forx_stage1_runtime/app.py lacks a restart/restore path; the accepted partitions are preserved in the repository, but the running service previously kept partition paths in process-local temporary state. This code gap is distinct from the already-passed durable output acceptance.
+- Draft PR #65: https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/65, head a54c6fcd159d97ce85ca62475ce4880b21f13b5f, branch forx/durable-checkpoint-restore-20261021-r1. It validates matching status/manifest/receipt/config, exact partition bytes and hashes, unique IDs, coordinate ranges and selection digest before rehydrating an existing complete checkpoint; absent checkpoint permits a new run, while incomplete/mismatched checkpoint fails closed. Five synthetic-fixture regression tests cover restore, corruption, duplicate IDs, absent checkpoint and target mismatch.
+- GitHub Actions workflow 39549287483, job 119054532365, was independently read: completed/success, 103 passed, 3 warnings in 1.36s; smoke test, provider-neutral container build and container exercise also passed. Separate Vercel context remains failure at the account build-rate-limit URL; it is not a passing check and was not treated as one.
+- PR #64 is closed unmerged and superseded by #65. PR #65 remains draft/unmerged while main advances. No main merge, deployment, live service restart, environment change, or schedule activation has occurred.
+- Limitation: this proposal restores a fully completed durable checkpoint after process restart. It does not prove in-progress source-cursor continuation or continuous peak-memory telemetry. The exact live configured checkpoint/run identity must match the durable checkpoint before restore; deployment and authenticated live readback remain required.
+
+### Root control-plane and queue state
+- Overdrive event state remains 26 COMPLETED / 0 PENDING / 0 FAILED. Opportunity/claim projection remains 124/124 key-aligned; lifecycle 118 WAITING / 6 CLOSED / 0 READY / 0 external-ready. Waiting claims are not closed by queue drain.
+- Current governance disposition bucket remains 0 untriaged candidates after explicit merge/subsumption dispositions. Entire Root Intake remains OPEN / NOT CLEARED; full source-derived cross-surface census and all owner-specific acceptance gates are still outstanding.
+- Full Automations roster readback returned 25 saved tasks, all disabled with zero next-run times. This is consistent with owner-directed quiet mode; do not enable tasks or change cadence to manufacture throughput.
+- Money-in KPI reconciliation: current main and existing issue #34 establish 65% current KPI semantics (65% attributable contribution toward verified money-in or evidenced removal of a real blocker; 35% existing mandate), separate from the 60/20/20 opportunity-sourcing split. Existing issue #31's stale 45% text was preserved as historical and a correction comment was appended/read back at comment 6308793601. Wording is reconciled; behavior/adoption remains unproven while tasks are disabled.
+
+### Directive 23
+- Expected outcome: keep durable 200K output accepted at its exact scope, make checkpoint restoration reviewable/tested, and continue draining independent Root items without conflating repository event queue, governance bucket, claim lifecycle, or global Intake.
+- Owners: existing T-COD/FORX runtime owner for code review/deployment; ROOT/T-GOV for authority and final acceptance; ROOT/Intake and registered owners for the full census and remaining residuals.
+- Action completed: implementation/test proposal committed to draft PR #65; test job executed; Root issue #11 comments updated; current KPI discrepancy documented under existing issue #31.
+- Evidence/readback: PR #65; workflow job 119054532365; 103-test pytest log; issue #11 comment 6308785686; issue #31 correction comment 6308793601; accepted status/manifest/receipt blobs above.
+- Dependencies: current-main reconciliation; authorized review/merge; existing Render service deploy; live restore log and authenticated status, manifest, exact partition-byte and runtime-receipt readbacks.
+- Safety/preservation: no production mutation, schedule activation, external outreach, payment, guessed hash, unverified KPI adoption, or closed-item resurrection; historical proofs and source chronology remain unchanged.
+- Disposition: 200K DURABLE OUTPUT PASS / CHECKPOINT RESTORE CODE PROPOSAL TESTS PASS / LIVE RESTORE NOT YET ACCEPTED / ROOT INTAKE OPEN.
+- Remaining work: mergeability/current-main reconciliation and authorized review; deploy only after acceptance; perform live restore/readback; complete Reaper Tracker and prompt-write gates, real scheduled Plan A/Plan B receipts/anchor, DR-0021 and FORX-VFY-004, RGR-03 30-image recovery, separate D04 primary-evidence disposition, formal role/mandate readback, exact HASH captures/status rows, Abacus rolling-consensus source recovery, and full item-level cross-surface census.
+
