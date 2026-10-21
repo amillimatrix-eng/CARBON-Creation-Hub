@@ -483,6 +483,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "WAIT for a material, non-automated buyer reply in the existing Outlook thread. Do not send duplicate outreach. If the buyer identifies the workflow owner or expresses interest, confirm exact scope, acceptance criteria, supported collection route and authorized access boundaries before any work; do not begin before paid receipt and authorized access are verified.",
+      "opportunity_key": "forestenergy.co.za|o-m-alert-to-closeout-handoff-pilot|2026-10-21",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for a material, non-automated buyer reply in the existing Outlook thread. Do not send duplicate outreach. If the buyer identifies the workflow owner or expresses interest, confirm exact scope, acceptance criteria, supported collection route and authorized access boundaries before any work; do not begin before paid receipt and authorized access are verified.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "WAIT for a material buyer response in the existing route. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
       "opportunity_key": "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me",
       "priority": 8,
@@ -1153,7 +1165,7 @@
       "thread_id": null
     }
   ],
-  "generated_at": "2026-10-21T05:23:15.433454+00:00",
+  "generated_at": "2026-10-21T05:24:17.067272+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1804,6 +1816,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a1002313c6128a9"
+    },
+    "forestenergy.co.za|o-m-alert-to-closeout-handoff-pilot|2026-10-21": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "WAIT for a material, non-automated buyer reply in the existing Outlook thread. Do not send duplicate outreach. If the buyer identifies the workflow owner or expresses interest, confirm exact scope, acceptance criteria, supported collection route and authorized access boundaries before any work; do not begin before paid receipt and authorized access are verified.",
+      "opportunity_key": "forestenergy.co.za|o-m-alert-to-closeout-handoff-pilot|2026-10-21",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for a material, non-automated buyer reply in the existing Outlook thread. Do not send duplicate outreach. If the buyer identifies the workflow owner or expresses interest, confirm exact scope, acceptance criteria, supported collection route and authorized access boundaries before any work; do not begin before paid receipt and authorized access are verified.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
     },
     "free-reels.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": null,

@@ -25,15 +25,18 @@
   },
   "last_receipt": "receipts/0000000027-qdrain-20261021-forestenergy-submitted.json",
   "last_signal_count": {
-    "PRI": 96,
+    "PRI": 97,
     "iSCOPE": 22
   },
-  "last_tick": "2026-10-21T05:23:15.438822+00:00",
+  "last_tick": "2026-10-21T05:24:17.072585+00:00",
   "last_tick_result": {
     "pending": 0,
-    "processed": [
-      "qdrain-20261021-forestenergy-submitted"
-    ]
+    "processed": [],
+    "signals": {
+      "PRI": 97,
+      "iSCOPE": 22
+    },
+    "state_changed": true
   },
   "queue": [
     {
