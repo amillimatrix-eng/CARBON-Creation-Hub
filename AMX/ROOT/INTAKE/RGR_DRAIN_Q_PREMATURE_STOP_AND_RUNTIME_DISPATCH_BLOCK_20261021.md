@@ -99,3 +99,43 @@ No Canon, mandate, Master Build, production runtime, schedule, worker-enable sta
 
 **Final disposition: FAIL — RGR ROUTED TO EXISTING ROOT INTAKE; DRAIN Q OPEN / NOT CLEARED; RECOVERY ACTIONS OPEN.**
 
+
+
+## CURRENT-STATE SUPERSESSION — POST-WRITER + POST-PR57 + PR63 MERGE READBACK — 2026-10-21 06:55 SAST
+
+This append-only delta supersedes stale current-state claims in Sections 3.1–3.2 and the older issue/CI statuses above only where noted. It does **not** erase why the prior wake failed; the RGR finding remains valid.
+
+### Corrections supported by fresh current-main readback
+
+- **Overdrive queue:** `overdrive/state.json` main blob `69767e11f945e1040028a5972fbe5209d4cba658`, sequence 26, 26/26 COMPLETED, 0 PENDING, 0 FAILED; last tick `2026-10-21T04:36:24.565084Z`. This supersedes the pre-drain sequence-23/three-pending snapshot above.
+- **Ledger/projection:** `opportunities.json` blob `6fc0ca68ada4b07a3263618f2a23a1d64db9f3f9`, 124 records; `claims.json` blob `9c74a9db0af04f53f95c2e2dc88f4f26977a912a`, 124 claims, 118 WAITING / 6 CLOSED / 0 READY / 0 external-ready. 124/124 keys reconcile with 0 missing and 0 orphaned. Thus the previously reported 13 missing claim rows are repaired. The 118 WAITING claims are **not** marked closed.
+- **PR #62:** CLOSED/MERGED at `08ab4cdd754bfaddd36ffe1b7aedbdecea964791`; supersedes the older OPEN/UNMERGED statement in the previous snapshot.
+- **PR #57 and scheduled control:** PR #57 CLOSED/MERGED at `ab3f31b000fc88ed401431e0b8ba8bb523adf36`. Current main workflow blob `.github/workflows/overdrive-recovery.yml` is `30c04db35ee44cb47538d7c073b93354bbc8fe3d` and includes Plan A `0 * * * *`, Plan B `5,20,35,50 * * * *`, plus a guarded paused/manual-only commercial worker. Therefore the previous statement “current main has no schedule trigger” is stale post-merge. **A real post-merge schedule run and committed Plan-A anchor remain unverified**: `overdrive/recovery-control/plan-a-anchor.json` returned 404 at the latest direct read; do not claim scheduler liveness.
+- **Canonical Root active view:** index commit `0e36b80d3ed905e76224c4a36e798e096e2b64ed`, blob `295b90b5e22e63c52b6ceceac360d4e46ad2e118`. Current view records zero untriaged governance-disposition candidates after explicit supersessions/merges; full ROOT/INTAKE remains OPEN / NOT CLEARED because operational acceptances and the full source-derived cross-surface census are not complete.
+
+### Additional live P0 readback — FORX bounded memory
+
+- Issue #11 remains OPEN; its previous diagnostic body described the older implementation. PR #63 is now CLOSED/MERGED at `89dc3c41d8cd73c49c5b2e43fd2c6df24cb10ef9`, after exact-head and push workflow checks `39545973046` and `39545968723` passed on `97fd6840dbfe6eed4c727df825badf9abb25e906`.
+- Current-main `overdrive/forx_stage1_runtime/app.py` blob `ae8231ba34fb819a10f625366ed4c767bcf4b89c` already contains streaming downloads, disk-backed SQLite deduplication/selection, row-wise GeoNames ingestion and bounded partition buffers. Do not duplicate this patch or represent source code as runtime acceptance.
+- Existing Render service `srv-db2udid9fdbs739b5ru0` is configured for main-branch auto-deploy, but the latest deploy list still shows live deployment `dep-db50tiflot8c73daujb0` on pre-patch commit `5a9219dc6c329542e047f2289f5a05908067e53e` from 10 October. Render logs/events record 512 MiB OOM kills on 19 October. PR #63 merged at `2026-10-21T04:49:13Z`; no new deployment was visible in the immediate read after merge. **Deployment/live verification remains OPEN**; no successful new 50k run, no fresh memory headroom, and no current manifest/hash readback is claimed here.
+
+### Remaining existing-owner actions (not newly assigned authority)
+
+1. ROOT/T-COD: continue the complete source-derived item-level Matrix census and reconcile each item to tested/merged/deployed/runtime evidence or a precise justified HOLD/supersession.
+2. T-COD/Overdrive: retain the 26-event zero-pending result; do not recreate or replay the queue. Confirm the 124/124 claim projection on the next authorized state transition.
+3. Existing T-COD/Actions owner: independently verify a real scheduled Plan A receipt + anchor, then Plan B fallback and return-to-A in the existing safe non-production fixture. Do not use the schedule declaration or a PR event as a scheduled receipt.
+4. Existing Render/FORX owner: allow/read back the deployment triggered by PR #63 merge; verify deployment commit matches current main before inspecting live `/status`, `/manifest`, `/runtime-receipt`, persisted 50,000-node output, partition hashes and memory headroom. If no automatic deploy materializes, use the supported existing service redeploy route only after recording the actual lack of auto-deploy.
+5. Existing HASH/T-LIB custody owner: recover exact bytes for the four named HASH calibration files and read the current STATUS register. Repository/Library/Dropbox no-match remains scoped evidence only; no hashes may be guessed.
+6. Existing Bounty Reaper/Tracker owner: restore supported Tracker write/readback; Q1 remains UNKNOWN, NOT ZERO until verified.
+7. Existing D04 evidence owner: locate the separate clean-run primary vector/run receipt or record an explicit retained-source-not-found result. Do not request the Owner to rerun the test or promote the historical vector as that separate run.
+8. ROOT/T-GOV: bind the already Owner-directed Commercial Manager holder/mandate/reporting placement and recover exact authoritative source for the Abacus “rolling consensus” term before disposition.
+
+### Directive 23 — current corrected disposition
+
+- **Expected outcomes:** no stale pre-drain counts presented as current; Overdrive event queue stays ZERO PENDING; merged governance shells do not reappear as undecided; actual runtime/source/access gates remain individually tracked.
+- **Owner:** ROOT/Intake + ROOT/T-GOV; existing T-COD/Overdrive, Render/FORX, T-LIB, Reaper/Tracker and D04 evidence owners for their named actions.
+- **Action/evidence:** current-main blobs, native receipts 24–26, PR #57/#62/#63 merge states, current workflow blob, service/deploy/event readback and the latest canonical Intake Index.
+- **Readback/persistence:** this addendum is appended to the existing RGR file; fetch the file again after this write. Root Issue #31 remains the controlling route.
+- **Safety/preservation:** no schedule/automation reactivation, no external commercial action/payment, no unsupported HASH digest, no false 50k runtime PASS, no queue force-close; prior failed-state evidence retained.
+- **Disposition:** **OVERDRIVE EVENT QUEUE ZERO PENDING; GOVERNANCE-DISPOSITION BUCKET ZERO UNTRIAGED; FULL ROOT INTAKE OPEN / NOT CLEARED.**
+- **Remaining work:** the exact operational acceptance gates above and the full cross-surface item-level census.
