@@ -274,3 +274,65 @@ def test_root_reports_unavailable_house_without_false_success(tmp_path):
     entry = c.get("/", follow_redirects=False)
     assert entry.status_code == 503
     assert entry.json()["detail"] == "House interface unavailable"
+
+
+def test_public_evidence_routes_never_return_controlled_source_metadata(tmp_path):
+    write_repo(tmp_path)
+    seed_path = tmp_path / "evidence/index.json"
+    seed = json.loads(seed_path.read_text(encoding="utf-8"))
+    seed_record = seed["records"][0]
+    seed_record.update({
+        "authoritative_source": "PRIVATE_SOURCE_SENTINEL",
+        "source_pointer": "PRIVATE_POINTER_SENTINEL",
+        "source_hash": "PRIVATE_SOURCE_HASH_SENTINEL",
+        "artifact_hash": "PRIVATE_ARTIFACT_HASH_SENTINEL",
+        "durable_receipt": "PRIVATE_RECEIPT_SENTINEL",
+        "durable_receipts": ["PRIVATE_RECEIPTS_SENTINEL"],
+        "T10_EVIDENCE": "PRIVATE_T10_EVIDENCE_PATH_SENTINEL",
+        "inspect_route": "PUBLIC_SAFE_INSPECTION_POINTER",
+    })
+    seed_path.write_text(json.dumps(seed), encoding="utf-8")
+    app = create_app(repo_root=tmp_path, db_path=tmp_path / "data/public-projection-test.db")
+    c = TestClient(app)
+
+    list_payload = c.get("/api/evidence").json()
+    detail_payload = c.get("/api/evidence/EVID-TEST-001").json()
+    search_payload = c.post(
+        "/api/evidence/search",
+        json={"query": "governed workflow", "limit": 8},
+    ).json()
+    bootstrap_payload = c.get("/api/house/bootstrap").json()
+    public_records = [
+        list_payload["records"][0],
+        detail_payload,
+        search_payload["results"][0],
+        bootstrap_payload["evidence"]["records"][0],
+        bootstrap_payload["gallery"][0],
+    ]
+    forbidden = {
+        "authoritative_source",
+        "source_pointer",
+        "source_hash",
+        "artifact_hash",
+        "durable_receipt",
+        "durable_receipts",
+    }
+    private_sentinels = [
+        "PRIVATE_SOURCE_SENTINEL",
+        "PRIVATE_POINTER_SENTINEL",
+        "PRIVATE_SOURCE_HASH_SENTINEL",
+        "PRIVATE_ARTIFACT_HASH_SENTINEL",
+        "PRIVATE_RECEIPT_SENTINEL",
+        "PRIVATE_RECEIPTS_SENTINEL",
+        "PRIVATE_T10_EVIDENCE_PATH_SENTINEL",
+    ]
+    for record in public_records:
+        assert forbidden.isdisjoint(record.keys())
+        assert record["inspect_route"] == "PUBLIC_SAFE_INSPECTION_POINTER"
+        assert record["T10_EVIDENCE"] == "PUBLIC_SAFE_INSPECTION_POINTER"
+        assert record["T10_ACTUAL"]
+        assert record["acceptance_test"]
+        assert record["T10_REMAINING_GAP"]
+        serialized = json.dumps(record)
+        assert all(secret not in serialized for secret in private_sentinels)
+
