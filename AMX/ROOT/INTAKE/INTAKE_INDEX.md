@@ -4117,3 +4117,9 @@ Search was expanded to both connected GitHub owner scopes (`amillimatrix-eng` an
 - Addendum C: `CATEGORY_A_LIBRARIAN_RESPONSIBILITY_ALIGNMENT_ADDENDUM_C_COLOUR_SEMANTIC_CONTEXT_20261021.md`; Git blob SHA `f1601259aff0f124d7cc340a53751eb7dda06d3e`; commit `20187dc4c7cc1cd4b942bae2f7103d87ccecdccd`.
 - Evidence: Canon text uses BLACK for participants/seekers; visual-language text uses BLACK for depth/foundation/system space. These are contextual uses, not a licence to overwrite Canon or collapse all colour semantics into one dictionary. GOLD/WHITE/BLACK ontology, MASTER=WHITE / ROOT=RED topology, and FORX/WHITE vs DOM8N/GOLD security distinction remain separately scoped.
 - Domain allocation: ROOT/T-GOV decides semantic/authority conflicts; MASTER preserves provenance/index; T-MED owns approved visual presentation; T-COD implements approved backend markers. Unique BUILD/CANON/GOVERNANCE stream markers remain OPEN pending authoritative registry retrieval and collision readback.
+
+ 
+## SAME-WAKE UPDATE — FLIGHT 3 FORKS-ROI PREFLIGHT READBACK — 2026-10-21
+- Latest actual Flight 3 run: `5d681cc8-020c-832f-af74-308aa4b779d2`, task `6ad84ceaa4408191a31ab93814199644`, status IN_PROGRESS, started `2026-10-21T21:44:24.819381Z`, no terminal timestamp.
+- Partial result verifies Registry v1.3 root SHA-256 `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a` and FORKS-ROI mandate SHA-256 `a61aa5c535aa33be5639850590cdb911b583f8f02e6a23f4e5e6669850bf6ab9` match current registration.
+- Scope correction: this is Flight 3 preflight evidence only, not proof of completed FORKS-ROI routing, all-item allocation, downstream remediation or terminal run acceptance. Flight 1 `b926cd09-6f4c-8320-affd-6309b2879dae` and Flight 2 `84e9bf4d-0c24-832d-ac88-52db68368b9a` remain IN_PROGRESS in the latest peek. Preserve prior FAILED runs; do not report Matrix clearance.
