@@ -4089,3 +4089,24 @@ Directive 23: outcome = correct scheduler census and avoid false runtime complet
 - Finding: GOLD/WHITE/BLACK semantics and MASTER=WHITE / ROOT=RED topology are preserved; no authoritative unique BUILD/CANON/GOVERNANCE stream-colour mapping or BAZOOKA colour was found in scoped sources. No colour was guessed or newly assigned.
 - Owners: ROOT/T-GOV (authoritative registry and collision disposition), MASTER/LIBRARIAN (Index/provenance), T-COD/T-MED (implementation/readback after approved mapping).
 - State: INDEXED EVIDENCE / MARKER REGISTRATION OPEN; this is not Canon, not a new registry, and not Root Intake clearance.
+
+
+## 2026-10-21 — LIVE THREE-SLOT FLIGHT STATUS + COLOUR-REGISTRY SEARCH EXPANSION
+
+**Existing Root Intake evidence/readback:** [ROOT INTAKE — MATRIX-WIDE DEEP SWEEP / INTAKE DRAIN](https://app.notion.com/p/3f48f8b56cd781a0964ccc894000a8f5?pvs=204), latest fetched at `2026-10-21T21:47:49.497Z`.
+
+### Actual latest scheduler IDs — not terminal
+
+| Slot | Existing task ID | Actual latest run ID | Readback state | Start UTC |
+|---|---|---|---|---|
+| Flight 1 | `6ad84ccda5808191bdb64057151ab45b` | `b926cd09-6f4c-8320-affd-6309b2879dae` | IN_PROGRESS | `2026-10-21T21:35:54.694099Z` |
+| Flight 2 | `6ad84ce85840819187519b2cd4d80486` | `84e9bf4d-0c24-832d-ac88-52db68368b9a` | IN_PROGRESS | `2026-10-21T21:44:13.302545Z` |
+| Flight 3 | `6ad84ceaa4408191a31ab93814199644` | `5d681cc8-020c-832f-af74-308aa4b779d2` | IN_PROGRESS | `2026-10-21T21:44:24.819381Z` |
+
+Prior runs `b9ca8cb1-a8ac-832f-9181-4ddd83c33bfc`, `68179659-b2fc-8333-bbbf-644b3532e860`, and `1fa98ff9-28f4-8320-9fb2-8157cca5e32d` remain historical FAILED evidence. Newer run IDs are separate invocations. Current saved task prompts were read back with mandatory FORKS-ROI per-invocation processing and the domain/hash routing contract; task IDs, enabled flags and existing daily schedules remain unchanged. These prompt changes do not prove current-run adoption or completion. No terminal result or explicit FORKS-ROI execution receipt is yet established by the last scheduler readback. Root Intake remains OPEN / NOT CLEARED.
+
+### Expanded colour / marker registry lookup
+
+Search was expanded to both connected GitHub owner scopes (`amillimatrix-eng` and `BullRulez`), current Root Index/governance sources, accessible Notion search, and the uploaded Canon / Root Folder Reorganization / Master Build File Update / governance text sources. Search returned existing mentions of the GOLD/WHITE/BLACK ontology, MASTER=WHITE / ROOT=RED topology, contextual subsystem palettes, and BAZOOKA's status as a Librarian directive—not a fourth stream or builder colour. **No authoritative, collision-checked unique marker mapping for BUILD, CANON, and GOVERNANCE was located.** This is a bounded search result, not proof that no register exists in an inaccessible store. Do not assign or invent stream colours. Keep explicit domain text labels active; ROOT/T-GOV owns locating the authoritative registry/collision check, MASTER preserves source/index provenance, and T-COD/T-MED apply verified registered markers after authorization.
+
+**Open gates:** item-by-item classification beyond the sources listed above; receiving-owner acknowledgements and implementation receipts; terminal readbacks for the three current flights; explicit FORKS-ROI behavioral receipt; scheduler prompt update for the two legacy hourly tasks (current provider error: `Your current plan does not support hourly schedules`, cadence unchanged); authoritative stream-colour registry and collision check. No Canon, registered mandate hash or Master Build authority was changed by these routing operations.
