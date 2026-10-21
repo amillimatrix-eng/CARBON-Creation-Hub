@@ -4027,3 +4027,17 @@ This maps the current open GitHub records into operational dispositions. It is n
 - **Evidence:** live open issues/PR API, current-main workflow and deployment checks, Overdrive seq-27 receipt/parity, PR #66 CI, PR #37 exact register pointer readback, and the source-specific receipts linked above.
 - **Disposition:** GITHUB ACTIVE CENSUS MAPPED (24); OVERDRIVE EVENT QUEUE ZERO PENDING; FULL ROOT INTAKE OPEN / NOT CLEARED.
 - **Remaining:** complete the external-source and Notion/provider census, remove actual execution blockers where supported, and obtain only the specific owner/reviewer/credential actions listed above.
+
+
+## 2026-10-21 — SHARED FLIGHT ROSTER CORRECTION — THREE RUNS IN PROGRESS
+
+This append supersedes earlier same-day Index wording that said all 25 saved automations were disabled. A fresh current `Automations.peek({})` and individual task readbacks now show 25 configured records, **3 enabled shared Matrix Flight tasks and 22 disabled tasks**, all with `next_run_time=null`. Do not treat enabled flags or partial response text as a completed wake.
+
+Shared wake ID `AMX-MATRIX-WAKE-20261021-0534Z`; Registry v1.3 root `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`. Existing flights currently report `IN_PROGRESS`, terminal timestamp null:
+- Flight 1 task `6ad84ccda5808191bdb64057151ab45b`; run `13b44618-8170-832a-b850-025eac59e54a`; started `2026-10-21T05:35:19.888358Z`; no terminal receipt yet.
+- Flight 2 task `6ad84ce85840819187519b2cd4d80486`; run `4c8e8edf-4a10-8324-bd76-97e72b50bf96`; started `2026-10-21T05:40:40.619354Z`; no terminal receipt yet.
+- Flight 3 task `6ad84ceaa4408191a31ab93814199644`; run `3441f759-2bec-8321-9698-a58de1aae156`; started `2026-10-21T05:43:45.474485Z`; no terminal receipt yet.
+
+All three preserve the same shared Matrix-wide prompt/ID. Other specialist lanes remain disabled under the quiet-mode boundary; no task was toggled or dispatched during this read. Because every saved task reports `next_run_time=null`, enabled state does not prove recurring scheduling. Continue to use the same shared wake until the three existing runs yield terminal, attributable per-slot receipts. Do not mint a duplicate wake or stop/close any active run by inference.
+
+Directive 23: outcome = correct scheduler census and avoid false runtime completion; owner = ROOT/T-GOV + existing shared-flight tasks; action = persist and read back terminal receipts, then verify next-run delivery; dependency = current runs completing and supported scheduler recurrence; evidence = fresh task peeks and shared manifest addendum; safety = no dispatch/toggle, no new task, no duplicate wake, no commercial state mutation; disposition = 3 SHARED RUNS IN PROGRESS / 0 NEXT-RUN TIMES / ROOT INTAKE OPEN; remaining = terminal receipts, recurrence evidence, item-level cross-surface census.
