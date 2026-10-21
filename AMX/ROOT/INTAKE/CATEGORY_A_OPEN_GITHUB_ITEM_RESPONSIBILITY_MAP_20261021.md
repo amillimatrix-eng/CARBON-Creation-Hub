@@ -50,3 +50,24 @@
 - Items #53, #50, #34, #33, #32, #31, #30, #29, #21, #18, #8, #4, #3, #2 and #1 remain issues; items #68, #67, #66, #60, #59, #52, #40, #37, #35, #14 and #7 are PRs.
 - The routing labels above identify the domain and correct existing responsibility; they are not proof of actual receipt, acceptance, merge, deployment, execution or closure. Re-read current state before any consequential action. If any item routes incorrectly, use the reasoned misroute-recovery loop in Addendum A: preserve the bad route as provenance, return through existing Root Intake, ROOT reassigns/corrects, MASTER updates Index, FORX verifies where relevant.
 - Colour marker register remains OPEN / NOT LOCATED in scoped repository, Notion, Dropbox and uploaded-file evidence. Explicit text domain labels are used now; do not invent new stream colours.
+
+
+## Exact PR source identities — current live read on 2026-10-21
+
+These exact GitHub API readbacks bind the PR responsibility rows above to their current source branch identities. `head_sha` is the source revision for the proposed change; `base_sha` is the main revision GitHub reported for that PR at the time of this read. They are not content hashes for every changed file and will change on future updates. All are still **OPEN / UNMERGED**.
+
+| PR | Current head branch | Current head SHA | Current base SHA | Domain / primary responsibility |
+|---|---|---|---|---|
+| #68 | `root/tendon-shared-state-integrity-20261021` | `c9e60ff2e84e6bf5752046c0f28d0d0fe0781555` | `e4f1a697f669453777bec45976fd7111c5707042` | CODE / LEDGER STATE INVARIANT — T-COD; ROOT/T-GOV disposition; MASTER readback |
+| #67 | `overdrive/ledger-record-count-invariant-20261021` | `cd41db682f27151a11d6260d4bf27756009cca54` | `9cfeb648b97d14d97172cb141bc734a888ec2b42` | CODE / RUNTIME WRITER — T-COD; ROOT/T-GOV review |
+| #66 | `security/public-evidence-projection-20261021` | `fbd286079b56c16bac1b84ae4de9c2dfb61bc7c7` | `4b3a4a3e76c03fa1ff1a9fb91c15d637d3990a9f` | CODE / PRIVACY PROJECTION — T-COD; ROOT/T-GOV security disposition; T-MED public surface QA |
+| #60 | `root/matrix-critic-release-gate-20261021` | `77647a429ff5e326754c4237dcc2475afe895d71` | `e4f2158c419250ccee8b4ee09ef963f97f1556dd` | CODE / RELEASE GATE — T-COD; ROOT/T-GOV control disposition |
+| #59 | `docs/carbon-public-route-truth-matrix-20261021` | `93fbcf8fd8b94b9ad45973f5deae6a5ab2f517cd` | `764c17445e617675fdebc30d3b22ff472e2b7fa3` | MEDIA + ROUTE IMPLEMENTATION — T-MED copy/presentation; T-COD technical routes |
+| #52 | `amx/segment12-offer-version-binding-20261019-1945` | `20fabb7022d46438ecceaee85e65c21a9e660cf2` | `764c17445e617675fdebc30d3b22ff472e2b7fa3` | CODE / OFFER VERSION INVARIANT — T-COD; ROOT/T-GOV lifecycle review |
+| #40 | `recovery/scale-army-source-requalification-20261014` | `c58f8de0cdd96ec8d0d9a15805e30fb060337e9b` | `764c17445e617675fdebc30d3b22ff472e2b7fa3` | LEDGER / COMMERCIAL EVIDENCE — T-COD validates file change; PRI/iSCOPE/Banker retain domain actions |
+| #37 | `proposal/forx-flight-register-continuity-20261013-r2` | `8f3825bd5087648174953afab3706d703183b534` | `82436afb57905afeccba8918f74f8b23794ed6ef` | CODE / CONTINUITY VALIDATOR — T-COD; ROOT/T-GOV missing-prior-event disposition; MASTER Index |
+| #35 | `cod/evidence-house-live-proof-issue21-20261013` | `ebf4f2e0b904179ef9ff9b8c8360f474d7f5677d` | `764c17445e617675fdebc30d3b22ff472e2b7fa3` | CODE / PUBLIC-SAFE EVIDENCE UI — T-COD; ROOT/T-GOV privacy; T-MED presentation QA |
+| #14 | `build/carbon-intent-marketplace-v1` | `2c720b2c0aa7b5e24a0bf39cc38811d764803634` | `9c0e79c8e3d5f0d3e75d05e481864981e1301989` | CODE / PRODUCT IMPLEMENTATION EVIDENCE — T-COD; ROOT/T-GOV merge/lifecycle; T-MED presentation as applicable |
+| #7 | `codex/amx-continuity-security-20261003` | `8ea06dd87d90436ffa59d1f82057bc19c5e2a056` | `ba28ed39b7054a8bc0347b151d0d079240e192e1` | CODE / ENCRYPTED CONTINUITY — T-COD; ROOT/T-GOV authority/ACL decisions; MASTER continuity |
+
+**Freshness:** the live PR #68 response was updated at `2026-10-21T21:54:38Z`; other PR response timestamps vary. The head/base readback is a snapshot and must be refreshed before any merge, review acceptance, or other consequential action. Do not use a head SHA as a substitute for a file blob SHA or for tests/readback.
