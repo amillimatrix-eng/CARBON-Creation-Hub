@@ -8,6 +8,14 @@ const degreeData=[
  {index:'06 / STUDIOS',title:'Studios°',subtitle:'Film, Media & Worlds',copy:'Narrative, film, vertical series, campaign media and dimensional presentation developed for review or commission.',glow:'#6b443a',tags:['Film','Vertical','Interactive'],detail:['Vertical drama and episodic development','Short-form film and trailer production','Scripts, adaptation and story systems','Visual continuity and production packages','Interactive and dimensional presentation']}
 ];
 
+
+const entryData=[
+ {index:'AVAILABLE SERVICE / 01',title:'Website Concept & Build',subtitle:'A scoped website project',copy:'Start with a website or refresh. Scope, price and timing are agreed before custom work begins.',glow:'#686862',tags:['Website','Scoped project'],detail:['A direct service page explains how to request a scope.','There is no automatic paid demo or trial provisioning.'],url:'https://amx-evidence-house.onrender.com/carbon/services/website',cta:'View website service'},
+ {index:'AVAILABLE SERVICE / 02',title:'Quick Technical Review',subtitle:'Fixed-scope review',copy:'A written review of one public repository or one non-sensitive code/config excerpt, within the published limit.',glow:'#797971',tags:['US$4.99','Fixed scope'],detail:['Review the published scope and terms on the service page before proceeding.','A checkout link is published; payment success must be confirmed by the payment system, not inferred from clicking.'],url:'https://amx-evidence-house.onrender.com/carbon/services/quick-technical-review',cta:'View scope and price'},
+ {index:'STUDIOS / REVIEW',title:'The Dragon Who Could Not Claim Me',subtitle:'Controlled production review',copy:'A developed CARBON° Studios vertical property available for controlled buyer review and commissioning discussion.',glow:'#7a3325',tags:['Studios','Commissioning'],detail:['This is a review/commissioning destination, not a self-service Studios catalogue.','Other production work can begin with a scoped enquiry.'],url:'./work/dragon.html',cta:'View production review'},
+ {index:'START / SERVICES',title:'Explore all services',subtitle:'Choose the right entry point',copy:'Browse the customer-facing service guide for direct service routes, preview limits and referral guidance.',glow:'#777770',tags:['Services','Direct routes'],detail:['Use direct service links when a defined offer exists.','Other work is scoped as an enquiry; available routes and terms are stated on the destination.'],url:'https://amx-evidence-house.onrender.com/carbon/partner',cta:'Open service guide'}
+];
+
 const sprints=[
  {index:'FIRST MOVE / 01',title:'Focused Fix',copy:'Resolve one visible defect with a focused correction and a clear acceptance condition.',glow:'#555550',tags:['Fast','Focused'],detail:['Best for a visible website, workflow, document, interface or process defect.','Keep the first move small enough to verify quickly.']},
  {index:'FIRST MOVE / 02',title:'Diagnostic Sprint',copy:'Inspect one surface, rank the highest-value issues, and turn the strongest finding into action.',glow:'#676761',tags:['Audit','Prioritized'],detail:['Website, conversion path, presentation, workflow, data or customer journey.','Evidence first; recommendations second.']},
@@ -49,8 +57,8 @@ function tile(item){
 function fill(id,data){const box=$(id);data.forEach(x=>box.append(tile(x)))}
 
 function openDrawer(item){
- const action=item.url?'<div class="drawer-cta"><a class="button primary" href="'+item.url+'">'+(item.cta||'View overview')+' →</a></div>':'<div class="drawer-cta"><a class="button primary" href="#contact" data-close-drawer>Discuss this capability</a></div>';
- $('drawerBody').innerHTML='<span class="kicker">'+item.index+'</span><h2>'+item.title+'</h2>'+(item.subtitle?'<p class="drawer-subtitle">'+item.subtitle+'</p>':'')+'<p>'+item.copy+'</p>'+(item.detail?'<div class="drawer-list">'+item.detail.map(x=>'<div>'+x+'</div>').join('')+'</div>':'')+action;
+ const action=item.url?'<div class="drawer-cta"><a class="button primary" href="'+item.url+'">'+(item.cta||'View overview')+' →</a></div>':'<div class="drawer-cta"><a class="button primary" href="https://amx-evidence-house.onrender.com/carbon/partner">Discuss a scoped project →</a></div>';
+ $('drawerBody').innerHTML='<span class="kicker">'+item.index+'</span><h2>'+item.title+'</h2>'+(item.subtitle?'<p class="drawer-subtitle">'+item.subtitle+'</p>':'')+'<p>'+item.copy+'</p>'+(item.detail?'<div class="drawer-list">'+item.detail.map(x=>'<div>'+x+'</div>').join('')+'</div>':'')+(item.url?'':'<p class="drawer-note">This capability does not have a separate self-service destination. Use the existing service guide to discuss scope and terms.</p>')+action;
  $('drawerBackdrop').hidden=false; $('drawer').classList.add('open'); $('drawer').setAttribute('aria-hidden','false');
  const closeLink=$('drawerBody').querySelector('[data-close-drawer]'); if(closeLink) closeLink.addEventListener('click',closeDrawer);
 }
@@ -62,7 +70,7 @@ document.querySelector('[data-open="degree"]').addEventListener('click',()=>{$('
 document.querySelector('[data-close-modal]').addEventListener('click',()=>{$('degreeModal').hidden=true});
 $('degreeModal').addEventListener('click',e=>{if(e.target===$('degreeModal')) $('degreeModal').hidden=true});
 
-fill('degreeRail',degreeData); fill('sprintRail',sprints); fill('studioRail',studio); fill('workRail',work);
+fill('entryRail',entryData); fill('degreeRail',degreeData); fill('sprintRail',sprints); fill('studioRail',studio); fill('workRail',work);
 
 /* lightweight 3D interaction */
 const stage=$('carbonStage');
