@@ -4123,3 +4123,24 @@ Search was expanded to both connected GitHub owner scopes (`amillimatrix-eng` an
 - Latest actual Flight 3 run: `5d681cc8-020c-832f-af74-308aa4b779d2`, task `6ad84ceaa4408191a31ab93814199644`, status IN_PROGRESS, started `2026-10-21T21:44:24.819381Z`, no terminal timestamp.
 - Partial result verifies Registry v1.3 root SHA-256 `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a` and FORKS-ROI mandate SHA-256 `a61aa5c535aa33be5639850590cdb911b583f8f02e6a23f4e5e6669850bf6ab9` match current registration.
 - Scope correction: this is Flight 3 preflight evidence only, not proof of completed FORKS-ROI routing, all-item allocation, downstream remediation or terminal run acceptance. Flight 1 `b926cd09-6f4c-8320-affd-6309b2879dae` and Flight 2 `84e9bf4d-0c24-832d-ac88-52db68368b9a` remain IN_PROGRESS in the latest peek. Preserve prior FAILED runs; do not report Matrix clearance.
+
+
+## 2026-10-21 — RECEIVER-SPECIFIC LIBRARIAN DISPATCH + DROPBOX COLOUR SEARCH
+
+**Existing Root Intake:** [MATRIX-WIDE DEEP SWEEP / INTAKE DRAIN](https://app.notion.com/p/3f48f8b56cd781a0964ccc894000a8f5?pvs=204), receiver-specific dispatch section independently fetched after insert.
+
+The following existing office receipts now contain separate mandate-scoped instructions and acceptance conditions. The page edits are instruction persistence only; do not count them as office acknowledgement, execution or remediation:
+- ROOT/T-GOV: https://app.notion.com/p/4008f8b56cd78118b9b5dc9b5778f175?pvs=204 — governance/lifecycle/authority and authoritative stream marker registry/collision disposition.
+- T-COD: https://app.notion.com/p/4008f8b56cd781ebb824f00659f74dbd?pvs=204 — technical implementation, current-head CI/deployment state and readback.
+- T-MED: https://app.notion.com/p/4008f8b56cd781778677e8052c282c61?pvs=204 — media/presentation/rights/publication QA and existing release gates.
+- MASTER/LIBRARIAN: https://app.notion.com/p/4008f8b56cd781c7a8c5f73e601479fb?pvs=204 — source/hash census, semantic deduplication, Index/provenance and readback.
+- Existing Root/Intake routing contract: https://app.notion.com/p/3fa8f8b56cd781c5b7f3ed7e227b214f?pvs=204.
+- FORX: route every forensic finding through existing Intake to one primary T owner (or linked bounded packets for genuine mixed-domain work), report to MASTER, aid ROOT and verify downstream acceptance where relevant. ROOT corrects misroutes; MASTER updates the Index; preserve the erroneous route as history.
+
+### Misroute acceptance
+A receiving librarian must accept only its registered responsibility. An out-of-scope receipt must state the item/hash, governing source, scope mismatch, correct destination if supported, lifecycle and acceptance/readback. Return through existing Intake for ROOT reassignment and MASTER Index correction. Do not silently drop an item, duplicate the work, or become another domain's owner.
+
+### Expanded colour-registry evidence
+A further read-only Dropbox search of `colour registry`, `BUILD CANON GOVERNANCE marker`, `BAZOOKA colour`, and `librarian colour code` returned zero results. Combined with current main, both connected GitHub account scopes and accessible Notion search, the authoritative unique BUILD/CANON/GOVERNANCE stream-colour mapping remains NOT LOCATED in scoped sources. This is not proof of global nonexistence. No new stream colour is assigned. Keep explicit textual domain labels in place; ROOT/T-GOV owns authoritative registry/collision disposition, MASTER source/Index reconciliation, T-COD/T-MED approved implementation/readback.
+
+**Acceptance boundary:** current office pages have source-linked instructions and Root Intake has indexed the routes; no receiver acknowledgement or downstream fix is claimed. The full artifact census, all per-item allocations, marker implementation and behavioral acceptance remain OPEN. Root Intake is NOT CLEARED.
