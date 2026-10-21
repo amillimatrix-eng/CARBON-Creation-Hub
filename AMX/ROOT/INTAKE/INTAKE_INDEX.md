@@ -3778,3 +3778,29 @@ This addendum records the latest source-backed deltas after the 200K FORX proof.
 - **Safety/preservation:** no queued claim force-closed; no scheduler reactivation/dispatch; no cadence change to bypass the prompt writer; no guessed hash; no D04 rerun/vector substitution; all existing histories remain preserved.
 - **Disposition:** OVERDRIVE EVENT QUEUE ZERO PENDING; GOVERNANCE DISPOSITION BUCKET ZERO UNTRIAGED; FORX 200K DURABLE OUTPUT PASS / RESTART-RESUME OPEN; FULL ROOT INTAKE OPEN / NOT CLEARED.
 - **Remaining:** full source-derived cross-surface item census and the specific behavioral, scheduler liveness, source-custody, provider prompt-write, Tracker, authority/role-binding, and release-evidence gates above.
+
+## 2026-10-21 — DRAIN-Q POST-WRITER READBACK — SEQUENCE 27
+
+This current-main state supersedes the preceding sequence-26/124-row queue snapshot. Historical sequence-26 receipts remain preserved.
+
+- State blob: 1deb2f6f22439019f71057e922ca5d6a608e0201; sequence 27; 27/27 queue entries COMPLETED; zero PENDING; zero FAILED; last tick 2026-10-21T05:24:17.072585+00:00.
+- The newly processed event is qdrain-20261021-forestenergy-submitted, adapter MISSING_RECORD_UPSERT; writer receipt blob 8653292c4d87c7029df8b481cd397c4af270ebf0; embedded receipt SHA-256 05de9fc6cdfd1243716f661f594887258df2a1ea2f9382c1dc7378099173bc14; receipt sequence 27.
+- Opportunity ledger: 125 records, blob 085876140e8a361c36afdee99c0fac26a5a56142. Claims projection: 125 entries, blob 643804960f531f75c56a7c369a035ce17548d031. Signals: 125 entries, blob c7d01b85f6d1a718dd5e4095b0c64be319e79cc6.
+- Independent 125-key parity: opportunities ↔ claims ↔ signals; key count 125 each; 0 missing keys, 0 extras, no lifecycle mismatch. Claims: 119 WAITING / 6 CLOSED / 0 READY / 0 external-ready. The new Forest Energy claim is SUBMITTED / WAITING, external_action_ready=false, routing_reason=AWAITING_REPLY_OR_DUE_INTERVAL.
+- Forest Energy source receipt: AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261021_FOREST_ENERGY_OUTBOUND_AND_AUTO_REPLY.md, commit 30af39ead120d8941c7bed8a23ee113a0d70a1c9, blob eb825dc53d5dfbba6ffeff41d8bd4c0163df1891. It preserves the confirmed outbound and the auto-reply. Auto-reply is not buyer acceptance; no duplicate outreach or payment is inferred.
+- Source identity is represented once at canonical key forestenergy.co.za|o-m-alert-to-closeout-handoff-pilot|2026-10-21. The sole writer created the record from source-gated evidence; no direct ledger edit was made.
+
+### DRAIN-Q interpretation
+- Overdrive adapter event queue = ZERO PENDING / ZERO FAILED at sequence 27. This is a verified queue boundary.
+- Opportunity pipeline has 125 records but 119 remain WAITING for buyer/provider/authentication/other legitimate gates. Zero READY is correct for the source evidence currently available; the 119 waiting items are not to be force-closed.
+- Active governance-disposition bucket remains zero untriaged after explicit prior merges/subsumptions. This is not the whole Root Intake census. Full Root Intake remains OPEN / NOT CLEARED until the independent source/runtime/authority/acceptance gates below are resolved.
+
+### Directive 23
+- Expected outcome: latest source-verified event is ingested once; state/ledger/claims/signals are in parity; event queue remains drained.
+- Owner: T-COD/Overdrive for writer and receipts; PRI for commercial lifecycle; ROOT/Intake and ROOT/T-GOV for the wider item census.
+- Action/evidence: current-main state, ledger, claims, signals and sequence-27 receipt read back and joined by canonical opportunity key.
+- Dependency: Forest Energy waits for a material non-automated reply; all other offer, provider, identity, payment and authority gates are unchanged.
+- Readback/persistence: this append-only update must be fetched again after commit; current Root issue #31 receives the same delta.
+- Safety: no re-sends, no claim force-close, no payment or acceptance inference, no worker/task duplicate and no authorized-state bypass.
+- Disposition: OVERDRIVE QUEUE ZERO PENDING; 125/125 projection parity; full Root Intake OPEN / NOT CLEARED.
+- Remaining: full source-derived Intake census; scheduler liveness and Plan A/B receipts; Reaper prompt/tracker; restart/resume FORX acceptance; D04 separate primary vector; HASH exact captures; Commercial Manager holder/reporting binding; Abacus source authority; DR-0021/FORX-VFY-004 behavioral acceptance; RGR-03 source semantics; remaining open GitHub items and user-only provider/UI gates.
