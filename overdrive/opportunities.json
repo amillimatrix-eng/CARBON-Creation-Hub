@@ -611,7 +611,7 @@
   },
   "last_updated_at": "2026-10-20T14:08:34.815+02:00",
   "last_updated_by": "PRI — current-turn evidence reconciliation",
-  "record_count": 121,
+  "record_count": 124,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -6981,9 +6981,9 @@
       "state": "OFFERED",
       "capital_direction": "PAYER_TO_WORK",
       "proof_of_work_route": "FIXED_SCOPE",
-      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED",
       "current_route_confidence": "HIGH",
-      "execution_readiness": "WAITING",
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
       "due_at": null,
       "evidence": [
         {
@@ -7001,12 +7001,20 @@
           "source": "OFFICIAL_PRIMARY_SOURCE",
           "summary": "Official contact page lists quality@verminator.co.za. Official service pages describe pest-control visits, programmes and follow-up service across Cape Town/Western Cape.",
           "url": "https://verminator.co.za/contact"
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvwAAAA==",
+          "subject": "One site-visit-to-follow-up workflow pilot",
+          "summary": "The full sent-message body and attachment metadata were re-read. No AMX-OFR/proposal_ref or offer version, no customer-readable quote/pro-forma link or quote attachment, and no order-specific payment instructions were observed. An attached demo PDF, where present, is not a quote. This is an open control-reconciliation issue, not proof of buyer acceptance or payment."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-20T07:48:26Z",
-      "last_reconciled_at": "2026-10-20T11:29:58Z",
-      "next_action": "WAIT for a substantive buyer response. If interested, confirm the current tools, integration permission, required test data, acceptance criteria and supported payment route before work. Do not begin implementation before attributable paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable settlement evidence.",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and issued amount. On a buyer response, PRI must reconcile the exact scope and current South African 50%-of-comparable-low-end benchmark, then generate/read back the immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path via the existing proposal process before accepting scope or starting delivery. No mass resend or proactive price correction. Promote lifecycle only with attributable evidence.",
       "commercial_offer": {
         "amount": 9380,
         "currency": "ZAR",
@@ -7014,6 +7022,33 @@
         "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvwAAAA==",
         "status": "OFFER_SENT_NOT_ACCEPTED",
         "type": "FIXED_SCOPE"
+      },
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvwAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE",
+          "demo_attachment_note": null
+        },
+        "pricing_review": "REVALIDATE_CURRENT_SA_50_PERCENT_FACTOR_AND_SCOPE-COMPARABLE_BENCHMARK_BEFORE_ACCEPTANCE; this review does not prove an exact corrected amount.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "last_reconciled_reason": "Post-send control review: exact Outlook message/attachments read back; required proposal ref/version, customer-readable quote/pro-forma, and order-specific payment route are not evidenced in the sent item. Preserve offer as OFFERED; no buyer acceptance/payment inferred.",
+      "active_dependencies": {
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent message AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvwAAAA==; findings={\"proposal_ref\":\"NOT_EVIDENCED_IN_MESSAGE\",\"offer_version\":\"NOT_EVIDENCED_IN_MESSAGE\",\"customer_readable_proforma\":\"NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT\",\"order_specific_payment_route\":\"NOT_EVIDENCED_IN_MESSAGE\",\"demo_attachment_note\":null}",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
+        }
       }
     },
     "treetopssolar.co.za|maintenance-callout-handoff-pilot|2026-10-20": {
@@ -7025,9 +7060,9 @@
       "state": "OFFERED",
       "capital_direction": "PAYER_TO_WORK",
       "proof_of_work_route": "FIXED_SCOPE",
-      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED",
       "current_route_confidence": "HIGH",
-      "execution_readiness": "WAITING",
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
       "due_at": null,
       "evidence": [
         {
@@ -7045,12 +7080,20 @@
           "source": "OFFICIAL_PRIMARY_SOURCE",
           "summary": "Official Treetops Solar contact page lists info@treetopssolar.co.za and describes solar and battery systems with ongoing support.",
           "url": "https://treetopssolar.co.za/contact/"
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvgAAAA==",
+          "subject": "One maintenance-callout handoff pilot",
+          "summary": "The full sent-message body and attachment metadata were re-read. No AMX-OFR/proposal_ref or offer version, no customer-readable quote/pro-forma link or quote attachment, and no order-specific payment instructions were observed. An attached demo PDF, where present, is not a quote. This is an open control-reconciliation issue, not proof of buyer acceptance or payment."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-20T07:48:04Z",
-      "last_reconciled_at": "2026-10-20T11:29:58Z",
-      "next_action": "WAIT for a substantive buyer response. If interested, confirm the current tools, integration permission, required test data, acceptance criteria and supported payment route before work. Do not begin implementation before attributable paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable settlement evidence.",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and issued amount. On a buyer response, PRI must reconcile the exact scope and current South African 50%-of-comparable-low-end benchmark, then generate/read back the immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path via the existing proposal process before accepting scope or starting delivery. No mass resend or proactive price correction. Promote lifecycle only with attributable evidence.",
       "commercial_offer": {
         "amount": 9380,
         "currency": "ZAR",
@@ -7058,6 +7101,33 @@
         "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvgAAAA==",
         "status": "OFFER_SENT_NOT_ACCEPTED",
         "type": "FIXED_SCOPE"
+      },
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvgAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE",
+          "demo_attachment_note": null
+        },
+        "pricing_review": "REVALIDATE_CURRENT_SA_50_PERCENT_FACTOR_AND_SCOPE-COMPARABLE_BENCHMARK_BEFORE_ACCEPTANCE; this review does not prove an exact corrected amount.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "last_reconciled_reason": "Post-send control review: exact Outlook message/attachments read back; required proposal ref/version, customer-readable quote/pro-forma, and order-specific payment route are not evidenced in the sent item. Preserve offer as OFFERED; no buyer acceptance/payment inferred.",
+      "active_dependencies": {
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent message AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvgAAAA==; findings={\"proposal_ref\":\"NOT_EVIDENCED_IN_MESSAGE\",\"offer_version\":\"NOT_EVIDENCED_IN_MESSAGE\",\"customer_readable_proforma\":\"NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT\",\"order_specific_payment_route\":\"NOT_EVIDENCED_IN_MESSAGE\",\"demo_attachment_note\":null}",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
+        }
       }
     },
     "mendazsolar.co.za|solar-service-follow-through-pilot|2026-10-20": {
@@ -7069,9 +7139,9 @@
       "state": "OFFERED",
       "capital_direction": "PAYER_TO_WORK",
       "proof_of_work_route": "FIXED_SCOPE",
-      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED",
       "current_route_confidence": "HIGH",
-      "execution_readiness": "WAITING",
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
       "due_at": null,
       "evidence": [
         {
@@ -7089,12 +7159,20 @@
           "source": "OFFICIAL_PRIMARY_SOURCE",
           "summary": "Official Mendaz Solar site lists info@mendazsolar.co.za and describes technical support, diagnostics, servicing and maintenance.",
           "url": "https://mendazsolar.co.za/"
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+          "subject": "One bounded pilot for solar service follow-through",
+          "summary": "The full sent-message body and attachment metadata were re-read. No AMX-OFR/proposal_ref or offer version, no customer-readable quote/pro-forma link or quote attachment, and no order-specific payment instructions were observed. An attached demo PDF, where present, is not a quote. This is an open control-reconciliation issue, not proof of buyer acceptance or payment."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-20T07:47:43Z",
-      "last_reconciled_at": "2026-10-20T11:29:58Z",
-      "next_action": "WAIT for a substantive buyer response. If interested, confirm the current tools, integration permission, required test data, acceptance criteria and supported payment route before work. Do not begin implementation before attributable paid receipt and access are verified. No follow-up without a new evidence-based due date. Mark PAID only on attributable settlement evidence.",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and issued amount. On a buyer response, PRI must reconcile the exact scope and current South African 50%-of-comparable-low-end benchmark, then generate/read back the immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path via the existing proposal process before accepting scope or starting delivery. No mass resend or proactive price correction. Promote lifecycle only with attributable evidence.",
       "commercial_offer": {
         "amount": 9380,
         "currency": "ZAR",
@@ -7102,6 +7180,33 @@
         "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
         "status": "OFFER_SENT_NOT_ACCEPTED",
         "type": "FIXED_SCOPE"
+      },
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE",
+          "demo_attachment_note": null
+        },
+        "pricing_review": "REVALIDATE_CURRENT_SA_50_PERCENT_FACTOR_AND_SCOPE-COMPARABLE_BENCHMARK_BEFORE_ACCEPTANCE; this review does not prove an exact corrected amount.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "last_reconciled_reason": "Post-send control review: exact Outlook message/attachments read back; required proposal ref/version, customer-readable quote/pro-forma, and order-specific payment route are not evidenced in the sent item. Preserve offer as OFFERED; no buyer acceptance/payment inferred.",
+      "active_dependencies": {
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent message AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==; findings={\"proposal_ref\":\"NOT_EVIDENCED_IN_MESSAGE\",\"offer_version\":\"NOT_EVIDENCED_IN_MESSAGE\",\"customer_readable_proforma\":\"NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT\",\"order_specific_payment_route\":\"NOT_EVIDENCED_IN_MESSAGE\",\"demo_attachment_note\":null}",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
+        }
       }
     },
     "sa-rentals.co.za|rental-maintenance-follow-through-pilot|2026-10-20": {
@@ -7134,11 +7239,19 @@
           "source": "OFFICIAL_PRIMARY_SOURCE",
           "summary": "Official contact page lists dantedw@sa-rentals.co.za and describes property management/maintenance services relevant to the bounded rental-maintenance follow-through offer.",
           "url": "https://www.sa-rentals.co.za/contact-us"
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwgAAAA==",
+          "subject": "One rental-maintenance follow-through pilot",
+          "summary": "The full sent-message body and attachment metadata were re-read. No AMX-OFR/proposal_ref or offer version, no customer-readable quote/pro-forma link or quote attachment, and no order-specific payment instructions were observed. An attached demo PDF, where present, is not a quote. This is an open control-reconciliation issue, not proof of buyer acceptance or payment."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-20T11:15:15Z",
-      "next_action": "WAIT for a substantive buyer response. If interested, confirm the exact current tools, source/destination, access permissions, acceptance criteria, and a working payment route before accepting or starting work. Do not follow up again without a new evidence-based due date. Record acceptance, invoice/receivable and payment only from attributable source evidence.",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and issued amount. On a buyer response, PRI must reconcile the exact scope and current South African 50%-of-comparable-low-end benchmark, then generate/read back the immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path via the existing proposal process before accepting scope or starting delivery. No mass resend or proactive price correction. Promote lifecycle only with attributable evidence.",
       "opportunity": "AMX Rental-Maintenance Follow-Through Pilot",
       "organization": "SA Rental Management",
       "recipient": "dantedw@sa-rentals.co.za",
@@ -7154,10 +7267,10 @@
       },
       "capital_direction": "PAYER_TO_WORK",
       "proof_of_work_route": "FIXED_SCOPE",
-      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
+      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED",
       "current_route_confidence": "MEDIUM",
-      "execution_readiness": "WAITING",
-      "last_reconciled_at": "2026-10-20T11:43:01Z",
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
       "active_dependencies": {
         "buyer_response": {
           "state": "WAITING",
@@ -7171,8 +7284,33 @@
           "observed_at": "2026-10-20T11:15:15Z",
           "evidence": "No buyer acceptance or order-specific payment instruction is evidenced; the offer itself promises payment-route confirmation before acceptance/work.",
           "next": "Agree an executable payment route after buyer interest and before starting work; do not claim payment or issue an invoice absent acceptance."
+        },
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent message AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwgAAAA==; findings={\"proposal_ref\":\"NOT_EVIDENCED_IN_MESSAGE\",\"offer_version\":\"NOT_EVIDENCED_IN_MESSAGE\",\"customer_readable_proforma\":\"NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT\",\"order_specific_payment_route\":\"NOT_EVIDENCED_IN_MESSAGE\",\"demo_attachment_note\":null}",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
         }
-      }
+      },
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwgAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE",
+          "demo_attachment_note": null
+        },
+        "pricing_review": "REVALIDATE_CURRENT_SA_50_PERCENT_FACTOR_AND_SCOPE-COMPARABLE_BENCHMARK_BEFORE_ACCEPTANCE; this review does not prove an exact corrected amount.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "last_reconciled_reason": "Post-send control review: exact Outlook message/attachments read back; required proposal ref/version, customer-readable quote/pro-forma, and order-specific payment route are not evidenced in the sent item. Preserve offer as OFFERED; no buyer acceptance/payment inferred."
     },
     "liane.co.za|home-administration-maintenance-follow-through-pilot|2026-10-20": {
       "canonical_ingest": {
@@ -7204,11 +7342,19 @@
           "source": "OFFICIAL_PRIMARY_SOURCE",
           "summary": "Official Liane home-administration page lists home@liane.co.za and describes maintenance/repair coordination services relevant to the bounded offer; legal entity identity remains unverified.",
           "url": "https://www.liane.co.za/home"
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwQAAAA==",
+          "subject": "A bounded maintenance-follow-through pilot for home administration",
+          "summary": "The full sent-message body and attachment metadata were re-read. No AMX-OFR/proposal_ref or offer version, no customer-readable quote/pro-forma link or quote attachment, and no order-specific payment instructions were observed. An attached demo PDF, where present, is not a quote. This is an open control-reconciliation issue, not proof of buyer acceptance or payment."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-20T11:15:10Z",
-      "next_action": "WAIT for a substantive buyer response. If interested, confirm the exact current tools, source/destination, access permissions, acceptance criteria, and a working payment route before accepting or starting work. Do not follow up again without a new evidence-based due date. Record acceptance, invoice/receivable and payment only from attributable source evidence.",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and issued amount. On a buyer response, PRI must reconcile the exact scope and current South African 50%-of-comparable-low-end benchmark, then generate/read back the immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path via the existing proposal process before accepting scope or starting delivery. No mass resend or proactive price correction. Promote lifecycle only with attributable evidence.",
       "opportunity": "AMX Home-Administration Maintenance Follow-Through Pilot",
       "organization": "Liane (home-administration service; legal entity not verified)",
       "recipient": "home@liane.co.za",
@@ -7224,10 +7370,10 @@
       },
       "capital_direction": "PAYER_TO_WORK",
       "proof_of_work_route": "FIXED_SCOPE",
-      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
+      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED",
       "current_route_confidence": "MEDIUM",
-      "execution_readiness": "WAITING",
-      "last_reconciled_at": "2026-10-20T11:43:01Z",
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
       "active_dependencies": {
         "buyer_response": {
           "state": "WAITING",
@@ -7241,8 +7387,33 @@
           "observed_at": "2026-10-20T11:15:10Z",
           "evidence": "No buyer acceptance or order-specific payment instruction is evidenced; the offer itself promises payment-route confirmation before acceptance/work.",
           "next": "Agree an executable payment route after buyer interest and before starting work; do not claim payment or issue an invoice absent acceptance."
+        },
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent message AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwQAAAA==; findings={\"proposal_ref\":\"NOT_EVIDENCED_IN_MESSAGE\",\"offer_version\":\"NOT_EVIDENCED_IN_MESSAGE\",\"customer_readable_proforma\":\"NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT\",\"order_specific_payment_route\":\"NOT_EVIDENCED_IN_MESSAGE\",\"demo_attachment_note\":null}",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
         }
-      }
+      },
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwQAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE",
+          "demo_attachment_note": null
+        },
+        "pricing_review": "REVALIDATE_CURRENT_SA_50_PERCENT_FACTOR_AND_SCOPE-COMPARABLE_BENCHMARK_BEFORE_ACCEPTANCE; this review does not prove an exact corrected amount.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "last_reconciled_reason": "Post-send control review: exact Outlook message/attachments read back; required proposal ref/version, customer-readable quote/pro-forma, and order-specific payment route are not evidenced in the sent item. Preserve offer as OFFERED; no buyer acceptance/payment inferred."
     },
     "lkpm.co.za|property-maintenance-handoff-pilot|2026-10-20": {
       "canonical_ingest": {
@@ -7274,11 +7445,19 @@
           "source": "OFFICIAL_PRIMARY_SOURCE",
           "summary": "Official contact page lists property@lkpm.co.za and provides the public maintenance/property-management contact route.",
           "url": "https://www.lkpm.co.za/template/ContactUs.vm"
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwAAAAA==",
+          "subject": "One property-maintenance handoff pilot",
+          "summary": "The full sent-message body and attachment metadata were re-read. No AMX-OFR/proposal_ref or offer version, no customer-readable quote/pro-forma link or quote attachment, and no order-specific payment instructions were observed. An attached demo PDF, where present, is not a quote. This is an open control-reconciliation issue, not proof of buyer acceptance or payment."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-20T11:15:09Z",
-      "next_action": "WAIT for a substantive buyer response. If interested, confirm the exact current tools, source/destination, access permissions, acceptance criteria, and a working payment route before accepting or starting work. Do not follow up again without a new evidence-based due date. Record acceptance, invoice/receivable and payment only from attributable source evidence.",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and issued amount. On a buyer response, PRI must reconcile the exact scope and current South African 50%-of-comparable-low-end benchmark, then generate/read back the immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path via the existing proposal process before accepting scope or starting delivery. No mass resend or proactive price correction. Promote lifecycle only with attributable evidence.",
       "opportunity": "AMX Property-Maintenance Handoff Pilot",
       "organization": "Louis Kruger Property Management",
       "recipient": "property@lkpm.co.za",
@@ -7294,10 +7473,10 @@
       },
       "capital_direction": "PAYER_TO_WORK",
       "proof_of_work_route": "FIXED_SCOPE",
-      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
+      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED",
       "current_route_confidence": "MEDIUM",
-      "execution_readiness": "WAITING",
-      "last_reconciled_at": "2026-10-20T11:43:01Z",
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
       "active_dependencies": {
         "buyer_response": {
           "state": "WAITING",
@@ -7311,8 +7490,33 @@
           "observed_at": "2026-10-20T11:15:09Z",
           "evidence": "No buyer acceptance or order-specific payment instruction is evidenced; the offer itself promises payment-route confirmation before acceptance/work.",
           "next": "Agree an executable payment route after buyer interest and before starting work; do not claim payment or issue an invoice absent acceptance."
+        },
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent message AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwAAAAA==; findings={\"proposal_ref\":\"NOT_EVIDENCED_IN_MESSAGE\",\"offer_version\":\"NOT_EVIDENCED_IN_MESSAGE\",\"customer_readable_proforma\":\"NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT\",\"order_specific_payment_route\":\"NOT_EVIDENCED_IN_MESSAGE\",\"demo_attachment_note\":null}",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
         }
-      }
+      },
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwAAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE",
+          "demo_attachment_note": null
+        },
+        "pricing_review": "REVALIDATE_CURRENT_SA_50_PERCENT_FACTOR_AND_SCOPE-COMPARABLE_BENCHMARK_BEFORE_ACCEPTANCE; this review does not prove an exact corrected amount.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "last_reconciled_reason": "Post-send control review: exact Outlook message/attachments read back; required proposal ref/version, customer-readable quote/pro-forma, and order-specific payment route are not evidenced in the sent item. Preserve offer as OFFERED; no buyer acceptance/payment inferred."
     },
     "profixcoastal.com|inspection-to-repair-follow-through-pilot|2026-10-20": {
       "canonical_ingest": {
@@ -7356,11 +7560,19 @@
           "subject": "One inspection-to-repair follow-through pilot",
           "summary": "Sent from usduplessis@outlook.com to official Operations & Maintenance contact admin@profixcoastal.com. Fixed ZAR 9,380 once-off. One existing inspection/report source and one existing tracking destination: convert approved findings into owned corrective-action tasks, track repair/quote status and close-out evidence, and prepare a status report for human review. CMMS remains the source of truth; no autonomous maintenance decisions or messaging. Includes acceptance tests and handover; five-business-day target after written scope, access and payment terms are accepted. Hosting, paid API usage and out-of-scope work excluded. Offer sent; no acceptance, invoice, payment or delivery evidenced.",
           "url": "https://www.profixcoastal.com/"
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxwAAAA==",
+          "subject": "One inspection-to-repair follow-through pilot",
+          "summary": "The full sent-message body and attachment metadata were re-read. No AMX-OFR/proposal_ref or offer version, no customer-readable quote/pro-forma link or quote attachment, and no order-specific payment instructions were observed. An attached demo PDF, where present, is not a quote. This is an open control-reconciliation issue, not proof of buyer acceptance or payment."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-20T11:42:54Z",
-      "next_action": "WAIT for a substantive buyer response. If interested, qualify the current CMMS/source and target destination, access permissions, acceptance criteria, and a working payment route before accepting work. Do not start implementation before written scope and payment are confirmed. No follow-up without a new evidence-based due date; only promote to ACCEPTED/CONTRACTED/INVOICED/PAID on attributable source evidence.",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and issued amount. On a buyer response, PRI must reconcile the exact scope and current South African 50%-of-comparable-low-end benchmark, then generate/read back the immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path via the existing proposal process before accepting scope or starting delivery. No mass resend or proactive price correction. Promote lifecycle only with attributable evidence.",
       "opportunity": "AMX Inspection-to-Repair Follow-Through Pilot",
       "organization": "ProFix Coastal Services & Solutions",
       "recipient": "admin@profixcoastal.com",
@@ -7376,10 +7588,10 @@
       },
       "capital_direction": "PAYER_TO_WORK",
       "proof_of_work_route": "FIXED_SCOPE",
-      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE",
+      "current_route_status": "OFFICIAL_PUBLIC_CONTACT_VERIFIED; NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED",
       "current_route_confidence": "HIGH",
-      "execution_readiness": "WAITING",
-      "last_reconciled_at": "2026-10-20T11:42:54Z",
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
       "active_dependencies": {
         "buyer_response": {
           "state": "WAITING",
@@ -7393,8 +7605,33 @@
           "observed_at": "2026-10-20T11:42:54Z",
           "evidence": "No acceptance or order-specific payment instruction has been issued; the email says AMX will confirm a working route before accepting work.",
           "next": "Agree an executable payment route after buyer interest, before implementation; do not rely on the disabled Stripe account."
+        },
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent message AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxwAAAA==; findings={\"proposal_ref\":\"NOT_EVIDENCED_IN_MESSAGE\",\"offer_version\":\"NOT_EVIDENCED_IN_MESSAGE\",\"customer_readable_proforma\":\"NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT\",\"order_specific_payment_route\":\"NOT_EVIDENCED_IN_MESSAGE\",\"demo_attachment_note\":null}",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
         }
-      }
+      },
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxwAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE",
+          "demo_attachment_note": null
+        },
+        "pricing_review": "NONCONFORMING_NEW_SA_PRICE_REVIEW: existing record says ZAR 9,380 is 67% of a ZAR 14,000 comparator, while current Blue State requires 50% of a defensible scope-comparable low-end benchmark for new SA offers. Preserve sent message and existing amount; do not mass-reissue or silently alter. Before any acceptance, ROOT/PRI must disposition and revalidate the exact comparator/scope.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "last_reconciled_reason": "Post-send control review: exact Outlook message/attachments read back; required proposal ref/version, customer-readable quote/pro-forma, and order-specific payment route are not evidenced in the sent item. Preserve offer as OFFERED; no buyer acceptance/payment inferred."
     },
     "visym.com|geosonics-collection-campaign|south-africa": {
       "canonical_ingest": {
@@ -7528,12 +7765,20 @@
           "source": "OUTLOOK_ATTACHMENT_READBACK",
           "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxgAAAA==",
           "summary": "AMX_Client_Document_Follow_Through_Pilot_Demo.pdf; application/pdf; 31,257 bytes; attached, not inline; SHA-256 e1ed4cbbcfdf422812400ee3286e8d532c58db7dd84ca5f688f2b97fd5452564. Synthetic data only; demo is not connected to a live system."
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxgAAAA==",
+          "subject": "One client-document follow-through pilot for IRNA",
+          "summary": "The full sent-message body and attachment metadata were re-read. No AMX-OFR/proposal_ref or offer version, no customer-readable quote/pro-forma link or quote attachment, and no order-specific payment instructions were observed. An attached demo PDF, where present, is not a quote. This is an open control-reconciliation issue, not proof of buyer acceptance or payment."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-20T11:37:14Z",
-      "last_reconciled_at": "2026-10-20T12:08:34.815Z",
-      "next_action": "WAIT for a substantive buyer reply. If interested, qualify whether the document-follow-up problem is real and confirm exact intake source, tracking destination, acceptance tests, and a working payment route before accepting scope or accessing data. Do not begin work before written scope, valid payment terms, and attributable paid receipt. No follow-up without a new evidence-based due date.",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and issued amount. On a buyer response, PRI must reconcile the exact scope and current South African 50%-of-comparable-low-end benchmark, then generate/read back the immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path via the existing proposal process before accepting scope or starting delivery. No mass resend or proactive price correction. Promote lifecycle only with attributable evidence.",
       "opportunity": "AMX Client Document Follow-Through Pilot",
       "organization": "IRNA Tax & Accounting Services",
       "recipient": "amirznz2021@gmail.com",
@@ -7549,10 +7794,36 @@
       },
       "capital_direction": "PAYER_TO_WORK",
       "proof_of_work_route": "FIXED_SCOPE",
-      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED",
+      "current_route_status": "OUTBOUND_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; PAYMENT_ROUTE_UNCONFIRMED; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED",
       "current_route_confidence": "MEDIUM",
-      "execution_readiness": "WAITING",
-      "last_reconciled_reason": "Native Outlook sent-item and attachment-metadata readback; no buyer response/acceptance/payment evidenced."
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
+      "last_reconciled_reason": "Native Outlook sent-item and attachment-metadata readback; no buyer response/acceptance/payment evidenced. | Post-send control review: exact Outlook message/attachments read back; required proposal ref/version, customer-readable quote/pro-forma, and order-specific payment route are not evidenced in the sent item. Preserve offer as OFFERED; no buyer acceptance/payment inferred.",
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxgAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE",
+          "demo_attachment_note": "Only demo PDF attached; it is not a quote/pro-forma."
+        },
+        "pricing_review": "REVALIDATE_CURRENT_SA_50_PERCENT_FACTOR_AND_SCOPE-COMPARABLE_BENCHMARK_BEFORE_ACCEPTANCE; this review does not prove an exact corrected amount.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "active_dependencies": {
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent message AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxgAAAA==; findings={\"proposal_ref\":\"NOT_EVIDENCED_IN_MESSAGE\",\"offer_version\":\"NOT_EVIDENCED_IN_MESSAGE\",\"customer_readable_proforma\":\"NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT\",\"order_specific_payment_route\":\"NOT_EVIDENCED_IN_MESSAGE\",\"demo_attachment_note\":\"Only demo PDF attached; it is not a quote/pro-forma.\"}",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
+        }
+      }
     },
     "close.com|ai-mcp-use-case-discussion|2026-10-20": {
       "canonical_ingest": {
@@ -7611,8 +7882,260 @@
       "current_route_confidence": "MEDIUM",
       "execution_readiness": "WAITING",
       "last_reconciled_reason": "Original Close Account Executive message recovered from forwarded .eml attachment; reply and illustrative PDF attachment verified in connected Outlook. No reply/partnership/revenue evidenced. Not a paid offer."
+    },
+    "pestmanagers.co.za|service-follow-through-pilot|2026-10-20": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwwAAAA=="
+        ],
+        "identity": {
+          "domain": "pestmanagers.co.za",
+          "opportunity": "AMX Service Follow-Through Pilot",
+          "organization": "Pest Managers (legal entity not verified)"
+        },
+        "kind": "NEW_FIXED_SCOPE_OFFER_OUTREACH"
+      },
+      "domain": "pestmanagers.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwwAAAA==",
+          "subject": "A bounded service-follow-through pilot for Pest Managers",
+          "summary": "Sent from the existing Outlook account to info@pestmanagers.co.za. Fixed-price ZAR 9,380 once-off offer for One bounded workflow to capture an enquiry into a structured job record, show visit status and next action, prepare customer follow-up and next-service reminder for human approval, and provide a compact closeout record. Not a full CRM replacement; delivery target five business days after agreed scope/access; hosting/API and out-of-scope work excluded. No buyer acceptance, contract, invoice, payment, or delivery is evidenced by this send."
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwwAAAA==",
+          "subject": "A bounded service-follow-through pilot for Pest Managers",
+          "summary": "Full sent-message body and attachment metadata read back. No proposal_ref/offer version, customer-readable quote/pro-forma link or attachment, or order-specific payment route was observed. Fixed-price message remains a historical sent event; do not treat as control-complete, accepted, contracted, invoiced or paid."
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
+      "last_reconciled_reason": "Recovered from actual Outlook sent-item readback after a canonical ledger dedupe found no existing record. Post-send control review is open; no buyer response/acceptance/payment inferred.",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and amount. On a buyer response, PRI must reconcile exact scope/current South African 50%-of-comparable-low-end pricing basis and generate/read back an immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path using the existing proposal process before accepting. No mass resend or proactive correction. Promote lifecycle only with attributable evidence.",
+      "opportunity": "AMX Service Follow-Through Pilot",
+      "organization": "Pest Managers (legal entity not verified)",
+      "recipient": "info@pestmanagers.co.za",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 9380,
+        "currency": "ZAR",
+        "scope": "One bounded workflow to capture an enquiry into a structured job record, show visit status and next action, prepare customer follow-up and next-service reminder for human approval, and provide a compact closeout record. Not a full CRM replacement; delivery target five business days after agreed scope/access; hosting/API and out-of-scope work excluded.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwwAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED; CURRENT_SA_PRICE_RULE_REVALIDATION_REQUIRED",
+      "current_route_confidence": "MEDIUM",
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwwAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE"
+        },
+        "pricing_review": "REVALIDATE_CURRENT_SA_50_PERCENT_FACTOR_AND_SCOPE-COMPARABLE_BENCHMARK_BEFORE_ACCEPTANCE; this review does not prove an exact corrected amount.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "active_dependencies": {
+        "buyer_response": {
+          "state": "WAITING",
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "next": "Wait for a substantive buyer response; there is no evidence-based follow-up due."
+        },
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent item AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RwwAAAA==; no proposal_ref/version, quote/pro-forma, or order-specific route was observed in the full message/attachment readback.",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
+        }
+      }
+    },
+    "capeclimate.co.za|service-request-follow-through-pilot|2026-10-20": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxAAAAA=="
+        ],
+        "identity": {
+          "domain": "capeclimate.co.za",
+          "opportunity": "AMX Service Request Follow-Through Pilot",
+          "organization": "Cape Climate"
+        },
+        "kind": "NEW_FIXED_SCOPE_OFFER_OUTREACH"
+      },
+      "domain": "capeclimate.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxAAAAA==",
+          "subject": "One service-request-to-follow-through pilot",
+          "summary": "Sent from the existing Outlook account to info@capeclimate.co.za. Fixed-price ZAR 9,380 once-off offer for One bounded workflow to capture an incoming service request or maintenance callout, record assigned owner/status/next action, prepare customer update and follow-up reminder for human approval, and preserve a compact closeout record. Not a replacement for existing systems; target five business days after agreed scope/access; hosting/API and out-of-scope work excluded. No buyer acceptance, contract, invoice, payment, or delivery is evidenced by this send."
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxAAAAA==",
+          "subject": "One service-request-to-follow-through pilot",
+          "summary": "Full sent-message body and attachment metadata read back. No proposal_ref/offer version, customer-readable quote/pro-forma link or attachment, or order-specific payment route was observed. Fixed-price message remains a historical sent event; do not treat as control-complete, accepted, contracted, invoiced or paid."
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
+      "last_reconciled_reason": "Recovered from actual Outlook sent-item readback after a canonical ledger dedupe found no existing record. Post-send control review is open; no buyer response/acceptance/payment inferred.",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and amount. On a buyer response, PRI must reconcile exact scope/current South African 50%-of-comparable-low-end pricing basis and generate/read back an immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path using the existing proposal process before accepting. No mass resend or proactive correction. Promote lifecycle only with attributable evidence.",
+      "opportunity": "AMX Service Request Follow-Through Pilot",
+      "organization": "Cape Climate",
+      "recipient": "info@capeclimate.co.za",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 9380,
+        "currency": "ZAR",
+        "scope": "One bounded workflow to capture an incoming service request or maintenance callout, record assigned owner/status/next action, prepare customer update and follow-up reminder for human approval, and preserve a compact closeout record. Not a replacement for existing systems; target five business days after agreed scope/access; hosting/API and out-of-scope work excluded.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxAAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED; CURRENT_SA_PRICE_RULE_REVALIDATION_REQUIRED",
+      "current_route_confidence": "MEDIUM",
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxAAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE"
+        },
+        "pricing_review": "REVALIDATE_CURRENT_SA_50_PERCENT_FACTOR_AND_SCOPE-COMPARABLE_BENCHMARK_BEFORE_ACCEPTANCE; this review does not prove an exact corrected amount.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "active_dependencies": {
+        "buyer_response": {
+          "state": "WAITING",
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "next": "Wait for a substantive buyer response; there is no evidence-based follow-up due."
+        },
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent item AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxAAAAA==; no proposal_ref/version, quote/pro-forma, or order-specific route was observed in the full message/attachment readback.",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
+        }
+      }
+    },
+    "schmidhauser.co.za|service-handoff-pilot|2026-10-20": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxQAAAA=="
+        ],
+        "identity": {
+          "domain": "schmidhauser.co.za",
+          "opportunity": "AMX Service Handoff Pilot",
+          "organization": "Schmidhauser"
+        },
+        "kind": "NEW_FIXED_SCOPE_OFFER_OUTREACH"
+      },
+      "domain": "schmidhauser.co.za",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxQAAAA==",
+          "subject": "A one-workflow service handoff pilot for Schmidhauser",
+          "summary": "Sent from the existing Outlook account to info@schmidhauser.co.za. Fixed-price ZAR 9,380 once-off offer for One selected enquiry or inspection handoff represented as a structured job record with owner/status/next action, customer update or quote-follow-up reminder for human approval, and a simple closeout record. Fixed-scope pilot; target delivery five business days after agreed scope/access; hosting/API and out-of-scope work excluded. No buyer acceptance, contract, invoice, payment, or delivery is evidenced by this send."
+        },
+        {
+          "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxQAAAA==",
+          "subject": "A one-workflow service handoff pilot for Schmidhauser",
+          "summary": "Full sent-message body and attachment metadata read back. No proposal_ref/offer version, customer-readable quote/pro-forma link or attachment, or order-specific payment route was observed. Fixed-price message remains a historical sent event; do not treat as control-complete, accepted, contracted, invoiced or paid."
+        }
+      ],
+      "execution_owner": "PRI",
+      "last_reconciled_at": "2026-10-21T02:47:35.668Z",
+      "last_reconciled_reason": "Recovered from actual Outlook sent-item readback after a canonical ledger dedupe found no existing record. Post-send control review is open; no buyer response/acceptance/payment inferred.",
+      "next_action": "WAIT for a substantive buyer response; no follow-up is due. Preserve the original sent message and amount. On a buyer response, PRI must reconcile exact scope/current South African 50%-of-comparable-low-end pricing basis and generate/read back an immutable proposal_ref + offer version, customer-readable quote/pro-forma, and an actually supported payment path using the existing proposal process before accepting. No mass resend or proactive correction. Promote lifecycle only with attributable evidence.",
+      "opportunity": "AMX Service Handoff Pilot",
+      "organization": "Schmidhauser",
+      "recipient": "info@schmidhauser.co.za",
+      "state": "OFFERED",
+      "thread_id": null,
+      "commercial_offer": {
+        "amount": 9380,
+        "currency": "ZAR",
+        "scope": "One selected enquiry or inspection handoff represented as a structured job record with owner/status/next action, customer update or quote-follow-up reminder for human approval, and a simple closeout record. Fixed-scope pilot; target delivery five business days after agreed scope/access; hosting/API and out-of-scope work excluded.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxQAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "capital_direction": "PAYER_TO_WORK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "current_route_status": "NEW_FIXED_SCOPE_OFFER_SENT; WAITING_FOR_BUYER_RESPONSE; POST_SEND_OFFER_CONTROL_RECONCILIATION_OPEN; PROPOSAL_REF_VERSION_PROFORMA_AND_ORDER_PAYMENT_ROUTE_NOT_EVIDENCED; CURRENT_SA_PRICE_RULE_REVALIDATION_REQUIRED",
+      "current_route_confidence": "MEDIUM",
+      "execution_readiness": "HOLD_ACCEPTANCE_OF_UNRECONCILED_OFFER; WAITING_FOR_BUYER_RESPONSE",
+      "offer_control_review": {
+        "reviewed_at": "2026-10-21T02:47:35.668Z",
+        "authority": "BLUE_STATE_2026-10-19_OFFER_IDENTITY_PROFORMA_AND_MARKET_SUCCESS_LAW",
+        "source": "OUTLOOK_SENT_ITEMS_FULL_BODY_AND_ATTACHMENT_METADATA_READBACK",
+        "source_message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxQAAAA==",
+        "findings": {
+          "proposal_ref": "NOT_EVIDENCED_IN_MESSAGE",
+          "offer_version": "NOT_EVIDENCED_IN_MESSAGE",
+          "customer_readable_proforma": "NOT_EVIDENCED_IN_MESSAGE_OR_ATTACHMENT",
+          "order_specific_payment_route": "NOT_EVIDENCED_IN_MESSAGE"
+        },
+        "pricing_review": "REVALIDATE_CURRENT_SA_50_PERCENT_FACTOR_AND_SCOPE-COMPARABLE_BENCHMARK_BEFORE_ACCEPTANCE; this review does not prove an exact corrected amount.",
+        "status": "OPEN_POST_SEND_RECONCILIATION",
+        "disposition": "KEEP_LIFECYCLE_OFFERED; PRESERVE_ORIGINAL_SEND_AND_PRICE; NO_PROACTIVE_FOLLOW_UP_OR_RESEND; DO_NOT_PROMOTE_TO_ACCEPTED/CONTRACTED/INVOICED/PAID WITHOUT A COMPLIANT VERSIONED QUOTE AND ATTRIBUTABLE BUYER/PAYMENT EVIDENCE"
+      },
+      "active_dependencies": {
+        "buyer_response": {
+          "state": "WAITING",
+          "kind": "COMMERCIAL_ACCEPTANCE",
+          "next": "Wait for a substantive buyer response; there is no evidence-based follow-up due."
+        },
+        "offer_control": {
+          "state": "OPEN",
+          "kind": "POST_SEND_OFFER_CONTROL_RECONCILIATION",
+          "owner": "PRI (single commercial writer); ROOT/T-GOV for disposition; existing T-COD/quote-runtime owner for proposal registry path",
+          "observed_at": "2026-10-21T02:47:35.668Z",
+          "evidence": "Sent item AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RxQAAAA==; no proposal_ref/version, quote/pro-forma, or order-specific route was observed in the full message/attachment readback.",
+          "next": "No proactive buyer follow-up or mass resend. If a buyer responds, reconcile scope and current SA 50% benchmark, then use the existing proposal registry to generate/read back an immutable proposal_ref + version and customer-readable pro-forma/quote with a supported payment route before accepting. Preserve the original sent item and do not start delivery before valid acceptance/payment gates."
+        }
+      }
     }
   },
-  "updated_at": "2026-10-20",
+  "updated_at": "2026-10-21",
   "version": 1
 }
