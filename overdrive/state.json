@@ -818,6 +818,56 @@
       "receipt": "receipts/0000000026-qdrain-20261020-verminator-offered.json",
       "receipt_sha256": "b4d3e36a99fe860a00ae243ef3444570bd7f9661854bc178287eff712df006f2",
       "status": "COMPLETED"
+    },
+    {
+      "id": "qdrain-20261021-forestenergy-submitted",
+      "status": "PENDING",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "payload": {
+        "opportunity_key": "forestenergy.co.za|o-m-alert-to-closeout-handoff-pilot|2026-10-21",
+        "identity": {
+          "organization": "Forest Energy",
+          "opportunity": "O&M alert-to-closeout handoff pilot",
+          "domain": "forestenergy.co.za"
+        },
+        "to": "SUBMITTED",
+        "execution_owner": "PRI",
+        "recipient": "sales@forestenergy.co.za",
+        "thread_id": null,
+        "observed_at": "2026-10-21T04:49:22Z",
+        "due_at": null,
+        "next_action": "WAIT for a material, non-automated buyer reply in the existing Outlook thread. Do not send duplicate outreach. If the buyer identifies the workflow owner or expresses interest, confirm exact scope, acceptance criteria, supported collection route and authorized access boundaries before any work; do not begin before paid receipt and authorized access are verified.",
+        "evidence": [
+          {
+            "kind": "OUTBOUND_SEND",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RygAAAA==",
+            "source": "OUTLOOK",
+            "observed_at": "2026-10-21T04:49:22Z",
+            "subject": "A bounded paid pilot for O&M alert-to-closeout handoff",
+            "summary": "Initial, non-priced scope-check email sent from usduplessis@outlook.com to sales@forestenergy.co.za. The email did not assume a handoff gap, production access, accepted scope, or payment."
+          },
+          {
+            "kind": "OUTLOOK_SENT_ITEM_ID_READBACK",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RygAAAA==",
+            "source": "OUTLOOK_SENT_ITEMS_READBACK",
+            "folder": "Sent Items",
+            "observed_at": "2026-10-21T04:49:22Z",
+            "subject": "A bounded paid pilot for O&M alert-to-closeout handoff",
+            "recipient": "sales@forestenergy.co.za",
+            "receipt_path": "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261021_FOREST_ENERGY_OUTBOUND_AND_AUTO_REPLY.md",
+            "verification_receipt_commit": "30af39ead120d8941c7bed8a23ee113a0d70a1c9"
+          },
+          {
+            "kind": "AUTO_REPLY_NON_SUBSTANTIVE",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLz9hTgAAAA==",
+            "source": "OUTLOOK_INBOX",
+            "folder": "Inbox",
+            "observed_at": "2026-10-21T04:49:36Z",
+            "subject": "Automatic reply: A bounded paid pilot for O&M alert-to-closeout handoff",
+            "summary": "Automatic out-of-office response says recipient has limited access and will respond when available. It is not a substantive buyer response, acceptance, or request for work."
+          }
+        ]
+      }
     }
   ],
   "ready_claims": 0,
