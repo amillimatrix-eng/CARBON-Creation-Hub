@@ -86,3 +86,17 @@ NATIVE_ORDER_REWARD_LOCK: KILLED_ON_REVIEWED_SOURCE
 SUBMISSION: NONE_ESTABLISHED
 PAYMENT: NONE_VERIFIED
 TERMINAL: NO
+
+
+## Owner correction — TinyFish profile routing (2026-10-21)
+
+- Owner's explicit routing instruction: use the existing TinyFish profile **`usduplessis@outlook.com`**, profile ID `prof_95826203c90644c6`. Do not substitute `amillimatrix@gmail.com`.
+- Current TinyFish profile inventory reports the Outlook profile as default but does not list a confirmed Google sign-in for it. The Google spreadsheet direct fetch returned `login_required`; no authenticated Tracker session/read was established.
+- The read-only TinyFish wallet query reports `-1.051248 USD`; metered browser automation cannot start at that balance. No charge, top-up, credential request, or profile setup was initiated.
+- Correct operational response: use the specified Outlook profile for any TinyFish session after the metered-run gate clears, but do not make wallet funding a substitute for execution. Continue unmetered public-source/GitHub work and preserve the canonical Tracker as blocked until an authorized read/write/readback actually succeeds.
+- The preceding assistant reply was incorrect in presenting top-up links as the required next action. This is a routing correction only; it does not change the Tracker/Q1 truth or claim successful access.
+
+OWNER_ROUTE: TINYFISH_PROFILE=usduplessis@outlook.com
+GMAIL_SUBSTITUTION: PROHIBITED
+TRACKER_READBACK: NOT_ESTABLISHED
+METERED_BROWSER: BLOCKED_BY_NEGATIVE_WALLET
