@@ -361,11 +361,11 @@ class MissingRecordUpsertTest(unittest.TestCase):
         self.assertEqual(opportunities, before)
 
     def test_verified_source_id_correction_preserves_old_value_and_lifecycle(self):
-        canonical_key = "example.com|bounded-pilot|2026-10-10"
-        actual_id = "outlook-item-correct"
-        old_id = "outlook-item-old"
-        subject = "Bounded pilot offer"
-        observed_at = "2026-10-10T04:45:00Z"
+        canonical_key = "mendazsolar.co.za|solar-service-follow-through-pilot|2026-10-20"
+        actual_id = "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA=="
+        old_id = "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA=="
+        subject = "One bounded pilot for solar service follow-through"
+        observed_at = "2026-10-20T07:47:43Z"
         sent = {
             "kind": "OUTBOUND_SEND",
             "source_id": actual_id,
@@ -379,18 +379,18 @@ class MissingRecordUpsertTest(unittest.TestCase):
             "source": "OUTLOOK_SENT_ITEMS_READBACK",
             "folder": "Sent Items",
             "subject": subject,
-            "recipient": "buyer@example.com",
+            "recipient": "info@mendazsolar.co.za",
             "query_filter": "sentDateTime ge 2026-10-20T00:00:00Z",
             "receipt_path": "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md",
-            "verification_receipt_commit": "a" * 40,
+            "verification_receipt_commit": "5ba77e811c435e362566d97c2d5a954d44ef9bc9",
         }
         record = {
             "state": "OFFERED",
             "execution_owner": "PRI",
-            "organization": "Example Buyer",
-            "opportunity": "bounded-pilot",
-            "domain": "example.com",
-            "recipient": "buyer@example.com",
+            "organization": "Mendaz Solar",
+            "opportunity": "solar-service-follow-through-pilot",
+            "domain": "mendazsolar.co.za",
+            "recipient": "info@mendazsolar.co.za",
             "thread_id": None,
             "last_action_at": observed_at,
             "next_action": "Wait for a substantive buyer response.",
@@ -406,7 +406,7 @@ class MissingRecordUpsertTest(unittest.TestCase):
                     "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
                     "source_id": old_id,
                     "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
-                    "observed_at": "2026-10-10T05:00:00Z",
+                    "observed_at": "2026-10-21T02:47:35.668Z",
                     "subject": subject,
                 },
             ],
@@ -417,12 +417,12 @@ class MissingRecordUpsertTest(unittest.TestCase):
             target="OFFERED",
             kind="OUTBOUND_SEND",
             identity={
-                "organization": "Example Buyer",
-                "opportunity": "Bounded pilot",
-                "domain": "example.com",
+                "organization": "Mendaz Solar",
+                "opportunity": "solar-service-follow-through-pilot",
+                "domain": "mendazsolar.co.za",
             },
             evidence=[sent, readback],
-            recipient="buyer@example.com",
+            recipient="info@mendazsolar.co.za",
             thread_id=None,
             observed_at=observed_at,
             next_action="Wait for a substantive buyer response.",
