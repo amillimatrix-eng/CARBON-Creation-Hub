@@ -279,6 +279,40 @@ class MissingRecordUpsertTest(unittest.TestCase):
         routed = runner.commercial_action("new-opp", record, datetime.now(timezone.utc))
         self.assertEqual((routed["status"], routed["routing_reason"]), ("WAITING", "DELAYED"))
 
+    def test_missing_record_upsert_is_idempotent_for_exact_existing_evidence(self):
+        source_evidence = {
+            "kind": "GMAIL_SENT",
+            "source_id": "gmail-message-1",
+            "source": "GMAIL",
+            "observed_at": "2026-10-10T04:45:00Z",
+        }
+        record = {
+            "state": "SUBMITTED",
+            "execution_owner": "PRI",
+            "organization": "Example Buyer",
+            "opportunity": "Bounded pilot",
+            "domain": "example.com",
+            "recipient": "buyer@example.com",
+            "thread_id": "thread-1",
+            "last_action_at": "2026-10-10T04:45:00Z",
+            "next_action": "Wait for a substantive buyer response.",
+            "evidence": [dict(source_evidence)],
+            "commercial_acceptance": None,
+        }
+        opportunities = {"records": {"new-opp": record}}
+        before = json.loads(json.dumps(opportunities))
+
+        result = runner.missing_record_upsert(
+            self.task(evidence=[dict(source_evidence)]),
+            opportunities,
+        )
+
+        self.assertFalse(result["created"])
+        self.assertTrue(result["idempotent"])
+        self.assertEqual(result["disposition"], "ALREADY_RECORDED_EXACT_EVIDENCE_REPLAY")
+        self.assertEqual(result["critic"]["external_action"], "NOT_PERFORMED_BY_ADAPTER")
+        self.assertEqual(opportunities, before)
+
     def test_missing_record_upsert_refuses_existing_key(self):
         opportunities = {"records": {"new-opp": {"state": "SUBMITTED"}}}
         with self.assertRaisesRegex(ValueError, "already exists"):
