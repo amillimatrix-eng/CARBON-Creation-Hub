@@ -279,6 +279,213 @@ class MissingRecordUpsertTest(unittest.TestCase):
         routed = runner.commercial_action("new-opp", record, datetime.now(timezone.utc))
         self.assertEqual((routed["status"], routed["routing_reason"]), ("WAITING", "DELAYED"))
 
+    def test_missing_record_upsert_is_idempotent_for_exact_existing_evidence(self):
+        source_evidence = {
+            "kind": "GMAIL_SENT",
+            "source_id": "gmail-message-1",
+            "source": "GMAIL",
+            "observed_at": "2026-10-10T04:45:00Z",
+        }
+        canonical_key = "example.com|bounded-pilot|2026-10-10"
+        record = {
+            "state": "SUBMITTED",
+            "execution_owner": "PRI",
+            "organization": "Example Buyer",
+            "opportunity": "bounded-pilot",
+            "domain": "example.com",
+            "recipient": "buyer@example.com",
+            "thread_id": "thread-1",
+            "last_action_at": "2026-10-10T04:45:00Z",
+            "next_action": "Wait for a substantive buyer response.",
+            "evidence": [dict(source_evidence)],
+            "commercial_acceptance": None,
+        }
+        opportunities = {"records": {canonical_key: record}}
+        before = json.loads(json.dumps(opportunities))
+
+        result = runner.missing_record_upsert(
+            self.task(key=canonical_key, evidence=[dict(source_evidence)]),
+            opportunities,
+        )
+
+        self.assertFalse(result["created"])
+        self.assertTrue(result["idempotent"])
+        self.assertEqual(result["disposition"], "ALREADY_RECORDED_EXACT_EVIDENCE_REPLAY")
+        self.assertEqual(result["critic"]["external_action"], "NOT_PERFORMED_BY_ADAPTER")
+        self.assertEqual(opportunities, before)
+
+    def test_missing_record_upsert_accepts_canonical_identity_when_org_label_varies(self):
+        source_evidence = {
+            "kind": "OUTBOUND_SEND",
+            "source_id": "outlook-item-1",
+            "source": "OUTLOOK",
+            "observed_at": "2026-10-20T07:48:26Z",
+        }
+        canonical_key = "verminator.co.za|site-visit-to-follow-up-workflow-pilot|2026-10-20"
+        record = {
+            "state": "OFFERED",
+            "execution_owner": "PRI",
+            "organization": "Verminator Pest Control",
+            "opportunity": "site-visit-to-follow-up-workflow-pilot",
+            "domain": "verminator.co.za",
+            "recipient": "quality@verminator.co.za",
+            "thread_id": None,
+            "last_action_at": "2026-10-20T07:48:26Z",
+            "next_action": "Wait for a substantive buyer response.",
+            "evidence": [dict(source_evidence)],
+        }
+        opportunities = {"records": {canonical_key: record}}
+        before = json.loads(json.dumps(opportunities))
+        result = runner.missing_record_upsert(
+            self.task(
+                key=canonical_key,
+                target="OFFERED",
+                kind="OUTBOUND_SEND",
+                identity={
+                    "organization": "Verminator",
+                    "opportunity": "Site-visit-to-follow-up workflow pilot",
+                    "domain": "verminator.co.za",
+                },
+                execution_owner="PRI",
+                recipient="quality@verminator.co.za",
+                thread_id=None,
+                evidence=[dict(source_evidence)],
+                observed_at="2026-10-20T07:48:26Z",
+                next_action="Wait for a substantive buyer response.",
+            ),
+            opportunities,
+        )
+        self.assertTrue(result["idempotent"])
+        self.assertFalse(result["created"])
+        self.assertEqual(result["critic"]["commercial_state"], "PASS_NO_LIFECYCLE_CHANGE")
+        self.assertEqual(opportunities, before)
+
+    def test_verified_source_id_correction_preserves_old_value_and_lifecycle(self):
+        canonical_key = "example.com|bounded-pilot|2026-10-10"
+        actual_id = "outlook-item-correct"
+        old_id = "outlook-item-old"
+        subject = "Bounded pilot offer"
+        observed_at = "2026-10-10T04:45:00Z"
+        sent = {
+            "kind": "OUTBOUND_SEND",
+            "source_id": actual_id,
+            "source": "OUTLOOK",
+            "observed_at": observed_at,
+            "subject": subject,
+        }
+        readback = {
+            "kind": "OUTLOOK_SENT_ITEM_ID_READBACK",
+            "source_id": actual_id,
+            "source": "OUTLOOK_SENT_ITEMS_READBACK",
+            "folder": "Sent Items",
+            "subject": subject,
+            "recipient": "buyer@example.com",
+            "query_filter": "sentDateTime ge 2026-10-20T00:00:00Z",
+            "receipt_path": "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md",
+            "verification_receipt_commit": "a" * 40,
+        }
+        record = {
+            "state": "OFFERED",
+            "execution_owner": "PRI",
+            "organization": "Example Buyer",
+            "opportunity": "bounded-pilot",
+            "domain": "example.com",
+            "recipient": "buyer@example.com",
+            "thread_id": None,
+            "last_action_at": observed_at,
+            "next_action": "Wait for a substantive buyer response.",
+            "evidence": [
+                {
+                    "kind": "OUTBOUND_SEND",
+                    "source_id": old_id,
+                    "source": "OUTLOOK",
+                    "observed_at": observed_at,
+                    "subject": subject,
+                },
+                {
+                    "kind": "POST_SEND_OFFER_CONTROL_REVIEW",
+                    "source_id": old_id,
+                    "source": "OUTLOOK_SENT_ITEMS_AND_ATTACHMENTS_READBACK",
+                    "observed_at": "2026-10-10T05:00:00Z",
+                    "subject": subject,
+                },
+            ],
+        }
+        opportunities = {"records": {canonical_key: record}}
+        task = self.task(
+            key=canonical_key,
+            target="OFFERED",
+            kind="OUTBOUND_SEND",
+            identity={
+                "organization": "Example Buyer",
+                "opportunity": "Bounded pilot",
+                "domain": "example.com",
+            },
+            evidence=[sent, readback],
+            recipient="buyer@example.com",
+            thread_id=None,
+            observed_at=observed_at,
+            next_action="Wait for a substantive buyer response.",
+        )
+
+        result = runner.missing_record_upsert(task, opportunities)
+        corrected = opportunities["records"][canonical_key]
+        self.assertTrue(result["source_id_corrected"])
+        self.assertFalse(result["lifecycle_changed"])
+        self.assertEqual(corrected["state"], "OFFERED")
+        self.assertEqual(corrected["evidence"][0]["source_id"], actual_id)
+        self.assertEqual(corrected["evidence"][1]["source_id"], actual_id)
+        self.assertEqual(corrected["source_id_corrections"][0]["previous_source_id"], old_id)
+        self.assertEqual(corrected["source_id_corrections"][0]["corrected_source_id"], actual_id)
+        self.assertIn(readback, corrected["evidence"])
+
+        # The next wake is an exact replay, not another correction or external action.
+        result_again = runner.missing_record_upsert(task, opportunities)
+        self.assertTrue(result_again["idempotent"])
+        self.assertEqual(len(corrected["source_id_corrections"]), 1)
+        self.assertEqual(corrected["state"], "OFFERED")
+
+    def test_missing_record_upsert_refuses_same_action_with_conflicting_source_id(self):
+        canonical_key = "example.com|bounded-pilot|2026-10-10"
+        evidence = {
+            "kind": "OUTBOUND_SEND",
+            "source_id": "outlook-id-corrected",
+            "source": "OUTLOOK",
+            "observed_at": "2026-10-10T04:45:00Z",
+            "subject": "Bounded pilot offer",
+        }
+        record = {
+            "state": "OFFERED",
+            "execution_owner": "PRI",
+            "organization": "Example Buyer",
+            "opportunity": "bounded-pilot",
+            "domain": "example.com",
+            "recipient": "buyer@example.com",
+            "thread_id": None,
+            "evidence": [{
+                "kind": "OUTBOUND_SEND",
+                "source_id": "outlook-id-old",
+                "source": "OUTLOOK",
+                "observed_at": "2026-10-10T04:45:00Z",
+                "subject": "Bounded pilot offer",
+            }],
+        }
+        task = self.task(
+            key=canonical_key,
+            target="OFFERED",
+            kind="OUTBOUND_SEND",
+            identity={
+                "organization": "Example Buyer",
+                "opportunity": "Bounded pilot",
+                "domain": "example.com",
+            },
+            evidence=[evidence],
+            recipient="buyer@example.com",
+            observed_at="2026-10-10T04:45:00Z",
+        )
+        with self.assertRaisesRegex(ValueError, "exact evidence replay not proven"):
+            runner.missing_record_upsert(task, {"records": {canonical_key: record}})
+
     def test_missing_record_upsert_refuses_existing_key(self):
         opportunities = {"records": {"new-opp": {"state": "SUBMITTED"}}}
         with self.assertRaisesRegex(ValueError, "already exists"):
