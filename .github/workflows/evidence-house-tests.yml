@@ -8,6 +8,14 @@ on:
       - 'requirements*.txt'
       - 'Dockerfile'
       - '.github/workflows/evidence-house-tests.yml'
+  pull_request:
+    paths:
+      - 'backend/**'
+      - 'house/remediation/**'
+      - 'tests/**'
+      - 'requirements*.txt'
+      - 'Dockerfile'
+      - '.github/workflows/evidence-house-tests.yml'
   workflow_dispatch:
 jobs:
   test:
