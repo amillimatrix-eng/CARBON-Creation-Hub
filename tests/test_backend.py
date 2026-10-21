@@ -91,7 +91,7 @@ def test_search_and_unsupported_gap(tmp_path):
 
 def test_update_preserves_version_and_admin_fails_closed(tmp_path, monkeypatch):
     c=client(tmp_path)
-    payload=c.get('/api/evidence/EVID-TEST-001').json()
+    payload=evidence_record()
     payload['artifact']='changed artifact'
     r=c.put('/api/evidence/EVID-TEST-001',json=payload)
     assert r.status_code==503
@@ -283,6 +283,7 @@ def test_public_evidence_routes_never_return_controlled_source_metadata(tmp_path
     seed_record = seed["records"][0]
     seed_record.update({
         "capability": "CARBON production / governed AI workflow",
+        "acceptance_test": "Safe public evidence card contract remains inspectable.",
         "authoritative_source": "PRIVATE_SOURCE_SENTINEL",
         "source_pointer": "PRIVATE_POINTER_SENTINEL",
         "source_hash": "PRIVATE_SOURCE_HASH_SENTINEL",
