@@ -286,11 +286,12 @@ class MissingRecordUpsertTest(unittest.TestCase):
             "source": "GMAIL",
             "observed_at": "2026-10-10T04:45:00Z",
         }
+        canonical_key = "example.com|bounded-pilot|2026-10-10"
         record = {
             "state": "SUBMITTED",
             "execution_owner": "PRI",
             "organization": "Example Buyer",
-            "opportunity": "Bounded pilot",
+            "opportunity": "bounded-pilot",
             "domain": "example.com",
             "recipient": "buyer@example.com",
             "thread_id": "thread-1",
@@ -303,7 +304,7 @@ class MissingRecordUpsertTest(unittest.TestCase):
         before = json.loads(json.dumps(opportunities))
 
         result = runner.missing_record_upsert(
-            self.task(evidence=[dict(source_evidence)]),
+            self.task(key=canonical_key, evidence=[dict(source_evidence)]),
             opportunities,
         )
 
