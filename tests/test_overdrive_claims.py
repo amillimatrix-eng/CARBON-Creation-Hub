@@ -360,6 +360,47 @@ class MissingRecordUpsertTest(unittest.TestCase):
         self.assertEqual(result["critic"]["commercial_state"], "PASS_NO_LIFECYCLE_CHANGE")
         self.assertEqual(opportunities, before)
 
+    def test_missing_record_upsert_refuses_same_action_with_conflicting_source_id(self):
+        canonical_key = "example.com|bounded-pilot|2026-10-10"
+        evidence = {
+            "kind": "OUTBOUND_SEND",
+            "source_id": "outlook-id-corrected",
+            "source": "OUTLOOK",
+            "observed_at": "2026-10-10T04:45:00Z",
+            "subject": "Bounded pilot offer",
+        }
+        record = {
+            "state": "OFFERED",
+            "execution_owner": "PRI",
+            "organization": "Example Buyer",
+            "opportunity": "bounded-pilot",
+            "domain": "example.com",
+            "recipient": "buyer@example.com",
+            "thread_id": None,
+            "evidence": [{
+                "kind": "OUTBOUND_SEND",
+                "source_id": "outlook-id-old",
+                "source": "OUTLOOK",
+                "observed_at": "2026-10-10T04:45:00Z",
+                "subject": "Bounded pilot offer",
+            }],
+        }
+        task = self.task(
+            key=canonical_key,
+            target="OFFERED",
+            kind="OUTBOUND_SEND",
+            identity={
+                "organization": "Example Buyer",
+                "opportunity": "Bounded pilot",
+                "domain": "example.com",
+            },
+            evidence=[evidence],
+            recipient="buyer@example.com",
+            observed_at="2026-10-10T04:45:00Z",
+        )
+        with self.assertRaisesRegex(ValueError, "exact evidence replay not proven"):
+            runner.missing_record_upsert(task, {"records": {canonical_key: record}})
+
     def test_missing_record_upsert_refuses_existing_key(self):
         opportunities = {"records": {"new-opp": {"state": "SUBMITTED"}}}
         with self.assertRaisesRegex(ValueError, "already exists"):
