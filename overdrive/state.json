@@ -730,14 +730,14 @@
           },
           {
             "kind": "OUTLOOK_SENT_ITEM_ID_READBACK",
-            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgEACcuKl8g3RkyfBaEy7toItQAAAgEJAAAA",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
             "source": "OUTLOOK_SENT_ITEMS_READBACK",
             "folder": "Sent Items",
             "subject": "One bounded pilot for solar service follow-through",
             "recipient": "info@mendazsolar.co.za",
             "query_filter": "sentDateTime ge 2026-10-20T00:00:00Z",
             "receipt_path": "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md",
-            "verification_receipt_commit": "1ffe6498916e617f701fc0e435357fc99e636feb"
+            "verification_receipt_commit": "5ba77e811c435e362566d97c2d5a954d44ef9bc9"
           }
         ],
         "execution_owner": "PRI",
