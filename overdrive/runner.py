@@ -874,6 +874,20 @@ def detect_work(opportunities):
     write(SIGNALS, signals)
     return signals
 
+def reconcile_opportunity_count(opportunities):
+    """Derive current record_count from the canonical records map.
+
+    Historical last_run snapshots are immutable run evidence, not today's map count.
+    Malformed records fail closed before the runner can persist a ledger write.
+    """
+    records = opportunities.get("records")
+    if not isinstance(records, dict):
+        raise ValueError("opportunities.records must be an object")
+    current_count = len(records)
+    opportunities["record_count"] = current_count
+    return current_count
+
+
 def tick():
     if not claim_lock():
         print(json.dumps({"status": "HOLD", "reason": "active_tick"}))
@@ -883,10 +897,17 @@ def tick():
         raw_claims = CLAIMS.read_text() if CLAIMS.exists() else None
         state = read(STATE)
         opportunities = read(OPPORTUNITIES)
+        previous_record_count = opportunities.get("record_count")
+        current_record_count = reconcile_opportunity_count(opportunities)
+        ledger_count_repaired = (
+            type(previous_record_count) is not int
+            or previous_record_count != current_record_count
+        )
         signals = detect_work(opportunities)
         claims = claim_work(signals, opportunities)
         routing_changed = (
-            not semantically_equal_raw(raw_signals, signals)
+            ledger_count_repaired
+            or not semantically_equal_raw(raw_signals, signals)
             or not semantically_equal_raw(raw_claims, claims)
         )
         pending = [task for task in state.get("queue", []) if task["status"] == "PENDING"]
@@ -916,6 +937,8 @@ def tick():
                 "signals": state["last_signal_count"],
                 "state_changed": True,
             }
+            if ledger_count_repaired:
+                write(OPPORTUNITIES, opportunities)
             write(STATE, state)
             print(json.dumps({
                 "status": "WATCHING",
@@ -965,6 +988,7 @@ def tick():
             "processed": processed,
             "pending": sum(t["status"] == "PENDING" for t in state.get("queue", [])),
         }
+        reconcile_opportunity_count(opportunities)
         write(OPPORTUNITIES, opportunities)
         write(STATE, state)
         print(json.dumps(state["last_tick_result"], sort_keys=True))
