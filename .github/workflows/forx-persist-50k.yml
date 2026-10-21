@@ -1,8 +1,8 @@
-name: FORX 50K Durable Persistence
+name: FORX Durable Runtime Persistence
 
 on:
   push:
-    branches: [main]
+    branches: ["amx/forx-durable-readback-200k-20261021"]
     paths:
       - ".github/workflows/forx-persist-50k.yml"
   workflow_dispatch:
@@ -11,101 +11,176 @@ permissions:
   contents: write
 
 concurrency:
-  group: forx-50k-durable-persistence
+  group: forx-durable-runtime-persistence
   cancel-in-progress: false
 
 jobs:
   persist:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Persist and verify current completed 50k run
+      - name: Capture completed live output before any main-branch redeploy
         shell: bash
         env:
           SERVICE: https://amx-forx-stage1-proof.onrender.com
         run: |
           set -euo pipefail
-          mkdir -p /tmp/forx50k
-          curl -fsSL "$SERVICE/status" -o /tmp/forx50k/status.json
-          curl -fsSL "$SERVICE/manifest" -o /tmp/forx50k/manifest.json
+          WORK="/tmp/forx-runtime-proof"
+          mkdir -p "$WORK"
+          curl --retry 3 --retry-all-errors --retry-delay 1 -fsSL "$SERVICE/status" -o "$WORK/status.json"
+          curl --retry 3 --retry-all-errors --retry-delay 1 -fsSL "$SERVICE/manifest" -o "$WORK/manifest.json"
 
           python - <<'PY'
-          import json
-          s=json.load(open('/tmp/forx50k/status.json'))
-          m=json.load(open('/tmp/forx50k/manifest.json'))
-          assert s['status']=='COMPLETE', s
-          assert s['mode']=='production', s
-          assert s['node_count']==50000, s
-          assert s['partition_count']==50, s
-          assert m['selected_count']==50000, m
-          assert m['partition_count']==50, m
-          print(m['run_id'])
+          import json, re
+          from pathlib import Path
+          root = Path("/tmp/forx-runtime-proof")
+          s = json.loads((root / "status.json").read_text())
+          m = json.loads((root / "manifest.json").read_text())
+          assert s.get("status") == "COMPLETE", s
+          assert s.get("mode") == "production", s
+          assert not s.get("errors"), s.get("errors")
+          assert int(s.get("node_count", 0)) >= 50000, s
+          assert m.get("manifest_type") == "FORX_PRODUCTION_MANIFEST", m.get("manifest_type")
+          assert m.get("run_id") == s.get("run_id"), (s.get("run_id"), m.get("run_id"))
+          assert re.fullmatch(r"[A-Za-z0-9_-]{1,100}", m["run_id"]), m["run_id"]
+          n = int(m["selected_count"])
+          pc = int(m["partition_count"])
+          ps = int(m["partition_size"])
+          assert n == int(s["node_count"]) == int(m["target"]), (n, s, m.get("target"))
+          assert pc == int(s["partition_count"]) == (n + ps - 1) // ps, (pc, ps, n)
+          hashes = m.get("partition_hashes")
+          assert isinstance(hashes, dict) and len(hashes) == pc, "partition hash map length mismatch"
+          assert set(hashes) == {str(i) for i in range(1, pc + 1)}, "partition hash index set mismatch"
+          assert all(re.fullmatch(r"[0-9a-f]{64}", v or "") for v in hashes.values()), "malformed SHA-256"
+          (root / "run-id.txt").write_text(m["run_id"])
+          print(json.dumps({
+            "run_id": m["run_id"], "selected_count": n, "partition_count": pc,
+            "partition_size": ps, "raw_rows_ingested": m.get("raw_rows_ingested"),
+            "rows_rejected": m.get("rows_rejected"),
+            "duplicates_removed": m.get("duplicates_removed"),
+            "source_file_sha256": m.get("source_file_sha256"),
+            "selection_sha256": m.get("selection_sha256")
+          }, sort_keys=True))
           PY
 
-          RUN_ID="$(python - <<'PY'
-          import json
-          print(json.load(open('/tmp/forx50k/manifest.json'))['run_id'])
-          PY
-          )"
-          DEST="overdrive/forx_50k_proof/$RUN_ID"
-          mkdir -p "$DEST"
-
-          cp /tmp/forx50k/status.json "$DEST/status.json"
-          cp /tmp/forx50k/manifest.json "$DEST/manifest.json"
-
-          for i in $(seq 1 50); do
-            curl -fsSL "$SERVICE/partition/$i" -o "$DEST/partition-$(printf '%03d' "$i").json"
+          RUN_ID="$(cat "$WORK/run-id.txt")"
+          COUNT="$(python -c 'import json; print(json.load(open("/tmp/forx-runtime-proof/manifest.json"))["partition_count"])')"
+          for i in $(seq 1 "$COUNT"); do
+            curl --retry 3 --retry-all-errors --retry-delay 1 -fsSL "$SERVICE/partition/$i" -o "$WORK/partition-$(printf '%03d' "$i").json"
           done
 
-          python - <<'PY'
-          import hashlib, json, pathlib
-          root=pathlib.Path('overdrive/forx_50k_proof')
-          manifests=list(root.glob('*/manifest.json'))
-          if not manifests:
-              raise SystemExit('manifest missing')
-          manifest_path=max(manifests, key=lambda p:p.stat().st_mtime)
-          run_dir=manifest_path.parent
-          m=json.load(open(manifest_path))
-          total=0
-          for i in range(1, m['partition_count']+1):
-              p=run_dir/f'partition-{i:03d}.json'
-              body=json.loads(p.read_text())
-              canonical=json.dumps(body,separators=(',',':'),sort_keys=True).encode()
-              got=hashlib.sha256(canonical).hexdigest()
-              exp=m['partition_hashes'][str(i)]
-              if got != exp:
-                  raise SystemExit(f'partition {i} canonical hash mismatch: {got} != {exp}')
-              total += len(body['nodes'])
-          if total != m['selected_count']:
-              raise SystemExit(f'count mismatch: {total} != {m["selected_count"]}')
-          receipt={
-              'receipt_type':'FORX_50K_DURABLE_PERSISTENCE_READBACK',
-              'run_id':m['run_id'],
-              'selected_count':m['selected_count'],
-              'partition_count':m['partition_count'],
-              'selection_sha256':m['selection_sha256'],
-              'source_file_sha256':m['source_file_sha256'],
-              'partition_hashes_verified':True,
-              'exact_node_count_readback':total,
-              'status':'PASS_DURABLE_PARTITIONS_VERIFIED'
-          }
-          (run_dir/'durable-readback-receipt.json').write_text(json.dumps(receipt,indent=2,sort_keys=True)+'\n')
-          print(json.dumps(receipt,indent=2))
-          PY
-
-      - name: Commit durable proof
+      - name: Independently validate exact partition bytes, hashes, and unique node set
         shell: bash
         run: |
           set -euo pipefail
-          git add overdrive/forx_50k_proof
-          if git diff --cached --quiet; then
-            echo "No staged changes to persist."
-            exit 0
-          fi
+          python - <<'PY'
+          import hashlib, json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          root = Path("/tmp/forx-runtime-proof")
+          s = json.loads((root / "status.json").read_text())
+          m = json.loads((root / "manifest.json").read_text())
+          run_id = m["run_id"]
+          target = int(m["selected_count"])
+          total = 0
+          ids = set()
+          partition_bytes = 0
+          per_partition = []
+          for i in range(1, int(m["partition_count"]) + 1):
+              p = root / f"partition-{i:03d}.json"
+              raw = p.read_bytes()
+              partition_bytes += len(raw)
+              actual = hashlib.sha256(raw).hexdigest()
+              expected = m["partition_hashes"][str(i)]
+              if actual != expected:
+                  raise SystemExit(f"partition {i} exact-byte SHA mismatch: {actual} != {expected}")
+              body = json.loads(raw)
+              if body.get("run_id") != run_id or int(body.get("partition_index", -1)) != i:
+                  raise SystemExit(f"partition identity mismatch at {i}")
+              nodes = body.get("nodes")
+              if not isinstance(nodes, list) or not nodes:
+                  raise SystemExit(f"partition {i} has no nodes")
+              if len(nodes) > int(m["partition_size"]):
+                  raise SystemExit(f"partition {i} exceeds declared size")
+              for node in nodes:
+                  rid = node.get("source_record_id")
+                  if not rid:
+                      raise SystemExit(f"node without source_record_id in partition {i}")
+                  if rid in ids:
+                      raise SystemExit(f"duplicate source_record_id in partition {i}: {rid}")
+                  ids.add(rid)
+                  lat, lon = node.get("latitude"), node.get("longitude")
+                  if not isinstance(lat, (int, float)) or not isinstance(lon, (int, float)):
+                      raise SystemExit(f"coordinate-backed node missing numeric coordinates: {rid}")
+                  if not (-90 <= lat <= 90 and -180 <= lon <= 180):
+                      raise SystemExit(f"invalid coordinate for {rid}")
+              total += len(nodes)
+              per_partition.append({"index": i, "nodes": len(nodes), "sha256": actual, "bytes": len(raw)})
+          if total != target or len(ids) != target:
+              raise SystemExit(f"exact node/source-ID count mismatch: total={total}, unique={len(ids)}, target={target}")
+          receipt = {
+              "receipt_type": "FORX_DURABLE_RUNTIME_PERSISTENCE_READBACK",
+              "status": "PASS_DURABLE_PARTITIONS_VERIFIED",
+              "verification_method": "sha256 of exact HTTP partition bytes returned by /partition/{index}",
+              "run_id": run_id,
+              "source": m["source"],
+              "source_revision": m["source_revision"],
+              "source_license": m["source_license"],
+              "source_file_sha256": m["source_file_sha256"],
+              "selection_sha256": m["selection_sha256"],
+              "target": m["target"],
+              "exact_node_count_readback": total,
+              "unique_source_record_id_count": len(ids),
+              "coordinate_backed_count": total,
+              "partition_count": int(m["partition_count"]),
+              "partition_size": int(m["partition_size"]),
+              "partition_bytes_total": partition_bytes,
+              "partition_hashes_verified": True,
+              "all_partition_hashes": {str(i): m["partition_hashes"][str(i)] for i in range(1, int(m["partition_count"]) + 1)},
+              "per_partition_readback": per_partition,
+              "raw_rows_ingested": m.get("raw_rows_ingested"),
+              "rows_rejected": m.get("rows_rejected"),
+              "duplicates_removed": m.get("duplicates_removed"),
+              "country_count": m.get("country_count"),
+              "category_count": m.get("category_count"),
+              "started_at": m.get("started_at"),
+              "runtime_completed_at": m.get("completed_at"),
+              "durable_readback_verified_at": datetime.now(timezone.utc).isoformat(),
+              "render_status": s.get("status"),
+              "render_phase_at_capture": s.get("phase"),
+              "errors_at_capture": s.get("errors"),
+              "note": "This receipt proves durable artifact persistence and partition integrity. It does not by itself prove restart/resume behavior or peak memory headroom."
+          }
+          (root / "durable-readback-receipt.json").write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n")
+          print(json.dumps({k: receipt[k] for k in [
+              "status","run_id","exact_node_count_readback","unique_source_record_id_count",
+              "partition_count","partition_hashes_verified","partition_bytes_total",
+              "source_file_sha256","selection_sha256","durable_readback_verified_at"
+          ]}, sort_keys=True))
+          PY
+
+      - name: Persist verified proof on the latest main without pushing runtime code early
+        shell: bash
+        run: |
+          set -euo pipefail
+          RUN_ID="$(cat /tmp/forx-runtime-proof/run-id.txt)"
+          DEST="overdrive/forx_50k_proof/$RUN_ID"
+          git fetch origin main
+          git checkout --detach origin/main
+          mkdir -p "$DEST"
+          cp /tmp/forx-runtime-proof/status.json "$DEST/status.json"
+          cp /tmp/forx-runtime-proof/manifest.json "$DEST/manifest.json"
+          cp /tmp/forx-runtime-proof/durable-readback-receipt.json "$DEST/durable-readback-receipt.json"
+          cp /tmp/forx-runtime-proof/partition-*.json "$DEST/"
+          git add "$DEST"
+          git diff --cached --check
+          git diff --cached --quiet && { echo "Proof directory already present; refusing a false new persistence PASS"; exit 1; }
           git config user.name "amillimatrix-eng"
           git config user.email "amillimatrix@gmail.com"
-          git commit -m "FORX: persist and verify 50k production partitions"
+          git commit -m "FORX: persist and verify completed production runtime partitions"
           git push origin HEAD:main
+          echo "Durable proof committed for $RUN_ID"
