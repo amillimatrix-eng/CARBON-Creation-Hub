@@ -580,3 +580,23 @@ class SemanticNoOpPersistenceTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class OpportunityLedgerCountInvariantTest(unittest.TestCase):
+    def test_record_count_is_derived_from_current_map_and_history_is_preserved(self):
+        historical_run = {"full_ledger_count": 62, "run_at": "2026-10-03T17:42:00Z"}
+        opportunities = {
+            "record_count": 124,
+            "records": {f"OPP-{i:03d}": {"state": "WAITING"} for i in range(125)},
+            "last_run": dict(historical_run),
+        }
+
+        count = runner.reconcile_opportunity_count(opportunities)
+
+        self.assertEqual(count, 125)
+        self.assertEqual(opportunities["record_count"], len(opportunities["records"]))
+        self.assertEqual(opportunities["last_run"], historical_run)
+
+    def test_record_count_reconciliation_fails_closed_on_invalid_records_shape(self):
+        with self.assertRaisesRegex(ValueError, "opportunities.records must be an object"):
+            runner.reconcile_opportunity_count({"records": []})
