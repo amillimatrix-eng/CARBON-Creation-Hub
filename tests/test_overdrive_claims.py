@@ -583,6 +583,9 @@ class OpportunityLedgerCountInvariantTest(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
         base = Path(self.tmp.name)
+        previous_root = runner.ROOT
+        runner.ROOT = base
+        self.addCleanup(setattr, runner, "ROOT", previous_root)
         runner.STATE = base / "state.json"
         runner.OPPORTUNITIES = base / "opportunities.json"
         runner.SIGNALS = base / "signals.json"
