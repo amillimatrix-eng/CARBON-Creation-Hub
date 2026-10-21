@@ -1,0 +1,1 @@
+{"status":"COMPLETE","phase":"RUNTIME_OUTPUT_READY_NOT_DURABLY_VERIFIED","mode":"production","run_id":"forx-20261010-200k-01","node_count":200000,"partition_count":200,"partition_size":1000,"target":200000,"source_adapter":"geonames-cities500","country_count":246,"category_count":18,"errors":[]}
