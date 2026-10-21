@@ -300,7 +300,7 @@ class MissingRecordUpsertTest(unittest.TestCase):
             "evidence": [dict(source_evidence)],
             "commercial_acceptance": None,
         }
-        opportunities = {"records": {"new-opp": record}}
+        opportunities = {"records": {canonical_key: record}}
         before = json.loads(json.dumps(opportunities))
 
         result = runner.missing_record_upsert(
