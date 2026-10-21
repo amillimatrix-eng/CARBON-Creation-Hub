@@ -4144,3 +4144,21 @@ A receiving librarian must accept only its registered responsibility. An out-of-
 A further read-only Dropbox search of `colour registry`, `BUILD CANON GOVERNANCE marker`, `BAZOOKA colour`, and `librarian colour code` returned zero results. Combined with current main, both connected GitHub account scopes and accessible Notion search, the authoritative unique BUILD/CANON/GOVERNANCE stream-colour mapping remains NOT LOCATED in scoped sources. This is not proof of global nonexistence. No new stream colour is assigned. Keep explicit textual domain labels in place; ROOT/T-GOV owns authoritative registry/collision disposition, MASTER source/Index reconciliation, T-COD/T-MED approved implementation/readback.
 
 **Acceptance boundary:** current office pages have source-linked instructions and Root Intake has indexed the routes; no receiver acknowledgement or downstream fix is claimed. The full artifact census, all per-item allocations, marker implementation and behavioral acceptance remain OPEN. Root Intake is NOT CLEARED.
+
+
+## 2026-10-21 — [CYAN] ADDENDUM D: OPEN GITHUB ITEM RESPONSIBILITY MAP
+
+- Addendum D: [CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md](CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md)
+- Git blob SHA: `fa60eea27dbfb6f2e64219eac29488c4e90d5212`; commit: `d400a5601309d230cc213fe998afab390a7df381`.
+- Fresh GitHub API snapshot: 26 open records = 15 issues + 11 PRs. This supersedes the previous 24-record current snapshot for present-day navigation; old numbers/status remain historical provenance.
+- The map assigns current domain and existing accountable owners for all 26 items, including the new PR #68. Mixed items preserve linked T-GOV/T-COD/T-MED routes without shifting the actual commercial, financial, product or account owner's mandate.
+- The map preserves source/lifecycle truth: open PR ≠ merged; CI ≠ deploy; route ≠ execution. Full downstream receipts remain OPEN.
+
+### Current office-specific routing receipts
+- ROOT/T-GOV: [office receipt](https://app.notion.com/p/4008f8b56cd78118b9b5dc9b5778f175?pvs=204)
+- T-COD: [office receipt](https://app.notion.com/p/4008f8b56cd781ebb824f00659f74dbd?pvs=204)
+- T-MED: [office receipt](https://app.notion.com/p/4008f8b56cd781778677e8052c282c61?pvs=204)
+- MASTER/LIBRARIAN: [office receipt](https://app.notion.com/p/4008f8b56cd781c7a8c5f73e601479fb?pvs=204)
+- Shared Root Intake / receiver-specific dispatch: [existing page](https://app.notion.com/p/3f48f8b56cd781a0964ccc894000a8f5?pvs=204)
+
+**Status:** instruction and assignment metadata have persisted/readback. These are not recipient acknowledgements, implementation acceptance or proof of all-librarian behavior. Root Intake remains OPEN / NOT CLEARED.
