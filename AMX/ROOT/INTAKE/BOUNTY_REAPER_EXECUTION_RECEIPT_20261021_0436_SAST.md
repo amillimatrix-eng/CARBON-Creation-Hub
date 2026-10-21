@@ -106,3 +106,48 @@ A broader exact-path search recovered the later 19 October execution receipt aft
 - This recovered prior receipt does **not** change the current run's result: the new material evidence is the 2026-10-02 LayerZero implementation-binding gap and the bounded Symbiosis direct-Gateway path kill. It does not establish Q1=0 or provide a submission/award/payment receipt.
 
 This addition reconciles later accessible prior state; it does not erase the earlier receipts or declare the inaccessible Tracker/Drive history complete.
+
+
+## 10. Continued executable parcel checks — 1inch and Variational
+
+### A. 1inch OrderRegistrator timestamp / latest-release gate — A / KILLED FOR THIS CLAIM
+
+Freshly fetched the current official release list, current Immunefi scope/rules and source files from `1inch/limit-order-protocol`.
+
+- GitHub Release page calls `v4.3.4` **Latest**, published 24 September 2026: https://github.com/1inch/limit-order-protocol/releases
+- Official Immunefi scope last updated 14 October 2026: https://immunefi.com/bug-bounty/1inch-SmartContracts/scope/
+- Official rules/info: https://immunefi.com/bug-bounty/1inch-SmartContracts/information/
+- `contracts/helpers/OrderRegistrator.sol` at tag `4.3.4`: blob `c16e30831f6c44c88b4e1e7ece8f560c9301922e`. The tagged version validates the order extension and signature and emits `OrderRegistered`; it has no `announcedAt` mapping or first-registration timestamp.
+- The current default branch source blob `0317e58286e438d246a95c742851797b51a655ec` contains `announcedAt[orderHash]`, a write-once timestamp and `OrderAlreadyRegistered`. The public feature commit/PR is known from previous receipt: PR #435, commit `e92c8bd3336d6bceb7bcba67d4f0c32ec73b6da5`.
+- The current program says it applies only to the latest tag/releases, requires PoC and KYC, excludes theoretical/speculative exploits without demonstrated business impact, and expressly prohibits AI-generated reports. The scope table names generalized new asset classes, but the exact deployed `OrderRegistrator` asset/implementation is not independently bound in this run.
+
+**Disposition:** The previous timestamp-front-running hypothesis depends on the `announcedAt` behavior visible on `main`, not the current latest tagged `4.3.4` source. No qualifying theft/freezing/business impact was established, and the live program bars AI-generated reports. Mark this precise hypothesis **A — KILLED / NO PROMOTION / NO REPORT**. Do not turn the main-branch-only feature into a candidate against a latest-release-only program. No code was edited, no local test was run, and no submission was attempted.
+
+A separate read-only screen of 4.3.4 `NativeOrderFactory.sol`, `NativeOrderImpl.sol`, `native-swap.md`, and relevant existing `LimitOrderProtocol.js` test sections found the checked cancellation/reward mechanics and access checks explicitly covered by source/tests: factory create requires maker = caller and `msg.value == makingAmount`; factory rescue is owner-gated; clone cancellation is maker-gated, while resolver cancellation requires the configured access token and expiry; reward is caller-bounded by `rewardLimit`; the tagged tests cover reward delay, no-reward cancellation, role gate and repeat cancellation. The reviewed boundary case where a caller chooses a reward limit greater than the remaining clone balance would revert, but that caller can choose a lower limit/zero; the reviewed path does not establish an unprivileged victim loss. **No new 1inch Q2/Q1 parcel established** by this screen.
+
+### B. Variational Arbitrum batch / zero-UUID hypothesis — bounded kill of public-attacker route; parent remains B
+
+Existing candidate source is pinned in the earlier Reaper evidence sidecar `tradewife/night-shift-security@ddbfce3af1ec3e8ac64f295c3216587b01015029`; it is a research harness, not represented as the authoritative deployed repository.
+- `SettlementPool.sol` blob `64a140bb950cded4180cc5985b0e8c5aa8cab056`: `batchDepositUSDCAtomic` is `onlyOracle`; `depositUSDCAtomic`, `depositUSDCOnBehalfOfParty`, `withdrawUSDC`, and related treasury methods are likewise Oracle-gated; ordinary party `depositUSDC` is `onlyParties` and expressly rejects `transferUuid == 0`.
+- `Oracle.sol` blob `9917390ef1add55e9e032a14b0559e00628f1602`: public atomic/batch paths are `onlyRole(PROVIDER_ROLE)`; the batch verifies the registered pool, creator address and membership of each other party before forwarding items.
+- `SettlementPoolFactory.sol` blob `c09719edf61bf8fe935144be1911b96bd5529e8a`: pool creation remains owner-or-Oracle gated.
+- Existing `VariationalFalsifier.t.sol` blob `e41938cb17de13a4a09a1b0f10e32bff97a77433` includes a sidecar assertion for repeat creator deposit per item and a zero-UUID freeze claim, but this runtime only read the file; it did **not** execute the Foundry test. The harness assumption that creator amount should be deposited only once per batch is not established by the source/API contract here, so the asserted excess is not accepted as proof of a bug.
+- A zero UUID in an Oracle-supplied batch can bypass the nonzero-UUID replay marker, but the relevant batch entry is provider-role-gated, and the reviewed evidence does not establish an unprivileged actor who can force the trusted provider to submit zero UUIDs. Withdrawals also have nonzero-ID validation at the ordinary party entry point and an Oracle-mediated recovery path. No permanent freeze, theft, victim loss or privilege-free attack is demonstrated by this sidecar.
+
+**Disposition:** Kill the specific **unprivileged public caller can directly trigger the provider-only batch/zero-UUID freeze** theory on the reviewed path. Keep the parent candidate **B — NOT PROMOTED** rather than claiming the whole deployed system safe: exact authoritative deployed-source equivalence, trust boundary/API semantics, qualifying impact and a compliant runnable local/fork PoC are not all established. No live chain call, transaction, funds movement, or external submission occurred.
+
+## 11. Queue/lifecycle control remains open
+
+The direct read-only fetch of the canonical Google Sheet URL returned `login_required`. Current tool inventory exposes no authorized Google Sheets append/update/readback action; no authenticated browser run could be performed through the metered browser route in this runtime. Therefore `Runs/Queue/Payouts` remain unread; no Tracker Runs row is claimed; `TRACKER_WRITE_BLOCKED` persists and Q1 is still `UNKNOWN_NOT_ZERO`.
+
+No public programme was bypassed, and no report was submitted. The current screening has killed/narrowed claims but has **not** produced a ready private report or external receipt. Preserve the existing Root Intake fallback and same-flight register; don't create an alternative tracker.
+
+### Continued-work status
+
+- LayerZero `BR-20261003-024`: C/Q3 PARKED; 2026-10-02 proxy-implementation change remains an unclosed deployment/source-binding gate; older pinned-source subclaims and generic compensation premise are killed/public audit prior art.
+- Symbiosis MetaRouterGateway direct-theft theory: A / KILLED on reviewed source path.
+- 1inch OrderRegistrator timestamp-front-running theory: A / KILLED under latest-release boundary.
+- Variational public-attacker batch/zero-UUID theory: specific public route killed; parent remains B / NOT PROMOTED.
+- Q1 queue: UNKNOWN_NOT_ZERO. Official bounty submissions/awards/verified payments evidenced in this wake: none.
+
+This extension records further bounded work; it is not an assertion that the objective passed. Resume with authoritative Q1 recovery when the existing Tracker route is restored, and promote only an independently evidenced, eligible finding.
