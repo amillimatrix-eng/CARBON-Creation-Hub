@@ -3588,3 +3588,14 @@ Latest full-body Outlook readback supersedes prior wording that treated receipt 
 - **Next action / owner:** existing ROOT/T-GOV + MASTER/LIBRARIAN and T-COD / existing Issue #29 portability owner should reuse the existing Continuity Rehydration Benchmark / DR-0022 and authorized non-plan-dependent executor route. Require fresh/replacement reasoning surface to recover current Registry v1.3, furthest evidence and exact next action, then execute a real bounded action and independently read back its correlated receipt. No second benchmark, worker, queue, schedule, branch, or broad merge.
 - **Disposition:** DURABLE RECOVERY CONTROL RECOVERED; AUTOMATIC SUCCESSOR ACCEPTANCE OPEN; INTAKE NOT CLEARED. No completion, universal continuity, commercial outcome or permanent protection is claimed.
 
+
+
+## 2026-10-21 — DRAIN-Q / Plan-A-B current state correction after PR #57 merge
+
+- PR #57 is now CLOSED / MERGED at `ab3f31b000fc88ed401431e0b8ba8bb523adf36f`; the stale “draft/not merged” text in the original receipt is superseded by the appended current-state addendum in [DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md](DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md).
+- The existing Overdrive workflow on main has hourly Plan A and the 15-minute Plan B watchdog, while scheduled work is repository-only. Commercial worker remains paused/manual-only.
+- GitHub Actions REST readback found the latest scheduled run was 2026-10-16, before the merged control. Merge run `39534817326` is a **push**, not a schedule. Backend tests `39534817316` passed. These do not prove Plan A liveness.
+- `overdrive/recovery-control/plan-a-anchor.json` is still absent from main (direct GET returned 404), so no post-merge scheduled Plan-A acceptance receipt is available yet. Plan B end-to-end/return-to-A likewise remains open.
+- Owner-directed ChatGPT automation quiet mode remains in force: 25 saved definitions, zero enabled, 49 paused reported. Do not re-enable old individual schedules until consolidated lane gates are accepted.
+- **Status:** Plan-A/B control MERGED; source/CI readback PASS; hourly liveness and fallback behavior NOT YET VERIFIED; Root Intake / DRAIN Q OPEN / NOT CLEARED.
+- **Next action:** record the first real successful hourly `event=schedule` run and read back its artifact + anchor; verify B-to-A is non-sticky under controlled fixtures; continue the item-level Root Intake census. This is a current-state correction to earlier historical entry, not a new queue or worker.
