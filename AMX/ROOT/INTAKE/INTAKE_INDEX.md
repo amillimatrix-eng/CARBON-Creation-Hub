@@ -4224,3 +4224,13 @@ The existing Three-Root Library Split Register confirms the authoritative shared
 **Backend boundary:** The inspected `backend/app.py` / `house/remediation/house.js` is the public-facing CARBON° Evidence House API/UI, not a confirmed canonical Matrix control-panel renderer. Its visible evidence endpoints currently expose record projections; PR #66 already covers public-field allow-list security and is not merged/deployed. Do not inject internal Matrix owner/run/authority metadata or guess marker colours into that public interface. T-COD must identify the actual authorized internal metadata/marker consumer before implementation; keep the public surface public-safe.
 
 **Acceptance:** this BAZOOKA status block is visible in the existing Index. Actual stream-color implementation remains HOLD pending registry collision readback. Root Intake remains OPEN / NOT CLEARED until every item and receiving owner passes acceptance/readback.
+
+
+## 2026-10-21 — [CYAN] ADDENDUM E: INTERNAL MATRIX MARKER TARGET BINDING
+
+- Addendum E: [CATEGORY_A_INTERNAL_MATRIX_MARKER_IMPLEMENTATION_TARGET_BINDING_20261021.md](CATEGORY_A_INTERNAL_MATRIX_MARKER_IMPLEMENTATION_TARGET_BINDING_20261021.md)
+- Commit: `0fe77010861459ead1e8bbf6e7b4a805138e1363`; file blob: `6ab2eb3679346709d4f8e0d92d2d18229162f92f`.
+- Finding: the inspected `backend/app.py` and `house/remediation/house.js` are a public-facing CARBON° Evidence House, not a verified canonical internal Matrix control panel. The central continuity manifest requires HOBO/JAM3S/IRIS/CARBON and preserves HOLD/unknown states; source/deployment lineage must be read back before treating a clone/demo as authoritative.
+- Action owner: T-COD binds the correct current internal metadata consumer; ROOT/T-GOV owns the stream marker mapping/collision disposition; T-MED implements approved presentation; MASTER/ROOT preserve Index/Intake/provenance; FORX verifies actual downstream acceptance.
+- Safety boundary: no internal owner/run/lifecycle metadata is added to public House routes; PR #66's public-field allow-list remains open/unmerged in the inspected snapshot. No blanket write restrictions are introduced.
+- Status: text-domain metadata active; internal target/marker mapping/visual implementation and behavioral acceptance remain OPEN. Root Intake NOT CLEARED.
