@@ -3906,3 +3906,19 @@ Manual, read-only Outlook inspection was completed instead of re-enabling the di
 - Keep payouts/receivable out of VERIFIED MONEY-IN until independent bank-credit evidence is inspected. Remind the owner to check the receiving South African bank account; no banking UI or account setting was touched by this check.
 - **Disposition:** SOURCE CHECK COMPLETE; PROVIDER IN-APP SETTING OWNER-GATED / NOT VERIFIED; PAYMENT / BANK CREDIT UNKNOWN; AUTOMATION REMAINS DISABLED; no scheduled run is claimed.
 - **Next action:** Owner verifies/applies intended in-app setting and independently checks for actual credit; existing owner-directed task stays paused unless the Owner authorizes a supported new schedule.
+## 2026-10-21 — AUTOMATION ROSTER DEEP-SYNC / HOURLY PROMPT-WRITE LIMIT
+
+Fresh provider peeks of the four existing high-priority automations confirm that no scheduled runtime is active. All remain disabled and their existing schedule definitions were preserved; no task was enabled, rescheduled, duplicated, or manually dispatched.
+
+- FIRST BREATH — IDEAL SALES TEAM — ID 6ac17e8999648191ba125236de46f012 — is_enabled=false; timing_mode=exact_schedule; DTSTART;TZID=Africa/Johannesburg:20261008T223400; RRULE:FREQ=HOURLY; next_run_time=null. Prompt caches Registry v1.2/root 6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f.
+- FIRST BREATH — LIBRARIANS — ID 6ac7c95aa91c819182be1e98e1404b95 — is_enabled=false; timing_mode=exact_schedule; DTSTART;TZID=Africa/Johannesburg:20261009T181000; RRULE:FREQ=HOURLY; next_run_time=null. Prompt caches Registry v1.2/root 6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f.
+- FIRST BREATH — FORX Continuous Play Sweep — ID 6ac6a4081dd48191967a0182fca2eba7 — is_enabled=false; timing_mode=exact_schedule; DTSTART:20261007T220000; RRULE:FREQ=HOURLY; next_run_time=null. Prompt caches Registry v1.2/root 6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f.
+- Bounty Reaper — ID 6abf8e6d6a188191aee2b5d3fe24a9c9 — is_enabled=false; exact hourly schedule unchanged; next_run_time=null. Its accepted prompt-only update was rejected with provider error automation_schedule_not_available / unsupported frequency hourly.
+- Current canonical Registry is v1.3, root SHA-256 96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a. These are cached-prompt drift facts, not mandate changes: PROMPT != MANDATE and later durable canon remains authoritative.
+
+### Disposition / supported next action
+- No tool plan supports the requested hourly prompt update in the current account. Do not workaround by changing to daily/weekly, enabling, dispatching, or creating a second task under this drain receipt.
+- Root/T-GOV + Owner must authorize one of two valid resolutions: provider/account plan supports the same hourly schedule and a prompt-only save/readback, or the Owner explicitly approves a cadence/plan disposition before any schedule change. After support becomes available, update one existing task at a time with v1.3 canon and verify prompt content, exact schedule, disabled state, and fresh attributable runtime before marking adopted.
+- **Status:** four prompts potentially stale; four existing tasks safely disabled; runtime adoption unverified; no unauthorized scheduler state change performed.
+
+Directive 23 — expected outcome: no stale prompt is mislabeled adopted; owners have an exact, evidence-backed provider capability gate. Owner: ROOT/T-GOV + task owner/provider account holder. Dependencies: supported hourly prompt-write or explicit Owner cadence decision. Evidence: fresh peeks of all four IDs and the exact failed Reaper provider response. Disposition: OPEN / PROVIDER SCHEDULE-PLAN GATE. Remaining work: obtain authorized supported route, then prompt+schedule+enable readback and runtime acceptance.
