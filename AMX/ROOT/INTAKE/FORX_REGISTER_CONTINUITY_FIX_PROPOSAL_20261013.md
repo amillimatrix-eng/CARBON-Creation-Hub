@@ -26,3 +26,14 @@ ROOT/T-GOV resolves the exact missing prior event by source evidence or an expli
 - **Safety/preservation:** no register rewrite, fabricated event, authority/schedule/task changes.
 - **Disposition:** OPEN / ROOT REVIEW REQUIRED, not queue closure.
 - **Remaining work:** missing prior-event disposition, fresh CI, independent review, post-merge readback.
+
+## 2026-10-21 ROOT source reconciliation — identifier typo, not absent RESUME event
+
+The current-main DYNAMIC_FLIGHT_PATH_REGISTER.jsonl was reread byte-for-byte at blob 62db9ad0018a4c1934835c4b419de23c63ee929d, 73 non-empty JSONL events.
+
+- Line 39 contains the exact source event: AMX-FLT-20261012-DSYNC-145440-9fb44f0c:RESUME:SEGMENT-11:WORKER-OUTPUT-RECOVERY-AND-CASH-IN with event_type=RESUME, recorded_at_utc=2026-10-13T14:29:53.808Z, and a valid link to the Segment-10 landing.
+- Line 40's CHECKPOINT points to AMX-FLT-20261012-DSYNC-145440-9fb44f0c:RESUME:SEGMENT-11:WORKER-OUTPUT-RECOVERY-AND-CASH-IN-20261013. The referenced string differs from the existing event ID only by the added -20261013 suffix. The register's event bytes remain unchanged.
+- Therefore the evidence establishes an existing RESUME record plus a wrong prior-event pointer string; it does not establish a missing real-world resume or authorize fabricating/backdating one.
+- Proposed governed disposition for ROOT/T-GOV: classify this as DFP-PRIOR-REF-ID-MISMATCH, with canonical referenced event ID above and the observed bad string preserved as the original pointer. Choose explicitly between (A) append-only correction event defining the old string → existing event mapping with exact acceptance semantics, or (B) a fail-closed finding that the validator should report until a formal correction is authorized. Do not silently rewrite line 40. After disposition, run the validator and all tests against current main, refresh this PR base, and keep it open until review/readback.
+
+Updated status: source event found; pointer defect precisely isolated; ROOT/T-GOV disposition, current-head CI, independent review and post-merge readback remain OPEN. The proposed code does not self-approve this governance correction.
