@@ -3666,3 +3666,21 @@ A prior same-run attempt directly updated main outside the recorded PR/runtime g
   - Sequence 25, `qdrain-20261020-treetopssolar-offered`: `receipts/0000000025-qdrain-20261020-treetopssolar-offered.json`; result SHA-256 `76f54070226ed32d391d2bd1f6a9466f393a86e5ec13a94e407c746b480d0aaa`. Exact evidence replay; no lifecycle change; no external action.
   - Sequence 26, `qdrain-20261020-verminator-offered`: `receipts/0000000026-qdrain-20261020-verminator-offered.json`; result SHA-256 `b4d3e36a99fe860a00ae243ef3444570bd7f9661854bc178287eff712df006f2`. Exact evidence replay; no lifecycle change; no external action.
 - **Current disposition:** OVERDRIVE EVENT QUEUE = ZERO PENDING / NO FAILED EVENTS. The three commercial offers correctly remain OFFERED and wait for buyer responses; queue processing is not buyer acceptance, delivery, invoice, or payment. Full Root Intake remains OPEN / NOT CLEARED while independent upgrade/fix/patch/logic/evidence obligations retain their own acceptance gates.
+
+
+## 2026-10-21 — DRAIN-Q ACTUAL WRITER EXECUTION / ZERO PENDING READBACK
+
+- **Lifecycle:** existing OVERDRIVE writer executed on main. Its native state and all three sequence-correlated receipts have been independently fetched. The **Overdrive event queue is now 26/26 COMPLETED, 0 PENDING, 0 FAILED**. This does not claim the broader Root Intake/actionable queue is zero.
+- **Governed patch:** existing PR #62 merged at `08ab4cdd754bfaddd36ffe1b7aedbdecea964791`; it adds exact-evidence idempotent replay and linked-readback-only Mendaz source-ID correction.
+- **Execution route repair:** current `.github/workflows/overdrive-recovery.yml` retains the existing `workflow_dispatch` route and a narrowly gated main-only one-shot route requiring commit marker `[AMX-OWNER-AUTHORIZED-OVERDRIVE-ONESHOT]`. Gate commit: `d361e9421a908a40e25a5655b2c762cddc7d3f6c`; workflow blob `30c04db35ee44cb47538d7c073b93354bbc8fe3d`.
+- **Actual writer commit:** `45e71144920768080a7de82160ae9e6519d9780e` — `OVERDRIVE receipt: minute tick 1 persist transitions`.
+- **Authoritative post-run source readback:**
+  - `overdrive/state.json` blob `69767e11f945e1040028a5972fbe5209d4cba658`; sequence 26; 26 entries all COMPLETED; 0 pending, 0 failed; last tick `2026-10-21T04:36:24.565084+00:00`.
+  - `overdrive/opportunities.json` blob `6fc0ca68ada4b07a3263618f2a23a1d64db9f3f9`; 124 canonical records.
+  - `overdrive/claims.json` blob `9c74a9db0af04f53f95c2e2dc88f4f26977a912a`; 124 claims; 118 WAITING / 6 CLOSED; 0 READY / 0 external-ready.
+  - `overdrive/signals.json` blob `360e1eb1d67c3283b3b42b5abbc338e7c1ab2529`.
+- **Native receipts, independently fetched:**
+  - Sequence 24, `qdrain-20261020-mendazsolar-offered`: `receipts/0000000024-qdrain-20261020-mendazsolar-offered.json`; result SHA-256 `2bc858095dbd10e908bfd58ee98923bb86ef684f7f07ea7a71bd50edcc3766aa`. Source ID corrected using linked Sent Items readback while preserving the previous ID and leaving the record OFFERED. Adapter external action NOT PERFORMED.
+  - Sequence 25, `qdrain-20261020-treetopssolar-offered`: `receipts/0000000025-qdrain-20261020-treetopssolar-offered.json`; SHA-256 `76f54070226ed32d391d2bd1f6a9466f393a86e5ec13a94e407c746b480d0aaa`. Exact evidence replay, no lifecycle change, no external action.
+  - Sequence 26, `qdrain-20261020-verminator-offered`: `receipts/0000000026-qdrain-20261020-verminator-offered.json`; SHA-256 `b4d3e36a99fe860a00ae243ef3444570bd7f9661854bc178287eff712df006f2`. Exact evidence replay, no lifecycle change, no external action.
+- **Disposition:** OVERDRIVE EVENT QUEUE = ZERO PENDING / NO FAILED EVENTS. Buyer offers correctly remain OFFERED and wait for buyer responses. Whole Root Intake remains OPEN until its independent upgrade/fix/patch/logic/evidence obligations are individually accepted, rejected, superseded, or explicitly held on a genuine gate.
