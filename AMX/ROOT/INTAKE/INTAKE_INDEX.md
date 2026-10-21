@@ -3922,3 +3922,24 @@ Fresh provider peeks of the four existing high-priority automations confirm that
 - **Status:** four prompts potentially stale; four existing tasks safely disabled; runtime adoption unverified; no unauthorized scheduler state change performed.
 
 Directive 23 — expected outcome: no stale prompt is mislabeled adopted; owners have an exact, evidence-backed provider capability gate. Owner: ROOT/T-GOV + task owner/provider account holder. Dependencies: supported hourly prompt-write or explicit Owner cadence decision. Evidence: fresh peeks of all four IDs and the exact failed Reaper provider response. Disposition: OPEN / PROVIDER SCHEDULE-PLAN GATE. Remaining work: obtain authorized supported route, then prompt+schedule+enable readback and runtime acceptance.
+## 2026-10-21 — OPEN-CENSUS REFRESH / PR #66 SECURITY REVIEW
+
+The latest GitHub API open-item census returns **24 records: 15 issues + 9 pull requests**. PR #11 is closed after verified FORX checkpoint restoration; PR #65 is merged. PR #66 is a newly active security PR and is now ready for review.
+
+- PR #66 — Security: allow-list public Evidence House record fields — ready for review, not merged; head `fbd286079b56c16bac1b84ae4de9c2dfb61bc7c7`; base main; `mergeable=true`. Existing GitHub Actions run `39550351945` completed SUCCESS for all steps: pytest, backend smoke tests, provider-neutral container build, and container runtime exercise.
+- Change is limited to explicit allow-list projection across anonymous Evidence House list/detail/search/bootstrap/gallery routes; raw source pointers and receipt IDs are removed from public payloads; regression tests seed private-path/hash sentinels and assert they never appear. Existing visibility classification and admin gates remain unchanged.
+- Vercel status is FAILURE due `api-deployments-free-per-day` (>100 deployments/code quota, retry after 24 hours). That is a deployment-preview limit, not a code-test failure. PR is not merged or deployed; live public-route/privacy acceptance remains OPEN until independent review and a fresh authorized deploy/readback.
+- This PR is relevant to open issues #21 (Evidence House live proof) and #8 (privacy/secret exposure). It does not close either issue because commercial-evidence coverage and live route verification are still outstanding.
+
+### Current open GitHub census
+- 15 open issues: #53, #50, #34, #33, #32, #31, #30, #29, #21, #18, #8, #4, #3, #2, #1.
+- 9 open PRs: #66, #60, #59, #52, #40, #37, #35, #14, #7.
+- Closed/merged and intentionally not counted as open: #11 (FORX checkpoint restore PASS), #65 (checkpoint restore implementation), #63 (bounded-memory runtime), #62 and #57 (prior queue/control improvements).
+- This GitHub census is only one part of the source-derived Root census; do not count 24 GitHub records as the total Matrix Intake.
+
+### Directive 23
+- Expected outcome: privacy projection reaches review with all existing automated test jobs green and a distinct, truthful deploy gate.
+- Owner: T-COD for code/acceptance; ROOT/T-GOV or authorized code reviewer for review; existing deployment owner for Vercel/live-route readback.
+- Evidence: PR #66 head SHA and Actions run `39550351945`; Vercel rate-limit status.
+- Disposition: PR #66 READY FOR REVIEW / NOT MERGED / NOT DEPLOYED; whole Root Intake OPEN / NOT CLEARED.
+- Remaining: independent review; authorized post-quota deployment; public endpoint + sentinel non-leak readback; add/verify public-safe commercial-history evidence before calling issue #21 interview-ready.
