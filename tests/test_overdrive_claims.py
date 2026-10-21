@@ -314,6 +314,52 @@ class MissingRecordUpsertTest(unittest.TestCase):
         self.assertEqual(result["critic"]["external_action"], "NOT_PERFORMED_BY_ADAPTER")
         self.assertEqual(opportunities, before)
 
+    def test_missing_record_upsert_accepts_canonical_identity_when_org_label_varies(self):
+        source_evidence = {
+            "kind": "OUTBOUND_SEND",
+            "source_id": "outlook-item-1",
+            "source": "OUTLOOK",
+            "observed_at": "2026-10-20T07:48:26Z",
+        }
+        canonical_key = "verminator.co.za|site-visit-to-follow-up-workflow-pilot|2026-10-20"
+        record = {
+            "state": "OFFERED",
+            "execution_owner": "PRI",
+            "organization": "Verminator Pest Control",
+            "opportunity": "site-visit-to-follow-up-workflow-pilot",
+            "domain": "verminator.co.za",
+            "recipient": "quality@verminator.co.za",
+            "thread_id": None,
+            "last_action_at": "2026-10-20T07:48:26Z",
+            "next_action": "Wait for a substantive buyer response.",
+            "evidence": [dict(source_evidence)],
+        }
+        opportunities = {"records": {canonical_key: record}}
+        before = json.loads(json.dumps(opportunities))
+        result = runner.missing_record_upsert(
+            self.task(
+                key=canonical_key,
+                target="OFFERED",
+                kind="OUTBOUND_SEND",
+                identity={
+                    "organization": "Verminator",
+                    "opportunity": "Site-visit-to-follow-up workflow pilot",
+                    "domain": "verminator.co.za",
+                },
+                execution_owner="PRI",
+                recipient="quality@verminator.co.za",
+                thread_id=None,
+                evidence=[dict(source_evidence)],
+                observed_at="2026-10-20T07:48:26Z",
+                next_action="Wait for a substantive buyer response.",
+            ),
+            opportunities,
+        )
+        self.assertTrue(result["idempotent"])
+        self.assertFalse(result["created"])
+        self.assertEqual(result["critic"]["commercial_state"], "PASS_NO_LIFECYCLE_CHANGE")
+        self.assertEqual(opportunities, before)
+
     def test_missing_record_upsert_refuses_existing_key(self):
         opportunities = {"records": {"new-opp": {"state": "SUBMITTED"}}}
         with self.assertRaisesRegex(ValueError, "already exists"):
