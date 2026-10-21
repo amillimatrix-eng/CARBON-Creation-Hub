@@ -204,3 +204,10 @@ The existing draft PR #57 was amended on the same authorized branch:
 - **Readback:** the Sent Items query used the existing Outlook connector and returned the real item ID. The GitHub ledger/state records remain unchanged by this source investigation.
 - **Disposition:** Treetops and Verminator are *exact replay candidates*; Mendaz requires **source-ID correction first**. Root Intake / DRAIN Q remains OPEN / NOT CLEARED until sequence-correlated receipts and the full item-level census are read back.
 - **Remaining work:** finish PR #61 test/readback, route Mendaz correction through the existing writer while preserving provenance, obtain authorized run/receipt/readback, and continue the wider Root Intake census.
+
+
+### Exact source-ID values — append-only reconciliation detail — 2026-10-21
+- Independent Outlook Sent Items list item ID and pending queue `OUTBOUND_SEND.source_id` (140 characters): `AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==`.
+- Corresponding canonical ledger `OUTBOUND_SEND.source_id` (135 characters): `AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==`.
+- Exact comparison: queue ID == Sent Items returned ID: **true**; queue ID == canonical ledger ID: **false**.
+- The shortened ledger value appears on the existing `POST_SEND_OFFER_CONTROL_REVIEW` row as well. No ID has been discarded. The pending queue has been augmented on PR #61 with an `OUTLOOK_SENT_ITEM_ID_READBACK` evidence entry tied to this receipt; the existing writer's correction path preserves the previous ID in `source_id_corrections` and field-level provenance before aligning both evidence references to the independently read-back Sent Items ID.
