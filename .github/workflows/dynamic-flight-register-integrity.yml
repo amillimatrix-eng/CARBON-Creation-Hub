@@ -1,0 +1,40 @@
+name: Dynamic flight register integrity
+
+on:
+  pull_request:
+    paths:
+      - "AMX/ROOT/INTAKE/DYNAMIC_FLIGHT_PATH_REGISTER.jsonl"
+      - "AMX/ROOT/INTAKE/INTAKE_INDEX.md"
+      - "overdrive/forensics/validate_flight_register.py"
+      - "tests/test_validate_flight_register.py"
+      - ".github/workflows/dynamic-flight-register-integrity.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "AMX/ROOT/INTAKE/DYNAMIC_FLIGHT_PATH_REGISTER.jsonl"
+      - "AMX/ROOT/INTAKE/INTAKE_INDEX.md"
+      - "overdrive/forensics/validate_flight_register.py"
+      - "tests/test_validate_flight_register.py"
+      - ".github/workflows/dynamic-flight-register-integrity.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-flight-register:
+    name: Validate current flight continuity anchors
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run validator unit tests
+        run: python -m unittest discover -s tests -p "test_validate_flight_register.py"
+      - name: Validate register and Index readback
+        run: >-
+          python overdrive/forensics/validate_flight_register.py
+          --register AMX/ROOT/INTAKE/DYNAMIC_FLIGHT_PATH_REGISTER.jsonl
+          --index AMX/ROOT/INTAKE/INTAKE_INDEX.md
