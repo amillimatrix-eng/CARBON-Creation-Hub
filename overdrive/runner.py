@@ -158,6 +158,18 @@ def evidence_transition(task, opportunities):
         accepted_price = payload.get("accepted_price")
         if not accepted_scope or accepted_price in (None, ""):
             raise ValueError("ACCEPTED requires exact accepted_scope and accepted_price")
+        accepted_proposal_ref = str(payload.get("accepted_proposal_ref") or "").strip()
+        accepted_offer_version = str(payload.get("accepted_offer_version") or "").strip()
+        issued_proposal_ref = str(record.get("proposal_ref") or "").strip()
+        issued_offer_version = str(record.get("offer_version") or "").strip()
+        if not issued_proposal_ref or not issued_offer_version:
+            raise ValueError("ACCEPTED requires canonical proposal_ref and offer_version on the current record")
+        if not accepted_proposal_ref or not accepted_offer_version:
+            raise ValueError("ACCEPTED requires accepted_proposal_ref and accepted_offer_version")
+        if accepted_proposal_ref != issued_proposal_ref:
+            raise ValueError("accepted proposal_ref does not match the current issued offer")
+        if accepted_offer_version != issued_offer_version:
+            raise ValueError("accepted offer version does not match the current issued offer")
     if target == "PAID" and not verified_payment(record, key, evidence):
         raise ValueError("PAID requires independent attributable verified settlement covering the receivable")
     old = record["state"]
@@ -174,6 +186,11 @@ def evidence_transition(task, opportunities):
         }
         if payload.get("accepted_currency"):
             acceptance["currency"] = payload["accepted_currency"]
+        acceptance["proposal_ref"] = issued_proposal_ref
+        acceptance["offer_version"] = issued_offer_version
+        buyer_po_reference = str(payload.get("buyer_po_reference") or "").strip()
+        if buyer_po_reference:
+            acceptance["buyer_po_reference"] = buyer_po_reference
         record["commercial_acceptance"] = acceptance
     return {
         "adapter": "EVIDENCE_TRANSITION",
@@ -511,6 +528,10 @@ def missing_record_upsert(task, opportunities):
     next_action = str(payload.get("next_action") or "").strip()
     if not observed_at or not next_action:
         raise ValueError("observed_at and next_action are required")
+    proposal_ref = str(payload.get("proposal_ref") or "").strip()
+    offer_version = str(payload.get("offer_version") or "").strip()
+    if bool(proposal_ref) != bool(offer_version):
+        raise ValueError("proposal_ref and offer_version must be supplied together")
 
     if key in records:
         existing = records[key]
@@ -597,6 +618,9 @@ def missing_record_upsert(task, opportunities):
             "evidence_source_ids": [e["source_id"] for e in evidence],
         },
     }
+    if proposal_ref:
+        record["proposal_ref"] = proposal_ref
+        record["offer_version"] = offer_version
     records[key] = record
     return {
         "adapter": "MISSING_RECORD_UPSERT",

@@ -120,7 +120,10 @@ class RoutingReconciliationTest(unittest.TestCase):
 
 class EvidenceTransitionTest(unittest.TestCase):
     def records(self, state):
-        return {"records": {"opp": {"state": state, "evidence": [], "execution_owner": "PRI"}}}
+        return {"records": {"opp": {
+            "state": state, "evidence": [], "execution_owner": "PRI",
+            "proposal_ref": "AMX-OFFER-001", "offer_version": "v1",
+        }}}
 
     def make_task(self, expected, target, kind, **extra):
         payload = {
@@ -196,12 +199,18 @@ class EvidenceTransitionTest(unittest.TestCase):
                 accepted_scope="Two production-ready episodes",
                 accepted_price="USD 1000",
                 accepted_currency="USD",
+                accepted_proposal_ref="AMX-OFFER-001",
+                accepted_offer_version="v1",
+                buyer_po_reference="BUYER-PO-77",
             ),
             opportunities,
         )
         record = opportunities["records"]["opp"]
         self.assertEqual(record["state"], "ACCEPTED")
         self.assertEqual(record["commercial_acceptance"]["price"], "USD 1000")
+        self.assertEqual(record["commercial_acceptance"]["proposal_ref"], "AMX-OFFER-001")
+        self.assertEqual(record["commercial_acceptance"]["offer_version"], "v1")
+        self.assertEqual(record["commercial_acceptance"]["buyer_po_reference"], "BUYER-PO-77")
         routed = runner.commercial_action("opp", record, datetime.now(timezone.utc))
         self.assertEqual((routed["status"], routed["priority"]), ("READY", 1))
 
@@ -226,6 +235,32 @@ class EvidenceTransitionTest(unittest.TestCase):
                     accepted_scope="Pilot",
                 ),
                 self.records("RESPONDED"),
+            )
+
+    def test_acceptance_requires_current_offer_id_and_version(self):
+        cases = [
+            ({"accepted_proposal_ref": "AMX-OFFER-001"}, "accepted_proposal_ref and accepted_offer_version"),
+            ({"accepted_proposal_ref": "AMX-OFFER-OLD", "accepted_offer_version": "v1"}, "accepted proposal_ref does not match"),
+            ({"accepted_proposal_ref": "AMX-OFFER-001", "accepted_offer_version": "v2"}, "accepted offer version does not match"),
+        ]
+        for extra, expected_error in cases:
+            with self.subTest(extra=extra):
+                task = self.make_task(
+                    "RESPONDED", "ACCEPTED", "SCOPE_PRICE_ACCEPTANCE",
+                    accepted_scope="Pilot", accepted_price="USD 100", **extra,
+                )
+                with self.assertRaisesRegex(ValueError, expected_error):
+                    runner.evidence_transition(task, self.records("RESPONDED"))
+        opportunities = self.records("RESPONDED")
+        opportunities["records"]["opp"].pop("offer_version")
+        with self.assertRaisesRegex(ValueError, "canonical proposal_ref and offer_version"):
+            runner.evidence_transition(
+                self.make_task(
+                    "RESPONDED", "ACCEPTED", "SCOPE_PRICE_ACCEPTANCE",
+                    accepted_scope="Pilot", accepted_price="USD 100",
+                    accepted_proposal_ref="AMX-OFFER-001", accepted_offer_version="v1",
+                ),
+                opportunities,
             )
 
     def test_accepted_can_progress_to_contracted(self):
