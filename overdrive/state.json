@@ -23,7 +23,7 @@
       "state": "ACTIVE"
     }
   },
-  "last_receipt": "receipts/0000000023-qdrain-20261015-naomii-offered.json",
+  "last_receipt": "receipts/0000000026-qdrain-20261020-verminator-offered.json",
   "last_signal_count": {
     "PRI": 80,
     "iSCOPE": 22
@@ -716,7 +716,7 @@
     {
       "id": "qdrain-20261020-mendazsolar-offered",
       "adapter": "MISSING_RECORD_UPSERT",
-      "status": "PENDING",
+      "status": "COMPLETED",
       "payload": {
         "due_at": null,
         "evidence": [
@@ -740,12 +740,15 @@
         "opportunity_key": "mendazsolar.co.za|solar-service-follow-through-pilot|2026-10-20",
         "recipient": "info@mendazsolar.co.za",
         "to": "OFFERED"
-      }
+      },
+      "completed_at": "2026-10-21T04:24:47.626Z",
+      "receipt": "receipts/0000000024-qdrain-20261020-mendazsolar-offered.json",
+      "receipt_sha256": "81b38388c76a848e35218a4701fb463e56068645ebaf9643181c1791487450c5"
     },
     {
       "id": "qdrain-20261020-treetopssolar-offered",
       "adapter": "MISSING_RECORD_UPSERT",
-      "status": "PENDING",
+      "status": "COMPLETED",
       "payload": {
         "due_at": null,
         "evidence": [
@@ -769,12 +772,15 @@
         "opportunity_key": "treetopssolar.co.za|maintenance-callout-handoff-pilot|2026-10-20",
         "recipient": "info@treetopssolar.co.za",
         "to": "OFFERED"
-      }
+      },
+      "completed_at": "2026-10-21T04:24:47.626Z",
+      "receipt": "receipts/0000000025-qdrain-20261020-treetopssolar-offered.json",
+      "receipt_sha256": "dce819949deed8665ef9f510bb11242847d5b65d4d61e49a952c547f7a7ed220"
     },
     {
       "id": "qdrain-20261020-verminator-offered",
       "adapter": "MISSING_RECORD_UPSERT",
-      "status": "PENDING",
+      "status": "COMPLETED",
       "payload": {
         "due_at": null,
         "evidence": [
@@ -798,10 +804,13 @@
         "opportunity_key": "verminator.co.za|site-visit-to-follow-up-workflow-pilot|2026-10-20",
         "recipient": "quality@verminator.co.za",
         "to": "OFFERED"
-      }
+      },
+      "completed_at": "2026-10-21T04:24:47.626Z",
+      "receipt": "receipts/0000000026-qdrain-20261020-verminator-offered.json",
+      "receipt_sha256": "2d6e627633fee06f7f03f7b5a026f77b140635bb31e2ae41c73f8610a8732b21"
     }
   ],
   "ready_claims": 0,
-  "sequence": 23,
+  "sequence": 26,
   "version": 2
 }
