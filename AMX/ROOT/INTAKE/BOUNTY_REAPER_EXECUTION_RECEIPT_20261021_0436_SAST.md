@@ -94,3 +94,15 @@ LAYERZERO: Q3_PARKED_IMPLEMENTATION_BINDING_GATE
 SYMBIOSIS: SPECIFIC_DIRECT_GATEWAY_THEFT_SUBCLAIM_KILLED
 SUBMISSION: NONE
 PAYMENT: NONE_VERIFIED
+
+
+## 9. Later historical receipt recovered — furthest prior material state
+
+A broader exact-path search recovered the later 19 October execution receipt after this run's first retrieval slice:
+- Prior run ID: `BR-20261019-2159-SAST-02`, observed 2026-10-19 21:59:16 SAST; path `AMX/ROOT/INTAKE/BOUNTY_REAPER_EXECUTION_RECEIPT_20261019_2159_SAST.md`; blob `29bbd8a824f146fd49cae6067159699ac8168750`.
+- That receipt already recorded a failed bounty-conversion outcome, `TRACKER_WRITE_BLOCKED`, `Q1=UNKNOWN, NOT ZERO`, LayerZero parent Q3/PARKED with the known pinned-source subclaims killed, and Variational as not promoted because the studied path was provider-role-gated and no qualifying impact/PoC was established.
+- It also records that the existing FORX-V 13-head acceptance packet was not `CLOSED_VERIFIED / PASS` and the conditional Reaper extension was `WAITING`. No current prompt/worker adoption or authorized transfer is assumed.
+- An exact search for `BOUNTY_REAPER_EXECUTION_RECEIPT_20261020` and `BOUNTY_REAPER_EXECUTION_RECEIPT_20261021` found no later historical execution receipt in accessible indexed results. The 20 October artifact recovered is a pre-flight/hold receipt, not evidence of bounty work or a queue census.
+- This recovered prior receipt does **not** change the current run's result: the new material evidence is the 2026-10-02 LayerZero implementation-binding gap and the bounded Symbiosis direct-Gateway path kill. It does not establish Q1=0 or provide a submission/award/payment receipt.
+
+This addition reconciles later accessible prior state; it does not erase the earlier receipts or declare the inaccessible Tracker/Drive history complete.
