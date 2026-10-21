@@ -666,14 +666,12 @@ Commit: `bba48af674d1c3b2167d173063966f1ca861c0f6`
 ### P0 — FORX PROTOCOL / COMMERCIAL TRANSFER
 
 1. **FORX-VFY-20261006-002 — 13-Head Re-Entrant Instigator Acceptance**
-   - state: **READY / ACTIVE**
+   - state: **CLOSED_VERIFIED / PASS — NOT ACTIVE**
    - owner: **FORX-V**
    - SUPERSEDES: `FORX-VFY-20261006-001`
-   - BLOCKED_BY: none
-   - UNLOCKS: `FORX-RP-20261006-002`
-   - closure: real-work proof that Instigator entry/re-entry materially improves contradiction detection and pivot handling without unsupported accusation or recursive churn.
-   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-VFY-20261006-002_13_HEAD_REENTRANT_INSTIGATOR_ACCEPTANCE.md`
-   - commit: `17941e0fca71bd8abacd8abe98bd09b120839284`
+   - acceptance artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-VFY-20261006-002_13_HEAD_REENTRANT_INSTIGATOR_ACCEPTANCE.md`, blob `01d90081ce5d6902bc219503a7b56e0cd92b19bf`
+   - independent real-work receipt: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-VFY-REAL-WORK-RECEIPT_20261020_0937_SAST.md`, blob `ea2a3cfe0205b4122c29807398bd23a21b3ddf21`
+   - disposition: remove this completed acceptance test from the active queue. Its closure proves the bounded protocol test only; live Reaper adoption remains a separate open item under `FORX-RP-20261006-002`.
 
 2. **FORX-FIX-20261006-002 — Commercial Reasoning 13-Head Instigator Transfer**
    - state: **READY FOR ROUTING**
@@ -686,14 +684,15 @@ Commit: `bba48af674d1c3b2167d173063966f1ca861c0f6`
    - commit: `e0d7c01bb82d2e6e654a73f78079b6f0c9703a68`
 
 3. **FORX-RP-20261006-002 — Bounty Reaper Conditional 13-Head Extension**
-   - state: **WAITING**
-   - destination after release: **T-COD**
-   - existing owner: Bounty Reaper
-   - SUPERSEDES: `FORX-RP-20261006-001`
-   - BLOCKED_BY: `FORX-VFY-20261006-002`
-   - release condition: FORX-V closes the 13-head verification packet with PASS.
-   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-002_BOUNTY_REAPER_13_HEAD_CONDITIONAL_EXTENSION.md`
-   - commit: `371fb13ce88127e7a07ea6c1b6a25562921f8463`
+   - state: **T-COD_ACCEPTED_BOUNDED_TRANSFER / RUNTIME_ADOPTION_PENDING**
+   - destination: **T-COD**
+   - existing owner: **Bounty Reaper**; no replacement worker
+   - prerequisite: **SATISFIED** — `FORX-VFY-20261006-002` is `CLOSED_VERIFIED / PASS`
+   - transfer review: **ACCEPTED** for prompt-only correction of the one existing Reaper automation; no schedule change, enable-state change, external submission or new tracker is authorized by this decision
+   - blocker: the existing hourly-task prompt update returned `automation_schedule_not_available`; saved prompt and runtime adoption remain unverified
+   - next action: T-COD/ROOT obtain a supported write route for the existing prompt, then read back the exact prompt and an attributable post-update Reaper result. Keep the current quiet-mode/disabled state unchanged until separately authorized.
+   - canonical artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-002_BOUNTY_REAPER_13_HEAD_CONDITIONAL_EXTENSION.md`, blob `639ab9d41d6decc385272ad14d4827302ec045c2`
+   - independent Tracker remains `TRACKER_WRITE_BLOCKED`; Q1 remains `UNKNOWN, NOT ZERO`. No bounty submission, award or payment is inferred.
 
 **Superseded packet provenance:** FORX-VFY-20261006-001, FORX-FIX-20261006-001 and FORX-RP-20261006-001 remain preserved but no longer control the current protocol.
 
@@ -740,51 +739,28 @@ Commit: `bba48af674d1c3b2167d173063966f1ca861c0f6`
 
 ### P0 — GOVERNANCE DISPOSITION READY
 
+**Active undecided governance candidates: 0 after the dispositions/holds below.** Do not treat this count as a claim that operational runtime work or the full Matrix Intake is closed.
+
+### P0 — GOVERNANCE DISPOSITIONED / PROVENANCE ONLY — 2026-10-21 READBACK
+
+1. **FORX-RP-20261006-004 — Abacus Semantic Reasoning Protocol:** **HOLD**, not implementation-ready, because the authoritative source/definition for “rolling consensus” is not recovered. Exact owner/dependency/return condition is recorded in the scoped-hold section below. No new Black Box subsystem, protocol authority, or Build change is created.
+2. **FORX-RP-20261006-003 — Commercial Capability / Tool / Skill Estate:** **MERGED AS A GOVERNANCE REQUIREMENT INTO EXISTING CAPABILITY-CONTINUITY + ADAPTIVE CAPABILITY & CAPACITY SCALING CONTROLS**. No parallel estate policy, worker, router or state machine. Residual operational work is the source-backed current capability/availability/substitution readback inside existing worker state; it is not evidence of universal tool connectivity or permission. Existing commercial owners remain iSCOPE / PRI; technical implementation remains T-COD within current authority.
+3. **RGR-01 — Recurrence Classification / Authority Rectification:** **ALREADY-SUBSUMED** into Mandate Liveness, Authorized Work Persistence, evidence-supersession and anti-drift controls, as explicitly recorded in the 2026-10-10 governance disposition at Section “CURRENT GOVERNANCE DISPOSITION READBACK — LEGACY QUEUE CONSOLIDATION”. RGR stays a non-authoritative recurrence label, not an independent office or state machine.
+4. **RGR-02 — DR-0021 Commercial Intelligence State Loss:** **MERGED INTO DR0021-P0-01**. Retain recurrence context as provenance; the DR-0021 behavioral obligation itself remains open.
+5. **MATRIX-01 — Matrix Durability / Broken Workflow Classification:** **MERGED/MODIFIED INTO EXISTING BLUE STATE CONTROLS**. No duplicate taxonomy; specific DR-0021 and workflow failures keep their own acceptance states.
+6. **MATRIX-02 — Permanent Forensic Librarian Office:** **ALREADY-SUBSUMED / REGISTRY VERIFIED**. Current Registry v1.3 blob `bcfd1f422bd25ba852666a538712828d594759e8` lists FORX as CURRENT under `AMX-MANDATE-FORX-V1`; role digest `a9570686dae130bd36d0995d9f58dbd0f7cde1597968dc16245c94a65f0f3109`. No separate registry-integration decision remains.
+7. **MATRIX-03 — Durable Cognition / Relationship-Graph Continuity:** the **governance architecture is MERGED into existing controls**. Fresh-session/behavioral gaps remain under DR-0021 and the existing Continuity Rehydration Benchmark; 30-image reconstruction remains scoped under RGR-03, not an independent governance decision.
+
+This view supersedes the stale “ready for T-GOV disposition” presentation of already-dispositioned shells above. Source proposals and prior snapshots are retained in the individual packets/history; this is active-view reconciliation, not deletion of provenance.
+
+### P0 — SCOPED HOLD / PROVENANCE RECOVERY
+
 1. **FORX-RP-20261006-004 — Abacus Semantic Reasoning Protocol**
-   - state: **OWNER ACCEPTED / READY FOR T-GOV + BLUE STATE DISPOSITION**
-   - priority: **BLACK-BOX-TOP / P0**
-   - security owner: **FORX**
-   - technical consequence if authorized: **T-COD**
-   - recommendation: **MODIFY / MERGE → GOVERNANCE + BLUE STATE**
-   - core rule: semantic tokenization/coordinates + authenticated encryption + compartmentalized visibility + durable semantic continuity.
-   - rolling-consensus integration: **UNKNOWN — recover exact governing source before integration; do not invent.**
-   - artifact: `AMX/ROOT/INTAKE/ABACUS_SEMANTIC_REASONING_PROTOCOL_GOVERNANCE_BLUE_STATE_CANDIDATE_20261006.md`
-   - packet: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-004_ABACUS_SEMANTIC_REASONING_PROTOCOL.md`
-   - source commit: `625fbc885e34435cf276bde184c96d00ad056a68`
-   - packet commit: `0ded5beb90d5aacb9311239da779a6b330ec4810`
-
-2. **FORX-RP-20261006-003 — Commercial Capability / Tool / Skill Estate**
-   - state: **READY FOR T-GOV DISPOSITION**
-   - destination: **T-GOV**
-   - technical cross-reference: **T-COD**
-   - existing commercial owners: **iSCOPE / PRI**
-   - purpose: maintain one governed capability estate so workers know which tool classes are available, substitutable, approved candidates, sensitive-gated, or unavailable.
-   - current exposed tool classes include repository/code, email/calendar/docs, task/project management, browser/web, design/UX/media, data/analytics, deployment/cloud, database/backend, payments, blockchain, AI/model tooling, ads/marketing, scheduling and storage.
-   - discovered candidate basket includes Apollo.io, Clay, Hunter, Lusha, ZoomInfo, HubSpot, Attio, Close, Zoho CRM, Semrush, Ahrefs, Exa, Tavily, Parallel Search, Firecrawl, Scite, Consensus and Granola.
-   - plugin install/connect and non-delegable consent remain platform/user gates; missing one provider must not become global idle when an equivalent lawful route exists.
-   - artifact: `AMX/ROOT/INTAKE/FORX_PACKETS/FORX-RP-20261006-003_COMMERCIAL_CAPABILITY_TOOL_SKILL_ESTATE.md`
-   - commit: `1dd1f0995202ecf582dccecbd99da1a3852f4a94`
-
-2. **RGR-01 — Recurrence Classification / Authority Rectification**
-   - destination: **T-GOV**
-   - recommendation: MODIFY / MERGE or ALREADY-SUBSUMED with exact mapping.
-
-2. **RGR-02 — DR-0021 Commercial Intelligence State Loss**
-   - destination: **T-GOV**
-   - recommendation: MODIFY / MERGE into existing continuity / Execution Fidelity / RGR controls.
-
-3. **MATRIX-01 — Matrix Durability / Broken Workflow Classification**
-   - destination: **T-GOV**
-   - recommendation: MODIFY / MERGE into existing Governance + Blue State controls.
-
-4. **MATRIX-03 + Addendum A — Durable Cognition / Capability Persistence**
-   - destination: **T-GOV**
-   - recommendation: MODIFY / MERGE into Governance + Blue State.
-
-5. **MATRIX-02 / FORX permanent-office integration**
-   - destination: **T-GOV**
-   - Owner appointment and activation are ACTIVE.
-   - remaining governance task: registry / credential / supersession reconciliation and routing of technical implementation consequences to T-COD.
+   - state: **HOLD — SOURCE/AUTHORITY DEPENDENCY; NOT IMPLEMENTATION-AUTHORIZED**
+   - owner: **T-GOV**, supported by **FORX** for exact source/provenance recovery; **T-COD** only after explicit authorization
+   - blocker: the authoritative governed definition/source for “rolling consensus” was not found in the current corpus searched
+   - next action / return condition: recover the exact governing source, then T-GOV records MERGE / MODIFY / REJECT with destination and acceptance test. Until then, preserve the Owner-accepted candidate without adding a new Black Box layer or changing Canon/Build.
+   - packet: `AMX/ROOT/INTAKE/ABACUS_SEMANTIC_REASONING_PROTOCOL_GOVERNANCE_BLUE_STATE_CANDIDATE_20261006.md`, blob `6954498eb5b80debfd71d5a11fc26cf9758da85b`
 
 ### P0 — SCOPED HOLD / PROVENANCE RECOVERY
 
@@ -810,15 +786,17 @@ Commit: `bba48af674d1c3b2167d173063966f1ca861c0f6`
    - owner: existing execution owners for correction; **FORX-V** for verification.
    - return condition: repeated accepted behavior and retained state.
 
-### GOVERNANCE-READY LEGACY QUEUE
+### LEGACY GOVERNANCE SHELLS — DISPOSITIONED / NOT ACTIVE — 2026-10-21
 
-1. **OCC-01 — Active Dependency Resurfacing**
-2. **OCC-04 — Reaper Final-Mile Completion Semantics**
-3. **CEBRC-A — truthful commercial identity/profile/KYC execution**
-4. **CEBRC-B — TinyFish continuity/resource conservation**
-5. **CARBON° Business Revitalization Commercial Directive — Dual Candidate**
+The following five records are **not pending governance decisions** because their explicit dispositions are already recorded in the canonical section above (“CURRENT GOVERNANCE DISPOSITION READBACK — LEGACY QUEUE CONSOLIDATION”). Preserve their individual source/history; track only their residual operational acceptance under the existing owner:
 
-These remain pending their existing governance decisions and are not allowed to disappear behind the P0 forensic chain.
+1. **OCC-01 — Active Dependency Resurfacing:** `ALREADY-SUBSUMED` into Mandate Liveness & Objective Enforcement. Any concrete dependency defect remains an operational item under its existing owner.
+2. **OCC-04 — Reaper Final-Mile Completion Semantics:** `MERGED INTO EXISTING REAPER CONTROL`. Runtime adoption and retrospective Root review remain open; the proposal is not a second control.
+3. **CEBRC-A — truthful commercial identity/profile/KYC execution:** `MERGED` into the existing iSCOPE → PRI mandate and commercial lifecycle controls; all human/provider identity gates remain intact.
+4. **CEBRC-B — TinyFish continuity/resource conservation:** `MERGED` into existing capability-continuity + Adaptive Capability & Capacity Scaling controls; no alternate account, budget, or credential authority is inferred.
+5. **CARBON° Business Revitalization Commercial Directive — Dual Candidate:** `MERGED AS OFFER/PACKAGING INPUT` into existing commercial-performance + CARBON° production-to-revenue work. The proposal does not authorize public claims, prices, spend, or a new commercial worker.
+
+**Disposition:** legacy governance-shell count removed from the active decision queue: **5**. Residual Reaper runtime/tracker and commercial-route gates remain in their operational records.
 
 ### DISPOSITIONED / PROVENANCE ONLY — NOT PENDING
 
@@ -3668,7 +3646,9 @@ A prior same-run attempt directly updated main outside the recorded PR/runtime g
 - **Current disposition:** OVERDRIVE EVENT QUEUE = ZERO PENDING / NO FAILED EVENTS. The three commercial offers correctly remain OFFERED and wait for buyer responses; queue processing is not buyer acceptance, delivery, invoice, or payment. Full Root Intake remains OPEN / NOT CLEARED while independent upgrade/fix/patch/logic/evidence obligations retain their own acceptance gates.
 
 
-## 2026-10-21 — DRAIN-Q ACTUAL WRITER EXECUTION / ZERO PENDING READBACK
+## DUPLICATE PROVENANCE COPY — DRAIN-Q ACTUAL WRITER EXECUTION / ZERO PENDING READBACK — 2026-10-21
+This near-identical copy repeats the canonical zero-pending writer receipt immediately above. It is retained as provenance, not treated as a second execution or queue item.
+
 
 - **Lifecycle:** existing OVERDRIVE writer executed on main. Its native state and all three sequence-correlated receipts have been independently fetched. The **Overdrive event queue is now 26/26 COMPLETED, 0 PENDING, 0 FAILED**. This does not claim the broader Root Intake/actionable queue is zero.
 - **Governed patch:** existing PR #62 merged at `08ab4cdd754bfaddd36ffe1b7aedbdecea964791`; it adds exact-evidence idempotent replay and linked-readback-only Mendaz source-ID correction.
@@ -3684,3 +3664,40 @@ A prior same-run attempt directly updated main outside the recorded PR/runtime g
   - Sequence 25, `qdrain-20261020-treetopssolar-offered`: `receipts/0000000025-qdrain-20261020-treetopssolar-offered.json`; SHA-256 `76f54070226ed32d391d2bd1f6a9466f393a86e5ec13a94e407c746b480d0aaa`. Exact evidence replay, no lifecycle change, no external action.
   - Sequence 26, `qdrain-20261020-verminator-offered`: `receipts/0000000026-qdrain-20261020-verminator-offered.json`; SHA-256 `b4d3e36a99fe860a00ae243ef3444570bd7f9661854bc178287eff712df006f2`. Exact evidence replay, no lifecycle change, no external action.
 - **Disposition:** OVERDRIVE EVENT QUEUE = ZERO PENDING / NO FAILED EVENTS. Buyer offers correctly remain OFFERED and wait for buyer responses. Whole Root Intake remains OPEN until its independent upgrade/fix/patch/logic/evidence obligations are individually accepted, rejected, superseded, or explicitly held on a genuine gate.
+
+
+## 2026-10-21 — ROOT INTAKE DRAIN CONTINUATION / ACTIVE-VIEW RECONCILIATION
+
+**Disposition:** Overdrive event queue **ZERO PENDING**; current governance-disposition bucket **ZERO UNTRIAGED CANDIDATES** after recording the explicit merges and scoped holds below; broader Root Intake remains **OPEN / NOT CLEARED** because actual runtime, source-recovery, behavioral, account/permission and complete cross-surface census gates remain.
+
+### Live source truth at this wake
+- `overdrive/state.json` main blob `69767e11f945e1040028a5972fbe5209d4cba658`: sequence 26; 26/26 event entries `COMPLETED`; 0 pending, 0 failed; latest tick `2026-10-21T04:36:24.565084Z`; adapter `OPERATIONAL`.
+- `overdrive/opportunities.json` blob `6fc0ca68ada4b07a3263618f2a23a1d64db9f3f9`: 124/124 ledger records.
+- `overdrive/claims.json` blob `9c74a9db0af04f53f95c2e2dc88f4f26977a912a`: 124/124 claim rows, 0 missing projection keys, 0 orphan keys; 118 `WAITING`, 6 `CLOSED`, 0 `READY`, 0 external-ready, empty executable order.
+- Sequence-correlated writer receipts 24–26 were fetched. Source evidence was replayed idempotently; the Mendaz source-ID correction retained prior provenance; no external action was performed by the adapters. The three offers remain `OFFERED` and wait for buyer responses.
+- PR #62 is `CLOSED / MERGED` at merge commit `08ab4cdd754bfaddd36ffe1b7aedbdecea964791`. This supersedes earlier statements that it was open/unmerged. Merge and queue drain do not prove money-in or global Root Intake clearance.
+- Current mandate Registry is v1.3, blob `bcfd1f422bd25ba852666a538712828d594759e8`, root `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`; registered FORX status is `CURRENT`. The 13-head verification packet is `CLOSED_VERIFIED / PASS`; the conditional Reaper transfer packet is accepted with runtime adoption pending.
+
+### Item-level queue delta
+- **Removed from active view as complete:** `FORX-VFY-20261006-002` protocol acceptance, backed by its independently fetched real-work receipt. Do not conflate this with live Reaper adoption.
+- **Kept open with exact dependency:** `FORX-RP-20261006-002` — T-COD accepted bounded prompt transfer; saved-prompt update is blocked by the existing hourly-task tool limitation. Owner is T-COD/ROOT for supported in-place update; acceptance requires exact saved-prompt readback and a fresh attributable Reaper behavior/readback. Automation remains quiet/disabled; no schedule change.
+- **Governance-ready shells resolved in current view:** RGR-01 `ALREADY-SUBSUMED`; RGR-02 `MERGED INTO DR0021-P0-01`; MATRIX-01 merged into existing Blue State controls; MATRIX-02 office/registry integration verified under Registry v1.3; MATRIX-03 governance architecture merged while behavioral gaps remain under DR-0021/RGR-03; OCC-01/OCC-04/CEBRC-A/CEBRC-B/CARBON° Business Revitalization retained as provenance with their existing explicit disposition mappings.
+- **Held, not erased:** Abacus protocol waits for the exact “rolling consensus” governing source and a T-GOV disposition; RGR-03 waits for authoritative 30-image membership/provenance/semantics; 10-year-old and 3-year-old resolution items wait for authoritative definitions and acceptance criteria.
+- **Continued implementation work:** FORX-FIX-20261006-002 and -003 remain routing/implementation obligations to T-COD with existing iSCOPE/PRI execution and FORX-V acceptance; FORX-FIX-20261006-005 remains Owner-reasserted; DR0021-P0-01 and FORX-VFY-20261006-004 remain open until real, repeated, attributable worker behavior proves no false external-action READY, no duplicate send, preserved state and correct next-run continuity.
+
+### Root-level remaining work — not falsely cleared
+- ROOT/T-GOV: reconcile formal Commercial Manager holder/mandate/reporting placement; complete the full authoritative cross-surface item census; retain the actual live/runtime acceptance gates.
+- Existing Reaper/T-COD: resolve a supported in-place prompt write without changing cadence or enable state; obtain fresh runtime behavior evidence. Canonical Live Tracker write/readback remains blocked; Q1 is `UNKNOWN, NOT ZERO`.
+- Existing Matrix continuity/forensics owners: recover exact 30-image semantics; retrieve primary evidence for the separate Owner-reported D04 clean execution or explicitly record that it was not found in the retained sources; keep the existing continuity/rehydration behavior gate open.
+- Existing account/commercial owners: preserve buyer waits, authenticated route, identity/KYC, and settlement gates. The 118 `WAITING` claims are not falsely closed; zero currently executable claims is not a global absence-of-opportunity conclusion.
+- Next runtime gate: observe the real scheduled Plan A/Plan B control path and read back the artifact plus anchor. No manual schedule dispatch, automation re-enable, commercial writer replay, external outreach or payment is implied by this receipt.
+
+### Directive 23
+- **Expected outcome:** zero untriaged governance candidates in the active governance-disposition bucket; completed/superseded shells removed from active view; every residual live item retains exact owner, blocker, next action and acceptance/recheck.
+- **Owner:** ROOT/Intake and ROOT/T-GOV; T-COD/FORX-V for implementation/verification; existing specialist owners for commercial and Reaper execution.
+- **Action:** reconcile current status to the primary sources above; continue every independent lawful task; retain genuine execution/authority holds rather than force-closing them.
+- **Dependencies:** saved-prompt write capability, current runtime receipts, authoritative image/source recovery, exact role binding and complete cross-surface census.
+- **Evidence/readback:** current main blobs/PR#62/receipts, Registry v1.3, `FORX-VFY-002` acceptance receipt, live packet `FORX-RP-002`, and this committed index update.
+- **Safety/preservation:** no schedule changes, reactivation, duplicate worker/queue/tracker, external commercial action, unsupported bounty claim or money-in inference; historic provenance retained.
+- **Disposition:** **GOVERNANCE DISPOSITION QUEUE = 0 UNTRIAGED; OVERDRIVE EVENT QUEUE = 0 PENDING; ROOT INTAKE = OPEN / NOT CLEARED.**
+- **Remaining work:** the explicit runtime/behavioral/source/access gates listed above plus completion of the full cross-surface census.
