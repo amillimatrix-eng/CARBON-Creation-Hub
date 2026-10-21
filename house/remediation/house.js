@@ -35,7 +35,8 @@
   }
 
   function t10Rows(r) {
-    return T10_FIELDS.map(k => [k.replaceAll('_',' '), r?.[k] || 'MISSING / UNKNOWN-HOLD']);
+    const labels = {T10_JOB:'JOB', T10_ACTUAL:'ACTUAL RESULT', T10_EVIDENCE:'EVIDENCE POINTER', T10_CHANGE:'MATERIAL CHANGE', T10_REMAINING_GAP:'REMAINING GAP', T10_PASS:'PASS / HOLD'};
+    return T10_FIELDS.map(k => [labels[k] || k.replaceAll('_',' '), r?.[k] || 'MISSING / UNKNOWN-HOLD']);
   }
 
   function t10Node(title, packet) {
@@ -59,8 +60,7 @@
     const dl = document.createElement('dl');
     appendRows(dl, [
       ['Artifact', r.artifact], ['Role', r.role_contribution], ['Acceptance', r.acceptance_test],
-      ['Source', r.authoritative_source], ['Receipts', (r.durable_receipts || []).join(' · ') || r.durable_receipt],
-      ['Inspect', r.inspect_route], ['Version', r.date_version],
+      ['Evidence pointer', r.inspect_route], ['Version', r.date_version],
       ...t10Rows(r)
     ]);
     el.append(dl); return el;
