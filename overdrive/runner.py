@@ -5,7 +5,7 @@ Consumes durable queue items, validates evidence-backed commercial transitions,
 updates the shared record, and writes one immutable receipt per invocation.
 No connector or external commercial action is inferred by this adapter.
 """
-import fcntl, hashlib, json, os, time
+import fcntl, hashlib, json, os, subprocess, time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -285,6 +285,43 @@ def _same_upsert_evidence_replay(
 
 
 
+def _linked_sent_items_receipt_is_verified(
+    *, commit, receipt_path, current_source_id, previous_source_id, subject, recipient, query_filter
+):
+    """Verify the cited source ID receipt exists in canonical main history and supports this correction."""
+    expected_path = "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md"
+    if receipt_path != expected_path:
+        return False
+    commit = str(commit or "").strip().lower()
+    if len(commit) != 40 or any(ch not in "0123456789abcdef" for ch in commit):
+        return False
+    try:
+        reachable = subprocess.run(
+            ["git", "merge-base", "--is-ancestor", commit, "origin/main"],
+            capture_output=True, text=True, check=False, timeout=10,
+        )
+        if reachable.returncode != 0:
+            return False
+        shown = subprocess.run(
+            ["git", "show", f"{commit}:{expected_path}"],
+            capture_output=True, text=True, check=True, timeout=10,
+        )
+    except (OSError, subprocess.CalledProcessError, subprocess.TimeoutExpired):
+        return False
+    receipt = shown.stdout or ""
+    required_evidence = (
+        "SAME-RUN CONTINUATION — MENDaz SENT-ITEM SOURCE-ID DIVERGENCE",
+        str(current_source_id or ""),
+        str(previous_source_id or ""),
+        str(subject or ""),
+        str(recipient or ""),
+        str(query_filter or ""),
+        "queue ID == Sent Items returned ID: **true**",
+        "queue ID == canonical ledger ID: **false**",
+    )
+    return all(token and token in receipt for token in required_evidence)
+
+
 def _reconcile_verified_source_id(
     existing, *, key, organization, opportunity, domain, owner, target, recipient, thread_id, evidence
 ):
@@ -335,8 +372,6 @@ def _reconcile_verified_source_id(
         or recipient_token != _identity_token(existing.get("recipient"))
         or str(readback.get("query_filter") or "") != "sentDateTime ge 2026-10-20T00:00:00Z"
         or str(readback.get("receipt_path") or "") != "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md"
-        or len(commit) != 40
-        or any(ch not in "0123456789abcdef" for ch in commit.lower())
         or not sent.get("observed_at")
     ):
         return None
@@ -355,6 +390,16 @@ def _reconcile_verified_source_id(
         return None
     target_row = candidates[0]
     previous_id = str(target_row["source_id"]).strip()
+    if not _linked_sent_items_receipt_is_verified(
+        commit=commit,
+        receipt_path=readback.get("receipt_path"),
+        current_source_id=current_id,
+        previous_source_id=previous_id,
+        subject=subject,
+        recipient=recipient,
+        query_filter=readback.get("query_filter"),
+    ):
+        return None
     matching_rows = [
         row for row in prior_evidence
         if str(row.get("source_id") or "").strip() == previous_id
