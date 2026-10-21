@@ -3890,3 +3890,19 @@ This entry supersedes prior current-state text that still described restart/rest
 - Acceptance boundary: this passes code tests for the public projection. Live acceptance still requires authorized review/merge, deployment when the rate limit allows, and independent reads of list/detail/search/bootstrap responses proving source metadata is excluded while safe evidence fields remain.
 - Directive 23: expected outcome = usable public evidence without disclosure of controlled source metadata; owner = T-COD/backend + ROOT/T-GOV; action completed = allow-list, UI pointer display, regression tests, CI and issue readback; dependencies = authorized merge and deployment; evidence = PR #66, commit/head above, workflow job above, comments 6308897672/6308898381; safety = single source index retained, admin gate unmodified, no live changes or private-source disclosure; disposition = CODE TESTS PASS / LIVE ACCEPTANCE OPEN / ROOT INTAKE OPEN; remaining = review/merge, deployment, public API readback, and unresolved customer-request→PRI/claim acceptance under #8.
 
+
+## 2026-10-21 — VISYM PAYOUT SOURCE READBACK / DISABLED SCHEDULED TASK
+
+Manual, read-only Outlook inspection was completed instead of re-enabling the disabled one-shot automation. This is a manual source-check receipt, not a scheduled automation execution receipt.
+
+- Existing automation “Check Visym payout” (ID 6ad6171a7b948191ab963da9664e207e) is disabled; it retains exact one-time schedule DTSTART;TZID=Africa/Johannesburg:20261020T180000; next_run_time=null. No re-enable, reschedule, or manual task dispatch was performed.
+- Primary provider reply was fetched from Outlook message ID AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLz9hTAAAAA==; sender collector@visym.com; recipient usduplessis@outlook.com; received 2026-10-19T20:47:54Z; subject “Re: GeoSonics payout method and secure bank-detail submission”.
+- The provider says the GoTyme account proof was received and instructs the owner to set payout provider in-app to Wise and payment email to amillimatrix@gmail.com. This is a request/instruction, not proof that the setting is saved, that the details were submitted/accepted inside Visym, that payment has been scheduled/sent, or that a bank credit exists.
+- A later Oct 20 outbound Outlook item quotes the same provider reply; it is not a new provider-side payout state change. The exact original Gmail source thread remains unverified, so do not infer a fully authoritative status from Outlook alone.
+- Distinguish states: proof-of-account sent; provider reply received; provider requests Wise/payment-email setting; setting saved in-app = UNVERIFIED; Visym acknowledgment of saved setting = UNVERIFIED; payment sent = UNVERIFIED; independent South African bank credit = UNVERIFIED.
+
+### Owner action / disposition
+- Owner must apply the requested Wise/payment-email setting in the authenticated Visym app only if correct and intended, then preserve an in-app confirmation or receipt. Do not transmit further sensitive data or send another administrative query solely to compensate for inaccessible Gmail.
+- Keep payouts/receivable out of VERIFIED MONEY-IN until independent bank-credit evidence is inspected. Remind the owner to check the receiving South African bank account; no banking UI or account setting was touched by this check.
+- **Disposition:** SOURCE CHECK COMPLETE; PROVIDER IN-APP SETTING OWNER-GATED / NOT VERIFIED; PAYMENT / BANK CREDIT UNKNOWN; AUTOMATION REMAINS DISABLED; no scheduled run is claimed.
+- **Next action:** Owner verifies/applies intended in-app setting and independently checks for actual credit; existing owner-directed task stays paused unless the Owner authorizes a supported new schedule.
