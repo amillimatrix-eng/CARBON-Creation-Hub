@@ -216,20 +216,229 @@ UPSERT_EVIDENCE_GATES = {
 def _identity_token(value):
     return " ".join(str(value or "").strip().lower().split())
 
+
+def _identity_slug(value):
+    """Normalize a human title or stored slug to a canonical key slug."""
+    return "-".join(
+        "".join(char.lower() if char.isalnum() else " " for char in str(value or "")).split()
+    )
+
+
+def _same_upsert_evidence_replay(
+    existing, *, key, organization, opportunity, domain, owner, target, recipient, thread_id, evidence
+):
+    """Return True only for the same canonical key, lifecycle and persisted source evidence.
+
+    The canonical opportunity key/domain/title slug are the identity anchors. Organization
+    labels may legitimately differ (for example, a brand name versus its longer legal or
+    service label); they must not overwrite the existing canonical record on a replay.
+    A key/state/recipient/evidence conflict still fails closed.
+    """
+    key_parts = str(key or "").split("|")
+    if len(key_parts) < 2:
+        return False
+    key_domain = _identity_token(key_parts[0])
+    key_slug = _identity_slug(key_parts[1])
+    if not key_domain or not key_slug:
+        return False
+    if str(existing.get("state") or "").upper() != target:
+        return False
+    existing_domain = _identity_token(existing.get("domain"))
+    incoming_domain = _identity_token(domain)
+    if not incoming_domain or incoming_domain != key_domain or existing_domain != key_domain:
+        return False
+    existing_opportunity = existing.get("opportunity") or existing.get("title") or existing.get("name")
+    if _identity_slug(opportunity) != key_slug or _identity_slug(existing_opportunity) != key_slug:
+        return False
+    if not _identity_token(organization) or not _identity_token(existing.get("organization") or existing.get("buyer") or existing.get("company")):
+        return False
+    if _identity_token(existing.get("execution_owner")) != _identity_token(owner):
+        return False
+    if recipient and _identity_token(existing.get("recipient")) != _identity_token(recipient):
+        return False
+    if thread_id and _identity_token(existing.get("thread_id")) != _identity_token(thread_id):
+        return False
+
+    prior_evidence = existing.get("evidence", [])
+    for incoming in evidence:
+        incoming_kind = str(incoming.get("kind") or "").upper()
+        incoming_source_id = str(incoming.get("source_id") or "").strip()
+        if not incoming_kind or not incoming_source_id:
+            return False
+        matching = [
+            prior for prior in prior_evidence
+            if str(prior.get("kind") or "").upper() == incoming_kind
+            and str(prior.get("source_id") or "").strip() == incoming_source_id
+        ]
+        if not matching:
+            return False
+        # If supplied, these fields must match too. A reused source ID with
+        # different provenance is a conflict, not an idempotent replay.
+        for field in ("source", "observed_at"):
+            expected = incoming.get(field)
+            if expected not in (None, "") and not any(
+                str(prior.get(field) or "") == str(expected)
+                for prior in matching
+            ):
+                return False
+    return True
+
+
+
+def _reconcile_verified_source_id(
+    existing, *, key, organization, opportunity, domain, owner, target, recipient, thread_id, evidence
+):
+    """Correct a source-ID typo only with a linked independent Sent Items readback.
+
+    The old value is retained in both per-field provenance and a record-level correction
+    history. This path does not change commercial lifecycle or imply an external action.
+    """
+    key_parts = str(key or "").split("|")
+    if len(key_parts) < 2:
+        return None
+    key_domain = _identity_token(key_parts[0])
+    key_slug = _identity_slug(key_parts[1])
+    existing_opportunity = existing.get("opportunity") or existing.get("title") or existing.get("name")
+    if (
+        not key_domain or not key_slug
+        or _identity_token(domain) != key_domain
+        or _identity_token(existing.get("domain")) != key_domain
+        or _identity_slug(opportunity) != key_slug
+        or _identity_slug(existing_opportunity) != key_slug
+        or str(existing.get("state") or "").upper() != target
+        or _identity_token(existing.get("execution_owner")) != _identity_token(owner)
+        or not _identity_token(organization)
+        or not _identity_token(existing.get("organization") or existing.get("buyer") or existing.get("company"))
+        or (recipient and _identity_token(existing.get("recipient")) != _identity_token(recipient))
+        or (thread_id and _identity_token(existing.get("thread_id")) != _identity_token(thread_id))
+    ):
+        return None
+
+    outbound = [e for e in evidence if str(e.get("kind") or "").upper() == "OUTBOUND_SEND"]
+    readbacks = [e for e in evidence if str(e.get("kind") or "").upper() == "OUTLOOK_SENT_ITEM_ID_READBACK"]
+    if len(outbound) != 1 or len(readbacks) != 1:
+        return None
+    sent = outbound[0]
+    readback = readbacks[0]
+    current_id = str(sent.get("source_id") or "").strip()
+    verified_id = str(readback.get("source_id") or "").strip()
+    subject = str(sent.get("subject") or "").strip()
+    recipient_token = _identity_token(recipient)
+    commit = str(readback.get("verification_receipt_commit") or "").strip()
+    if (
+        not current_id or verified_id != current_id or not subject
+        or str(sent.get("source") or "").upper() != "OUTLOOK"
+        or str(readback.get("source") or "") != "OUTLOOK_SENT_ITEMS_READBACK"
+        or str(readback.get("folder") or "") != "Sent Items"
+        or str(readback.get("subject") or "").strip() != subject
+        or _identity_token(readback.get("recipient")) != recipient_token
+        or recipient_token != _identity_token(existing.get("recipient"))
+        or str(readback.get("query_filter") or "") != "sentDateTime ge 2026-10-20T00:00:00Z"
+        or str(readback.get("receipt_path") or "") != "AMX/ROOT/INTAKE/DRAIN_Q_EXECUTION_RECEIPT_20261020_FOLLOW_ON.md"
+        or len(commit) != 40
+        or any(ch not in "0123456789abcdef" for ch in commit.lower())
+        or not sent.get("observed_at")
+    ):
+        return None
+
+    prior_evidence = existing.get("evidence", [])
+    candidates = [
+        row for row in prior_evidence
+        if str(row.get("kind") or "").upper() == "OUTBOUND_SEND"
+        and str(row.get("source") or "").upper() == "OUTLOOK"
+        and str(row.get("observed_at") or "") == str(sent.get("observed_at") or "")
+        and str(row.get("subject") or "").strip() == subject
+        and str(row.get("source_id") or "").strip()
+        and str(row.get("source_id") or "").strip() != current_id
+    ]
+    if len(candidates) != 1:
+        return None
+    target_row = candidates[0]
+    previous_id = str(target_row["source_id"]).strip()
+    matching_rows = [
+        row for row in prior_evidence
+        if str(row.get("source_id") or "").strip() == previous_id
+        and str(row.get("subject") or "").strip() == subject
+        and str(row.get("kind") or "").upper() in {"OUTBOUND_SEND", "POST_SEND_OFFER_CONTROL_REVIEW"}
+    ]
+    if target_row not in matching_rows:
+        return None
+
+    correction = {
+        "kind": "SOURCE_ID_CORRECTION",
+        "field": "evidence.source_id",
+        "evidence_kind": "OUTBOUND_SEND",
+        "previous_source_id": previous_id,
+        "corrected_source_id": current_id,
+        "subject": subject,
+        "recipient": recipient,
+        "source": "OUTLOOK",
+        "verification_method": "OUTLOOK_SENT_ITEMS_LIST_READBACK",
+        "verification_folder": "Sent Items",
+        "verification_source_id": verified_id,
+        "verification_receipt_path": readback["receipt_path"],
+        "verification_receipt_commit": commit,
+        "query_filter": readback["query_filter"],
+        "affected_evidence_rows": [
+            {
+                "kind": str(row.get("kind") or ""),
+                "source": str(row.get("source") or ""),
+                "observed_at": str(row.get("observed_at") or ""),
+                "previous_source_id": previous_id,
+                "corrected_source_id": current_id,
+            }
+            for row in matching_rows
+        ],
+    }
+    for row in matching_rows:
+        row["source_id"] = current_id
+        row["source_id_correction"] = {
+            "previous_source_id": previous_id,
+            "corrected_source_id": current_id,
+            "verification_receipt_commit": commit,
+        }
+    existing.setdefault("source_id_corrections", []).append(correction)
+    if not any(
+        str(row.get("kind") or "").upper() == "OUTLOOK_SENT_ITEM_ID_READBACK"
+        and str(row.get("source_id") or "").strip() == verified_id
+        and str(row.get("verification_receipt_commit") or "").strip() == commit
+        for row in prior_evidence
+    ):
+        existing.setdefault("evidence", []).append(dict(readback))
+    return {
+        "adapter": "MISSING_RECORD_UPSERT",
+        "opportunity_key": key,
+        "to": target,
+        "created": False,
+        "idempotent": False,
+        "source_id_corrected": True,
+        "lifecycle_changed": False,
+        "source_id_correction": correction,
+        "evidence": [sent, readback],
+        "critic": {
+            "factual_claims": "PASS_LINKED_SENT_ITEMS_READBACK",
+            "duplicate_identity": "PASS_CANONICAL_KEY_DOMAIN_AND_SLUG",
+            "commercial_state": "PASS_NO_LIFECYCLE_CHANGE",
+            "external_action": "NOT_PERFORMED_BY_ADAPTER",
+        },
+    }
+
+
 def missing_record_upsert(task, opportunities):
     """Create one missing canonical commercial record from attributable external evidence.
 
     This is deliberately narrower than generic CRM creation. It only repairs an
     external-execution-without-record gap under existing iSCOPE/PRI identity rules.
-    Existing records must use EVIDENCE_TRANSITION instead.
+    Existing records are left unchanged on exact evidence replay. A conflicting source ID
+    can be corrected only when the queue carries a linked independent Sent Items readback
+    matching the canonical key, provider item ID, subject and recipient; the old value is
+    preserved in correction history. Every other mismatch fails closed.
     """
     payload = task["payload"]
     records = opportunities.setdefault("records", {})
     key = str(payload.get("opportunity_key") or "").strip()
     if not key:
         raise ValueError("opportunity_key is required")
-    if key in records:
-        raise ValueError("opportunity already exists; use EVIDENCE_TRANSITION")
 
     identity = payload.get("identity") or {}
     organization = str(identity.get("organization") or "").strip()
@@ -252,6 +461,56 @@ def missing_record_upsert(task, opportunities):
     required = UPSERT_EVIDENCE_GATES[target]
     if not any(str(e.get("kind", "")).upper() in required for e in evidence):
         raise ValueError(f"{target} requires attributable evidence for missing-record ingestion")
+
+    observed_at = payload.get("observed_at")
+    next_action = str(payload.get("next_action") or "").strip()
+    if not observed_at or not next_action:
+        raise ValueError("observed_at and next_action are required")
+
+    if key in records:
+        existing = records[key]
+        if _same_upsert_evidence_replay(
+            existing,
+            key=key,
+            organization=organization,
+            opportunity=opportunity,
+            domain=domain,
+            owner=owner,
+            target=target,
+            recipient=payload.get("recipient"),
+            thread_id=payload.get("thread_id"),
+            evidence=evidence,
+        ):
+            return {
+                "adapter": "MISSING_RECORD_UPSERT",
+                "opportunity_key": key,
+                "to": target,
+                "created": False,
+                "idempotent": True,
+                "disposition": "ALREADY_RECORDED_EXACT_EVIDENCE_REPLAY",
+                "evidence": evidence,
+                "critic": {
+                    "factual_claims": "PASS_EXISTING_SOURCE_EVIDENCE_READBACK",
+                    "duplicate_identity": "PASS_IDEMPOTENT_EXACT_SOURCE_REPLAY",
+                    "commercial_state": "PASS_NO_LIFECYCLE_CHANGE",
+                    "external_action": "NOT_PERFORMED_BY_ADAPTER",
+                },
+            }
+        correction = _reconcile_verified_source_id(
+            existing,
+            key=key,
+            organization=organization,
+            opportunity=opportunity,
+            domain=domain,
+            owner=owner,
+            target=target,
+            recipient=payload.get("recipient"),
+            thread_id=payload.get("thread_id"),
+            evidence=evidence,
+        )
+        if correction is not None:
+            return correction
+        raise ValueError("opportunity already exists; exact evidence replay not proven; use EVIDENCE_TRANSITION")
 
     org_token = _identity_token(organization)
     opp_token = _identity_token(opportunity)
