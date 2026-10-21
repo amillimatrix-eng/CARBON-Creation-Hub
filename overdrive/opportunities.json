@@ -542,6 +542,25 @@
       "remains_unproven": "IRNA buyer response, acceptance, contract, invoice, delivery or payment; Close response, partnership or revenue; actual execution outcomes from the asynchronous sales runtime; receipt of any funds.",
       "scope": "Canonical commercial ledger reconciliation of current-turn sent offer and inbound partner response",
       "upgrade_action": "On any substantive external reply, reconcile the exact source event into the same record; follow current no-duplicate/no-contact constraints; use a verified payment route only after account capability readback; count PAID only on attributable settlement evidence."
+    },
+    {
+      "actual": "The existing Mendaz OUTBOUND_SEND evidence source_id differs from the message ID in its still-pending queue task. A fresh Outlook search by exact subject returns the queued ID with the expected sender, recipient and send time. The independent POST_SEND_OFFER_CONTROL_REVIEW already links to that queued/live ID.",
+      "changed": "Corrected only the OUTBOUND_SEND source_id from the malformed stored value to the exact Outlook-returned message ID. No commercial state, offer terms, recipient, or next action changed.",
+      "classification": "SOURCE_ID_CORRECTION_WITH_LIVE_READBACK",
+      "expected": "Canonical evidence source IDs match exact connector-returned IDs before stale queue-upsert reconciliation.",
+      "observed_at": "2026-10-21T04:24:22.099Z",
+      "owner": "PRI / DRAIN Q",
+      "proof": [
+        "OUTLOOK live message ID AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+        "Previous stored outbound message ID AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+        "Subject: One bounded pilot for solar service follow-through",
+        "Sender: usduplessis@outlook.com",
+        "Recipient: info@mendazsolar.co.za",
+        "Sent at: 2026-10-20T07:47:43Z"
+      ],
+      "remains_unproven": "Buyer response, offer acceptance, contract, invoice, payment and settlement.",
+      "scope": "Mendaz Solar offer evidence identifier integrity",
+      "upgrade_action": "Preserve the issued offer as OFFERED / WAITING. Do not duplicate outreach; on a valid buyer response, reconcile exact proposal/version, quote and supported payment route before executing delivery."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
@@ -609,8 +628,8 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-20T14:08:34.815+02:00",
-  "last_updated_by": "PRI — current-turn evidence reconciliation",
+  "last_updated_at": "2026-10-21T04:24:22.099Z",
+  "last_updated_by": "DRAIN_Q_SOURCE_ID_RECONCILIATION",
   "record_count": 124,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
@@ -7148,7 +7167,7 @@
           "kind": "OUTBOUND_SEND",
           "observed_at": "2026-10-20T07:47:43Z",
           "source": "OUTLOOK",
-          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3Rky7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLz9RvQAAAA==",
           "subject": "One bounded pilot for solar service follow-through",
           "summary": "Sent from usduplessis@outlook.com to info@mendazsolar.co.za. Fixed-fee R9,380 once-off; one bounded solar service follow-through workflow. Buyer has not accepted the scope or price in evidence available to this reconciliation.",
           "url": "https://mendazsolar.co.za/"
