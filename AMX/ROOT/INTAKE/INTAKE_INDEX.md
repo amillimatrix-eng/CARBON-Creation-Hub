@@ -3701,3 +3701,37 @@ This near-identical copy repeats the canonical zero-pending writer receipt immed
 - **Safety/preservation:** no schedule changes, reactivation, duplicate worker/queue/tracker, external commercial action, unsupported bounty claim or money-in inference; historic provenance retained.
 - **Disposition:** **GOVERNANCE DISPOSITION QUEUE = 0 UNTRIAGED; OVERDRIVE EVENT QUEUE = 0 PENDING; ROOT INTAKE = OPEN / NOT CLEARED.**
 - **Remaining work:** the explicit runtime/behavioral/source/access gates listed above plus completion of the full cross-surface census.
+
+
+## 2026-10-21 — FORX 200K DURABLE RUNTIME ACCEPTANCE DELTA
+
+**Purpose:** supersede the earlier RUNTIME_ADOPTION_PENDING wording for the deployed bounded-memory production run only. Preserve the outstanding restart/resume acceptance and all separate Matrix-wide gates.
+
+### Verified live run and durable readback
+
+- Existing service srv-db2udid9fdbs739b5ru0 deploy dep-dbc4ea0n74is73fbl1h0 is LIVE on app commit a3b1b8622ff432c7c8c325f3142d954dda35414a. Runtime run forx-20261010-200k-01 reached COMPLETE: 200,000 selected coordinate-backed nodes, 200 partitions of 1,000, 246 countries, 18 source categories, errors empty.
+- Source provenance: GeoNames cities500, revision 2026-10-20, CC BY 4.0, raw rows 236,560, rejected 0, duplicate rows removed 4, source file SHA-256 f1cc7e34c7a3a65195a545221521b8e11c63b2c473d6d01c72158ce33a9611e6, selection SHA-256 ee3459b9c30e2aceafa9d40d35648ba33a8a50fd26f6a8efd65ec98555348137.
+- Existing Actions workflow run 39547848957 completed SUCCESS after downloading every partition before any main change and validating exact returned bytes. It verified all 200 partition SHA-256 values, all 200,000 unique source-record IDs, numeric coordinate bounds, and count/index/run identity.
+- Independently fetched durable main artifacts:
+  - overdrive/forx_50k_proof/forx-20261010-200k-01/status.json blob 00135bc7d9d7edec65b562c3a2eacce7e2c82135.
+  - overdrive/forx_50k_proof/forx-20261010-200k-01/manifest.json blob 3427da4c65636a61897ae2f947ffce0e126fd8b2.
+  - overdrive/forx_50k_proof/forx-20261010-200k-01/durable-readback-receipt.json blob 23c11566645475d8feb329c36ad654b422439625.
+  - Receipt status PASS_DURABLE_PARTITIONS_VERIFIED, exact node/source-ID count 200,000, partition hashes verified true, total partition response bytes 123,456,857; durable readback verified at 2026-10-21T05:09:01.506361Z.
+- Render 30-second sampled metrics during run: highest observed sample 104,738,820 bytes at 2026-10-21T05:04:30Z against reported 536,870,900-byte limit (~19.5%); later samples were around 89 MB. This is sampled headroom, not a claim of continuous full-rate max telemetry. No OOM/server-failure event was found in the queried post-deploy run window.
+- Workflow generalized and retained on main commit bd0e2cfcec1445cbfbe16be9542ee60aa88c7989, blob 7c94eb6aecb12ca900c52098344f74bf17ae98ee. It now supports on-demand durable capture of the current completed run without running automatically at the same time as a live service capture.
+
+### Correct disposition
+
+- **FORX bounded-memory + 200K production durable-readback acceptance: PASS for run forx-20261010-200k-01.**
+- **Issue #11 remains OPEN only for the explicitly unproven restart/resume-from-durable-checkpoint behavior** (as technically feasible), plus any future fresh-run regression that contradicts current acceptance. Keep historical OOM evidence and earlier accepted 50K/100K checkpoints; the new 200K result supersedes the old conclusion that production scale is unproven.
+- **Overdrive queue remains 0 pending; ledger/claims remain 124/124 key-aligned, 118 WAITING / 6 CLOSED / 0 READY / 0 external-ready; governance decision bucket remains 0 untriaged; whole Root Intake remains OPEN / NOT CLEARED.**
+- Other active work is unchanged: Reaper prompt runtime adoption and tracker write/readback (Q1 UNKNOWN, NOT ZERO); actual scheduled Plan A/Plan B receipts + anchor; DR-0021 and FORX-VFY-004 behavioral acceptance; RGR-03 exact 30-image source recovery; separate D04 clean-run vector or retained-source-not-found; Commercial Manager binding; Abacus source/authority hold; four HASH calibration-file exact-capture recovery; and complete source-derived cross-surface census.
+
+### Directive 23 — acceptance and continuation
+- **Expected outcome:** durable 200K proof preserved with exact source, manifest, selected count, all partition hashes, and independent readback; previous false global FORX-blocked state superseded only for this bounded run.
+- **Owner:** T-COD/FORX for restart/resume acceptance; ROOT/Intake for cross-surface reconciliation; existing owner for each separate open gate.
+- **Action:** continue restart/resume design/test against the existing output/checkpoint path. Do not add a second runtime or duplicate graph.
+- **Evidence:** successful Actions run 39547848957, durable blobs above, Render deployment/metrics and issue #11 comment 6308570808.
+- **Safety/preservation:** prior 50K/100K and OOM evidence retained; no unsupported business qualification or money-in claim from GeoNames populated-place nodes.
+- **Disposition:** current 200K production durable output PASS; restart/resume behavior OPEN; overall Root Intake OPEN / NOT CLEARED.
+- **Remaining:** prove restart/resume from an existing durable checkpoint and finish the other active cross-surface items listed above.
