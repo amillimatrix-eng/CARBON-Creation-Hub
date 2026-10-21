@@ -1,6 +1,26 @@
 name: AMX OVERDRIVE Worker
+
 on:
   push:
+    branches:
+      - main
+      - root/matrix-recovery-drain-q-20261019
+    paths:
+      - 'overdrive/runner.py'
+      - 'overdrive/payment_truth.py'
+      - 'overdrive/payment_verifier.py'
+      - 'overdrive/state.json'
+      - 'overdrive/opportunities.json'
+      - 'overdrive/claims.json'
+      - 'overdrive/payment_rails.json'
+      - 'AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json'
+      - 'AMX/ROOT/INTAKE/INTAKE_INDEX.md'
+      - 'CONTINUITY.md'
+      - 'ACCESS_CONTINUITY.md'
+      - 'scripts/matrix_recovery_control.py'
+      - 'tests/test_matrix_recovery_control.py'
+      - '.github/workflows/overdrive-recovery.yml'
+  pull_request:
     branches: [main]
     paths:
       - 'overdrive/runner.py'
@@ -8,25 +28,51 @@ on:
       - 'overdrive/payment_verifier.py'
       - 'overdrive/state.json'
       - 'overdrive/opportunities.json'
+      - 'overdrive/claims.json'
+      - 'overdrive/payment_rails.json'
+      - 'AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json'
+      - 'AMX/ROOT/INTAKE/INTAKE_INDEX.md'
+      - 'CONTINUITY.md'
+      - 'ACCESS_CONTINUITY.md'
+      - 'scripts/matrix_recovery_control.py'
+      - 'tests/test_matrix_recovery_control.py'
       - '.github/workflows/overdrive-recovery.yml'
+  schedule:
+    - cron: '0 * * * *' # Plan A: intended hourly control
+    - cron: '5,20,35,50 * * * *' # Plan B watchdog: offset 15-minute freshness checks
   workflow_dispatch:
     inputs:
       run_worker:
-        description: "Keep the commercial worker paused during infrastructure work; choose run only for an explicitly authorized manual execution."
+        description: "Commercial writer stays paused during recovery work. Select run only for separately authorized manual execution."
         required: true
         type: choice
         options:
           - paused
           - run
         default: paused
+      recovery_fallback:
+        description: "Plan B repo-only fallback; select only if no successful hourly Plan A receipt exists within 75 minutes."
+        required: true
+        type: choice
+        options:
+          - not_requested
+          - hourly_dependency_unmet
+        default: not_requested
+
 permissions:
   contents: write
+
 concurrency:
   group: amx-overdrive-main
   cancel-in-progress: false
+  # Preserve every accepted wake; default single-pending behavior replaces older pending runs.
+  queue: max
+
 jobs:
+  # The commercial worker remains explicitly manual-only. The hourly event
+  # below is a read-only control/preflight, not a hidden commercial reactivation.
   worker:
-    if: github.event_name == 'workflow_dispatch' && inputs.run_worker == 'run'
+    if: github.event_name == 'workflow_dispatch' && inputs.run_worker == 'run' && inputs.recovery_fallback != 'hourly_dependency_unmet'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -39,10 +85,8 @@ jobs:
           git config user.name "AMX OVERDRIVE"
           git config user.email "amillimatrix@gmail.com"
 
-          # GitHub schedule is the transport trigger (5-minute minimum).
-          # Once awake, OVERDRIVE keeps a bounded minute watch until the next transport wake.
-          # Each tick re-syncs durable state first so new opportunities/responses
-          # do not wait for the next hourly control run.
+          # Explicitly authorized manual execution only. This bounded window
+          # does not run for scheduled preflight, pushes, or pull requests.
           for tick in $(seq 1 4); do
             echo "AMX minute tick $tick/4"
             git pull --rebase origin main
@@ -87,3 +131,135 @@ jobs:
               assert readiness not in readiness_gates, f"gated readiness routed READY: {readiness} {claim.get('opportunity_key')}"
           print("OVERDRIVE minute execution window PASS", len(receipts), "claims", claims.get("ready_count",0))
           PY
+
+  recovery_control:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check Plan A anchor presence for first-watchdog bootstrap
+        id: anchor_state
+        if: github.event_name == 'schedule' && github.event.schedule == '5,20,35,50 * * * *'
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -f "overdrive/recovery-control/plan-a-anchor.json" ]]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run repository-only recovery control
+        env:
+          FALLBACK_REQUESTED: ${{ (github.event_name == 'schedule' && github.event.schedule == '5,20,35,50 * * * *') || (github.event_name == 'workflow_dispatch' && inputs.recovery_fallback == 'hourly_dependency_unmet') }}
+          WORKER_REQUEST: ${{ inputs.run_worker || 'paused' }}
+          SCHEDULE_EXPRESSION: ${{ github.event.schedule || '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(
+            --event "$GITHUB_EVENT_NAME"
+            --run-id "$GITHUB_RUN_ID"
+            --run-attempt "$GITHUB_RUN_ATTEMPT"
+            --run-number "$GITHUB_RUN_NUMBER"
+            --ref "$GITHUB_REF"
+            --commit-sha "$GITHUB_SHA"
+            --actor "$GITHUB_ACTOR"
+            --run-worker "$WORKER_REQUEST"
+          )
+          if [[ "$FALLBACK_REQUESTED" == "true" ]]; then
+            args+=(--fallback-requested)
+          fi
+          if [[ -n "$SCHEDULE_EXPRESSION" ]]; then
+            args+=(--schedule-expression "$SCHEDULE_EXPRESSION")
+          fi
+          python3 scripts/matrix_recovery_control.py "${args[@]}"
+
+      - name: Persist run receipt artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: amx-recovery-control-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/matrix-recovery-control/receipt.json
+          retention-days: 90
+          if-no-files-found: warn
+
+      - name: Persist Plan A success or bootstrap the first watchdog anchor
+        if: success() && ((github.event_name == 'schedule' && github.event.schedule == '0 * * * *') || (github.event_name == 'schedule' && github.event.schedule == '5,20,35,50 * * * *' && steps.anchor_state.outputs.exists == 'false'))
+        env:
+          SCHEDULE_EXPRESSION: ${{ github.event.schedule || '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          from scripts.matrix_recovery_control import (
+              PLAN_A_ANCHOR_PATH, PLAN_A_ANCHOR_SCHEMA, PLAN_A_SCHEDULE_CRON,
+              PLAN_B_WATCHDOG_CRON, read_plan_a_anchor,
+          )
+
+          receipt_path = Path("artifacts/matrix-recovery-control/receipt.json")
+          receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+          schedule = os.environ.get("SCHEDULE_EXPRESSION", "")
+          path = Path(PLAN_A_ANCHOR_PATH)
+          existing = read_plan_a_anchor(path)
+          now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+          if schedule == PLAN_A_SCHEDULE_CRON:
+              if receipt.get("control", {}).get("selected_plan") != "A":
+                  raise SystemExit("hourly Plan A did not pass its selector; anchor not advanced")
+              activated_at = str(existing["activated_at"]) if existing else str(receipt["generated_at"])
+              anchor = {
+                  "schema": PLAN_A_ANCHOR_SCHEMA,
+                  "activated_at": activated_at,
+                  "last_successful_plan_a": {
+                      "completed_at": now,
+                      "run_id": str(os.environ["GITHUB_RUN_ID"]),
+                      "run_attempt": str(os.environ["GITHUB_RUN_ATTEMPT"]),
+                      "commit_sha": str(os.environ["GITHUB_SHA"]),
+                      "receipt_sha256": hashlib.sha256(receipt_path.read_bytes()).hexdigest(),
+                      "registry_root_sha256": receipt["canonical_registry"]["computed_root_sha256"],
+                      "schedule_expression": schedule,
+                  },
+              }
+          elif schedule == PLAN_B_WATCHDOG_CRON and existing is None:
+              # The first watchdog creates the grace-window anchor only after
+              # its control receipt and artifact step succeeded. It does not
+              # execute Plan B immediately merely because the anchor was absent.
+              if receipt.get("control", {}).get("selected_plan") != "A":
+                  raise SystemExit("first watchdog must establish Plan A grace window before fallback")
+              anchor = {
+                  "schema": PLAN_A_ANCHOR_SCHEMA,
+                  "activated_at": str(receipt["generated_at"]),
+                  "last_successful_plan_a": None,
+              }
+          else:
+              raise SystemExit("anchor update requested for an unrecognized trigger/state")
+
+          path.parent.mkdir(parents=True, exist_ok=True)
+          path.write_text(json.dumps(anchor, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+          PY
+          git config user.name "AMX OVERDRIVE"
+          git config user.email "amillimatrix@gmail.com"
+          git add -- overdrive/recovery-control/plan-a-anchor.json
+          if git diff --cached --quiet; then
+            echo "Plan A anchor unchanged; no write needed."
+            exit 0
+          fi
+          git commit -m "runtime: persist Plan A liveness anchor"
+          if ! git push origin HEAD:main; then
+            echo "Concurrent main update detected; rebasing the liveness anchor and retrying once."
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
