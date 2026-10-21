@@ -4,6 +4,7 @@ on:
     paths:
       - 'backend/**'
       - 'house/remediation/**'
+      - 'customer-directory/work/evidence-house.html'
       - 'tests/**'
       - 'requirements*.txt'
       - 'Dockerfile'
@@ -13,6 +14,7 @@ on:
     paths:
       - 'backend/**'
       - 'house/remediation/**'
+      - 'customer-directory/work/evidence-house.html'
       - 'tests/**'
       - 'requirements*.txt'
       - 'Dockerfile'

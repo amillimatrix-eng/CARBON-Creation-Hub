@@ -3,6 +3,30 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#050505"><meta name="robots" content="noindex,nofollow">
 <title>AMX Evidence House — CARBON°</title><link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css">
+
+<style>
+.live-proof {margin:2rem 0;padding:clamp(1rem,3vw,2rem);border:1px solid rgba(255,255,255,.16);border-radius:1rem;background:rgba(255,255,255,.035)}
+.live-proof .lp-heading {display:flex;flex-wrap:wrap;gap:.75rem;align-items:end;justify-content:space-between}
+.live-proof .lp-heading h2 {margin:.35rem 0;font-size:clamp(1.4rem,3vw,2rem)}
+.live-proof .lp-intro {max-width:68ch;line-height:1.6;color:var(--muted,#b8b8b8)}
+.live-proof .lp-controls {display:grid;grid-template-columns:minmax(0,1fr) minmax(10rem,.4fr);gap:.75rem;margin:1.25rem 0}
+.live-proof input,.live-proof select {width:100%;min-width:0;min-height:48px;border:1px solid rgba(255,255,255,.25);border-radius:.6rem;padding:.8rem 1rem;background:#101010;color:#fff;font:inherit}
+.live-proof input:focus-visible,.live-proof select:focus-visible,.live-proof a:focus-visible {outline:3px solid #a5ffce;outline-offset:3px}
+.live-proof .lp-count {font-size:.9rem;color:var(--muted,#b8b8b8);margin:.5rem 0 1rem}
+.live-proof .lp-results {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:1rem}
+.live-proof .lp-card {min-width:0;border:1px solid rgba(255,255,255,.14);border-radius:.8rem;padding:1rem;background:rgba(0,0,0,.3)}
+.live-proof .lp-card h3 {font-size:1.15rem;line-height:1.35;margin:.4rem 0 .65rem;overflow-wrap:anywhere}
+.live-proof .lp-topline {display:flex;flex-wrap:wrap;gap:.45rem;align-items:center}
+.live-proof .lp-badge {display:inline-block;border:1px solid rgba(165,255,206,.5);border-radius:99px;padding:.2rem .55rem;font-size:.75rem;letter-spacing:.04em}
+.live-proof .lp-id,.live-proof .lp-meta {font-size:.78rem;color:var(--muted,#b8b8b8);overflow-wrap:anywhere}
+.live-proof .lp-card p {line-height:1.55}
+.live-proof .lp-card h4 {font-size:.83rem;text-transform:uppercase;letter-spacing:.08em;color:#c9c9c9;margin:1rem 0 .35rem}
+.live-proof .lp-sources {display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.live-proof .lp-sources a {display:inline-block;border:1px solid rgba(255,255,255,.22);border-radius:.45rem;padding:.55rem .7rem;color:#fff;text-decoration:underline;text-underline-offset:3px}
+.live-proof .lp-disclosure {font-size:.84rem;line-height:1.5;color:var(--muted,#b8b8b8);margin-top:1.1rem}
+.live-proof .lp-empty {padding:1.25rem;border:1px dashed rgba(255,255,255,.3);border-radius:.7rem}
+@media(max-width:620px){.live-proof .lp-controls{grid-template-columns:1fr}.live-proof .lp-card{padding:.9rem}}
+</style>
 </head><body class="detail-body">
 <header class="detail-topbar">
   <a class="brand-wrap" href="../"><span class="brand-lockup"><span class="brand-c"><img src="../assets/carbon-degree-mark.svg" alt=""></span><span class="brand-rest">ARBON<sup>°</sup></span></span><span class="brand-sub">by AMilliMATRiX</span></a>
@@ -18,5 +42,97 @@
 <article class="detail-card"><h2>What it demonstrates</h2><ul><li>Evidence-linked retrieval and synthesis</li><li>Flexible workflow design across multiple tools and sources</li><li>Structured source handling</li><li>Inspectable implementation and testing</li></ul></article>
 <article class="detail-card"><h2>Why it matters</h2><p>Useful systems do more than return an answer. They preserve enough context for another person or process to inspect what the answer rests on.</p></article>
 </section>
+
+<section class="live-proof" id="live-proof" aria-labelledby="live-proof-title">
+  <div class="lp-heading">
+    <div><span class="kicker">LIVE PROOF / PUBLIC-SAFE INDEX</span><h2 id="live-proof-title">Find the evidence behind the claim.</h2></div>
+    <span class="lp-badge">SOURCE-BOUND</span>
+  </div>
+  <p class="lp-intro">Search the selected public-safe evidence records by capability, result or keyword. Each result shows what was tested, the bounded outcome, when it was recorded and what it does not prove.</p>
+  <div class="lp-controls">
+    <label><span class="lp-meta">Search evidence</span><input id="lp-query" type="search" placeholder="Try: strategic accounts, Search tests, commercial workflow" autocomplete="off" aria-controls="lp-results"></label>
+    <label><span class="lp-meta">Area</span><select id="lp-area" aria-controls="lp-results"><option value="all">All areas</option><option value="commercial">Commercial</option><option value="delivery">Product delivery</option><option value="systems">Systems and workflow</option></select></label>
+  </div>
+  <p id="lp-count" class="lp-count" aria-live="polite">Loading public-safe evidence…</p>
+  <div id="lp-results" class="lp-results" aria-live="polite"><div class="lp-empty">Loading the current evidence index.</div></div>
+  <p class="lp-disclosure">Protected and unverified records are intentionally excluded from this public interface. A PASS label applies only to the exact record and test scope shown; it is not a guarantee of buyer acceptance, payment or general performance outside that scope.</p>
+</section>
+
 <section class="detail-cta"><span class="kicker">PRIVATE REVIEW</span><h2>Want the deeper package?</h2><p>CARBON° can provide the relevant review material, technical context or controlled sample for a qualified conversation.</p><a class="button primary" href="../contact.html#review">Request a private review</a></section>
-</main><footer><span>© 2026 CARBON° / AMilliMATRiX</span><span>THE ° OF BUSINESS</span><span class="footer-links"><a href="../privacy.html">Privacy</a><a href="../contact.html">Contact</a></span></footer></body></html>
+</main><footer><span>© 2026 CARBON° / AMilliMATRiX</span><span>THE ° OF BUSINESS</span><span class="footer-links"><a href="../privacy.html">Privacy</a><a href="../contact.html">Contact</a></span></footer>
+<script>
+(function(){
+  "use strict";
+  var allowed = {
+    "EVID-COMMERCIAL-001":"commercial",
+    "EVID-BUILD-DELIVERY-001":"delivery",
+    "EVID-OVERDRIVE-001":"systems"
+  };
+  var links = {
+    "EVID-COMMERCIAL-001":[{label:"Public-safe evidence record",url:"https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/COMMERCIAL_EVIDENCE_RECOVERY_20261010.md"}],
+    "EVID-BUILD-DELIVERY-001":[{label:"Search / Marketplace promotion record",url:"https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/16"},{label:"Current convergence status",url:"https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/18"}],
+    "EVID-OVERDRIVE-001":[{label:"PRI receipt",url:"https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/overdrive/pri/receipts/PRI-0000000001-LAVDM-RESPONSE-20260930.json"},{label:"iSCOPE receipt",url:"https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/overdrive/iscope/receipts/ISCOPE-0000000001-CHERRYONE-QUALIFIED-20260930.json"}]
+  };
+  var query=document.getElementById("lp-query");
+  var area=document.getElementById("lp-area");
+  var results=document.getElementById("lp-results");
+  var count=document.getElementById("lp-count");
+  var dataset=[];
+  function node(tag,cls,txt){var n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined)n.textContent=String(txt);return n;}
+  function section(card,title,value){if(!value)return;card.appendChild(node("h4","",title));card.appendChild(node("p","",value));}
+  function render(){
+    var q=query.value.trim().toLowerCase();
+    var selected=area.value;
+    var found=dataset.filter(function(r){
+      if(selected!=="all"&&allowed[r.evidence_id]!==selected)return false;
+      var corpus=[r.evidence_id,r.capability,r.artifact,r.date_version,r.interview_safe_explanation,r.acceptance_test,r.T10_JOB,r.T10_ACTUAL,r.T10_CHANGE,r.T10_REMAINING_GAP].concat(r.tags||[]).join(" ").toLowerCase();
+      return !q||corpus.indexOf(q)!==-1;
+    });
+    results.replaceChildren();
+    count.textContent=found.length+" of "+dataset.length+" public-safe records";
+    if(!found.length){results.appendChild(node("div","lp-empty","No matching public-safe record. Try a broader term or select All areas."));return;}
+    found.forEach(function(r){
+      var card=node("article","lp-card");
+      var top=node("div","lp-topline");
+      top.appendChild(node("span","lp-badge",r.T10_PASS==="PASS"?"PASS":"HOLD"));
+      top.appendChild(node("span","lp-id",r.evidence_id));
+      card.appendChild(top);
+      card.appendChild(node("h3","",r.capability||r.artifact||r.evidence_id));
+      card.appendChild(node("p","lp-meta","Recorded: "+(r.date_version||"Date not stated")+" · Freshness: "+(r.status_freshness||"UNKNOWN")));
+      section(card,"What this is",r.interview_safe_explanation||r.T10_JOB);
+      section(card,"What was demonstrated",r.T10_ACTUAL||r.acceptance_test);
+      section(card,"Acceptance / test boundary",r.acceptance_test);
+      section(card,"Change recorded",r.T10_CHANGE);
+      section(card,"Remaining gap / what this does not prove",r.T10_REMAINING_GAP);
+      if(r.evidence_id==="EVID-COMMERCIAL-001"){
+        section(card,"Source handling","Public-safe bounded claims are shown here; underlying CV and primary screenshot remain controlled. Source hash: "+(r.source_hash||"not supplied")+" .");
+      }
+      var src=links[r.evidence_id]||[];
+      if(src.length){
+        var row=node("div","lp-sources");
+        src.forEach(function(item){
+          var a=node("a","",item.label);a.href=item.url;a.target="_blank";a.rel="noopener noreferrer";row.appendChild(a);
+        });
+        card.appendChild(row);
+      }
+      results.appendChild(card);
+    });
+  }
+  query.addEventListener("input",render);
+  area.addEventListener("change",render);
+  fetch("https://raw.githubusercontent.com/amillimatrix-eng/CARBON-Creation-Hub/main/evidence/index.json",{cache:"no-store",credentials:"omit",mode:"cors"})
+    .then(function(res){if(!res.ok)throw new Error("Evidence index returned HTTP "+res.status);return res.json();})
+    .then(function(data){
+      if(!data||!Array.isArray(data.records))throw new Error("Evidence index has no records array");
+      dataset=data.records.filter(function(r){return Object.prototype.hasOwnProperty.call(allowed,r.evidence_id);});
+      dataset.sort(function(a,b){return ["commercial","delivery","systems"].indexOf(allowed[a.evidence_id])-["commercial","delivery","systems"].indexOf(allowed[b.evidence_id]);});
+      if(!dataset.length)throw new Error("No allowlisted public-safe records were found");
+      render();
+    })
+    .catch(function(err){
+      count.textContent="Public-safe evidence unavailable";
+      results.replaceChildren(node("div","lp-empty","The evidence index could not be loaded. No result is inferred. Please retry later. Details: "+err.message));
+    });
+})();
+</script>
+</body></html>
