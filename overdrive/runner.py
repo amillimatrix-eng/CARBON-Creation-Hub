@@ -429,9 +429,10 @@ def missing_record_upsert(task, opportunities):
 
     This is deliberately narrower than generic CRM creation. It only repairs an
     external-execution-without-record gap under existing iSCOPE/PRI identity rules.
-    Existing records are left unchanged unless the exact same identity, state, and
-    source evidence can be proven; that exact replay is an idempotent no-op receipt.
-    New evidence or mismatched state must use EVIDENCE_TRANSITION instead.
+    Existing records are left unchanged on exact evidence replay. A conflicting source ID
+    can be corrected only when the queue carries a linked independent Sent Items readback
+    matching the canonical key, provider item ID, subject and recipient; the old value is
+    preserved in correction history. Every other mismatch fails closed.
     """
     payload = task["payload"]
     records = opportunities.setdefault("records", {})
