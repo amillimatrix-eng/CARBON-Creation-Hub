@@ -4170,3 +4170,30 @@ A further read-only Dropbox search of `colour registry`, `BUILD CANON GOVERNANCE
 - Exact current PR head and base SHA values for all 11 open PRs were fetched from GitHub and recorded under “Exact PR source identities” in that addendum. Each entry remains OPEN/UNMERGED; head SHAs do not replace changed-file blob SHAs, testing, or runtime acceptance.
 - Current PR #68 head is `c9e60ff2e84e6bf5752046c0f28d0d0fe0781555`, base `e4f1a697f669453777bec45976fd7111c5707042`. It is included because the earlier 24-record index snapshot predates it.
 - The current PR head register is a source-bound snapshot; refresh before any consequential action and preserve prior values as historical provenance.
+
+
+## 2026-10-21 — SUPERSEDING LIVE FLIGHT READBACK / FORKS-ROI RECEIPT RECOVERY
+
+This supersedes the earlier same-day sentence that all three current shared Flight runs were IN_PROGRESS. Earlier run states remain historical provenance.
+
+| Slot | Current actual run ID | Current scheduler status | Current evidence |
+|---|---|---|---|
+| Flight 1 | `b926cd09-6f4c-8320-affd-6309b2879dae` | COMPLETED at `2026-10-21T21:50:26.211962Z` | Output says `WAKE START VERIFIED / EXECUTION OPEN / MATRIX NOT CLEARED`. It source-verified Registry v1.3 and FORKS-ROI mandate hash; partitioned existing issue #31 to Flight 1; identified the 124 declared vs 125 actual opportunity-record invariant and routed T-GOV/T-COD disposition. It explicitly reports its required in-run FORKS-ROI receipt was not persisted. An after-run recovery receipt was subsequently inserted and independently fetched back on the existing Notion Root Intake, but this does not prove the receipt existed during the original run or convert that run to FORKS-ROI PASS. |
+| Flight 2 | `84e9bf4d-0c24-832d-ac88-52db68368b9a` | IN_PROGRESS | Current partial output validates this actual run ID and shared wake `AMX-MATRIX-WAKE-20261021-0534Z`; terminal result and per-item receipt set not yet available. |
+| Flight 3 | `5d681cc8-020c-832f-af74-308aa4b779d2` | IN_PROGRESS | Current partial output independently recomputes Registry v1.3 root and FORKS-ROI mandate digest as matching; complete FORKS resolution sequence and final per-run receipts remain open. |
+
+All three existing tasks remain enabled; IDs and daily schedule values have not been changed. `next_run_time=null` remains a liveness dependency: current invocation evidence does not prove recurring delivery.
+
+### Flight-register join still open
+The current DYNAMIC_FLIGHT_PATH_REGISTER does not yet link these three task/run identities into a terminal joined receipt chain. It contains a different active Flight ID with its own segment/prior-event chain. Do not fabricate a new flight identity, backdate a segment, overwrite that chain, or treat a shared-wake label alone as proof of atomic fan-out. ROOT/MASTER must resolve the proper existing register path and preserve both lineages.
+
+### FORKS-ROI receipt status
+- Flight 1's own output states that its in-run FORKS-ROI receipt did not persist; it remains PARTIAL / ACCEPTANCE OPEN.
+- Flight 3 has a verified current mandate/Registry preflight, but not a final FORKS-ROI outcome receipt or proof that all findings were routed and accepted.
+- Flight 2 has not yet supplied a terminal outcome in the current readback.
+- The post-run receipt-recovery entry is now persisted in the existing Root Intake and independently fetched back. It is a recovery record, not retroactive in-run evidence.
+
+**Root Intake remains OPEN / NOT CLEARED.** No new worker/scheduler/queue was created, no Canon or mandate digest changed, and no valid in-scope write was blocked by a blanket PR-only rule.
+
+### Shared Master Index / colour registry limitation
+The existing Three-Root Library Split Register confirms the authoritative shared surface is `AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1`, but its live rows are not available through the connected current tools. The authoritative unique BUILD/CANON/GOVERNANCE marker mapping remains not located after current GitHub-account, current-repository, Notion and Dropbox queries and examination of the uploaded Canon/build/governance files. Do not infer global absence, invent new colours or allocate a colour without a source-backed collision check. Textual domain classifications are visible in this Index now; exact registered colour implementation is a bounded T-GOV-owned HOLD with MASTER provenance support and T-COD/T-MED implementation after the mapping is found/dispositioned.
