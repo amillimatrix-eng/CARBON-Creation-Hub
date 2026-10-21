@@ -4080,3 +4080,12 @@ Directive 23: outcome = correct scheduler census and avoid false runtime complet
 **Colour/marker state:** Existing MASTER=WHITE, ROOT=RED, GOLD/WHITE/BLACK separation and product-context palette remain preserved. The authoritative unique colour/marker registry for BUILD/CANON/GOVERNANCE streams was not located in current scoped sources. Textual domain classes are active now; no new permanent stream colours were assigned. ROOT/T-GOV + MASTER + T-COD + T-MED own registry discovery, collision check, implementation and readback through the existing process.
 
 **Automation prompt propagation blocker:** Three existing shared Matrix Flight prompts were updated and read back in place; task IDs, schedules and enabled flags are unchanged. The saved prompts for the legacy hourly FIRST BREATH — LIBRARIANS and FORX tasks could not be updated: the automation platform returned `Your current plan does not support hourly schedules` for each prompt-only update. No cadence was changed and neither disabled task was enabled. Recovery is assigned to ROOT/T-GOV + MASTER/LIBRARIAN and the existing scheduler/tool owner; use a supported in-place update or governed temporary Plan B without creating duplicate tasks. The current running Flight 1 predates the prompt update, so its uptake is not yet proven.
+
+ 
+## 2026-10-21 — [CYAN] ADDENDUM B: COLOUR / MARKER REGISTRY SEARCH
+- Parent chain: `CATEGORY_A_LIBRARIAN_RESPONSIBILITY_ALIGNMENT_AND_HASH_ROUTING_20261021.md` → `CATEGORY_A_LIBRARIAN_RESPONSIBILITY_ALIGNMENT_ADDENDUM_B_COLOUR_REGISTRY_SEARCH_20261021.md`.
+- Addendum B Git blob SHA: `0e1dc6339e74f9c4478d1f332499e33dec9e7b09`; commit: `073da9c1f43928b119dd8549537e424422282add`.
+- Additional evidence: uploaded Canon / Root Folder Reorganization / Master Build File Update / Librarian Review Canon Freeze / Governance Amendment V1 hashes recorded inside Addendum B.
+- Finding: GOLD/WHITE/BLACK semantics and MASTER=WHITE / ROOT=RED topology are preserved; no authoritative unique BUILD/CANON/GOVERNANCE stream-colour mapping or BAZOOKA colour was found in scoped sources. No colour was guessed or newly assigned.
+- Owners: ROOT/T-GOV (authoritative registry and collision disposition), MASTER/LIBRARIAN (Index/provenance), T-COD/T-MED (implementation/readback after approved mapping).
+- State: INDEXED EVIDENCE / MARKER REGISTRATION OPEN; this is not Canon, not a new registry, and not Root Intake clearance.
