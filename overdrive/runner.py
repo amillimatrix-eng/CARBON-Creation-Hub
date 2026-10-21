@@ -280,8 +280,6 @@ def missing_record_upsert(task, opportunities):
     key = str(payload.get("opportunity_key") or "").strip()
     if not key:
         raise ValueError("opportunity_key is required")
-    if key in records:
-        raise ValueError("opportunity already exists; use EVIDENCE_TRANSITION")
 
     identity = payload.get("identity") or {}
     organization = str(identity.get("organization") or "").strip()
