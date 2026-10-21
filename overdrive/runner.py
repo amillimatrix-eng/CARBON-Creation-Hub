@@ -217,19 +217,18 @@ def _identity_token(value):
     return " ".join(str(value or "").strip().lower().split())
 
 def missing_record_upsert(task, opportunities):
-    """Create one missing canonical commercial record from attributable external evidence.
+    """Create or safely reconcile one evidenced canonical commercial record.
 
-    This is deliberately narrower than generic CRM creation. It only repairs an
-    external-execution-without-record gap under existing iSCOPE/PRI identity rules.
-    Existing records must use EVIDENCE_TRANSITION instead.
+    New records require a clean identity check. If a previously queued upsert is
+    replayed after the same evidence has already created its keyed record, return
+    an idempotent receipt result without replacing or mutating the richer record.
+    A matching key alone is never sufficient to treat a duplicate as reconciled.
     """
     payload = task["payload"]
     records = opportunities.setdefault("records", {})
     key = str(payload.get("opportunity_key") or "").strip()
     if not key:
         raise ValueError("opportunity_key is required")
-    if key in records:
-        raise ValueError("opportunity already exists; use EVIDENCE_TRANSITION")
 
     identity = payload.get("identity") or {}
     organization = str(identity.get("organization") or "").strip()
@@ -253,6 +252,51 @@ def missing_record_upsert(task, opportunities):
     if not any(str(e.get("kind", "")).upper() in required for e in evidence):
         raise ValueError(f"{target} requires attributable evidence for missing-record ingestion")
 
+    observed_at = payload.get("observed_at")
+    next_action = str(payload.get("next_action") or "").strip()
+    if not observed_at or not next_action:
+        raise ValueError("observed_at and next_action are required")
+
+    if key in records:
+        existing = records[key]
+        incoming_signatures = {
+            (str(e.get("kind", "")).upper(), str(e.get("source_id", "")).strip())
+            for e in evidence
+        }
+        existing_signatures = {
+            (str(e.get("kind", "")).upper(), str(e.get("source_id", "")).strip())
+            for e in existing.get("evidence", [])
+            if e.get("kind") and e.get("source_id")
+        }
+        recipient = str(payload.get("recipient") or "").strip().lower()
+        existing_recipient = str(existing.get("recipient") or "").strip().lower()
+        matches_existing = (
+            str(existing.get("state") or "").upper() == target
+            and str(existing.get("execution_owner") or "") == owner
+            and _identity_token(existing.get("domain")) == _identity_token(domain)
+            and (not recipient or recipient == existing_recipient)
+            and incoming_signatures.issubset(existing_signatures)
+        )
+        if not matches_existing:
+            raise ValueError(
+                "opportunity already exists but does not match the queued state, owner, "
+                "domain, recipient, and source evidence; manual reconciliation required"
+            )
+        return {
+            "adapter": "MISSING_RECORD_UPSERT",
+            "opportunity_key": key,
+            "to": target,
+            "created": False,
+            "reconciled_existing": True,
+            "evidence": evidence,
+            "critic": {
+                "factual_claims": "PASS_EXISTING_SOURCE_EVIDENCE",
+                "duplicate_identity": "PASS_EXACT_KEY_AND_ATTRIBUTION",
+                "commercial_state": "PASS_UNCHANGED",
+                "external_action": "NOT_PERFORMED_BY_ADAPTER",
+            },
+        }
+
     org_token = _identity_token(organization)
     opp_token = _identity_token(opportunity)
     domain_token = _identity_token(domain)
@@ -264,11 +308,6 @@ def missing_record_upsert(task, opportunities):
         same_domain_identity = domain_token and existing_domain == domain_token and existing_opp and existing_opp == opp_token
         if same_named_identity or same_domain_identity:
             raise ValueError(f"possible duplicate canonical identity: {existing_key}")
-
-    observed_at = payload.get("observed_at")
-    next_action = str(payload.get("next_action") or "").strip()
-    if not observed_at or not next_action:
-        raise ValueError("observed_at and next_action are required")
 
     record = {
         "state": target,
@@ -299,6 +338,7 @@ def missing_record_upsert(task, opportunities):
         "opportunity_key": key,
         "to": target,
         "created": True,
+        "reconciled_existing": False,
         "evidence": evidence,
         "critic": {
             "factual_claims": "PASS_EVIDENCE_GATED",
