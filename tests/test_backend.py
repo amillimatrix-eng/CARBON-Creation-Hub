@@ -282,6 +282,7 @@ def test_public_evidence_routes_never_return_controlled_source_metadata(tmp_path
     seed = json.loads(seed_path.read_text(encoding="utf-8"))
     seed_record = seed["records"][0]
     seed_record.update({
+        "capability": "CARBON production / governed AI workflow",
         "authoritative_source": "PRIVATE_SOURCE_SENTINEL",
         "source_pointer": "PRIVATE_POINTER_SENTINEL",
         "source_hash": "PRIVATE_SOURCE_HASH_SENTINEL",
