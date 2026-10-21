@@ -3639,3 +3639,12 @@ A prior same-run attempt directly updated main outside the recorded PR/runtime g
 - **Safety/preservation:** no buyer message, duplicate offer, manual queue close, new scheduler/worker, bypassed workflow guard, OTP/credentials, payment claim, or money-in claim.
 - **Disposition:** DRAIN-Q **OPEN** (3 pending); projection gap OPEN (124 ledger / 108 claims / 102 signals); scheduler wake BLOCKED; money-in NOT VERIFIED; Root Intake NOT CLEARED.
 - **Remaining work:** execute the existing writer through authenticated workflow dispatch; independently verify receipts and pending=0; reconcile claim/signal parity; then continue item-by-item across legitimate ready work and owner/provider/buyer waits without relabeling waiting work as complete.
+
+
+## 2026-10-21 — current DRAIN-Q projection readback after PR #62
+
+- Fresh current-main reads now show `overdrive/opportunities.json` = 124 canonical records (blob `ad68d01e7f631acab65a56fb47713b95245c2201`), `overdrive/claims.json` = 124 claims (blob `506bbb9558272b21ca1604f59d9faab261cef0e0`), and `overdrive/signals.json` = 124 ledger projections / 96 PRI / 22 iSCOPE (blob `01590d33b684eec60e7b77c5b6795a4578ce53c2`). Claim readback: 124/124 keys represented, 0 state mismatches, 118 WAITING / 6 CLOSED, 0 READY / 0 external-ready.
+- Projection commits are `814f1d4dc4374c327f6f2470452d59ebb2dbe705` (claims) and `76730daef4f40a536eb6f48ce252eb436021bec1` (signals). These are projection changes only and are not represented as an actual worker tick.
+- Current `overdrive/state.json` remains sequence 23, 23 COMPLETED / 3 PENDING, last actual tick `2026-10-16T08:40:31.786740+00:00`. PR #62 is merged at `08ab4cdd754bfaddd36ffe1b7aedbdecea964791`; queue consumption still requires the existing authenticated `workflow_dispatch` with `run_worker=run` and `recovery_fallback=not_requested`.
+- The current connected GitHub tools in this session do not expose workflow dispatch; no actual commercial worker job, queue receipt, external action, or payment is claimed. Follow the existing workflow at https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/workflows/overdrive-recovery.yml. Preserve the existing queue and all lifecycle gates; never mark the three items complete manually.
+- **Disposition:** projection parity PASS; adapter queue OPEN / 3 PENDING; commercial worker execution NOT EVIDENCED; money-in NOT VERIFIED; Root Intake NOT CLEARED. This note supplements, not replaces, the same-run receipt index and the current correction in Delta 19/20.
