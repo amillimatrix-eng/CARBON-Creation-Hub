@@ -4260,3 +4260,21 @@ The existing Three-Root Library Split Register confirms the authoritative shared
 **Lifecycle:** INDEXED / OPEN remediation only. Current detail and scoped hold: [Issue #31, comment 6376683430](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6376683430). Existing parent artifact: [MASTER_BUILD_WEIGHTED_CONTINUITY_LINKAGE_20261009.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MASTER_BUILD_WEIGHTED_CONTINUITY_LINKAGE_20261009.md), blob `41fc223339e4d33179fe334e4e50746b54872d9e`.
 
 The pre-existing assigned action belongs to MASTER/BUILD + T-COD; ROOT / MASTER / T-GOV verify. Its exact canonical V1 Master Build execution-source path was not identified in the targeted current repository/Notion/Dropbox searches. Do not guess a path or create an alternate source. The smallest authorized correction is an additive link to the existing Weighted Continuity Blue State requirement, preserving historical bytes and frozen CARBON Search V1 acceptance. Until the exact target is verified and the link independently read back, the linkage remains OPEN. No Master Build/Canon/Registry/Blue State/scheduler state changed in this pass.
+
+
+## 2026-10-24 — STALE-SNAPSHOT SURFACING / FRESHNESS-BOUNDARY CORRECTION
+
+**Lifecycle:** INDEXED / administrative visibility correction. No Canon, merge, scheduler, ledger, claim or runtime state changed.
+
+**Finding:** two existing high-visibility surfaces presented older snapshots as their opening summary even though later source-specific readbacks existed:
+- Root Intake Issue #31’s body opened with older ledger-count/proposal snapshots; its later 2026-10-24 reconciliation comment and this Index’s current readback held newer source state.
+- PR #68’s description still described `record_count=124`, 125 keys, and a static correction to 125, while current main `overdrive/opportunities.json` read `record_count=126` and 126 keys (blob `e78c6e670a22f07fc646162085853b7dedf2210a`). PR #68 is OPEN / UNMERGED / NOT MERGEABLE and must not merge as-is. PR #67 remains the competing draft path; T-COD must reconcile exact-head implementation/tests, and ROOT/T-GOV retains merge/disposition authority.
+
+**Administrative corrections, independently read back:**
+- [Issue #31](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31): added a top-level current-status/freshness boundary, preserving the complete prior body verbatim below it. Current Root Intake remains OPEN / NOT CLEARED; total deduplicated cross-surface count remains UNKNOWN.
+- [PR #68](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/68): added a top-level candidate freshness boundary, preserving its original description verbatim and warning DO NOT MERGE AS-IS. No code/branch/ledger/claim was changed; PR state remains OPEN / UNMERGED / NOT MERGEABLE.
+
+**Root-cause assessment:** this is confirmed stale-snapshot *presentation and projection* debt, not evidence that all of AMX is stale. Append-only comments preserved provenance but did not automatically replace an issue/PR’s opening body. Separately, the claims projection is a genuinely older snapshot: 125 entries generated 2026-10-21 against the 126-record ledger last reconciled 2026-10-23. Its exact intended inclusion semantics must be verified by T-COD/current owner before altering records; the unresolved PayPal candidate remains DISCOVERED / HOLD pending consent and provider eligibility. Do not insert a synthetic claim or treat the projection mismatch as permission to weaken readiness gates.
+
+**Next owners / acceptance:** MASTER keeps this freshness pointer aligned with canonical reads; T-COD verifies claims-projection generation semantics and resolves the existing PR #67/#68 overlap on an exact current-main base; ROOT/T-GOV decides the existing merge/disposition route. Acceptance requires refreshed source-specific readbacks, exact-head tests, claims/ledger reconciliation without lost lifecycle/history, and no promotion of evidence to Canon. Scheduler remains unrepaired and Root Intake remains NOT CLEARED.
+
