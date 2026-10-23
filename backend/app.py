@@ -258,7 +258,8 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
 
         if str(record.get("status", "")).upper() in {"REVOKED", "CANCELLED"}:
             raise HTTPException(status_code=404, detail="proposal not found")
-        public_fields = {"proposal_ref", "business_name", "status", "issued_at", "validity_hours", "full_proposal_url",
+        public_fields = {"proposal_ref", "offer_version", "predecessor_ref", "successor_ref",
+                         "business_name", "status", "issued_at", "validity_hours", "full_proposal_url",
                          "headline", "subhead", "visual_note", "visuals", "market_context", "offer", "modules", "sources"}
         projected = {k: v for k, v in record.items() if k in public_fields}
         issued_at = projected.get("issued_at")
@@ -270,6 +271,9 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             quote_status = status
         elif not issued_at:
             quote_status = "DRAFT_NOT_ISSUED"
+        elif not str(projected.get("proposal_ref") or "").strip() or not str(projected.get("offer_version") or "").strip():
+            # Never represent an issued quote as active if immutable identity/version cannot bind acceptance.
+            quote_status = "VERSION_UNBOUND"
         else:
             try:
                 issued = datetime.fromisoformat(str(issued_at).replace("Z", "+00:00"))
@@ -306,6 +310,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             raise HTTPException(status_code=503, detail="verified PRI customer/thread association required")
         identity = {"opportunity_key": opportunity_key, "thread_id": record["thread_id"],
                     "customer_id": association["customer_id"], "proposal_ref": proposal["proposal_ref"],
+                    "offer_version": proposal.get("offer_version"),
                     "action": payload.action, "selected_modules": selected,
                     "message": payload.message.strip(), "contact": payload.contact.strip()}
         request_id = "CPR-" + hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()[:24].upper()

@@ -18,6 +18,7 @@ def portal_client(tmp_path: Path, monkeypatch) -> TestClient:
         "proposals": {
             "test-token": {
                 "proposal_ref": "TEST-001",
+                "offer_version": "v1",
                 "opportunity_key": "test-opportunity",
                 "thread_id": "original-thread",
                 "customer_id": "verified-customer",
@@ -45,6 +46,22 @@ def test_draft_quote_does_not_start_validity_clock(tmp_path, monkeypatch):
     assert body["quote_status"] == "DRAFT_NOT_ISSUED"
     assert body["valid_until"] is None
     assert body["validity_hours"] == 24
+    assert body["proposal_ref"] == "TEST-001"
+    assert body["offer_version"] == "v1"
+
+
+def test_issued_quote_without_version_fails_closed(tmp_path, monkeypatch):
+    c = portal_client(tmp_path, monkeypatch)
+    private_registry = tmp_path.parent / (tmp_path.name + "-private-proposals.json")
+    payload = json.loads(private_registry.read_text(encoding="utf-8"))
+    proposal = payload["proposals"]["test-token"]
+    proposal["issued_at"] = "2026-10-19T10:00:00Z"
+    proposal.pop("offer_version")
+    private_registry.write_text(json.dumps(payload), encoding="utf-8")
+    r = c.get("/api/proposals/test-token")
+    assert r.status_code == 200
+    assert r.json()["quote_status"] == "VERSION_UNBOUND"
+    assert r.json()["valid_until"] is None
 
 
 def test_customer_portal_route_and_unknown_token(tmp_path, monkeypatch):
@@ -83,5 +100,7 @@ def test_change_request_is_non_binding_and_filters_unknown_modules(tmp_path, mon
     receipt_path = tmp_path / "data/proposal_requests.jsonl"
     receipt = json.loads(receipt_path.read_text(encoding="utf-8").splitlines()[-1])
     assert receipt["selected_modules"] == ["SOCIAL"]
+    assert receipt["proposal_ref"] == "TEST-001"
+    assert receipt["offer_version"] == "v1"
     assert receipt["binding"] is False
     assert "does not automatically" in receipt["note"]
