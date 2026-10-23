@@ -4234,3 +4234,21 @@ The existing Three-Root Library Split Register confirms the authoritative shared
 - Action owner: T-COD binds the correct current internal metadata consumer; ROOT/T-GOV owns the stream marker mapping/collision disposition; T-MED implements approved presentation; MASTER/ROOT preserve Index/Intake/provenance; FORX verifies actual downstream acceptance.
 - Safety boundary: no internal owner/run/lifecycle metadata is added to public House routes; PR #66's public-field allow-list remains open/unmerged in the inspected snapshot. No blanket write restrictions are introduced.
 - Status: text-domain metadata active; internal target/marker mapping/visual implementation and behavioral acceptance remain OPEN. Root Intake NOT CLEARED.
+
+---
+
+# CURRENT ROOT INTAKE READBACK — 2026-10-24
+
+**Lifecycle:** INDEXED / source-backed operational snapshot. This is an append-only navigation/readback record, not a Merge, Canon, or Master Build change. Prior snapshots and hashes remain historical provenance.
+
+**Current detailed census and owner actions:** [Issue #31 — Current Root Intake reconciliation, comment 6376641725](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6376641725). The comment was independently retrieved from the existing issue-comment surface. Use it for the source-bound scheduler, flight, ledger, repository-slice and immediate next-action detail.
+
+**Verified count boundaries as of 2026-10-24:**
+- Complete deduplicated cross-surface Root Intake total: **UNKNOWN / NOT MEASURED**; Matrix remains **OPEN / NOT CLEARED**.
+- GitHub repository: 15 open issues + 11 open PRs = 26 records; this is not whole-Intake cardinality.
+- Scheduler: 25 saved automations; 3 enabled (the existing Matrix Flights 1–3), 22 disabled; every task currently returns next_run_time=null. The earlier 20-Oct “0 enabled” value remains historical, not current.
+- OVERDRIVE opportunity ledger: 126 record keys and record_count=126, last reconciled 2026-10-23. The older claims projection remains at 125 records from 2026-10-21, zero ready/external-ready, empty executable order; the missing key is the 23-Oct PayPal payment-rail candidate. Regeneration/readback remains open through the existing authorized runtime path.
+- PR #68's static count=125 patch is stale against current main and must not merge as-is. PR #67's dynamic count invariant is the relevant existing candidate but remains draft and requires a current-base exact-head test/readback. ROOT/T-GOV and T-COD retain the existing decision/implementation boundaries.
+- The existing Root Intake and flight register preserve Flight 1's missing in-run receipt, Flight 2's native failure / unknown cause, Flight 3's completion with partial output, and unresolved future recurrence. No scheduler repair or global acceptance is claimed.
+
+**Disposition:** this pointer is a navigation correction only. It does not clear any item or promote any artifact. Use the existing current-matrix rules and Category B drain directive; preserve provenance, continue independent authorized work, and require per-item action plus durable receipt and independent readback.
