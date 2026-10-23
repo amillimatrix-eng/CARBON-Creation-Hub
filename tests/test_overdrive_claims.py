@@ -578,5 +578,135 @@ class SemanticNoOpPersistenceTest(unittest.TestCase):
         self.assertEqual(first, second)
 
 
+class OpportunityLedgerCountInvariantTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        base = Path(self.tmp.name)
+        previous_root = runner.ROOT
+        runner.ROOT = base
+        self.addCleanup(setattr, runner, "ROOT", previous_root)
+        runner.STATE = base / "state.json"
+        runner.OPPORTUNITIES = base / "opportunities.json"
+        runner.SIGNALS = base / "signals.json"
+        runner.CLAIMS = base / "claims.json"
+        runner.LOCK = base / ".tick.lock"
+        runner.RECEIPTS = base / "receipts"
+        runner.RECEIPTS.mkdir()
+        runner.REQUESTS = base / "missing-requests.jsonl"
+
+    def test_reconcile_derives_current_count_and_preserves_last_run(self):
+        historical_run = {"full_ledger_count": 62, "run_at": "2026-10-03T17:42:00Z"}
+        opportunities = {
+            "record_count": 124,
+            "records": {f"OPP-{i:03d}": {"state": "WAITING"} for i in range(125)},
+            "last_run": dict(historical_run),
+        }
+
+        count = runner.reconcile_opportunity_count(opportunities)
+
+        self.assertEqual(count, 125)
+        self.assertEqual(opportunities["record_count"], len(opportunities["records"]))
+        self.assertEqual(opportunities["last_run"], historical_run)
+
+    def test_quiet_tick_persists_count_repair_and_is_idempotent(self):
+        historical_run = {
+            "run_at": "2026-10-03T17:42:00Z",
+            "full_ledger_count": 62,
+            "run_id": "historical-run-do-not-rewrite",
+        }
+        runner.write(runner.STATE, {
+            "version": 2, "adapter_status": "OPERATIONAL", "sequence": 0, "queue": []
+        })
+        runner.write(runner.OPPORTUNITIES, {
+            "record_count": 124,
+            "last_run": historical_run,
+            "records": {
+                "example.com|a|2026-10-01": {
+                    "state": "QUALIFIED", "execution_owner": "PRI",
+                    "next_action": "Wait for verified buyer signal.",
+                },
+                "example.com|b|2026-10-01": {
+                    "state": "SUBMITTED", "execution_owner": "PRI",
+                    "next_action": "Wait for a substantive buyer reply.",
+                },
+            },
+        })
+
+        self.assertEqual(runner.tick(), 0)
+        repaired = json.loads(runner.OPPORTUNITIES.read_text(encoding="utf-8"))
+        self.assertEqual(repaired["record_count"], len(repaired["records"]))
+        self.assertEqual(repaired["record_count"], 2)
+        self.assertEqual(repaired["last_run"], historical_run)
+
+        first_bytes = runner.OPPORTUNITIES.read_bytes()
+        self.assertEqual(runner.tick(), 0)
+        self.assertEqual(runner.OPPORTUNITIES.read_bytes(), first_bytes)
+
+    def test_pending_upsert_reconciles_count_after_adding_a_record(self):
+        historical_run = {"full_ledger_count": 62, "run_at": "2026-10-03T17:42:00Z"}
+        runner.write(runner.STATE, {
+            "version": 2,
+            "adapter_status": "OPERATIONAL",
+            "sequence": 0,
+            "queue": [{
+                "id": "upsert-new-opportunity",
+                "adapter": "MISSING_RECORD_UPSERT",
+                "status": "PENDING",
+                "payload": {
+                    "opportunity_key": "example.com|bounded-pilot|2026-10-10",
+                    "identity": {
+                        "organization": "Example Buyer",
+                        "opportunity": "Bounded pilot",
+                        "domain": "example.com",
+                    },
+                    "execution_owner": "PRI",
+                    "to": "SUBMITTED",
+                    "evidence": [{
+                        "kind": "GMAIL_SENT",
+                        "source_id": "gmail-message-1",
+                        "source": "GMAIL",
+                        "observed_at": "2026-10-10T04:45:00Z",
+                    }],
+                    "observed_at": "2026-10-10T04:45:00Z",
+                    "next_action": "Read the existing thread and progress only if due.",
+                    "thread_id": "thread-1",
+                    "recipient": "buyer@example.com",
+                },
+            }],
+        })
+        runner.write(runner.OPPORTUNITIES, {
+            "record_count": 1,
+            "last_run": historical_run,
+            "records": {
+                "existing.com|existing-pilot|2026-10-10": {
+                    "state": "QUALIFIED",
+                    "execution_owner": "PRI",
+                    "next_action": "Wait for verified buyer signal.",
+                },
+            },
+        })
+
+        self.assertEqual(runner.tick(), 0)
+        repaired = json.loads(runner.OPPORTUNITIES.read_text(encoding="utf-8"))
+        self.assertEqual(repaired["record_count"], len(repaired["records"]))
+        self.assertEqual(repaired["record_count"], 2)
+        self.assertEqual(repaired["last_run"], historical_run)
+        state = json.loads(runner.STATE.read_text(encoding="utf-8"))
+        self.assertEqual(state["queue"][0]["status"], "COMPLETED")
+        self.assertTrue(state["queue"][0].get("receipt"))
+
+    def test_malformed_records_shape_fails_closed_without_mutating_input(self):
+        opportunities = {
+            "record_count": 7,
+            "records": ["not", "a", "mapping"],
+            "last_run": {"full_ledger_count": 62},
+        }
+        before = json.dumps(opportunities, sort_keys=True)
+        with self.assertRaisesRegex(ValueError, "opportunities.records must be an object"):
+            runner.reconcile_opportunity_count(opportunities)
+        self.assertEqual(json.dumps(opportunities, sort_keys=True), before)
+
+
 if __name__ == "__main__":
     unittest.main()
