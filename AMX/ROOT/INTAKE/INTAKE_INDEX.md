@@ -4252,3 +4252,11 @@ The existing Three-Root Library Split Register confirms the authoritative shared
 - The existing Root Intake and flight register preserve Flight 1's missing in-run receipt, Flight 2's native failure / unknown cause, Flight 3's completion with partial output, and unresolved future recurrence. No scheduler repair or global acceptance is claimed.
 
 **Disposition:** this pointer is a navigation correction only. It does not clear any item or promote any artifact. Use the existing current-matrix rules and Category B drain directive; preserve provenance, continue independent authorized work, and require per-item action plus durable receipt and independent readback.
+
+---
+
+## Current assigned Master Build linkage — 2026-10-24
+
+**Lifecycle:** INDEXED / OPEN remediation only. Current detail and scoped hold: [Issue #31, comment 6376683430](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6376683430). Existing parent artifact: [MASTER_BUILD_WEIGHTED_CONTINUITY_LINKAGE_20261009.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MASTER_BUILD_WEIGHTED_CONTINUITY_LINKAGE_20261009.md), blob `41fc223339e4d33179fe334e4e50746b54872d9e`.
+
+The pre-existing assigned action belongs to MASTER/BUILD + T-COD; ROOT / MASTER / T-GOV verify. Its exact canonical V1 Master Build execution-source path was not identified in the targeted current repository/Notion/Dropbox searches. Do not guess a path or create an alternate source. The smallest authorized correction is an additive link to the existing Weighted Continuity Blue State requirement, preserving historical bytes and frozen CARBON Search V1 acceptance. Until the exact target is verified and the link independently read back, the linkage remains OPEN. No Master Build/Canon/Registry/Blue State/scheduler state changed in this pass.
