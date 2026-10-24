@@ -117,6 +117,26 @@
     },
     "scope_correction": "Tokyo role/work is not excluded; only unrelated off-intent Tokyo drift is excluded. Existing authorized Tokyo-associated work remains on deck under its mandate.",
     "role_boundary": "This is the current runtime acting under the canonical MATRIX-CRITIC mandate, as the mandate explicitly permits when invoked; not a claim of a separate autonomous Custom Agent session.",
-    "root_intake_status": "OPEN / NOT CLEARED"
+    "root_intake_status": "OPEN / NOT CLEARED",
+    "formal_github_review": {
+      "repository": "amillimatrix-eng/CARBON-Creation-Hub",
+      "pr_number": 14,
+      "review_node_id": "PRR_kwDOUzdIYs8AAAABT_HGrw",
+      "action": "COMMENT",
+      "state": "COMMENTED",
+      "reviewed_commit": "262619a749b80891f6f28d0474c2614498e64b6b",
+      "readback_verified": true,
+      "pr_state": "OPEN / DRAFT / UNMERGED / mergeable=false",
+      "url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/14"
+    },
+    "review_source_readbacks": {
+      "mandate_digest": "MATCH",
+      "registry_root": "MATCH",
+      "exact_ci_run": "40048999255 SUCCESS",
+      "same_commit_render_deploy": "dep-dbe0ej1srm7s73d801j0 LIVE",
+      "root_intake_review_section": "inserted; independent readback pending",
+      "current_shared_intent_acceptance": "OPEN",
+      "current_forx_liveness": "HTTP 503 at latest two direct rechecks; previous checkpoint receipt preserved"
+    }
   }
 }
