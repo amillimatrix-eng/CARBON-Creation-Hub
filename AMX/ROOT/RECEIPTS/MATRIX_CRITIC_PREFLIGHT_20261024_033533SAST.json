@@ -32,5 +32,91 @@
     "Tokyo role/work is not excluded; only off-intent Tokyo drift is excluded"
   ],
   "reviewed_artifact_state": "PREFLIGHT ONLY — review result not yet entered",
-  "persistence_target": "Existing AMX GitHub repository receipt path and existing Root Intake / issue #18/#31 continuity route"
+  "persistence_target": "Existing AMX GitHub repository receipt path and existing Root Intake / issue #18/#31 continuity route",
+  "review_result": {
+    "status": "COMPLETE",
+    "completed_date": "2026-10-24",
+    "disposition": "HOLD / NOT READY for whole CARBON convergence PR; PASS only for the narrow Projects/Media demo-mode guard-wiring defect",
+    "findings": [
+      {
+        "id": "MC-01",
+        "verdict": "PASS_SCOPED",
+        "claim": "Projects/Media demo gate",
+        "evidence": [
+          "commit 262619a749b80891f6f28d0474c2614498e64b6b",
+          "GitHub Actions run 40048999255 SUCCESS",
+          "Render deploy dep-dbe0ej1srm7s73d801j0 LIVE on same commit",
+          "live no-actor Projects/Media GET returns 401"
+        ]
+      },
+      {
+        "id": "MC-02",
+        "verdict": "HOLD",
+        "claim": "Search to Marketplace shared-intent acceptance",
+        "evidence": [
+          "Search reports external_provider=UNCONFIGURED and marketplace_provider=UNCONFIGURED",
+          "Marketplace external_search_connected=false and external_marketplace_connected=false",
+          "Marketplace listing count=0",
+          "money_moved=false; production provider disconnected"
+        ]
+      },
+      {
+        "id": "MC-03",
+        "verdict": "HOLD_ROOT_DISPOSITION",
+        "claim": "Public indexing and commercial launch",
+        "evidence": [
+          "robots.txt Disallow: /",
+          "noindex,nofollow metadata",
+          "sitemap route returns 404",
+          "existing product launch gate still requires public demo, privacy/storage, pricing/limits, buyer-viewable assets, analytics"
+        ]
+      },
+      {
+        "id": "MC-04",
+        "verdict": "REVISE_POLICY_PENDING_ROOT",
+        "claim": "HCI-1 and symmetric weighted-K multiplier rule",
+        "evidence": [
+          "prior prose could double-count per-hash multiplier and parent bonus",
+          "proposed single-count formula documented in Root Intake",
+          "exact HASH° protocol/ledger and holder denominator unverified",
+          "no production HCI/badge/rank/K state changed"
+        ]
+      },
+      {
+        "id": "MC-05",
+        "verdict": "PARTIAL_RUNTIME_OPEN",
+        "claim": "Matrix Flight run receipts",
+        "evidence": [
+          "Flight 1 run e94773b6-0450-832d-b77a-919daad1f472 completed with matching result; its own output leaves lineage/terminal acceptance open",
+          "Flight 2 run fa8c4e0b-0b30-832f-8e76-4bd364784b04 remains in_progress, result pointer stale at e3370306-618c-8329-80dc-6b91e20dc1d2",
+          "Flight 3 run e6995ab9-6f04-8320-b939-eafad40a213f remains in_progress, result pointer stale at 412bc843-9954-8331-aec6-11ef5258766c",
+          "all three next_run_time=null"
+        ]
+      },
+      {
+        "id": "MC-06",
+        "verdict": "CURRENT_LIVENESS_HOLD_HISTORY_PRESERVED",
+        "claim": "FORX public endpoint",
+        "evidence": [
+          "previous verified durable checkpoint: forx-20261010-200k-01, 200000 nodes, 200 partitions",
+          "latest /status and /manifest reads returned HTTP 503",
+          "no evidence of checkpoint data loss; fresh serving remains unverified"
+        ]
+      }
+    ],
+    "security_boundary": {
+      "note": "X-CARBON-Actor is caller-supplied and hashed to a pseudonymous actor reference; this is not verified production identity.",
+      "production_mode": "Keep demo mode restricted to the sandbox preview; no real-money movement or production identity/payment gate bypass was made."
+    },
+    "k_weighting_clarification": {
+      "status": "PROPOSED_PENDING_ROOT_TGOV",
+      "formula": "K_weighted_eligible = sum of M(f_h) over unique raw K hashes h whose preassigned stable primary parent flight f_h is accepted and HCI-compliant; otherwise 0.",
+      "dedupe": "Assign each hash to exactly one parent before outcome is known; no extra parent bonus, retries/duplicate receipts do not add units, K_raw is preserved.",
+      "symmetric_case_weight": "HCI effective case weight = predeclared severity weight × predeclared flight multiplier, identical for PASS and FAIL.",
+      "authority": "No production score, badge, rank, or weighted-K state changes until exact current HASH° protocol/ledger binding and ROOT/T-GOV disposition."
+    },
+    "scope_correction": "Tokyo role/work is not excluded; only unrelated off-intent Tokyo drift is excluded. Existing authorized Tokyo-associated work remains on deck under its mandate.",
+    "role_boundary": "This is the current runtime acting under the canonical MATRIX-CRITIC mandate, as the mandate explicitly permits when invoked; not a claim of a separate autonomous Custom Agent session.",
+    "root_intake_status": "OPEN / NOT CLEARED"
+  }
 }
