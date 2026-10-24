@@ -1,5 +1,23 @@
 # OWNER DIRECTIVE — P0 / HIGHEST EXISTING PRIORITY — CLEAR ROOT INTAKE NOW
 
+## CURRENT OWNER-DIRECTED CATEGORY A — CONTINUOUS MATRIX LIVENESS + HASH-GATED SECTIONAL EXECUTION — 2026-10-24
+
+**Lifecycle:** Owner-direct policy merged additively into the existing Blue State liveness / authorized-work-persistence / adaptive-capacity controls. **Policy MERGED; runtime activation OPEN.** This is not a Canon rewrite and does not authorize new permanent workers, a parallel queue, a new scheduler, a second register, or a new score system.
+
+- **Current governing source:** `AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md`, new blob `473d3ddf1245742d2e0b3f2d7cb0c6176efc88b4`; merge commit `6f46fe676751135face77efe40fae8cf459aadfa`.
+- **Existing operational specification:** [ROOT INTAKE — Continuous Runtime + Post-Run Submission Discipline](https://app.notion.com/p/3f48f8b56cd7818aa0e7cd336f6b13b8?pvs=204), [CYAN] Addendum A — continuous liveness / hash-gated sectional build handoff.
+- **Required operating outcome:** continuously accept and persist authorized work; keep a verified rolling liveness reserve; pre-authorize the next qualified temporary worker before a dependent section lands; release it only after source/hash, tests, persistence, and independent readback pass; rotate builders so consecutive dependent sections use different qualified instances where available.
+- **Queue order:** the activation/dispatch acceptance gate is first. Immediately after it passes, the same continuing runtime must proceed into the existing Root Intake drain under current priority and registered ownership. A blocked item does not idle independent work. Do not wait for another Owner prompt or create a new tracker.
+- **Ownership:** ROOT/T-GOV governs; MASTER/ROOT Librarians reconcile Index, parent-child flight and hash provenance; FORX prepares exact patch/diff/test and forensic correction packets; T-COD remains current code/runtime integration owner; BUILD/CANON/GOVERNANCE owners retain separate checkpoints.
+- **Current runtime evidence (2026-10-24):** the three existing Matrix Flight tasks were enabled on daily schedules, but all had `next_run_time=null`. The current repository watchdog is not yet proven to launch a Matrix reasoning/coding worker. Recurring delivery, live elastic temp-pool dispatch, and hash-gated successor behavior remain UNVERIFIED.
+- **Acceptance:** real outside-window intake, attributable execution, accepted predecessor hash/test/readback, successor release, non-consecutive builder rotation, failed-worker recovery, rolling-reserve test, supported Plan A plus Plan B recovery/return, and a bounded 24-hour service-availability soak. Until read back, do not claim 24/7 PASS or queue-cleared status.
+- **Outstanding build-source dependency:** locate and update the existing authoritative V1 Master Build File for the approved implementation slice. Do not create a duplicate. If its live target cannot be read back, keep that dependency OPEN while independent work continues.
+
+**Current status remains ROOT INTAKE OPEN / NOT CLEARED.** This pointer preserves prior Index contents below unchanged; historic Blue State blob references in older sections remain historical evidence and do not override the current source pointer above.
+
+---
+
+
 
 ## MATRIX IDENTITY & CONTRIBUTION METRICS — CURRENT AT A GLANCE — 2026-10-24
 
