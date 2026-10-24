@@ -237,6 +237,25 @@ class EvidenceTransitionTest(unittest.TestCase):
         self.assertEqual(result["to"], "CONTRACTED")
 
 
+
+    def test_responded_rejects_route_evidence_but_accepts_buyer_response(self):
+        opportunities = self.records("OFFERED")
+        with self.assertRaisesRegex(ValueError, "RESPONDED requires attributable"):
+            runner.evidence_transition(
+                self.make_task("OFFERED", "RESPONDED", "ROUTING_EVIDENCE"),
+                opportunities,
+            )
+        self.assertEqual(opportunities["records"]["opp"]["state"], "OFFERED")
+
+        opportunities = self.records("OFFERED")
+        result = runner.evidence_transition(
+            self.make_task("OFFERED", "RESPONDED", "BUYER_RESPONSE"),
+            opportunities,
+        )
+        self.assertEqual(result["to"], "RESPONDED")
+        self.assertEqual(opportunities["records"]["opp"]["state"], "RESPONDED")
+
+
 class MissingRecordUpsertTest(unittest.TestCase):
     def task(self, key="new-opp", target="SUBMITTED", kind="GMAIL_SENT", **extra):
         payload = {
@@ -256,6 +275,21 @@ class MissingRecordUpsertTest(unittest.TestCase):
         }
         payload.update(extra)
         return {"payload": payload}
+
+    def test_missing_record_upsert_rejects_route_evidence_as_response(self):
+        with self.assertRaisesRegex(ValueError, "RESPONDED requires attributable evidence"):
+            runner.missing_record_upsert(
+                self.task(target="RESPONDED", kind="ROUTING_EVIDENCE"),
+                {"records": {}},
+            )
+
+        opportunities = {"records": {}}
+        result = runner.missing_record_upsert(
+            self.task(target="RESPONDED", kind="BUYER_RESPONSE"),
+            opportunities,
+        )
+        self.assertTrue(result["created"])
+        self.assertEqual(opportunities["records"]["new-opp"]["state"], "RESPONDED")
 
     def test_missing_record_upsert_creates_canonical_record(self):
         opportunities = {"records": {}}
