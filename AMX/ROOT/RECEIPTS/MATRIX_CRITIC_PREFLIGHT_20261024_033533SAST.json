@@ -134,9 +134,49 @@
       "registry_root": "MATCH",
       "exact_ci_run": "40048999255 SUCCESS",
       "same_commit_render_deploy": "dep-dbe0ej1srm7s73d801j0 LIVE",
-      "root_intake_review_section": "inserted; independent readback pending",
+      "root_intake_review_section": "inserted and independently read back; K single-count clarification and Tokyo scope correction confirmed in Root Intake",
       "current_shared_intent_acceptance": "OPEN",
       "current_forx_liveness": "HTTP 503 at latest two direct rechecks; previous checkpoint receipt preserved"
+    },
+    "latest_liveness_correction": {
+      "timestamp": "2026-10-24T03:39:49+02:00",
+      "supersedes": "The earlier review text's temporary CURRENT_LIVENESS_HOLD wording for FORX",
+      "current_verdict": "TRANSIENT_503_RECOVERED",
+      "reads": [
+        {
+          "path": "/status",
+          "status": "COMPLETE",
+          "phase": "DURABLE_CHECKPOINT_RESTORED",
+          "checkpoint_id": "forx-20261010-200k-01",
+          "run_id": "forx-20261010-200k-01",
+          "node_count": 200000,
+          "partition_count": 200,
+          "restored_from_checkpoint": true,
+          "errors": []
+        },
+        {
+          "path": "/manifest",
+          "checkpoint_id": "forx-20261010-200k-01",
+          "run_id": "forx-20261010-200k-01",
+          "partition_count": 200
+        },
+        {
+          "path": "/runtime-receipt",
+          "status": "PRODUCTION_RUNTIME_RESTORED_FROM_DURABLE_CHECKPOINT",
+          "checkpoint_id": "forx-20261010-200k-01",
+          "run_id": "forx-20261010-200k-01",
+          "partition_count": 200,
+          "errors": []
+        },
+        {
+          "path": "/partition/1",
+          "checkpoint_id": "forx-20261010-200k-01",
+          "run_id": "forx-20261010-200k-01",
+          "partition_idx": 1,
+          "partition_nodes": 1000
+        }
+      ],
+      "limit": "Current serving is verified at this read time. No continuous uptime or expansion beyond the 200K / 200-partition checkpoint is claimed."
     }
   }
 }
