@@ -771,9 +771,18 @@
       "primary_librarian": "ROOT-TGOV",
       "hash_register_custodian": "MASTER-LIBRARIAN",
       "lifecycle": "OPEN / MARKER REGISTRY AND INTERNAL TARGET UNKNOWN"
+    },
+    {
+      "path": "AMX/ROOT/INTAKE/CATEGORY_A_LIBRARIAN_RESPONSIBILITY_ALIGNMENT_AND_HASH_ROUTING_20261021.md",
+      "git_blob_sha1": "b1ed75191b4acc13447c89c6d75d170dd8e093ff",
+      "sha256_utf8_content": "0d76d4d197857d79fa38984daeeed1847131a1596c1c03bfd32349538d4ae385",
+      "hash_scope": "exact UTF-8 content of the current fetched Addendum A source bytes",
+      "primary_librarian": "MASTER-LIBRARIAN",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "lifecycle": "CURRENT / READBACK"
     }
   ],
   "snapshot_integrity_note": "This snapshot does not contain its own digest to avoid a self-referential hash. Its Git blob SHA-1 is available from the GitHub file endpoint, and its SHA-256 over exact UTF-8 bytes can be independently recomputed from the fetched content.",
-  "updated_at_utc": "2026-10-24T14:37:28.711Z",
-  "updated_at_sast": "2026-10-24T16:37:28.711+02:00"
+  "updated_at_utc": "2026-10-24T14:38:07.811Z",
+  "updated_at_sast": "2026-10-24T16:38:07.811+02:00"
 }
