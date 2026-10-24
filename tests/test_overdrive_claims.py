@@ -578,5 +578,131 @@ class SemanticNoOpPersistenceTest(unittest.TestCase):
         self.assertEqual(first, second)
 
 
+
+class LedgerCountInvariantTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        base = Path(self.tmp.name)
+        runner.STATE = base / "state.json"
+        runner.OPPORTUNITIES = base / "opportunities.json"
+        runner.SIGNALS = base / "signals.json"
+        runner.CLAIMS = base / "claims.json"
+        runner.LOCK = base / ".tick.lock"
+        runner.RECEIPTS = base / "receipts"
+        runner.RECEIPTS.mkdir()
+        runner.REQUESTS = base / "missing-requests.jsonl"
+
+    def test_count_mismatch_is_repaired_on_quiet_tick_and_history_is_preserved(self):
+        historical_last_run = {
+            "run_at": "2026-10-03T17:42:00Z",
+            "full_ledger_count": 62,
+            "run_id": "historical-run-do-not-rewrite",
+        }
+        runner.write(runner.STATE, {
+            "version": 2, "adapter_status": "OPERATIONAL", "sequence": 0, "queue": []
+        })
+        runner.write(runner.OPPORTUNITIES, {
+            "record_count": 124,
+            "last_updated_at": "2026-10-20T14:08:34.815Z",
+            "updated_at": "2026-10-20T14:08:34.815Z",
+            "last_run": historical_last_run,
+            "records": {
+                "example.com|a|2026-10-01": {"state": "QUALIFIED", "execution_owner": "PRI", "next_action": "Wait for verified buyer signal."},
+                "example.com|b|2026-10-01": {"state": "SUBMITTED", "execution_owner": "PRI", "next_action": "Wait for a substantive buyer reply."},
+            },
+        })
+
+        self.assertEqual(runner.tick(), 0)
+        repaired = json.loads(runner.OPPORTUNITIES.read_text(encoding="utf-8"))
+        self.assertEqual(repaired["record_count"], len(repaired["records"]))
+        self.assertEqual(repaired["record_count"], 2)
+        self.assertEqual(repaired["last_run"], historical_last_run)
+        self.assertNotEqual(repaired["last_updated_at"], "2026-10-20T14:08:34.815Z")
+
+        first_bytes = runner.OPPORTUNITIES.read_bytes()
+        self.assertEqual(runner.tick(), 0)
+        self.assertEqual(runner.OPPORTUNITIES.read_bytes(), first_bytes)
+
+    def test_reconcile_count_tracks_added_and_removed_map_keys_without_rewriting_last_run(self):
+        history = {"run_at": "2026-10-03T17:42:00Z", "full_ledger_count": 62}
+        data = {
+            "record_count": 1,
+            "last_run": history,
+            "records": {"existing-key": {"state": "QUALIFIED"}},
+        }
+        self.assertFalse(runner.reconcile_ledger_record_count(data))
+        data["records"]["new-key"] = {"state": "SUBMITTED"}
+        self.assertTrue(runner.reconcile_ledger_record_count(data))
+        self.assertEqual(data["record_count"], 2)
+        self.assertEqual(data["last_run"], history)
+        del data["records"]["new-key"]
+        self.assertTrue(runner.reconcile_ledger_record_count(data))
+        self.assertEqual(data["record_count"], 1)
+        self.assertEqual(data["last_run"], history)
+
+    def test_reconcile_count_fails_closed_on_malformed_records_and_preserves_contents(self):
+        data = {"record_count": 7, "records": ["not", "a", "mapping"], "last_run": {"full_ledger_count": 62}}
+        before = json.dumps(data, sort_keys=True)
+        with self.assertRaisesRegex(ValueError, "records must be a mapping"):
+            runner.reconcile_ledger_record_count(data)
+        self.assertEqual(json.dumps(data, sort_keys=True), before)
+
 if __name__ == "__main__":
     unittest.main()
+
+    def test_count_mismatch_is_repaired_on_quiet_tick_and_history_is_preserved(self):
+        historical_last_run = {
+            "run_at": "2026-10-03T17:42:00Z",
+            "full_ledger_count": 62,
+            "run_id": "historical-run-do-not-rewrite",
+        }
+        runner.write(runner.STATE, {
+            "version": 2, "adapter_status": "OPERATIONAL", "sequence": 0, "queue": []
+        })
+        runner.write(runner.OPPORTUNITIES, {
+            "record_count": 124,
+            "last_updated_at": "2026-10-20T14:08:34.815Z",
+            "updated_at": "2026-10-20T14:08:34.815Z",
+            "last_run": historical_last_run,
+            "records": {
+                "example.com|a|2026-10-01": {"state": "QUALIFIED", "execution_owner": "PRI", "next_action": "Wait for verified buyer signal."},
+                "example.com|b|2026-10-01": {"state": "SUBMITTED", "execution_owner": "PRI", "next_action": "Wait for a substantive buyer reply."},
+            },
+        })
+
+        self.assertEqual(runner.tick(), 0)
+        repaired = json.loads(runner.OPPORTUNITIES.read_text(encoding="utf-8"))
+        self.assertEqual(repaired["record_count"], len(repaired["records"]))
+        self.assertEqual(repaired["record_count"], 2)
+        self.assertEqual(repaired["last_run"], historical_last_run)
+        self.assertNotEqual(repaired["last_updated_at"], "2026-10-20T14:08:34.815Z")
+
+        first_bytes = runner.OPPORTUNITIES.read_bytes()
+        self.assertEqual(runner.tick(), 0)
+        self.assertEqual(runner.OPPORTUNITIES.read_bytes(), first_bytes)
+
+    def test_reconcile_count_tracks_added_and_removed_map_keys_without_rewriting_last_run(self):
+        history = {"run_at": "2026-10-03T17:42:00Z", "full_ledger_count": 62}
+        data = {
+            "record_count": 1,
+            "last_run": history,
+            "records": {"existing-key": {"state": "QUALIFIED"}},
+        }
+        self.assertFalse(runner.reconcile_ledger_record_count(data))
+        data["records"]["new-key"] = {"state": "SUBMITTED"}
+        self.assertTrue(runner.reconcile_ledger_record_count(data))
+        self.assertEqual(data["record_count"], 2)
+        self.assertEqual(data["last_run"], history)
+        del data["records"]["new-key"]
+        self.assertTrue(runner.reconcile_ledger_record_count(data))
+        self.assertEqual(data["record_count"], 1)
+        self.assertEqual(data["last_run"], history)
+
+    def test_reconcile_count_fails_closed_on_malformed_records_and_preserves_contents(self):
+        data = {"record_count": 7, "records": ["not", "a", "mapping"], "last_run": {"full_ledger_count": 62}}
+        before = json.dumps(data, sort_keys=True)
+        with self.assertRaisesRegex(ValueError, "records must be a mapping"):
+            runner.reconcile_ledger_record_count(data)
+        self.assertEqual(json.dumps(data, sort_keys=True), before)
+

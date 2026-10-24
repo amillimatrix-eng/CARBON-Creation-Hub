@@ -874,6 +874,27 @@ def detect_work(opportunities):
     write(SIGNALS, signals)
     return signals
 
+def reconcile_ledger_record_count(opportunities):
+    """Keep the current record_count metadata derived from the canonical records map.
+
+    Historical last_run fields remain untouched: they describe the run that produced them,
+    not the current ledger snapshot. A non-object records value is malformed and fails
+    closed rather than being counted as zero.
+    """
+    records = opportunities.get("records")
+    if not isinstance(records, dict):
+        raise ValueError("opportunities.records must be a mapping before count reconciliation")
+    current_count = len(records)
+    prior_count = opportunities.get("record_count")
+    if type(prior_count) is int and prior_count == current_count:
+        return False
+    now = utcnow()
+    opportunities["record_count"] = current_count
+    opportunities["last_updated_at"] = now
+    opportunities["updated_at"] = now
+    return True
+
+
 def tick():
     if not claim_lock():
         print(json.dumps({"status": "HOLD", "reason": "active_tick"}))
@@ -883,10 +904,12 @@ def tick():
         raw_claims = CLAIMS.read_text() if CLAIMS.exists() else None
         state = read(STATE)
         opportunities = read(OPPORTUNITIES)
+        ledger_count_repaired = reconcile_ledger_record_count(opportunities)
         signals = detect_work(opportunities)
         claims = claim_work(signals, opportunities)
         routing_changed = (
-            not semantically_equal_raw(raw_signals, signals)
+            ledger_count_repaired
+            or not semantically_equal_raw(raw_signals, signals)
             or not semantically_equal_raw(raw_claims, claims)
         )
         pending = [task for task in state.get("queue", []) if task["status"] == "PENDING"]
@@ -909,6 +932,8 @@ def tick():
         state["last_signal_count"] = {"iSCOPE": len(signals["iSCOPE"]), "PRI": len(signals["PRI"])}
         state["ready_claims"] = claims["ready_count"]
         if not pending:
+            if ledger_count_repaired:
+                write(OPPORTUNITIES, opportunities)
             state["adapter_status"] = "OPERATIONAL"
             state["last_tick_result"] = {
                 "processed": [],
@@ -965,6 +990,7 @@ def tick():
             "processed": processed,
             "pending": sum(t["status"] == "PENDING" for t in state.get("queue", [])),
         }
+        reconcile_ledger_record_count(opportunities)
         write(OPPORTUNITIES, opportunities)
         write(STATE, state)
         print(json.dumps(state["last_tick_result"], sort_keys=True))
