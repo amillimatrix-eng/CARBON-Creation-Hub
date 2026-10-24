@@ -795,8 +795,8 @@
     {
       "path": "AMX/ROOT/INTAKE/CATEGORY_A_LIBRARIAN_RESPONSIBILITY_ALIGNMENT_AND_HASH_ROUTING_20261021.md",
       "git_blob_sha1": "b1ed75191b4acc13447c89c6d75d170dd8e093ff",
-      "sha256_utf8_content": "0d76d4d197857d79fa38984daeeed1847131a1596c1c03bfd32349538d4ae385",
-      "hash_scope": "exact UTF-8 content of the current fetched Addendum A source bytes",
+      "sha256_utf8_content": "689578447337a8c3b9baf8a31a9cc8bbb2a94ecbb5b8e2d9801eb5d8f386c5f1",
+      "hash_scope": "exact current UTF-8 content returned by GitHub fetch; SHA-256 recomputed with validated known-vector implementation",
       "primary_librarian": "MASTER-LIBRARIAN",
       "hash_register_custodian": "MASTER-LIBRARIAN",
       "lifecycle": "CURRENT / READBACK"
@@ -812,6 +812,6 @@
     }
   ],
   "snapshot_integrity_note": "This snapshot does not contain its own digest to avoid a self-referential hash. Its Git blob SHA-1 is available from the GitHub file endpoint, and its SHA-256 over exact UTF-8 bytes can be independently recomputed from the fetched content.",
-  "updated_at_utc": "2026-10-24T14:41:09.107Z",
-  "updated_at_sast": "2026-10-24T16:41:09.107+02:00"
+  "updated_at_utc": "2026-10-24T14:44:28.914Z",
+  "updated_at_sast": "2026-10-24T16:44:28.914+02:00"
 }
