@@ -71,3 +71,70 @@ These exact GitHub API readbacks bind the PR responsibility rows above to their 
 | #7 | `codex/amx-continuity-security-20261003` | `8ea06dd87d90436ffa59d1f82057bc19c5e2a056` | `ba28ed39b7054a8bc0347b151d0d079240e192e1` | CODE / ENCRYPTED CONTINUITY — T-COD; ROOT/T-GOV authority/ACL decisions; MASTER continuity |
 
 **Freshness:** the live PR #68 response was updated at `2026-10-21T21:54:38Z`; other PR response timestamps vary. The head/base readback is a snapshot and must be refreshed before any merge, review acceptance, or other consequential action. Do not use a head SHA as a substitute for a file blob SHA or for tests/readback.
+
+
+---
+
+## CURRENT SOURCE-BOUND IDENTITY / METRICS READBACK — 2026-10-24 (SUPERSEDES THE LIVE-SET COUNT ONLY)
+
+**Lifecycle:** CATEGORY A IMPLEMENTATION / CURRENT BOUNDED SNAPSHOT. The original 2026-10-21 26-record table above remains immutable historical provenance. This additive section provides the newer live read of the same repository source, including the new PR #69. It does not declare the whole Matrix queue clear.
+
+- Canonical Registry: v1.4, blob `7963165e68ea8aeac6d879d2f763790c05f23232`, 13 existing roles; role-hash root `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a` matches.
+- Metric/schema source: `AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md`. Snapshot JSON: `AMX/ROOT/INTAKE/MATRIX_IDENTITY_METRICS_CURRENT_SNAPSHOT_20261024.json`.
+- **Current open repository records: 27** = 15 issues + 12 pull requests. Each has exactly one primary librarian, a canonical mandate ID, stable native key, source URL, explicit scope/domain/category, and a SHA-256 over `UTF-8(title + LF + complete current GitHub API body)`. This is an API-body snapshot hash, not a Git blob SHA.
+- Re-read compared with the earlier metrics snapshot: 0 body-hash change(s) observed (none).
+
+### Current primary-librarian counts (bounded 27-item GitHub scope)
+| Canonical role identity | Mandate ID | Open items |
+|---|---|---:|
+| `FORX` | `AMX-MANDATE-FORX-V1` | 1 |
+| `MASTER-LIBRARIAN` | `AMX-MANDATE-MASTER-LIBRARIAN-V1` | 1 |
+| `ROOT-TGOV` | `AMX-MANDATE-ROOT-TGOV-V1` | 7 |
+| `T-COD` | `AMX-MANDATE-TCOD-V1` | 16 |
+| `T-MED` | `AMX-MANDATE-TMED-V1` | 2 |
+
+### Category counts (issues only; PRs are not Root A/B/C categories)
+| Category | Count | Note |
+|---|---:|---|
+| CATEGORY A | 1 | Explicit in current source |
+| CATEGORY B | 0 | Explicit in current source |
+| CATEGORY C | 1 | Explicit in current source |
+| UNCLASSIFIED | 13 | Must stay visibly unclassified until current authoritative category disposition; owner routing alone does not infer category |
+| Pull requests | 12 | Engineering proposals; separate from Root Intake A/B/C category counts |
+
+### Per-item current hash / owner register
+| Stable ID | Category | Primary librarian | Current source SHA-256 |
+|---|---|---|---|
+| `ISSUE-1` | UNCLASSIFIED | `T-COD` | `d34ea44c9525c704af4851c4f29a80525f8d4e8f1368cf2af06589ac74322ec1` |
+| `ISSUE-2` | UNCLASSIFIED | `T-COD` | `423d06c0b0a682a3436f664ae72a74f8cf2de57fd654d27b0b8e16feccdcd6e6` |
+| `ISSUE-3` | UNCLASSIFIED | `ROOT-TGOV` | `dbfddd90d760ac77b60a1445c700a75f6c09c2f0d23a424988da3c36995a8848` |
+| `ISSUE-4` | UNCLASSIFIED | `ROOT-TGOV` | `3140f90d047dc5c58a3339a6f17d73e6f366dcab2a3eec6042a5795de9f40a24` |
+| `ISSUE-8` | UNCLASSIFIED | `FORX` | `1b3ea8618e75fa17ba3e583bd99505434ffb5ed96efd8b476f7d54f1fa59af9a` |
+| `ISSUE-18` | UNCLASSIFIED | `T-COD` | `bf7bb52169670ccd92ee2f934a4c3199c4c50610f9238e2ae1f3efde560a16ea` |
+| `ISSUE-21` | UNCLASSIFIED | `T-COD` | `3701ecca02d039959b16a3d5ea38d1fce170973518bba12a4cec12398b717490` |
+| `ISSUE-29` | UNCLASSIFIED | `ROOT-TGOV` | `49c7bc48765db325929c2412bbd6575310424161f56968b23e61dd29210cc794` |
+| `ISSUE-30` | UNCLASSIFIED | `T-MED` | `72c8563931d24afb8d6cd7b0c6c3844997f8998b9556bdccfdcc93d4a83319f5` |
+| `ISSUE-31` | UNCLASSIFIED | `MASTER-LIBRARIAN` | `d76cdf5e70fa037849da1af772d9b0bc03f03181a271bd59084bd205f113973d` |
+| `ISSUE-32` | UNCLASSIFIED | `ROOT-TGOV` | `827e124bec7025b376630319c9844b2ee793d149cdbba5070752322b5fe91d4f` |
+| `ISSUE-33` | UNCLASSIFIED | `ROOT-TGOV` | `82d5e8a6c9d0eea4817f84ef41957293c7d505a42bac8cc245d8993414eede48` |
+| `ISSUE-34` | CATEGORY A | `ROOT-TGOV` | `110c6f409d8fba9c3b65de264d240698e421e79c6d433ec0b80eeb35d570d6be` |
+| `ISSUE-50` | CATEGORY C | `T-COD` | `0bf14afdedda0e16d624aff6d786c6eee30eeb691794b0a719c4646fc615a592` |
+| `ISSUE-53` | UNCLASSIFIED | `ROOT-TGOV` | `f4b782bb4dadd65e6c452c1239d672ff87aa78d18b3cd53aa718e35433e5beee` |
+| `PR-7` | NOT_APPLICABLE_PR | `T-COD` | `05170ebf8211e9df2259fd85a98016446db691a25d872bfdb9b1c3dbe8c62a5a` |
+| `PR-14` | NOT_APPLICABLE_PR | `T-COD` | `a2f1c758e0b0751c20ffbc68b8233c1cb3f8336fa64410e5732a184ef0c3dc9c` |
+| `PR-35` | NOT_APPLICABLE_PR | `T-COD` | `ef15b074a2e4e06c9c7b656570c254b2dc6062e087eb9a1870a72ef1c8b185dd` |
+| `PR-37` | NOT_APPLICABLE_PR | `T-COD` | `0390d4e029f3f5c0ba586831b4ce594a5303f8cd1de7ea336e34893e5ec02678` |
+| `PR-40` | NOT_APPLICABLE_PR | `T-COD` | `a1686e3796df86d2f4cdf40f9fdc4a66eba0dae8fdcf47aaf03d45d9be7f79fc` |
+| `PR-52` | NOT_APPLICABLE_PR | `T-COD` | `ce649afd9c4418b6940d31e3459580606d9a252c07098aed9f4adcbc0cbf4874` |
+| `PR-59` | NOT_APPLICABLE_PR | `T-MED` | `1b4a725e500c2b1a51949118aa21641a74b57dd49b37cc4182044d526f6d32d5` |
+| `PR-60` | NOT_APPLICABLE_PR | `T-COD` | `1972114caff1daa7332058f1a05413d3e4f5b2f945ec28847075b6a0ae7c8f11` |
+| `PR-66` | NOT_APPLICABLE_PR | `T-COD` | `6df37259fa9a561594fd5d92c18225128176131ff4e39381d25d778782a39f66` |
+| `PR-67` | NOT_APPLICABLE_PR | `T-COD` | `ed236eb54fca8aacc395070f5fd5ff2f3f25d8f62ea8a1d3cb6713b1b270787c` |
+| `PR-68` | NOT_APPLICABLE_PR | `T-COD` | `26a7b15553394fac9eb6fecf8adfd483498933c31046037104a23ef365d8625e` |
+| `PR-69` | NOT_APPLICABLE_PR | `T-COD` | `42b62fe9798190162c18fed0e9f56c085d508e055c55a18a8023d6d07140b28c` |
+
+### Remaining global queue and hash-calibration dependency
+- Existing `HASH_CALIBRATION_TEMP` still has four known items: `builder-agent-loop-gate.txt`, `local-inference-gate.txt`, `packaging-restore-gate.txt`, `security-gate.txt`. Exact bytes and live STATUS rows remain unavailable; last evidenced OPEN=4, current OPEN=UNKNOWN. No hash is guessed. MASTER-LIBRARIAN owns source/index recovery coordination; the execution owner is UNKNOWN until exact source capture.
+- **Unowned/untriaged items = 0 only within this bounded 27-record repository snapshot after the routing rows above.** Whole-Matrix untriaged/unowned count, total Root A/B/C inventory and global queue-zero status are **UNKNOWN / NOT CLEARED** because the current HASH source and complete all-platform inventory are not readable.
+- MTXID reserve: 1,000 opaque, source-neutral identifiers exist in an owner-private Notion reserve; raw IDs are never copied to this repository. The live cross-ecosystem issuer is not verified/connected. Badge/rank/battle rule thresholds remain unchanged; source binding required before any award is recorded.
+- No item has been closed simply because it has been classified or hashed. Active work remains OPEN until execution acceptance/readback or governed cancellation.
