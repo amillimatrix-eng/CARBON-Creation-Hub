@@ -1,5 +1,55 @@
 # OWNER DIRECTIVE — P0 / HIGHEST EXISTING PRIORITY — CLEAR ROOT INTAKE NOW
 
+
+## MATRIX IDENTITY & CONTRIBUTION METRICS — CURRENT AT A GLANCE — 2026-10-24
+
+**Lifecycle:** current additive Category A readout. Registry role payloads remain unchanged. This is a scope-bounded readout, not a global queue-clear claim.
+
+### Canonical authority and source pointers
+
+- **Current Registry v1.4:** `AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json`, Git blob `7963165e68ea8aeac6d879d2f763790c05f23232`; role-payload root SHA-256 `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a` — PASS / unchanged.
+- **Current Blue State binding:** `AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md`, blob `37cade6f53aa48f2ec6b521c5ce91dfbfced06b5`.
+- **Identity/metrics schema:** `AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md`, blob `096cee3ea5c5fa76d3d377a3e9348249bcbb9ba9`.
+- **Current source-bound item map:** `AMX/ROOT/INTAKE/CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md`, blob `75076a9802406bc3f1d66521efd022462f01154e`.
+- **Current metric/hash snapshot:** `AMX/ROOT/INTAKE/MATRIX_IDENTITY_METRICS_CURRENT_SNAPSHOT_20261024.json`, blob `e415373aadd8cdb8a27ec8f06d882fc40c3c8f20`.
+- **Hash-routing policy with this Category A addition:** `AMX/ROOT/INTAKE/CATEGORY_A_LIBRARIAN_RESPONSIBILITY_ALIGNMENT_AND_HASH_ROUTING_20261021.md`, blob `b1ed75191b4acc13447c89c6d75d170dd8e093ff`.
+
+### Current at-a-glance counts — bounded GitHub scope
+
+| Measure | Count / state |
+|---|---:|
+| OPEN issues | 15 |
+| OPEN pull requests | 12 |
+| Total observed open repo items | 27 |
+| Items with one primary librarian + current source-body SHA-256 | 27 / 27 |
+| T-COD primary | 16 |
+| ROOT-TGOV primary | 7 |
+| T-MED primary | 2 |
+| FORX primary | 1 |
+| MASTER-LIBRARIAN primary | 1 |
+| Issue Category A | 1 |
+| Issue Category B | 0 explicitly identified |
+| Issue Category C | 1 |
+| Issues still category-unclassified | 13 |
+| PR items | 12 (engineering proposals, not Root A/B/C categories) |
+| Unowned/untriaged in this 27-item repo snapshot | 0 after source-bound routing |
+| Whole-Matrix global unowned/untriaged | UNKNOWN — not cleared |
+
+Each of the 27 records has a native stable ID, source URL, SHA-256 over `UTF-8(title + LF + complete GitHub API body)`, primary existing librarian identity/mandate, domain and category. The API-body hash is distinct from a Git blob hash. Owner assignment does not close an item; OPEN lifecycle is preserved until actual acceptance/readback or governed cancellation.
+
+### MTXID and personal MeliMetrics
+
+- Canonical participant identity is one opaque AMX-owned MTXID, source/ecosystem-neutral. Entry/referrer source stays in its own verified event; no ecosystem code is embedded in the MTXID.
+- A **1,000-ID private reserve** is preallocated in owner-private Notion. Raw identifiers are not included in this public repository. The live issuer is **NOT VERIFIED / NOT CONNECTED**; automatic cross-ecosystem issuance is not claimed until the existing identity store passes atomic uniqueness, idempotency, concurrency and independent readback tests.
+- Contribution metrics bind participant MTXID and worker role identity separately. Contribution states, badge/rank/battle results require the exact existing rule ID/version plus evidence, verifier and readback. No threshold or award logic was changed. Unknown rule source = UNKNOWN/HOLD. Identifier or referral click alone never confers contribution, rank, access or payout.
+- Color/marker assignment for unique BUILD/CANON/GOVERNANCE streams remains `REGISTRY_HOLD`; show canonical role text. Do not invent colors or conflate ROOT-TGOV with ROOT/LIBRARIAN.
+
+### Remaining blockers — explicitly OPEN
+
+- **HASH_CALIBRATION_TEMP:** four known gate files remain pending exact-byte capture. Last evidenced OPEN=4; current live OPEN count is UNKNOWN because the exact files and current STATUS rows are unavailable. No hashes were fabricated. MASTER-LIBRARIAN owns source/index recovery coordination; execution owner remains UNKNOWN pending capture.
+- **Full Root Intake:** current global category totals, all-platform ownership census, color marker registry, live MTXID issuer and complete badge/rank/battle rule-source binding have not been independently verified. Overall ROOT INTAKE remains **OPEN / NOT CLEARED**. The bounded repository subset's zero-unowned count must not be reported as global queue zero.
+- **Daily operating target:** reach `untriaged/unowned intake = 0` at least once per day; do not force active/blocked obligations to CLOSED. Keep each active item open with owner, exact blocker, next action and acceptance/readback.
+
 ## CURRENT OWNER SUPERSESSION — MATRIX-WIDE MANDATES / TEMPORARY AUTOMATION QUIET MODE — 2026-10-20
 
 **Current first-order rule:** mandates are binding. Every AI/worker must read current Blue State and Registry from `main`, bind its registered mandate and current matrix rules before acting, stay within its role, preserve continuity, and return a durable item-level receipt plus readback. Wake timestamp, stored prompt, enabled flag, and run request do not prove mandate uptake or an intended outcome.
