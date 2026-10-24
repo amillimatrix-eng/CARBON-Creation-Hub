@@ -177,6 +177,43 @@
         }
       ],
       "limit": "Current serving is verified at this read time. No continuous uptime or expansion beyond the 200K / 200-partition checkpoint is claimed."
-    }
+    },
+    "latest_scheduler_correction": {
+      "timestamp": "2026-10-24T03:40:27+02:00",
+      "supersedes": "The earlier review status showing Flights 2 and 3 as in_progress",
+      "flights": [
+        {
+          "task_id": "6ad84ccda5808191bdb64057151ab45b",
+          "run_id": "e94773b6-0450-832d-b77a-919daad1f472",
+          "status": "completed",
+          "completed_at": "2026-10-24T01:36:28.532585Z",
+          "result_id": "e94773b6-0450-832d-b77a-919daad1f472",
+          "result_matches": true,
+          "terminal_acceptance": "OPEN due unresolved invocation/flight/authorization/segment lineage"
+        },
+        {
+          "task_id": "6ad84ce85840819187519b2cd4d80486",
+          "run_id": "fa8c4e0b-0b30-832f-8e76-4bd364784b04",
+          "status": "failed",
+          "completed_at": "2026-10-24T01:37:44.848113Z",
+          "result_id": "e3370306-618c-8329-80dc-6b91e20dc1d2",
+          "result_matches": false,
+          "current_failure_payload": "NOT_EXPOSED_BY_NATIVE_PEEK"
+        },
+        {
+          "task_id": "6ad84ceaa4408191a31ab93814199644",
+          "run_id": "e6995ab9-6f04-8320-b939-eafad40a213f",
+          "status": "failed",
+          "completed_at": "2026-10-24T01:37:44.546249Z",
+          "result_id": "412bc843-9954-8331-aec6-11ef5258766c",
+          "result_matches": false,
+          "current_failure_payload": "NOT_EXPOSED_BY_NATIVE_PEEK"
+        }
+      ],
+      "enabled_all": true,
+      "next_run_time_all": null,
+      "disposition": "Do not replay current work or mint a new wake until Flight 2 and 3 current-run receipt mismatches are reconciled; do not mistake Flight 1 run completion for terminal Matrix acceptance."
+    },
+    "root_intake_review_section": "inserted and independently read back; K single-count clarification and Tokyo scope correction confirmed in Root Intake"
   }
 }
