@@ -11,7 +11,7 @@
 - **Current Blue State binding:** `AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md`, blob `37cade6f53aa48f2ec6b521c5ce91dfbfced06b5`.
 - **Identity/metrics schema:** `AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md`, blob `ceda5bf15586709faa35b9f0f1b015f553fb8db5`.
 - **Current source-bound item map:** `AMX/ROOT/INTAKE/CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md`, blob `75076a9802406bc3f1d66521efd022462f01154e`.
-- **Current metric/hash snapshot:** `AMX/ROOT/INTAKE/MATRIX_IDENTITY_METRICS_CURRENT_SNAPSHOT_20261024.json`, blob `1df14960ade3c4642fcdff23ef613f55aeccad8c`.
+- **Current metric/hash snapshot:** `AMX/ROOT/INTAKE/MATRIX_IDENTITY_METRICS_CURRENT_SNAPSHOT_20261024.json`, blob `4ce8a700d865573e47cd2b9e693241cfef4bccb2`.
 - **Hash-routing policy with this Category A addition:** `AMX/ROOT/INTAKE/CATEGORY_A_LIBRARIAN_RESPONSIBILITY_ALIGNMENT_AND_HASH_ROUTING_20261021.md`, blob `b1ed75191b4acc13447c89c6d75d170dd8e093ff`.
 - **Existing reputation/referral spine evidence:** [EVIDENCE DETAILER — JAM3S — Reputation Referral Task Infrastructure — 2026-10-09](https://app.notion.com/p/3f48f8b56cd7818f92fbd83ebce71f8d?pvs=204). Evidence is implemented-partial for XP/ranks/credits/referral tasks and SQLite guarded writes; MTXID and all trust/status mechanics are NOT proven deployed.
 
@@ -32,8 +32,9 @@
 | Issue Category B | 0 explicitly identified |
 | Issue Category C | 1 |
 | Issues still category-unclassified | 13 |
+| Full triage status for this 27-item snapshot | NOT COMPLETE | 13 issue categories require explicit disposition; full global intake is also unknown |
 | PR items | 12 (engineering proposals, not Root A/B/C categories) |
-| Unowned/untriaged in this 27-item repo snapshot | 0 after source-bound routing |
+| Missing primary librarian in this 27-item repo snapshot | 0 |
 | Whole-Matrix global unowned/untriaged | UNKNOWN — not cleared |
 
 Each of the 27 records has a native stable ID, source URL, SHA-256 over `UTF-8(title + LF + complete GitHub API body)`, primary existing librarian identity/mandate, domain and category. The API-body hash is distinct from a Git blob hash. Owner assignment does not close an item; OPEN lifecycle is preserved until actual acceptance/readback or governed cancellation.
@@ -4329,3 +4330,6 @@ The pre-existing assigned action belongs to MASTER/BUILD + T-COD; ROOT / MASTER 
 
 **Next owners / acceptance:** MASTER keeps this freshness pointer aligned with canonical reads; T-COD verifies claims-projection generation semantics and resolves the existing PR #67/#68 overlap on an exact current-main base; ROOT/T-GOV decides the existing merge/disposition route. Acceptance requires refreshed source-specific readbacks, exact-head tests, claims/ledger reconciliation without lost lifecycle/history, and no promotion of evidence to Canon. Scheduler remains unrepaired and Root Intake remains NOT CLEARED.
 
+
+
+**Triage correction (2026-10-24):** zero missing-primary-owner records is an ownership result, not a queue-clear result. This 27-item snapshot is **not fully triaged** because 13 open issues remain UNCLASSIFIED for A/B/C. The daily full-triage zero target is therefore not demonstrated. Global Root Intake remains OPEN / NOT CLEARED.
