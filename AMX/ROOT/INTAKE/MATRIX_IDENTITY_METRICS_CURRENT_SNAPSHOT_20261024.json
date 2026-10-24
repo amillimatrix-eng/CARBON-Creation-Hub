@@ -746,15 +746,6 @@
       "lifecycle": "CURRENT / READBACK"
     },
     {
-      "path": "AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md",
-      "git_blob_sha1": "096cee3ea5c5fa76d3d377a3e9348249bcbb9ba9",
-      "sha256_utf8_content": "36cafe0cd68933dae6914f684286150a8ef9cbb938a2f180e5435c8bdb79a5b9",
-      "hash_scope": "exact UTF-8 file content returned by current GitHub fetch; Git blob SHA-1 is separately recorded",
-      "primary_librarian": "ROOT-TGOV",
-      "hash_register_custodian": "MASTER-LIBRARIAN",
-      "lifecycle": "CURRENT / READBACK"
-    },
-    {
       "path": "AMX/ROOT/INTAKE/CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md",
       "git_blob_sha1": "75076a9802406bc3f1d66521efd022462f01154e",
       "sha256_utf8_content": "03f41aa59fd499a2a80662ab5fc1836511dbbd75122a8ff4b5be7081943ef750",
@@ -780,9 +771,18 @@
       "primary_librarian": "MASTER-LIBRARIAN",
       "hash_register_custodian": "MASTER-LIBRARIAN",
       "lifecycle": "CURRENT / READBACK"
+    },
+    {
+      "path": "AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md",
+      "git_blob_sha1": "ceda5bf15586709faa35b9f0f1b015f553fb8db5",
+      "sha256_utf8_content": "9b2b991ff73efa7e2e5b720314b922eb1175c1b972bf633ca06f0d5542ae61a0",
+      "hash_scope": "exact UTF-8 content of current policy file fetched from GitHub",
+      "primary_librarian": "ROOT-TGOV",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "lifecycle": "CURRENT / READBACK"
     }
   ],
   "snapshot_integrity_note": "This snapshot does not contain its own digest to avoid a self-referential hash. Its Git blob SHA-1 is available from the GitHub file endpoint, and its SHA-256 over exact UTF-8 bytes can be independently recomputed from the fetched content.",
-  "updated_at_utc": "2026-10-24T14:38:07.811Z",
-  "updated_at_sast": "2026-10-24T16:38:07.811+02:00"
+  "updated_at_utc": "2026-10-24T14:40:28.983Z",
+  "updated_at_sast": "2026-10-24T16:40:28.983+02:00"
 }
