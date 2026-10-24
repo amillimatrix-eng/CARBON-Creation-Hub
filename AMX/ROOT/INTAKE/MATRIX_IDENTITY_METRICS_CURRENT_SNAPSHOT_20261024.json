@@ -1,16 +1,16 @@
 {
   "snapshot_id": "AMX-IDENTITY-METRICS-SNAPSHOT-20261024",
-  "observed_at_utc": "2026-10-24T14:33:57.717Z",
-  "observed_at_sast": "2026-10-24T16:33:57.718+02:00",
+  "observed_at_utc": "2026-10-24T14:36:46.812Z",
+  "observed_at_sast": "2026-10-24T16:36:46.813+02:00",
   "classification": "CATEGORY A — GOVERNANCE / IDENTITY / CONTRIBUTION METRICS",
   "source_scope": "Current live open GitHub issues and pull requests in amillimatrix-eng/CARBON-Creation-Hub, plus separately noted prior known HASH_CALIBRATION_TEMP obligations. This is not a global all-platform Matrix census.",
   "authority": {
     "registry_path": "AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json",
-    "pre_update_registry_blob_sha": "bcfd1f422bd25ba852666a538712828d594759e8",
-    "prior_registry_version": "1.3",
-    "prior_registry_root_sha256": "96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a",
-    "computed_registry_root_sha256": "96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a",
-    "status": "PASS"
+    "registry_git_blob_sha": "7963165e68ea8aeac6d879d2f763790c05f23232",
+    "registry_version": "1.4",
+    "registry_root_sha256": "96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a",
+    "computed_root_sha256": "96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a",
+    "root_status": "MATCH"
   },
   "scope_counts": {
     "open_issues": 15,
@@ -18,10 +18,8 @@
     "open_github_records": 27,
     "current_repository_items_with_primary_librarian": 27,
     "current_repository_items_with_content_sha256": 27,
-    "source_hash_algorithm": "SHA-256",
-    "source_hash_byte_scope": "UTF-8(title + LF + complete current GitHub item body)",
-    "scope_only_unowned_items_after_this_snapshot": "0 — all 27 observed GitHub items mapped; does not imply global Root Intake zero",
-    "global_root_intake_untriaged_count": "UNKNOWN — full cross-platform index and current HASH_CALIBRATION_TEMP STATUS sheet unavailable"
+    "scope_only_unowned_items": "0 for this 27-record repository snapshot after assignment",
+    "global_root_intake_untriaged_count": "UNKNOWN — not a whole-Matrix source census"
   },
   "category_counts": {
     "CATEGORY A": 1,
@@ -57,9 +55,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "d34ea44c9525c704af4851c4f29a80525f8d4e8f1368cf2af06589ac74322ec1",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -81,9 +78,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "423d06c0b0a682a3436f664ae72a74f8cf2de57fd654d27b0b8e16feccdcd6e6",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -105,9 +101,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "dbfddd90d760ac77b60a1445c700a75f6c09c2f0d23a424988da3c36995a8848",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -129,9 +124,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "3140f90d047dc5c58a3339a6f17d73e6f366dcab2a3eec6042a5795de9f40a24",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -155,9 +149,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "1b3ea8618e75fa17ba3e583bd99505434ffb5ed96efd8b476f7d54f1fa59af9a",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -180,9 +173,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "bf7bb52169670ccd92ee2f934a4c3199c4c50610f9238e2ae1f3efde560a16ea",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -203,9 +195,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "3701ecca02d039959b16a3d5ea38d1fce170973518bba12a4cec12398b717490",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -226,9 +217,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "49c7bc48765db325929c2412bbd6575310424161f56968b23e61dd29210cc794",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -248,9 +238,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "72c8563931d24afb8d6cd7b0c6c3844997f8998b9556bdccfdcc93d4a83319f5",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -272,9 +261,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "d76cdf5e70fa037849da1af772d9b0bc03f03181a271bd59084bd205f113973d",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -295,9 +283,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "827e124bec7025b376630319c9844b2ee793d149cdbba5070752322b5fe91d4f",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -318,9 +305,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "82d5e8a6c9d0eea4817f84ef41957293c7d505a42bac8cc245d8993414eede48",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -340,9 +326,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "110c6f409d8fba9c3b65de264d240698e421e79c6d433ec0b80eeb35d570d6be",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -362,9 +347,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "0bf14afdedda0e16d624aff6d786c6eee30eeb691794b0a719c4646fc615a592",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -384,9 +368,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "f4b782bb4dadd65e6c452c1239d672ff87aa78d18b3cd53aa718e35433e5beee",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -408,9 +391,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "05170ebf8211e9df2259fd85a98016446db691a25d872bfdb9b1c3dbe8c62a5a",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -432,9 +414,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "a2f1c758e0b0751c20ffbc68b8233c1cb3f8336fa64410e5732a184ef0c3dc9c",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -455,9 +436,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "ef15b074a2e4e06c9c7b656570c254b2dc6062e087eb9a1870a72ef1c8b185dd",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -479,9 +459,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "0390d4e029f3f5c0ba586831b4ce594a5303f8cd1de7ea336e34893e5ec02678",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -504,9 +483,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "a1686e3796df86d2f4cdf40f9fdc4a66eba0dae8fdcf47aaf03d45d9be7f79fc",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -528,9 +506,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "ce649afd9c4418b6940d31e3459580606d9a252c07098aed9f4adcbc0cbf4874",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -551,9 +528,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "1b4a725e500c2b1a51949118aa21641a74b57dd49b37cc4182044d526f6d32d5",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -575,9 +551,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "1972114caff1daa7332058f1a05413d3e4f5b2f945ec28847075b6a0ae7c8f11",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -598,9 +573,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "6df37259fa9a561594fd5d92c18225128176131ff4e39381d25d778782a39f66",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -621,9 +595,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "ed236eb54fca8aacc395070f5fd5ff2f3f25d8f62ea8a1d3cb6713b1b270787c",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -644,9 +617,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "26a7b15553394fac9eb6fecf8adfd483498933c31046037104a23ef365d8625e",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     },
     {
@@ -668,9 +640,8 @@
       "hash": {
         "algorithm": "SHA-256",
         "digest": "42b62fe9798190162c18fed0e9f56c085d508e055c55a18a8023d6d07140b28c",
-        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
-        "verified_against": "live GitHub issue/PR response in this snapshot",
-        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes comments and provider metadata)",
+        "source_revision_model": "API_BODY_SNAPSHOT"
       }
     }
   ],
@@ -754,5 +725,53 @@
     "marker_policy": "Render textual role identity and MARKER_UNASSIGNED; do not invent global colours. Existing contextual meanings remain context-bound.",
     "badge_rank_battle_rules": "NO CHANGE TO THRESHOLDS OR AWARD LOGIC. Publish/store rule ID+version and evidence; never derive awards from user ID, link click, scheduler wake or unverified claim. Exact rules/source remain to be rebound from current Canon and therefore UNKNOWN where not surfaced."
   },
-  "terminal_state": "PARTIAL IMPLEMENTATION SNAPSHOT — NOT GLOBAL ROOT CLEARANCE"
+  "terminal_state": "PARTIAL IMPLEMENTATION SNAPSHOT — NOT GLOBAL ROOT CLEARANCE",
+  "governance_artifact_hash_register": [
+    {
+      "path": "AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json",
+      "git_blob_sha1": "7963165e68ea8aeac6d879d2f763790c05f23232",
+      "sha256_utf8_content": "f725558314fe6b59a8f1cea2188d0bcdb865753e5f500fe5d53f513a466a732f",
+      "hash_scope": "exact UTF-8 file content returned by current GitHub fetch",
+      "primary_librarian": "ROOT-TGOV",
+      "hash_custodian": "MASTER-LIBRARIAN",
+      "lifecycle": "CURRENT / READBACK"
+    },
+    {
+      "path": "AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md",
+      "git_blob_sha1": "37cade6f53aa48f2ec6b521c5ce91dfbfced06b5",
+      "sha256_utf8_content": "88a2484f1e2e2c30868f4ad6b0205f8d51d90e48dff5892d8a0526efdf85a9d4",
+      "hash_scope": "exact UTF-8 file content returned by current GitHub fetch",
+      "primary_librarian": "ROOT-TGOV",
+      "hash_custodian": "MASTER-LIBRARIAN",
+      "lifecycle": "CURRENT / READBACK"
+    },
+    {
+      "path": "AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md",
+      "git_blob_sha1": "096cee3ea5c5fa76d3d377a3e9348249bcbb9ba9",
+      "sha256_utf8_content": "36cafe0cd68933dae6914f684286150a8ef9cbb938a2f180e5435c8bdb79a5b9",
+      "hash_scope": "exact UTF-8 file content returned by current GitHub fetch",
+      "primary_librarian": "ROOT-TGOV",
+      "hash_custodian": "MASTER-LIBRARIAN",
+      "lifecycle": "CURRENT / READBACK"
+    },
+    {
+      "path": "AMX/ROOT/INTAKE/CATEGORY_A_INTERNAL_MATRIX_MARKER_IMPLEMENTATION_TARGET_BINDING_20261021.md",
+      "git_blob_sha1": "6ab2eb3679346709d4f8e0d92d2d18229162f92f",
+      "sha256_utf8_content": null,
+      "hash_scope": "Git blob SHA-1 recorded in current Addendum E search/readback; raw current bytes not re-fetched in this capture",
+      "primary_librarian": "ROOT-TGOV",
+      "hash_custodian": "MASTER-LIBRARIAN",
+      "lifecycle": "OPEN / MARKER REGISTRY AND INTERNAL TARGET UNKNOWN"
+    },
+    {
+      "path": "AMX/ROOT/INTAKE/CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md",
+      "git_blob_sha1": "ea516a6d7f276f0b34fd70fa02892034676a947b",
+      "sha256_utf8_content": "9b12cc9b54f2d9f0a13b857050f39da027b4f7b204c850608a6097a05db80490",
+      "hash_scope": "exact pre-update UTF-8 bytes fetched before append-only refresh in this run",
+      "primary_librarian": "MASTER-LIBRARIAN",
+      "hash_custodian": "MASTER-LIBRARIAN",
+      "lifecycle": "CURRENT INPUT REVISION; UPDATED REVISION WILL SUPERSEDE"
+    }
+  ],
+  "snapshot_integrity_note": "This file intentionally does not contain its own current Git blob/SHA-256 digest (self-reference). Fetch the saved file to retrieve the Git blob SHA-1; its SHA-256 over UTF-8 content can be independently recomputed from the fetched bytes."
 }
