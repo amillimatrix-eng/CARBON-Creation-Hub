@@ -718,7 +718,36 @@
     "storage": "OWNER-PRIVATE NOTION PAGE; raw identifiers intentionally excluded from this public repository snapshot",
     "live_issuer": "NOT VERIFIED / NOT CONNECTED",
     "uniqueness_requirement": "Atomic unique constraint on MTXID and canonical participant ID; idempotent retry returns same committed MTXID",
-    "source_attribution": "Stored separately in referral/event record, never encoded in MTXID"
+    "source_attribution": "Stored separately in referral/event record, never encoded in MTXID",
+    "existing_identity_and_reputation_spine": {
+      "source_page_title": "EVIDENCE DETAILER — JAM3S — Reputation Referral Task Infrastructure — 2026-10-09",
+      "source_page_url": "https://app.notion.com/p/3f48f8b56cd7818f92fbd83ebce71f8d?pvs=204",
+      "status": "IMPLEMENTED_PARTIAL_EVIDENCE_IN_EXISTING_RECORD; CURRENT LIVE TARGET NOT YET RE-READ",
+      "evidenced_capabilities": [
+        "Telegram referral/task infrastructure",
+        "SQLite persistence",
+        "XP/ranks",
+        "credits",
+        "requester confirmation",
+        "disputes",
+        "custom links",
+        "sessions",
+        "weighted rewards",
+        "onboarding handlers",
+        "SQLite BEGIN IMMEDIATE",
+        "WAL/NORMAL",
+        "lock retry/backoff",
+        "unique claims",
+        "dwell/rate/trust/anti-abuse gates"
+      ],
+      "explicitly_not_proven": [
+        "MTXID issuer deployed",
+        "all canonical JAM3S frozen mechanics deployed",
+        "Rings and every later trust/status layer deployed",
+        "current live runtime/database/commit identity for the MTXID allocation path"
+      ],
+      "directive": "Reuse existing JAM3S identity/referral/reputation spine where exact current source/runtime/database readback confirms it. Do not create a parallel service or change existing XP/rank/reward rules. T-COD binds target and tests atomic uniqueness, idempotent retry, concurrency and cross-ecosystem identity resolution; MASTER independently verifies source/hash and readback."
+    }
   },
   "palette_and_metrics_state": {
     "global_build_canon_governance_marker_map": "NOT LOCATED IN AUTHORIZED CURRENT SOURCES",
@@ -783,6 +812,6 @@
     }
   ],
   "snapshot_integrity_note": "This snapshot does not contain its own digest to avoid a self-referential hash. Its Git blob SHA-1 is available from the GitHub file endpoint, and its SHA-256 over exact UTF-8 bytes can be independently recomputed from the fetched content.",
-  "updated_at_utc": "2026-10-24T14:40:28.983Z",
-  "updated_at_sast": "2026-10-24T16:40:28.983+02:00"
+  "updated_at_utc": "2026-10-24T14:41:09.107Z",
+  "updated_at_sast": "2026-10-24T16:41:09.107+02:00"
 }
