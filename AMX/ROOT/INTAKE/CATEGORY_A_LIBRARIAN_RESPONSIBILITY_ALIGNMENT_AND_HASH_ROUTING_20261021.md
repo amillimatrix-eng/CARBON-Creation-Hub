@@ -77,3 +77,43 @@ A dedicated authoritative registry mapping the three BUILD / CANON / GOVERNANCE 
 - **Status:** instruction persisted as an indexed Category A addendum; full item-by-item matrix classification, colour-marker registration, receiving-owner acknowledgements, and behavioral acceptance remain OPEN until individually evidenced.
 
 **Authority boundary:** This addendum does not change any registered mandate payload/digest, Registry root, Canon state, GOLD/WHITE/BLACK separation, or Master Build authority. It operationalizes the existing owner topology and recovery rules.
+
+---
+
+## OWNER-DIRECTED CATEGORY A — CANONICAL IDENTITY / HASH OWNERSHIP / MELIMETRICS — 2026-10-24
+
+**Lifecycle:** CURRENT IMPLEMENTATION BINDING / PARTIAL READBACK. This continues the existing hash-routing protocol. It creates no queue, worker, schedule, authority layer, colour registry or substitute index.
+
+### Canonical role identity is now explicit
+
+- Registry v1.4: `AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json`; all 13 existing role keys are also stored as `canonical_identity` and `hash_owner_identity`. Every row carries a mandate ID, its existing unchanged SHA-256 payload, domain class, primary identity and the single hash-register custodian `MASTER-LIBRARIAN`.
+- Registry root remains `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`; independent recomputation from the 13 role/hash lines passed. No canonical mandate payload hash was changed.
+- T-MED is explicitly bound to `AMX-MANDATE-TMED-V1` / `3204cb5d8dfcfbc1e904a4a23f0077959bb9371152a2ef32be48e7e858d148f1`. T-COD is explicitly bound to `AMX-MANDATE-TCOD-V1` / `67a9fc18adc6323ea93f86bc70bb677b7e063b5f6f6a8218d1ec2713c4f0e9b3`. Both remain the same canonical role identities; no alias or provider label supersedes them.
+- Hash-bearing artifacts are attributed by stable ID, exact source/path, algorithm + byte scope, primary librarian identity, mandate ID, domain/category, lifecycle, reviewers/dependencies and readback pointer. Source hash is not authority; role identity is not participant identity.
+
+### MeliMetrics identity / contributions
+
+- V1 schema: `AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md`. Current bounded snapshot and item-level SHA-256/owner map: `AMX/ROOT/INTAKE/MATRIX_IDENTITY_METRICS_CURRENT_SNAPSHOT_20261024.json`.
+- MTXID is the separate canonical participant identity: opaque, AMX-owned, cross-ecosystem, no source prefix; referrer/entry surface stays in a separate verified event. A private reserve of 1,000 opaque IDs is preallocated, but the existing live identity issuer is NOT VERIFIED / NOT CONNECTED. Do not claim automatic issuance until the existing identity store has atomic uniqueness, idempotency and source/runtime readback tests.
+- Contribution state, badge, rank and battle records must bind an evidence event and the current governing rule/version. No award/threshold logic has been changed; missing rule source remains UNKNOWN/HOLD. BANKER still owns settled-money truth.
+- The unique global BUILD/CANON/GOVERNANCE marker mapping remains NOT LOCATED. Keep T-COD/T-MED in explicit text labels and `MARKER_UNASSIGNED / REGISTRY_HOLD`; do not invent colors. Existing GOLD/WHITE/BLACK and office-context semantics remain separate.
+
+### Current source-bound tally — 2026-10-24
+
+| Metric | Current value | Scope / truth boundary |
+|---|---:|---|
+| Open GitHub issues | 15 | Current live repo response |
+| Open GitHub pull requests | 12 | Current live repo response |
+| Open repository items | 27 | 27/27 assigned one primary librarian and current body-snapshot SHA-256 |
+| T-COD | 16 | Primary librarian count within this 27-item snapshot |
+| ROOT-TGOV | 7 | Primary librarian count within this 27-item snapshot |
+| T-MED | 2 | Primary librarian count within this 27-item snapshot |
+| FORX | 1 | Primary librarian count within this 27-item snapshot |
+| MASTER-LIBRARIAN | 1 | Primary librarian count within this 27-item snapshot |
+| Category A (issues only) | 1 | Explicit in source |
+| Category B (issues only) | 0 | Explicit in source; other 13 issue categories remain unclassified |
+| Category C (issues only) | 1 | Explicit in source |
+| Unclassified issues | 13 | Category is not inferred from owner/domain |
+| HASH_CALIBRATION_TEMP | 4 known obligations; current OPEN UNKNOWN | Exact bytes and live STATUS rows inaccessible; last evidenced OPEN=4. Do not invent hashes or close them. |
+
+**Daily target:** untriaged/unowned items = 0 at least once per day. This bounded 27-item GitHub snapshot is fully assigned; this does not mean global Root Intake is zero. The full all-platform Intake/Hash Calibration census remains OPEN / UNKNOWN until its real source rows and exact bytes are recovered, hashed and read back. Active, properly owned work remains OPEN until accepted/read back or governed cancellation.
