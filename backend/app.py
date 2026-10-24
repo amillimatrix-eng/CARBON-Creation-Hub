@@ -74,6 +74,33 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     def visible_evidence() -> list[dict[str, Any]]:
         return [r for r in store.list() if house_visible(r)]
 
+    PUBLIC_EVIDENCE_FIELDS = (
+        "evidence_id", "capability", "artifact", "date_version",
+        "role_contribution", "acceptance_test", "status_freshness",
+        "interview_safe_explanation", "T10_JOB", "T10_ACTUAL",
+        "T10_CHANGE", "T10_REMAINING_GAP", "T10_PASS", "inspect_route",
+        "visibility", "tags",
+    )
+
+    def public_evidence_projection(record: dict[str, Any]) -> dict[str, Any]:
+        """Expose only curated claim fields; never return raw controlled-source metadata."""
+        projected = {
+            key: record[key]
+            for key in PUBLIC_EVIDENCE_FIELDS
+            if key in record
+        }
+        safe_pointer = str(
+            record.get("inspect_route")
+            or "Primary source remains controlled; request an authorized review."
+        ).strip()
+        if not safe_pointer:
+            safe_pointer = "Primary source remains controlled; request an authorized review."
+        projected["inspect_route"] = safe_pointer
+        # Keep the six-field T10 contract while replacing raw paths/receipt identifiers
+        # with the owner-authored public-safe inspection pointer.
+        projected["T10_EVIDENCE"] = safe_pointer
+        return projected
+
     def t10_contract(records: list[dict[str, Any]]) -> dict[str, Any]:
         return {
             "schema": T10_SCHEMA,
@@ -128,7 +155,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
 
     @app.get("/api/evidence")
     def list_evidence() -> dict[str, Any]:
-        records = visible_evidence()
+        records = [public_evidence_projection(r) for r in visible_evidence()]
         return {
             "records": records,
             "count": len(records),
@@ -141,7 +168,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         record = store.get(evidence_id)
         if record is None or not house_visible(record):
             raise HTTPException(status_code=404, detail="evidence record not found")
-        return record
+        return public_evidence_projection(record)
 
     @app.get("/api/evidence/{evidence_id}/versions", dependencies=[Depends(require_admin)])
     def get_evidence_versions(evidence_id: str) -> dict[str, Any]:
@@ -152,7 +179,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
 
     @app.post("/api/evidence/search")
     def search_evidence(req: SearchRequest) -> dict[str, Any]:
-        results = [r for r in store.search(req.query, req.limit * 2) if house_visible(r)][:req.limit]
+        results = [public_evidence_projection(r) for r in store.search(req.query, req.limit * 2) if house_visible(r)][:req.limit]
         return {
             "query": req.query,
             "supported": bool(results),
@@ -350,7 +377,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
     @app.get("/api/house/bootstrap")
     def house_bootstrap() -> dict[str, Any]:
         state = aggregate_state(root)
-        evidence = visible_evidence()
+        evidence = [public_evidence_projection(r) for r in visible_evidence()]
         gallery = [
             r for r in evidence
             if "carbon" in str(r.get("capability", "")).lower()
