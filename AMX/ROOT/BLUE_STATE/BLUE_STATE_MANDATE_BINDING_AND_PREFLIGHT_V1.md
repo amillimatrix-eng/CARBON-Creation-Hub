@@ -1488,3 +1488,59 @@ Keep scheduled work paused until the relevant infrastructure segment is accepted
 - Current bounded GitHub scope is 27 OPEN items, each assigned one primary librarian in the snapshot. This does not clear global Root Intake. HASH_CALIBRATION_TEMP has four known obligations, exact bytes/current STATUS rows unavailable and current OPEN count UNKNOWN. Whole-Matrix census and queue-zero acceptance remain OPEN.
 
 **Readback:** Registry v1.4 role hash root PASS. The runtime issuer, full matrix hash register, internal dashboard and canonical badge/rank/battle sources remain open until their own acceptance receipts exist.
+
+
+---
+
+## OWNER-DIRECTED CATEGORY A — CONTINUOUS MATRIX LIVENESS + HASH-GATED SECTIONAL EXECUTION — 2026-10-24
+
+**Authority and lifecycle:** Owner-direct Category A operating directive. Merged additively into this existing Blue State liveness, authorized-work-persistence, and adaptive-capacity control. It creates no new permanent role, worker type, queue, registry, scheduler, scoring system, or authority layer. Policy is current; implementation and behavior-level acceptance remain OPEN until independently tested and read back.
+
+### Non-negotiable outcome
+
+AMiLLiMATRiX must remain continuously available to receive, preserve, route, and resume authorized work, including user joining and identity/MTXID, balance, score, and contribution-state transactions. A model conversation ending is not permission for the Matrix service to become unavailable or for a durable transaction to remain uncommitted. Workers may recycle; the service, durable state, and recoverable execution path must not all go dark together.
+
+**Liveness is evidence-based.** Enabled task != active run; scheduled event != attributable execution; prompt text != runtime adoption; a wake request != a run; a receipt without independent readback != verified persistence. `next_run_time=null` means recurring delivery is UNVERIFIED. At the latest bounded check on 2026-10-24, the three existing Matrix Flight automations were enabled on daily schedules but all returned `next_run_time=null`. They are not proof of a 24/7 wake path. The repository's existing 15-minute recovery watchdog is a recovery-control path, not proof that it launches a Matrix worker or a sectional build.
+
+### Rolling liveness reserve and handoff
+
+1. Maintain at least one independently verifiable live/triggerable continuity path while work is accepted. Never release all execution capacity or simultaneously land every worker. Workers returning are reconciled one at a time or under a bounded admission limit.
+2. Use a rolling reserve rather than a fixed maximum fleet: minimum reserve = one proven live/triggerable execution or recovery path; for a pool of ten or more eligible workers, start with a reserve target of 10% (rounded up), then tune only from measured wake, landing, and recovery latency. If the reserve is not healthy, reduce simultaneous handoffs rather than allowing total liveness to reach zero.
+3. Prefer a successful durable landing/checkpoint event to unlock the next prepared flight. Where the host cannot trigger event-driven continuation, test an existing authorized watchdog/worker path as Plan B, including an offset trigger such as five minutes after the hour. That timing is a test candidate, not a claim of deployed behavior.
+4. Preserve the existing temporary automation quiet-mode history. This Owner directive supersedes that pause only as needed to protect Matrix-wide intake and runtime continuity; it does **not** authorize indiscriminately re-enabling every specialist/commercial task, changing unsupported cadences, or bypassing the existing safety and role gates.
+5. Reuse existing authorized surfaces first. Candidate routes to test include the current workflow/watchdog, the already-present BLACK/Render execution surfaces, and (as a separately assessed option) Agent Forge/TinyFish. Do not infer that any one can launch a temporary agent, invoke a model, persist arbitrary code, or wake the Matrix until a bounded live test proves that exact function. No new scheduler or parallel queue is allowed to simulate liveness.
+
+### Skill-backed temporary execution pool
+
+Use the existing capability/benchmark and skill estate as a dynamically allocated pool of temporary reasoning or coding instances; do not turn temporary workers into new permanent offices. At dispatch, bind the existing parent flight/section ID, exact objective, current source/base SHA, required skill/version, evidence-backed worker fit, registered owner, permitted write scope, dependency, acceptance test, expiry/release condition, and receipt/readback destination. An unproven worker starts with a small bounded sample and the lowest useful capacity. Increase leverage only under the existing Adaptive Capability & Capacity Scaling and worker benchmark rules. Badge/XP/HASH° outcomes remain governed by the current rule source; no new score or threshold is authorized here.
+
+FORX must author the forensic diagnosis, exact patch candidate/diff, section test contract, and correction packet for the assigned continuity/build defect, then verify the downstream result. Temporary builders may execute bounded patch sections only through an existing authorized mechanism. T-COD retains current code/runtime integration and merge ownership under the registered mandate unless ROOT/T-GOV formally records a mandate supersession. The Librarian coordinates, governs, compares, reconciles, and independently verifies; the Librarian does not silently become an extra builder.
+
+### Hash-gated sectional builds and non-consecutive assignment
+
+For a large build, define one parent objective and split it into stable, small, independently verifiable sections (including a dependency order, for example sections 1–18). The split is a child plan of the existing parent item, not a second queue or substitute source of truth.
+
+- Pre-authorize and prepare the next qualified worker/section before the current section lands. That successor waits on an explicit dependency gate; preparation does not permit it to write early.
+- For dependent section N+1, release execution only after section N's source revision, artifact/commit SHA-256 or repository commit, required tests, section result, persistence, and independent readback are all verified. A reported hash alone is not acceptance.
+- Rotate eligible builders so one worker is not assigned consecutive sections of the same sectional build. Prefer a proven qualified alternative for section N+1; a worker may return for N+2 or another later section. If no second worker meets the required capability/access boundary, continue only with a documented exception and an independent reviewer, rather than silently lowering the acceptance bar or idling unrelated work.
+- On failure, preserve the attempt and its diagnostics. The next qualified worker resumes from the furthest **verified** checkpoint/source hash, never from an unverified working tree or a narrative handoff. Reconcile interpretation differences at the section gate.
+- After every section, run the existing BUILD / CANON / GOVERNANCE integration checkpoint under their registered owners: Canon fidelity, governance, code/build compatibility, dependencies, cross-references, ownership, duplication, and integration points. Keep each stream's independent owner and registered marker; the still-unlocated global stream-colour registry remains on hold.
+- When the section is accepted, append the result to the existing Dynamic Flight Path Register and parent/index trail, verify it from the source, then unlock the pre-authorized successor. The returning worker may receive a later non-consecutive section after the allocator rechecks skill fit, capacity, current authority, and prior results.
+
+### Queue-drain priority and immediate continuation
+
+Activating and validating the liveness/sectional-dispatch path is the first infrastructure objective. As soon as a bounded activation gate passes, the same active runtime must continue into the existing ROOT Intake and drain eligible items according to the current priority/intent rules. Do not wait for a new Owner prompt or a new conversation. The parent remains OPEN until every child partition has an accepted result or a concrete, owner-assigned HOLD/supersession. One blocked child must not stall independent executable items. Never claim queue zero from a partial census.
+
+### Owners and acceptance
+
+- **ROOT/T-GOV:** govern the Category A integration, current-owner supersession, and authority boundaries.
+- **MASTER/LIBRARIAN + ROOT/LIBRARIAN:** maintain parent/child provenance, source hashes, ownership, append-only flight/landing reconciliation, reserve/liveness readback, and current Index pointers.
+- **FORX:** produce the exact forensic patch/diff/test packet and verify outcomes; route code/runtime changes through the registered implementation owner.
+- **T-COD / current runtime owner:** implement the minimal trigger, claim/lease, section-gate, and successor-release changes on the existing authorized runtime; do not create a parallel system.
+- **Existing stream owners:** independently complete their BUILD / CANON / GOVERNANCE checks after each section.
+
+**Acceptance requires real behavior, not wording:** (1) source-backed heartbeat/health and a newly attributable run; (2) an intake arriving outside ordinary scheduled windows remains durably persisted and receives a valid next action; (3) the next section is prepared before landing but cannot write before the predecessor's verified hash/test gate; (4) two successive dependent sections use different qualified builders when alternatives exist; (5) a failing/expired worker resumes without losing or replaying unverified state; (6) liveness reserve remains available during a bounded mass-landing test; (7) a supported Plan A event trigger and tested Plan B recovery/return path exist; (8) all section receipts and hashes independently read back; and (9) a bounded soak test demonstrates continuous availability. Until those receipts exist, report `POLICY MERGED / RUNTIME ACTIVATION OPEN`, not 24/7 PASS.
+
+**V1/build boundary:** update the existing V1 Master Build File only at its located, authoritative destination and only with the authorized implementation slice. Do not create another Master Build File. If its current target is not recovered, keep that exact target-location/readback dependency OPEN through existing Root Intake while continuing independent authorized implementation work.
+
+**Operational design and owner-routing record:** [ROOT INTAKE — Continuous Runtime + Post-Run Submission Discipline](https://app.notion.com/p/3f48f8b56cd7818aa0e7cd336f6b13b8?pvs=204), Category A Queue-to-Flight Conveyor.
