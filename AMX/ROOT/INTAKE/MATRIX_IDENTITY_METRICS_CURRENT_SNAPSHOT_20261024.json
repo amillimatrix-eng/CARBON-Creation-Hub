@@ -19,7 +19,13 @@
     "current_repository_items_with_primary_librarian": 27,
     "current_repository_items_with_content_sha256": 27,
     "scope_only_unowned_items": "0 for this 27-record repository snapshot after assignment",
-    "global_root_intake_untriaged_count": "UNKNOWN — not a whole-Matrix source census"
+    "global_root_intake_untriaged_count": "UNKNOWN — not a whole-Matrix source census",
+    "scope_only_unowned_items_after_this_snapshot": "0 primary-owner gaps in this bounded 27-item GitHub snapshot; does not imply full category triage or global Root Intake zero",
+    "primary_owner_missing_count": 0,
+    "category_unclassified_issue_count": 13,
+    "fully_triaged_in_scope": false,
+    "fully_triaged_reason": "13 of the 15 open issues have no explicit authoritative Category A/B/C label in the current source header; remain UNCLASSIFIED pending proper category disposition",
+    "daily_zero_target": "NOT MET / NOT VERIFIED for full triage: primary-owner gaps=0 in this slice, category-unclassified issues=13, global census unavailable"
   },
   "category_counts": {
     "CATEGORY A": 1,
@@ -812,6 +818,6 @@
     }
   ],
   "snapshot_integrity_note": "This snapshot does not contain its own digest to avoid a self-referential hash. Its Git blob SHA-1 is available from the GitHub file endpoint, and its SHA-256 over exact UTF-8 bytes can be independently recomputed from the fetched content.",
-  "updated_at_utc": "2026-10-24T14:45:33.948Z",
-  "updated_at_sast": "2026-10-24T16:45:33.948+02:00"
+  "updated_at_utc": "2026-10-24T14:48:57.379Z",
+  "updated_at_sast": "2026-10-24T16:48:57.379+02:00"
 }
