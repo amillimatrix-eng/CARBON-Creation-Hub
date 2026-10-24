@@ -1113,6 +1113,8 @@ def mount_marketplace(
         app.mount("/market/media", StaticFiles(directory=media.root), name="carbon-media")
     app.state.carbon_media_store = media
     demo_enabled = demo_mode if demo_mode is not None else os.getenv("CARBON_MARKETPLACE_DEMO_MODE", "").strip() in {"1", "true", "TRUE", "yes", "YES"}
+    # Projects/Media share this exact demo-mode safety gate.
+    app.state.carbon_marketplace_demo_enabled = demo_enabled
     money = money_adapter or SandboxMoneyAdapter()
     if discovery_adapter is not None:
         discovery = discovery_adapter
