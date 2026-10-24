@@ -1471,3 +1471,20 @@ Keep scheduled work paused until the relevant infrastructure segment is accepted
 6. Root Intake has source-derived counts and item-level dispositions; any remainder is an explicitly owned dependency with a next action and readback.
 
 **Current disposition: TEMPORARILY PAUSED BY OWNER — INFRASTRUCTURE WORK REMAINS OPEN.** A task being paused is not its work being completed. Resume the consolidated lanes only after the acceptance gates; keep continuing this live infrastructure/queue flight through direct source work rather than treating this note as a terminal completion.
+
+
+---
+
+# OWNER-DIRECTED CURRENT SUPERSESSION — CANONICAL IDENTITY + METRICS — 2026-10-24
+
+**Status:** CURRENT / ADDITIVE / CATEGORY A. The existing canonical mandate blocks and their 13 SHA-256 payloads remain unchanged. This section binds identity/metrics to current authority; it does not rewrite worker reasoning or grant authority across roles.
+
+- Current Registry v1.4: `AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json`, blob `7963165e68ea8aeac6d879d2f763790c05f23232`. The existing role-hash root recomputes to `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`, unchanged from v1.3.
+- Every registered role now has explicit `canonical_identity = role_key`, `hash_owner_identity = role_key`, `hash_register_custodian = MASTER-LIBRARIAN`, `metrics_domain`, and `global_stream_marker_status`. No worker identity is derived from provider, platform session, ecosystem or colour.
+- Schema: `AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md`. Current source-bound item snapshot: `AMX/ROOT/INTAKE/MATRIX_IDENTITY_METRICS_CURRENT_SNAPSHOT_20261024.json`.
+- MTXID is a separate participant identity: opaque, AMX-owned, no ecosystem/source prefix. Referral provenance is in separate event records. A private reserve of 1,000 preallocated identifiers exists outside this repository; live issuer is NOT VERIFIED / NOT CONNECTED. Do not claim cross-ecosystem auto-assignment until the existing identity store passes uniqueness, atomic allocation, idempotency and readback tests.
+- Metrics must preserve actual lifecycle transitions and use exact source/hash scope, rule version, evidence, verifier and readback. Badge/rank/battle thresholds and existing award logic are unchanged; unavailable rule source means UNKNOWN/HOLD, not a fabricated award.
+- The authoritative unique BUILD/CANON/GOVERNANCE marker mapping remains NOT LOCATED. Use textual role identities and `MARKER_UNASSIGNED / REGISTRY_HOLD`; do not invent T-COD/T-MED colours or conflate ROOT/T-GOV with ROOT/LIBRARIAN.
+- Current bounded GitHub scope is 27 OPEN items, each assigned one primary librarian in the snapshot. This does not clear global Root Intake. HASH_CALIBRATION_TEMP has four known obligations, exact bytes/current STATUS rows unavailable and current OPEN count UNKNOWN. Whole-Matrix census and queue-zero acceptance remain OPEN.
+
+**Readback:** Registry v1.4 role hash root PASS. The runtime issuer, full matrix hash register, internal dashboard and canonical badge/rank/battle sources remain open until their own acceptance receipts exist.
