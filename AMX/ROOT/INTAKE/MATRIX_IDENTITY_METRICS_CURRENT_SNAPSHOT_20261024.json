@@ -731,47 +731,49 @@
       "path": "AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json",
       "git_blob_sha1": "7963165e68ea8aeac6d879d2f763790c05f23232",
       "sha256_utf8_content": "f725558314fe6b59a8f1cea2188d0bcdb865753e5f500fe5d53f513a466a732f",
-      "hash_scope": "exact UTF-8 file content returned by current GitHub fetch",
+      "hash_scope": "exact UTF-8 file content returned by current GitHub fetch; Git blob SHA-1 is separately recorded",
       "primary_librarian": "ROOT-TGOV",
-      "hash_custodian": "MASTER-LIBRARIAN",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
       "lifecycle": "CURRENT / READBACK"
     },
     {
       "path": "AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md",
       "git_blob_sha1": "37cade6f53aa48f2ec6b521c5ce91dfbfced06b5",
       "sha256_utf8_content": "88a2484f1e2e2c30868f4ad6b0205f8d51d90e48dff5892d8a0526efdf85a9d4",
-      "hash_scope": "exact UTF-8 file content returned by current GitHub fetch",
+      "hash_scope": "exact UTF-8 file content returned by current GitHub fetch; Git blob SHA-1 is separately recorded",
       "primary_librarian": "ROOT-TGOV",
-      "hash_custodian": "MASTER-LIBRARIAN",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
       "lifecycle": "CURRENT / READBACK"
     },
     {
       "path": "AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md",
       "git_blob_sha1": "096cee3ea5c5fa76d3d377a3e9348249bcbb9ba9",
       "sha256_utf8_content": "36cafe0cd68933dae6914f684286150a8ef9cbb938a2f180e5435c8bdb79a5b9",
-      "hash_scope": "exact UTF-8 file content returned by current GitHub fetch",
+      "hash_scope": "exact UTF-8 file content returned by current GitHub fetch; Git blob SHA-1 is separately recorded",
       "primary_librarian": "ROOT-TGOV",
-      "hash_custodian": "MASTER-LIBRARIAN",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "lifecycle": "CURRENT / READBACK"
+    },
+    {
+      "path": "AMX/ROOT/INTAKE/CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md",
+      "git_blob_sha1": "75076a9802406bc3f1d66521efd022462f01154e",
+      "sha256_utf8_content": "03f41aa59fd499a2a80662ab5fc1836511dbbd75122a8ff4b5be7081943ef750",
+      "hash_scope": "exact current routing-map UTF-8 content as fetched after append/readback",
+      "primary_librarian": "MASTER-LIBRARIAN",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
       "lifecycle": "CURRENT / READBACK"
     },
     {
       "path": "AMX/ROOT/INTAKE/CATEGORY_A_INTERNAL_MATRIX_MARKER_IMPLEMENTATION_TARGET_BINDING_20261021.md",
       "git_blob_sha1": "6ab2eb3679346709d4f8e0d92d2d18229162f92f",
       "sha256_utf8_content": null,
-      "hash_scope": "Git blob SHA-1 recorded in current Addendum E search/readback; raw current bytes not re-fetched in this capture",
+      "hash_scope": "Git blob SHA-1 recorded in prior source-bound read; exact current bytes not re-fetched for this snapshot",
       "primary_librarian": "ROOT-TGOV",
-      "hash_custodian": "MASTER-LIBRARIAN",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
       "lifecycle": "OPEN / MARKER REGISTRY AND INTERNAL TARGET UNKNOWN"
-    },
-    {
-      "path": "AMX/ROOT/INTAKE/CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md",
-      "git_blob_sha1": "ea516a6d7f276f0b34fd70fa02892034676a947b",
-      "sha256_utf8_content": "9b12cc9b54f2d9f0a13b857050f39da027b4f7b204c850608a6097a05db80490",
-      "hash_scope": "exact pre-update UTF-8 bytes fetched before append-only refresh in this run",
-      "primary_librarian": "MASTER-LIBRARIAN",
-      "hash_custodian": "MASTER-LIBRARIAN",
-      "lifecycle": "CURRENT INPUT REVISION; UPDATED REVISION WILL SUPERSEDE"
     }
   ],
-  "snapshot_integrity_note": "This file intentionally does not contain its own current Git blob/SHA-256 digest (self-reference). Fetch the saved file to retrieve the Git blob SHA-1; its SHA-256 over UTF-8 content can be independently recomputed from the fetched bytes."
+  "snapshot_integrity_note": "This snapshot does not contain its own digest to avoid a self-referential hash. Its Git blob SHA-1 is available from the GitHub file endpoint, and its SHA-256 over exact UTF-8 bytes can be independently recomputed from the fetched content.",
+  "updated_at_utc": "2026-10-24T14:37:28.711Z",
+  "updated_at_sast": "2026-10-24T16:37:28.711+02:00"
 }
