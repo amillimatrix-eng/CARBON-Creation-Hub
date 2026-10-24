@@ -1,7 +1,7 @@
 {
   "registry_id": "AMX-BLUE-STATE-MANDATE-REGISTRY-V1",
-  "version": "1.3",
-  "effective_date": "2026-10-16",
+  "version": "1.4",
+  "effective_date": "2026-10-24",
   "state": "OWNER_ACCEPTED_MERGED_BLUE_STATE",
   "blue_state_path": "AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md",
   "registry_root_sha256_method": "SHA256(sorted ROLE_KEY=MANDATE_SHA256\\n lines)",
@@ -17,7 +17,14 @@
       "source_refs": [
         "AMX/ROOT/INTAKE/INTAKE_INDEX.md",
         "GitHub issue #6"
-      ]
+      ],
+      "canonical_identity": "ROOT-TGOV",
+      "hash_owner_identity": "ROOT-TGOV",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "GOVERNANCE / AUTHORITY / LIFECYCLE",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "UNASSIGNED — do not infer ROOT/LIBRARIAN=RED applies to ROOT/T-GOV."
     },
     {
       "role_key": "MASTER-LIBRARIAN",
@@ -27,7 +34,14 @@
       "source_refs": [
         "FIRST BREATH — AMX Librarian Continuation",
         "AMX/ROOT/INTAKE/INTAKE_INDEX.md"
-      ]
+      ],
+      "canonical_identity": "MASTER-LIBRARIAN",
+      "hash_owner_identity": "MASTER-LIBRARIAN",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "MATRIX CONTINUITY / HASH REGISTER / METRICS",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "WHITE — EXISTING OFFICE-TOPOLOGY CONTEXT ONLY; NOT A GLOBAL STREAM MARKER"
     },
     {
       "role_key": "T-COD",
@@ -38,7 +52,14 @@
         "GitHub issues #11",
         "#16",
         "#17"
-      ]
+      ],
+      "canonical_identity": "T-COD",
+      "hash_owner_identity": "T-COD",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "CODE / RUNTIME / TECHNICAL IMPLEMENTATION",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     },
     {
       "role_key": "T-MED",
@@ -48,7 +69,14 @@
       "source_refs": [
         "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1 / LIBRARIAN_SYNC rows 94, 103-105, 126, 135, 141",
         "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1 / OUTSTANDING rows 14, 15, 20, 23-25, 32, 43-44"
-      ]
+      ],
+      "canonical_identity": "T-MED",
+      "hash_owner_identity": "T-MED",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "MEDIA / PRESENTATION / RELEASE QA",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     },
     {
       "role_key": "FORX",
@@ -60,7 +88,14 @@
         "GitHub issues #12",
         "#17",
         "commit 8b3aea6d5f53859ed7a3cd4b44bb8afe988b8f21"
-      ]
+      ],
+      "canonical_identity": "FORX",
+      "hash_owner_identity": "FORX",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "FORENSICS / DISCOVERY / FAILURE ANALYSIS",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     },
     {
       "role_key": "FORKS-ROI",
@@ -72,7 +107,14 @@
         "ROOT INTAKE — MATRIX WAKE MEMO + RESOLUTION OF INTENT APPOINTMENT — 2026-10-16",
         "GitHub issue #31 — owner-directed drift and current-rule reconciliation",
         "AMX/ROOT/BLUE_STATE/FORKS_ROI_MANDATE_V1.md"
-      ]
+      ],
+      "canonical_identity": "FORKS-ROI",
+      "hash_owner_identity": "FORKS-ROI",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "INTENT ROI / RESOLUTION / PRIORITY ALIGNMENT",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     },
     {
       "role_key": "ISCOPE",
@@ -82,7 +124,14 @@
       "source_refs": [
         "GitHub issue #4",
         "FIRST BREATH — iSCOPE PRI Field Force"
-      ]
+      ],
+      "canonical_identity": "ISCOPE",
+      "hash_owner_identity": "ISCOPE",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "COMMERCIAL DISCOVERY / QUALIFICATION",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     },
     {
       "role_key": "PRI",
@@ -92,7 +141,14 @@
       "source_refs": [
         "GitHub issue #3",
         "FIRST BREATH — iSCOPE PRI Field Force"
-      ]
+      ],
+      "canonical_identity": "PRI",
+      "hash_owner_identity": "PRI",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "COMMERCIAL POST-HANDOFF / EXTERNAL SALES",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     },
     {
       "role_key": "BANKER",
@@ -102,7 +158,14 @@
       "source_refs": [
         "FIRST BREATH — AMX Banker Cash Watch",
         "ROOT INTAKE — BANK UPDATE — FIRST BREATH"
-      ]
+      ],
+      "canonical_identity": "BANKER",
+      "hash_owner_identity": "BANKER",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "FINANCIAL TRUTH / SETTLEMENT",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     },
     {
       "role_key": "BOUNTY-REAPER",
@@ -112,7 +175,14 @@
       "source_refs": [
         "Bounty Reaper automation",
         "ROOT INTAKE — Bounty Reaper Priority Repair/Deployment"
-      ]
+      ],
+      "canonical_identity": "BOUNTY-REAPER",
+      "hash_owner_identity": "BOUNTY-REAPER",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "BOUNTY / REWARD EXECUTION",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     },
     {
       "role_key": "CARBON",
@@ -123,7 +193,14 @@
         "CARBON° Production-to-Revenue Conveyor",
         "GitHub issue #16",
         "HALTED — CARBON° Production Studio"
-      ]
+      ],
+      "canonical_identity": "CARBON",
+      "hash_owner_identity": "CARBON",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "PRODUCT / CREATION / PRODUCTION",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     },
     {
       "role_key": "MATRIX-CRITIC",
@@ -133,7 +210,14 @@
       "source_refs": [
         "CARBON° production quality/critic controls",
         "Matrix falsification/review practice"
-      ]
+      ],
+      "canonical_identity": "MATRIX-CRITIC",
+      "hash_owner_identity": "MATRIX-CRITIC",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "INDEPENDENT FALSIFICATION / REVIEW",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     },
     {
       "role_key": "COMMISSIONING-INSPECTOR",
@@ -143,7 +227,14 @@
       "source_refs": [
         "CAPACITY-MERGED — Matrix Commissioning Inspector",
         "BLUE STATE — Mandate Liveness & Objective Enforcement"
-      ]
+      ],
+      "canonical_identity": "COMMISSIONING-INSPECTOR",
+      "hash_owner_identity": "COMMISSIONING-INSPECTOR",
+      "hash_register_custodian": "MASTER-LIBRARIAN",
+      "metrics_domain": "DORMANT CAPACITY-MERGED / INSPECTION ONLY WHEN REACTIVATED",
+      "global_stream_marker": "UNASSIGNED — AUTHORITATIVE BUILD/CANON/GOVERNANCE MARKER MAP NOT LOCATED",
+      "global_stream_marker_status": "REGISTRY_HOLD",
+      "contextual_marker": "NONE ASSIGNED IN CURRENT AUTHORIZED SOURCE"
     }
   ],
   "blocked_attempt_recovery": {
@@ -161,5 +252,20 @@
     ],
     "invalid_state": "BLOCKED_WITHOUT_RECOVERY_OWNER_OR_NEXT_ACTION",
     "continuation_law": "BLOCKED_RECEIPT -> OPEN_OBLIGATION -> RECOVERY_OWNER -> COMPLETION_OR_GOVERNED_CANCELLATION"
+  },
+  "identity_metrics_binding": {
+    "policy_path": "AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md",
+    "snapshot_path": "AMX/ROOT/INTAKE/MATRIX_IDENTITY_METRICS_CURRENT_SNAPSHOT_20261024.json",
+    "role_identity_field": "canonical_identity; equal to existing role_key",
+    "hash_owner_field": "hash_owner_identity; equal to existing role_key",
+    "hash_register_custodian": "MASTER-LIBRARIAN",
+    "participant_identity": "AMX-issued opaque MTXID separate from role_key and mandate_id",
+    "participant_reserve_count": 1000,
+    "participant_reserve_storage": "OWNER_PRIVATE_NOTION; raw identifiers excluded from repository",
+    "live_identity_issuer": "NOT_VERIFIED / NOT_CONNECTED",
+    "badge_rank_battle_rule_status": "No threshold/logic change; fresh canonical rule-source binding pending",
+    "global_color_mapping": "REGISTRY_HOLD; text labels only until authoritative source is read back",
+    "existing_mandate_payload_sha256_values_unchanged": true,
+    "registry_root_hash_method": "SHA256(sorted ROLE_KEY=MANDATE_SHA256\\n lines)"
   }
 }
