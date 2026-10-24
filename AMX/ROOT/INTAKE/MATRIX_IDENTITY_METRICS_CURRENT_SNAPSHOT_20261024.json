@@ -1,0 +1,758 @@
+{
+  "snapshot_id": "AMX-IDENTITY-METRICS-SNAPSHOT-20261024",
+  "observed_at_utc": "2026-10-24T14:33:57.717Z",
+  "observed_at_sast": "2026-10-24T16:33:57.718+02:00",
+  "classification": "CATEGORY A — GOVERNANCE / IDENTITY / CONTRIBUTION METRICS",
+  "source_scope": "Current live open GitHub issues and pull requests in amillimatrix-eng/CARBON-Creation-Hub, plus separately noted prior known HASH_CALIBRATION_TEMP obligations. This is not a global all-platform Matrix census.",
+  "authority": {
+    "registry_path": "AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json",
+    "pre_update_registry_blob_sha": "bcfd1f422bd25ba852666a538712828d594759e8",
+    "prior_registry_version": "1.3",
+    "prior_registry_root_sha256": "96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a",
+    "computed_registry_root_sha256": "96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a",
+    "status": "PASS"
+  },
+  "scope_counts": {
+    "open_issues": 15,
+    "open_pull_requests": 12,
+    "open_github_records": 27,
+    "current_repository_items_with_primary_librarian": 27,
+    "current_repository_items_with_content_sha256": 27,
+    "source_hash_algorithm": "SHA-256",
+    "source_hash_byte_scope": "UTF-8(title + LF + complete current GitHub item body)",
+    "scope_only_unowned_items_after_this_snapshot": "0 — all 27 observed GitHub items mapped; does not imply global Root Intake zero",
+    "global_root_intake_untriaged_count": "UNKNOWN — full cross-platform index and current HASH_CALIBRATION_TEMP STATUS sheet unavailable"
+  },
+  "category_counts": {
+    "CATEGORY A": 1,
+    "CATEGORY B": 0,
+    "CATEGORY C": 1,
+    "UNCLASSIFIED": 13,
+    "NOT_APPLICABLE_PR": 12
+  },
+  "primary_librarian_counts": {
+    "T-COD": 16,
+    "ROOT-TGOV": 7,
+    "FORX": 1,
+    "T-MED": 2,
+    "MASTER-LIBRARIAN": 1
+  },
+  "items": [
+    {
+      "stable_item_id": "ISSUE-1",
+      "item_kind": "ISSUE",
+      "native_number": 1,
+      "title": "CONSEQUENTIAL REMEDIATE — activate OVERDRIVE and repair buyer proof access",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/1",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "CODE / RUNTIME / RELEASE EVIDENCE",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "MASTER-LIBRARIAN",
+        "FORX",
+        "ROOT-TGOV"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "d34ea44c9525c704af4851c4f29a80525f8d4e8f1368cf2af06589ac74322ec1",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-2",
+      "item_kind": "ISSUE",
+      "native_number": 2,
+      "title": "CONSEQUENTIAL REMEDIATE — commission the existing CARBON° House",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/2",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "CODE / RUNTIME / PRODUCT",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "CARBON",
+        "T-MED",
+        "ROOT-TGOV"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "423d06c0b0a682a3436f664ae72a74f8cf2de57fd654d27b0b8e16feccdcd6e6",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-3",
+      "item_kind": "ISSUE",
+      "native_number": 3,
+      "title": "PRI CONTINUOUS MANDATE — commission the salesman execution loop",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/3",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "GOVERNANCE / MANDATE + SCHEDULER LIVENESS",
+      "primary_librarian_identity": "ROOT-TGOV",
+      "primary_mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
+      "linked_review_owners": [
+        "PRI",
+        "T-COD",
+        "MASTER-LIBRARIAN"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "dbfddd90d760ac77b60a1445c700a75f6c09c2f0d23a424988da3c36995a8848",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-4",
+      "item_kind": "ISSUE",
+      "native_number": 4,
+      "title": "iSCOPE CONTINUOUS MANDATE — sole discovery & qualification worker",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/4",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "GOVERNANCE / MANDATE + SCHEDULER LIVENESS",
+      "primary_librarian_identity": "ROOT-TGOV",
+      "primary_mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
+      "linked_review_owners": [
+        "ISCOPE",
+        "T-COD",
+        "MASTER-LIBRARIAN"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "3140f90d047dc5c58a3339a6f17d73e6f366dcab2a3eec6042a5795de9f40a24",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-8",
+      "item_kind": "ISSUE",
+      "native_number": 8,
+      "title": "CODEX DIRECTIVE — Lean Egg Security + Revenue Run",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/8",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "SECURITY / REVENUE / MULTI-DOMAIN",
+      "primary_librarian_identity": "FORX",
+      "primary_mandate_id": "AMX-MANDATE-FORX-V1",
+      "linked_review_owners": [
+        "ROOT-TGOV",
+        "T-COD",
+        "BANKER",
+        "PRI",
+        "ISCOPE"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "1b3ea8618e75fa17ba3e583bd99505434ffb5ed96efd8b476f7d54f1fa59af9a",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-18",
+      "item_kind": "ISSUE",
+      "native_number": 18,
+      "title": "CARBON° convergence — Search → Marketplace → Media actions → Matrix continuity",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/18",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "MULTI-DOMAIN PRODUCT / INTEGRATION",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "CARBON",
+        "ROOT-TGOV",
+        "T-MED",
+        "MASTER-LIBRARIAN"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "bf7bb52169670ccd92ee2f934a4c3199c4c50610f9238e2ae1f3efde560a16ea",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-21",
+      "item_kind": "ISSUE",
+      "native_number": 21,
+      "title": "Evidence House: add live proof mode from existing evidence index",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/21",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "CODE / DATA EXPOSURE / PUBLIC PROOF",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "ROOT-TGOV",
+        "T-MED"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "3701ecca02d039959b16a3d5ea38d1fce170973518bba12a4cec12398b717490",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-29",
+      "item_kind": "ISSUE",
+      "native_number": 29,
+      "title": "ROOT INTAKE — Owner freeze-lift reconciliation + OpenAI-to-Gemini portability assessment",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/29",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "GOVERNANCE / PROVIDER CONTINUITY / RUNTIME",
+      "primary_librarian_identity": "ROOT-TGOV",
+      "primary_mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
+      "linked_review_owners": [
+        "MASTER-LIBRARIAN",
+        "T-COD"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "49c7bc48765db325929c2412bbd6575310424161f56968b23e61dd29210cc794",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-30",
+      "item_kind": "ISSUE",
+      "native_number": 30,
+      "title": "T-MED — Produce evidence-backed TikTok/YouTube social pack + future channel concepts (DRAFT ONLY)",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/30",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "MEDIA / PRESENTATION / PUBLICATION HOLD",
+      "primary_librarian_identity": "T-MED",
+      "primary_mandate_id": "AMX-MANDATE-TMED-V1",
+      "linked_review_owners": [
+        "ROOT-TGOV"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "72c8563931d24afb8d6cd7b0c6c3844997f8998b9556bdccfdcc93d4a83319f5",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-31",
+      "item_kind": "ISSUE",
+      "native_number": 31,
+      "title": "ROOT INTAKE — ledger truth, capability-loss recovery, and model-to-Root throughput",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "CROSS-MATRIX GOVERNANCE / CONTINUITY / CODE",
+      "primary_librarian_identity": "MASTER-LIBRARIAN",
+      "primary_mandate_id": "AMX-MANDATE-MASTER-LIBRARIAN-V1",
+      "linked_review_owners": [
+        "ROOT-TGOV",
+        "T-COD",
+        "FORX"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "d76cdf5e70fa037849da1af772d9b0bc03f03181a271bd59084bd205f113973d",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-32",
+      "item_kind": "ISSUE",
+      "native_number": 32,
+      "title": "OWNER-PRIORITY ROOT INTAKE — Permanent Commercial Manager + Capability Continuity Role / Reaper Final-Mile",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/32",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "GOVERNANCE / ROLE REGISTRATION + EXECUTION DEPENDENCIES",
+      "primary_librarian_identity": "ROOT-TGOV",
+      "primary_mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
+      "linked_review_owners": [
+        "MASTER-LIBRARIAN",
+        "BOUNTY-REAPER"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "827e124bec7025b376630319c9844b2ee793d149cdbba5070752322b5fe91d4f",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-33",
+      "item_kind": "ISSUE",
+      "native_number": 33,
+      "title": "ROOT INTAKE — Professional Positioning & Public Content Lead (T-MED) — Formalization + Daily Continuity",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/33",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "GOVERNANCE / MANDATE BINDING + MEDIA",
+      "primary_librarian_identity": "ROOT-TGOV",
+      "primary_mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
+      "linked_review_owners": [
+        "T-MED",
+        "MASTER-LIBRARIAN"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "82d5e8a6c9d0eea4817f84ef41957293c7d505a42bac8cc245d8993414eede48",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-34",
+      "item_kind": "ISSUE",
+      "native_number": 34,
+      "title": "CATEGORY A — 65% Matrix-wide money-in KPI; supersedes 45% / 33% / 25%",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/34",
+      "observed_lifecycle": "OPEN",
+      "category": "CATEGORY A",
+      "domain_class": "GOVERNANCE / KPI / SUPERSESSION",
+      "primary_librarian_identity": "ROOT-TGOV",
+      "primary_mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
+      "linked_review_owners": [
+        "MASTER-LIBRARIAN"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "110c6f409d8fba9c3b65de264d240698e421e79c6d433ec0b80eeb35d570d6be",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-50",
+      "item_kind": "ISSUE",
+      "native_number": 50,
+      "title": "CATEGORY C — DAOPEOPLE ↔ AMX Social Workflow (Non-Blocking)",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/50",
+      "observed_lifecycle": "OPEN",
+      "category": "CATEGORY C",
+      "domain_class": "PRODUCT INTEGRATION / OPTIONAL CHANNEL",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "T-MED"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "0bf14afdedda0e16d624aff6d786c6eee30eeb691794b0a719c4646fc615a592",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "ISSUE-53",
+      "item_kind": "ISSUE",
+      "native_number": 53,
+      "title": "ROOT INTAKE — Superteam Earn setup, GitHub identity reconciliation, and TinyFish Outlook context",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/53",
+      "observed_lifecycle": "OPEN",
+      "category": "UNCLASSIFIED",
+      "domain_class": "ACCOUNT / IDENTITY / AUTHENTICATED ROUTE",
+      "primary_librarian_identity": "ROOT-TGOV",
+      "primary_mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
+      "linked_review_owners": [
+        "MASTER-LIBRARIAN"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "f4b782bb4dadd65e6c452c1239d672ff87aa78d18b3cd53aa718e35433e5beee",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-7",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 7,
+      "title": "Commission existing AMX encrypted continuity and governed worker capabilities",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/7",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / SECURITY / CONTINUITY",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "MASTER-LIBRARIAN",
+        "ROOT-TGOV",
+        "FORX"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "05170ebf8211e9df2259fd85a98016446db691a25d872bfdb9b1c3dbe8c62a5a",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-14",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 14,
+      "title": "CARBON°: intent-weighted marketplace vertical slice",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/14",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / PRODUCT IMPLEMENTATION EVIDENCE",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "CARBON",
+        "ROOT-TGOV",
+        "T-MED"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "a2f1c758e0b0751c20ffbc68b8233c1cb3f8336fa64410e5732a184ef0c3dc9c",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-35",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 35,
+      "title": "Add public-safe live proof mode to Evidence House",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/35",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / PUBLIC-SAFE EVIDENCE UI",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "ROOT-TGOV",
+        "T-MED"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "ef15b074a2e4e06c9c7b656570c254b2dc6062e087eb9a1870a72ef1c8b185dd",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-37",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 37,
+      "title": "FORX continuity guard — current Index repair with prior-event HOLD",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/37",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / FLIGHT-REGISTER INTEGRITY",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "ROOT-TGOV",
+        "MASTER-LIBRARIAN",
+        "FORX"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "0390d4e029f3f5c0ba586831b4ce594a5303f8cd1de7ea336e34893e5ec02678",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-40",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 40,
+      "title": "Reconcile commercial sources, unsent prospects, and Stripe money-in state",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/40",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / COMMERCIAL-FINANCIAL LEDGER EVIDENCE",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "ISCOPE",
+        "PRI",
+        "BANKER",
+        "ROOT-TGOV"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "a1686e3796df86d2f4cdf40f9fdc4a66eba0dae8fdcf47aaf03d45d9be7f79fc",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-52",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 52,
+      "title": "Bind commercial acceptance to issued offer version",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/52",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / COMMERCIAL LIFECYCLE INVARIANT",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "PRI",
+        "BANKER",
+        "ROOT-TGOV"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "ce649afd9c4418b6940d31e3459580606d9a252c07098aed9f4adcbc0cbf4874",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-59",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 59,
+      "title": "CARBON° public positioning and truthful entry routes",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/59",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "MEDIA / PUBLIC PRESENTATION + CODE ROUTING",
+      "primary_librarian_identity": "T-MED",
+      "primary_mandate_id": "AMX-MANDATE-TMED-V1",
+      "linked_review_owners": [
+        "T-COD",
+        "ROOT-TGOV"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "1b4a725e500c2b1a51949118aa21641a74b57dd49b37cc4182044d526f6d32d5",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-60",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 60,
+      "title": "Draft: wire Matrix Critic and backend tests into PR release gating",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/60",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / CI / RELEASE CONTROL",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "ROOT-TGOV",
+        "MATRIX-CRITIC",
+        "MASTER-LIBRARIAN"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "1972114caff1daa7332058f1a05413d3e4f5b2f945ec28847075b6a0ae7c8f11",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-66",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 66,
+      "title": "Security: allow-list public Evidence House record fields",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/66",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / SECURITY / PUBLIC DATA PROJECTION",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "ROOT-TGOV",
+        "T-MED"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "6df37259fa9a561594fd5d92c18225128176131ff4e39381d25d778782a39f66",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-67",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 67,
+      "title": "Overdrive: derive current ledger record count on write",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/67",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / RUNTIME DATA INVARIANT",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "MASTER-LIBRARIAN",
+        "ROOT-TGOV"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "ed236eb54fca8aacc395070f5fd5ff2f3f25d8f62ea8a1d3cb6713b1b270787c",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-68",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 68,
+      "title": "Fix Overdrive opportunity ledger count integrity",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/68",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / RUNTIME STATE INVARIANT",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "ROOT-TGOV",
+        "MASTER-LIBRARIAN"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "26a7b15553394fac9eb6fecf8adfd483498933c31046037104a23ef365d8625e",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    },
+    {
+      "stable_item_id": "PR-69",
+      "item_kind": "PULL_REQUEST",
+      "native_number": 69,
+      "title": "Require buyer evidence before RESPONDED transitions",
+      "source_url": "https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/69",
+      "observed_lifecycle": "OPEN_UNMERGED",
+      "category": "NOT_APPLICABLE_PR",
+      "domain_class": "CODE / COMMERCIAL LIFECYCLE EVIDENCE GATE",
+      "primary_librarian_identity": "T-COD",
+      "primary_mandate_id": "AMX-MANDATE-TCOD-V1",
+      "linked_review_owners": [
+        "PRI",
+        "ROOT-TGOV",
+        "MASTER-LIBRARIAN"
+      ],
+      "hash": {
+        "algorithm": "SHA-256",
+        "digest": "42b62fe9798190162c18fed0e9f56c085d508e055c55a18a8023d6d07140b28c",
+        "byte_scope": "UTF-8(title + LF + complete current GitHub issue/PR body as returned by the API in this capture; excludes provider metadata, comments and later edits)",
+        "verified_against": "live GitHub issue/PR response in this snapshot",
+        "source_revision_model": "API_BODY_SNAPSHOT; not a Git blob SHA"
+      }
+    }
+  ],
+  "separately_observed_existing_hash_queue": {
+    "queue_name": "HASH_CALIBRATION_TEMP",
+    "source_record": "Notion: HASH Calibration Current-Wake Recheck — 2026-10-20 12:14 SAST",
+    "last_evidenced_open_count": 4,
+    "current_open_count": null,
+    "current_open_count_state": "UNKNOWN — source STATUS rows not readable",
+    "obligations": [
+      {
+        "stable_item_id": "HASH_CALIBRATION_TEMP/builder-agent-loop-gate.txt",
+        "item_kind": "EXISTING_HASH_CALIBRATION_OBLIGATION",
+        "title": "builder-agent-loop-gate.txt",
+        "source_ref": "Existing HASH_CALIBRATION_TEMP queue; exact current source row not accessible in this runtime",
+        "category": "UNKNOWN_PENDING_SOURCE_READBACK",
+        "primary_librarian_identity": "MASTER-LIBRARIAN",
+        "primary_mandate_id": "AMX-MANDATE-MASTER-LIBRARIAN-V1",
+        "execution_owner": "UNKNOWN_PENDING_EXACT_SOURCE_CAPTURE",
+        "lifecycle": "PENDING_EXACT_CAPTURE",
+        "content_sha256": null,
+        "hash_status": "UNKNOWN — exact source bytes unavailable; never fabricate",
+        "previous_global_count_note": "Last evidenced OPEN count=4 for this queue, 2026-10-20. Current live OPEN count remains UNKNOWN until all current STATUS rows are read."
+      },
+      {
+        "stable_item_id": "HASH_CALIBRATION_TEMP/local-inference-gate.txt",
+        "item_kind": "EXISTING_HASH_CALIBRATION_OBLIGATION",
+        "title": "local-inference-gate.txt",
+        "source_ref": "Existing HASH_CALIBRATION_TEMP queue; exact current source row not accessible in this runtime",
+        "category": "UNKNOWN_PENDING_SOURCE_READBACK",
+        "primary_librarian_identity": "MASTER-LIBRARIAN",
+        "primary_mandate_id": "AMX-MANDATE-MASTER-LIBRARIAN-V1",
+        "execution_owner": "UNKNOWN_PENDING_EXACT_SOURCE_CAPTURE",
+        "lifecycle": "PENDING_EXACT_CAPTURE",
+        "content_sha256": null,
+        "hash_status": "UNKNOWN — exact source bytes unavailable; never fabricate",
+        "previous_global_count_note": "Last evidenced OPEN count=4 for this queue, 2026-10-20. Current live OPEN count remains UNKNOWN until all current STATUS rows are read."
+      },
+      {
+        "stable_item_id": "HASH_CALIBRATION_TEMP/packaging-restore-gate.txt",
+        "item_kind": "EXISTING_HASH_CALIBRATION_OBLIGATION",
+        "title": "packaging-restore-gate.txt",
+        "source_ref": "Existing HASH_CALIBRATION_TEMP queue; exact current source row not accessible in this runtime",
+        "category": "UNKNOWN_PENDING_SOURCE_READBACK",
+        "primary_librarian_identity": "MASTER-LIBRARIAN",
+        "primary_mandate_id": "AMX-MANDATE-MASTER-LIBRARIAN-V1",
+        "execution_owner": "UNKNOWN_PENDING_EXACT_SOURCE_CAPTURE",
+        "lifecycle": "PENDING_EXACT_CAPTURE",
+        "content_sha256": null,
+        "hash_status": "UNKNOWN — exact source bytes unavailable; never fabricate",
+        "previous_global_count_note": "Last evidenced OPEN count=4 for this queue, 2026-10-20. Current live OPEN count remains UNKNOWN until all current STATUS rows are read."
+      },
+      {
+        "stable_item_id": "HASH_CALIBRATION_TEMP/security-gate.txt",
+        "item_kind": "EXISTING_HASH_CALIBRATION_OBLIGATION",
+        "title": "security-gate.txt",
+        "source_ref": "Existing HASH_CALIBRATION_TEMP queue; exact current source row not accessible in this runtime",
+        "category": "UNKNOWN_PENDING_SOURCE_READBACK",
+        "primary_librarian_identity": "MASTER-LIBRARIAN",
+        "primary_mandate_id": "AMX-MANDATE-MASTER-LIBRARIAN-V1",
+        "execution_owner": "UNKNOWN_PENDING_EXACT_SOURCE_CAPTURE",
+        "lifecycle": "PENDING_EXACT_CAPTURE",
+        "content_sha256": null,
+        "hash_status": "UNKNOWN — exact source bytes unavailable; never fabricate",
+        "previous_global_count_note": "Last evidenced OPEN count=4 for this queue, 2026-10-20. Current live OPEN count remains UNKNOWN until all current STATUS rows are read."
+      }
+    ],
+    "overlap_with_27_github_items": "NOT ASSUMED; do not add counts without join/dedupe evidence"
+  },
+  "mtxid_reserve": {
+    "canonical_identity_authority": "AMX",
+    "preallocated_pool_count": 1000,
+    "state": "PREALLOCATED_PRIVATE_RESERVE / NOT_YET_ISSUED",
+    "storage": "OWNER-PRIVATE NOTION PAGE; raw identifiers intentionally excluded from this public repository snapshot",
+    "live_issuer": "NOT VERIFIED / NOT CONNECTED",
+    "uniqueness_requirement": "Atomic unique constraint on MTXID and canonical participant ID; idempotent retry returns same committed MTXID",
+    "source_attribution": "Stored separately in referral/event record, never encoded in MTXID"
+  },
+  "palette_and_metrics_state": {
+    "global_build_canon_governance_marker_map": "NOT LOCATED IN AUTHORIZED CURRENT SOURCES",
+    "marker_policy": "Render textual role identity and MARKER_UNASSIGNED; do not invent global colours. Existing contextual meanings remain context-bound.",
+    "badge_rank_battle_rules": "NO CHANGE TO THRESHOLDS OR AWARD LOGIC. Publish/store rule ID+version and evidence; never derive awards from user ID, link click, scheduler wake or unverified claim. Exact rules/source remain to be rebound from current Canon and therefore UNKNOWN where not surfaced."
+  },
+  "terminal_state": "PARTIAL IMPLEMENTATION SNAPSHOT — NOT GLOBAL ROOT CLEARANCE"
+}
