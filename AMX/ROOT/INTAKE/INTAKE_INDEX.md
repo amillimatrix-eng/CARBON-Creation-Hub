@@ -11,7 +11,7 @@
 - **Current Blue State binding:** `AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md`, blob `37cade6f53aa48f2ec6b521c5ce91dfbfced06b5`.
 - **Identity/metrics schema:** `AMX/ROOT/BLUE_STATE/MATRIX_IDENTITY_AND_CONTRIBUTION_METRICS_V1.md`, blob `ceda5bf15586709faa35b9f0f1b015f553fb8db5`.
 - **Current source-bound item map:** `AMX/ROOT/INTAKE/CATEGORY_A_OPEN_GITHUB_ITEM_RESPONSIBILITY_MAP_20261021.md`, blob `75076a9802406bc3f1d66521efd022462f01154e`.
-- **Current metric/hash snapshot:** `AMX/ROOT/INTAKE/MATRIX_IDENTITY_METRICS_CURRENT_SNAPSHOT_20261024.json`, blob `86f3d8161b4a8f2424cd89dbfa52fbdb3bc63a4a`.
+- **Current metric/hash snapshot:** `AMX/ROOT/INTAKE/MATRIX_IDENTITY_METRICS_CURRENT_SNAPSHOT_20261024.json`, blob `1df14960ade3c4642fcdff23ef613f55aeccad8c`.
 - **Hash-routing policy with this Category A addition:** `AMX/ROOT/INTAKE/CATEGORY_A_LIBRARIAN_RESPONSIBILITY_ALIGNMENT_AND_HASH_ROUTING_20261021.md`, blob `b1ed75191b4acc13447c89c6d75d170dd8e093ff`.
 - **Existing reputation/referral spine evidence:** [EVIDENCE DETAILER — JAM3S — Reputation Referral Task Infrastructure — 2026-10-09](https://app.notion.com/p/3f48f8b56cd7818f92fbd83ebce71f8d?pvs=204). Evidence is implemented-partial for XP/ranks/credits/referral tasks and SQLite guarded writes; MTXID and all trust/status mechanics are NOT proven deployed.
 
